@@ -24,20 +24,22 @@ struct SummaryView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             ScrollView {
                 VStack(spacing: 25) {
                     // Header
                     VStack(spacing: 10) {
                         Text("Your Reading")
-                            .font(.system(size: 32, weight: .light, design: .serif))
-                            .foregroundColor(.white)
+                            .font(AppTheme.serifFont(size: 32, weight: .light))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                         
                         if let question = customQuestion {
                             Text("\"\(question)\"")
-                                .font(.system(size: 16, weight: .light, design: .serif))
-                                .foregroundColor(.white.opacity(0.8))
+                                .font(AppTheme.serifFont(size: 16, weight: .light))
+                                .foregroundColor(AppTheme.textSecondary)
                                 .italic()
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal)
@@ -45,7 +47,7 @@ struct SummaryView: View {
                         
                         Text(Date().formatted(date: .long, time: .omitted))
                             .font(.system(size: 14, weight: .light))
-                            .foregroundColor(.white.opacity(0.6))
+                            .foregroundColor(AppTheme.gold.opacity(0.7))
                     }
                     .padding(.top, 20)
                     
@@ -79,7 +81,7 @@ struct SummaryView: View {
                     dismiss()
                 } label: {
                     Image(systemName: "xmark")
-                        .foregroundColor(.white)
+                        .foregroundStyle(AppTheme.goldGradient)
                 }
             }
             
@@ -88,7 +90,7 @@ struct SummaryView: View {
                 Button("Done") {
                     isNotesFocused = false
                 }
-                .foregroundColor(.white)
+                .foregroundStyle(AppTheme.goldGradient)
             }
         }
         .contentShape(Rectangle())
@@ -100,8 +102,8 @@ struct SummaryView: View {
     private var spreadLayoutView: some View {
         VStack(spacing: 15) {
             Text(spreadType.rawValue)
-                .font(.system(size: 20, weight: .medium, design: .serif))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 20, weight: .medium))
+                .foregroundStyle(AppTheme.goldGradient)
             
             // Simple grid layout for cards
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: min(drawnCards.count, 3)), spacing: 15) {
@@ -112,7 +114,7 @@ struct SummaryView: View {
                         
                         Text(drawnCard.position.name)
                             .font(.system(size: 10, weight: .light))
-                            .foregroundColor(.white.opacity(0.8))
+                            .foregroundColor(AppTheme.textSecondary)
                             .lineLimit(1)
                     }
                 }
@@ -121,10 +123,10 @@ struct SummaryView: View {
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white.opacity(0.05))
+                .fill(AppTheme.darkNavy.opacity(0.4))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
     }
@@ -132,21 +134,21 @@ struct SummaryView: View {
     private var overallSummarySection: some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("Overall Insight")
-                .font(.system(size: 22, weight: .medium, design: .serif))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 22, weight: .medium))
+                .foregroundStyle(AppTheme.goldGradient)
             
             Text(TarotInterpretations.spreadSummary(for: drawnCards, category: category, spreadType: spreadType))
                 .font(.system(size: 16, weight: .light))
-                .foregroundColor(.white.opacity(0.9))
+                .foregroundColor(AppTheme.textPrimary)
                 .lineSpacing(6)
         }
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white.opacity(0.1))
+                .fill(AppTheme.darkNavy.opacity(0.6))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
     }
@@ -154,27 +156,31 @@ struct SummaryView: View {
     private var notesSection: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Your Reflections")
-                .font(.system(size: 20, weight: .medium, design: .serif))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 20, weight: .medium))
+                .foregroundStyle(AppTheme.goldGradient)
             
             TextEditor(text: $notes)
                 .frame(minHeight: 120)
                 .padding(12)
-                .background(Color.white.opacity(0.1))
+                .background(AppTheme.darkNavy.opacity(0.4))
                 .cornerRadius(10)
-                .foregroundColor(.white)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+                .foregroundColor(AppTheme.textPrimary)
                 .font(.system(size: 16))
                 .scrollContentBackground(.hidden)
                 .focused($isNotesFocused)
-                .tint(.white)
+                .tint(AppTheme.gold)
         }
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white.opacity(0.05))
+                .fill(AppTheme.darkNavy.opacity(0.3))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
                 )
         )
     }
@@ -189,18 +195,17 @@ struct SummaryView: View {
                     Image(systemName: sessionSaved ? "checkmark.circle.fill" : "square.and.arrow.down")
                     Text(sessionSaved ? "Reading Saved" : "Save Reading")
                 }
-                .font(.system(size: 18, weight: .medium))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 18, weight: .semibold))
+                .foregroundColor(sessionSaved ? Color.green : AppTheme.deepNavy)
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(
-                    LinearGradient(
-                        colors: sessionSaved ? [Color.green.opacity(0.6), Color.green.opacity(0.6)] : [Color.purple.opacity(0.6), Color.blue.opacity(0.6)],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
+                    sessionSaved ? 
+                    LinearGradient(colors: [Color.green.opacity(0.3)], startPoint: .leading, endPoint: .trailing) :
+                    AppTheme.goldGradient
                 )
                 .cornerRadius(15)
+                .shadow(color: sessionSaved ? Color.green.opacity(0.3) : AppTheme.gold.opacity(0.5), radius: 10)
             }
             .disabled(sessionSaved)
             
@@ -212,13 +217,13 @@ struct SummaryView: View {
                     Image(systemName: "square.and.arrow.up")
                     Text("Share Reading")
                 }
-                .font(.system(size: 18, weight: .medium))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 18, weight: .medium))
+                .foregroundStyle(AppTheme.goldGradient)
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white.opacity(0.4), lineWidth: 2)
+                        .stroke(AppTheme.gold.opacity(0.6), lineWidth: 2)
                 )
             }
             
@@ -228,7 +233,7 @@ struct SummaryView: View {
             } label: {
                 Text("Return to Start")
                     .font(.system(size: 16, weight: .light))
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundColor(AppTheme.textSecondary)
                     .padding()
             }
         }
@@ -271,18 +276,18 @@ struct CardSummaryCard: View {
             HStack {
                 VStack(alignment: .leading, spacing: 5) {
                     Text("\(index). \(drawnCard.position.name)")
-                        .font(.system(size: 18, weight: .medium, design: .serif))
-                        .foregroundColor(.white)
+                        .font(AppTheme.serifFont(size: 18, weight: .medium))
+                        .foregroundStyle(AppTheme.goldGradient)
                     
                     HStack {
                         Text(drawnCard.card.name)
                             .font(.system(size: 16, weight: .semibold))
-                            .foregroundColor(.white.opacity(0.9))
+                            .foregroundColor(AppTheme.textPrimary)
                         
                         if drawnCard.isReversed {
                             Text("(R)")
                                 .font(.system(size: 14, weight: .light))
-                                .foregroundColor(.white.opacity(0.6))
+                                .foregroundColor(AppTheme.gold.opacity(0.7))
                         }
                     }
                 }
@@ -295,16 +300,16 @@ struct CardSummaryCard: View {
             
             Text(drawnCard.card.interpretation(for: drawnCard.category, reversed: drawnCard.isReversed))
                 .font(.system(size: 14, weight: .light))
-                .foregroundColor(.white.opacity(0.8))
+                .foregroundColor(AppTheme.textSecondary)
                 .lineSpacing(5)
         }
         .padding(15)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white.opacity(0.08))
+                .fill(AppTheme.darkNavy.opacity(0.5))
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.white.opacity(0.15), lineWidth: 1)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
     }

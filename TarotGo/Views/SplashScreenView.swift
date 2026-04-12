@@ -18,77 +18,89 @@ struct SplashScreenView: View {
     
     var body: some View {
         ZStack {
-            // Animated gradient background
-            LinearGradient(
-                colors: [
-                    Color(red: 0.1, green: 0.0, blue: 0.2),
-                    Color(red: 0.05, green: 0.0, blue: 0.15),
-                    Color.black
-                ],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
+            // Elegant background matching app icon
+            AppTheme.backgroundGradient
+                .ignoresSafeArea()
             
-            // Particles
+            // Golden particles
             ParticleSystemView()
                 .opacity(particlesOpacity)
             
             VStack(spacing: 30) {
-                // Logo/Icon
+                // App Icon
                 ZStack {
-                    // Outer glow
+                    // Outer golden glow
                     Circle()
                         .fill(
                             RadialGradient(
                                 colors: [
-                                    Color.purple.opacity(0.3),
+                                    AppTheme.gold.opacity(0.4),
+                                    AppTheme.darkGold.opacity(0.2),
                                     Color.clear
                                 ],
                                 center: .center,
-                                startRadius: 50,
-                                endRadius: 150
+                                startRadius: 60,
+                                endRadius: 180
                             )
                         )
-                        .frame(width: 300, height: 300)
-                        .blur(radius: 20)
+                        .frame(width: 360, height: 360)
+                        .blur(radius: 30)
                     
-                    // Main icon
-                    ZStack {
-                        // Background circle
-                        Circle()
-                            .fill(
-                                LinearGradient(
-                                    colors: [Color.purple, Color.blue],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
+                    // Inner glow
+                    Circle()
+                        .fill(
+                            RadialGradient(
+                                colors: [
+                                    AppTheme.lightGold.opacity(0.3),
+                                    Color.clear
+                                ],
+                                center: .center,
+                                startRadius: 30,
+                                endRadius: 100
                             )
-                            .frame(width: 140, height: 140)
-                        
-                        // Icon
-                        Image(systemName: "moon.stars.fill")
-                            .font(.system(size: 70))
-                            .foregroundColor(.white)
-                            .rotationEffect(.degrees(rotation))
-                    }
-                    .shadow(color: Color.purple.opacity(0.5), radius: 20)
+                        )
+                        .frame(width: 200, height: 200)
+                        .blur(radius: 15)
+                    
+                    // App icon image
+                    Image("tarotgo512")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 160, height: 160)
+                        .cornerRadius(35)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 35)
+                                .stroke(AppTheme.goldGradient, lineWidth: 3)
+                        )
+                        .shadow(color: AppTheme.gold.opacity(0.5), radius: 20, x: 0, y: 10)
+                        .rotationEffect(.degrees(rotation))
                 }
                 .scaleEffect(scale)
                 .opacity(opacity)
                 
-                // App name
+                // App name with gold styling
                 if showText {
-                    VStack(spacing: 10) {
+                    VStack(spacing: 12) {
                         Text("TarotGo")
-                            .font(.system(size: 48, weight: .thin, design: .serif))
-                            .foregroundColor(.white)
+                            .font(AppTheme.serifFont(size: 52, weight: .regular))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
                             .transition(.opacity.combined(with: .scale))
                         
-                        Text("Your Journey Begins")
-                            .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.white.opacity(0.7))
-                            .transition(.opacity.combined(with: .move(edge: .bottom)))
+                        HStack(spacing: 8) {
+                            Image(systemName: "star.fill")
+                                .font(.system(size: 8))
+                                .foregroundColor(AppTheme.gold)
+                            
+                            Text("Your Journey Begins")
+                                .font(.system(size: 16, weight: .light))
+                                .foregroundColor(AppTheme.textSecondary)
+                            
+                            Image(systemName: "star.fill")
+                                .font(.system(size: 8))
+                                .foregroundColor(AppTheme.gold)
+                        }
+                        .transition(.opacity.combined(with: .move(edge: .bottom)))
                     }
                 }
             }
@@ -141,11 +153,31 @@ struct ParticleSystemView: View {
         GeometryReader { geometry in
             ZStack {
                 ForEach(particles) { particle in
-                    Circle()
-                        .fill(Color.white.opacity(particle.opacity))
-                        .frame(width: particle.size, height: particle.size)
-                        .position(particle.position)
-                        .blur(radius: particle.blur)
+                    let isGold = particle.id.hashValue % 3 == 0
+                    
+                    ZStack {
+                        if isGold {
+                            Circle()
+                                .fill(
+                                    RadialGradient(
+                                        colors: [
+                                            AppTheme.gold.opacity(0.4),
+                                            Color.clear
+                                        ],
+                                        center: .center,
+                                        startRadius: 0,
+                                        endRadius: particle.size * 2
+                                    )
+                                )
+                                .frame(width: particle.size * 3, height: particle.size * 3)
+                        }
+                        
+                        Image(systemName: isGold ? "star.fill" : "circle.fill")
+                            .font(.system(size: particle.size))
+                            .foregroundColor(isGold ? AppTheme.gold : Color.white.opacity(particle.opacity))
+                    }
+                    .position(particle.position)
+                    .blur(radius: particle.blur)
                 }
             }
             .onAppear {
@@ -155,15 +187,15 @@ struct ParticleSystemView: View {
     }
     
     private func generateParticles(in size: CGSize) {
-        particles = (0..<80).map { _ in
+        particles = (0..<100).map { _ in
             Particle(
                 position: CGPoint(
                     x: CGFloat.random(in: 0...size.width),
                     y: CGFloat.random(in: 0...size.height)
                 ),
-                size: CGFloat.random(in: 1...4),
-                opacity: Double.random(in: 0.1...0.5),
-                blur: CGFloat.random(in: 0...2)
+                size: CGFloat.random(in: 2...6),
+                opacity: Double.random(in: 0.2...0.6),
+                blur: CGFloat.random(in: 0...1)
             )
         }
     }

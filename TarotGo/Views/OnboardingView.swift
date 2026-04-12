@@ -17,33 +17,45 @@ struct OnboardingView: View {
     var body: some View {
         ZStack {
             // Animated background
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             ScrollView {
                 VStack(spacing: 30) {
                     Spacer()
                         .frame(height: 50)
                     
-                    // Welcome text
+                    // Welcome text with gold styling
                     VStack(spacing: 15) {
                         Text("Welcome")
-                            .font(.system(size: 42, weight: .thin, design: .serif))
-                            .foregroundColor(.white)
+                            .font(AppTheme.serifFont(size: 42, weight: .medium))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                         
-                        Text("Take a deep breath and center yourself")
-                            .font(.system(size: 18, weight: .light))
-                            .foregroundColor(.white.opacity(0.8))
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal)
+                        HStack(spacing: 8) {
+                            Rectangle()
+                                .fill(AppTheme.gold.opacity(0.5))
+                                .frame(width: 30, height: 1)
+                            
+                            Text("Take a deep breath and center yourself")
+                                .font(.system(size: 18, weight: .light))
+                                .foregroundColor(AppTheme.textSecondary)
+                            
+                            Rectangle()
+                                .fill(AppTheme.gold.opacity(0.5))
+                                .frame(width: 30, height: 1)
+                        }
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
                     }
                 
                 Spacer()
                 
-                // Category selection
+                // Category selection with gold accent
                 VStack(spacing: 20) {
                     Text("What brings you here today?")
-                        .font(.system(size: 22, weight: .light, design: .serif))
-                        .foregroundColor(.white)
+                        .font(AppTheme.serifFont(size: 22, weight: .light))
+                        .foregroundColor(AppTheme.textPrimary)
                     
                     VStack(spacing: 15) {
                         ForEach(IntentionCategory.allCases, id: \.self) { category in
@@ -64,9 +76,19 @@ struct OnboardingView: View {
                 // Optional custom question
                 if showQuestionField {
                     VStack(spacing: 15) {
-                        Text("You may ask a specific question")
-                            .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.white.opacity(0.7))
+                        HStack(spacing: 8) {
+                            Image(systemName: "star.fill")
+                                .font(.system(size: 8))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                            
+                            Text("You may ask a specific question")
+                                .font(.system(size: 16, weight: .light))
+                                .foregroundColor(AppTheme.textSecondary)
+                            
+                            Image(systemName: "star.fill")
+                                .font(.system(size: 8))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        }
                         
                         TextField("What would you like to know?", text: $customQuestion)
                             .textFieldStyle(MysticTextFieldStyle())
@@ -89,20 +111,23 @@ struct OnboardingView: View {
                         SoundService.shared.play(.success, volume: 0.6)
                         navigateToReading = true
                     } label: {
-                        Text("Begin Your Reading")
-                            .font(.system(size: 18, weight: .medium))
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(
-                                LinearGradient(
-                                    colors: [Color.purple.opacity(0.6), Color.blue.opacity(0.6)],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
-                            .cornerRadius(15)
-                            .padding(.horizontal, 30)
+                        HStack(spacing: 10) {
+                            Image(systemName: "star.fill")
+                                .font(.system(size: 14))
+                            
+                            Text("Begin Your Reading")
+                                .font(AppTheme.serifFont(size: 18, weight: .semibold))
+                            
+                            Image(systemName: "star.fill")
+                                .font(.system(size: 14))
+                        }
+                        .foregroundColor(AppTheme.deepNavy)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(AppTheme.goldGradient)
+                        .cornerRadius(15)
+                        .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
+                        .padding(.horizontal, 30)
                     }
                     .transition(.opacity.combined(with: .move(edge: .bottom)))
                 }
@@ -153,26 +178,27 @@ struct CategoryButton: View {
         }) {
             VStack(alignment: .leading, spacing: 5) {
                 Text(category.rawValue)
-                    .font(.system(size: 20, weight: .medium, design: .serif))
-                    .foregroundColor(.white)
+                    .font(AppTheme.serifFont(size: 20, weight: .medium))
+                    .foregroundStyle(isSelected ? AppTheme.goldGradient : LinearGradient(colors: [.white], startPoint: .leading, endPoint: .trailing))
                 
                 Text(category.description)
                     .font(.system(size: 14, weight: .light))
-                    .foregroundColor(.white.opacity(0.7))
+                    .foregroundColor(isSelected ? AppTheme.textSecondary : AppTheme.textSecondary.opacity(0.7))
                     .lineLimit(2)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(isSelected ? Color.white.opacity(0.2) : Color.white.opacity(0.1))
+                    .fill(isSelected ? AppTheme.cardGradient : LinearGradient(colors: [Color.white.opacity(0.08)], startPoint: .top, endPoint: .bottom))
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
                             .stroke(
-                                isSelected ? Color.white.opacity(0.6) : Color.white.opacity(0.3),
+                                isSelected ? AppTheme.gold : AppTheme.gold.opacity(0.3),
                                 lineWidth: isSelected ? 2 : 1
                             )
                     )
+                    .shadow(color: isSelected ? AppTheme.gold.opacity(0.4) : .clear, radius: 8)
             )
         }
         .scaleEffect(isSelected ? 1.02 : 1.0)
@@ -186,15 +212,15 @@ struct MysticTextFieldStyle: TextFieldStyle {
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.white.opacity(0.15))
+                    .fill(AppTheme.darkNavy.opacity(0.6))
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.white.opacity(0.3), lineWidth: 1)
+                            .stroke(AppTheme.gold.opacity(0.4), lineWidth: 1)
                     )
             )
             .foregroundColor(.white)
             .font(.system(size: 16))
-            .tint(.white)
+            .tint(AppTheme.gold)
             .autocorrectionDisabled()
     }
 }

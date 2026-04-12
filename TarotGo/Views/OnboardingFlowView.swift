@@ -17,25 +17,25 @@ struct OnboardingFlowView: View {
             icon: "moon.stars.fill",
             title: "Welcome to TarotGo",
             description: "Your personal guide to the ancient wisdom of tarot cards. Discover insights and guidance whenever you need it.",
-            accentColor: .purple
+            accentColor: AppTheme.gold
         ),
         OnboardingPage(
             icon: "hand.point.up.fill",
             title: "Physical Connection",
             description: "Experience the ritual through touch. Long press gestures create a deeper, more meaningful connection with your reading.",
-            accentColor: .blue
+            accentColor: AppTheme.lightGold
         ),
         OnboardingPage(
             icon: "sparkles",
             title: "Personalized Readings",
             description: "Choose from different spreads and categories. Each reading is tailored to your specific question and intention.",
-            accentColor: .indigo
+            accentColor: AppTheme.mysticalPurple
         ),
         OnboardingPage(
             icon: "book.fill",
             title: "Track Your Journey",
             description: "Save your readings and reflections. Watch patterns emerge and deepen your understanding over time.",
-            accentColor: .cyan
+            accentColor: AppTheme.darkGold
         )
     ]
     
@@ -81,20 +81,26 @@ struct OnboardingFlowView: View {
                         Button {
                             completeOnboarding()
                         } label: {
-                            Text("Get Started")
-                                .font(.system(size: 18, weight: .semibold))
-                                .foregroundColor(.white)
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(
-                                    LinearGradient(
-                                        colors: [Color.purple, Color.blue],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
-                                .cornerRadius(15)
-                                .shadow(color: Color.purple.opacity(0.5), radius: 10)
+                            HStack(spacing: 10) {
+                                Image(systemName: "star.fill")
+                                    .font(.system(size: 16))
+                                
+                                Text("Get Started")
+                                    .font(AppTheme.serifFont(size: 18, weight: .semibold))
+                                
+                                Image(systemName: "star.fill")
+                                    .font(.system(size: 16))
+                            }
+                            .foregroundColor(AppTheme.deepNavy)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(AppTheme.goldGradient)
+                            .cornerRadius(15)
+                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 15, x: 0, y: 8)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(AppTheme.lightGold, lineWidth: 1)
+                            )
                         }
                         .transition(.opacity.combined(with: .move(edge: .bottom)))
                         .padding(.horizontal, 30)
@@ -164,56 +170,78 @@ struct OnboardingPageView: View {
         VStack(spacing: 40) {
             Spacer()
             
-            // Icon
+            // Icon with elegant gold styling
             ZStack {
-                // Glow effect
+                // Outer golden glow
                 Circle()
                     .fill(
                         RadialGradient(
                             colors: [
-                                page.accentColor.opacity(0.3),
+                                page.accentColor.opacity(0.4),
+                                page.accentColor.opacity(0.2),
                                 Color.clear
                             ],
                             center: .center,
-                            startRadius: 40,
-                            endRadius: 120
+                            startRadius: 50,
+                            endRadius: 150
                         )
                     )
-                    .frame(width: 240, height: 240)
-                    .blur(radius: 20)
+                    .frame(width: 300, height: 300)
+                    .blur(radius: 25)
+                
+                // Gold ring
+                Circle()
+                    .stroke(
+                        LinearGradient(
+                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 3
+                    )
+                    .frame(width: 130, height: 130)
+                    .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                 
                 // Background circle
                 Circle()
-                    .fill(
-                        LinearGradient(
-                            colors: [page.accentColor, page.accentColor.opacity(0.6)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
+                    .fill(AppTheme.cardGradient)
                     .frame(width: 120, height: 120)
                 
                 // Icon
                 Image(systemName: page.icon)
                     .font(.system(size: 60))
-                    .foregroundColor(.white)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [page.accentColor, page.accentColor.opacity(0.8)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
                     .rotationEffect(.degrees(iconRotation))
+                    .shadow(color: page.accentColor.opacity(0.5), radius: 5)
             }
             .scaleEffect(iconScale)
-            .shadow(color: page.accentColor.opacity(0.5), radius: 20)
+            .shadow(color: AppTheme.gold.opacity(0.3), radius: 20, x: 0, y: 10)
             
-            // Text
+            // Text with gold accents
             VStack(spacing: 20) {
                 Text(page.title)
-                    .font(.system(size: 32, weight: .light, design: .serif))
-                    .foregroundColor(.white)
+                    .font(AppTheme.serifFont(size: 32, weight: .medium))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [AppTheme.lightGold, AppTheme.gold],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
                     .multilineTextAlignment(.center)
+                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
                 
                 Text(page.description)
                     .font(.system(size: 16, weight: .light))
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundColor(AppTheme.textSecondary)
                     .multilineTextAlignment(.center)
-                    .lineSpacing(6)
+                    .lineSpacing(8)
                     .padding(.horizontal, 40)
             }
             .opacity(textOpacity)

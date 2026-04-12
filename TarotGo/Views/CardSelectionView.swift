@@ -40,7 +40,8 @@ struct CardSelectionView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             VStack(spacing: 30) {
                 // Progress indicator
@@ -51,15 +52,16 @@ struct CardSelectionView: View {
                     VStack(spacing: 10) {
                         Text("Card \(currentPositionIndex + 1) of \(positions.count)")
                             .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.white.opacity(0.7))
+                            .foregroundColor(AppTheme.gold.opacity(0.8))
                         
                         Text(position.name)
-                            .font(.system(size: 28, weight: .light, design: .serif))
-                            .foregroundColor(.white)
+                            .font(AppTheme.serifFont(size: 28, weight: .light))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                         
                         Text(position.description)
                             .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.white.opacity(0.8))
+                            .foregroundColor(AppTheme.textSecondary)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
                     }
@@ -70,10 +72,20 @@ struct CardSelectionView: View {
                 
                 // Card fan for selection
                 if showInstruction && currentPosition != nil {
-                    Text("Choose a card that calls to you")
-                        .font(.system(size: 18, weight: .light))
-                        .foregroundColor(.white.opacity(0.9))
-                        .padding(.bottom, 20)
+                    HStack(spacing: 8) {
+                        Image(systemName: "sparkles")
+                            .font(.system(size: 12))
+                            .foregroundColor(AppTheme.gold.opacity(0.7))
+                        
+                        Text("Choose a card that calls to you")
+                            .font(.system(size: 18, weight: .light))
+                            .foregroundColor(AppTheme.textPrimary)
+                        
+                        Image(systemName: "sparkles")
+                            .font(.system(size: 12))
+                            .foregroundColor(AppTheme.gold.opacity(0.7))
+                    }
+                    .padding(.bottom, 20)
                 }
                 
                 cardFanView
@@ -103,7 +115,7 @@ struct CardSelectionView: View {
         HStack(spacing: 8) {
             ForEach(0..<positions.count, id: \.self) { index in
                 Capsule()
-                    .fill(index < currentPositionIndex ? Color.white : Color.white.opacity(0.3))
+                    .fill(index < currentPositionIndex ? AppTheme.goldGradient : LinearGradient(colors: [AppTheme.gold.opacity(0.3)], startPoint: .leading, endPoint: .trailing))
                     .frame(height: 4)
                     .frame(maxWidth: .infinity)
             }
@@ -178,33 +190,30 @@ struct CardBackView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
-                .fill(
-                    LinearGradient(
-                        colors: [Color.purple, Color.blue],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
+                .fill(AppTheme.cardGradient)
             
             RoundedRectangle(cornerRadius: 12)
-                .stroke(Color.white.opacity(isSelected ? 1.0 : 0.4), lineWidth: isSelected ? 3 : 2)
+                .stroke(
+                    isSelected ? AppTheme.goldGradient : LinearGradient(colors: [AppTheme.gold.opacity(0.4)], startPoint: .topLeading, endPoint: .bottomTrailing),
+                    lineWidth: isSelected ? 3 : 2
+                )
             
             // Decorative pattern
             VStack(spacing: 10) {
                 Image(systemName: "moon.stars.fill")
                     .font(.system(size: 30))
-                    .foregroundColor(.white.opacity(0.4))
+                    .foregroundStyle(AppTheme.goldGradient.opacity(0.4))
                 
                 Rectangle()
-                    .fill(Color.white.opacity(0.3))
+                    .fill(AppTheme.gold.opacity(0.5))
                     .frame(width: 40, height: 2)
                 
                 Image(systemName: "sparkles")
                     .font(.system(size: 20))
-                    .foregroundColor(.white.opacity(0.4))
+                    .foregroundStyle(AppTheme.goldGradient.opacity(0.4))
             }
         }
-        .shadow(color: isSelected ? Color.white.opacity(0.5) : Color.clear, radius: 10)
+        .shadow(color: isSelected ? AppTheme.gold.opacity(0.6) : Color.clear, radius: 15)
     }
 }
 

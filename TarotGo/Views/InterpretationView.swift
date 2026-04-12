@@ -29,7 +29,8 @@ struct InterpretationView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             ScrollView {
                 VStack(spacing: 30) {
@@ -40,13 +41,14 @@ struct InterpretationView: View {
                         // Position name
                         VStack(spacing: 10) {
                             Text(card.position.name)
-                                .font(.system(size: 28, weight: .light, design: .serif))
-                                .foregroundColor(.white)
+                                .font(AppTheme.serifFont(size: 28, weight: .light))
+                                .foregroundStyle(AppTheme.goldGradient)
+                                .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                             
                             if !isCardRevealed {
                                 Text("Tap to reveal when you're ready")
                                     .font(.system(size: 16, weight: .light))
-                                    .foregroundColor(.white.opacity(0.7))
+                                    .foregroundColor(AppTheme.textSecondary.opacity(0.8))
                             }
                         }
                         .padding(.top, 20)
@@ -96,7 +98,7 @@ struct InterpretationView: View {
         HStack(spacing: 8) {
             ForEach(0..<drawnCards.count, id: \.self) { index in
                 Capsule()
-                    .fill(index <= currentCardIndex ? Color.white : Color.white.opacity(0.3))
+                    .fill(index <= currentCardIndex ? AppTheme.goldGradient : LinearGradient(colors: [AppTheme.gold.opacity(0.3)], startPoint: .leading, endPoint: .trailing))
                     .frame(height: 4)
                     .frame(maxWidth: .infinity)
             }
@@ -121,13 +123,13 @@ struct InterpretationView: View {
                 VStack(alignment: .leading, spacing: 10) {
                     HStack {
                         Text(card.card.name)
-                            .font(.system(size: 24, weight: .medium, design: .serif))
-                            .foregroundColor(.white)
+                            .font(AppTheme.serifFont(size: 24, weight: .medium))
+                            .foregroundStyle(AppTheme.goldGradient)
                         
                         if card.isReversed {
                             Text("(Reversed)")
                                 .font(.system(size: 16, weight: .light))
-                                .foregroundColor(.white.opacity(0.7))
+                                .foregroundColor(AppTheme.gold.opacity(0.8))
                         }
                     }
                     
@@ -135,7 +137,7 @@ struct InterpretationView: View {
                     let keywords = card.isReversed ? card.card.reversedKeywords : card.card.keywords
                     Text(keywords.joined(separator: " • "))
                         .font(.system(size: 14, weight: .light))
-                        .foregroundColor(.white.opacity(0.8))
+                        .foregroundColor(AppTheme.gold.opacity(0.9))
                 }
                 .padding(.bottom, 10)
             }
@@ -143,17 +145,17 @@ struct InterpretationView: View {
             // Interpretation text
             Text(interpretationText)
                 .font(.system(size: 18, weight: .light))
-                .foregroundColor(.white)
+                .foregroundColor(AppTheme.textPrimary)
                 .lineSpacing(8)
                 .multilineTextAlignment(.leading)
         }
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white.opacity(0.1))
+                .fill(AppTheme.darkNavy.opacity(0.6))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
         .transition(.opacity.combined(with: .move(edge: .bottom)))
@@ -162,8 +164,8 @@ struct InterpretationView: View {
     private var resonanceSection: some View {
         VStack(spacing: 20) {
             Text("Does this resonate with you?")
-                .font(.system(size: 20, weight: .light, design: .serif))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 20, weight: .light))
+                .foregroundStyle(AppTheme.goldGradient)
             
             VStack(spacing: 12) {
                 ResonanceButton(
@@ -194,10 +196,10 @@ struct InterpretationView: View {
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white.opacity(0.08))
+                .fill(AppTheme.darkNavy.opacity(0.6))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
         .transition(.opacity.combined(with: .move(edge: .bottom)))
@@ -207,19 +209,19 @@ struct InterpretationView: View {
         Button {
             proceedToNextCard()
         } label: {
-            Text(currentCardIndex < drawnCards.count - 1 ? "Continue" : "See Full Reading")
-                .font(.system(size: 18, weight: .medium))
-                .foregroundColor(.white)
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(
-                    LinearGradient(
-                        colors: [Color.purple.opacity(0.6), Color.blue.opacity(0.6)],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .cornerRadius(15)
+            HStack(spacing: 8) {
+                Text(currentCardIndex < drawnCards.count - 1 ? "Continue" : "See Full Reading")
+                    .font(AppTheme.serifFont(size: 18, weight: .semibold))
+                
+                Image(systemName: "arrow.right")
+                    .font(.system(size: 14))
+            }
+            .foregroundColor(AppTheme.deepNavy)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(AppTheme.goldGradient)
+            .cornerRadius(15)
+            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
         }
         .padding(.top, 10)
         .transition(.opacity.combined(with: .move(edge: .bottom)))
@@ -339,23 +341,29 @@ struct TarotCardFrontView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white)
+                .fill(
+                    LinearGradient(
+                        colors: [Color.white, Color(white: 0.95)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
             
             VStack(spacing: 15) {
                 // Card name
                 Text(card.name)
-                    .font(.system(size: 16, weight: .semibold, design: .serif))
-                    .foregroundColor(.black)
+                    .font(AppTheme.serifFont(size: 16, weight: .semibold))
+                    .foregroundColor(AppTheme.deepNavy)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
                     .padding(.horizontal, 10)
                 
-                // Card image placeholder (you'll add real images later)
+                // Card image placeholder with gold accents
                 ZStack {
                     Rectangle()
                         .fill(
                             LinearGradient(
-                                colors: [Color.purple.opacity(0.2), Color.blue.opacity(0.2)],
+                                colors: [AppTheme.darkNavy.opacity(0.9), AppTheme.deepNavy],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             )
@@ -363,22 +371,34 @@ struct TarotCardFrontView: View {
                     
                     Image(systemName: cardIcon)
                         .font(.system(size: 50))
-                        .foregroundColor(.purple)
+                        .foregroundStyle(AppTheme.goldGradient)
                 }
                 .frame(height: 180)
                 .cornerRadius(8)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(AppTheme.gold.opacity(0.5), lineWidth: 1)
+                )
                 .padding(.horizontal, 15)
                 
                 // Suit
                 Text(card.suit.rawValue)
                     .font(.system(size: 12, weight: .light))
-                    .foregroundColor(.gray)
+                    .foregroundColor(AppTheme.gold)
             }
             .padding(.vertical, 15)
             
             RoundedRectangle(cornerRadius: 12)
-                .stroke(Color.gray.opacity(0.3), lineWidth: 2)
+                .stroke(
+                    LinearGradient(
+                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 3
+                )
         }
+        .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
         .rotationEffect(.degrees(isReversed ? 180 : 0))
     }
     
@@ -409,21 +429,23 @@ struct ResonanceButton: View {
             HStack(spacing: 12) {
                 Image(systemName: icon)
                     .font(.system(size: 20))
+                    .foregroundStyle(isSelected ? AppTheme.goldGradient : LinearGradient(colors: [AppTheme.textPrimary], startPoint: .leading, endPoint: .trailing))
                 
                 Text(text)
                     .font(.system(size: 16, weight: .medium))
+                    .foregroundColor(isSelected ? AppTheme.textPrimary : AppTheme.textSecondary)
                 
                 Spacer()
             }
-            .foregroundColor(.white)
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(isSelected ? Color.white.opacity(0.2) : Color.white.opacity(0.05))
+                    .fill(isSelected ? AppTheme.cardGradient : LinearGradient(colors: [Color.white.opacity(0.05)], startPoint: .top, endPoint: .bottom))
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(isSelected ? Color.white.opacity(0.6) : Color.white.opacity(0.2), lineWidth: isSelected ? 2 : 1)
+                            .stroke(isSelected ? AppTheme.gold : AppTheme.gold.opacity(0.3), lineWidth: isSelected ? 2 : 1)
                     )
+                    .shadow(color: isSelected ? AppTheme.gold.opacity(0.3) : .clear, radius: 8)
             )
         }
     }

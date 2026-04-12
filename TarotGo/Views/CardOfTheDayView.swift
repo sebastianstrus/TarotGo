@@ -21,7 +21,8 @@ struct CardOfTheDayView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             ScrollView {
                 VStack(spacing: 30) {
@@ -29,15 +30,17 @@ struct CardOfTheDayView: View {
                     VStack(spacing: 10) {
                         Image(systemName: "sun.max.fill")
                             .font(.system(size: 50))
-                            .foregroundColor(.yellow.opacity(0.8))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                         
                         Text("Card of the Day")
-                            .font(.system(size: 32, weight: .light, design: .serif))
-                            .foregroundColor(.white)
+                            .font(AppTheme.serifFont(size: 32, weight: .light))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                         
                         Text(Date().formatted(date: .long, time: .omitted))
                             .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.white.opacity(0.7))
+                            .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
                     .padding(.top, 30)
                     
@@ -88,13 +91,13 @@ struct CardOfTheDayView: View {
     private var instructionView: some View {
         VStack(spacing: 15) {
             Text("Take a moment to center yourself")
-                .font(.system(size: 20, weight: .light, design: .serif))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 20, weight: .light))
+                .foregroundStyle(AppTheme.goldGradient)
                 .multilineTextAlignment(.center)
             
             Text("Place your finger on the card and hold for 3 seconds")
                 .font(.system(size: 16, weight: .light))
-                .foregroundColor(.white.opacity(0.8))
+                .foregroundColor(AppTheme.textSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
         }
@@ -136,26 +139,23 @@ struct CardOfTheDayView: View {
     private var progressIndicator: some View {
         ZStack {
             Circle()
-                .stroke(Color.white.opacity(0.2), lineWidth: 8)
+                .stroke(AppTheme.darkNavy.opacity(0.5), lineWidth: 8)
                 .frame(width: 100, height: 100)
             
             Circle()
                 .trim(from: 0, to: pressProgress / totalPressDuration)
                 .stroke(
-                    LinearGradient(
-                        colors: [Color.yellow, Color.orange],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ),
+                    AppTheme.goldGradient,
                     style: StrokeStyle(lineWidth: 8, lineCap: .round)
                 )
                 .frame(width: 100, height: 100)
                 .rotationEffect(.degrees(-90))
                 .animation(.linear(duration: 0.05), value: pressProgress)
+                .shadow(color: AppTheme.gold.opacity(0.6), radius: 8)
             
             Text("\(Int((pressProgress / totalPressDuration) * 100))%")
-                .font(.system(size: 24, weight: .medium))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 24, weight: .medium))
+                .foregroundStyle(AppTheme.goldGradient)
         }
     }
     
@@ -165,54 +165,54 @@ struct CardOfTheDayView: View {
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
                     Text(card.name)
-                        .font(.system(size: 26, weight: .medium, design: .serif))
-                        .foregroundColor(.white)
+                        .font(AppTheme.serifFont(size: 26, weight: .medium))
+                        .foregroundStyle(AppTheme.goldGradient)
                     
                     if isReversed {
                         Text("(Reversed)")
                             .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.white.opacity(0.7))
+                            .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
                 }
                 
                 let keywords = isReversed ? card.reversedKeywords : card.keywords
                 Text(keywords.joined(separator: " • "))
                     .font(.system(size: 14, weight: .light))
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundColor(AppTheme.gold.opacity(0.9))
             }
             .padding(.bottom, 10)
             
             // Today's message
             VStack(alignment: .leading, spacing: 10) {
                 Text("Today's Message")
-                    .font(.system(size: 20, weight: .medium, design: .serif))
-                    .foregroundColor(.white)
+                    .font(AppTheme.serifFont(size: 20, weight: .medium))
+                    .foregroundStyle(AppTheme.goldGradient)
                 
                 Text(card.interpretation(for: .general, reversed: isReversed))
                     .font(.system(size: 16, weight: .light))
-                    .foregroundColor(.white.opacity(0.9))
+                    .foregroundColor(AppTheme.textPrimary)
                     .lineSpacing(8)
             }
             
             // Daily reflection prompt
             VStack(alignment: .leading, spacing: 10) {
                 Text("Reflect")
-                    .font(.system(size: 18, weight: .medium, design: .serif))
-                    .foregroundColor(.white)
+                    .font(AppTheme.serifFont(size: 18, weight: .medium))
+                    .foregroundStyle(AppTheme.goldGradient)
                 
                 Text(reflectionPrompt(for: card))
                     .font(.system(size: 15, weight: .light))
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundColor(AppTheme.textSecondary)
                     .lineSpacing(6)
             }
         }
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white.opacity(0.1))
+                .fill(AppTheme.darkNavy.opacity(0.6))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
         .transition(.opacity.combined(with: .move(edge: .bottom)))

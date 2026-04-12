@@ -24,7 +24,8 @@ struct HistoryView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             VStack(spacing: 0) {
                 // Header with filter
@@ -57,7 +58,7 @@ struct HistoryView: View {
         HStack {
             Text("Filter:")
                 .font(.system(size: 16, weight: .light))
-                .foregroundColor(.white.opacity(0.8))
+                .foregroundColor(AppTheme.textSecondary)
             
             Menu {
                 Button("All Readings") {
@@ -78,12 +79,12 @@ struct HistoryView: View {
                     Image(systemName: "chevron.down")
                         .font(.system(size: 12))
                 }
-                .foregroundColor(.white)
+                .foregroundColor(AppTheme.deepNavy)
                 .padding(.horizontal, 15)
                 .padding(.vertical, 8)
                 .background(
                     Capsule()
-                        .fill(Color.white.opacity(0.2))
+                        .fill(AppTheme.goldGradient)
                 )
             }
             
@@ -91,7 +92,7 @@ struct HistoryView: View {
             
             Text("\(filteredSessions.count) reading\(filteredSessions.count == 1 ? "" : "s")")
                 .font(.system(size: 14, weight: .light))
-                .foregroundColor(.white.opacity(0.6))
+                .foregroundColor(AppTheme.gold.opacity(0.7))
         }
         .padding()
     }
@@ -100,15 +101,15 @@ struct HistoryView: View {
         VStack(spacing: 20) {
             Image(systemName: "book.closed")
                 .font(.system(size: 60))
-                .foregroundColor(.white.opacity(0.3))
+                .foregroundStyle(AppTheme.goldGradient.opacity(0.4))
             
             Text("No readings yet")
-                .font(.system(size: 24, weight: .light, design: .serif))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 24, weight: .light))
+                .foregroundStyle(AppTheme.goldGradient)
             
             Text("Your saved readings will appear here")
                 .font(.system(size: 16, weight: .light))
-                .foregroundColor(.white.opacity(0.7))
+                .foregroundColor(AppTheme.textSecondary)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
@@ -122,25 +123,25 @@ struct SessionCard: View {
             HStack {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(session.category.rawValue)
-                        .font(.system(size: 18, weight: .semibold, design: .serif))
-                        .foregroundColor(.white)
+                        .font(AppTheme.serifFont(size: 18, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
                     
                     Text(session.date.formatted(date: .long, time: .shortened))
                         .font(.system(size: 14, weight: .light))
-                        .foregroundColor(.white.opacity(0.7))
+                        .foregroundColor(AppTheme.gold.opacity(0.7))
                 }
                 
                 Spacer()
                 
                 Image(systemName: "chevron.right")
                     .font(.system(size: 14))
-                    .foregroundColor(.white.opacity(0.5))
+                    .foregroundColor(AppTheme.gold.opacity(0.6))
             }
             
             if let question = session.customQuestion {
                 Text("\"\(question)\"")
-                    .font(.system(size: 14, weight: .light, design: .serif))
-                    .foregroundColor(.white.opacity(0.8))
+                    .font(AppTheme.serifFont(size: 14, weight: .light))
+                    .foregroundColor(AppTheme.textSecondary)
                     .italic()
                     .lineLimit(2)
             }
@@ -156,10 +157,14 @@ struct SessionCard: View {
                     if session.drawnCards.count > 5 {
                         Text("+\(session.drawnCards.count - 5)")
                             .font(.system(size: 14, weight: .light))
-                            .foregroundColor(.white.opacity(0.6))
+                            .foregroundColor(AppTheme.gold)
                             .frame(width: 50, height: 75)
-                            .background(Color.white.opacity(0.1))
+                            .background(AppTheme.darkNavy.opacity(0.5))
                             .cornerRadius(8)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                            )
                     }
                 }
             }
@@ -167,24 +172,24 @@ struct SessionCard: View {
             HStack {
                 Label(session.spreadType.rawValue, systemImage: "square.grid.3x3")
                     .font(.system(size: 12, weight: .light))
-                    .foregroundColor(.white.opacity(0.6))
+                    .foregroundColor(AppTheme.gold.opacity(0.7))
                 
                 Spacer()
                 
                 if session.notes != nil {
                     Image(systemName: "note.text")
                         .font(.system(size: 12))
-                        .foregroundColor(.white.opacity(0.6))
+                        .foregroundColor(AppTheme.gold.opacity(0.7))
                 }
             }
         }
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white.opacity(0.1))
+                .fill(AppTheme.darkNavy.opacity(0.5))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
     }
@@ -206,20 +211,22 @@ struct SessionDetailView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             ScrollView {
                 VStack(spacing: 25) {
                     // Header
                     VStack(spacing: 10) {
                         Text(session.category.rawValue)
-                            .font(.system(size: 32, weight: .light, design: .serif))
-                            .foregroundColor(.white)
+                            .font(AppTheme.serifFont(size: 32, weight: .light))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                         
                         if let question = session.customQuestion {
                             Text("\"\(question)\"")
-                                .font(.system(size: 16, weight: .light, design: .serif))
-                                .foregroundColor(.white.opacity(0.8))
+                                .font(AppTheme.serifFont(size: 16, weight: .light))
+                                .foregroundColor(AppTheme.textSecondary)
                                 .italic()
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal)
@@ -227,15 +234,15 @@ struct SessionDetailView: View {
                         
                         Text(session.date.formatted(date: .long, time: .shortened))
                             .font(.system(size: 14, weight: .light))
-                            .foregroundColor(.white.opacity(0.6))
+                            .foregroundColor(AppTheme.gold.opacity(0.7))
                     }
                     .padding(.top, 20)
                     
                     // Spread visualization
                     VStack(spacing: 15) {
                         Text(session.spreadType.rawValue)
-                            .font(.system(size: 20, weight: .medium, design: .serif))
-                            .foregroundColor(.white)
+                            .font(AppTheme.serifFont(size: 20, weight: .medium))
+                            .foregroundStyle(AppTheme.goldGradient)
                         
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: min(session.drawnCards.count, 3)), spacing: 15) {
                             ForEach(session.drawnCards) { drawnCard in
@@ -245,7 +252,7 @@ struct SessionDetailView: View {
                                     
                                     Text(drawnCard.position.name)
                                         .font(.system(size: 10, weight: .light))
-                                        .foregroundColor(.white.opacity(0.8))
+                                        .foregroundColor(AppTheme.textSecondary)
                                         .lineLimit(1)
                                 }
                             }
@@ -254,10 +261,10 @@ struct SessionDetailView: View {
                     .padding(20)
                     .background(
                         RoundedRectangle(cornerRadius: 15)
-                            .fill(Color.white.opacity(0.05))
+                            .fill(AppTheme.darkNavy.opacity(0.4))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 15)
-                                    .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                                    .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                             )
                     )
                     
@@ -270,8 +277,8 @@ struct SessionDetailView: View {
                     VStack(alignment: .leading, spacing: 12) {
                         HStack {
                             Text("Your Reflections")
-                                .font(.system(size: 20, weight: .medium, design: .serif))
-                                .foregroundColor(.white)
+                                .font(AppTheme.serifFont(size: 20, weight: .medium))
+                                .foregroundStyle(AppTheme.goldGradient)
                             
                             Spacer()
                             
@@ -283,7 +290,7 @@ struct SessionDetailView: View {
                             } label: {
                                 Text(isEditingNotes ? "Done" : "Edit")
                                     .font(.system(size: 14, weight: .medium))
-                                    .foregroundColor(.white)
+                                    .foregroundStyle(AppTheme.goldGradient)
                             }
                         }
                         
@@ -291,13 +298,17 @@ struct SessionDetailView: View {
                             TextEditor(text: $editedNotes)
                                 .frame(minHeight: 120)
                                 .padding(12)
-                                .background(Color.white.opacity(0.1))
+                                .background(AppTheme.darkNavy.opacity(0.4))
                                 .cornerRadius(10)
-                                .foregroundColor(.white)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                                )
+                                .foregroundColor(AppTheme.textPrimary)
                                 .font(.system(size: 16))
                                 .scrollContentBackground(.hidden)
                                 .focused($isNotesFocused)
-                                .tint(.white)
+                                .tint(AppTheme.gold)
                                 .onAppear {
                                     isNotesFocused = true
                                 }
@@ -305,12 +316,12 @@ struct SessionDetailView: View {
                             if !editedNotes.isEmpty {
                                 Text(editedNotes)
                                     .font(.system(size: 16, weight: .light))
-                                    .foregroundColor(.white.opacity(0.9))
+                                    .foregroundColor(AppTheme.textPrimary)
                                     .lineSpacing(6)
                             } else {
                                 Text("No reflections added")
                                     .font(.system(size: 16, weight: .light))
-                                    .foregroundColor(.white.opacity(0.5))
+                                    .foregroundColor(AppTheme.textSecondary.opacity(0.6))
                                     .italic()
                             }
                         }
@@ -318,10 +329,10 @@ struct SessionDetailView: View {
                     .padding(20)
                     .background(
                         RoundedRectangle(cornerRadius: 15)
-                            .fill(Color.white.opacity(0.05))
+                            .fill(AppTheme.darkNavy.opacity(0.3))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 15)
-                                    .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                                    .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
                             )
                     )
                     
@@ -359,7 +370,7 @@ struct SessionDetailView: View {
                         saveNotes()
                     }
                 }
-                .foregroundColor(.white)
+                .foregroundStyle(AppTheme.goldGradient)
             }
         }
         .contentShape(Rectangle())

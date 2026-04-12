@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @StateObject private var notificationService = NotificationService.shared
+    private let notificationService = NotificationService.shared
     @AppStorage("dailyCardNotificationEnabled") private var notificationEnabled: Bool = false
     @AppStorage("dailyCardNotificationHour") private var notificationHour: Int = 9
     @AppStorage("dailyCardNotificationMinute") private var notificationMinute: Int = 0
@@ -17,7 +17,8 @@ struct SettingsView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             List {
                 Section {
@@ -25,13 +26,14 @@ struct SettingsView: View {
                         .onChange(of: notificationEnabled) { oldValue, newValue in
                             handleNotificationToggle(newValue)
                         }
+                        .tint(AppTheme.gold)
                     
                     if notificationEnabled {
                         HStack {
                             Text("Reminder Time")
                             Spacer()
                             Text(formattedTime)
-                                .foregroundColor(.secondary)
+                                .foregroundColor(AppTheme.gold.opacity(0.8))
                         }
                         .contentShape(Rectangle())
                         .onTapGesture {
@@ -40,25 +42,42 @@ struct SettingsView: View {
                     }
                 } header: {
                     Text("Notifications")
+                        .foregroundColor(AppTheme.gold)
                 } footer: {
                     Text("Receive a daily reminder to draw your Card of the Day")
+                        .foregroundColor(AppTheme.textSecondary)
                 }
-                .listRowBackground(Color.white.opacity(0.1))
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                        )
+                )
                 
                 Section {
                     HStack {
                         Text("Version")
                         Spacer()
                         Text("1.0.0")
-                            .foregroundColor(.secondary)
+                            .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
                 } header: {
                     Text("About")
+                        .foregroundColor(AppTheme.gold)
                 }
-                .listRowBackground(Color.white.opacity(0.1))
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                        )
+                )
             }
             .scrollContentBackground(.hidden)
-            .foregroundColor(.white)
+            .foregroundColor(AppTheme.textPrimary)
         }
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.large)
@@ -137,7 +156,8 @@ struct TimePickerSheet: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                AnimatedBackgroundView()
+                Color.clear
+                    .background(AnimatedBackgroundView().ignoresSafeArea())
                 
                 VStack {
                     DatePicker(
@@ -160,7 +180,7 @@ struct TimePickerSheet: View {
                     Button("Cancel") {
                         isPresented = false
                     }
-                    .foregroundColor(.white)
+                    .foregroundStyle(AppTheme.goldGradient)
                 }
                 
                 ToolbarItem(placement: .confirmationAction) {
@@ -171,7 +191,7 @@ struct TimePickerSheet: View {
                         isPresented = false
                         onSave()
                     }
-                    .foregroundColor(.white)
+                    .foregroundStyle(AppTheme.goldGradient)
                 }
             }
         }

@@ -31,7 +31,8 @@ struct ShuffleRitualView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             VStack(spacing: 40) {
                 Spacer()
@@ -84,24 +85,28 @@ struct ShuffleRitualView: View {
             switch phase {
             case .instruction:
                 Text("Take a deep breath")
-                    .font(.system(size: 28, weight: .light, design: .serif))
-                    .foregroundColor(.white)
+                    .font(AppTheme.serifFont(size: 28, weight: .light))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                 Text("Place your finger on the deck and hold for 5 seconds while focusing on your question")
                     .font(.system(size: 18, weight: .light))
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundColor(AppTheme.textSecondary)
                     .multilineTextAlignment(.center)
             case .pressing:
                 Text("Focus on your intention...")
-                    .font(.system(size: 24, weight: .light, design: .serif))
-                    .foregroundColor(.white)
+                    .font(AppTheme.serifFont(size: 24, weight: .light))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
             case .shuffling:
                 Text("The cards are being shuffled")
-                    .font(.system(size: 24, weight: .light, design: .serif))
-                    .foregroundColor(.white)
+                    .font(AppTheme.serifFont(size: 24, weight: .light))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
             case .complete:
                 Text("Your deck is ready")
-                    .font(.system(size: 24, weight: .light, design: .serif))
-                    .foregroundColor(.white)
+                    .font(AppTheme.serifFont(size: 24, weight: .light))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
             }
         }
     }
@@ -111,18 +116,13 @@ struct ShuffleRitualView: View {
             // Stack of cards to show depth
             ForEach(0..<5, id: \.self) { index in
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(
-                        LinearGradient(
-                            colors: [Color.purple.opacity(0.3), Color.blue.opacity(0.3)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
+                    .fill(AppTheme.cardGradient)
                     .frame(width: 200, height: 300)
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.white.opacity(0.3), lineWidth: 2)
+                            .stroke(AppTheme.gold.opacity(0.4), lineWidth: 2)
                     )
+                    .shadow(color: AppTheme.gold.opacity(0.2), radius: 5)
                     .offset(x: CGFloat(index) * 3, y: CGFloat(index) * -3)
                     .rotationEffect(.degrees(phase == .shuffling ? shuffleRotation + Double(index * 10) : 0))
                     .offset(x: phase == .shuffling ? shuffleOffset * CGFloat(index) : 0)
@@ -130,25 +130,27 @@ struct ShuffleRitualView: View {
             
             // Top card with mystical pattern
             RoundedRectangle(cornerRadius: 20)
-                .fill(
-                    LinearGradient(
-                        colors: [Color.purple, Color.blue],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
+                .fill(AppTheme.cardGradient)
                 .frame(width: 200, height: 300)
                 .overlay(
                     ZStack {
                         // Mystical symbols
                         Image(systemName: "moon.stars.fill")
                             .font(.system(size: 60))
-                            .foregroundColor(.white.opacity(0.3))
+                            .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
                         
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.white.opacity(0.5), lineWidth: 2)
+                            .stroke(
+                                LinearGradient(
+                                    colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 3
+                            )
                     }
                 )
+                .shadow(color: AppTheme.gold.opacity(0.4), radius: 15)
                 .scaleEffect(isPressed ? 0.95 : 1.0)
                 .rotationEffect(.degrees(phase == .shuffling ? shuffleRotation : 0))
         }
@@ -192,26 +194,23 @@ struct ShuffleRitualView: View {
     private var progressIndicator: some View {
         ZStack {
             Circle()
-                .stroke(Color.white.opacity(0.2), lineWidth: 8)
+                .stroke(AppTheme.darkNavy.opacity(0.5), lineWidth: 8)
                 .frame(width: 100, height: 100)
             
             Circle()
                 .trim(from: 0, to: pressProgress / totalPressDuration)
                 .stroke(
-                    LinearGradient(
-                        colors: [Color.purple, Color.blue],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ),
+                    AppTheme.goldGradient,
                     style: StrokeStyle(lineWidth: 8, lineCap: .round)
                 )
                 .frame(width: 100, height: 100)
                 .rotationEffect(.degrees(-90))
                 .animation(.linear(duration: 0.05), value: pressProgress)
+                .shadow(color: AppTheme.gold.opacity(0.6), radius: 8)
             
             Text("\(Int((pressProgress / totalPressDuration) * 100))%")
-                .font(.system(size: 24, weight: .medium))
-                .foregroundColor(.white)
+                .font(AppTheme.serifFont(size: 24, weight: .medium))
+                .foregroundStyle(AppTheme.goldGradient)
         }
     }
     
