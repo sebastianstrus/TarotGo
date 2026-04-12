@@ -14,6 +14,7 @@ struct SettingsView: View {
     @AppStorage("dailyCardNotificationMinute") private var notificationMinute: Int = 0
     
     @State private var showingTimePicker: Bool = false
+    @State private var toggleState: Bool = false
     
     var body: some View {
         ZStack {
@@ -22,13 +23,13 @@ struct SettingsView: View {
             
             List {
                 Section {
-                    Toggle("Daily Card Reminder", isOn: $notificationEnabled)
-                        .onChange(of: notificationEnabled) { oldValue, newValue in
+                    Toggle("Daily Card Reminder", isOn: $toggleState)
+                        .onChange(of: toggleState) { oldValue, newValue in
                             handleNotificationToggle(newValue)
                         }
                         .tint(AppTheme.gold)
                     
-                    if notificationEnabled {
+                    if toggleState {
                         HStack {
                             Text("Reminder Time")
                             Spacer()
@@ -81,6 +82,9 @@ struct SettingsView: View {
         }
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.large)
+        .onAppear {
+            toggleState = notificationEnabled
+        }
         .sheet(isPresented: $showingTimePicker) {
             TimePickerSheet(
                 hour: $notificationHour,
@@ -114,13 +118,20 @@ struct SettingsView: View {
                 let granted = await notificationService.requestAuthorization()
                 if granted {
                     await scheduleNotification()
+                    await MainActor.run {
+                        notificationEnabled = true
+                    }
                 } else {
                     await MainActor.run {
+                        toggleState = false
                         notificationEnabled = false
                     }
                 }
             } else {
                 notificationService.cancelDailyCardNotification()
+                await MainActor.run {
+                    notificationEnabled = false
+                }
             }
         }
     }

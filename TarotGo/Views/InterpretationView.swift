@@ -350,13 +350,27 @@ struct TarotCardFrontView: View {
                 )
             
             VStack(spacing: 15) {
-                // Card name
-                Text(card.name)
-                    .font(AppTheme.serifFont(size: 16, weight: .semibold))
-                    .foregroundColor(AppTheme.deepNavy)
-                    .multilineTextAlignment(.center)
-                    .lineLimit(2)
-                    .padding(.horizontal, 10)
+                // Card name with reversed indicator
+                HStack(spacing: 5) {
+                    if isReversed {
+                        Image(systemName: "arrow.down.circle.fill")
+                            .font(.system(size: 12))
+                            .foregroundColor(AppTheme.gold)
+                    }
+                    
+                    Text(card.name)
+                        .font(AppTheme.serifFont(size: 16, weight: .semibold))
+                        .foregroundColor(AppTheme.deepNavy)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(2)
+                    
+                    if isReversed {
+                        Image(systemName: "arrow.down.circle.fill")
+                            .font(.system(size: 12))
+                            .foregroundColor(AppTheme.gold)
+                    }
+                }
+                .padding(.horizontal, 10)
                 
                 // Card image placeholder with gold accents
                 ZStack {
@@ -372,12 +386,27 @@ struct TarotCardFrontView: View {
                     Image(systemName: cardIcon)
                         .font(.system(size: 50))
                         .foregroundStyle(AppTheme.goldGradient)
+                    
+                    // Reversed indicator overlay
+                    if isReversed {
+                        VStack {
+                            Spacer()
+                            HStack {
+                                Spacer()
+                                Image(systemName: "arrow.turn.up.forward.iphone.fill")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(AppTheme.gold.opacity(0.7))
+                                    .rotationEffect(.degrees(180))
+                                    .padding(10)
+                            }
+                        }
+                    }
                 }
                 .frame(height: 180)
                 .cornerRadius(8)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
-                        .stroke(AppTheme.gold.opacity(0.5), lineWidth: 1)
+                        .stroke(isReversed ? AppTheme.gold : AppTheme.gold.opacity(0.5), lineWidth: isReversed ? 2 : 1)
                 )
                 .padding(.horizontal, 15)
                 
@@ -399,7 +428,6 @@ struct TarotCardFrontView: View {
                 )
         }
         .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
-        .rotationEffect(.degrees(isReversed ? 180 : 0))
     }
     
     private var cardIcon: String {
