@@ -24,8 +24,8 @@
 "home.newReading.subtitle" = "Odkryj, co odkrywają karty";
 "home.cardOfDay" = "Karta Dnia";
 "home.cardOfDay.subtitle" = "Dzisiejsze wskazówki i wgląd";
-"home.history" = "Historia Wykładów";
-"home.history.subtitle" = "Przejrzyj swoje poprzednie wykłady";
+"home.history" = "Historia Rozdań";
+"home.history.subtitle" = "Przejrzyj swoje poprzednie rozdania";
 "home.settings" = "Ustawienia";
 "home.settings.subtitle" = "Skonfiguruj powiadomienia i preferencje";
 
@@ -45,7 +45,10 @@
 "onboarding.whatBrings" = "Co Cię tu dzisiaj przyprowadziło?";
 "onboarding.optionalQuestion" = "Możesz zadać konkretne pytanie";
 "onboarding.questionPlaceholder" = "Co chciałbyś wiedzieć?";
-"onboarding.beginReading" = "Rozpocznij Wykład";
+"onboarding.beginReading" = "Rozpocznij Rozdanie";
+"onboarding.getStarted" = "Rozpocznij";
+"onboarding.next" = "Dalej";
+"onboarding.skip" = "Pomiń";
 
 // MARK: - Intention Categories
 "category.love" = "Miłość";
@@ -69,6 +72,7 @@
 // MARK: - Card Selection
 "selection.chooseCard" = "Wybierz kartę, która Cię przyciąga";
 "selection.cardOf" = "Karta %d z %d";
+"selection.cardPositionFormat" = "Karta %d z %d";
 
 // MARK: - Interpretation
 "interpretation.tapReveal" = "Dotknij aby odsłonić, gdy będziesz gotowy";
@@ -78,27 +82,29 @@
 "interpretation.resonateUnsure" = "Nie jestem pewien";
 "interpretation.resonateNo" = "To nie pasuje";
 "interpretation.continue" = "Kontynuuj";
-"interpretation.seeFullReading" = "Zobacz Pełny Wykład";
+"interpretation.seeFullReading" = "Zobacz Pełne Rozdanie";
 
 // MARK: - Summary
-"summary.yourReading" = "Twój Wykład";
+"summary.yourReading" = "Twoje Rozdanie";
 "summary.overallInsight" = "Ogólny Wgląd";
 "summary.reflections" = "Twoje Refleksje";
-"summary.saveReading" = "Zapisz Wykład";
-"summary.readingSaved" = "Wykład Zapisany";
-"summary.shareReading" = "Udostępnij Wykład";
+"summary.saveReading" = "Zapisz Rozdanie";
+"summary.readingSaved" = "Rozdanie Zapisane";
+"summary.shareReading" = "Udostępnij Rozdanie";
 "summary.returnToStart" = "Wróć do Początku";
 
 // MARK: - History
-"history.title" = "Historia Wykładów";
+"history.title" = "Historia Rozdań";
 "history.filter" = "Filtruj:";
 "history.all" = "Wszystkie";
-"history.noReadings" = "Brak wykładów";
-"history.noReadings.desc" = "Twoje zapisane wykłady pojawią się tutaj";
-"history.readingCount" = "%d wykład(ów)";
-"history.deleteAlert" = "Usuń Wykład";
-"history.deleteMessage" = "Czy na pewno chcesz usunąć ten wykład? Ta akcja nie może być cofnięta.";
-"history.deleteReading" = "Usuń Wykład";
+"history.allReadings" = "Wszystkie Rozdania";
+"history.noReadings" = "Brak rozdań";
+"history.noReadings.desc" = "Twoje zapisane rozdania pojawią się tutaj";
+"history.readingCount" = "%d rozdań";
+"history.readingCountFormat" = "%d rozdań";
+"history.deleteAlert" = "Usuń Rozdanie";
+"history.deleteMessage" = "Czy na pewno chcesz usunąć to rozdanie? Ta akcja nie może być cofnięta.";
+"history.deleteReading" = "Usuń Rozdanie";
 "history.noReflections" = "Brak dodanych refleksji";
 
 // MARK: - Card of the Day
@@ -117,12 +123,15 @@
 "settings.setReminderTime" = "Ustaw Godzinę Przypomnienia";
 "settings.about" = "O Aplikacji";
 "settings.version" = "Wersja";
+"settings.save" = "Zapisz";
 
 // MARK: - Spread Types
 "spread.singleCard" = "Jedna Karta";
 "spread.threeCard" = "Układ Trzech Kart";
 "spread.celticCross" = "Krzyż Celtycki";
 "spread.relationship" = "Układ Relacji";
+"spread.loveTriangle" = "Trójkąt Miłosny";
+"spread.careerPath" = "Ścieżka Kariery";
 
 // MARK: - Spread Positions
 "position.past" = "Przeszłość";

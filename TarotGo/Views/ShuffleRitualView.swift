@@ -84,26 +84,26 @@ struct ShuffleRitualView: View {
         VStack(spacing: 15) {
             switch phase {
             case .instruction:
-                Text("Take a deep breath")
+                Text(L10n.shuffleTakeBreath)
                     .font(AppTheme.serifFont(size: 28, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
-                Text("Place your finger on the deck and hold for 5 seconds while focusing on your question")
+                Text(L10n.shuffleInstruction)
                     .font(.system(size: 18, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
                     .multilineTextAlignment(.center)
             case .pressing:
-                Text("Focus on your intention...")
+                Text(L10n.shuffleFocusing)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
             case .shuffling:
-                Text("The cards are being shuffled")
+                Text(L10n.shuffleShuffling)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
             case .complete:
-                Text("Your deck is ready")
+                Text(L10n.shuffleReady)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)

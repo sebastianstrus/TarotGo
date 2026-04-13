@@ -13,6 +13,12 @@
 "common.continue" = "Continuar";
 "common.getStarted" = "Comenzar";
 
+// MARK: - Splash Screen
+"splash.journeyBegins" = "Tu Viaje Comienza";
+
+// MARK: - Home
+"home.title" = "Comenzar";
+
 // MARK: - Home
 "home.title" = "TarotGo";
 "home.subtitle" = "Tu compañero personal de tarot";
@@ -42,7 +48,10 @@
 "onboarding.whatBrings" = "¿Qué te trae aquí hoy?";
 "onboarding.optionalQuestion" = "Puedes hacer una pregunta específica";
 "onboarding.questionPlaceholder" = "¿Qué te gustaría saber?";
-"onboarding.beginReading" = "Comenzar tu lectura";
+"onboarding.beginReading" = "Comienza Tu Lectura";
+"onboarding.getStarted" = "Comenzar";
+"onboarding.next" = "Siguiente";
+"onboarding.skip" = "Omitir";
 
 // MARK: - Intention Categories
 "category.love" = "Amor";
@@ -66,6 +75,7 @@
 // MARK: - Card Selection
 "selection.chooseCard" = "Elige una carta que te llame";
 "selection.cardOf" = "Carta %d de %d";
+"selection.cardPositionFormat" = "Carta %d de %d";
 
 // MARK: - Interpretation
 "interpretation.tapReveal" = "Toca para revelar cuando estés listo";
@@ -90,9 +100,12 @@
 "history.title" = "Historial de lecturas";
 "history.filter" = "Filtro:";
 "history.all" = "Todas";
+"history.allReadings" = "Todas las Lecturas";
+"history.noReadings" = "Todas";
 "history.noReadings" = "Aún no hay lecturas";
 "history.noReadings.desc" = "Tus lecturas guardadas aparecerán aquí";
 "history.readingCount" = "%d lectura(s)";
+"history.readingCountFormat" = "%d lectura(s)";
 "history.deleteAlert" = "Eliminar lectura";
 "history.deleteMessage" = "¿Estás seguro de que quieres eliminar esta lectura? Esta acción no se puede deshacer.";
 "history.deleteReading" = "Eliminar lectura";
@@ -114,12 +127,15 @@
 "settings.setReminderTime" = "Establecer hora del recordatorio";
 "settings.about" = "Acerca de";
 "settings.version" = "Versión";
+"settings.save" = "Guardar";
 
 // MARK: - Spread Types
 "spread.singleCard" = "Carta única";
 "spread.threeCard" = "Tirada de tres cartas";
 "spread.celticCross" = "Cruz celta";
 "spread.relationship" = "Tirada de relaciones";
+"spread.loveTriangle" = "Triángulo amoroso";
+"spread.careerPath" = "Camino profesional";
 
 // MARK: - Spread Positions
 "position.past" = "Pasado";
@@ -128,3 +144,51 @@
 "position.present.desc" = "Donde estás ahora mismo";
 "position.future" = "Futuro";
 "position.future.desc" = "Lo que se despliega por delante";
+
+// Three Card Spread
+"position.past.short" = "Pasado";
+"position.past.short.desc" = "Lo que te trajo aquí";
+"position.present.short" = "Presente";
+"position.present.short.desc" = "Tu situación actual";
+"position.future.short" = "Futuro";
+"position.future.short.desc" = "Lo que se acerca";
+
+// Celtic Cross
+"position.challenge" = "Desafío";
+"position.challenge.desc" = "Lo que te atraviesa";
+"position.foundation" = "Pasado";
+"position.foundation.desc" = "Base de la situación";
+"position.approaching" = "Futuro";
+"position.approaching.desc" = "Lo que se aproxima";
+"position.above" = "Arriba";
+"position.above.desc" = "Tu meta o aspiración";
+"position.below" = "Abajo";
+"position.below.desc" = "Influencias inconscientes";
+"position.advice" = "Consejo";
+"position.advice.desc" = "Tu mejor enfoque";
+"position.external" = "Externo";
+"position.external.desc" = "Influencias externas";
+"position.hopes" = "Esperanzas y miedos";
+"position.hopes.desc" = "Tus emociones internas";
+"position.outcome" = "Resultado";
+"position.outcome.desc" = "Resultado final";
+
+// Love Triangle
+"position.you" = "Tú";
+"position.you.desc" = "Tu estado emocional";
+"position.them" = "Ellos";
+"position.them.desc" = "Su estado emocional";
+"position.connection" = "Conexión";
+"position.connection.desc" = "La dinámica de la relación";
+
+// Career Path
+"position.current" = "Situación actual";
+"position.current.desc" = "Donde estás ahora";
+"position.obstacles" = "Obstáculos";
+"position.obstacles.desc" = "Lo que te bloquea";
+"position.strengths" = "Fortalezas";
+"position.strengths.desc" = "Tus activos";
+"position.action" = "Acción";
+"position.action.desc" = "Qué hacer a continuación";
+"position.careerOutcome" = "Resultado";
+"position.careerOutcome.desc" = "Resultado potencial";

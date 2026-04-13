@@ -13,6 +13,12 @@
 "common.continue" = "続ける";
 "common.getStarted" = "始める";
 
+// MARK: - Splash Screen
+"splash.journeyBegins" = "あなたの旅が始まる";
+
+// MARK: - Home
+"home.title" = "始める";
+
 // MARK: - Home
 "home.title" = "TarotGo";
 "home.subtitle" = "あなた専用のタロットコンパニオン";
@@ -43,6 +49,9 @@
 "onboarding.optionalQuestion" = "具体的な質問をすることができます";
 "onboarding.questionPlaceholder" = "何を知りたいですか?";
 "onboarding.beginReading" = "リーディングを始める";
+"onboarding.getStarted" = "始める";
+"onboarding.next" = "次へ";
+"onboarding.skip" = "スキップ";
 
 // MARK: - Intention Categories
 "category.love" = "恋愛";
@@ -66,6 +75,7 @@
 // MARK: - Card Selection
 "selection.chooseCard" = "あなたを呼ぶカードを選んで";
 "selection.cardOf" = "%d枚目 / %d枚";
+"selection.cardPositionFormat" = "カード %d / %d";
 
 // MARK: - Interpretation
 "interpretation.tapReveal" = "準備ができたらタップして明かす";
@@ -89,10 +99,13 @@
 // MARK: - History
 "history.title" = "リーディング履歴";
 "history.filter" = "フィルター:";
-"history.all" = "すべて";
+"history.all" = "すべてのリーディング";
+"history.allReadings" = "すべてのリーディング";
+"history.noReadings" = "すべて";
 "history.noReadings" = "まだリーディングがありません";
 "history.noReadings.desc" = "保存されたリーディングがここに表示されます";
 "history.readingCount" = "%d件のリーディング";
+"history.readingCountFormat" = "%d 件のリーディング";
 "history.deleteAlert" = "リーディングを削除";
 "history.deleteMessage" = "このリーディングを削除してもよろしいですか?この操作は元に戻せません。";
 "history.deleteReading" = "リーディングを削除";
@@ -114,12 +127,15 @@
 "settings.setReminderTime" = "リマインダー時刻を設定";
 "settings.about" = "について";
 "settings.version" = "バージョン";
+"settings.save" = "保存";
 
 // MARK: - Spread Types
 "spread.singleCard" = "シングルカード";
 "spread.threeCard" = "スリーカードスプレッド";
 "spread.celticCross" = "ケルト十字";
 "spread.relationship" = "関係性スプレッド";
+"spread.loveTriangle" = "恋愛三角関係";
+"spread.careerPath" = "キャリアパス";
 
 // MARK: - Spread Positions
 "position.past" = "過去";
@@ -128,3 +144,51 @@
 "position.present.desc" = "今あなたがいる場所";
 "position.future" = "未来";
 "position.future.desc" = "あなたの前に広がるもの";
+
+// Three Card Spread
+"position.past.short" = "過去";
+"position.past.short.desc" = "あなたをここに導いたもの";
+"position.present.short" = "現在";
+"position.present.short.desc" = "あなたの現在の状況";
+"position.future.short" = "未来";
+"position.future.short.desc" = "訪れようとしているもの";
+
+// Celtic Cross
+"position.challenge" = "試練";
+"position.challenge.desc" = "あなたを横切るもの";
+"position.foundation" = "過去";
+"position.foundation.desc" = "状況の基盤";
+"position.approaching" = "未来";
+"position.approaching.desc" = "近づいているもの";
+"position.above" = "上方";
+"position.above.desc" = "あなたの目標または願望";
+"position.below" = "下方";
+"position.below.desc" = "無意識の影響";
+"position.advice" = "助言";
+"position.advice.desc" = "あなたの最良のアプローチ";
+"position.external" = "外部";
+"position.external.desc" = "外部の影響";
+"position.hopes" = "希望と恐れ";
+"position.hopes.desc" = "あなたの内なる感情";
+"position.outcome" = "結果";
+"position.outcome.desc" = "最終的な結果";
+
+// Love Triangle
+"position.you" = "あなた";
+"position.you.desc" = "あなたの感情状態";
+"position.them" = "相手";
+"position.them.desc" = "相手の感情状態";
+"position.connection" = "つながり";
+"position.connection.desc" = "関係性のダイナミクス";
+
+// Career Path
+"position.current" = "現在の状況";
+"position.current.desc" = "今あなたがいる場所";
+"position.obstacles" = "障害";
+"position.obstacles.desc" = "あなたを阻んでいるもの";
+"position.strengths" = "強み";
+"position.strengths.desc" = "あなたの資産";
+"position.action" = "行動";
+"position.action.desc" = "次にすべきこと";
+"position.careerOutcome" = "結果";
+"position.careerOutcome.desc" = "潜在的な結果";

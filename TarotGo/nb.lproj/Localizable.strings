@@ -13,6 +13,12 @@
 "common.continue" = "Fortsett";
 "common.getStarted" = "Kom i gang";
 
+// MARK: - Splash Screen
+"splash.journeyBegins" = "Din Reise Begynner";
+
+// MARK: - Home
+"home.title" = "Kom i gang";
+
 // MARK: - Home
 "home.title" = "TarotGo";
 "home.subtitle" = "Din personlige tarotkompanjong";
@@ -42,7 +48,10 @@
 "onboarding.whatBrings" = "Hva bringer deg hit i dag?";
 "onboarding.optionalQuestion" = "Du kan stille et spesifikt spørsmål";
 "onboarding.questionPlaceholder" = "Hva vil du vite?";
-"onboarding.beginReading" = "Begynn din legging";
+"onboarding.beginReading" = "Begynn Din Legging";
+"onboarding.getStarted" = "Kom i gang";
+"onboarding.next" = "Neste";
+"onboarding.skip" = "Hopp over";
 
 // MARK: - Intention Categories
 "category.love" = "Kjærlighet";
@@ -66,6 +75,7 @@
 // MARK: - Card Selection
 "selection.chooseCard" = "Velg et kort som kaller på deg";
 "selection.cardOf" = "Kort %d av %d";
+"selection.cardPositionFormat" = "Kort %d av %d";
 
 // MARK: - Interpretation
 "interpretation.tapReveal" = "Trykk for å avsløre når du er klar";
@@ -90,9 +100,12 @@
 "history.title" = "Leggingshistorikk";
 "history.filter" = "Filter:";
 "history.all" = "Alle";
+"history.allReadings" = "Alle Legginger";
+"history.noReadings" = "Alle";
 "history.noReadings" = "Ingen legginger ennå";
 "history.noReadings.desc" = "Dine lagrede legginger vil vises her";
 "history.readingCount" = "%d legging(er)";
+"history.readingCountFormat" = "%d legging(er)";
 "history.deleteAlert" = "Slett legging";
 "history.deleteMessage" = "Er du sikker på at du vil slette denne leggingen? Denne handlingen kan ikke angres.";
 "history.deleteReading" = "Slett legging";
@@ -114,12 +127,15 @@
 "settings.setReminderTime" = "Sett påminnelsestidspunkt";
 "settings.about" = "Om";
 "settings.version" = "Versjon";
+"settings.save" = "Lagre";
 
 // MARK: - Spread Types
 "spread.singleCard" = "Enkelt kort";
 "spread.threeCard" = "Tre-kortsutlegging";
 "spread.celticCross" = "Keltisk kors";
 "spread.relationship" = "Relasjonsutlegging";
+"spread.loveTriangle" = "Kjærlighetstriangel";
+"spread.careerPath" = "Karrierevei";
 
 // MARK: - Spread Positions
 "position.past" = "Fortid";
@@ -128,3 +144,51 @@
 "position.present.desc" = "Hvor du er akkurat nå";
 "position.future" = "Fremtid";
 "position.future.desc" = "Hva som utfolder seg foran deg";
+
+// Three Card Spread
+"position.past.short" = "Fortid";
+"position.past.short.desc" = "Hva som brakte deg hit";
+"position.present.short" = "Nåtid";
+"position.present.short.desc" = "Din nåværende situasjon";
+"position.future.short" = "Fremtid";
+"position.future.short.desc" = "Hva som kommer";
+
+// Celtic Cross
+"position.challenge" = "Utfordring";
+"position.challenge.desc" = "Hva som krysser deg";
+"position.foundation" = "Fortid";
+"position.foundation.desc" = "Grunnlag for situasjonen";
+"position.approaching" = "Fremtid";
+"position.approaching.desc" = "Hva som nærmer seg";
+"position.above" = "Ovenfor";
+"position.above.desc" = "Ditt mål eller streben";
+"position.below" = "Nedenfor";
+"position.below.desc" = "Ubevisste påvirkninger";
+"position.advice" = "Råd";
+"position.advice.desc" = "Din beste tilnærming";
+"position.external" = "Eksternt";
+"position.external.desc" = "Ytre påvirkninger";
+"position.hopes" = "Håp og frykt";
+"position.hopes.desc" = "Dine indre følelser";
+"position.outcome" = "Utfall";
+"position.outcome.desc" = "Sluttresultat";
+
+// Love Triangle
+"position.you" = "Deg";
+"position.you.desc" = "Din emosjonelle tilstand";
+"position.them" = "Dem";
+"position.them.desc" = "Deres emosjonelle tilstand";
+"position.connection" = "Forbindelse";
+"position.connection.desc" = "Relasjonsdynamikken";
+
+// Career Path
+"position.current" = "Nåværende situasjon";
+"position.current.desc" = "Hvor du er nå";
+"position.obstacles" = "Hindringer";
+"position.obstacles.desc" = "Hva som blokkerer deg";
+"position.strengths" = "Styrker";
+"position.strengths.desc" = "Dine ressurser";
+"position.action" = "Handling";
+"position.action.desc" = "Hva du skal gjøre neste";
+"position.careerOutcome" = "Utfall";
+"position.careerOutcome.desc" = "Potensielt resultat";

@@ -27,20 +27,20 @@ struct OnboardingView: View {
                     
                     // Welcome text with gold styling
                     VStack(spacing: 15) {
-                        Text("Welcome")
+                        Text(L10n.onboardingWelcomeText)
                             .font(AppTheme.serifFont(size: 42, weight: .medium))
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
-                        
+
                         HStack(spacing: 8) {
                             Rectangle()
                                 .fill(AppTheme.gold.opacity(0.5))
                                 .frame(width: 30, height: 1)
-                            
-                            Text("Take a deep breath and center yourself")
+
+                            Text(L10n.onboardingCenterYourself)
                                 .font(.system(size: 18, weight: .light))
                                 .foregroundColor(AppTheme.textSecondary)
-                            
+
                             Rectangle()
                                 .fill(AppTheme.gold.opacity(0.5))
                                 .frame(width: 30, height: 1)
@@ -53,7 +53,7 @@ struct OnboardingView: View {
                 
                 // Category selection with gold accent
                 VStack(spacing: 20) {
-                    Text("What brings you here today?")
+                    Text(L10n.onboardingWhatBrings)
                         .font(AppTheme.serifFont(size: 22, weight: .light))
                         .foregroundColor(AppTheme.textPrimary)
                     
@@ -80,17 +80,17 @@ struct OnboardingView: View {
                             Image(systemName: "star.fill")
                                 .font(.system(size: 8))
                                 .foregroundColor(AppTheme.gold.opacity(0.6))
-                            
-                            Text("You may ask a specific question")
+
+                            Text(L10n.onboardingOptionalQuestion)
                                 .font(.system(size: 16, weight: .light))
                                 .foregroundColor(AppTheme.textSecondary)
-                            
+
                             Image(systemName: "star.fill")
                                 .font(.system(size: 8))
                                 .foregroundColor(AppTheme.gold.opacity(0.6))
                         }
-                        
-                        TextField("What would you like to know?", text: $customQuestion)
+
+                        TextField(L10n.onboardingQuestionPlaceholder, text: $customQuestion)
                             .textFieldStyle(MysticTextFieldStyle())
                             .padding(.horizontal, 30)
                             .focused($isTextFieldFocused)
@@ -114,10 +114,10 @@ struct OnboardingView: View {
                         HStack(spacing: 10) {
                             Image(systemName: "star.fill")
                                 .font(.system(size: 14))
-                            
-                            Text("Begin Your Reading")
+
+                            Text(L10n.onboardingBeginReading)
                                 .font(AppTheme.serifFont(size: 18, weight: .semibold))
-                            
+
                             Image(systemName: "star.fill")
                                 .font(.system(size: 14))
                         }

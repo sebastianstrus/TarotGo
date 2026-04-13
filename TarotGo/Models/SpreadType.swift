@@ -8,45 +8,58 @@
 import Foundation
 
 enum SpreadType: String, Codable {
-    case threeCard = "Three Card"
-    case celticCross = "Celtic Cross"
-    case loveTriangle = "Love Triangle"
-    case careerPath = "Career Path"
-    
+    case threeCard
+    case celticCross
+    case loveTriangle
+    case careerPath
+
+    var displayName: String {
+        switch self {
+        case .threeCard:
+            return L10n.spreadThreeCard
+        case .celticCross:
+            return L10n.spreadCelticCross
+        case .loveTriangle:
+            return L10n.spreadLoveTriangle
+        case .careerPath:
+            return L10n.spreadCareerPath
+        }
+    }
+
     var positions: [SpreadPosition] {
         switch self {
         case .threeCard:
             return [
-                SpreadPosition(id: "past", name: "Past", description: "What brought you here"),
-                SpreadPosition(id: "present", name: "Present", description: "Your current situation"),
-                SpreadPosition(id: "future", name: "Future", description: "What's coming")
+                SpreadPosition(id: "past", name: L10n.positionPastShort, description: L10n.positionPastShortDesc),
+                SpreadPosition(id: "present", name: L10n.positionPresentShort, description: L10n.positionPresentShortDesc),
+                SpreadPosition(id: "future", name: L10n.positionFutureShort, description: L10n.positionFutureShortDesc)
             ]
         case .celticCross:
             return [
-                SpreadPosition(id: "present", name: "Present", description: "Your current situation"),
-                SpreadPosition(id: "challenge", name: "Challenge", description: "What crosses you"),
-                SpreadPosition(id: "past", name: "Past", description: "Foundation of the situation"),
-                SpreadPosition(id: "future", name: "Future", description: "What's approaching"),
-                SpreadPosition(id: "above", name: "Above", description: "Your goal or aspiration"),
-                SpreadPosition(id: "below", name: "Below", description: "Unconscious influences"),
-                SpreadPosition(id: "advice", name: "Advice", description: "Your best approach"),
-                SpreadPosition(id: "external", name: "External", description: "Outside influences"),
-                SpreadPosition(id: "hopes", name: "Hopes & Fears", description: "Your inner emotions"),
-                SpreadPosition(id: "outcome", name: "Outcome", description: "Final result")
+                SpreadPosition(id: "present", name: L10n.positionPresentShort, description: L10n.positionPresentShortDesc),
+                SpreadPosition(id: "challenge", name: L10n.positionChallenge, description: L10n.positionChallengeDesc),
+                SpreadPosition(id: "past", name: L10n.positionFoundation, description: L10n.positionFoundationDesc),
+                SpreadPosition(id: "future", name: L10n.positionApproaching, description: L10n.positionApproachingDesc),
+                SpreadPosition(id: "above", name: L10n.positionAbove, description: L10n.positionAboveDesc),
+                SpreadPosition(id: "below", name: L10n.positionBelow, description: L10n.positionBelowDesc),
+                SpreadPosition(id: "advice", name: L10n.positionAdvice, description: L10n.positionAdviceDesc),
+                SpreadPosition(id: "external", name: L10n.positionExternal, description: L10n.positionExternalDesc),
+                SpreadPosition(id: "hopes", name: L10n.positionHopes, description: L10n.positionHopesDesc),
+                SpreadPosition(id: "outcome", name: L10n.positionOutcome, description: L10n.positionOutcomeDesc)
             ]
         case .loveTriangle:
             return [
-                SpreadPosition(id: "you", name: "You", description: "Your emotional state"),
-                SpreadPosition(id: "them", name: "Them", description: "Their emotional state"),
-                SpreadPosition(id: "connection", name: "Connection", description: "The relationship dynamic")
+                SpreadPosition(id: "you", name: L10n.positionYou, description: L10n.positionYouDesc),
+                SpreadPosition(id: "them", name: L10n.positionThem, description: L10n.positionThemDesc),
+                SpreadPosition(id: "connection", name: L10n.positionConnection, description: L10n.positionConnectionDesc)
             ]
         case .careerPath:
             return [
-                SpreadPosition(id: "current", name: "Current Situation", description: "Where you are now"),
-                SpreadPosition(id: "obstacles", name: "Obstacles", description: "What's blocking you"),
-                SpreadPosition(id: "strengths", name: "Strengths", description: "Your assets"),
-                SpreadPosition(id: "action", name: "Action", description: "What to do next"),
-                SpreadPosition(id: "outcome", name: "Outcome", description: "Potential result")
+                SpreadPosition(id: "current", name: L10n.positionCurrent, description: L10n.positionCurrentDesc),
+                SpreadPosition(id: "obstacles", name: L10n.positionObstacles, description: L10n.positionObstaclesDesc),
+                SpreadPosition(id: "strengths", name: L10n.positionStrengths, description: L10n.positionStrengthsDesc),
+                SpreadPosition(id: "action", name: L10n.positionAction, description: L10n.positionActionDesc),
+                SpreadPosition(id: "outcome", name: L10n.positionCareerOutcome, description: L10n.positionCareerOutcomeDesc)
             ]
         }
     }

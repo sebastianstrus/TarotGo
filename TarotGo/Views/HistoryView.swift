@@ -61,7 +61,7 @@ struct HistoryView: View {
                 .foregroundColor(AppTheme.textSecondary)
             
             Menu {
-                Button("All Readings") {
+                Button(L10n.historyAllReadings) {
                     selectedCategory = nil
                 }
                 
@@ -170,7 +170,7 @@ struct SessionCard: View {
             }
             
             HStack {
-                Label(session.spreadType.rawValue, systemImage: "square.grid.3x3")
+                Label(session.spreadType.displayName, systemImage: "square.grid.3x3")
                     .font(.system(size: 12, weight: .light))
                     .foregroundColor(AppTheme.gold.opacity(0.7))
                 
@@ -240,7 +240,7 @@ struct SessionDetailView: View {
                     
                     // Spread visualization
                     VStack(spacing: 15) {
-                        Text(session.spreadType.rawValue)
+                        Text(session.spreadType.displayName)
                             .font(AppTheme.serifFont(size: 20, weight: .medium))
                             .foregroundStyle(AppTheme.goldGradient)
                         

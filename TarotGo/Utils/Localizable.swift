@@ -58,6 +58,9 @@ enum L10n {
     static let onboardingOptionalQuestion = NSLocalizedString("onboarding.optionalQuestion", comment: "You may ask a specific question")
     static let onboardingQuestionPlaceholder = NSLocalizedString("onboarding.questionPlaceholder", comment: "What would you like to know?")
     static let onboardingBeginReading = NSLocalizedString("onboarding.beginReading", comment: "Begin Your Reading")
+    static let onboardingGetStarted = NSLocalizedString("onboarding.getStarted", comment: "Get Started")
+    static let onboardingNext = NSLocalizedString("onboarding.next", comment: "Next")
+    static let onboardingSkip = NSLocalizedString("onboarding.skip", comment: "Skip")
 
     // MARK: - Intention Categories
     static let categoryLove = NSLocalizedString("category.love", comment: "Love")
@@ -109,6 +112,7 @@ enum L10n {
     static let historyTitle = NSLocalizedString("history.title", comment: "Reading History")
     static let historyFilter = NSLocalizedString("history.filter", comment: "Filter:")
     static let historyAll = NSLocalizedString("history.all", comment: "All")
+    static let historyAllReadings = NSLocalizedString("history.allReadings", comment: "All Readings")
     static let historyNoReadings = NSLocalizedString("history.noReadings", comment: "No readings yet")
     static let historyNoReadingsDesc = NSLocalizedString("history.noReadings.desc", comment: "Your saved readings will appear here")
     static let historyReadingCount = NSLocalizedString("history.readingCount", comment: "%d reading(s)")
@@ -133,12 +137,15 @@ enum L10n {
     static let settingsSetReminderTime = NSLocalizedString("settings.setReminderTime", comment: "Set Reminder Time")
     static let settingsAbout = NSLocalizedString("settings.about", comment: "About")
     static let settingsVersion = NSLocalizedString("settings.version", comment: "Version")
+    static let settingsSave = NSLocalizedString("settings.save", comment: "Save")
 
     // MARK: - Spread Types
     static let spreadSingleCard = NSLocalizedString("spread.singleCard", comment: "Single Card")
     static let spreadThreeCard = NSLocalizedString("spread.threeCard", comment: "Three Card Spread")
     static let spreadCelticCross = NSLocalizedString("spread.celticCross", comment: "Celtic Cross")
     static let spreadRelationship = NSLocalizedString("spread.relationship", comment: "Relationship Spread")
+    static let spreadLoveTriangle = NSLocalizedString("spread.loveTriangle", comment: "Love Triangle")
+    static let spreadCareerPath = NSLocalizedString("spread.careerPath", comment: "Career Path")
 
     // MARK: - Spread Positions
     static let positionPast = NSLocalizedString("position.past", comment: "Past")
@@ -147,4 +154,62 @@ enum L10n {
     static let positionPresentDesc = NSLocalizedString("position.present.desc", comment: "Where you are right now")
     static let positionFuture = NSLocalizedString("position.future", comment: "Future")
     static let positionFutureDesc = NSLocalizedString("position.future.desc", comment: "What is unfolding ahead")
+
+    // Three Card Spread
+    static let positionPastShort = NSLocalizedString("position.past.short", comment: "Past")
+    static let positionPastShortDesc = NSLocalizedString("position.past.short.desc", comment: "What brought you here")
+    static let positionPresentShort = NSLocalizedString("position.present.short", comment: "Present")
+    static let positionPresentShortDesc = NSLocalizedString("position.present.short.desc", comment: "Your current situation")
+    static let positionFutureShort = NSLocalizedString("position.future.short", comment: "Future")
+    static let positionFutureShortDesc = NSLocalizedString("position.future.short.desc", comment: "What's coming")
+
+    // Celtic Cross
+    static let positionChallenge = NSLocalizedString("position.challenge", comment: "Challenge")
+    static let positionChallengeDesc = NSLocalizedString("position.challenge.desc", comment: "What crosses you")
+    static let positionFoundation = NSLocalizedString("position.foundation", comment: "Past")
+    static let positionFoundationDesc = NSLocalizedString("position.foundation.desc", comment: "Foundation of the situation")
+    static let positionApproaching = NSLocalizedString("position.approaching", comment: "Future")
+    static let positionApproachingDesc = NSLocalizedString("position.approaching.desc", comment: "What's approaching")
+    static let positionAbove = NSLocalizedString("position.above", comment: "Above")
+    static let positionAboveDesc = NSLocalizedString("position.above.desc", comment: "Your goal or aspiration")
+    static let positionBelow = NSLocalizedString("position.below", comment: "Below")
+    static let positionBelowDesc = NSLocalizedString("position.below.desc", comment: "Unconscious influences")
+    static let positionAdvice = NSLocalizedString("position.advice", comment: "Advice")
+    static let positionAdviceDesc = NSLocalizedString("position.advice.desc", comment: "Your best approach")
+    static let positionExternal = NSLocalizedString("position.external", comment: "External")
+    static let positionExternalDesc = NSLocalizedString("position.external.desc", comment: "Outside influences")
+    static let positionHopes = NSLocalizedString("position.hopes", comment: "Hopes & Fears")
+    static let positionHopesDesc = NSLocalizedString("position.hopes.desc", comment: "Your inner emotions")
+    static let positionOutcome = NSLocalizedString("position.outcome", comment: "Outcome")
+    static let positionOutcomeDesc = NSLocalizedString("position.outcome.desc", comment: "Final result")
+
+    // Love Triangle
+    static let positionYou = NSLocalizedString("position.you", comment: "You")
+    static let positionYouDesc = NSLocalizedString("position.you.desc", comment: "Your emotional state")
+    static let positionThem = NSLocalizedString("position.them", comment: "Them")
+    static let positionThemDesc = NSLocalizedString("position.them.desc", comment: "Their emotional state")
+    static let positionConnection = NSLocalizedString("position.connection", comment: "Connection")
+    static let positionConnectionDesc = NSLocalizedString("position.connection.desc", comment: "The relationship dynamic")
+
+    // Career Path
+    static let positionCurrent = NSLocalizedString("position.current", comment: "Current Situation")
+    static let positionCurrentDesc = NSLocalizedString("position.current.desc", comment: "Where you are now")
+    static let positionObstacles = NSLocalizedString("position.obstacles", comment: "Obstacles")
+    static let positionObstaclesDesc = NSLocalizedString("position.obstacles.desc", comment: "What's blocking you")
+    static let positionStrengths = NSLocalizedString("position.strengths", comment: "Strengths")
+    static let positionStrengthsDesc = NSLocalizedString("position.strengths.desc", comment: "Your assets")
+    static let positionAction = NSLocalizedString("position.action", comment: "Action")
+    static let positionActionDesc = NSLocalizedString("position.action.desc", comment: "What to do next")
+    static let positionCareerOutcome = NSLocalizedString("position.careerOutcome", comment: "Outcome")
+    static let positionCareerOutcomeDesc = NSLocalizedString("position.careerOutcome.desc", comment: "Potential result")
+
+    // MARK: - Reading Count
+    static func readingCount(_ count: Int) -> String {
+        String(format: NSLocalizedString("history.readingCountFormat", comment: "reading count format"), count)
+    }
+
+    // MARK: - Card Position Format
+    static func cardPosition(_ current: Int, _ total: Int) -> String {
+        String(format: NSLocalizedString("selection.cardPositionFormat", comment: "Card X of Y"), current, total)
+    }
 }

@@ -13,6 +13,12 @@
 "common.continue" = "Continuer";
 "common.getStarted" = "Commencer";
 
+// MARK: - Splash Screen
+"splash.journeyBegins" = "Votre Voyage Commence";
+
+// MARK: - Home
+"home.title" = "Commencer";
+
 // MARK: - Home
 "home.title" = "TarotGo";
 "home.subtitle" = "Votre compagnon personnel de tarot";
@@ -42,7 +48,10 @@
 "onboarding.whatBrings" = "Qu'est-ce qui vous amène ici aujourd'hui ?";
 "onboarding.optionalQuestion" = "Vous pouvez poser une question spécifique";
 "onboarding.questionPlaceholder" = "Qu'aimeriez-vous savoir ?";
-"onboarding.beginReading" = "Commencer votre tirage";
+"onboarding.beginReading" = "Commencez Votre Tirage";
+"onboarding.getStarted" = "Commencer";
+"onboarding.next" = "Suivant";
+"onboarding.skip" = "Passer";
 
 // MARK: - Intention Categories
 "category.love" = "Amour";
@@ -66,6 +75,7 @@
 // MARK: - Card Selection
 "selection.chooseCard" = "Choisissez une carte qui vous appelle";
 "selection.cardOf" = "Carte %d sur %d";
+"selection.cardPositionFormat" = "Carte %d sur %d";
 
 // MARK: - Interpretation
 "interpretation.tapReveal" = "Appuyez pour révéler quand vous êtes prêt";
@@ -90,9 +100,12 @@
 "history.title" = "Historique des tirages";
 "history.filter" = "Filtre :";
 "history.all" = "Tous";
+"history.allReadings" = "Tous les Tirages";
+"history.noReadings" = "Tous";
 "history.noReadings" = "Pas encore de tirages";
 "history.noReadings.desc" = "Vos tirages enregistrés apparaîtront ici";
 "history.readingCount" = "%d tirage(s)";
+"history.readingCountFormat" = "%d tirage(s)";
 "history.deleteAlert" = "Supprimer le tirage";
 "history.deleteMessage" = "Êtes-vous sûr de vouloir supprimer ce tirage ? Cette action ne peut pas être annulée.";
 "history.deleteReading" = "Supprimer le tirage";
@@ -114,12 +127,15 @@
 "settings.setReminderTime" = "Définir l'heure du rappel";
 "settings.about" = "À propos";
 "settings.version" = "Version";
+"settings.save" = "Enregistrer";
 
 // MARK: - Spread Types
 "spread.singleCard" = "Carte unique";
 "spread.threeCard" = "Tirage à trois cartes";
 "spread.celticCross" = "Croix celtique";
 "spread.relationship" = "Tirage de relations";
+"spread.loveTriangle" = "Triangle amoureux";
+"spread.careerPath" = "Chemin de carrière";
 
 // MARK: - Spread Positions
 "position.past" = "Passé";
@@ -128,3 +144,51 @@
 "position.present.desc" = "Où vous êtes maintenant";
 "position.future" = "Futur";
 "position.future.desc" = "Ce qui se déploie devant vous";
+
+// Three Card Spread
+"position.past.short" = "Passé";
+"position.past.short.desc" = "Ce qui vous a amené ici";
+"position.present.short" = "Présent";
+"position.present.short.desc" = "Votre situation actuelle";
+"position.future.short" = "Futur";
+"position.future.short.desc" = "Ce qui arrive";
+
+// Celtic Cross
+"position.challenge" = "Défi";
+"position.challenge.desc" = "Ce qui vous traverse";
+"position.foundation" = "Passé";
+"position.foundation.desc" = "Fondation de la situation";
+"position.approaching" = "Futur";
+"position.approaching.desc" = "Ce qui approche";
+"position.above" = "Au-dessus";
+"position.above.desc" = "Votre but ou aspiration";
+"position.below" = "En-dessous";
+"position.below.desc" = "Influences inconscientes";
+"position.advice" = "Conseil";
+"position.advice.desc" = "Votre meilleure approche";
+"position.external" = "Externe";
+"position.external.desc" = "Influences extérieures";
+"position.hopes" = "Espoirs et peurs";
+"position.hopes.desc" = "Vos émotions intérieures";
+"position.outcome" = "Résultat";
+"position.outcome.desc" = "Résultat final";
+
+// Love Triangle
+"position.you" = "Vous";
+"position.you.desc" = "Votre état émotionnel";
+"position.them" = "Eux";
+"position.them.desc" = "Leur état émotionnel";
+"position.connection" = "Connexion";
+"position.connection.desc" = "La dynamique relationnelle";
+
+// Career Path
+"position.current" = "Situation actuelle";
+"position.current.desc" = "Où vous êtes maintenant";
+"position.obstacles" = "Obstacles";
+"position.obstacles.desc" = "Ce qui vous bloque";
+"position.strengths" = "Forces";
+"position.strengths.desc" = "Vos atouts";
+"position.action" = "Action";
+"position.action.desc" = "Quoi faire ensuite";
+"position.careerOutcome" = "Résultat";
+"position.careerOutcome.desc" = "Résultat potentiel";

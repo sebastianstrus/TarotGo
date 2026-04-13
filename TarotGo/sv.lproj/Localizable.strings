@@ -13,6 +13,9 @@
 "common.continue" = "Fortsätt";
 "common.getStarted" = "Kom igång";
 
+// MARK: - Splash Screen
+"splash.journeyBegins" = "Din Resa Börjar";
+
 // MARK: - Home
 "home.title" = "TarotGo";
 "home.subtitle" = "Din personliga tarotkompanjon";
@@ -42,7 +45,13 @@
 "onboarding.whatBrings" = "Vad för dig hit idag?";
 "onboarding.optionalQuestion" = "Du kan ställa en specifik fråga";
 "onboarding.questionPlaceholder" = "Vad vill du veta?";
-"onboarding.beginReading" = "Börja din läsning";
+"onboarding.beginReading" = "Börja ditt Tarotläggning";
+"onboarding.getStarted" = "Kom igång";
+"onboarding.next" = "Nästa";
+"onboarding.skip" = "Hoppa över";
+"onboarding.getStarted" = "Kom igång";
+"onboarding.next" = "Nästa";
+"onboarding.skip" = "Hoppa över";
 
 // MARK: - Intention Categories
 "category.love" = "Kärlek";
@@ -66,6 +75,7 @@
 // MARK: - Card Selection
 "selection.chooseCard" = "Välj ett kort som kallar på dig";
 "selection.cardOf" = "Kort %d av %d";
+"selection.cardPositionFormat" = "Kort %d av %d";
 
 // MARK: - Interpretation
 "interpretation.tapReveal" = "Tryck för att avslöja när du är redo";
@@ -90,9 +100,11 @@
 "history.title" = "Läsningshistorik";
 "history.filter" = "Filter:";
 "history.all" = "Alla";
+"history.allReadings" = "Alla Läggningar";
 "history.noReadings" = "Inga läsningar än";
 "history.noReadings.desc" = "Dina sparade läsningar kommer visas här";
 "history.readingCount" = "%d läsning(ar)";
+"history.readingCountFormat" = "%d läggning(ar)";
 "history.deleteAlert" = "Ta bort läsning";
 "history.deleteMessage" = "Är du säker på att du vill ta bort denna läsning? Denna åtgärd kan inte ångras.";
 "history.deleteReading" = "Ta bort läsning";
@@ -114,6 +126,7 @@
 "settings.setReminderTime" = "Ställ in påminnelsetid";
 "settings.about" = "Om";
 "settings.version" = "Version";
+"settings.save" = "Spara";
 
 // MARK: - Spread Types
 "spread.singleCard" = "Enskilt kort";
@@ -128,3 +141,52 @@
 "position.present.desc" = "Där du är just nu";
 "position.future" = "Framtid";
 "position.future.desc" = "Vad som väntar framför dig";
+
+// Three Card Spread
+"position.past.short" = "Förflutna";
+"position.past.short.desc" = "Vad som tog dig hit";
+"position.present.short" = "Nuvarande";
+"position.present.short.desc" = "Din nuvarande situation";
+"position.future.short" = "Framtid";
+"position.future.short.desc" = "Vad som komma skall";
+
+// Celtic Cross
+"position.challenge" = "Utmaning";
+"position.challenge.desc" = "Vad som korsar dig";
+"position.foundation" = "Förflutna";
+"position.foundation.desc" = "Situationens grund";
+"position.approaching" = "Framtid";
+"position.approaching.desc" = "Vad som närmar sig";
+"position.above" = "Ovan";
+"position.above.desc" = "Ditt mål eller strävan";
+"position.below" = "Nedan";
+"position.below.desc" = "Omedvetna influenser";
+"position.advice" = "Råd";
+"position.advice.desc" = "Ditt bästa tillvägagångssätt";
+"position.external" = "Externt";
+"position.external.desc" = "Yttre influenser";
+"position.hopes" = "Hopp & Rädslor";
+"position.hopes.desc" = "Dina inre känslor";
+"position.outcome" = "Resultat";
+"position.outcome.desc" = "Slutligt resultat";
+
+// Love Triangle
+"position.you" = "Du";
+"position.you.desc" = "Ditt känslomässiga tillstånd";
+"position.them" = "Dem";
+"position.them.desc" = "Deras känslomässiga tillstånd";
+"position.connection" = "Koppling";
+"position.connection.desc" = "Relationsdynamiken";
+
+// Career Path
+"position.current" = "Nuvarande Situation";
+"position.current.desc" = "Var du är nu";
+"position.obstacles" = "Hinder";
+"position.obstacles.desc" = "Vad som blockerar dig";
+"position.strengths" = "Styrkor";
+"position.strengths.desc" = "Dina tillgångar";
+"position.action" = "Handling";
+"position.action.desc" = "Vad du ska göra härnäst";
+"position.careerOutcome" = "Resultat";
+"position.careerOutcome.desc" = "Potentiellt resultat";
+

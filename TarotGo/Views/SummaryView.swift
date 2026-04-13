@@ -101,7 +101,7 @@ struct SummaryView: View {
     
     private var spreadLayoutView: some View {
         VStack(spacing: 15) {
-            Text(spreadType.rawValue)
+            Text(spreadType.displayName)
                 .font(AppTheme.serifFont(size: 20, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
             

@@ -46,6 +46,9 @@
 "onboarding.optionalQuestion" = "You may ask a specific question";
 "onboarding.questionPlaceholder" = "What would you like to know?";
 "onboarding.beginReading" = "Begin Your Reading";
+"onboarding.getStarted" = "Get Started";
+"onboarding.next" = "Next";
+"onboarding.skip" = "Skip";
 
 // MARK: - Intention Categories
 "category.love" = "Love";
@@ -69,6 +72,7 @@
 // MARK: - Card Selection
 "selection.chooseCard" = "Choose a card that calls to you";
 "selection.cardOf" = "Card %d of %d";
+"selection.cardPositionFormat" = "Card %d of %d";
 
 // MARK: - Interpretation
 "interpretation.tapReveal" = "Tap to reveal when you're ready";
@@ -93,9 +97,11 @@
 "history.title" = "Reading History";
 "history.filter" = "Filter:";
 "history.all" = "All";
+"history.allReadings" = "All Readings";
 "history.noReadings" = "No readings yet";
 "history.noReadings.desc" = "Your saved readings will appear here";
 "history.readingCount" = "%d reading(s)";
+"history.readingCountFormat" = "%d reading(s)";
 "history.deleteAlert" = "Delete Reading";
 "history.deleteMessage" = "Are you sure you want to delete this reading? This action cannot be undone.";
 "history.deleteReading" = "Delete Reading";
@@ -117,12 +123,15 @@
 "settings.setReminderTime" = "Set Reminder Time";
 "settings.about" = "About";
 "settings.version" = "Version";
+"settings.save" = "Save";
 
 // MARK: - Spread Types
 "spread.singleCard" = "Single Card";
 "spread.threeCard" = "Three Card Spread";
 "spread.celticCross" = "Celtic Cross";
 "spread.relationship" = "Relationship Spread";
+"spread.loveTriangle" = "Love Triangle";
+"spread.careerPath" = "Career Path";
 
 // MARK: - Spread Positions
 "position.past" = "Past";

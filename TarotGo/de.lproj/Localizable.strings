@@ -11,7 +11,13 @@
 "common.delete" = "Löschen";
 "common.edit" = "Bearbeiten";
 "common.continue" = "Weiter";
-"common.getStarted" = "Los geht's";
+"common.getStarted" = "Loslegen";
+
+// MARK: - Splash Screen
+"splash.journeyBegins" = "Deine Reise Beginnt";
+
+// MARK: - Home
+"home.title" = "Los geht's";
 
 // MARK: - Home
 "home.title" = "TarotGo";
@@ -42,7 +48,10 @@
 "onboarding.whatBrings" = "Was bringt dich heute hierher?";
 "onboarding.optionalQuestion" = "Du kannst eine spezifische Frage stellen";
 "onboarding.questionPlaceholder" = "Was möchtest du wissen?";
-"onboarding.beginReading" = "Beginne deine Legung";
+"onboarding.beginReading" = "Beginne Deine Lesung";
+"onboarding.getStarted" = "Loslegen";
+"onboarding.next" = "Weiter";
+"onboarding.skip" = "Überspringen";
 
 // MARK: - Intention Categories
 "category.love" = "Liebe";
@@ -66,6 +75,7 @@
 // MARK: - Card Selection
 "selection.chooseCard" = "Wähle eine Karte, die dich ruft";
 "selection.cardOf" = "Karte %d von %d";
+"selection.cardPositionFormat" = "Karte %d von %d";
 
 // MARK: - Interpretation
 "interpretation.tapReveal" = "Tippe zum Aufdecken, wenn du bereit bist";
@@ -90,9 +100,12 @@
 "history.title" = "Legungsverlauf";
 "history.filter" = "Filter:";
 "history.all" = "Alle";
+"history.allReadings" = "Alle Legungen";
+"history.noReadings" = "Alle";
 "history.noReadings" = "Noch keine Legungen";
 "history.noReadings.desc" = "Deine gespeicherten Legungen erscheinen hier";
 "history.readingCount" = "%d Legung(en)";
+"history.readingCountFormat" = "%d Legung(en)";
 "history.deleteAlert" = "Legung löschen";
 "history.deleteMessage" = "Bist du sicher, dass du diese Legung löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.";
 "history.deleteReading" = "Legung löschen";
@@ -114,12 +127,15 @@
 "settings.setReminderTime" = "Erinnerungszeit festlegen";
 "settings.about" = "Über";
 "settings.version" = "Version";
+"settings.save" = "Speichern";
 
 // MARK: - Spread Types
 "spread.singleCard" = "Einzelkarte";
 "spread.threeCard" = "Drei-Karten-Legung";
 "spread.celticCross" = "Keltisches Kreuz";
 "spread.relationship" = "Beziehungslegung";
+"spread.loveTriangle" = "Liebesdreieck";
+"spread.careerPath" = "Karriereweg";
 
 // MARK: - Spread Positions
 "position.past" = "Vergangenheit";
@@ -128,3 +144,52 @@
 "position.present.desc" = "Wo du jetzt gerade bist";
 "position.future" = "Zukunft";
 "position.future.desc" = "Was sich vor dir entfaltet";
+
+// Three Card Spread
+"position.past.short" = "Vergangenheit";
+"position.past.short.desc" = "Was dich hierher gebracht hat";
+"position.present.short" = "Gegenwart";
+"position.present.short.desc" = "Deine aktuelle Situation";
+"position.future.short" = "Zukunft";
+"position.future.short.desc" = "Was kommt";
+
+// Celtic Cross
+"position.challenge" = "Herausforderung";
+"position.challenge.desc" = "Was dich kreuzt";
+"position.foundation" = "Vergangenheit";
+"position.foundation.desc" = "Grundlage der Situation";
+"position.approaching" = "Zukunft";
+"position.approaching.desc" = "Was sich nähert";
+"position.above" = "Oben";
+"position.above.desc" = "Dein Ziel oder Streben";
+"position.below" = "Unten";
+"position.below.desc" = "Unbewusste Einflüsse";
+"position.advice" = "Rat";
+"position.advice.desc" = "Dein bester Ansatz";
+"position.external" = "Äußerlich";
+"position.external.desc" = "Äußere Einflüsse";
+"position.hopes" = "Hoffnungen & Ängste";
+"position.hopes.desc" = "Deine inneren Emotionen";
+"position.outcome" = "Ergebnis";
+"position.outcome.desc" = "Endergebnis";
+
+// Love Triangle
+"position.you" = "Du";
+"position.you.desc" = "Dein emotionaler Zustand";
+"position.them" = "Sie";
+"position.them.desc" = "Ihr emotionaler Zustand";
+"position.connection" = "Verbindung";
+"position.connection.desc" = "Die Beziehungsdynamik";
+
+// Career Path
+"position.current" = "Aktuelle Situation";
+"position.current.desc" = "Wo du jetzt bist";
+"position.obstacles" = "Hindernisse";
+"position.obstacles.desc" = "Was dich blockiert";
+"position.strengths" = "Stärken";
+"position.strengths.desc" = "Deine Vermögenswerte";
+"position.action" = "Handlung";
+"position.action.desc" = "Was als nächstes zu tun ist";
+"position.careerOutcome" = "Ergebnis";
+"position.careerOutcome.desc" = "Potenzielles Ergebnis";
+
