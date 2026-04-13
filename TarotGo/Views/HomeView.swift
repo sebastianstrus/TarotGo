@@ -38,7 +38,7 @@ struct HomeView: View {
                                 )
                                 .shadow(color: AppTheme.gold.opacity(0.3), radius: 10, x: 0, y: 5)
                             
-                            Text("TarotGo")
+                            Text(L10n.homeTitle)
                                 .font(AppTheme.serifFont(size: 40, weight: .regular))
                                 .foregroundStyle(AppTheme.goldGradient)
                                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 8, x: 0, y: 4)
@@ -48,7 +48,7 @@ struct HomeView: View {
                                     .font(.system(size: 7))
                                     .foregroundColor(AppTheme.gold)
                                 
-                                Text("Your personal tarot companion")
+                                Text(L10n.homeSubtitle)
                                     .font(.system(size: 14, weight: .light))
                                     .foregroundColor(AppTheme.textSecondary)
                                 
@@ -65,8 +65,8 @@ struct HomeView: View {
                             NavigationLink(destination: OnboardingView()) {
                                 HomeButton(
                                     icon: "sparkles",
-                                    title: "New Reading",
-                                    subtitle: "Discover what the cards reveal"
+                                    title: L10n.homeNewReading,
+                                    subtitle: L10n.homeNewReadingSubtitle
                                 )
                             }
                             .buttonStyle(HomeButtonStyle())
@@ -75,8 +75,8 @@ struct HomeView: View {
                             NavigationLink(destination: CardOfTheDayView()) {
                                 HomeButton(
                                     icon: "sun.max.fill",
-                                    title: "Card of the Day",
-                                    subtitle: "Today's guidance and insight"
+                                    title: L10n.homeCardOfDay,
+                                    subtitle: L10n.homeCardOfDaySubtitle
                                 )
                             }
                             .buttonStyle(HomeButtonStyle())
@@ -85,8 +85,8 @@ struct HomeView: View {
                             NavigationLink(destination: HistoryView()) {
                                 HomeButton(
                                     icon: "book.fill",
-                                    title: "Reading History",
-                                    subtitle: "Review your past readings"
+                                    title: L10n.homeHistory,
+                                    subtitle: L10n.homeHistorySubtitle
                                 )
                             }
                             .buttonStyle(HomeButtonStyle())
@@ -95,8 +95,8 @@ struct HomeView: View {
                             NavigationLink(destination: SettingsView()) {
                                 HomeButton(
                                     icon: "gearshape.fill",
-                                    title: "Settings",
-                                    subtitle: "Configure notifications and preferences"
+                                    title: L10n.homeSettings,
+                                    subtitle: L10n.homeSettingsSubtitle
                                 )
                             }
                             .buttonStyle(HomeButtonStyle())
@@ -109,7 +109,7 @@ struct HomeView: View {
                                 .fill(AppTheme.goldGradient)
                                 .frame(width: 35, height: 1)
                             
-                            Text("The cards are waiting for you")
+                            Text(L10n.homeFooter)
                                 .font(AppTheme.serifFont(size: 13, weight: .light))
                                 .foregroundColor(AppTheme.textTertiary)
                             

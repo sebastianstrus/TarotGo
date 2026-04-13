@@ -1,0 +1,130 @@
+/*
+  Localizable.strings - Spanish
+  TarotGo
+*/
+
+// MARK: - Common
+"app.name" = "TarotGo";
+"common.cancel" = "Cancelar";
+"common.done" = "Hecho";
+"common.save" = "Guardar";
+"common.delete" = "Eliminar";
+"common.edit" = "Editar";
+"common.continue" = "Continuar";
+"common.getStarted" = "Comenzar";
+
+// MARK: - Home
+"home.title" = "TarotGo";
+"home.subtitle" = "Tu compañero personal de tarot";
+"home.footer" = "Las cartas te esperan";
+"home.newReading" = "Nueva lectura";
+"home.newReading.subtitle" = "Descubre lo que revelan las cartas";
+"home.cardOfDay" = "Carta del día";
+"home.cardOfDay.subtitle" = "La guía y perspectiva de hoy";
+"home.history" = "Historial de lecturas";
+"home.history.subtitle" = "Revisa tus lecturas anteriores";
+"home.settings" = "Ajustes";
+"home.settings.subtitle" = "Configura notificaciones y preferencias";
+
+// MARK: - Onboarding Flow
+"onboarding.welcome" = "Bienvenido a TarotGo";
+"onboarding.welcome.desc" = "Tu viaje hacia la sabiduría del tarot comienza aquí";
+"onboarding.shuffle.title" = "Baraja con intención";
+"onboarding.shuffle.desc" = "Sostén el mazo y concéntrate en tu pregunta para una conexión más profunda";
+"onboarding.select.title" = "Elige tus cartas";
+"onboarding.select.desc" = "Confía en tu intuición al seleccionar cartas de la tirada";
+"onboarding.interpret.title" = "Recibe orientación";
+"onboarding.interpret.desc" = "Cada carta ofrece sabiduría adaptada a tu pregunta";
+
+// MARK: - Onboarding (Intention Selection)
+"onboarding.welcomeText" = "Bienvenido";
+"onboarding.centerYourself" = "Respira profundo y céntra te";
+"onboarding.whatBrings" = "¿Qué te trae aquí hoy?";
+"onboarding.optionalQuestion" = "Puedes hacer una pregunta específica";
+"onboarding.questionPlaceholder" = "¿Qué te gustaría saber?";
+"onboarding.beginReading" = "Comenzar tu lectura";
+
+// MARK: - Intention Categories
+"category.love" = "Amor";
+"category.love.desc" = "Relaciones y romance";
+"category.career" = "Carrera";
+"category.career.desc" = "Trabajo y vida profesional";
+"category.finance" = "Finanzas";
+"category.finance.desc" = "Dinero y abundancia";
+"category.health" = "Salud";
+"category.health.desc" = "Bienestar y vitalidad";
+"category.general" = "General";
+"category.general.desc" = "Orientación y sabiduría vital";
+
+// MARK: - Shuffle Ritual
+"shuffle.takeBreath" = "Respira profundo";
+"shuffle.instruction" = "Coloca tu dedo sobre el mazo y mantén durante 5 segundos mientras te concentras en tu pregunta";
+"shuffle.focusing" = "Concéntrate en tu intención...";
+"shuffle.shuffling" = "Las cartas se están barajando";
+"shuffle.ready" = "Tu mazo está listo";
+
+// MARK: - Card Selection
+"selection.chooseCard" = "Elige una carta que te llame";
+"selection.cardOf" = "Carta %d de %d";
+
+// MARK: - Interpretation
+"interpretation.tapReveal" = "Toca para revelar cuando estés listo";
+"interpretation.reversed" = "(Invertida)";
+"interpretation.resonate" = "¿Esto resuena contigo?";
+"interpretation.resonateYes" = "Sí, esto me habla";
+"interpretation.resonateUnsure" = "No estoy seguro";
+"interpretation.resonateNo" = "Esto no encaja";
+"interpretation.continue" = "Continuar";
+"interpretation.seeFullReading" = "Ver lectura completa";
+
+// MARK: - Summary
+"summary.yourReading" = "Tu lectura";
+"summary.overallInsight" = "Perspectiva general";
+"summary.reflections" = "Tus reflexiones";
+"summary.saveReading" = "Guardar lectura";
+"summary.readingSaved" = "Lectura guardada";
+"summary.shareReading" = "Compartir lectura";
+"summary.returnToStart" = "Volver al inicio";
+
+// MARK: - History
+"history.title" = "Historial de lecturas";
+"history.filter" = "Filtro:";
+"history.all" = "Todas";
+"history.noReadings" = "Aún no hay lecturas";
+"history.noReadings.desc" = "Tus lecturas guardadas aparecerán aquí";
+"history.readingCount" = "%d lectura(s)";
+"history.deleteAlert" = "Eliminar lectura";
+"history.deleteMessage" = "¿Estás seguro de que quieres eliminar esta lectura? Esta acción no se puede deshacer.";
+"history.deleteReading" = "Eliminar lectura";
+"history.noReflections" = "No hay reflexiones agregadas";
+
+// MARK: - Card of the Day
+"cardOfDay.title" = "Carta del día";
+"cardOfDay.centerYourself" = "Tómate un momento para centrarte";
+"cardOfDay.instruction" = "Coloca tu dedo sobre la carta y mantén durante 3 segundos";
+"cardOfDay.todaysMessage" = "El mensaje de hoy";
+"cardOfDay.reflect" = "Reflexionar";
+
+// MARK: - Settings
+"settings.title" = "Ajustes";
+"settings.notifications" = "Notificaciones";
+"settings.dailyReminder" = "Recordatorio de carta diaria";
+"settings.dailyReminder.desc" = "Recibe un recordatorio diario para sacar tu carta del día";
+"settings.reminderTime" = "Hora del recordatorio";
+"settings.setReminderTime" = "Establecer hora del recordatorio";
+"settings.about" = "Acerca de";
+"settings.version" = "Versión";
+
+// MARK: - Spread Types
+"spread.singleCard" = "Carta única";
+"spread.threeCard" = "Tirada de tres cartas";
+"spread.celticCross" = "Cruz celta";
+"spread.relationship" = "Tirada de relaciones";
+
+// MARK: - Spread Positions
+"position.past" = "Pasado";
+"position.past.desc" = "Lo que te ha traído a este momento";
+"position.present" = "Presente";
+"position.present.desc" = "Donde estás ahora mismo";
+"position.future" = "Futuro";
+"position.future.desc" = "Lo que se despliega por delante";

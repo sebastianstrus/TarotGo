@@ -1,0 +1,130 @@
+/*
+  Localizable.strings - Ukrainian
+  TarotGo
+*/
+
+// MARK: - Common
+"app.name" = "TarotGo";
+"common.cancel" = "Скасувати";
+"common.done" = "Готово";
+"common.save" = "Зберегти";
+"common.delete" = "Видалити";
+"common.edit" = "Редагувати";
+"common.continue" = "Продовжити";
+"common.getStarted" = "Почати";
+
+// MARK: - Home
+"home.title" = "TarotGo";
+"home.subtitle" = "Ваш особистий провідник у світі Таро";
+"home.footer" = "Карти чекають на вас";
+"home.newReading" = "Нове розкладання";
+"home.newReading.subtitle" = "Дізнайтеся, що відкривають карти";
+"home.cardOfDay" = "Карта дня";
+"home.cardOfDay.subtitle" = "Сьогоднішнє керівництво та прозріння";
+"home.history" = "Історія розкладань";
+"home.history.subtitle" = "Перегляньте свої минулі розкладання";
+"home.settings" = "Налаштування";
+"home.settings.subtitle" = "Налаштуйте сповіщення та параметри";
+
+// MARK: - Onboarding Flow
+"onboarding.welcome" = "Ласкаво просимо до TarotGo";
+"onboarding.welcome.desc" = "Ваша подорож у мудрість Таро починається тут";
+"onboarding.shuffle.title" = "Тасуйте з наміром";
+"onboarding.shuffle.desc" = "Тримайте колоду і зосередьтеся на своєму питанні для глибшого зв'язку";
+"onboarding.select.title" = "Виберіть свої карти";
+"onboarding.select.desc" = "Довіряйте своїй інтуїції, вибираючи карти з розкладу";
+"onboarding.interpret.title" = "Отримайте керівництво";
+"onboarding.interpret.desc" = "Кожна карта пропонує мудрість, адаптовану до вашого питання";
+
+// MARK: - Onboarding (Intention Selection)
+"onboarding.welcomeText" = "Ласкаво просимо";
+"onboarding.centerYourself" = "Зробіть глибокий вдих і зосередьтеся";
+"onboarding.whatBrings" = "Що привело вас сьогодні?";
+"onboarding.optionalQuestion" = "Ви можете поставити конкретне питання";
+"onboarding.questionPlaceholder" = "Що б ви хотіли дізнатися?";
+"onboarding.beginReading" = "Почати розкладання";
+
+// MARK: - Intention Categories
+"category.love" = "Кохання";
+"category.love.desc" = "Стосунки та романтика";
+"category.career" = "Кар'єра";
+"category.career.desc" = "Робота та професійне життя";
+"category.finance" = "Фінанси";
+"category.finance.desc" = "Гроші та достаток";
+"category.health" = "Здоров'я";
+"category.health.desc" = "Благополуччя та життєва сила";
+"category.general" = "Загальне";
+"category.general.desc" = "Життєве керівництво та мудрість";
+
+// MARK: - Shuffle Ritual
+"shuffle.takeBreath" = "Зробіть глибокий вдих";
+"shuffle.instruction" = "Покладіть палець на колоду і тримайте 5 секунд, зосереджуючись на своєму питанні";
+"shuffle.focusing" = "Зосередьтеся на своєму намірі...";
+"shuffle.shuffling" = "Карти тасуються";
+"shuffle.ready" = "Ваша колода готова";
+
+// MARK: - Card Selection
+"selection.chooseCard" = "Виберіть карту, яка кличе вас";
+"selection.cardOf" = "Карта %d з %d";
+
+// MARK: - Interpretation
+"interpretation.tapReveal" = "Натисніть, щоб відкрити, коли будете готові";
+"interpretation.reversed" = "(Перевернута)";
+"interpretation.resonate" = "Це відгукується у вас?";
+"interpretation.resonateYes" = "Так, це промовляє до мене";
+"interpretation.resonateUnsure" = "Я не впевнений";
+"interpretation.resonateNo" = "Це не підходить";
+"interpretation.continue" = "Продовжити";
+"interpretation.seeFullReading" = "Переглянути повне розкладання";
+
+// MARK: - Summary
+"summary.yourReading" = "Ваше розкладання";
+"summary.overallInsight" = "Загальне прозріння";
+"summary.reflections" = "Ваші роздуми";
+"summary.saveReading" = "Зберегти розкладання";
+"summary.readingSaved" = "Розкладання збережено";
+"summary.shareReading" = "Поділитися розкладанням";
+"summary.returnToStart" = "Повернутися на початок";
+
+// MARK: - History
+"history.title" = "Історія розкладань";
+"history.filter" = "Фільтр:";
+"history.all" = "Усі";
+"history.noReadings" = "Поки що немає розкладань";
+"history.noReadings.desc" = "Ваші збережені розкладання з'являться тут";
+"history.readingCount" = "%d розкладання(-нь)";
+"history.deleteAlert" = "Видалити розкладання";
+"history.deleteMessage" = "Ви впевнені, що хочете видалити це розкладання? Цю дію неможливо скасувати.";
+"history.deleteReading" = "Видалити розкладання";
+"history.noReflections" = "Роздумів не додано";
+
+// MARK: - Card of the Day
+"cardOfDay.title" = "Карта дня";
+"cardOfDay.centerYourself" = "Приділіть хвилину, щоб зосередитися";
+"cardOfDay.instruction" = "Покладіть палець на карту і тримайте 3 секунди";
+"cardOfDay.todaysMessage" = "Сьогоднішнє послання";
+"cardOfDay.reflect" = "Поміркувати";
+
+// MARK: - Settings
+"settings.title" = "Налаштування";
+"settings.notifications" = "Сповіщення";
+"settings.dailyReminder" = "Щоденне нагадування про карту";
+"settings.dailyReminder.desc" = "Отримуйте щоденне нагадування витягти карту дня";
+"settings.reminderTime" = "Час нагадування";
+"settings.setReminderTime" = "Встановити час нагадування";
+"settings.about" = "Про додаток";
+"settings.version" = "Версія";
+
+// MARK: - Spread Types
+"spread.singleCard" = "Одна карта";
+"spread.threeCard" = "Розкладання з трьох карт";
+"spread.celticCross" = "Кельтський хрест";
+"spread.relationship" = "Розкладання стосунків";
+
+// MARK: - Spread Positions
+"position.past" = "Минуле";
+"position.past.desc" = "Що привело вас до цього моменту";
+"position.present" = "Теперішнє";
+"position.present.desc" = "Де ви зараз";
+"position.future" = "Майбутнє";
+"position.future.desc" = "Що розгортається попереду";

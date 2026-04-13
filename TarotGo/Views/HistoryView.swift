@@ -68,13 +68,13 @@ struct HistoryView: View {
                 Divider()
                 
                 ForEach(IntentionCategory.allCases, id: \.self) { category in
-                    Button(category.rawValue) {
+                    Button(category.displayName) {
                         selectedCategory = category
                     }
                 }
             } label: {
                 HStack {
-                    Text(selectedCategory?.rawValue ?? "All")
+                    Text(selectedCategory?.displayName ?? L10n.historyAll)
                         .font(.system(size: 16, weight: .medium))
                     Image(systemName: "chevron.down")
                         .font(.system(size: 12))
@@ -122,7 +122,7 @@ struct SessionCard: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(session.category.rawValue)
+                    Text(session.category.displayName)
                         .font(AppTheme.serifFont(size: 18, weight: .semibold))
                         .foregroundStyle(AppTheme.goldGradient)
                     
@@ -218,7 +218,7 @@ struct SessionDetailView: View {
                 VStack(spacing: 25) {
                     // Header
                     VStack(spacing: 10) {
-                        Text(session.category.rawValue)
+                        Text(session.category.displayName)
                             .font(AppTheme.serifFont(size: 32, weight: .light))
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)

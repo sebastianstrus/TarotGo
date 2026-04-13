@@ -1,0 +1,130 @@
+/*
+  Localizable.strings - French
+  TarotGo
+*/
+
+// MARK: - Common
+"app.name" = "TarotGo";
+"common.cancel" = "Annuler";
+"common.done" = "Terminé";
+"common.save" = "Enregistrer";
+"common.delete" = "Supprimer";
+"common.edit" = "Modifier";
+"common.continue" = "Continuer";
+"common.getStarted" = "Commencer";
+
+// MARK: - Home
+"home.title" = "TarotGo";
+"home.subtitle" = "Votre compagnon personnel de tarot";
+"home.footer" = "Les cartes vous attendent";
+"home.newReading" = "Nouveau tirage";
+"home.newReading.subtitle" = "Découvrez ce que révèlent les cartes";
+"home.cardOfDay" = "Carte du jour";
+"home.cardOfDay.subtitle" = "Le guidage et l'aperçu d'aujourd'hui";
+"home.history" = "Historique des tirages";
+"home.history.subtitle" = "Consultez vos tirages précédents";
+"home.settings" = "Paramètres";
+"home.settings.subtitle" = "Configurer les notifications et préférences";
+
+// MARK: - Onboarding Flow
+"onboarding.welcome" = "Bienvenue sur TarotGo";
+"onboarding.welcome.desc" = "Votre voyage dans la sagesse du tarot commence ici";
+"onboarding.shuffle.title" = "Mélangez avec intention";
+"onboarding.shuffle.desc" = "Tenez le jeu et concentrez-vous sur votre question pour une connexion plus profonde";
+"onboarding.select.title" = "Choisissez vos cartes";
+"onboarding.select.desc" = "Faites confiance à votre intuition lors de la sélection des cartes du tirage";
+"onboarding.interpret.title" = "Recevez des conseils";
+"onboarding.interpret.desc" = "Chaque carte offre une sagesse adaptée à votre question";
+
+// MARK: - Onboarding (Intention Selection)
+"onboarding.welcomeText" = "Bienvenue";
+"onboarding.centerYourself" = "Respirez profondément et centrez-vous";
+"onboarding.whatBrings" = "Qu'est-ce qui vous amène ici aujourd'hui ?";
+"onboarding.optionalQuestion" = "Vous pouvez poser une question spécifique";
+"onboarding.questionPlaceholder" = "Qu'aimeriez-vous savoir ?";
+"onboarding.beginReading" = "Commencer votre tirage";
+
+// MARK: - Intention Categories
+"category.love" = "Amour";
+"category.love.desc" = "Relations et romance";
+"category.career" = "Carrière";
+"category.career.desc" = "Travail et vie professionnelle";
+"category.finance" = "Finances";
+"category.finance.desc" = "Argent et abondance";
+"category.health" = "Santé";
+"category.health.desc" = "Bien-être et vitalité";
+"category.general" = "Général";
+"category.general.desc" = "Guidage et sagesse de vie";
+
+// MARK: - Shuffle Ritual
+"shuffle.takeBreath" = "Respirez profondément";
+"shuffle.instruction" = "Placez votre doigt sur le jeu et maintenez pendant 5 secondes en vous concentrant sur votre question";
+"shuffle.focusing" = "Concentrez-vous sur votre intention...";
+"shuffle.shuffling" = "Les cartes sont en train d'être mélangées";
+"shuffle.ready" = "Votre jeu est prêt";
+
+// MARK: - Card Selection
+"selection.chooseCard" = "Choisissez une carte qui vous appelle";
+"selection.cardOf" = "Carte %d sur %d";
+
+// MARK: - Interpretation
+"interpretation.tapReveal" = "Appuyez pour révéler quand vous êtes prêt";
+"interpretation.reversed" = "(Inversée)";
+"interpretation.resonate" = "Cela résonne-t-il en vous ?";
+"interpretation.resonateYes" = "Oui, cela me parle";
+"interpretation.resonateUnsure" = "Je ne suis pas sûr";
+"interpretation.resonateNo" = "Cela ne correspond pas";
+"interpretation.continue" = "Continuer";
+"interpretation.seeFullReading" = "Voir le tirage complet";
+
+// MARK: - Summary
+"summary.yourReading" = "Votre tirage";
+"summary.overallInsight" = "Aperçu général";
+"summary.reflections" = "Vos réflexions";
+"summary.saveReading" = "Enregistrer le tirage";
+"summary.readingSaved" = "Tirage enregistré";
+"summary.shareReading" = "Partager le tirage";
+"summary.returnToStart" = "Retour au début";
+
+// MARK: - History
+"history.title" = "Historique des tirages";
+"history.filter" = "Filtre :";
+"history.all" = "Tous";
+"history.noReadings" = "Pas encore de tirages";
+"history.noReadings.desc" = "Vos tirages enregistrés apparaîtront ici";
+"history.readingCount" = "%d tirage(s)";
+"history.deleteAlert" = "Supprimer le tirage";
+"history.deleteMessage" = "Êtes-vous sûr de vouloir supprimer ce tirage ? Cette action ne peut pas être annulée.";
+"history.deleteReading" = "Supprimer le tirage";
+"history.noReflections" = "Aucune réflexion ajoutée";
+
+// MARK: - Card of the Day
+"cardOfDay.title" = "Carte du jour";
+"cardOfDay.centerYourself" = "Prenez un moment pour vous centrer";
+"cardOfDay.instruction" = "Placez votre doigt sur la carte et maintenez pendant 3 secondes";
+"cardOfDay.todaysMessage" = "Le message d'aujourd'hui";
+"cardOfDay.reflect" = "Réfléchir";
+
+// MARK: - Settings
+"settings.title" = "Paramètres";
+"settings.notifications" = "Notifications";
+"settings.dailyReminder" = "Rappel de carte quotidienne";
+"settings.dailyReminder.desc" = "Recevez un rappel quotidien pour tirer votre carte du jour";
+"settings.reminderTime" = "Heure du rappel";
+"settings.setReminderTime" = "Définir l'heure du rappel";
+"settings.about" = "À propos";
+"settings.version" = "Version";
+
+// MARK: - Spread Types
+"spread.singleCard" = "Carte unique";
+"spread.threeCard" = "Tirage à trois cartes";
+"spread.celticCross" = "Croix celtique";
+"spread.relationship" = "Tirage de relations";
+
+// MARK: - Spread Positions
+"position.past" = "Passé";
+"position.past.desc" = "Ce qui vous a amené à ce moment";
+"position.present" = "Présent";
+"position.present.desc" = "Où vous êtes maintenant";
+"position.future" = "Futur";
+"position.future.desc" = "Ce qui se déploie devant vous";

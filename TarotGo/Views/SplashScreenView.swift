@@ -92,7 +92,7 @@ struct SplashScreenView: View {
                                 .font(.system(size: 8))
                                 .foregroundColor(AppTheme.gold)
                             
-                            Text("Your Journey Begins")
+                            Text(L10n.splashJourneyBegins)
                                 .font(.system(size: 16, weight: .light))
                                 .foregroundColor(AppTheme.textSecondary)
                             

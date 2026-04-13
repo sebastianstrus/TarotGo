@@ -1,0 +1,133 @@
+/*
+  Localizable.strings - English
+  TarotGo
+*/
+
+// MARK: - Common
+"app.name" = "TarotGo";
+"common.cancel" = "Cancel";
+"common.done" = "Done";
+"common.save" = "Save";
+"common.delete" = "Delete";
+"common.edit" = "Edit";
+"common.continue" = "Continue";
+"common.getStarted" = "Get Started";
+
+// MARK: - Splash Screen
+"splash.journeyBegins" = "Your Journey Begins";
+
+// MARK: - Home
+"home.title" = "TarotGo";
+"home.subtitle" = "Your personal tarot companion";
+"home.footer" = "The cards are waiting for you";
+"home.newReading" = "New Reading";
+"home.newReading.subtitle" = "Discover what the cards reveal";
+"home.cardOfDay" = "Card of the Day";
+"home.cardOfDay.subtitle" = "Today's guidance and insight";
+"home.history" = "Reading History";
+"home.history.subtitle" = "Review your past readings";
+"home.settings" = "Settings";
+"home.settings.subtitle" = "Configure notifications and preferences";
+
+// MARK: - Onboarding Flow
+"onboarding.welcome" = "Welcome to TarotGo";
+"onboarding.welcome.desc" = "Your journey into the wisdom of tarot begins here";
+"onboarding.shuffle.title" = "Shuffle with Intention";
+"onboarding.shuffle.desc" = "Hold the deck and focus on your question for a deeper connection";
+"onboarding.select.title" = "Choose Your Cards";
+"onboarding.select.desc" = "Trust your intuition when selecting cards from the spread";
+"onboarding.interpret.title" = "Receive Guidance";
+"onboarding.interpret.desc" = "Each card offers wisdom tailored to your question";
+
+// MARK: - Onboarding (Intention Selection)
+"onboarding.welcomeText" = "Welcome";
+"onboarding.centerYourself" = "Take a deep breath and center yourself";
+"onboarding.whatBrings" = "What brings you here today?";
+"onboarding.optionalQuestion" = "You may ask a specific question";
+"onboarding.questionPlaceholder" = "What would you like to know?";
+"onboarding.beginReading" = "Begin Your Reading";
+
+// MARK: - Intention Categories
+"category.love" = "Love";
+"category.love.desc" = "Relationships and romance";
+"category.career" = "Career";
+"category.career.desc" = "Work and professional life";
+"category.finance" = "Finance";
+"category.finance.desc" = "Money and abundance";
+"category.health" = "Health";
+"category.health.desc" = "Wellbeing and vitality";
+"category.general" = "General";
+"category.general.desc" = "Life guidance and wisdom";
+
+// MARK: - Shuffle Ritual
+"shuffle.takeBreath" = "Take a deep breath";
+"shuffle.instruction" = "Place your finger on the deck and hold for 5 seconds while focusing on your question";
+"shuffle.focusing" = "Focus on your intention...";
+"shuffle.shuffling" = "The cards are being shuffled";
+"shuffle.ready" = "Your deck is ready";
+
+// MARK: - Card Selection
+"selection.chooseCard" = "Choose a card that calls to you";
+"selection.cardOf" = "Card %d of %d";
+
+// MARK: - Interpretation
+"interpretation.tapReveal" = "Tap to reveal when you're ready";
+"interpretation.reversed" = "(Reversed)";
+"interpretation.resonate" = "Does this resonate with you?";
+"interpretation.resonateYes" = "Yes, this speaks to me";
+"interpretation.resonateUnsure" = "I'm not sure";
+"interpretation.resonateNo" = "This doesn't fit";
+"interpretation.continue" = "Continue";
+"interpretation.seeFullReading" = "See Full Reading";
+
+// MARK: - Summary
+"summary.yourReading" = "Your Reading";
+"summary.overallInsight" = "Overall Insight";
+"summary.reflections" = "Your Reflections";
+"summary.saveReading" = "Save Reading";
+"summary.readingSaved" = "Reading Saved";
+"summary.shareReading" = "Share Reading";
+"summary.returnToStart" = "Return to Start";
+
+// MARK: - History
+"history.title" = "Reading History";
+"history.filter" = "Filter:";
+"history.all" = "All";
+"history.noReadings" = "No readings yet";
+"history.noReadings.desc" = "Your saved readings will appear here";
+"history.readingCount" = "%d reading(s)";
+"history.deleteAlert" = "Delete Reading";
+"history.deleteMessage" = "Are you sure you want to delete this reading? This action cannot be undone.";
+"history.deleteReading" = "Delete Reading";
+"history.noReflections" = "No reflections added";
+
+// MARK: - Card of the Day
+"cardOfDay.title" = "Card of the Day";
+"cardOfDay.centerYourself" = "Take a moment to center yourself";
+"cardOfDay.instruction" = "Place your finger on the card and hold for 3 seconds";
+"cardOfDay.todaysMessage" = "Today's Message";
+"cardOfDay.reflect" = "Reflect";
+
+// MARK: - Settings
+"settings.title" = "Settings";
+"settings.notifications" = "Notifications";
+"settings.dailyReminder" = "Daily Card Reminder";
+"settings.dailyReminder.desc" = "Receive a daily reminder to draw your Card of the Day";
+"settings.reminderTime" = "Reminder Time";
+"settings.setReminderTime" = "Set Reminder Time";
+"settings.about" = "About";
+"settings.version" = "Version";
+
+// MARK: - Spread Types
+"spread.singleCard" = "Single Card";
+"spread.threeCard" = "Three Card Spread";
+"spread.celticCross" = "Celtic Cross";
+"spread.relationship" = "Relationship Spread";
+
+// MARK: - Spread Positions
+"position.past" = "Past";
+"position.past.desc" = "What has brought you to this moment";
+"position.present" = "Present";
+"position.present.desc" = "Where you are right now";
+"position.future" = "Future";
+"position.future.desc" = "What is unfolding ahead";

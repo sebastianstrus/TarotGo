@@ -177,7 +177,7 @@ struct CategoryButton: View {
             action()
         }) {
             VStack(alignment: .leading, spacing: 5) {
-                Text(category.rawValue)
+                Text(category.displayName)
                     .font(AppTheme.serifFont(size: 20, weight: .medium))
                     .foregroundStyle(isSelected ? AppTheme.goldGradient : LinearGradient(colors: [.white], startPoint: .leading, endPoint: .trailing))
                 
