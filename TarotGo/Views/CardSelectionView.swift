@@ -77,7 +77,7 @@ struct CardSelectionView: View {
                             .font(.system(size: 12))
                             .foregroundColor(AppTheme.gold.opacity(0.7))
                         
-                        Text("Choose a card that calls to you")
+                        Text(L10n.selectionChooseCard)
                             .font(.system(size: 18, weight: .light))
                             .foregroundColor(AppTheme.textPrimary)
                         

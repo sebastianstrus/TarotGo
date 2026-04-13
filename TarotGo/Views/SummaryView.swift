@@ -321,7 +321,7 @@ struct CardSummaryCard: View {
             drawnCards: [
                 DrawnCard(
                     card: TarotDeck.majorArcana[0],
-                    position: SpreadPosition(id: "past", name: "Past", description: "What brought you here"),
+                    position: SpreadPosition(id: "past", nameKey: "past_short", descriptionKey: "past_short_desc"),
                     isReversed: false,
                     category: .love
                 )
