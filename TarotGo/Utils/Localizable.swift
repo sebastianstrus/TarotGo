@@ -92,6 +92,7 @@ enum L10n {
     // MARK: - Interpretation
     static let interpretationTapReveal = NSLocalizedString("interpretation.tapReveal", comment: "Tap to reveal when you're ready")
     static let interpretationReversed = NSLocalizedString("interpretation.reversed", comment: "(Reversed)")
+    static let interpretationResonateQuestion = NSLocalizedString("interpretation.resonateQuestion", comment: "Does this resonate with you?")
     static let interpretationResonate = NSLocalizedString("interpretation.resonate", comment: "Does this resonate with you?")
     static let interpretationResonateYes = NSLocalizedString("interpretation.resonateYes", comment: "Yes, this speaks to me")
     static let interpretationResonateUnsure = NSLocalizedString("interpretation.resonateUnsure", comment: "I'm not sure")

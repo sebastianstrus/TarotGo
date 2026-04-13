@@ -31,7 +31,7 @@ struct SummaryView: View {
                 VStack(spacing: 25) {
                     // Header
                     VStack(spacing: 10) {
-                        Text("Your Reading")
+                        Text(L10n.summaryYourReading)
                             .font(AppTheme.serifFont(size: 32, weight: .light))
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
@@ -133,7 +133,7 @@ struct SummaryView: View {
     
     private var overallSummarySection: some View {
         VStack(alignment: .leading, spacing: 15) {
-            Text("Overall Insight")
+            Text(L10n.summaryOverallInsight)
                 .font(AppTheme.serifFont(size: 22, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
             
@@ -155,7 +155,7 @@ struct SummaryView: View {
     
     private var notesSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Your Reflections")
+            Text(L10n.summaryReflections)
                 .font(AppTheme.serifFont(size: 20, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
             
@@ -215,7 +215,7 @@ struct SummaryView: View {
             } label: {
                 HStack {
                     Image(systemName: "square.and.arrow.up")
-                    Text("Share Reading")
+                    Text(L10n.summaryShareReading)
                 }
                 .font(AppTheme.serifFont(size: 18, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
@@ -231,7 +231,7 @@ struct SummaryView: View {
             Button {
                 dismiss()
             } label: {
-                Text("Return to Start")
+                Text(L10n.summaryReturnToStart)
                     .font(.system(size: 16, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
                     .padding()
@@ -280,7 +280,7 @@ struct CardSummaryCard: View {
                         .foregroundStyle(AppTheme.goldGradient)
                     
                     HStack {
-                        Text(drawnCard.card.name)
+                        Text(drawnCard.card.localizedName)
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(AppTheme.textPrimary)
                         

@@ -96,6 +96,8 @@ struct ShuffleRitualView: View {
                 Text(L10n.shuffleFocusing)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
             case .shuffling:
                 Text(L10n.shuffleShuffling)

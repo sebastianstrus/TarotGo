@@ -46,7 +46,7 @@ struct InterpretationView: View {
                                 .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                             
                             if !isCardRevealed {
-                                Text("Tap to reveal when you're ready")
+                                Text(L10n.interpretationTapReveal)
                                     .font(.system(size: 16, weight: .light))
                                     .foregroundColor(AppTheme.textSecondary.opacity(0.8))
                             }
@@ -122,12 +122,12 @@ struct InterpretationView: View {
             if let card = currentCard {
                 VStack(alignment: .leading, spacing: 10) {
                     HStack {
-                        Text(card.card.name)
+                        Text(card.card.localizedName)
                             .font(AppTheme.serifFont(size: 24, weight: .medium))
                             .foregroundStyle(AppTheme.goldGradient)
                         
                         if card.isReversed {
-                            Text("(Reversed)")
+                            Text(L10n.interpretationReversed)
                                 .font(.system(size: 16, weight: .light))
                                 .foregroundColor(AppTheme.gold.opacity(0.8))
                         }
@@ -163,13 +163,13 @@ struct InterpretationView: View {
     
     private var resonanceSection: some View {
         VStack(spacing: 20) {
-            Text("Does this resonate with you?")
+            Text(L10n.interpretationResonateQuestion)
                 .font(AppTheme.serifFont(size: 20, weight: .light))
                 .foregroundStyle(AppTheme.goldGradient)
             
             VStack(spacing: 12) {
                 ResonanceButton(
-                    text: "Yes, this speaks to me",
+                    text: L10n.interpretationResonateYes,
                     icon: "checkmark.circle.fill",
                     isSelected: selectedResonance == .resonates
                 ) {
@@ -177,7 +177,7 @@ struct InterpretationView: View {
                 }
                 
                 ResonanceButton(
-                    text: "I'm not sure",
+                    text: L10n.interpretationResonateUnsure,
                     icon: "questionmark.circle.fill",
                     isSelected: selectedResonance == .unclear
                 ) {
@@ -185,7 +185,7 @@ struct InterpretationView: View {
                 }
                 
                 ResonanceButton(
-                    text: "This doesn't fit",
+                    text: L10n.interpretationResonateNo,
                     icon: "xmark.circle.fill",
                     isSelected: selectedResonance == .notResonating
                 ) {
@@ -210,7 +210,7 @@ struct InterpretationView: View {
             proceedToNextCard()
         } label: {
             HStack(spacing: 8) {
-                Text(currentCardIndex < drawnCards.count - 1 ? "Continue" : "See Full Reading")
+                Text(currentCardIndex < drawnCards.count - 1 ? L10n.interpretationContinue : L10n.interpretationSeeFullReading)
                     .font(AppTheme.serifFont(size: 18, weight: .semibold))
                 
                 Image(systemName: "arrow.right")
@@ -358,7 +358,7 @@ struct TarotCardFrontView: View {
                             .foregroundColor(AppTheme.gold)
                     }
                     
-                    Text(card.name)
+                    Text(card.localizedName)
                         .font(AppTheme.serifFont(size: 16, weight: .semibold))
                         .foregroundColor(AppTheme.deepNavy)
                         .multilineTextAlignment(.center)
@@ -411,7 +411,7 @@ struct TarotCardFrontView: View {
                 .padding(.horizontal, 15)
                 
                 // Suit
-                Text(card.suit.rawValue)
+                Text(card.suit.localizedName)
                     .font(.system(size: 12, weight: .light))
                     .foregroundColor(AppTheme.gold)
             }
@@ -427,6 +427,7 @@ struct TarotCardFrontView: View {
                     lineWidth: 3
                 )
         }
+        .aspectRatio(2/3, contentMode: .fit)
         .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
     }
     

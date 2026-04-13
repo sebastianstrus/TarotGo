@@ -13,6 +13,12 @@ enum TarotSuit: String, Codable {
     case pentacles = "Pentacles"
     case swords = "Swords"
     case wands = "Wands"
+    
+    var localizedName: String {
+        // For now, return the English name
+        // TODO: Add full localization when ready
+        return rawValue
+    }
 }
 
 struct TarotCard: Identifiable, Codable, Hashable {
@@ -25,6 +31,13 @@ struct TarotCard: Identifiable, Codable, Hashable {
     
     var imageName: String {
         id
+    }
+    
+    var localizedName: String {
+        // For now, return the English name
+        // TODO: Add full card name localization
+        // This would require adding all 78 card names × 11 languages to String Catalog
+        return name
     }
     
     func interpretation(for category: IntentionCategory, reversed: Bool) -> String {

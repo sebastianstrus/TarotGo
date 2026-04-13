@@ -50,7 +50,7 @@ struct CardSelectionView: View {
                 // Instruction or position description
                 if let position = currentPosition {
                     VStack(spacing: 10) {
-                        Text("Card \(currentPositionIndex + 1) of \(positions.count)")
+                        Text(L10n.cardPosition(currentPositionIndex + 1, positions.count))
                             .font(.system(size: 16, weight: .light))
                             .foregroundColor(AppTheme.gold.opacity(0.8))
                         

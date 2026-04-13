@@ -164,7 +164,7 @@ struct CardOfTheDayView: View {
             // Card name and keywords
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Text(card.name)
+                    Text(card.localizedName)
                         .font(AppTheme.serifFont(size: 26, weight: .medium))
                         .foregroundStyle(AppTheme.goldGradient)
                     
