@@ -25,6 +25,33 @@ enum SpreadType: String, Codable {
             return L10n.spreadCareerPath
         }
     }
+    
+    // Custom decoding to handle old data with display names
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let rawValue = try container.decode(String.self)
+        
+        // Try direct match first
+        if let value = SpreadType(rawValue: rawValue) {
+            self = value
+            return
+        }
+        
+        // Handle old display names
+        switch rawValue {
+        case "Three Card Spread", "Trois Cartes":
+            self = .threeCard
+        case "Celtic Cross", "Croix Celtique":
+            self = .celticCross
+        case "Love Triangle", "Triangle Amoureux", "Trójkąt Miłosny":
+            self = .loveTriangle
+        case "Career Path", "Chemin de Carrière", "Ścieżka Kariery":
+            self = .careerPath
+        default:
+            // If we can't decode, default to threeCard
+            self = .threeCard
+        }
+    }
 
     var positions: [SpreadPosition] {
         switch self {

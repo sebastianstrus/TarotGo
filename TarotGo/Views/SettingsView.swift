@@ -23,7 +23,7 @@ struct SettingsView: View {
             
             List {
                 Section {
-                    Toggle("Daily Card Reminder", isOn: $toggleState)
+                    Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
                         .onChange(of: toggleState) { oldValue, newValue in
                             handleNotificationToggle(newValue)
                         }
@@ -31,7 +31,7 @@ struct SettingsView: View {
                     
                     if toggleState {
                         HStack {
-                            Text("Reminder Time")
+                            Text(L10n.settingsReminderTime)
                             Spacer()
                             Text(formattedTime)
                                 .foregroundColor(AppTheme.gold.opacity(0.8))
@@ -42,10 +42,10 @@ struct SettingsView: View {
                         }
                     }
                 } header: {
-                    Text("Notifications")
+                    Text(L10n.settingsNotifications)
                         .foregroundColor(AppTheme.gold)
                 } footer: {
-                    Text("Receive a daily reminder to draw your Card of the Day")
+                    Text(L10n.settingsDailyReminderDesc)
                         .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
@@ -59,13 +59,13 @@ struct SettingsView: View {
                 
                 Section {
                     HStack {
-                        Text("Version")
+                        Text(L10n.settingsVersion)
                         Spacer()
                         Text("1.0.0")
                             .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
                 } header: {
-                    Text("About")
+                    Text(L10n.settingsAbout)
                         .foregroundColor(AppTheme.gold)
                 }
                 .listRowBackground(
@@ -80,7 +80,7 @@ struct SettingsView: View {
             .scrollContentBackground(.hidden)
             .foregroundColor(AppTheme.textPrimary)
         }
-        .navigationTitle("Settings")
+        .navigationTitle(L10n.settingsTitle)
         .navigationBarTitleDisplayMode(.large)
         .onAppear {
             toggleState = notificationEnabled
@@ -184,18 +184,18 @@ struct TimePickerSheet: View {
                 }
                 .padding()
             }
-            .navigationTitle("Set Reminder Time")
+            .navigationTitle(L10n.settingsSetReminderTime)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button(L10n.cancel) {
                         isPresented = false
                     }
                     .foregroundStyle(AppTheme.goldGradient)
                 }
                 
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") {
+                    Button(L10n.save) {
                         let components = Calendar.current.dateComponents([.hour, .minute], from: selectedDate)
                         hour = components.hour ?? 9
                         minute = components.minute ?? 0
