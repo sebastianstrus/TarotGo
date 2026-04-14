@@ -34,9 +34,12 @@ struct CardOfTheDayView: View {
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                         
-                        Text("Card of the Day")
+                        Text(L10n.cardOfDayTitle)
                             .font(AppTheme.serifFont(size: 32, weight: .light))
                             .foregroundStyle(AppTheme.goldGradient)
+                            .frame(maxWidth: .infinity)
+                            .fixedSize(horizontal: true, vertical: true)
+                            .multilineTextAlignment(.center)
                             .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                         
                         Text(Date().formatted(date: .long, time: .omitted))
@@ -44,6 +47,7 @@ struct CardOfTheDayView: View {
                             .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
                     .padding(.top, 30)
+                    .frame(maxWidth: .infinity)
                     
                     if !isRevealed {
                         instructionView
