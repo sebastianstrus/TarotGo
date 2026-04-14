@@ -9,9 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var appViewModel: AppViewModel
-    @State private var navigateToOnboarding: Bool = false
+    @State private var navigateToNewReading: Bool = false
     @State private var navigateToHistory: Bool = false
     @State private var navigateToDailyCard: Bool = false
+    @State private var navigateToSettings: Bool = false
     
     var body: some View {
         NavigationStack(path: $appViewModel.navigationPath) {
@@ -63,14 +64,17 @@ struct HomeView: View {
                         // Main actions
                         VStack(spacing: 14) {
                             // New reading
-                            NavigationLink(destination: OnboardingView()) {
+                            Button {
+                                HapticService.shared.impact(.light)
+                                navigateToNewReading = true
+                            } label: {
                                 HomeButton(
                                     icon: "sparkles",
                                     title: L10n.homeNewReading,
                                     subtitle: L10n.homeNewReadingSubtitle
                                 )
                             }
-                            .buttonStyle(HomeButtonStyle())
+                            .buttonStyle(PlainButtonStyle())
                             
                             // Card of the day
                             NavigationLink(destination: CardOfTheDayView()) {
@@ -124,6 +128,14 @@ struct HomeView: View {
                 }
             }
             .navigationBarHidden(true)
+            .navigationDestination(isPresented: $navigateToNewReading) {
+                OnboardingView()
+            }
+            .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
+                if shouldDismiss {
+                    navigateToNewReading = false
+                }
+            }
         }
     }
 }
