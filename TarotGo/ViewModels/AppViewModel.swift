@@ -14,6 +14,8 @@ class AppViewModel: ObservableObject {
     @Published var isFirstLaunch: Bool = true
     @Published var hasCompletedOnboarding: Bool = false
     @Published var showSplashScreen: Bool = true
+    @Published var navigationPath = NavigationPath()
+    @Published var shouldDismissToRoot: Bool = false
     
     @AppStorage("hasLaunchedBefore") private var hasLaunchedBefore: Bool = false
     @AppStorage("hasCompletedOnboardingFlow") private var hasCompletedOnboardingFlow: Bool = false
@@ -45,5 +47,14 @@ class AppViewModel: ObservableObject {
         hasCompletedOnboardingFlow = false
         isFirstLaunch = true
         hasCompletedOnboarding = false
+    }
+    
+    func returnToHome() {
+        navigationPath = NavigationPath()
+        shouldDismissToRoot = true
+        // Reset after a short delay
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.shouldDismissToRoot = false
+        }
     }
 }

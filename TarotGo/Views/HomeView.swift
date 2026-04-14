@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var appViewModel: AppViewModel
     @State private var navigateToOnboarding: Bool = false
     @State private var navigateToHistory: Bool = false
     @State private var navigateToDailyCard: Bool = false
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $appViewModel.navigationPath) {
             ZStack {
                 Color.clear
                     .background(AnimatedBackgroundView().ignoresSafeArea())

@@ -14,6 +14,7 @@ struct SummaryView: View {
     let customQuestion: String?
     let spreadType: SpreadType
     
+    @EnvironmentObject var appViewModel: AppViewModel
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
     
@@ -79,7 +80,7 @@ struct SummaryView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    dismiss()
+                    returnToHome()
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundStyle(AppTheme.goldGradient)
@@ -88,7 +89,7 @@ struct SummaryView: View {
             
             ToolbarItemGroup(placement: .keyboard) {
                 Spacer()
-                Button("Done") {
+                Button(L10n.done) {
                     isNotesFocused = false
                 }
                 .foregroundStyle(AppTheme.goldGradient)
@@ -197,7 +198,7 @@ struct SummaryView: View {
             } label: {
                 HStack {
                     Image(systemName: sessionSaved ? "checkmark.circle.fill" : "square.and.arrow.down")
-                    Text(sessionSaved ? "Reading Saved" : "Save Reading")
+                    Text(sessionSaved ? L10n.summaryReadingSaved : L10n.summarySaveReading)
                 }
                 .font(AppTheme.serifFont(size: 18, weight: .semibold))
                 .foregroundColor(sessionSaved ? Color.green : AppTheme.deepNavy)
@@ -299,22 +300,7 @@ struct SummaryView: View {
     }
     
     private func returnToHome() {
-        // Dismiss all the way to root by dismissing multiple times
-        // This works because we navigate: Home -> Onboarding -> ShuffleRitual -> CardSelection -> Interpretation -> Summary
-        // We need to dismiss 5 times to get back to Home
-        dismiss()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            dismiss()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                dismiss()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    dismiss()
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        dismiss()
-                    }
-                }
-            }
-        }
+        appViewModel.returnToHome()
     }
 }
 
@@ -394,5 +380,6 @@ struct ShareSheet: UIViewControllerRepresentable {
             spreadType: .threeCard
         )
     }
+    .environmentObject(AppViewModel())
     .modelContainer(for: ReadingSession.self)
 }

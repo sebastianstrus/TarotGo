@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @EnvironmentObject var appViewModel: AppViewModel
     @State private var selectedCategory: IntentionCategory?
     @State private var customQuestion: String = ""
     @State private var showQuestionField: Bool = false
@@ -159,6 +160,11 @@ struct OnboardingView: View {
                     category: category,
                     customQuestion: customQuestion.isEmpty ? nil : customQuestion
                 )
+            }
+        }
+        .onChange(of: appViewModel.shouldDismissToRoot) { _, shouldDismiss in
+            if shouldDismiss {
+                navigateToReading = false
             }
         }
     }

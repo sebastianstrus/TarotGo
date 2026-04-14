@@ -16,6 +16,7 @@ enum ShufflePhase {
 }
 
 struct ShuffleRitualView: View {
+    @EnvironmentObject var appViewModel: AppViewModel
     let category: IntentionCategory
     let customQuestion: String?
     
@@ -63,6 +64,11 @@ struct ShuffleRitualView: View {
                 customQuestion: customQuestion,
                 spreadType: category.defaultSpreadType
             )
+        }
+        .onChange(of: appViewModel.shouldDismissToRoot) { _, shouldDismiss in
+            if shouldDismiss {
+                navigateToReading = false
+            }
         }
         .onReceive(pressTimer) { _ in
             if isPressed && phase == .pressing {

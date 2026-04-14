@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardSelectionView: View {
+    @EnvironmentObject var appViewModel: AppViewModel
     let category: IntentionCategory
     let customQuestion: String?
     let spreadType: SpreadType
@@ -101,6 +102,11 @@ struct CardSelectionView: View {
                 customQuestion: customQuestion,
                 spreadType: spreadType
             )
+        }
+        .onChange(of: appViewModel.shouldDismissToRoot) { _, shouldDismiss in
+            if shouldDismiss {
+                navigateToInterpretation = false
+            }
         }
         .onAppear {
             setupCards()

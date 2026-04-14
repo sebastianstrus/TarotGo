@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct InterpretationView: View {
+    @EnvironmentObject var appViewModel: AppViewModel
     let drawnCards: [DrawnCard]
     let category: IntentionCategory
     let customQuestion: String?
@@ -84,6 +85,11 @@ struct InterpretationView: View {
                 customQuestion: customQuestion,
                 spreadType: spreadType
             )
+        }
+        .onChange(of: appViewModel.shouldDismissToRoot) { _, shouldDismiss in
+            if shouldDismiss {
+                navigateToSummary = false
+            }
         }
         .onAppear {
             updatedDrawnCards = drawnCards
