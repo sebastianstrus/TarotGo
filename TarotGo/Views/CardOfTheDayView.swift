@@ -15,6 +15,7 @@ struct CardOfTheDayView: View {
     @State private var showInterpretation: Bool = false
     @State private var pressProgress: Double = 0.0
     @State private var isPressed: Bool = false
+    @State private var flipRotation: Double = 0
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 3.0
@@ -105,16 +106,26 @@ struct CardOfTheDayView: View {
     
     private func cardView(card: TarotCard) -> some View {
         ZStack {
-            if !isRevealed {
-                // Card back
-                CardBackView(isSelected: false)
-                    .frame(width: 220, height: 330)
-                    .scaleEffect(isPressed ? 0.95 : 1.0)
-            } else {
-                // Card front
-                TarotCardFrontView(card: card, isReversed: isReversed)
-                    .frame(width: 220, height: 330)
-            }
+            // Card back (visible when not flipped)
+            CardBackView(isSelected: false)
+                .frame(width: 220, height: 330)
+                .scaleEffect(isPressed ? 0.95 : 1.0)
+                .opacity(flipRotation < 90 ? 1 : 0)
+                .rotation3DEffect(
+                    .degrees(flipRotation),
+                    axis: (x: 0, y: 1, z: 0),
+                    perspective: 0.5
+                )
+            
+            // Card front (visible when flipped)
+            TarotCardFrontView(card: card, isReversed: isReversed)
+                .frame(width: 220, height: 330)
+                .opacity(flipRotation >= 90 ? 1 : 0)
+                .rotation3DEffect(
+                    .degrees(flipRotation - 180),
+                    axis: (x: 0, y: 1, z: 0),
+                    perspective: 0.5
+                )
         }
         .gesture(
             DragGesture(minimumDistance: 0)
@@ -238,7 +249,9 @@ struct CardOfTheDayView: View {
         HapticService.shared.impact(.heavy)
         SoundService.shared.play(.cardFlip, volume: 0.8)
         
-        withAnimation(.spring(response: 0.6)) {
+        // Animate the flip
+        withAnimation(.spring(response: 0.8, dampingFraction: 0.7)) {
+            flipRotation = 180
             isRevealed = true
         }
         
