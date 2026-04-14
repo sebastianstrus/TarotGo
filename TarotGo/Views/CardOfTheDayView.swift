@@ -53,15 +53,17 @@ struct CardOfTheDayView: View {
                         instructionView
                     }
                     
-                    // Card
+                    // Card with overlay progress indicator
                     if let card = todayCard {
-                        cardView(card: card)
-                            .padding(.vertical, 30)
-                    }
-                    
-                    // Progress indicator
-                    if isPressed && !isRevealed {
-                        progressIndicator
+                        ZStack {
+                            cardView(card: card)
+                            
+                            // Progress indicator overlaid on card
+                            if isPressed && !isRevealed {
+                                progressIndicator
+                            }
+                        }
+                        .padding(.vertical, 30)
                     }
                     
                     // Interpretation
