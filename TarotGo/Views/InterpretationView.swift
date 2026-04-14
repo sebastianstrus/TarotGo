@@ -339,96 +339,104 @@ struct TarotCardFrontView: View {
     let isReversed: Bool
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 12)
-                .fill(
-                    LinearGradient(
-                        colors: [Color.white, Color(white: 0.95)],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
+        GeometryReader { geometry in
+            let cardWidth = geometry.size.width
+            let cardHeight = geometry.size.height
+            let scaleFactor = min(cardWidth / 200, cardHeight / 300) // Base size 200x300
             
-            VStack(spacing: 15) {
-                // Card name with reversed indicator
-                HStack(spacing: 5) {
-                    if isReversed {
-                        Image(systemName: "arrow.down.circle.fill")
-                            .font(.system(size: 12))
-                            .foregroundColor(AppTheme.gold)
-                    }
-                    
-                    Text(card.localizedName)
-                        .font(AppTheme.serifFont(size: 16, weight: .semibold))
-                        .foregroundColor(AppTheme.deepNavy)
-                        .multilineTextAlignment(.center)
-                        .lineLimit(2)
-                    
-                    if isReversed {
-                        Image(systemName: "arrow.down.circle.fill")
-                            .font(.system(size: 12))
-                            .foregroundColor(AppTheme.gold)
-                    }
-                }
-                .padding(.horizontal, 10)
-                
-                // Card image placeholder with gold accents
-                ZStack {
-                    Rectangle()
-                        .fill(
-                            LinearGradient(
-                                colors: [AppTheme.darkNavy.opacity(0.9), AppTheme.deepNavy],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
+            ZStack {
+                RoundedRectangle(cornerRadius: 12 * scaleFactor)
+                    .fill(
+                        LinearGradient(
+                            colors: [Color.white, Color(white: 0.95)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
                         )
+                    )
+                
+                VStack(spacing: 8 * scaleFactor) {
+                    // Card name with reversed indicator
+                    HStack(spacing: 3 * scaleFactor) {
+                        if isReversed {
+                            Image(systemName: "arrow.down.circle.fill")
+                                .font(.system(size: 10 * scaleFactor))
+                                .foregroundColor(AppTheme.gold)
+                        }
+                        
+                        Text(card.localizedName)
+                            .font(AppTheme.serifFont(size: 14 * scaleFactor, weight: .semibold))
+                            .foregroundColor(AppTheme.deepNavy)
+                            .multilineTextAlignment(.center)
+                            .lineLimit(2)
+                            .minimumScaleFactor(0.5)
+                        
+                        if isReversed {
+                            Image(systemName: "arrow.down.circle.fill")
+                                .font(.system(size: 10 * scaleFactor))
+                                .foregroundColor(AppTheme.gold)
+                        }
+                    }
+                    .padding(.horizontal, 8 * scaleFactor)
                     
-                    Image(systemName: cardIcon)
-                        .font(.system(size: 50))
-                        .foregroundStyle(AppTheme.goldGradient)
-                    
-                    // Reversed indicator overlay
-                    if isReversed {
-                        VStack {
-                            Spacer()
-                            HStack {
+                    // Card image placeholder with gold accents
+                    ZStack {
+                        Rectangle()
+                            .fill(
+                                LinearGradient(
+                                    colors: [AppTheme.darkNavy.opacity(0.9), AppTheme.deepNavy],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                        
+                        Image(systemName: cardIcon)
+                            .font(.system(size: 40 * scaleFactor))
+                            .foregroundStyle(AppTheme.goldGradient)
+                        
+                        // Reversed indicator overlay
+                        if isReversed {
+                            VStack {
                                 Spacer()
-                                Image(systemName: "arrow.turn.up.forward.iphone.fill")
-                                    .font(.system(size: 20))
-                                    .foregroundColor(AppTheme.gold.opacity(0.7))
-                                    .rotationEffect(.degrees(180))
-                                    .padding(10)
+                                HStack {
+                                    Spacer()
+                                    Image(systemName: "arrow.turn.up.forward.iphone.fill")
+                                        .font(.system(size: 16 * scaleFactor))
+                                        .foregroundColor(AppTheme.gold.opacity(0.7))
+                                        .rotationEffect(.degrees(180))
+                                        .padding(8 * scaleFactor)
+                                }
                             }
                         }
                     }
+                    .cornerRadius(8 * scaleFactor)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8 * scaleFactor)
+                            .stroke(isReversed ? AppTheme.gold : AppTheme.gold.opacity(0.5), lineWidth: max(1, 2 * scaleFactor))
+                    )
+                    .padding(.horizontal, 10 * scaleFactor)
+                    
+                    // Suit
+                    Text(card.suit.localizedName)
+                        .font(.system(size: 10 * scaleFactor, weight: .light))
+                        .foregroundColor(AppTheme.gold)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
                 }
-                .frame(height: 180)
-                .cornerRadius(8)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke(isReversed ? AppTheme.gold : AppTheme.gold.opacity(0.5), lineWidth: isReversed ? 2 : 1)
-                )
-                .padding(.horizontal, 15)
+                .padding(.vertical, 10 * scaleFactor)
                 
-                // Suit
-                Text(card.suit.localizedName)
-                    .font(.system(size: 12, weight: .light))
-                    .foregroundColor(AppTheme.gold)
+                RoundedRectangle(cornerRadius: 12 * scaleFactor)
+                    .stroke(
+                        LinearGradient(
+                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: max(1, 3 * scaleFactor)
+                    )
             }
-            .padding(.vertical, 15)
-            
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(
-                    LinearGradient(
-                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ),
-                    lineWidth: 3
-                )
+            .shadow(color: AppTheme.gold.opacity(0.3), radius: 10 * scaleFactor)
         }
         .aspectRatio(2/3, contentMode: .fit)
-        .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
     }
     
     private var cardIcon: String {

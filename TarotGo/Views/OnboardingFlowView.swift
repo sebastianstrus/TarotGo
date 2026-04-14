@@ -12,32 +12,34 @@ struct OnboardingFlowView: View {
     @State private var currentPage: Int = 0
     @State private var showGetStarted: Bool = false
     
-    private let pages: [OnboardingPage] = [
-        OnboardingPage(
-            icon: "moon.stars.fill",
-            title: "Welcome to TarotGo",
-            description: "Your personal guide to the ancient wisdom of tarot cards. Discover insights and guidance whenever you need it.",
-            accentColor: AppTheme.gold
-        ),
-        OnboardingPage(
-            icon: "hand.point.up.fill",
-            title: "Physical Connection",
-            description: "Experience the ritual through touch. Long press gestures create a deeper, more meaningful connection with your reading.",
-            accentColor: AppTheme.lightGold
-        ),
-        OnboardingPage(
-            icon: "sparkles",
-            title: "Personalized Readings",
-            description: "Choose from different spreads and categories. Each reading is tailored to your specific question and intention.",
-            accentColor: AppTheme.mysticalPurple
-        ),
-        OnboardingPage(
-            icon: "book.fill",
-            title: "Track Your Journey",
-            description: "Save your readings and reflections. Watch patterns emerge and deepen your understanding over time.",
-            accentColor: AppTheme.darkGold
-        )
-    ]
+    private var pages: [OnboardingPage] {
+        [
+            OnboardingPage(
+                icon: "moon.stars.fill",
+                title: L10n.onboardingWelcome,
+                description: L10n.onboardingWelcomeDesc,
+                accentColor: AppTheme.gold
+            ),
+            OnboardingPage(
+                icon: "hand.point.up.fill",
+                title: L10n.onboardingShuffleTitle,
+                description: L10n.onboardingShuffleDesc,
+                accentColor: AppTheme.lightGold
+            ),
+            OnboardingPage(
+                icon: "sparkles",
+                title: L10n.onboardingSelectTitle,
+                description: L10n.onboardingSelectDesc,
+                accentColor: AppTheme.mysticalPurple
+            ),
+            OnboardingPage(
+                icon: "book.fill",
+                title: L10n.onboardingInterpretTitle,
+                description: L10n.onboardingInterpretDesc,
+                accentColor: AppTheme.darkGold
+            )
+        ]
+    }
     
     var body: some View {
         ZStack {
@@ -85,7 +87,7 @@ struct OnboardingFlowView: View {
                                 Image(systemName: "star.fill")
                                     .font(.system(size: 16))
                                 
-                                Text("Get Started")
+                                Text(L10n.onboardingGetStarted)
                                     .font(AppTheme.serifFont(size: 18, weight: .semibold))
                                 
                                 Image(systemName: "star.fill")
@@ -113,7 +115,7 @@ struct OnboardingFlowView: View {
                             }
                         } label: {
                             HStack {
-                                Text("Next")
+                                Text(L10n.onboardingNext)
                                 Image(systemName: "arrow.right")
                             }
                             .font(.system(size: 16, weight: .medium))
@@ -127,7 +129,7 @@ struct OnboardingFlowView: View {
                         Button {
                             completeOnboarding()
                         } label: {
-                            Text("Skip")
+                            Text(L10n.onboardingSkip)
                                 .font(.system(size: 14, weight: .light))
                                 .foregroundColor(.white.opacity(0.5))
                         }

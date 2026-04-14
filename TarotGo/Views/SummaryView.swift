@@ -20,6 +20,7 @@ struct SummaryView: View {
     @State private var notes: String = ""
     @State private var showShareSheet: Bool = false
     @State private var sessionSaved: Bool = false
+    @State private var shareText: String = ""
     @FocusState private var isNotesFocused: Bool
     
     var body: some View {
@@ -96,6 +97,9 @@ struct SummaryView: View {
         .contentShape(Rectangle())
         .onTapGesture {
             isNotesFocused = false
+        }
+        .sheet(isPresented: $showShareSheet) {
+            ShareSheet(items: [shareText])
         }
     }
     
@@ -211,6 +215,7 @@ struct SummaryView: View {
             
             // Share button
             Button {
+                prepareShareContent()
                 showShareSheet = true
             } label: {
                 HStack {
@@ -229,7 +234,7 @@ struct SummaryView: View {
             
             // Return home button
             Button {
-                dismiss()
+                returnToHome()
             } label: {
                 Text(L10n.summaryReturnToStart)
                     .font(.system(size: 16, weight: .light))
@@ -264,6 +269,52 @@ struct SummaryView: View {
     private func mediumHaptic() {
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()
+    }
+    
+    private func prepareShareContent() {
+        var text = "🔮 TarotGo Reading\n\n"
+        
+        if let question = customQuestion {
+            text += "Question: \"\(question)\"\n\n"
+        }
+        
+        text += "Spread: \(spreadType.displayName)\n"
+        text += "Category: \(category.displayName)\n"
+        text += "Date: \(Date().formatted(date: .long, time: .omitted))\n\n"
+        
+        text += "Cards:\n"
+        for (index, drawnCard) in drawnCards.enumerated() {
+            text += "\(index + 1). \(drawnCard.position.name): \(drawnCard.card.localizedName)"
+            if drawnCard.isReversed {
+                text += " (Reversed)"
+            }
+            text += "\n"
+        }
+        
+        if !notes.isEmpty {
+            text += "\nReflections:\n\(notes)\n"
+        }
+        
+        shareText = text
+    }
+    
+    private func returnToHome() {
+        // Dismiss all the way to root by dismissing multiple times
+        // This works because we navigate: Home -> Onboarding -> ShuffleRitual -> CardSelection -> Interpretation -> Summary
+        // We need to dismiss 5 times to get back to Home
+        dismiss()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            dismiss()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                dismiss()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    dismiss()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        dismiss()
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -313,6 +364,18 @@ struct CardSummaryCard: View {
                 )
         )
     }
+}
+
+// UIKit ShareSheet wrapper for SwiftUI
+struct ShareSheet: UIViewControllerRepresentable {
+    let items: [Any]
+    
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        return controller
+    }
+    
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
 
 #Preview {

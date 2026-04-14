@@ -50,13 +50,13 @@ struct HistoryView: View {
                 }
             }
         }
-        .navigationTitle("Reading History")
+        .navigationTitle(L10n.historyTitle)
         .navigationBarTitleDisplayMode(.large)
     }
     
     private var headerView: some View {
         HStack {
-            Text("Filter:")
+            Text(L10n.historyFilter)
                 .font(.system(size: 16, weight: .light))
                 .foregroundColor(AppTheme.textSecondary)
             
@@ -90,7 +90,7 @@ struct HistoryView: View {
             
             Spacer()
             
-            Text("\(filteredSessions.count) reading\(filteredSessions.count == 1 ? "" : "s")")
+            Text(L10n.readingCount(filteredSessions.count))
                 .font(.system(size: 14, weight: .light))
                 .foregroundColor(AppTheme.gold.opacity(0.7))
         }
@@ -103,11 +103,11 @@ struct HistoryView: View {
                 .font(.system(size: 60))
                 .foregroundStyle(AppTheme.goldGradient.opacity(0.4))
             
-            Text("No readings yet")
+            Text(L10n.historyNoReadings)
                 .font(AppTheme.serifFont(size: 24, weight: .light))
                 .foregroundStyle(AppTheme.goldGradient)
             
-            Text("Your saved readings will appear here")
+            Text(L10n.historyNoReadingsDesc)
                 .font(.system(size: 16, weight: .light))
                 .foregroundColor(AppTheme.textSecondary)
         }
@@ -197,6 +197,7 @@ struct SessionCard: View {
 
 struct SessionDetailView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
     let session: ReadingSession
     
     @State private var editedNotes: String
@@ -276,7 +277,7 @@ struct SessionDetailView: View {
                     // Notes
                     VStack(alignment: .leading, spacing: 12) {
                         HStack {
-                            Text("Your Reflections")
+                            Text(L10n.summaryReflections)
                                 .font(AppTheme.serifFont(size: 20, weight: .medium))
                                 .foregroundStyle(AppTheme.goldGradient)
                             
@@ -288,7 +289,7 @@ struct SessionDetailView: View {
                                     saveNotes()
                                 }
                             } label: {
-                                Text(isEditingNotes ? "Done" : "Edit")
+                                Text(isEditingNotes ? L10n.done : L10n.edit)
                                     .font(.system(size: 14, weight: .medium))
                                     .foregroundStyle(AppTheme.goldGradient)
                             }
@@ -319,7 +320,7 @@ struct SessionDetailView: View {
                                     .foregroundColor(AppTheme.textPrimary)
                                     .lineSpacing(6)
                             } else {
-                                Text("No reflections added")
+                                Text(L10n.historyNoReflections)
                                     .font(.system(size: 16, weight: .light))
                                     .foregroundColor(AppTheme.textSecondary.opacity(0.6))
                                     .italic()
@@ -342,7 +343,7 @@ struct SessionDetailView: View {
                     } label: {
                         HStack {
                             Image(systemName: "trash")
-                            Text("Delete Reading")
+                            Text(L10n.historyDeleteReading)
                         }
                         .font(.system(size: 16, weight: .medium))
                         .foregroundColor(.red.opacity(0.8))
@@ -363,7 +364,7 @@ struct SessionDetailView: View {
         .toolbar {
             ToolbarItemGroup(placement: .keyboard) {
                 Spacer()
-                Button("Done") {
+                Button(L10n.done) {
                     isNotesFocused = false
                     if isEditingNotes {
                         isEditingNotes = false
@@ -377,13 +378,13 @@ struct SessionDetailView: View {
         .onTapGesture {
             isNotesFocused = false
         }
-        .alert("Delete Reading", isPresented: $showDeleteAlert) {
-            Button("Cancel", role: .cancel) { }
-            Button("Delete", role: .destructive) {
+        .alert(L10n.historyDeleteAlert, isPresented: $showDeleteAlert) {
+            Button(L10n.cancel, role: .cancel) { }
+            Button(L10n.delete, role: .destructive) {
                 deleteSession()
             }
         } message: {
-            Text("Are you sure you want to delete this reading? This action cannot be undone.")
+            Text(L10n.historyDeleteMessage)
         }
     }
     
@@ -395,6 +396,7 @@ struct SessionDetailView: View {
     private func deleteSession() {
         modelContext.delete(session)
         try? modelContext.save()
+        dismiss()
     }
 }
 
