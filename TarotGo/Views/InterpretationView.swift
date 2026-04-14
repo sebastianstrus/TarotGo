@@ -441,6 +441,7 @@ struct TarotCardFrontView: View {
                     )
             }
             .shadow(color: AppTheme.gold.opacity(0.3), radius: 10 * scaleFactor)
+            .rotationEffect(.degrees(isReversed ? 180 : 0))
         }
         .aspectRatio(2/3, contentMode: .fit)
     }

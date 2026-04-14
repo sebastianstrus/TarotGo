@@ -104,6 +104,7 @@ struct ShuffleRitualView: View {
                     .foregroundStyle(AppTheme.goldGradient)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
+                    .fixedSize(horizontal: false, vertical: true)
                     .padding(.horizontal)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
             case .shuffling:

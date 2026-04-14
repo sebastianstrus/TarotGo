@@ -287,7 +287,7 @@ struct SummaryView: View {
         for (index, drawnCard) in drawnCards.enumerated() {
             text += "\(index + 1). \(drawnCard.position.name): \(drawnCard.card.localizedName)"
             if drawnCard.isReversed {
-                text += " (Reversed)"
+                text += " \(L10n.interpretationReversed)"
             }
             text += "\n"
         }

@@ -90,12 +90,12 @@ struct CardOfTheDayView: View {
     
     private var instructionView: some View {
         VStack(spacing: 15) {
-            Text("Take a moment to center yourself")
+            Text(L10n.cardOfDayCenterYourself)
                 .font(AppTheme.serifFont(size: 20, weight: .light))
                 .foregroundStyle(AppTheme.goldGradient)
                 .multilineTextAlignment(.center)
             
-            Text("Place your finger on the card and hold for 3 seconds")
+            Text(L10n.cardOfDayInstruction)
                 .font(.system(size: 16, weight: .light))
                 .foregroundColor(AppTheme.textSecondary)
                 .multilineTextAlignment(.center)
@@ -169,7 +169,7 @@ struct CardOfTheDayView: View {
                         .foregroundStyle(AppTheme.goldGradient)
                     
                     if isReversed {
-                        Text("(Reversed)")
+                        Text(L10n.interpretationReversed)
                             .font(.system(size: 16, weight: .light))
                             .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
@@ -184,7 +184,7 @@ struct CardOfTheDayView: View {
             
             // Today's message
             VStack(alignment: .leading, spacing: 10) {
-                Text("Today's Message")
+                Text(L10n.cardOfDayTodaysMessage)
                     .font(AppTheme.serifFont(size: 20, weight: .medium))
                     .foregroundStyle(AppTheme.goldGradient)
                 
@@ -196,7 +196,7 @@ struct CardOfTheDayView: View {
             
             // Daily reflection prompt
             VStack(alignment: .leading, spacing: 10) {
-                Text("Reflect")
+                Text(L10n.cardOfDayReflect)
                     .font(AppTheme.serifFont(size: 18, weight: .medium))
                     .foregroundStyle(AppTheme.goldGradient)
                 
