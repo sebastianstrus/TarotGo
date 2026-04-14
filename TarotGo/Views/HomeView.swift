@@ -66,6 +66,7 @@ struct HomeView: View {
                             // New reading
                             Button {
                                 HapticService.shared.impact(.light)
+                                SoundService.shared.play(.whoosh, volume: 0.4)
                                 navigateToNewReading = true
                             } label: {
                                 HomeButton(
@@ -133,6 +134,7 @@ struct HomeView: View {
             }
             .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
                 if shouldDismiss {
+                    SoundService.shared.play(.whoosh, volume: 0.4)
                     navigateToNewReading = false
                 }
             }
@@ -200,6 +202,7 @@ struct HomeButtonStyle: ButtonStyle {
             .animation(.spring(response: 0.3), value: configuration.isPressed)
             .onChange(of: configuration.isPressed) { oldValue, newValue in
                 if newValue {
+                    SoundService.shared.play(.whoosh, volume: 0.4)
                     HapticService.shared.impact(.light)
                 }
             }
