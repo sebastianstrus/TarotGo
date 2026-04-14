@@ -65,7 +65,7 @@ struct ShuffleRitualView: View {
                 spreadType: category.defaultSpreadType
             )
         }
-        .onChange(of: appViewModel.shouldDismissToRoot) { _, shouldDismiss in
+        .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
             if shouldDismiss {
                 navigateToReading = false
             }
@@ -269,4 +269,5 @@ struct ShuffleRitualView: View {
     NavigationStack {
         ShuffleRitualView(category: .love, customQuestion: "Will I find love?")
     }
+    .environmentObject(AppViewModel())
 }

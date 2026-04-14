@@ -162,7 +162,7 @@ struct OnboardingView: View {
                 )
             }
         }
-        .onChange(of: appViewModel.shouldDismissToRoot) { _, shouldDismiss in
+        .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
             if shouldDismiss {
                 navigateToReading = false
             }

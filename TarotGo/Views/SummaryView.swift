@@ -300,7 +300,11 @@ struct SummaryView: View {
     }
     
     private func returnToHome() {
+        // Trigger the dismiss cascade
         appViewModel.returnToHome()
+        
+        // Also dismiss this view immediately
+        dismiss()
     }
 }
 

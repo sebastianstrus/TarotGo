@@ -103,7 +103,7 @@ struct CardSelectionView: View {
                 spreadType: spreadType
             )
         }
-        .onChange(of: appViewModel.shouldDismissToRoot) { _, shouldDismiss in
+        .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
             if shouldDismiss {
                 navigateToInterpretation = false
             }
@@ -231,4 +231,5 @@ struct CardBackView: View {
             spreadType: .threeCard
         )
     }
+    .environmentObject(AppViewModel())
 }

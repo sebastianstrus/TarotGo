@@ -86,7 +86,7 @@ struct InterpretationView: View {
                 spreadType: spreadType
             )
         }
-        .onChange(of: appViewModel.shouldDismissToRoot) { _, shouldDismiss in
+        .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
             if shouldDismiss {
                 navigateToSummary = false
             }
@@ -510,4 +510,5 @@ struct ResonanceButton: View {
             spreadType: .threeCard
         )
     }
+    .environmentObject(AppViewModel())
 }
