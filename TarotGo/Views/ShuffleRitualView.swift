@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import Vortex
 
 enum ShufflePhase {
     case instruction
@@ -32,6 +33,7 @@ struct ShuffleRitualView: View {
     
     var body: some View {
         ZStack {
+            // Background
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
@@ -55,6 +57,13 @@ struct ShuffleRitualView: View {
                 }
                 
                 Spacer()
+            }
+            
+            // Fire effect on top
+            if phase == .pressing {
+                mysticalFireEffect
+                    .ignoresSafeArea()
+                    .allowsHitTesting(false)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -221,6 +230,59 @@ struct ShuffleRitualView: View {
             Text("\(Int((pressProgress / totalPressDuration) * 100))%")
                 .font(AppTheme.serifFont(size: 24, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
+        }
+    }
+    
+    private var mysticalFireEffect: some View {
+        GeometryReader { geometry in
+            ZStack {
+                // Top-left corner
+                VortexView(.fire) {
+                    Circle()
+                        .fill(.white)
+                        .blendMode(.plusLighter)
+                        .blur(radius: 3)
+                        .frame(width: 32)
+                        .tag("circle")
+                        .frame(width: 200, height: 350)
+                }
+                .position(x: 50, y: 200)
+                
+                // Top-right corner
+                VortexView(.fire) {
+                    Circle()
+                        .fill(.white)
+                        .blendMode(.plusLighter)
+                        .blur(radius: 3)
+                        .frame(width: 32)
+                        .tag("circle")
+                        .frame(width: 200, height: 350)
+                }
+                .position(x: geometry.size.width - 50, y: 200)
+                
+                // Bottom-left corner
+                VortexView(.fire) {
+                    Circle()
+                        .fill(.white)
+                        .blendMode(.plusLighter)
+                        .blur(radius: 3)
+                        .frame(width: 32)
+                        .tag("circle")
+                        .frame(width: 200, height: 350)
+                }
+                .position(x: 50, y: geometry.size.height - 20)
+                
+                VortexView(.fire) {
+                    Circle()
+                        .fill(.white)
+                        .blendMode(.plusLighter)
+                        .blur(radius: 3)
+                        .frame(width: 32)
+                        .tag("circle")
+                        .frame(width: 200, height: 350)
+                }
+                .position(x: geometry.size.width - 50, y: geometry.size.height - 20)
+            }
         }
     }
     

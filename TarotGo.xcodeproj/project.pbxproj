@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7D3D86882F8EE3D70016DDF5 /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = 7D3D86872F8EE3D70016DDF5 /* Vortex */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7DD5F5B32F8C142F00587129 /* TarotGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarotGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D3D86882F8EE3D70016DDF5 /* Vortex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = TarotGo;
 			packageProductDependencies = (
+				7D3D86872F8EE3D70016DDF5 /* Vortex */,
 			);
 			productName = TarotGo;
 			productReference = 7DD5F5B32F8C142F00587129 /* TarotGo.app */;
@@ -104,6 +110,9 @@
 			);
 			mainGroup = 7DD5F5AA2F8C142F00587129;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7D3D86862F8EE3D70016DDF5 /* XCRemoteSwiftPackageReference "Vortex" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7DD5F5B42F8C142F00587129 /* Products */;
 			projectDirPath = "";
@@ -342,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D3D86862F8EE3D70016DDF5 /* XCRemoteSwiftPackageReference "Vortex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Vortex.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D3D86872F8EE3D70016DDF5 /* Vortex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D3D86862F8EE3D70016DDF5 /* XCRemoteSwiftPackageReference "Vortex" */;
+			productName = Vortex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7DD5F5AB2F8C142F00587129 /* Project object */;
 }
