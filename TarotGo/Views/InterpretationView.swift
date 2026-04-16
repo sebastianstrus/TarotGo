@@ -346,104 +346,45 @@ struct TarotCardFrontView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            let cardWidth = geometry.size.width
-            let cardHeight = geometry.size.height
-            let scaleFactor = min(cardWidth / 200, cardHeight / 300) // Base size 200x300
-            
             ZStack {
-                RoundedRectangle(cornerRadius: 12 * scaleFactor)
-                    .fill(
-                        LinearGradient(
-                            colors: [Color.white, Color(white: 0.95)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                
-                VStack(spacing: 8 * scaleFactor) {
-                    // Card name with reversed indicator
-                    HStack(spacing: 3 * scaleFactor) {
-                        if isReversed {
-                            Image(systemName: "arrow.down.circle.fill")
-                                .font(.system(size: 10 * scaleFactor))
-                                .foregroundColor(AppTheme.gold)
-                        }
-                        
-                        Text(card.localizedName)
-                            .font(AppTheme.serifFont(size: 14 * scaleFactor, weight: .semibold))
-                            .foregroundColor(AppTheme.deepNavy)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(2)
-                            .minimumScaleFactor(0.5)
-                        
-                        if isReversed {
-                            Image(systemName: "arrow.down.circle.fill")
-                                .font(.system(size: 10 * scaleFactor))
-                                .foregroundColor(AppTheme.gold)
-                        }
-                    }
-                    .padding(.horizontal, 8 * scaleFactor)
+                // Real tarot card image
+                if let uiImage = UIImage(named: card.id) {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+                        .cornerRadius(12)
+                } else {
+                    // Fallback if image not found
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(AppTheme.cardGradient)
                     
-                    // Card image placeholder with gold accents
-                    ZStack {
-                        Rectangle()
-                            .fill(
-                                LinearGradient(
-                                    colors: [AppTheme.darkNavy.opacity(0.9), AppTheme.deepNavy],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                        
-                        Image(systemName: cardIcon)
-                            .font(.system(size: 40 * scaleFactor))
+                    VStack {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.system(size: 40))
                             .foregroundStyle(AppTheme.goldGradient)
-                        
-                        // Reversed indicator overlay
-                        if isReversed {
-                            VStack {
-                                Spacer()
-                                HStack {
-                                    Spacer()
-                                    Image(systemName: "arrow.turn.up.forward.iphone.fill")
-                                        .font(.system(size: 16 * scaleFactor))
-                                        .foregroundColor(AppTheme.gold.opacity(0.7))
-                                        .rotationEffect(.degrees(180))
-                                        .padding(8 * scaleFactor)
-                                }
-                            }
-                        }
+                        Text("Image not found: \(card.id)")
+                            .font(.caption)
+                            .foregroundColor(.white)
                     }
-                    .cornerRadius(8 * scaleFactor)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8 * scaleFactor)
-                            .stroke(isReversed ? AppTheme.gold : AppTheme.gold.opacity(0.5), lineWidth: max(1, 2 * scaleFactor))
-                    )
-                    .padding(.horizontal, 10 * scaleFactor)
-                    
-                    // Suit
-                    Text(card.suit.localizedName)
-                        .font(.system(size: 10 * scaleFactor, weight: .light))
-                        .foregroundColor(AppTheme.gold)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.7)
                 }
-                .padding(.vertical, 10 * scaleFactor)
                 
-                RoundedRectangle(cornerRadius: 12 * scaleFactor)
+                // Gold border
+                RoundedRectangle(cornerRadius: 12)
                     .stroke(
                         LinearGradient(
                             colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
-                        lineWidth: max(1, 3 * scaleFactor)
+                        lineWidth: 3
                     )
             }
-            .shadow(color: AppTheme.gold.opacity(0.3), radius: 10 * scaleFactor)
+            .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
             .rotationEffect(.degrees(isReversed ? 180 : 0))
         }
-        .aspectRatio(2/3, contentMode: .fit)
+        .aspectRatio(1108/1900, contentMode: .fit)
     }
     
     private var cardIcon: String {
