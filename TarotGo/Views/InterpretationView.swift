@@ -120,6 +120,7 @@ struct InterpretationView: View {
         ) {
             revealCard(drawnCard)
         }
+        .id(currentCardIndex) // Force new instance for each card
     }
     
     private var interpretationSection: some View {
