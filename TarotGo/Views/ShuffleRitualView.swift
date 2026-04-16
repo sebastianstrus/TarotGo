@@ -134,41 +134,16 @@ struct ShuffleRitualView: View {
         ZStack {
             // Stack of cards to show depth
             ForEach(0..<5, id: \.self) { index in
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(AppTheme.cardGradient)
+                cardBackView(offset: CGFloat(index) * 3, yOffset: CGFloat(index) * -3)
                     .frame(width: 200, height: 300)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(AppTheme.gold.opacity(0.4), lineWidth: 2)
-                    )
                     .shadow(color: AppTheme.gold.opacity(0.2), radius: 5)
-                    .offset(x: CGFloat(index) * 3, y: CGFloat(index) * -3)
                     .rotationEffect(.degrees(phase == .shuffling ? shuffleRotation + Double(index * 10) : 0))
                     .offset(x: phase == .shuffling ? shuffleOffset * CGFloat(index) : 0)
             }
             
-            // Top card with mystical pattern
-            RoundedRectangle(cornerRadius: 20)
-                .fill(AppTheme.cardGradient)
+            // Top card
+            cardBackView(offset: 0, yOffset: 0)
                 .frame(width: 200, height: 300)
-                .overlay(
-                    ZStack {
-                        // Mystical symbols
-                        Image(systemName: "moon.stars.fill")
-                            .font(.system(size: 60))
-                            .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
-                        
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(
-                                LinearGradient(
-                                    colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                ),
-                                lineWidth: 3
-                            )
-                    }
-                )
                 .shadow(color: AppTheme.gold.opacity(0.4), radius: 15)
                 .scaleEffect(isPressed ? 0.95 : 1.0)
                 .rotationEffect(.degrees(phase == .shuffling ? shuffleRotation : 0))
@@ -284,6 +259,43 @@ struct ShuffleRitualView: View {
                 .position(x: geometry.size.width - 50, y: geometry.size.height - 20)
             }
         }
+    }
+    
+    private func cardBackView(offset: CGFloat, yOffset: CGFloat) -> some View {
+        ZStack {
+            // White background to ensure no transparency
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.white)
+            
+            // Real card back image
+            if let uiImage = UIImage(named: "ReversCard") {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .clipped()
+                    .cornerRadius(12)
+            } else {
+                // Fallback
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(AppTheme.cardGradient)
+                
+                Image(systemName: "moon.stars.fill")
+                    .font(.system(size: 60))
+                    .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
+            }
+            
+            // Gold border
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(
+                    LinearGradient(
+                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 3
+                )
+        }
+        .offset(x: offset, y: yOffset)
     }
     
     private func completePress() {

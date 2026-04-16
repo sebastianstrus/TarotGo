@@ -28,6 +28,7 @@
 
 ## 📂 Struktura Plików
 
+### Awersy Kart (78 kart)
 Wszystkie karty znajdują się w:
 ```
 TarotGo/Assets.xcassets/TarotCards/
@@ -36,6 +37,17 @@ TarotGo/Assets.xcassets/TarotCards/
 Każda karta ma własny `.imageset` folder zawierający:
 - `Contents.json` - konfiguracja Asset Catalog
 - `[card_name].png` - plik graficzny karty (1108x1900)
+
+### Rewers Karty (1 obraz)
+Tył wszystkich kart znajduje się w:
+```
+TarotGo/Assets.xcassets/ReversCard.imageset/
+```
+
+Zawiera:
+- `Contents.json` - konfiguracja Asset Catalog
+- `revers.png` - plik graficzny tyłu karty (1108x1900)
+- **Nazwa zasobu w kodzie**: `ReversCard`
 
 ## 📋 Lista Wszystkich Kart (78)
 
@@ -137,16 +149,46 @@ Kod używa aspect ratio `1108/1900` dla wszystkich kart:
 ```
 
 ### Ładowanie Obrazów
+
+#### Awers Karty (TarotCardFrontView)
 Karty są ładowane używając ID karty z `TarotDeck.swift`:
 
 ```swift
-if let uiImage = UIImage(named: card.id) {
-    Image(uiImage: uiImage)
-        .resizable()
-        .aspectRatio(contentMode: .fill)
-        .frame(width: geometry.size.width, height: geometry.size.height)
-        .clipped()
-        .cornerRadius(12)
+ZStack {
+    // White background to ensure no transparency
+    RoundedRectangle(cornerRadius: 12)
+        .fill(Color.white)
+
+    // Real tarot card image
+    if let uiImage = UIImage(named: card.id) {
+        Image(uiImage: uiImage)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .clipped()
+            .cornerRadius(12)
+    }
+}
+```
+
+#### Rewers Karty (CardBackView)
+Tył karty jest ładowany jako `ReversCard`:
+
+```swift
+ZStack {
+    // White background to ensure no transparency
+    RoundedRectangle(cornerRadius: 12)
+        .fill(Color.white)
+
+    // Real card back image
+    if let uiImage = UIImage(named: "ReversCard") {
+        Image(uiImage: uiImage)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .clipped()
+            .cornerRadius(12)
+    }
 }
 ```
 
@@ -167,11 +209,13 @@ Użyj skryptu `verify_cards.sh` aby sprawdzić:
 
 ## 📊 Statystyki
 
-- **Łączna liczba kart**: 78
+- **Łączna liczba kart (awersów)**: 78
 - **Major Arcana**: 22
 - **Minor Arcana**: 56 (4 kolory × 14 kart)
-- **Przeciętny rozmiar pliku**: ~3.1 MB na kartę
-- **Łączny rozmiar wszystkich kart**: ~242 MB
+- **Rewers karty**: 1 obraz (ReversCard)
+- **Przeciętny rozmiar pliku (awers)**: ~3.1 MB na kartę
+- **Rozmiar rewersu**: ~1.2 MB
+- **Łączny rozmiar wszystkich kart**: ~243 MB (78 awersów + 1 rewers)
 
 ## 🎨 Wizualizacja Kart
 
@@ -182,13 +226,23 @@ Użyj skryptu `verify_cards.sh` aby sprawdzić:
 - **Wands**: Pomarańczowy, czerwony, żółty
 
 ### Efekty Wizualne w Aplikacji
+- **Białe tło pod każdą kartą** - zapewnia brak przezroczystości
 - Złota ramka wokół każdej karty
 - Cień z odcieniem złota (opacity 0.3, radius 10)
-- Obrót o 180° dla kart odwróconych
+- Obrót o 180° dla kart odwróconych (tylko awers)
 - Gradient border (lightGold → gold → darkGold)
+
+### Rewers Karty (Card Back)
+- Używany wszędzie gdzie karta jest nieodwrócona:
+  - W widoku wyboru kart (CardSelectionView)
+  - W widoku interpretacji przed odkryciem (InterpretationView)
+  - W widoku "Karta Dnia" przed odkryciem (CardOfTheDayView)
+- Również ma białe tło pod obrazem
+- Obraz: `ReversCard` (1108x1900)
 
 ## 📝 Notatki
 
+- **Karty nigdy nie są przezroczyste** - białe tło jest zawsze renderowane pod obrazem
 - Nazwy plików są zgodne z polem `id` w `TarotDeck.swift`
 - Nie ma potrzeby dodawania wersji @2x i @3x (używamy tylko @1x)
 - iOS automatycznie skaluje obrazy dla różnych rozdzielczości ekranu

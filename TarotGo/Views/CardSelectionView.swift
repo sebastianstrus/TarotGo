@@ -194,32 +194,45 @@ struct CardBackView: View {
     let isSelected: Bool
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 12)
-                .fill(AppTheme.cardGradient)
-            
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(
-                    isSelected ? AppTheme.goldGradient : LinearGradient(colors: [AppTheme.gold.opacity(0.4)], startPoint: .topLeading, endPoint: .bottomTrailing),
-                    lineWidth: isSelected ? 3 : 2
-                )
-            
-            // Decorative pattern
-            VStack(spacing: 10) {
-                Image(systemName: "moon.stars.fill")
-                    .font(.system(size: 30))
-                    .foregroundStyle(AppTheme.goldGradient.opacity(0.4))
+        GeometryReader { geometry in
+            ZStack {
+                // White background to ensure no transparency
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.white)
                 
-                Rectangle()
-                    .fill(AppTheme.gold.opacity(0.5))
-                    .frame(width: 40, height: 2)
+                // Real card back image
+                if let uiImage = UIImage(named: "ReversCard") {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+                        .cornerRadius(12)
+                } else {
+                    // Fallback if image not found
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(AppTheme.cardGradient)
+                    
+                    VStack {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.system(size: 40))
+                            .foregroundStyle(AppTheme.goldGradient)
+                        Text("ReversCard image not found")
+                            .font(.caption)
+                            .foregroundColor(.white)
+                    }
+                }
                 
-                Image(systemName: "sparkles")
-                    .font(.system(size: 20))
-                    .foregroundStyle(AppTheme.goldGradient.opacity(0.4))
+                // Border
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(
+                        isSelected ? AppTheme.goldGradient : LinearGradient(colors: [AppTheme.gold.opacity(0.4)], startPoint: .topLeading, endPoint: .bottomTrailing),
+                        lineWidth: isSelected ? 3 : 2
+                    )
             }
+            .shadow(color: isSelected ? AppTheme.gold.opacity(0.6) : Color.clear, radius: 15)
         }
-        .shadow(color: isSelected ? AppTheme.gold.opacity(0.6) : Color.clear, radius: 15)
+        .aspectRatio(1108/1900, contentMode: .fit)
     }
 }
 

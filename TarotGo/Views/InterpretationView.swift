@@ -347,6 +347,10 @@ struct TarotCardFrontView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
+                // White background to ensure no transparency
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.white)
+                
                 // Real tarot card image
                 if let uiImage = UIImage(named: card.id) {
                     Image(uiImage: uiImage)
@@ -385,21 +389,6 @@ struct TarotCardFrontView: View {
             .rotationEffect(.degrees(isReversed ? 180 : 0))
         }
         .aspectRatio(1108/1900, contentMode: .fit)
-    }
-    
-    private var cardIcon: String {
-        switch card.suit {
-        case .majorArcana:
-            return "sparkles"
-        case .cups:
-            return "heart.fill"
-        case .pentacles:
-            return "circle.hexagongrid.fill"
-        case .swords:
-            return "flame.fill"
-        case .wands:
-            return "wand.and.stars"
-        }
     }
 }
 
