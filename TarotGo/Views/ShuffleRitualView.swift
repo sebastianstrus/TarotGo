@@ -27,9 +27,9 @@ struct ShuffleRitualView: View {
     @State private var navigateToReading: Bool = false
     @State private var shuffleRotation: Double = 0
     @State private var shuffleOffset: CGFloat = 0
-    @State private var fingerPosition: CGPoint = .zero
+    @State private var emitterPosition: SIMD2<Double> = [0.5, 0.5]
     @State private var showFire: Bool = false
-    @State private var hasSetInitialPosition: Bool = false
+    @State private var screenSize: CGSize = .zero
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -94,6 +94,9 @@ struct ShuffleRitualView: View {
                         completePress()
                     }
                 }
+            }
+            .onAppear {
+                screenSize = geometry.size
             }
         }
     }
@@ -168,13 +171,12 @@ struct ShuffleRitualView: View {
         .simultaneousGesture(
             DragGesture(minimumDistance: 0, coordinateSpace: .global)
                 .onChanged { value in
-                    // Set initial position on first touch (using global coordinates)
-                    if !hasSetInitialPosition {
-                        fingerPosition = value.location
-                        hasSetInitialPosition = true
-                    } else {
-                        // Update finger position for fire effect
-                        fingerPosition = value.location
+                    // Convert global screen coords to Vortex normalised [0…1] space
+                    withAnimation(.interactiveSpring(response: 0.2, dampingFraction: 0.7)) {
+                        emitterPosition = [
+                            Double(value.location.x / screenSize.width),
+                            Double(value.location.y / screenSize.height)
+                        ]
                     }
                     
                     if phase == .instruction {
@@ -200,8 +202,6 @@ struct ShuffleRitualView: View {
                         withAnimation(.easeInOut(duration: 0.5)) {
                             showFire = false
                         }
-                        // Reset for next press
-                        hasSetInitialPosition = false
                     }
                 }
         )
@@ -231,7 +231,7 @@ struct ShuffleRitualView: View {
     }
     
     private var mysticalFireEffect: some View {
-        VortexView(.fire) {
+        VortexView(fireSystem()) {
             Circle()
                 .fill(.white)
                 .blendMode(.plusLighter)
@@ -239,10 +239,14 @@ struct ShuffleRitualView: View {
                 .frame(width: 32)
                 .tag("circle")
         }
-        .frame(width: 200, height: 350)
-        .position(x: fingerPosition.x-10, y: fingerPosition.y-20)
         .opacity(showFire ? 1.0 : 0.0)
-        .animation(.spring(response: 0.3, dampingFraction: 0.7), value: fingerPosition)
+    }
+    
+    // Returns the built-in fire preset with our emitter position injected
+    private func fireSystem() -> VortexSystem {
+        let fire = VortexSystem.fire
+        fire.position = emitterPosition
+        return fire
     }
     
     private func cardBackView(offset: CGFloat, yOffset: CGFloat) -> some View {
