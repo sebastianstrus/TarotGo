@@ -27,15 +27,19 @@ struct ShuffleRitualView: View {
     @State private var navigateToReading: Bool = false
     @State private var shuffleRotation: Double = 0
     @State private var shuffleOffset: CGFloat = 0
+    @State private var fingerPosition: CGPoint = .zero
+    @State private var showFire: Bool = false
+    @State private var hasSetInitialPosition: Bool = false
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
     
     var body: some View {
-        ZStack {
-            // Background
-            Color.clear
-                .background(AnimatedBackgroundView().ignoresSafeArea())
+        GeometryReader { geometry in
+            ZStack {
+                // Background
+                Color.clear
+                    .background(AnimatedBackgroundView().ignoresSafeArea())
             
             VStack(spacing: 40) {
                 Spacer()
@@ -60,36 +64,35 @@ struct ShuffleRitualView: View {
             }
             
             // Fire effect on top
-            if phase == .pressing {
-                mysticalFireEffect
-                    .ignoresSafeArea()
-                    .allowsHitTesting(false)
+            mysticalFireEffect
+                .ignoresSafeArea()
+                .allowsHitTesting(false)
             }
-        }
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationDestination(isPresented: $navigateToReading) {
-            CardSelectionView(
-                category: category,
-                customQuestion: customQuestion,
-                spreadType: category.defaultSpreadType
-            )
-        }
-        .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
-            if shouldDismiss {
-                navigateToReading = false
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(isPresented: $navigateToReading) {
+                CardSelectionView(
+                    category: category,
+                    customQuestion: customQuestion,
+                    spreadType: category.defaultSpreadType
+                )
             }
-        }
-        .onReceive(pressTimer) { _ in
-            if isPressed && phase == .pressing {
-                pressProgress += 0.05
-                
-                // Haptic feedback every second
-                if Int(pressProgress * 10) % 10 == 0 {
-                    lightHaptic()
+            .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
+                if shouldDismiss {
+                    navigateToReading = false
                 }
-                
-                if pressProgress >= totalPressDuration {
-                    completePress()
+            }
+            .onReceive(pressTimer) { _ in
+                if isPressed && phase == .pressing {
+                    pressProgress += 0.05
+                    
+                    // Haptic feedback every second
+                    if Int(pressProgress * 10) % 10 == 0 {
+                        lightHaptic()
+                    }
+                    
+                    if pressProgress >= totalPressDuration {
+                        completePress()
+                    }
                 }
             }
         }
@@ -163,12 +166,25 @@ struct ShuffleRitualView: View {
                 }
         )
         .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged { _ in
+            DragGesture(minimumDistance: 0, coordinateSpace: .global)
+                .onChanged { value in
+                    // Set initial position on first touch (using global coordinates)
+                    if !hasSetInitialPosition {
+                        fingerPosition = value.location
+                        hasSetInitialPosition = true
+                    } else {
+                        // Update finger position for fire effect
+                        fingerPosition = value.location
+                    }
+                    
                     if phase == .instruction {
                         withAnimation(.spring(response: 0.3)) {
                             isPressed = true
                             phase = .pressing
+                        }
+                        // Fade in fire effect
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            showFire = true
                         }
                     }
                 }
@@ -180,6 +196,12 @@ struct ShuffleRitualView: View {
                             phase = .instruction
                             pressProgress = 0
                         }
+                        // Fade out fire effect
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            showFire = false
+                        }
+                        // Reset for next press
+                        hasSetInitialPosition = false
                     }
                 }
         )
@@ -209,56 +231,18 @@ struct ShuffleRitualView: View {
     }
     
     private var mysticalFireEffect: some View {
-        GeometryReader { geometry in
-            ZStack {
-                // Top-left corner
-                VortexView(.fire) {
-                    Circle()
-                        .fill(.white)
-                        .blendMode(.plusLighter)
-                        .blur(radius: 3)
-                        .frame(width: 32)
-                        .tag("circle")
-                        .frame(width: 200, height: 350)
-                }
-                .position(x: 50, y: 200)
-                
-                // Top-right corner
-                VortexView(.fire) {
-                    Circle()
-                        .fill(.white)
-                        .blendMode(.plusLighter)
-                        .blur(radius: 3)
-                        .frame(width: 32)
-                        .tag("circle")
-                        .frame(width: 200, height: 350)
-                }
-                .position(x: geometry.size.width - 50, y: 200)
-                
-                // Bottom-left corner
-                VortexView(.fire) {
-                    Circle()
-                        .fill(.white)
-                        .blendMode(.plusLighter)
-                        .blur(radius: 3)
-                        .frame(width: 32)
-                        .tag("circle")
-                        .frame(width: 200, height: 350)
-                }
-                .position(x: 50, y: geometry.size.height - 20)
-                
-                VortexView(.fire) {
-                    Circle()
-                        .fill(.white)
-                        .blendMode(.plusLighter)
-                        .blur(radius: 3)
-                        .frame(width: 32)
-                        .tag("circle")
-                        .frame(width: 200, height: 350)
-                }
-                .position(x: geometry.size.width - 50, y: geometry.size.height - 20)
-            }
+        VortexView(.fire) {
+            Circle()
+                .fill(.white)
+                .blendMode(.plusLighter)
+                .blur(radius: 3)
+                .frame(width: 32)
+                .tag("circle")
         }
+        .frame(width: 200, height: 350)
+        .position(x: fingerPosition.x-10, y: fingerPosition.y-20)
+        .opacity(showFire ? 1.0 : 0.0)
+        .animation(.spring(response: 0.3, dampingFraction: 0.7), value: fingerPosition)
     }
     
     private func cardBackView(offset: CGFloat, yOffset: CGFloat) -> some View {
@@ -301,6 +285,12 @@ struct ShuffleRitualView: View {
     private func completePress() {
         isPressed = false
         phase = .shuffling
+        
+        // Fade out fire effect
+        withAnimation(.easeInOut(duration: 0.5)) {
+            showFire = false
+        }
+        
         HapticService.shared.impact(.heavy)
         SoundService.shared.play(.cardShuffle, volume: 0.7)
         
