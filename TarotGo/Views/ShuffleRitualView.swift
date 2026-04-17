@@ -16,6 +16,51 @@ enum ShufflePhase {
     case complete
 }
 
+struct MysticWave: View {
+    var progress: CGFloat
+    let duration: CGFloat = 5.0
+    
+    private var normalized: CGFloat {
+        min(max(progress / duration, 0), 1)
+    }
+    
+    var body: some View {
+        ZStack(alignment: .leading) {
+            
+            // Background track
+            Capsule()
+                .fill(AppTheme.gold.opacity(0.15))
+                .frame(width: 180, height: 10)
+            
+            // Energy flow
+            Capsule()
+                .fill(AppTheme.goldGradient)
+                .frame(width: 180 * normalized, height: 10)
+                .shadow(color: AppTheme.gold.opacity(0.6), radius: 10)
+            
+            // Optional: subtle shimmer overlay (more "mystic" feel)
+            Capsule()
+                .fill(
+                    LinearGradient(
+                        colors: [
+                            .clear,
+                            AppTheme.gold.opacity(0.6),
+                            .clear
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(width: 60, height: 10)
+                .offset(x: 180 * normalized - 60)
+                .opacity(normalized > 0.05 ? 1 : 0)
+                .blur(radius: 4)
+                .animation(.linear(duration: 0.2), value: progress)
+        }
+        .animation(.linear(duration: 0.02), value: progress)
+    }
+}
+
 struct ShuffleRitualView: View {
     @EnvironmentObject var appViewModel: AppViewModel
     let category: IntentionCategory
@@ -56,9 +101,8 @@ struct ShuffleRitualView: View {
                 Spacer()
                 
                 // Progress indicator
-                if phase == .pressing {
-                    progressIndicator
-                }
+                progressIndicator
+                    .opacity(phase == .pressing ? 1 : 0)
                 
                 Spacer()
             }
@@ -134,6 +178,7 @@ struct ShuffleRitualView: View {
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
             }
         }
+        .frame(minHeight: 100)
     }
     
     private var deckView: some View {
@@ -208,26 +253,7 @@ struct ShuffleRitualView: View {
     }
     
     private var progressIndicator: some View {
-        ZStack {
-            Circle()
-                .stroke(AppTheme.darkNavy.opacity(0.5), lineWidth: 8)
-                .frame(width: 100, height: 100)
-            
-            Circle()
-                .trim(from: 0, to: pressProgress / totalPressDuration)
-                .stroke(
-                    AppTheme.goldGradient,
-                    style: StrokeStyle(lineWidth: 8, lineCap: .round)
-                )
-                .frame(width: 100, height: 100)
-                .rotationEffect(.degrees(-90))
-                .animation(.linear(duration: 0.05), value: pressProgress)
-                .shadow(color: AppTheme.gold.opacity(0.6), radius: 8)
-            
-            Text("\(Int((pressProgress / totalPressDuration) * 100))%")
-                .font(AppTheme.serifFont(size: 24, weight: .medium))
-                .foregroundStyle(AppTheme.goldGradient)
-        }
+        MysticWave(progress: pressProgress)
     }
     
     private var mysticalFireEffect: some View {
