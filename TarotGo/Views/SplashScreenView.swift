@@ -77,29 +77,28 @@ struct SplashScreenView: View {
                 }
                 
                 // App name with gold styling
-                if showText {
-                    VStack(spacing: 12) {
-                        Text("TarotGo")
-                            .font(AppTheme.serifFont(size: 52, weight: .regular))
-                            .foregroundStyle(AppTheme.goldGradient)
-                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
-                            .transition(.opacity.combined(with: .scale))
+                VStack(spacing: 12) {
+                    Text("TarotGo")
+                        .font(AppTheme.serifFont(size: 52, weight: .regular))
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
+                        .opacity(showText ? 1 : 0)
+                        .scaleEffect(showText ? 1 : 0.8)
+                    
+                    HStack(spacing: 8) {
+                        Image(systemName: "star.fill")
+                            .font(.system(size: 8))
+                            .foregroundColor(AppTheme.gold)
                         
-                        HStack(spacing: 8) {
-                            Image(systemName: "star.fill")
-                                .font(.system(size: 8))
-                                .foregroundColor(AppTheme.gold)
-                            
-                            Text(L10n.splashJourneyBegins)
-                                .font(.system(size: 16, weight: .light))
-                                .foregroundColor(AppTheme.textSecondary)
-                            
-                            Image(systemName: "star.fill")
-                                .font(.system(size: 8))
-                                .foregroundColor(AppTheme.gold)
-                        }
-                        .transition(.opacity.combined(with: .move(edge: .bottom)))
+                        Text(L10n.splashJourneyBegins)
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundColor(AppTheme.textSecondary)
+                        
+                        Image(systemName: "star.fill")
+                            .font(.system(size: 8))
+                            .foregroundColor(AppTheme.gold)
                     }
+                    .opacity(showText ? 1 : 0)
                 }
             }
         }
