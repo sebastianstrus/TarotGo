@@ -8,6 +8,42 @@
 import SwiftUI
 import SwiftData
 
+struct MiniTarotCardView: View {
+    let card: TarotCard
+    let isReversed: Bool
+    
+    var body: some View {
+        ZStack {
+            // White background to ensure no transparency
+            RoundedRectangle(cornerRadius: 6)
+                .fill(Color.white)
+            
+            // Real tarot card image
+            if let uiImage = UIImage(named: card.id) {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .clipped()
+                    .cornerRadius(6)
+            }
+            
+            // Gold border
+            RoundedRectangle(cornerRadius: 6)
+                .stroke(
+                    LinearGradient(
+                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 2
+                )
+        }
+        .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
+        .aspectRatio(1108/1900, contentMode: .fit)
+        .rotationEffect(.degrees(isReversed ? 180 : 0))
+    }
+}
+
 struct HistoryView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \ReadingSession.date, order: .reverse) private var sessions: [ReadingSession]
@@ -149,22 +185,9 @@ struct SessionCard: View {
             // Card preview
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
-                    ForEach(session.drawnCards.prefix(5)) { drawnCard in
-                        TarotCardFrontView(card: drawnCard.card, isReversed: drawnCard.isReversed)
+                    ForEach(session.drawnCards) { drawnCard in
+                        MiniTarotCardView(card: drawnCard.card, isReversed: drawnCard.isReversed)
                             .frame(width: 50, height: 75)
-                    }
-                    
-                    if session.drawnCards.count > 5 {
-                        Text("+\(session.drawnCards.count - 5)")
-                            .font(.system(size: 14, weight: .light))
-                            .foregroundColor(AppTheme.gold)
-                            .frame(width: 50, height: 75)
-                            .background(AppTheme.darkNavy.opacity(0.5))
-                            .cornerRadius(8)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
-                            )
                     }
                 }
             }
@@ -248,7 +271,7 @@ struct SessionDetailView: View {
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: min(session.drawnCards.count, 3)), spacing: 15) {
                             ForEach(session.drawnCards) { drawnCard in
                                 VStack(spacing: 5) {
-                                    TarotCardFrontView(card: drawnCard.card, isReversed: drawnCard.isReversed)
+                                    MiniTarotCardView(card: drawnCard.card, isReversed: drawnCard.isReversed)
                                         .frame(width: 80, height: 120)
                                     
                                     Text(drawnCard.position.name)

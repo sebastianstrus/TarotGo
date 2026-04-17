@@ -114,7 +114,7 @@ struct SummaryView: View {
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: min(drawnCards.count, 3)), spacing: 15) {
                 ForEach(Array(drawnCards.enumerated()), id: \.element.id) { index, drawnCard in
                     VStack(spacing: 5) {
-                        TarotCardFrontView(card: drawnCard.card, isReversed: drawnCard.isReversed)
+                        MiniTarotCardView(card: drawnCard.card, isReversed: drawnCard.isReversed)
                             .frame(width: 80, height: 120)
                         
                         Text(drawnCard.position.name)
@@ -335,7 +335,7 @@ struct CardSummaryCard: View {
                 
                 Spacer()
                 
-                TarotCardFrontView(card: drawnCard.card, isReversed: drawnCard.isReversed)
+                MiniTarotCardView(card: drawnCard.card, isReversed: drawnCard.isReversed)
                     .frame(width: 60, height: 90)
             }
             
