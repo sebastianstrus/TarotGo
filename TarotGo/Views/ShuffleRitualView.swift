@@ -22,7 +22,7 @@ struct ShuffleRitualView: View {
     let customQuestion: String?
     
     @State private var phase: ShufflePhase = .instruction
-    @State private var pressProgress: Double = 0.0
+    @State private var pressProgress: CGFloat = 0.0
     @State private var isPressed: Bool = false
     @State private var navigateToReading: Bool = false
     @State private var shuffleRotation: Double = 0
@@ -55,9 +55,10 @@ struct ShuffleRitualView: View {
                 
                 Spacer()
                 
-                // Progress indicator
+                // Mystic Progress indicator
                 if phase == .pressing {
-                    progressIndicator
+                    MysticProgressView(progress: $pressProgress, duration: totalPressDuration)
+                        .padding(.bottom, 20)
                 }
                 
                 Spacer()
@@ -207,7 +208,7 @@ struct ShuffleRitualView: View {
         )
     }
     
-    private var progressIndicator: some View {
+    /*private var progressIndicator: some View {
         ZStack {
             Circle()
                 .stroke(AppTheme.darkNavy.opacity(0.5), lineWidth: 8)
@@ -228,7 +229,7 @@ struct ShuffleRitualView: View {
                 .font(AppTheme.serifFont(size: 24, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
         }
-    }
+    }*/
     
     private var mysticalFireEffect: some View {
         VortexView(fireSystem()) {
@@ -341,3 +342,12 @@ struct ShuffleRitualView: View {
     }
     .environmentObject(AppViewModel())
 }
+
+
+
+
+
+
+
+
+

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Vortex
 
 struct AppTheme {
     // Gold colors matching the app icon
@@ -90,3 +91,62 @@ extension View {
         modifier(ElegantCardStyle())
     }
 }
+// MARK: - Mystic Progress View
+struct MysticProgressView: View {
+    @Binding var progress: CGFloat
+    let duration: CGFloat
+    
+    var body: some View {
+        RitualCandles(progress: progress, duration: duration)
+    }
+}
+
+// MARK: - Ritual Candles Progress Indicator
+struct RitualCandles: View {
+    var progress: CGFloat
+    let duration: CGFloat
+    
+    private var normalized: CGFloat {
+        min(max(progress / duration, 0), 1)
+    }
+    
+    // Returns fire system with fixed center position
+    private func candleFireSystem() -> VortexSystem {
+        let fire = VortexSystem.fire
+        fire.position = [0.5, 0.5] // Center position
+        return fire
+    }
+    
+    var body: some View {
+        HStack(spacing: 10) {
+            ForEach(0..<5) { i in
+                // Flame area with consistent frame
+                ZStack {
+                    if normalized > CGFloat(i) * 0.2 {
+                        // Vortex flame effect
+                        VortexView(candleFireSystem()) {
+                            Circle()
+                                .fill(.white)
+                                .blendMode(.plusLighter)
+                                .blur(radius: 3)
+                                .frame(width: 32)
+                                .tag("circle")
+                        }
+                        .frame(width: 200, height: 350)
+                        .scaleEffect(0.3)
+                        .transition(.opacity.animation(.easeInOut(duration: 0.5)))
+                    } else {
+                        // Unlit state
+                        Circle()
+                            .fill(Color.orange.opacity(0.15))
+                            .frame(width: 20, height: 20)
+                            .blur(radius: 1.5)
+                    }
+                }
+                .frame(width: 40, height: 60)
+                .animation(.easeInOut(duration: 0.5), value: normalized > CGFloat(i) * 0.2)
+            }
+        }
+    }
+}
+
