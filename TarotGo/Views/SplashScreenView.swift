@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct SplashScreenView: View {
-    @State private var scale: CGFloat = 0.5
-    @State private var opacity: Double = 0.0
-    @State private var rotation: Double = 0.0
+    @State private var riftOpen: Bool = false
     @State private var particlesOpacity: Double = 0.0
     @State private var showText: Bool = false
     
@@ -27,56 +25,56 @@ struct SplashScreenView: View {
                 .opacity(particlesOpacity)
             
             VStack(spacing: 30) {
-                // App Icon
+                // Mystical Rift Reveal
                 ZStack {
-                    // Outer golden glow
-                    Circle()
+                    // Rift shape - mystical portal
+                    Capsule()
                         .fill(
-                            RadialGradient(
+                            LinearGradient(
                                 colors: [
-                                    AppTheme.gold.opacity(0.4),
-                                    AppTheme.darkGold.opacity(0.2),
-                                    Color.clear
+                                    AppTheme.deepNavy,
+                                    AppTheme.gold.opacity(0.3),
+                                    AppTheme.lightGold.opacity(0.4),
+                                    AppTheme.gold.opacity(0.3),
+                                    AppTheme.deepNavy
                                 ],
-                                center: .center,
-                                startRadius: 60,
-                                endRadius: 180
+                                startPoint: .top,
+                                endPoint: .bottom
                             )
                         )
-                        .frame(width: 360, height: 360)
-                        .blur(radius: 30)
+                        .frame(width: riftOpen ? 220 : 10, height: 280)
+                        .blur(radius: 12)
+                        .animation(.easeInOut(duration: 1.2), value: riftOpen)
                     
-                    // Inner glow
-                    Circle()
-                        .fill(
-                            RadialGradient(
-                                colors: [
-                                    AppTheme.lightGold.opacity(0.3),
-                                    Color.clear
-                                ],
-                                center: .center,
-                                startRadius: 30,
-                                endRadius: 100
-                            )
-                        )
-                        .frame(width: 200, height: 200)
-                        .blur(radius: 15)
+                    // Outer glow around rift
+                    Capsule()
+                        .stroke(AppTheme.gold.opacity(0.8), lineWidth: 3)
+                        .frame(width: riftOpen ? 220 : 10, height: 280)
+                        .blur(radius: 8)
+                        .animation(.easeInOut(duration: 1.2), value: riftOpen)
                     
-                    // App icon image
+                    // Inner magical glow
+                    Capsule()
+                        .stroke(AppTheme.lightGold.opacity(0.6), lineWidth: 2)
+                        .frame(width: riftOpen ? 220 : 10, height: 280)
+                        .blur(radius: 4)
+                        .animation(.easeInOut(duration: 1.2), value: riftOpen)
+                    
+                    // App icon emerging from the rift
                     Image("tarotgo512")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 160, height: 160)
-                        .cornerRadius(35)
+                        .frame(width: 140, height: 140)
+                        .cornerRadius(30)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 35)
+                            RoundedRectangle(cornerRadius: 30)
                                 .stroke(AppTheme.goldGradient, lineWidth: 3)
                         )
-                        .shadow(color: AppTheme.gold.opacity(0.5), radius: 20, x: 0, y: 10)
-                        .rotationEffect(.degrees(rotation))
+                        .shadow(color: AppTheme.gold.opacity(0.6), radius: 20, x: 0, y: 10)
+                        .opacity(riftOpen ? 1 : 0)
+                        .scaleEffect(riftOpen ? 1 : 0.7)
+                        .animation(.easeOut(duration: 0.8).delay(0.5), value: riftOpen)
                 }
-                .scaleEffect(scale)
-                .opacity(opacity)
                 
                 // App name with gold styling
                 if showText {
@@ -116,15 +114,8 @@ struct SplashScreenView: View {
     }
     
     private func startAnimation() {
-        // Logo animation
-        withAnimation(.spring(response: 1.2, dampingFraction: 0.6)) {
-            scale = 1.0
-            opacity = 1.0
-        }
-        
-        withAnimation(.linear(duration: 2.0)) {
-            rotation = 360
-        }
+        // Open the mystical rift
+        riftOpen = true
         
         // Particles fade in
         withAnimation(.easeIn(duration: 1.0).delay(0.3)) {
@@ -132,7 +123,7 @@ struct SplashScreenView: View {
         }
         
         // Text appearance
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             withAnimation(.easeOut(duration: 0.6)) {
                 showText = true
             }
