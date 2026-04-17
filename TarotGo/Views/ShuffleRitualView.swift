@@ -50,15 +50,14 @@ struct ShuffleRitualView: View {
                 
                 Spacer()
                 
-                // Deck of cards with long press
-                deckView
+                if phase == .pressing {
+                    RitualCandles(progress: pressProgress, duration: totalPressDuration)
+                        .border(Color.blue, width: 1)
+                }
                 
                 Spacer()
                 
-                // Progress indicator
-                if phase == .pressing {
-                    progressIndicator
-                }
+                deckView
                 
                 Spacer()
             }
@@ -340,4 +339,48 @@ struct ShuffleRitualView: View {
         ShuffleRitualView(category: .love, customQuestion: "Will I find love?")
     }
     .environmentObject(AppViewModel())
+}
+
+
+// MARK: - Ritual Candles (mystic ignition effect)
+struct RitualCandles: View {
+    var progress: CGFloat
+    let duration: CGFloat
+    
+    private var normalized: CGFloat {
+        min(max(progress / duration, 0), 1)
+    }
+    
+    var body: some View {
+        HStack(spacing: 0) {
+            ForEach(0..<5) { i in
+                    // Flame area with consistent frame
+                    ZStack {
+                        if normalized > CGFloat(i) * 0.2 {
+                            // Vortex flame effect
+                            VortexView(.fire) {
+                                Circle()
+                                    .fill(.white)
+                                    .blendMode(.plusLighter)
+                                    .blur(radius: 3)
+                                    .frame(width: 32)
+                                    .tag("circle")
+                            }
+                            .frame(width: 200, height: 350)
+                            .scaleEffect(0.3)
+                            .transition(.opacity.animation(.easeInOut(duration: 0.5)))
+                        } else {
+                            // Unlit state
+                            Circle()
+                                .fill(Color.orange.opacity(0.15))
+                                .frame(width: 15, height: 15)
+                                .blur(radius: 1.5)
+                        }
+                    }
+                    .frame(width: 30, height: 60)
+                    .animation(.easeInOut(duration: 0.5), value: normalized > CGFloat(i) * 0.2)
+
+            }
+        }
+    }
 }
