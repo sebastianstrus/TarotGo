@@ -14,6 +14,7 @@ class ReadingViewModel: ObservableObject {
     @Published var availableCards: [TarotCard] = []
     @Published var drawnCards: [DrawnCard] = []
     @Published var isShuffling: Bool = false
+    @Published var selectedCardIds: Set<String> = []
     
     let category: IntentionCategory
     let customQuestion: String?
@@ -51,14 +52,14 @@ class ReadingViewModel: ObservableObject {
         }
     }
     
-    func drawCard(at position: SpreadPosition) -> DrawnCard? {
-        guard !availableCards.isEmpty else { return nil }
+    func drawCard(at position: SpreadPosition, selectedCard: TarotCard) -> DrawnCard? {
+        guard !selectedCardIds.contains(selectedCard.id) else { return nil }
         
-        let card = availableCards.removeFirst()
+        selectedCardIds.insert(selectedCard.id)
         let isReversed = Double.random(in: 0...1) < 0.3
         
         let drawnCard = DrawnCard(
-            card: card,
+            card: selectedCard,
             position: position,
             isReversed: isReversed,
             category: category
@@ -75,6 +76,7 @@ class ReadingViewModel: ObservableObject {
     func resetReading() {
         availableCards = TarotDeck.allCards.shuffled()
         drawnCards = []
+        selectedCardIds = []
         isShuffling = false
     }
 }

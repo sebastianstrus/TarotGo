@@ -18,6 +18,8 @@ struct CardSelectionView: View {
     @State private var showInstruction: Bool = true
     @State private var navigateToInterpretation: Bool = false
     @State private var selectedCardId: String?
+    @State private var selectedCards: [TarotCard] = []
+    @State private var animatingCardId: String?
     
     init(category: IntentionCategory, customQuestion: String?, spreadType: SpreadType) {
         self.category = category
@@ -44,9 +46,12 @@ struct CardSelectionView: View {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
-            VStack(spacing: 30) {
+            VStack(spacing: 20) {
                 // Progress indicator
                 progressIndicator
+                
+                // Selected cards at the top
+                selectedCardsView
                 
                 // Instruction or position description
                 if let position = currentPosition {
@@ -56,17 +61,17 @@ struct CardSelectionView: View {
                             .foregroundColor(AppTheme.gold.opacity(0.8))
                         
                         Text(position.name)
-                            .font(AppTheme.serifFont(size: 28, weight: .light))
+                            .font(AppTheme.serifFont(size: 24, weight: .light))
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                         
                         Text(position.description)
-                            .font(.system(size: 16, weight: .light))
+                            .font(.system(size: 14, weight: .light))
                             .foregroundColor(AppTheme.textSecondary)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
+                            .lineLimit(2)
                     }
-                    .padding(.top, 20)
                 }
                 
                 Spacer()
@@ -79,14 +84,13 @@ struct CardSelectionView: View {
                             .foregroundColor(AppTheme.gold.opacity(0.7))
                         
                         Text(L10n.selectionChooseCard)
-                            .font(.system(size: 18, weight: .light))
+                            .font(.system(size: 16, weight: .light))
                             .foregroundColor(AppTheme.textPrimary)
                         
                         Image(systemName: "sparkles")
                             .font(.system(size: 12))
                             .foregroundColor(AppTheme.gold.opacity(0.7))
                     }
-                    .padding(.bottom, 20)
                 }
                 
                 cardFanView
@@ -127,28 +131,75 @@ struct CardSelectionView: View {
             }
         }
         .padding(.horizontal, 40)
-        .padding(.top, 20)
+        .padding(.top, 10)
+    }
+    
+    private var selectedCardsView: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                ForEach(selectedCards, id: \.id) { card in
+                    ZStack {
+                        // White background
+                        RoundedRectangle(cornerRadius: 6)
+                            .fill(Color.white)
+                        
+                        // Card back image
+                        if let uiImage = UIImage(named: "ReversCard") {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .aspectRatio(1108/1900, contentMode: .fit)
+                                .cornerRadius(6)
+                        }
+                        
+                        // Border
+                        RoundedRectangle(cornerRadius: 6)
+                            .stroke(
+                                LinearGradient(
+                                    colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 2
+                            )
+                    }
+                    .aspectRatio(1108/1900, contentMode: .fit)
+                    .frame(height: 80)
+                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
+                    .transition(.scale.combined(with: .opacity))
+                }
+            }
+            .padding(.horizontal)
+            .padding(.vertical, 5)
+        }
+        .frame(height: 95)
     }
     
     private var cardFanView: some View {
         GeometryReader { geometry in
-            let cardCount = min(viewModel.availableCards.count, 15)
-            let totalWidth = geometry.size.width - 60
-            let spacing = totalWidth / CGFloat(cardCount)
+            let cardCount = viewModel.availableCards.count
+            let totalWidth = geometry.size.width - 40
+            // Tighter spacing for more cards
+            let spacing = min(totalWidth / CGFloat(max(cardCount, 1)), 8)
             
             ZStack {
-                ForEach(Array(viewModel.availableCards.prefix(cardCount).enumerated()), id: \.element.id) { index, card in
-                    let angle = Double(index - cardCount / 2) * 5
-                    let xOffset = CGFloat(index - cardCount / 2) * spacing / 2
+                ForEach(Array(viewModel.availableCards.enumerated()), id: \.element.id) { index, card in
+                    // Smaller angle increment for smoother fan with more cards
+                    let angle = Double(index - cardCount / 2) * 2.5
+                    let xOffset = CGFloat(index - cardCount / 2) * spacing
+                    let isCardSelected = viewModel.selectedCardIds.contains(card.id)
                     
                     CardBackView(isSelected: selectedCardId == card.id)
                         .frame(width: 100, height: 150)
                         .rotationEffect(.degrees(angle))
-                        .offset(x: xOffset, y: abs(angle) * 5)
+                        .offset(x: xOffset, y: abs(angle) * 3)
                         .zIndex(selectedCardId == card.id ? 100 : Double(cardCount - abs(index - cardCount / 2)))
                         .scaleEffect(selectedCardId == card.id ? 1.1 : 1.0)
+                        .opacity(isCardSelected ? 0 : 1)
+                        .allowsHitTesting(!isCardSelected)
                         .onTapGesture {
-                            selectCard(card)
+                            if !isCardSelected {
+                                selectCard(card)
+                            }
                         }
                 }
             }
@@ -166,12 +217,19 @@ struct CardSelectionView: View {
         guard let position = currentPosition else { return }
         
         selectedCardId = card.id
+        animatingCardId = card.id
         HapticService.shared.impact(.medium)
         SoundService.shared.play(.whoosh, volume: 0.5)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            if let drawnCard = viewModel.drawCard(at: position) {
+        // Add card to selected cards with animation
+        withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
+            selectedCards.append(card)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            if let drawnCard = viewModel.drawCard(at: position, selectedCard: card) {
                 selectedCardId = nil
+                animatingCardId = nil
                 currentPositionIndex += 1
                 
                 // Check if all cards have been drawn
