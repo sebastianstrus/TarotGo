@@ -11,6 +11,11 @@ struct OnboardingFlowView: View {
     @EnvironmentObject var appViewModel: AppViewModel
     @State private var currentPage: Int = 0
     @State private var showGetStarted: Bool = false
+    @Binding var isPresented: Bool
+    
+    init(isPresented: Binding<Bool> = .constant(true)) {
+        self._isPresented = isPresented
+    }
     
     private var pages: [OnboardingPage] {
         [
@@ -151,6 +156,7 @@ struct OnboardingFlowView: View {
         SoundService.shared.play(.success, volume: 0.6)
         HapticService.shared.impact(.success)
         appViewModel.completeOnboarding()
+        isPresented = false
     }
 }
 
@@ -267,6 +273,6 @@ struct OnboardingPageView: View {
 }
 
 #Preview {
-    OnboardingFlowView()
+    OnboardingFlowView(isPresented: .constant(true))
         .environmentObject(AppViewModel())
 }

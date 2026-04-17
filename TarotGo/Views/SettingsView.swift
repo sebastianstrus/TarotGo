@@ -15,6 +15,7 @@ struct SettingsView: View {
     
     @State private var showingTimePicker: Bool = false
     @State private var toggleState: Bool = false
+    @State private var showOnboarding: Bool = false
     
     var body: some View {
         ZStack {
@@ -47,6 +48,32 @@ struct SettingsView: View {
                 } footer: {
                     Text(L10n.settingsDailyReminderDesc)
                         .foregroundColor(AppTheme.textSecondary)
+                }
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                        )
+                )
+                
+                Section {
+                    Button {
+                        showOnboarding = true
+                    } label: {
+                        HStack {
+                            Text(L10n.settingsViewTutorial)
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 14))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        }
+                        .foregroundColor(AppTheme.textPrimary)
+                    }
+                } header: {
+                    Text(L10n.settingsHelp)
+                        .foregroundColor(AppTheme.gold)
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
@@ -95,6 +122,9 @@ struct SettingsView: View {
                     await scheduleNotification()
                 }
             }
+        }
+        .fullScreenCover(isPresented: $showOnboarding) {
+            OnboardingFlowView(isPresented: $showOnboarding)
         }
     }
     

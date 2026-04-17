@@ -136,6 +136,8 @@ enum L10n {
     static let settingsDailyReminderDesc = NSLocalizedString("settings.dailyReminder.desc", comment: "Receive a daily reminder to draw your Card of the Day")
     static let settingsReminderTime = NSLocalizedString("settings.reminderTime", comment: "Reminder Time")
     static let settingsSetReminderTime = NSLocalizedString("settings.setReminderTime", comment: "Set Reminder Time")
+    static let settingsHelp = NSLocalizedString("settings.help", comment: "Help")
+    static let settingsViewTutorial = NSLocalizedString("settings.viewTutorial", comment: "View Tutorial")
     static let settingsAbout = NSLocalizedString("settings.about", comment: "About")
     static let settingsVersion = NSLocalizedString("settings.version", comment: "Version")
     static let settingsSave = NSLocalizedString("settings.save", comment: "Save")
