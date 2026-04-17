@@ -63,7 +63,7 @@ struct SettingsView: View {
                         showOnboarding = true
                     } label: {
                         HStack {
-                            Text(L10n.settingsViewTutorial)
+                            Text(L10n.settingsIntroSlides)
                             Spacer()
                             Image(systemName: "chevron.right")
                                 .font(.system(size: 14))
@@ -72,7 +72,7 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textPrimary)
                     }
                 } header: {
-                    Text(L10n.settingsHelp)
+                    Text(L10n.settingsInfo)
                         .foregroundColor(AppTheme.gold)
                 }
                 .listRowBackground(
