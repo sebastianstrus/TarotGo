@@ -1662,33 +1662,6 @@
         }
       }
     },
-    "dictionary.allCards" : {
-      "comment" : "All Cards"
-    },
-    "dictionary.general" : {
-      "comment" : "General"
-    },
-    "dictionary.keywords" : {
-      "comment" : "Keywords"
-    },
-    "dictionary.meanings" : {
-      "comment" : "Meanings"
-    },
-    "dictionary.reversed" : {
-      "comment" : "Reversed"
-    },
-    "dictionary.searchPlaceholder" : {
-      "comment" : "Search cards..."
-    },
-    "dictionary.subtitle" : {
-      "comment" : "Explore all 78 tarot cards"
-    },
-    "dictionary.title" : {
-      "comment" : "Card Dictionary"
-    },
-    "dictionary.upright" : {
-      "comment" : "Upright"
-    },
     "Done" : {
 
     },
@@ -2475,12 +2448,6 @@
           }
         }
       }
-    },
-    "home.cardDictionary" : {
-      "comment" : "Card Dictionary"
-    },
-    "home.cardDictionary.subtitle" : {
-      "comment" : "Explore all 78 tarot cards"
     },
     "home.cardOfDay" : {
       "extractionState" : "manual",
