@@ -32,6 +32,9 @@ enum L10n {
     static let homeHistory = NSLocalizedString("home.history", comment: "Reading History")
     static let homeHistorySubtitle = NSLocalizedString("home.history.subtitle", comment: "Review your past readings")
 
+    static let homeCardDictionary = NSLocalizedString("home.cardDictionary", comment: "Card Dictionary")
+    static let homeCardDictionarySubtitle = NSLocalizedString("home.cardDictionary.subtitle", comment: "Explore all 78 tarot cards")
+    
     static let homeSettings = NSLocalizedString("home.settings", comment: "Settings")
     static let homeSettingsSubtitle = NSLocalizedString("home.settings.subtitle", comment: "Configure notifications and preferences")
 
@@ -205,6 +208,17 @@ enum L10n {
     static let positionActionDesc = NSLocalizedString("position.action.desc", comment: "What to do next")
     static let positionCareerOutcome = NSLocalizedString("position.careerOutcome", comment: "Outcome")
     static let positionCareerOutcomeDesc = NSLocalizedString("position.careerOutcome.desc", comment: "Potential result")
+
+    // MARK: - Card Dictionary
+    static let dictionaryTitle = NSLocalizedString("dictionary.title", comment: "Card Dictionary")
+    static let dictionarySubtitle = NSLocalizedString("dictionary.subtitle", comment: "Explore all 78 tarot cards")
+    static let dictionarySearchPlaceholder = NSLocalizedString("dictionary.searchPlaceholder", comment: "Search cards...")
+    static let dictionaryAllCards = NSLocalizedString("dictionary.allCards", comment: "All Cards")
+    static let dictionaryUpright = NSLocalizedString("dictionary.upright", comment: "Upright")
+    static let dictionaryReversed = NSLocalizedString("dictionary.reversed", comment: "Reversed")
+    static let dictionaryKeywords = NSLocalizedString("dictionary.keywords", comment: "Keywords")
+    static let dictionaryMeanings = NSLocalizedString("dictionary.meanings", comment: "Meanings")
+    static let dictionaryGeneral = NSLocalizedString("dictionary.general", comment: "General")
 
     // MARK: - Reading Count
     static func readingCount(_ count: Int) -> String {

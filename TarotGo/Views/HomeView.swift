@@ -87,6 +87,16 @@ struct HomeView: View {
                             }
                             .buttonStyle(HomeButtonStyle())
                             
+                            // Card Dictionary
+                            NavigationLink(destination: CardDictionaryView()) {
+                                HomeButton(
+                                    icon: "books.vertical.fill",
+                                    title: L10n.homeCardDictionary,
+                                    subtitle: L10n.homeCardDictionarySubtitle
+                                )
+                            }
+                            .buttonStyle(HomeButtonStyle())
+                            
                             // History
                             NavigationLink(destination: HistoryView()) {
                                 HomeButton(
