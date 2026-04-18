@@ -31,59 +31,52 @@ struct CardOfTheDayView: View {
                     .background(AnimatedBackgroundView().ignoresSafeArea())
                 
                 ScrollView {
-                VStack(spacing: 30) {
-                    // Header
-                    VStack(spacing: 10) {
-                        Image(systemName: "sun.max.fill")
-                            .font(.system(size: 50))
-                            .foregroundStyle(AppTheme.goldGradient)
-                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
-                        
-                        Text(L10n.cardOfDayTitle)
-                            .font(AppTheme.serifFont(size: 32, weight: .light))
-                            .foregroundStyle(AppTheme.goldGradient)
-                            .frame(maxWidth: .infinity)
-                            .fixedSize(horizontal: true, vertical: true)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
-                        
-                        Text(Date().formatted(date: .long, time: .omitted))
-                            .font(.system(size: 16, weight: .light))
-                            .foregroundColor(AppTheme.gold.opacity(0.8))
-                    }
-                    .padding(.top, 30)
-                    .frame(maxWidth: .infinity)
-                    
-                    if !isRevealed {
-                        instructionView
-                    }
-                    
-                    // Card
-                    if let card = todayCard {
-                        VStack(spacing: 20) {
-                            cardView(card: card)
+                    VStack(spacing: 30) {
+                        VStack(spacing: 10) {
+                            Image(systemName: "sun.max.fill")
+                                .font(.system(size: 50))
+                                .foregroundStyle(AppTheme.goldGradient)
+                                .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                             
-                            // Progress indicator below card
-                            progressIndicator
-                                .opacity(isPressed && !isRevealed ? 1 : 0)
+                            Text(L10n.cardOfDayTitle)
+                                .font(AppTheme.serifFont(size: 32, weight: .light))
+                                .foregroundStyle(AppTheme.goldGradient)
+                                .frame(maxWidth: .infinity)
+                                .fixedSize(horizontal: true, vertical: true)
+                                .multilineTextAlignment(.center)
+                                .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
+                            
+                            Text(Date().formatted(date: .long, time: .omitted))
+                                .font(.system(size: 16, weight: .light))
+                                .foregroundColor(AppTheme.gold.opacity(0.8))
                         }
-                        .padding(.vertical, 30)
+                        .padding(.top, 20)
+                        .frame(maxWidth: .infinity)
+                        
+                        if !isRevealed {
+                            instructionView
+                        }
+                        
+                        if let card = todayCard {
+                            cardView(card: card)
+                        }
+                        
+                        progressIndicator
+                            .opacity(isPressed && !isRevealed ? 1 : 0)
+                        
+                        if showInterpretation, let card = todayCard {
+                            interpretationSection(for: card)
+                        }
+                        
+                        Spacer(minLength: 40)
                     }
-                    
-                    // Interpretation
-                    if showInterpretation, let card = todayCard {
-                        interpretationSection(for: card)
-                    }
-                    
-                    Spacer(minLength: 40)
+                    .padding()
                 }
-                .padding()
-            }
-            
-            // Fire effect on top
-            mysticalFireEffect
-                .ignoresSafeArea()
-                .allowsHitTesting(false)
+                
+                // Fire effect on top
+                mysticalFireEffect
+                    .ignoresSafeArea()
+                    .allowsHitTesting(false)
             }
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
@@ -107,7 +100,7 @@ struct CardOfTheDayView: View {
     }
     
     private var instructionView: some View {
-        VStack(spacing: 15) {
+        VStack(spacing: 10) {
             Text(L10n.cardOfDayCenterYourself)
                 .font(AppTheme.serifFont(size: 20, weight: .light))
                 .foregroundStyle(AppTheme.goldGradient)
