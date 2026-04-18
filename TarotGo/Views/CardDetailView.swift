@@ -77,10 +77,7 @@ struct CardDetailView: View {
         .aspectRatio(1108/1900, contentMode: .fit)
         .frame(maxWidth: 280)
         .shadow(color: AppTheme.gold.opacity(0.4), radius: 20)
-        .rotation3DEffect(
-            .degrees(showReversed ? 180 : 0),
-            axis: (x: 0, y: 1, z: 0)
-        )
+        .rotationEffect(.degrees(showReversed ? 180 : 0))
         .animation(.spring(response: 0.6, dampingFraction: 0.7), value: showReversed)
     }
     
