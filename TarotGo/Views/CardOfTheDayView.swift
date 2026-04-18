@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import Vortex
 
 struct CardOfTheDayView: View {
     @State private var todayCard: TarotCard?
@@ -16,16 +17,20 @@ struct CardOfTheDayView: View {
     @State private var pressProgress: Double = 0.0
     @State private var isPressed: Bool = false
     @State private var flipRotation: Double = 0
+    @State private var emitterPosition: SIMD2<Double> = [0.5, 0.5]
+    @State private var showFire: Bool = false
+    @State private var screenSize: CGSize = .zero
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
-    private let totalPressDuration: Double = 3.0
+    private let totalPressDuration: Double = 5.0
     
     var body: some View {
-        ZStack {
-            Color.clear
-                .background(AnimatedBackgroundView().ignoresSafeArea())
-            
-            ScrollView {
+        GeometryReader { geometry in
+            ZStack {
+                Color.clear
+                    .background(AnimatedBackgroundView().ignoresSafeArea())
+                
+                ScrollView {
                 VStack(spacing: 30) {
                     // Header
                     VStack(spacing: 10) {
@@ -53,15 +58,14 @@ struct CardOfTheDayView: View {
                         instructionView
                     }
                     
-                    // Card with overlay progress indicator
+                    // Card
                     if let card = todayCard {
-                        ZStack {
+                        VStack(spacing: 20) {
                             cardView(card: card)
                             
-                            // Progress indicator overlaid on card
-                            if isPressed && !isRevealed {
-                                progressIndicator
-                            }
+                            // Progress indicator below card
+                            progressIndicator
+                                .opacity(isPressed && !isRevealed ? 1 : 0)
                         }
                         .padding(.vertical, 30)
                     }
@@ -75,21 +79,28 @@ struct CardOfTheDayView: View {
                 }
                 .padding()
             }
-        }
-        .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            loadTodayCard()
-        }
-        .onReceive(pressTimer) { _ in
-            if isPressed && !isRevealed {
-                pressProgress += 0.05
-                
-                if Int(pressProgress * 10) % 10 == 0 {
-                    HapticService.shared.impact(.light)
-                }
-                
-                if pressProgress >= totalPressDuration {
-                    completePress()
+            
+            // Fire effect on top
+            mysticalFireEffect
+                .ignoresSafeArea()
+                .allowsHitTesting(false)
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                loadTodayCard()
+                screenSize = geometry.size
+            }
+            .onReceive(pressTimer) { _ in
+                if isPressed && !isRevealed {
+                    pressProgress += 0.05
+                    
+                    if Int(pressProgress * 10) % 10 == 0 {
+                        HapticService.shared.impact(.light)
+                    }
+                    
+                    if pressProgress >= totalPressDuration {
+                        completePress()
+                    }
                 }
             }
         }
@@ -142,37 +153,57 @@ struct CardOfTheDayView: View {
                     withAnimation(.spring(response: 0.3)) {
                         isPressed = true
                     }
+                    // Fade in fire effect
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        showFire = true
+                    }
                 } else if pressProgress < totalPressDuration {
                     withAnimation(.spring(response: 0.3)) {
                         isPressed = false
                         pressProgress = 0
                     }
+                    // Fade out fire effect
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        showFire = false
+                    }
                 }
             }
         }
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 0, coordinateSpace: .global)
+                .onChanged { value in
+                    // Convert global screen coords to Vortex normalised [0…1] space
+                    withAnimation(.interactiveSpring(response: 0.2, dampingFraction: 0.7)) {
+                        emitterPosition = [
+                            Double(value.location.x / screenSize.width),
+                            Double(value.location.y / screenSize.height)
+                        ]
+                    }
+                }
+        )
     }
     
     private var progressIndicator: some View {
-        ZStack {
+        MysticWave(progress: pressProgress)
+    }
+    
+    private var mysticalFireEffect: some View {
+        VortexView(fireSystem()) {
             Circle()
-                .stroke(AppTheme.darkNavy.opacity(0.5), lineWidth: 8)
-                .frame(width: 100, height: 100)
-            
-            Circle()
-                .trim(from: 0, to: pressProgress / totalPressDuration)
-                .stroke(
-                    AppTheme.goldGradient,
-                    style: StrokeStyle(lineWidth: 8, lineCap: .round)
-                )
-                .frame(width: 100, height: 100)
-                .rotationEffect(.degrees(-90))
-                .animation(.linear(duration: 0.05), value: pressProgress)
-                .shadow(color: AppTheme.gold.opacity(0.6), radius: 8)
-            
-            Text("\(Int((pressProgress / totalPressDuration) * 100))%")
-                .font(AppTheme.serifFont(size: 24, weight: .medium))
-                .foregroundStyle(AppTheme.goldGradient)
+                .fill(.white)
+                .blendMode(.plusLighter)
+                .blur(radius: 3)
+                .frame(width: 32)
+                .tag("circle")
         }
+        .opacity(showFire ? 1.0 : 0.0)
+    }
+    
+    // Returns the built-in fire preset with our emitter position injected
+    private func fireSystem() -> VortexSystem {
+        let fire = VortexSystem.fire
+        fire.position = emitterPosition
+        return fire
     }
     
     private func interpretationSection(for card: TarotCard) -> some View {
@@ -251,6 +282,12 @@ struct CardOfTheDayView: View {
     
     private func completePress() {
         isPressed = false
+        
+        // Fade out fire effect
+        withAnimation(.easeInOut(duration: 0.5)) {
+            showFire = false
+        }
+        
         HapticService.shared.impact(.heavy)
         SoundService.shared.play(.cardFlip, volume: 0.8)
         
@@ -284,8 +321,6 @@ struct CardOfTheDayView: View {
             return "What passion or creative project is calling to you? How can you channel your enthusiasm productively?"
         }
     }
-    
-
 }
 
 // Seeded random number generator for reproducible daily cards
