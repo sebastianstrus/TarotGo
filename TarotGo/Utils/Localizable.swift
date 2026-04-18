@@ -125,7 +125,7 @@ enum L10n {
     // MARK: - Card of the Day
     static let cardOfDayTitle = NSLocalizedString("cardOfDay.title", comment: "Card of the Day")
     static let cardOfDayCenterYourself = NSLocalizedString("cardOfDay.centerYourself", comment: "Take a moment to center yourself")
-    static let cardOfDayInstruction = NSLocalizedString("cardOfDay.instruction", comment: "Place your finger on the card and hold for 3 seconds")
+    static let cardOfDayInstruction = NSLocalizedString("cardOfDay.instruction", comment: "Place your finger on the card and hold for 5 seconds")
     static let cardOfDayTodaysMessage = NSLocalizedString("cardOfDay.todaysMessage", comment: "Today's Message")
     static let cardOfDayReflect = NSLocalizedString("cardOfDay.reflect", comment: "Reflect")
 

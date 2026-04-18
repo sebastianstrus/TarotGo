@@ -173,67 +173,67 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lege deinen Finger auf die Karte und halte 3 Sekunden"
+            "value" : "Lege deinen Finger auf die Karte und halte 5 Sekunden"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Place your finger on the card and hold for 3 seconds"
+            "value" : "Place your finger on the card and hold for 5 seconds"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Coloca tu dedo en la carta y mantén durante 3 segundos"
+            "value" : "Coloca tu dedo en la carta y mantén durante 5 segundos"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Placez votre doigt sur la carte et maintenez pendant 3 secondes"
+            "value" : "Placez votre doigt sur la carte et maintenez pendant 5 secondes"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Posiziona il dito sulla carta e tieni premuto per 3 secondi"
+            "value" : "Posiziona il dito sulla carta e tieni premuto per 5 secondi"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "カードに指を置いて3秒間保持してください"
+            "value" : "カードに指を置いて5秒間保持してください"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Plasser fingeren på kortet og hold i 3 sekunder"
+            "value" : "Plasser fingeren på kortet og hold i 5 sekunder"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Połóż palec na karcie i przytrzymaj przez 3 sekundy"
+            "value" : "Połóż palec na karcie i przytrzymaj przez 5 sekundy"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Coloque o dedo na carta e segure por 3 segundos"
+            "value" : "Coloque o dedo na carta e segure por 5 segundos"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Placera fingret på kortet och håll i 3 sekunder"
+            "value" : "Placera fingret på kortet och håll i 5 sekunder"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Покладіть палець на карту і тримайте 3 секунди"
+            "value" : "Покладіть палець на карту і тримайте 5 секунди"
           }
         }
       }
