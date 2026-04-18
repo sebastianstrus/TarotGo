@@ -201,22 +201,39 @@ struct CardDictionaryRow: View {
     var body: some View {
         HStack(spacing: 15) {
             // Card image thumbnail
-            if let uiImage = UIImage(named: card.imageName) {
-                Image(uiImage: uiImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 60, height: 90)
-                    .cornerRadius(8)
-                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
-            } else {
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(AppTheme.cardGradient)
-                    .frame(width: 60, height: 90)
-                    .overlay(
-                        Image(systemName: "moon.stars.fill")
-                            .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
+            ZStack {
+                // White background
+                RoundedRectangle(cornerRadius: 6)
+                    .fill(Color.white)
+                
+                if let uiImage = UIImage(named: card.imageName) {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .clipped()
+                        .cornerRadius(6)
+                } else {
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(AppTheme.cardGradient)
+                    
+                    Image(systemName: "moon.stars.fill")
+                        .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
+                }
+                
+                // Gold border
+                RoundedRectangle(cornerRadius: 6)
+                    .stroke(
+                        LinearGradient(
+                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 2
                     )
             }
+            .aspectRatio(1108/1900, contentMode: .fit)
+            .frame(width: 50)
+            .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
             
             VStack(alignment: .leading, spacing: 6) {
                 // Card name

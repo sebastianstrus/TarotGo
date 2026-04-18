@@ -43,31 +43,45 @@ struct CardDetailView: View {
     }
     
     private var cardImageView: some View {
-        Group {
+        ZStack {
+            // White background
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.white)
+            
             if let uiImage = UIImage(named: card.imageName) {
                 Image(uiImage: uiImage)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: 280)
-                    .cornerRadius(15)
-                    .shadow(color: AppTheme.gold.opacity(0.4), radius: 20)
-                    .rotation3DEffect(
-                        .degrees(showReversed ? 180 : 0),
-                        axis: (x: 0, y: 1, z: 0)
-                    )
-                    .animation(.spring(response: 0.6, dampingFraction: 0.7), value: showReversed)
+                    .aspectRatio(contentMode: .fill)
+                    .clipped()
+                    .cornerRadius(12)
             } else {
-                RoundedRectangle(cornerRadius: 15)
+                RoundedRectangle(cornerRadius: 12)
                     .fill(AppTheme.cardGradient)
-                    .frame(width: 280, height: 420)
-                    .overlay(
-                        Image(systemName: "moon.stars.fill")
-                            .font(.system(size: 80))
-                            .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
-                    )
-                    .shadow(color: AppTheme.gold.opacity(0.4), radius: 20)
+                
+                Image(systemName: "moon.stars.fill")
+                    .font(.system(size: 80))
+                    .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
             }
+            
+            // Gold border
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(
+                    LinearGradient(
+                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 3
+                )
         }
+        .aspectRatio(1108/1900, contentMode: .fit)
+        .frame(maxWidth: 280)
+        .shadow(color: AppTheme.gold.opacity(0.4), radius: 20)
+        .rotation3DEffect(
+            .degrees(showReversed ? 180 : 0),
+            axis: (x: 0, y: 1, z: 0)
+        )
+        .animation(.spring(response: 0.6, dampingFraction: 0.7), value: showReversed)
     }
     
     private var cardHeaderView: some View {
