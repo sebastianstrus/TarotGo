@@ -451,7 +451,903 @@ struct TarotInterpretations {
         
         // The World - General
         "the_world_general_upright": "Completion, achievement, fulfillment, and wholeness. A major life cycle concludes successfully. Celebrate your journey and prepare for the next adventure.",
-        "the_world_general_reversed": "Incompletion, shortcuts, delays, and lack of closure. Finish what you started. Taking the easy way out prevents real fulfillment."
+        "the_world_general_reversed": "Incompletion, shortcuts, delays, and lack of closure. Finish what you started. Taking the easy way out prevents real fulfillment.",
+        
+        // CUPS SUIT - Ace of Cups
+        "ace_of_cups_love_upright": "A new emotional beginning in love. If single, you're open to receiving love. If partnered, renewed feelings deepen your connection. Your heart is overflowing with love and ready to give and receive.",
+        "ace_of_cups_love_reversed": "Emotional blockage in love. You may be closing your heart due to past pain. Fear of vulnerability prevents new love from entering. Release old wounds to make space for new feelings.",
+        
+        "ace_of_cups_career_upright": "A fulfilling new professional opportunity that feeds your soul. This work aligns with your passion and brings emotional satisfaction. Follow what feels right in your heart.",
+        "ace_of_cups_career_reversed": "Professional opportunities lack emotional fulfillment. Your heart isn't in your work. Creativity feels blocked. Reconnect with what brings you joy in your career.",
+        
+        "ace_of_cups_finance_upright": "Financial opportunities that align with your values bring joy. Money flows when you're emotionally aligned with your work. Abundance through heartfelt effort.",
+        "ace_of_cups_finance_reversed": "Financial decisions lack heart or emotional satisfaction. Money might be coming but brings no joy. Blocked abundance due to closed heart. Open to receive.",
+        
+        "ace_of_cups_health_upright": "Emotional healing begins. Your heart and spirit are ready to heal. New wellness practices that nurture your emotional body. Self-love supports physical health.",
+        "ace_of_cups_health_reversed": "Emotional blockages affect physical health. Suppressed feelings manifest in the body. Your heart needs attention and healing. Release to restore flow.",
+        
+        "ace_of_cups_general_upright": "A new beginning in your emotional life. Love, joy, and creative inspiration overflow. Your heart is open and ready. This is a beautiful time of emotional awakening and spiritual connection.",
+        "ace_of_cups_general_reversed": "Emotional blockage or closed heart. Past wounds prevent you from fully feeling. Repressed emotions need release. Open yourself to receive the love that's available.",
+        
+        // Two of Cups
+        "two_of_cups_love_upright": "Deep mutual connection and partnership. This is about true union—balanced, harmonious, and mutually fulfilling. Whether new or established, this relationship has real potential.",
+        "two_of_cups_love_reversed": "Disconnection or imbalance in partnership. One person may be more invested than the other. Communication breaks down. Work to restore balance or consider if this is right.",
+        
+        "two_of_cups_career_upright": "Successful professional partnership or collaboration. Mutual respect and shared goals create harmony. This working relationship benefits both parties equally.",
+        "two_of_cups_career_reversed": "Professional partnerships are unbalanced or strained. Lack of mutual respect or unequal effort. Tensions in collaborations need addressing.",
+        
+        "two_of_cups_finance_upright": "Financial partnerships or agreements are balanced and fair. Shared resources work harmoniously. Mutual financial goals align beautifully.",
+        "two_of_cups_finance_reversed": "Financial imbalance in partnerships. One person gives more than receives. Money creates tension in relationships. Restore fairness in shared resources.",
+        
+        "two_of_cups_health_upright": "Mind-body connection strengthens. Emotional and physical health are in harmony. Partnership or support in your health journey benefits you greatly.",
+        "two_of_cups_health_reversed": "Mind-body disconnection or imbalanced approach to health. Conflicting health goals with partner. Need for better balance in wellness approach.",
+        
+        "two_of_cups_general_upright": "Beautiful partnership and mutual connection. Whether romantic, friendship, or professional—this is about true union. Balance, respect, and shared energy create something greater than the sum of its parts.",
+        "two_of_cups_general_reversed": "Disconnection, imbalance, or broken partnerships. Lack of mutual respect or understanding. Tensions strain the relationship. Restore balance or recognize when to let go.",
+        
+        // Three of Cups
+        "three_of_cups_love_upright": "Celebration, joy, and community support in love. Your relationship is blessed by friends and family. Social connections enhance your romantic life. Abundance of love surrounds you.",
+        "three_of_cups_love_reversed": "Social dynamics strain relationships. Gossip or third-party interference affects your love life. Overindulgence damages connection. Isolation from support network.",
+        
+        "three_of_cups_career_upright": "Professional success through teamwork and celebration. Collaborative victories and workplace friendships thrive. Your contributions are recognized and celebrated by colleagues.",
+        "three_of_cups_career_reversed": "Workplace gossip or toxic social dynamics. Overindulgence affecting professional reputation. Feeling isolated from team. Office politics create problems.",
+        
+        "three_of_cups_finance_upright": "Financial celebration and shared abundance. Group investments or celebrations bring joy. Prosperity is enhanced through community and generosity.",
+        "three_of_cups_finance_reversed": "Overspending on social activities or celebrations. Financial strain from trying to keep up with others. Gossip about money matters. Financial isolation.",
+        
+        "three_of_cups_health_upright": "Health benefits from social connection and celebration. Friends support your wellness journey. Joyful group activities boost wellbeing. Emotional health thrives through community.",
+        "three_of_cups_health_reversed": "Overindulgence affecting health. Social pressures lead to unhealthy choices. Loneliness impacts wellness. Need balance in social activities and self-care.",
+        
+        "three_of_cups_general_upright": "Celebration, friendship, and community joy. Life is asking you to connect, share, and celebrate with others. Your tribe supports you. Abundance multiplies when shared.",
+        "three_of_cups_general_reversed": "Isolation, overindulgence, or toxic social dynamics. Gossip and drama drain your energy. You're either partying too much or withdrawing too much. Find healthy balance.",
+        
+        // Four of Cups
+        "four_of_cups_love_upright": "Romantic apathy or taking love for granted. You're so focused on what's missing that you don't see what's being offered. Look up—there's love right in front of you.",
+        "four_of_cups_love_reversed": "Awakening to love's possibilities. You're finally seeing what's been offered. Renewed appreciation for your relationship. Motivation to engage returns.",
+        
+        "four_of_cups_career_upright": "Professional boredom or apathy. You're contemplating change but not yet acting. Opportunities are presented but don't excite you. Time for honest reevaluation.",
+        "four_of_cups_career_reversed": "Renewed career motivation and recognition of opportunities. You're seeing possibilities you missed before. Ready to engage with work again.",
+        
+        "four_of_cups_finance_upright": "Financial apathy or taking abundance for granted. You're not seeing the opportunities available. Contemplation before financial decisions is wise, but don't miss what's offered.",
+        "four_of_cups_finance_reversed": "Financial awakening and renewed motivation. You're seeing money opportunities clearly now. Acceptance of what's available rather than focusing on lack.",
+        
+        "four_of_cups_health_upright": "Health contemplation and possible apathy. You know you should make changes but lack motivation. Don't ignore the opportunities for wellness being offered.",
+        "four_of_cups_health_reversed": "Renewed health motivation and awareness. You're finally ready to accept help and make changes. New perspectives on wellness emerge.",
+        
+        "four_of_cups_general_upright": "Apathy, contemplation, and missed opportunities. You're so focused inward or on what's wrong that you don't see what's being offered. This is a wake-up call to look around you.",
+        "four_of_cups_general_reversed": "Awakening from apathy. Renewed motivation and fresh perspectives arrive. You're finally seeing the opportunities that have been there all along. Acceptance replaces dissatisfaction.",
+        
+        // Five of Cups
+        "five_of_cups_love_upright": "Grief and disappointment in love. You're mourning what's lost and can't yet see what remains. Yes, this hurts. But turn around—not everything is gone.",
+        "five_of_cups_love_reversed": "Healing from romantic loss. You're beginning to move on and see hope again. Forgiveness—of self and others—brings peace. The worst of the grief is passing.",
+        
+        "five_of_cups_career_upright": "Professional disappointment and loss. A job, project, or opportunity didn't work out. You're mourning what failed. Valid feelings, but don't lose sight of what remains.",
+        "five_of_cups_career_reversed": "Recovery from career setbacks. You're making peace with past failures and seeing new possibilities. Moving forward with lessons learned.",
+        
+        "five_of_cups_finance_upright": "Financial loss or disappointment. Money slip through your fingers and you're focused on what's gone. Grief is natural, but assess what resources remain.",
+        "five_of_cups_finance_reversed": "Financial recovery and acceptance. You're making peace with losses and seeing remaining resources clearly. Finding forgiveness and moving forward.",
+        
+        "five_of_cups_health_upright": "Health disappointment or grief about physical changes. Mourning lost vitality or wellness. Your feelings are valid, but don't overlook your body's remaining strengths.",
+        "five_of_cups_health_reversed": "Health acceptance and emotional healing. You're making peace with limitations and seeing what's still possible. Finding hope and moving forward in wellness.",
+        
+        "five_of_cups_general_upright": "Loss, grief, and disappointment dominate your focus. Something has ended and you're mourning. Your feelings are valid. But this card reminds you: not everything is lost. Two cups still stand.",
+        "five_of_cups_general_reversed": "Healing, forgiveness, and moving on. You're beginning to see past the loss. Acceptance brings peace. The grief is subsiding and you're finding your way forward.",
+        
+        // Six of Cups
+        "six_of_cups_love_upright": "Nostalgia and sweet memories in love. Past relationships or childhood sweethearts may resurface. Innocence and comfort in familiar connections. The past informs present love.",
+        "six_of_cups_love_reversed": "Living in the past prevents present love. Idealizing old relationships blocks new ones. You're stuck in what was instead of embracing what is. Move forward.",
+        
+        "six_of_cups_career_upright": "Career nostalgia or returning to past work. Old colleagues reconnect. Your past experience informs current success. Simpler times in professional life appeal to you.",
+        "six_of_cups_career_reversed": "Career stuck in past patterns. Outdated approaches don't work anymore. Naive expectations about work. Need to update your professional perspective.",
+        
+        "six_of_cups_finance_upright": "Financial nostalgia or returns from past investments. Old approaches to money serve you well. Gifts or support from the past. Simple financial satisfaction.",
+        "six_of_cups_finance_reversed": "Unrealistic financial expectations based on the past. What worked before doesn't work now. Living beyond means trying to recreate old lifestyle. Update money approach.",
+        
+        "six_of_cups_health_upright": "Health practices from the past serve you well. Returning to simpler wellness routines. Childhood activities bring joy and health. Nostalgia supports healing.",
+        "six_of_cups_health_reversed": "Outdated health approaches don't work anymore. Living in denial about your body's current needs. Past health issues resurface. Need to update wellness practices.",
+        
+        "six_of_cups_general_upright": "Nostalgia, memories, and innocence. The past is present—whether through reunions, memories, or returning to familiar places. There's sweetness here, but don't get too lost in what was.",
+        "six_of_cups_general_reversed": "Stuck in the past or unrealistic nostalgia. You're idealizing what was and can't move forward. Naive expectations block growth. It's time to live in the present.",
+        
+        // Seven of Cups
+        "seven_of_cups_love_upright": "Romantic fantasies and illusions. You're seeing what you want to see, not what is. Many options feel overwhelming. Ground yourself in reality before choosing.",
+        "seven_of_cups_love_reversed": "Romantic clarity emerges from confusion. You're seeing people and situations more realistically. Making clear decisions about love. Illusions dissolve.",
+        
+        "seven_of_cups_career_upright": "Too many career options create confusion. Wishful thinking about professional possibilities. Some opportunities aren't real. Need clarity before committing to a path.",
+        "seven_of_cups_career_reversed": "Career clarity and realistic assessment of options. You're seeing opportunities clearly now. Ready to make grounded professional decisions. Fantasy gives way to practical action.",
+        
+        "seven_of_cups_finance_upright": "Financial illusions or too many investment options. If it sounds too good to be true, it probably is. Fantasies about wealth cloud judgment. Seek clarity and expert advice.",
+        "seven_of_cups_finance_reversed": "Financial clarity and realistic money decisions. You're seeing through get-rich-quick schemes. Making practical choices about resources. Sobriety replaces fantasy.",
+        
+        "seven_of_cups_health_upright": "Health illusions or overwhelm by too many wellness options. Confusion about what approach to take. Some health claims aren't real. Need clarity and professional guidance.",
+        "seven_of_cups_health_reversed": "Health clarity and realistic wellness decisions. You're seeing through false health promises. Making grounded choices about your body. Clear path forward emerges.",
+        
+        "seven_of_cups_general_upright": "Illusion, fantasy, and overwhelming choices. You're presented with many options but not all are real. Your imagination runs wild. Ground yourself and see clearly before deciding.",
+        "seven_of_cups_general_reversed": "Clarity, reality checks, and clear decisions. The fog is lifting. You're seeing situations realistically and ready to make grounded choices. Wishful thinking gives way to wisdom.",
+        
+        // Eight of Cups
+        "eight_of_cups_love_upright": "Walking away from unfulfilling love to find something deeper. This relationship doesn't feed your soul anymore. It's hard to leave, but staying is harder. Trust your need for more.",
+        "eight_of_cups_love_reversed": "Avoiding necessary departure from unfulfilling relationship. Fear of change keeps you in what doesn't serve you. Running from commitment or refusing to face relationship truth.",
+        
+        "eight_of_cups_career_upright": "Leaving professional security to find meaningful work. Your job doesn't fulfill you anymore. Time to seek deeper purpose even if it means walking away from comfort.",
+        "eight_of_cups_career_reversed": "Avoiding necessary career change due to fear. Staying in unfulfilling work because leaving feels scary. Running from opportunities for deeper professional meaning.",
+        
+        "eight_of_cups_finance_upright": "Walking away from financial security to pursue what truly matters. Money isn't everything. Seeking deeper fulfillment may mean temporary material sacrifice.",
+        "eight_of_cups_finance_reversed": "Fear of leaving financial security even when it doesn't bring happiness. Avoiding necessary financial changes. Staying in golden handcuffs.",
+        
+        "eight_of_cups_health_upright": "Walking away from unhealthy patterns to find true wellness. Leaving behind what no longer serves your body. Journey toward deeper health and wholeness.",
+        "eight_of_cups_health_reversed": "Avoiding necessary health changes. Fear keeps you in unhealthy patterns. Running from wellness journey or refusing to face health truth.",
+        
+        "eight_of_cups_general_upright": "Walking away to find deeper meaning. What once satisfied you doesn't anymore. This is about having the courage to leave behind what no longer serves your soul, even when it's hard.",
+        "eight_of_cups_general_reversed": "Avoiding necessary departure or staying in bad situations. Fear of change keeps you stuck. You might also be running away from everything instead of discerning what truly needs to change.",
+        
+        // Nine of Cups
+        "nine_of_cups_love_upright": "Deep romantic satisfaction and wishes fulfilled in love. You have the relationship you desired. Contentment and happiness in matters of the heart. Count your blessings.",
+        "nine_of_cups_love_reversed": "Romantic dissatisfaction despite having what you thought you wanted. Greed for more prevents enjoying what is. Materialism over authentic connection. Check your expectations.",
+        
+        "nine_of_cups_career_upright": "Professional satisfaction and career wishes fulfilled. You're enjoying the fruits of your labor. Success brings contentment. This is what you worked for—savor it.",
+        "nine_of_cups_career_reversed": "Professional dissatisfaction despite success. Your achievements don't bring expected joy. Constantly wanting more prevents satisfaction. Reevaluate what success means.",
+        
+        "nine_of_cups_finance_upright": "Financial satisfaction and prosperity. Your money wishes are fulfilled. You have the abundance you desired. Time to enjoy your resources and share generously.",
+        "nine_of_cups_finance_reversed": "Financial dissatisfaction despite having enough. Greed or materialism prevents contentment. Unfulfilled expectations about what money would bring. Practice gratitude.",
+        
+        "nine_of_cups_health_upright": "Health satisfaction and wellness goals achieved. Your body feels good and you're content with your vitality. Enjoy this phase of physical wellbeing.",
+        "nine_of_cups_health_reversed": "Health dissatisfaction or unrealistic body expectations. You have wellness but can't see it. Overindulgence affects health. Gratitude for your body's gifts needed.",
+        
+        "nine_of_cups_general_upright": "Wishes fulfilled, satisfaction, and contentment. You have what you desired. This is the card of having it all—emotionally, materially, spiritually. Enjoy this beautiful moment of completion.",
+        "nine_of_cups_general_reversed": "Dissatisfaction despite having much. Greed, materialism, or unrealistic expectations prevent contentment. You achieved your wishes but they didn't bring expected happiness. Look deeper.",
+        
+        // Ten of Cups
+        "ten_of_cups_love_upright": "Ultimate romantic and family harmony. Your relationship brings deep fulfillment. Love flows freely in your home. This is the happily ever after you've been building toward.",
+        "ten_of_cups_love_reversed": "Family or relationship discord disturbs peace. Disconnection from loved ones despite surface appearances. Broken relationship ideals. Work needed to restore harmony.",
+        
+        "ten_of_cups_career_upright": "Professional fulfillment aligned with family life. Work supports rather than disrupts home harmony. Your career contributes to overall life satisfaction and values alignment.",
+        "ten_of_cups_career_reversed": "Work-life imbalance strains family harmony. Career demands disrupt home life. Professional success but family disconnection. Realign priorities.",
+        
+        "ten_of_cups_finance_upright": "Financial abundance supports family harmony. Prosperity allows you to care for loved ones. Resources create security and joy for all. Wealth with purpose and love.",
+        "ten_of_cups_finance_reversed": "Financial issues strain family harmony. Money problems create tension at home. Wealth without emotional connection. Material focus disrupts relationships.",
+        
+        "ten_of_cups_health_upright": "Health and happiness in alignment. Your wellness supports family life and relationships. Emotional and physical health create beautiful harmony. Wholeness in all areas.",
+        "ten_of_cups_health_reversed": "Health issues strain family harmony. Wellness imbalance affects relationships. Disconnection between physical and emotional health. Need for integrated healing.",
+        
+        "ten_of_cups_general_upright": "Ultimate emotional fulfillment, harmony, and happiness in family and relationships. This is about having the life you dreamed of—love, connection, and peace. Celebrate this blessing.",
+        "ten_of_cups_general_reversed": "Broken relationships or family discord. The ideal you worked toward feels shattered. Surface happiness hiding deep disconnection. Disharmony in home and heart needs attention.",
+        
+        // Page of Cups
+        "page_of_cups_love_upright": "New romantic message or creative expression of feelings. Innocent, sincere love emerges. Your heart opens to new emotional experiences. Sweet beginnings in love.",
+        "page_of_cups_love_reversed": "Emotional immaturity in love or mixed romantic signals. Creative blocks in expressing feelings. Bad news in relationships. Insecurity prevents authentic connection.",
+        
+        "page_of_cups_career_upright": "Creative professional opportunities or good news about work. Your intuition guides career decisions. Artistic or emotionally fulfilling job prospects arrive.",
+        "page_of_cups_career_reversed": "Creative blocks at work or professional immaturity. Bad career news or missed creative opportunities. Escapism affecting professional performance.",
+        
+        "page_of_cups_finance_upright": "Good financial news or creative money opportunities. Intuitive approach to finances serves you. New artistic income streams emerge.",
+        "page_of_cups_finance_reversed": "Bad financial news or emotionally-driven poor money decisions. Creative financial ventures don't pan out. Financial immaturity blocks prosperity.",
+        
+        "page_of_cups_health_upright": "Good health news or intuitive wellness insights. Creative approaches to health benefit you. Your body sends clear messages—listen.",
+        "page_of_cups_health_reversed": "Bad health news or emotional immaturity affecting wellness. Escapism blocks health progress. Ignoring intuitive body messages.",
+        
+        "page_of_cups_general_upright": "Creative opportunities, messages, and new emotional experiences. Your intuition is heightened. Approach life with curiosity and an open heart. Beautiful beginnings await.",
+        "page_of_cups_general_reversed": "Emotional immaturity, creative blocks, or bad news. Escapism and insecurity prevent growth. You're not hearing your intuition clearly. Ground yourself emotionally.",
+        
+        // Knight of Cups
+        "knight_of_cups_love_upright": "Romantic pursuit and following your heart in love. Someone is making emotional overtures or you're swept up in romance. Charm and imagination guide love. Beautiful feelings flow.",
+        "knight_of_cups_love_reversed": "Moodiness or unrealistic romantic expectations. Jealousy and emotional manipulation in love. Someone's too swept up in fantasy to see reality. Drama over substance.",
+        
+        "knight_of_cups_career_upright": "Following your heart in career decisions. Creative professional pursuit driven by passion. Charming professional opportunities arrive. Imagination serves your work.",
+        "knight_of_cups_career_reversed": "Professional moodiness or unrealistic career expectations. Letting emotions override professional judgment. Drama at work. Need for more grounding.",
+        
+        "knight_of_cups_finance_upright": "Following intuition in financial decisions. Creative income opportunities driven by passion. Money flows through heartfelt work. Generosity and prosperity align.",
+        "knight_of_cups_finance_reversed": "Emotional financial decisions lack grounding. Unrealistic money expectations. Jealousy about others' prosperity. Need practical financial approach.",
+        
+        "knight_of_cups_health_upright": "Following your heart in wellness choices. Creative, emotionally-driven health approaches. Your body responds to loving attention. Intuitive healing.",
+        "knight_of_cups_health_reversed": "Mood swings affect health. Unrealistic wellness expectations. Emotional eating or health escapism. Need more grounded self-care.",
+        
+        "knight_of_cups_general_upright": "Following your heart, romantic pursuit, and creative action. You're led by emotions and imagination. This is beautiful but ensure you're also grounded in reality.",
+        "knight_of_cups_general_reversed": "Moodiness, unrealistic expectations, and emotional drama. Jealousy and overemotional reactions. You're so swept up in feelings that you've lost touch with what's real.",
+        
+        // Queen of Cups
+        "queen_of_cups_love_upright": "Emotionally mature, intuitive, and deeply caring love. You or your partner embody compassionate understanding. Emotional security allows vulnerability. Nurturing love flows freely.",
+        "queen_of_cups_love_reversed": "Emotional insecurity in relationships. Codependency or martyrdom affects love. Overwhelmed by others' emotions. Need for better boundaries and self-care.",
+        
+        "queen_of_cups_career_upright": "Compassionate professional leadership. Your emotional intelligence serves work well. Caring and intuition guide career success. You create emotionally safe workplaces.",
+        "queen_of_cups_career_reversed": "Professional overwhelm or poor emotional boundaries at work. Codependency with colleagues. Taking on others' problems. Need for self-care and limits.",
+        
+        "queen_of_cups_finance_upright": "Intuitive financial decisions and caring approach to resources. Prosperity through compassionate work. Emotional security allows generous giving.",
+        "queen_of_cups_finance_reversed": "Financial codependency or martyrdom with money. Poor boundaries around resources. Overwhelmed by others' financial needs. Protect yourself.",
+        
+        "queen_of_cups_health_upright": "Emotionally secure approach to health. Intuitive understanding of your body's needs. Compassionate self-care. Emotional healing supports physical wellness.",
+        "queen_of_cups_health_reversed": "Health overwhelm or emotional flooding affecting wellness. Poor self-care due to caring for others. Need for boundaries and personal health focus.",
+        
+        "queen_of_cups_general_upright": "Emotional maturity, compassion, intuition, and caring. You're deeply connected to your feelings and others'. Your emotional intelligence is your superpower. Lead with love.",
+        "queen_of_cups_general_reversed": "Emotional insecurity, codependency, or martyrdom. You're overwhelmed by feelings—yours and others'. Poor boundaries drain you. Put on your own oxygen mask first.",
+        
+        // King of Cups
+        "king_of_cups_love_upright": "Emotionally balanced and mature love. Calm compassion and diplomatic care. You or your partner masters emotions without suppressing them. Wise, stable partnership.",
+        "king_of_cups_love_reversed": "Emotional manipulation or cold detachment in love. Volatile feelings or complete repression. Using emotions as weapons or refusing to feel. Unhealthy emotional control.",
+        
+        "king_of_cups_career_upright": "Emotionally intelligent professional leadership. Balanced, diplomatic approach to work challenges. Your calm presence inspires others. Compassionate authority.",
+        "king_of_cups_career_reversed": "Professional emotional manipulation or coldness. Volatile work behavior or complete emotional shutdown. Abusing power through emotional control. Unhealthy leadership.",
+        
+        "king_of_cups_finance_upright": "Balanced, wise financial decisions. Emotional maturity guides money choices. You're neither greedy nor careless with resources. Compassionate prosperity.",
+        "king_of_cups_finance_reversed": "Financial manipulation or cold detachment from money's impact. Emotional volatility around resources. Using wealth as emotional weapon. Unhealthy money control.",
+        
+        "king_of_cups_health_upright": "Emotional balance supports physical health. Wise, compassionate approach to wellness. You master stress without suppressing feelings. Integrated mind-body health.",
+        "king_of_cups_health_reversed": "Emotional repression affecting health. Volatility or coldness toward your body's needs. Using control as health strategy. Need for more feeling and flexibility.",
+        
+        "king_of_cups_general_upright": "Emotional mastery, balance, compassion, and wise control. You feel deeply but don't let emotions control you. Your calm presence and diplomatic wisdom serve you well.",
+        "king_of_cups_general_reversed": "Emotional manipulation, coldness, volatility, or repression. You're either controlling through emotions or refusing to feel. Neither extreme serves you. Find balance.",
+        
+        // PENTACLES SUIT - Ace of Pentacles
+        "ace_of_pentacles_love_upright": "New relationship with solid potential and real-world stability. Love grounded in reality and practical commitment. Material security supports emotional connection. Tangible beginnings.",
+        "ace_of_pentacles_love_reversed": "Romantic opportunity missed or poor planning in love. Relationship lacks material foundation. Financial instability affects partnership. Greed damages connection.",
+        
+        "ace_of_pentacles_career_upright": "Excellent new career opportunity with real potential. Solid job offer or business venture. Material success within reach. Professional manifestation begins.",
+        "ace_of_pentacles_career_reversed": "Career opportunity missed or poor professional planning. Job prospects don't pan out. Financial instability in work. Need better preparation and timing.",
+        
+        "ace_of_pentacles_finance_upright": "New financial opportunity and material manifestation. Excellent time for investments and money ventures. Abundance begins to flow. Prosperity is tangible and real.",
+        "ace_of_pentacles_finance_reversed": "Financial opportunity lost or poor money planning. Investments don't work out. Scarcity mindset blocks abundance. Greed undermines prosperity. Reassess approach.",
+        
+        "ace_of_pentacles_health_upright": "New health beginning with tangible results. Body responds well to wellness efforts. Physical manifestation of healing. Solid foundation for long-term health.",
+        "ace_of_pentacles_health_reversed": "Health opportunity missed or poor wellness planning. Physical efforts don't yield results. Need better health foundation and practical approach.",
+        
+        "ace_of_pentacles_general_upright": "New material opportunity and manifestation. This is the seed of real-world abundance—whether financial, physical, or practical. The beginning of something solid and lasting.",
+        "ace_of_pentacles_general_reversed": "Lost opportunities, poor planning, or scarcity thinking. Material manifestation is blocked. Greed or lack of preparation undermines success. Get grounded and try again.",
+        
+        // Two of Pentacles
+        "two_of_pentacles_love_upright": "Balancing relationship with other life demands. Juggling love and responsibilities successfully. Adaptability in partnership. Keeping romance alive despite busyness.",
+        "two_of_pentacles_love_reversed": "Relationship imbalance due to life demands. Too many responsibilities strain love. Overwhelmed by juggling partnership and everything else. Something must give.",
+        
+        "two_of_pentacles_career_upright": "Successfully managing multiple professional responsibilities. Adaptability serves your career well. Flexible approach to work challenges. You're juggling and succeeding.",
+        "two_of_pentacles_career_reversed": "Professional overwhelm and imbalance. Too many work responsibilities. Disorganization affects career. Stress from juggling too much. Need to prioritize.",
+        
+        "two_of_pentacles_finance_upright": "Successfully balancing financial demands. Flexible money management serves you. Juggling resources wisely. Adaptable approach to financial challenges.",
+        "two_of_pentacles_finance_reversed": "Financial imbalance and overwhelm. Juggling too many money demands unsuccessfully. Disorganized finances create stress. Need better budget and priorities.",
+        
+        "two_of_pentacles_health_upright": "Successfully balancing health with life demands. Flexible wellness approach works. Managing physical needs despite busy life. Adaptability supports wellbeing.",
+        "two_of_pentacles_health_reversed": "Health suffers from life imbalance. Too overwhelmed to care for body. Stress from juggling everything affects wellness. Need to prioritize self-care.",
+        
+        "two_of_pentacles_general_upright": "Balance, adaptability, and juggling priorities successfully. You're managing multiple demands with grace and flexibility. Life is busy but you're handling it well.",
+        "two_of_pentacles_general_reversed": "Imbalance, overwhelm, and too much juggling. You're dropping balls and feeling stressed. Disorganization creates chaos. Time to prioritize and let some things go.",
+        
+        // Three of Pentacles
+        "three_of_pentacles_love_upright": "Building relationship through teamwork and collaboration. Quality time and effort strengthen partnership. Working together on shared goals. Love built on solid foundation.",
+        "three_of_pentacles_love_reversed": "Lack of teamwork strains relationship. Poor collaboration or unequal effort. Conflicts about shared goals. Quality of partnership suffers. Work together better.",
+        
+        "three_of_pentacles_career_upright": "Professional success through collaboration and skilled teamwork. Your expertise is recognized. Quality work and cooperation bring advancement. You're building something lasting.",
+        "three_of_pentacles_career_reversed": "Workplace disorganization and lack of teamwork. Poor collaboration affects results. Conflicts with colleagues. Quality of work suffers. Communication breakdown.",
+        
+        "three_of_pentacles_finance_upright": "Financial success through collaboration and skilled effort. Teamwork brings prosperity. Quality financial planning pays off. Building wealth through expertise.",
+        "three_of_pentacles_finance_reversed": "Financial disorganization or poor money teamwork. Conflicts about shared resources. Quality of financial planning suffers. Need better collaboration.",
+        
+        "three_of_pentacles_health_upright": "Health success through teamwork with practitioners. Quality wellness efforts pay off. Skilled approach to health. Building solid foundation through collaboration.",
+        "three_of_pentacles_health_reversed": "Health disorganization or poor collaboration with care team. Quality of wellness efforts suffers. Conflicts about treatment. Need better health teamwork.",
+        
+        "three_of_pentacles_general_upright": "Teamwork, collaboration, and skilled quality work. You're building something lasting through cooperation and expertise. Your efforts are recognized. Success through shared goals.",
+        "three_of_pentacles_general_reversed": "Lack of teamwork, disorganization, and poor quality results. Conflicts disrupt progress. Collaboration fails. Skills aren't recognized. Better communication and effort needed.",
+        
+        // Four of Pentacles
+        "four_of_pentacles_love_upright": "Security and stability in relationship but possibly too much control. You're holding on tight to love. This creates safety but may limit growth. Balance security with openness.",
+        "four_of_pentacles_love_reversed": "Possessiveness and greed damage relationship. Holding on too tight out of fear. Materialism over authentic connection. Control issues strain love. Let go.",
+        
+        "four_of_pentacles_career_upright": "Professional security through careful control. Stable career but possibly too conservative. Your caution protects you but may limit growth. Balance safety with risk.",
+        "four_of_pentacles_career_reversed": "Career stagnation through excessive caution. Greed or possessiveness at work. Holding too tight to position or control. Fear prevents professional growth.",
+        
+        "four_of_pentacles_finance_upright": "Financial security through careful conservation. Your resources are protected but possibly too controlled. Healthy saving but be careful of hoarding. Find balance.",
+        "four_of_pentacles_finance_reversed": "Financial greed or excessive hoarding. Possessiveness about money prevents flow. Materialism over wellbeing. Control over resources backfires. Loosen grip.",
+        
+        "four_of_pentacles_health_upright": "Health stability through careful control. Protective approach to wellness. You're guarding your physical resources wisely but don't let fear dominate.",
+        "four_of_pentacles_health_reversed": "Excessive control over health creates rigidity. Possessive about body or wellness approach. Fear-based health decisions. Need more flexibility and trust.",
+        
+        "four_of_pentacles_general_upright": "Security, conservation, and control. You're protecting your resources and holding on tight. This creates stability but check if fear is making you too rigid. Balance needed.",
+        "four_of_pentacles_general_reversed": "Greed, possessiveness, and holding on too tight. Materialism and excessive control backfire. You're blocking flow through fear. Let go and trust.",
+        
+        // Five of Pentacles
+        "five_of_pentacles_love_upright": "Relationship struggles and feeling left out in the cold. Financial stress affects love. Isolation in partnership. Help is available but you're not seeing it. Look for the light.",
+        "five_of_pentacles_love_reversed": "Recovery from relationship hardship. Finding support and renewed hope in love. Coming in from the cold. Accepting help strengthens partnership.",
+        
+        "five_of_pentacles_career_upright": "Professional struggle and workplace isolation. Job loss or financial hardship from work. You feel excluded or unsupported. Help exists but you must seek it.",
+        "five_of_pentacles_career_reversed": "Career recovery and renewed hope. Finding professional support. Coming out of workplace hardship. Accepting help improves situation.",
+        
+        "five_of_pentacles_finance_upright": "Financial hardship and loss. Money struggles create stress. You feel impoverished even if help is nearby. Reach out—resources and support are available.",
+        "five_of_pentacles_finance_reversed": "Financial recovery and improved circumstances. Finding support and charity. Renewed hope about money. Accepting help restores stability.",
+        
+        "five_of_pentacles_health_upright": "Health struggles and physical hardship. Feeling isolated in illness. Resources for healing exist but you're not accessing them. Seek support and care.",
+        "five_of_pentacles_health_reversed": "Health recovery and renewed hope. Finding medical support and healing resources. Coming through illness. Accepting help improves wellness.",
+        
+        "five_of_pentacles_general_upright": "Financial loss, hardship, isolation, and struggle. You're in a difficult time and feel alone in it. But here's the truth: help exists. Look for the lighted window nearby.",
+        "five_of_pentacles_general_reversed": "Recovery, renewed hope, and finding support. You're coming through hardship. Accepting help and charity restores you. The worst is behind you.",
+        
+        // Six of Pentacles
+        "six_of_pentacles_love_upright": "Generous giving and receiving in relationships. Balanced exchange of support and care. Charity and kindness flow both ways in love. Healthy partnership dynamics.",
+        "six_of_pentacles_love_reversed": "Unbalanced giving in relationships. Strings attached to love or support. One person gives too much or takes too much. Debt mentality affects partnership. Restore balance.",
+        
+        "six_of_pentacles_career_upright": "Professional generosity and fair compensation. Your work is valued and rewarded. Giving and receiving support at work. Mentorship benefits career.",
+        "six_of_pentacles_career_reversed": "Workplace unfairness or one-sided professional relationships. Strings attached to opportunities. Debt or obligation at work. Power imbalances affect career.",
+        
+        "six_of_pentacles_finance_upright": "Financial generosity and balanced prosperity. You have enough to share. Giving and receiving money flows well. Charity brings joy and maintains balance.",
+        "six_of_pentacles_finance_reversed": "Financial imbalance or strings attached to money. One-sided financial relationships. Debt creates dependency. Selfishness or exploitation with resources.",
+        
+        "six_of_pentacles_health_upright": "Balanced approach to health giving and receiving. Sharing wellness resources generously. Receiving care graciously. Health support flows both ways.",
+        "six_of_pentacles_health_reversed": "Imbalanced health support. Giving too much care to others or refusing to receive help. Strings attached to wellness resources. Restore balance.",
+        
+        "six_of_pentacles_general_upright": "Generosity, charity, sharing, and balanced give-and-take. You're in a position to help others while also receiving support when needed. Prosperity flows through giving.",
+        "six_of_pentacles_general_reversed": "One-sided relationships, strings attached, debt, or selfishness. The balance of giving and receiving is off. Power dynamics create inequality. Restore fairness.",
+        
+        // Seven of Pentacles
+        "seven_of_pentacles_love_upright": "Patience with relationship growth and assessing love's progress. You've invested time and effort—now waiting to see results. Long-term view of partnership. Trust the process.",
+        "seven_of_pentacles_love_reversed": "Impatience with relationship progress. Disappointment in love's returns. Feels like wasted effort on partnership. Reevaluate investment or adjust expectations.",
+        
+        "seven_of_pentacles_career_upright": "Patient career building and assessing professional progress. Your work efforts are growing slowly but surely. Long-term view pays off. Trust your investment.",
+        "seven_of_pentacles_career_reversed": "Career impatience and disappointment in progress. Work feels unrewarding. Efforts don't yield expected results. Reevaluate professional path or adjust approach.",
+        
+        "seven_of_pentacles_finance_upright": "Patient financial growth and long-term investment view. Your money efforts are bearing fruit slowly. Trust the process of wealth building. Perseverance pays.",
+        "seven_of_pentacles_finance_reversed": "Financial impatience and disappointment in returns. Investments don't meet expectations. Feels like wasted money effort. Reevaluate strategy.",
+        
+        "seven_of_pentacles_health_upright": "Patient health progress and long-term wellness view. Your health efforts are working slowly but surely. Trust your body's timeline. Perseverance brings results.",
+        "seven_of_pentacles_health_reversed": "Impatience with health progress. Wellness efforts don't yield expected results. Disappointment in body's response. Reevaluate approach or adjust expectations.",
+        
+        "seven_of_pentacles_general_upright": "Patience, long-term investment, and assessment of progress. You've worked hard and now you're pausing to see results. Trust the process—your efforts will pay off.",
+        "seven_of_pentacles_general_reversed": "Impatience, lack of progress, and wasted effort. Your investments aren't paying off as expected. Disappointment makes you question everything. Reevaluate or persevere.",
+        
+        // Eight of Pentacles
+        "eight_of_pentacles_love_upright": "Dedicated effort to improve relationship. Working on communication and connection skills. Crafting quality partnership through attention to detail. Love as practice.",
+        "eight_of_pentacles_love_reversed": "Lack of effort in relationship or perfectionism strains love. Not working on partnership skills. Shortcuts damage connection quality. Reevaluate commitment level.",
+        
+        "eight_of_pentacles_career_upright": "Skill development and dedication to professional craft. Diligent work and attention to detail bring career success. You're mastering your field through focused effort.",
+        "eight_of_pentacles_career_reversed": "Lack of professional focus or shortcuts at work. Mediocrity from insufficient effort. Perfectionism creates paralysis. Balance quality with completion.",
+        
+        "eight_of_pentacles_finance_upright": "Financial skill development and diligent money management. Detailed attention to resources. Building wealth through dedicated effort and mastery.",
+        "eight_of_pentacles_finance_reversed": "Financial lack of focus or money management shortcuts. Mediocre financial results. Perfectionism prevents financial progress. Need better effort and attention.",
+        
+        "eight_of_pentacles_health_upright": "Dedicated health effort and skill development in wellness. Detailed attention to body's needs. Mastering health practices through diligent focus.",
+        "eight_of_pentacles_health_reversed": "Lack of health focus or wellness shortcuts. Mediocre self-care results. Perfectionism about health creates stress. Balance effort with self-compassion.",
+        
+        "eight_of_pentacles_general_upright": "Skill development, diligence, craftsmanship, and attention to detail. You're dedicating yourself to mastery. Quality work through focused effort. You're becoming an expert.",
+        "eight_of_pentacles_general_reversed": "Lack of focus, mediocrity, shortcuts, or perfectionism. You're either not putting in effort or obsessing over details. Find balance between quality and completion.",
+        
+        // Nine of Pentacles
+        "nine_of_pentacles_love_upright": "Independence and self-sufficiency in love. You're complete on your own and relationship enhances rather than completes you. Luxury and quality in partnership.",
+        "nine_of_pentacles_love_reversed": "Relationship codependency or isolation from over-independence. Living beyond means to impress partner. Work-life imbalance affects love. Find healthy interdependence.",
+        
+        "nine_of_pentacles_career_upright": "Professional independence and career accomplishment. Self-made success and recognition. You've built something impressive through your own efforts. Enjoy your achievement.",
+        "nine_of_pentacles_career_reversed": "Career overwork or professional isolation. Hustling without balance. Living beyond means or dependent on job. Lost sense of accomplishment. Reassess.",
+        
+        "nine_of_pentacles_finance_upright": "Financial independence and self-made prosperity. Luxury earned through your efforts. Self-sufficiency with resources. Enjoying abundance you created.",
+        "nine_of_pentacles_finance_reversed": "Financial overwork or living beyond means. Dependency on income source. Hustling without enjoying fruits. Isolation through materialism. Find balance.",
+        
+        "nine_of_pentacles_health_upright": "Health independence and wellness accomplishment. Self-sufficient in caring for your body. Enjoying physical luxury and comfort you've earned through effort.",
+        "nine_of_pentacles_health_reversed": "Health suffers from overwork. Self-care neglect due to hustling. Living in ways that tax body. Need for better health-work balance.",
+        
+        "nine_of_pentacles_general_upright": "Independence, luxury, self-sufficiency, and accomplishment. You've built this through your own efforts. Enjoy the fruits of your labor. You earned this abundance.",
+        "nine_of_pentacles_general_reversed": "Overworking, hustling, living beyond means, or isolation through independence. You've lost balance. Dependency disguised as independence. Reassess priorities.",
+        
+        // Ten of Pentacles
+        "ten_of_pentacles_love_upright": "Relationship stability and family legacy in love. Long-term partnership built on solid foundation. Generational blessing and lasting commitment. Building family together.",
+        "ten_of_pentacles_love_reversed": "Family disputes affect relationship. Financial instability strains partnership. Broken family legacy or relationship insecurity. Foundation needs repair.",
+        
+        "ten_of_pentacles_career_upright": "Career legacy and professional establishment. Building lasting work impact. Family business success. Your professional achievements will outlast you.",
+        "ten_of_pentacles_career_reversed": "Career instability or professional family disputes. Legacy threatened by conflict. Financial failure at work. Foundation of professional life crumbling.",
+        
+        "ten_of_pentacles_finance_upright": "Financial wealth and lasting prosperity. Legacy money and generational wealth. Establishment of lasting financial security. Resources that will outlast you.",
+        "ten_of_pentacles_finance_reversed": "Financial failure or family money disputes. Wealth loss and instability. Debt threatens legacy. Foundation of financial security crumbling.",
+        
+        "ten_of_pentacles_health_upright": "Health legacy and lasting wellness foundation. Physical strength runs in family. Generational health wisdom. Building health that lasts.",
+        "ten_of_pentacles_health_reversed": "Health instability or inherited health challenges. Physical foundation threatened. Family health patterns affect you. Need to break negative cycles.",
+        
+        "ten_of_pentacles_general_upright": "Wealth, legacy, family, and lasting establishment. You're building something that will outlast you. Generational blessings and permanent security. This is about dynasty.",
+        "ten_of_pentacles_general_reversed": "Financial failure, family disputes, instability, and broken legacy. What should be secure is threatened. Debt and conflict undermine the foundation. Repair needed.",
+        
+        // Page of Pentacles
+        "page_of_pentacles_love_upright": "New relationship with practical potential. Ambitious approach to love. Learning about partnership. Grounded romantic beginnings with real-world possibility.",
+        "page_of_pentacles_love_reversed": "Relationship lacks direction or practical foundation. Procrastination about love commitment. Poor planning in partnership. Missed romantic opportunity.",
+        
+        "page_of_pentacles_career_upright": "New career opportunity or beginning professional journey. Ambitious learning phase. Practical approach to work. Manifestation of job prospects.",
+        "page_of_pentacles_career_reversed": "Career procrastination or lack of professional progress. Poor work planning. Missed job opportunity. Need more ambition and focus.",
+        
+        "page_of_pentacles_finance_upright": "New financial opportunity or learning about money. Ambitious approach to wealth building. Practical manifestation begins. Good time for financial education.",
+        "page_of_pentacles_finance_reversed": "Financial procrastination or poor money planning. Missed investment opportunity. Lack of financial progress. Need better money education and action.",
+        
+        "page_of_pentacles_health_upright": "New health beginning or learning wellness practices. Ambitious approach to fitness. Practical health manifestation. Good time for body education.",
+        "page_of_pentacles_health_reversed": "Health procrastination or poor wellness planning. Missed health opportunity. Lack of physical progress. Need better health education and action.",
+        
+        "page_of_pentacles_general_upright": "New opportunity, learning, ambition, and practical manifestation. You're at the beginning of something solid. Stay focused and diligent. Study and grow.",
+        "page_of_pentacles_general_reversed": "Procrastination, lack of progress, poor planning, and missed opportunities. You're not following through. Get practical and take action.",
+        
+        // Knight of Pentacles
+        "knight_of_pentacles_love_upright": "Reliable, steady, and hardworking approach to relationship. Patient courtship and dependable partnership. Routine creates security in love. Slow but sure progress.",
+        "knight_of_pentacles_love_reversed": "Relationship laziness or obsessive routine. Work-life imbalance affects love. Perfectionism prevents partnership progress. Too slow or too rigid in love.",
+        
+        "knight_of_pentacles_career_upright": "Reliable, hardworking professional approach. Steady career progress through routine and dedication. Conservative but successful work style. Dependability serves you.",
+        "knight_of_pentacles_career_reversed": "Career laziness or work obsessiveness. Perfectionism prevents professional progress. Routine becomes rut. Work-life imbalance from career rigidity.",
+        
+        "knight_of_pentacles_finance_upright": "Reliable, conservative financial approach. Steady wealth building through hard work and routine. Patient investment strategy. Dependable money management.",
+        "knight_of_pentacles_finance_reversed": "Financial laziness or money obsessiveness. Perfectionism prevents prosperity. Too conservative or too rigid with resources. Need more flexibility.",
+        
+        "knight_of_pentacles_health_upright": "Reliable, steady wellness approach. Patient health progress through routine and hard work. Conservative but effective health practices. Dependability serves body.",
+        "knight_of_pentacles_health_reversed": "Health laziness or wellness obsessiveness. Perfectionism about body prevents progress. Routine becomes unhealthy rut. Work-health imbalance.",
+        
+        "knight_of_pentacles_general_upright": "Reliability, hard work, routine, and conservative approach. You're making steady, patient progress. Dependable and dedicated. Slow but sure wins the race.",
+        "knight_of_pentacles_general_reversed": "Laziness, obsessiveness, work-life imbalance, or perfectionism. You're either not moving at all or so rigid you can't adapt. Find balance.",
+        
+        // Queen of Pentacles
+        "queen_of_pentacles_love_upright": "Nurturing, practical relationship approach. Down-to-earth love and providing for partner. Grounded care creates security. Home and heart align beautifully.",
+        "queen_of_pentacles_love_reversed": "Self-care neglect in relationship or smothering partner. Work-home imbalance affects love. Jealousy or materialism damages partnership. Need better boundaries.",
+        
+        "queen_of_pentacles_career_upright": "Nurturing, practical professional approach. Down-to-earth leadership and providing for team. Your groundedness creates workplace security. Success through caring.",
+        "queen_of_pentacles_career_reversed": "Self-care neglect from work demands or smothering colleagues. Work-home imbalance creates problems. Professional jealousy or materialism affects career.",
+        
+        "queen_of_pentacles_finance_upright": "Nurturing, practical approach to money. Down-to-earth prosperity and financial providing. Grounded generosity creates abundance. Wealth with warmth.",
+        "queen_of_pentacles_finance_reversed": "Financial self-care neglect or money obsession. Materialism over wellbeing. Jealousy about others' wealth. Work-life imbalance affects finances.",
+        
+        "queen_of_pentacles_health_upright": "Nurturing, practical approach to wellness. Down-to-earth self-care and body-wise decisions. Grounded health practices. Providing for your body's needs.",
+        "queen_of_pentacles_health_reversed": "Self-care neglect from caring for others. Work-health imbalance. Smothering concerns about body. Need practical self-care boundaries.",
+        
+        "queen_of_pentacles_general_upright": "Nurturing, practical, providing, and down-to-earth. You create security through grounded care. Financial and emotional abundance flow from your warmth. Home and work harmonize.",
+        "queen_of_pentacles_general_reversed": "Self-care neglect, work-home imbalance, smothering, or jealousy. You're either giving too much or obsessing over material concerns. Restore balance.",
+        
+        // King of Pentacles
+        "king_of_pentacles_love_upright": "Abundant, secure relationship built on discipline and leadership. Providing stable foundation for love. Material comfort supports emotional connection. Mature partnership.",
+        "king_of_pentacles_love_reversed": "Relationship greed or materialism over love. Stubborn control in partnership. Corrupt approach to commitment. Using wealth to manipulate. Unhealthy power dynamics.",
+        
+        "king_of_pentacles_career_upright": "Career abundance through leadership and discipline. Professional security and material success. Your authority and business acumen bring prosperity. Established expertise.",
+        "king_of_pentacles_career_reversed": "Professional greed or career corruption. Stubborn leadership and materialistic approach. Abusing power for personal gain. Work obsession over ethics.",
+        
+        "king_of_pentacles_finance_upright": "Financial abundance and material mastery. Disciplined wealth building and secure prosperity. Leadership in money matters. Your business acumen creates lasting wealth.",
+        "king_of_pentacles_finance_reversed": "Financial greed and materialism. Corruption in money matters. Stubborn approach to wealth. Using resources to control others. Ethical issues with prosperity.",
+        
+        "king_of_pentacles_health_upright": "Health abundance through discipline and leadership. Secure approach to wellness. Material resources support physical care. Mastery over body's needs.",
+        "king_of_pentacles_health_reversed": "Health affected by greed or materialism. Stubborn about wellness approach. Corrupt body practices. Obsession over physical control. Need more flexibility.",
+        
+        "king_of_pentacles_general_upright": "Abundance, security, leadership, and discipline. You've mastered the material world through wisdom and hard work. Financial success and stability are yours. Share generously.",
+        "king_of_pentacles_general_reversed": "Greed, materialism, corruption, or stubborn control. You're abusing power or obsessing over wealth. Material success without ethics. Lose control to find balance.",
+        
+        // SWORDS SUIT - Ace of Swords
+        "ace_of_swords_love_upright": "Mental clarity and breakthrough in love. Truth cuts through romantic confusion. New perspective on relationships. Clear communication transforms partnership.",
+        "ace_of_swords_love_reversed": "Romantic confusion and lack of clarity. Miscommunication damages love. Chaotic thoughts about relationship. Mental breakthrough blocked. Seek truth.",
+        
+        "ace_of_swords_career_upright": "Professional breakthrough and mental clarity. New ideas and clear thinking advance career. Truth and communication bring success. Intellectual victory at work.",
+        "ace_of_swords_career_reversed": "Career confusion and professional miscommunication. Chaotic thinking affects work. Lack of clarity blocks advancement. Mental fog prevents breakthrough.",
+        
+        "ace_of_swords_finance_upright": "Financial clarity and breakthrough. Clear thinking about money. New ideas bring prosperity. Truth about resources empowers you. Mental approach to wealth.",
+        "ace_of_swords_finance_reversed": "Financial confusion and lack of money clarity. Chaotic thinking about resources. Miscommunication affects finances. Mental fog blocks prosperity.",
+        
+        "ace_of_swords_health_upright": "Health clarity and mental breakthrough about wellness. Clear diagnosis or understanding. New ideas improve health. Truth about body empowers you.",
+        "ace_of_swords_health_reversed": "Health confusion and unclear symptoms. Mental chaos affects wellness. Miscommunication with providers. Lack of clarity blocks healing.",
+        
+        "ace_of_swords_general_upright": "Breakthrough, clarity, new ideas, and mental power. The fog lifts and you see truth clearly. Sharp thinking cuts through confusion. This is your moment of intellectual victory.",
+        "ace_of_swords_general_reversed": "Confusion, chaos, lack of clarity, and miscommunication. Your thinking is muddled. Truth is obscured. Mental breakthrough is blocked. Seek clarity before acting.",
+        
+        // Two of Swords
+        "two_of_swords_love_upright": "Difficult romantic decision or relationship stalemate. Avoiding love truth creates tension. You're stuck between choices. Remove the blindfold and see clearly.",
+        "two_of_swords_love_reversed": "Romantic indecision worsens or breakthrough from relationship stalemate. Overwhelming love choices or finally making decision. Confusion clears.",
+        
+        "two_of_swords_career_upright": "Difficult professional decision or career stalemate. Avoiding work truth. Stuck between job choices. Information needed for decision.",
+        "two_of_swords_career_reversed": "Career indecision worsens or professional stalemate breaks. Delayed work decisions or breakthrough finally comes. Choose path forward.",
+        
+        "two_of_swords_finance_upright": "Difficult financial decision or money stalemate. Avoiding money truth creates stress. Stuck between financial choices. Need more information.",
+        "two_of_swords_finance_reversed": "Financial indecision worsens or money breakthrough comes. Overwhelming financial choices or finally deciding. Face truth.",
+        
+        "two_of_swords_health_upright": "Difficult health decision or wellness stalemate. Avoiding body truth. Stuck between treatment choices. Need more health information.",
+        "two_of_swords_health_reversed": "Health indecision worsens or wellness breakthrough. Delayed health decisions or finally choosing treatment. Face body truth.",
+        
+        "two_of_swords_general_upright": "Difficult decisions, stalemate, avoidance, and denial. You're stuck and refusing to see the truth. Remove the blindfold. Make the choice you're avoiding.",
+        "two_of_swords_general_reversed": "Indecision worsens, confusion deepens, or breakthrough arrives. Delayed decisions create more problems or stalemate finally breaks. Face truth now.",
+        
+        // Three of Swords
+        "three_of_swords_love_upright": "Heartbreak and emotional pain in love. Betrayal or deep romantic disappointment. Truth hurts but must be faced. Grief in relationships is real and valid.",
+        "three_of_swords_love_reversed": "Recovery from romantic heartbreak. Forgiveness begins healing. Moving on from love pain. The worst of relationship grief passes.",
+        
+        "three_of_swords_career_upright": "Professional heartbreak and work disappointment. Betrayal or rejection at work. Career pain is real. Truth about job situation hurts but clarifies.",
+        "three_of_swords_career_reversed": "Recovery from career heartbreak. Forgiveness of professional betrayal. Moving on from work pain. Healing begins.",
+        
+        "three_of_swords_finance_upright": "Financial heartbreak and money pain. Betrayal or loss involving resources. Truth about finances hurts. Grief about money is valid.",
+        "three_of_swords_finance_reversed": "Recovery from financial heartbreak. Forgiveness around money issues. Moving on from financial pain. Healing begins.",
+        
+        "three_of_swords_health_upright": "Health heartbreak and physical pain. Difficult diagnosis or body betrayal. Truth about health hurts but brings clarity. Grief about wellness is valid.",
+        "three_of_swords_health_reversed": "Recovery from health heartbreak. Forgiveness of body. Moving on from physical pain. Healing begins.",
+        
+        "three_of_swords_general_upright": "Heartbreak, sorrow, pain, and grief. Truth cuts deep and hurts. Betrayal or loss pierces your heart. Your pain is real and valid. Feel it fully to heal.",
+        "three_of_swords_general_reversed": "Recovery, forgiveness, moving on, and healing. The worst of the pain is passing. You're beginning to mend. Grief transforms into wisdom.",
+        
+        // Four of Swords
+        "four_of_swords_love_upright": "Relationship rest and romantic contemplation. Taking break from love intensity. Meditation on partnership needs. Recovery time strengthens connection.",
+        "four_of_swords_love_reversed": "Restless relationship or avoiding necessary love reflection. Burnout from partnership or refusing recovery time. Stress prevents relationship progress.",
+        
+        "four_of_swords_career_upright": "Career rest and professional contemplation. Taking work break for recovery. Mental recuperation improves performance. Strategic pause serves career.",
+        "four_of_swords_career_reversed": "Professional restlessness or career burnout. Refusing work recovery time. Stress prevents professional progress. Lack of rest undermines career.",
+        
+        "four_of_swords_finance_upright": "Financial rest and money contemplation. Taking break from financial stress. Meditation on resource management. Recovery improves financial decisions.",
+        "four_of_swords_finance_reversed": "Financial restlessness or money burnout. Refusing necessary financial pause. Stress prevents smart money decisions. Rest needed.",
+        
+        "four_of_swords_health_upright": "Physical rest and health recovery. Mental recuperation supports healing. Meditation and contemplation benefit body. Strategic pause restores wellness.",
+        "four_of_swords_health_reversed": "Restless health or refusing recovery. Burnout prevents healing. Stress undermines wellness. Lack of rest harms body. Stop and recover.",
+        
+        "four_of_swords_general_upright": "Rest, recovery, contemplation, and meditation. Your mind and body need a break. Strategic pause restores energy. Stillness is action. Give yourself permission to stop.",
+        "four_of_swords_general_reversed": "Restlessness, burnout, stress, and refusing rest. You're pushing too hard and it's counterproductive. Lack of recovery undermines progress. Stop now.",
+        
+        // Five of Swords
+        "five_of_swords_love_upright": "Relationship conflict and win-at-all-costs mentality. Betrayal or fighting dirty in love. Victory but at what price? Examine if winning is worth losing the relationship.",
+        "five_of_swords_love_reversed": "Reconciliation after conflict or making amends in love. Moving on from relationship betrayal. Compromise replaces combat. Healing begins.",
+        
+        "five_of_swords_career_upright": "Professional conflict and workplace betrayal. Win-at-all-costs approach at work. Career victory but damaged relationships. Examine your methods.",
+        "five_of_swords_career_reversed": "Workplace reconciliation or making professional amends. Moving on from career conflict. Compromise and cooperation return.",
+        
+        "five_of_swords_finance_upright": "Financial conflict and money betrayal. Win-at-all-costs with resources. Financial victory but damaged relationships. Examine if wealth is worth the cost.",
+        "five_of_swords_finance_reversed": "Financial reconciliation or making money amends. Moving on from resource conflict. Compromise about finances.",
+        
+        "five_of_swords_health_upright": "Health conflict and fighting body. Win-at-all-costs approach to wellness. Pushing too hard damages health. Examine your methods.",
+        "five_of_swords_health_reversed": "Health reconciliation with body. Making amends with physical self. Moving on from wellness conflict. Cooperation with body.",
+        
+        "five_of_swords_general_upright": "Conflict, defeat, win-at-all-costs, and betrayal. You might win the battle but lose the war. Fighting dirty damages relationships. Is this victory worth the cost?",
+        "five_of_swords_general_reversed": "Reconciliation, making amends, moving on, and compromise. You're ready to end the conflict. Choosing peace over victory. Cooperation replaces combat.",
+        
+        // Six of Swords
+        "six_of_swords_love_upright": "Relationship transition and moving forward from love pain. Healing journey in partnership. Leaving romantic turbulence for calmer waters. Progress through difficulty.",
+        "six_of_swords_love_reversed": "Stuck in past relationship pain. Resisting necessary love transition. Unfinished romantic business prevents moving forward. Rough emotional waters continue.",
+        
+        "six_of_swords_career_upright": "Career transition and professional healing journey. Moving forward from workplace difficulty. Leaving turbulent job for calmer prospects. Progress through challenges.",
+        "six_of_swords_career_reversed": "Stuck in past career pain. Resisting necessary professional transition. Unfinished work business blocks progress. Continued career turbulence.",
+        
+        "six_of_swords_finance_upright": "Financial transition and moving forward from money difficulty. Healing journey with resources. Leaving financial turbulence for stability. Progress through hardship.",
+        "six_of_swords_finance_reversed": "Stuck in past financial pain. Resisting necessary money transition. Unfinished financial business prevents progress. Continued resource turbulence.",
+        
+        "six_of_swords_health_upright": "Health transition and healing journey. Moving forward from physical difficulty. Leaving wellness turbulence for recovery. Progress through illness.",
+        "six_of_swords_health_reversed": "Stuck in past health pain. Resisting necessary wellness transition. Unfinished healing business blocks recovery. Continued physical turbulence.",
+        
+        "six_of_swords_general_upright": "Transition, moving forward, healing journey, and release. You're leaving turbulent waters for calmer ones. Progress is happening even if slow. Trust the journey.",
+        "six_of_swords_general_reversed": "Stuck in past, resistance to transition, unfinished business, and rough waters ahead. You're not ready to move on. Let go to progress.",
+        
+        // Seven of Swords
+        "seven_of_swords_love_upright": "Relationship deception or strategic approach to love. Sneaking around or getting away with something in partnership. Dishonesty damages trust. Examine your methods.",
+        "seven_of_swords_love_reversed": "Coming clean in relationship or confessing love secrets. Honesty replaces deception. Rethinking strategic approach to partnership. Truth emerges.",
+        
+        "seven_of_swords_career_upright": "Professional deception or strategic workplace approach. Sneaky behavior at work. Getting away with something professionally. Examine if methods are ethical.",
+        "seven_of_swords_career_reversed": "Coming clean at work or professional confession. Honesty replaces workplace deception. Rethinking career strategy. Truth emerges.",
+        
+        "seven_of_swords_finance_upright": "Financial deception or strategic money approach. Sneaky resource behavior. Getting away with financial something. Examine if methods are ethical.",
+        "seven_of_swords_finance_reversed": "Financial confession or coming clean about money. Honesty replaces financial deception. Rethinking resource strategy. Truth emerges.",
+        
+        "seven_of_swords_health_upright": "Health deception or strategic wellness approach. Sneaking unhealthy behaviors. Getting away with poor self-care. Examine your methods.",
+        "seven_of_swords_health_reversed": "Health confession or coming clean about wellness. Honesty about body needs. Rethinking health strategy. Truth emerges.",
+        
+        "seven_of_swords_general_upright": "Deception, strategy, sneakiness, and getting away with something. You're being strategic—maybe too strategic. Are your methods ethical? Truth will emerge eventually.",
+        "seven_of_swords_general_reversed": "Coming clean, confessing, honesty, and rethinking approach. You're ready to tell the truth. Deception no longer serves you. Choose transparency.",
+        
+        // Eight of Swords
+        "eight_of_swords_love_upright": "Feeling trapped in relationship but chains aren't real. Victim mentality about love. Self-imposed romantic restriction. You have more power than you think.",
+        "eight_of_swords_love_reversed": "Release from relationship restrictions. Freedom and new perspective in love. Self-acceptance allows romantic progress. Recognizing your power.",
+        
+        "eight_of_swords_career_upright": "Feeling trapped professionally but prison is self-made. Career victim mentality. Self-imposed work restrictions. You have more options than you see.",
+        "eight_of_swords_career_reversed": "Release from career restrictions. Professional freedom and new perspective. Self-acceptance allows work progress. Recognizing your power.",
+        
+        "eight_of_swords_finance_upright": "Feeling financially trapped but restrictions are self-imposed. Money victim mentality. You have more financial options than you see.",
+        "eight_of_swords_finance_reversed": "Release from financial restrictions. Money freedom and new perspective. Self-acceptance allows prosperity. Recognizing your power.",
+        
+        "eight_of_swords_health_upright": "Feeling trapped by health but some restrictions are self-imposed. Wellness victim mentality. You have more options than you see.",
+        "eight_of_swords_health_reversed": "Release from health restrictions. Wellness freedom and new perspective. Self-acceptance allows healing. Recognizing your power.",
+        
+        "eight_of_swords_general_upright": "Restriction, imprisonment, victim mentality, and helplessness. You feel trapped but the chains aren't real. You have more power than you think. Remove the blindfold.",
+        "eight_of_swords_general_reversed": "Release, freedom, new perspective, and self-acceptance. The restrictions are lifting. You're recognizing your power and options. Liberation begins.",
+        
+        // Nine of Swords
+        "nine_of_swords_love_upright": "Romantic anxiety and relationship worry. Nightmares about love keep you up. Fear about partnership is overwhelming. Your mind torments you. Reach out for support.",
+        "nine_of_swords_love_reversed": "Romantic anxiety subsiding and relationship hope emerging. Reaching out for love support. Despair about partnership lifting. Recovery begins.",
+        
+        "nine_of_swords_career_upright": "Career anxiety and professional worry. Work nightmares and overwhelming job fear. Your mind torments you about career. Reach out for support.",
+        "nine_of_swords_career_reversed": "Career anxiety subsiding and professional hope emerging. Reaching out for work support. Despair about job lifting. Recovery begins.",
+        
+        "nine_of_swords_finance_upright": "Financial anxiety and money worry. Nightmares about resources. Overwhelming fear about finances. Your mind torments you. Reach out for support.",
+        "nine_of_swords_finance_reversed": "Financial anxiety subsiding and money hope emerging. Reaching out for financial support. Despair about resources lifting. Recovery begins.",
+        
+        "nine_of_swords_health_upright": "Health anxiety and wellness worry. Nightmares about body. Overwhelming fear about physical state. Your mind torments you. Reach out for support.",
+        "nine_of_swords_health_reversed": "Health anxiety subsiding and wellness hope emerging. Reaching out for medical support. Despair about body lifting. Recovery begins.",
+        
+        "nine_of_swords_general_upright": "Anxiety, worry, nightmares, and fear. Your mind is your worst enemy right now. Thoughts spiral and keep you up at night. This is primarily mental—reach out for support.",
+        "nine_of_swords_general_reversed": "Hope emerging, reaching out for help, and anxiety subsiding. The worst of the despair is passing. You're not alone. Recovery begins when you ask for support.",
+        
+        // Ten of Swords
+        "ten_of_swords_love_upright": "Relationship rock bottom and painful romantic ending. Love betrayal cuts deep. Crisis in partnership. This is the worst it can get—the only way is up.",
+        "ten_of_swords_love_reversed": "Recovery from relationship crisis or resisting love ending. Regeneration after romantic rock bottom. Avoiding inevitable partnership conclusion.",
+        
+        "ten_of_swords_career_upright": "Career rock bottom and painful professional ending. Work betrayal and job crisis. This is the worst it can get—transformation begins here.",
+        "ten_of_swords_career_reversed": "Recovery from career crisis or resisting professional ending. Regeneration after work rock bottom. Avoiding inevitable job conclusion.",
+        
+        "ten_of_swords_finance_upright": "Financial rock bottom and painful money ending. Resource betrayal and financial crisis. This is the worst it can get—rebuilding begins here.",
+        "ten_of_swords_finance_reversed": "Recovery from financial crisis or resisting money ending. Regeneration after resource rock bottom. Avoiding inevitable financial conclusion.",
+        
+        "ten_of_swords_health_upright": "Health rock bottom and physical crisis. Body betrayal and wellness breakdown. This is the worst it can get—healing begins here.",
+        "ten_of_swords_health_reversed": "Recovery from health crisis or resisting physical truth. Regeneration after wellness rock bottom. Avoiding inevitable health conclusion.",
+        
+        "ten_of_swords_general_upright": "Rock bottom, painful ending, betrayal, and crisis. This is as bad as it gets. You're done. But here's the truth: the only way from here is up. Dawn comes.",
+        "ten_of_swords_general_reversed": "Recovery, regeneration, resisting end, or delayed disaster. You're either rising from rock bottom or refusing to let something die. Stop resisting.",
+        
+        // Page of Swords
+        "page_of_swords_love_upright": "Curious approach to love and relationship communication. Mental agility in partnership. Vigilant about romantic truth. Messages about love arrive.",
+        "page_of_swords_love_reversed": "Relationship gossip or hasty love communication. Scattered romantic thoughts. Cynicism about partnership. Bad relationship news.",
+        
+        "page_of_swords_career_upright": "Curious professional approach and work communication. Mental agility at job. Vigilant about career truth. Professional messages and learning.",
+        "page_of_swords_career_reversed": "Workplace gossip or hasty professional communication. Scattered work thoughts. Career cynicism. Bad job news.",
+        
+        "page_of_swords_finance_upright": "Curious financial approach and money communication. Mental agility with resources. Vigilant about financial truth. Learning about prosperity.",
+        "page_of_swords_finance_reversed": "Financial gossip or hasty money communication. Scattered resource thoughts. Cynicism about prosperity. Bad financial news.",
+        
+        "page_of_swords_health_upright": "Curious wellness approach and health communication. Mental agility about body. Vigilant about physical truth. Learning about healing.",
+        "page_of_swords_health_reversed": "Health gossip or hasty wellness communication. Scattered body thoughts. Cynicism about healing. Bad health news.",
+        
+        "page_of_swords_general_upright": "Curiosity, mental agility, vigilance, and communication. You're learning, observing, and staying alert. Your mind is sharp and quick. Messages arrive.",
+        "page_of_swords_general_reversed": "Gossiping, hastiness, scattered thoughts, and cynicism. Your mind works against you. Slow down and think before speaking. Bad news arrives.",
+        
+        // Knight of Swords
+        "knight_of_swords_love_upright": "Ambitious, fast-moving approach to love. Action-oriented and driven in romance. Quick thinking about relationships. Passionate pursuit of partnership.",
+        "knight_of_swords_love_reversed": "Reckless in love or impatient with relationship. Unfocused romantic energy. Impulsive partnership decisions. Slow down and think.",
+        
+        "knight_of_swords_career_upright": "Ambitious, action-oriented professional approach. Fast-thinking and driven at work. Career advancement through quick decisions. Mental clarity serves ambition.",
+        "knight_of_swords_career_reversed": "Reckless career moves or professional impatience. Unfocused work energy. Impulsive job decisions. Slow down and strategize.",
+        
+        "knight_of_swords_finance_upright": "Ambitious, fast-moving financial approach. Action-oriented money decisions. Quick thinking about resources. Driven toward prosperity.",
+        "knight_of_swords_finance_reversed": "Reckless financial moves or money impatience. Unfocused resource energy. Impulsive spending or investments. Slow down and plan.",
+        
+        "knight_of_swords_health_upright": "Ambitious, action-oriented wellness approach. Fast-moving health improvements. Quick thinking about body needs. Driven toward healing.",
+        "knight_of_swords_health_reversed": "Reckless health moves or wellness impatience. Unfocused body energy. Impulsive health decisions. Slow down and listen to body.",
+        
+        "knight_of_swords_general_upright": "Action, ambition, fast thinking, and driven energy. You're moving quickly and decisively. Mental clarity fuels forward momentum. Strike while the iron is hot.",
+        "knight_of_swords_general_reversed": "Recklessness, impatience, unfocused energy, and impulsiveness. You're moving too fast without thinking. Slow down before you crash.",
+        
+        // Queen of Swords
+        "queen_of_swords_love_upright": "Independent, clear-thinking approach to love. Honest and direct in relationships. Intellectual partnership. Truth and boundaries strengthen connection.",
+        "queen_of_swords_love_reversed": "Coldness or cruelty in love. Bitter about relationships. Isolated through defensiveness. Harsh honesty damages partnership. Soften.",
+        
+        "queen_of_swords_career_upright": "Independent, clear-thinking professional approach. Honest and direct at work. Intellectual leadership. Truth and boundaries serve career.",
+        "queen_of_swords_career_reversed": "Professional coldness or workplace cruelty. Career bitterness. Isolated through defensiveness. Harsh communication damages work relationships.",
+        
+        "queen_of_swords_finance_upright": "Independent, clear-thinking financial approach. Honest and direct about money. Intellectual resource management. Truth about finances empowers.",
+        "queen_of_swords_finance_reversed": "Financial coldness or money cruelty. Bitter about resources. Isolated through financial defensiveness. Harsh money decisions damage relationships.",
+        
+        "queen_of_swords_health_upright": "Independent, clear-thinking wellness approach. Honest about body needs. Intellectual health management. Truth about physical state empowers.",
+        "queen_of_swords_health_reversed": "Health coldness or cruel self-talk about body. Bitter about wellness. Isolated through physical defensiveness. Harsh health approach damages self.",
+        
+        "queen_of_swords_general_upright": "Independence, clear thinking, honesty, and directness. You see truth clearly and speak it. Boundaries protect you. Your mind is sharp and your heart is guarded wisely.",
+        "queen_of_swords_general_reversed": "Coldness, cruelty, bitterness, and isolation. Your sharp mind has become a weapon. Defensiveness isolates you. Soften your edges.",
+        
+        // King of Swords
+        "king_of_swords_love_upright": "Authoritative, truthful approach to love. Intellectual power and clear mind in relationships. Honest leadership in partnership. Logic serves connection.",
+        "king_of_swords_love_reversed": "Relationship manipulation or abuse of power in love. Tyrannical control over partner. Cruelty through intellect. Using truth as weapon.",
+        
+        "king_of_swords_career_upright": "Authoritative, truthful professional approach. Intellectual power and clear mind at work. Honest career leadership. Logic and ethics guide success.",
+        "king_of_swords_career_reversed": "Professional manipulation or abuse of workplace power. Tyrannical leadership. Career cruelty. Using intellect and position as weapons.",
+        
+        "king_of_swords_finance_upright": "Authoritative, truthful financial approach. Intellectual power with money. Clear-minded resource management. Honest leadership in prosperity.",
+        "king_of_swords_finance_reversed": "Financial manipulation or abuse of money power. Tyrannical control over resources. Using wealth as weapon. Cruel financial leadership.",
+        
+        "king_of_swords_health_upright": "Authoritative, clear-minded wellness approach. Intellectual power serves health. Honest assessment of body. Logic guides healing.",
+        "king_of_swords_health_reversed": "Health manipulation or tyrannical control over body. Cruel wellness approach. Abusing intellectual power for harmful health practices.",
+        
+        "king_of_swords_general_upright": "Authority, truth, intellectual power, and clear mind. You lead with logic and ethics. Your judgment is sound and your communication is authoritative. Power through clarity.",
+        "king_of_swords_general_reversed": "Manipulation, abuse of power, tyranny, and cruelty. You're using your intellect and position as weapons. Logic without compassion becomes tyranny. Soften.",
+        
+        // WANDS SUIT - Ace of Wands
+        "ace_of_wands_love_upright": "Passionate new romantic beginning. Inspired love and creative connection. Growth potential in relationships. Enthusiasm brings fresh energy to partnership.",
+        "ace_of_wands_love_reversed": "Romantic delays or missed love opportunities. Lack of direction in relationships. Partnership setbacks. Passion blocked or misdirected.",
+        
+        "ace_of_wands_career_upright": "Exciting new career opportunity. Inspired professional beginning. Creative work prospects. Growth potential in job. Enthusiasm drives success.",
+        "ace_of_wands_career_reversed": "Career delays or missed professional opportunities. Lack of work direction. Job setbacks. Creative energy blocked.",
+        
+        "ace_of_wands_finance_upright": "Exciting new financial opportunity. Inspired money ventures. Creative prosperity potential. Growth in resources. Enthusiasm brings abundance.",
+        "ace_of_wands_finance_reversed": "Financial delays or missed money opportunities. Lack of financial direction. Resource setbacks. Prosperity energy blocked.",
+        
+        "ace_of_wands_health_upright": "Exciting new health beginning. Inspired wellness potential. Creative vitality. Physical growth opportunity. Enthusiasm for body care.",
+        "ace_of_wands_health_reversed": "Health delays or missed wellness opportunities. Lack of health direction. Physical setbacks. Vitality blocked.",
+        
+        "ace_of_wands_general_upright": "Inspiration, new opportunities, growth, and potential. Creative fire ignites within you. This is the spark of something exciting and new. Seize the moment.",
+        "ace_of_wands_general_reversed": "Delays, lack of direction, missed opportunities, and setbacks. Your creative fire is blocked or misdirected. Reignite your passion.",
+        
+        // Two of Wands
+        "two_of_wands_love_upright": "Planning romantic future and relationship vision. Progress in love through decisions. Partnership at crossroads. Choose your path forward together.",
+        "two_of_wands_love_reversed": "Fear of romantic unknown or lack of relationship planning. Playing it safe in love. Bad partnership planning. Unclear relationship vision.",
+        
+        "two_of_wands_career_upright": "Planning professional future and career vision. Work progress through decisions. Job at crossroads. Choose your path forward.",
+        "two_of_wands_career_reversed": "Fear of career unknown or lack of professional planning. Playing it safe at work. Bad job planning. Unclear career vision.",
+        
+        "two_of_wands_finance_upright": "Planning financial future and money vision. Resource progress through decisions. Prosperity at crossroads. Choose your financial path.",
+        "two_of_wands_finance_reversed": "Fear of financial unknown or lack of money planning. Playing it safe with resources. Bad financial planning. Unclear prosperity vision.",
+        
+        "two_of_wands_health_upright": "Planning wellness future and health vision. Physical progress through decisions. Body at crossroads. Choose your healing path.",
+        "two_of_wands_health_reversed": "Fear of health unknown or lack of wellness planning. Playing it safe with body. Bad health planning. Unclear wellness vision.",
+        
+        "two_of_wands_general_upright": "Planning, future vision, progress, and decisions. You're at a crossroads with the world in your hands. Choose your path and commit to the journey.",
+        "two_of_wands_general_reversed": "Fear of unknown, lack of planning, playing it safe, and bad planning. You're stuck at the crossroads. Make a decision and move forward.",
+        
+        // Three of Wands
+        "three_of_wands_love_upright": "Relationship expansion and romantic foresight. Love grows beyond current boundaries. Partnership leadership. Looking ahead to love's potential.",
+        "three_of_wands_love_reversed": "Romantic delays or relationship obstacles. Lack of love foresight. Partnership frustration. Expansion blocked.",
+        
+        "three_of_wands_career_upright": "Professional expansion and career foresight. Work grows beyond current boundaries. Leadership opportunities. Looking ahead to career potential.",
+        "three_of_wands_career_reversed": "Career delays or professional obstacles. Lack of work foresight. Job frustration. Professional expansion blocked.",
+        
+        "three_of_wands_finance_upright": "Financial expansion and money foresight. Resources grow beyond current boundaries. Prosperity leadership. Looking ahead to wealth potential.",
+        "three_of_wands_finance_reversed": "Financial delays or money obstacles. Lack of prosperity foresight. Resource frustration. Wealth expansion blocked.",
+        
+        "three_of_wands_health_upright": "Health expansion and wellness foresight. Body grows beyond current limitations. Taking charge of healing. Looking ahead to vitality potential.",
+        "three_of_wands_health_reversed": "Health delays or wellness obstacles. Lack of healing foresight. Physical frustration. Vitality expansion blocked.",
+        
+        "three_of_wands_general_upright": "Expansion, foresight, overseas opportunities, and leadership. You're looking ahead and planning growth. Your world is expanding. Opportunities await beyond the horizon.",
+        "three_of_wands_general_reversed": "Delays, obstacles, lack of foresight, and frustration. Expansion is blocked. Your vision isn't materializing as planned. Reassess and adjust.",
+        
+        // Four of Wands
+        "four_of_wands_love_upright": "Relationship celebration and romantic harmony. Love milestone reached. Partnership stability and joy. Home and heart aligned beautifully.",
+        "four_of_wands_love_reversed": "Relationship instability or lack of love support. Partnership transition challenges. Home conflict affects romance. Celebration delayed.",
+        
+        "four_of_wands_career_upright": "Professional celebration and work harmony. Career milestone reached. Job stability and support. Workplace feels like home.",
+        "four_of_wands_career_reversed": "Career instability or lack of professional support. Work transition challenges. Office conflict. Celebration delayed.",
+        
+        "four_of_wands_finance_upright": "Financial celebration and money harmony. Prosperity milestone reached. Resource stability. Celebrating financial home.",
+        "four_of_wands_finance_reversed": "Financial instability or lack of money support. Resource transition challenges. Financial conflict. Prosperity celebration delayed.",
+        
+        "four_of_wands_health_upright": "Health celebration and wellness harmony. Physical milestone reached. Body stability and support. Celebrating vitality.",
+        "four_of_wands_health_reversed": "Health instability or lack of wellness support. Body transition challenges. Physical conflict. Health celebration delayed.",
+        
+        "four_of_wands_general_upright": "Celebration, harmony, home, and milestone. You've reached an important point worth celebrating. Stability and support surround you. Joy and accomplishment.",
+        "four_of_wands_general_reversed": "Instability, lack of support, transition, and home conflict. What should be celebratory feels shaky. Delays prevent joy. Work to restore harmony.",
+        
+        // Five of Wands
+        "five_of_wands_love_upright": "Relationship competition or romantic conflict. Love tension and disagreements. Diversity of opinions in partnership. Healthy debate or unnecessary drama?",
+        "five_of_wands_love_reversed": "Avoiding relationship conflict or romantic resolution. Love cooperation emerges. Partnership agreement. Ending unnecessary competition.",
+        
+        "five_of_wands_career_upright": "Professional competition and workplace conflict. Work tension and diverse opinions. Healthy challenge or unnecessary drama? Navigate carefully.",
+        "five_of_wands_career_reversed": "Avoiding career conflict or professional resolution. Workplace cooperation. Job agreement. Ending unnecessary competition.",
+        
+        "five_of_wands_finance_upright": "Financial competition or money conflict. Resource tension and diverse opinions about prosperity. Healthy challenge or unnecessary drama?",
+        "five_of_wands_finance_reversed": "Avoiding financial conflict or money resolution. Resource cooperation. Prosperity agreement. Ending unnecessary competition.",
+        
+        "five_of_wands_health_upright": "Health competition or wellness conflict. Body tension and diverse opinions about healing. Competing needs within self.",
+        "five_of_wands_health_reversed": "Avoiding health conflict or wellness resolution. Body cooperation. Healing agreement. Ending internal competition.",
+        
+        "five_of_wands_general_upright": "Competition, conflict, tension, and diversity. Everyone's fighting for their way. Is this healthy challenge or unnecessary drama? Navigate the chaos.",
+        "five_of_wands_general_reversed": "Avoiding conflict, resolution, cooperation, and agreement. The fighting ends. Peace emerges. Unnecessary competition dissolves.",
+        
+        // Six of Wands
+        "six_of_wands_love_upright": "Relationship success and romantic recognition. Love victory and partnership achievement. Public acknowledgment of connection. Celebrating love wins.",
+        "six_of_wands_love_reversed": "Relationship failure or lack of romantic recognition. Love arrogance or partnership egotism. Private challenges despite public appearance.",
+        
+        "six_of_wands_career_upright": "Professional success and career recognition. Work victory and job achievement. Public acknowledgment of accomplishments. Celebrating career wins.",
+        "six_of_wands_career_reversed": "Career failure or lack of professional recognition. Work arrogance or job egotism. Private struggles despite public success.",
+        
+        "six_of_wands_finance_upright": "Financial success and prosperity recognition. Money victory and resource achievement. Public acknowledgment of wealth. Celebrating financial wins.",
+        "six_of_wands_finance_reversed": "Financial failure or lack of prosperity recognition. Money arrogance or resource egotism. Private financial struggles.",
+        
+        "six_of_wands_health_upright": "Health success and wellness recognition. Physical victory and body achievement. Celebrating healing wins. Acknowledged vitality.",
+        "six_of_wands_health_reversed": "Health setbacks or lack of wellness recognition. Physical arrogance ignoring body needs. Private health struggles.",
+        
+        "six_of_wands_general_upright": "Success, recognition, victory, and achievement. You're winning and everyone sees it. Public acknowledgment of your efforts. Take a bow—you earned this.",
+        "six_of_wands_general_reversed": "Failure, lack of recognition, arrogance, and egotism. Success isn't coming or you're too full of yourself. Check your ego.",
+        
+        // Seven of Wands
+        "seven_of_wands_love_upright": "Defending relationship and maintaining romantic control. Love under challenge. Standing your ground in partnership. Persevering through opposition.",
+        "seven_of_wands_love_reversed": "Exhausted from defending relationship. Giving up on love. Overwhelmed by partnership challenges. Losing romantic ground.",
+        
+        "seven_of_wands_career_upright": "Defending professional position and maintaining work control. Career under challenge. Standing your ground at job. Persevering through opposition.",
+        "seven_of_wands_career_reversed": "Exhausted from career defense. Giving up professionally. Overwhelmed by work challenges. Losing job ground.",
+        
+        "seven_of_wands_finance_upright": "Defending financial position and maintaining money control. Resources under challenge. Standing your ground with prosperity. Persevering through opposition.",
+        "seven_of_wands_finance_reversed": "Exhausted from financial defense. Giving up on prosperity. Overwhelmed by money challenges. Losing resource ground.",
+        
+        "seven_of_wands_health_upright": "Defending wellness and maintaining health control. Body under challenge. Standing your ground with healing. Persevering through physical opposition.",
+        "seven_of_wands_health_reversed": "Exhausted from health defense. Giving up on wellness. Overwhelmed by body challenges. Losing physical ground.",
+        
+        "seven_of_wands_general_upright": "Defense, perseverance, maintaining control, and challenge. You're under attack but holding your ground. Standing up to opposition. Don't give up now.",
+        "seven_of_wands_general_reversed": "Exhaustion, giving up, overwhelmed, and losing ground. You can't defend anymore. Time to either retreat or find another approach.",
+        
+        // Eight of Wands
+        "eight_of_wands_love_upright": "Relationship speed and romantic action. Fast-moving love developments. Quick partnership progress. Movement and momentum in connection.",
+        "eight_of_wands_love_reversed": "Romantic delays or resisting love change. Frustration with relationship pace. Internal alignment needed before partnership movement.",
+        
+        "eight_of_wands_career_upright": "Professional speed and career action. Fast-moving work developments. Quick job progress. Career momentum and movement.",
+        "eight_of_wands_career_reversed": "Career delays or resisting professional change. Frustration with work pace. Internal alignment needed before job movement.",
+        
+        "eight_of_wands_finance_upright": "Financial speed and money action. Fast-moving prosperity developments. Quick resource progress. Momentum in wealth building.",
+        "eight_of_wands_finance_reversed": "Financial delays or resisting money change. Frustration with prosperity pace. Internal alignment needed before resource movement.",
+        
+        "eight_of_wands_health_upright": "Health speed and wellness action. Fast-moving healing developments. Quick physical progress. Momentum in body recovery.",
+        "eight_of_wands_health_reversed": "Health delays or resisting wellness change. Frustration with healing pace. Internal alignment needed before physical movement.",
+        
+        "eight_of_wands_general_upright": "Speed, action, movement, and swift change. Things are happening fast. Messages arrive. Travel possible. Ride the momentum.",
+        "eight_of_wands_general_reversed": "Delays, frustration, resisting change, and need for internal alignment. Nothing's moving as fast as you want. Patience required.",
+        
+        // Nine of Wands
+        "nine_of_wands_love_upright": "Relationship resilience and romantic persistence. Love boundaries after challenges. Last stand in partnership. Guarded but not giving up.",
+        "nine_of_wands_love_reversed": "Relationship exhaustion or romantic paranoia. Struggling on in love without support. Refusing partnership help. Barely holding on.",
+        
+        "nine_of_wands_career_upright": "Professional resilience and career persistence. Work boundaries after challenges. Last stand at job. Guarded but not giving up.",
+        "nine_of_wands_career_reversed": "Career exhaustion or professional paranoia. Struggling on at work without support. Refusing job help. Barely holding on.",
+        
+        "nine_of_wands_finance_upright": "Financial resilience and money persistence. Resource boundaries after challenges. Last stand with prosperity. Guarded but not giving up.",
+        "nine_of_wands_finance_reversed": "Financial exhaustion or money paranoia. Struggling on with resources without support. Refusing prosperity help. Barely holding on.",
+        
+        "nine_of_wands_health_upright": "Physical resilience and wellness persistence. Health boundaries after challenges. Last stand with body. Guarded but not giving up.",
+        "nine_of_wands_health_reversed": "Health exhaustion or wellness paranoia. Struggling on with body without support. Refusing healing help. Barely holding on.",
+        
+        "nine_of_wands_general_upright": "Resilience, persistence, last stand, and boundaries. You're battle-weary but not beaten. One more push. Protect yourself but don't isolate.",
+        "nine_of_wands_general_reversed": "Exhaustion, paranoia, struggling on, and refusing help. You can barely hold on. Accept support. You don't have to do this alone.",
+        
+        // Ten of Wands
+        "ten_of_wands_love_upright": "Relationship burden and romantic responsibility. Love feels heavy. Partnership requires hard work. Taking on too much in connection. Stress affects intimacy.",
+        "ten_of_wands_love_reversed": "Releasing relationship burden or delegating love responsibilities. Letting go of partnership stress. Lightening romantic load.",
+        
+        "ten_of_wands_career_upright": "Professional burden and work responsibility. Career feels overwhelming. Job requires excessive hard work. Taking on too much at work. Stress affects performance.",
+        "ten_of_wands_career_reversed": "Releasing career burden or delegating work. Letting go of job stress. Lightening professional load.",
+        
+        "ten_of_wands_finance_upright": "Financial burden and money responsibility. Resources feel heavy. Prosperity requires hard work. Taking on too much financial stress.",
+        "ten_of_wands_finance_reversed": "Releasing financial burden or delegating money responsibilities. Letting go of resource stress. Lightening prosperity load.",
+        
+        "ten_of_wands_health_upright": "Health burden and wellness responsibility. Body feels heavy. Physical demands overwhelming. Taking on too much stress affects health.",
+        "ten_of_wands_health_reversed": "Releasing health burden or delegating wellness responsibilities. Letting go of physical stress. Lightening body load.",
+        
+        "ten_of_wands_general_upright": "Burden, responsibility, hard work, and stress. You're carrying too much. Almost at the destination but overwhelmed. Delegate or let go of something.",
+        "ten_of_wands_general_reversed": "Release, delegation, letting go, and lightening load. You're finally putting down some burdens. Relief comes through releasing responsibility.",
+        
+        // Page of Wands
+        "page_of_wands_love_upright": "Enthusiastic romantic beginning and love exploration. Free-spirited connection. Discovery in relationships. Curious approach to partnership.",
+        "page_of_wands_love_reversed": "Relationship lack of direction or love procrastination. Hasty romantic decisions. Partnership setbacks. Unclear love exploration.",
+        
+        "page_of_wands_career_upright": "Enthusiastic professional beginning and career exploration. Free-spirited work approach. Job discovery. Curious about opportunities.",
+        "page_of_wands_career_reversed": "Career lack of direction or professional procrastination. Hasty work decisions. Job setbacks. Unclear career exploration.",
+        
+        "page_of_wands_finance_upright": "Enthusiastic financial beginning and money exploration. Free-spirited prosperity approach. Resource discovery. Curious about wealth.",
+        "page_of_wands_finance_reversed": "Financial lack of direction or money procrastination. Hasty resource decisions. Prosperity setbacks. Unclear financial exploration.",
+        
+        "page_of_wands_health_upright": "Enthusiastic wellness beginning and health exploration. Free-spirited body approach. Physical discovery. Curious about healing.",
+        "page_of_wands_health_reversed": "Health lack of direction or wellness procrastination. Hasty body decisions. Physical setbacks. Unclear health exploration.",
+        
+        "page_of_wands_general_upright": "Enthusiasm, exploration, discovery, and free spirit. You're excited about new possibilities. Curious energy drives you. Adventure begins.",
+        "page_of_wands_general_reversed": "Lack of direction, procrastination, setbacks, and hasty decisions. Your enthusiasm lacks focus. Slow down and plan.",
+        
+        // Knight of Wands
+        "knight_of_wands_love_upright": "Passionate romantic pursuit and energetic love. Adventurous relationship approach. Impulsive partnership. Following your heart quickly.",
+        "knight_of_wands_love_reversed": "Reckless love or relationship haste. Romantic frustration. Passive partnership despite passionate feelings. Impulsive connection problems.",
+        
+        "knight_of_wands_career_upright": "Passionate professional pursuit and energetic work. Adventurous career approach. Impulsive job moves. Following passion quickly.",
+        "knight_of_wands_career_reversed": "Reckless career or professional haste. Work frustration. Passive despite passionate feelings. Impulsive job problems.",
+        
+        "knight_of_wands_finance_upright": "Passionate financial pursuit and energetic money approach. Adventurous prosperity. Impulsive resource moves. Following passion to wealth.",
+        "knight_of_wands_finance_reversed": "Reckless finances or money haste. Resource frustration. Passive prosperity despite passionate feelings. Impulsive financial problems.",
+        
+        "knight_of_wands_health_upright": "Passionate wellness pursuit and energetic body approach. Adventurous healing. Impulsive health moves. Following passion to vitality.",
+        "knight_of_wands_health_reversed": "Reckless health or wellness haste. Physical frustration. Passive body care despite passionate feelings. Impulsive health problems.",
+        
+        "knight_of_wands_general_upright": "Energy, passion, adventure, and impulsiveness. You're charging forward with enthusiasm. Following your passion wherever it leads. Excitement drives action.",
+        "knight_of_wands_general_reversed": "Recklessness, haste, frustration, and passive energy. Your passion is misdirected or blocked. Slow down and channel energy wisely.",
+        
+        // Queen of Wands
+        "queen_of_wands_love_upright": "Confident romantic leadership and vibrant love. Determined partnership approach. Social connection. Magnetic relationship energy.",
+        "queen_of_wands_love_reversed": "Relationship selfishness or romantic jealousy. Love insecurity. Temperamental partnership. Attention-seeking in connection.",
+        
+        "queen_of_wands_career_upright": "Confident professional leadership and vibrant work. Determined career approach. Social success. Magnetic workplace energy.",
+        "queen_of_wands_career_reversed": "Career selfishness or professional jealousy. Work insecurity. Temperamental job behavior. Attention-seeking professionally.",
+        
+        "queen_of_wands_finance_upright": "Confident financial leadership and vibrant prosperity. Determined money approach. Social wealth. Magnetic resource energy.",
+        "queen_of_wands_finance_reversed": "Financial selfishness or money jealousy. Prosperity insecurity. Temperamental resource behavior. Attention-seeking about wealth.",
+        
+        "queen_of_wands_health_upright": "Confident wellness leadership and vibrant health. Determined body approach. Social vitality. Magnetic physical energy.",
+        "queen_of_wands_health_reversed": "Health selfishness or wellness jealousy. Physical insecurity. Temperamental body approach. Attention-seeking about health.",
+        
+        "queen_of_wands_general_upright": "Confidence, determination, vibrancy, and social magnetism. You're a natural leader who attracts others. Your passion and warmth inspire. Own your power.",
+        "queen_of_wands_general_reversed": "Selfishness, jealousy, insecurity, and temperamental behavior. Your confidence has become arrogance. Attention-seeking undermines relationships.",
+        
+        // King of Wands
+        "king_of_wands_love_upright": "Visionary romantic leadership and honorable love. Entrepreneurial relationship approach. Natural partnership authority. Passionate mature connection.",
+        "king_of_wands_love_reversed": "Relationship impulsiveness or romantic tyranny. Love arrogance. Ruthless partnership behavior. Impatient with connection.",
+        
+        "king_of_wands_career_upright": "Visionary professional leadership and honorable work. Entrepreneurial career approach. Natural job authority. Passionate mature success.",
+        "king_of_wands_career_reversed": "Career impulsiveness or professional tyranny. Work arrogance. Ruthless job behavior. Impatient with colleagues.",
+        
+        "king_of_wands_finance_upright": "Visionary financial leadership and honorable prosperity. Entrepreneurial money approach. Natural wealth authority. Passionate mature abundance.",
+        "king_of_wands_finance_reversed": "Financial impulsiveness or money tyranny. Prosperity arrogance. Ruthless resource behavior. Impatient with wealth building.",
+        
+        "king_of_wands_health_upright": "Visionary wellness leadership and honorable health. Entrepreneurial body approach. Natural healing authority. Passionate mature vitality.",
+        "king_of_wands_health_reversed": "Health impulsiveness or wellness tyranny. Physical arrogance. Ruthless body behavior. Impatient with healing.",
+        
+        "king_of_wands_general_upright": "Leadership, vision, entrepreneurship, and honor. You're a natural born leader with passion and vision. Your enthusiasm inspires others. Channel your fire wisely.",
+        "king_of_wands_general_reversed": "Impulsiveness, tyranny, arrogance, and ruthlessness. Your leadership has become domination. Passion without wisdom destroys. Temper your fire."
     ]
     
     // Alternative interpretations based on resonance level
