@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/sebastianstrus/Desktop/TarotGo/generate_all_localizations.py", line 137, in <module>
+    entries = generate_all_localizations()
+  File "/Users/sebastianstrus/Desktop/TarotGo/generate_all_localizations.py", line 97, in generate_all_localizations
+    interpretations = read_interpretations_from_swift()
+  File "/Users/sebastianstrus/Desktop/TarotGo/generate_all_localizations.py", line 27, in read_interpretations_from_swift
+    with open('TarotGo/TarotGo/Data/TarotInterpretations.swift', 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'TarotGo/TarotGo/Data/TarotInterpretations.swift'
+Starting localization generation...
+This will take some time as we're translating 780 interpretations to 10 languages...
+Reading interpretations from TarotInterpretations.swift...
+
+✗ Error: [Errno 2] No such file or directory: 'TarotGo/TarotGo/Data/TarotInterpretations.swift'

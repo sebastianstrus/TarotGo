@@ -229,4 +229,12 @@ enum L10n {
     static func cardPosition(_ current: Int, _ total: Int) -> String {
         String(format: NSLocalizedString("selection.cardPositionFormat", comment: "Card X of Y"), current, total)
     }
+    
+    // MARK: - Tarot Card Interpretations
+    /// Get a localized interpretation for a tarot card
+    /// - Parameter key: The interpretation key (e.g., "the_fool_love_upright")
+    /// - Returns: The localized interpretation text
+    static func interpretation(_ key: String) -> String {
+        NSLocalizedString("interpretation.\(key)", comment: "Interpretation for \(key)")
+    }
 }
