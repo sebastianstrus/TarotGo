@@ -229,10 +229,11 @@ struct ShuffleRitualView: View {
                             isPressed = true
                             phase = .pressing
                         }
-                        // Fade in fire effect
+                        // Fade in fire effect and start fire sound
                         withAnimation(.easeInOut(duration: 0.5)) {
                             showFire = true
                         }
+                        SoundService.shared.play(.fire, volume: 0.6)
                     }
                 }
                 .onEnded { _ in
@@ -243,10 +244,11 @@ struct ShuffleRitualView: View {
                             phase = .instruction
                             pressProgress = 0
                         }
-                        // Fade out fire effect
+                        // Fade out fire effect and stop fire sound
                         withAnimation(.easeInOut(duration: 0.5)) {
                             showFire = false
                         }
+                        SoundService.shared.stop(.fire)
                     }
                 }
         )
@@ -316,10 +318,11 @@ struct ShuffleRitualView: View {
         isPressed = false
         phase = .shuffling
         
-        // Fade out fire effect
+        // Fade out fire effect and stop fire sound
         withAnimation(.easeInOut(duration: 0.5)) {
             showFire = false
         }
+        SoundService.shared.stop(.fire)
         
         HapticService.shared.impact(.heavy)
         SoundService.shared.play(.cardShuffle, volume: 0.7)

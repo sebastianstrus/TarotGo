@@ -17,6 +17,8 @@ enum SoundEffect: String {
     case bellChime = "bell_chime"
     case success = "success"
     case whoosh = "whoosh"
+    case click = "click"
+    case fire = "fire"
 }
 
 class SoundService: NSObject, ObservableObject {
@@ -89,6 +91,10 @@ class SoundService: NSObject, ObservableObject {
                 print("Failed to play sound \(sound.rawValue): \(error)")
             }
         }
+    }
+    
+    func stop(_ sound: SoundEffect) {
+        soundPlayers[sound.rawValue]?.stop()
     }
     
     func playAmbient(_ sound: SoundEffect, volume: Float = 0.3, loop: Bool = true) {

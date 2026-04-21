@@ -109,7 +109,7 @@ struct OnboardingView: View {
                 if selectedCategory != nil {
                     Button {
                         HapticService.shared.impact(.success)
-                        SoundService.shared.play(.success, volume: 0.6)
+                        SoundService.shared.play(.whoosh, volume: 0.6)
                         navigateToReading = true
                     } label: {
                         HStack(spacing: 10) {
@@ -179,7 +179,7 @@ struct CategoryButton: View {
     var body: some View {
         Button(action: {
             HapticService.shared.impact(.medium)
-            SoundService.shared.play(.whoosh, volume: 0.4)
+            SoundService.shared.play(.click, volume: 0.6)
             action()
         }) {
             VStack(alignment: .leading, spacing: 5) {

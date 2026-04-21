@@ -146,19 +146,21 @@ struct CardOfTheDayView: View {
                     withAnimation(.spring(response: 0.3)) {
                         isPressed = true
                     }
-                    // Fade in fire effect
+                    // Fade in fire effect and start fire sound
                     withAnimation(.easeInOut(duration: 0.5)) {
                         showFire = true
                     }
+                    SoundService.shared.play(.fire, volume: 0.6)
                 } else if pressProgress < totalPressDuration {
                     withAnimation(.spring(response: 0.3)) {
                         isPressed = false
                         pressProgress = 0
                     }
-                    // Fade out fire effect
+                    // Fade out fire effect and stop fire sound
                     withAnimation(.easeInOut(duration: 0.5)) {
                         showFire = false
                     }
+                    SoundService.shared.stop(.fire)
                 }
             }
         }
@@ -276,10 +278,11 @@ struct CardOfTheDayView: View {
     private func completePress() {
         isPressed = false
         
-        // Fade out fire effect
+        // Fade out fire effect and stop fire sound
         withAnimation(.easeInOut(duration: 0.5)) {
             showFire = false
         }
+        SoundService.shared.stop(.fire)
         
         HapticService.shared.impact(.heavy)
         SoundService.shared.play(.cardFlip, volume: 0.8)
