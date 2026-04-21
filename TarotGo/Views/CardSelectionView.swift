@@ -219,7 +219,6 @@ struct CardSelectionView: View {
         selectedCardId = card.id
         animatingCardId = card.id
         HapticService.shared.impact(.medium)
-        SoundService.shared.play(.whoosh, volume: 0.5)
         
         // Add card to selected cards with animation
         withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {

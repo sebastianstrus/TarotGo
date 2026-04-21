@@ -266,7 +266,7 @@ struct InterpretationView: View {
         }
         
         HapticService.shared.impact(.selection)
-        SoundService.shared.play(.whoosh, volume: 0.3)
+        SoundService.shared.play(.click, volume: 0.6)
         
         // Update interpretation if not resonating
         if level != .resonates, let card = currentCard {
