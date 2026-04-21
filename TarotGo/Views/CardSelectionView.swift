@@ -20,6 +20,7 @@ struct CardSelectionView: View {
     @State private var selectedCardId: String?
     @State private var selectedCards: [TarotCard] = []
     @State private var animatingCardId: String?
+    @Namespace private var cardNamespace
     
     init(category: IntentionCategory, customQuestion: String?, spreadType: SpreadType) {
         self.category = category
@@ -165,7 +166,7 @@ struct CardSelectionView: View {
                     .aspectRatio(1108/1900, contentMode: .fit)
                     .frame(height: 80)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
-                    .transition(.scale.combined(with: .opacity))
+                    .matchedGeometryEffect(id: "card-\(card.id)", in: cardNamespace)
                 }
             }
             .padding(.horizontal)
@@ -187,20 +188,23 @@ struct CardSelectionView: View {
                     let angle = Double(index - cardCount / 2) * 2.5
                     let xOffset = CGFloat(index - cardCount / 2) * spacing
                     let isCardSelected = viewModel.selectedCardIds.contains(card.id)
+                    let isAnimating = animatingCardId == card.id
                     
-                    CardBackView(isSelected: selectedCardId == card.id)
-                        .frame(width: 100, height: 150)
-                        .rotationEffect(.degrees(angle))
-                        .offset(x: xOffset, y: abs(angle) * 3)
-                        .zIndex(selectedCardId == card.id ? 100 : Double(cardCount - abs(index - cardCount / 2)))
-                        .scaleEffect(selectedCardId == card.id ? 1.1 : 1.0)
-                        .opacity(isCardSelected ? 0 : 1)
-                        .allowsHitTesting(!isCardSelected)
-                        .onTapGesture {
-                            if !isCardSelected {
-                                selectCard(card)
+                    if !isCardSelected || isAnimating {
+                        CardBackView(isSelected: selectedCardId == card.id)
+                            .frame(width: 100, height: 150)
+                            .rotationEffect(.degrees(angle))
+                            .offset(x: xOffset, y: abs(angle) * 3)
+                            .zIndex(selectedCardId == card.id ? 100 : Double(cardCount - abs(index - cardCount / 2)))
+                            .scaleEffect(selectedCardId == card.id ? 1.1 : 1.0)
+                            .matchedGeometryEffect(id: "card-\(card.id)", in: cardNamespace, isSource: !isAnimating)
+                            .allowsHitTesting(!isCardSelected)
+                            .onTapGesture {
+                                if !isCardSelected {
+                                    selectCard(card)
+                                }
                             }
-                        }
+                    }
                 }
             }
             .frame(width: geometry.size.width, height: 300)
@@ -217,30 +221,36 @@ struct CardSelectionView: View {
         guard let position = currentPosition else { return }
         
         selectedCardId = card.id
-        animatingCardId = card.id
         HapticService.shared.impact(.medium)
+        SoundService.shared.play(.cardDraw, volume: 0.7)
         
-        // Add card to selected cards with animation
+        // Start the animation immediately
         withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
+            animatingCardId = card.id
             selectedCards.append(card)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-            if let drawnCard = viewModel.drawCard(at: position, selectedCard: card) {
+        // Complete the selection after animation
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            if viewModel.drawCard(at: position, selectedCard: card) != nil {
                 selectedCardId = nil
-                animatingCardId = nil
-                currentPositionIndex += 1
                 
-                // Check if all cards have been drawn
-                if currentPositionIndex >= positions.count {
-                    HapticService.shared.impact(.success)
-                    SoundService.shared.play(.success, volume: 0.6)
+                // Clear animating state after a brief delay
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    animatingCardId = nil
+                    currentPositionIndex += 1
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        navigateToInterpretation = true
+                    // Check if all cards have been drawn
+                    if currentPositionIndex >= positions.count {
+                        HapticService.shared.impact(.success)
+                        SoundService.shared.play(.success, volume: 0.6)
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            navigateToInterpretation = true
+                        }
+                    } else {
+                        showInstruction = true
                     }
-                } else {
-                    showInstruction = true
                 }
             }
         }
