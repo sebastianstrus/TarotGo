@@ -144,6 +144,8 @@ enum L10n {
     static let settingsAbout = NSLocalizedString("settings.about", comment: "About")
     static let settingsVersion = NSLocalizedString("settings.version", comment: "Version")
     static let settingsSave = NSLocalizedString("settings.save", comment: "Save")
+    static let settingsLanguage = NSLocalizedString("settings.language", comment: "Language")
+    static let settingsLanguageDesc = NSLocalizedString("settings.language.desc", comment: "Change the app language in your phone settings")
 
     // MARK: - Spread Types
     static let spreadSingleCard = NSLocalizedString("spread.singleCard", comment: "Single Card")

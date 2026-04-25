@@ -71,9 +71,27 @@ struct SettingsView: View {
                         }
                         .foregroundColor(AppTheme.textPrimary)
                     }
+                    
+                    Button {
+                        openLanguageSettings()
+                    } label: {
+                        HStack {
+                            Text(L10n.settingsLanguage)
+                            Spacer()
+                            Text(currentLanguageName)
+                                .foregroundColor(AppTheme.gold.opacity(0.8))
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 14))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        }
+                        .foregroundColor(AppTheme.textPrimary)
+                    }
                 } header: {
                     Text(L10n.settingsInfo)
                         .foregroundColor(AppTheme.gold)
+                } footer: {
+                    Text(L10n.settingsLanguageDesc)
+                        .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
@@ -142,6 +160,18 @@ struct SettingsView: View {
         return "\(notificationHour):\(String(format: "%02d", notificationMinute))"
     }
     
+    private var currentLanguageName: String {
+        let currentLocale = Locale.current
+        let languageCode = currentLocale.language.languageCode?.identifier ?? "en"
+        
+        // Get the localized language name in the current language
+        if let languageName = currentLocale.localizedString(forLanguageCode: languageCode) {
+            return languageName.capitalized
+        }
+        
+        return "English"
+    }
+    
     private func handleNotificationToggle(_ enabled: Bool) {
         Task {
             if enabled {
@@ -171,6 +201,12 @@ struct SettingsView: View {
             at: notificationHour,
             minute: notificationMinute
         )
+    }
+    
+    private func openLanguageSettings() {
+        if let url = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(url)
+        }
     }
 }
 
