@@ -9633,6 +9633,40 @@
                 }
             }
         },
+        "settings.language" : {
+              "comment" : "Language",
+              "extractionState" : "manual",
+              "localizations" : {
+                "de" : { "stringUnit" : { "state" : "translated", "value" : "Sprache" } },
+                "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } },
+                "es" : { "stringUnit" : { "state" : "translated", "value" : "Idioma" } },
+                "fr" : { "stringUnit" : { "state" : "translated", "value" : "Langue" } },
+                "it" : { "stringUnit" : { "state" : "translated", "value" : "Lingua" } },
+                "ja" : { "stringUnit" : { "state" : "translated", "value" : "言語" } },
+                "nb" : { "stringUnit" : { "state" : "translated", "value" : "Språk" } },
+                "pl" : { "stringUnit" : { "state" : "translated", "value" : "Język" } },
+                "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Idioma" } },
+                "sv" : { "stringUnit" : { "state" : "translated", "value" : "Språk" } },
+                "uk" : { "stringUnit" : { "state" : "translated", "value" : "Мова" } }
+              }
+            },
+            "settings.language.desc" : {
+              "comment" : "Change the app language in your phone settings",
+              "extractionState" : "manual",
+              "localizations" : {
+                "de" : { "stringUnit" : { "state" : "translated", "value" : "Ändern Sie die App-Sprache in Ihren Telefoneinstellungen" } },
+                "en" : { "stringUnit" : { "state" : "translated", "value" : "Change the app language in your phone settings" } },
+                "es" : { "stringUnit" : { "state" : "translated", "value" : "Cambia el idioma de la aplicación en los ajustes de tu teléfono" } },
+                "fr" : { "stringUnit" : { "state" : "translated", "value" : "Modifiez la langue de l'application dans les réglages de votre téléphone" } },
+                "it" : { "stringUnit" : { "state" : "translated", "value" : "Cambia la lingua dell'app nelle impostazioni del telefono" } },
+                "ja" : { "stringUnit" : { "state" : "translated", "value" : "本体設定からアプリの言語を変更してください" } },
+                "nb" : { "stringUnit" : { "state" : "translated", "value" : "Endre app-språk i telefonens innstillinger" } },
+                "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zmień język aplikacji w ustawieniach telefonu" } },
+                "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Altere o idioma do aplicativo nas configurações do seu telefone" } },
+                "sv" : { "stringUnit" : { "state" : "translated", "value" : "Ändra appens språk i dina telefoninställningar" } },
+                "uk" : { "stringUnit" : { "state" : "translated", "value" : "Змініть мову програми в налаштуваннях телефону" } }
+              }
+            },
         "settings.notifications": {
             "extractionState": "manual",
             "localizations": {
