@@ -25,6 +25,7 @@ struct SettingsView: View {
             List {
                 Section {
                     Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
+                        .listRowSeparator(.hidden)
                         .onChange(of: toggleState) { oldValue, newValue in
                             handleNotificationToggle(newValue)
                         }
@@ -41,6 +42,7 @@ struct SettingsView: View {
                         .onTapGesture {
                             showingTimePicker = true
                         }
+                        .listRowSeparator(.hidden)
                     }
                 } header: {
                     Text(L10n.settingsNotifications)
@@ -52,10 +54,6 @@ struct SettingsView: View {
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(AppTheme.darkNavy.opacity(0.5))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
-                        )
                 )
                 
                 Section {
@@ -71,6 +69,7 @@ struct SettingsView: View {
                         }
                         .foregroundColor(AppTheme.textPrimary)
                     }
+                    .listRowSeparator(.hidden)
                     
                     Button {
                         openLanguageSettings()
@@ -86,6 +85,7 @@ struct SettingsView: View {
                         }
                         .foregroundColor(AppTheme.textPrimary)
                     }
+                    .listRowSeparator(.hidden)
                 } header: {
                     Text(L10n.settingsInfo)
                         .foregroundColor(AppTheme.gold)
@@ -96,10 +96,6 @@ struct SettingsView: View {
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(AppTheme.darkNavy.opacity(0.5))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
-                        )
                 )
                 
                 Section {
@@ -109,6 +105,7 @@ struct SettingsView: View {
                         Text("1.0.0")
                             .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
+                    .listRowSeparator(.hidden)
                 } header: {
                     Text(L10n.settingsAbout)
                         .foregroundColor(AppTheme.gold)
@@ -116,10 +113,6 @@ struct SettingsView: View {
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(AppTheme.darkNavy.opacity(0.5))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
-                        )
                 )
             }
             .scrollContentBackground(.hidden)
