@@ -20,6 +20,7 @@ struct CardSelectionView: View {
     @State private var selectedCardId: String?
     @State private var selectedCards: [TarotCard] = []
     @State private var animatingCardId: String?
+    @State private var isProcessingSelection: Bool = false
     @Namespace private var cardNamespace
     
     init(category: IntentionCategory, customQuestion: String?, spreadType: SpreadType) {
@@ -218,7 +219,12 @@ struct CardSelectionView: View {
     }
     
     private func selectCard(_ card: TarotCard) {
+        // Prevent race condition - only process one selection at a time
+        guard !isProcessingSelection else { return }
         guard let position = currentPosition else { return }
+        
+        // Mark as processing immediately to prevent multiple rapid taps
+        isProcessingSelection = true
         
         selectedCardId = card.id
         HapticService.shared.impact(.medium)
@@ -250,6 +256,8 @@ struct CardSelectionView: View {
                         }
                     } else {
                         showInstruction = true
+                        // Allow next selection
+                        isProcessingSelection = false
                     }
                 }
             }
