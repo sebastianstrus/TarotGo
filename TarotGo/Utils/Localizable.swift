@@ -239,4 +239,64 @@ enum L10n {
     static func interpretation(_ key: String) -> String {
         NSLocalizedString("interpretation.\(key)", comment: "Interpretation for \(key)")
     }
+    
+    // MARK: - Spread Summary Components
+    
+    // Opening insights based on spread composition
+    static func summaryMajorArcanaHigh(_ count: Int) -> String {
+        String(format: NSLocalizedString("summary.majorArcana.high", comment: "Major Arcana cards appear"), count)
+    }
+    
+    static let summaryMajorArcanaLow = NSLocalizedString("summary.majorArcana.low", comment: "The cards focus on everyday matters")
+    
+    static let summaryReversedMany = NSLocalizedString("summary.reversed.many", comment: "Many reversed cards suggest blocks")
+    
+    static let summaryReversedSome = NSLocalizedString("summary.reversed.some", comment: "Some reversed cards indicate areas needing attention")
+    
+    static let summaryReversedNone = NSLocalizedString("summary.reversed.none", comment: "All cards upright show clear forward energy")
+    
+    // Suit insights - Always shows dominant or balanced energy
+    static let summarySuitCupsDominant = NSLocalizedString("summary.suit.cups.dominant", comment: "Cups dominate - emotions and relationships")
+    
+    static let summarySuitSwordsDominant = NSLocalizedString("summary.suit.swords.dominant", comment: "Swords dominate - mental energy and thoughts")
+    
+    static let summarySuitWandsDominant = NSLocalizedString("summary.suit.wands.dominant", comment: "Wands dominate - passion and creative energy")
+    
+    static let summarySuitPentaclesDominant = NSLocalizedString("summary.suit.pentacles.dominant", comment: "Pentacles dominate - material and practical matters")
+    
+    static let summarySuitMajorArcanaDominant = NSLocalizedString("summary.suit.majorArcana.dominant", comment: "Major Arcana dominates - soul journey")
+    
+    static let summarySuitBalanced = NSLocalizedString("summary.suit.balanced", comment: "Balanced mix of suits shows multi-faceted situation")
+    
+    // Category-specific insights - Richer context
+    static let summaryInsightLove = NSLocalizedString("summary.insight.love", comment: "In matters of love and relationships")
+    
+    static let summaryInsightCareer = NSLocalizedString("summary.insight.career", comment: "Regarding your career and professional path")
+    
+    static let summaryInsightFinance = NSLocalizedString("summary.insight.finance", comment: "When it comes to finances and resources")
+    
+    static let summaryInsightHealth = NSLocalizedString("summary.insight.health", comment: "For your health and wellbeing")
+    
+    static let summaryInsightGeneral = NSLocalizedString("summary.insight.general", comment: "Looking at your life journey")
+    
+    // Closing statements - 10 variations for variety
+    static let summaryClosing1 = NSLocalizedString("summary.closing.1", comment: "these cards are telling a story that requires your attention and honest reflection.")
+    static let summaryClosing2 = NSLocalizedString("summary.closing.2", comment: "pay attention to how these energies are showing up in your life right now.")
+    static let summaryClosing3 = NSLocalizedString("summary.closing.3", comment: "the cards invite you to sit with these insights and see what resonates.")
+    static let summaryClosing4 = NSLocalizedString("summary.closing.4", comment: "trust your intuition as you interpret what the cards are revealing.")
+    static let summaryClosing5 = NSLocalizedString("summary.closing.5", comment: "these messages are here to guide you forward with greater clarity.")
+    static let summaryClosing6 = NSLocalizedString("summary.closing.6", comment: "reflect on how these themes are interwoven in your current situation.")
+    static let summaryClosing7 = NSLocalizedString("summary.closing.7", comment: "the wisdom here asks you to look deeper and trust what you discover.")
+    static let summaryClosing8 = NSLocalizedString("summary.closing.8", comment: "let these insights illuminate the path ahead as you move forward.")
+    static let summaryClosing9 = NSLocalizedString("summary.closing.9", comment: "take time to absorb what the cards are showing you in this moment.")
+    static let summaryClosing10 = NSLocalizedString("summary.closing.10", comment: "the cards have spoken—now it's time to listen with an open heart.")
+    
+    // Get a random closing statement
+    static func randomClosing() -> String {
+        let closings = [
+            summaryClosing1, summaryClosing2, summaryClosing3, summaryClosing4, summaryClosing5,
+            summaryClosing6, summaryClosing7, summaryClosing8, summaryClosing9, summaryClosing10
+        ]
+        return closings.randomElement() ?? summaryClosing1
+    }
 }

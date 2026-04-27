@@ -813,51 +813,71 @@ struct TarotInterpretations {
             counts[drawnCard.card.suit, default: 0] += 1
         }
         
-        var summary = ""
+        var summaryParts: [String] = []
         
-        // Opening based on Major Arcana presence
+        // ALWAYS provide Major Arcana insight
         if majorArcanaCount >= cards.count / 2 {
-            summary += "This reading carries significant weight. With \(majorArcanaCount) Major Arcana cards, you're dealing with major life themes and important soul lessons. "
+            summaryParts.append(L10n.summaryMajorArcanaHigh(majorArcanaCount))
+        } else {
+            summaryParts.append(L10n.summaryMajorArcanaLow)
         }
         
-        // Reversed cards insight
+        // ALWAYS provide reversed cards insight
         if reversedCount > cards.count / 2 {
-            summary += "I notice many reversed cards here, which suggests internal blocks or resistance to the natural flow. What are you holding onto that needs to be released? "
+            summaryParts.append(L10n.summaryReversedMany)
+        } else if reversedCount > 0 {
+            summaryParts.append(L10n.summaryReversedSome)
+        } else {
+            summaryParts.append(L10n.summaryReversedNone)
         }
         
-        // Suit dominance
-        if let dominantSuit = suitCounts.max(by: { $0.value < $1.value })?.key, 
-           let count = suitCounts[dominantSuit], count > 2 {
-            switch dominantSuit {
-            case .cups:
-                summary += "Your reading is dominated by Cups, the suit of emotions and relationships. Your heart is speaking loudly right now. "
-            case .swords:
-                summary += "Swords dominate this reading—there's a lot of mental energy here. You're processing, analyzing, perhaps overthinking. Your mind is very active. "
-            case .wands:
-                summary += "Wands appear frequently here, bringing fire and passion to your situation. There's creative energy and drive, but also potential for burnout. "
-            case .pentacles:
-                summary += "Pentacles ground this reading in the material world. This is about tangible results, physical reality, and practical matters. "
-            case .majorArcana:
-                summary += "The Major Arcana dominates, meaning this is about your soul's journey more than day-to-day concerns. "
+        // ALWAYS provide suit insight - either dominant suit or balanced
+        if let dominantSuit = suitCounts.max(by: { $0.value < $1.value })?.key,
+           let count = suitCounts[dominantSuit] {
+            // For 3-card spreads, 2 cards of same suit is significant
+            // For larger spreads, need more cards to be dominant
+            let threshold = cards.count <= 3 ? 2 : (cards.count / 2)
+            
+            if count >= threshold {
+                switch dominantSuit {
+                case .cups:
+                    summaryParts.append(L10n.summarySuitCupsDominant)
+                case .swords:
+                    summaryParts.append(L10n.summarySuitSwordsDominant)
+                case .wands:
+                    summaryParts.append(L10n.summarySuitWandsDominant)
+                case .pentacles:
+                    summaryParts.append(L10n.summarySuitPentaclesDominant)
+                case .majorArcana:
+                    summaryParts.append(L10n.summarySuitMajorArcanaDominant)
+                }
+            } else {
+                summaryParts.append(L10n.summarySuitBalanced)
             }
+        } else {
+            summaryParts.append(L10n.summarySuitBalanced)
         }
         
-        // Category-specific insights
+        // Category-specific insight
+        let categoryInsight: String
         switch category {
         case .love:
-            summary += "In matters of love, "
+            categoryInsight = L10n.summaryInsightLove
         case .career:
-            summary += "Regarding your career path, "
+            categoryInsight = L10n.summaryInsightCareer
         case .finance:
-            summary += "When it comes to your finances, "
+            categoryInsight = L10n.summaryInsightFinance
         case .health:
-            summary += "For your health and wellbeing, "
+            categoryInsight = L10n.summaryInsightHealth
         case .general:
-            summary += "Looking at your life as a whole, "
+            categoryInsight = L10n.summaryInsightGeneral
         }
+        summaryParts.append(categoryInsight)
         
-        summary += "these cards are telling a story that requires your attention and honest reflection."
+        // Random closing for variety
+        summaryParts.append(L10n.randomClosing())
         
-        return summary
+        // Join all parts with a space
+        return summaryParts.joined(separator: " ")
     }
 }
