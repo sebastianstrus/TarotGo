@@ -103,7 +103,7 @@ struct SettingsView: View {
                     HStack {
                         Text(L10n.settingsVersion)
                         Spacer()
-                        Text("1.0.0")
+                        Text(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "?")
                             .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
                     .listRowSeparator(.hidden)
