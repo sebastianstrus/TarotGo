@@ -326,7 +326,7 @@ struct CardSummaryCard: View {
                             .foregroundColor(AppTheme.textPrimary)
                         
                         if drawnCard.isReversed {
-                            Text("(R)")
+                            Text("(Reversed)")
                                 .font(.system(size: 14, weight: .light))
                                 .foregroundColor(AppTheme.gold.opacity(0.7))
                         }
