@@ -40,6 +40,20 @@ struct TarotCard: Identifiable, Codable, Hashable {
         return name
     }
     
+    var localizedKeywords: [String] {
+        keywords.map { keyword in
+            let key = "keyword.\(keyword.lowercased().replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: "-", with: "_"))"
+            return NSLocalizedString(key, comment: "")
+        }
+    }
+    
+    var localizedReversedKeywords: [String] {
+        reversedKeywords.map { keyword in
+            let key = "keyword.\(keyword.lowercased().replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: "-", with: "_"))"
+            return NSLocalizedString(key, comment: "")
+        }
+    }
+    
     func interpretation(for category: IntentionCategory, reversed: Bool) -> String {
         let key = "\(id)_\(category.rawValue.lowercased())_\(reversed ? "reversed" : "upright")"
         

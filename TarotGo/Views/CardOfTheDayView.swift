@@ -217,7 +217,7 @@ struct CardOfTheDayView: View {
                     }
                 }
                 
-                let keywords = isReversed ? card.reversedKeywords : card.keywords
+                let keywords = isReversed ? card.localizedReversedKeywords : card.localizedKeywords
                 Text(keywords.joined(separator: " • "))
                     .font(.system(size: 14, weight: .light))
                     .foregroundColor(AppTheme.gold.opacity(0.9))

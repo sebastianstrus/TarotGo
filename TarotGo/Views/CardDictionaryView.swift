@@ -23,7 +23,7 @@ struct CardDictionaryView: View {
         if !searchText.isEmpty {
             cards = cards.filter { card in
                 card.name.localizedCaseInsensitiveContains(searchText) ||
-                card.keywords.joined(separator: " ").localizedCaseInsensitiveContains(searchText)
+                card.localizedKeywords.joined(separator: " ").localizedCaseInsensitiveContains(searchText)
             }
         }
         
@@ -257,7 +257,7 @@ struct CardDictionaryRow: View {
                 }
                 
                 // Keywords preview
-                Text(card.keywords.prefix(3).joined(separator: " • "))
+                Text(card.localizedKeywords.prefix(3).joined(separator: " • "))
                     .font(.system(size: 11, weight: .light))
                     .foregroundColor(AppTheme.gold.opacity(0.7))
                     .lineLimit(1)

@@ -141,7 +141,7 @@ struct InterpretationView: View {
                     }
                     
                     // Keywords
-                    let keywords = card.isReversed ? card.card.reversedKeywords : card.card.keywords
+                    let keywords = card.isReversed ? card.card.localizedReversedKeywords : card.card.localizedKeywords
                     Text(keywords.joined(separator: " • "))
                         .font(.system(size: 14, weight: .light))
                         .foregroundColor(AppTheme.gold.opacity(0.9))

@@ -172,7 +172,7 @@ struct CardDetailView: View {
                 .font(AppTheme.serifFont(size: 22, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
             
-            let keywords = showReversed ? card.reversedKeywords : card.keywords
+            let keywords = showReversed ? card.localizedReversedKeywords : card.localizedKeywords
             FlowLayout(spacing: 8) {
                 ForEach(keywords, id: \.self) { keyword in
                     Text(keyword)
