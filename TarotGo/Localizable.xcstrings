@@ -72417,7 +72417,7 @@
     "nb": { "stringUnit": { "state": "translated", "value": "Ubalanse mellom jobb og hjem" } },
     "pl": { "stringUnit": { "state": "translated", "value": "Brak równowagi między pracą a domem" } },
     "pt-BR": { "stringUnit": { "state": "translated", "value": "Desequilíbrio trabalho-casa" } },
-    "sv": { "stringUnit": { "state": "translated", "value": "Ob” } }
+    "sv": { "stringUnit": { "state": "translated", "value": "Ob" } }
   }
 },
 "keyword.work_life_imbalance": {
@@ -72451,7 +72451,7 @@
     "sv": { "stringUnit": { "state": "translated", "value": "Oro" } },
     "uk": { "stringUnit": { "state": "translated", "value": "Хвилювання" } }
   }
-}
+},
     "onboarding.beginReading": {
       "extractionState": "manual",
       "localizations": {
