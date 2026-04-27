@@ -16,6 +16,7 @@ struct SettingsView: View {
     @State private var showingTimePicker: Bool = false
     @State private var toggleState: Bool = false
     @State private var showOnboarding: Bool = false
+    @State private var showPermissionAlert: Bool = false
     
     var body: some View {
         ZStack {
@@ -137,6 +138,17 @@ struct SettingsView: View {
         .fullScreenCover(isPresented: $showOnboarding) {
             OnboardingFlowView(isPresented: $showOnboarding)
         }
+        .alert(L10n.settingsNotificationPermissionTitle, isPresented: $showPermissionAlert) {
+            Button(L10n.settingsNotificationPermissionCancel, role: .cancel) {
+                toggleState = false
+            }
+            Button(L10n.settingsNotificationPermissionSettings) {
+                openNotificationSettings()
+                toggleState = false
+            }
+        } message: {
+            Text(L10n.settingsNotificationPermissionMessage)
+        }
     }
     
     private var formattedTime: String {
@@ -168,6 +180,17 @@ struct SettingsView: View {
     private func handleNotificationToggle(_ enabled: Bool) {
         Task {
             if enabled {
+                // Check current authorization status first
+                let status = await notificationService.getAuthorizationStatus()
+                
+                if status == .denied {
+                    // User previously denied, show alert to go to settings
+                    await MainActor.run {
+                        showPermissionAlert = true
+                    }
+                    return
+                }
+                
                 let granted = await notificationService.requestAuthorization()
                 if granted {
                     await scheduleNotification()
@@ -197,6 +220,12 @@ struct SettingsView: View {
     }
     
     private func openLanguageSettings() {
+        if let url = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    private func openNotificationSettings() {
         if let url = URL(string: UIApplication.openSettingsURLString) {
             UIApplication.shared.open(url)
         }

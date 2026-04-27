@@ -39,6 +39,11 @@ class NotificationService: ObservableObject {
         }
     }
     
+    func getAuthorizationStatus() async -> UNAuthorizationStatus {
+        let settings = await UNUserNotificationCenter.current().notificationSettings()
+        return settings.authorizationStatus
+    }
+    
     func scheduleDailyCardNotification(at hour: Int, minute: Int = 0) async {
         // Remove existing notifications
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["daily_card"])

@@ -146,6 +146,11 @@ enum L10n {
     static let settingsSave = NSLocalizedString("settings.save", comment: "Save")
     static let settingsLanguage = NSLocalizedString("settings.language", comment: "Language")
     static let settingsLanguageDesc = NSLocalizedString("settings.language.desc", comment: "Change the app language in your phone settings")
+    
+    static let settingsNotificationPermissionTitle = NSLocalizedString("settings.notificationPermission.title", comment: "Notification Permission Required")
+    static let settingsNotificationPermissionMessage = NSLocalizedString("settings.notificationPermission.message", comment: "Please enable notifications in Settings to receive daily card reminders")
+    static let settingsNotificationPermissionSettings = NSLocalizedString("settings.notificationPermission.settings", comment: "Open Settings")
+    static let settingsNotificationPermissionCancel = NSLocalizedString("settings.notificationPermission.cancel", comment: "Cancel")
 
     // MARK: - Spread Types
     static let spreadSingleCard = NSLocalizedString("spread.singleCard", comment: "Single Card")
