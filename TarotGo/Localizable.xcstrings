@@ -2943,9 +2943,6 @@
         }
       }
     },
-    "history.readingCount" : {
-      "comment" : "%d reading(s)"
-    },
     "history.readingCountFormat" : {
       "extractionState" : "manual",
       "localizations" : {

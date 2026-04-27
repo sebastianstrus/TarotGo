@@ -119,7 +119,6 @@ enum L10n {
     static let historyAllReadings = NSLocalizedString("history.allReadings", comment: "All Readings")
     static let historyNoReadings = NSLocalizedString("history.noReadings", comment: "No readings yet")
     static let historyNoReadingsDesc = NSLocalizedString("history.noReadings.desc", comment: "Your saved readings will appear here")
-    static let historyReadingCount = NSLocalizedString("history.readingCount", comment: "%d reading(s)")
     static let historyDeleteAlert = NSLocalizedString("history.deleteAlert", comment: "Delete Reading")
     static let historyDeleteMessage = NSLocalizedString("history.deleteMessage", comment: "Are you sure you want to delete this reading? This action cannot be undone.")
     static let historyDeleteReading = NSLocalizedString("history.deleteReading", comment: "Delete Reading")
