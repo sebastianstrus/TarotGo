@@ -54,7 +54,9 @@ struct CardOfTheDayView: View {
                             instructionView
                         }
                         
-                        progressIndicator
+                        if !isRevealed {
+                            progressIndicator
+                        }
                         
                         if let card = todayCard {
                             cardView(card: card)
