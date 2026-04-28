@@ -140,7 +140,7 @@ struct HomeView: View {
             }
             .navigationBarHidden(true)
             .navigationDestination(isPresented: $navigateToNewReading) {
-                OnboardingView()
+                NewReadingView()
             }
             .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
                 if shouldDismiss {

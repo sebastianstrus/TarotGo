@@ -1,5 +1,5 @@
 //
-//  OnboardingView.swift
+//  NewReadingView.swift
 //  TarotGo
 //
 //  Created by Sebastian Strus on 4/12/26.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboardingView: View {
+struct NewReadingView: View {
     @EnvironmentObject var appViewModel: AppViewModel
     @State private var selectedCategory: IntentionCategory?
     @State private var customQuestion: String = ""
