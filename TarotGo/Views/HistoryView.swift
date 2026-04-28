@@ -226,6 +226,8 @@ struct SessionDetailView: View {
     @State private var editedNotes: String
     @State private var isEditingNotes: Bool = false
     @State private var showDeleteAlert: Bool = false
+    @State private var showShareSheet: Bool = false
+    @State private var sharePDFURL: URL?
     @FocusState private var isNotesFocused: Bool
     
     init(session: ReadingSession) {
@@ -360,6 +362,25 @@ struct SessionDetailView: View {
                             )
                     )
                     
+                    // Share button
+                    Button {
+                        prepareShareContent()
+                        showShareSheet = true
+                    } label: {
+                        HStack {
+                            Image(systemName: "square.and.arrow.up")
+                            Text(L10n.summaryShareReading)
+                        }
+                        .font(AppTheme.serifFont(size: 18, weight: .medium))
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 15)
+                                .stroke(AppTheme.gold.opacity(0.6), lineWidth: 2)
+                        )
+                    }
+                    
                     // Delete button
                     Button {
                         showDeleteAlert = true
@@ -409,6 +430,11 @@ struct SessionDetailView: View {
         } message: {
             Text(L10n.historyDeleteMessage)
         }
+        .sheet(isPresented: $showShareSheet) {
+            if let pdfURL = sharePDFURL {
+                ShareSheet(items: [pdfURL])
+            }
+        }
     }
     
     private func saveNotes() {
@@ -420,6 +446,17 @@ struct SessionDetailView: View {
         modelContext.delete(session)
         try? modelContext.save()
         dismiss()
+    }
+    
+    private func prepareShareContent() {
+        sharePDFURL = PDFGenerationService.shared.generateReadingPDF(
+            drawnCards: session.drawnCards,
+            category: session.category,
+            customQuestion: session.customQuestion,
+            spreadType: session.spreadType,
+            notes: editedNotes.isEmpty ? nil : editedNotes,
+            date: session.date
+        )
     }
 }
 

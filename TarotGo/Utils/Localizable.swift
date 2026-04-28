@@ -111,6 +111,15 @@ enum L10n {
     static let summaryReadingSaved = NSLocalizedString("summary.readingSaved", comment: "Reading Saved")
     static let summaryShareReading = NSLocalizedString("summary.shareReading", comment: "Share Reading")
     static let summaryReturnToStart = NSLocalizedString("summary.returnToStart", comment: "Return to Start")
+    
+    // MARK: - PDF Export
+    static let pdfTitle = NSLocalizedString("pdf.title", comment: "TarotGo Reading")
+    static let pdfQuestion = NSLocalizedString("pdf.question", comment: "Question:")
+    static let pdfCategory = NSLocalizedString("pdf.category", comment: "Category:")
+    static let pdfSpread = NSLocalizedString("pdf.spread", comment: "Spread:")
+    static let pdfOverallInsight = NSLocalizedString("pdf.overallInsight", comment: "Overall Insight")
+    static let pdfCards = NSLocalizedString("pdf.cards", comment: "Cards")
+    static let pdfPersonalReflections = NSLocalizedString("pdf.personalReflections", comment: "Personal Reflections")
 
     // MARK: - History
     static let historyTitle = NSLocalizedString("history.title", comment: "Reading History")

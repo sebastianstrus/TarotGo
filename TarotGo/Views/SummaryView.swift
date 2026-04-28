@@ -21,7 +21,7 @@ struct SummaryView: View {
     @State private var notes: String = ""
     @State private var showShareSheet: Bool = false
     @State private var sessionSaved: Bool = false
-    @State private var shareText: String = ""
+    @State private var sharePDFURL: URL?
     @FocusState private var isNotesFocused: Bool
     
     var body: some View {
@@ -100,7 +100,9 @@ struct SummaryView: View {
             isNotesFocused = false
         }
         .sheet(isPresented: $showShareSheet) {
-            ShareSheet(items: [shareText])
+            if let pdfURL = sharePDFURL {
+                ShareSheet(items: [pdfURL])
+            }
         }
     }
     
@@ -273,30 +275,14 @@ struct SummaryView: View {
     }
     
     private func prepareShareContent() {
-        var text = "🔮 TarotGo Reading\n\n"
-        
-        if let question = customQuestion {
-            text += "Question: \"\(question)\"\n\n"
-        }
-        
-        text += "Spread: \(spreadType.displayName)\n"
-        text += "Category: \(category.displayName)\n"
-        text += "Date: \(Date().formatted(date: .long, time: .omitted))\n\n"
-        
-        text += "Cards:\n"
-        for (index, drawnCard) in drawnCards.enumerated() {
-            text += "\(index + 1). \(drawnCard.position.name): \(drawnCard.card.localizedName)"
-            if drawnCard.isReversed {
-                text += " \(L10n.interpretationReversed)"
-            }
-            text += "\n"
-        }
-        
-        if !notes.isEmpty {
-            text += "\nReflections:\n\(notes)\n"
-        }
-        
-        shareText = text
+        sharePDFURL = PDFGenerationService.shared.generateReadingPDF(
+            drawnCards: drawnCards,
+            category: category,
+            customQuestion: customQuestion,
+            spreadType: spreadType,
+            notes: notes.isEmpty ? nil : notes,
+            date: Date()
+        )
     }
     
     private func returnToHome() {
