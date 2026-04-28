@@ -19,7 +19,6 @@ struct SummaryView: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var notes: String = ""
-    @State private var showShareSheet: Bool = false
     @State private var sessionSaved: Bool = false
     @State private var sharePDFURL: URL?
     @FocusState private var isNotesFocused: Bool
@@ -99,7 +98,9 @@ struct SummaryView: View {
         .onTapGesture {
             isNotesFocused = false
         }
-        .sheet(isPresented: $showShareSheet) {
+        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+            sharePDFURL = nil
+        }) {
             if let pdfURL = sharePDFURL {
                 ShareSheet(items: [pdfURL])
             }
@@ -219,7 +220,6 @@ struct SummaryView: View {
             // Share button
             Button {
                 prepareShareContent()
-                showShareSheet = true
             } label: {
                 HStack {
                     Image(systemName: "square.and.arrow.up")
@@ -275,6 +275,7 @@ struct SummaryView: View {
     }
     
     private func prepareShareContent() {
+        // Generate PDF and setting sharePDFURL will automatically trigger the sheet
         sharePDFURL = PDFGenerationService.shared.generateReadingPDF(
             drawnCards: drawnCards,
             category: category,

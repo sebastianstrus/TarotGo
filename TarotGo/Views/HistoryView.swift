@@ -226,7 +226,6 @@ struct SessionDetailView: View {
     @State private var editedNotes: String
     @State private var isEditingNotes: Bool = false
     @State private var showDeleteAlert: Bool = false
-    @State private var showShareSheet: Bool = false
     @State private var sharePDFURL: URL?
     @FocusState private var isNotesFocused: Bool
     
@@ -386,7 +385,6 @@ struct SessionDetailView: View {
                     // Share button
                     Button {
                         prepareShareContent()
-                        showShareSheet = true
                     } label: {
                         HStack {
                             Image(systemName: "square.and.arrow.up")
@@ -451,7 +449,9 @@ struct SessionDetailView: View {
         } message: {
             Text(L10n.historyDeleteMessage)
         }
-        .sheet(isPresented: $showShareSheet) {
+        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+            sharePDFURL = nil
+        }) {
             if let pdfURL = sharePDFURL {
                 ShareSheet(items: [pdfURL])
             }
@@ -470,6 +470,7 @@ struct SessionDetailView: View {
     }
     
     private func prepareShareContent() {
+        // Generate PDF and setting sharePDFURL will automatically trigger the sheet
         sharePDFURL = PDFGenerationService.shared.generateReadingPDF(
             drawnCards: session.drawnCards,
             category: session.category,
