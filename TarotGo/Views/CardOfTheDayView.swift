@@ -280,7 +280,7 @@ struct RitualCandles: View {
             ForEach(0..<5) { i in
                 // Flame area with consistent frame
                 ZStack {
-                    if normalized > CGFloat(i) * 0.2 {
+                    if normalized >= CGFloat(i + 1) * 0.2 {
                         // Vortex flame effect
                         VortexView(.fire) {
                             Circle()
