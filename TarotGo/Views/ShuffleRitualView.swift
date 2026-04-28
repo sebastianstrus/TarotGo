@@ -200,78 +200,58 @@ struct ShuffleRitualView: View {
                 .scaleEffect(isPressed ? 0.95 : 1.0)
                 .rotationEffect(.degrees(phase == .shuffling ? shuffleRotation : 0))
         }
+        // ... inside deckView ...
         .gesture(
-            LongPressGesture(minimumDuration: totalPressDuration)
-                .onChanged { _ in
-                    if phase == .instruction {
-                        withAnimation(.spring(response: 0.3)) {
-                            isPressed = true
-                            phase = .pressing
-                        }
-                    }
-                }
-                .onEnded { _ in
-                    // Handled in timer
-                }
-        )
-        .simultaneousGesture(
             DragGesture(minimumDistance: 0, coordinateSpace: .global)
                 .onChanged { value in
+                    // 1. Always update position immediately
                     let newPos: SIMD2<Double> = [
                         Double(value.location.x / screenSize.width),
                         Double(value.location.y / screenSize.height)
                     ]
-                    
-                    // Update position immediately
                     emitterPosition = newPos
-                    
+
+                    // 2. If this is the start of a touch (instruction phase)
                     if phase == .instruction {
-                        withAnimation(.spring(response: 0.3)) {
-                            isPressed = true
-                            phase = .pressing
-                        }
+                        isPressed = true
+                        phase = .pressing
                         
-                        // Start fire sound immediately
+                        // Play sound immediately
                         SoundService.shared.play(.fire, volume: 0.6)
                         
-                        // START FIX:
-                        // Show the view container, but keep particles invisible for 0.3s
+                        // Show container but keep particles hidden for 0.3s to prevent "flash"
                         showFire = true
                         fireOpacity = 0.0
                         
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.55) {
-                            // Only fade in if the user is still pressing
-                            if isPressed {
-                                withAnimation(.easeInOut(duration: 0.4)) {
-                                    fireOpacity = 1.0
-                                }
-                            }
-                        }
-                    } else {
-                        // Continuous movement updates
-                        withAnimation(.interactiveSpring(response: 0.2, dampingFraction: 0.7)) {
-                            emitterPosition = newPos
+                        withAnimation(.easeInOut(duration: 0.4).delay(0.6)) {
+                            fireOpacity = 1.0
                         }
                     }
                 }
                 .onEnded { _ in
+                    // 3. Handle release logic
                     if phase == .pressing && pressProgress < totalPressDuration {
-                        emitterPosition = [0.5, 0.5]
-                        
-                        withAnimation(.spring(response: 0.3)) {
-                            isPressed = false
-                            phase = .instruction
-                            pressProgress = 0
-                            fireOpacity = 0.0 // Reset opacity immediately on release
-                        }
-                        
-                        withAnimation(.easeInOut(duration: 0.5)) {
-                            showFire = false
-                        }
-                        SoundService.shared.stop(.fire)
+                        // Released before 5 seconds
+                        resetRitual()
                     }
                 }
         )
+    }
+    
+    private func resetRitual() {
+        // Stop the fire and hide it
+        SoundService.shared.stop(.fire)
+        
+        // Immediate reset of opacity to prevent ghosting
+        fireOpacity = 0.0
+        
+        withAnimation(.spring(response: 0.3)) {
+            isPressed = false
+            phase = .instruction
+            pressProgress = 0
+            showFire = false
+            emitterPosition = [0.5, 0.5] // Reset to center for next time
+        }
     }
     
     private var progressIndicator: some View {
