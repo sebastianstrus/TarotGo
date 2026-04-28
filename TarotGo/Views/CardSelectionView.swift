@@ -140,34 +140,38 @@ struct CardSelectionView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
                 ForEach(selectedCards, id: \.id) { card in
-                    ZStack {
-                        // White background
-                        RoundedRectangle(cornerRadius: 6)
-                            .fill(Color.white)
+                    GeometryReader { geo in
+                        let cornerRadius = AppTheme.cardCornerRadius(forWidth: geo.size.width)
                         
-                        // Card back image
-                        if let uiImage = UIImage(named: "ReversCard") {
-                            Image(uiImage: uiImage)
-                                .resizable()
-                                .aspectRatio(1108/1900, contentMode: .fit)
-                                .cornerRadius(6)
+                        ZStack {
+                            // White background
+                            RoundedRectangle(cornerRadius: cornerRadius)
+                                .fill(Color.white)
+                            
+                            // Card back image
+                            if let uiImage = UIImage(named: "ReversCard") {
+                                Image(uiImage: uiImage)
+                                    .resizable()
+                                    .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+                                    .cornerRadius(cornerRadius)
+                            }
+                            
+                            // Border
+                            RoundedRectangle(cornerRadius: cornerRadius)
+                                .stroke(
+                                    LinearGradient(
+                                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 2
+                                )
                         }
-                        
-                        // Border
-                        RoundedRectangle(cornerRadius: 6)
-                            .stroke(
-                                LinearGradient(
-                                    colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                ),
-                                lineWidth: 2
-                            )
+                        .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
+                        .matchedGeometryEffect(id: "card-\(card.id)", in: cardNamespace)
                     }
-                    .aspectRatio(1108/1900, contentMode: .fit)
+                    .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                     .frame(height: 80)
-                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
-                    .matchedGeometryEffect(id: "card-\(card.id)", in: cardNamespace)
                 }
             }
             .padding(.horizontal)
@@ -270,9 +274,11 @@ struct CardBackView: View {
     
     var body: some View {
         GeometryReader { geometry in
+            let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
+            
             ZStack {
                 // White background to ensure no transparency
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(Color.white)
                 
                 // Real card back image
@@ -282,10 +288,10 @@ struct CardBackView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         .clipped()
-                        .cornerRadius(12)
+                        .cornerRadius(cornerRadius)
                 } else {
                     // Fallback if image not found
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: cornerRadius)
                         .fill(AppTheme.cardGradient)
                     
                     VStack {
@@ -299,7 +305,7 @@ struct CardBackView: View {
                 }
                 
                 // Border
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .stroke(
                         isSelected ? AppTheme.goldGradient : LinearGradient(colors: [AppTheme.gold.opacity(0.4)], startPoint: .topLeading, endPoint: .bottomTrailing),
                         lineWidth: isSelected ? 3 : 2
@@ -307,7 +313,7 @@ struct CardBackView: View {
             }
             .shadow(color: isSelected ? AppTheme.gold.opacity(0.6) : Color.clear, radius: 15)
         }
-        .aspectRatio(1108/1900, contentMode: .fit)
+        .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
     }
 }
 

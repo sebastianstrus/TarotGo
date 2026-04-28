@@ -347,9 +347,11 @@ struct TarotCardFrontView: View {
     
     var body: some View {
         GeometryReader { geometry in
+            let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
+            
             ZStack {
                 // White background to ensure no transparency
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(Color.white)
                 
                 // Real tarot card image
@@ -359,10 +361,10 @@ struct TarotCardFrontView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         .clipped()
-                        .cornerRadius(12)
+                        .cornerRadius(cornerRadius)
                 } else {
                     // Fallback if image not found
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: cornerRadius)
                         .fill(AppTheme.cardGradient)
                     
                     VStack {
@@ -376,7 +378,7 @@ struct TarotCardFrontView: View {
                 }
                 
                 // Gold border
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .stroke(
                         LinearGradient(
                             colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
@@ -389,7 +391,7 @@ struct TarotCardFrontView: View {
             .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
             .rotationEffect(.degrees(isReversed ? 180 : 0))
         }
-        .aspectRatio(1108/1900, contentMode: .fit)
+        .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
     }
 }
 

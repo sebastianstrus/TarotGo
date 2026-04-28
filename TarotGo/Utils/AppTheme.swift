@@ -50,6 +50,15 @@ struct AppTheme {
     static func serifFont(size: CGFloat, weight: Font.Weight = .regular) -> Font {
         .system(size: size, weight: weight, design: .serif)
     }
+    
+    // Tarot card styling
+    static let cardAspectRatio: CGFloat = 1108.0 / 1900.0
+    
+    /// Calculate corner radius for tarot cards based on their width
+    /// Uses a ratio of ~0.06 (6% of width) for consistent rounded corners
+    static func cardCornerRadius(forWidth width: CGFloat) -> CGFloat {
+        return width * 0.06
+    }
 }
 
 // Custom view modifiers for consistent styling

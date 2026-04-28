@@ -13,34 +13,39 @@ struct MiniTarotCardView: View {
     let isReversed: Bool
     
     var body: some View {
-        ZStack {
-            // White background to ensure no transparency
-            RoundedRectangle(cornerRadius: 6)
-                .fill(Color.white)
+        GeometryReader { geometry in
+            let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
             
-            // Real tarot card image
-            if let uiImage = UIImage(named: card.id) {
-                Image(uiImage: uiImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .clipped()
-                    .cornerRadius(6)
+            ZStack {
+                // White background to ensure no transparency
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(Color.white)
+                
+                // Real tarot card image
+                if let uiImage = UIImage(named: card.id) {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+                        .cornerRadius(cornerRadius)
+                }
+                
+                // Gold border
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .stroke(
+                        LinearGradient(
+                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 2
+                    )
             }
-            
-            // Gold border
-            RoundedRectangle(cornerRadius: 6)
-                .stroke(
-                    LinearGradient(
-                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ),
-                    lineWidth: 2
-                )
+            .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
+            .rotationEffect(.degrees(isReversed ? 180 : 0))
         }
-        .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
-        .aspectRatio(1108/1900, contentMode: .fit)
-        .rotationEffect(.degrees(isReversed ? 180 : 0))
+        .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
     }
 }
 

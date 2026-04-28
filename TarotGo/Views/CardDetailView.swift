@@ -43,42 +43,46 @@ struct CardDetailView: View {
     }
     
     private var cardImageView: some View {
-        ZStack {
-            // White background
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white)
+        GeometryReader { geometry in
+            let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
             
-            if let uiImage = UIImage(named: card.imageName) {
-                Image(uiImage: uiImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .clipped()
-                    .cornerRadius(12)
-            } else {
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(AppTheme.cardGradient)
+            ZStack {
+                // White background
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(Color.white)
                 
-                Image(systemName: "moon.stars.fill")
-                    .font(.system(size: 80))
-                    .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
+                if let uiImage = UIImage(named: card.imageName) {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .clipped()
+                        .cornerRadius(cornerRadius)
+                } else {
+                    RoundedRectangle(cornerRadius: cornerRadius)
+                        .fill(AppTheme.cardGradient)
+                    
+                    Image(systemName: "moon.stars.fill")
+                        .font(.system(size: 80))
+                        .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
+                }
+                
+                // Gold border
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .stroke(
+                        LinearGradient(
+                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 3
+                    )
             }
-            
-            // Gold border
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(
-                    LinearGradient(
-                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ),
-                    lineWidth: 3
-                )
+            .shadow(color: AppTheme.gold.opacity(0.4), radius: 20)
+            .rotationEffect(.degrees(showReversed ? 180 : 0))
+            .animation(.spring(response: 0.6, dampingFraction: 0.7), value: showReversed)
         }
-        .aspectRatio(1108/1900, contentMode: .fit)
+        .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
         .frame(maxWidth: 280)
-        .shadow(color: AppTheme.gold.opacity(0.4), radius: 20)
-        .rotationEffect(.degrees(showReversed ? 180 : 0))
-        .animation(.spring(response: 0.6, dampingFraction: 0.7), value: showReversed)
     }
     
     private var cardHeaderView: some View {
