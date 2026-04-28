@@ -231,21 +231,27 @@ struct CardOfTheDayView: View {
     private func completePress() {
         isPressed = false
         
+        // 1. Trigger the heavy haptic exactly when the 5th candle lights
         HapticService.shared.impact(.heavy)
-        SoundService.shared.play(.cardFlip, volume: 0.8)
         
-        // Animate the flip
-        withAnimation(.spring(response: 0.8, dampingFraction: 0.7)) {
-            flipRotation = 180
-            isRevealed = true
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-            withAnimation {
-                showInterpretation = true
+        // 2. Wait for 0.6 seconds so the user can see the 5th candle and feel the completion
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            SoundService.shared.play(.cardFlip, volume: 0.8)
+            
+            // 3. Animate the flip and reveal
+            withAnimation(.spring(response: 0.8, dampingFraction: 0.7)) {
+                flipRotation = 180
+                isRevealed = true // This hides the candles and instructions
             }
-            HapticService.shared.impact(.soft)
-            SoundService.shared.play(.bellChime, volume: 0.5)
+            
+            // 4. Show the text interpretation after the flip is mostly done
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                withAnimation {
+                    showInterpretation = true
+                }
+                HapticService.shared.impact(.soft)
+                SoundService.shared.play(.bellChime, volume: 0.5)
+            }
         }
     }
     
@@ -302,7 +308,7 @@ struct RitualCandles: View {
                     }
                 }
                 .frame(width: 30, height: 60)
-                .animation(.easeInOut(duration: 0.5), value: normalized > CGFloat(i) * 0.2)
+                .animation(.easeInOut(duration: 0.5), value: normalized >= CGFloat(i + 1) * 0.2)
             }
         }
     }
