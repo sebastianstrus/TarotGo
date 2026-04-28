@@ -69717,6 +69717,22 @@
     "uk": { "stringUnit": { "state": "translated", "value": "Ностальгія" } }
   }
 },
+"keyword.abundance": {
+  "extractionState": "manual",
+  "localizations": {
+    "en": { "stringUnit": { "state": "translated", "value": "Abundance" } },
+    "de": { "stringUnit": { "state": "translated", "value": "Überfluss" } },
+    "es": { "stringUnit": { "state": "translated", "value": "Abundancia" } },
+    "fr": { "stringUnit": { "state": "translated", "value": "Abondance" } },
+    "it": { "stringUnit": { "state": "translated", "value": "Abbondanza" } },
+    "ja": { "stringUnit": { "state": "translated", "value": "豊かさ" } },
+    "nb": { "stringUnit": { "state": "translated", "value": "Overflod" } },
+    "pl": { "stringUnit": { "state": "translated", "value": "Obfitość" } },
+    "pt-BR": { "stringUnit": { "state": "translated", "value": "Abundância" } },
+    "sv": { "stringUnit": { "state": "translated", "value": "Överflöd" } },
+    "uk": { "stringUnit": { "state": "translated", "value": "Достаток" } }
+  }
+},
 "keyword.nurturing": {
   "extractionState": "manual",
   "localizations": {
