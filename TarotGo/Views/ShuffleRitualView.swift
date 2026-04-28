@@ -75,6 +75,7 @@ struct ShuffleRitualView: View {
     @State private var emitterPosition: SIMD2<Double> = [0.5, 0.5]
     @State private var showFire: Bool = false
     @State private var screenSize: CGSize = .zero
+    @State private var fireOpacity: Double = 0.0
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -216,37 +217,54 @@ struct ShuffleRitualView: View {
         .simultaneousGesture(
             DragGesture(minimumDistance: 0, coordinateSpace: .global)
                 .onChanged { value in
-                    // Convert global screen coords to Vortex normalised [0…1] space
-                    withAnimation(.interactiveSpring(response: 0.2, dampingFraction: 0.7)) {
-                        emitterPosition = [
-                            Double(value.location.x / screenSize.width),
-                            Double(value.location.y / screenSize.height)
-                        ]
-                    }
+                    let newPos: SIMD2<Double> = [
+                        Double(value.location.x / screenSize.width),
+                        Double(value.location.y / screenSize.height)
+                    ]
+                    
+                    // Update position immediately
+                    emitterPosition = newPos
                     
                     if phase == .instruction {
                         withAnimation(.spring(response: 0.3)) {
                             isPressed = true
                             phase = .pressing
                         }
-                        // Fade in fire effect and start fire sound
-                        withAnimation(.easeInOut(duration: 0.5)) {
-                            showFire = true
-                        }
+                        
+                        // Start fire sound immediately
                         SoundService.shared.play(.fire, volume: 0.6)
+                        
+                        // START FIX:
+                        // Show the view container, but keep particles invisible for 0.3s
+                        showFire = true
+                        fireOpacity = 0.0
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.55) {
+                            // Only fade in if the user is still pressing
+                            if isPressed {
+                                withAnimation(.easeInOut(duration: 0.4)) {
+                                    fireOpacity = 1.0
+                                }
+                            }
+                        }
+                    } else {
+                        // Continuous movement updates
+                        withAnimation(.interactiveSpring(response: 0.2, dampingFraction: 0.7)) {
+                            emitterPosition = newPos
+                        }
                     }
                 }
                 .onEnded { _ in
                     if phase == .pressing && pressProgress < totalPressDuration {
-                        
                         emitterPosition = [0.5, 0.5]
                         
                         withAnimation(.spring(response: 0.3)) {
                             isPressed = false
                             phase = .instruction
                             pressProgress = 0
+                            fireOpacity = 0.0 // Reset opacity immediately on release
                         }
-                        // Fade out fire effect and stop fire sound
+                        
                         withAnimation(.easeInOut(duration: 0.5)) {
                             showFire = false
                         }
@@ -269,7 +287,7 @@ struct ShuffleRitualView: View {
                 .frame(width: 32)
                 .tag("circle")
         }
-        .opacity(showFire ? 1.0 : 0.0)
+        .opacity(showFire ? fireOpacity : 0.0)
     }
     
     // Returns the built-in fire preset with our emitter position injected
