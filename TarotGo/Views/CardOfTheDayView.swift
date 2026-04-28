@@ -17,6 +17,7 @@ struct CardOfTheDayView: View {
     @State private var pressProgress: Double = 0.0
     @State private var isPressed: Bool = false
     @State private var flipRotation: Double = 0
+    @State private var isFinishing: Bool = false
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -77,7 +78,7 @@ struct CardOfTheDayView: View {
                 loadTodayCard()
             }
             .onReceive(pressTimer) { _ in
-                if isPressed && !isRevealed {
+                if isPressed && !isRevealed && !isFinishing {
                     pressProgress += 0.05
                     
                     if Int(pressProgress * 10) % 10 == 0 {
@@ -133,14 +134,16 @@ struct CardOfTheDayView: View {
         .gesture(
             DragGesture(minimumDistance: 0)
                 .onChanged { _ in
-                    if !isRevealed && !isPressed {
+                    guard !isRevealed && !isFinishing else { return }
+                    
+                    if !isPressed {
                         withAnimation(.spring(response: 0.3)) {
                             isPressed = true
                         }
                     }
                 }
                 .onEnded { _ in
-                    if !isRevealed && pressProgress < totalPressDuration {
+                    if !isRevealed && !isFinishing && pressProgress < totalPressDuration {
                         withAnimation(.spring(response: 0.3)) {
                             isPressed = false
                             pressProgress = 0
@@ -229,22 +232,19 @@ struct CardOfTheDayView: View {
     }
     
     private func completePress() {
-        isPressed = false
+        isFinishing = true // Lock the UI immediately
+        isPressed = false  // Stops the scaleEffect shrink
         
-        // 1. Trigger the heavy haptic exactly when the 5th candle lights
         HapticService.shared.impact(.heavy)
         
-        // 2. Wait for 0.6 seconds so the user can see the 5th candle and feel the completion
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
             SoundService.shared.play(.cardFlip, volume: 0.8)
             
-            // 3. Animate the flip and reveal
             withAnimation(.spring(response: 0.8, dampingFraction: 0.7)) {
                 flipRotation = 180
-                isRevealed = true // This hides the candles and instructions
+                isRevealed = true
             }
             
-            // 4. Show the text interpretation after the flip is mostly done
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                 withAnimation {
                     showInterpretation = true
