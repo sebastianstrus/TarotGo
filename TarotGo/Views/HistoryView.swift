@@ -294,6 +294,27 @@ struct SessionDetailView: View {
                             )
                     )
                     
+                    // Overall Insight
+                    VStack(alignment: .leading, spacing: 15) {
+                        Text(L10n.summaryOverallInsight)
+                            .font(AppTheme.serifFont(size: 22, weight: .medium))
+                            .foregroundStyle(AppTheme.goldGradient)
+                        
+                        Text(TarotInterpretations.spreadSummary(for: session.drawnCards, category: session.category, spreadType: session.spreadType))
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundColor(AppTheme.textPrimary)
+                            .lineSpacing(6)
+                    }
+                    .padding(20)
+                    .background(
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(AppTheme.darkNavy.opacity(0.6))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                            )
+                    )
+                    
                     // Cards detail
                     ForEach(Array(session.drawnCards.enumerated()), id: \.element.id) { index, drawnCard in
                         CardSummaryCard(drawnCard: drawnCard, index: index + 1)
