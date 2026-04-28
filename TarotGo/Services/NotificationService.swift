@@ -53,6 +53,7 @@ class NotificationService: ObservableObject {
         content.title = "Your Daily Card Awaits"
         content.body = "The cards have a message for you today. Take a moment to receive your guidance."
         content.sound = .default
+        content.badge = 1 // Set badge to 1
         
         // Create date components for scheduling
         var dateComponents = DateComponents()
@@ -80,5 +81,9 @@ class NotificationService: ObservableObject {
     
     func cancelDailyCardNotification() {
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["daily_card"])
+    }
+    
+    func clearBadge() {
+        UNUserNotificationCenter.current().setBadgeCount(0)
     }
 }

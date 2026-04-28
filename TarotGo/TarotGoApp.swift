@@ -41,6 +41,7 @@ struct TarotGoApp: App {
 
 struct RootView: View {
     @EnvironmentObject var appViewModel: AppViewModel
+    @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
         ZStack {
@@ -61,5 +62,11 @@ struct RootView: View {
         }
         .animation(.easeInOut(duration: 0.5), value: appViewModel.showSplashScreen)
         .animation(.easeInOut(duration: 0.5), value: appViewModel.hasCompletedOnboarding)
+        .onChange(of: scenePhase) { oldPhase, newPhase in
+            if newPhase == .active {
+                // Clear badge when app becomes active
+                NotificationService.shared.clearBadge()
+            }
+        }
     }
 }
