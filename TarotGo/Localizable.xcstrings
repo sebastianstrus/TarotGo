@@ -63514,7 +63514,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fürsorglich"
+            "value" : "Fürsorge"
           }
         },
         "en" : {
@@ -63526,19 +63526,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cuidadoso"
+            "value" : "Cuidado"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Attentionné"
+            "value" : "Attention"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Premuroso"
+            "value" : "Premura"
           }
         },
         "ja" : {
@@ -63550,19 +63550,19 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Omsorgsfull"
+            "value" : "Omsorg"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Opiekuńczy"
+            "value" : "Opiekuńczość"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Carinhoso"
+            "value" : "Carinho"
           }
         },
         "sv" : {
@@ -63574,7 +63574,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Турботливий"
+            "value" : "Турботливість"
           }
         }
       }
@@ -67561,7 +67561,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verzweiflung lässt nach"
+            "value" : "Nachlassende Verzweiflung"
           }
         },
         "en" : {
@@ -67573,19 +67573,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La desesperación disminuye"
+            "value" : "Disminución de la desesperación"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Désespoir qui s'apaise"
+            "value" : "Atténuation du désespoir"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Disperazione in diminuzione"
+            "value" : "Diminuzione della disperazione"
           }
         },
         "ja" : {
@@ -67597,31 +67597,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fortvilelse avtar"
+            "value" : "Avtagende fortvilelse"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rozpacz ustępuje"
+            "value" : "Ustępowanie rozpaczy"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desespero diminuindo"
+            "value" : "Diminuição do desespero"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Förtvivlan avtar"
+            "value" : "Avtagande förtvivlan"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Відчай спадає"
+            "value" : "Вщухання відчаю"
           }
         }
       }
@@ -68129,7 +68129,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Direkt"
+            "value" : "Direktheit"
           }
         },
         "en" : {
@@ -68141,19 +68141,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Directo"
+            "value" : "Franqueza"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Direct"
+            "value" : "Franchise"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Diretto"
+            "value" : "Franchezza"
           }
         },
         "ja" : {
@@ -68165,31 +68165,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Direkte"
+            "value" : "Ærlighet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bezpośredni"
+            "value" : "Bezpośredniość"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Direto"
+            "value" : "Franqueza"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Direkt"
+            "value" : "Rättframhet"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Прямий"
+            "value" : "Прямота"
           }
         }
       }
@@ -68981,7 +68981,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ehrgeizig"
+            "value" : "Antrieb"
           }
         },
         "en" : {
@@ -68993,19 +68993,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Motivado"
+            "value" : "Motivación"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Motivé"
+            "value" : "Motivation"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Determinato"
+            "value" : "Determinazione"
           }
         },
         "ja" : {
@@ -69017,31 +69017,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Driven"
+            "value" : "Drivkraft"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zmotywowany"
+            "value" : "Determinacja"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Motivado"
+            "value" : "Motivação"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Driven"
+            "value" : "Drivkraft"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Цілеспрямований"
+            "value" : "Цілеспрямованість"
           }
         }
       }
@@ -72318,7 +72318,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wegkommen"
+            "value" : "Flucht"
           }
         },
         "en" : {
@@ -72330,19 +72330,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Escaparse"
+            "value" : "Escape"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "S'évader"
+            "value" : "Échappée"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allontanarsi"
+            "value" : "Fuga"
           }
         },
         "ja" : {
@@ -72354,25 +72354,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Komme seg unna"
+            "value" : "Flukt"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Uciekanie"
+            "value" : "Ucieczka"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fugir"
+            "value" : "Fuga"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Komma undan"
+            "value" : "Flykt"
           }
         },
         "uk" : {
@@ -72389,7 +72389,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aufgeben"
+            "value" : "Aufgabe"
           }
         },
         "en" : {
@@ -72401,19 +72401,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rendirse"
+            "value" : "Rendición"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abandonner"
+            "value" : "Abandon"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Arrendersi"
+            "value" : "Resa"
           }
         },
         "ja" : {
@@ -72425,31 +72425,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gi opp"
+            "value" : "Oppgivelse"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Poddawanie się"
+            "value" : "Rezygnacja"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desistir"
+            "value" : "Desistência"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ge upp"
+            "value" : "Uppgivelse"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Здача"
+            "value" : "Капітуляція"
           }
         }
       }
@@ -72614,19 +72614,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Chismeando"
+            "value" : "Chisme"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Raconter des potins"
+            "value" : "Commérage"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spettegolare"
+            "value" : "Pettegolezzo"
           }
         },
         "ja" : {
@@ -72638,31 +72638,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sladring"
+            "value" : "Sladder"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Plotkowanie"
+            "value" : "Plotki"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fofocando"
+            "value" : "Fofoca"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Skvallra"
+            "value" : "Skvaller"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пліткування"
+            "value" : "Плітки"
           }
         }
       }
@@ -73738,7 +73738,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zu festes Festhalten"
+            "value" : "Übermäßiges Festhalten"
           }
         },
         "en" : {
@@ -73750,19 +73750,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aferrarse demasiado"
+            "value" : "Apego excesivo"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "S’accrocher trop fort"
+            "value" : "Attachement excessif"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aggrapparsi troppo"
+            "value" : "Attaccamento eccessivo"
           }
         },
         "ja" : {
@@ -73774,13 +73774,13 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Holder for hardt"
+            "value" : "Overdreven festholdenhet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zbyt mocne trzymanie"
+            "value" : "Nadmierne przywiązanie"
           }
         },
         "pt-BR" : {
@@ -73792,13 +73792,13 @@
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Håller för hårt"
+            "value" : "Överdrivet fasthållande"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Надто сильне утримання"
+            "value" : "Надмірна прив'язаність"
           }
         }
       }
@@ -73951,7 +73951,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ehrlich"
+            "value" : "Ehrlichkeit"
           }
         },
         "en" : {
@@ -73963,19 +73963,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Honesto"
+            "value" : "Honestidad"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Honnête"
+            "value" : "Honnêteté"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Onesto"
+            "value" : "Onestà"
           }
         },
         "ja" : {
@@ -73987,31 +73987,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ærlig"
+            "value" : "Ærlighet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Uczciwy"
+            "value" : "Uczciwość"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Honesto"
+            "value" : "Honestidade"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ärlig"
+            "value" : "Ärlighet"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Чесний"
+            "value" : "Чесність"
           }
         }
       }
@@ -74306,7 +74306,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hektisches Schaffen"
+            "value" : "Hektik"
           }
         },
         "en" : {
@@ -74324,13 +74324,13 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activité trépidante"
+            "value" : "Agitation"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Attività frenetica"
+            "value" : "Affaccendamento"
           }
         },
         "ja" : {
@@ -74342,31 +74342,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mas"
+            "value" : "Jaging"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gorączkowa aktywność"
+            "value" : "Gorączkowe działanie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Correria"
+            "value" : "Agitação"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Jäkt"
+            "value" : "Stress"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Суєта"
+            "value" : "Поспіх"
           }
         }
       }
@@ -79986,7 +79986,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vorwärts bewegen"
+            "value" : "Fortschritt"
           }
         },
         "en" : {
@@ -79998,19 +79998,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seguir adelante"
+            "value" : "Avance"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aller de l'avant"
+            "value" : "Progression"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Andare avanti"
+            "value" : "Progresso"
           }
         },
         "ja" : {
@@ -80022,31 +80022,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bevege seg fremover"
+            "value" : "Fremgang"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Iść naprzód"
+            "value" : "Postęp"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seguindo em frente"
+            "value" : "Avanço"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gå framåt"
+            "value" : "Framsteg"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Рух уперед"
+            "value" : "Просування"
           }
         }
       }
@@ -80069,19 +80069,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seguir adelante"
+            "value" : "Continuación"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Passer à autre chose"
+            "value" : "Passage à autre chose"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Andare avanti"
+            "value" : "Superamento"
           }
         },
         "ja" : {
@@ -80093,25 +80093,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gå videre"
+            "value" : "Videreføring"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Iść dalej"
+            "value" : "Pójście dalej"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seguir em frente"
+            "value" : "Continuação"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gå vidare"
+            "value" : "Vidaregång"
           }
         },
         "uk" : {
@@ -81690,7 +81690,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Überemotional"
+            "value" : "Überemotionalität"
           }
         },
         "en" : {
@@ -81702,19 +81702,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sobremocional"
+            "value" : "Exceso emocional"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trop émotif"
+            "value" : "Excès émotionnel"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Troppo emotivo"
+            "value" : "Eccesso emotivo"
           }
         },
         "ja" : {
@@ -81726,31 +81726,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Overemosjonell"
+            "value" : "Overemosjonalitet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zbyt emocjonalny"
+            "value" : "Nadmierna emocjonalność"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Super emocional"
+            "value" : "Excesso emocional"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Över känslig"
+            "value" : "Överemotionalitet"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Надмірно емоційний"
+            "value" : "Надмірна емоційність"
           }
         }
       }
@@ -81903,7 +81903,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Überwältigt"
+            "value" : "Überwältigung"
           }
         },
         "en" : {
@@ -81915,19 +81915,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abrumado"
+            "value" : "Agobio"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dépassé"
+            "value" : "Submersion"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sopraffatto"
+            "value" : "Sopraffazione"
           }
         },
         "ja" : {
@@ -81939,31 +81939,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Overveldet"
+            "value" : "Overveldelse"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Przytłoczony"
+            "value" : "Przytłoczenie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sobrecarregado"
+            "value" : "Sobrecarga"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Överväldigad"
+            "value" : "Överväldigande"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Перевантажений"
+            "value" : "Переповнення"
           }
         }
       }
@@ -83749,7 +83749,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Praktisch"
+            "value" : "Praktikabilität"
           }
         },
         "en" : {
@@ -83761,19 +83761,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Práctico"
+            "value" : "Practicidad"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pratique"
+            "value" : "Sens pratique"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pratico"
+            "value" : "Praticità"
           }
         },
         "ja" : {
@@ -83785,31 +83785,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Praktisk"
+            "value" : "Praktiskhet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Praktyczny"
+            "value" : "Praktyczność"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prático"
+            "value" : "Praticidade"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Praktisk"
+            "value" : "Praktiskhet"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Практичний"
+            "value" : "Практичність"
           }
         }
       }
@@ -88790,7 +88790,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gesellschaftlich"
+            "value" : "Geselligkeit"
           }
         },
         "en" : {
@@ -88802,19 +88802,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Social"
+            "value" : "Sociabilidad"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Social"
+            "value" : "Sociabilité"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sociale"
+            "value" : "Socialità"
           }
         },
         "ja" : {
@@ -88826,31 +88826,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sosial"
+            "value" : "Sosialt liv"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Społeczny"
+            "value" : "Towarzyskość"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Social"
+            "value" : "Sociabilidade"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Social"
+            "value" : "Umgänge"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Соціальний"
+            "value" : "Товариськість"
           }
         }
       }
@@ -90565,7 +90565,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperamentvoll"
+            "value" : "Launenhaftigkeit"
           }
         },
         "en" : {
@@ -90577,19 +90577,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperamental"
+            "value" : "Carácter temperamental"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperamental"
+            "value" : "Caractère capricieux"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperamentale"
+            "value" : "Temperamento capriccioso"
           }
         },
         "ja" : {
@@ -90601,31 +90601,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperamentsfull"
+            "value" : "Lunefullhet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperament"
+            "value" : "Kapryśność"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperamental"
+            "value" : "Temperamento volátil"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperamentsfull"
+            "value" : "Nyckfullhet"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Темпераментний"
+            "value" : "Примхливість"
           }
         }
       }
@@ -91346,7 +91346,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unkonventionell"
+            "value" : "Unkonventionalität"
           }
         },
         "en" : {
@@ -91358,19 +91358,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Poco convencional"
+            "value" : "Inconformismo"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non conventionnel"
+            "value" : "Non-conformisme"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non convenzionale"
+            "value" : "Non convenzionalità"
           }
         },
         "ja" : {
@@ -91382,31 +91382,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ukonvensjonell"
+            "value" : "Ukonvensjonalitet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Niekonwencjonalny"
+            "value" : "Niekonwencjonalność"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Não convencional"
+            "value" : "Inconformismo"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Okonventionell"
+            "value" : "Okonventionalitet"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Неконвенційний"
+            "value" : "Нетрадиційність"
           }
         }
       }
