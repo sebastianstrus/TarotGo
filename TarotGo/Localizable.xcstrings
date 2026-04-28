@@ -93234,7 +93234,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Brak równowagi praca/dom"
+            "value" : "Brak równowagi praca-dom"
           }
         },
         "pt-BR" : {
@@ -93299,7 +93299,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Brak równowagi praca/życie"
+            "value" : "Brak równowagi praca-życie"
           }
         },
         "pt-BR" : {
