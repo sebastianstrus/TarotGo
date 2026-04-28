@@ -304,12 +304,30 @@ enum L10n {
     static let summaryClosing9 = NSLocalizedString("summary.closing.9", comment: "take time to absorb what the cards are showing you in this moment.")
     static let summaryClosing10 = NSLocalizedString("summary.closing.10", comment: "the cards have spoken—now it's time to listen with an open heart.")
     
-    // Get a random closing statement
-    static func randomClosing() -> String {
-        let closings = [
-            summaryClosing1, summaryClosing2, summaryClosing3, summaryClosing4, summaryClosing5,
-            summaryClosing6, summaryClosing7, summaryClosing8, summaryClosing9, summaryClosing10
-        ]
-        return closings.randomElement() ?? summaryClosing1
+    // Get a deterministic closing statement based on category and last card orientation
+    static func closingForReading(category: IntentionCategory, lastCardReversed: Bool) -> String {
+        // Map each category + reversed state to a specific closing (10 total combinations)
+        switch (category, lastCardReversed) {
+        case (.love, false):
+            return summaryClosing1
+        case (.love, true):
+            return summaryClosing2
+        case (.career, false):
+            return summaryClosing3
+        case (.career, true):
+            return summaryClosing4
+        case (.finance, false):
+            return summaryClosing5
+        case (.finance, true):
+            return summaryClosing6
+        case (.health, false):
+            return summaryClosing7
+        case (.health, true):
+            return summaryClosing8
+        case (.general, false):
+            return summaryClosing9
+        case (.general, true):
+            return summaryClosing10
+        }
     }
 }

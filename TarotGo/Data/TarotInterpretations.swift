@@ -874,8 +874,9 @@ struct TarotInterpretations {
         }
         summaryParts.append(categoryInsight)
         
-        // Random closing for variety
-        summaryParts.append(L10n.randomClosing())
+        // Deterministic closing based on category and last card orientation
+        let lastCardReversed = cards.last?.isReversed ?? false
+        summaryParts.append(L10n.closingForReading(category: category, lastCardReversed: lastCardReversed))
         
         // Join all parts with a space
         return summaryParts.joined(separator: " ")
