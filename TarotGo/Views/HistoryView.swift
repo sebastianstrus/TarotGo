@@ -15,6 +15,7 @@ struct MiniTarotCardView: View {
     var body: some View {
         GeometryReader { geometry in
             let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
+            let shadowRadius = geometry.size.width * 0.08 // Scale shadow with card size
             
             ZStack {
                 // White background to ensure no transparency
@@ -42,7 +43,7 @@ struct MiniTarotCardView: View {
                         lineWidth: 2
                     )
             }
-            .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
+            .shadow(color: AppTheme.gold.opacity(0.3), radius: shadowRadius)
             .rotationEffect(.degrees(isReversed ? 180 : 0))
         }
         .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
