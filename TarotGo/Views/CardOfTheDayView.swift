@@ -17,9 +17,6 @@ struct CardOfTheDayView: View {
     @State private var pressProgress: Double = 0.0
     @State private var isPressed: Bool = false
     @State private var flipRotation: Double = 0
-    @State private var emitterPosition: SIMD2<Double> = [0.5, 0.5]
-    @State private var showFire: Bool = false
-    @State private var screenSize: CGSize = .zero
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -57,12 +54,11 @@ struct CardOfTheDayView: View {
                             instructionView
                         }
                         
+                        progressIndicator
+                        
                         if let card = todayCard {
                             cardView(card: card)
                         }
-                        
-                        progressIndicator
-                            .opacity(isPressed && !isRevealed ? 1 : 0)
                         
                         if showInterpretation, let card = todayCard {
                             interpretationSection(for: card)
@@ -72,16 +68,10 @@ struct CardOfTheDayView: View {
                     }
                     .padding()
                 }
-                
-                // Fire effect on top
-                mysticalFireEffect
-                    .ignoresSafeArea()
-                    .allowsHitTesting(false)
             }
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
                 loadTodayCard()
-                screenSize = geometry.size
             }
             .onReceive(pressTimer) { _ in
                 if isPressed && !isRevealed {
@@ -146,59 +136,18 @@ struct CardOfTheDayView: View {
                     withAnimation(.spring(response: 0.3)) {
                         isPressed = true
                     }
-                    // Fade in fire effect and start fire sound
-                    withAnimation(.easeInOut(duration: 0.5)) {
-                        showFire = true
-                    }
-                    SoundService.shared.play(.fire, volume: 0.6)
                 } else if pressProgress < totalPressDuration {
                     withAnimation(.spring(response: 0.3)) {
                         isPressed = false
                         pressProgress = 0
                     }
-                    // Fade out fire effect and stop fire sound
-                    withAnimation(.easeInOut(duration: 0.5)) {
-                        showFire = false
-                    }
-                    SoundService.shared.stop(.fire)
                 }
             }
         }
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0, coordinateSpace: .global)
-                .onChanged { value in
-                    // Convert global screen coords to Vortex normalised [0…1] space
-                    withAnimation(.interactiveSpring(response: 0.2, dampingFraction: 0.7)) {
-                        emitterPosition = [
-                            Double(value.location.x / screenSize.width),
-                            Double(value.location.y / screenSize.height)
-                        ]
-                    }
-                }
-        )
     }
     
     private var progressIndicator: some View {
-        MysticWave(progress: pressProgress)
-    }
-    
-    private var mysticalFireEffect: some View {
-        VortexView(fireSystem()) {
-            Circle()
-                .fill(.white)
-                .blendMode(.plusLighter)
-                .blur(radius: 3)
-                .frame(width: 32)
-                .tag("circle")
-        }
-        .opacity(showFire ? 1.0 : 0.0)
-    }
-    
-    // Returns the built-in fire preset with our emitter position injected
-    private func fireSystem() -> VortexSystem {
-        let fire = VortexSystem.fire
-        fire.position = emitterPosition
-        return fire
+        RitualCandles(progress: pressProgress, duration: totalPressDuration)
     }
     
     private func interpretationSection(for card: TarotCard) -> some View {
@@ -278,12 +227,6 @@ struct CardOfTheDayView: View {
     private func completePress() {
         isPressed = false
         
-        // Fade out fire effect and stop fire sound
-        withAnimation(.easeInOut(duration: 0.5)) {
-            showFire = false
-        }
-        SoundService.shared.stop(.fire)
-        
         HapticService.shared.impact(.heavy)
         SoundService.shared.play(.cardFlip, volume: 0.8)
         
@@ -315,6 +258,48 @@ struct CardOfTheDayView: View {
             return String(localized: "cardOfDay.reflection.swords")
         case .wands:
             return String(localized: "cardOfDay.reflection.wands")
+        }
+    }
+}
+
+// MARK: - Ritual Candles (mystic ignition effect)
+struct RitualCandles: View {
+    var progress: CGFloat
+    let duration: CGFloat
+    
+    private var normalized: CGFloat {
+        min(max(progress / duration, 0), 1)
+    }
+    
+    var body: some View {
+        HStack(spacing: 0) {
+            ForEach(0..<5) { i in
+                // Flame area with consistent frame
+                ZStack {
+                    if normalized > CGFloat(i) * 0.2 {
+                        // Vortex flame effect
+                        VortexView(.fire) {
+                            Circle()
+                                .fill(.white)
+                                .blendMode(.plusLighter)
+                                .blur(radius: 3)
+                                .frame(width: 32)
+                                .tag("circle")
+                        }
+                        .frame(width: 200, height: 350)
+                        .scaleEffect(0.3)
+                        .transition(.opacity.animation(.easeInOut(duration: 0.5)))
+                    } else {
+                        // Unlit state
+                        Circle()
+                            .fill(Color.orange.opacity(0.15))
+                            .frame(width: 15, height: 15)
+                            .blur(radius: 1.5)
+                    }
+                }
+                .frame(width: 30, height: 60)
+                .animation(.easeInOut(duration: 0.5), value: normalized > CGFloat(i) * 0.2)
+            }
         }
     }
 }
