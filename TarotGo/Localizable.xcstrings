@@ -63514,7 +63514,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fürsorge"
+            "value" : "Mitgefühl"
           }
         },
         "en" : {
@@ -63526,19 +63526,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cuidado"
+            "value" : "Ternura del alma"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Attention"
+            "value" : "Tendresse"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Premura"
+            "value" : "Tenerezza"
           }
         },
         "ja" : {
@@ -63550,13 +63550,13 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Omsorg"
+            "value" : "Sjelsomsorg"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Opiekuńczość"
+            "value" : "Czułość"
           }
         },
         "pt-BR" : {
@@ -63568,13 +63568,13 @@
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Omhändertagande"
+            "value" : "Själslig omsorg"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Турботливість"
+            "value" : "Душевна турбота"
           }
         }
       }
@@ -88790,7 +88790,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Geselligkeit"
+            "value" : "Soziale Bindung"
           }
         },
         "en" : {
@@ -88802,19 +88802,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sociabilidad"
+            "value" : "Vínculos sociales"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sociabilité"
+            "value" : "Liens sociaux"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Socialità"
+            "value" : "Legami sociali"
           }
         },
         "ja" : {
@@ -88826,31 +88826,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sosialt liv"
+            "value" : "Sosiale bånd"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Towarzyskość"
+            "value" : "Więź społeczna"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sociabilidade"
+            "value" : "Vínculos sociais"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Umgänge"
+            "value" : "Sociala band"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Товариськість"
+            "value" : "Соціальні зв'язки"
           }
         }
       }
