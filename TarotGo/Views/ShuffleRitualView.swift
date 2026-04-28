@@ -238,7 +238,9 @@ struct ShuffleRitualView: View {
                 }
                 .onEnded { _ in
                     if phase == .pressing && pressProgress < totalPressDuration {
-                        // Released too early
+                        
+                        emitterPosition = [0.5, 0.5]
+                        
                         withAnimation(.spring(response: 0.3)) {
                             isPressed = false
                             phase = .instruction
@@ -317,6 +319,8 @@ struct ShuffleRitualView: View {
     private func completePress() {
         isPressed = false
         phase = .shuffling
+        
+        emitterPosition = [0.5, 0.5]
         
         // Fade out fire effect and stop fire sound
         withAnimation(.easeInOut(duration: 0.5)) {
