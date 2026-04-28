@@ -130,23 +130,24 @@ struct CardOfTheDayView: View {
                     perspective: 0.5
                 )
         }
-        .onLongPressGesture(minimumDuration: totalPressDuration, maximumDistance: 50) {
-            // This is called when the long press completes
-            // The actual completion is handled in the timer
-        } onPressingChanged: { pressing in
-            if !isRevealed {
-                if pressing {
-                    withAnimation(.spring(response: 0.3)) {
-                        isPressed = true
-                    }
-                } else if pressProgress < totalPressDuration {
-                    withAnimation(.spring(response: 0.3)) {
-                        isPressed = false
-                        pressProgress = 0
+        .gesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged { _ in
+                    if !isRevealed && !isPressed {
+                        withAnimation(.spring(response: 0.3)) {
+                            isPressed = true
+                        }
                     }
                 }
-            }
-        }
+                .onEnded { _ in
+                    if !isRevealed && pressProgress < totalPressDuration {
+                        withAnimation(.spring(response: 0.3)) {
+                            isPressed = false
+                            pressProgress = 0
+                        }
+                    }
+                }
+        )
     }
     
     private var progressIndicator: some View {
