@@ -64508,7 +64508,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reinen Tisch machen"
+            "value" : "Offenlegung"
           }
         },
         "en" : {
@@ -64520,19 +64520,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Confesarlo todo"
+            "value" : "Revelación de la verdad"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Passer aux aveux"
+            "value" : "Aveu"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fare pulizia"
+            "value" : "Rivelazione della verità"
           }
         },
         "ja" : {
@@ -64544,31 +64544,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Komme ren"
+            "value" : "Åpenhet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Oczyszczenie"
+            "value" : "Przyznanie się"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Confissão"
+            "value" : "Revelação da verdade"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Komma ren"
+            "value" : "Erkännande"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Очищення"
+            "value" : "Зізнання"
           }
         }
       }
@@ -65005,7 +65005,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Beichten"
+            "value" : "Geständnis"
           }
         },
         "en" : {
@@ -65017,19 +65017,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Confesando"
+            "value" : "Confesión"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Confesser"
+            "value" : "Confession"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Confessare"
+            "value" : "Confessione"
           }
         },
         "ja" : {
@@ -65041,25 +65041,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bekjenne"
+            "value" : "Tilståelse"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wyznanie"
+            "value" : "Wyznawanie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Confessando"
+            "value" : "Confissão"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bekänna"
+            "value" : "Bekännelse"
           }
         },
         "uk" : {
@@ -71395,7 +71395,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Frieden finden"
+            "value" : "Friedensfindung"
           }
         },
         "en" : {
@@ -71407,19 +71407,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Encontrar la paz"
+            "value" : "Encuentro de paz"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trouver la paix"
+            "value" : "Recherche de paix"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trovare la pace"
+            "value" : "Ricerca di pace"
           }
         },
         "ja" : {
@@ -71431,25 +71431,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Finne fred"
+            "value" : "Fredfinnelse"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Znalezienie spokoju"
+            "value" : "Odnalezienie spokoju"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Encontrar a paz"
+            "value" : "Encontro de paz"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hitta frid"
+            "value" : "Fridfinnande"
           }
         },
         "uk" : {
@@ -77685,7 +77685,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Odpuszczenie"
+            "value" : "Puszczanie"
           }
         },
         "pt-BR" : {
@@ -77714,7 +77714,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Last erleichtern"
+            "value" : "Erleichterung der Last"
           }
         },
         "en" : {
@@ -77726,19 +77726,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aligerar la carga"
+            "value" : "Alivio de carga"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alléger la charge"
+            "value" : "Allègement du fardeau"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alleggerire il carico"
+            "value" : "Alleggerimento del carico"
           }
         },
         "ja" : {
@@ -77750,25 +77750,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lette byrden"
+            "value" : "Lettelse av byrden"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ulżenie ciężarowi"
+            "value" : "Odciążenie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aliviar a carga"
+            "value" : "Alívio da carga"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lätta bördan"
+            "value" : "Lättnad av bördan"
           }
         },
         "uk" : {
@@ -77898,7 +77898,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Życie przeszłością"
+            "value" : "Życie w przeszłości"
           }
         },
         "pt-BR" : {
@@ -78069,7 +78069,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "An Boden verlieren"
+            "value" : "Verlust an Boden"
           }
         },
         "en" : {
@@ -78081,19 +78081,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Perdiendo terreno"
+            "value" : "Pérdida de terreno"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Perdre du terrain"
+            "value" : "Perte de terrain"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Perdere terreno"
+            "value" : "Perdita di terreno"
           }
         },
         "ja" : {
@@ -78105,25 +78105,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Miste terreng"
+            "value" : "Tap av terreng"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tracenie gruntu"
+            "value" : "Utrata gruntu"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Perdendo terreno"
+            "value" : "Perda de terreno"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Förlora mark"
+            "value" : "Förlorad mark"
           }
         },
         "uk" : {
@@ -78537,7 +78537,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Utrzymanie kontroli"
+            "value" : "Utrzymywanie kontroli"
           }
         },
         "pt-BR" : {
@@ -80270,7 +80270,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Knappe Entkommen"
+            "value" : "Knappe Flucht"
           }
         },
         "en" : {
@@ -80282,19 +80282,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Escape estrecho"
+            "value" : "Escape ajustado"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Éviter de justesse"
+            "value" : "Échappée de justesse"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scampare per poco"
+            "value" : "Scampato pericolo"
           }
         },
         "ja" : {
@@ -80306,31 +80306,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nære på"
+            "value" : "Nær unnslippelse"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cudem uniknąć"
+            "value" : "Cudowne ocalenie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Escapar por pouco"
+            "value" : "Escape por pouco"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nära Ögat"
+            "value" : "Snäv flykt"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ледве врятуватися"
+            "value" : "Врятування"
           }
         }
       }
@@ -82016,7 +82016,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Przytłaczający wybór"
+            "value" : "Przytłaczająca liczba wyborów"
           }
         },
         "pt-BR" : {
@@ -82034,7 +82034,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Надто багато вибору"
+            "value" : "Переповнення варіантів"
           }
         }
       }
@@ -83181,7 +83181,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Auf Nummer sicher gehen"
+            "value" : "Vorsicht"
           }
         },
         "en" : {
@@ -83193,19 +83193,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ir sobre seguro"
+            "value" : "Cautela"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Jouer la sécurité"
+            "value" : "Prudence"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Giocare sul sicuro"
+            "value" : "Prudenza"
           }
         },
         "ja" : {
@@ -83217,31 +83217,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spille trygt"
+            "value" : "Forsiktighet"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Grać bezpiecznie"
+            "value" : "Ostrożność"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Jogar seguro"
+            "value" : "Cautela"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spela säkert"
+            "value" : "Försiktighet"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Грати безпечно"
+            "value" : "Обережність"
           }
         }
       }
@@ -84033,7 +84033,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Versorgen"
+            "value" : "Versorgung"
           }
         },
         "en" : {
@@ -84045,19 +84045,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Proveer"
+            "value" : "Provisión"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fournir"
+            "value" : "Provision"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fornire"
+            "value" : "Fornitura"
           }
         },
         "ja" : {
@@ -84069,25 +84069,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Forsyne"
+            "value" : "Forsørgelse"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zapewnianie"
+            "value" : "Zaopatrzenie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prover"
+            "value" : "Provisão"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Försörja"
+            "value" : "Försörjning"
           }
         },
         "uk" : {
@@ -84175,7 +84175,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kontakt aufnehmen"
+            "value" : "Kontaktaufnahme"
           }
         },
         "en" : {
@@ -84187,19 +84187,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Contactar"
+            "value" : "Acercamiento"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tendre la main"
+            "value" : "Approche"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Contattare"
+            "value" : "Avvicinamento"
           }
         },
         "ja" : {
@@ -84211,31 +84211,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rekke ut"
+            "value" : "Kontaktforsøk"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wyciąganie ręki"
+            "value" : "Wyciągnięcie ręki"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alcançar"
+            "value" : "Aproximação"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Räcka ut"
+            "value" : "Kontaktförsök"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Простягання руки"
+            "value" : "Звернення"
           }
         }
       }
@@ -85027,7 +85027,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hilfe verweigern"
+            "value" : "Ablehnung von Hilfe"
           }
         },
         "en" : {
@@ -85039,19 +85039,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rechazar ayuda"
+            "value" : "Rechazo de ayuda"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Refuser de l'aide"
+            "value" : "Refus d'aide"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rifiutare l'aiuto"
+            "value" : "Rifiuto di aiuto"
           }
         },
         "ja" : {
@@ -85063,25 +85063,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nekte hjelp"
+            "value" : "Avvisning av hjelp"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Odmowa pomocy"
+            "value" : "Odmawianie pomocy"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Recusar ajuda"
+            "value" : "Recusa de ajuda"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vägra hjälp"
+            "value" : "Vägran av hjälp"
           }
         },
         "uk" : {
@@ -85879,7 +85879,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Veränderung widerstehen"
+            "value" : "Widerstand gegen Veränderung"
           }
         },
         "en" : {
@@ -85891,19 +85891,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Resistiendo al cambio"
+            "value" : "Resistencia al cambio"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Résister au changement"
+            "value" : "Résistance au changement"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Resistere al cambiamento"
+            "value" : "Resistenza al cambiamento"
           }
         },
         "ja" : {
@@ -85915,25 +85915,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Motstå endring"
+            "value" : "Motstand mot endring"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Opieranie się zmianie"
+            "value" : "Opór wobec zmian"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Resistindo à mudança"
+            "value" : "Resistência à mudança"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Motstå förändring"
+            "value" : "Motstånd mot förändring"
           }
         },
         "uk" : {
@@ -85950,7 +85950,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ende verweigern"
+            "value" : "Widerstand gegen das Ende"
           }
         },
         "en" : {
@@ -85962,19 +85962,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Resistiendo al final"
+            "value" : "Resistencia al final"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Résister à la fin"
+            "value" : "Résistance à la fin"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Resistere alla fine"
+            "value" : "Resistenza alla fine"
           }
         },
         "ja" : {
@@ -85986,25 +85986,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Motstå slutten"
+            "value" : "Motstand mot slutten"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Opieranie się końcowi"
+            "value" : "Opór wobec końca"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Resistindo ao fim"
+            "value" : "Resistência ao fim"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Motstå slutet"
+            "value" : "Motstånd mot slutet"
           }
         },
         "uk" : {
@@ -86447,7 +86447,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ansatz überdenken"
+            "value" : "Neuüberlegung des Ansatzes"
           }
         },
         "en" : {
@@ -86459,19 +86459,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Repensar el enfoque"
+            "value" : "Reconsideración del enfoque"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Repenser l'approche"
+            "value" : "Reconsidération de l'approche"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ripensare l'approccio"
+            "value" : "Riconsiderazione dell'approccio"
           }
         },
         "ja" : {
@@ -86483,25 +86483,25 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tenke nytt om tilnærming"
+            "value" : "Revurdering av tilnærming"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Przemyślenie podejścia"
+            "value" : "Ponowne przemyślenie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Repensar a abordagem"
+            "value" : "Reconsideração da abordagem"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Omtänkt tillvägagångssätt"
+            "value" : "Omprövning av tillvägagångssätt"
           }
         },
         "uk" : {
@@ -87524,13 +87524,13 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Buscando la verdad"
+            "value" : "Búsqueda de la verdad"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Recherche de la vérité"
+            "value" : "Quête de vérité"
           }
         },
         "it" : {
@@ -87548,7 +87548,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Søke sannhet"
+            "value" : "Søken etter sannhet"
           }
         },
         "pl" : {
@@ -87560,13 +87560,13 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Buscando a verdade"
+            "value" : "Busca da verdade"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Söka sanning"
+            "value" : "Sökning efter sanning"
           }
         },
         "uk" : {
@@ -88151,7 +88151,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Teilen"
+            "value" : "Teilung"
           }
         },
         "en" : {
@@ -88163,7 +88163,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Compartir"
+            "value" : "Compartición"
           }
         },
         "fr" : {
@@ -88193,7 +88193,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dzielenie się"
+            "value" : "Dzielenie"
           }
         },
         "pt-BR" : {
@@ -88211,7 +88211,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Діління"
+            "value" : "Поділ"
           }
         }
       }
@@ -88577,7 +88577,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ersticken"
+            "value" : "Erstickung"
           }
         },
         "en" : {
@@ -88589,7 +88589,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Asfixia"
+            "value" : "Sofocación"
           }
         },
         "fr" : {
@@ -88613,19 +88613,19 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kveling"
+            "value" : "Kvelning"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Duszenie"
+            "value" : "Przytłaczanie opieką"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Asfixiante"
+            "value" : "Sufocamento"
           }
         },
         "sv" : {
@@ -88637,7 +88637,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Задуха"
+            "value" : "Задушення"
           }
         }
       }
@@ -89045,7 +89045,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Poszukiwanie duszy"
+            "value" : "Rachunek sumienia"
           }
         },
         "pt-BR" : {
@@ -89441,7 +89441,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dilación"
+            "value" : "Estancamiento"
           }
         },
         "fr" : {
@@ -89453,7 +89453,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temporeggiamento"
+            "value" : "Procrastinazione"
           }
         },
         "ja" : {
@@ -89465,31 +89465,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Somling"
+            "value" : "Forsinkelse"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ociąganie się"
+            "value" : "Zwlekanie"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enrolação"
+            "value" : "Adiamento"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Förhalning"
+            "value" : "Fördröjning"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Затягування"
+            "value" : "Зволікання"
           }
         }
       }
@@ -89926,7 +89926,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sich durchkämpfen"
+            "value" : "Fortgesetzter Kampf"
           }
         },
         "en" : {
@@ -89938,19 +89938,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Luchando"
+            "value" : "Lucha continua"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Persévérer"
+            "value" : "Lutte continue"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Continuare a lottare"
+            "value" : "Lotta continua"
           }
         },
         "ja" : {
@@ -89962,31 +89962,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kjempe videre"
+            "value" : "Fortsatt kamp"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Przetrwanie"
+            "value" : "Dalsze zmaganie się"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Persistindo na luta"
+            "value" : "Luta contínua"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kämpa vidare"
+            "value" : "Fortsatt kamp"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Продовжувати боротися"
+            "value" : "Продовження боротьби"
           }
         }
       }
@@ -91601,7 +91601,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nieoskupienie"
+            "value" : "Rozproszenie"
           }
         },
         "pt-BR" : {
@@ -92553,7 +92553,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Weggehen"
+            "value" : "Weggang"
           }
         },
         "en" : {
@@ -92565,19 +92565,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alejarse"
+            "value" : "Alejamiento"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "S'éloigner"
+            "value" : "Éloignement"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allontanarsi"
+            "value" : "Allontanamento"
           }
         },
         "ja" : {
@@ -92589,7 +92589,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gå bort"
+            "value" : "Borttrekning"
           }
         },
         "pl" : {
@@ -92601,13 +92601,13 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Afastar-se"
+            "value" : "Partida"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gå bort"
+            "value" : "Avstånd"
           }
         },
         "uk" : {
