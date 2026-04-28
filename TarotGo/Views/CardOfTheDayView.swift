@@ -306,15 +306,15 @@ struct CardOfTheDayView: View {
         // Simple reflection prompts based on card suits
         switch card.suit {
         case .majorArcana:
-            return "What major theme or lesson is presenting itself in your life today? How can you honor this energy?"
+            return String(localized: "cardOfDay.reflection.majorArcana")
         case .cups:
-            return "What emotions are you experiencing today? How can you honor your feelings while staying balanced?"
+            return String(localized: "cardOfDay.reflection.cups")
         case .pentacles:
-            return "What practical steps can you take today to manifest your goals? Where should you focus your energy?"
+            return String(localized: "cardOfDay.reflection.pentacles")
         case .swords:
-            return "What truth needs to be acknowledged today? How can you communicate clearly and compassionately?"
+            return String(localized: "cardOfDay.reflection.swords")
         case .wands:
-            return "What passion or creative project is calling to you? How can you channel your enthusiasm productively?"
+            return String(localized: "cardOfDay.reflection.wands")
         }
     }
 }

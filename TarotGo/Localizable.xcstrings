@@ -519,6 +519,366 @@
         }
       }
     },
+    "cardOfDay.reflection.cups" : {
+      "comment" : "Reflection prompt for Cups suit cards in Card of the Day feature",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welche Emotionen erlebst du heute? Wie kannst du deine Gefühle achten und gleichzeitig ausgeglichen bleiben?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What emotions are you experiencing today? How can you honor your feelings while staying balanced?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué emociones estás experimentando hoy? ¿Cómo puedes honrar tus sentimientos mientras te mantienes equilibrado/a?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelles émotions ressentez-vous aujourd'hui ? Comment pouvez-vous honorer vos sentiments tout en restant équilibré ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quali emozioni stai provando oggi? Come puoi onorare i tuoi sentimenti rimanendo equilibrato/a?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日どのような感情を感じていますか？バランスを保ちながら、どのようにあなたの感情を尊重できますか？"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilke følelser opplever du i dag? Hvordan kan du hedre dine følelser mens du holder deg balansert?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jakie emocje przeżywasz dzisiaj? Jak możesz uhonorować swoje uczucia, pozostając w równowadze?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que emoções você está sentindo hoje? Como você pode honrar seus sentimentos mantendo o equilíbrio?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vilka känslor upplever du idag? Hur kan du hedra dina känslor samtidigt som du håller dig balanserad?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Які емоції ви відчуваєте сьогодні? Як ви можете шанувати свої почуття, залишаючись збалансованим?"
+          }
+        }
+      }
+    },
+    "cardOfDay.reflection.majorArcana" : {
+      "comment" : "Reflection prompt for Major Arcana cards in Card of the Day feature",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welches große Thema oder welche Lektion zeigt sich heute in deinem Leben? Wie kannst du diese Energie ehren?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What major theme or lesson is presenting itself in your life today? How can you honor this energy?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué tema o lección importante se presenta en tu vida hoy? ¿Cómo puedes honrar esta energía?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel thème majeur ou quelle leçon se présente dans votre vie aujourd'hui ? Comment pouvez-vous honorer cette énergie ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quale tema o lezione importante si sta presentando nella tua vita oggi? Come puoi onorare questa energia?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日、あなたの人生にどのような主要なテーマや教訓が現れていますか？このエネルギーをどのように尊重できますか？"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilket stort tema eller leksjon presenterer seg i livet ditt i dag? Hvordan kan du hedre denne energien?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaki główny temat lub lekcja pojawia się dziś w twoim życiu? Jak możesz uhonorować tę energię?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que tema ou lição importante está se apresentando em sua vida hoje? Como você pode honrar essa energia?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vilket stort tema eller vilken lärdom presenterar sig i ditt liv idag? Hur kan du hedra denna energi?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Яка важлива тема чи урок проявляється у вашому житті сьогодні? Як ви можете шанувати цю енергію?"
+          }
+        }
+      }
+    },
+    "cardOfDay.reflection.pentacles" : {
+      "comment" : "Reflection prompt for Pentacles suit cards in Card of the Day feature",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welche praktischen Schritte kannst du heute unternehmen, um deine Ziele zu manifestieren? Wo solltest du deine Energie fokussieren?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What practical steps can you take today to manifest your goals? Where should you focus your energy?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué pasos prácticos puedes tomar hoy para manifestar tus objetivos? ¿Dónde deberías enfocar tu energía?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelles étapes pratiques pouvez-vous entreprendre aujourd'hui pour manifester vos objectifs ? Où devriez-vous concentrer votre énergie ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quali passi pratici puoi compiere oggi per manifestare i tuoi obiettivi? Dove dovresti concentrare la tua energia?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目標を実現するために今日どのような実践的なステップを踏むことができますか？どこにエネルギーを集中すべきですか？"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilke praktiske skritt kan du ta i dag for å manifestere målene dine? Hvor bør du fokusere energien din?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jakie praktyczne kroki możesz podjąć dzisiaj, aby zrealizować swoje cele? Gdzie powinieneś skupić swoją energię?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que passos práticos você pode dar hoje para manifestar seus objetivos? Onde você deve focar sua energia?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vilka praktiska steg kan du ta idag för att manifestera dina mål? Var bör du fokusera din energi?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Які практичні кроки ви можете зробити сьогодні, щоб втілити свої цілі? Де вам слід зосередити свою енергію?"
+          }
+        }
+      }
+    },
+    "cardOfDay.reflection.swords" : {
+      "comment" : "Reflection prompt for Swords suit cards in Card of the Day feature",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welche Wahrheit muss heute anerkannt werden? Wie kannst du klar und mitfühlend kommunizieren?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What truth needs to be acknowledged today? How can you communicate clearly and compassionately?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué verdad necesita ser reconocida hoy? ¿Cómo puedes comunicarte de manera clara y compasiva?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle vérité doit être reconnue aujourd'hui ? Comment pouvez-vous communiquer clairement et avec compassion ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quale verità deve essere riconosciuta oggi? Come puoi comunicare in modo chiaro e compassionevole?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日認識する必要がある真実は何ですか？どのように明確かつ思いやりを持ってコミュニケーションできますか？"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilken sannhet må anerkjennes i dag? Hvordan kan du kommunisere tydelig og medfølende?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaka prawda musi zostać uznana dzisiaj? Jak możesz komunikować się jasno i z empatią?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que verdade precisa ser reconhecida hoje? Como você pode se comunicar de forma clara e compassiva?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vilken sanning behöver erkännas idag? Hur kan du kommunicera tydligt och medkännande?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Яку правду потрібно визнати сьогодні? Як ви можете спілкуватися чітко та з співчуттям?"
+          }
+        }
+      }
+    },
+    "cardOfDay.reflection.wands" : {
+      "comment" : "Reflection prompt for Wands suit cards in Card of the Day feature",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welche Leidenschaft oder welches kreative Projekt ruft dich? Wie kannst du deinen Enthusiasmus produktiv kanalisieren?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What passion or creative project is calling to you? How can you channel your enthusiasm productively?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué pasión o proyecto creativo te está llamando? ¿Cómo puedes canalizar tu entusiasmo de manera productiva?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle passion ou quel projet créatif vous appelle ? Comment pouvez-vous canaliser votre enthousiasme de manière productive ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quale passione o progetto creativo ti sta chiamando? Come puoi incanalare il tuo entusiasmo in modo produttivo?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "どのような情熱や創造的なプロジェクトがあなたを呼んでいますか？どのように熱意を生産的に向けることができますか？"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilken lidenskap eller kreativt prosjekt kaller på deg? Hvordan kan du kanalisere entusiasmen din produktivt?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaka pasja lub projekt twórczy do ciebie woła? Jak możesz produktywnie wykorzystać swój entuzjazm?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que paixão ou projeto criativo está chamando você? Como você pode canalizar seu entusiasmo de forma produtiva?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vilken passion eller kreativt projekt kallar på dig? Hur kan du kanalisera din entusiasm produktivt?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Яка пристрасть чи творчий проект кличе вас? Як ви можете продуктивно спрямувати свій ентузіазм?"
+          }
+        }
+      }
+    },
     "category.career" : {
       "extractionState" : "manual",
       "localizations" : {
