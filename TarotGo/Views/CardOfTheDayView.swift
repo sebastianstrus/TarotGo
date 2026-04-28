@@ -47,7 +47,7 @@ struct CardOfTheDayView: View {
                                 .font(.system(size: 16, weight: .light))
                                 .foregroundColor(AppTheme.gold.opacity(0.8))
                         }
-                        .padding(.top, 20)
+                        .padding(.top, 10)
                         .frame(maxWidth: .infinity)
                         
                         if !isRevealed {
@@ -56,6 +56,7 @@ struct CardOfTheDayView: View {
                         
                         if !isRevealed {
                             progressIndicator
+                                .padding(.bottom, -15)
                         }
                         
                         if let card = todayCard {
@@ -66,9 +67,9 @@ struct CardOfTheDayView: View {
                             interpretationSection(for: card)
                         }
                         
-                        Spacer(minLength: 40)
+                        Spacer(minLength: 20)
                     }
-                    .padding()
+                    .padding(.horizontal)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
