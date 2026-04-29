@@ -353,7 +353,16 @@ class PDFGenerationService {
             print(summary)
             
             // Draw the summary text first
+            // 1. Define your padding values
+            let boxTopPadding: CGFloat = 12
+            let boxBottomPadding: CGFloat = 18 // This provides the space you need at the bottom
             let summaryStartY = yPosition
+
+            // 2. Move yPosition down to create space above the first line
+            yPosition += boxTopPadding
+
+            // 3. Draw the summary text
+            // (This returns the Y position at the very bottom of the last line of text)
             yPosition = drawText(
                 summary,
                 at: CGPoint(x: margin, y: yPosition),
@@ -361,18 +370,32 @@ class PDFGenerationService {
                 font: .systemFont(ofSize: 13, weight: .light),
                 color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
             )
-            
-            // Now draw decorative border around the text (just border, no fill to avoid covering text)
+
+            // 4. Move yPosition down AGAIN to create the space BELOW the text
+            yPosition += boxBottomPadding
+
+            // 5. Now draw the box using the final yPosition
             context.cgContext.saveGState()
-            
-            let boxHeight = yPosition - summaryStartY
-            let summaryBox = UIBezierPath(roundedRect: CGRect(x: margin - 10, y: summaryStartY - 5, width: contentWidth + 20, height: boxHeight + 10), cornerRadius: 10)
-            
+
+            let actualBoxHeight = yPosition - summaryStartY
+            let summaryBox = UIBezierPath(
+                roundedRect: CGRect(
+                    x: margin - 10,
+                    y: summaryStartY,
+                    width: contentWidth + 20,
+                    height: actualBoxHeight
+                ),
+                cornerRadius: 10
+            )
+
             UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
             summaryBox.lineWidth = 1
             summaryBox.stroke()
-            
+
             context.cgContext.restoreGState()
+
+            // 6. Add a final margin so the next section doesn't touch the box
+            yPosition += 20
             
             yPosition += 35
             
@@ -395,6 +418,8 @@ class PDFGenerationService {
                     
                     yPosition = 60
                 }
+                
+                yPosition += 40
                 
                 // Draw decorative badge for card number
                 drawCardPositionBadge(position: index + 1, at: CGPoint(x: margin, y: yPosition), context: context.cgContext)
@@ -464,8 +489,6 @@ class PDFGenerationService {
                 
                 // Draw interpretation text with decorative box
                 let interpretation = drawnCard.card.interpretation(for: drawnCard.category, reversed: drawnCard.isReversed)
-                
-                // Calculate interpretation area (leave space for card on right)
                 let interpWidth = contentWidth - 100
                 
                 // Draw subtle background box for interpretation
@@ -478,7 +501,17 @@ class PDFGenerationService {
                 let interpString = NSAttributedString(string: interpretation, attributes: interpAttributes)
                 let interpRect = interpString.boundingRect(with: CGSize(width: interpWidth, height: .greatestFiniteMagnitude), options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
                 
-                let boxRect = CGRect(x: margin - 8, y: yPosition - 8, width: interpWidth + 16, height: interpRect.height + 20)
+                let interpBoxTopPadding: CGFloat = 10
+                let interpBoxBottomPadding: CGFloat = 30 // Increase this for a lower bottom border
+
+                // 2. Calculate the box rectangle with more height
+                // Note: We use yPosition as the start and add the extra padding to the total height
+                let boxRect = CGRect(
+                    x: margin - 8,
+                    y: yPosition - interpBoxTopPadding,
+                    width: interpWidth + 16,
+                    height: interpRect.height + interpBoxTopPadding + interpBoxBottomPadding
+                )
                 let interpBox = UIBezierPath(roundedRect: boxRect, cornerRadius: 8)
                 interpBox.fill()
                 
@@ -497,7 +530,7 @@ class PDFGenerationService {
                     color: UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0)
                 )
                 
-                yPosition += 25
+                yPosition += 45
                 
                 // Decorative separator between cards
                 if index < drawnCards.count - 1 {
@@ -624,6 +657,8 @@ class PDFGenerationService {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .left
         paragraphStyle.lineBreakMode = .byWordWrapping
+        // ADDITION: Polish diacritics need more vertical breathing room
+        paragraphStyle.lineSpacing = 3
         
         let attributes: [NSAttributedString.Key: Any] = [
             .font: font,
@@ -632,11 +667,27 @@ class PDFGenerationService {
         ]
         
         let attributedString = NSAttributedString(string: text, attributes: attributes)
-        let textRect = CGRect(x: point.x, y: point.y, width: width, height: CGFloat.greatestFiniteMagnitude)
-        let boundingRect = attributedString.boundingRect(with: textRect.size, options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
+        
+        // Use a constraint size for calculation
+        let constraintSize = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingRect = attributedString.boundingRect(
+            with: constraintSize,
+            options: [.usesLineFragmentOrigin, .usesFontLeading],
+            context: nil
+        )
+        
+        // FIX: Shift y by +2 or +3 to prevent the top of Polish characters
+        // (like the 'kreska' in 'ś' or 'ć') from being clipped at the top of the rect.
+        let textRect = CGRect(
+            x: point.x,
+            y: point.y + 2,
+            width: width, 
+            height: boundingRect.height + 10 // Extra height safety
+        )
         
         attributedString.draw(in: textRect)
         
-        return point.y + boundingRect.height
+        // Return the position for the next element, accounting for the shift
+        return point.y + boundingRect.height + 2
     }
 }
