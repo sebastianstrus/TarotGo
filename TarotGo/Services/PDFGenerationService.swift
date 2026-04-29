@@ -413,7 +413,7 @@ class PDFGenerationService {
                     let cardX = pageWidth - margin - cardImageWidth
                     
                     // We use cardSectionTopY so the image starts aligned with the badge/title
-                    var imageRect = CGRect(x: cardX, y: cardSectionTopY, width: cardImageWidth, height: cardImageHeight)
+                    var imageRect = CGRect(x: cardX, y: cardSectionTopY + 10, width: cardImageWidth, height: cardImageHeight)
                     
                     context.cgContext.saveGState()
                     context.cgContext.setShadow(offset: CGSize(width: 0, height: 4), blur: 10, color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.35).cgColor)
