@@ -374,6 +374,9 @@ class PDFGenerationService {
                     yPosition = 60
                 }
                 
+                // 1. CAPTURE the starting Y position for this card section
+                let cardSectionTopY = yPosition + 40
+                
                 yPosition += 40
                 drawCardPositionBadge(position: index + 1, at: CGPoint(x: margin, y: yPosition), context: context.cgContext)
                 
@@ -401,14 +404,16 @@ class PDFGenerationService {
                     color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
                 )
                 
-                // --- BREATHING ROOM ---
-                yPosition += 25 // Increased space before the box starts
+                yPosition += 25
                 
+                // 2. DRAW IMAGE using the relative cardSectionTopY
                 if let cardImage = UIImage(named: drawnCard.card.id) {
                     let cardImageHeight: CGFloat = 140
                     let cardImageWidth: CGFloat = cardImageHeight * (1108.0 / 1900.0)
                     let cardX = pageWidth - margin - cardImageWidth
-                    var imageRect = CGRect(x: cardX, y: yPosition - 100, width: cardImageWidth, height: cardImageHeight)
+                    
+                    // We use cardSectionTopY so the image starts aligned with the badge/title
+                    var imageRect = CGRect(x: cardX, y: cardSectionTopY, width: cardImageWidth, height: cardImageHeight)
                     
                     context.cgContext.saveGState()
                     context.cgContext.setShadow(offset: CGSize(width: 0, height: 4), blur: 10, color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.35).cgColor)
