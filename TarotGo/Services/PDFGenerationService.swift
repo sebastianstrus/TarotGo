@@ -263,20 +263,18 @@ class PDFGenerationService {
             var pageNumber = 1
             context.beginPage()
             
-            // Draw mystical background
             drawMysticalBackground(in: pageRect, context: context.cgContext)
             
             var yPosition: CGFloat = 50
             let margin: CGFloat = 60
             let contentWidth = pageWidth - (2 * margin)
             
-            // Decorative header with stars
+            // Header
             UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setFill()
             drawStar(at: CGPoint(x: pageWidth / 2, y: 30), size: 12, context: context.cgContext)
-            
             yPosition += 30
             
-            // Title with enhanced typography
+            // Title
             yPosition = drawText(
                 L10n.summaryYourReading,
                 at: CGPoint(x: margin, y: yPosition),
@@ -286,18 +284,13 @@ class PDFGenerationService {
             )
             
             yPosition += 10
-            
-            // Decorative border under title
             drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
-            
             yPosition += 25
             
-            // Date with icon
+            // Date
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .long
             dateFormatter.timeStyle = .none
-            
-            // Small crescent moon before date
             drawCrescent(at: CGPoint(x: margin + 8, y: yPosition + 8), size: 5, context: context.cgContext)
             
             yPosition = drawText(
@@ -310,7 +303,6 @@ class PDFGenerationService {
             
             yPosition += 35
             
-            // Question if exists (matching app display - just quoted text)
             if let question = customQuestion {
                 yPosition = drawText(
                     "\"\(question)\"",
@@ -322,7 +314,6 @@ class PDFGenerationService {
                 yPosition += 20
             }
             
-            // Spread type (matching app display)
             yPosition = drawText(
                 spreadType.displayName,
                 at: CGPoint(x: margin, y: yPosition),
@@ -332,12 +323,10 @@ class PDFGenerationService {
             )
             
             yPosition += 30
-            
-            // Decorative divider before Overall Insight
             drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
             yPosition += 25
             
-            // Overall Summary with decorative header
+            // Overall Insight
             yPosition = drawSectionHeader(
                 title: L10n.summaryOverallInsight,
                 at: yPosition,
@@ -346,23 +335,14 @@ class PDFGenerationService {
                 context: context.cgContext
             )
             
-            yPosition += 5  // Add extra spacing before summary text starts
-            
+            yPosition += 5
             let summary = TarotInterpretations.spreadSummary(for: drawnCards, category: category, spreadType: spreadType)
-            print("TEST100 summary:")
-            print(summary)
             
-            // Draw the summary text first
-            // 1. Define your padding values
             let boxTopPadding: CGFloat = 12
-            let boxBottomPadding: CGFloat = 18 // This provides the space you need at the bottom
+            let boxBottomPadding: CGFloat = 18
             let summaryStartY = yPosition
-
-            // 2. Move yPosition down to create space above the first line
             yPosition += boxTopPadding
 
-            // 3. Draw the summary text
-            // (This returns the Y position at the very bottom of the last line of text)
             yPosition = drawText(
                 summary,
                 at: CGPoint(x: margin, y: yPosition),
@@ -371,60 +351,32 @@ class PDFGenerationService {
                 color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
             )
 
-            // 4. Move yPosition down AGAIN to create the space BELOW the text
             yPosition += boxBottomPadding
-
-            // 5. Now draw the box using the final yPosition
             context.cgContext.saveGState()
-
             let actualBoxHeight = yPosition - summaryStartY
-            let summaryBox = UIBezierPath(
-                roundedRect: CGRect(
-                    x: margin - 10,
-                    y: summaryStartY,
-                    width: contentWidth + 20,
-                    height: actualBoxHeight
-                ),
-                cornerRadius: 10
-            )
-
+            let summaryBox = UIBezierPath(roundedRect: CGRect(x: margin - 10, y: summaryStartY, width: contentWidth + 20, height: actualBoxHeight), cornerRadius: 10)
             UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
             summaryBox.lineWidth = 1
             summaryBox.stroke()
-
             context.cgContext.restoreGState()
 
-            // 6. Add a final margin so the next section doesn't touch the box
-            yPosition += 20
-            
-            yPosition += 35
-            
-            // Cards section with decorative divider
+            yPosition += 55 // Space before card section
             drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
             yPosition += 20
             
-            // Draw each card
+            // Draw Cards
             for (index, drawnCard) in drawnCards.enumerated() {
-                // Check if we need a new page
                 if yPosition > pageHeight - 250 {
-                    // Draw footer before new page
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
-                    
                     pageNumber += 1
                     context.beginPage()
-                    
-                    // Draw mystical background on new page
                     drawMysticalBackground(in: pageRect, context: context.cgContext)
-                    
                     yPosition = 60
                 }
                 
                 yPosition += 40
-                
-                // Draw decorative badge for card number
                 drawCardPositionBadge(position: index + 1, at: CGPoint(x: margin, y: yPosition), context: context.cgContext)
                 
-                // Card position name (matching app: "1. Position")
                 let positionText = "\(index + 1). \(drawnCard.position.name)"
                 yPosition = drawText(
                     positionText,
@@ -435,11 +387,8 @@ class PDFGenerationService {
                 )
                 
                 yPosition += 8
-                
-                // Card name with reversed indicator if applicable (matching app display)
                 var cardNameText = drawnCard.card.localizedName
                 if drawnCard.isReversed {
-                    // Use NSLocalizedString to get translated "(Reversed)" text
                     let reversedText = NSLocalizedString("(Reversed)", comment: "A label indicating that the card is reversed.")
                     cardNameText += " \(reversedText)"
                 }
@@ -452,29 +401,22 @@ class PDFGenerationService {
                     color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
                 )
                 
-                yPosition += 12
+                // --- BREATHING ROOM ---
+                yPosition += 25 // Increased space before the box starts
                 
-                // Draw card image with decorative styling (if available)
                 if let cardImage = UIImage(named: drawnCard.card.id) {
                     let cardImageHeight: CGFloat = 140
                     let cardImageWidth: CGFloat = cardImageHeight * (1108.0 / 1900.0)
                     let cardX = pageWidth - margin - cardImageWidth
-                    var imageRect = CGRect(x: cardX, y: yPosition - 80, width: cardImageWidth, height: cardImageHeight)
+                    var imageRect = CGRect(x: cardX, y: yPosition - 100, width: cardImageWidth, height: cardImageHeight)
                     
-                    // Draw shadow behind card
                     context.cgContext.saveGState()
-                    context.cgContext.setShadow(offset: CGSize(width: 0, height: 4),
-                                               blur: 10,
-                                               color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.35).cgColor)
-                    
-                    // Draw card background
+                    context.cgContext.setShadow(offset: CGSize(width: 0, height: 4), blur: 10, color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.35).cgColor)
                     let cardBg = UIBezierPath(roundedRect: imageRect, cornerRadius: cardImageWidth * 0.06)
                     UIColor.white.setFill()
                     cardBg.fill()
-                    
                     context.cgContext.restoreGState()
                     
-                    // Rotate context if reversed
                     if drawnCard.isReversed {
                         context.cgContext.saveGState()
                         context.cgContext.translateBy(x: imageRect.midX, y: imageRect.midY)
@@ -487,55 +429,51 @@ class PDFGenerationService {
                     }
                 }
                 
-                // Draw interpretation text with decorative box
                 let interpretation = drawnCard.card.interpretation(for: drawnCard.category, reversed: drawnCard.isReversed)
                 let interpWidth = contentWidth - 100
                 
-                // Draw subtle background box for interpretation
-                context.cgContext.saveGState()
-                UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.6).setFill()
-                
-                // Calculate interpretation text height
+                // Calculate height
                 let interpFont = UIFont.systemFont(ofSize: 13, weight: .light)
-                let interpAttributes: [NSAttributedString.Key: Any] = [.font: interpFont]
+                let paragraphStyle = NSMutableParagraphStyle()
+                paragraphStyle.lineSpacing = 3 // Added slight line spacing for readability
+                let interpAttributes: [NSAttributedString.Key: Any] = [
+                    .font: interpFont,
+                    .paragraphStyle: paragraphStyle
+                ]
                 let interpString = NSAttributedString(string: interpretation, attributes: interpAttributes)
                 let interpRect = interpString.boundingRect(with: CGSize(width: interpWidth, height: .greatestFiniteMagnitude), options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
                 
-                let interpBoxTopPadding: CGFloat = 10
-                let interpBoxBottomPadding: CGFloat = 30 // Increase this for a lower bottom border
-
-                // 2. Calculate the box rectangle with more height
-                // Note: We use yPosition as the start and add the extra padding to the total height
+                let boxTopInset: CGFloat = 15
+                let boxBottomInset: CGFloat = 20
+                let interpBoxStartY = yPosition
+                
+                // Draw Box
+                context.cgContext.saveGState()
                 let boxRect = CGRect(
                     x: margin - 8,
-                    y: yPosition - interpBoxTopPadding,
+                    y: interpBoxStartY - boxTopInset,
                     width: interpWidth + 16,
-                    height: interpRect.height + interpBoxTopPadding + interpBoxBottomPadding
+                    height: interpRect.height + boxTopInset + boxBottomInset
                 )
+                UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
                 let interpBox = UIBezierPath(roundedRect: boxRect, cornerRadius: 8)
                 interpBox.fill()
-                
-                // Subtle border
                 UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setStroke()
                 interpBox.lineWidth = 1
                 interpBox.stroke()
-                
                 context.cgContext.restoreGState()
                 
-                yPosition = drawText(
-                    interpretation,
-                    at: CGPoint(x: margin, y: yPosition),
-                    width: interpWidth,
-                    font: .systemFont(ofSize: 13, weight: .light),
-                    color: UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0)
-                )
+                // Draw interpretation text inside box area
+                interpString.draw(in: CGRect(x: margin, y: yPosition, width: interpWidth, height: interpRect.height))
                 
-                yPosition += 45
+                // Increment yPosition based on box height plus separator space
+                yPosition += interpRect.height + boxBottomInset + 45
                 
-                // Decorative separator between cards
                 if index < drawnCards.count - 1 {
-                    // Draw ornamental divider
-                    UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.3).setStroke()
+                    let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+                        
+                        // Set stroke for the lines (using a lower alpha for the lines to keep them subtle)
+                        goldColor.withAlphaComponent(0.3).setStroke()
                     
                     let leftLine = UIBezierPath()
                     leftLine.move(to: CGPoint(x: margin, y: yPosition))
@@ -549,99 +487,57 @@ class PDFGenerationService {
                     rightLine.lineWidth = 0.5
                     rightLine.stroke()
                     
-                    // Small star in center
-                    UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.5).setFill()
+                    goldColor.setFill()
                     drawStar(at: CGPoint(x: pageWidth / 2, y: yPosition), size: 5, context: context.cgContext)
-                    
                     yPosition += 20
                 }
             }
             
-            // Notes section
+            // Notes
             if let notes = notes, !notes.isEmpty {
-                // Check if we need a new page
                 if yPosition > pageHeight - 200 {
-                    // Draw footer before new page
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
-                    
                     pageNumber += 1
                     context.beginPage()
-                    
-                    // Draw mystical background on new page
                     drawMysticalBackground(in: pageRect, context: context.cgContext)
-                    
                     yPosition = 60
                 }
                 
                 yPosition += 15
-                
-                // Personal Reflections with decorative header
-                yPosition = drawSectionHeader(
-                    title: L10n.summaryReflections,
-                    at: yPosition,
-                    margin: margin,
-                    contentWidth: contentWidth,
-                    context: context.cgContext
-                )
-                
+                yPosition = drawSectionHeader(title: L10n.summaryReflections, at: yPosition, margin: margin, contentWidth: contentWidth, context: context.cgContext)
                 yPosition += 5
                 
-                // Draw decorative box for notes
-                context.cgContext.saveGState()
-                
-                // Calculate notes height
                 let notesFont = UIFont.systemFont(ofSize: 12, weight: .regular)
                 let notesAttributes: [NSAttributedString.Key: Any] = [.font: notesFont]
                 let notesString = NSAttributedString(string: notes, attributes: notesAttributes)
                 let notesRect = notesString.boundingRect(with: CGSize(width: contentWidth - 20, height: .greatestFiniteMagnitude), options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
                 
-                // Background box
+                context.cgContext.saveGState()
                 UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.05).setFill()
                 let notesBox = UIBezierPath(roundedRect: CGRect(x: margin - 10, y: yPosition - 10, width: contentWidth + 20, height: notesRect.height + 30), cornerRadius: 8)
                 notesBox.fill()
-                
-                // Border with decorative corners
                 UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.3).setStroke()
                 notesBox.lineWidth = 1
                 notesBox.stroke()
-                
-                // Small stars in corners
-                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.4).setFill()
                 drawStar(at: CGPoint(x: margin - 5, y: yPosition - 5), size: 4, context: context.cgContext)
                 drawStar(at: CGPoint(x: pageWidth - margin + 5, y: yPosition - 5), size: 4, context: context.cgContext)
-                
                 context.cgContext.restoreGState()
                 
-                yPosition = drawText(
-                    notes,
-                    at: CGPoint(x: margin, y: yPosition),
-                    width: contentWidth,
-                    font: .systemFont(ofSize: 12, weight: .regular),
-                    color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
-                )
+                yPosition = drawText(notes, at: CGPoint(x: margin, y: yPosition), width: contentWidth, font: notesFont, color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0))
             }
             
-            // Draw final footer
             drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
         }
         
-        // Save to temporary file with readable name
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        let dateString = dateFormatter.string(from: date)
-        
-        // Create clean filename: TarotReading_2026-04-29_Love.pdf
-        let categoryName = category.displayName.replacingOccurrences(of: " ", with: "")
-        let filename = "TarotReading_\(dateString)_\(categoryName).pdf"
-        
-        let tempURL = FileManager.default.temporaryDirectory
-            .appendingPathComponent(filename)
+        let filename = "TarotReading_\(dateFormatter.string(from: date))_\(category.displayName.replacingOccurrences(of: " ", with: "")).pdf"
+        let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent(filename)
         
         do {
             try data.write(to: tempURL)
             return tempURL
         } catch {
-            print("Failed to save PDF: \(error)")
             return nil
         }
     }
