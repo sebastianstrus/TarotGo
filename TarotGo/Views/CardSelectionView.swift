@@ -22,6 +22,11 @@ struct CardSelectionView: View {
     @State private var animatingCardId: String?
     @State private var isProcessingSelection: Bool = false
     @Namespace private var cardNamespace
+    @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
+    
+    private var selectedCardBack: CardBackStyle {
+        CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
+    }
     
     init(category: IntentionCategory, customQuestion: String?, spreadType: SpreadType) {
         self.category = category
@@ -149,7 +154,7 @@ struct CardSelectionView: View {
                                 .fill(Color.white)
                             
                             // Card back image
-                            if let uiImage = UIImage(named: "ReversCard1") {
+                            if let uiImage = UIImage(named: selectedCardBack.rawValue) {
                                 Image(uiImage: uiImage)
                                     .resizable()
                                     .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
@@ -271,6 +276,11 @@ struct CardSelectionView: View {
 
 struct CardBackView: View {
     let isSelected: Bool
+    @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
+    
+    private var selectedCardBack: CardBackStyle {
+        CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -282,7 +292,7 @@ struct CardBackView: View {
                     .fill(Color.white)
                 
                 // Real card back image
-                if let uiImage = UIImage(named: "ReversCard1") {
+                if let uiImage = UIImage(named: selectedCardBack.rawValue) {
                     Image(uiImage: uiImage)
                         .resizable()
                         .aspectRatio(contentMode: .fill)

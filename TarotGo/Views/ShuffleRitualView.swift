@@ -76,9 +76,14 @@ struct ShuffleRitualView: View {
     @State private var showFire: Bool = false
     @State private var screenSize: CGSize = .zero
     @State private var fireOpacity: Double = 0.0
+    @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
+    
+    private var selectedCardBack: CardBackStyle {
+        CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -284,7 +289,7 @@ struct ShuffleRitualView: View {
                 .fill(Color.white)
             
             // Real card back image
-            if let uiImage = UIImage(named: "ReversCard1") {
+            if let uiImage = UIImage(named: selectedCardBack.rawValue) {
                 Image(uiImage: uiImage)
                     .resizable()
                     .aspectRatio(contentMode: .fill)

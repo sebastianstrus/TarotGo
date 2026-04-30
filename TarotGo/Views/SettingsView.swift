@@ -12,11 +12,16 @@ struct SettingsView: View {
     @AppStorage("dailyCardNotificationEnabled") private var notificationEnabled: Bool = false
     @AppStorage("dailyCardNotificationHour") private var notificationHour: Int = 9
     @AppStorage("dailyCardNotificationMinute") private var notificationMinute: Int = 0
+    @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
     
     @State private var showingTimePicker: Bool = false
     @State private var toggleState: Bool = false
     @State private var showOnboarding: Bool = false
     @State private var showPermissionAlert: Bool = false
+    
+    private var selectedCardBack: CardBackStyle {
+        CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
+    }
     
     var body: some View {
         ZStack {
@@ -50,6 +55,61 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.gold)
                 } footer: {
                     Text(L10n.settingsDailyReminderDesc)
+                        .foregroundColor(AppTheme.textSecondary)
+                }
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.5))
+                )
+                
+                Section {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text(L10n.settingsCardBack)
+                            .foregroundColor(AppTheme.textPrimary)
+                            .font(.system(size: 16))
+                        
+                        HStack(spacing: 8) {
+                            ForEach(CardBackStyle.allCases) { style in
+                                VStack(spacing: 6) {
+                                    ZStack {
+                                        if let uiImage = UIImage(named: style.rawValue) {
+                                            Image(uiImage: uiImage)
+                                                .resizable()
+                                                .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+                                                .cornerRadius(6)
+                                        }
+                                        
+                                        if selectedCardBackRaw == style.rawValue {
+                                            RoundedRectangle(cornerRadius: 6)
+                                                .stroke(AppTheme.goldGradient, lineWidth: 2.5)
+                                        }
+                                    }
+                                    .frame(height: 90)
+                                    .padding(.vertical, selectedCardBackRaw == style.rawValue ? 4 : 0)
+                                    .shadow(color: selectedCardBackRaw == style.rawValue ? AppTheme.gold.opacity(0.5) : Color.clear, radius: 8)
+                                    
+                                    Text(style.displayName)
+                                        .font(.system(size: 11, weight: selectedCardBackRaw == style.rawValue ? .semibold : .regular))
+                                        .foregroundColor(selectedCardBackRaw == style.rawValue ? AppTheme.gold : AppTheme.textSecondary)
+                                        .lineLimit(1)
+                                        .minimumScaleFactor(0.8)
+                                }
+                                .frame(maxWidth: .infinity)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    selectedCardBackRaw = style.rawValue
+                                    HapticService.shared.impact(.light)
+                                }
+                            }
+                        }
+                    }
+                    .padding(.vertical, 8)
+                    .listRowSeparator(.hidden)
+                } header: {
+                    Text(L10n.settingsAppearance)
+                        .foregroundColor(AppTheme.gold)
+                } footer: {
+                    Text(L10n.settingsCardBackDesc)
                         .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(

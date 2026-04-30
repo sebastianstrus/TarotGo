@@ -7,6 +7,42 @@
 
 import SwiftUI
 
+// Card back design options
+enum CardBackStyle: String, CaseIterable, Identifiable {
+    case modern = "ReversCard1"
+    case original = "ReversCard2"
+    case standard = "ReversCard3"
+    case classic = "ReversCard4"
+    
+    var id: String { rawValue }
+    
+    var displayName: String {
+        switch self {
+        case .modern:
+            return L10n.settingsCardBackModern
+        case .original:
+            return L10n.settingsCardBackOriginal
+        case .standard:
+            return L10n.settingsCardBackStandard
+        case .classic:
+            return L10n.settingsCardBackClassic
+        }
+    }
+    
+    var description: String {
+        switch self {
+        case .modern:
+            return "Modern 'XXI'"
+        case .original:
+            return "Original 'CRACKED ICE (1909)'"
+        case .standard:
+            return "Standard 'TUDOR ROSE'"
+        case .classic:
+            return "Classic 'PLAID'"
+        }
+    }
+}
+
 struct AppTheme {
     // Gold colors matching the app icon
     static let gold = Color(red: 212/255, green: 175/255, blue: 55/255) // #D4AF37
