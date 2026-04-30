@@ -65,7 +65,7 @@ struct CardView: View {
                 }
                 
                 RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(borderStyle, lineWidth: 1)
+                    .stroke(borderColor, lineWidth: 1)
             }
             .if(showGoldShadow) { view in
                 view.shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
@@ -77,38 +77,13 @@ struct CardView: View {
     
     private var borderColor: Color {
         if showFront {
-            return .white
+            return .gray
         } else {
             switch selectedCardBack {
             case .modern, .standard:
                 return AppTheme.gold
             case .original, .classic:
-                return .white
-            }
-        }
-    }
-    
-    private var borderStyle: AnyShapeStyle {
-        if showFront {
-            return AnyShapeStyle(
-                LinearGradient(
-                    gradient: Gradient(colors: [Color.gray, Color.white]),
-                    startPoint: .topTrailing,
-                    endPoint: .bottomTrailing
-                )
-            )
-        } else {
-            switch selectedCardBack {
-            case .modern, .standard:
-                return AnyShapeStyle(AppTheme.gold)
-            case .original, .classic:
-                return AnyShapeStyle(
-                    LinearGradient(
-                        gradient: Gradient(colors: [Color.gray, Color.white]),
-                        startPoint: .topTrailing,
-                        endPoint: .bottomTrailing
-                    )
-                )
+                return .gray
             }
         }
     }
