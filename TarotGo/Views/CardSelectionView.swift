@@ -149,7 +149,7 @@ struct CardSelectionView: View {
                                 .fill(Color.white)
                             
                             // Card back image
-                            if let uiImage = UIImage(named: "ReversCard") {
+                            if let uiImage = UIImage(named: "ReversCard1") {
                                 Image(uiImage: uiImage)
                                     .resizable()
                                     .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
@@ -282,7 +282,7 @@ struct CardBackView: View {
                     .fill(Color.white)
                 
                 // Real card back image
-                if let uiImage = UIImage(named: "ReversCard") {
+                if let uiImage = UIImage(named: "ReversCard1") {
                     Image(uiImage: uiImage)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
