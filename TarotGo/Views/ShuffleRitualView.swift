@@ -76,14 +76,9 @@ struct ShuffleRitualView: View {
     @State private var showFire: Bool = false
     @State private var screenSize: CGSize = .zero
     @State private var fireOpacity: Double = 0.0
-    @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
-    
-    private var selectedCardBack: CardBackStyle {
-        CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
-    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -191,17 +186,15 @@ struct ShuffleRitualView: View {
         ZStack {
             // Stack of cards to show depth
             ForEach(0..<5, id: \.self) { index in
-                cardBackView(offset: CGFloat(index) * 3, yOffset: CGFloat(index) * -3)
+                CardView()
                     .frame(width: 200, height: 300)
-                    .shadow(color: AppTheme.gold.opacity(0.2), radius: 5)
                     .rotationEffect(.degrees(phase == .shuffling ? shuffleRotation + Double(index * 10) : 0))
-                    .offset(x: phase == .shuffling ? shuffleOffset * CGFloat(index) : 0)
+                    .offset(x: CGFloat(index) * 3 + (phase == .shuffling ? shuffleOffset * CGFloat(index) : 0), y: CGFloat(index) * -3)
             }
             
             // Top card
-            cardBackView(offset: 0, yOffset: 0)
+            CardView()
                 .frame(width: 200, height: 300)
-                .shadow(color: AppTheme.gold.opacity(0.4), radius: 15)
                 .scaleEffect(isPressed ? 0.95 : 1.0)
                 .rotationEffect(.degrees(phase == .shuffling ? shuffleRotation : 0))
         }
@@ -282,43 +275,7 @@ struct ShuffleRitualView: View {
         return fire
     }
     
-    private func cardBackView(offset: CGFloat, yOffset: CGFloat) -> some View {
-        ZStack {
-            // White background to ensure no transparency
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white)
-            
-            // Real card back image
-            if let uiImage = UIImage(named: selectedCardBack.rawValue) {
-                Image(uiImage: uiImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .clipped()
-                    .cornerRadius(12)
-            } else {
-                // Fallback
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(AppTheme.cardGradient)
-                
-                Image(systemName: "moon.stars.fill")
-                    .font(.system(size: 60))
-                    .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
-            }
-            
-            // Gold border
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(
-                    LinearGradient(
-                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ),
-                    lineWidth: 3
-                )
-        }
-        .offset(x: offset, y: yOffset)
-    }
-    
+
     private func completePress() {
         isPressed = false
         phase = .shuffling

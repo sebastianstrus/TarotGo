@@ -70,51 +70,43 @@ struct SettingsView: View {
                         
                         HStack(spacing: 4) {
                             ForEach(CardBackStyle.allCases) { style in
-                                GeometryReader { geo in
-                                    let cardWidth = geo.size.width
-                                    let cornerRadius = AppTheme.cardCornerRadius(forWidth: cardWidth)
+                                VStack(spacing: 6) {
                                     let isSelected = selectedCardBackRaw == style.rawValue
                                     
-                                    VStack(spacing: 6) {
-                                        ZStack {
-                                            if let uiImage = UIImage(named: style.rawValue) {
-                                                Image(uiImage: uiImage)
-                                                    .resizable()
-                                                    .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
-                                                    .cornerRadius(cornerRadius)
-                                                    .padding(8)
-                                            }
-                                            
-                                            if isSelected {
-                                                RoundedRectangle(cornerRadius: cornerRadius + 4)
-                                                    .stroke(AppTheme.goldGradient, lineWidth: 2.5)
-                                            }
-                                        }
-                                        .frame(height: 110)
-                                        .shadow(color: isSelected ? AppTheme.gold.opacity(0.5) : Color.clear, radius: 8)
+                                    ZStack {
+                                        CardView(
+                                            showGoldShadow: isSelected,
+                                            cardBackStyleOverride: style
+                                        )
+                                        .padding(8)
                                         
-                                        VStack(spacing: 2) {
-                                            Text(style.displayName)
-                                                .font(.system(size: 11, weight: isSelected ? .semibold : .regular))
-                                                .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textPrimary)
-                                                .lineLimit(1)
-                                                .minimumScaleFactor(0.8)
-                                            
-                                            Text(style.subtitle)
-                                                .font(.system(size: 9, weight: .light))
-                                                .foregroundColor(AppTheme.textSecondary.opacity(0.7))
-                                                .lineLimit(1)
-                                                .minimumScaleFactor(0.7)
+                                        if isSelected {
+                                            RoundedRectangle(cornerRadius: 8)
+                                                .stroke(AppTheme.goldGradient, lineWidth: 2.5)
                                         }
                                     }
-                                    .frame(maxWidth: .infinity)
-                                    .contentShape(Rectangle())
-                                    .onTapGesture {
-                                        selectedCardBackRaw = style.rawValue
-                                        HapticService.shared.impact(.light)
+                                    .frame(height: 120)
+                                    
+                                    VStack(spacing: 2) {
+                                        Text(style.displayName)
+                                            .font(.system(size: 11, weight: isSelected ? .semibold : .regular))
+                                            .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textPrimary)
+                                            .lineLimit(1)
+                                            .minimumScaleFactor(0.8)
+                                        
+                                        Text(style.subtitle)
+                                            .font(.system(size: 9, weight: .light))
+                                            .foregroundColor(AppTheme.textSecondary.opacity(0.7))
+                                            .lineLimit(1)
+                                            .minimumScaleFactor(0.7)
                                     }
                                 }
-                                .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+                                .frame(maxWidth: .infinity)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    selectedCardBackRaw = style.rawValue
+                                    HapticService.shared.impact(.light)
+                                }
                             }
                         }
                         .frame(height: 140)

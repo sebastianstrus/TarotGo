@@ -13,40 +13,7 @@ struct MiniTarotCardView: View {
     let isReversed: Bool
     
     var body: some View {
-        GeometryReader { geometry in
-            let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
-            let shadowRadius = geometry.size.width * 0.08 // Scale shadow with card size
-            
-            ZStack {
-                // White background to ensure no transparency
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(Color.white)
-                
-                // Real tarot card image
-                if let uiImage = UIImage(named: card.id) {
-                    Image(uiImage: uiImage)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: geometry.size.width, height: geometry.size.height)
-                        .clipped()
-                        .cornerRadius(cornerRadius)
-                }
-                
-                // Gold border
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(
-                        LinearGradient(
-                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ),
-                        lineWidth: 2
-                    )
-            }
-            .shadow(color: AppTheme.gold.opacity(0.3), radius: shadowRadius)
-            .rotationEffect(.degrees(isReversed ? 180 : 0))
-        }
-        .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+        CardView(card: card, showFront: true, isReversed: isReversed)
     }
 }
 

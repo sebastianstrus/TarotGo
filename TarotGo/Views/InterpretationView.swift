@@ -320,11 +320,11 @@ struct FlipCardView: View {
         ZStack {
             if rotation < 90 {
                 // Card back
-                CardBackView(isSelected: false)
+                CardView()
                     .frame(width: 200, height: 300)
             } else {
                 // Card front
-                TarotCardFrontView(card: card, isReversed: isReversed)
+                CardView(card: card, showFront: true, isReversed: isReversed)
                     .frame(width: 200, height: 300)
                     .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
             }
@@ -338,60 +338,6 @@ struct FlipCardView: View {
                 onTap()
             }
         }
-    }
-}
-
-struct TarotCardFrontView: View {
-    let card: TarotCard
-    let isReversed: Bool
-    
-    var body: some View {
-        GeometryReader { geometry in
-            let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
-            
-            ZStack {
-                // White background to ensure no transparency
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(Color.white)
-                
-                // Real tarot card image
-                if let uiImage = UIImage(named: card.id) {
-                    Image(uiImage: uiImage)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: geometry.size.width, height: geometry.size.height)
-                        .clipped()
-                        .cornerRadius(cornerRadius)
-                } else {
-                    // Fallback if image not found
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .fill(AppTheme.cardGradient)
-                    
-                    VStack {
-                        Image(systemName: "exclamationmark.triangle")
-                            .font(.system(size: 40))
-                            .foregroundStyle(AppTheme.goldGradient)
-                        Text("Image not found: \(card.id)")
-                            .font(.caption)
-                            .foregroundColor(.white)
-                    }
-                }
-                
-                // Gold border
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(
-                        LinearGradient(
-                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ),
-                        lineWidth: 3
-                    )
-            }
-            .shadow(color: AppTheme.gold.opacity(0.3), radius: 10)
-            .rotationEffect(.degrees(isReversed ? 180 : 0))
-        }
-        .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
     }
 }
 

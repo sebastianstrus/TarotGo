@@ -43,46 +43,13 @@ struct CardDetailView: View {
     }
     
     private var cardImageView: some View {
-        GeometryReader { geometry in
-            let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
-            
-            ZStack {
-                // White background
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(Color.white)
-                
-                if let uiImage = UIImage(named: card.imageName) {
-                    Image(uiImage: uiImage)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .clipped()
-                        .cornerRadius(cornerRadius)
-                } else {
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .fill(AppTheme.cardGradient)
-                    
-                    Image(systemName: "moon.stars.fill")
-                        .font(.system(size: 80))
-                        .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
-                }
-                
-                // Gold border
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(
-                        LinearGradient(
-                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ),
-                        lineWidth: 3
-                    )
-            }
-            .shadow(color: AppTheme.gold.opacity(0.4), radius: 20)
-            .rotationEffect(.degrees(showReversed ? 180 : 0))
-            .animation(.spring(response: 0.6, dampingFraction: 0.7), value: showReversed)
-        }
-        .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+        CardView(
+            card: card,
+            showFront: true,
+            isReversed: showReversed
+        )
         .frame(maxWidth: 280)
+        .animation(.spring(response: 0.6, dampingFraction: 0.7), value: showReversed)
     }
     
     private var cardHeaderView: some View {

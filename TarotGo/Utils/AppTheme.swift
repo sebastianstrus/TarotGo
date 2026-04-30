@@ -93,7 +93,7 @@ struct AppTheme {
     /// Calculate corner radius for tarot cards based on their width
     /// Uses a ratio of ~0.06 (6% of width) for consistent rounded corners
     static func cardCornerRadius(forWidth width: CGFloat) -> CGFloat {
-        return width * 0.06
+        return width * 0.05
     }
 }
 

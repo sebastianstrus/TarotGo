@@ -111,7 +111,7 @@ struct CardOfTheDayView: View {
     private func cardView(card: TarotCard) -> some View {
         ZStack {
             // Card back (visible when not flipped)
-            CardBackView(isSelected: false)
+            CardView()
                 .frame(width: 220, height: 330)
                 .scaleEffect(isPressed ? 0.95 : 1.0)
                 .opacity(flipRotation < 90 ? 1 : 0)
@@ -122,7 +122,7 @@ struct CardOfTheDayView: View {
                 )
             
             // Card front (visible when flipped)
-            TarotCardFrontView(card: card, isReversed: isReversed)
+            CardView(card: card, showFront: true, isReversed: isReversed)
                 .frame(width: 220, height: 330)
                 .opacity(flipRotation >= 90 ? 1 : 0)
                 .rotation3DEffect(

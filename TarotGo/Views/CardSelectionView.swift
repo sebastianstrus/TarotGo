@@ -22,11 +22,6 @@ struct CardSelectionView: View {
     @State private var animatingCardId: String?
     @State private var isProcessingSelection: Bool = false
     @Namespace private var cardNamespace
-    @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
-    
-    private var selectedCardBack: CardBackStyle {
-        CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
-    }
     
     init(category: IntentionCategory, customQuestion: String?, spreadType: SpreadType) {
         self.category = category
@@ -145,38 +140,9 @@ struct CardSelectionView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
                 ForEach(selectedCards, id: \.id) { card in
-                    GeometryReader { geo in
-                        let cornerRadius = AppTheme.cardCornerRadius(forWidth: geo.size.width)
-                        
-                        ZStack {
-                            // White background
-                            RoundedRectangle(cornerRadius: cornerRadius)
-                                .fill(Color.white)
-                            
-                            // Card back image
-                            if let uiImage = UIImage(named: selectedCardBack.rawValue) {
-                                Image(uiImage: uiImage)
-                                    .resizable()
-                                    .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
-                                    .cornerRadius(cornerRadius)
-                            }
-                            
-                            // Border
-                            RoundedRectangle(cornerRadius: cornerRadius)
-                                .stroke(
-                                    LinearGradient(
-                                        colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    ),
-                                    lineWidth: 2
-                                )
-                        }
-                        .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
+                    CardView()
+                        .frame(height: 80)
                         .matchedGeometryEffect(id: "card-\(card.id)", in: cardNamespace)
-                    }
-                    .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
-                    .frame(height: 80)
                 }
             }
             .padding(.horizontal)
@@ -201,7 +167,7 @@ struct CardSelectionView: View {
                     let isAnimating = animatingCardId == card.id
                     
                     if !isCardSelected || isAnimating {
-                        CardBackView(isSelected: selectedCardId == card.id)
+                        CardView(isSelected: selectedCardId == card.id)
                             .frame(width: 100, height: 150)
                             .rotationEffect(.degrees(angle))
                             .offset(x: xOffset, y: abs(angle) * 3)
@@ -271,59 +237,6 @@ struct CardSelectionView: View {
                 }
             }
         }
-    }
-}
-
-struct CardBackView: View {
-    let isSelected: Bool
-    @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
-    
-    private var selectedCardBack: CardBackStyle {
-        CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
-    }
-    
-    var body: some View {
-        GeometryReader { geometry in
-            let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
-            
-            ZStack {
-                // White background to ensure no transparency
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(Color.white)
-                
-                // Real card back image
-                if let uiImage = UIImage(named: selectedCardBack.rawValue) {
-                    Image(uiImage: uiImage)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: geometry.size.width, height: geometry.size.height)
-                        .clipped()
-                        .cornerRadius(cornerRadius)
-                } else {
-                    // Fallback if image not found
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .fill(AppTheme.cardGradient)
-                    
-                    VStack {
-                        Image(systemName: "exclamationmark.triangle")
-                            .font(.system(size: 40))
-                            .foregroundStyle(AppTheme.goldGradient)
-                        Text("ReversCard image not found")
-                            .font(.caption)
-                            .foregroundColor(.white)
-                    }
-                }
-                
-                // Border
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(
-                        isSelected ? AppTheme.goldGradient : LinearGradient(colors: [AppTheme.gold.opacity(0.4)], startPoint: .topLeading, endPoint: .bottomTrailing),
-                        lineWidth: isSelected ? 3 : 2
-                    )
-            }
-            .shadow(color: isSelected ? AppTheme.gold.opacity(0.6) : Color.clear, radius: 15)
-        }
-        .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
     }
 }
 
