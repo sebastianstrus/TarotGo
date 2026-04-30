@@ -70,38 +70,45 @@ struct SettingsView: View {
                         
                         HStack(spacing: 8) {
                             ForEach(CardBackStyle.allCases) { style in
-                                VStack(spacing: 6) {
-                                    ZStack {
-                                        if let uiImage = UIImage(named: style.rawValue) {
-                                            Image(uiImage: uiImage)
-                                                .resizable()
-                                                .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
-                                                .cornerRadius(6)
-                                        }
-                                        
-                                        if selectedCardBackRaw == style.rawValue {
-                                            RoundedRectangle(cornerRadius: 6)
-                                                .stroke(AppTheme.goldGradient, lineWidth: 2.5)
-                                        }
-                                    }
-                                    .frame(height: 90)
-                                    .padding(.vertical, selectedCardBackRaw == style.rawValue ? 4 : 0)
-                                    .shadow(color: selectedCardBackRaw == style.rawValue ? AppTheme.gold.opacity(0.5) : Color.clear, radius: 8)
+                                GeometryReader { geo in
+                                    let cardWidth = geo.size.width
+                                    let cornerRadius = AppTheme.cardCornerRadius(forWidth: cardWidth)
                                     
-                                    Text(style.displayName)
-                                        .font(.system(size: 11, weight: selectedCardBackRaw == style.rawValue ? .semibold : .regular))
-                                        .foregroundColor(selectedCardBackRaw == style.rawValue ? AppTheme.gold : AppTheme.textSecondary)
-                                        .lineLimit(1)
-                                        .minimumScaleFactor(0.8)
+                                    VStack(spacing: 6) {
+                                        ZStack {
+                                            if let uiImage = UIImage(named: style.rawValue) {
+                                                Image(uiImage: uiImage)
+                                                    .resizable()
+                                                    .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+                                                    .cornerRadius(cornerRadius)
+                                            }
+                                            
+                                            if selectedCardBackRaw == style.rawValue {
+                                                RoundedRectangle(cornerRadius: cornerRadius)
+                                                    .stroke(AppTheme.goldGradient, lineWidth: 2.5)
+                                            }
+                                        }
+                                        .frame(height: 90)
+                                        .padding(.vertical, selectedCardBackRaw == style.rawValue ? 4 : 0)
+                                        .shadow(color: selectedCardBackRaw == style.rawValue ? AppTheme.gold.opacity(0.5) : Color.clear, radius: 8)
+                                        
+                                        Text(style.displayName)
+                                            .font(.system(size: 11, weight: selectedCardBackRaw == style.rawValue ? .semibold : .regular))
+                                            .foregroundColor(selectedCardBackRaw == style.rawValue ? AppTheme.gold : AppTheme.textSecondary)
+                                            .lineLimit(1)
+                                            .minimumScaleFactor(0.8)
+                                    }
+                                    .frame(maxWidth: .infinity)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture {
+                                        selectedCardBackRaw = style.rawValue
+                                        HapticService.shared.impact(.light)
+                                    }
                                 }
-                                .frame(maxWidth: .infinity)
-                                .contentShape(Rectangle())
-                                .onTapGesture {
-                                    selectedCardBackRaw = style.rawValue
-                                    HapticService.shared.impact(.light)
-                                }
+                                .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                             }
                         }
+                        .frame(height: 120)
                     }
                     .padding(.vertical, 8)
                     .listRowSeparator(.hidden)
