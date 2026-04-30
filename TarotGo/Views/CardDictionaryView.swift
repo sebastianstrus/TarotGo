@@ -201,43 +201,8 @@ struct CardDictionaryRow: View {
     var body: some View {
         HStack(spacing: 15) {
             // Card image thumbnail
-            GeometryReader { geo in
-                let cornerRadius = AppTheme.cardCornerRadius(forWidth: geo.size.width)
-                
-                ZStack {
-                    // White background
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .fill(Color.white)
-                    
-                    if let uiImage = UIImage(named: card.imageName) {
-                        Image(uiImage: uiImage)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .clipped()
-                            .cornerRadius(cornerRadius)
-                    } else {
-                        RoundedRectangle(cornerRadius: cornerRadius)
-                            .fill(AppTheme.cardGradient)
-                        
-                        Image(systemName: "moon.stars.fill")
-                            .foregroundStyle(AppTheme.goldGradient.opacity(0.3))
-                    }
-                    
-                    // Gold border
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .stroke(
-                            LinearGradient(
-                                colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 2
-                        )
-                }
-                .shadow(color: AppTheme.gold.opacity(0.3), radius: 5)
-            }
-            .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
-            .frame(width: 50)
+            CardView(card: card, showFront: true)
+                .frame(width: 50)
             
             VStack(alignment: .leading, spacing: 6) {
                 // Card name
