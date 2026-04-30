@@ -143,6 +143,12 @@ struct ShuffleRitualView: View {
             .onAppear {
                 screenSize = geometry.size
             }
+            .onDisappear {
+                // Reset fire position to center for next time
+                emitterPosition = [0.5, 0.5]
+                showFire = false
+                fireOpacity = 0.0
+            }
         }
     }
     
