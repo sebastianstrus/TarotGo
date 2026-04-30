@@ -55,25 +55,17 @@ struct CardView: View {
             let cornerRadius = AppTheme.cardCornerRadius(forWidth: geometry.size.width)
             
             ZStack {
-                // White background to ensure no transparency
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(Color.white)
                 
-                // Card content
                 if showFront, let card = card {
-                    // Card front
                     cardFrontContent(card: card, geometry: geometry, cornerRadius: cornerRadius)
                 } else {
-                    // Card back
                     cardBackContent(cornerRadius: cornerRadius)
                 }
                 
-                // Border - 1px white for front, gold/white for back depending on style
                 RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(
-                        borderColor,
-                        lineWidth: 1
-                    )
+                    .stroke(borderStyle, lineWidth: 1)
             }
             .if(showGoldShadow) { view in
                 view.shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
@@ -83,20 +75,40 @@ struct CardView: View {
         .aspectRatio(1108.0 / 1900.0, contentMode: .fit)
     }
     
-    // Border color logic
     private var borderColor: Color {
         if showFront {
-            // Front of card always has white border
             return .white
         } else {
-            // Back of card border depends on style
             switch selectedCardBack {
             case .modern, .standard:
-                // Modern and Standard have gold border
                 return AppTheme.gold
             case .original, .classic:
-                // Original and Classic have white border
                 return .white
+            }
+        }
+    }
+    
+    private var borderStyle: AnyShapeStyle {
+        if showFront {
+            return AnyShapeStyle(
+                LinearGradient(
+                    gradient: Gradient(colors: [Color.gray, Color.white]),
+                    startPoint: .topTrailing,
+                    endPoint: .bottomTrailing
+                )
+            )
+        } else {
+            switch selectedCardBack {
+            case .modern, .standard:
+                return AnyShapeStyle(AppTheme.gold)
+            case .original, .classic:
+                return AnyShapeStyle(
+                    LinearGradient(
+                        gradient: Gradient(colors: [Color.gray, Color.white]),
+                        startPoint: .topTrailing,
+                        endPoint: .bottomTrailing
+                    )
+                )
             }
         }
     }
@@ -135,7 +147,6 @@ struct CardView: View {
                 .clipped()
                 .cornerRadius(cornerRadius)
         } else {
-            // Fallback if card back image not found
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(AppTheme.cardGradient)
             
@@ -146,7 +157,6 @@ struct CardView: View {
     }
 }
 
-// Helper extension for conditional view modifiers
 extension View {
     @ViewBuilder
     func `if`<Content: View>(_ condition: Bool, transform: (Self) -> Content) -> some View {
