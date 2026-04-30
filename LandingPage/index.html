@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TarotGo - Your Digital Tarot Companion</title>
+    <meta name="description" content="Discover your path with TarotGo - the beautiful iOS tarot reading app. Daily cards, comprehensive readings, and mystical insights at your fingertips.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --light-gold: #FFD700;
+            --dark-gold: #B8860B;
+            --deep-navy: #0A0A19;
+            --dark-navy: #0F0F23;
+            --mid-navy: #14142D;
+            --mystical-purple: #8A2BE2;
+            --deep-purple: #4B0082;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.85);
+            --text-tertiary: rgba(255, 255, 255, 0.6);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(180deg, var(--deep-navy) 0%, var(--dark-navy) 50%, #000000 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .star {
+            position: absolute;
+            background: var(--gold);
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 25, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--gold);
+            font-family: Georgia, serif;
+        }
+
+        .language-selector {
+            background: rgba(20, 20, 45, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 140px 20px 80px;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            border-radius: 27px;
+            background: linear-gradient(135deg, var(--light-gold), var(--gold), var(--dark-gold));
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 300;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, var(--light-gold), var(--gold), var(--dark-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 8px rgba(212, 175, 55, 0.5);
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--light-gold), var(--gold));
+            color: #000;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6);
+        }
+
+        .btn-secondary {
+            background: rgba(20, 20, 45, 0.6);
+            color: var(--text-primary);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            background: rgba(20, 20, 45, 0.8);
+        }
+
+        .btn-secondary.coming-soon {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 42px;
+            font-family: Georgia, serif;
+            color: var(--gold);
+            margin-bottom: 60px;
+            font-weight: 300;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(20, 20, 45, 0.6), rgba(10, 10, 25, 0.8));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+            border-color: var(--gold);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(20, 20, 45, 0.6), rgba(10, 10, 25, 0.8));
+            border: 1.5px solid rgba(212, 175, 55, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 22px;
+            color: var(--gold);
+            margin-bottom: 12px;
+            font-family: Georgia, serif;
+        }
+
+        .feature-card p {
+            color: var(--text-tertiary);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-content a {
+            color: var(--text-tertiary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-content a:hover {
+            color: var(--gold);
+        }
+
+        .footer-divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 20px auto;
+        }
+
+        .footer-text {
+            color: var(--text-tertiary);
+            font-size: 13px;
+            font-family: Georgia, serif;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .features h2 {
+                font-size: 32px;
+            }
+
+            .app-icon {
+                width: 100px;
+                height: 100px;
+                font-size: 50px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+
+        /* App Store Badge */
+        .badge-wrapper {
+            display: inline-block;
+        }
+
+        .store-badge {
+            height: 50px;
+            width: auto;
+        }
+
+        /* Hidden class for language switching */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation" id="stars"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">TarotGo</div>
+            <select class="language-selector" id="languageSelector">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="nb">Norsk</option>
+                <option value="pl">Polski</option>
+                <option value="pt-BR">Português</option>
+                <option value="sv">Svenska</option>
+                <option value="uk">Українська</option>
+            </select>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="app-icon">🌙</div>
+        <h1 data-i18n="hero.title">Your Digital Tarot Companion</h1>
+        <p class="subtitle" data-i18n="hero.subtitle">Discover your path with beautiful tarot readings, daily guidance, and mystical insights</p>
+        
+        <div class="cta-buttons">
+            <a href="#" class="btn-primary" id="appStoreLink">
+                <span>📱</span>
+                <span data-i18n="cta.ios">Download for iOS</span>
+            </a>
+            <a href="#" class="btn-secondary coming-soon">
+                <span>🤖</span>
+                <span data-i18n="cta.android">Android - Coming Soon</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 data-i18n="features.title">Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3 data-i18n="features.readings.title">Personalized Readings</h3>
+                <p data-i18n="features.readings.desc">Create custom tarot spreads with guided interpretations tailored to your questions and intentions</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">☀️</div>
+                <h3 data-i18n="features.daily.title">Daily Card</h3>
+                <p data-i18n="features.daily.desc">Start each day with a personal card draw and mindful reflection to guide your journey</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3 data-i18n="features.dictionary.title">Card Dictionary</h3>
+                <p data-i18n="features.dictionary.desc">Explore the complete tarot deck with detailed meanings for upright and reversed positions</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <h3 data-i18n="features.history.title">Reading History</h3>
+                <p data-i18n="features.history.desc">Save and revisit your readings to track your spiritual growth and insights over time</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3 data-i18n="features.design.title">Beautiful Design</h3>
+                <p data-i18n="features.design.desc">Immerse yourself in an elegant, mystical interface with stunning card artwork and animations</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3 data-i18n="features.languages.title">Multiple Languages</h3>
+                <p data-i18n="features.languages.desc">Available in 11 languages including English, Spanish, German, French, Japanese, and more</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="mailto:contact@tarotgo.app" data-i18n="footer.contact">Contact</a>
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-text" data-i18n="footer.copyright">© 2026 TarotGo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Create animated stars
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 50; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.width = Math.random() * 3 + 'px';
+            star.style.height = star.style.width;
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starsContainer.appendChild(star);
+        }
+
+        // Translations
+        const translations = {
+            en: {
+                'hero.title': 'Your Digital Tarot Companion',
+                'hero.subtitle': 'Discover your path with beautiful tarot readings, daily guidance, and mystical insights',
+                'cta.ios': 'Download for iOS',
+                'cta.android': 'Android - Coming Soon',
+                'features.title': 'Features',
+                'features.readings.title': 'Personalized Readings',
+                'features.readings.desc': 'Create custom tarot spreads with guided interpretations tailored to your questions and intentions',
+                'features.daily.title': 'Daily Card',
+                'features.daily.desc': 'Start each day with a personal card draw and mindful reflection to guide your journey',
+                'features.dictionary.title': 'Card Dictionary',
+                'features.dictionary.desc': 'Explore the complete tarot deck with detailed meanings for upright and reversed positions',
+                'features.history.title': 'Reading History',
+                'features.history.desc': 'Save and revisit your readings to track your spiritual growth and insights over time',
+                'features.design.title': 'Beautiful Design',
+                'features.design.desc': 'Immerse yourself in an elegant, mystical interface with stunning card artwork and animations',
+                'features.languages.title': 'Multiple Languages',
+                'features.languages.desc': 'Available in 11 languages including English, Spanish, German, French, Japanese, and more',
+                'footer.contact': 'Contact',
+                'footer.privacy': 'Privacy Policy',
+                'footer.terms': 'Terms of Service',
+                'footer.copyright': '© 2026 TarotGo. All rights reserved.'
+            },
+            de: {
+                'hero.title': 'Dein Digitaler Tarot-Begleiter',
+                'hero.subtitle': 'Entdecke deinen Weg mit wunderschönen Tarot-Legungen, täglicher Führung und mystischen Einsichten',
+                'cta.ios': 'Für iOS herunterladen',
+                'cta.android': 'Android - Demnächst',
+                'features.title': 'Funktionen',
+                'features.readings.title': 'Persönliche Legungen',
+                'features.readings.desc': 'Erstelle individuelle Tarot-Spreads mit Interpretationen, die auf deine Fragen zugeschnitten sind',
+                'features.daily.title': 'Tageskarte',
+                'features.daily.desc': 'Beginne jeden Tag mit einer persönlichen Karte und achtsamer Reflexion',
+                'features.dictionary.title': 'Karten-Lexikon',
+                'features.dictionary.desc': 'Erkunde das komplette Tarot-Deck mit detaillierten Bedeutungen für aufrechte und umgekehrte Positionen',
+                'features.history.title': 'Legungs-Historie',
+                'features.history.desc': 'Speichere und besuche deine Legungen erneut, um dein spirituelles Wachstum zu verfolgen',
+                'features.design.title': 'Schönes Design',
+                'features.design.desc': 'Tauche ein in eine elegante, mystische Oberfläche mit atemberaubenden Karten und Animationen',
+                'features.languages.title': 'Mehrere Sprachen',
+                'features.languages.desc': 'Verfügbar in 11 Sprachen einschließlich Deutsch, Englisch, Spanisch, Französisch und mehr',
+                'footer.contact': 'Kontakt',
+                'footer.privacy': 'Datenschutz',
+                'footer.terms': 'Nutzungsbedingungen',
+                'footer.copyright': '© 2026 TarotGo. Alle Rechte vorbehalten.'
+            },
+            es: {
+                'hero.title': 'Tu Compañero Digital de Tarot',
+                'hero.subtitle': 'Descubre tu camino con hermosas lecturas de tarot, guía diaria e intuiciones místicas',
+                'cta.ios': 'Descargar para iOS',
+                'cta.android': 'Android - Próximamente',
+                'features.title': 'Características',
+                'features.readings.title': 'Lecturas Personalizadas',
+                'features.readings.desc': 'Crea tiradas de tarot personalizadas con interpretaciones adaptadas a tus preguntas e intenciones',
+                'features.daily.title': 'Carta del Día',
+                'features.daily.desc': 'Comienza cada día con una carta personal y reflexión consciente para guiar tu viaje',
+                'features.dictionary.title': 'Diccionario de Cartas',
+                'features.dictionary.desc': 'Explora la baraja completa de tarot con significados detallados para posiciones derechas e invertidas',
+                'features.history.title': 'Historial de Lecturas',
+                'features.history.desc': 'Guarda y revisa tus lecturas para seguir tu crecimiento espiritual a lo largo del tiempo',
+                'features.design.title': 'Diseño Hermoso',
+                'features.design.desc': 'Sumérgete en una interfaz elegante y mística con impresionantes ilustraciones y animaciones',
+                'features.languages.title': 'Múltiples Idiomas',
+                'features.languages.desc': 'Disponible en 11 idiomas incluyendo español, inglés, alemán, francés, japonés y más',
+                'footer.contact': 'Contacto',
+                'footer.privacy': 'Política de Privacidad',
+                'footer.terms': 'Términos de Servicio',
+                'footer.copyright': '© 2026 TarotGo. Todos los derechos reservados.'
+            },
+            fr: {
+                'hero.title': 'Votre Compagnon Tarot Numérique',
+                'hero.subtitle': 'Découvrez votre chemin avec de belles lectures de tarot, des conseils quotidiens et des perspectives mystiques',
+                'cta.ios': 'Télécharger pour iOS',
+                'cta.android': 'Android - Bientôt disponible',
+                'features.title': 'Fonctionnalités',
+                'features.readings.title': 'Lectures Personnalisées',
+                'features.readings.desc': 'Créez des tirages de tarot personnalisés avec des interprétations adaptées à vos questions',
+                'features.daily.title': 'Carte du Jour',
+                'features.daily.desc': 'Commencez chaque jour avec un tirage personnel et une réflexion consciente',
+                'features.dictionary.title': 'Dictionnaire des Cartes',
+                'features.dictionary.desc': 'Explorez le jeu complet de tarot avec des significations détaillées pour les positions droites et inversées',
+                'features.history.title': 'Historique des Lectures',
+                'features.history.desc': 'Sauvegardez et revisitez vos lectures pour suivre votre croissance spirituelle',
+                'features.design.title': 'Design Magnifique',
+                'features.design.desc': 'Plongez dans une interface élégante et mystique avec des illustrations et animations magnifiques',
+                'features.languages.title': 'Langues Multiples',
+                'features.languages.desc': 'Disponible en 11 langues dont le français, l\'anglais, l\'espagnol, l\'allemand et plus',
+                'footer.contact': 'Contact',
+                'footer.privacy': 'Politique de Confidentialité',
+                'footer.terms': 'Conditions d\'Utilisation',
+                'footer.copyright': '© 2026 TarotGo. Tous droits réservés.'
+            },
+            it: {
+                'hero.title': 'Il Tuo Compagno Tarocchi Digitale',
+                'hero.subtitle': 'Scopri il tuo percorso con bellissime letture dei tarocchi, guida quotidiana e intuizioni mistiche',
+                'cta.ios': 'Scarica per iOS',
+                'cta.android': 'Android - Prossimamente',
+                'features.title': 'Caratteristiche',
+                'features.readings.title': 'Letture Personalizzate',
+                'features.readings.desc': 'Crea stese di tarocchi personalizzate con interpretazioni su misura per le tue domande',
+                'features.daily.title': 'Carta del Giorno',
+                'features.daily.desc': 'Inizia ogni giorno con una carta personale e riflessione consapevole',
+                'features.dictionary.title': 'Dizionario delle Carte',
+                'features.dictionary.desc': 'Esplora il mazzo completo dei tarocchi con significati dettagliati per posizioni dritte e invertite',
+                'features.history.title': 'Cronologia Letture',
+                'features.history.desc': 'Salva e rivedi le tue letture per seguire la tua crescita spirituale nel tempo',
+                'features.design.title': 'Design Bellissimo',
+                'features.design.desc': 'Immergiti in un\'interfaccia elegante e mistica con splendide illustrazioni e animazioni',
+                'features.languages.title': 'Lingue Multiple',
+                'features.languages.desc': 'Disponibile in 11 lingue tra cui italiano, inglese, spagnolo, tedesco, giapponese e altro',
+                'footer.contact': 'Contatto',
+                'footer.privacy': 'Privacy Policy',
+                'footer.terms': 'Termini di Servizio',
+                'footer.copyright': '© 2026 TarotGo. Tutti i diritti riservati.'
+            },
+            ja: {
+                'hero.title': 'あなたのデジタルタロットコンパニオン',
+                'hero.subtitle': '美しいタロットリーディング、毎日のガイダンス、神秘的な洞察であなたの道を発見',
+                'cta.ios': 'iOS版をダウンロード',
+                'cta.android': 'Android版 - 近日公開',
+                'features.title': '機能',
+                'features.readings.title': 'パーソナライズされたリーディング',
+                'features.readings.desc': 'あなたの質問や意図に合わせたカスタムタロットスプレッドを作成',
+                'features.daily.title': '今日のカード',
+                'features.daily.desc': '毎日個人的なカード引きと心のこもった反省で一日を始める',
+                'features.dictionary.title': 'カード辞典',
+                'features.dictionary.desc': '正位置と逆位置の詳細な意味を持つ完全なタロットデッキを探索',
+                'features.history.title': 'リーディング履歴',
+                'features.history.desc': 'リーディングを保存して再訪し、時間の経過とともにあなたの精神的成長を追跡',
+                'features.design.title': '美しいデザイン',
+                'features.design.desc': '素晴らしいカードアートワークとアニメーションを備えたエレガントで神秘的なインターフェースに没入',
+                'features.languages.title': '多言語対応',
+                'features.languages.desc': '日本語、英語、スペイン語、ドイツ語、フランス語など11言語で利用可能',
+                'footer.contact': 'お問い合わせ',
+                'footer.privacy': 'プライバシーポリシー',
+                'footer.terms': '利用規約',
+                'footer.copyright': '© 2026 TarotGo. 無断複写・転載を禁じます。'
+            },
+            nb: {
+                'hero.title': 'Din Digitale Tarot-Følgesvenn',
+                'hero.subtitle': 'Oppdag din vei med vakre tarotlegginger, daglig veiledning og mystiske innsikter',
+                'cta.ios': 'Last ned for iOS',
+                'cta.android': 'Android - Kommer snart',
+                'features.title': 'Funksjoner',
+                'features.readings.title': 'Personlige Legginger',
+                'features.readings.desc': 'Lag tilpassede tarot-spreads med tolkninger skreddersydd for dine spørsmål',
+                'features.daily.title': 'Dagens Kort',
+                'features.daily.desc': 'Start hver dag med et personlig korttrekk og oppmerksom refleksjon',
+                'features.dictionary.title': 'Kortleksikon',
+                'features.dictionary.desc': 'Utforsk den komplette tarotstokken med detaljerte betydninger for rett og omvendt posisjon',
+                'features.history.title': 'Leggingshistorikk',
+                'features.history.desc': 'Lagre og gjenbesøk dine legginger for å følge din åndelige vekst over tid',
+                'features.design.title': 'Vakkert Design',
+                'features.design.desc': 'Fordyp deg i et elegant, mystisk grensesnitt med fantastisk kortkunst og animasjoner',
+                'features.languages.title': 'Flere Språk',
+                'features.languages.desc': 'Tilgjengelig på 11 språk inkludert norsk, engelsk, spansk, tysk, fransk og mer',
+                'footer.contact': 'Kontakt',
+                'footer.privacy': 'Personvernregler',
+                'footer.terms': 'Vilkår for bruk',
+                'footer.copyright': '© 2026 TarotGo. Alle rettigheter reservert.'
+            },
+            pl: {
+                'hero.title': 'Twój Cyfrowy Towarzysz Tarota',
+                'hero.subtitle': 'Odkryj swoją ścieżkę z pięknymi wykładami tarota, codziennym przewodnictwem i mistycznymi wglądami',
+                'cta.ios': 'Pobierz dla iOS',
+                'cta.android': 'Android - Wkrótce',
+                'features.title': 'Funkcje',
+                'features.readings.title': 'Spersonalizowane Wykłady',
+                'features.readings.desc': 'Twórz niestandardowe układy tarota z interpretacjami dostosowanymi do twoich pytań',
+                'features.daily.title': 'Karta Dnia',
+                'features.daily.desc': 'Rozpocznij każdy dzień osobistym doborem karty i uważną refleksją',
+                'features.dictionary.title': 'Słownik Kart',
+                'features.dictionary.desc': 'Eksploruj kompletną talię tarota ze szczegółowymi znaczeniami dla pozycji prostych i odwróconych',
+                'features.history.title': 'Historia Wykładów',
+                'features.history.desc': 'Zapisz i odwiedź ponownie swoje wykłady, aby śledzić swój duchowy rozwój',
+                'features.design.title': 'Piękny Design',
+                'features.design.desc': 'Zanurz się w eleganckim, mistycznym interfejsie z oszałamiającymi grafikami kart i animacjami',
+                'features.languages.title': 'Wiele Języków',
+                'features.languages.desc': 'Dostępne w 11 językach, w tym polskim, angielskim, hiszpańskim, niemieckim i innych',
+                'footer.contact': 'Kontakt',
+                'footer.privacy': 'Polityka Prywatności',
+                'footer.terms': 'Warunki Użytkowania',
+                'footer.copyright': '© 2026 TarotGo. Wszelkie prawa zastrzeżone.'
+            },
+            'pt-BR': {
+                'hero.title': 'Seu Companheiro Digital de Tarô',
+                'hero.subtitle': 'Descubra seu caminho com belas leituras de tarô, orientação diária e insights místicos',
+                'cta.ios': 'Baixar para iOS',
+                'cta.android': 'Android - Em Breve',
+                'features.title': 'Recursos',
+                'features.readings.title': 'Leituras Personalizadas',
+                'features.readings.desc': 'Crie tiragens de tarô personalizadas com interpretações adaptadas às suas perguntas',
+                'features.daily.title': 'Carta do Dia',
+                'features.daily.desc': 'Comece cada dia com uma carta pessoal e reflexão consciente',
+                'features.dictionary.title': 'Dicionário de Cartas',
+                'features.dictionary.desc': 'Explore o baralho completo de tarô com significados detalhados para posições normais e invertidas',
+                'features.history.title': 'Histórico de Leituras',
+                'features.history.desc': 'Salve e revisite suas leituras para acompanhar seu crescimento espiritual',
+                'features.design.title': 'Design Bonito',
+                'features.design.desc': 'Mergulhe em uma interface elegante e mística com belas ilustrações e animações',
+                'features.languages.title': 'Vários Idiomas',
+                'features.languages.desc': 'Disponível em 11 idiomas, incluindo português, inglês, espanhol, alemão e mais',
+                'footer.contact': 'Contato',
+                'footer.privacy': 'Política de Privacidade',
+                'footer.terms': 'Termos de Serviço',
+                'footer.copyright': '© 2026 TarotGo. Todos os direitos reservados.'
+            },
+            sv: {
+                'hero.title': 'Din Digitala Tarot-Följeslagare',
+                'hero.subtitle': 'Upptäck din väg med vackra tarotläsningar, daglig vägledning och mystiska insikter',
+                'cta.ios': 'Ladda ner för iOS',
+                'cta.android': 'Android - Kommer snart',
+                'features.title': 'Funktioner',
+                'features.readings.title': 'Personliga Läsningar',
+                'features.readings.desc': 'Skapa anpassade tarot-spridningar med tolkningar skräddarsydda för dina frågor',
+                'features.daily.title': 'Dagens Kort',
+                'features.daily.desc': 'Börja varje dag med ett personligt korttag och uppmärksam reflektion',
+                'features.dictionary.title': 'Kortlexikon',
+                'features.dictionary.desc': 'Utforska hela tarotleken med detaljerade betydelser för upprätta och omvända positioner',
+                'features.history.title': 'Läsningshistorik',
+                'features.history.desc': 'Spara och återbesök dina läsningar för att följa din andliga tillväxt',
+                'features.design.title': 'Vacker Design',
+                'features.design.desc': 'Fördjupa dig i ett elegant, mystiskt gränssnitt med fantastiska kortillustrationer och animationer',
+                'features.languages.title': 'Flera Språk',
+                'features.languages.desc': 'Tillgängligt på 11 språk inklusive svenska, engelska, spanska, tyska och mer',
+                'footer.contact': 'Kontakt',
+                'footer.privacy': 'Integritetspolicy',
+                'footer.terms': 'Användarvillkor',
+                'footer.copyright': '© 2026 TarotGo. Alla rättigheter förbehållna.'
+            },
+            uk: {
+                'hero.title': 'Ваш Цифровий Супутник Таро',
+                'hero.subtitle': 'Відкрийте свій шлях з прекрасними читаннями таро, щоденними настановами та містичними прозріннями',
+                'cta.ios': 'Завантажити для iOS',
+                'cta.android': 'Android - Незабаром',
+                'features.title': 'Функції',
+                'features.readings.title': 'Персоналізовані Читання',
+                'features.readings.desc': 'Створюйте індивідуальні розклади таро з інтерпретаціями, адаптованими до ваших питань',
+                'features.daily.title': 'Карта Дня',
+                'features.daily.desc': 'Починайте кожен день з особистого витягування карти та усвідомленої рефлексії',
+                'features.dictionary.title': 'Словник Карт',
+                'features.dictionary.desc': 'Досліджуйте повну колоду таро з детальними значеннями для прямих та перевернутих позицій',
+                'features.history.title': 'Історія Читань',
+                'features.history.desc': 'Зберігайте та переглядайте свої читання, щоб відстежувати своє духовне зростання',
+                'features.design.title': 'Прекрасний Дизайн',
+                'features.design.desc': 'Зануртеся в елегантний, містичний інтерфейс з приголомшливими ілюстраціями та анімаціями',
+                'features.languages.title': 'Багато Мов',
+                'features.languages.desc': 'Доступно 11 мовами, включаючи українську, англійську, іспанську, німецьку та інші',
+                'footer.contact': 'Контакт',
+                'footer.privacy': 'Політика Конфіденційності',
+                'footer.terms': 'Умови Використання',
+                'footer.copyright': '© 2026 TarotGo. Всі права захищено.'
+            }
+        };
+
+        // Language switcher
+        const languageSelector = document.getElementById('languageSelector');
+        
+        function setLanguage(lang) {
+            const translation = translations[lang] || translations.en;
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translation[key]) {
+                    element.textContent = translation[key];
+                }
+            });
+            localStorage.setItem('selectedLanguage', lang);
+        }
+
+        // Load saved language or detect browser language
+        const savedLang = localStorage.getItem('selectedLanguage');
+        const browserLang = navigator.language.toLowerCase();
+        let defaultLang = 'en';
+
+        if (savedLang && translations[savedLang]) {
+            defaultLang = savedLang;
+        } else if (translations[browserLang]) {
+            defaultLang = browserLang;
+        } else {
+            // Check for language prefix (e.g., 'pt' from 'pt-BR')
+            const langPrefix = browserLang.split('-')[0];
+            for (let key in translations) {
+                if (key.startsWith(langPrefix)) {
+                    defaultLang = key;
+                    break;
+                }
+            }
+        }
+
+        languageSelector.value = defaultLang;
+        setLanguage(defaultLang);
+
+        languageSelector.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+
+        // App Store link (update with your actual App Store URL)
+        document.getElementById('appStoreLink').addEventListener('click', (e) => {
+            e.preventDefault();
+            // Replace with your actual App Store URL when available
+            alert('App Store link - Please update this URL in the code');
+            // window.location.href = 'https://apps.apple.com/app/YOUR_APP_ID';
+        });
+    </script>
+</body>
+</html>

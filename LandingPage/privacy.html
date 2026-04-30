@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TarotGo</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --light-gold: #FFD700;
+            --dark-gold: #B8860B;
+            --deep-navy: #0A0A19;
+            --dark-navy: #0F0F23;
+            --mid-navy: #14142D;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.85);
+            --text-tertiary: rgba(255, 255, 255, 0.6);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(180deg, var(--deep-navy) 0%, var(--dark-navy) 50%, #000000 100%);
+            color: var(--text-primary);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 25, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--gold);
+            font-family: Georgia, serif;
+            text-decoration: none;
+        }
+
+        .language-selector {
+            background: rgba(20, 20, 45, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 300;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, var(--light-gold), var(--gold), var(--dark-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: var(--text-tertiary);
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-family: Georgia, serif;
+            color: var(--gold);
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: Georgia, serif;
+            color: var(--light-gold);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            color: var(--text-secondary);
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--light-gold);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: rgba(20, 20, 45, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            color: var(--gold);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(20, 20, 45, 0.8);
+            border-color: var(--gold);
+        }
+
+        footer {
+            max-width: 900px;
+            margin: 60px auto 0;
+            padding: 30px 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            text-align: center;
+            color: var(--text-tertiary);
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">TarotGo</a>
+            <select class="language-selector" id="languageSelector">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="nb">Norsk</option>
+                <option value="pl">Polski</option>
+                <option value="pt-BR">Português</option>
+                <option value="sv">Svenska</option>
+                <option value="uk">Українська</option>
+            </select>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link" data-i18n="back">← Back to Home</a>
+        
+        <h1 data-i18n="title">Privacy Policy</h1>
+        <p class="last-updated" data-i18n="updated">Last updated: April 30, 2026</p>
+
+        <div class="content">
+            <p data-i18n="intro">TarotGo ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+
+            <h2 data-i18n="section1.title">1. Information We Collect</h2>
+            
+            <h3 data-i18n="section1.personal.title">Personal Information</h3>
+            <p data-i18n="section1.personal.content">TarotGo is designed with privacy in mind. We do not collect, store, or transmit any personally identifiable information. All tarot readings, preferences, and data are stored locally on your device.</p>
+
+            <h3 data-i18n="section1.usage.title">Usage Data</h3>
+            <p data-i18n="section1.usage.content">We may collect anonymous, aggregated usage statistics to improve the app's performance and user experience. This data does not identify you personally and may include:</p>
+            <ul>
+                <li data-i18n="section1.usage.item1">Device type and operating system version</li>
+                <li data-i18n="section1.usage.item2">App crashes and performance metrics</li>
+                <li data-i18n="section1.usage.item3">Feature usage statistics</li>
+            </ul>
+
+            <h2 data-i18n="section2.title">2. How We Use Your Information</h2>
+            <p data-i18n="section2.content">The limited information we collect is used solely to:</p>
+            <ul>
+                <li data-i18n="section2.item1">Improve app functionality and performance</li>
+                <li data-i18n="section2.item2">Fix technical issues and bugs</li>
+                <li data-i18n="section2.item3">Understand how users interact with the app</li>
+                <li data-i18n="section2.item4">Develop new features based on user needs</li>
+            </ul>
+
+            <h2 data-i18n="section3.title">3. Data Storage and Security</h2>
+            <p data-i18n="section3.content">All your tarot readings, card of the day history, preferences, and other personal data are stored exclusively on your device using Apple's secure storage mechanisms. We do not have access to this data, and it is never transmitted to our servers or any third parties.</p>
+
+            <h2 data-i18n="section4.title">4. Third-Party Services</h2>
+            <p data-i18n="section4.content">TarotGo does not integrate with third-party analytics, advertising, or tracking services. We do not sell, trade, or transfer your information to outside parties.</p>
+
+            <h2 data-i18n="section5.title">5. Children's Privacy</h2>
+            <p data-i18n="section5.content">TarotGo is suitable for users of all ages. Since we do not collect personal information, we comply with children's privacy regulations including COPPA (Children's Online Privacy Protection Act).</p>
+
+            <h2 data-i18n="section6.title">6. Your Rights</h2>
+            <p data-i18n="section6.content">Since all data is stored locally on your device, you have complete control over your information:</p>
+            <ul>
+                <li data-i18n="section6.item1">You can delete all app data by deleting the app from your device</li>
+                <li data-i18n="section6.item2">You can manage your preferences within the app settings</li>
+                <li data-i18n="section6.item3">No account creation or registration is required</li>
+            </ul>
+
+            <h2 data-i18n="section7.title">7. Changes to This Privacy Policy</h2>
+            <p data-i18n="section7.content">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+            <h2 data-i18n="section8.title">8. Contact Us</h2>
+            <p data-i18n="section8.content">If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p><a href="mailto:privacy@tarotgo.app">privacy@tarotgo.app</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p data-i18n="footer">© 2026 TarotGo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                'back': '← Back to Home',
+                'title': 'Privacy Policy',
+                'updated': 'Last updated: April 30, 2026',
+                'intro': 'TarotGo ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.',
+                'section1.title': '1. Information We Collect',
+                'section1.personal.title': 'Personal Information',
+                'section1.personal.content': 'TarotGo is designed with privacy in mind. We do not collect, store, or transmit any personally identifiable information. All tarot readings, preferences, and data are stored locally on your device.',
+                'section1.usage.title': 'Usage Data',
+                'section1.usage.content': 'We may collect anonymous, aggregated usage statistics to improve the app\'s performance and user experience. This data does not identify you personally and may include:',
+                'section1.usage.item1': 'Device type and operating system version',
+                'section1.usage.item2': 'App crashes and performance metrics',
+                'section1.usage.item3': 'Feature usage statistics',
+                'section2.title': '2. How We Use Your Information',
+                'section2.content': 'The limited information we collect is used solely to:',
+                'section2.item1': 'Improve app functionality and performance',
+                'section2.item2': 'Fix technical issues and bugs',
+                'section2.item3': 'Understand how users interact with the app',
+                'section2.item4': 'Develop new features based on user needs',
+                'section3.title': '3. Data Storage and Security',
+                'section3.content': 'All your tarot readings, card of the day history, preferences, and other personal data are stored exclusively on your device using Apple\'s secure storage mechanisms. We do not have access to this data, and it is never transmitted to our servers or any third parties.',
+                'section4.title': '4. Third-Party Services',
+                'section4.content': 'TarotGo does not integrate with third-party analytics, advertising, or tracking services. We do not sell, trade, or transfer your information to outside parties.',
+                'section5.title': '5. Children\'s Privacy',
+                'section5.content': 'TarotGo is suitable for users of all ages. Since we do not collect personal information, we comply with children\'s privacy regulations including COPPA (Children\'s Online Privacy Protection Act).',
+                'section6.title': '6. Your Rights',
+                'section6.content': 'Since all data is stored locally on your device, you have complete control over your information:',
+                'section6.item1': 'You can delete all app data by deleting the app from your device',
+                'section6.item2': 'You can manage your preferences within the app settings',
+                'section6.item3': 'No account creation or registration is required',
+                'section7.title': '7. Changes to This Privacy Policy',
+                'section7.content': 'We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.',
+                'section8.title': '8. Contact Us',
+                'section8.content': 'If you have any questions about this Privacy Policy, please contact us at:',
+                'footer': '© 2026 TarotGo. All rights reserved.'
+            },
+            de: {
+                'back': '← Zurück zur Startseite',
+                'title': 'Datenschutzerklärung',
+                'updated': 'Zuletzt aktualisiert: 30. April 2026',
+                'intro': 'TarotGo ("wir", "unser" oder "uns") verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden und schützen, wenn Sie unsere mobile Anwendung nutzen.',
+                'section1.title': '1. Welche Informationen Wir Sammeln',
+                'section1.personal.title': 'Persönliche Informationen',
+                'section1.personal.content': 'TarotGo wurde mit Blick auf Datenschutz entwickelt. Wir sammeln, speichern oder übertragen keine persönlich identifizierbaren Informationen. Alle Tarot-Lesungen, Einstellungen und Daten werden lokal auf Ihrem Gerät gespeichert.',
+                'section1.usage.title': 'Nutzungsdaten',
+                'section1.usage.content': 'Wir können anonyme, aggregierte Nutzungsstatistiken sammeln, um die Leistung und Benutzererfahrung der App zu verbessern. Diese Daten identifizieren Sie nicht persönlich und können Folgendes umfassen:',
+                'section1.usage.item1': 'Gerätetyp und Betriebssystemversion',
+                'section1.usage.item2': 'App-Abstürze und Leistungsmetriken',
+                'section1.usage.item3': 'Funktionsnutzungsstatistiken',
+                'section2.title': '2. Wie Wir Ihre Informationen Verwenden',
+                'section2.content': 'Die begrenzten Informationen, die wir sammeln, werden ausschließlich verwendet, um:',
+                'section2.item1': 'App-Funktionalität und Leistung zu verbessern',
+                'section2.item2': 'Technische Probleme und Fehler zu beheben',
+                'section2.item3': 'Zu verstehen, wie Benutzer mit der App interagieren',
+                'section2.item4': 'Neue Funktionen basierend auf Benutzerbedürfnissen zu entwickeln',
+                'section3.title': '3. Datenspeicherung und Sicherheit',
+                'section3.content': 'Alle Ihre Tarot-Lesungen, Karte des Tages Historie, Einstellungen und andere persönliche Daten werden ausschließlich auf Ihrem Gerät mit Apples sicheren Speichermechanismen gespeichert. Wir haben keinen Zugriff auf diese Daten und sie werden niemals an unsere Server oder Dritte übertragen.',
+                'section4.title': '4. Drittanbieterdienste',
+                'section4.content': 'TarotGo integriert keine Drittanbieter-Analyse-, Werbe- oder Tracking-Dienste. Wir verkaufen, handeln oder übertragen Ihre Informationen nicht an Dritte.',
+                'section5.title': '5. Datenschutz von Kindern',
+                'section5.content': 'TarotGo ist für Benutzer jeden Alters geeignet. Da wir keine persönlichen Informationen sammeln, entsprechen wir den Datenschutzbestimmungen für Kinder, einschließlich COPPA (Children\'s Online Privacy Protection Act).',
+                'section6.title': '6. Ihre Rechte',
+                'section6.content': 'Da alle Daten lokal auf Ihrem Gerät gespeichert werden, haben Sie die vollständige Kontrolle über Ihre Informationen:',
+                'section6.item1': 'Sie können alle App-Daten löschen, indem Sie die App von Ihrem Gerät löschen',
+                'section6.item2': 'Sie können Ihre Einstellungen in den App-Einstellungen verwalten',
+                'section6.item3': 'Es ist keine Kontoerstellung oder Registrierung erforderlich',
+                'section7.title': '7. Änderungen an Dieser Datenschutzerklärung',
+                'section7.content': 'Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über alle Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das Datum "Zuletzt aktualisiert" aktualisieren.',
+                'section8.title': '8. Kontaktieren Sie Uns',
+                'section8.content': 'Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:',
+                'footer': '© 2026 TarotGo. Alle Rechte vorbehalten.'
+            },
+            es: {
+                'back': '← Volver al Inicio',
+                'title': 'Política de Privacidad',
+                'updated': 'Última actualización: 30 de abril de 2026',
+                'intro': 'TarotGo ("nosotros", "nuestro" o "nos") se compromete a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos su información cuando usa nuestra aplicación móvil.',
+                'section1.title': '1. Información Que Recopilamos',
+                'section1.personal.title': 'Información Personal',
+                'section1.personal.content': 'TarotGo está diseñado pensando en la privacidad. No recopilamos, almacenamos ni transmitimos información personal identificable. Todas las lecturas de tarot, preferencias y datos se almacenan localmente en su dispositivo.',
+                'section1.usage.title': 'Datos de Uso',
+                'section1.usage.content': 'Podemos recopilar estadísticas de uso anónimas y agregadas para mejorar el rendimiento y la experiencia del usuario de la aplicación. Estos datos no lo identifican personalmente y pueden incluir:',
+                'section1.usage.item1': 'Tipo de dispositivo y versión del sistema operativo',
+                'section1.usage.item2': 'Fallos de la aplicación y métricas de rendimiento',
+                'section1.usage.item3': 'Estadísticas de uso de funciones',
+                'section2.title': '2. Cómo Usamos Su Información',
+                'section2.content': 'La información limitada que recopilamos se utiliza únicamente para:',
+                'section2.item1': 'Mejorar la funcionalidad y el rendimiento de la aplicación',
+                'section2.item2': 'Solucionar problemas técnicos y errores',
+                'section2.item3': 'Comprender cómo los usuarios interactúan con la aplicación',
+                'section2.item4': 'Desarrollar nuevas funciones basadas en las necesidades del usuario',
+                'section3.title': '3. Almacenamiento y Seguridad de Datos',
+                'section3.content': 'Todas sus lecturas de tarot, historial de carta del día, preferencias y otros datos personales se almacenan exclusivamente en su dispositivo utilizando los mecanismos de almacenamiento seguro de Apple. No tenemos acceso a estos datos y nunca se transmiten a nuestros servidores ni a terceros.',
+                'section4.title': '4. Servicios de Terceros',
+                'section4.content': 'TarotGo no integra servicios de análisis, publicidad o seguimiento de terceros. No vendemos, intercambiamos ni transferimos su información a partes externas.',
+                'section5.title': '5. Privacidad de los Niños',
+                'section5.content': 'TarotGo es adecuado para usuarios de todas las edades. Como no recopilamos información personal, cumplimos con las regulaciones de privacidad infantil, incluida COPPA (Ley de Protección de Privacidad en Línea de los Niños).',
+                'section6.title': '6. Sus Derechos',
+                'section6.content': 'Dado que todos los datos se almacenan localmente en su dispositivo, usted tiene control completo sobre su información:',
+                'section6.item1': 'Puede eliminar todos los datos de la aplicación eliminando la aplicación de su dispositivo',
+                'section6.item2': 'Puede administrar sus preferencias en la configuración de la aplicación',
+                'section6.item3': 'No se requiere creación de cuenta ni registro',
+                'section7.title': '7. Cambios a Esta Política de Privacidad',
+                'section7.content': 'Podemos actualizar nuestra Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página y actualizando la fecha de "Última actualización".',
+                'section8.title': '8. Contáctenos',
+                'section8.content': 'Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en:',
+                'footer': '© 2026 TarotGo. Todos los derechos reservados.'
+            },
+            fr: {
+                'back': '← Retour à l\'Accueil',
+                'title': 'Politique de Confidentialité',
+                'updated': 'Dernière mise à jour : 30 avril 2026',
+                'intro': 'TarotGo ("nous", "notre" ou "nos") s\'engage à protéger votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre application mobile.',
+                'section1.title': '1. Informations Que Nous Collectons',
+                'section1.personal.title': 'Informations Personnelles',
+                'section1.personal.content': 'TarotGo est conçu en pensant à la confidentialité. Nous ne collectons, ne stockons ni ne transmettons aucune information personnellement identifiable. Toutes les lectures de tarot, préférences et données sont stockées localement sur votre appareil.',
+                'section1.usage.title': 'Données d\'Utilisation',
+                'section1.usage.content': 'Nous pouvons collecter des statistiques d\'utilisation anonymes et agrégées pour améliorer les performances et l\'expérience utilisateur de l\'application. Ces données ne vous identifient pas personnellement et peuvent inclure :',
+                'section1.usage.item1': 'Type d\'appareil et version du système d\'exploitation',
+                'section1.usage.item2': 'Plantages de l\'application et métriques de performance',
+                'section1.usage.item3': 'Statistiques d\'utilisation des fonctionnalités',
+                'section2.title': '2. Comment Nous Utilisons Vos Informations',
+                'section2.content': 'Les informations limitées que nous collectons sont utilisées uniquement pour :',
+                'section2.item1': 'Améliorer la fonctionnalité et les performances de l\'application',
+                'section2.item2': 'Corriger les problèmes techniques et les bugs',
+                'section2.item3': 'Comprendre comment les utilisateurs interagissent avec l\'application',
+                'section2.item4': 'Développer de nouvelles fonctionnalités basées sur les besoins des utilisateurs',
+                'section3.title': '3. Stockage et Sécurité des Données',
+                'section3.content': 'Toutes vos lectures de tarot, historique de carte du jour, préférences et autres données personnelles sont stockées exclusivement sur votre appareil en utilisant les mécanismes de stockage sécurisé d\'Apple. Nous n\'avons pas accès à ces données et elles ne sont jamais transmises à nos serveurs ou à des tiers.',
+                'section4.title': '4. Services Tiers',
+                'section4.content': 'TarotGo n\'intègre pas de services d\'analyse, de publicité ou de suivi tiers. Nous ne vendons, n\'échangeons ni ne transférons vos informations à des parties externes.',
+                'section5.title': '5. Confidentialité des Enfants',
+                'section5.content': 'TarotGo convient aux utilisateurs de tous âges. Comme nous ne collectons pas d\'informations personnelles, nous respectons les réglementations sur la confidentialité des enfants, y compris COPPA (Children\'s Online Privacy Protection Act).',
+                'section6.title': '6. Vos Droits',
+                'section6.content': 'Étant donné que toutes les données sont stockées localement sur votre appareil, vous avez un contrôle total sur vos informations :',
+                'section6.item1': 'Vous pouvez supprimer toutes les données de l\'application en supprimant l\'application de votre appareil',
+                'section6.item2': 'Vous pouvez gérer vos préférences dans les paramètres de l\'application',
+                'section6.item3': 'Aucune création de compte ou inscription n\'est requise',
+                'section7.title': '7. Modifications de Cette Politique de Confidentialité',
+                'section7.content': 'Nous pouvons mettre à jour notre Politique de Confidentialité de temps en temps. Nous vous informerons de tout changement en publiant la nouvelle Politique de Confidentialité sur cette page et en mettant à jour la date de "Dernière mise à jour".',
+                'section8.title': '8. Nous Contacter',
+                'section8.content': 'Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter à :',
+                'footer': '© 2026 TarotGo. Tous droits réservés.'
+            },
+            it: {
+                'back': '← Torna alla Home',
+                'title': 'Informativa sulla Privacy',
+                'updated': 'Ultimo aggiornamento: 30 aprile 2026',
+                'intro': 'TarotGo ("noi", "nostro" o "ci") si impegna a proteggere la tua privacy. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni quando usi la nostra applicazione mobile.',
+                'section1.title': '1. Informazioni Che Raccogliamo',
+                'section1.personal.title': 'Informazioni Personali',
+                'section1.personal.content': 'TarotGo è progettato pensando alla privacy. Non raccogliamo, memorizziamo né trasmettiamo alcuna informazione personalmente identificabile. Tutte le letture dei tarocchi, preferenze e dati sono memorizzati localmente sul tuo dispositivo.',
+                'section1.usage.title': 'Dati di Utilizzo',
+                'section1.usage.content': 'Potremmo raccogliere statistiche di utilizzo anonime e aggregate per migliorare le prestazioni e l\'esperienza utente dell\'app. Questi dati non ti identificano personalmente e possono includere:',
+                'section1.usage.item1': 'Tipo di dispositivo e versione del sistema operativo',
+                'section1.usage.item2': 'Crash dell\'app e metriche di prestazione',
+                'section1.usage.item3': 'Statistiche sull\'utilizzo delle funzionalità',
+                'section2.title': '2. Come Utilizziamo Le Tue Informazioni',
+                'section2.content': 'Le informazioni limitate che raccogliamo sono utilizzate esclusivamente per:',
+                'section2.item1': 'Migliorare la funzionalità e le prestazioni dell\'app',
+                'section2.item2': 'Risolvere problemi tecnici e bug',
+                'section2.item3': 'Capire come gli utenti interagiscono con l\'app',
+                'section2.item4': 'Sviluppare nuove funzionalità basate sulle esigenze degli utenti',
+                'section3.title': '3. Archiviazione e Sicurezza dei Dati',
+                'section3.content': 'Tutte le tue letture dei tarocchi, cronologia della carta del giorno, preferenze e altri dati personali sono memorizzati esclusivamente sul tuo dispositivo utilizzando i meccanismi di archiviazione sicuri di Apple. Non abbiamo accesso a questi dati e non vengono mai trasmessi ai nostri server o a terzi.',
+                'section4.title': '4. Servizi di Terze Parti',
+                'section4.content': 'TarotGo non integra servizi di analisi, pubblicità o tracciamento di terze parti. Non vendiamo, scambiamo o trasferiamo le tue informazioni a parti esterne.',
+                'section5.title': '5. Privacy dei Bambini',
+                'section5.content': 'TarotGo è adatto a utenti di tutte le età. Poiché non raccogliamo informazioni personali, rispettiamo le normative sulla privacy dei bambini, inclusa COPPA (Children\'s Online Privacy Protection Act).',
+                'section6.title': '6. I Tuoi Diritti',
+                'section6.content': 'Poiché tutti i dati sono memorizzati localmente sul tuo dispositivo, hai il controllo completo sulle tue informazioni:',
+                'section6.item1': 'Puoi eliminare tutti i dati dell\'app eliminando l\'app dal tuo dispositivo',
+                'section6.item2': 'Puoi gestire le tue preferenze nelle impostazioni dell\'app',
+                'section6.item3': 'Non è richiesta la creazione di account o registrazione',
+                'section7.title': '7. Modifiche a Questa Informativa sulla Privacy',
+                'section7.content': 'Potremmo aggiornare la nostra Informativa sulla Privacy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova Informativa sulla Privacy su questa pagina e aggiornando la data di "Ultimo aggiornamento".',
+                'section8.title': '8. Contattaci',
+                'section8.content': 'Se hai domande su questa Informativa sulla Privacy, contattaci a:',
+                'footer': '© 2026 TarotGo. Tutti i diritti riservati.'
+            },
+            ja: {
+                'back': '← ホームに戻る',
+                'title': 'プライバシーポリシー',
+                'updated': '最終更新日：2026年4月30日',
+                'intro': 'TarotGo（「当社」、「当社の」または「私たち」）はお客様のプライバシーを保護することに取り組んでいます。このプライバシーポリシーは、モバイルアプリケーションをご利用いただく際に、当社がお客様の情報をどのように収集、使用、保護するかを説明します。',
+                'section1.title': '1. 収集する情報',
+                'section1.personal.title': '個人情報',
+                'section1.personal.content': 'TarotGoはプライバシーを念頭に置いて設計されています。当社は個人を特定できる情報を収集、保存、送信しません。すべてのタロットリーディング、設定、データはお客様のデバイスにローカルに保存されます。',
+                'section1.usage.title': '使用データ',
+                'section1.usage.content': 'アプリのパフォーマンスとユーザーエクスペリエンスを向上させるために、匿名の集計された使用統計を収集する場合があります。このデータは個人を特定するものではなく、以下を含む場合があります：',
+                'section1.usage.item1': 'デバイスの種類とオペレーティングシステムのバージョン',
+                'section1.usage.item2': 'アプリのクラッシュとパフォーマンスメトリクス',
+                'section1.usage.item3': '機能使用統計',
+                'section2.title': '2. 情報の使用方法',
+                'section2.content': '収集する限定的な情報は、以下の目的でのみ使用されます：',
+                'section2.item1': 'アプリの機能とパフォーマンスの向上',
+                'section2.item2': '技術的な問題とバグの修正',
+                'section2.item3': 'ユーザーがアプリとどのようにやり取りするかを理解する',
+                'section2.item4': 'ユーザーのニーズに基づいた新機能の開発',
+                'section3.title': '3. データの保存とセキュリティ',
+                'section3.content': 'すべてのタロットリーディング、今日のカードの履歴、設定、その他の個人データは、Appleの安全なストレージメカニズムを使用してお客様のデバイスにのみ保存されます。当社はこのデータにアクセスできず、当社のサーバーや第三者に送信されることはありません。',
+                'section4.title': '4. サードパーティサービス',
+                'section4.content': 'TarotGoはサードパーティの分析、広告、またはトラッキングサービスと統合していません。お客様の情報を外部の第三者に販売、取引、または転送することはありません。',
+                'section5.title': '5. 子供のプライバシー',
+                'section5.content': 'TarotGoはすべての年齢のユーザーに適しています。個人情報を収集しないため、COPPA（児童オンラインプライバシー保護法）を含む子供のプライバシー規制に準拠しています。',
+                'section6.title': '6. お客様の権利',
+                'section6.content': 'すべてのデータはお客様のデバイスにローカルに保存されているため、お客様は情報を完全に管理できます：',
+                'section6.item1': 'デバイスからアプリを削除することで、すべてのアプリデータを削除できます',
+                'section6.item2': 'アプリの設定内で設定を管理できます',
+                'section6.item3': 'アカウントの作成や登録は必要ありません',
+                'section7.title': '7. このプライバシーポリシーの変更',
+                'section7.content': '当社はプライバシーポリシーを随時更新する場合があります。このページに新しいプライバシーポリシーを掲載し、「最終更新日」を更新することで、変更をお知らせします。',
+                'section8.title': '8. お問い合わせ',
+                'section8.content': 'このプライバシーポリシーについてご質問がある場合は、以下までお問い合わせください：',
+                'footer': '© 2026 TarotGo. 無断複写・転載を禁じます。'
+            },
+            nb: {
+                'back': '← Tilbake til Hjem',
+                'title': 'Personvernregler',
+                'updated': 'Sist oppdatert: 30. april 2026',
+                'intro': 'TarotGo ("vi", "vår" eller "oss") er forpliktet til å beskytte ditt personvern. Disse personvernreglene forklarer hvordan vi samler inn, bruker og beskytter informasjonen din når du bruker vår mobilapplikasjon.',
+                'section1.title': '1. Informasjon Vi Samler Inn',
+                'section1.personal.title': 'Personlig Informasjon',
+                'section1.personal.content': 'TarotGo er designet med personvern i tankene. Vi samler ikke inn, lagrer eller overfører personidentifiserbar informasjon. Alle tarotlegginger, preferanser og data lagres lokalt på enheten din.',
+                'section1.usage.title': 'Bruksdata',
+                'section1.usage.content': 'Vi kan samle anonyme, aggregerte bruksstatistikker for å forbedre appens ytelse og brukeropplevelse. Disse dataene identifiserer deg ikke personlig og kan inkludere:',
+                'section1.usage.item1': 'Enhetstype og operativsystemversjon',
+                'section1.usage.item2': 'App-krasj og ytelsesverdier',
+                'section1.usage.item3': 'Funksjonsbruksstatistikk',
+                'section2.title': '2. Hvordan Vi Bruker Informasjonen Din',
+                'section2.content': 'Den begrensede informasjonen vi samler inn brukes kun til å:',
+                'section2.item1': 'Forbedre appens funksjonalitet og ytelse',
+                'section2.item2': 'Fikse tekniske problemer og feil',
+                'section2.item3': 'Forstå hvordan brukere samhandler med appen',
+                'section2.item4': 'Utvikle nye funksjoner basert på brukerbehov',
+                'section3.title': '3. Datalagring og Sikkerhet',
+                'section3.content': 'Alle dine tarotlegginger, dagens kort-historikk, preferanser og andre personlige data lagres utelukkende på enheten din ved hjelp av Apples sikre lagringsmekanismer. Vi har ikke tilgang til disse dataene, og de overføres aldri til våre servere eller tredjeparter.',
+                'section4.title': '4. Tredjeparts Tjenester',
+                'section4.content': 'TarotGo integrerer ikke med tredjeparts analyse-, annonserings- eller sporingstjenester. Vi selger, handler eller overfører ikke informasjonen din til eksterne parter.',
+                'section5.title': '5. Barns Personvern',
+                'section5.content': 'TarotGo er egnet for brukere i alle aldre. Siden vi ikke samler inn personlig informasjon, overholder vi personvernregler for barn, inkludert COPPA (Children\'s Online Privacy Protection Act).',
+                'section6.title': '6. Dine Rettigheter',
+                'section6.content': 'Siden alle data lagres lokalt på enheten din, har du full kontroll over informasjonen din:',
+                'section6.item1': 'Du kan slette alle appdata ved å slette appen fra enheten din',
+                'section6.item2': 'Du kan administrere preferansene dine i appinnstillingene',
+                'section6.item3': 'Ingen kontoopprettelse eller registrering er nødvendig',
+                'section7.title': '7. Endringer i Disse Personvernreglene',
+                'section7.content': 'Vi kan oppdatere våre personvernregler fra tid til annen. Vi vil varsle deg om eventuelle endringer ved å legge ut de nye personvernreglene på denne siden og oppdatere "Sist oppdatert"-datoen.',
+                'section8.title': '8. Kontakt Oss',
+                'section8.content': 'Hvis du har spørsmål om disse personvernreglene, vennligst kontakt oss på:',
+                'footer': '© 2026 TarotGo. Alle rettigheter reservert.'
+            },
+            pl: {
+                'back': '← Powrót do Strony Głównej',
+                'title': 'Polityka Prywatności',
+                'updated': 'Ostatnia aktualizacja: 30 kwietnia 2026',
+                'intro': 'TarotGo ("my", "nasz" lub "nas") zobowiązuje się do ochrony Twojej prywatności. Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób zbieramy, wykorzystujemy i chronimy Twoje informacje podczas korzystania z naszej aplikacji mobilnej.',
+                'section1.title': '1. Informacje Które Zbieramy',
+                'section1.personal.title': 'Informacje Osobowe',
+                'section1.personal.content': 'TarotGo został zaprojektowany z myślą o prywatności. Nie zbieramy, nie przechowujemy ani nie przesyłamy żadnych informacji umożliwiających identyfikację osoby. Wszystkie wykłady tarota, preferencje i dane są przechowywane lokalnie na Twoim urządzeniu.',
+                'section1.usage.title': 'Dane Użytkowania',
+                'section1.usage.content': 'Możemy zbierać anonimowe, zagregowane statystyki użytkowania w celu poprawy wydajności aplikacji i doświadczenia użytkownika. Te dane nie identyfikują Cię osobiście i mogą obejmować:',
+                'section1.usage.item1': 'Typ urządzenia i wersja systemu operacyjnego',
+                'section1.usage.item2': 'Awarie aplikacji i metryki wydajności',
+                'section1.usage.item3': 'Statystyki użytkowania funkcji',
+                'section2.title': '2. Jak Wykorzystujemy Twoje Informacje',
+                'section2.content': 'Ograniczone informacje, które zbieramy, są wykorzystywane wyłącznie do:',
+                'section2.item1': 'Poprawy funkcjonalności i wydajności aplikacji',
+                'section2.item2': 'Naprawiania problemów technicznych i błędów',
+                'section2.item3': 'Zrozumienia, jak użytkownicy wchodzą w interakcję z aplikacją',
+                'section2.item4': 'Opracowywania nowych funkcji w oparciu o potrzeby użytkowników',
+                'section3.title': '3. Przechowywanie i Bezpieczeństwo Danych',
+                'section3.content': 'Wszystkie Twoje wykłady tarota, historia karty dnia, preferencje i inne dane osobowe są przechowywane wyłącznie na Twoim urządzeniu przy użyciu bezpiecznych mechanizmów przechowywania Apple. Nie mamy dostępu do tych danych i nigdy nie są one przesyłane na nasze serwery ani do stron trzecich.',
+                'section4.title': '4. Usługi Stron Trzecich',
+                'section4.content': 'TarotGo nie integruje się z usługami analitycznymi, reklamowymi ani śledzącymi stron trzecich. Nie sprzedajemy, nie wymieniamy ani nie przekazujemy Twoich informacji stronom zewnętrznym.',
+                'section5.title': '5. Prywatność Dzieci',
+                'section5.content': 'TarotGo jest odpowiedni dla użytkowników w każdym wieku. Ponieważ nie zbieramy danych osobowych, przestrzegamy przepisów dotyczących prywatności dzieci, w tym COPPA (Children\'s Online Privacy Protection Act).',
+                'section6.title': '6. Twoje Prawa',
+                'section6.content': 'Ponieważ wszystkie dane są przechowywane lokalnie na Twoim urządzeniu, masz pełną kontrolę nad swoimi informacjami:',
+                'section6.item1': 'Możesz usunąć wszystkie dane aplikacji, usuwając aplikację z urządzenia',
+                'section6.item2': 'Możesz zarządzać swoimi preferencjami w ustawieniach aplikacji',
+                'section6.item3': 'Nie jest wymagane tworzenie konta ani rejestracja',
+                'section7.title': '7. Zmiany w Tej Polityce Prywatności',
+                'section7.content': 'Możemy od czasu do czasu aktualizować naszą Politykę Prywatności. Powiadomimy Cię o wszelkich zmianach, publikując nową Politykę Prywatności na tej stronie i aktualizując datę "Ostatnia aktualizacja".',
+                'section8.title': '8. Skontaktuj Się z Nami',
+                'section8.content': 'Jeśli masz jakiekolwiek pytania dotyczące tej Polityki Prywatności, skontaktuj się z nami pod adresem:',
+                'footer': '© 2026 TarotGo. Wszelkie prawa zastrzeżone.'
+            },
+            'pt-BR': {
+                'back': '← Voltar para Início',
+                'title': 'Política de Privacidade',
+                'updated': 'Última atualização: 30 de abril de 2026',
+                'intro': 'TarotGo ("nós", "nosso" ou "nos") está comprometido em proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações quando você usa nosso aplicativo móvel.',
+                'section1.title': '1. Informações Que Coletamos',
+                'section1.personal.title': 'Informações Pessoais',
+                'section1.personal.content': 'TarotGo foi projetado pensando em privacidade. Não coletamos, armazenamos ou transmitimos informações pessoalmente identificáveis. Todas as leituras de tarô, preferências e dados são armazenados localmente em seu dispositivo.',
+                'section1.usage.title': 'Dados de Uso',
+                'section1.usage.content': 'Podemos coletar estatísticas de uso anônimas e agregadas para melhorar o desempenho e a experiência do usuário do aplicativo. Esses dados não o identificam pessoalmente e podem incluir:',
+                'section1.usage.item1': 'Tipo de dispositivo e versão do sistema operacional',
+                'section1.usage.item2': 'Falhas do aplicativo e métricas de desempenho',
+                'section1.usage.item3': 'Estatísticas de uso de recursos',
+                'section2.title': '2. Como Usamos Suas Informações',
+                'section2.content': 'As informações limitadas que coletamos são usadas exclusivamente para:',
+                'section2.item1': 'Melhorar a funcionalidade e o desempenho do aplicativo',
+                'section2.item2': 'Corrigir problemas técnicos e bugs',
+                'section2.item3': 'Entender como os usuários interagem com o aplicativo',
+                'section2.item4': 'Desenvolver novos recursos com base nas necessidades do usuário',
+                'section3.title': '3. Armazenamento e Segurança de Dados',
+                'section3.content': 'Todas as suas leituras de tarô, histórico de carta do dia, preferências e outros dados pessoais são armazenados exclusivamente em seu dispositivo usando os mecanismos de armazenamento seguros da Apple. Não temos acesso a esses dados e eles nunca são transmitidos para nossos servidores ou terceiros.',
+                'section4.title': '4. Serviços de Terceiros',
+                'section4.content': 'TarotGo não integra com serviços de análise, publicidade ou rastreamento de terceiros. Não vendemos, negociamos ou transferimos suas informações para partes externas.',
+                'section5.title': '5. Privacidade das Crianças',
+                'section5.content': 'TarotGo é adequado para usuários de todas as idades. Como não coletamos informações pessoais, cumprimos as regulamentações de privacidade infantil, incluindo COPPA (Children\'s Online Privacy Protection Act).',
+                'section6.title': '6. Seus Direitos',
+                'section6.content': 'Como todos os dados são armazenados localmente em seu dispositivo, você tem controle completo sobre suas informações:',
+                'section6.item1': 'Você pode excluir todos os dados do aplicativo excluindo o aplicativo do seu dispositivo',
+                'section6.item2': 'Você pode gerenciar suas preferências nas configurações do aplicativo',
+                'section6.item3': 'Não é necessária criação de conta ou registro',
+                'section7.title': '7. Alterações a Esta Política de Privacidade',
+                'section7.content': 'Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizando a data de "Última atualização".',
+                'section8.title': '8. Entre em Contato',
+                'section8.content': 'Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco em:',
+                'footer': '© 2026 TarotGo. Todos os direitos reservados.'
+            },
+            sv: {
+                'back': '← Tillbaka till Hem',
+                'title': 'Integritetspolicy',
+                'updated': 'Senast uppdaterad: 30 april 2026',
+                'intro': 'TarotGo ("vi", "vår" eller "oss") är engagerade i att skydda din integritet. Denna integritetspolicy förklarar hur vi samlar in, använder och skyddar din information när du använder vår mobilapplikation.',
+                'section1.title': '1. Information Vi Samlar In',
+                'section1.personal.title': 'Personlig Information',
+                'section1.personal.content': 'TarotGo är designad med integritet i åtanke. Vi samlar inte in, lagrar eller överför personligt identifierbar information. Alla tarotläsningar, preferenser och data lagras lokalt på din enhet.',
+                'section1.usage.title': 'Användningsdata',
+                'section1.usage.content': 'Vi kan samla in anonym, aggregerad användningsstatistik för att förbättra appens prestanda och användarupplevelse. Dessa data identifierar dig inte personligen och kan inkludera:',
+                'section1.usage.item1': 'Enhetstyp och operativsystemversion',
+                'section1.usage.item2': 'App-krascher och prestandamått',
+                'section1.usage.item3': 'Funktionsanvändningsstatistik',
+                'section2.title': '2. Hur Vi Använder Din Information',
+                'section2.content': 'Den begränsade information vi samlar in används endast för att:',
+                'section2.item1': 'Förbättra appens funktionalitet och prestanda',
+                'section2.item2': 'Åtgärda tekniska problem och buggar',
+                'section2.item3': 'Förstå hur användare interagerar med appen',
+                'section2.item4': 'Utveckla nya funktioner baserat på användarbehov',
+                'section3.title': '3. Datalagring och Säkerhet',
+                'section3.content': 'Alla dina tarotläsningar, dagens kort-historik, preferenser och andra personliga data lagras uteslutande på din enhet med Apples säkra lagringsmekanismer. Vi har inte tillgång till dessa data och de överförs aldrig till våra servrar eller tredje parter.',
+                'section4.title': '4. Tredjepartstjänster',
+                'section4.content': 'TarotGo integrerar inte med tredjepartsanalys-, annonserings- eller spårningstjänster. Vi säljer, handlar eller överför inte din information till externa parter.',
+                'section5.title': '5. Barns Integritet',
+                'section5.content': 'TarotGo är lämplig för användare i alla åldrar. Eftersom vi inte samlar in personlig information följer vi integritetsbestämmelser för barn, inklusive COPPA (Children\'s Online Privacy Protection Act).',
+                'section6.title': '6. Dina Rättigheter',
+                'section6.content': 'Eftersom all data lagras lokalt på din enhet har du full kontroll över din information:',
+                'section6.item1': 'Du kan radera all appdata genom att radera appen från din enhet',
+                'section6.item2': 'Du kan hantera dina preferenser i appinställningarna',
+                'section6.item3': 'Ingen kontouppläggning eller registrering krävs',
+                'section7.title': '7. Ändringar i Denna Integritetspolicy',
+                'section7.content': 'Vi kan uppdatera vår integritetspolicy från tid till annan. Vi kommer att meddela dig om eventuella ändringar genom att publicera den nya integritetspolicyn på denna sida och uppdatera datumet för "Senast uppdaterad".',
+                'section8.title': '8. Kontakta Oss',
+                'section8.content': 'Om du har några frågor om denna integritetspolicy, vänligen kontakta oss på:',
+                'footer': '© 2026 TarotGo. Alla rättigheter förbehållna.'
+            },
+            uk: {
+                'back': '← Повернутися на Головну',
+                'title': 'Політика Конфіденційності',
+                'updated': 'Останнє оновлення: 30 квітня 2026',
+                'intro': 'TarotGo ("ми", "наш" або "нас") зобов\'язується захищати вашу конфіденційність. Ця Політика Конфіденційності пояснює, як ми збираємо, використовуємо та захищаємо вашу інформацію під час використання нашого мобільного додатка.',
+                'section1.title': '1. Інформація Яку Ми Збираємо',
+                'section1.personal.title': 'Особиста Інформація',
+                'section1.personal.content': 'TarotGo розроблено з урахуванням конфіденційності. Ми не збираємо, не зберігаємо та не передаємо жодної особистої інформації. Всі читання таро, налаштування та дані зберігаються локально на вашому пристрої.',
+                'section1.usage.title': 'Дані Використання',
+                'section1.usage.content': 'Ми можемо збирати анонімну, агреговану статистику використання для покращення продуктивності додатка та досвіду користувача. Ці дані не ідентифікують вас особисто і можуть включати:',
+                'section1.usage.item1': 'Тип пристрою та версія операційної системи',
+                'section1.usage.item2': 'Збої додатка та показники продуктивності',
+                'section1.usage.item3': 'Статистика використання функцій',
+                'section2.title': '2. Як Ми Використовуємо Вашу Інформацію',
+                'section2.content': 'Обмежена інформація, яку ми збираємо, використовується виключно для:',
+                'section2.item1': 'Покращення функціональності та продуктивності додатка',
+                'section2.item2': 'Виправлення технічних проблем та помилок',
+                'section2.item3': 'Розуміння того, як користувачі взаємодіють з додатком',
+                'section2.item4': 'Розробки нових функцій на основі потреб користувачів',
+                'section3.title': '3. Зберігання та Безпека Даних',
+                'section3.content': 'Усі ваші читання таро, історія карти дня, налаштування та інші особисті дані зберігаються виключно на вашому пристрої з використанням безпечних механізмів зберігання Apple. Ми не маємо доступу до цих даних, і вони ніколи не передаються на наші сервери або третім особам.',
+                'section4.title': '4. Сторонні Сервіси',
+                'section4.content': 'TarotGo не інтегрується зі сторонніми сервісами аналітики, реклами чи відстеження. Ми не продаємо, не обмінюємо та не передаємо вашу інформацію зовнішнім сторонам.',
+                'section5.title': '5. Конфіденційність Дітей',
+                'section5.content': 'TarotGo підходить для користувачів будь-якого віку. Оскільки ми не збираємо особисту інформацію, ми дотримуємося правил конфіденційності дітей, включаючи COPPA (Закон про захист конфіденційності дітей в Інтернеті).',
+                'section6.title': '6. Ваші Права',
+                'section6.content': 'Оскільки всі дані зберігаються локально на вашому пристрої, ви маєте повний контроль над своєю інформацією:',
+                'section6.item1': 'Ви можете видалити всі дані додатка, видаливши додаток з вашого пристрою',
+                'section6.item2': 'Ви можете керувати своїми налаштуваннями в налаштуваннях додатка',
+                'section6.item3': 'Створення облікового запису або реєстрація не потрібні',
+                'section7.title': '7. Зміни в Цій Політиці Конфіденційності',
+                'section7.content': 'Ми можемо час від часу оновлювати нашу Політику Конфіденційності. Ми повідомимо вас про будь-які зміни, опублікувавши нову Політику Конфіденційності на цій сторінці та оновивши дату "Останнє оновлення".',
+                'section8.title': '8. Зв\'яжіться з Нами',
+                'section8.content': 'Якщо у вас є питання щодо цієї Політики Конфіденційності, зв\'яжіться з нами за адресою:',
+                'footer': '© 2026 TarotGo. Всі права захищено.'
+            }
+        };
+
+        const languageSelector = document.getElementById('languageSelector');
+        
+        function setLanguage(lang) {
+            const translation = translations[lang] || translations.en;
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translation[key]) {
+                    element.textContent = translation[key];
+                }
+            });
+            localStorage.setItem('selectedLanguage', lang);
+        }
+
+        const savedLang = localStorage.getItem('selectedLanguage');
+        const browserLang = navigator.language.toLowerCase();
+        let defaultLang = 'en';
+
+        if (savedLang && translations[savedLang]) {
+            defaultLang = savedLang;
+        } else if (translations[browserLang]) {
+            defaultLang = browserLang;
+        } else {
+            const langPrefix = browserLang.split('-')[0];
+            for (let key in translations) {
+                if (key.startsWith(langPrefix)) {
+                    defaultLang = key;
+                    break;
+                }
+            }
+        }
+
+        languageSelector.value = defaultLang;
+        setLanguage(defaultLang);
+
+        languageSelector.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+    </script>
+</body>
+</html>

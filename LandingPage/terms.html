@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - TarotGo</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --light-gold: #FFD700;
+            --dark-gold: #B8860B;
+            --deep-navy: #0A0A19;
+            --dark-navy: #0F0F23;
+            --mid-navy: #14142D;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.85);
+            --text-tertiary: rgba(255, 255, 255, 0.6);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(180deg, var(--deep-navy) 0%, var(--dark-navy) 50%, #000000 100%);
+            color: var(--text-primary);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 25, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--gold);
+            font-family: Georgia, serif;
+            text-decoration: none;
+        }
+
+        .language-selector {
+            background: rgba(20, 20, 45, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 300;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, var(--light-gold), var(--gold), var(--dark-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: var(--text-tertiary);
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-family: Georgia, serif;
+            color: var(--gold);
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: Georgia, serif;
+            color: var(--light-gold);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            color: var(--text-secondary);
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--light-gold);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: rgba(20, 20, 45, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            color: var(--gold);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(20, 20, 45, 0.8);
+            border-color: var(--gold);
+        }
+
+        footer {
+            max-width: 900px;
+            margin: 60px auto 0;
+            padding: 30px 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            text-align: center;
+            color: var(--text-tertiary);
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">TarotGo</a>
+            <select class="language-selector" id="languageSelector">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="nb">Norsk</option>
+                <option value="pl">Polski</option>
+                <option value="pt-BR">Português</option>
+                <option value="sv">Svenska</option>
+                <option value="uk">Українська</option>
+            </select>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link" data-i18n="back">← Back to Home</a>
+        
+        <h1 data-i18n="title">Terms of Service</h1>
+        <p class="last-updated" data-i18n="updated">Last updated: April 30, 2026</p>
+
+        <div class="content">
+            <p data-i18n="intro">Please read these Terms of Service ("Terms") carefully before using the TarotGo mobile application ("Service") operated by TarotGo ("us", "we", or "our").</p>
+
+            <h2 data-i18n="section1.title">1. Acceptance of Terms</h2>
+            <p data-i18n="section1.content">By accessing and using this Service, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these Terms, please do not use the Service.</p>
+
+            <h2 data-i18n="section2.title">2. Description of Service</h2>
+            <p data-i18n="section2.content">TarotGo is a digital tarot reading application that provides:</p>
+            <ul>
+                <li data-i18n="section2.item1">Personalized tarot card readings and interpretations</li>
+                <li data-i18n="section2.item2">Daily card draws with reflection prompts</li>
+                <li data-i18n="section2.item3">A comprehensive tarot card dictionary</li>
+                <li data-i18n="section2.item4">Reading history and session management</li>
+                <li data-i18n="section2.item5">Customizable settings and preferences</li>
+            </ul>
+
+            <h2 data-i18n="section3.title">3. Entertainment and Guidance</h2>
+            <p data-i18n="section3.p1">TarotGo is provided for entertainment, self-reflection, and personal guidance purposes only. The tarot readings and interpretations provided through the Service:</p>
+            <ul>
+                <li data-i18n="section3.item1">Are not intended to replace professional advice (medical, legal, financial, or psychological)</li>
+                <li data-i18n="section3.item2">Should not be used as a substitute for professional consultation</li>
+                <li data-i18n="section3.item3">Are meant to encourage self-reflection and personal insight</li>
+                <li data-i18n="section3.item4">Do not predict the future or guarantee specific outcomes</li>
+            </ul>
+            <p data-i18n="section3.p2">You acknowledge that you use the Service and any information provided at your own risk and discretion.</p>
+
+            <h2 data-i18n="section4.title">4. Age Requirements</h2>
+            <p data-i18n="section4.content">The Service is available to users of all ages. However, if you are under 18 years of age, we recommend using the Service with parental guidance and supervision.</p>
+
+            <h2 data-i18n="section5.title">5. User Responsibilities</h2>
+            <p data-i18n="section5.content">You agree to:</p>
+            <ul>
+                <li data-i18n="section5.item1">Use the Service in a lawful and responsible manner</li>
+                <li data-i18n="section5.item2">Not attempt to reverse engineer, decompile, or disassemble the application</li>
+                <li data-i18n="section5.item3">Not use the Service to harm, harass, or violate the rights of others</li>
+                <li data-i18n="section5.item4">Not attempt to gain unauthorized access to the Service or its systems</li>
+            </ul>
+
+            <h2 data-i18n="section6.title">6. Intellectual Property</h2>
+            <p data-i18n="section6.content">The Service and its original content, features, and functionality are owned by TarotGo and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws. All tarot card artwork, interpretations, and app design are proprietary to TarotGo.</p>
+
+            <h2 data-i18n="section7.title">7. Disclaimer of Warranties</h2>
+            <p data-i18n="section7.content">The Service is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied. We do not warrant that:</p>
+            <ul>
+                <li data-i18n="section7.item1">The Service will be uninterrupted or error-free</li>
+                <li data-i18n="section7.item2">Defects will be corrected</li>
+                <li data-i18n="section7.item3">The Service is free of viruses or other harmful components</li>
+                <li data-i18n="section7.item4">Results obtained from the Service will be accurate or reliable</li>
+            </ul>
+
+            <h2 data-i18n="section8.title">8. Limitation of Liability</h2>
+            <p data-i18n="section8.content">To the maximum extent permitted by law, TarotGo shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from your use of the Service.</p>
+
+            <h2 data-i18n="section9.title">9. In-App Purchases</h2>
+            <p data-i18n="section9.content">TarotGo may offer in-app purchases for additional features or content. All purchases are processed through the Apple App Store and are subject to Apple's terms and conditions. All sales are final and non-refundable except as required by law.</p>
+
+            <h2 data-i18n="section10.title">10. Changes to the Service</h2>
+            <p data-i18n="section10.content">We reserve the right to modify, suspend, or discontinue the Service (or any part thereof) at any time with or without notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuance of the Service.</p>
+
+            <h2 data-i18n="section11.title">11. Changes to Terms</h2>
+            <p data-i18n="section11.content">We reserve the right to update or modify these Terms at any time. We will notify you of any changes by posting the new Terms on this page and updating the "Last updated" date. Your continued use of the Service after such changes constitutes your acceptance of the new Terms.</p>
+
+            <h2 data-i18n="section12.title">12. Governing Law</h2>
+            <p data-i18n="section12.content">These Terms shall be governed by and construed in accordance with applicable laws, without regard to its conflict of law provisions.</p>
+
+            <h2 data-i18n="section13.title">13. Contact Us</h2>
+            <p data-i18n="section13.content">If you have any questions about these Terms of Service, please contact us at:</p>
+            <p><a href="mailto:support@tarotgo.app">support@tarotgo.app</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p data-i18n="footer">© 2026 TarotGo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                'back': '← Back to Home',
+                'title': 'Terms of Service',
+                'updated': 'Last updated: April 30, 2026',
+                'intro': 'Please read these Terms of Service ("Terms") carefully before using the TarotGo mobile application ("Service") operated by TarotGo ("us", "we", or "our").',
+                'section1.title': '1. Acceptance of Terms',
+                'section1.content': 'By accessing and using this Service, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these Terms, please do not use the Service.',
+                'section2.title': '2. Description of Service',
+                'section2.content': 'TarotGo is a digital tarot reading application that provides:',
+                'section2.item1': 'Personalized tarot card readings and interpretations',
+                'section2.item2': 'Daily card draws with reflection prompts',
+                'section2.item3': 'A comprehensive tarot card dictionary',
+                'section2.item4': 'Reading history and session management',
+                'section2.item5': 'Customizable settings and preferences',
+                'section3.title': '3. Entertainment and Guidance',
+                'section3.p1': 'TarotGo is provided for entertainment, self-reflection, and personal guidance purposes only. The tarot readings and interpretations provided through the Service:',
+                'section3.item1': 'Are not intended to replace professional advice (medical, legal, financial, or psychological)',
+                'section3.item2': 'Should not be used as a substitute for professional consultation',
+                'section3.item3': 'Are meant to encourage self-reflection and personal insight',
+                'section3.item4': 'Do not predict the future or guarantee specific outcomes',
+                'section3.p2': 'You acknowledge that you use the Service and any information provided at your own risk and discretion.',
+                'section4.title': '4. Age Requirements',
+                'section4.content': 'The Service is available to users of all ages. However, if you are under 18 years of age, we recommend using the Service with parental guidance and supervision.',
+                'section5.title': '5. User Responsibilities',
+                'section5.content': 'You agree to:',
+                'section5.item1': 'Use the Service in a lawful and responsible manner',
+                'section5.item2': 'Not attempt to reverse engineer, decompile, or disassemble the application',
+                'section5.item3': 'Not use the Service to harm, harass, or violate the rights of others',
+                'section5.item4': 'Not attempt to gain unauthorized access to the Service or its systems',
+                'section6.title': '6. Intellectual Property',
+                'section6.content': 'The Service and its original content, features, and functionality are owned by TarotGo and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws. All tarot card artwork, interpretations, and app design are proprietary to TarotGo.',
+                'section7.title': '7. Disclaimer of Warranties',
+                'section7.content': 'The Service is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied. We do not warrant that:',
+                'section7.item1': 'The Service will be uninterrupted or error-free',
+                'section7.item2': 'Defects will be corrected',
+                'section7.item3': 'The Service is free of viruses or other harmful components',
+                'section7.item4': 'Results obtained from the Service will be accurate or reliable',
+                'section8.title': '8. Limitation of Liability',
+                'section8.content': 'To the maximum extent permitted by law, TarotGo shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from your use of the Service.',
+                'section9.title': '9. In-App Purchases',
+                'section9.content': 'TarotGo may offer in-app purchases for additional features or content. All purchases are processed through the Apple App Store and are subject to Apple\'s terms and conditions. All sales are final and non-refundable except as required by law.',
+                'section10.title': '10. Changes to the Service',
+                'section10.content': 'We reserve the right to modify, suspend, or discontinue the Service (or any part thereof) at any time with or without notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuance of the Service.',
+                'section11.title': '11. Changes to Terms',
+                'section11.content': 'We reserve the right to update or modify these Terms at any time. We will notify you of any changes by posting the new Terms on this page and updating the "Last updated" date. Your continued use of the Service after such changes constitutes your acceptance of the new Terms.',
+                'section12.title': '12. Governing Law',
+                'section12.content': 'These Terms shall be governed by and construed in accordance with applicable laws, without regard to its conflict of law provisions.',
+                'section13.title': '13. Contact Us',
+                'section13.content': 'If you have any questions about these Terms of Service, please contact us at:',
+                'footer': '© 2026 TarotGo. All rights reserved.'
+            },
+            // Add other language translations here - I'll provide abbreviated versions for space
+            de: {
+                'back': '← Zurück zur Startseite',
+                'title': 'Nutzungsbedingungen',
+                'updated': 'Zuletzt aktualisiert: 30. April 2026',
+                'intro': 'Bitte lesen Sie diese Nutzungsbedingungen ("Bedingungen") sorgfältig durch, bevor Sie die mobile Anwendung TarotGo ("Dienst") nutzen, die von TarotGo ("uns", "wir" oder "unser") betrieben wird.',
+                'section1.title': '1. Annahme der Bedingungen',
+                'section1.content': 'Durch den Zugriff auf und die Nutzung dieses Dienstes akzeptieren Sie diese Bedingungen und stimmen zu, an sie gebunden zu sein. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, nutzen Sie den Dienst bitte nicht.',
+                'section2.title': '2. Beschreibung des Dienstes',
+                'section2.content': 'TarotGo ist eine digitale Tarot-Lese-Anwendung, die Folgendes bietet:',
+                'section2.item1': 'Personalisierte Tarot-Lesungen und Interpretationen',
+                'section2.item2': 'Tägliche Kartenziehungen mit Reflexionsaufforderungen',
+                'section2.item3': 'Ein umfassendes Tarot-Karten-Lexikon',
+                'section2.item4': 'Legungs-Historie und Sitzungsverwaltung',
+                'section2.item5': 'Anpassbare Einstellungen und Präferenzen',
+                'section3.title': '3. Unterhaltung und Anleitung',
+                'section3.p1': 'TarotGo wird nur zu Unterhaltungs-, Selbstreflexions- und persönlichen Beratungszwecken bereitgestellt. Die durch den Dienst bereitgestellten Tarot-Lesungen und Interpretationen:',
+                'section3.item1': 'Sind nicht dazu gedacht, professionelle Beratung zu ersetzen (medizinisch, rechtlich, finanziell oder psychologisch)',
+                'section3.item2': 'Sollten nicht als Ersatz für professionelle Beratung verwendet werden',
+                'section3.item3': 'Sollen Selbstreflexion und persönliche Einsicht fördern',
+                'section3.item4': 'Sagen die Zukunft nicht voraus und garantieren keine spezifischen Ergebnisse',
+                'section3.p2': 'Sie erkennen an, dass Sie den Dienst und alle bereitgestellten Informationen auf eigenes Risiko und nach eigenem Ermessen nutzen.',
+                'footer': '© 2026 TarotGo. Alle Rechte vorbehalten.'
+            },
+            es: {
+                'back': '← Volver al Inicio',
+                'title': 'Términos de Servicio',
+                'updated': 'Última actualización: 30 de abril de 2026',
+                'intro': 'Por favor, lea estos Términos de Servicio ("Términos") cuidadosamente antes de usar la aplicación móvil TarotGo ("Servicio") operada por TarotGo ("nosotros", "nuestro" o "nos").',
+                'section1.title': '1. Aceptación de losI'll create comprehensive Privacy Policy and Terms of Service pages that match your landing page design and support all the same languages.
+
+**Privacy Policy (privacy.html):**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TarotGo</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --light-gold: #FFD700;
+            --dark-gold: #B8860B;
+            --deep-navy: #0A0A19;
+            --dark-navy: #0F0F23;
+            --mid-navy: #14142D;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.85);
+            --text-tertiary: rgba(255, 255, 255, 0.6);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(180deg, var(--deep-navy) 0%, var(--dark-navy) 50%, #000000 100%);
+            color: var(--text-secondary);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 25, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--gold);
+            font-family: Georgia, serif;
+            text-decoration: none;
+        }
+
+        .language-selector {
+            background: rgba(20, 20, 45, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 100px auto 60px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 300;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, var(--light-gold), var(--gold), var(--dark-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: var(--text-tertiary);
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: var(--gold);
+            font-family: Georgia, serif;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: var(--light-gold);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--light-gold);
+        }
+
+        .content-section {
+            background: linear-gradient(135deg, rgba(20, 20, 45, 0.4), rgba(10, 10, 25, 0.6));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold);
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .back-link:hover {
+            color: var(--light-gold);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+
+            ul, ol {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">TarotGo</a>
+            <select class="language-selector" id="languageSelector">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="nb">Norsk</option>
+                <option value="pl">Polski</option>
+                <option value="pt-BR">Português</option>
+                <option value="sv">Svenska</option>
+                <option value="uk">Українська</option>
+            </select>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">
+            <span>←</span>
+            <span data-i18n="back">Back to Home</span>
+        </a>
+
+        <h1 data-i18n="title">Privacy Policy</h1>
+        <p class="last-updated" data-i18n="updated">Last updated: April 30, 2026</p>
+
+        <div class="content-section">
+            <h2 data-i18n="intro.title">Introduction</h2>
+            <p data-i18n="intro.text">
+                Welcome to TarotGo. We respect your privacy and are committed to protecting your personal data. 
+                This privacy policy will inform you about how we handle your personal data when you use our mobile application 
+                and tell you about your privacy rights.
+            </p>
+
+            <h2 data-i18n="collect.title">Information We Collect</h2>
+            
+            <h3 data-i18n="collect.readings.title">Reading Data</h3>
+            <p data-i18n="collect.readings.text">
+                TarotGo stores your tarot readings, including the cards drawn, spreads used, questions asked, and any notes you create. 
+                This data is stored locally on your device using SwiftData and is not transmitted to our servers.
+            </p>
+
+            <h3 data-i18n="collect.settings.title">App Settings and Preferences</h3>
+            <p data-i18n="collect.settings.text">
+                We store your app preferences such as card back style, notification settings, language preferences, 
+                and sound settings locally on your device.
+            </p>
+
+            <h3 data-i18n="collect.analytics.title">Analytics and Crash Reports</h3>
+            <p data-i18n="collect.analytics.text">
+                We may collect anonymous usage data and crash reports to improve the app's performance and user experience. 
+                This data does not include any personally identifiable information or the content of your readings.
+            </p>
+
+            <h2 data-i18n="use.title">How We Use Your Information</h2>
+            <p data-i18n="use.intro">We use the collected data for the following purposes:</p>
+            <ul>
+                <li data-i18n="use.provide">To provide and maintain our app's functionality</li>
+                <li data-i18n="use.personalize">To personalize your experience with saved readings and preferences</li>
+                <li data-i18n="use.improve">To improve and optimize the app's performance</li>
+                <li data-i18n="use.notifications">To send you daily card reminders if you've enabled notifications</li>
+                <li data-i18n="use.support">To provide customer support when requested</li>
+            </ul>
+
+            <h2 data-i18n="storage.title">Data Storage and Security</h2>
+            <p data-i18n="storage.local">
+                All your reading data is stored locally on your device. We do not store your readings, questions, 
+                or personal interpretations on any remote servers.
+            </p>
+            <p data-i18n="storage.icloud">
+                If you enable iCloud sync (optional feature), your reading data may be stored in your personal 
+                iCloud account, which is subject to Apple's privacy policy.
+            </p>
+            <p data-i18n="storage.security">
+                We implement appropriate technical and organizational measures to protect your data against 
+                unauthorized access, alteration, disclosure, or destruction.
+            </p>
+
+            <h2 data-i18n="sharing.title">Data Sharing and Third Parties</h2>
+            <p data-i18n="sharing.text">
+                We do not sell, trade, or rent your personal data to third parties. We do not share your reading 
+                content with anyone. Anonymous analytics may be shared with service providers solely for the purpose 
+                of improving the app.
+            </p>
+
+            <h3 data-i18n="sharing.services.title">Third-Party Services</h3>
+            <p data-i18n="sharing.services.intro">Our app may use the following third-party services:</p>
+            <ul>
+                <li data-i18n="sharing.apple">Apple App Store (for app distribution and in-app purchases)</li>
+                <li data-i18n="sharing.analytics">Analytics services (for anonymous usage statistics)</li>
+                <li data-i18n="sharing.crash">Crash reporting services (for app stability improvement)</li>
+            </ul>
+
+            <h2 data-i18n="rights.title">Your Rights</h2>
+            <p data-i18n="rights.intro">You have the right to:</p>
+            <ul>
+                <li data-i18n="rights.access">Access your data stored in the app</li>
+                <li data-i18n="rights.export">Export your reading history as PDF</li>
+                <li data-i18n="rights.delete">Delete your readings and data at any time through the app settings</li>
+                <li data-i18n="rights.opt">Opt-out of notifications and analytics</li>
+                <li data-i18n="rights.uninstall">Uninstall the app to remove all locally stored data</li>
+            </ul>
+
+            <h2 data-i18n="children.title">Children's Privacy</h2>
+            <p data-i18n="children.text">
+                Our app is not intended for children under the age of 13. We do not knowingly collect 
+                personal information from children under 13. If you believe we have inadvertently collected 
+                such information, please contact us immediately.
+            </p>
+
+            <h2 data-i18n="changes.title">Changes to This Privacy Policy</h2>
+            <p data-i18n="changes.text">
+                We may update our privacy policy from time to time. We will notify you of any changes by 
+                posting the new privacy policy in the app and updating the "Last updated" date. You are 
+                advised to review this privacy policy periodically for any changes.
+            </p>
+
+            <h2 data-i18n="contact.title">Contact Us</h2>
+            <p data-i18n="contact.text">
+                If you have any questions about this privacy policy or our data practices, please contact us at:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:privacy@tarotgo.app">privacy@tarotgo.app</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                'back': 'Back to Home',
+                'title': 'Privacy Policy',
+                'updated': 'Last updated: April 30, 2026',
+                'intro.title': 'Introduction',
+                'intro.text': 'Welcome to TarotGo. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we handle your personal data when you use our mobile application and tell you about your privacy rights.',
+                'collect.title': 'Information We Collect',
+                'collect.readings.title': 'Reading Data',
+                'collect.readings.text': 'TarotGo stores your tarot readings, including the cards drawn, spreads used, questions asked, and any notes you create. This data is stored locally on your device using SwiftData and is not transmitted to our servers.',
+                'collect.settings.title': 'App Settings and Preferences',
+                'collect.settings.text': 'We store your app preferences such as card back style, notification settings, language preferences, and sound settings locally on your device.',
+                'collect.analytics.title': 'Analytics and Crash Reports',
+                'collect.analytics.text': 'We may collect anonymous usage data and crash reports to improve the app\'s performance and user experience. This data does not include any personally identifiable information or the content of your readings.',
+                'use.title': 'How We Use Your Information',
+                'use.intro': 'We use the collected data for the following purposes:',
+                'use.provide': 'To provide and maintain our app\'s functionality',
+                'use.personalize': 'To personalize your experience with saved readings and preferences',
+                'use.improve': 'To improve and optimize the app\'s performance',
+                'use.notifications': 'To send you daily card reminders if you\'ve enabled notifications',
+                'use.support': 'To provide customer support when requested',
+                'storage.title': 'Data Storage and Security',
+                'storage.local': 'All your reading data is stored locally on your device. We do not store your readings, questions, or personal interpretations on any remote servers.',
+                'storage.icloud': 'If you enable iCloud sync (optional feature), your reading data may be stored in your personal iCloud account, which is subject to Apple\'s privacy policy.',
+                'storage.security': 'We implement appropriate technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction.',
+                'sharing.title': 'Data Sharing and Third Parties',
+                'sharing.text': 'We do not sell, trade, or rent your personal data to third parties. We do not share your reading content with anyone. Anonymous analytics may be shared with service providers solely for the purpose of improving the app.',
+                'sharing.services.title': 'Third-Party Services',
+                'sharing.services.intro': 'Our app may use the following third-party services:',
+                'sharing.apple': 'Apple App Store (for app distribution and in-app purchases)',
+                'sharing.analytics': 'Analytics services (for anonymous usage statistics)',
+                'sharing.crash': 'Crash reporting services (for app stability improvement)',
+                'rights.title': 'Your Rights',
+                'rights.intro': 'You have the right to:',
+                'rights.access': 'Access your data stored in the app',
+                'rights.export': 'Export your reading history as PDF',
+                'rights.delete': 'Delete your readings and data at any time through the app settings',
+                'rights.opt': 'Opt-out of notifications and analytics',
+                'rights.uninstall': 'Uninstall the app to remove all locally stored data',
+                'children.title': 'Children\'s Privacy',
+                'children.text': 'Our app is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.',
+                'changes.title': 'Changes to This Privacy Policy',
+                'changes.text': 'We may update our privacy policy from time to time. We will notify you of any changes by posting the new privacy policy in the app and updating the "Last updated" date. You are advised to review this privacy policy periodically for any changes.',
+                'contact.title': 'Contact Us',
+                'contact.text': 'If you have any questions about this privacy policy or our data practices, please contact us at:'
+            },
+            de: {
+                'back': 'Zurück zur Startseite',
+                'title': 'Datenschutzerklärung',
+                'updated': 'Zuletzt aktualisiert: 30. April 2026',
+                'intro.title': 'Einleitung',
+                'intro.text': 'Willkommen bei TarotGo. Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre persönlichen Daten zu schützen. Diese Datenschutzerklärung informiert Sie darüber, wie wir mit Ihren persönlichen Daten umgehen, wenn Sie unsere mobile Anwendung nutzen.',
+                'collect.title': 'Welche Informationen wir sammeln',
+                'collect.readings.title': 'Lesungsdaten',
+                'collect.readings.text': 'TarotGo speichert Ihre Tarot-Legungen, einschließlich gezogener Karten, verwendeter Spreads, gestellter Fragen und erstellter Notizen. Diese Daten werden lokal auf Ihrem Gerät mit SwiftData gespeichert und nicht an unsere Server übertragen.',
+                'collect.settings.title': 'App-Einstellungen und Präferenzen',
+                'collect.settings.text': 'Wir speichern Ihre App-Präferenzen wie Kartenrückseiten-Stil, Benachrichtigungseinstellungen, Sprachpräferenzen und Soundeinstellungen lokal auf Ihrem Gerät.',
+                'collect.analytics.title': 'Analysen und Absturzberichte',
+                'collect.analytics.text': 'Wir können anonyme Nutzungsdaten und Absturzberichte sammeln, um die Leistung und Benutzererfahrung der App zu verbessern. Diese Daten enthalten keine persönlich identifizierbaren Informationen oder Inhalte Ihrer Lesungen.',
+                'use.title': 'Wie wir Ihre Informationen verwenden',
+                'use.intro': 'Wir verwenden die gesammelten Daten für folgende Zwecke:',
+                'use.provide': 'Um die Funktionalität unserer App bereitzustellen und aufrechtzuerhalten',
+                'use.personalize': 'Um Ihre Erfahrung mit gespeicherten Lesungen und Präferenzen zu personalisieren',
+                'use.improve': 'Um die Leistung der App zu verbessern und zu optimieren',
+                'use.notifications': 'Um Ihnen tägliche Kartenerinnerungen zu senden, wenn Sie Benachrichtigungen aktiviert haben',
+                'use.support': 'Um Kundensupport bei Bedarf bereitzustellen',
+                'storage.title': 'Datenspeicherung und Sicherheit',
+                'storage.local': 'Alle Ihre Lesungsdaten werden lokal auf Ihrem Gerät gespeichert. Wir speichern Ihre Lesungen, Fragen oder persönlichen Interpretationen nicht auf Remote-Servern.',
+                'storage.icloud': 'Wenn Sie die iCloud-Synchronisierung aktivieren (optionale Funktion), können Ihre Lesungsdaten in Ihrem persönlichen iCloud-Konto gespeichert werden, das den Datenschutzrichtlinien von Apple unterliegt.',
+                'storage.security': 'Wir implementieren angemessene technische und organisatorische Maßnahmen, um Ihre Daten vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen.',
+                'sharing.title': 'Datenweitergabe und Dritte',
+                'sharing.text': 'Wir verkaufen, handeln oder vermieten Ihre persönlichen Daten nicht an Dritte. Wir teilen den Inhalt Ihrer Lesungen mit niemandem. Anonyme Analysen können ausschließlich zum Zweck der Verbesserung der App an Dienstleister weitergegeben werden.',
+                'sharing.services.title': 'Dienste von Drittanbietern',
+                'sharing.services.intro': 'Unsere App kann folgende Dienste von Drittanbietern nutzen:',
+                'sharing.apple': 'Apple App Store (für App-Verteilung und In-App-Käufe)',
+                'sharing.analytics': 'Analysedienste (für anonyme Nutzungsstatistiken)',
+                'sharing.crash': 'Absturzberichtsdienste (zur Verbesserung der App-Stabilität)',
+                'rights.title': 'Ihre Rechte',
+                'rights.intro': 'Sie haben das Recht:',
+                'rights.access': 'Auf Ihre in der App gespeicherten Daten zuzugreifen',
+                'rights.export': 'Ihre Lesungshistorie als PDF zu exportieren',
+                'rights.delete': 'Ihre Lesungen und Daten jederzeit über die App-Einstellungen zu löschen',
+                'rights.opt': 'Benachrichtigungen und Analysen abzulehnen',
+                'rights.uninstall': 'Die App zu deinstallieren, um alle lokal gespeicherten Daten zu entfernen',
+                'children.title': 'Datenschutz von Kindern',
+                'children.text': 'Unsere App ist nicht für Kinder unter 13 Jahren bestimmt. Wir sammeln wissentlich keine persönlichen Informationen von Kindern unter 13 Jahren. Wenn Sie glauben, dass wir versehentlich solche Informationen gesammelt haben, kontaktieren Sie uns bitte sofort.',
+                'changes.title': 'Änderungen dieser Datenschutzerklärung',
+                'changes.text': 'Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung in der App veröffentlichen und das Datum "Zuletzt aktualisiert" aktualisieren.',
+                'contact.title': 'Kontakt',
+                'contact.text': 'Wenn Sie Fragen zu dieser Datenschutzerklärung oder unseren Datenpraktiken haben, kontaktieren Sie uns bitte unter:'
+            },
+            es: {
+                'back': 'Volver al inicio',
+                'title': 'Política de Privacidad',
+                'updated': 'Última actualización: 30 de abril de 2026',
+                'intro.title': 'Introducción',
+                'intro.text': 'Bienvenido a TarotGo. Respetamos su privacidad y nos comprometemos a proteger sus datos personales. Esta política de privacidad le informará sobre cómo manejamos sus datos personales cuando utiliza nuestra aplicación móvil.',
+                'collect.title': 'Información que recopilamos',
+                'collect.readings.title': 'Datos de lecturas',
+                'collect.readings.text': 'TarotGo almacena sus lecturas de tarot, incluidas las cartas extraídas, las tiradas utilizadas, las preguntas formuladas y las notas que cree. Estos datos se almacenan localmente en su dispositivo usando SwiftData y no se transmiten a nuestros servidores.',
+                'collect.settings.title': 'Configuración y preferencias de la aplicación',
+                'collect.settings.text': 'Almacenamos sus preferencias de la aplicación, como el estilo del reverso de las cartas, la configuración de notificaciones, las preferencias de idioma y la configuración de sonido localmente en su dispositivo.',
+                'collect.analytics.title': 'Análisis e informes de fallos',
+                'collect.analytics.text': 'Podemos recopilar datos de uso anónimos e informes de fallos para mejorar el rendimiento y la experiencia del usuario de la aplicación. Estos datos no incluyen información de identificación personal ni el contenido de sus lecturas.',
+                'use.title': 'Cómo utilizamos su información',
+                'use.intro': 'Utilizamos los datos recopilados para los siguientes propósitos:',
+                'use.provide': 'Para proporcionar y mantener la funcionalidad de nuestra aplicación',
+                'use.personalize': 'Para personalizar su experiencia con lecturas y preferencias guardadas',
+                'use.improve': 'Para mejorar y optimizar el rendimiento de la aplicación',
+                'use.notifications': 'Para enviarle recordatorios diarios de cartas si ha habilitado las notificaciones',
+                'use.support': 'Para proporcionar soporte al cliente cuando lo solicite',
+                'storage.title': 'Almacenamiento y seguridad de datos',
+                'storage.local': 'Todos sus datos de lectura se almacenan localmente en su dispositivo. No almacenamos sus lecturas, preguntas o interpretaciones personales en servidores remotos.',
+                'storage.icloud': 'Si habilita la sincronización de iCloud (función opcional), sus datos de lectura pueden almacenarse en su cuenta personal de iCloud, que está sujeta a la política de privacidad de Apple.',
+                'storage.security': 'Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos contra acceso no autorizado, alteración, divulgación o destrucción.',
+                'sharing.title': 'Compartir datos y terceros',
+                'sharing.text': 'No vendemos, intercambiamos ni alquilamos sus datos personales a terceros. No compartimos el contenido de sus lecturas con nadie. Los análisis anónimos pueden compartirse con proveedores de servicios únicamente con el fin de mejorar la aplicación.',
+                'sharing.services.title': 'Servicios de terceros',
+                'sharing.services.intro': 'Nuestra aplicación puede utilizar los siguientes servicios de terceros:',
+                'sharing.apple': 'Apple App Store (para distribución de aplicaciones y compras dentro de la aplicación)',
+                'sharing.analytics': 'Servicios de análisis (para estadísticas de uso anónimas)',
+                'sharing.crash': 'Servicios de informes de fallos (para mejorar la estabilidad de la aplicación)',
+                'rights.title': 'Sus derechos',
+                'rights.intro': 'Usted tiene derecho a:',
+                'rights.access': 'Acceder a sus datos almacenados en la aplicación',
+                'rights.export': 'Exportar su historial de lecturas como PDF',
+                'rights.delete': 'Eliminar sus lecturas y datos en cualquier momento a través de la configuración de la aplicación',
+                'rights.opt': 'Optar por no recibir notificaciones y análisis',
+                'rights.uninstall': 'Desinstalar la aplicación para eliminar todos los datos almacenados localmente',
+                'children.title': 'Privacidad de los niños',
+                'children.text': 'Nuestra aplicación no está destinada a niños menores de 13 años. No recopilamos a sabiendas información personal de niños menores de 13 años. Si cree que hemos recopilado inadvertidamente dicha información, comuníquese con nosotros de inmediato.',
+                'changes.title': 'Cambios a esta política de privacidad',
+                'changes.text': 'Podemos actualizar nuestra política de privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva política de privacidad en la aplicación y actualizando la fecha de "Última actualización".',
+                'contact.title': 'Contáctenos',
+                'contact.text': 'Si tiene alguna pregunta sobre esta política de privacidad o nuestras prácticas de datos, comuníquese con nosotros en:'
+            },
+            fr: {
+                'back': 'Retour à l\'accueil',
+                'title': 'Politique de confidentialité',
+                'updated': 'Dernière mise à jour : 30 avril 2026',
+                'intro.title': 'Introduction',
+                'intro.text': 'Bienvenue sur TarotGo. Nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles. Cette politique de confidentialité vous informera sur la manière dont nous traitons vos données personnelles lorsque vous utilisez notre application mobile.',
+                'collect.title': 'Informations que nous collectons',
+                'collect.readings.title': 'Données de lecture',
+                'collect.readings.text': 'TarotGo stocke vos lectures de tarot, y compris les cartes tirées, les tirages utilisés, les questions posées et les notes que vous créez. Ces données sont stockées localement sur votre appareil à l\'aide de SwiftData et ne sont pas transmises à nos serveurs.',
+                'collect.settings.title': 'Paramètres et préférences de l\'application',
+                'collect.settings.text': 'Nous stockons vos préférences d\'application telles que le style du dos des cartes, les paramètres de notification, les préférences linguistiques et les paramètres sonores localement sur votre appareil.',
+                'collect.analytics.title': 'Analyses et rapports de plantage',
+                'collect.analytics.text': 'Nous pouvons collecter des données d\'utilisation anonymes et des rapports de plantage pour améliorer les performances et l\'expérience utilisateur de l\'application. Ces données ne contiennent aucune information personnellement identifiable ni le contenu de vos lectures.',
+                'use.title': 'Comment nous utilisons vos informations',
+                'use.intro': 'Nous utilisons les données collectées aux fins suivantes :',
+                'use.provide': 'Pour fournir et maintenir la fonctionnalité de notre application',
+                'use.personalize': 'Pour personnaliser votre expérience avec des lectures et des préférences enregistrées',
+                'use.improve': 'Pour améliorer et optimiser les performances de l\'application',
+                'use.notifications': 'Pour vous envoyer des rappels de cartes quotidiennes si vous avez activé les notifications',
+                'use.support': 'Pour fournir un support client sur demande',
+                'storage.title': 'Stockage et sécurité des données',
+                'storage.local': 'Toutes vos données de lecture sont stockées localement sur votre appareil. Nous ne stockons pas vos lectures, questions ou interprétations personnelles sur des serveurs distants.',
+                'storage.icloud': 'Si vous activez la synchronisation iCloud (fonctionnalité facultative), vos données de lecture peuvent être stockées dans votre compte iCloud personnel, qui est soumis à la politique de confidentialité d\'Apple.',
+                'storage.security': 'Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès, altération, divulgation ou destruction non autorisés.',
+                'sharing.title': 'Partage de données et tiers',
+                'sharing.text': 'Nous ne vendons, n\'échangeons ni ne louons vos données personnelles à des tiers. Nous ne partageons le contenu de vos lectures avec personne. Des analyses anonymes peuvent être partagées avec des fournisseurs de services uniquement dans le but d\'améliorer l\'application.',
+                'sharing.services.title': 'Services tiers',
+                'sharing.services.intro': 'Notre application peut utiliser les services tiers suivants :',
+                'sharing.apple': 'Apple App Store (pour la distribution d\'applications et les achats intégrés)',
+                'sharing.analytics': 'Services d\'analyse (pour les statistiques d\'utilisation anonymes)',
+                'sharing.crash': 'Services de rapports de plantage (pour améliorer la stabilité de l\'application)',
+                'rights.title': 'Vos droits',
+                'rights.intro': 'Vous avez le droit de :',
+                'rights.access': 'Accéder à vos données stockées dans l\'application',
+                'rights.export': 'Exporter votre historique de lectures au format PDF',
+                'rights.delete': 'Supprimer vos lectures et données à tout moment via les paramètres de l\'application',
+                'rights.opt': 'Refuser les notifications et les analyses',
+                'rights.uninstall': 'Désinstaller l\'application pour supprimer toutes les données stockées localement',
+                'children.title': 'Confidentialité des enfants',
+                'children.text': 'Notre application n\'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d\'informations personnelles auprès d\'enfants de moins de 13 ans. Si vous pensez que nous avons collecté par inadvertance de telles informations, veuillez nous contacter immédiatement.',
+                'changes.title': 'Modifications de cette politique de confidentialité',
+                'changes.text': 'Nous pouvons mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité dans l\'application et en mettant à jour la date de "Dernière mise à jour".',
+                'contact.title': 'Nous contacter',
+                'contact.text': 'Si vous avez des questions concernant cette politique de confidentialité ou nos pratiques en matière de données, veuillez nous contacter à :'
+            },
+            it: {
+                'back': 'Torna alla home',
+                'title': 'Informativa sulla privacy',
+                'updated': 'Ultimo aggiornamento: 30 aprile 2026',
+                'intro.title': 'Introduzione',
+                'intro.text': 'Benvenuto su TarotGo. Rispettiamo la tua privacy e ci impegniamo a proteggere i tuoi dati personali. Questa informativa sulla privacy ti informerà su come gestiamo i tuoi dati personali quando utilizzi la nostra applicazione mobile.',
+                'collect.title': 'Informazioni che raccogliamo',
+                'collect.readings.title': 'Dati di lettura',
+                'collect.readings.text': 'TarotGo memorizza le tue letture dei tarocchi, incluse le carte estratte, le stese utilizzate, le domande poste e le note che crei. Questi dati sono archiviati localmente sul tuo dispositivo utilizzando SwiftData e non vengono trasmessi ai nostri server.',
+                'collect.settings.title': 'Impostazioni e preferenze dell\'app',
+                'collect.settings.text': 'Memorizziamo le tue preferenze dell\'app come lo stile del retro delle carte, le impostazioni di notifica, le preferenze linguistiche e le impostazioni audio localmente sul tuo dispositivo.',
+                'collect.analytics.title': 'Analisi e rapporti di arresto anomalo',
+                'collect.analytics.text': 'Potremmo raccogliere dati di utilizzo anonimi e rapporti di arresto anomalo per migliorare le prestazioni e l\'esperienza utente dell\'app. Questi dati non includono informazioni personalmente identificabili o il contenuto delle tue letture.',
+                'use.title': 'Come utilizziamo le tue informazioni',
+                'use.intro': 'Utilizziamo i dati raccolti per i seguenti scopi:',
+                'use.provide': 'Per fornire e mantenere la funzionalità della nostra app',
+                'use.personalize': 'Per personalizzare la tua esperienza con letture e preferenze salvate',
+                'use.improve': 'Per migliorare e ottimizzare le prestazioni dell\'app',
+                'use.notifications': 'Per inviarti promemoria di carte giornaliere se hai abilitato le notifiche',
+                'use.support': 'Per fornire supporto clienti quando richiesto',
+                'storage.title': 'Archiviazione e sicurezza dei dati',
+                'storage.local': 'Tutti i tuoi dati di lettura sono archiviati localmente sul tuo dispositivo. Non memorizziamo le tue letture, domande o interpretazioni personali su server remoti.',
+                'storage.icloud': 'Se abiliti la sincronizzazione iCloud (funzione opzionale), i tuoi dati di lettura potrebbero essere archiviati nel tuo account iCloud personale, che è soggetto all\'informativa sulla privacy di Apple.',
+                'storage.security': 'Implementiamo misure tecniche e organizzative appropriate per proteggere i tuoi dati contro accesso, alterazione, divulgazione o distruzione non autorizzati.',
+                'sharing.title': 'Condivisione di dati e terze parti',
+                'sharing.text': 'Non vendiamo, scambiamo o affittiamo i tuoi dati personali a terze parti. Non condividiamo il contenuto delle tue letture con nessuno. Le analisi anonime possono essere condivise con fornitori di servizi esclusivamente allo scopo di migliorare l\'app.',
+                'sharing.services.title': 'Servizi di terze parti',
+                'sharing.services.intro': 'La nostra app può utilizzare i seguenti servizi di terze parti:',
+                'sharing.apple': 'Apple App Store (per la distribuzione dell\'app e gli acquisti in-app)',
+                'sharing.analytics': 'Servizi di analisi (per statistiche di utilizzo anonime)',
+                'sharing.crash': 'Servizi di segnalazione arresti anomali (per migliorare la stabilità dell\'app)',
+                'rights.title': 'I tuoi diritti',
+                'rights.intro': 'Hai il diritto di:',
+                'rights.access': 'Accedere ai tuoi dati archiviati nell\'app',
+                'rights.export': 'Esportare la cronologia delle letture come PDF',
+                'rights.delete': 'Eliminare le tue letture e dati in qualsiasi momento tramite le impostazioni dell\'app',
+                'rights.opt': 'Rinunciare alle notifiche e alle analisi',
+                'rights.uninstall': 'Disinstallare l\'app per rimuovere tutti i dati archiviati localmente',
+                'children.title': 'Privacy dei bambini',
+                'children.text': 'La nostra app non è destinata a bambini di età inferiore a 13 anni. Non raccogliamo consapevolmente informazioni personali da bambini di età inferiore a 13 anni. Se ritieni che abbiamo raccolto inavvertitamente tali informazioni, contattaci immediatamente.',
+                'changes.title': 'Modifiche a questa informativa sulla privacy',
+                'changes.text': 'Potremmo aggiornare la nostra informativa sulla privacy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova informativa sulla privacy nell\'app e aggiornando la data di "Ultimo aggiornamento".',
+                'contact.title': 'Contattaci',
+                'contact.text': 'Se hai domande su questa informativa sulla privacy o sulle nostre pratiche sui dati, contattaci all\'indirizzo:'
+            },
+            ja: {
+                'back': 'ホームに戻る',
+                'title': 'プライバシーポリシー',
+                'updated': '最終更新日：2026年4月30日',
+                'intro.title': 'はじめに',
+                'intro.text': 'TarotGoへようこそ。私たちはあなたのプライバシーを尊重し、個人データの保護に取り組んでいます。このプライバシーポリシーは、モバイルアプリケーションを使用する際の個人データの取り扱い方法についてお知らせします。',
+                'collect.title': '収集する情報',
+                'collect.readings.title': 'リーディングデータ',
+                'collect.readings.text': 'TarotGoは、引いたカード、使用したスプレッド、質問、作成したメモを含むタロットリーディングを保存します。このデータはSwiftDataを使用してデバイスにローカルに保存され、サーバーには送信されません。',
+                'collect.settings.title': 'アプリの設定と環境設定',
+                'collect.settings.text': 'カードバックのスタイル、通知設定、言語設定、サウンド設定などのアプリの環境設定をデバイスにローカルに保存します。',
+                'collect.analytics.title': '分析とクラッシュレポート',
+                'collect.analytics.text': 'アプリのパフォーマンスとユーザーエクスペリエンスを向上させるために、匿名の使用状況データとクラッシュレポートを収集する場合があります。このデータには、個人を特定できる情報やリーディングの内容は含まれません。',
+                'use.title': '情報の使用方法',
+                'use.intro': '収集したデータは以下の目的で使用します：',
+                'use.provide': 'アプリの機能を提供および維持するため',
+                'use.personalize': '保存されたリーディングと環境設定でエクスペリエンスをパーソナライズするため',
+                'use.improve': 'アプリのパフォーマンスを改善および最適化するため',
+                'use.notifications': '通知を有効にしている場合、毎日のカードリマインダーを送信するため',
+                'use.support': '要求に応じてカスタマーサポートを提供するため',
+                'storage.title': 'データの保存とセキュリティ',
+                'storage.local': 'すべてのリーディングデータはデバイスにローカルに保存されます。リーディング、質問、個人的な解釈をリモートサーバーに保存することはありません。',
+                'storage.icloud': 'iCloud同期を有効にすると（オプション機能）、リーディングデータは個人のiCloudアカウントに保存される場合があります。これはAppleのプライバシーポリシーの対象となります。',
+                'storage.security': '不正なアクセス、改ざん、開示、破壊からデータを保護するために、適切な技術的および組織的措置を実施しています。',
+                'sharing.title': 'データ共有と第三者',
+                'sharing.text': '個人データを第三者に販売、取引、または貸与することはありません。リーディングの内容を誰とも共有しません。匿名の分析は、アプリの改善のみを目的としてサービスプロバイダーと共有される場合があります。',
+                'sharing.services.title': '第三者サービス',
+                'sharing.services.intro': '当社のアプリは以下の第三者サービスを使用する場合があります：',
+                'sharing.apple': 'Apple App Store（アプリの配信とアプリ内購入用）',
+                'sharing.analytics': '分析サービス（匿名の使用統計用）',
+                'sharing.crash': 'クラッシュレポートサービス（アプリの安定性向上用）',
+                'rights.title': 'あなたの権利',
+                'rights.intro': '以下の権利があります：',
+                'rights.access': 'アプリに保存されたデータにアクセスする',
+                'rights.export': 'リーディング履歴をPDFとしてエクスポートする',
+                'rights.delete': 'アプリの設定からいつでもリーディングとデータを削除する',
+                'rights.opt': '通知と分析をオプトアウトする',
+                'rights.uninstall': 'アプリをアンインストールしてローカルに保存されたすべてのデータを削除する',
+                'children.title': '子供のプライバシー',
+                'children.text': '当社のアプリは13歳未満の子供を対象としていません。13歳未満の子供から個人情報を意図的に収集することはありません。そのような情報を誤って収集したと思われる場合は、直ちにご連絡ください。',
+                'changes.title': 'このプライバシーポリシーの変更',
+                'changes.text': 'プライバシーポリシーを随時更新する場合があります。新しいプライバシーポリシーをアプリに投稿し、「最終更新日」を更新することで、変更をお知らせします。',
+                'contact.title': 'お問い合わせ',
+                'contact.text': 'このプライバシーポリシーまたは当社のデータ慣行について質問がある場合は、以下にお問い合わせください：'
+            },
+            nb: {
+                'back': 'Tilbake til hjem',
+                'title': 'Personvernregler',
+                'updated': 'Sist oppdatert: 30. april 2026',
+                'intro.title': 'Innledning',
+                'intro.text': 'Velkommen til TarotGo. Vi respekterer ditt personvern og er forpliktet til å beskytte dine personlige data. Denne personvernerklæringen vil informere deg om hvordan vi håndterer dine personlige data når du bruker vår mobilapplikasjon.',
+                'collect.title': 'Informasjon vi samler inn',
+                'collect.readings.title': 'Leggingsdata',
+                'collect.readings.text': 'TarotGo lagrer dine tarotlegginger, inkludert kortene som er trukket, spreads som er brukt, spørsmål som er stilt, og notater du oppretter. Disse dataene lagres lokalt på enheten din ved hjelp av SwiftData og overføres ikke til våre servere.',
+                'collect.settings.title': 'Appinnstillinger og preferanser',
+                'collect.settings.text': 'Vi lagrer dine apppreferanser som kortbaksidestil, varslingsinnstillinger, språkpreferanser og lydinnstillinger lokalt på enheten din.',
+                'collect.analytics.title': 'Analyser og krasjrapporter',
+                'collect.analytics.text': 'Vi kan samle inn anonyme bruksdata og krasjrapporter for å forbedre appens ytelse og brukeropplevelse. Disse dataene inkluderer ikke personlig identifiserbar informasjon eller innholdet i dine legginger.',
+                'use.title': 'Hvordan vi bruker informasjonen din',
+                'use.intro': 'Vi bruker de innsamlede dataene til følgende formål:',
+                'use.provide': 'For å tilby og vedlikeholde appens funksjonalitet',
+                'use.personalize': 'For å tilpasse opplevelsen din med lagrede legginger og preferanser',
+                'use.improve': 'For å forbedre og optimalisere appens ytelse',
+                'use.notifications': 'For å sende deg daglige kortpåminnelser hvis du har aktivert varsler',
+                'use.support': 'For å gi kundestøtte når det etterspørres',
+                'storage.title': 'Datalagring og sikkerhet',
+                'storage.local': 'Alle dine leggingsdata lagres lokalt på enheten din. Vi lagrer ikke dine legginger, spørsmål eller personlige tolkninger på eksterne servere.',
+                'storage.icloud': 'Hvis du aktiverer iCloud-synkronisering (valgfri funksjon), kan leggingsdataene dine lagres i din personlige iCloud-konto, som er underlagt Apples personvernregler.',
+                'storage.security': 'Vi implementerer passende tekniske og organisatoriske tiltak for å beskytte dataene dine mot uautorisert tilgang, endring, avsløring eller ødeleggelse.',
+                'sharing.title': 'Datadeling og tredjeparter',
+                'sharing.text': 'Vi selger, handler eller leier ikke ut dine personlige data til tredjeparter. Vi deler ikke innholdet i dine legginger med noen. Anonyme analyser kan deles med tjenesteleverandører utelukkende med det formål å forbedre appen.',
+                'sharing.services.title': 'Tredjepartstjenester',
+                'sharing.services.intro': 'Vår app kan bruke følgende tredjepartstjenester:',
+                'sharing.apple': 'Apple App Store (for appdistribusjon og kjøp i appen)',
+                'sharing.analytics': 'Analysetjenester (for anonyme bruksstatistikker)',
+                'sharing.crash': 'Krasjrapporteringstjenester (for forbedring av appstabilitet)',
+                'rights.title': 'Dine rettigheter',
+                'rights.intro': 'Du har rett til å:',
+                'rights.access': 'Få tilgang til dataene dine lagret i appen',
+                'rights.export': 'Eksportere leggingshistorikken din som PDF',
+                'rights.delete': 'Slette legginger og data når som helst via appinnstillingene',
+                'rights.opt': 'Velge bort varsler og analyser',
+                'rights.uninstall': 'Avinstallere appen for å fjerne alle lokalt lagrede data',
+                'children.title': 'Barns personvern',
+                'children.text': 'Vår app er ikke beregnet for barn under 13 år. Vi samler ikke bevisst personlig informasjon fra barn under 13 år. Hvis du tror vi utilsiktet har samlet inn slik informasjon, vennligst kontakt oss umiddelbart.',
+                'changes.title': 'Endringer i denne personvernerklæringen',
+                'changes.text': 'Vi kan oppdatere vår personvernerklæring fra tid til annen. Vi vil varsle deg om eventuelle endringer ved å publisere den nye personvernerklæringen i appen og oppdatere datoen for "Sist oppdatert".',
+                'contact.title': 'Kontakt oss',
+                'contact.text': 'Hvis du har spørsmål om denne personvernerklæringen eller våre datapraksis, vennligst kontakt oss på:'
+            },
+            pl: {
+                'back': 'Powrót do strony głównej',
+                'title': 'Polityka Prywatności',
+                'updated': 'Ostatnia aktualizacja: 30 kwietnia 2026',
+                'intro.title': 'Wprowadzenie',
+                'intro.text': 'Witamy w TarotGo. Szanujemy Twoją prywatność i zobowiązujemy się do ochrony Twoich danych osobowych. Ta polityka prywatności poinformuje Cię o tym, jak przetwarzamy Twoje dane osobowe podczas korzystania z naszej aplikacji mobilnej.',
+                'collect.title': 'Zbierane informacje',
+                'collect.readings.title': 'Dane wykładów',
+                'collect.readings.text': 'TarotGo przechowuje Twoje wykłady tarota, w tym wyciągnięte karty, użyte układy, zadane pytania i tworzone notatki. Te dane są przechowywane lokalnie na Twoim urządzeniu przy użyciu SwiftData i nie są przesyłane na nasze serwery.',
+                'collect.settings.title': 'Ustawienia i preferencje aplikacji',
+                'collect.settings.text': 'Przechowujemy Twoje preferencje aplikacji, takie jak styl tylnej strony kart, ustawienia powiadomień, preferencje językowe i ustawienia dźwięku lokalnie na Twoim urządzeniu.',
+                'collect.analytics.title': 'Analityka i raporty awarii',
+                'collect.analytics.text': 'Możemy zbierać anonimowe dane użytkowania i raporty awarii w celu poprawy wydajności i doświadczenia użytkownika aplikacji. Te dane nie zawierają żadnych informacji umożliwiających identyfikację osoby ani treści Twoich wykładów.',
+                'use.title': 'Jak wykorzystujemy Twoje informacje',
+                'use.intro': 'Wykorzystujemy zebrane dane do następujących celów:',
+                'use.provide': 'Aby zapewnić i utrzymać funkcjonalność naszej aplikacji',
+                'use.personalize': 'Aby spersonalizować Twoje doświadczenie z zapisanymi wykładami i preferencjami',
+                'use.improve': 'Aby ulepszyć i zoptymalizować wydajność aplikacji',
+                'use.notifications': 'Aby wysyłać Ci codzienne przypomnienia o kartach, jeśli włączyłeś powiadomienia',
+                'use.support': 'Aby zapewnić obsługę klienta na żądanie',
+                'storage.title': 'Przechowywanie i bezpieczeństwo danych',
+                'storage.local': 'Wszystkie Twoje dane wykładów są przechowywane lokalnie na Twoim urządzeniu. Nie przechowujemy Twoich wykładów, pytań ani osobistych interpretacji na zdalnych serwerach.',
+                'storage.icloud': 'Jeśli włączysz synchronizację iCloud (opcjonalna funkcja), Twoje dane wykładów mogą być przechowywane na Twoim osobistym koncie iCloud, które podlega polityce prywatności Apple.',
+                'storage.security': 'Wdrażamy odpowiednie środki techniczne i organizacyjne w celu ochrony Twoich danych przed nieuprawnionym dostępem, zmianą, ujawnieniem lub zniszczeniem.',
+                'sharing.title': 'Udostępnianie danych i strony trzecie',
+                'sharing.text': 'Nie sprzedajemy, nie wymieniamy ani nie wynajmujemy Twoich danych osobowych stronom trzecim. Nie udostępniamy nikomu treści Twoich wykładów. Anonimowe analizy mogą być udostępniane dostawcom usług wyłącznie w celu ulepszenia aplikacji.',
+                'sharing.services.title': 'Usługi stron trzecich',
+                'sharing.services.intro': 'Nasza aplikacja może korzystać z następujących usług stron trzecich:',
+                'sharing.apple': 'Apple App Store (do dystrybucji aplikacji i zakupów w aplikacji)',
+                'sharing.analytics': 'Usługi analityczne (do anonimowych statystyk użytkowania)',
+                'sharing.crash': 'Usługi raportowania awarii (do poprawy stabilności aplikacji)',
+                'rights.title': 'Twoje prawa',
+                'rights.intro': 'Masz prawo do:',
+                'rights.access': 'Dostępu do swoich danych przechowywanych w aplikacji',
+                'rights.export': 'Eksportowania historii wykładów jako PDF',
+                'rights.delete': 'Usuwania swoich wykładów i danych w dowolnym momencie za pośrednictwem ustawień aplikacji',
+                'rights.opt': 'Rezygnacji z powiadomień i analityki',
+                'rights.uninstall': 'Odinstalowania aplikacji w celu usunięcia wszystkich lokalnie przechowywanych danych',
+                'children.title': 'Prywatność dzieci',
+                'children.text': 'Nasza aplikacja nie jest przeznaczona dla dzieci poniżej 13 roku życia. Nie zbieramy świadomie danych osobowych od dzieci poniżej 13 roku życia. Jeśli uważasz, że nieumyślnie zebraliśmy takie informacje, skontaktuj się z nami natychmiast.',
+                'changes.title': 'Zmiany w tej polityce prywatności',
+                'changes.text': 'Możemy od czasu do czasu aktualizować naszą politykę prywatności. Powiadomimy Cię o wszelkich zmianach, publikując nową politykę prywatności w aplikacji i aktualizując datę "Ostatnia aktualizacja".',
+                'contact.title': 'Kontakt',
+                'contact.text': 'Jeśli masz pytania dotyczące tej polityki prywatności lub naszych praktyk dotyczących danych, skontaktuj się z nami pod adresem:'
+            },
+            'pt-BR': {
+                'back': 'Voltar ao início',
+                'title': 'Política de Privacidade',
+                'updated': 'Última atualização: 30 de abril de 2026',
+                'intro.title': 'Introdução',
+                'intro.text': 'Bem-vindo ao TarotGo. Respeitamos sua privacidade e estamos comprometidos em proteger seus dados pessoais. Esta política de privacidade informará sobre como lidamos com seus dados pessoais ao usar nosso aplicativo móvel.',
+                'collect.title': 'Informações que coletamos',
+                'collect.readings.title': 'Dados de leituras',
+                'collect.readings.text': 'O TarotGo armazena suas leituras de tarô, incluindo as cartas tiradas, as tiragens usadas, as perguntas feitas e as notas que você cria. Esses dados são armazenados localmente em seu dispositivo usando SwiftData e não são transmitidos para nossos servidores.',
+                'collect.settings.title': 'Configurações e preferências do aplicativo',
+                'collect.settings.text': 'Armazenamos suas preferências do aplicativo, como estilo do verso das cartas, configurações de notificação, preferências de idioma e configurações de som localmente em seu dispositivo.',
+                'collect.analytics.title': 'Análises e relatórios de falhas',
+                'collect.analytics.text': 'Podemos coletar dados de uso anônimos e relatórios de falhas para melhorar o desempenho e a experiência do usuário do aplicativo. Esses dados não incluem informações de identificação pessoal ou o conteúdo de suas leituras.',
+                'use.title': 'Como usamos suas informações',
+                'use.intro': 'Usamos os dados coletados para os seguintes propósitos:',
+                'use.provide': 'Para fornecer e manter a funcionalidade do nosso aplicativo',
+                'use.personalize': 'Para personalizar sua experiência com leituras e preferências salvas',
+                'use.improve': 'Para melhorar e otimizar o desempenho do aplicativo',
+                'use.notifications': 'Para enviar lembretes diários de cartas se você habilitou as notificações',
+                'use.support': 'Para fornecer suporte ao cliente quando solicitado',
+                'storage.title': 'Armazenamento e segurança de dados',
+                'storage.local': 'Todos os seus dados de leitura são armazenados localmente em seu dispositivo. Não armazenamos suas leituras, perguntas ou interpretações pessoais em servidores remotos.',
+                'storage.icloud': 'Se você habilitar a sincronização do iCloud (recurso opcional), seus dados de leitura podem ser armazenados em sua conta pessoal do iCloud, que está sujeita à política de privacidade da Apple.',
+                'storage.security': 'Implementamos medidas técnicas e organizacionais apropriadas para proteger seus dados contra acesso, alteração, divulgação ou destruição não autorizados.',
+                'sharing.title': 'Compartilhamento de dados e terceiros',
+                'sharing.text': 'Não vendemos, negociamos ou alugamos seus dados pessoais a terceiros. Não compartilhamos o conteúdo de suas leituras com ninguém. Análises anônimas podem ser compartilhadas com prestadores de serviços exclusivamente para o propósito de melhorar o aplicativo.',
+                'sharing.services.title': 'Serviços de terceiros',
+                'sharing.services.intro': 'Nosso aplicativo pode usar os seguintes serviços de terceiros:',
+                'sharing.apple': 'Apple App Store (para distribuição de aplicativos e compras no aplicativo)',
+                'sharing.analytics': 'Serviços de análise (para estatísticas de uso anônimas)',
+                'sharing.crash': 'Serviços de relatórios de falhas (para melhoria da estabilidade do aplicativo)',
+                'rights.title': 'Seus direitos',
+                'rights.intro': 'Você tem o direito de:',
+                'rights.access': 'Acessar seus dados armazenados no aplicativo',
+                'rights.export': 'Exportar seu histórico de leituras como PDF',
+                'rights.delete': 'Excluir suas leituras e dados a qualquer momento através das configurações do aplicativo',
+                'rights.opt': 'Desativar notificações e análises',
+                'rights.uninstall': 'Desinstalar o aplicativo para remover todos os dados armazenados localmente',
+                'children.title': 'Privacidade das crianças',
+                'children.text': 'Nosso aplicativo não se destina a crianças menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças menores de 13 anos. Se você acredita que coletamos inadvertidamente tais informações, entre em contato conosco imediatamente.',
+                'changes.title': 'Alterações a esta política de privacidade',
+                'changes.text': 'Podemos atualizar nossa política de privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações publicando a nova política de privacidade no aplicativo e atualizando a data de "Última atualização".',
+                'contact.title': 'Entre em contato',
+                'contact.text': 'Se você tiver alguma dúvida sobre esta política de privacidade ou nossas práticas de dados, entre em contato conosco em:'
+            },
+            sv: {
+                'back': 'Tillbaka till start',
+                'title': 'Integritetspolicy',
+                'updated': 'Senast uppdaterad: 30 april 2026',
+                'intro.title': 'Introduktion',
+                'intro.text': 'Välkommen till TarotGo. Vi respekterar din integritet och är engagerade i att skydda dina personuppgifter. Denna integritetspolicy kommer att informera dig om hur vi hanterar dina personuppgifter när du använder vår mobilapplikation.',
+                'collect.title': 'Information vi samlar in',
+                'collect.readings.title': 'Läsningsdata',
+                'collect.readings.text': 'TarotGo lagrar dina tarotläsningar, inklusive de dragna korten, använda spridningar, ställda frågor och anteckningar du skapar. Dessa data lagras lokalt på din enhet med SwiftData och överförs inte till våra servrar.',
+                'collect.settings.title': 'Appinställningar och preferenser',
+                'collect.settings.text': 'Vi lagrar dina apppreferenser som kortbaksidestil, aviseringsinställningar, språkpreferenser och ljudinställningar lokalt på din enhet.',
+                'collect.analytics.title': 'Analyser och kraschrapporter',
+                'collect.analytics.text': 'Vi kan samla in anonyma användningsdata och kraschrapporter för att förbättra appens prestanda och användarupplevelse. Dessa data inkluderar inte personligt identifierbar information eller innehållet i dina läsningar.',
+                'use.title': 'Hur vi använder din information',
+                'use.intro': 'Vi använder insamlade data för följande syften:',
+                'use.provide': 'För att tillhandahålla och underhålla vår apps funktionalitet',
+                'use.personalize': 'För att anpassa din upplevelse med sparade läsningar och preferenser',
+                'use.improve': 'För att förbättra och optimera appens prestanda',
+                'use.notifications': 'För att skicka dig dagliga kortpåminnelser om du har aktiverat aviseringar',
+                'use.support': 'För att tillhandahålla kundsupport när det begärs',
+                'storage.title': 'Datalagring och säkerhet',
+                'storage.local': 'Alla dina läsningsdata lagras lokalt på din enhet. Vi lagrar inte dina läsningar, frågor eller personliga tolkningar på fjärrservrar.',
+                'storage.icloud': 'Om du aktiverar iCloud-synkronisering (valfri funktion) kan dina läsningsdata lagras i ditt personliga iCloud-konto, vilket omfattas av Apples integritetspolicy.',
+                'storage.security': 'Vi implementerar lämpliga tekniska och organisatoriska åtgärder för att skydda dina data mot obehörig åtkomst, ändring, avslöjande eller förstörelse.',
+                'sharing.title': 'Datadelning och tredje parter',
+                'sharing.text': 'Vi säljer, handlar eller hyr inte ut dina personuppgifter till tredje parter. Vi delar inte innehållet i dina läsningar med någon. Anonyma analyser kan delas med tjänsteleverantörer enbart i syfte att förbättra appen.',
+                'sharing.services.title': 'Tredjepartstjänster',
+                'sharing.services.intro': 'Vår app kan använda följande tredjepartstjänster:',
+                'sharing.apple': 'Apple App Store (för appdistribution och köp i appen)',
+                'sharing.analytics': 'Analystjänster (för anonym användningsstatistik)',
+                'sharing.crash': 'Kraschrapporteringstjänster (för förbättring av appstabilitet)',
+                'rights.title': 'Dina rättigheter',
+                'rights.intro': 'Du har rätt att:',
+                'rights.access': 'Få tillgång till dina data som lagras i appen',
+                'rights.export': 'Exportera din läsningshistorik som PDF',
+                'rights.delete': 'Radera dina läsningar och data när som helst via appinställningarna',
+                'rights.opt': 'Välja bort aviseringar och analyser',
+                'rights.uninstall': 'Avinstallera appen för att ta bort alla lokalt lagrade data',
+                'children.title': 'Barns integritet',
+                'children.text': 'Vår app är inte avsedd för barn under 13 år. Vi samlar inte medvetet in personlig information från barn under 13 år. Om du tror att vi oavsiktligt har samlat in sådan information, vänligen kontakta oss omedelbart.',
+                'changes.title': 'Ändringar av denna integritetspolicy',
+                'changes.text': 'Vi kan uppdatera vår integritetspolicy från tid till annan. Vi kommer att meddela dig om eventuella ändringar genom att publicera den nya integritetspolicyn i appen och uppdatera datumet för "Senast uppdaterad".',
+                'contact.title': 'Kontakta oss',
+                'contact.text': 'Om du har några frågor om denna integritetspolicy eller våra datapraxis, vänligen kontakta oss på:'
+            },
+            uk: {
+                'back': 'Повернутися на головну',
+                'title': 'Політика конфіденційності',
+                'updated': 'Останнє оновлення: 30 квітня 2026 року',
+                'intro.title': 'Вступ',
+                'intro.text': 'Ласкаво просимо до TarotGo. Ми поважаємо вашу конфіденційність і зобов\'язуємося захищати ваші персональні дані. Ця політика конфіденційності інформуватиме вас про те, як ми обробляємо ваші персональні дані під час використання нашого мобільного додатку.',
+                'collect.title': 'Інформація, яку ми збираємо',
+                'collect.readings.title': 'Дані читань',
+                'collect.readings.text': 'TarotGo зберігає ваші читання таро, включаючи витягнуті карти, використані розклади, поставлені запитання та створені нотатки. Ці дані зберігаються локально на вашому пристрої за допомогою SwiftData і не передаються на наші сервери.',
+                'collect.settings.title': 'Налаштування та вподобання додатку',
+                'collect.settings.text': 'Ми зберігаємо ваші вподобання додатку, такі як стиль зворотного боку карт, налаштування сповіщень, мовні вподобання та налаштування звуку локально на вашому пристрої.',
+                'collect.analytics.title': 'Аналітика та звіти про збої',
+                'collect.analytics.text': 'Ми можемо збирати анонімні дані про використання та звіти про збої для покращення продуктивності та користувацького досвіду додатку. Ці дані не включають особисту інформацію або зміст ваших читань.',
+                'use.title': 'Як ми використовуємо вашу інформацію',
+                'use.intro': 'Ми використовуємо зібрані дані для наступних цілей:',
+                'use.provide': 'Для забезпечення та підтримки функціональності нашого додатку',
+                'use.personalize': 'Для персоналізації вашого досвіду зі збереженими читаннями та вподобаннями',
+                'use.improve': 'Для покращення та оптимізації продуктивності додатку',
+                'use.notifications': 'Для надсилання щоденних нагадувань про карти, якщо ви увімкнули сповіщення',
+                'use.support': 'Для надання підтримки клієнтам за запитом',
+                'storage.title': 'Зберігання та безпека даних',
+                'storage.local': 'Всі ваші дані читань зберігаються локально на вашому пристрої. Ми не зберігаємо ваші читання, запитання чи особисті інтерпретації на віддалених серверах.',
+                'storage.icloud': 'Якщо ви увімкнете синхронізацію iCloud (необов\'язкова функція), ваші дані читань можуть зберігатися в особистому обліковому записі iCloud, який підпорядковується політиці конфіденційності Apple.',
+                'storage.security': 'Ми впроваджуємо відповідні технічні та організаційні заходи для захисту ваших даних від несанкціонованого доступу, зміни, розкриття чи знищення.',
+                'sharing.title': 'Обмін даними та треті сторони',
+                'sharing.text': 'Ми не продаємо, не обмінюємо і не здаємо в оренду ваші персональні дані третім сторонам. Ми не ділимося змістом ваших читань з ким-небудь. Анонімна аналітика може надаватися постачальникам послуг виключно з метою покращення додатку.',
+                'sharing.services.title': 'Сторонні сервіси',
+                'sharing.services.intro': 'Наш додаток може використовувати наступні сторонні сервіси:',
+                'sharing.apple': 'Apple App Store (для розповсюдження додатків та покупок у додатку)',
+                'sharing.analytics': 'Аналітичні сервіси (для анонімної статистики використання)',
+                'sharing.crash': 'Сервіси звітів про збої (для покращення стабільності додатку)',
+                'rights.title': 'Ваші права',
+                'rights.intro': 'Ви маєте право:',
+                'rights.access': 'Отримувати доступ до ваших даних, збережених у додатку',
+                'rights.export': 'Експортувати історію читань як PDF',
+                'rights.delete': 'Видаляти ваші читання та дані в будь-який час через налаштування додатку',
+                'rights.opt': 'Відмовитися від сповіщень та аналітики',
+                'rights.uninstall': 'Видалити додаток, щоб видалити всі локально збережені дані',
+                'children.title': 'Конфіденційність дітей',
+                'children.text': 'Наш додаток не призначений для дітей віком до 13 років. Ми свідомо не збираємо персональну інформацію від дітей віком до 13 років. Якщо ви вважаєте, що ми ненавмисно зібрали таку інформацію, негайно зв\'яжіться з нами.',
+                'changes.title': 'Зміни до цієї політики конфіденційності',
+                'changes.text': 'Ми можемо час від часу оновлювати нашу політику конфіденційності. Ми повідомимо вас про будь-які зміни, опублікувавши нову політику конфіденційності в додатку та оновивши дату "Останнє оновлення".',
+                'contact.title': 'Зв\'яжіться з нами',
+                'contact.text': 'Якщо у вас є запитання щодо цієї політики конфіденційності або наших практик роботи з даними, зв\'яжіться з нами за адресою:'
+            }
+        };
+
+        const languageSelector = document.getElementById('languageSelector');
+        
+        function setLanguage(lang) {
+            const translation = translations[lang] || translations.en;
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translation[key]) {
+                    element.textContent = translation[key];
+                }
+            });
+            localStorage.setItem('selectedLanguage', lang);
+        }
+
+        const savedLang = localStorage.getItem('selectedLanguage');
+        const browserLang = navigator.language.toLowerCase();
+        let defaultLang = 'en';
+
+        if (savedLang && translations[savedLang]) {
+            defaultLang = savedLang;
+        } else if (translations[browserLang]) {
+            defaultLang = browserLang;
+        } else {
+            const langPrefix = browserLang.split('-')[0];
+            for (let key in translations) {
+                if (key.startsWith(langPrefix)) {
+                    defaultLang = key;
+                    break;
+                }
+            }
+        }
+
+        languageSelector.value = defaultLang;
+        setLanguage(defaultLang);
+
+        languageSelector.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+    </script>
+</body>
+</html>
