@@ -68,7 +68,7 @@ struct SettingsView: View {
                             .foregroundColor(AppTheme.textPrimary)
                             .font(.system(size: 16))
                         
-                        HStack(spacing: 8) {
+                        HStack(spacing: 4) {
                             ForEach(CardBackStyle.allCases) { style in
                                 GeometryReader { geo in
                                     let cardWidth = geo.size.width
@@ -82,7 +82,7 @@ struct SettingsView: View {
                                                     .resizable()
                                                     .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                                                     .cornerRadius(cornerRadius)
-                                                    .padding(4)
+                                                    .padding(8)
                                             }
                                             
                                             if isSelected {
@@ -90,7 +90,7 @@ struct SettingsView: View {
                                                     .stroke(AppTheme.goldGradient, lineWidth: 2.5)
                                             }
                                         }
-                                        .frame(height: 90)
+                                        .frame(height: 110)
                                         .shadow(color: isSelected ? AppTheme.gold.opacity(0.5) : Color.clear, radius: 8)
                                         
                                         VStack(spacing: 2) {
