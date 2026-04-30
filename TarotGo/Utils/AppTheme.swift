@@ -32,13 +32,13 @@ enum CardBackStyle: String, CaseIterable, Identifiable {
     var subtitle: String {
         switch self {
         case .modern:
-            return "21st Century"
+            return L10n.settingsCardBackModernSubtitle
         case .original:
-            return "CRACKED ICE (1909)"
+            return L10n.settingsCardBackOriginalSubtitle
         case .standard:
-            return "TUDOR ROSE"
+            return L10n.settingsCardBackStandardSubtitle
         case .classic:
-            return "PLAID"
+            return L10n.settingsCardBackClassicSubtitle
         }
     }
 }
