@@ -82,7 +82,7 @@ struct SettingsView: View {
                                                     .resizable()
                                                     .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                                                     .cornerRadius(cornerRadius)
-                                                    .padding(isSelected ? 4 : 0)
+                                                    .padding(4)
                                             }
                                             
                                             if isSelected {
