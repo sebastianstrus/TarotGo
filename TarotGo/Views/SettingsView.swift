@@ -73,6 +73,7 @@ struct SettingsView: View {
                                 GeometryReader { geo in
                                     let cardWidth = geo.size.width
                                     let cornerRadius = AppTheme.cardCornerRadius(forWidth: cardWidth)
+                                    let isSelected = selectedCardBackRaw == style.rawValue
                                     
                                     VStack(spacing: 6) {
                                         ZStack {
@@ -81,22 +82,30 @@ struct SettingsView: View {
                                                     .resizable()
                                                     .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                                                     .cornerRadius(cornerRadius)
+                                                    .padding(isSelected ? 4 : 0)
                                             }
                                             
-                                            if selectedCardBackRaw == style.rawValue {
-                                                RoundedRectangle(cornerRadius: cornerRadius)
+                                            if isSelected {
+                                                RoundedRectangle(cornerRadius: cornerRadius + 4)
                                                     .stroke(AppTheme.goldGradient, lineWidth: 2.5)
                                             }
                                         }
                                         .frame(height: 90)
-                                        .padding(.vertical, selectedCardBackRaw == style.rawValue ? 4 : 0)
-                                        .shadow(color: selectedCardBackRaw == style.rawValue ? AppTheme.gold.opacity(0.5) : Color.clear, radius: 8)
+                                        .shadow(color: isSelected ? AppTheme.gold.opacity(0.5) : Color.clear, radius: 8)
                                         
-                                        Text(style.displayName)
-                                            .font(.system(size: 11, weight: selectedCardBackRaw == style.rawValue ? .semibold : .regular))
-                                            .foregroundColor(selectedCardBackRaw == style.rawValue ? AppTheme.gold : AppTheme.textSecondary)
-                                            .lineLimit(1)
-                                            .minimumScaleFactor(0.8)
+                                        VStack(spacing: 2) {
+                                            Text(style.displayName)
+                                                .font(.system(size: 11, weight: isSelected ? .semibold : .regular))
+                                                .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textPrimary)
+                                                .lineLimit(1)
+                                                .minimumScaleFactor(0.8)
+                                            
+                                            Text(style.subtitle)
+                                                .font(.system(size: 9, weight: .light))
+                                                .foregroundColor(AppTheme.textSecondary.opacity(0.7))
+                                                .lineLimit(1)
+                                                .minimumScaleFactor(0.7)
+                                        }
                                     }
                                     .frame(maxWidth: .infinity)
                                     .contentShape(Rectangle())
@@ -108,7 +117,7 @@ struct SettingsView: View {
                                 .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                             }
                         }
-                        .frame(height: 120)
+                        .frame(height: 140)
                     }
                     .padding(.vertical, 8)
                     .listRowSeparator(.hidden)

@@ -29,16 +29,16 @@ enum CardBackStyle: String, CaseIterable, Identifiable {
         }
     }
     
-    var description: String {
+    var subtitle: String {
         switch self {
         case .modern:
-            return "Modern 'XXI'"
+            return "21st Century"
         case .original:
-            return "Original 'CRACKED ICE (1909)'"
+            return "CRACKED ICE (1909)"
         case .standard:
-            return "Standard 'TUDOR ROSE'"
+            return "TUDOR ROSE"
         case .classic:
-            return "Classic 'PLAID'"
+            return "PLAID"
         }
     }
 }
