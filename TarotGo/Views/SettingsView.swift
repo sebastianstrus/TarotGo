@@ -168,6 +168,43 @@ struct SettingsView: View {
                 )
                 
                 Section {
+                    Button {
+                        openURL("https://tarotgo.app/privacy.html")
+                    } label: {
+                        HStack {
+                            Text(L10n.settingsPrivacyPolicy)
+                            Spacer()
+                            Image(systemName: "arrow.up.right")
+                                .font(.system(size: 12))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        }
+                        .foregroundColor(AppTheme.textPrimary)
+                    }
+                    .listRowSeparator(.hidden)
+                    
+                    Button {
+                        openURL("https://tarotgo.app/terms.html")
+                    } label: {
+                        HStack {
+                            Text(L10n.settingsTermsOfService)
+                            Spacer()
+                            Image(systemName: "arrow.up.right")
+                                .font(.system(size: 12))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        }
+                        .foregroundColor(AppTheme.textPrimary)
+                    }
+                    .listRowSeparator(.hidden)
+                } header: {
+                    Text(L10n.settingsLegal)
+                        .foregroundColor(AppTheme.gold)
+                }
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.5))
+                )
+                
+                Section {
                     HStack {
                         Text(L10n.settingsVersion)
                         Spacer()
@@ -295,6 +332,12 @@ struct SettingsView: View {
     
     private func openNotificationSettings() {
         if let url = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    private func openURL(_ urlString: String) {
+        if let url = URL(string: urlString) {
             UIApplication.shared.open(url)
         }
     }
