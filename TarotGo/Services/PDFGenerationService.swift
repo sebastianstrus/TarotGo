@@ -411,16 +411,20 @@ class PDFGenerationService {
                     let cardImageHeight: CGFloat = 140
                     let cardImageWidth: CGFloat = cardImageHeight * (1108.0 / 1900.0)
                     let cardX = pageWidth - margin - cardImageWidth
+                    let cornerRadius = cardImageWidth * 0.06 // Matches AppTheme.cardCornerRadius formula
                     
                     // We use cardSectionTopY so the image starts aligned with the badge/title
                     var imageRect = CGRect(x: cardX, y: cardSectionTopY + 10, width: cardImageWidth, height: cardImageHeight)
                     
                     context.cgContext.saveGState()
-                    context.cgContext.setShadow(offset: CGSize(width: 0, height: 4), blur: 10, color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.35).cgColor)
-                    let cardBg = UIBezierPath(roundedRect: imageRect, cornerRadius: cardImageWidth * 0.06)
+                    
+                    // Draw white background
+                    let cardBg = UIBezierPath(roundedRect: imageRect, cornerRadius: cornerRadius)
                     UIColor.white.setFill()
                     cardBg.fill()
-                    context.cgContext.restoreGState()
+                    
+                    // Clip to rounded rect for the image
+                    cardBg.addClip()
                     
                     if drawnCard.isReversed {
                         context.cgContext.saveGState()
@@ -432,6 +436,17 @@ class PDFGenerationService {
                     } else {
                         cardImage.draw(in: imageRect)
                     }
+                    
+                    context.cgContext.restoreGState()
+                    
+                    // Draw 1px white border (after drawing the image)
+                    context.cgContext.saveGState()
+                    let originalRect = CGRect(x: cardX, y: cardSectionTopY + 10, width: cardImageWidth, height: cardImageHeight)
+                    let borderPath = UIBezierPath(roundedRect: originalRect, cornerRadius: cornerRadius)
+                    UIColor.gray.setStroke()
+                    borderPath.lineWidth = 0.5
+                    borderPath.stroke()
+                    context.cgContext.restoreGState()
                 }
                 
                 let interpretation = drawnCard.card.interpretation(for: drawnCard.category, reversed: drawnCard.isReversed)
