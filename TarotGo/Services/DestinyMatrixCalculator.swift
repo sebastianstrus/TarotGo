@@ -37,7 +37,7 @@ class DestinyMatrixCalculator {
             y: 0.5
         ))
         
-        // Personal Power (top of square) - day + month
+        // Personal Power (top center of square frame)
         let personalPower = reduce(day + month)
         positions.append(MatrixPosition(
             number: personalPower,
@@ -46,7 +46,7 @@ class DestinyMatrixCalculator {
             y: 0.2
         ))
         
-        // Social Realization (right of square) - month + year
+        // Social Realization (right center of square frame)
         let socialRealization = reduce(month + year)
         positions.append(MatrixPosition(
             number: socialRealization,
@@ -55,7 +55,7 @@ class DestinyMatrixCalculator {
             y: 0.5
         ))
         
-        // Spiritual Development (bottom of square) - day + year
+        // Spiritual Development (bottom center of square frame)
         let spiritualDevelopment = reduce(day + year)
         positions.append(MatrixPosition(
             number: spiritualDevelopment,
@@ -64,7 +64,7 @@ class DestinyMatrixCalculator {
             y: 0.8
         ))
         
-        // Planetary Influence (left of square) - sum of three main energies
+        // Planetary Influence (left center of square frame)
         let planetaryInfluence = reduce(personalPower + socialRealization + spiritualDevelopment)
         positions.append(MatrixPosition(
             number: planetaryInfluence,
@@ -73,7 +73,7 @@ class DestinyMatrixCalculator {
             y: 0.5
         ))
         
-        // Money (top-right diagonal)
+        // Money (between top and right, on top-right diagonal)
         let money = reduce(personalPower + socialRealization)
         positions.append(MatrixPosition(
             number: money,
@@ -82,7 +82,7 @@ class DestinyMatrixCalculator {
             y: 0.35
         ))
         
-        // Relationships (bottom-right diagonal)
+        // Relationships (between right and bottom, on bottom-right diagonal)
         let relationships = reduce(socialRealization + spiritualDevelopment)
         positions.append(MatrixPosition(
             number: relationships,
@@ -91,7 +91,7 @@ class DestinyMatrixCalculator {
             y: 0.65
         ))
         
-        // Talents (bottom-left diagonal)
+        // Talents (between bottom and left, on bottom-left diagonal)
         let talents = reduce(spiritualDevelopment + planetaryInfluence)
         positions.append(MatrixPosition(
             number: talents,
@@ -100,7 +100,7 @@ class DestinyMatrixCalculator {
             y: 0.65
         ))
         
-        // Purpose (top-left diagonal)
+        // Purpose (between left and top, on top-left diagonal)
         let purpose = reduce(planetaryInfluence + personalPower)
         positions.append(MatrixPosition(
             number: purpose,
@@ -109,95 +109,95 @@ class DestinyMatrixCalculator {
             y: 0.35
         ))
         
-        // Health - from year sum
-        let health = reduce(year)
-        positions.append(MatrixPosition(
-            number: health,
-            position: .health,
-            x: 0.5,
-            y: 0.95
-        ))
-        
-        // Karma - from center
-        let karma = reduce(centerNumber)
-        positions.append(MatrixPosition(
-            number: karma,
-            position: .karma,
-            x: 0.5,
-            y: 0.05
-        ))
-        
-        // Male Line (Father) - from day
-        let maleLine = reduce(day)
-        positions.append(MatrixPosition(
-            number: maleLine,
-            position: .male,
-            x: 0.85,
-            y: 0.2
-        ))
-        
-        // Female Line (Mother) - from month
-        let femaleLine = reduce(month)
-        positions.append(MatrixPosition(
-            number: femaleLine,
-            position: .female,
-            x: 0.15,
-            y: 0.2
-        ))
-        
-        // Sky (Heaven energy) - spiritual aspect
+        // Sky (between karma and personal power, upper vertical line)
         let sky = reduce(personalPower + centerNumber)
         positions.append(MatrixPosition(
             number: sky,
             position: .sky,
             x: 0.5,
-            y: 0.1
+            y: 0.35
         ))
         
-        // Earth (grounding energy)
+        // Earth (between center and spiritual development, lower vertical line)
         let earth = reduce(spiritualDevelopment + centerNumber)
         positions.append(MatrixPosition(
             number: earth,
             position: .earth,
             x: 0.5,
-            y: 0.9
+            y: 0.65
         ))
         
-        // Comfort zone
+        // Male Line (between purpose and money, upper horizontal)
+        let maleLine = reduce(day)
+        positions.append(MatrixPosition(
+            number: maleLine,
+            position: .male,
+            x: 0.65,
+            y: 0.2
+        ))
+        
+        // Female Line (between purpose and talents, left side)
+        let femaleLine = reduce(month)
+        positions.append(MatrixPosition(
+            number: femaleLine,
+            position: .female,
+            x: 0.35,
+            y: 0.2
+        ))
+        
+        // Karma (above personal power, top of vertical center line)
+        let karma = reduce(centerNumber)
+        positions.append(MatrixPosition(
+            number: karma,
+            position: .karma,
+            x: 0.5,
+            y: 0.12
+        ))
+        
+        // Health (below spiritual development, bottom of vertical center line)
+        let health = reduce(year)
+        positions.append(MatrixPosition(
+            number: health,
+            position: .health,
+            x: 0.5,
+            y: 0.88
+        ))
+        
+        // Comfort zone (right side, between social and relationships)
         let comfort = reduce(money + relationships + talents + purpose)
         positions.append(MatrixPosition(
             number: comfort,
             position: .comfort,
-            x: 0.9,
-            y: 0.9
+            x: 0.88,
+            y: 0.5
         ))
         
-        // Timeline energies
-        // Past
+        // Timeline energies (left side vertical line)
+        // Past (lower left, below present)
         let past = reduce(yearDigits[0] + yearDigits[1])
         positions.append(MatrixPosition(
             number: past,
             position: .past,
-            x: 0.1,
-            y: 0.85
+            x: 0.12,
+            y: 0.65
         ))
         
-        // Present
+        // Present (left side, aligned with center)
         let present = reduce(day + month)
         positions.append(MatrixPosition(
             number: present,
             position: .present,
-            x: 0.1,
-            y: 0.5
+            x: 0.12,
+            y: 0.35
         ))
         
-        // Future
+        // Future (upper left, above present)
         let future = reduce(yearDigits[2] + yearDigits[3])
         positions.append(MatrixPosition(
             number: future,
             position: .future,
-            x: 0.1,
-            y: 0.15
+            x: 0.12,
+            y: 0.2
         ))
         
         return DestinyMatrix(birthDate: birthDate, positions: positions)
