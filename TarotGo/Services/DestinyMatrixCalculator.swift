@@ -151,7 +151,7 @@ class DestinyMatrixCalculator {
             number: karma,
             position: .karma,
             x: 0.5,
-            y: 0.08
+            y: 0.06
         ))
         
         // Health (below square, bottom)
@@ -160,7 +160,7 @@ class DestinyMatrixCalculator {
             number: health,
             position: .health,
             x: 0.5,
-            y: 0.92
+            y: 0.94
         ))
         
         // Comfort zone (far right)
@@ -168,7 +168,7 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: comfort,
             position: .comfort,
-            x: 0.92,
+            x: 0.94,
             y: 0.5
         ))
         
@@ -178,8 +178,8 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: future,
             position: .future,
-            x: 0.08,
-            y: 0.25
+            x: 0.06,
+            y: 0.2
         ))
         
         // Present (middle left)
@@ -187,7 +187,7 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: present,
             position: .present,
-            x: 0.08,
+            x: 0.06,
             y: 0.5
         ))
         
@@ -196,8 +196,8 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: past,
             position: .past,
-            x: 0.08,
-            y: 0.75
+            x: 0.06,
+            y: 0.8
         ))
         
         return DestinyMatrix(birthDate: birthDate, positions: positions)
