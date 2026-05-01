@@ -103,14 +103,6 @@ struct PositionCircleView: View {
     
     var body: some View {
         ZStack {
-            // Outer glow when selected
-            if isSelected {
-                Circle()
-                    .fill(AppTheme.gold.opacity(0.3))
-                    .frame(width: circleSize + 10, height: circleSize + 10)
-                    .blur(radius: 8)
-            }
-            
             // Main circle
             Circle()
                 .fill(
@@ -131,8 +123,8 @@ struct PositionCircleView: View {
                         )
                 )
                 .shadow(
-                    color: isSelected ? AppTheme.gold.opacity(0.5) : AppTheme.gold.opacity(0.2),
-                    radius: isSelected ? 12 : 6,
+                    color: isSelected ? AppTheme.gold.opacity(0.4) : AppTheme.gold.opacity(0.2),
+                    radius: isSelected ? 8 : 6,
                     x: 0,
                     y: 4
                 )
@@ -146,7 +138,7 @@ struct PositionCircleView: View {
             x: position.x * size,
             y: position.y * size
         )
-        .scaleEffect(isSelected ? 1.1 : 1.0)
+        .scaleEffect(isSelected ? 1.05 : 1.0)
         .animation(.spring(response: 0.3), value: isSelected)
     }
 }

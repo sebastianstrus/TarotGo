@@ -43,7 +43,7 @@ class DestinyMatrixCalculator {
             number: personalPower,
             position: .personalPower,
             x: 0.5,
-            y: 0.2
+            y: 0.18
         ))
         
         // Social Realization (right of square)
@@ -51,7 +51,7 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: socialRealization,
             position: .socialRealization,
-            x: 0.8,
+            x: 0.82,
             y: 0.5
         ))
         
@@ -61,7 +61,7 @@ class DestinyMatrixCalculator {
             number: spiritualDevelopment,
             position: .spiritualDevelopment,
             x: 0.5,
-            y: 0.8
+            y: 0.82
         ))
         
         // Planetary Influence (left of square)
@@ -69,7 +69,7 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: planetaryInfluence,
             position: .planetaryInfluence,
-            x: 0.2,
+            x: 0.18,
             y: 0.5
         ))
         
@@ -133,7 +133,7 @@ class DestinyMatrixCalculator {
             number: sky,
             position: .sky,
             x: 0.5,
-            y: 0.35
+            y: 0.34
         ))
         
         // Earth (lower center, between center and spiritual development)
@@ -142,7 +142,7 @@ class DestinyMatrixCalculator {
             number: earth,
             position: .earth,
             x: 0.5,
-            y: 0.65
+            y: 0.66
         ))
         
         // Karma (above square, top)
@@ -151,7 +151,7 @@ class DestinyMatrixCalculator {
             number: karma,
             position: .karma,
             x: 0.5,
-            y: 0.06
+            y: 0.04
         ))
         
         // Health (below square, bottom)
@@ -160,7 +160,7 @@ class DestinyMatrixCalculator {
             number: health,
             position: .health,
             x: 0.5,
-            y: 0.94
+            y: 0.96
         ))
         
         // Comfort zone (far right)
@@ -168,7 +168,7 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: comfort,
             position: .comfort,
-            x: 0.94,
+            x: 0.96,
             y: 0.5
         ))
         
