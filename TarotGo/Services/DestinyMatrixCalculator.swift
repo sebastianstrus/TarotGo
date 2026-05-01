@@ -178,8 +178,8 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: future,
             position: .future,
-            x: 0.06,
-            y: 0.2
+            x: 0.04,
+            y: 0.15
         ))
         
         // Present (middle left)
@@ -187,7 +187,7 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: present,
             position: .present,
-            x: 0.06,
+            x: 0.04,
             y: 0.5
         ))
         
@@ -196,8 +196,8 @@ class DestinyMatrixCalculator {
         positions.append(MatrixPosition(
             number: past,
             position: .past,
-            x: 0.06,
-            y: 0.8
+            x: 0.04,
+            y: 0.85
         ))
         
         return DestinyMatrix(birthDate: birthDate, positions: positions)
