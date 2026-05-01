@@ -10,6 +10,7 @@ import SwiftUI
 struct CardDetailView: View {
     let card: TarotCard
     @State private var showReversed: Bool = false
+    @State private var showARView: Bool = false
     
     var body: some View {
         ZStack {
@@ -40,6 +41,20 @@ struct CardDetailView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    showARView = true
+                } label: {
+                    Image(systemName: "cube.transparent")
+                        .font(.system(size: 20))
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $showARView) {
+            CardARView(card: card)
+        }
     }
     
     private var cardImageView: some View {
