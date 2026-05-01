@@ -123,7 +123,7 @@ struct ARViewContainer: UIViewRepresentable {
             
             // 3. Use a Plane instead of a Box for the front
             // A plane only has one side, making it much harder to "get lost" inside it
-            let mesh = MeshResource.generatePlane(width: cardWidth, depth: cardHeight)
+            let mesh = MeshResource.generatePlane(width: cardWidth, height: cardHeight)
             
             // 4. Use UnlitMaterial (This ignores light and shows the raw image)
             var material = UnlitMaterial()
@@ -142,7 +142,7 @@ struct ARViewContainer: UIViewRepresentable {
             // 5. Correct Orientation
             // Planes are generated lying flat on the ground (X-Z plane).
             // We need to tilt it up 90 degrees to face the user.
-            cardEntity.orientation = simd_quatf(angle: .pi/2, axis: [1, 0, 0])
+            //cardEntity.orientation = simd_quatf(angle: .pi/2, axis: [1, 0, 0])
             
             if isReversed {
                 cardEntity.orientation *= simd_quatf(angle: .pi, axis: [0, 0, 1])
@@ -158,8 +158,10 @@ struct ARViewContainer: UIViewRepresentable {
         func updateCardOrientation(isReversed: Bool) {
             guard let entity = cardEntity else { return }
             
-            // Animate the rotation
-            let targetRotation = isReversed ? simd_quatf(angle: .pi, axis: [0, 1, 0]) : simd_quatf(angle: 0, axis: [0, 1, 0])
+            // Match the same axis used in createCard (Z axis)
+            let targetRotation = isReversed
+                ? simd_quatf(angle: .pi, axis: [0, 0, 1])
+                : simd_quatf(angle: 0, axis: [0, 0, 1])
             
             var transform = entity.transform
             transform.rotation = targetRotation
