@@ -113,87 +113,44 @@ struct ARViewContainer: UIViewRepresentable {
         }
         
         func createCard(in arView: ARView, card: TarotCard, isReversed: Bool) {
-            // Create anchor 1.5 meters in front of the user
-            let anchor = AnchorEntity(world: [0, 0, -1.5])
+            // 1. Position: 0.5 meters away (not 1.5) and at eye level (0 height)
+            let anchor = AnchorEntity(world: [0, 0, -0.5])
             
-            // Card dimensions: 2m height, maintaining aspect ratio
+            // 2. Realistic Size: 15cm height (0.15m)
             let cardAspectRatio: Float = 1108.0 / 1900.0
-            let cardHeight: Float = 2.0
+            let cardHeight: Float = 0.15
             let cardWidth: Float = cardHeight * cardAspectRatio
-            let cardThickness: Float = 0.01
             
-            // Create a box mesh for the card
-            let mesh = MeshResource.generateBox(
-                width: cardWidth,
-                height: cardHeight,
-                depth: cardThickness
-            )
+            // 3. Use a Plane instead of a Box for the front
+            // A plane only has one side, making it much harder to "get lost" inside it
+            let mesh = MeshResource.generatePlane(width: cardWidth, depth: cardHeight)
             
-            // Create materials for front and back
-            var materials: [RealityKit.Material] = []
+            // 4. Use UnlitMaterial (This ignores light and shows the raw image)
+            var material = UnlitMaterial()
             
-            // Front material (card image)
-            if let frontImage = UIImage(named: card.imageName), let cgImage = frontImage.cgImage {
-                var frontMaterial = SimpleMaterial()
-                if let texture = try? TextureResource.generate(from: cgImage, options: .init(semantic: .color)) {
-                    frontMaterial.color = .init(texture: .init(texture))
-                }
-                materials.append(frontMaterial)
+            if let frontImage = UIImage(named: card.imageName),
+               let cgImage = frontImage.cgImage,
+               let texture = try? TextureResource.generate(from: cgImage, options: .init(semantic: .color)) {
+                material.color = .init(texture: .init(texture))
             } else {
-                // Fallback material
-                var fallbackMaterial = SimpleMaterial()
-                fallbackMaterial.color = .init(tint: .purple)
-                materials.append(fallbackMaterial)
+                // If the image fails, this pink will be very obvious
+                material.color = .init(tint: .systemPink)
             }
             
-            // Get selected card back style
-            let selectedCardBackRaw = UserDefaults.standard.string(forKey: "selectedCardBack") ?? "card_back_modern"
+            let cardEntity = ModelEntity(mesh: mesh, materials: [material])
             
-            // Back material (card back)
-            if let backImage = UIImage(named: selectedCardBackRaw), let cgImage = backImage.cgImage {
-                var backMaterial = SimpleMaterial()
-                if let texture = try? TextureResource.generate(from: cgImage, options: .init(semantic: .color)) {
-                    backMaterial.color = .init(texture: .init(texture))
-                }
-                materials.append(backMaterial)
-            } else {
-                // Fallback material
-                var fallbackMaterial = SimpleMaterial()
-                fallbackMaterial.color = .init(tint: .blue)
-                materials.append(fallbackMaterial)
-            }
+            // 5. Correct Orientation
+            // Planes are generated lying flat on the ground (X-Z plane).
+            // We need to tilt it up 90 degrees to face the user.
+            cardEntity.orientation = simd_quatf(angle: .pi/2, axis: [1, 0, 0])
             
-            // Create edge materials (same color for all edges)
-            var edgeMaterial = SimpleMaterial()
-            edgeMaterial.color = .init(tint: .init(white: 0.9, alpha: 1.0))
-            
-            // Apply materials to all faces of the box
-            // Box faces: +X, -X, +Y, -Y, +Z, -Z
-            // We want: front (+Z), back (-Z), and edges (others)
-            let allMaterials = [
-                edgeMaterial,  // +X (right edge)
-                edgeMaterial,  // -X (left edge)
-                edgeMaterial,  // +Y (top edge)
-                edgeMaterial,  // -Y (bottom edge)
-                materials[0],  // +Z (front - card image)
-                materials.count > 1 ? materials[1] : materials[0]  // -Z (back)
-            ]
-            
-            // Create the card entity
-            let cardEntity = ModelEntity(mesh: mesh, materials: allMaterials)
-            
-            // Apply initial rotation if reversed
             if isReversed {
-                cardEntity.transform.rotation = simd_quatf(angle: .pi, axis: [0, 1, 0])
+                cardEntity.orientation *= simd_quatf(angle: .pi, axis: [0, 0, 1])
             }
             
-            // Add to anchor
             anchor.addChild(cardEntity)
-            
-            // Add anchor to scene
             arView.scene.addAnchor(anchor)
             
-            // Store references
             self.cardEntity = cardEntity
             self.cardAnchor = anchor
         }
