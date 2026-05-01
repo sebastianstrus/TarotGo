@@ -118,7 +118,7 @@ struct ARViewContainer: UIViewRepresentable {
             
             // 2. Realistic Size: 15cm height (0.15m)
             let cardAspectRatio: Float = 1108.0 / 1900.0
-            let cardHeight: Float = 0.15
+            let cardHeight: Float = 0.5
             let cardWidth: Float = cardHeight * cardAspectRatio
             
             // 3. Use a Plane instead of a Box for the front
