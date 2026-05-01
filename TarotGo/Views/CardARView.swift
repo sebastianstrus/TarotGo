@@ -118,12 +118,21 @@ struct ARViewContainer: UIViewRepresentable {
             
             // 2. Realistic Size: 15cm height (0.15m)
             let cardAspectRatio: Float = 1108.0 / 1900.0
-            let cardHeight: Float = 0.5
+            let cardHeight: Float = 1
             let cardWidth: Float = cardHeight * cardAspectRatio
             
             // 3. Use a Plane instead of a Box for the front
             // A plane only has one side, making it much harder to "get lost" inside it
-            let mesh = MeshResource.generatePlane(width: cardWidth, height: cardHeight)
+            //let mesh = MeshResource.generatePlane(width: cardWidth, height: cardHeight)
+            
+            let cornerRadius = Float(AppTheme.cardCornerRadius(forWidth: CGFloat(cardWidth)))
+            
+            let mesh = MeshResource.generateBox(
+                width: cardWidth,
+                height: cardHeight,
+                depth: 0.01, // 👈 thicker = corners visible
+                cornerRadius: cornerRadius
+            )
             
             // 4. Use UnlitMaterial (This ignores light and shows the raw image)
             var material = UnlitMaterial()
