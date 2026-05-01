@@ -87,6 +87,16 @@ struct HomeView: View {
                             }
                             .buttonStyle(HomeButtonStyle())
                             
+                            // Destiny Matrix
+                            NavigationLink(destination: DestinyMatrixInputView()) {
+                                HomeButton(
+                                    icon: "star.circle.fill",
+                                    title: L10n.homeDestinyMatrix,
+                                    subtitle: L10n.homeDestinyMatrixSubtitle
+                                )
+                            }
+                            .buttonStyle(HomeButtonStyle())
+                            
                             // Card Dictionary
                             NavigationLink(destination: CardDictionaryView()) {
                                 HomeButton(

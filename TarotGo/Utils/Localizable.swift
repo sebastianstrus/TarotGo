@@ -32,11 +32,95 @@ enum L10n {
     static let homeHistory = NSLocalizedString("home.history", comment: "Reading History")
     static let homeHistorySubtitle = NSLocalizedString("home.history.subtitle", comment: "Review your past readings")
 
+    static let homeDestinyMatrix = NSLocalizedString("home.destinyMatrix", comment: "Destiny Matrix")
+    static let homeDestinyMatrixSubtitle = NSLocalizedString("home.destinyMatrix.subtitle", comment: "Discover your life's blueprint")
+    
     static let homeCardDictionary = NSLocalizedString("home.cardDictionary", comment: "Card Dictionary")
     static let homeCardDictionarySubtitle = NSLocalizedString("home.cardDictionary.subtitle", comment: "Explore all 78 tarot cards")
     
     static let homeSettings = NSLocalizedString("home.settings", comment: "Settings")
     static let homeSettingsSubtitle = NSLocalizedString("home.settings.subtitle", comment: "Configure notifications and preferences")
+
+    // MARK: - Destiny Matrix
+    static let matrixTitle = NSLocalizedString("matrix.title", comment: "Destiny Matrix")
+    static let matrixSubtitle = NSLocalizedString("matrix.subtitle", comment: "Your Personal Energy Map")
+    static let matrixWhatIs = NSLocalizedString("matrix.whatIs", comment: "What is Destiny Matrix?")
+    static let matrixDescription = NSLocalizedString("matrix.description", comment: "Destiny Matrix is a numerology system that maps the energies of your birth date to the 22 Major Arcana cards of the Tarot. Each position reveals different aspects of your life path, talents, and purpose.")
+    static let matrixEnterBirthDate = NSLocalizedString("matrix.enterBirthDate", comment: "Enter Your Birth Date")
+    static let matrixBirthDate = NSLocalizedString("matrix.birthDate", comment: "Birth Date")
+    static let matrixCalculate = NSLocalizedString("matrix.calculate", comment: "Calculate My Matrix")
+    
+    static let matrixYourMatrix = NSLocalizedString("matrix.yourMatrix", comment: "Your Destiny Matrix")
+    static let matrixTapCircle = NSLocalizedString("matrix.tapCircle", comment: "Tap any circle to see its meaning")
+    static let matrixSelectedPosition = NSLocalizedString("matrix.selectedPosition", comment: "Selected Position")
+    static let matrixNumber = NSLocalizedString("matrix.number", comment: "Number")
+    static let matrixAssociatedCard = NSLocalizedString("matrix.associatedCard", comment: "Associated Tarot Card")
+    
+    static let matrixTabDiagram = NSLocalizedString("matrix.tab.diagram", comment: "Diagram")
+    static let matrixTabPositions = NSLocalizedString("matrix.tab.positions", comment: "Positions")
+    static let matrixTabCards = NSLocalizedString("matrix.tab.cards", comment: "Cards")
+    
+    static let matrixViewCardDetails = NSLocalizedString("matrix.viewCardDetails", comment: "View Card Details")
+    static let matrixUniqueCards = NSLocalizedString("matrix.uniqueCards", comment: "Unique Cards in Your Matrix")
+    static let matrixAllPositions = NSLocalizedString("matrix.allPositions", comment: "All 19 Positions")
+    
+    // Matrix Position Names
+    static let matrixCenter = NSLocalizedString("matrix.position.center", comment: "Center")
+    static let matrixCenterDesc = NSLocalizedString("matrix.position.center.desc", comment: "Your core essence and life purpose")
+    
+    static let matrixPersonalPower = NSLocalizedString("matrix.position.personalPower", comment: "Personal Power")
+    static let matrixPersonalPowerDesc = NSLocalizedString("matrix.position.personalPower.desc", comment: "Your inner strength and personal authority")
+    
+    static let matrixSocialRealization = NSLocalizedString("matrix.position.socialRealization", comment: "Social Realization")
+    static let matrixSocialRealizationDesc = NSLocalizedString("matrix.position.socialRealization.desc", comment: "How you express yourself in society")
+    
+    static let matrixSpiritualDevelopment = NSLocalizedString("matrix.position.spiritualDevelopment", comment: "Spiritual Development")
+    static let matrixSpiritualDevelopmentDesc = NSLocalizedString("matrix.position.spiritualDevelopment.desc", comment: "Your spiritual path and growth")
+    
+    static let matrixPlanetaryInfluence = NSLocalizedString("matrix.position.planetaryInfluence", comment: "Planetary Influence")
+    static let matrixPlanetaryInfluenceDesc = NSLocalizedString("matrix.position.planetaryInfluence.desc", comment: "External forces and cosmic energies affecting you")
+    
+    static let matrixMoney = NSLocalizedString("matrix.position.money", comment: "Money & Abundance")
+    static let matrixMoneyDesc = NSLocalizedString("matrix.position.money.desc", comment: "Your relationship with material resources")
+    
+    static let matrixRelationships = NSLocalizedString("matrix.position.relationships", comment: "Relationships")
+    static let matrixRelationshipsDesc = NSLocalizedString("matrix.position.relationships.desc", comment: "Your connection patterns with others")
+    
+    static let matrixTalents = NSLocalizedString("matrix.position.talents", comment: "Talents & Gifts")
+    static let matrixTalentsDesc = NSLocalizedString("matrix.position.talents.desc", comment: "Your natural abilities and strengths")
+    
+    static let matrixPurpose = NSLocalizedString("matrix.position.purpose", comment: "Life Purpose")
+    static let matrixPurposeDesc = NSLocalizedString("matrix.position.purpose.desc", comment: "Your mission and calling in life")
+    
+    static let matrixHealth = NSLocalizedString("matrix.position.health", comment: "Health & Vitality")
+    static let matrixHealthDesc = NSLocalizedString("matrix.position.health.desc", comment: "Physical and energetic wellbeing")
+    
+    static let matrixKarma = NSLocalizedString("matrix.position.karma", comment: "Karmic Path")
+    static let matrixKarmaDesc = NSLocalizedString("matrix.position.karma.desc", comment: "Lessons from past and what you're here to resolve")
+    
+    static let matrixMale = NSLocalizedString("matrix.position.male", comment: "Masculine Energy")
+    static let matrixMaleDesc = NSLocalizedString("matrix.position.male.desc", comment: "Your active, yang, outward-directed energy")
+    
+    static let matrixFemale = NSLocalizedString("matrix.position.female", comment: "Feminine Energy")
+    static let matrixFemaleDesc = NSLocalizedString("matrix.position.female.desc", comment: "Your receptive, yin, inward-directed energy")
+    
+    static let matrixSky = NSLocalizedString("matrix.position.sky", comment: "Sky Line")
+    static let matrixSkyDesc = NSLocalizedString("matrix.position.sky.desc", comment: "Your higher aspirations and ideals")
+    
+    static let matrixEarth = NSLocalizedString("matrix.position.earth", comment: "Earth Line")
+    static let matrixEarthDesc = NSLocalizedString("matrix.position.earth.desc", comment: "Your grounding and practical foundation")
+    
+    static let matrixComfort = NSLocalizedString("matrix.position.comfort", comment: "Comfort Zone")
+    static let matrixComfortDesc = NSLocalizedString("matrix.position.comfort.desc", comment: "What feels natural and easy for you")
+    
+    static let matrixPast = NSLocalizedString("matrix.position.past", comment: "Past Influence")
+    static let matrixPastDesc = NSLocalizedString("matrix.position.past.desc", comment: "Energies from your past shaping the present")
+    
+    static let matrixPresent = NSLocalizedString("matrix.position.present", comment: "Present Moment")
+    static let matrixPresentDesc = NSLocalizedString("matrix.position.present.desc", comment: "Your current life situation and focus")
+    
+    static let matrixFuture = NSLocalizedString("matrix.position.future", comment: "Future Potential")
+    static let matrixFutureDesc = NSLocalizedString("matrix.position.future.desc", comment: "Where your energy is headed")
 
     // MARK: - Splash Screen
     static let splashJourneyBegins = NSLocalizedString("splash.journeyBegins", comment: "Your Journey Begins")
