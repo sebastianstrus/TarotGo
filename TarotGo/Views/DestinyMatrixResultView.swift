@@ -126,7 +126,7 @@ struct DiagramTabView: View {
         ScrollView {
             VStack(spacing: 20) {
                 // Diagram
-                DestinyMatrixDiagramView(matrix: matrix)
+                DestinyMatrixDiagramView(matrix: matrix, selectedPosition: $selectedPosition)
                     .frame(height: 350)
                     .padding(.horizontal, 20)
                 

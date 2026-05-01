@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DestinyMatrixDiagramView: View {
     let matrix: DestinyMatrix
-    @State private var selectedPosition: MatrixPosition?
+    @Binding var selectedPosition: MatrixPosition?
     
     var body: some View {
         GeometryReader { geometry in
@@ -152,12 +152,21 @@ struct PositionCircleView: View {
 }
 
 #Preview {
+    struct PreviewWrapper: View {
+        @State private var selectedPosition: MatrixPosition?
+        let matrix: DestinyMatrix
+        
+        var body: some View {
+            ZStack {
+                AppTheme.backgroundGradient.ignoresSafeArea()
+                DestinyMatrixDiagramView(matrix: matrix, selectedPosition: $selectedPosition)
+                    .padding(40)
+            }
+        }
+    }
+    
     let birthDate = Calendar.current.date(from: DateComponents(year: 1990, month: 5, day: 15))!
     let matrix = DestinyMatrixCalculator.shared.calculate(from: birthDate)
     
-    return ZStack {
-        AppTheme.backgroundGradient.ignoresSafeArea()
-        DestinyMatrixDiagramView(matrix: matrix)
-            .padding(40)
-    }
+    return PreviewWrapper(matrix: matrix)
 }
