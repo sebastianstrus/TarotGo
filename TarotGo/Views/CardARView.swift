@@ -105,7 +105,7 @@ struct ARViewContainer: UIViewRepresentable {
     
     class Coordinator {
         let card: TarotCard
-        var cardEntity: ModelEntity?
+        var cardEntity: Entity?
         var cardAnchor: AnchorEntity?
         
         init(card: TarotCard) {
@@ -113,67 +113,85 @@ struct ARViewContainer: UIViewRepresentable {
         }
         
         func createCard(in arView: ARView, card: TarotCard, isReversed: Bool) {
-            // 1. Position: 0.5 meters away (not 1.5) and at eye level (0 height)
+            // Anchor
             let anchor = AnchorEntity(world: [0, 0, -0.5])
             
-            // 2. Realistic Size: 15cm height (0.15m)
+            // Size (realistic)
+            let cardHeight: Float = 0.15
             let cardAspectRatio: Float = 1108.0 / 1900.0
-            let cardHeight: Float = 1
             let cardWidth: Float = cardHeight * cardAspectRatio
             
-            // 3. Use a Plane instead of a Box for the front
-            // A plane only has one side, making it much harder to "get lost" inside it
-            //let mesh = MeshResource.generatePlane(width: cardWidth, height: cardHeight)
+            // MARK: - Materials
             
-            let cornerRadius = Float(AppTheme.cardCornerRadius(forWidth: CGFloat(cardWidth)))
-            
-            let mesh = MeshResource.generateBox(
-                width: cardWidth,
-                height: cardHeight,
-                depth: 0.01, // 👈 thicker = corners visible
-                cornerRadius: cornerRadius
-            )
-            
-            // 4. Use UnlitMaterial (This ignores light and shows the raw image)
-            var material = UnlitMaterial()
-            
+            // Front
+            var frontMaterial = UnlitMaterial()
             if let frontImage = UIImage(named: card.imageName),
-               let cgImage = frontImage.cgImage,
-               let texture = try? TextureResource.generate(from: cgImage, options: .init(semantic: .color)) {
-                material.color = .init(texture: .init(texture))
+               let cg = frontImage.cgImage,
+               let texture = try? TextureResource.generate(
+                   from: cg,
+                   options: .init(semantic: .color)
+               ) {
+                frontMaterial.color = .init(texture: .init(texture))
             } else {
-                // If the image fails, this pink will be very obvious
-                material.color = .init(tint: .systemPink)
+                frontMaterial.color = .init(tint: .systemPink)
             }
             
-            let cardEntity = ModelEntity(mesh: mesh, materials: [material])
+            // Back
+            var backMaterial = UnlitMaterial()
+            if let backImage = UIImage(named: "ReversCard1"),
+               let cg = backImage.cgImage,
+               let texture = try? TextureResource.generate(
+                   from: cg,
+                   options: .init(semantic: .color)
+               ) {
+                backMaterial.color = .init(texture: .init(texture))
+            } else {
+                backMaterial.color = .init(tint: .systemPurple)
+            }
             
-            // 5. Correct Orientation
-            // Planes are generated lying flat on the ground (X-Z plane).
-            // We need to tilt it up 90 degrees to face the user.
-            //cardEntity.orientation = simd_quatf(angle: .pi/2, axis: [1, 0, 0])
+            // MARK: - Mesh (2 planes)
             
+            let frontMesh = MeshResource.generatePlane(width: cardWidth, height: cardHeight)
+            let backMesh  = MeshResource.generatePlane(width: cardWidth, height: cardHeight)
+            
+            let frontEntity = ModelEntity(mesh: frontMesh, materials: [frontMaterial])
+            let backEntity  = ModelEntity(mesh: backMesh,  materials: [backMaterial])
+            
+            // Flip back so it faces opposite direction
+            backEntity.orientation = simd_quatf(angle: .pi, axis: [0, 1, 0])
+            
+            // Small offset to avoid z-fighting
+            frontEntity.position.z = 0.0005
+            backEntity.position.z  = -0.0005
+            
+            // Parent container
+            let cardEntity = Entity()
+            cardEntity.addChild(frontEntity)
+            cardEntity.addChild(backEntity)
+            
+            // Initial orientation
             if isReversed {
-                cardEntity.orientation *= simd_quatf(angle: .pi, axis: [0, 0, 1])
+                cardEntity.orientation = simd_quatf(angle: .pi, axis: [0, 1, 0])
             }
             
+            // Add to scene
             anchor.addChild(cardEntity)
             arView.scene.addAnchor(anchor)
             
-            self.cardEntity = cardEntity
+            self.cardEntity = cardEntity as? ModelEntity
             self.cardAnchor = anchor
         }
         
         func updateCardOrientation(isReversed: Bool) {
             guard let entity = cardEntity else { return }
             
-            // Match the same axis used in createCard (Z axis)
             let targetRotation = isReversed
-                ? simd_quatf(angle: .pi, axis: [0, 0, 1])
-                : simd_quatf(angle: 0, axis: [0, 0, 1])
+                ? simd_quatf(angle: .pi, axis: [0, 1, 0])
+                : simd_quatf(angle: 0, axis: [0, 1, 0])
             
-            var transform = entity.transform
+            var transform = Transform()
             transform.rotation = targetRotation
+            transform.translation = entity.position // preserve position
             
             entity.move(to: transform, relativeTo: entity.parent, duration: 0.6)
         }
