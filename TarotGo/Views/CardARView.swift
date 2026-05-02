@@ -117,7 +117,7 @@ struct ARViewContainer: UIViewRepresentable {
             let anchor = AnchorEntity(world: [0, 0, -0.5])
             
             // Size (realistic)
-            let cardHeight: Float = 0.15
+            let cardHeight: Float = 1
             let cardAspectRatio: Float = 1108.0 / 1900.0
             let cardWidth: Float = cardHeight * cardAspectRatio
             
