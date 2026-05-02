@@ -13,12 +13,17 @@ struct CardARView: View {
     let card: TarotCard
     @State private var isFlipped: Bool = false
     @State private var showReversed: Bool = false
+    @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
     @Environment(\.dismiss) private var dismiss
+    
+    private var selectedCardBack: CardBackStyle {
+        CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
+    }
     
     var body: some View {
         ZStack {
             // AR View
-            ARViewContainer(card: card, isFlipped: $isFlipped, showReversed: $showReversed)
+            ARViewContainer(card: card, isFlipped: $isFlipped, showReversed: $showReversed, cardBackStyle: selectedCardBack)
                 .ignoresSafeArea()
             
             // Controls overlay
@@ -104,6 +109,7 @@ struct ARViewContainer: UIViewRepresentable {
     let card: TarotCard
     @Binding var isFlipped: Bool
     @Binding var showReversed: Bool
+    let cardBackStyle: CardBackStyle
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
@@ -114,7 +120,7 @@ struct ARViewContainer: UIViewRepresentable {
         arView.session.run(config)
         
         // Create the card in AR space
-        context.coordinator.createCard(in: arView, card: card, isFlipped: isFlipped, isReversed: showReversed)
+        context.coordinator.createCard(in: arView, card: card, isFlipped: isFlipped, isReversed: showReversed, cardBackStyle: cardBackStyle)
         
         return arView
     }
@@ -137,7 +143,7 @@ struct ARViewContainer: UIViewRepresentable {
             self.card = card
         }
         
-        func createCard(in arView: ARView, card: TarotCard, isFlipped: Bool, isReversed: Bool) {
+        func createCard(in arView: ARView, card: TarotCard, isFlipped: Bool, isReversed: Bool, cardBackStyle: CardBackStyle) {
             // Anchor
             let anchor = AnchorEntity(world: [0, 0, -0.5])
             
@@ -163,7 +169,7 @@ struct ARViewContainer: UIViewRepresentable {
             
             // Back
             var backMaterial = UnlitMaterial()
-            if let backImage = UIImage(named: "ReversCard1"),
+            if let backImage = UIImage(named: cardBackStyle.rawValue),
                let cg = backImage.cgImage,
                let texture = try? TextureResource.generate(
                    from: cg,
