@@ -15,12 +15,10 @@ struct TarotParkARView: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
         
-        // Configure AR session
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = [.horizontal]
         arView.session.run(config)
         
-        // Set delegate to detect planes
         arView.session.delegate = context.coordinator
         context.coordinator.arView = arView
         context.coordinator.cardBackStyle = cardBackStyle
@@ -44,7 +42,6 @@ struct TarotParkARView: UIViewRepresentable {
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
             guard !hasPlacedCards else { return }
             
-            // Look for the first horizontal plane
             for anchor in anchors {
                 if let planeAnchor = anchor as? ARPlaneAnchor,
                    planeAnchor.alignment == .horizontal,
@@ -59,21 +56,17 @@ struct TarotParkARView: UIViewRepresentable {
         func createTarotPark(on planeAnchor: ARPlaneAnchor, in arView: ARView, cardBackStyle: CardBackStyle) {
             let anchor = AnchorEntity(anchor: planeAnchor)
             
-            // --- LARGE CARD CONFIGURATION ---
             let cardHeight: Float = 1.0 // 1 meter tall
             let cardAspectRatio: Float = 1108.0 / 1900.0
             let cardWidth: Float = cardHeight * cardAspectRatio
             
-            // --- PATHWAY LAYOUT CONFIGURATION ---
             let allCards = TarotDeck.allCards
             let columns = 6
             let rows = 13
             
-            // Spacing: Reduced by 3x (from 1.5m to 0.5m)
             let horizontalSpacing: Float = 1.0
             let depthSpacing: Float = 0.7
             
-            // Vertical Offset: 50cm (0.5m) above the floor
             let floorOffset: Float = 0.5
             
             let totalWidth = Float(columns - 1) * horizontalSpacing
@@ -95,7 +88,6 @@ struct TarotParkARView: UIViewRepresentable {
                     width: cardWidth,
                     height: cardHeight
                 ) {
-                    // Updated Y position: Half the card height + 50cm floor offset
                     let yPosition = (cardHeight / 2) + floorOffset
                     cardEntity.position = SIMD3(x: x, y: yPosition, z: z)
 
@@ -105,7 +97,6 @@ struct TarotParkARView: UIViewRepresentable {
                 }
             }
             
-            // Optimization
             arView.renderOptions.insert(.disableGroundingShadows)
             arView.environment.lighting.resource = nil
             
@@ -118,50 +109,42 @@ struct TarotParkARView: UIViewRepresentable {
             width: Float,
             height: Float
         ) -> Entity? {
-            // Front material
+            let thickness: Float = 0.02
+            let cornerRadius: Float = width * 0.06
+            
+            let cardMesh = MeshResource.generateBox(
+                width: width,
+                height: height,
+                depth: thickness,
+                cornerRadius: cornerRadius,
+                splitFaces: true
+            )
+            
             var frontMaterial = UnlitMaterial()
             if let frontImage = UIImage(named: card.imageName),
                let cg = frontImage.cgImage,
-               let texture = try? TextureResource.generate(
-                   from: cg,
-                   options: .init(semantic: .color)
-               ) {
+               let texture = try? TextureResource.generate(from: cg, options: .init(semantic: .color)) {
                 frontMaterial.color = .init(texture: .init(texture))
             } else {
                 return nil
             }
             
-            // Back material
             var backMaterial = UnlitMaterial()
             if let backImage = UIImage(named: cardBackStyle.rawValue),
                let cg = backImage.cgImage,
-               let texture = try? TextureResource.generate(
-                   from: cg,
-                   options: .init(semantic: .color)
-               ) {
+               let texture = try? TextureResource.generate(from: cg, options: .init(semantic: .color)) {
                 backMaterial.color = .init(texture: .init(texture))
             } else {
-                backMaterial.color = .init(tint: .systemPurple)
+                backMaterial.color = .init(tint: .darkGray)
             }
             
-            // Create meshes
-            let frontMesh = MeshResource.generatePlane(width: width, height: height)
-            let backMesh = MeshResource.generatePlane(width: width, height: height)
-            
-            let frontEntity = ModelEntity(mesh: frontMesh, materials: [frontMaterial])
-            let backEntity = ModelEntity(mesh: backMesh, materials: [backMaterial])
-            
-            // Flip back so it faces opposite direction
-            backEntity.orientation = simd_quatf(angle: .pi, axis: [0, 1, 0])
-            
-            // Small offset to avoid z-fighting
-            frontEntity.position.z = 0.0005
-            backEntity.position.z = -0.0005
-            
-            // Parent container
-            let cardEntity = Entity()
-            cardEntity.addChild(frontEntity)
-            cardEntity.addChild(backEntity)
+            var sideMaterial = UnlitMaterial()
+            sideMaterial.color = .init(tint: .white)
+
+            let cardEntity = ModelEntity(
+                mesh: cardMesh,
+                materials: [frontMaterial, backMaterial, sideMaterial, sideMaterial, sideMaterial, sideMaterial]
+            )
             
             return cardEntity
         }
