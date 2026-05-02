@@ -54,6 +54,12 @@ struct DeckOnTableARContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
         
+        // 1. Disable the default environment lighting/shadows
+        arView.environment.lighting.resource = nil
+        
+        // 2. Explicitly disable grounding shadows
+        arView.renderOptions.insert(.disableGroundingShadows)
+        
         // Configure AR session
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = [.horizontal]
@@ -124,8 +130,8 @@ struct DeckOnTableARContainer: UIViewRepresentable {
             let anchor = AnchorEntity(anchor: planeAnchor)
             
             // Real card size (in meters) - 3 times smaller
-            let cardHeight: Float = 0.04
-            let cardWidth: Float = 0.0233
+            let cardHeight: Float = 0.06
+            let cardWidth: Float = 0.03495
             
             // Layout: Grid arrangement on table
             let allCards = TarotDeck.allCards
