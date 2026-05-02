@@ -288,39 +288,54 @@ struct ShuffleRitualView: View {
         
         emitterPosition = [0.5, 0.5]
         
-        // Fade out fire effect and stop fire sound
         withAnimation(.easeInOut(duration: 0.5)) {
             showFire = false
         }
         SoundService.shared.stop(.fire)
         
+        // Initial heavy hit
         HapticService.shared.impact(.heavy)
         SoundService.shared.play(.cardShuffle, volume: 0.7)
         
-        // Shuffle animation with sound
+        // 1. Trigger the intensive "riffle" feel
+        triggerIntensiveShuffleHaptics(duration: 2.5)
+        
+        // Shuffle animation
         withAnimation(.easeInOut(duration: 2.5).repeatCount(3, autoreverses: true)) {
             shuffleRotation = 360
             shuffleOffset = 30
         }
         
-        // Additional shuffle sounds during animation
-        for i in 1...3 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i) * 0.8) {
-                SoundService.shared.play(.cardShuffle, volume: 0.5)
-                HapticService.shared.impact(.medium)
-            }
-        }
-        
-        // Navigate after shuffle
+        // 2. Final completion haptics
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             withAnimation {
                 phase = .complete
             }
             SoundService.shared.play(.bellChime, volume: 0.6)
+            
+            // Use your existing .success case which triggers UINotificationFeedbackGenerator
             HapticService.shared.impact(.success)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 navigateToReading = true
+            }
+        }
+    }
+
+    private func triggerIntensiveShuffleHaptics(duration: Double) {
+        let hapticCount = 20
+        let interval = duration / Double(hapticCount)
+        
+        for i in 0..<hapticCount {
+            let delay = Double(i) * interval
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                // Alternating between selection (light click) and light impact
+                // creates a mechanical "card sliding" texture
+                if i % 2 == 0 {
+                    HapticService.shared.impact(.selection)
+                } else {
+                    HapticService.shared.impact(.light)
+                }
             }
         }
     }
