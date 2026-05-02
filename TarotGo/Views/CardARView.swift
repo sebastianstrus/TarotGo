@@ -178,7 +178,7 @@ struct ARViewContainer: UIViewRepresentable {
             anchor.addChild(cardEntity)
             arView.scene.addAnchor(anchor)
             
-            self.cardEntity = cardEntity as? ModelEntity
+            self.cardEntity = cardEntity
             self.cardAnchor = anchor
         }
         
