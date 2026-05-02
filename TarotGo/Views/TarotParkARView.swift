@@ -66,17 +66,19 @@ struct TarotParkARView: UIViewRepresentable {
             
             // --- PATHWAY LAYOUT CONFIGURATION ---
             let allCards = TarotDeck.allCards
-            let columns = 6  // Fewer columns makes the "walkway" longer
-            let rows = 13    // 6 * 13 = 78 cards
+            let columns = 6
+            let rows = 13
             
-            // Spacing: 1.5 meters between card centers provides a clear walking path
-            let horizontalSpacing: Float = 1.5
-            let depthSpacing: Float = 1.5
+            // Spacing: Reduced by 3x (from 1.5m to 0.5m)
+            let horizontalSpacing: Float = 1.0
+            let depthSpacing: Float = 0.7
+            
+            // Vertical Offset: 50cm (0.5m) above the floor
+            let floorOffset: Float = 0.5
             
             let totalWidth = Float(columns - 1) * horizontalSpacing
             let totalDepth = Float(rows - 1) * depthSpacing
             
-            // Center the park relative to where the plane was detected
             let startX = -totalWidth / 2
             let startZ = -totalDepth / 2
             
@@ -93,7 +95,9 @@ struct TarotParkARView: UIViewRepresentable {
                     width: cardWidth,
                     height: cardHeight
                 ) {
-                    cardEntity.position = SIMD3(x: x, y: cardHeight / 2, z: z)
+                    // Updated Y position: Half the card height + 50cm floor offset
+                    let yPosition = (cardHeight / 2) + floorOffset
+                    cardEntity.position = SIMD3(x: x, y: yPosition, z: z)
 
                     cardEntity.orientation = simd_quatf(angle: 0, axis: [0, 1, 0])
                     
@@ -101,7 +105,7 @@ struct TarotParkARView: UIViewRepresentable {
                 }
             }
             
-            // Optimization: Disable shadows to keep the "Park" look clean as requested previously
+            // Optimization
             arView.renderOptions.insert(.disableGroundingShadows)
             arView.environment.lighting.resource = nil
             
