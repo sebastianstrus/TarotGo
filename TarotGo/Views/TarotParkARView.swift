@@ -57,41 +57,53 @@ struct TarotParkARView: UIViewRepresentable {
         }
         
         func createTarotPark(on planeAnchor: ARPlaneAnchor, in arView: ARView, cardBackStyle: CardBackStyle) {
-            // Create anchor at the detected plane's position
             let anchor = AnchorEntity(anchor: planeAnchor)
             
-            // Card size (same as CardARView - large size)
-            let cardHeight: Float = 1.0
+            // --- LARGE CARD CONFIGURATION ---
+            let cardHeight: Float = 1.0 // 1 meter tall
             let cardAspectRatio: Float = 1108.0 / 1900.0
             let cardWidth: Float = cardHeight * cardAspectRatio
             
-            // Layout: Create a circular park arrangement
+            // --- PATHWAY LAYOUT CONFIGURATION ---
             let allCards = TarotDeck.allCards
-            let totalCards = allCards.count
-            let radius: Float = 5.0 // 5 meters radius
+            let columns = 6  // Fewer columns makes the "walkway" longer
+            let rows = 13    // 6 * 13 = 78 cards
+            
+            // Spacing: 1.5 meters between card centers provides a clear walking path
+            let horizontalSpacing: Float = 1.5
+            let depthSpacing: Float = 1.5
+            
+            let totalWidth = Float(columns - 1) * horizontalSpacing
+            let totalDepth = Float(rows - 1) * depthSpacing
+            
+            // Center the park relative to where the plane was detected
+            let startX = -totalWidth / 2
+            let startZ = -totalDepth / 2
             
             for (index, card) in allCards.enumerated() {
-                let angle = Float(index) * (2 * .pi / Float(totalCards))
-                let x = radius * cos(angle)
-                let z = radius * sin(angle)
+                let row = index / columns
+                let col = index % columns
                 
-                // Create card entity
+                let x = startX + Float(col) * horizontalSpacing
+                let z = startZ + Float(row) * depthSpacing
+                
                 if let cardEntity = createCardEntity(
                     card: card,
                     cardBackStyle: cardBackStyle,
                     width: cardWidth,
                     height: cardHeight
                 ) {
-                    // Position on horizontal plane
-                    cardEntity.position = SIMD3(x: x, y: 0, z: z)
-                    
-                    // Rotate card to face center of circle
-                    let rotationAngle = angle + .pi / 2
-                    cardEntity.orientation = simd_quatf(angle: rotationAngle, axis: [0, 1, 0])
+                    cardEntity.position = SIMD3(x: x, y: cardHeight / 2, z: z)
+
+                    cardEntity.orientation = simd_quatf(angle: 0, axis: [0, 1, 0])
                     
                     anchor.addChild(cardEntity)
                 }
             }
+            
+            // Optimization: Disable shadows to keep the "Park" look clean as requested previously
+            arView.renderOptions.insert(.disableGroundingShadows)
+            arView.environment.lighting.resource = nil
             
             arView.scene.addAnchor(anchor)
         }

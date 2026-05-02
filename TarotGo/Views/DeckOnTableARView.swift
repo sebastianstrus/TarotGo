@@ -138,8 +138,6 @@ struct DeckOnTableARContainer: UIViewRepresentable {
             let columns = 13
             let rows = 6
             
-            // --- UPDATED SPACING ---
-            // Original was 0.01 (1cm). New value is ~3.3mm
             let cardSpacing: Float = 0.003
             
             let totalWidth = Float(columns) * (cardWidth + cardSpacing)
