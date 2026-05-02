@@ -185,15 +185,18 @@ struct ARViewContainer: UIViewRepresentable {
         func updateCardOrientation(isReversed: Bool) {
             guard let entity = cardEntity else { return }
             
-            let targetRotation = isReversed
-                ? simd_quatf(angle: .pi, axis: [0, 1, 0])
-                : simd_quatf(angle: 0, axis: [0, 1, 0])
+            let angle: Float = isReversed ? .pi : 0
             
-            var transform = Transform()
-            transform.rotation = targetRotation
-            transform.translation = entity.position // preserve position
-            
-            entity.move(to: transform, relativeTo: entity.parent, duration: 0.6)
+            entity.move(
+                to: Transform(
+                    scale: .one,
+                    rotation: simd_quatf(angle: angle, axis: [0, 1, 0]),
+                    translation: entity.position
+                ),
+                relativeTo: entity.parent,
+                duration: 0.6,
+                timingFunction: .easeInOut
+            )
         }
     }
 }
