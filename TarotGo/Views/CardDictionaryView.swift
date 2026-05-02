@@ -10,6 +10,7 @@ import SwiftUI
 struct CardDictionaryView: View {
     @State private var selectedSuit: TarotSuit? = nil
     @State private var searchText: String = ""
+    @State private var showARGallery: Bool = false
     
     private var filteredCards: [TarotCard] {
         var cards = TarotDeck.allCards
@@ -61,6 +62,20 @@ struct CardDictionaryView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .searchable(text: $searchText, prompt: L10n.dictionarySearchPlaceholder)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    showARGallery = true
+                } label: {
+                    Image(systemName: "cube.transparent")
+                        .font(.system(size: 20))
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $showARGallery) {
+            ARGalleryView()
+        }
     }
     
     private var headerView: some View {
