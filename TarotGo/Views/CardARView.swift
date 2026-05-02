@@ -11,13 +11,14 @@ import ARKit
 
 struct CardARView: View {
     let card: TarotCard
+    @State private var isFlipped: Bool = false
     @State private var showReversed: Bool = false
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         ZStack {
             // AR View
-            ARViewContainer(card: card, showReversed: $showReversed)
+            ARViewContainer(card: card, isFlipped: $isFlipped, showReversed: $showReversed)
                 .ignoresSafeArea()
             
             // Controls overlay
@@ -47,25 +48,48 @@ struct CardARView: View {
                         .foregroundColor(.white)
                         .shadow(color: .black.opacity(0.5), radius: 5)
                     
-                    // Flip button
-                    Button {
-                        withAnimation {
-                            showReversed.toggle()
+                    HStack(spacing: 16) {
+                        // Flip button (show front/back)
+                        Button {
+                            withAnimation {
+                                isFlipped.toggle()
+                            }
+                        } label: {
+                            HStack(spacing: 8) {
+                                Image(systemName: "arrow.triangle.2.circlepath")
+                                    .font(.system(size: 18))
+                                Text("Flip")
+                                    .font(.system(size: 16, weight: .semibold))
+                            }
+                            .padding(.horizontal, 24)
+                            .padding(.vertical, 12)
+                            .background(
+                                Capsule()
+                                    .fill(.ultraThinMaterial)
+                            )
+                            .foregroundColor(.white)
                         }
-                    } label: {
-                        HStack(spacing: 8) {
-                            Image(systemName: "arrow.triangle.2.circlepath")
-                                .font(.system(size: 18))
-                            Text(showReversed ? L10n.dictionaryUpright : L10n.dictionaryReversed)
-                                .font(.system(size: 16, weight: .semibold))
+                        
+                        // Reversed/Upright button (rotate 180°)
+                        Button {
+                            withAnimation {
+                                showReversed.toggle()
+                            }
+                        } label: {
+                            HStack(spacing: 8) {
+                                Image(systemName: "arrow.up.arrow.down")
+                                    .font(.system(size: 18))
+                                Text(showReversed ? L10n.dictionaryUpright : L10n.dictionaryReversed)
+                                    .font(.system(size: 16, weight: .semibold))
+                            }
+                            .padding(.horizontal, 24)
+                            .padding(.vertical, 12)
+                            .background(
+                                Capsule()
+                                    .fill(.ultraThinMaterial)
+                            )
+                            .foregroundColor(.white)
                         }
-                        .padding(.horizontal, 24)
-                        .padding(.vertical, 12)
-                        .background(
-                            Capsule()
-                                .fill(.ultraThinMaterial)
-                        )
-                        .foregroundColor(.white)
                     }
                 }
                 .padding(.bottom, 40)
@@ -78,6 +102,7 @@ struct CardARView: View {
 // ARViewContainer to manage the RealityKit AR experience
 struct ARViewContainer: UIViewRepresentable {
     let card: TarotCard
+    @Binding var isFlipped: Bool
     @Binding var showReversed: Bool
     
     func makeUIView(context: Context) -> ARView {
@@ -89,14 +114,14 @@ struct ARViewContainer: UIViewRepresentable {
         arView.session.run(config)
         
         // Create the card in AR space
-        context.coordinator.createCard(in: arView, card: card, isReversed: showReversed)
+        context.coordinator.createCard(in: arView, card: card, isFlipped: isFlipped, isReversed: showReversed)
         
         return arView
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
-        // Update card rotation when showReversed changes
-        context.coordinator.updateCardOrientation(isReversed: showReversed)
+        // Update card rotation when isFlipped or showReversed changes
+        context.coordinator.updateCardOrientation(isFlipped: isFlipped, isReversed: showReversed)
     }
     
     func makeCoordinator() -> Coordinator {
@@ -112,7 +137,7 @@ struct ARViewContainer: UIViewRepresentable {
             self.card = card
         }
         
-        func createCard(in arView: ARView, card: TarotCard, isReversed: Bool) {
+        func createCard(in arView: ARView, card: TarotCard, isFlipped: Bool, isReversed: Bool) {
             // Anchor
             let anchor = AnchorEntity(world: [0, 0, -0.5])
             
@@ -169,10 +194,10 @@ struct ARViewContainer: UIViewRepresentable {
             cardEntity.addChild(frontEntity)
             cardEntity.addChild(backEntity)
             
-            // Initial orientation
-            if isReversed {
-                cardEntity.orientation = simd_quatf(angle: .pi, axis: [0, 1, 0])
-            }
+            // Initial orientation - combine flip and reversed rotations
+            let flipRotation = simd_quatf(angle: isFlipped ? .pi : 0, axis: [0, 1, 0])
+            let reversedRotation = simd_quatf(angle: isReversed ? .pi : 0, axis: [0, 0, 1])
+            cardEntity.orientation = flipRotation * reversedRotation
             
             // Add to scene
             anchor.addChild(cardEntity)
@@ -182,15 +207,20 @@ struct ARViewContainer: UIViewRepresentable {
             self.cardAnchor = anchor
         }
         
-        func updateCardOrientation(isReversed: Bool) {
+        func updateCardOrientation(isFlipped: Bool, isReversed: Bool) {
             guard let entity = cardEntity else { return }
             
-            let angle: Float = isReversed ? .pi : 0
+            // Combine both rotations:
+            // - Flip rotates around Y-axis (to show back)
+            // - Reversed rotates around Z-axis (to show upside down)
+            let flipRotation = simd_quatf(angle: isFlipped ? .pi : 0, axis: [0, 1, 0])
+            let reversedRotation = simd_quatf(angle: isReversed ? .pi : 0, axis: [0, 0, 1])
+            let combinedRotation = flipRotation * reversedRotation
             
             entity.move(
                 to: Transform(
                     scale: .one,
-                    rotation: simd_quatf(angle: angle, axis: [0, 1, 0]),
+                    rotation: combinedRotation,
                     translation: entity.position
                 ),
                 relativeTo: entity.parent,
