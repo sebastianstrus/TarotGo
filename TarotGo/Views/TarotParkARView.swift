@@ -17,6 +17,13 @@ struct TarotParkARView: UIViewRepresentable {
         
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = [.horizontal]
+        
+        if ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) {
+            config.frameSemantics.insert(.personSegmentationWithDepth)
+        } else {
+            print("People Occlusion is not supported on this device.")
+        }
+        
         arView.session.run(config)
         
         arView.session.delegate = context.coordinator

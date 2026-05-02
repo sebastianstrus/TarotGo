@@ -18,6 +18,13 @@ struct StandCardsARView: UIViewRepresentable {
         // Configure AR session
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = [.horizontal]
+        
+        if ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) {
+            config.frameSemantics.insert(.personSegmentationWithDepth)
+        } else {
+            print("People Occlusion is not supported on this device.")
+        }
+        
         arView.session.run(config)
         
         // Set delegate to detect planes
