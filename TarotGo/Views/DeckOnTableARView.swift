@@ -9,8 +9,47 @@ import SwiftUI
 import RealityKit
 import ARKit
 
-struct DeckOnTableARView: UIViewRepresentable {
+struct DeckOnTableARView: View {
     let cardBackStyle: CardBackStyle
+    @State private var isFlipped: Bool = false
+    
+    var body: some View {
+        ZStack {
+            DeckOnTableARContainer(cardBackStyle: cardBackStyle, isFlipped: $isFlipped)
+                .ignoresSafeArea()
+            
+            // Flip button overlay
+            VStack {
+                Spacer()
+                
+                Button {
+                    withAnimation {
+                        isFlipped.toggle()
+                    }
+                } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "arrow.triangle.2.circlepath")
+                            .font(.system(size: 18))
+                        Text("Flip All")
+                            .font(.system(size: 16, weight: .semibold))
+                    }
+                    .padding(.horizontal, 24)
+                    .padding(.vertical, 12)
+                    .background(
+                        Capsule()
+                            .fill(.ultraThinMaterial)
+                    )
+                    .foregroundColor(.white)
+                }
+                .padding(.bottom, 40)
+            }
+        }
+    }
+}
+
+struct DeckOnTableARContainer: UIViewRepresentable {
+    let cardBackStyle: CardBackStyle
+    @Binding var isFlipped: Bool
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
@@ -20,29 +59,75 @@ struct DeckOnTableARView: UIViewRepresentable {
         config.planeDetection = [.horizontal]
         arView.session.run(config)
         
-        // Create all 78 cards on table
-        context.coordinator.createDeckOnTable(in: arView, cardBackStyle: cardBackStyle)
+        // Set delegate to detect planes
+        arView.session.delegate = context.coordinator
+        context.coordinator.arView = arView
+        context.coordinator.cardBackStyle = cardBackStyle
         
         return arView
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
-        // No updates needed
+        // Update flip state
+        context.coordinator.updateFlipState(isFlipped: isFlipped)
     }
     
     func makeCoordinator() -> Coordinator {
         Coordinator()
     }
     
-    class Coordinator {
-        func createDeckOnTable(in arView: ARView, cardBackStyle: CardBackStyle) {
-            // Anchor point
-            let anchor = AnchorEntity(world: [0, 0, -0.5])
+    class Coordinator: NSObject, ARSessionDelegate {
+        var arView: ARView?
+        var cardBackStyle: CardBackStyle = .modern
+        var hasPlacedCards = false
+        var cardEntities: [Entity] = []
+        
+        func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+            guard !hasPlacedCards else { return }
             
-            // Real card size (in meters)
+            // Look for the first horizontal plane
+            for anchor in anchors {
+                if let planeAnchor = anchor as? ARPlaneAnchor,
+                   planeAnchor.alignment == .horizontal,
+                   let arView = arView {
+                    hasPlacedCards = true
+                    createDeckOnTable(on: planeAnchor, in: arView, cardBackStyle: cardBackStyle)
+                    break
+                }
+            }
+        }
+        
+        func updateFlipState(isFlipped: Bool) {
+            for cardEntity in cardEntities {
+                // Base rotation to lie flat on surface (X-axis rotation)
+                let baseRotation = simd_quatf(angle: .pi / 2, axis: [1, 0, 0])
+                // Flip rotation around Y-axis to reveal front/back
+                let flipRotation = simd_quatf(angle: isFlipped ? .pi : 0, axis: [0, 1, 0])
+                // Combine: first flip, then lay flat
+                let combinedRotation = baseRotation * flipRotation
+                
+                cardEntity.move(
+                    to: Transform(
+                        scale: .one,
+                        rotation: combinedRotation,
+                        translation: cardEntity.position
+                    ),
+                    relativeTo: cardEntity.parent,
+                    duration: 0.6,
+                    timingFunction: .easeInOut
+                )
+            }
+        }
+        
+        func createDeckOnTable(on planeAnchor: ARPlaneAnchor, in arView: ARView, cardBackStyle: CardBackStyle) {
+            // Create anchor at the detected plane's position
+            let anchor = AnchorEntity(anchor: planeAnchor)
+            
+            // Real card size (in meters) - 3 times smaller
             // Standard tarot card: 70mm x 120mm = 0.07m x 0.12m
-            let cardHeight: Float = 0.12
-            let cardWidth: Float = 0.07
+            // Divided by 3: 23.3mm x 40mm
+            let cardHeight: Float = 0.04
+            let cardWidth: Float = 0.0233
             
             // Layout: Grid arrangement on table
             let allCards = TarotDeck.allCards
@@ -72,12 +157,13 @@ struct DeckOnTableARView: UIViewRepresentable {
                     height: cardHeight
                 ) {
                     // Position on horizontal plane, lying flat
-                    cardEntity.position = SIMD3(x: x, y: 0, z: z)
+                    cardEntity.position = SIMD3(x: x, y: 0.001, z: z)
                     
                     // Rotate card to lie flat on the surface
                     cardEntity.orientation = simd_quatf(angle: .pi / 2, axis: [1, 0, 0])
                     
                     anchor.addChild(cardEntity)
+                    self.cardEntities.append(cardEntity)
                 }
             }
             

@@ -20,8 +20,10 @@ struct StandCardsARView: UIViewRepresentable {
         config.planeDetection = [.horizontal]
         arView.session.run(config)
         
-        // Create all 78 standing cards
-        context.coordinator.createStandingCards(in: arView, cardBackStyle: cardBackStyle)
+        // Set delegate to detect planes
+        arView.session.delegate = context.coordinator
+        context.coordinator.arView = arView
+        context.coordinator.cardBackStyle = cardBackStyle
         
         return arView
     }
@@ -34,10 +36,29 @@ struct StandCardsARView: UIViewRepresentable {
         Coordinator()
     }
     
-    class Coordinator {
-        func createStandingCards(in arView: ARView, cardBackStyle: CardBackStyle) {
-            // Anchor point
-            let anchor = AnchorEntity(world: [0, 0, -0.5])
+    class Coordinator: NSObject, ARSessionDelegate {
+        var arView: ARView?
+        var cardBackStyle: CardBackStyle = .modern
+        var hasPlacedCards = false
+        
+        func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+            guard !hasPlacedCards else { return }
+            
+            // Look for the first horizontal plane
+            for anchor in anchors {
+                if let planeAnchor = anchor as? ARPlaneAnchor,
+                   planeAnchor.alignment == .horizontal,
+                   let arView = arView {
+                    hasPlacedCards = true
+                    createStandingCards(on: planeAnchor, in: arView, cardBackStyle: cardBackStyle)
+                    break
+                }
+            }
+        }
+        
+        func createStandingCards(on planeAnchor: ARPlaneAnchor, in arView: ARView, cardBackStyle: CardBackStyle) {
+            // Create anchor at the detected plane's position
+            let anchor = AnchorEntity(anchor: planeAnchor)
             
             // Real card size (in meters)
             // Standard tarot card: 70mm x 120mm = 0.07m x 0.12m

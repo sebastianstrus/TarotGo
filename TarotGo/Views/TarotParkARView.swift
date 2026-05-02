@@ -20,8 +20,10 @@ struct TarotParkARView: UIViewRepresentable {
         config.planeDetection = [.horizontal]
         arView.session.run(config)
         
-        // Create all 78 cards in the park layout
-        context.coordinator.createTarotPark(in: arView, cardBackStyle: cardBackStyle)
+        // Set delegate to detect planes
+        arView.session.delegate = context.coordinator
+        context.coordinator.arView = arView
+        context.coordinator.cardBackStyle = cardBackStyle
         
         return arView
     }
@@ -34,10 +36,29 @@ struct TarotParkARView: UIViewRepresentable {
         Coordinator()
     }
     
-    class Coordinator {
-        func createTarotPark(in arView: ARView, cardBackStyle: CardBackStyle) {
-            // Anchor point
-            let anchor = AnchorEntity(world: [0, 0, -1])
+    class Coordinator: NSObject, ARSessionDelegate {
+        var arView: ARView?
+        var cardBackStyle: CardBackStyle = .modern
+        var hasPlacedCards = false
+        
+        func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+            guard !hasPlacedCards else { return }
+            
+            // Look for the first horizontal plane
+            for anchor in anchors {
+                if let planeAnchor = anchor as? ARPlaneAnchor,
+                   planeAnchor.alignment == .horizontal,
+                   let arView = arView {
+                    hasPlacedCards = true
+                    createTarotPark(on: planeAnchor, in: arView, cardBackStyle: cardBackStyle)
+                    break
+                }
+            }
+        }
+        
+        func createTarotPark(on planeAnchor: ARPlaneAnchor, in arView: ARView, cardBackStyle: CardBackStyle) {
+            // Create anchor at the detected plane's position
+            let anchor = AnchorEntity(anchor: planeAnchor)
             
             // Card size (same as CardARView - large size)
             let cardHeight: Float = 1.0
