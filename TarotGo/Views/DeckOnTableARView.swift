@@ -124,17 +124,18 @@ struct DeckOnTableARContainer: UIViewRepresentable {
             let anchor = AnchorEntity(anchor: planeAnchor)
             
             // Real card size (in meters) - 3 times smaller
-            // Standard tarot card: 70mm x 120mm = 0.07m x 0.12m
-            // Divided by 3: 23.3mm x 40mm
             let cardHeight: Float = 0.04
             let cardWidth: Float = 0.0233
             
             // Layout: Grid arrangement on table
             let allCards = TarotDeck.allCards
-            let columns = 13 // 13 columns (one for each rank)
-            let rows = 6 // 6 rows (Major Arcana + 4 suits + extra)
+            let columns = 13
+            let rows = 6
             
-            let cardSpacing: Float = 0.01 // 1cm spacing between cards
+            // --- UPDATED SPACING ---
+            // Original was 0.01 (1cm). New value is ~3.3mm
+            let cardSpacing: Float = 0.003
+            
             let totalWidth = Float(columns) * (cardWidth + cardSpacing)
             let totalDepth = Float(rows) * (cardHeight + cardSpacing)
             
@@ -149,17 +150,13 @@ struct DeckOnTableARContainer: UIViewRepresentable {
                 let x = startX + Float(col) * (cardWidth + cardSpacing) + cardWidth / 2
                 let z = startZ + Float(row) * (cardHeight + cardSpacing) + cardHeight / 2
                 
-                // Create card entity
                 if let cardEntity = createCardEntity(
                     card: card,
                     cardBackStyle: cardBackStyle,
                     width: cardWidth,
                     height: cardHeight
                 ) {
-                    // Position on horizontal plane, lying flat
                     cardEntity.position = SIMD3(x: x, y: 0.001, z: z)
-                    
-                    // Rotate card to lie flat on the surface
                     cardEntity.orientation = simd_quatf(angle: .pi / 2, axis: [1, 0, 0])
                     
                     anchor.addChild(cardEntity)
