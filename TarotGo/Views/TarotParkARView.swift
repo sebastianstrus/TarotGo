@@ -150,7 +150,7 @@ struct TarotParkARView: UIViewRepresentable {
 
             let cardEntity = ModelEntity(
                 mesh: cardMesh,
-                materials: [frontMaterial, backMaterial, sideMaterial, sideMaterial, sideMaterial, sideMaterial]
+                materials: [frontMaterial, sideMaterial, backMaterial, sideMaterial, sideMaterial, sideMaterial]
             )
             
             return cardEntity
