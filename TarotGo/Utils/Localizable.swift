@@ -483,6 +483,26 @@ enum L10n {
     static let historyClassicalTitle = NSLocalizedString("history.classical.title", comment: "Classical Influence")
     static let historyClassicalText = NSLocalizedString("history.classical.text", comment: "Early decks weren't always standardized. For example, a deck commissioned by Duke Filippo Maria Visconti featured images of Roman gods and suits depicted as birds, showcasing the Renaissance obsession with classical motifs.")
     
+    // Timeline Table
+    static let historyTimelineTitle = NSLocalizedString("history.timeline.title", comment: "Timeline")
+    static let historyTimelineEraHeader = NSLocalizedString("history.timeline.era", comment: "Era")
+    static let historyTimelineMilestoneHeader = NSLocalizedString("history.timeline.milestone", comment: "Milestone")
+    
+    static let historyTimelineEra1 = NSLocalizedString("history.timeline.era1", comment: "Pre-14th Century")
+    static let historyTimelineMilestone1 = NSLocalizedString("history.timeline.milestone1", comment: "Mamluk decks from Egypt introduce the four-suit system to Europe.")
+    
+    static let historyTimelineEra2 = NSLocalizedString("history.timeline.era2", comment: "1367–1377")
+    static let historyTimelineMilestone2 = NSLocalizedString("history.timeline.milestone2", comment: "First European records of playing cards appear in Switzerland and Germany.")
+    
+    static let historyTimelineEra3 = NSLocalizedString("history.timeline.era3", comment: "1418–1450")
+    static let historyTimelineMilestone3 = NSLocalizedString("history.timeline.milestone3", comment: "The first \"Triumph\" (Tarot) decks are created in Milan and Ferrara.")
+    
+    static let historyTimelineEra4 = NSLocalizedString("history.timeline.era4", comment: "Late 1400s")
+    static let historyTimelineMilestone4 = NSLocalizedString("history.timeline.milestone4", comment: "Decks like the Sola Busca begin to incorporate intricate, classical illustrations for all cards.")
+    
+    static let historyTimelineEra5 = NSLocalizedString("history.timeline.era5", comment: "Late 18th Century")
+    static let historyTimelineMilestone5 = NSLocalizedString("history.timeline.milestone5", comment: "Tarot begins its transition from a parlor game to a tool for divination and occult study.")
+    
     // Card Basic Meanings View
     static let basicMeaningsTitle = NSLocalizedString("basicMeanings.title", comment: "Card Basic Meanings")
     static let basicMeaningsSubtitle = NSLocalizedString("basicMeanings.subtitle", comment: "Understanding the Tarot Deck")

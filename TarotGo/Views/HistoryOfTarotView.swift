@@ -81,6 +81,15 @@ struct HistoryOfTarotView: View {
                                 BulletPoint(title: L10n.historyClassicalTitle, text: L10n.historyClassicalText)
                             }
                         }
+                        
+                        // Timeline Section
+                        ContentCard {
+                            VStack(alignment: .leading, spacing: 16) {
+                                SectionTitle(text: L10n.historyTimelineTitle)
+                                
+                                TimelineTable()
+                            }
+                        }
                     }
                     
                     Spacer()
