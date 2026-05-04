@@ -429,4 +429,181 @@ enum L10n {
             return summaryClosing10
         }
     }
+    
+    // MARK: - Learn Tarot
+    // Main Learn View
+    static let homeLearnTarot = NSLocalizedString("home.learnTarot", comment: "Learn Tarot")
+    static let homeLearnTarotSubtitle = NSLocalizedString("home.learnTarot.subtitle", comment: "Understand cards, meanings and history")
+    
+    static let learnTarotTitle = NSLocalizedString("learn.title", comment: "Learn Tarot")
+    static let learnTarotSubtitle = NSLocalizedString("learn.subtitle", comment: "Deepen your understanding")
+    
+    // Learn Options
+    static let learnHistoryTitle = NSLocalizedString("learn.history.title", comment: "History of Tarot")
+    static let learnHistorySubtitle = NSLocalizedString("learn.history.subtitle", comment: "Origins and evolution")
+    
+    static let learnBasicMeaningsTitle = NSLocalizedString("learn.basicMeanings.title", comment: "Card Basic Meanings")
+    static let learnBasicMeaningsSubtitle = NSLocalizedString("learn.basicMeanings.subtitle", comment: "Understand the cards")
+    
+    static let learnHowToReadTitle = NSLocalizedString("learn.howToRead.title", comment: "How to Read")
+    static let learnHowToReadSubtitle = NSLocalizedString("learn.howToRead.subtitle", comment: "Master the practice")
+    
+    static let learnTarotMindTitle = NSLocalizedString("learn.tarotMind.title", comment: "Tarot & Mind")
+    static let learnTarotMindSubtitle = NSLocalizedString("learn.tarotMind.subtitle", comment: "Inner growth tool")
+    
+    static let learnFaqTitle = NSLocalizedString("learn.faq.title", comment: "FAQ")
+    static let learnFaqSubtitle = NSLocalizedString("learn.faq.subtitle", comment: "Common questions")
+    
+    // History of Tarot View
+    static let historyTitle = NSLocalizedString("history.page.title", comment: "History of Tarot")
+    static let historySubtitle = NSLocalizedString("history.page.subtitle", comment: "The Origins of Tarot: From Games to Symbolism")
+    static let historyIntro = NSLocalizedString("history.intro", comment: "The history of Tarot is a fascinating journey that began not with mysticism, but with the simple joy of gameplay. While many associate the cards with ancient mystery, their documented roots lie in the courts of Renaissance Italy and the evolution of international card games.")
+    
+    static let historyEvolutionTitle = NSLocalizedString("history.evolution.title", comment: "The Evolution of Playing Cards")
+    static let historyEvolutionIntro = NSLocalizedString("history.evolution.intro", comment: "Before the first 'Tarot' deck existed, standard playing cards had already taken Europe by storm.")
+    
+    static let historyMamlukTitle = NSLocalizedString("history.mamluk.title", comment: "The Mamluk Connection")
+    static let historyMamlukText = NSLocalizedString("history.mamluk.text", comment: "Most scholars agree that European playing cards were adapted from the Egyptian Mamluk deck in the 14th century. These early decks arrived alongside the introduction of paper from Asia.")
+    
+    static let historySpreadTitle = NSLocalizedString("history.spread.title", comment: "Rapid Spread")
+    static let historySpreadText = NSLocalizedString("history.spread.text", comment: "By the late 1300s, cards were so popular that records of them appear across Europe—often in the form of legal bans. In 1377, a monk named John of Rheinfelden described a basic pack of four suits with 13 cards each, very similar to the structure we use today.")
+    
+    static let historySuitsTitle = NSLocalizedString("history.suits.title", comment: "Original Suits")
+    static let historySuitsText = NSLocalizedString("history.suits.text", comment: "The early 'Latin' suits consisted of Swords, Batons (Clubs), Cups, and Coins. While most modern playing cards use French suits (Spades, Hearts, etc.), Tarot has preserved these original symbols for over six centuries.")
+    
+    static let historyBirthTitle = NSLocalizedString("history.birth.title", comment: "The Birth of 'Tarocchi'")
+    static let historyBirthIntro = NSLocalizedString("history.birth.intro", comment: "Tarot as we know it emerged in Northern Italy—specifically in Milan and Ferrara—during the early 15th century. At the time, these cards were called tarocchi or trionfi (triumphs).")
+    
+    static let historyTrumpsTitle = NSLocalizedString("history.trumps.title", comment: "The Addition of Trumps")
+    static let historyTrumpsIntro = NSLocalizedString("history.trumps.intro", comment: "The revolutionary change was the addition of a Fool and 21 'trump' cards to the standard four-suit deck. These trumps were essentially a permanent suit of higher-ranking cards used for a game similar to modern Bridge.")
+    
+    static let historyViscontiTitle = NSLocalizedString("history.visconti.title", comment: "The Visconti-Sforza Legacy")
+    static let historyViscontiText = NSLocalizedString("history.visconti.text", comment: "Some of the earliest and most beautiful examples come from the mid-1400s, commissioned by the Duke of Milan. These hand-painted decks often featured gold leaf and reflected the high fashion of the Italian nobility.")
+    
+    static let historyClassicalTitle = NSLocalizedString("history.classical.title", comment: "Classical Influence")
+    static let historyClassicalText = NSLocalizedString("history.classical.text", comment: "Early decks weren't always standardized. For example, a deck commissioned by Duke Filippo Maria Visconti featured images of Roman gods and suits depicted as birds, showcasing the Renaissance obsession with classical motifs.")
+    
+    // Card Basic Meanings View
+    static let basicMeaningsTitle = NSLocalizedString("basicMeanings.title", comment: "Card Basic Meanings")
+    static let basicMeaningsSubtitle = NSLocalizedString("basicMeanings.subtitle", comment: "Understanding the Tarot Deck")
+    static let basicMeaningsIntro = NSLocalizedString("basicMeanings.intro", comment: "Each tarot card carries a unique message expressed through symbols and imagery.")
+    
+    static let basicMeaningsMajorTitle = NSLocalizedString("basicMeanings.major.title", comment: "Major Arcana (22 cards)")
+    static let basicMeaningsMajorText = NSLocalizedString("basicMeanings.major.text", comment: "Represent major life events and deep transformations. They reflect important turning points and lessons.")
+    
+    static let basicMeaningsMinorTitle = NSLocalizedString("basicMeanings.minor.title", comment: "Minor Arcana (56 cards)")
+    static let basicMeaningsMinorText = NSLocalizedString("basicMeanings.minor.text", comment: "Reflect everyday experiences and situations.")
+    
+    static let basicMeaningsCupsTitle = NSLocalizedString("basicMeanings.cups.title", comment: "Cups")
+    static let basicMeaningsCupsSubtitle = NSLocalizedString("basicMeanings.cups.subtitle", comment: "Emotions & relationships")
+    
+    static let basicMeaningsPentaclesTitle = NSLocalizedString("basicMeanings.pentacles.title", comment: "Pentacles")
+    static let basicMeaningsPentaclesSubtitle = NSLocalizedString("basicMeanings.pentacles.subtitle", comment: "Money & work")
+    
+    static let basicMeaningsSwordsTitle = NSLocalizedString("basicMeanings.swords.title", comment: "Swords")
+    static let basicMeaningsSwordsSubtitle = NSLocalizedString("basicMeanings.swords.subtitle", comment: "Thoughts & challenges")
+    
+    static let basicMeaningsWandsTitle = NSLocalizedString("basicMeanings.wands.title", comment: "Wands")
+    static let basicMeaningsWandsSubtitle = NSLocalizedString("basicMeanings.wands.subtitle", comment: "Energy & action")
+    
+    static let basicMeaningsConclusion = NSLocalizedString("basicMeanings.conclusion", comment: "There is no single correct interpretation. Meaning depends on context and intuition.")
+    
+    // How to Read View
+    static let howToReadTitle = NSLocalizedString("howToRead.title", comment: "How to Read Tarot")
+    
+    static let howToReadStep1Title = NSLocalizedString("howToRead.step1.title", comment: "Focus on Your Question (Intention)")
+    static let howToReadStep1Intro = NSLocalizedString("howToRead.step1.intro", comment: "Before you touch the cards, quiet your mind. Tarot works best with open-ended questions that give you room to take action.")
+    static let howToReadStep1Example = NSLocalizedString("howToRead.step1.example", comment: "Instead of asking: 'Will I get this job?' (a closed yes/no question). Ask: 'What do I need to know about this career path?' or 'How can I best prepare for the interview?'.")
+    static let howToReadStep1ProTip = NSLocalizedString("howToRead.step1.proTip", comment: "Frame your questions starting with 'How,' 'What,' or 'Why.'")
+    
+    static let howToReadStep2Title = NSLocalizedString("howToRead.step2.title", comment: "Draw Your Cards (Intuition in Action)")
+    static let howToReadStep2Intro = NSLocalizedString("howToRead.step2.intro", comment: "Shuffle the deck in a way that feels natural to you. There is no 'wrong' method—you can cut the deck, spread them in a fan, or simply mix them on the table.")
+    static let howToReadStep2Bullet1Title = NSLocalizedString("howToRead.step2.bullet1.title", comment: "Trust your impulse")
+    static let howToReadStep2Bullet1Text = NSLocalizedString("howToRead.step2.bullet1.text", comment: "Choose the cards that 'catch your eye' or those where you feel a slight tingling in your hands.")
+    static let howToReadStep2Bullet2Title = NSLocalizedString("howToRead.step2.bullet2.title", comment: "Simple spread")
+    static let howToReadStep2Bullet2Text = NSLocalizedString("howToRead.step2.bullet2.text", comment: "To start, pull one card (as the energy of the day) or three (representing Past, Present, and Future).")
+    
+    static let howToReadStep3Title = NSLocalizedString("howToRead.step3.title", comment: "Interpret the Message (Connecting the Dots)")
+    static let howToReadStep3Intro = NSLocalizedString("howToRead.step3.intro", comment: "This is the moment where images turn into a story. You don't have to rush to a guidebook right away.")
+    static let howToReadStep3Bullet1Title = NSLocalizedString("howToRead.step3.bullet1.title", comment: "First impression")
+    static let howToReadStep3Bullet1Text = NSLocalizedString("howToRead.step3.bullet1.text", comment: "What is happening in the picture? What emotions does this card evoke? Is the figure sad or victorious?")
+    static let howToReadStep3Bullet2Title = NSLocalizedString("howToRead.step3.bullet2.title", comment: "Symbolism and context")
+    static let howToReadStep3Bullet2Text = NSLocalizedString("howToRead.step3.bullet2.text", comment: "Check the traditional meaning, but also look at how the cards sit next to each other. Does the neighboring card strengthen the message or contradict it?")
+    static let howToReadStep3ProTip = NSLocalizedString("howToRead.step3.proTip", comment: "Treat the cards like frames in a movie—what happened a moment ago, and what will happen next?")
+    
+    static let howToReadStep4Title = NSLocalizedString("howToRead.step4.title", comment: "Reflect (Your Personal Power)")
+    static let howToReadStep4Intro = NSLocalizedString("howToRead.step4.intro", comment: "Tarot is not a sentence; it is a roadmap. The cards show the most likely scenario based on your current energy.")
+    static let howToReadStep4Bullet1Title = NSLocalizedString("howToRead.step4.bullet1.title", comment: "No fixed answers")
+    static let howToReadStep4Bullet1Text = NSLocalizedString("howToRead.step4.bullet1.text", comment: "If you don't like the outcome, treat it as a warning. You have the free will to change your approach.")
+    static let howToReadStep4Bullet2Title = NSLocalizedString("howToRead.step4.bullet2.title", comment: "Life application")
+    static let howToReadStep4Bullet2Text = NSLocalizedString("howToRead.step4.bullet2.text", comment: "Ask yourself: 'What is one small step I can take today based on this lesson?'.")
+    
+    static let howToReadRememberTitle = NSLocalizedString("howToRead.remember.title", comment: "Remember")
+    static let howToReadRememberText = NSLocalizedString("howToRead.remember.text", comment: "Tarot is a mirror of your subconscious. The more often you work with it, the clearer the reflection becomes.")
+    static let howToReadProTipLabel = NSLocalizedString("howToRead.proTip.label", comment: "Pro Tip:")
+    
+    // Tarot & Mind View
+    static let tarotMindTitle = NSLocalizedString("tarotMind.title", comment: "Tarot & Mind")
+    static let tarotMindSubtitle = NSLocalizedString("tarotMind.subtitle", comment: "A Tool for Inner Growth")
+    
+    static let tarotMindSection1Title = NSLocalizedString("tarotMind.section1.title", comment: "Tarot as a Mirror for Self-Reflection")
+    static let tarotMindSection1Text = NSLocalizedString("tarotMind.section1.text", comment: "Tarot acts as a bridge between your conscious mind and your subconscious. When you look at a card, your brain naturally seeks patterns and meanings that resonate with your current life situation. It doesn't tell you what to do—it reflects what is already inside you, waiting to be acknowledged.")
+    
+    static let tarotMindSection2Title = NSLocalizedString("tarotMind.section2.title", comment: "Universal Archetypes and Emotions")
+    static let tarotMindSection2Text = NSLocalizedString("tarotMind.section2.text", comment: "The images on the cards are not just random drawings; they represent archetypes—universal human experiences such as love, loss, conflict, victory, and transition.")
+    static let tarotMindSection2Insight = NSLocalizedString("tarotMind.section2.insight", comment: "Whether it's the joy of the Sun or the heartbreak of the Three of Swords, these symbols tap into collective human emotions, helping you realize that your struggles and triumphs are part of a larger human story.")
+    
+    static let tarotMindSection3Title = NSLocalizedString("tarotMind.section3.title", comment: "Understanding Thoughts and Decisions")
+    static let tarotMindSection3Intro = NSLocalizedString("tarotMind.section3.intro", comment: "Sometimes we feel stuck because of 'mental clutter.' Tarot helps you organize your internal world by:")
+    static let tarotMindSection3Bullet1Title = NSLocalizedString("tarotMind.section3.bullet1.title", comment: "Externalizing Feelings")
+    static let tarotMindSection3Bullet1Text = NSLocalizedString("tarotMind.section3.bullet1.text", comment: "Seeing a problem represented on a card makes it feel more manageable and less personal.")
+    static let tarotMindSection3Bullet2Title = NSLocalizedString("tarotMind.section3.bullet2.title", comment: "Breaking Patterns")
+    static let tarotMindSection3Bullet2Text = NSLocalizedString("tarotMind.section3.bullet2.text", comment: "It helps you identify recurring thoughts or behaviors that might be holding you back, allowing you to make more conscious, empowered decisions.")
+    
+    static let tarotMindSection4Title = NSLocalizedString("tarotMind.section4.title", comment: "Tarot as a Mindfulness Practice")
+    static let tarotMindSection4Intro = NSLocalizedString("tarotMind.section4.intro", comment: "Integrating Tarot into your daily routine can be a grounding ritual in a fast-paced world.")
+    static let tarotMindSection4Bullet1Title = NSLocalizedString("tarotMind.section4.bullet1.title", comment: "Card of the Day")
+    static let tarotMindSection4Bullet1Text = NSLocalizedString("tarotMind.section4.bullet1.text", comment: "Drawing one card each morning isn't about predicting the future; it's about setting an intention. It asks: 'What energy should I be mindful of today?'")
+    static let tarotMindSection4Bullet2Title = NSLocalizedString("tarotMind.section4.bullet2.title", comment: "Presence")
+    static let tarotMindSection4Bullet2Text = NSLocalizedString("tarotMind.section4.bullet2.text", comment: "The act of shuffling and focusing on the imagery encourages you to stay in the moment, making it a perfect companion for meditation or journaling.")
+    
+    static let tarotMindConclusion = NSLocalizedString("tarotMind.conclusion", comment: "Think of Tarot not as a 'fortune teller,' but as a 'soul translator.' It gives a voice to your intuition when your logical mind is too loud.")
+    static let tarotMindInsightLabel = NSLocalizedString("tarotMind.insight.label", comment: "Insight:")
+    
+    // FAQ View
+    static let faqTitle = NSLocalizedString("faq.title", comment: "FAQ")
+    static let faqSubtitle = NSLocalizedString("faq.subtitle", comment: "Frequently Asked Questions")
+    
+    static let faqQuestion1 = NSLocalizedString("faq.question1", comment: "Is tarot real?")
+    static let faqAnswer1 = NSLocalizedString("faq.answer1", comment: "Tarot is not scientifically proven. It is best used as a tool for reflection and intuition.")
+    
+    static let faqQuestion2 = NSLocalizedString("faq.question2", comment: "Can tarot predict the future?")
+    static let faqAnswer2 = NSLocalizedString("faq.answer2", comment: "Tarot shows possibilities, not fixed outcomes.")
+    
+    static let faqQuestion3 = NSLocalizedString("faq.question3", comment: "Do I need special abilities?")
+    static let faqAnswer3 = NSLocalizedString("faq.answer3", comment: "No. Anyone can learn tarot with practice.")
+    
+    static let faqQuestion4 = NSLocalizedString("faq.question4", comment: "How often should I use tarot?")
+    static let faqAnswer4 = NSLocalizedString("faq.answer4", comment: "As often as you like — daily or when you need guidance.")
+    
+    static let faqQuestion5 = NSLocalizedString("faq.question5", comment: "What if I don't understand a card?")
+    static let faqAnswer5 = NSLocalizedString("faq.answer5", comment: "Start with basic meanings and trust your intuition over time.")
+    
+    static let faqQuestion6 = NSLocalizedString("faq.question6", comment: "Can I ask the same question multiple times?")
+    static let faqAnswer6 = NSLocalizedString("faq.answer6", comment: "Yes, but it's recommended to give yourself time between readings. Repeating the same question too often may lead to confusion rather than clarity.")
+    
+    static let faqQuestion7 = NSLocalizedString("faq.question7", comment: "What is the best way to ask a question?")
+    static let faqAnswer7 = NSLocalizedString("faq.answer7", comment: "Open-ended questions work best. Instead of 'yes or no', try asking 'What should I know about this situation?'")
+    
+    static let faqQuestion8 = NSLocalizedString("faq.question8", comment: "What does a reversed card mean?")
+    static let faqAnswer8 = NSLocalizedString("faq.answer8", comment: "A reversed card can suggest blocked energy, delays, or an internal aspect of the situation. Its meaning depends on context.")
+    
+    static let faqQuestion9 = NSLocalizedString("faq.question9", comment: "Can tarot help with decisions?")
+    static let faqAnswer9 = NSLocalizedString("faq.answer9", comment: "Yes. Tarot can help you see different perspectives and better understand your options, but the final decision is always yours.")
+    
+    static let faqQuestion10 = NSLocalizedString("faq.question10", comment: "Is tarot connected to religion?")
+    static let faqAnswer10 = NSLocalizedString("faq.answer10", comment: "Tarot is not tied to any specific religion. It is a symbolic system that can be used by anyone, regardless of beliefs.")
+    
+    static let faqDisclaimerTitle = NSLocalizedString("faq.disclaimer.title", comment: "Important")
+    static let faqDisclaimerText = NSLocalizedString("faq.disclaimer.text", comment: "Tarot is intended for entertainment and self-reflection purposes only.")
 }
