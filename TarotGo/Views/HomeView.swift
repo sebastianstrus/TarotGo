@@ -117,6 +117,16 @@ struct HomeView: View {
                             }
                             .buttonStyle(HomeButtonStyle())
                             
+                            // Learn Tarot
+                            NavigationLink(destination: LearnTarotView()) {
+                                HomeButton(
+                                    icon: "graduationcap.fill",
+                                    title: L10n.homeLearnTarot,
+                                    subtitle: L10n.homeLearnTarotSubtitle
+                                )
+                            }
+                            .buttonStyle(HomeButtonStyle())
+                            
                             // Settings
                             NavigationLink(destination: SettingsView()) {
                                 HomeButton(

@@ -21,7 +21,7 @@ struct HistoryOfTarotView: View {
                     
                     // Page title
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(L10n.historyTitle)
+                        Text(L10n.historyOfTarotTitle)
                             .font(AppTheme.serifFont(size: 32, weight: .medium))
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 8, x: 0, y: 4)

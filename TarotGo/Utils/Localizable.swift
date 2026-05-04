@@ -455,7 +455,7 @@ enum L10n {
     static let learnFaqSubtitle = NSLocalizedString("learn.faq.subtitle", comment: "Common questions")
     
     // History of Tarot View
-    static let historyTitle = NSLocalizedString("history.page.title", comment: "History of Tarot")
+    static let historyOfTarotTitle = NSLocalizedString("history.page.title", comment: "History of Tarot")
     static let historySubtitle = NSLocalizedString("history.page.subtitle", comment: "The Origins of Tarot: From Games to Symbolism")
     static let historyIntro = NSLocalizedString("history.intro", comment: "The history of Tarot is a fascinating journey that began not with mysticism, but with the simple joy of gameplay. While many associate the cards with ancient mystery, their documented roots lie in the courts of Renaissance Italy and the evolution of international card games.")
     
