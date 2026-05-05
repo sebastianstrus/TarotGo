@@ -180,6 +180,82 @@ struct BulletPoint: View {
     }
 }
 
+struct TimelineTable: View {
+    let timelineData: [(era: String, milestone: String)] = [
+        (L10n.historyTimelineEra1, L10n.historyTimelineMilestone1),
+        (L10n.historyTimelineEra2, L10n.historyTimelineMilestone2),
+        (L10n.historyTimelineEra3, L10n.historyTimelineMilestone3),
+        (L10n.historyTimelineEra4, L10n.historyTimelineMilestone4),
+        (L10n.historyTimelineEra5, L10n.historyTimelineMilestone5)
+    ]
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            // Table Header
+            HStack(spacing: 0) {
+                Text(L10n.historyTimelineEraHeader)
+                    .font(AppTheme.serifFont(size: 16, weight: .semibold))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .frame(width: 100, alignment: .leading)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 12)
+                
+                Rectangle()
+                    .fill(AppTheme.gold.opacity(0.3))
+                    .frame(width: 1)
+                
+                Text(L10n.historyTimelineMilestoneHeader)
+                    .font(AppTheme.serifFont(size: 16, weight: .semibold))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 12)
+            }
+            .background(AppTheme.gold.opacity(0.1))
+            
+            Rectangle()
+                .fill(AppTheme.gold.opacity(0.3))
+                .frame(height: 1)
+            
+            // Table Rows
+            ForEach(Array(timelineData.enumerated()), id: \.offset) { index, item in
+                HStack(alignment: .top, spacing: 0) {
+                    Text(item.era)
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundColor(AppTheme.textPrimary)
+                        .frame(width: 100, alignment: .leading)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 14)
+                    
+                    Rectangle()
+                        .fill(AppTheme.gold.opacity(0.2))
+                        .frame(width: 1)
+                    
+                    Text(item.milestone)
+                        .font(.system(size: 14, weight: .regular))
+                        .foregroundColor(AppTheme.textSecondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 14)
+                        .lineSpacing(4)
+                }
+                .background(index % 2 == 0 ? Color.clear : AppTheme.gold.opacity(0.05))
+                
+                if index < timelineData.count - 1 {
+                    Rectangle()
+                        .fill(AppTheme.gold.opacity(0.15))
+                        .frame(height: 1)
+                }
+            }
+        }
+        .overlay(
+            RoundedRectangle(cornerRadius: 8)
+                .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+}
+
 #Preview {
     NavigationStack {
         HistoryOfTarotView()
