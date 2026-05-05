@@ -138,9 +138,16 @@ struct DiagramTabView: View {
                     .frame(height: 380)
                     .padding(.horizontal, 20)
                 
-                // Selected position details
+                // Selected position or year details
                 if let position = selectedPosition {
                     PositionDetailCard(position: position)
+                        .padding(.horizontal, 20)
+                        .transition(.asymmetric(
+                            insertion: .scale.combined(with: .opacity),
+                            removal: .opacity
+                        ))
+                } else if let year = selectedYear {
+                    YearEnergyDetailCard(yearEnergy: year)
                         .padding(.horizontal, 20)
                         .transition(.asymmetric(
                             insertion: .scale.combined(with: .opacity),
@@ -256,6 +263,99 @@ struct CardsGridTabView: View {
             seen.insert(card.id)
             return true
         }
+    }
+}
+
+// MARK: - Year Energy Detail Card
+
+struct YearEnergyDetailCard: View {
+    let yearEnergy: YearlyEnergy
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            // Year info and energy number
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(yearEnergy.isCurrentYear ? "Current Year Energy" : "Year Energy")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(AppTheme.textSecondary)
+                        .textCase(.uppercase)
+                        .tracking(1)
+                    
+                    Text("\(yearEnergy.year) • Age \(yearEnergy.age)")
+                        .font(AppTheme.serifFont(size: 20, weight: .medium))
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+                
+                Spacer()
+                
+                // Energy number circle
+                ZStack {
+                    Circle()
+                        .fill(yearEnergy.isCurrentYear ? AppTheme.goldGradient : AppTheme.cardGradient)
+                        .frame(width: 55, height: 55)
+                        .overlay(
+                            Circle()
+                                .stroke(AppTheme.gold, lineWidth: 2)
+                        )
+                    
+                    Text("\(yearEnergy.primaryEnergy)")
+                        .font(.system(size: 26, weight: .bold, design: .rounded))
+                        .foregroundColor(yearEnergy.isCurrentYear ? .black : AppTheme.textPrimary)
+                }
+            }
+            
+            // Associated tarot card
+            if let card = yearEnergy.primaryCard {
+                Divider()
+                    .background(AppTheme.gold.opacity(0.3))
+                
+                NavigationLink(destination: CardDetailView(card: card)) {
+                    HStack(spacing: 16) {
+                        CardView(card: card)
+                            .frame(width: 80)
+                            .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+                        
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(card.name)
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundColor(AppTheme.textPrimary)
+                            
+                            Text("Energy for this year")
+                                .font(.system(size: 13))
+                                .foregroundColor(AppTheme.textSecondary)
+                            
+                            Text("Tap to view card details")
+                                .font(.system(size: 12))
+                                .foregroundColor(AppTheme.gold)
+                        }
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(AppTheme.gold.opacity(0.6))
+                    }
+                }
+            }
+        }
+        .padding(20)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(AppTheme.cardGradient)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(
+                            yearEnergy.isCurrentYear ? AppTheme.gold : AppTheme.gold.opacity(0.4),
+                            lineWidth: yearEnergy.isCurrentYear ? 2 : 1.5
+                        )
+                )
+                .shadow(
+                    color: yearEnergy.isCurrentYear ? AppTheme.gold.opacity(0.3) : AppTheme.gold.opacity(0.15),
+                    radius: yearEnergy.isCurrentYear ? 20 : 15,
+                    x: 0,
+                    y: 8
+                )
+        )
     }
 }
 
@@ -469,7 +569,7 @@ struct YearAnalysisTabView: View {
                         .padding(.horizontal, 20)
                     
                     // Group by decade
-                    ForEach(Array(stride(from: 0, through: 70, by: 10)), id: \.self) { decade in
+                    ForEach(Array(stride(from: 0, through: 80, by: 10)), id: \.self) { decade in
                         DecadeSection(
                             matrix: matrix,
                             decade: decade,

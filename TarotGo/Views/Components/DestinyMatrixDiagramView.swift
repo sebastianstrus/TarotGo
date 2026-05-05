@@ -21,7 +21,8 @@ struct DestinyMatrixDiagramView: View {
                 OuterYearlyRingView(
                     yearlyEnergies: matrix.yearlyEnergies,
                     size: size,
-                    selectedYear: $selectedYear
+                    selectedYear: $selectedYear,
+                    selectedPosition: $selectedPosition
                 )
                 // Background square frame
                 Path { path in
@@ -69,6 +70,7 @@ struct DestinyMatrixDiagramView: View {
                     .onTapGesture {
                         withAnimation(.spring(response: 0.3)) {
                             selectedPosition = position
+                            selectedYear = nil // Clear year selection when position is selected
                         }
                         HapticService.shared.impact(.light)
                     }
@@ -156,8 +158,10 @@ struct OuterYearlyRingView: View {
     let yearlyEnergies: [YearlyEnergy]
     let size: CGFloat
     @Binding var selectedYear: YearlyEnergy?
+    @Binding var selectedPosition: MatrixPosition?
     
-    private let displayedAges = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
+    // Display ages at clean 5-year intervals (start from 5, skip 0)
+    private let displayedAges = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80]
     
     var body: some View {
         ZStack {
@@ -176,6 +180,7 @@ struct OuterYearlyRingView: View {
                 .onTapGesture {
                     withAnimation(.spring(response: 0.3)) {
                         selectedYear = yearEnergy
+                        selectedPosition = nil // Clear position selection when year is selected
                     }
                     HapticService.shared.impact(.light)
                 }
@@ -200,37 +205,50 @@ struct YearMarkerView: View {
         ZStack {
             // Small circle for energy number
             Circle()
-                .fill(yearEnergy.isCurrentYear ? AppTheme.gold : AppTheme.deepNavy.opacity(0.6))
-                .frame(width: isSelected ? 28 : 24, height: isSelected ? 28 : 24)
+                .fill(
+                    isSelected
+                        ? AppTheme.goldGradient
+                        : (yearEnergy.isCurrentYear
+                            ? LinearGradient(colors: [AppTheme.gold.opacity(0.8)], startPoint: .top, endPoint: .bottom)
+                            : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
+                )
+                .frame(width: 26, height: 26)
                 .overlay(
                     Circle()
                         .stroke(
-                            yearEnergy.isCurrentYear ? AppTheme.lightGold : AppTheme.gold.opacity(0.4),
-                            lineWidth: isSelected ? 2 : 1
+                            isSelected
+                                ? AppTheme.lightGold
+                                : (yearEnergy.isCurrentYear ? AppTheme.gold : AppTheme.gold.opacity(0.4)),
+                            lineWidth: isSelected ? 2.5 : 1.5
                         )
+                )
+                .shadow(
+                    color: isSelected ? AppTheme.gold.opacity(0.5) : .clear,
+                    radius: isSelected ? 8 : 0,
+                    x: 0,
+                    y: 4
                 )
             
             // Energy number
             Text("\(yearEnergy.primaryEnergy)")
-                .font(.system(size: isSelected ? 11 : 10, weight: yearEnergy.isCurrentYear ? .bold : .medium, design: .rounded))
-                .foregroundColor(yearEnergy.isCurrentYear ? .black : AppTheme.textPrimary)
+                .font(.system(size: 11, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded))
+                .foregroundColor(isSelected ? .black : (yearEnergy.isCurrentYear ? .black.opacity(0.8) : AppTheme.textPrimary))
             
             // Age label (outside the circle)
             Text("\(yearEnergy.age)")
-                .font(.system(size: 9, weight: .regular))
-                .foregroundColor(AppTheme.textTertiary.opacity(0.6))
-                .offset(y: -18)
+                .font(.system(size: 9, weight: isSelected ? .semibold : .regular))
+                .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.6))
+                .offset(y: -19)
         }
         .position(x: x, y: y)
-        .scaleEffect(isSelected ? 1.1 : 1.0)
         .animation(.spring(response: 0.2), value: isSelected)
     }
     
     /// Calculate angle for age position (clockwise from top)
     private func angleForAge(_ age: Int) -> CGFloat {
         // Start at top (270 degrees or -π/2 radians) and go clockwise
-        // Full circle is 360 degrees for ages 0-70
-        let maxAge: CGFloat = 70
+        // Full circle is 360 degrees for ages 0-80
+        let maxAge: CGFloat = 80
         let progress = CGFloat(age) / maxAge
         let degrees = -90 + (progress * 360) // Start at top, go clockwise
         return degrees * .pi / 180
