@@ -568,11 +568,11 @@ struct YearAnalysisTabView: View {
                         .foregroundStyle(AppTheme.goldGradient)
                         .padding(.horizontal, 20)
                     
-                    // Group by decade
-                    ForEach(Array(stride(from: 0, through: 80, by: 10)), id: \.self) { decade in
+                    // Group by decade (1-10, 11-20, etc.)
+                    ForEach(Array(stride(from: 1, through: 71, by: 10)), id: \.self) { startAge in
                         DecadeSection(
                             matrix: matrix,
-                            decade: decade,
+                            decade: startAge,
                             selectedYear: $selectedYear
                         )
                     }
@@ -748,7 +748,7 @@ struct DecadeSection: View {
     @Binding var selectedYear: YearlyEnergy?
     
     private var yearsInDecade: [YearlyEnergy] {
-        matrix.yearlyEnergies.filter { $0.age >= decade && $0.age < decade + 10 }
+        matrix.yearlyEnergies.filter { $0.age >= decade && $0.age <= decade + 9 }
     }
     
     var body: some View {
