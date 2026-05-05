@@ -151,7 +151,7 @@ class DestinyMatrixCalculator {
             number: karma,
             position: .karma,
             x: 0.5,
-            y: 0.08
+            y: 0.085
         ))
         
         // Health (below square, bottom)(7)
@@ -160,7 +160,7 @@ class DestinyMatrixCalculator {
             number: health,
             position: .health,
             x: 0.5,
-            y: 0.92
+            y: 0.915
         ))
         
         // Comfort zone (far right)(11)
