@@ -209,7 +209,7 @@ struct YearMarkerView: View {
                             ? LinearGradient(colors: [AppTheme.gold.opacity(0.8)], startPoint: .top, endPoint: .bottom)
                             : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
                 )
-                .frame(width: 16, height: 16) // Reduced from 26 to 16
+                .frame(width: 11, height: 11) // Reduced from 13 to 11
                 .overlay(
                     Circle()
                         .stroke(
@@ -228,15 +228,15 @@ struct YearMarkerView: View {
             
             // Energy number - smaller font
             Text("\(yearEnergy.primaryEnergy)")
-                .font(.system(size: 7, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded)) // Reduced from 11 to 7
+                .font(.system(size: 5, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded)) // Reduced from 6 to 5
                 .foregroundColor(isSelected ? .black : (yearEnergy.isCurrentYear ? .black.opacity(0.8) : AppTheme.textPrimary))
             
             // Age label (outside the circle) - only show for multiples of 5
             if yearEnergy.age % 5 == 0 {
                 Text("\(yearEnergy.age)")
-                    .font(.system(size: 7, weight: isSelected ? .semibold : .regular)) // Reduced from 9 to 7
+                    .font(.system(size: 5, weight: isSelected ? .semibold : .regular)) // Reduced from 6 to 5
                     .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.6))
-                    .offset(y: -12) // Adjusted offset for smaller circle
+                    .offset(y: -9) // Adjusted offset for smaller circle
             }
         }
         .position(x: x, y: y)
