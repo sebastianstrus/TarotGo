@@ -67,6 +67,7 @@ struct DestinyMatrixDiagramView: View {
                         size: size,
                         isSelected: selectedPosition?.id == position.id
                     )
+                    .zIndex(selectedPosition?.id == position.id ? 1 : 0)
                     .onTapGesture {
                         withAnimation(.spring(response: 0.3)) {
                             selectedPosition = position
@@ -175,6 +176,7 @@ struct OuterYearlyRingView: View {
                     size: size,
                     isSelected: selectedYear?.id == yearEnergy.id
                 )
+                .zIndex(selectedYear?.id == yearEnergy.id ? 1 : 0)
                 .onTapGesture {
                     withAnimation(.spring(response: 0.3)) {
                         selectedYear = yearEnergy
