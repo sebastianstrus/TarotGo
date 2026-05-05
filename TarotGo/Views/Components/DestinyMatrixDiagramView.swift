@@ -160,18 +160,15 @@ struct OuterYearlyRingView: View {
     @Binding var selectedYear: YearlyEnergy?
     @Binding var selectedPosition: MatrixPosition?
     
-    // Display ages at clean 5-year intervals (start from 5, skip 0)
-    private let displayedAges = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80]
-    
     var body: some View {
         ZStack {
-            // Outer circle
+            // Outer circle - slightly larger to accommodate all years
             Circle()
                 .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
-                .frame(width: size * 0.95, height: size * 0.95)
+                .frame(width: size * 0.98, height: size * 0.98)
             
-            // Age markers and energy numbers
-            ForEach(yearlyEnergies.filter { displayedAges.contains($0.age) }, id: \.id) { yearEnergy in
+            // Age markers and energy numbers - display all years 1-80
+            ForEach(yearlyEnergies.filter { $0.age > 0 }, id: \.id) { yearEnergy in
                 YearMarkerView(
                     yearEnergy: yearEnergy,
                     size: size,
@@ -198,12 +195,12 @@ struct YearMarkerView: View {
     
     var body: some View {
         let angle = angleForAge(yearEnergy.age)
-        let radius = size * 0.475
+        let radius = size * 0.49 // Slightly larger radius for the ring
         let x = size / 2 + radius * cos(angle)
         let y = size / 2 + radius * sin(angle)
         
         ZStack {
-            // Small circle for energy number
+            // Smaller circle for energy number to fit all 80 years
             Circle()
                 .fill(
                     isSelected
@@ -212,33 +209,35 @@ struct YearMarkerView: View {
                             ? LinearGradient(colors: [AppTheme.gold.opacity(0.8)], startPoint: .top, endPoint: .bottom)
                             : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
                 )
-                .frame(width: 26, height: 26)
+                .frame(width: 16, height: 16) // Reduced from 26 to 16
                 .overlay(
                     Circle()
                         .stroke(
                             isSelected
                                 ? AppTheme.lightGold
                                 : (yearEnergy.isCurrentYear ? AppTheme.gold : AppTheme.gold.opacity(0.4)),
-                            lineWidth: isSelected ? 2.5 : 1.5
+                            lineWidth: isSelected ? 2 : 1 // Reduced stroke width
                         )
                 )
                 .shadow(
                     color: isSelected ? AppTheme.gold.opacity(0.5) : .clear,
-                    radius: isSelected ? 8 : 0,
+                    radius: isSelected ? 6 : 0, // Reduced shadow radius
                     x: 0,
-                    y: 4
+                    y: 3
                 )
             
-            // Energy number
+            // Energy number - smaller font
             Text("\(yearEnergy.primaryEnergy)")
-                .font(.system(size: 11, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded))
+                .font(.system(size: 7, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded)) // Reduced from 11 to 7
                 .foregroundColor(isSelected ? .black : (yearEnergy.isCurrentYear ? .black.opacity(0.8) : AppTheme.textPrimary))
             
-            // Age label (outside the circle)
-            Text("\(yearEnergy.age)")
-                .font(.system(size: 9, weight: isSelected ? .semibold : .regular))
-                .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.6))
-                .offset(y: -19)
+            // Age label (outside the circle) - only show for multiples of 5
+            if yearEnergy.age % 5 == 0 {
+                Text("\(yearEnergy.age)")
+                    .font(.system(size: 7, weight: isSelected ? .semibold : .regular)) // Reduced from 9 to 7
+                    .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.6))
+                    .offset(y: -12) // Adjusted offset for smaller circle
+            }
         }
         .position(x: x, y: y)
         .animation(.spring(response: 0.2), value: isSelected)
