@@ -195,8 +195,8 @@ struct YearMarkerView: View {
     
     var body: some View {
         let angle = angleForAge(yearEnergy.age)
-        let circleRadius = size * 0.48 // Radius for the circle position
-        let labelRadius = size * 0.495 // Slightly further out for the label
+        let circleRadius = size * 0.51 // Radius for the circle position
+        let labelRadius = size * 0.47 // Further out for the label
         let circleX = size / 2 + circleRadius * cos(angle)
         let circleY = size / 2 + circleRadius * sin(angle)
         let labelX = size / 2 + labelRadius * cos(angle)
@@ -239,8 +239,8 @@ struct YearMarkerView: View {
             
             // Age label positioned further out from center - show for all ages
             Text("\(yearEnergy.age)")
-                .font(.system(size: 5, weight: isSelected ? .semibold : .regular))
-                .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.6))
+                .font(.system(size: 8, weight: isSelected ? .bold : .medium))
+                .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.7))
                 .position(x: labelX, y: labelY)
         }
         .animation(.spring(response: 0.2), value: isSelected)
