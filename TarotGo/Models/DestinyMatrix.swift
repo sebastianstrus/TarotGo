@@ -7,6 +7,30 @@
 
 import Foundation
 
+/// Represents a yearly energy in the Destiny Matrix
+struct YearlyEnergy: Identifiable {
+    let id = UUID()
+    let age: Int
+    let year: Int
+    let primaryEnergy: Int // Main energy for this year (1-22)
+    let secondaryEnergy: Int // Personal year energy (1-22)
+    let isCurrentYear: Bool
+    
+    /// Get the corresponding tarot card for primary energy
+    var primaryCard: TarotCard? {
+        let cards = TarotDeck.majorArcana
+        guard primaryEnergy >= 1 && primaryEnergy <= 22 else { return nil }
+        return cards[primaryEnergy - 1]
+    }
+    
+    /// Get the corresponding tarot card for secondary energy
+    var secondaryCard: TarotCard? {
+        let cards = TarotDeck.majorArcana
+        guard secondaryEnergy >= 1 && secondaryEnergy <= 22 else { return nil }
+        return cards[secondaryEnergy - 1]
+    }
+}
+
 /// Represents a position in the Destiny Matrix
 struct MatrixPosition: Identifiable {
     let id = UUID()
@@ -99,11 +123,13 @@ struct DestinyMatrix: Identifiable {
     let id = UUID()
     let birthDate: Date
     let positions: [MatrixPosition]
+    let yearlyEnergies: [YearlyEnergy]
     let calculatedAt: Date
     
-    init(birthDate: Date, positions: [MatrixPosition]) {
+    init(birthDate: Date, positions: [MatrixPosition], yearlyEnergies: [YearlyEnergy] = []) {
         self.birthDate = birthDate
         self.positions = positions
+        self.yearlyEnergies = yearlyEnergies
         self.calculatedAt = Date()
     }
     
@@ -122,5 +148,15 @@ struct DestinyMatrix: Identifiable {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
         return formatter.string(from: birthDate)
+    }
+    
+    /// Get current year's energy
+    var currentYearEnergy: YearlyEnergy? {
+        yearlyEnergies.first { $0.isCurrentYear }
+    }
+    
+    /// Get energy for a specific age
+    func yearlyEnergy(forAge age: Int) -> YearlyEnergy? {
+        yearlyEnergies.first { $0.age == age }
     }
 }

@@ -200,7 +200,10 @@ class DestinyMatrixCalculator {
             y: 0.85
         ))
         
-        return DestinyMatrix(birthDate: birthDate, positions: positions)
+        // Calculate yearly energies
+        let yearlyEnergies = calculateYearlyEnergies(from: birthDate, positions: positions)
+        
+        return DestinyMatrix(birthDate: birthDate, positions: positions, yearlyEnergies: yearlyEnergies)
     }
     
     // MARK: - Helper Methods
@@ -243,5 +246,69 @@ class DestinyMatrixCalculator {
     /// Extract individual digits from a number
     private func extractDigits(from number: Int) -> [Int] {
         String(number).compactMap { Int(String($0)) }
+    }
+    
+    // MARK: - Yearly Energy Calculations
+    
+    /// Calculate yearly energies for ages 0-60+
+    /// This shows how energies evolve throughout a person's life
+    func calculateYearlyEnergies(from birthDate: Date, positions: [MatrixPosition]) -> [YearlyEnergy] {
+        var yearlyEnergies: [YearlyEnergy] = []
+        
+        let components = Calendar.current.dateComponents([.day, .month, .year], from: birthDate)
+        guard let day = components.day,
+              let month = components.month,
+              let birthYear = components.year else {
+            return []
+        }
+        
+        // Get center position number (main life energy)
+        let centerNumber = positions.first(where: { $0.position == .center })?.number ?? 22
+        
+        // Calculate energies for ages 0 to 70
+        for age in 0...70 {
+            let currentYear = birthYear + age
+            
+            // Calculate year energy based on birth date + current year
+            let yearSum = day + month + currentYear
+            let yearEnergy = reduce(yearSum)
+            
+            // Calculate personal year energy (day + month + reduced current year)
+            let reducedYear = reduce(currentYear)
+            let personalYearEnergy = reduce(day + month + reducedYear)
+            
+            // Create yearly energy entry
+            let yearlyEnergy = YearlyEnergy(
+                age: age,
+                year: currentYear,
+                primaryEnergy: yearEnergy,
+                secondaryEnergy: personalYearEnergy,
+                isCurrentYear: isCurrentYear(age: age, birthDate: birthDate)
+            )
+            
+            yearlyEnergies.append(yearlyEnergy)
+        }
+        
+        return yearlyEnergies
+    }
+    
+    /// Check if a given age represents the current year
+    private func isCurrentYear(age: Int, birthDate: Date) -> Bool {
+        let calendar = Calendar.current
+        let now = Date()
+        
+        guard let birthYear = calendar.dateComponents([.year], from: birthDate).year,
+              let currentYear = calendar.dateComponents([.year], from: now).year else {
+            return false
+        }
+        
+        let currentAge = currentYear - birthYear
+        return age == currentAge
+    }
+    
+    /// Get energy for a specific age
+    func energyForAge(_ age: Int, from birthDate: Date) -> YearlyEnergy? {
+        let yearlyEnergies = calculateYearlyEnergies(from: birthDate, positions: [])
+        return yearlyEnergies.first(where: { $0.age == age })
     }
 }

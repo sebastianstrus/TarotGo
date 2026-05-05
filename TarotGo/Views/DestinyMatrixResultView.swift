@@ -10,18 +10,21 @@ import SwiftUI
 struct DestinyMatrixResultView: View {
     let matrix: DestinyMatrix
     @State private var selectedPosition: MatrixPosition?
+    @State private var selectedYear: YearlyEnergy?
     @State private var selectedTab: Tab = .diagram
     
     enum Tab: String, CaseIterable {
         case diagram
         case positions
         case cards
+        case yearAnalysis
         
         var title: String {
             switch self {
             case .diagram: return L10n.matrixTabDiagram
             case .positions: return L10n.matrixTabPositions
             case .cards: return L10n.matrixTabCards
+            case .yearAnalysis: return L10n.matrixTabYearAnalysis
             }
         }
         
@@ -30,6 +33,7 @@ struct DestinyMatrixResultView: View {
             case .diagram: return "square.grid.3x3"
             case .positions: return "list.bullet"
             case .cards: return "rectangle.portrait.on.rectangle.portrait"
+            case .yearAnalysis: return "calendar.circle"
             }
         }
     }
@@ -71,7 +75,7 @@ struct DestinyMatrixResultView: View {
                 
                 // Content
                 TabView(selection: $selectedTab) {
-                    DiagramTabView(matrix: matrix, selectedPosition: $selectedPosition)
+                    DiagramTabView(matrix: matrix, selectedPosition: $selectedPosition, selectedYear: $selectedYear)
                         .tag(Tab.diagram)
                     
                     PositionsListTabView(matrix: matrix, selectedPosition: $selectedPosition)
@@ -79,6 +83,9 @@ struct DestinyMatrixResultView: View {
                     
                     CardsGridTabView(matrix: matrix)
                         .tag(Tab.cards)
+                    
+                    YearAnalysisTabView(matrix: matrix, selectedYear: $selectedYear)
+                        .tag(Tab.yearAnalysis)
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
             }
@@ -121,13 +128,14 @@ struct TabButton: View {
 struct DiagramTabView: View {
     let matrix: DestinyMatrix
     @Binding var selectedPosition: MatrixPosition?
+    @Binding var selectedYear: YearlyEnergy?
     
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
                 // Diagram
-                DestinyMatrixDiagramView(matrix: matrix, selectedPosition: $selectedPosition)
-                    .frame(height: 350)
+                DestinyMatrixDiagramView(matrix: matrix, selectedPosition: $selectedPosition, selectedYear: $selectedYear)
+                    .frame(height: 380)
                     .padding(.horizontal, 20)
                 
                 // Selected position details
@@ -425,6 +433,296 @@ struct CardLinkView: View {
                         .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
+    }
+}
+
+// MARK: - Year Analysis Tab
+
+struct YearAnalysisTabView: View {
+    let matrix: DestinyMatrix
+    @Binding var selectedYear: YearlyEnergy?
+    
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 20) {
+                // Current Year Highlight
+                if let currentYear = matrix.currentYearEnergy {
+                    CurrentYearCard(yearEnergy: currentYear)
+                        .padding(.horizontal, 20)
+                }
+                
+                // Selected year detail (if different from current)
+                if let selected = selectedYear, !selected.isCurrentYear {
+                    YearDetailCard(yearEnergy: selected)
+                        .padding(.horizontal, 20)
+                        .transition(.asymmetric(
+                            insertion: .scale.combined(with: .opacity),
+                            removal: .opacity
+                        ))
+                }
+                
+                // Year Timeline
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("Life Timeline")
+                        .font(AppTheme.serifFont(size: 22, weight: .medium))
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .padding(.horizontal, 20)
+                    
+                    // Group by decade
+                    ForEach(Array(stride(from: 0, through: 70, by: 10)), id: \.self) { decade in
+                        DecadeSection(
+                            matrix: matrix,
+                            decade: decade,
+                            selectedYear: $selectedYear
+                        )
+                    }
+                }
+                .padding(.top, 10)
+                
+                Spacer(minLength: 40)
+            }
+            .padding(.top, 20)
+        }
+    }
+}
+
+// MARK: - Current Year Card
+
+struct CurrentYearCard: View {
+    let yearEnergy: YearlyEnergy
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Current Year Energy")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(AppTheme.textSecondary)
+                        .textCase(.uppercase)
+                        .tracking(1)
+                    
+                    Text("\(yearEnergy.year) • Age \(yearEnergy.age)")
+                        .font(AppTheme.serifFont(size: 24, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+                
+                Spacer()
+                
+                // Primary energy number
+                ZStack {
+                    Circle()
+                        .fill(AppTheme.goldGradient)
+                        .frame(width: 60, height: 60)
+                    
+                    Text("\(yearEnergy.primaryEnergy)")
+                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .foregroundColor(.black)
+                }
+            }
+            
+            // Card preview if available
+            if let card = yearEnergy.primaryCard {
+                Divider()
+                    .background(AppTheme.gold.opacity(0.3))
+                
+                NavigationLink(destination: CardDetailView(card: card)) {
+                    HStack(spacing: 12) {
+                        CardView(card: card)
+                            .frame(width: 60)
+                            .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+                        
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(card.name)
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundColor(AppTheme.textPrimary)
+                            
+                            Text("Primary energy for this year")
+                                .font(.system(size: 13))
+                                .foregroundColor(AppTheme.textSecondary)
+                        }
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(AppTheme.gold.opacity(0.6))
+                    }
+                }
+            }
+        }
+        .padding(20)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(AppTheme.cardGradient)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(AppTheme.lightGold, lineWidth: 2)
+                )
+                .shadow(color: AppTheme.gold.opacity(0.4), radius: 20, x: 0, y: 10)
+        )
+    }
+}
+
+// MARK: - Year Detail Card
+
+struct YearDetailCard: View {
+    let yearEnergy: YearlyEnergy
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Selected Year")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(AppTheme.textSecondary)
+                        .textCase(.uppercase)
+                        .tracking(1)
+                    
+                    Text("\(yearEnergy.year) • Age \(yearEnergy.age)")
+                        .font(AppTheme.serifFont(size: 20, weight: .medium))
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+                
+                Spacer()
+                
+                ZStack {
+                    Circle()
+                        .fill(AppTheme.goldGradient.opacity(0.3))
+                        .frame(width: 50, height: 50)
+                        .overlay(
+                            Circle()
+                                .stroke(AppTheme.gold, lineWidth: 2)
+                        )
+                    
+                    Text("\(yearEnergy.primaryEnergy)")
+                        .font(.system(size: 22, weight: .bold, design: .rounded))
+                        .foregroundColor(AppTheme.textPrimary)
+                }
+            }
+            
+            if let card = yearEnergy.primaryCard {
+                Divider()
+                    .background(AppTheme.gold.opacity(0.3))
+                
+                NavigationLink(destination: CardDetailView(card: card)) {
+                    HStack(spacing: 12) {
+                        CardView(card: card)
+                            .frame(width: 60)
+                            .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+                        
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(card.name)
+                                .font(.system(size: 15, weight: .medium))
+                                .foregroundColor(AppTheme.textPrimary)
+                            
+                            Text("View card details")
+                                .font(.system(size: 12))
+                                .foregroundColor(AppTheme.gold)
+                        }
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(AppTheme.gold.opacity(0.6))
+                    }
+                }
+            }
+        }
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(AppTheme.cardGradient)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(AppTheme.gold.opacity(0.4), lineWidth: 1.5)
+                )
+                .shadow(color: AppTheme.gold.opacity(0.2), radius: 15, x: 0, y: 8)
+        )
+    }
+}
+
+// MARK: - Decade Section
+
+struct DecadeSection: View {
+    let matrix: DestinyMatrix
+    let decade: Int
+    @Binding var selectedYear: YearlyEnergy?
+    
+    private var yearsInDecade: [YearlyEnergy] {
+        matrix.yearlyEnergies.filter { $0.age >= decade && $0.age < decade + 10 }
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("\(decade)-\(decade + 9) years")
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundColor(AppTheme.textSecondary)
+                .padding(.horizontal, 20)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(yearsInDecade) { year in
+                        YearChipView(
+                            yearEnergy: year,
+                            isSelected: selectedYear?.id == year.id
+                        )
+                        .onTapGesture {
+                            withAnimation(.spring(response: 0.3)) {
+                                selectedYear = year
+                            }
+                            HapticService.shared.impact(.light)
+                        }
+                    }
+                }
+                .padding(.horizontal, 20)
+            }
+        }
+    }
+}
+
+// MARK: - Year Chip View
+
+struct YearChipView: View {
+    let yearEnergy: YearlyEnergy
+    let isSelected: Bool
+    
+    var body: some View {
+        VStack(spacing: 8) {
+            // Age
+            Text("\(yearEnergy.age)")
+                .font(.system(size: 11, weight: .medium))
+                .foregroundColor(AppTheme.textTertiary)
+            
+            // Energy circle
+            ZStack {
+                Circle()
+                    .fill(
+                        yearEnergy.isCurrentYear
+                            ? AppTheme.goldGradient
+                            : (isSelected
+                                ? LinearGradient(colors: [AppTheme.gold.opacity(0.3)], startPoint: .top, endPoint: .bottom)
+                                : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
+                    )
+                    .frame(width: 44, height: 44)
+                    .overlay(
+                        Circle()
+                            .stroke(
+                                yearEnergy.isCurrentYear ? AppTheme.lightGold : AppTheme.gold.opacity(isSelected ? 0.8 : 0.3),
+                                lineWidth: isSelected ? 2 : 1
+                            )
+                    )
+                
+                Text("\(yearEnergy.primaryEnergy)")
+                    .font(.system(size: 16, weight: yearEnergy.isCurrentYear ? .bold : .semibold, design: .rounded))
+                    .foregroundColor(yearEnergy.isCurrentYear ? .black : AppTheme.textPrimary)
+            }
+            
+            // Year
+            Text("\(yearEnergy.year)")
+                .font(.system(size: 10))
+                .foregroundColor(AppTheme.textTertiary.opacity(0.7))
+        }
+        .scaleEffect(isSelected ? 1.05 : 1.0)
+        .animation(.spring(response: 0.2), value: isSelected)
     }
 }
 

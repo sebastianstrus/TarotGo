@@ -10,12 +10,19 @@ import SwiftUI
 struct DestinyMatrixDiagramView: View {
     let matrix: DestinyMatrix
     @Binding var selectedPosition: MatrixPosition?
+    @Binding var selectedYear: YearlyEnergy?
     
     var body: some View {
         GeometryReader { geometry in
             let size = min(geometry.size.width, geometry.size.height)
             
             ZStack {
+                // Outer ring with yearly energies
+                OuterYearlyRingView(
+                    yearlyEnergies: matrix.yearlyEnergies,
+                    size: size,
+                    selectedYear: $selectedYear
+                )
                 // Background square frame
                 Path { path in
                     let padding: CGFloat = size * 0.2
@@ -143,16 +150,108 @@ struct PositionCircleView: View {
     }
 }
 
+// MARK: - Outer Yearly Ring View
+
+struct OuterYearlyRingView: View {
+    let yearlyEnergies: [YearlyEnergy]
+    let size: CGFloat
+    @Binding var selectedYear: YearlyEnergy?
+    
+    private let displayedAges = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
+    
+    var body: some View {
+        ZStack {
+            // Outer circle
+            Circle()
+                .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                .frame(width: size * 0.95, height: size * 0.95)
+            
+            // Age markers and energy numbers
+            ForEach(yearlyEnergies.filter { displayedAges.contains($0.age) }, id: \.id) { yearEnergy in
+                YearMarkerView(
+                    yearEnergy: yearEnergy,
+                    size: size,
+                    isSelected: selectedYear?.id == yearEnergy.id
+                )
+                .onTapGesture {
+                    withAnimation(.spring(response: 0.3)) {
+                        selectedYear = yearEnergy
+                    }
+                    HapticService.shared.impact(.light)
+                }
+            }
+        }
+    }
+}
+
+// MARK: - Year Marker View
+
+struct YearMarkerView: View {
+    let yearEnergy: YearlyEnergy
+    let size: CGFloat
+    let isSelected: Bool
+    
+    var body: some View {
+        let angle = angleForAge(yearEnergy.age)
+        let radius = size * 0.475
+        let x = size / 2 + radius * cos(angle)
+        let y = size / 2 + radius * sin(angle)
+        
+        ZStack {
+            // Small circle for energy number
+            Circle()
+                .fill(yearEnergy.isCurrentYear ? AppTheme.gold : AppTheme.deepNavy.opacity(0.6))
+                .frame(width: isSelected ? 28 : 24, height: isSelected ? 28 : 24)
+                .overlay(
+                    Circle()
+                        .stroke(
+                            yearEnergy.isCurrentYear ? AppTheme.lightGold : AppTheme.gold.opacity(0.4),
+                            lineWidth: isSelected ? 2 : 1
+                        )
+                )
+            
+            // Energy number
+            Text("\(yearEnergy.primaryEnergy)")
+                .font(.system(size: isSelected ? 11 : 10, weight: yearEnergy.isCurrentYear ? .bold : .medium, design: .rounded))
+                .foregroundColor(yearEnergy.isCurrentYear ? .black : AppTheme.textPrimary)
+            
+            // Age label (outside the circle)
+            Text("\(yearEnergy.age)")
+                .font(.system(size: 9, weight: .regular))
+                .foregroundColor(AppTheme.textTertiary.opacity(0.6))
+                .offset(y: -18)
+        }
+        .position(x: x, y: y)
+        .scaleEffect(isSelected ? 1.1 : 1.0)
+        .animation(.spring(response: 0.2), value: isSelected)
+    }
+    
+    /// Calculate angle for age position (clockwise from top)
+    private func angleForAge(_ age: Int) -> CGFloat {
+        // Start at top (270 degrees or -π/2 radians) and go clockwise
+        // Full circle is 360 degrees for ages 0-70
+        let maxAge: CGFloat = 70
+        let progress = CGFloat(age) / maxAge
+        let degrees = -90 + (progress * 360) // Start at top, go clockwise
+        return degrees * .pi / 180
+    }
+}
+
 #Preview {
     struct PreviewWrapper: View {
         @State private var selectedPosition: MatrixPosition?
+        @State private var selectedYear: YearlyEnergy?
         let matrix: DestinyMatrix
         
         var body: some View {
             ZStack {
                 AppTheme.backgroundGradient.ignoresSafeArea()
-                DestinyMatrixDiagramView(matrix: matrix, selectedPosition: $selectedPosition)
-                    .padding(40)
+                DestinyMatrixDiagramView(
+                    matrix: matrix,
+                    selectedPosition: $selectedPosition,
+                    selectedYear: $selectedYear
+                )
+                .padding(40)
             }
         }
     }

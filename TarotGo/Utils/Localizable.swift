@@ -59,6 +59,7 @@ enum L10n {
     static let matrixTabDiagram = NSLocalizedString("matrix.tab.diagram", comment: "Diagram")
     static let matrixTabPositions = NSLocalizedString("matrix.tab.positions", comment: "Positions")
     static let matrixTabCards = NSLocalizedString("matrix.tab.cards", comment: "Cards")
+    static let matrixTabYearAnalysis = NSLocalizedString("matrix.tab.yearAnalysis", comment: "Year Analysis")
     
     static let matrixViewCardDetails = NSLocalizedString("matrix.viewCardDetails", comment: "View Card Details")
     static let matrixUniqueCards = NSLocalizedString("matrix.uniqueCards", comment: "Unique Cards in Your Matrix")
