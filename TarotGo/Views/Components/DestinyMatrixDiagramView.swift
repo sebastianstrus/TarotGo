@@ -195,51 +195,54 @@ struct YearMarkerView: View {
     
     var body: some View {
         let angle = angleForAge(yearEnergy.age)
-        let radius = size * 0.49 // Slightly larger radius for the ring
-        let x = size / 2 + radius * cos(angle)
-        let y = size / 2 + radius * sin(angle)
+        let circleRadius = size * 0.48 // Radius for the circle position
+        let labelRadius = size * 0.495 // Slightly further out for the label
+        let circleX = size / 2 + circleRadius * cos(angle)
+        let circleY = size / 2 + circleRadius * sin(angle)
+        let labelX = size / 2 + labelRadius * cos(angle)
+        let labelY = size / 2 + labelRadius * sin(angle)
         
         ZStack {
-            // Smaller circle for energy number to fit all 80 years
-            Circle()
-                .fill(
-                    isSelected
-                        ? AppTheme.goldGradient
-                        : (yearEnergy.isCurrentYear
-                            ? LinearGradient(colors: [AppTheme.gold.opacity(0.8)], startPoint: .top, endPoint: .bottom)
-                            : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
-                )
-                .frame(width: 11, height: 11) // Reduced from 13 to 11
-                .overlay(
-                    Circle()
-                        .stroke(
-                            isSelected
-                                ? AppTheme.lightGold
-                                : (yearEnergy.isCurrentYear ? AppTheme.gold : AppTheme.gold.opacity(0.4)),
-                            lineWidth: isSelected ? 2 : 1 // Reduced stroke width
-                        )
-                )
-                .shadow(
-                    color: isSelected ? AppTheme.gold.opacity(0.5) : .clear,
-                    radius: isSelected ? 6 : 0, // Reduced shadow radius
-                    x: 0,
-                    y: 3
-                )
-            
-            // Energy number - smaller font
-            Text("\(yearEnergy.primaryEnergy)")
-                .font(.system(size: 5, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded)) // Reduced from 6 to 5
-                .foregroundColor(isSelected ? .black : (yearEnergy.isCurrentYear ? .black.opacity(0.8) : AppTheme.textPrimary))
-            
-            // Age label (outside the circle) - only show for multiples of 5
-            if yearEnergy.age % 5 == 0 {
-                Text("\(yearEnergy.age)")
-                    .font(.system(size: 5, weight: isSelected ? .semibold : .regular)) // Reduced from 6 to 5
-                    .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.6))
-                    .offset(y: -9) // Adjusted offset for smaller circle
+            // Circle with energy number
+            ZStack {
+                Circle()
+                    .fill(
+                        isSelected
+                            ? AppTheme.goldGradient
+                            : (yearEnergy.isCurrentYear
+                                ? LinearGradient(colors: [AppTheme.gold.opacity(0.8)], startPoint: .top, endPoint: .bottom)
+                                : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
+                    )
+                    .frame(width: 11, height: 11)
+                    .overlay(
+                        Circle()
+                            .stroke(
+                                isSelected
+                                    ? AppTheme.lightGold
+                                    : (yearEnergy.isCurrentYear ? AppTheme.gold : AppTheme.gold.opacity(0.4)),
+                                lineWidth: isSelected ? 2 : 1
+                            )
+                    )
+                    .shadow(
+                        color: isSelected ? AppTheme.gold.opacity(0.5) : .clear,
+                        radius: isSelected ? 6 : 0,
+                        x: 0,
+                        y: 3
+                    )
+                
+                // Energy number
+                Text("\(yearEnergy.primaryEnergy)")
+                    .font(.system(size: 5, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded))
+                    .foregroundColor(isSelected ? .black : (yearEnergy.isCurrentYear ? .black.opacity(0.8) : AppTheme.textPrimary))
             }
+            .position(x: circleX, y: circleY)
+            
+            // Age label positioned further out from center - show for all ages
+            Text("\(yearEnergy.age)")
+                .font(.system(size: 5, weight: isSelected ? .semibold : .regular))
+                .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.6))
+                .position(x: labelX, y: labelY)
         }
-        .position(x: x, y: y)
         .animation(.spring(response: 0.2), value: isSelected)
     }
     
