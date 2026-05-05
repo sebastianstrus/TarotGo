@@ -151,7 +151,7 @@ class DestinyMatrixCalculator {
             number: karma,
             position: .karma,
             x: 0.5,
-            y: 0.04
+            y: 0.08
         ))
         
         // Health (below square, bottom)(7)
@@ -160,7 +160,7 @@ class DestinyMatrixCalculator {
             number: health,
             position: .health,
             x: 0.5,
-            y: 0.96
+            y: 0.92
         ))
         
         // Comfort zone (far right)(11)
@@ -172,7 +172,7 @@ class DestinyMatrixCalculator {
             y: 0.5
         ))
         
-        // Timeline energies (far left vertical)(8)
+        // Timeline energies (far left vertical)(15)
         // Future (top left)
         let future = reduce(yearDigits[2] + yearDigits[3])
         positions.append(MatrixPosition(
