@@ -162,10 +162,11 @@ struct OuterYearlyRingView: View {
     
     var body: some View {
         ZStack {
-            // Outer circle - slightly larger to accommodate all years
+            // Outer circle - positioned to align with year circle centers
             Circle()
                 .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
-                .frame(width: size * 0.98, height: size * 0.98)
+                .frame(width: size * 1.02, height: size * 1.02)
+                .position(x: size / 2, y: size / 2)
             
             // Age markers and energy numbers - display all years 1-80
             ForEach(yearlyEnergies.filter { $0.age > 0 }, id: \.id) { yearEnergy in
@@ -195,10 +196,12 @@ struct YearMarkerView: View {
     
     var body: some View {
         let angle = angleForAge(yearEnergy.age)
-        let circleRadius = size * 0.51 // Radius for the circle position
-        let labelRadius = size * 0.47 // Further out for the label
-        let circleX = size / 2 + circleRadius * cos(angle)
-        let circleY = size / 2 + circleRadius * sin(angle)
+        // Outer ring diameter is size * 1.02, so radius is size * 0.51
+        // Position circle centers ON the ring stroke
+        let ringRadius = size * 0.51
+        let labelRadius = size * 0.47 // Further in for the label
+        let circleX = size / 2 + ringRadius * cos(angle)
+        let circleY = size / 2 + ringRadius * sin(angle)
         let labelX = size / 2 + labelRadius * cos(angle)
         let labelY = size / 2 + labelRadius * sin(angle)
         
