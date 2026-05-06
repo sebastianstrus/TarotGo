@@ -11,6 +11,7 @@ struct CardDetailView: View {
     let card: TarotCard
     @State private var showReversed: Bool = false
     @State private var showARView: Bool = false
+    @StateObject private var soundService = SoundService.shared
     
     var body: some View {
         ZStack {
@@ -54,6 +55,9 @@ struct CardDetailView: View {
         }
         .fullScreenCover(isPresented: $showARView) {
             CardARView(card: card)
+        }
+        .onChange(of: showReversed) { _, _ in
+            soundService.play(.reverse)
         }
     }
     

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     private let notificationService = NotificationService.shared
+    private let soundService = SoundService.shared
     @AppStorage("dailyCardNotificationEnabled") private var notificationEnabled: Bool = false
     @AppStorage("dailyCardNotificationHour") private var notificationHour: Int = 9
     @AppStorage("dailyCardNotificationMinute") private var notificationMinute: Int = 0
@@ -18,6 +19,7 @@ struct SettingsView: View {
     @State private var toggleState: Bool = false
     @State private var showOnboarding: Bool = false
     @State private var showPermissionAlert: Bool = false
+    @State private var hasAppeared: Bool = false
     
     private var selectedCardBack: CardBackStyle {
         CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
@@ -33,6 +35,9 @@ struct SettingsView: View {
                     Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
                         .listRowSeparator(.hidden)
                         .onChange(of: toggleState) { oldValue, newValue in
+                            if hasAppeared && oldValue != newValue {
+                                soundService.play(.toggle)
+                            }
                             handleNotificationToggle(newValue)
                         }
                         .tint(AppTheme.gold)
@@ -229,6 +234,9 @@ struct SettingsView: View {
         .toolbarColorScheme(.dark, for: .navigationBar)
         .onAppear {
             toggleState = notificationEnabled
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                hasAppeared = true
+            }
         }
         .sheet(isPresented: $showingTimePicker) {
             TimePickerSheet(
