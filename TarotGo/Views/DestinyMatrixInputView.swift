@@ -22,9 +22,9 @@ struct DestinyMatrixInputView: View {
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
             ScrollView {
-                VStack(spacing: 30) {
+                VStack(spacing: 20) {
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 0)
                     
                     // Header
                     VStack(spacing: 15) {
@@ -131,7 +131,6 @@ struct DestinyMatrixInputView: View {
                 }
             }
         }
-        .navigationTitle(L10n.matrixTitle)
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: $showResult) {
             if let matrix = calculatedMatrix {

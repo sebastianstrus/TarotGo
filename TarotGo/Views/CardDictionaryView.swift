@@ -39,7 +39,7 @@ struct CardDictionaryView: View {
             VStack(spacing: 0) {
                 // Header
                 headerView
-                    .padding(.top, 20)
+                    .padding(.top, 10)
                     .padding(.horizontal)
                 
                 // Suit filter

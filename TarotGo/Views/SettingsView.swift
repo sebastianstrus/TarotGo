@@ -225,7 +225,8 @@ struct SettingsView: View {
             .foregroundColor(AppTheme.textPrimary)
         }
         .navigationTitle(L10n.settingsTitle)
-        .navigationBarTitleDisplayMode(.large)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarColorScheme(.dark, for: .navigationBar)
         .onAppear {
             toggleState = notificationEnabled
         }

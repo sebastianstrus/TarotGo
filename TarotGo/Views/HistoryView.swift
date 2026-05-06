@@ -60,7 +60,8 @@ struct HistoryView: View {
             }
         }
         .navigationTitle(L10n.historyTitle)
-        .navigationBarTitleDisplayMode(.large)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarColorScheme(.dark, for: .navigationBar)
     }
     
     private var headerView: some View {

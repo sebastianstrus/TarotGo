@@ -22,9 +22,9 @@ struct NewReadingView: View {
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
             ScrollView {
-                VStack(spacing: 30) {
+                VStack(spacing: 20) {
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 10)
                     
                     // Welcome text with gold styling
                     VStack(spacing: 15) {
