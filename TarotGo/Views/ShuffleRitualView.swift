@@ -220,10 +220,10 @@ struct ShuffleRitualView: View {
                         isPressed = true
                         phase = .pressing
                         
-                        // Play sound immediately
-                        SoundService.shared.play(.fire, volume: 0.6)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                            SoundService.shared.play(.fire, volume: 0.6)
+                        }
                         
-                        // Show container but keep particles hidden for 0.3s to prevent "flash"
                         showFire = true
                         fireOpacity = 0.0
                         
