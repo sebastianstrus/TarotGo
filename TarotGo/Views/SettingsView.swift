@@ -14,6 +14,7 @@ struct SettingsView: View {
     @AppStorage("dailyCardNotificationHour") private var notificationHour: Int = 9
     @AppStorage("dailyCardNotificationMinute") private var notificationMinute: Int = 0
     @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
+    @AppStorage("isSoundEnabled") private var isSoundEnabled: Bool = true
     
     @State private var showingTimePicker: Bool = false
     @State private var toggleState: Bool = false
@@ -60,6 +61,30 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.gold)
                 } footer: {
                     Text(L10n.settingsDailyReminderDesc)
+                        .foregroundColor(AppTheme.textSecondary)
+                }
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.5))
+                )
+                
+                Section {
+                    Toggle(L10n.settingsSoundEnabled, isOn: $isSoundEnabled)
+                        .listRowSeparator(.hidden)
+                        .onChange(of: isSoundEnabled) { oldValue, newValue in
+                            if hasAppeared && oldValue != newValue {
+                                soundService.isSoundEnabled = newValue
+                                if newValue {
+                                    soundService.play(.toggle)
+                                }
+                            }
+                        }
+                        .tint(AppTheme.gold)
+                } header: {
+                    Text(L10n.settingsSound)
+                        .foregroundColor(AppTheme.gold)
+                } footer: {
+                    Text(L10n.settingsSoundEnabledDesc)
                         .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
@@ -234,6 +259,7 @@ struct SettingsView: View {
         .toolbarColorScheme(.dark, for: .navigationBar)
         .onAppear {
             toggleState = notificationEnabled
+            soundService.isSoundEnabled = isSoundEnabled
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 hasAppeared = true
             }

@@ -27,7 +27,11 @@ enum SoundEffect: String {
 class SoundService: NSObject, ObservableObject {
     static let shared = SoundService()
     
-    @Published var isSoundEnabled: Bool = true
+    @Published var isSoundEnabled: Bool = UserDefaults.standard.object(forKey: "isSoundEnabled") as? Bool ?? true {
+        didSet {
+            UserDefaults.standard.set(isSoundEnabled, forKey: "isSoundEnabled")
+        }
+    }
     
     private var soundPlayers: [String: AVAudioPlayer] = [:]
     private var ambientPlayer: AVAudioPlayer?
