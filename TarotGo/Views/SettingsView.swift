@@ -135,6 +135,7 @@ struct SettingsView: View {
                                 .contentShape(Rectangle())
                                 .onTapGesture {
                                     selectedCardBackRaw = style.rawValue
+                                    soundService.play(.click)
                                     HapticService.shared.impact(.light)
                                 }
                             }
