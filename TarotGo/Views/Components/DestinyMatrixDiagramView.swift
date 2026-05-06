@@ -74,6 +74,7 @@ struct DestinyMatrixDiagramView: View {
                             selectedYear = nil // Clear year selection when position is selected
                         }
                         HapticService.shared.impact(.light)
+                        SoundService.shared.play(.magicButton, volume: 0.5)
                     }
                 }
             }
@@ -183,6 +184,7 @@ struct OuterYearlyRingView: View {
                         selectedPosition = nil // Clear position selection when year is selected
                     }
                     HapticService.shared.impact(.light)
+                    SoundService.shared.play(.magicButton, volume: 0.5)
                 }
             }
         }
