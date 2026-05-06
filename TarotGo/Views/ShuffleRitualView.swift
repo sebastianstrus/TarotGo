@@ -77,6 +77,8 @@ struct ShuffleRitualView: View {
     @State private var screenSize: CGSize = .zero
     @State private var fireOpacity: Double = 0.0
     @State private var deckFrame: CGRect = .zero
+    @State private var fireSoundTask: DispatchWorkItem?
+    @State private var gestureCancelled: Bool = false
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -155,20 +157,24 @@ struct ShuffleRitualView: View {
     }
     
     private var instructionText: some View {
-        VStack(spacing: 15) {
-            switch phase {
-            case .instruction:
-                Text(L10n.shuffleTakeBreath)
-                    .font(AppTheme.serifFont(size: 28, weight: .light))
-                    .foregroundStyle(AppTheme.goldGradient)
-                    .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
-                    .transition(.opacity)
-                Text(L10n.shuffleInstruction)
-                    .font(.system(size: 18, weight: .light))
-                    .foregroundColor(AppTheme.textSecondary)
-                    .multilineTextAlignment(.center)
-                    .transition(.opacity)
-            case .pressing:
+        ZStack {
+            // Instruction phase
+            if phase == .instruction {
+                VStack(spacing: 15) {
+                    Text(L10n.shuffleTakeBreath)
+                        .font(AppTheme.serifFont(size: 28, weight: .light))
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
+                    Text(L10n.shuffleInstruction)
+                        .font(.system(size: 18, weight: .light))
+                        .foregroundColor(AppTheme.textSecondary)
+                        .multilineTextAlignment(.center)
+                }
+                .transition(.opacity)
+            }
+            
+            // Pressing phase
+            if phase == .pressing {
                 Text(L10n.shuffleFocusing)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
@@ -178,13 +184,19 @@ struct ShuffleRitualView: View {
                     .padding(.horizontal)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                     .transition(.opacity)
-            case .shuffling:
+            }
+            
+            // Shuffling phase
+            if phase == .shuffling {
                 Text(L10n.shuffleShuffling)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
                     .transition(.opacity)
-            case .complete:
+            }
+            
+            // Complete phase
+            if phase == .complete {
                 Text(L10n.shuffleReady)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
@@ -233,14 +245,20 @@ struct ShuffleRitualView: View {
                     ]
                     emitterPosition = newPos
 
-                    // 2. If this is the start of a touch (instruction phase)
-                    if phase == .instruction {
+                    // 2. If this is the start of a touch (instruction phase) and gesture hasn't been cancelled
+                    if phase == .instruction && !gestureCancelled {
                         isPressed = true
                         phase = .pressing
                         
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                        // Cancel any existing fire sound task
+                        fireSoundTask?.cancel()
+                        
+                        // Create new fire sound task
+                        let task = DispatchWorkItem {
                             SoundService.shared.play(.fire, volume: 0.6)
                         }
+                        fireSoundTask = task
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6, execute: task)
                         
                         showFire = true
                         fireOpacity = 0.0
@@ -251,10 +269,11 @@ struct ShuffleRitualView: View {
                     }
                     
                     // 3. Check if finger has moved off the card
-                    if phase == .pressing {
+                    if phase == .pressing && !gestureCancelled {
                         let touchPoint = value.location
                         if !deckFrame.contains(touchPoint) {
                             // Finger moved off the card, cancel the ritual
+                            gestureCancelled = true
                             resetRitual()
                         }
                     }
@@ -265,24 +284,27 @@ struct ShuffleRitualView: View {
                         // Released before 5 seconds
                         resetRitual()
                     }
+                    // Reset gesture cancelled flag for next gesture
+                    gestureCancelled = false
                 }
         )
     }
     
     private func resetRitual() {
-        // Stop the fire and hide it
+        // Cancel the delayed fire sound task if it hasn't executed yet
+        fireSoundTask?.cancel()
+        fireSoundTask = nil
+        
+        // Stop the fire sound if it's playing
         SoundService.shared.stop(.fire)
         
-        // Immediate reset of opacity to prevent ghosting
+        // Immediate reset without animation to prevent label overlap
+        isPressed = false
+        phase = .instruction
+        pressProgress = 0
+        showFire = false
         fireOpacity = 0.0
-        
-        withAnimation(.spring(response: 0.3)) {
-            isPressed = false
-            phase = .instruction
-            pressProgress = 0
-            showFire = false
-            emitterPosition = [0.5, 0.5] // Reset to center for next time
-        }
+        emitterPosition = [0.5, 0.5] // Reset to center for next time
     }
     
     private var progressIndicator: some View {
