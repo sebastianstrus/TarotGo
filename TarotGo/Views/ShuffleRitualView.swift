@@ -76,6 +76,7 @@ struct ShuffleRitualView: View {
     @State private var showFire: Bool = false
     @State private var screenSize: CGSize = .zero
     @State private var fireOpacity: Double = 0.0
+    @State private var deckFrame: CGRect = .zero
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -98,6 +99,7 @@ struct ShuffleRitualView: View {
                 
                 // Deck of cards with long press
                 deckView
+                    .frame(width: 200, height: 300)
                 
                 Spacer()
                 
@@ -160,10 +162,12 @@ struct ShuffleRitualView: View {
                     .font(AppTheme.serifFont(size: 28, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
+                    .transition(.opacity)
                 Text(L10n.shuffleInstruction)
                     .font(.system(size: 18, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
                     .multilineTextAlignment(.center)
+                    .transition(.opacity)
             case .pressing:
                 Text(L10n.shuffleFocusing)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
@@ -173,19 +177,23 @@ struct ShuffleRitualView: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.horizontal)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
+                    .transition(.opacity)
             case .shuffling:
                 Text(L10n.shuffleShuffling)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
+                    .transition(.opacity)
             case .complete:
                 Text(L10n.shuffleReady)
                     .font(AppTheme.serifFont(size: 24, weight: .light))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
+                    .transition(.opacity)
             }
         }
         .frame(minHeight: 100)
+        .animation(.easeInOut(duration: 0.2), value: phase)
     }
     
     private var deckView: some View {
@@ -204,7 +212,17 @@ struct ShuffleRitualView: View {
                 .scaleEffect(isPressed ? 0.95 : 1.0)
                 .rotationEffect(.degrees(phase == .shuffling ? shuffleRotation : 0))
         }
-        // ... inside deckView ...
+        .background(
+            GeometryReader { geometry in
+                Color.clear
+                    .onAppear {
+                        deckFrame = geometry.frame(in: .global)
+                    }
+                    .onChange(of: geometry.frame(in: .global)) { oldValue, newValue in
+                        deckFrame = newValue
+                    }
+            }
+        )
         .gesture(
             DragGesture(minimumDistance: 0, coordinateSpace: .global)
                 .onChanged { value in
@@ -231,9 +249,18 @@ struct ShuffleRitualView: View {
                             fireOpacity = 1.0
                         }
                     }
+                    
+                    // 3. Check if finger has moved off the card
+                    if phase == .pressing {
+                        let touchPoint = value.location
+                        if !deckFrame.contains(touchPoint) {
+                            // Finger moved off the card, cancel the ritual
+                            resetRitual()
+                        }
+                    }
                 }
                 .onEnded { _ in
-                    // 3. Handle release logic
+                    // 4. Handle release logic
                     if phase == .pressing && pressProgress < totalPressDuration {
                         // Released before 5 seconds
                         resetRitual()
