@@ -239,9 +239,10 @@ struct YearMarkerView: View {
                 
                 // Energy number
                 Text("\(yearEnergy.primaryEnergy)")
-                    .font(.system(size: 5, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded))
+                    .font(.system(size: isSelected ? 7 : 5, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded))
                     .foregroundColor(isSelected ? .black : (yearEnergy.isCurrentYear ? .black.opacity(0.8) : AppTheme.textPrimary))
             }
+            .scaleEffect(isSelected ? 1.5 : 1.0)
             .position(x: circleX, y: circleY)
             
             // Age label positioned further out from center - show for all ages
