@@ -24,7 +24,7 @@ struct HomeView: View {
                     VStack(spacing: 20) {
                         // Top spacing for safe area
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 10)
                         
                         // App title with gold styling
                         VStack(spacing: 10) {
