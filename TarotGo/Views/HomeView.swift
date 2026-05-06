@@ -168,6 +168,18 @@ struct HomeView: View {
                     navigateToNewReading = false
                 }
             }
+            .onReceive(appViewModel.$shouldNavigateToDailyCard) { shouldNavigate in
+                if shouldNavigate {
+                    navigateToDailyCard = true
+                    // Reset the trigger
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        appViewModel.shouldNavigateToDailyCard = false
+                    }
+                }
+            }
+            .navigationDestination(isPresented: $navigateToDailyCard) {
+                CardOfTheDayView()
+            }
         }
     }
 }

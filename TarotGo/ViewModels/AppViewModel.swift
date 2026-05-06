@@ -16,6 +16,7 @@ class AppViewModel: ObservableObject {
     @Published var showSplashScreen: Bool = true
     @Published var navigationPath = NavigationPath()
     @Published var shouldDismissToRoot: Bool = false
+    @Published var shouldNavigateToDailyCard: Bool = false
     
     @AppStorage("hasLaunchedBefore") private var hasLaunchedBefore: Bool = false
     @AppStorage("hasCompletedOnboardingFlow") private var hasCompletedOnboardingFlow: Bool = false

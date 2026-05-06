@@ -54,6 +54,7 @@ class NotificationService: ObservableObject {
         content.body = "The cards have a message for you today. Take a moment to receive your guidance."
         content.sound = .default
         content.badge = 1 // Set badge to 1
+        content.userInfo = ["type": "daily_card"] // Identifier for navigation
         
         // Create date components for scheduling
         var dateComponents = DateComponents()

@@ -7,10 +7,12 @@
 
 import SwiftUI
 import SwiftData
+import UserNotifications
 
 @main
 struct TarotGoApp: App {
     @StateObject private var appViewModel = AppViewModel()
+    private let notificationDelegate = NotificationDelegate()
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -34,6 +36,10 @@ struct TarotGoApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(appViewModel)
+                .onAppear {
+                    notificationDelegate.appViewModel = appViewModel
+                    UNUserNotificationCenter.current().delegate = notificationDelegate
+                }
         }
         .modelContainer(sharedModelContainer)
     }
@@ -70,3 +76,27 @@ struct RootView: View {
         }
     }
 }
+// Notification Delegate to handle notification taps
+class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
+    weak var appViewModel: AppViewModel?
+    
+    // Handle notification tap when app is in foreground
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        
+        // Check if this is a daily card notification
+        if let type = userInfo["type"] as? String, type == "daily_card" {
+            Task { @MainActor in
+                appViewModel?.shouldNavigateToDailyCard = true
+            }
+        }
+        
+        completionHandler()
+    }
+    
+    // Handle notification when app is in foreground (optional - shows banner)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner, .sound, .badge])
+    }
+}
+
