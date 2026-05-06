@@ -43,6 +43,36 @@ This folder should contain the following audio files. Please add them in MP3, WA
    - Recommended: Calm, mystical, loopable ambient music
    - Duration: 30-60 seconds (loopable)
 
+8. **click.mp3**
+   - UI click/tap sound
+   - Used for: Button presses, interactions
+   - Recommended: Subtle, gentle click sound
+   - Duration: 0.1-0.3 seconds
+
+9. **fire.mp3**
+   - Fire crackling or flame sound
+   - Used for: Ritual scenes, mystical moments
+   - Recommended: Gentle fire ambience
+   - Duration: 1-3 seconds
+
+10. **magic_button.mp3**
+    - Magical button press sound
+    - Used for: Special button interactions
+    - Recommended: Mystical, enchanting button sound
+    - Duration: 0.3-0.7 seconds
+
+11. **reverse.mp3**
+    - Card reverse/flip sound
+    - Used for: Reversing cards, undo actions
+    - Recommended: Reverse whoosh or flip sound
+    - Duration: 0.3-0.7 seconds
+
+12. **toggle.mp3**
+    - Toggle switch sound
+    - Used for: Settings toggles, switches
+    - Recommended: Clean toggle/switch sound
+    - Duration: 0.1-0.3 seconds
+
 ## Notes
 
 - All sounds will work if they don't exist (app won't crash)
