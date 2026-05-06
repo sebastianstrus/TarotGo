@@ -21,6 +21,9 @@ class AppViewModel: ObservableObject {
     @AppStorage("hasLaunchedBefore") private var hasLaunchedBefore: Bool = false
     @AppStorage("hasCompletedOnboardingFlow") private var hasCompletedOnboardingFlow: Bool = false
     
+    // Store pending notification action
+    var pendingNotificationAction: String?
+    
     init() {
         self.isFirstLaunch = !hasLaunchedBefore
         self.hasCompletedOnboarding = hasCompletedOnboardingFlow
@@ -30,6 +33,26 @@ class AppViewModel: ObservableObject {
         withAnimation(.easeOut(duration: 0.5)) {
             showSplashScreen = false
         }
+        
+        print("📱 Splash screen completed - processing pending notification")
+        // Process pending notification after splash screen
+        processPendingNotification()
+    }
+    
+    func processPendingNotification() {
+        print("📱 processPendingNotification called - pendingAction: \(pendingNotificationAction ?? "nil")")
+        guard let action = pendingNotificationAction else { return }
+        
+        if action == "daily_card" {
+            print("📱 Processing daily_card action")
+            // Delay slightly to ensure view hierarchy is ready
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                print("📱 Setting shouldNavigateToDailyCard = true")
+                self.shouldNavigateToDailyCard = true
+            }
+        }
+        
+        pendingNotificationAction = nil
     }
     
     func completeOnboarding() {
@@ -41,6 +64,10 @@ class AppViewModel: ObservableObject {
         }
         
         HapticService.shared.impact(.success)
+        
+        print("📱 Onboarding completed - processing pending notification")
+        // Process pending notification after onboarding
+        processPendingNotification()
     }
     
     func resetOnboarding() {

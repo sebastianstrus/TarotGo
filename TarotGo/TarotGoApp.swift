@@ -12,7 +12,6 @@ import UserNotifications
 @main
 struct TarotGoApp: App {
     @StateObject private var appViewModel = AppViewModel()
-    private let notificationDelegate = NotificationDelegate()
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -30,6 +29,9 @@ struct TarotGoApp: App {
     init() {
         // Preload sounds on app launch
         SoundService.shared.preloadSounds()
+        
+        // Set up notification delegate with shared instance
+        UNUserNotificationCenter.current().delegate = NotificationDelegate.shared
     }
     
     var body: some Scene {
@@ -37,8 +39,8 @@ struct TarotGoApp: App {
             RootView()
                 .environmentObject(appViewModel)
                 .onAppear {
-                    notificationDelegate.appViewModel = appViewModel
-                    UNUserNotificationCenter.current().delegate = notificationDelegate
+                    // Connect the app view model to the notification delegate
+                    NotificationDelegate.shared.appViewModel = appViewModel
                 }
         }
         .modelContainer(sharedModelContainer)
@@ -78,16 +80,37 @@ struct RootView: View {
 }
 // Notification Delegate to handle notification taps
 class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
+    static let shared = NotificationDelegate()
     weak var appViewModel: AppViewModel?
     
-    // Handle notification tap when app is in foreground
+    private override init() {
+        super.init()
+    }
+    
+    // Handle notification tap when app is in foreground or background
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let userInfo = response.notification.request.content.userInfo
         
+        print("📬 Notification tapped with userInfo: \(userInfo)")
+        
         // Check if this is a daily card notification
         if let type = userInfo["type"] as? String, type == "daily_card" {
+            print("📬 Daily card notification detected")
             Task { @MainActor in
-                appViewModel?.shouldNavigateToDailyCard = true
+                if let viewModel = appViewModel {
+                    print("📬 AppViewModel found - showSplashScreen: \(viewModel.showSplashScreen), hasCompletedOnboarding: \(viewModel.hasCompletedOnboarding)")
+                    // If app is ready (no splash screen), navigate immediately
+                    if !viewModel.showSplashScreen && viewModel.hasCompletedOnboarding {
+                        print("📬 App ready - navigating immediately")
+                        viewModel.shouldNavigateToDailyCard = true
+                    } else {
+                        // Otherwise, store the action to process after app is ready
+                        print("📬 App not ready - storing pending action")
+                        viewModel.pendingNotificationAction = "daily_card"
+                    }
+                } else {
+                    print("📬 WARNING: AppViewModel is nil!")
+                }
             }
         }
         

@@ -169,7 +169,9 @@ struct HomeView: View {
                 }
             }
             .onReceive(appViewModel.$shouldNavigateToDailyCard) { shouldNavigate in
+                print("🏠 HomeView received shouldNavigateToDailyCard: \(shouldNavigate)")
                 if shouldNavigate {
+                    print("🏠 Setting navigateToDailyCard = true")
                     navigateToDailyCard = true
                     // Reset the trigger
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
