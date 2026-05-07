@@ -200,7 +200,7 @@ struct SettingsView: View {
                 
                 Section {
                     Button {
-                        openURL("https://tarotgo.app/privacy.html")
+                        openURL("https://tarot-go.com/privacy.html")
                     } label: {
                         HStack {
                             Text(L10n.settingsPrivacyPolicy)
@@ -214,7 +214,7 @@ struct SettingsView: View {
                     .listRowSeparator(.hidden)
                     
                     Button {
-                        openURL("https://tarotgo.app/terms.html")
+                        openURL("https://tarot-go.com/terms.html")
                     } label: {
                         HStack {
                             Text(L10n.settingsTermsOfService)
