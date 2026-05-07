@@ -652,4 +652,111 @@ enum L10n {
     
     static let faqDisclaimerTitle = NSLocalizedString("faq.disclaimer.title", comment: "Important")
     static let faqDisclaimerText = NSLocalizedString("faq.disclaimer.text", comment: "Tarot is intended for entertainment and self-reflection purposes only.")
+    
+    // MARK: - Palm Reading Interpretations
+    
+    // Overall reading - Emotional-Mental Balance
+    static let palmInterpretationBalanceDeepBoth = NSLocalizedString("palm.interpretation.balance.deepBoth", value: "Your palm reveals a powerful balance between heart and mind. You possess both emotional depth and intellectual clarity, allowing you to navigate life with wisdom and compassion. ", comment: "Palm interpretation for deep heart and head lines")
+    
+    static let palmInterpretationBalanceDeepHeartFaintHead = NSLocalizedString("palm.interpretation.balance.deepHeartFaintHead", value: "Your heart leads the way in your life's journey. You feel deeply and passionately, though you may benefit from bringing more analytical thinking into your decision-making process. ", comment: "Palm interpretation for deep heart, faint head")
+    
+    static let palmInterpretationBalanceFaintHeartDeepHead = NSLocalizedString("palm.interpretation.balance.faintHeartDeepHead", value: "You approach life through the lens of logic and reason. Your sharp intellect serves you well, though opening yourself to emotional experiences could bring greater fulfillment. ", comment: "Palm interpretation for faint heart, deep head")
+    
+    static let palmInterpretationBalanceGentle = NSLocalizedString("palm.interpretation.balance.gentle", value: "Your palm shows a gentle, balanced approach to life. You navigate between heart and mind with flexibility, adapting to what each situation requires. ", comment: "Palm interpretation for balanced approach")
+    
+    // Overall reading - Life Force
+    static let palmInterpretationLifeDeepContinuous = NSLocalizedString("palm.interpretation.life.deepContinuous", value: "Your Life Line indicates strong vitality and resilience. You have the energy and determination to overcome challenges and pursue your goals with vigor. ", comment: "Palm interpretation for deep continuous life line")
+    
+    static let palmInterpretationLifeBroken = NSLocalizedString("palm.interpretation.life.broken", value: "The breaks in your Life Line suggest significant transitions or transformative periods in your journey. These are opportunities for renewal and reinvention. ", comment: "Palm interpretation for broken life line")
+    
+    // Overall reading - Fate Line
+    static let palmInterpretationFateDeep = NSLocalizedString("palm.interpretation.fate.deep", value: "A prominent Fate Line indicates that external forces and opportunities play a significant role in your path. You are someone whose life may be shaped by destiny and synchronicity. ", comment: "Palm interpretation for deep fate line")
+    
+    static let palmInterpretationFateSubtle = NSLocalizedString("palm.interpretation.fate.subtle", value: "Your subtle Fate Line suggests you have great freedom in crafting your own destiny. You are the architect of your own path. ", comment: "Palm interpretation for subtle fate line")
+    
+    static let palmInterpretationFateAbsent = NSLocalizedString("palm.interpretation.fate.absent", value: "The absence of a prominent Fate Line reveals that you are a true free spirit, unbound by predetermined paths. Your life is yours to create. ", comment: "Palm interpretation for absent fate line")
+    
+    // Overall reading - Summary
+    static let palmInterpretationSummaryIntro = NSLocalizedString("palm.interpretation.summary.intro", value: "\n\nOverall, your palm tells the story of ", comment: "Summary introduction")
+    
+    static let palmInterpretationSummaryHeartLong = NSLocalizedString("palm.interpretation.summary.heartLong", value: "a compassionate soul who forms deep connections, ", comment: "Summary for long heart line")
+    
+    static let palmInterpretationSummaryHeadLong = NSLocalizedString("palm.interpretation.summary.headLong", value: "a thoughtful mind that considers many perspectives, ", comment: "Summary for long head line")
+    
+    static let palmInterpretationSummaryLifeLong = NSLocalizedString("palm.interpretation.summary.lifeLong", value: "and a vibrant life force that will carry you through many years and experiences. ", comment: "Summary for long life line")
+    
+    static let palmInterpretationClosing = NSLocalizedString("palm.interpretation.closing", value: "Remember, your palm is a map of potentials, not fixed destinies. The lines you see today may evolve as you do.", comment: "Closing statement")
+    
+    // Individual Line Interpretations - Heart Line
+    static let palmLineHeartTitle = NSLocalizedString("palm.line.heart.title", value: "**Heart Line - Emotions & Relationships**\n\n", comment: "Heart line title")
+    
+    static let palmLineHeartLengthShort = NSLocalizedString("palm.line.heart.length.short", value: "Your Heart Line is relatively short, suggesting you may be selective in your emotional expressions. You value quality over quantity in relationships and may prefer a small circle of deep connections.\n\n", comment: "Heart line short length interpretation")
+    
+    static let palmLineHeartLengthMedium = NSLocalizedString("palm.line.heart.length.medium", value: "Your Heart Line shows a balanced approach to emotions. You can connect deeply with others while maintaining healthy boundaries.\n\n", comment: "Heart line medium length interpretation")
+    
+    static let palmLineHeartLengthLong = NSLocalizedString("palm.line.heart.length.long", value: "Your long Heart Line reveals a generous, loving nature. You have much love to give and form deep, lasting emotional bonds with others.\n\n", comment: "Heart line long length interpretation")
+    
+    static let palmLineHeartDepthDeep = NSLocalizedString("palm.line.heart.depth.deep", value: "The depth of your Heart Line indicates intense emotional experiences. You feel things profoundly and are capable of great passion and empathy.", comment: "Heart line deep depth interpretation")
+    
+    static let palmLineHeartDepthModerate = NSLocalizedString("palm.line.heart.depth.moderate", value: "Your Heart Line's moderate depth suggests emotional stability and resilience. You can feel deeply without being overwhelmed.", comment: "Heart line moderate depth interpretation")
+    
+    static let palmLineHeartDepthFaint = NSLocalizedString("palm.line.heart.depth.faint", value: "A subtle Heart Line can indicate a more reserved emotional nature, or someone who expresses feelings through actions rather than words.", comment: "Heart line faint depth interpretation")
+    
+    // Individual Line Interpretations - Head Line
+    static let palmLineHeadTitle = NSLocalizedString("palm.line.head.title", value: "**Head Line - Intellect & Mental Approach**\n\n", comment: "Head line title")
+    
+    static let palmLineHeadLengthShort = NSLocalizedString("palm.line.head.length.short", value: "Your shorter Head Line suggests you're decisive and direct in your thinking. You focus on practical matters and get to the point quickly.\n\n", comment: "Head line short length interpretation")
+    
+    static let palmLineHeadLengthMedium = NSLocalizedString("palm.line.head.length.medium", value: "Your Head Line indicates balanced mental abilities. You can think both practically and creatively as situations require.\n\n", comment: "Head line medium length interpretation")
+    
+    static let palmLineHeadLengthLong = NSLocalizedString("palm.line.head.length.long", value: "Your long Head Line reveals a complex, analytical mind. You consider many angles and enjoy deep thinking and planning.\n\n", comment: "Head line long length interpretation")
+    
+    static let palmLineHeadDepthDeep = NSLocalizedString("palm.line.head.depth.deep", value: "The deep imprint of your Head Line shows strong mental focus and concentration. You have the ability to deeply analyze and solve complex problems.", comment: "Head line deep depth interpretation")
+    
+    static let palmLineHeadDepthModerate = NSLocalizedString("palm.line.head.depth.moderate", value: "Your Head Line's clarity suggests reliable mental processes and good judgment. You think things through without overthinking.", comment: "Head line moderate depth interpretation")
+    
+    static let palmLineHeadDepthFaint = NSLocalizedString("palm.line.head.depth.faint", value: "A lighter Head Line can indicate flexibility in thinking, or someone who trusts intuition as much as logic.", comment: "Head line faint depth interpretation")
+    
+    // Individual Line Interpretations - Life Line
+    static let palmLineLifeTitle = NSLocalizedString("palm.line.life.title", value: "**Life Line - Vitality & Life Path**\n\n", comment: "Life line title")
+    
+    static let palmLineLifeLengthShort = NSLocalizedString("palm.line.life.length.short", value: "The length of your Life Line speaks to the intensity rather than duration of your vitality. You live fully in each moment.\n\n", comment: "Life line short length interpretation")
+    
+    static let palmLineLifeLengthMedium = NSLocalizedString("palm.line.life.length.medium", value: "Your Life Line indicates steady, reliable energy throughout your journey. You have the stamina for what life brings.\n\n", comment: "Life line medium length interpretation")
+    
+    static let palmLineLifeLengthLong = NSLocalizedString("palm.line.life.length.long", value: "Your long Life Line suggests robust vitality and endurance. You have the energy and resilience for a full, dynamic life.\n\n", comment: "Life line long length interpretation")
+    
+    static let palmLineLifeContinuityContinuous = NSLocalizedString("palm.line.life.continuity.continuous", value: "The continuous flow of your Life Line indicates a steady life path with smooth transitions. You adapt well to life's changes.", comment: "Life line continuous continuity interpretation")
+    
+    static let palmLineLifeContinuityBroken = NSLocalizedString("palm.line.life.continuity.broken", value: "Breaks in your Life Line suggest major life changes or transformative periods. These are opportunities for reinvention and growth.", comment: "Life line broken continuity interpretation")
+    
+    static let palmLineLifeContinuityChained = NSLocalizedString("palm.line.life.continuity.chained", value: "A chained pattern in your Life Line can indicate fluctuating energy levels or a path marked by various challenges that ultimately strengthen you.", comment: "Life line chained continuity interpretation")
+    
+    // Individual Line Interpretations - Fate Line
+    static let palmLineFateTitle = NSLocalizedString("palm.line.fate.title", value: "**Fate Line - Destiny & External Influences**\n\n", comment: "Fate line title")
+    
+    static let palmLineFateDepthDeep = NSLocalizedString("palm.line.fate.depth.deep", value: "Your prominent Fate Line indicates a life strongly influenced by external forces, opportunities, and synchronicities. Events and people may play significant roles in shaping your path.\n\n", comment: "Fate line deep depth interpretation")
+    
+    static let palmLineFateDepthModerate = NSLocalizedString("palm.line.fate.depth.moderate", value: "Your Fate Line suggests a balance between predetermined circumstances and personal choice. You work with what life brings while steering your own course.\n\n", comment: "Fate line moderate depth interpretation")
+    
+    static let palmLineFateDepthFaint = NSLocalizedString("palm.line.fate.depth.faint", value: "A subtle Fate Line reveals that you have great freedom in creating your destiny. You are less bound by external circumstances and more empowered to forge your own path.\n\n", comment: "Fate line faint depth interpretation")
+    
+    static let palmLineFateClosing = NSLocalizedString("palm.line.fate.closing", value: "The Fate Line reminds us that while certain opportunities and challenges come our way, how we respond to them is always within our control.", comment: "Fate line closing statement")
+    
+    // Quick Summary - Formatted strings with parameters
+    static func palmQuickSummaryHeart(_ depth: String, _ length: String) -> String {
+        String(format: NSLocalizedString("palm.quickSummary.heart", value: "%@ and %@ - reflects your emotional depth and capacity for connection", comment: "Quick summary for heart line"), depth, length)
+    }
+    
+    static func palmQuickSummaryHead(_ depth: String, _ length: String) -> String {
+        String(format: NSLocalizedString("palm.quickSummary.head", value: "%@ and %@ - indicates your mental approach and decision-making style", comment: "Quick summary for head line"), depth, length)
+    }
+    
+    static func palmQuickSummaryLife(_ depth: String, _ continuity: String) -> String {
+        String(format: NSLocalizedString("palm.quickSummary.life", value: "%@ and %@ - represents your vitality and life journey", comment: "Quick summary for life line"), depth, continuity)
+    }
+    
+    static func palmQuickSummaryFate(_ depth: String) -> String {
+        String(format: NSLocalizedString("palm.quickSummary.fate", value: "%@ - shows the role of destiny and external influences in your path", comment: "Quick summary for fate line"), depth)
+    }
 }
