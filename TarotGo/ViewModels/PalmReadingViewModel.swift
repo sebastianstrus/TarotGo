@@ -40,7 +40,7 @@ class PalmReadingViewModel: ObservableObject {
         isAnalyzing = true
         
         HapticService.shared.impact(.medium)
-        SoundService.shared.play(.cardShuffle, volume: 0.5)
+        SoundService.shared.play(.magic, volume: 0.5)
         
         do {
             // Add slight delay for mystical effect

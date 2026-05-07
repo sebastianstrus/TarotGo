@@ -71,11 +71,11 @@ struct IntroductionView: View {
                         .foregroundStyle(AppTheme.goldGradient)
                         .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                     
-                    Text("Palm Reading")
+                    Text(L10n.palmReadingTitle)
                         .font(AppTheme.serifFont(size: 36, weight: .medium))
                         .foregroundStyle(AppTheme.goldGradient)
                     
-                    Text("Discover the secrets in your palm")
+                    Text(L10n.palmReadingSubtitle)
                         .font(.system(size: 16, weight: .light))
                         .foregroundColor(AppTheme.textSecondary)
                 }
@@ -85,20 +85,20 @@ struct IntroductionView: View {
                 VStack(spacing: 16) {
                     InfoCard(
                         icon: "eye.fill",
-                        title: "On-Device Analysis",
-                        description: "Your palm image is processed locally and never leaves your device. Complete privacy guaranteed."
+                        title: L10n.palmReadingOnDeviceTitle,
+                        description: L10n.palmReadingOnDeviceDesc
                     )
                     
                     InfoCard(
                         icon: "line.3.horizontal.decrease.circle.fill",
-                        title: "Four Major Lines",
-                        description: "We analyze your Heart, Head, Life, and Fate lines to reveal insights about your path."
+                        title: L10n.palmReadingFourLinesTitle,
+                        description: L10n.palmReadingFourLinesDesc
                     )
                     
                     InfoCard(
                         icon: "sparkles",
-                        title: "Ancient Wisdom",
-                        description: "Palmistry has guided seekers for thousands of years. Let your palm tell its story."
+                        title: L10n.palmReadingAncientTitle,
+                        description: L10n.palmReadingAncientDesc
                     )
                 }
                 .padding(.horizontal, 30)
@@ -109,7 +109,7 @@ struct IntroductionView: View {
                 } label: {
                     HStack(spacing: 12) {
                         Image(systemName: "camera.fill")
-                        Text("Take Palm Photo")
+                        Text(L10n.palmReadingTakePhoto)
                     }
                     .font(.system(size: 20, weight: .semibold))
                     .foregroundColor(.black)
@@ -181,11 +181,11 @@ struct AnalyzingView: View {
                 }
             
             VStack(spacing: 12) {
-                Text("Reading Your Palm")
+                Text(L10n.palmReadingAnalyzing)
                     .font(AppTheme.serifFont(size: 28, weight: .medium))
                     .foregroundStyle(AppTheme.goldGradient)
                 
-                Text("Analyzing the lines of your destiny...")
+                Text(L10n.palmReadingAnalyzingDesc)
                     .font(.system(size: 16, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
             }
@@ -212,7 +212,7 @@ struct PalmResultView: View {
                         .font(.system(size: 50))
                         .foregroundStyle(AppTheme.goldGradient)
                     
-                    Text("Your Palm Reading")
+                    Text(L10n.palmReadingYourReading)
                         .font(AppTheme.serifFont(size: 32, weight: .medium))
                         .foregroundStyle(AppTheme.goldGradient)
                     
@@ -227,7 +227,7 @@ struct PalmResultView: View {
                     HStack {
                         Image(systemName: "sparkles")
                             .foregroundStyle(AppTheme.goldGradient)
-                        Text("Overall Reading")
+                        Text(L10n.palmReadingOverall)
                             .font(AppTheme.serifFont(size: 22, weight: .medium))
                             .foregroundColor(AppTheme.textPrimary)
                     }
@@ -250,7 +250,7 @@ struct PalmResultView: View {
                 
                 // Individual lines
                 VStack(spacing: 14) {
-                    Text("Your Palm Lines")
+                    Text(L10n.palmReadingYourLines)
                         .font(AppTheme.serifFont(size: 22, weight: .medium))
                         .foregroundColor(AppTheme.textPrimary)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -291,7 +291,7 @@ struct PalmResultView: View {
                     } label: {
                         HStack {
                             Image(systemName: "camera.fill")
-                            Text("Read Another Palm")
+                            Text(L10n.palmReadingReadAnother)
                         }
                         .font(.system(size: 18, weight: .semibold))
                         .foregroundColor(.black)
@@ -304,7 +304,7 @@ struct PalmResultView: View {
                     Button {
                         viewModel.reset()
                     } label: {
-                        Text("Done")
+                        Text(L10n.done)
                             .font(.system(size: 16, weight: .medium))
                             .foregroundColor(AppTheme.gold)
                             .frame(maxWidth: .infinity)
