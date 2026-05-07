@@ -3,6 +3,7 @@ import MapKit
 
 struct VibeCheckView: View {
     @Environment(\.dismiss) private var dismiss
+    @StateObject private var locationService = LocationService.shared
     @State private var position: MapCameraPosition = .automatic
     @State private var selectedVibe: VibeCheckService.CityVibe?
     @State private var showCardDetail = false
@@ -47,6 +48,20 @@ struct VibeCheckView: View {
                                 }
                             }
                     }
+                }
+            }
+            .onAppear {
+                // Request location permission when view appears
+                if locationService.authorizationStatus == .notDetermined {
+                    locationService.requestLocationPermission()
+                }
+                
+                // Center map on user location if available
+                if let userLocation = locationService.userLocation {
+                    position = .region(MKCoordinateRegion(
+                        center: userLocation,
+                        span: MKCoordinateSpan(latitudeDelta: 30, longitudeDelta: 30)
+                    ))
                 }
             }
         }

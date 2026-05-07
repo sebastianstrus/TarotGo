@@ -107,6 +107,10 @@
 				"pt-BR",
 				de,
 				nb,
+				ko,
+				ru,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 7DD5F5AA2F8C142F00587129;
 			minimizedProjectReferenceProxies = 1;
