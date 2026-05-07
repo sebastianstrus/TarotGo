@@ -18,6 +18,8 @@ struct CardOfTheDayView: View {
     @State private var isPressed: Bool = false
     @State private var flipRotation: Double = 0
     @State private var isFinishing: Bool = false
+    @State private var cardFrame: CGRect = .zero
+    @State private var gestureCancelled: Bool = false
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -131,24 +133,42 @@ struct CardOfTheDayView: View {
                     perspective: 0.5
                 )
         }
+        .background(
+            GeometryReader { geometry in
+                Color.clear
+                    .onAppear {
+                        cardFrame = geometry.frame(in: .global)
+                    }
+                    .onChange(of: geometry.frame(in: .global)) { oldValue, newValue in
+                        cardFrame = newValue
+                    }
+            }
+        )
         .gesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged { _ in
-                    guard !isRevealed && !isFinishing else { return }
+            DragGesture(minimumDistance: 0, coordinateSpace: .global)
+                .onChanged { value in
+                    guard !isRevealed && !isFinishing && !gestureCancelled else { return }
                     
                     if !isPressed {
                         withAnimation(.spring(response: 0.3)) {
                             isPressed = true
                         }
                     }
+                    
+                    // Check if finger has moved off the card
+                    let touchPoint = value.location
+                    if !cardFrame.contains(touchPoint) {
+                        // Finger moved off the card, cancel the ritual
+                        gestureCancelled = true
+                        resetRitual()
+                    }
                 }
                 .onEnded { _ in
                     if !isRevealed && !isFinishing && pressProgress < totalPressDuration {
-                        withAnimation(.spring(response: 0.3)) {
-                            isPressed = false
-                            pressProgress = 0
-                        }
+                        resetRitual()
                     }
+                    // Reset gesture cancelled flag for next gesture
+                    gestureCancelled = false
                 }
         )
     }
@@ -229,6 +249,13 @@ struct CardOfTheDayView: View {
         
         // 30% chance of being reversed
         isReversed = generator.next() % 100 < 30
+    }
+    
+    private func resetRitual() {
+        withAnimation(.spring(response: 0.3)) {
+            isPressed = false
+            pressProgress = 0
+        }
     }
     
     private func completePress() {
