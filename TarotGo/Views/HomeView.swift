@@ -77,12 +77,12 @@ struct HomeView: View {
                             }
                             .buttonStyle(PlainButtonStyle())
                             
-                            // Card of the day
-                            NavigationLink(destination: CardOfTheDayView()) {
+                            // Destiny Matrix
+                            NavigationLink(destination: DestinyMatrixInputView()) {
                                 HomeButton(
-                                    icon: "sun.max.fill",
-                                    title: L10n.homeCardOfDay,
-                                    subtitle: L10n.homeCardOfDaySubtitle
+                                    icon: "star.circle.fill",
+                                    title: L10n.homeDestinyMatrix,
+                                    subtitle: L10n.homeDestinyMatrixSubtitle
                                 )
                             }
                             .buttonStyle(HomeButtonStyle())
@@ -97,12 +97,12 @@ struct HomeView: View {
                             }
                             .buttonStyle(HomeButtonStyle())
                             
-                            // Destiny Matrix
-                            NavigationLink(destination: DestinyMatrixInputView()) {
+                            // Card of the day
+                            NavigationLink(destination: CardOfTheDayView()) {
                                 HomeButton(
-                                    icon: "star.circle.fill",
-                                    title: L10n.homeDestinyMatrix,
-                                    subtitle: L10n.homeDestinyMatrixSubtitle
+                                    icon: "sun.max.fill",
+                                    title: L10n.homeCardOfDay,
+                                    subtitle: L10n.homeCardOfDaySubtitle
                                 )
                             }
                             .buttonStyle(HomeButtonStyle())
