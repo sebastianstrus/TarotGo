@@ -249,6 +249,47 @@ struct PalmResultView: View {
                 )
                 .padding(.horizontal, 20)
                 
+                // Hand Shape Section
+                VStack(alignment: .leading, spacing: 16) {
+                    HStack {
+                        Image(systemName: "hand.point.up.left.fill")
+                            .foregroundStyle(AppTheme.goldGradient)
+                        Text(NSLocalizedString("palm.handShape.title", comment: "Your Hand Shape"))
+                            .font(AppTheme.serifFont(size: 22, weight: .medium))
+                            .foregroundColor(AppTheme.textPrimary)
+                    }
+                    
+                    VStack(alignment: .leading, spacing: 12) {
+                        HStack {
+                            Text(reading.handShape.shapeType.description)
+                                .font(.system(size: 18, weight: .semibold))
+                                .foregroundColor(AppTheme.gold)
+                            
+                            Spacer()
+                            
+                            Text("✦ \(reading.handShape.palmRatio.description) Palm")
+                                .font(.system(size: 13, weight: .light))
+                                .foregroundColor(AppTheme.textTertiary)
+                        }
+                        
+                        Text(PalmInterpretations.handShapeInterpretation(for: reading.handShape))
+                            .font(.system(size: 14, weight: .light))
+                            .foregroundColor(AppTheme.textSecondary)
+                            .lineSpacing(5)
+                            .multilineTextAlignment(.leading)
+                    }
+                }
+                .padding(20)
+                .background(
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(AppTheme.cardGradient)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                        )
+                )
+                .padding(.horizontal, 20)
+                
                 // Individual lines
                 VStack(spacing: 14) {
                     Text(L10n.palmReadingYourLines)
@@ -282,6 +323,31 @@ struct PalmResultView: View {
                     )
                 }
                 .padding(.horizontal, 20)
+                
+                // Palm Mounts Section
+                if !reading.mounts.isEmpty {
+                    VStack(spacing: 14) {
+                        HStack {
+                            Image(systemName: "mountain.2.fill")
+                                .foregroundStyle(AppTheme.goldGradient)
+                            Text(NSLocalizedString("palm.mounts.title", comment: "Palm Mounts"))
+                                .font(AppTheme.serifFont(size: 22, weight: .medium))
+                                .foregroundColor(AppTheme.textPrimary)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 20)
+                        
+                        Text(NSLocalizedString("palm.mounts.description", comment: "The mounts are raised areas on your palm that reveal different aspects of your personality and life energy."))
+                            .font(.system(size: 14, weight: .light))
+                            .foregroundColor(AppTheme.textSecondary)
+                            .padding(.horizontal, 20)
+                        
+                        ForEach(reading.mounts, id: \.mount) { mount in
+                            PalmMountCard(mount: mount)
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                }
                 
                 // Action buttons
                 VStack(spacing: 12) {
@@ -377,6 +443,64 @@ struct PalmLineCard: View {
             }
         }
         .padding(18)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(AppTheme.cardGradient)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+        )
+    }
+}
+
+struct PalmMountCard: View {
+    let mount: PalmMountCharacteristics
+    @State private var isExpanded = false
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Button {
+                withAnimation(.spring(response: 0.3)) {
+                    isExpanded.toggle()
+                }
+                HapticService.shared.impact(.light)
+            } label: {
+                HStack {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(mount.mount.localizedName)
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundColor(AppTheme.textPrimary)
+                        
+                        Text(PalmInterpretations.mountQuickSummary(for: mount))
+                            .font(.system(size: 13, weight: .light))
+                            .foregroundColor(AppTheme.textTertiary)
+                            .multilineTextAlignment(.leading)
+                            .lineLimit(2)
+                    }
+                    
+                    Spacer()
+                    
+                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                        .foregroundColor(AppTheme.gold)
+                        .rotationEffect(.degrees(isExpanded ? 180 : 0))
+                }
+            }
+            
+            if isExpanded {
+                Divider()
+                    .background(AppTheme.gold.opacity(0.3))
+                    .padding(.vertical, 4)
+                
+                Text(PalmInterpretations.mountInterpretation(for: mount))
+                    .font(.system(size: 14, weight: .light))
+                    .foregroundColor(AppTheme.textSecondary)
+                    .lineSpacing(5)
+                    .multilineTextAlignment(.leading)
+                    .transition(.opacity.combined(with: .move(edge: .top)))
+            }
+        }
+        .padding(16)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(AppTheme.cardGradient)

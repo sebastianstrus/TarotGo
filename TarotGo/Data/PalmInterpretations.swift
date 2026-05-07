@@ -183,4 +183,99 @@ struct PalmInterpretations {
             return L10n.palmQuickSummaryFate(depth)
         }
     }
+    
+    // MARK: - Hand Shape Interpretations
+    
+    static func handShapeInterpretation(for analysis: HandShapeAnalysis) -> String {
+        var interpretation = ""
+        
+        // Main hand shape interpretation
+        switch analysis.shapeType {
+        case .earth:
+            interpretation += NSLocalizedString("palm.handShape.earth.full", 
+                comment: "Your Earth hand reveals a grounded, practical nature. You approach life with common sense and reliability, preferring tangible results over abstract theories. You're dependable, patient, and excel at bringing ideas into physical reality.")
+        case .air:
+            interpretation += NSLocalizedString("palm.handShape.air.full", 
+                comment: "Your Air hand reflects an intellectual and communicative spirit. You thrive on mental stimulation, ideas, and social connections. You're naturally curious, analytical, and excel at processing and sharing information.")
+        case .water:
+            interpretation += NSLocalizedString("palm.handShape.water.full", 
+                comment: "Your Water hand indicates deep emotional sensitivity and intuition. You experience life through feelings and are naturally empathetic. You're creative, compassionate, and drawn to artistic or healing pursuits.")
+        case .fire:
+            interpretation += NSLocalizedString("palm.handShape.fire.full", 
+                comment: "Your Fire hand reveals an energetic, passionate nature. You're action-oriented, spontaneous, and driven by enthusiasm. You thrive on challenges, adventure, and making things happen quickly.")
+        }
+        
+        interpretation += " "
+        
+        // Add finger length insight
+        switch analysis.fingerLength {
+        case .short:
+            interpretation += NSLocalizedString("palm.fingerLength.short.desc", 
+                comment: "Your relatively short fingers suggest you prefer getting straight to the point and taking action rather than overanalyzing.")
+        case .average:
+            interpretation += NSLocalizedString("palm.fingerLength.average.desc", 
+                comment: "Your balanced finger length indicates a harmonious approach between thinking and doing.")
+        case .long:
+            interpretation += NSLocalizedString("palm.fingerLength.long.desc", 
+                comment: "Your long fingers suggest you enjoy details, research, and taking time to thoroughly think things through before acting.")
+        }
+        
+        return interpretation
+    }
+    
+    // MARK: - Mount Interpretations
+    
+    static func mountInterpretation(for mount: PalmMountCharacteristics) -> String {
+        let baseInterpretation: String
+        
+        switch mount.mount {
+        case .jupiter:
+            baseInterpretation = NSLocalizedString("palm.mount.jupiter.full", 
+                comment: "The Jupiter Mount relates to your ambition, leadership qualities, and sense of confidence. It reflects your desire for success, recognition, and personal growth.")
+        case .saturn:
+            baseInterpretation = NSLocalizedString("palm.mount.saturn.full", 
+                comment: "The Saturn Mount governs wisdom, discipline, and responsibility. It reveals your approach to serious matters, introspection, and long-term thinking.")
+        case .apollo:
+            baseInterpretation = NSLocalizedString("palm.mount.apollo.full", 
+                comment: "The Apollo Mount (Sun) represents creativity, artistic talents, and success. It shows your relationship with beauty, self-expression, and recognition.")
+        case .mercury:
+            baseInterpretation = NSLocalizedString("palm.mount.mercury.full", 
+                comment: "The Mercury Mount relates to communication, intelligence, and business acumen. It reflects your verbal skills, quick thinking, and commercial abilities.")
+        case .venus:
+            baseInterpretation = NSLocalizedString("palm.mount.venus.full", 
+                comment: "The Venus Mount governs love, passion, and vitality. It reveals your capacity for affection, sensuality, and appreciation of life's pleasures.")
+        case .marsUpper:
+            baseInterpretation = NSLocalizedString("palm.mount.marsUpper.full", 
+                comment: "The Upper Mars Mount represents mental courage and self-control. It shows your resilience in facing challenges and maintaining composure under pressure.")
+        case .marsLower:
+            baseInterpretation = NSLocalizedString("palm.mount.marsLower.full", 
+                comment: "The Lower Mars Mount reflects physical courage and determination. It reveals your fighting spirit, assertiveness, and ability to take action.")
+        case .moon:
+            baseInterpretation = NSLocalizedString("palm.mount.moon.full", 
+                comment: "The Moon Mount governs imagination, intuition, and emotional depth. It reflects your subconscious mind, creativity, and connection to the mystical.")
+        case .neptune:
+            baseInterpretation = NSLocalizedString("palm.mount.neptune.full", 
+                comment: "The Neptune Mount represents spiritual connection and transition. It shows your link between the physical and spiritual realms, and your ability to transform.")
+        }
+        
+        let prominenceNote: String
+        switch mount.prominence {
+        case .flat:
+            prominenceNote = " " + NSLocalizedString("palm.mount.prominence.flat", 
+                comment: "This mount is less developed, suggesting these qualities may be less emphasized in your personality or may manifest more subtly.")
+        case .normal:
+            prominenceNote = " " + NSLocalizedString("palm.mount.prominence.normal", 
+                comment: "This mount is well-balanced, indicating a healthy and harmonious expression of these qualities in your life.")
+        case .prominent:
+            prominenceNote = " " + NSLocalizedString("palm.mount.prominence.prominent", 
+                comment: "This mount is highly developed, suggesting these characteristics play a significant and powerful role in your personality and life path.")
+        }
+        
+        return baseInterpretation + prominenceNote
+    }
+    
+    static func mountQuickSummary(for mount: PalmMountCharacteristics) -> String {
+        let prominence = mount.prominence.description
+        return "\(prominence) - \(mount.mount.interpretation)"
+    }
 }
