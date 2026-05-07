@@ -58,6 +58,9 @@ struct AppTheme {
     static let mysticalPurple = Color(red: 138/255, green: 43/255, blue: 226/255)
     static let deepPurple = Color(red: 75/255, green: 0/255, blue: 130/255)
     
+    // Placeholder
+    static let grayPlaceholder = Color(red: 255/255, green: 255/255, blue: 255/255, opacity: 0.6)
+    
     // Gradients
     static let goldGradient = LinearGradient(
         colors: [lightGold, gold, darkGold],

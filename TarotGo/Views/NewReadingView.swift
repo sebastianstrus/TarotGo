@@ -91,7 +91,12 @@ struct NewReadingView: View {
                                 .foregroundColor(AppTheme.gold.opacity(0.6))
                         }
 
-                        TextField(L10n.onboardingQuestionPlaceholder, text: $customQuestion)
+                        TextField(
+                            "",
+                            text: $customQuestion,
+                            prompt: Text(L10n.onboardingQuestionPlaceholder)
+                                .foregroundStyle(AppTheme.grayPlaceholder)
+                        )
                             .textFieldStyle(MysticTextFieldStyle())
                             .padding(.horizontal, 30)
                             .focused($isTextFieldFocused)
