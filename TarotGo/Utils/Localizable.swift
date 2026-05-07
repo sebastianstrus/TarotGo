@@ -434,6 +434,28 @@ enum L10n {
         }
     }
     
+    // MARK: - Palm Reading
+    static let palmReadingTitle = NSLocalizedString("palmReading.title", comment: "Palm Reading")
+    static let palmReadingSubtitle = NSLocalizedString("palmReading.subtitle", comment: "Discover the secrets in your palm")
+    static let palmReadingIntroTitle = NSLocalizedString("palmReading.intro.title", comment: "Discover the secrets in your palm")
+    static let palmReadingOnDeviceTitle = NSLocalizedString("palmReading.onDevice.title", comment: "On-Device Analysis")
+    static let palmReadingOnDeviceDesc = NSLocalizedString("palmReading.onDevice.desc", comment: "Your palm image is processed locally and never leaves your device. Complete privacy guaranteed.")
+    static let palmReadingFourLinesTitle = NSLocalizedString("palmReading.fourLines.title", comment: "Four Major Lines")
+    static let palmReadingFourLinesDesc = NSLocalizedString("palmReading.fourLines.desc", comment: "We analyze your Heart, Head, Life, and Fate lines to reveal insights about your path.")
+    static let palmReadingAncientTitle = NSLocalizedString("palmReading.ancient.title", comment: "Ancient Wisdom")
+    static let palmReadingAncientDesc = NSLocalizedString("palmReading.ancient.desc", comment: "Palmistry has guided seekers for thousands of years. Let your palm tell its story.")
+    static let palmReadingTakePhoto = NSLocalizedString("palmReading.takePhoto", comment: "Take Palm Photo")
+    static let palmReadingAnalyzing = NSLocalizedString("palmReading.analyzing", comment: "Reading Your Palm")
+    static let palmReadingAnalyzingDesc = NSLocalizedString("palmReading.analyzing.desc", comment: "Analyzing the lines of your destiny...")
+    static let palmReadingYourReading = NSLocalizedString("palmReading.yourReading", comment: "Your Palm Reading")
+    static let palmReadingOverall = NSLocalizedString("palmReading.overall", comment: "Overall Reading")
+    static let palmReadingYourLines = NSLocalizedString("palmReading.yourLines", comment: "Your Palm Lines")
+    static let palmReadingReadAnother = NSLocalizedString("palmReading.readAnother", comment: "Read Another Palm")
+    static let palmReadingCameraAccess = NSLocalizedString("palmReading.cameraAccess", comment: "Camera Access Required")
+    static let palmReadingCameraDesc = NSLocalizedString("palmReading.camera.desc", comment: "To read your palm, we need access to your camera. Your palm image is processed locally and never leaves your device.")
+    static let palmReadingOpenSettings = NSLocalizedString("palmReading.openSettings", comment: "Open Settings")
+    static let palmReadingPlaceHand = NSLocalizedString("palmReading.placeHand", comment: "Place your palm within the guide")
+    
     // MARK: - Learn Tarot
     // Main Learn View
     static let homeLearnTarot = NSLocalizedString("home.learnTarot", comment: "Learn Tarot")

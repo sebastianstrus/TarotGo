@@ -87,6 +87,16 @@ struct HomeView: View {
                             }
                             .buttonStyle(HomeButtonStyle())
                             
+                            // Palm Reading
+                            NavigationLink(destination: PalmReadingView()) {
+                                HomeButton(
+                                    icon: "hand.raised.fill",
+                                    title: L10n.palmReadingTitle,
+                                    subtitle: L10n.palmReadingSubtitle
+                                )
+                            }
+                            .buttonStyle(HomeButtonStyle())
+                            
                             // Destiny Matrix
                             NavigationLink(destination: DestinyMatrixInputView()) {
                                 HomeButton(
