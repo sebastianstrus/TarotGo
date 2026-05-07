@@ -20,6 +20,7 @@ struct CardOfTheDayView: View {
     @State private var isFinishing: Bool = false
     @State private var cardFrame: CGRect = .zero
     @State private var gestureCancelled: Bool = false
+    @State private var showVibeCheck: Bool = false
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -76,6 +77,20 @@ struct CardOfTheDayView: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        showVibeCheck = true
+                    }) {
+                        Image(systemName: "globe.europe.africa.fill")
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .font(.title3)
+                    }
+                }
+            }
+            .sheet(isPresented: $showVibeCheck) {
+                VibeCheckView()
+            }
             .onAppear {
                 loadTodayCard()
             }
@@ -338,21 +353,6 @@ struct RitualCandles: View {
                 .animation(.easeInOut(duration: 0.5), value: normalized >= CGFloat(i + 1) * 0.2)
             }
         }
-    }
-}
-
-// Seeded random number generator for reproducible daily cards
-struct SeededRandomGenerator {
-    private var state: UInt64
-    
-    init(seed: UInt64) {
-        state = seed
-    }
-    
-    mutating func next() -> UInt64 {
-        // Linear congruential generator
-        state = (state &* 6364136223846793005) &+ 1442695040888963407
-        return state
     }
 }
 
