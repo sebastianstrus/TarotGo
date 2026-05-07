@@ -236,6 +236,7 @@ struct PalmResultView: View {
                         .font(.system(size: 15, weight: .light))
                         .foregroundColor(AppTheme.textSecondary)
                         .lineSpacing(6)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 .padding(20)
                 .background(
@@ -274,13 +275,11 @@ struct PalmResultView: View {
                         reading: reading
                     )
                     
-                    if let fateLine = reading.fateLine {
-                        PalmLineCard(
-                            line: .fate,
-                            characteristics: fateLine,
-                            reading: reading
-                        )
-                    }
+                    PalmLineCard(
+                        line: .fate,
+                        characteristics: reading.fateLine,
+                        reading: reading
+                    )
                 }
                 .padding(.horizontal, 20)
                 
@@ -325,7 +324,7 @@ struct PalmResultView: View {
 
 struct PalmLineCard: View {
     let line: PalmLine
-    let characteristics: PalmLineCharacteristics
+    let characteristics: PalmLineCharacteristics?
     let reading: PalmReading
     @State private var isExpanded = false
     
@@ -343,9 +342,17 @@ struct PalmLineCard: View {
                             .font(.system(size: 18, weight: .semibold))
                             .foregroundColor(AppTheme.textPrimary)
                         
-                        Text(PalmInterpretations.quickSummary(for: characteristics))
-                            .font(.system(size: 13, weight: .light))
-                            .foregroundColor(AppTheme.textTertiary)
+                        if let characteristics = characteristics {
+                            Text(PalmInterpretations.quickSummary(for: characteristics))
+                                .font(.system(size: 13, weight: .light))
+                                .foregroundColor(AppTheme.textTertiary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        } else {
+                            Text("Not prominently visible")
+                                .font(.system(size: 13, weight: .light))
+                                .foregroundColor(AppTheme.textTertiary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                     }
                     
                     Spacer()
@@ -365,6 +372,7 @@ struct PalmLineCard: View {
                     .font(.system(size: 14, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
                     .lineSpacing(5)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
