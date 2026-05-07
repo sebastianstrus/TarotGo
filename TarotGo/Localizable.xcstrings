@@ -106977,528 +106977,3124 @@
     },
     "palm.interpretation.balance.deepBoth" : {
       "comment" : "Palm interpretation for deep heart and head lines",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Handfläche offenbart eine kraftvolle Balance zwischen Herz und Verstand. Du besitzt sowohl emotionale Tiefe als auch intellektuelle Klarheit, was es dir ermöglicht, das Leben mit Weisheit und Mitgefühl zu meistern. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your palm reveals a powerful balance between heart and mind. You possess both emotional depth and intellectual clarity, allowing you to navigate life with wisdom and compassion. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu palma revela un poderoso equilibrio entre corazón y mente. Posees tanto profundidad emocional como claridad intelectual, lo que te permite navegar la vida con sabiduría y compasión. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre paume révèle un équilibre puissant entre le cœur et l'esprit. Vous possédez à la fois une profondeur émotionnelle et une clarté intellectuelle, vous permettant de naviguer dans la vie avec sagesse et compassion. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo palmo rivela un potente equilibrio tra cuore e mente. Possiedi sia profondità emotiva che chiarezza intellettuale, permettendoti di navigare la vita con saggezza e compassione. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの手のひらは、心と頭の強力なバランスを示しています。感情的な深さと知的な明晰さの両方を持ち、知恵と思いやりをもって人生を歩むことができます。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Håndflaten din avslører en kraftig balanse mellom hjerte og sinn. Du besitter både emosjonell dybde og intellektuell klarhet, noe som lar deg navigere livet med visdom og medfølelse. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja dłoń ujawnia potężną równowagę między sercem a umysłem. Posiadasz zarówno głębię emocjonalną, jak i intelektualną jasność, co pozwala ci poruszać się po życiu z mądrością i współczuciem. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua palma revela um equilíbrio poderoso entre coração e mente. Você possui tanto profundidade emocional quanto clareza intelectual, permitindo navegar a vida com sabedoria e compaixão. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din handflata avslöjar en kraftfull balans mellan hjärta och sinne. Du besitter både emotionellt djup och intellektuell klarhet, vilket gör att du kan navigera livet med visdom och medkänsla. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша долоня розкриває потужний баланс між серцем і розумом. Ви володієте як емоційною глибиною, так і інтелектуальною ясністю, що дозволяє вам долати життєві шляхи з мудрістю і співчуттям. "
           }
         }
       }
     },
     "palm.interpretation.balance.deepHeartFaintHead" : {
       "comment" : "Palm interpretation for deep heart, faint head",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Herz führt den Weg auf deiner Lebensreise. Du fühlst tief und leidenschaftlich, auch wenn du davon profitieren könntest, mehr analytisches Denken in deinen Entscheidungsprozess einzubringen. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your heart leads the way in your life's journey. You feel deeply and passionately, though you may benefit from bringing more analytical thinking into your decision-making process. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu corazón lidera el camino en tu viaje de vida. Sientes profunda y apasionadamente, aunque podrías beneficiarte de incorporar más pensamiento analítico en tu proceso de toma de decisiones. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre cœur guide votre parcours de vie. Vous ressentez profondément et passionnément, même si vous pourriez bénéficier d'intégrer davantage de pensée analytique dans votre processus de décision. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo cuore guida la via nel tuo viaggio di vita. Senti profondamente e appassionatamente, anche se potresti beneficiare dall'integrare più pensiero analitico nel tuo processo decisionale. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの心が人生の旅路を導いています。深く情熱的に感じますが、意思決定プロセスにより分析的な思考を取り入れることで、さらに恩恵を受けられるでしょう。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjertet ditt leder veien i din livsreise. Du føler dypt og lidenskapelig, selv om du kan ha nytte av å bringe mer analytisk tenkning inn i beslutningsprosessen din. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoje serce prowadzi drogę w twojej życiowej podróży. Czujesz głęboko i namiętnie, choć możesz skorzystać na wprowadzeniu więcej analitycznego myślenia do procesu podejmowania decyzji. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seu coração lidera o caminho em sua jornada de vida. Você sente profunda e apaixonadamente, embora possa se beneficiar ao trazer mais pensamento analítico para seu processo de tomada de decisões. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditt hjärta leder vägen i din livsresa. Du känner djupt och passionerat, även om du kan dra nytta av att ta med mer analytiskt tänkande i ditt beslutsfattande. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваше серце веде вас у життєвій подорожі. Ви відчуваєте глибоко і пристрасно, хоча могли б отримати користь від залучення більш аналітичного мислення до процесу прийняття рішень. "
           }
         }
       }
     },
     "palm.interpretation.balance.faintHeartDeepHead" : {
       "comment" : "Palm interpretation for faint heart, deep head",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du betrachtest das Leben durch die Linse von Logik und Vernunft. Dein scharfer Intellekt dient dir gut, auch wenn das Öffnen für emotionale Erfahrungen dir größere Erfüllung bringen könnte. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "You approach life through the lens of logic and reason. Your sharp intellect serves you well, though opening yourself to emotional experiences could bring greater fulfillment. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abordas la vida a través del lente de la lógica y la razón. Tu agudo intelecto te sirve bien, aunque abrirte a las experiencias emocionales podría traerte mayor realización. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous abordez la vie à travers le prisme de la logique et de la raison. Votre intellect aiguisé vous sert bien, même si vous ouvrir aux expériences émotionnelles pourrait vous apporter un plus grand épanouissement. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affronti la vita attraverso la lente della logica e della ragione. Il tuo intelletto acuto ti serve bene, anche se aprirti alle esperienze emotive potrebbe portarti maggiore appagamento. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたは論理と理性のレンズを通して人生にアプローチしています。鋭い知性はあなたによく役立っていますが、感情的な経験に心を開くことで、より大きな充足感を得られるかもしれません。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du nærmer deg livet gjennom logikk og fornuft. Ditt skarpe intellekt tjener deg godt, selv om det å åpne deg for emosjonelle opplevelser kunne bringe større oppfyllelse. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podchodzisz do życia przez pryzmat logiki i rozumu. Twój bystry intelekt dobrze ci służy, choć otwarcie się na doświadczenia emocjonalne mogłoby przynieść większe spełnienie. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você aborda a vida através da lente da lógica e da razão. Seu intelecto afiado serve bem, embora abrir-se para experiências emocionais possa trazer maior realização. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du närmar dig livet genom logikens och förnuftets lins. Ditt vassa intellekt tjänar dig väl, även om att öppna dig för emotionella upplevelser kunde ge större tillfredsställelse. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ви підходите до життя через призму логіки та розуму. Ваш гострий інтелект добре вам служить, хоча відкриття себе для емоційних переживань могло б принести більше задоволення. "
           }
         }
       }
     },
     "palm.interpretation.balance.gentle" : {
       "comment" : "Palm interpretation for balanced approach",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Handfläche zeigt einen sanften, ausgewogenen Ansatz zum Leben. Du navigierst flexibel zwischen Herz und Verstand und passt dich an, was jede Situation erfordert. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your palm shows a gentle, balanced approach to life. You navigate between heart and mind with flexibility, adapting to what each situation requires. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu palma muestra un enfoque suave y equilibrado hacia la vida. Navegas entre corazón y mente con flexibilidad, adaptándote a lo que cada situación requiere. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre paume montre une approche douce et équilibrée de la vie. Vous naviguez entre le cœur et l'esprit avec flexibilité, vous adaptant à ce que chaque situation exige. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo palmo mostra un approccio gentile ed equilibrato alla vita. Navighi tra cuore e mente con flessibilità, adattandoti a ciò che ogni situazione richiede. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの手のひらは、人生への穏やかでバランスの取れたアプローチを示しています。柔軟に心と頭の間を行き来し、それぞれの状況が求めるものに適応しています。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Håndflaten din viser en mild, balansert tilnærming til livet. Du navigerer mellom hjerte og sinn med fleksibilitet, og tilpasser deg det hver situasjon krever. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja dłoń pokazuje łagodne, zrównoważone podejście do życia. Poruszasz się między sercem a umysłem z elastycznością, dostosowując się do tego, czego wymaga każda sytuacja. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua palma mostra uma abordagem suave e equilibrada da vida. Você navega entre coração e mente com flexibilidade, adaptando-se ao que cada situação requer. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din handflata visar ett mjukt, balanserat förhållningssätt till livet. Du navigerar mellan hjärta och sinne med flexibilitet, och anpassar dig till vad varje situation kräver. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша долоня показує м'який, збалансований підхід до життя. Ви гнучко балансуєте між серцем і розумом, адаптуючись до того, що вимагає кожна ситуація. "
           }
         }
       }
     },
     "palm.interpretation.closing" : {
       "comment" : "Closing statement",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denke daran, deine Handfläche ist eine Karte der Möglichkeiten, nicht festgelegter Schicksale. Die Linien, die du heute siehst, können sich entwickeln, so wie du dich entwickelst."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Remember, your palm is a map of potentials, not fixed destinies. The lines you see today may evolve as you do."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recuerda, tu palma es un mapa de potenciales, no de destinos fijos. Las líneas que ves hoy pueden evolucionar contigo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rappelez-vous, votre paume est une carte de potentiels, pas de destins fixés. Les lignes que vous voyez aujourd'hui peuvent évoluer avec vous."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricorda, il tuo palmo è una mappa di potenziali, non di destini fissi. Le linee che vedi oggi possono evolversi insieme a te."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "覚えておいてください、あなたの手のひらは可能性の地図であり、固定された運命ではありません。今日見える線は、あなたと共に進化するかもしれません。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Husk, håndflaten din er et kart over potensial, ikke faste skjebner. Linjene du ser i dag kan utvikle seg sammen med deg."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pamiętaj, twoja dłoń to mapa potencjałów, a nie ustalonych losów. Linie, które widzisz dzisiaj, mogą ewoluować razem z tobą."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lembre-se, sua palma é um mapa de potenciais, não de destinos fixos. As linhas que você vê hoje podem evoluir junto com você."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom ihåg, din handflata är en karta över möjligheter, inte fasta öden. Linjerna du ser idag kan utvecklas tillsammans med dig."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пам'ятайте, ваша долоня - це карта можливостей, а не незмінних доль. Лінії, які ви бачите сьогодні, можуть змінюватися разом з вами."
           }
         }
       }
     },
     "palm.interpretation.fate.absent" : {
       "comment" : "Palm interpretation for absent fate line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Fehlen einer ausgeprägten Schicksalslinie offenbart, dass du ein wahrer Freigeist bist, ungebunden von vorbestimmten Wegen. Dein Leben gehört dir, um es zu gestalten. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The absence of a prominent Fate Line reveals that you are a true free spirit, unbound by predetermined paths. Your life is yours to create. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La ausencia de una Línea del Destino prominente revela que eres un verdadero espíritu libre, sin ataduras de caminos predeterminados. Tu vida es tuya para crear. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'absence d'une ligne de Destin proéminente révèle que vous êtes un véritable esprit libre, non lié par des chemins prédéterminés. Votre vie vous appartient pour la créer. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'assenza di una Linea del Destino prominente rivela che sei un vero spirito libero, non vincolato da percorsi predeterminati. La tua vita è tua da creare. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顕著な運命線がないことは、あなたが真の自由な精神であり、あらかじめ定められた道に縛られていないことを示しています。あなたの人生はあなた自身が創造するものです。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fraværet av en fremtredende Skjebnelinје avslører at du er en sann friånd, ubundet av forhåndsbestemte veier. Livet ditt er ditt å skape. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brak wyraźnej Linii Przeznaczenia ujawnia, że jesteś prawdziwym wolnym duchem, nieograniczonym przez z góry określone ścieżki. Twoje życie jest twoje do stworzenia. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A ausência de uma Linha do Destino proeminente revela que você é um verdadeiro espírito livre, desamarrado de caminhos predeterminados. Sua vida é sua para criar. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frånvaron av en framträdande Ödeslinje avslöjar att du är en sann frihetlig ande, obunden av förutbestämda vägar. Ditt liv är ditt att skapa. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відсутність виразної Лінії Долі показує, що ви справжній вільний дух, не обмежений заздалегідь визначеними шляхами. Ваше життя - ваше, щоб створити. "
           }
         }
       }
     },
     "palm.interpretation.fate.deep" : {
       "comment" : "Palm interpretation for deep fate line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine ausgeprägte Schicksalslinie zeigt an, dass äußere Kräfte und Gelegenheiten eine bedeutende Rolle auf deinem Weg spielen. Du bist jemand, dessen Leben durch Schicksal und Synchronizität geformt werden kann. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "A prominent Fate Line indicates that external forces and opportunities play a significant role in your path. You are someone whose life may be shaped by destiny and synchronicity. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una Línea del Destino prominente indica que las fuerzas externas y las oportunidades juegan un papel significativo en tu camino. Eres alguien cuya vida puede estar moldeada por el destino y la sincronicidad. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une ligne de Destin proéminente indique que les forces extérieures et les opportunités jouent un rôle significatif dans votre chemin. Vous êtes quelqu'un dont la vie peut être façonnée par le destin et la synchronicité. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una Linea del Destino prominente indica che forze esterne e opportunità svolgono un ruolo significativo nel tuo percorso. Sei qualcuno la cui vita può essere plasmata dal destino e dalla sincronicità. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顕著な運命線は、外部の力や機会があなたの道において重要な役割を果たすことを示しています。あなたは運命とシンクロニシティによって人生が形作られる人です。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En fremtredende Skjebnelinje indikerer at ytre krefter og muligheter spiller en betydelig rolle i din vei. Du er noen hvis liv kan formes av skjebne og synkronisitet. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wyraźna Linia Przeznaczenia wskazuje, że siły zewnętrzne i możliwości odgrywają znaczącą rolę na twojej ścieżce. Jesteś kimś, czyje życie może być kształtowane przez przeznaczenie i synchroniczność. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma Linha do Destino proeminente indica que forças externas e oportunidades desempenham um papel significativo em seu caminho. Você é alguém cuja vida pode ser moldada pelo destino e pela sincronicidade. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En framträdande Ödeslinje indikerar att yttre krafter och möjligheter spelar en betydande roll i din väg. Du är någon vars liv kan formas av öde och synkronicitet. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виразна Лінія Долі вказує на те, що зовнішні сили та можливості відіграють значну роль у вашому шляху. Ви - людина, чиє життя може формуватися долею та синхронічністю. "
           }
         }
       }
     },
     "palm.interpretation.fate.subtle" : {
       "comment" : "Palm interpretation for subtle fate line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine subtile Schicksalslinie deutet darauf hin, dass du große Freiheit bei der Gestaltung deines eigenen Schicksals hast. Du bist der Architekt deines eigenen Weges. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your subtle Fate Line suggests you have great freedom in crafting your own destiny. You are the architect of your own path. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu sutil Línea del Destino sugiere que tienes gran libertad para forjar tu propio destino. Eres el arquitecto de tu propio camino. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Destin subtile suggère que vous avez une grande liberté dans la création de votre propre destin. Vous êtes l'architecte de votre propre chemin. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua sottile Linea del Destino suggerisce che hai grande libertà nel forgiare il tuo destino. Sei l'architetto del tuo percorso. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの微かな運命線は、自分自身の運命を作り上げる大きな自由があることを示唆しています。あなたは自分の道の建築家です。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din subtile Skjebnelinje antyder at du har stor frihet til å forme din egen skjebne. Du er arkitekten av din egen vei. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja subtelna Linia Przeznaczenia sugeruje, że masz wielką wolność w kształtowaniu własnego przeznaczenia. Jesteś architektem swojej własnej ścieżki. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua sutil Linha do Destino sugere que você tem grande liberdade para moldar seu próprio destino. Você é o arquiteto de seu próprio caminho. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din subtila Ödeslinje antyder att du har stor frihet att forma ditt eget öde. Du är arkitekten av din egen väg. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша тонка Лінія Долі свідчить про те, що ви маєте велику свободу у формуванні власної долі. Ви - архітектор власного шляху. "
           }
         }
       }
     },
     "palm.interpretation.life.broken" : {
       "comment" : "Palm interpretation for broken life line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Unterbrechungen in deiner Lebenslinie deuten auf bedeutende Übergänge oder transformative Phasen auf deiner Reise hin. Dies sind Gelegenheiten zur Erneuerung und Neuerfindung. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The breaks in your Life Line suggest significant transitions or transformative periods in your journey. These are opportunities for renewal and reinvention. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las interrupciones en tu Línea de la Vida sugieren transiciones significativas o períodos transformadores en tu viaje. Estas son oportunidades para la renovación y la reinvención. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les ruptures dans votre ligne de Vie suggèrent des transitions significatives ou des périodes transformatrices dans votre parcours. Ce sont des opportunités de renouveau et de réinvention. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le interruzioni nella tua Linea della Vita suggeriscono transizioni significative o periodi trasformativi nel tuo viaggio. Queste sono opportunità per il rinnovamento e la reinvenzione. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生命線の途切れは、あなたの旅路における重要な転換期や変容の時期を示唆しています。これらは再生と再発明の機会です。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruddene i Livslinjen din antyder betydelige overganger eller transformerende perioder i reisen din. Dette er muligheter for fornyelse og gjenoppfinnelse. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przerwy w twojej Linii Życia sugerują znaczące przejścia lub transformacyjne okresy w twojej podróży. Są to okazje do odnowy i reinwencji. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As interrupções em sua Linha da Vida sugerem transições significativas ou períodos transformadores em sua jornada. Estas são oportunidades para renovação e reinvenção. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbrotten i din Livslinje antyder betydande övergångar eller transformativa perioder i din resa. Dessa är möjligheter för förnyelse och återuppfinnande. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розриви у вашій Лінії Життя свідчать про значні переходи або трансформаційні періоди у вашій подорожі. Це можливості для оновлення та перевтілення. "
           }
         }
       }
     },
     "palm.interpretation.life.deepContinuous" : {
       "comment" : "Palm interpretation for deep continuous life line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Lebenslinie zeigt starke Vitalität und Widerstandsfähigkeit. Du hast die Energie und Entschlossenheit, Herausforderungen zu überwinden und deine Ziele mit Kraft zu verfolgen. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your Life Line indicates strong vitality and resilience. You have the energy and determination to overcome challenges and pursue your goals with vigor. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Línea de la Vida indica fuerte vitalidad y resistencia. Tienes la energía y determinación para superar desafíos y perseguir tus metas con vigor. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Vie indique une forte vitalité et résilience. Vous avez l'énergie et la détermination pour surmonter les défis et poursuivre vos objectifs avec vigueur. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Linea della Vita indica forte vitalità e resilienza. Hai l'energia e la determinazione per superare le sfide e perseguire i tuoi obiettivi con vigore. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生命線は強い活力と回復力を示しています。困難を乗り越え、活力をもって目標を追求するエネルギーと決意があります。 "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livslinjen din indikerer sterk vitalitet og motstandskraft. Du har energien og besluttsomheten til å overvinne utfordringer og forfølge målene dine med styrke. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja Linia Życia wskazuje na silną witalność i odporność. Masz energię i determinację, aby pokonywać wyzwania i realizować swoje cele z wigorem. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Linha da Vida indica forte vitalidade e resiliência. Você tem a energia e determinação para superar desafios e perseguir seus objetivos com vigor. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Livslinje indikerar stark vitalitet och motståndskraft. Du har energin och beslutsamheten att övervinna utmaningar och förfölja dina mål med kraft. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша Лінія Життя вказує на сильну життєву енергію та стійкість. У вас є енергія та рішучість долати виклики і досягати своїх цілей з силою. "
           }
         }
       }
     },
     "palm.interpretation.summary.headLong" : {
       "comment" : "Summary for long head line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ein nachdenklicher Geist, der viele Perspektiven berücksichtigt, "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "a thoughtful mind that considers many perspectives, "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "una mente reflexiva que considera muchas perspectivas, "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "un esprit réfléchi qui considère de nombreuses perspectives, "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "una mente riflessiva che considera molte prospettive, "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "多くの視点を考慮する思慮深い心、"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "et tankefullt sinn som vurderer mange perspektiver, "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "myślący umysł, który rozważa wiele perspektyw, "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "uma mente pensativa que considera muitas perspectivas, "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ett eftertänksamt sinne som överväger många perspektiv, "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "вдумливий розум, що розглядає багато перспектив, "
           }
         }
       }
     },
     "palm.interpretation.summary.heartLong" : {
       "comment" : "Summary for long heart line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "eine mitfühlende Seele, die tiefe Verbindungen eingeht, "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "a compassionate soul who forms deep connections, "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "un alma compasiva que forma conexiones profundas, "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "une âme compatissante qui forme des liens profonds, "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "un'anima compassionevole che forma connessioni profonde, "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深い絆を築く思いやりのある魂、"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "en medfølende sjel som skaper dype forbindelser, "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "współczująca dusza, która tworzy głębokie więzi, "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "uma alma compassiva que forma conexões profundas, "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "en medkännande själ som bildar djupa band, "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "співчутлива душа, що створює глибокі зв'язки, "
           }
         }
       }
     },
     "palm.interpretation.summary.intro" : {
       "comment" : "Summary introduction",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nInsgesamt erzählt deine Handfläche die Geschichte von "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "\n\nOverall, your palm tells the story of "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nEn general, tu palma cuenta la historia de "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nDans l'ensemble, votre paume raconte l'histoire de "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nNel complesso, il tuo palmo racconta la storia di "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\n全体として、あなたの手のひらは次の物語を語っています："
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nAlt i alt forteller håndflaten din historien om "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nOgólnie rzecz biorąc, twoja dłoń opowiada historię "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nNo geral, sua palma conta a história de "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nSammantaget berättar din handflata historien om "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n\nЗагалом, ваша долоня розповідає історію про "
           }
         }
       }
     },
     "palm.interpretation.summary.lifeLong" : {
       "comment" : "Summary for long life line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "und eine lebendige Lebenskraft, die dich durch viele Jahre und Erfahrungen tragen wird. "
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "and a vibrant life force that will carry you through many years and experiences. "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "y una fuerza vital vibrante que te llevará a través de muchos años y experiencias. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "et une force vitale vibrante qui vous portera à travers de nombreuses années et expériences. "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e una forza vitale vibrante che ti accompagnerà attraverso molti anni ed esperienze. "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "そして、多くの年月と経験をあなたに運んでくれる活力に満ちた生命力。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "og en levende livskraft som vil bære deg gjennom mange år og opplevelser. "
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "i żywotną siłę życiową, która poniesie cię przez wiele lat i doświadczeń. "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e uma força vital vibrante que te levará através de muitos anos e experiências. "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "och en livfull livskraft som kommer att bära dig genom många år och upplevelser. "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "та жваву життєву силу, яка пронесе вас через багато років і переживань. "
           }
         }
       }
     },
     "palm.line.fate.closing" : {
       "comment" : "Fate line closing statement",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Schicksalslinie erinnert uns daran, dass während bestimmte Gelegenheiten und Herausforderungen auf uns zukommen, wie wir darauf reagieren, immer in unserer Kontrolle liegt."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The Fate Line reminds us that while certain opportunities and challenges come our way, how we respond to them is always within our control."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Línea del Destino nos recuerda que aunque ciertas oportunidades y desafíos lleguen a nuestro camino, cómo respondemos a ellos siempre está bajo nuestro control."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La ligne de Destin nous rappelle que bien que certaines opportunités et défis se présentent à nous, notre façon d'y répondre est toujours sous notre contrôle."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Linea del Destino ci ricorda che sebbene certe opportunità e sfide si presentino sulla nostra strada, il modo in cui rispondiamo ad esse è sempre sotto il nostro controllo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "運命線は、特定の機会や課題が私たちの前に現れる一方で、それにどう対応するかは常に私たちの制御下にあることを思い出させてくれます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjebnelinjen minner oss om at selv om visse muligheter og utfordringer kommer vår vei, er hvordan vi reagerer på dem alltid innenfor vår kontroll."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linia Przeznaczenia przypomina nam, że chociaż pewne możliwości i wyzwania pojawiają się na naszej drodze, sposób, w jaki na nie reagujemy, zawsze jest pod naszą kontrolą."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Linha do Destino nos lembra que embora certas oportunidades e desafios surjam em nosso caminho, como respondemos a eles está sempre sob nosso controle."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ödeslinjen påminner oss om att även om vissa möjligheter och utmaningar kommer i vår väg, är hur vi svarar på dem alltid inom vår kontroll."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лінія Долі нагадує нам, що хоча певні можливості та виклики з'являються на нашому шляху, те, як ми на них реагуємо, завжди під нашим контролем."
           }
         }
       }
     },
     "palm.line.fate.depth.deep" : {
       "comment" : "Fate line deep depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine ausgeprägte Schicksalslinie deutet auf ein Leben hin, das stark von äußeren Kräften, Gelegenheiten und Synchronizitäten beeinflusst wird. Ereignisse und Menschen können eine bedeutende Rolle bei der Gestaltung deines Weges spielen.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your prominent Fate Line indicates a life strongly influenced by external forces, opportunities, and synchronicities. Events and people may play significant roles in shaping your path.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu prominente Línea del Destino indica una vida fuertemente influenciada por fuerzas externas, oportunidades y sincronicidades. Los eventos y las personas pueden desempeñar roles significativos en la configuración de tu camino.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Destin proéminente indique une vie fortement influencée par des forces extérieures, des opportunités et des synchronicités. Les événements et les personnes peuvent jouer des rôles significatifs dans la formation de votre chemin.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua prominente Linea del Destino indica una vita fortemente influenzata da forze esterne, opportunità e sincronicità. Eventi e persone possono svolgere ruoli significativi nel plasmare il tuo percorso.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの顕著な運命線は、外部の力、機会、シンクロニシティに強く影響された人生を示しています。出来事や人々があなたの道を形作る上で重要な役割を果たすかもしれません。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din fremtredende Skjebnelinje indikerer et liv sterkt påvirket av ytre krefter, muligheter og synkronisiteter. Hendelser og mennesker kan spille betydelige roller i utformingen av din vei.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja wyraźna Linia Przeznaczenia wskazuje na życie silnie wpływane przez siły zewnętrzne, możliwości i synchroniczność. Wydarzenia i ludzie mogą odgrywać znaczące role w kształtowaniu twojej ścieżki.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua proeminente Linha do Destino indica uma vida fortemente influenciada por forças externas, oportunidades e sincronicidades. Eventos e pessoas podem desempenhar papéis significativos na formação de seu caminho.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din framträdande Ödeslinje indikerar ett liv starkt påverkat av yttre krafter, möjligheter och synkroniciteter. Händelser och människor kan spela betydande roller i utformningen av din väg.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша виразна Лінія Долі вказує на життя, яке сильно впливають зовнішні сили, можливості та синхронічність. Події та люди можуть відігравати значну роль у формуванні вашого шляху.\n\n"
           }
         }
       }
     },
     "palm.line.fate.depth.faint" : {
       "comment" : "Fate line faint depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine subtile Schicksalslinie offenbart, dass du große Freiheit bei der Gestaltung deines Schicksals hast. Du bist weniger an äußere Umstände gebunden und mehr befähigt, deinen eigenen Weg zu schmieden.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "A subtle Fate Line reveals that you have great freedom in creating your destiny. You are less bound by external circumstances and more empowered to forge your own path.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una sutil Línea del Destino revela que tienes gran libertad para crear tu destino. Estás menos limitado por circunstancias externas y más empoderado para forjar tu propio camino.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une ligne de Destin subtile révèle que vous avez une grande liberté pour créer votre destin. Vous êtes moins lié par les circonstances extérieures et plus habilité à forger votre propre chemin.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una sottile Linea del Destino rivela che hai grande libertà nel creare il tuo destino. Sei meno vincolato dalle circostanze esterne e più autorizzato a forgiare il tuo percorso.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微かな運命線は、あなたが自分の運命を創造する大きな自由を持っていることを示しています。外的な状況に縛られることが少なく、自分自身の道を切り開く力を持っています。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En subtil Skjebnelinje avslører at du har stor frihet til å skape din skjebne. Du er mindre bundet av ytre omstendigheter og mer styrket til å smede din egen vei.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subtelna Linia Przeznaczenia ujawnia, że masz wielką wolność w tworzeniu swojego przeznaczenia. Jesteś mniej związany zewnętrznymi okolicznościami i bardziej umocniony, aby wykuć własną ścieżkę.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma sutil Linha do Destino revela que você tem grande liberdade para criar seu destino. Você está menos limitado por circunstâncias externas e mais capacitado para forjar seu próprio caminho.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En subtil Ödeslinje avslöjar att du har stor frihet att skapa ditt öde. Du är mindre bunden av yttre omständigheter och mer bemyndigad att smida din egen väg.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тонка Лінія Долі показує, що ви маєте велику свободу у створенні своєї долі. Ви менш обмежені зовнішніми обставинами і більш наділені силою прокладати власний шлях.\n\n"
           }
         }
       }
     },
     "palm.line.fate.depth.moderate" : {
       "comment" : "Fate line moderate depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Schicksalslinie deutet auf eine Balance zwischen vorbestimmten Umständen und persönlicher Wahl hin. Du arbeitest mit dem, was das Leben bringt, während du deinen eigenen Kurs steuerst.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your Fate Line suggests a balance between predetermined circumstances and personal choice. You work with what life brings while steering your own course.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Línea del Destino sugiere un equilibrio entre circunstancias predeterminadas y elección personal. Trabajas con lo que la vida trae mientras diriges tu propio curso.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Destin suggère un équilibre entre les circonstances prédéterminées et le choix personnel. Vous travaillez avec ce que la vie apporte tout en dirigeant votre propre parcours.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Linea del Destino suggerisce un equilibrio tra circostanze predeterminate e scelta personale. Lavori con ciò che la vita porta mentre guidi il tuo percorso.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの運命線は、あらかじめ定められた状況と個人的な選択の間のバランスを示唆しています。人生が運んでくるものを活かしながら、自分自身の進路を操っています。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjebnelinjen din antyder en balanse mellom forhåndsbestemte omstendigheter og personlig valg. Du jobber med det livet bringer mens du styrer din egen kurs.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja Linia Przeznaczenia sugeruje równowagę między z góry określonymi okolicznościami a osobistym wyborem. Pracujesz z tym, co życie przynosi, jednocześnie kierując własnym kursem.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Linha do Destino sugere um equilíbrio entre circunstâncias predeterminadas e escolha pessoal. Você trabalha com o que a vida traz enquanto dirige seu próprio curso.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Ödeslinje antyder en balans mellan förutbestämda omständigheter och personligt val. Du arbetar med vad livet ger medan du styr din egen kurs.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша Лінія Долі свідчить про баланс між заздалегідь визначеними обставинами та особистим вибором. Ви працюєте з тим, що приносить життя, водночас керуючи власним курсом.\n\n"
           }
         }
       }
     },
     "palm.line.fate.title" : {
       "comment" : "Fate line title",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Schicksalslinie - Schicksal & äußere Einflüsse**\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "**Fate Line - Destiny & External Influences**\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Línea del Destino - Destino e Influencias Externas**\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Ligne de Destin - Destin et Influences Extérieures**\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linea del Destino - Destino e Influenze Esterne**\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**運命線 - 運命と外的影響**\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Skjebnelinje - Skjebne og Ytre Påvirkninger**\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linia Przeznaczenia - Przeznaczenie i Wpływy Zewnętrzne**\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linha do Destino - Destino e Influências Externas**\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Ödeslinje - Öde och Yttre Influenser**\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Лінія Долі - Доля та Зовнішні Впливи**\n\n"
           }
         }
       }
     },
     "palm.line.head.depth.deep" : {
       "comment" : "Head line deep depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der tiefe Abdruck deiner Kopflinie zeigt starke mentale Konzentration und Fokus. Du hast die Fähigkeit, komplexe Probleme tiefgehend zu analysieren und zu lösen."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The deep imprint of your Head Line shows strong mental focus and concentration. You have the ability to deeply analyze and solve complex problems."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La profunda marca de tu Línea de la Cabeza muestra un fuerte enfoque mental y concentración. Tienes la capacidad de analizar profundamente y resolver problemas complejos."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'empreinte profonde de votre ligne de Tête montre une forte concentration mentale. Vous avez la capacité d'analyser profondément et de résoudre des problèmes complexes."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'impronta profonda della tua Linea della Testa mostra forte concentrazione mentale e focus. Hai la capacità di analizzare profondamente e risolvere problemi complessi."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの頭脳線の深い刻印は、強い精神的集中力と集中を示しています。複雑な問題を深く分析し、解決する能力があります。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det dype avtrykket av Hodelinjen din viser sterk mental fokus og konsentrasjon. Du har evnen til å analysere dypt og løse komplekse problemer."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Głęboki ślad twojej Linii Głowy pokazuje silne skupienie umysłowe i koncentrację. Masz zdolność głębokiej analizy i rozwiązywania złożonych problemów."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A marca profunda de sua Linha da Cabeça mostra forte foco mental e concentração. Você tem a capacidade de analisar profundamente e resolver problemas complexos."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det djupa avtrycket av din Huvudlinje visar starkt mentalt fokus och koncentration. Du har förmågan att djupt analysera och lösa komplexa problem."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Глибокий відбиток вашої Лінії Голови показує сильну розумову зосередженість і концентрацію. У вас є здатність глибоко аналізувати та вирішувати складні проблеми."
           }
         }
       }
     },
     "palm.line.head.depth.faint" : {
       "comment" : "Head line faint depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine leichtere Kopflinie kann auf Flexibilität im Denken hinweisen oder auf jemanden, der der Intuition genauso vertraut wie der Logik."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "A lighter Head Line can indicate flexibility in thinking, or someone who trusts intuition as much as logic."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una Línea de la Cabeza más ligera puede indicar flexibilidad en el pensamiento, o alguien que confía tanto en la intuición como en la lógica."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une ligne de Tête plus légère peut indiquer une flexibilité dans la pensée, ou quelqu'un qui fait autant confiance à l'intuition qu'à la logique."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una Linea della Testa più leggera può indicare flessibilità nel pensiero, o qualcuno che si fida dell'intuizione tanto quanto della logica."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "薄い頭脳線は、思考の柔軟性、または論理と同じくらい直感を信頼する人を示す可能性があります。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En lysere Hodelinje kan indikere fleksibilitet i tenkning, eller noen som stoler på intuisjon like mye som logikk."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaśniejsza Linia Głowy może wskazywać na elastyczność w myśleniu lub kogoś, kto ufa intuicji tak samo jak logice."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma Linha da Cabeça mais leve pode indicar flexibilidade no pensamento, ou alguém que confia tanto na intuição quanto na lógica."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En ljusare Huvudlinje kan indikera flexibilitet i tänkandet, eller någon som litar på intuition lika mycket som logik."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Світліша Лінія Голови може вказувати на гнучкість мислення, або на когось, хто довіряє інтуїції так само, як і логіці."
           }
         }
       }
     },
     "palm.line.head.depth.moderate" : {
       "comment" : "Head line moderate depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Klarheit deiner Kopflinie deutet auf zuverlässige mentale Prozesse und gutes Urteilsvermögen hin. Du denkst Dinge durch, ohne zu überdenken."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your Head Line's clarity suggests reliable mental processes and good judgment. You think things through without overthinking."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La claridad de tu Línea de la Cabeza sugiere procesos mentales confiables y buen juicio. Piensas las cosas a fondo sin pensar demasiado."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La clarté de votre ligne de Tête suggère des processus mentaux fiables et un bon jugement. Vous réfléchissez bien sans trop réfléchir."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La chiarezza della tua Linea della Testa suggerisce processi mentali affidabili e buon giudizio. Pensi le cose a fondo senza pensare troppo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの頭脳線の明瞭さは、信頼できる精神的プロセスと優れた判断力を示唆しています。考えすぎることなく、物事をよく考えます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hodelinjens klarhet antyder pålitelige mentale prosesser og god dømmekraft. Du tenker ting gjennom uten å overtenke."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wyrazistość twojej Linii Głowy sugeruje niezawodne procesy umysłowe i dobry osąd. Przemyślasz rzeczy bez nadmiernego rozważania."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A clareza de sua Linha da Cabeça sugere processos mentais confiáveis e bom julgamento. Você pensa bem as coisas sem pensar demais."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Huvudlinjes tydlighet antyder tillförlitliga mentala processer och gott omdöme. Du tänker igenom saker utan att övertänka."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чіткість вашої Лінії Голови свідчить про надійні розумові процеси та добре судження. Ви обмірковуєте речі, не переобтяжуючи себе роздумами."
           }
         }
       }
     },
     "palm.line.head.length.long" : {
       "comment" : "Head line long length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine lange Kopflinie offenbart einen komplexen, analytischen Geist. Du betrachtest viele Perspektiven und genießt tiefes Nachdenken und Planen.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your long Head Line reveals a complex, analytical mind. You consider many angles and enjoy deep thinking and planning.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu larga Línea de la Cabeza revela una mente compleja y analítica. Consideras muchos ángulos y disfrutas del pensamiento profundo y la planificación.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre longue ligne de Tête révèle un esprit complexe et analytique. Vous considérez de nombreux angles et appréciez la réflexion profonde et la planification.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua lunga Linea della Testa rivela una mente complessa e analitica. Consideri molti angoli e ti piace pensare in profondità e pianificare.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの長い頭脳線は、複雑で分析的な心を明らかにします。多くの角度から考え、深い思考と計画を楽しんでいます。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din lange Hodelinje avslører et komplekst, analytisk sinn. Du vurderer mange vinkler og nyter dyp tenkning og planlegging.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja długa Linia Głowy ujawnia złożony, analityczny umysł. Rozważasz wiele perspektyw i lubisz głębokie myślenie i planowanie.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua longa Linha da Cabeça revela uma mente complexa e analítica. Você considera muitos ângulos e aprecia pensamento profundo e planejamento.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din långa Huvudlinje avslöjar ett komplext, analytiskt sinne. Du överväger många vinklar och njuter av djupt tänkande och planering.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша довга Лінія Голови розкриває складний, аналітичний розум. Ви розглядаєте багато кутів і насолоджуєтесь глибоким мисленням і плануванням.\n\n"
           }
         }
       }
     },
     "palm.line.head.length.medium" : {
       "comment" : "Head line medium length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Kopflinie deutet auf ausgewogene mentale Fähigkeiten hin. Du kannst sowohl praktisch als auch kreativ denken, je nach Situation.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your Head Line indicates balanced mental abilities. You can think both practically and creatively as situations require.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Línea de la Cabeza indica habilidades mentales equilibradas. Puedes pensar tanto práctica como creativamente según lo requieran las situaciones.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Tête indique des capacités mentales équilibrées. Vous pouvez penser à la fois de manière pratique et créative selon les situations.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Linea della Testa indica capacità mentali equilibrate. Puoi pensare sia in modo pratico che creativo a seconda delle situazioni.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの頭脳線は、バランスの取れた精神的能力を示しています。状況に応じて、実用的かつ創造的に考えることができます。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hodelinjen din indikerer balanserte mentale evner. Du kan tenke både praktisk og kreativt etter hva situasjoner krever.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja Linia Głowy wskazuje na zrównoważone zdolności umysłowe. Możesz myśleć zarówno praktycznie, jak i kreatywnie, w zależności od sytuacji.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Linha da Cabeça indica habilidades mentais equilibradas. Você pode pensar tanto de forma prática quanto criativa conforme as situações exigem.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Huvudlinje indikerar balanserade mentala förmågor. Du kan tänka både praktiskt och kreativt beroende på vad situationer kräver.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша Лінія Голови вказує на збалансовані розумові здібності. Ви можете мислити як практично, так і творчо, залежно від ситуації.\n\n"
           }
         }
       }
     },
     "palm.line.head.length.short" : {
       "comment" : "Head line short length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine kürzere Kopflinie deutet darauf hin, dass du entscheidungsfreudig und direkt in deinem Denken bist. Du konzentrierst dich auf praktische Angelegenheiten und kommst schnell zum Punkt.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your shorter Head Line suggests you're decisive and direct in your thinking. You focus on practical matters and get to the point quickly.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Línea de la Cabeza más corta sugiere que eres decidido y directo en tu pensamiento. Te enfocas en asuntos prácticos y vas al grano rápidamente.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Tête plus courte suggère que vous êtes décisif et direct dans votre pensée. Vous vous concentrez sur les questions pratiques et allez droit au but rapidement.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Linea della Testa più corta suggerisce che sei decisivo e diretto nel tuo pensiero. Ti concentri su questioni pratiche e vai dritto al punto rapidamente.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの短い頭脳線は、あなたが決断力があり、思考が直接的であることを示唆しています。実用的な事柄に焦点を当て、すぐに要点に達します。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din kortere Hodelinje antyder at du er besluttsom og direkte i tenkningen din. Du fokuserer på praktiske saker og kommer raskt til poenget.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja krótsza Linia Głowy sugeruje, że jesteś zdecydowany i bezpośredni w myśleniu. Skupiasz się na praktycznych sprawach i szybko dochodzisz do sedna.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Linha da Cabeça mais curta sugere que você é decisivo e direto em seu pensamento. Você se concentra em questões práticas e vai direto ao ponto rapidamente.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din kortare Huvudlinje antyder att du är beslutsam och direkt i ditt tänkande. Du fokuserar på praktiska frågor och kommer snabbt till poängen.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша коротша Лінія Голови свідчить про те, що ви рішучі та прямолінійні у своєму мисленні. Ви зосереджуєтесь на практичних питаннях і швидко переходите до суті.\n\n"
           }
         }
       }
     },
     "palm.line.head.title" : {
       "comment" : "Head line title",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Kopflinie - Intellekt & Mentaler Ansatz**\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "**Head Line - Intellect & Mental Approach**\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Línea de la Cabeza - Intelecto y Enfoque Mental**\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Ligne de Tête - Intellect et Approche Mentale**\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linea della Testa - Intelletto e Approccio Mentale**\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**頭脳線 - 知性と精神的アプローチ**\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Hodelinje - Intellekt og Mental Tilnærming**\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linia Głowy - Intelekt i Podejście Mentalne**\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linha da Cabeça - Intelecto e Abordagem Mental**\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Huvudlinje - Intellekt och Mental Approach**\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Лінія Голови - Інтелект і Ментальний Підхід**\n\n"
           }
         }
       }
     },
     "palm.line.heart.depth.deep" : {
       "comment" : "Heart line deep depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Tiefe deiner Herzlinie deutet auf intensive emotionale Erfahrungen hin. Du fühlst Dinge tiefgründig und bist zu großer Leidenschaft und Empathie fähig."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The depth of your Heart Line indicates intense emotional experiences. You feel things profoundly and are capable of great passion and empathy."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La profundidad de tu Línea del Corazón indica experiencias emocionales intensas. Sientes las cosas profundamente y eres capaz de gran pasión y empatía."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La profondeur de votre ligne de Cœur indique des expériences émotionnelles intenses. Vous ressentez les choses profondément et êtes capable de grande passion et empathie."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La profondità della tua Linea del Cuore indica esperienze emotive intense. Senti le cose profondamente e sei capace di grande passione ed empatia."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの感情線の深さは、強烈な感情的経験を示しています。物事を深く感じ、大きな情熱と共感の能力があります。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dybden av Hjertelinjen din indikerer intense emosjonelle opplevelser. Du føler ting dypt og er i stand til stor lidenskap og empati."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Głębokość twojej Linii Serca wskazuje na intensywne doświadczenia emocjonalne. Czujesz rzeczy głęboko i jesteś zdolny do wielkiej pasji i empatii."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A profundidade de sua Linha do Coração indica experiências emocionais intensas. Você sente as coisas profundamente e é capaz de grande paixão e empatia."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Djupet i din Hjärtlinje indikerar intensiva emotionella upplevelser. Du känner saker djupt och är kapabel till stor passion och empati."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Глибина вашої Лінії Серця вказує на інтенсивні емоційні переживання. Ви глибоко відчуваєте речі і здатні на велику пристрасть і співчуття."
           }
         }
       }
     },
     "palm.line.heart.depth.faint" : {
       "comment" : "Heart line faint depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine subtile Herzlinie kann auf eine eher zurückhaltende emotionale Natur hinweisen oder auf jemanden, der Gefühle durch Taten statt Worte ausdrückt."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "A subtle Heart Line can indicate a more reserved emotional nature, or someone who expresses feelings through actions rather than words."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una Línea del Corazón sutil puede indicar una naturaleza emocional más reservada, o alguien que expresa sentimientos a través de acciones en lugar de palabras."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une ligne de Cœur subtile peut indiquer une nature émotionnelle plus réservée, ou quelqu'un qui exprime ses sentiments par des actions plutôt que par des mots."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una Linea del Cuore sottile può indicare una natura emotiva più riservata, o qualcuno che esprime i sentimenti attraverso azioni piuttosto che parole."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微かな感情線は、より控えめな感情的性質、または言葉よりも行動で感情を表現する人を示す可能性があります。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En subtil Hjertelinje kan indikere en mer reservert emosjonell natur, eller noen som uttrykker følelser gjennom handlinger fremfor ord."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subtelna Linia Serca może wskazywać na bardziej powściągliwą naturę emocjonalną lub kogoś, kto wyraża uczucia poprzez czyny, a nie słowa."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma Linha do Coração sutil pode indicar uma natureza emocional mais reservada, ou alguém que expressa sentimentos através de ações ao invés de palavras."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En subtil Hjärtlinje kan indikera en mer reserverad emotionell natur, eller någon som uttrycker känslor genom handlingar snarare än ord."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тонка Лінія Серця може вказувати на більш стриману емоційну природу, або на когось, хто виражає почуття через дії, а не слова."
           }
         }
       }
     },
     "palm.line.heart.depth.moderate" : {
       "comment" : "Heart line moderate depth interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die moderate Tiefe deiner Herzlinie deutet auf emotionale Stabilität und Widerstandsfähigkeit hin. Du kannst tief fühlen, ohne überwältigt zu werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your Heart Line's moderate depth suggests emotional stability and resilience. You can feel deeply without being overwhelmed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La profundidad moderada de tu Línea del Corazón sugiere estabilidad emocional y resiliencia. Puedes sentir profundamente sin sentirte abrumado."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La profondeur modérée de votre ligne de Cœur suggère une stabilité émotionnelle et une résilience. Vous pouvez ressentir profondément sans être submergé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La profondità moderata della tua Linea del Cuore suggerisce stabilità emotiva e resilienza. Puoi sentire profondamente senza essere sopraffatto."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの感情線の適度な深さは、感情的な安定性と回復力を示唆しています。圧倒されることなく深く感じることができます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjertelinjens moderate dybde antyder emosjonell stabilitet og motstandskraft. Du kan føle dypt uten å bli overveldet."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umiarkowana głębokość twojej Linii Serca sugeruje stabilność emocjonalną i odporność. Możesz czuć głęboko bez przytłoczenia."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A profundidade moderada de sua Linha do Coração sugere estabilidade emocional e resiliência. Você pode sentir profundamente sem ser sobrecarregado."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Hjärtlinjes måttliga djup antyder emotionell stabilitet och motståndskraft. Du kan känna djupt utan att bli överväldigad."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помірна глибина вашої Лінії Серця свідчить про емоційну стабільність і стійкість. Ви можете відчувати глибоко, не почуваючись переповненим."
           }
         }
       }
     },
     "palm.line.heart.length.long" : {
       "comment" : "Heart line long length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine lange Herzlinie offenbart eine großzügige, liebevolle Natur. Du hast viel Liebe zu geben und bildest tiefe, dauerhafte emotionale Bindungen mit anderen.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your long Heart Line reveals a generous, loving nature. You have much love to give and form deep, lasting emotional bonds with others.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu larga Línea del Corazón revela una naturaleza generosa y amorosa. Tienes mucho amor para dar y formas vínculos emocionales profundos y duraderos con los demás.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre longue ligne de Cœur révèle une nature généreuse et aimante. Vous avez beaucoup d'amour à donner et formez des liens émotionnels profonds et durables avec les autres.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua lunga Linea del Cuore rivela una natura generosa e amorevole. Hai molto amore da dare e formi legami emotivi profondi e duraturi con gli altri.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの長い感情線は、寛大で愛情深い性質を明らかにします。多くの愛を与え、他者と深く永続的な感情的絆を築きます。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din lange Hjertelinje avslører en sjenerøs, kjærlig natur. Du har mye kjærlighet å gi og danner dype, varige emosjonelle bånd med andre.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja długa Linia Serca ujawnia hojną, kochającą naturę. Masz wiele miłości do dania i tworzysz głębokie, trwałe więzi emocjonalne z innymi.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua longa Linha do Coração revela uma natureza generosa e amorosa. Você tem muito amor para dar e forma vínculos emocionais profundos e duradouros com os outros.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din långa Hjärtlinje avslöjar en generös, kärleksfull natur. Du har mycket kärlek att ge och bildar djupa, varaktiga emotionella band med andra.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша довга Лінія Серця розкриває щедру, люблячу натуру. У вас є багато любові, яку можна дарувати, і ви створюєте глибокі, тривалі емоційні зв'язки з іншими.\n\n"
           }
         }
       }
     },
     "palm.line.heart.length.medium" : {
       "comment" : "Heart line medium length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Herzlinie zeigt einen ausgewogenen Umgang mit Emotionen. Du kannst dich tief mit anderen verbinden und dabei gesunde Grenzen wahren.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your Heart Line shows a balanced approach to emotions. You can connect deeply with others while maintaining healthy boundaries.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Línea del Corazón muestra un enfoque equilibrado hacia las emociones. Puedes conectarte profundamente con los demás mientras mantienes límites saludables.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Cœur montre une approche équilibrée des émotions. Vous pouvez vous connecter profondément avec les autres tout en maintenant des limites saines.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Linea del Cuore mostra un approccio equilibrato alle emozioni. Puoi connetterti profondamente con gli altri mantenendo confini sani.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの感情線は、感情へのバランスの取れたアプローチを示しています。健全な境界線を維持しながら、他者と深くつながることができます。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjertelinjen din viser en balansert tilnærming til følelser. Du kan knytte deg dypt til andre samtidig som du opprettholder sunne grenser.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja Linia Serca pokazuje zrównoważone podejście do emocji. Możesz głęboko łączyć się z innymi, jednocześnie utrzymując zdrowe granice.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Linha do Coração mostra uma abordagem equilibrada das emoções. Você pode se conectar profundamente com os outros mantendo limites saudáveis.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Hjärtlinje visar ett balanserat förhållningssätt till känslor. Du kan koppla djupt till andra samtidigt som du upprätthåller sunda gränser.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша Лінія Серця показує збалансований підхід до емоцій. Ви можете глибоко зв'язуватися з іншими, зберігаючи здорові межі.\n\n"
           }
         }
       }
     },
     "palm.line.heart.length.short" : {
       "comment" : "Heart line short length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Herzlinie ist relativ kurz, was darauf hindeutet, dass du in deinen emotionalen Ausdrücken wählerisch sein könntest. Du schätzt Qualität über Quantität in Beziehungen und bevorzugst möglicherweise einen kleinen Kreis tiefer Verbindungen.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your Heart Line is relatively short, suggesting you may be selective in your emotional expressions. You value quality over quantity in relationships and may prefer a small circle of deep connections.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Línea del Corazón es relativamente corta, lo que sugiere que puedes ser selectivo en tus expresiones emocionales. Valoras la calidad sobre la cantidad en las relaciones y puedes preferir un círculo pequeño de conexiones profundas.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Cœur est relativement courte, suggérant que vous pouvez être sélectif dans vos expressions émotionnelles. Vous privilégiez la qualité à la quantité dans les relations et pouvez préférer un petit cercle de connexions profondes.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Linea del Cuore è relativamente corta, suggerendo che potresti essere selettivo nelle tue espressioni emotive. Apprezzi la qualità rispetto alla quantità nelle relazioni e potresti preferire una piccola cerchia di connessioni profonde.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの感情線は比較的短く、感情表現において選択的である可能性を示唆しています。人間関係において量より質を重視し、深いつながりの小さな輪を好むかもしれません。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjertelinjen din er relativt kort, noe som antyder at du kan være selektiv i dine emosjonelle uttrykk. Du verdsetter kvalitet fremfor kvantitet i relasjoner og foretrekker kanskje en liten krets av dype forbindelser.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja Linia Serca jest stosunkowo krótka, co sugeruje, że możesz być wybiórczy w swoich emocjonalnych wyrazach. Cenisz jakość nad ilością w relacjach i możesz preferować mały krąg głębokich połączeń.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Linha do Coração é relativamente curta, sugerindo que você pode ser seletivo em suas expressões emocionais. Você valoriza qualidade sobre quantidade em relacionamentos e pode preferir um círculo pequeno de conexões profundas.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Hjärtlinje är relativt kort, vilket antyder att du kan vara selektiv i dina emotionella uttryck. Du värdesätter kvalitet framför kvantitet i relationer och kanske föredrar en liten krets av djupa kopplingar.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша Лінія Серця відносно коротка, що свідчить про те, що ви можете бути вибірковими у своїх емоційних виразах. Ви цінуєте якість понад кількість у стосунках і, можливо, надаєте перевагу невеликому колу глибоких зв'язків.\n\n"
           }
         }
       }
     },
     "palm.line.heart.title" : {
       "comment" : "Heart line title",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Herzlinie - Emotionen & Beziehungen**\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "**Heart Line - Emotions & Relationships**\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Línea del Corazón - Emociones y Relaciones**\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Ligne de Cœur - Émotions et Relations**\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linea del Cuore - Emozioni e Relazioni**\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**感情線 - 感情と人間関係**\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Hjertelinje - Følelser og Relasjoner**\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linia Serca - Emocje i Relacje**\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linha do Coração - Emoções e Relacionamentos**\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Hjärtlinje - Känslor och Relationer**\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Лінія Серця - Емоції та Стосунки**\n\n"
           }
         }
       }
     },
     "palm.line.life.continuity.broken" : {
       "comment" : "Life line broken continuity interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unterbrechungen in deiner Lebenslinie deuten auf große Lebensveränderungen oder transformative Phasen hin. Dies sind Gelegenheiten für Neuerfindung und Wachstum."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Breaks in your Life Line suggest major life changes or transformative periods. These are opportunities for reinvention and growth."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las interrupciones en tu Línea de la Vida sugieren cambios importantes en la vida o períodos transformadores. Estas son oportunidades para la reinvención y el crecimiento."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les ruptures dans votre ligne de Vie suggèrent des changements de vie majeurs ou des périodes transformatrices. Ce sont des opportunités de réinvention et de croissance."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le interruzioni nella tua Linea della Vita suggeriscono importanti cambiamenti di vita o periodi trasformativi. Queste sono opportunità per la reinvenzione e la crescita."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生命線の途切れは、人生における大きな変化や変容の時期を示唆しています。これらは再発明と成長の機会です。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brudd i Livslinjen din antyder store livsendringer eller transformerende perioder. Dette er muligheter for gjenoppfinnelse og vekst."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przerwy w twojej Linii Życia sugerują poważne zmiany życiowe lub transformacyjne okresy. Są to okazje do reinwencji i wzrostu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interrupções em sua Linha da Vida sugerem grandes mudanças de vida ou períodos transformadores. Estas são oportunidades para reinvenção e crescimento."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbrott i din Livslinje antyder stora livsförändringar eller transformativa perioder. Dessa är möjligheter för återuppfinnande och tillväxt."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розриви у вашій Лінії Життя вказують на важливі життєві зміни або трансформаційні періоди. Це можливості для перевтілення та зростання."
           }
         }
       }
     },
     "palm.line.life.continuity.chained" : {
       "comment" : "Life line chained continuity interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein kettenartiges Muster in deiner Lebenslinie kann auf schwankende Energieniveaus oder einen Weg hinweisen, der von verschiedenen Herausforderungen geprägt ist, die dich letztendlich stärken."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "A chained pattern in your Life Line can indicate fluctuating energy levels or a path marked by various challenges that ultimately strengthen you."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un patrón encadenado en tu Línea de la Vida puede indicar niveles de energía fluctuantes o un camino marcado por varios desafíos que en última instancia te fortalecen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un motif en chaîne dans votre ligne de Vie peut indiquer des niveaux d'énergie fluctuants ou un chemin marqué par divers défis qui finissent par vous renforcer."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un pattern a catena nella tua Linea della Vita può indicare livelli di energia fluttuanti o un percorso segnato da varie sfide che alla fine ti rafforzano."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生命線の鎖状のパターンは、変動するエネルギーレベル、または最終的にあなたを強くする様々な課題によって特徴づけられる道を示す可能性があります。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et kjedet mønster i Livslinjen din kan indikere svingende energinivåer eller en vei preget av ulike utfordringer som til slutt styrker deg."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Łańcuchowy wzór w twojej Linii Życia może wskazywać na wahające się poziomy energii lub ścieżkę naznaczoną różnymi wyzwaniami, które ostatecznie cię wzmacniają."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um padrão encadeado em sua Linha da Vida pode indicar níveis de energia flutuantes ou um caminho marcado por vários desafios que, em última análise, o fortalecem."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett kedjat mönster i din Livslinje kan indikera fluktuerande energinivåer eller en väg präglad av olika utmaningar som i slutändan stärker dig."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ланцюговий візерунок у вашій Лінії Життя може вказувати на коливання рівня енергії або шлях, позначений різними викликами, які зрештою вас зміцнюють."
           }
         }
       }
     },
     "palm.line.life.continuity.continuous" : {
       "comment" : "Life line continuous continuity interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der kontinuierliche Verlauf deiner Lebenslinie deutet auf einen stetigen Lebensweg mit sanften Übergängen hin. Du passt dich gut an die Veränderungen des Lebens an."
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The continuous flow of your Life Line indicates a steady life path with smooth transitions. You adapt well to life's changes."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El flujo continuo de tu Línea de la Vida indica un camino de vida constante con transiciones suaves. Te adaptas bien a los cambios de la vida."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le flux continu de votre ligne de Vie indique un chemin de vie régulier avec des transitions en douceur. Vous vous adaptez bien aux changements de la vie."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il flusso continuo della tua Linea della Vita indica un percorso di vita stabile con transizioni fluide. Ti adatti bene ai cambiamenti della vita."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生命線の連続した流れは、スムーズな移行を伴う安定した人生の道を示しています。人生の変化によく適応します。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den kontinuerlige flyten i Livslinjen din indikerer en jevn livssti med jevne overganger. Du tilpasser deg godt til livets forandringer."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciągły przepływ twojej Linii Życia wskazuje na stabilną ścieżkę życiową z płynnymi przejściami. Dobrze dostosowujesz się do zmian życiowych."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O fluxo contínuo de sua Linha da Vida indica um caminho de vida estável com transições suaves. Você se adapta bem às mudanças da vida."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det kontinuerliga flödet av din Livslinje indikerar en stadig livsväg med smidiga övergångar. Du anpassar dig väl till livets förändringar."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безперервний потік вашої Лінії Життя вказує на стабільний життєвий шлях з плавними переходами. Ви добре адаптуєтесь до життєвих змін."
           }
         }
       }
     },
     "palm.line.life.length.long" : {
       "comment" : "Life line long length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine lange Lebenslinie deutet auf robuste Vitalität und Ausdauer hin. Du hast die Energie und Widerstandsfähigkeit für ein erfülltes, dynamisches Leben.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your long Life Line suggests robust vitality and endurance. You have the energy and resilience for a full, dynamic life.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu larga Línea de la Vida sugiere vitalidad y resistencia robustas. Tienes la energía y resiliencia para una vida plena y dinámica.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre longue ligne de Vie suggère une vitalité et une endurance robustes. Vous avez l'énergie et la résilience pour une vie pleine et dynamique.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua lunga Linea della Vita suggerisce vitalità e resistenza robuste. Hai l'energia e la resilienza per una vita piena e dinamica.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの長い生命線は、強固な活力と持久力を示唆しています。充実したダイナミックな人生のためのエネルギーと回復力があります。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din lange Livslinje antyder robust vitalitet og utholdenhet. Du har energien og motstandskraften for et fullt, dynamisk liv.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja długa Linia Życia sugeruje solidną witalność i wytrzymałość. Masz energię i odporność na pełne, dynamiczne życie.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua longa Linha da Vida sugere vitalidade e resistência robustas. Você tem a energia e resiliência para uma vida plena e dinâmica.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din långa Livslinje antyder robust vitalitet och uthållighet. Du har energin och motståndskraften för ett fullt, dynamiskt liv.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша довга Лінія Життя свідчить про міцну життєву енергію та витривалість. У вас є енергія та стійкість для повноцінного, динамічного життя.\n\n"
           }
         }
       }
     },
     "palm.line.life.length.medium" : {
       "comment" : "Life line medium length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Lebenslinie deutet auf stetige, zuverlässige Energie während deiner Reise hin. Du hast die Ausdauer für das, was das Leben bringt.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Your Life Line indicates steady, reliable energy throughout your journey. You have the stamina for what life brings.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Línea de la Vida indica energía constante y confiable a lo largo de tu viaje. Tienes la resistencia para lo que la vida trae.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre ligne de Vie indique une énergie constante et fiable tout au long de votre parcours. Vous avez l'endurance pour ce que la vie apporte.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Linea della Vita indica energia costante e affidabile durante tutto il tuo viaggio. Hai la resistenza per ciò che la vita porta.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生命線は、旅路を通じて安定した信頼できるエネルギーを示しています。人生が運んでくるものに対するスタミナがあります。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livslinjen din indikerer jevn, pålitelig energi gjennom reisen din. Du har utholdenhet for det livet bringer.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja Linia Życia wskazuje na stałą, niezawodną energię przez całą twoją podróż. Masz wytrzymałość na to, co przynosi życie.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Linha da Vida indica energia constante e confiável ao longo de sua jornada. Você tem a resistência para o que a vida traz.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Livslinje indikerar stadig, pålitlig energi genom hela din resa. Du har uthållighet för vad livet ger.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша Лінія Життя вказує на стабільну, надійну енергію протягом усієї вашої подорожі. У вас є витривалість для того, що приносить життя.\n\n"
           }
         }
       }
     },
     "palm.line.life.length.short" : {
       "comment" : "Life line short length interpretation",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Länge deiner Lebenslinie spricht von der Intensität und nicht der Dauer deiner Vitalität. Du lebst jeden Moment voll aus.\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The length of your Life Line speaks to the intensity rather than duration of your vitality. You live fully in each moment.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La longitud de tu Línea de la Vida habla de la intensidad en lugar de la duración de tu vitalidad. Vives plenamente cada momento.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La longueur de votre ligne de Vie parle de l'intensité plutôt que de la durée de votre vitalité. Vous vivez pleinement chaque instant.\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La lunghezza della tua Linea della Vita parla dell'intensità piuttosto che della durata della tua vitalità. Vivi pienamente ogni momento.\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生命線の長さは、活力の持続期間ではなく強度を物語っています。あなたは一瞬一瞬を完全に生きています。\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lengden på Livslinjen din taler om intensiteten snarere enn varigheten av din vitalitet. Du lever fullt ut i hvert øyeblikk.\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Długość twojej Linii Życia mówi o intensywności, a nie o czasie trwania twojej witalności. Żyjesz pełnią każdej chwili.\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O comprimento de sua Linha da Vida fala sobre a intensidade em vez da duração de sua vitalidade. Você vive plenamente cada momento.\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Längden på din Livslinje talar om intensiteten snarare än varaktigheten av din vitalitet. Du lever fullt ut i varje ögonblick.\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Довжина вашої Лінії Життя говорить про інтенсивність, а не тривалість вашої життєвої енергії. Ви живете повністю в кожній миті.\n\n"
           }
         }
       }
     },
     "palm.line.life.title" : {
       "comment" : "Life line title",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Lebenslinie - Vitalität & Lebensweg**\n\n"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "**Life Line - Vitality & Life Path**\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Línea de la Vida - Vitalidad y Camino de Vida**\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Ligne de Vie - Vitalité et Chemin de Vie**\n\n"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linea della Vita - Vitalità e Percorso di Vita**\n\n"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**生命線 - 活力と人生の道**\n\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Livslinje - Vitalitet og Livssti**\n\n"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linia Życia - Witalność i Ścieżka Życia**\n\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Linha da Vida - Vitalidade e Caminho de Vida**\n\n"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Livslinje - Vitalitet och Livsväg**\n\n"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Лінія Життя - Життєва Енергія та Життєвий Шлях**\n\n"
           }
         }
       }
     },
     "palm.quickSummary.fate" : {
       "comment" : "Quick summary for fate line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - zeigt die Rolle des Schicksals und äußerer Einflüsse auf deinen Weg"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%@ - shows the role of destiny and external influences in your path"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - muestra el papel del destino y las influencias externas en tu camino"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - montre le rôle du destin et des influences extérieures dans votre chemin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - mostra il ruolo del destino e delle influenze esterne nel tuo percorso"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - あなたの道における運命と外的影響の役割を示します"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - viser rollen til skjebne og ytre påvirkninger i din vei"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - pokazuje rolę przeznaczenia i wpływów zewnętrznych na twojej ścieżce"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - mostra o papel do destino e influências externas em seu caminho"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - visar rollen av öde och yttre influenser i din väg"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ - показує роль долі та зовнішніх впливів на вашому шляху"
           }
         }
       }
     },
     "palm.quickSummary.head" : {
       "comment" : "Quick summary for head line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ und %2$@ - zeigt deinen mentalen Ansatz und Entscheidungsstil"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ and %2$@ - indicates your mental approach and decision-making style"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ y %2$@ - indica tu enfoque mental y estilo de toma de decisiones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ et %2$@ - indique votre approche mentale et votre style de prise de décision"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ e %2$@ - indica il tuo approccio mentale e stile decisionale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@と%2$@ - あなたの精神的アプローチと意思決定スタイルを示します"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ og %2$@ - indikerer din mentale tilnærming og beslutningsstil"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ i %2$@ - wskazuje twoje podejście mentalne i styl podejmowania decyzji"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ e %2$@ - indica sua abordagem mental e estilo de tomada de decisões"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ och %2$@ - indikerar din mentala approach och beslutsstil"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ та %2$@ - вказує на ваш ментальний підхід і стиль прийняття рішень"
           }
         }
       }
     },
     "palm.quickSummary.heart" : {
       "comment" : "Quick summary for heart line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ und %2$@ - spiegelt deine emotionale Tiefe und Fähigkeit zur Verbindung wider"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ and %2$@ - reflects your emotional depth and capacity for connection"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ y %2$@ - refleja tu profundidad emocional y capacidad de conexión"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ et %2$@ - reflète votre profondeur émotionnelle et votre capacité de connexion"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ e %2$@ - riflette la tua profondità emotiva e capacità di connessione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@と%2$@ - あなたの感情的な深さとつながりの能力を反映します"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ og %2$@ - gjenspeiler din emosjonelle dybde og evne til forbindelse"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ i %2$@ - odzwierciedla twoją głębię emocjonalną i zdolność do łączenia się"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ e %2$@ - reflete sua profundidade emocional e capacidade de conexão"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ och %2$@ - återspeglar ditt emotionella djup och förmåga till kontakt"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ та %2$@ - відображає вашу емоційну глибину та здатність до зв'язку"
           }
         }
       }
     },
     "palm.quickSummary.life" : {
       "comment" : "Quick summary for life line",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ und %2$@ - repräsentiert deine Vitalität und Lebensreise"
+          }
+        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ and %2$@ - represents your vitality and life journey"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ y %2$@ - representa tu vitalidad y viaje de vida"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ et %2$@ - représente votre vitalité et votre parcours de vie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ e %2$@ - rappresenta la tua vitalità e il tuo viaggio di vita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@と%2$@ - あなたの活力と人生の旅を表します"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ og %2$@ - representerer din vitalitet og livsreise"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ i %2$@ - reprezentuje twoją witalność i życiową podróż"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ e %2$@ - representa sua vitalidade e jornada de vida"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ och %2$@ - representerar din vitalitet och livsresa"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ та %2$@ - представляє вашу життєву енергію та життєву подорож"
           }
         }
       }
