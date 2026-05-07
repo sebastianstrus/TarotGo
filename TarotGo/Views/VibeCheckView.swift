@@ -55,44 +55,58 @@ struct VibeCheckView: View {
     private var headerView: some View {
         VStack(spacing: 8) {
             Text("🌍 Global Vibe Check")
-                .font(.system(size: 28, weight: .bold))
-                .foregroundStyle(.white)
+                .font(AppTheme.serifFont(size: 28, weight: .light))
+                .foregroundStyle(AppTheme.goldGradient)
             
             Text(todayDate)
                 .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(AppTheme.gold.opacity(0.7))
             
             Text("Tap any city to see its vibe")
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.5))
+                .foregroundStyle(AppTheme.gold.opacity(0.5))
         }
         .padding(.vertical, 16)
         .frame(maxWidth: .infinity)
-        .background(Color.black.opacity(0.3))
+        .background(
+            LinearGradient(
+                colors: [AppTheme.deepNavy.opacity(0.9), Color.black.opacity(0.8)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
     }
     
     private var mapView: some View {
-        Map(position: $position, interactionModes: [.pan, .zoom]) {
-            ForEach(vibes) { vibe in
-                Annotation(vibe.cityName, coordinate: CLLocationCoordinate2D(latitude: vibe.latitude, longitude: vibe.longitude)) {
-                    CityVibeMarker(vibe: vibe, isSelected: selectedVibe?.id == vibe.id)
-                        .onTapGesture {
-                            withAnimation(.spring(response: 0.3)) {
-                                selectedVibe = vibe
+        ZStack {
+            // Dark overlay to make map more mystical
+            Color.black.opacity(0.3)
+                .ignoresSafeArea()
+            
+            Map(position: $position, interactionModes: [.pan, .zoom]) {
+                ForEach(vibes) { vibe in
+                    Annotation(vibe.cityName, coordinate: CLLocationCoordinate2D(latitude: vibe.latitude, longitude: vibe.longitude)) {
+                        CityVibeMarker(vibe: vibe, isSelected: selectedVibe?.id == vibe.id)
+                            .onTapGesture {
+                                withAnimation(.spring(response: 0.3)) {
+                                    selectedVibe = vibe
+                                }
+                                
+                                // Center map on selected city
+                                withAnimation {
+                                    position = .region(MKCoordinateRegion(
+                                        center: CLLocationCoordinate2D(latitude: vibe.latitude, longitude: vibe.longitude),
+                                        span: MKCoordinateSpan(latitudeDelta: 20, longitudeDelta: 20)
+                                    ))
+                                }
                             }
-                            
-                            // Center map on selected city
-                            withAnimation {
-                                position = .region(MKCoordinateRegion(
-                                    center: CLLocationCoordinate2D(latitude: vibe.latitude, longitude: vibe.longitude),
-                                    span: MKCoordinateSpan(latitudeDelta: 20, longitudeDelta: 20)
-                                ))
-                            }
-                        }
+                    }
                 }
             }
+            .mapStyle(.standard(elevation: .flat, emphasis: .muted, pointsOfInterest: .excludingAll, showsTraffic: false))
+            .colorScheme(.dark)
+            .opacity(0.85)
         }
-        .mapStyle(.standard(elevation: .realistic, pointsOfInterest: .including([.publicTransport])))
         .overlay(alignment: .bottom) {
             if let vibe = selectedVibe {
                 vibeInfoCard(vibe: vibe)
@@ -106,26 +120,29 @@ struct VibeCheckView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(vibe.cityName)
-                        .font(.title2)
-                        .fontWeight(.bold)
+                        .font(AppTheme.serifFont(size: 22, weight: .medium))
+                        .foregroundStyle(AppTheme.goldGradient)
                     
                     Text(vibe.countryName)
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(AppTheme.gold.opacity(0.7))
                 }
                 
                 Spacer()
                 
                 Button(action: {
-                    dismiss()
+                    withAnimation {
+                        selectedVibe = nil
+                    }
                 }) {
                     Image(systemName: "xmark.circle.fill")
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(AppTheme.gold.opacity(0.6))
                         .font(.title3)
                 }
             }
             
             Divider()
+                .background(AppTheme.gold.opacity(0.3))
             
             HStack(spacing: 16) {
                 // Card image
@@ -135,7 +152,7 @@ struct VibeCheckView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 60, height: 90)
                         .cornerRadius(8)
-                        .shadow(radius: 4)
+                        .shadow(color: AppTheme.gold.opacity(0.3), radius: 4)
                 } else {
                     RoundedRectangle(cornerRadius: 8)
                         .fill(AppTheme.darkNavy)
@@ -143,24 +160,25 @@ struct VibeCheckView: View {
                         .overlay {
                             Text("?")
                                 .font(.largeTitle)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(AppTheme.gold)
                         }
                 }
                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text(vibe.card.name)
                         .font(.headline)
+                        .foregroundStyle(.white)
                     
                     Text("\(vibe.percentage)% of readings today")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(AppTheme.textSecondary)
                     
                     Button(action: {
                         showCardDetail = true
                     }) {
                         Text("View Card Details")
                             .font(.subheadline)
-                            .foregroundStyle(.blue)
+                            .foregroundStyle(AppTheme.gold)
                     }
                 }
                 
@@ -170,8 +188,18 @@ struct VibeCheckView: View {
         .padding(20)
         .background {
             RoundedRectangle(cornerRadius: 20)
-                .fill(.ultraThinMaterial)
-                .shadow(radius: 10)
+                .fill(
+                    LinearGradient(
+                        colors: [AppTheme.darkNavy.opacity(0.95), AppTheme.deepNavy.opacity(0.98)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+                .shadow(color: .black.opacity(0.5), radius: 20)
         }
         .padding()
     }
