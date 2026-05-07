@@ -9,13 +9,22 @@ import Foundation
 
 // Major palm lines analyzed in palmistry
 enum PalmLine: String, Codable {
-    case heart = "Heart Line"
-    case head = "Head Line"
-    case life = "Life Line"
-    case fate = "Fate Line"
+    case heart
+    case head
+    case life
+    case fate
     
     var localizedName: String {
-        rawValue
+        switch self {
+        case .heart:
+            return NSLocalizedString("palm.line.heart", comment: "Heart Line")
+        case .head:
+            return NSLocalizedString("palm.line.head", comment: "Head Line")
+        case .life:
+            return NSLocalizedString("palm.line.life", comment: "Life Line")
+        case .fate:
+            return NSLocalizedString("palm.line.fate", comment: "Fate Line")
+        }
     }
 }
 
@@ -33,9 +42,12 @@ struct PalmLineCharacteristics: Codable {
         
         var description: String {
             switch self {
-            case .short: return "Short"
-            case .medium: return "Medium"
-            case .long: return "Long"
+            case .short:
+                return NSLocalizedString("palm.lineLength.short", comment: "Short")
+            case .medium:
+                return NSLocalizedString("palm.lineLength.medium", comment: "Medium")
+            case .long:
+                return NSLocalizedString("palm.lineLength.long", comment: "Long")
             }
         }
     }
@@ -47,9 +59,12 @@ struct PalmLineCharacteristics: Codable {
         
         var description: String {
             switch self {
-            case .faint: return "Faint"
-            case .moderate: return "Moderate"
-            case .deep: return "Deep"
+            case .faint:
+                return NSLocalizedString("palm.lineDepth.faint", comment: "Faint")
+            case .moderate:
+                return NSLocalizedString("palm.lineDepth.moderate", comment: "Moderate")
+            case .deep:
+                return NSLocalizedString("palm.lineDepth.deep", comment: "Deep")
             }
         }
     }
@@ -61,9 +76,12 @@ struct PalmLineCharacteristics: Codable {
         
         var description: String {
             switch self {
-            case .continuous: return "Continuous"
-            case .broken: return "Broken"
-            case .chained: return "Chained"
+            case .continuous:
+                return NSLocalizedString("palm.lineContinuity.continuous", comment: "Continuous")
+            case .broken:
+                return NSLocalizedString("palm.lineContinuity.broken", comment: "Broken")
+            case .chained:
+                return NSLocalizedString("palm.lineContinuity.chained", comment: "Chained")
             }
         }
     }
@@ -111,7 +129,7 @@ struct PalmReading: Identifiable, Codable {
             characteristics = lifeLine
         case .fate:
             guard let fate = fateLine else {
-                return "The Fate Line is not prominently visible in your palm, which suggests a life path shaped by personal choices rather than external destiny. You have the freedom to create your own direction."
+                return NSLocalizedString("palm.fateLine.notVisible", comment: "The Fate Line is not prominently visible in your palm, which suggests a life path shaped by personal choices rather than external destiny. You have the freedom to create your own direction.")
             }
             characteristics = fate
         }

@@ -437,6 +437,27 @@ enum L10n {
     // MARK: - Palm Reading
     static let palmReadingTitle = NSLocalizedString("palmReading.title", comment: "Palm Reading")
     static let palmReadingSubtitle = NSLocalizedString("palmReading.subtitle", comment: "Discover the secrets in your palm")
+    
+    // Palm Line Names
+    static let palmLineHeart = NSLocalizedString("palm.line.heart", comment: "Heart Line")
+    static let palmLineHead = NSLocalizedString("palm.line.head", comment: "Head Line")
+    static let palmLineLife = NSLocalizedString("palm.line.life", comment: "Life Line")
+    static let palmLineFate = NSLocalizedString("palm.line.fate", comment: "Fate Line")
+    
+    // Palm Line Characteristics
+    static let palmLineLengthShort = NSLocalizedString("palm.lineLength.short", comment: "Short")
+    static let palmLineLengthMedium = NSLocalizedString("palm.lineLength.medium", comment: "Medium")
+    static let palmLineLengthLong = NSLocalizedString("palm.lineLength.long", comment: "Long")
+    
+    static let palmLineDepthFaint = NSLocalizedString("palm.lineDepth.faint", comment: "Faint")
+    static let palmLineDepthModerate = NSLocalizedString("palm.lineDepth.moderate", comment: "Moderate")
+    static let palmLineDepthDeep = NSLocalizedString("palm.lineDepth.deep", comment: "Deep")
+    
+    static let palmLineContinuityContinuous = NSLocalizedString("palm.lineContinuity.continuous", comment: "Continuous")
+    static let palmLineContinuityBroken = NSLocalizedString("palm.lineContinuity.broken", comment: "Broken")
+    static let palmLineContinuityChained = NSLocalizedString("palm.lineContinuity.chained", comment: "Chained")
+    
+    static let palmFateLineNotVisible = NSLocalizedString("palm.fateLine.notVisible", comment: "The Fate Line is not prominently visible in your palm, which suggests a life path shaped by personal choices rather than external destiny. You have the freedom to create your own direction.")
     static let palmReadingIntroTitle = NSLocalizedString("palmReading.intro.title", comment: "Discover the secrets in your palm")
     static let palmReadingOnDeviceTitle = NSLocalizedString("palmReading.onDevice.title", comment: "On-Device Analysis")
     static let palmReadingOnDeviceDesc = NSLocalizedString("palmReading.onDevice.desc", comment: "Your palm image is processed locally and never leaves your device. Complete privacy guaranteed.")
