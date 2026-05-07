@@ -1,2 +1,5 @@
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "TarotGo potrzebuje dostępu do kamery, aby przeczytać Twoją dłoń. Obraz jest przetwarzany lokalnie i nigdy nie opuszcza urządzenia.";
+
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Używamy Twojej lokalizacji, aby pokazać Ci, które karty Tarota są popularne w Twoim mieście w ramach Globalnego Sprawdzania Wibracji.";
