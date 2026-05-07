@@ -236,7 +236,7 @@ struct PalmResultView: View {
                         .font(.system(size: 15, weight: .light))
                         .foregroundColor(AppTheme.textSecondary)
                         .lineSpacing(6)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .multilineTextAlignment(.leading)
                 }
                 .padding(20)
                 .background(
@@ -346,12 +346,12 @@ struct PalmLineCard: View {
                             Text(PalmInterpretations.quickSummary(for: characteristics))
                                 .font(.system(size: 13, weight: .light))
                                 .foregroundColor(AppTheme.textTertiary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .multilineTextAlignment(.leading)
                         } else {
                             Text("Not prominently visible")
                                 .font(.system(size: 13, weight: .light))
                                 .foregroundColor(AppTheme.textTertiary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .multilineTextAlignment(.leading)
                         }
                     }
                     
@@ -372,7 +372,7 @@ struct PalmLineCard: View {
                     .font(.system(size: 14, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
                     .lineSpacing(5)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .multilineTextAlignment(.leading)
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
