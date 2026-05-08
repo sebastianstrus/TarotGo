@@ -15,9 +15,8 @@ enum TarotSuit: String, Codable {
     case wands = "Wands"
     
     var localizedName: String {
-        // For now, return the English name
-        // TODO: Add full localization when ready
-        return rawValue
+        let key = "suit.\(rawValue.lowercased().replacingOccurrences(of: " ", with: "_"))"
+        return NSLocalizedString(key, comment: "Tarot suit name")
     }
 }
 
@@ -34,10 +33,8 @@ struct TarotCard: Identifiable, Codable, Hashable {
     }
     
     var localizedName: String {
-        // For now, return the English name
-        // TODO: Add full card name localization
-        // This would require adding all 78 card names × 11 languages to String Catalog
-        return name
+        let key = "card.\(id)"
+        return NSLocalizedString(key, comment: "Tarot card name")
     }
     
     var localizedKeywords: [String] {
