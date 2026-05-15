@@ -60,7 +60,7 @@ struct RootView: View {
                 .transition(.opacity)
             } else {
                 if appViewModel.hasCompletedOnboarding {
-                    HomeView()
+                    MainTabView()
                         .transition(.opacity)
                 } else {
                     OnboardingFlowView()

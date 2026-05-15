@@ -17,6 +17,48 @@ enum L10n {
     static let edit = NSLocalizedString("common.edit", comment: "Edit button")
     static let continue_ = NSLocalizedString("common.continue", comment: "Continue button")
     static let getStarted = NSLocalizedString("common.getStarted", comment: "Get started button")
+    static let back = NSLocalizedString("common.back", comment: "Back button")
+    static let comingSoon = NSLocalizedString("common.comingSoon", comment: "Coming Soon label")
+    
+    // MARK: - Tab Bar
+    static let tabTarot = NSLocalizedString("tab.tarot", comment: "Tarot tab")
+    static let tabPalmistry = NSLocalizedString("tab.palmistry", comment: "Palmistry tab")
+    static let tabCosmic = NSLocalizedString("tab.cosmic", comment: "Cosmic tab")
+    static let tabSettings = NSLocalizedString("tab.settings", comment: "Settings tab")
+    
+    // MARK: - Tarot View
+    static let tarotViewTitle = NSLocalizedString("tarotView.title", comment: "Tarot")
+    static let tarotViewSubtitle = NSLocalizedString("tarotView.subtitle", comment: "Divine wisdom through the cards")
+    
+    // MARK: - Palmistry View
+    static let palmistryViewTitle = NSLocalizedString("palmistryView.title", comment: "Palmistry")
+    static let palmistryViewSubtitle = NSLocalizedString("palmistryView.subtitle", comment: "Secrets written in your hands")
+    
+    // MARK: - Cosmic View
+    static let cosmicViewTitle = NSLocalizedString("cosmicView.title", comment: "Cosmic")
+    static let cosmicViewSubtitle = NSLocalizedString("cosmicView.subtitle", comment: "Explore celestial influences")
+    
+    // MARK: - Learn Palmistry
+    static let learnPalmistryTitle = NSLocalizedString("learnPalmistry.title", comment: "Learn Palmistry")
+    static let learnPalmistrySubtitle = NSLocalizedString("learnPalmistry.subtitle", comment: "Master the art of palm reading")
+    static let learnPalmistryComingSoon = NSLocalizedString("learnPalmistry.comingSoon", comment: "Content coming soon")
+    static let learnPalmistryDescription = NSLocalizedString("learnPalmistry.description", comment: "Discover the ancient art of palmistry. Learn to read the lines, mounts, and shapes that reveal your destiny.")
+    
+    // MARK: - Cosmic Features
+    static let horoscopeTitle = NSLocalizedString("horoscope.title", comment: "Horoscope")
+    static let horoscopeSubtitle = NSLocalizedString("horoscope.subtitle", comment: "Your daily celestial guidance")
+    
+    static let cosmogramTitle = NSLocalizedString("cosmogram.title", comment: "Cosmogram")
+    static let cosmogramSubtitle = NSLocalizedString("cosmogram.subtitle", comment: "Your personal star chart")
+    
+    static let numerologyTitle = NSLocalizedString("numerology.title", comment: "Numerology")
+    static let numerologySubtitle = NSLocalizedString("numerology.subtitle", comment: "The power of numbers")
+    
+    static let lunarCalendarTitle = NSLocalizedString("lunarCalendar.title", comment: "Lunar Calendar")
+    static let lunarCalendarSubtitle = NSLocalizedString("lunarCalendar.subtitle", comment: "Follow the moon's phases")
+    
+    static let compatibilityTitle = NSLocalizedString("compatibility.title", comment: "Compatibility")
+    static let compatibilitySubtitle = NSLocalizedString("compatibility.subtitle", comment: "Discover your cosmic connections")
 
     // MARK: - Home
     static let homeTitle = NSLocalizedString("home.title", comment: "TarotGo title")
