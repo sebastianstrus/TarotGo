@@ -11,8 +11,21 @@ struct BirthDateInputView: View {
     @Binding var isPresented: Bool
     let onSave: (Date) -> Void
     
-    @State private var selectedDate: Date = Date()
+    @State private var selectedDate: Date
     @State private var showZodiacInfo: Bool = false
+    
+    init(isPresented: Binding<Bool>, onSave: @escaping (Date) -> Void) {
+        self._isPresented = isPresented
+        self.onSave = onSave
+        
+        // Initialize with saved birth date if available, otherwise use a default date (25 years ago)
+        if let savedDate = AstrologyService.shared.userBirthDate {
+            _selectedDate = State(initialValue: savedDate)
+        } else {
+            let defaultDate = Calendar.current.date(byAdding: .year, value: -25, to: Date()) ?? Date()
+            _selectedDate = State(initialValue: defaultDate)
+        }
+    }
     
     private var zodiacSign: ZodiacSign {
         AstrologyService.shared.zodiacSign(from: selectedDate)
