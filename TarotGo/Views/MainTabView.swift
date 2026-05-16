@@ -63,9 +63,9 @@ struct MainTabView: View {
             }
         } effects: { tab in
             switch tab {
-            case .tarot: [.bounce]
-            case .palmistry: [.bounce]
-            case .cosmic: [.bounce]
+            case .tarot: [.bounce.byLayer]
+            case .palmistry: [.bounce.byLayer]
+            case .cosmic: [.bounce.byLayer]
             case .settings: [.rotate]
             }
         }
