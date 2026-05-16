@@ -177,8 +177,8 @@ struct CardOfTheDayView: View {
         }
         .shadow(color: !isRevealed && isPressed ? AppTheme.gold.opacity(0.6) : .clear, radius: 20, x: 0, y: 0)
         .shadow(color: !isRevealed && isPressed ? AppTheme.gold.opacity(0.4) : .clear, radius: 40, x: 0, y: 0)
-        .animation(.easeInOut(duration: 1.0), value: isPressed)
-        .animation(.easeInOut(duration: 1.0), value: isRevealed)
+        .animation(.easeInOut(duration: 0.7), value: isPressed)
+        .animation(.easeInOut(duration: 0.7), value: isRevealed)
         .background(
             GeometryReader { geometry in
                 Color.clear
