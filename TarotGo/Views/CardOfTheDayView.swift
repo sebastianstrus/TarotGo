@@ -25,6 +25,13 @@ struct CardOfTheDayView: View {
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
     
+    // UserDefaults keys for persistence
+    private var todayKey: String {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: Date())
+        return "cardOfDay_\(components.year ?? 0)_\(components.month ?? 0)_\(components.day ?? 0)_revealed"
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -93,6 +100,7 @@ struct CardOfTheDayView: View {
             }
             .onAppear {
                 loadTodayCard()
+                loadRevealedState()
                 // Reset VortexSystem fire position to center
                 let fireSystem = VortexSystem.fire
                 fireSystem.position = [0.5, 0.5]
@@ -212,23 +220,60 @@ struct CardOfTheDayView: View {
                 }
                 
                 let keywords = isReversed ? card.localizedReversedKeywords : card.localizedKeywords
-                Text(keywords.joined(separator: " • "))
-                    .font(.system(size: 14, weight: .light))
-                    .foregroundColor(AppTheme.gold.opacity(0.9))
+                FlowLayout(spacing: 8) {
+                    ForEach(keywords, id: \.self) { keyword in
+                        Text(keyword)
+                            .font(.system(size: 14, weight: .light))
+                            .foregroundColor(AppTheme.textPrimary)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(AppTheme.darkNavy.opacity(0.5))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .stroke(AppTheme.gold.opacity(0.4), lineWidth: 1)
+                                    )
+                            )
+                    }
+                }
             }
             .padding(.bottom, 10)
             
-            // Today's message
-            VStack(alignment: .leading, spacing: 10) {
-                Text(L10n.cardOfDayTodaysMessage)
-                    .font(AppTheme.serifFont(size: 20, weight: .medium))
-                    .foregroundStyle(AppTheme.goldGradient)
-                
-                Text(card.interpretation(for: .general, reversed: isReversed))
-                    .font(.system(size: 16, weight: .light))
-                    .foregroundColor(AppTheme.textPrimary)
-                    .lineSpacing(8)
-            }
+            // Today's message - General
+            InterpretationCard(
+                title: L10n.cardOfDayTodaysMessage,
+                icon: "sparkles",
+                text: card.interpretation(for: .general, reversed: isReversed)
+            )
+            
+            // Love interpretation
+            InterpretationCard(
+                title: L10n.categoryLove,
+                icon: "heart.fill",
+                text: card.interpretation(for: .love, reversed: isReversed)
+            )
+            
+            // Career interpretation
+            InterpretationCard(
+                title: L10n.categoryCareer,
+                icon: "briefcase.fill",
+                text: card.interpretation(for: .career, reversed: isReversed)
+            )
+            
+            // Finance interpretation
+            InterpretationCard(
+                title: L10n.categoryFinance,
+                icon: "dollarsign.circle.fill",
+                text: card.interpretation(for: .finance, reversed: isReversed)
+            )
+            
+            // Health interpretation
+            InterpretationCard(
+                title: L10n.categoryHealth,
+                icon: "cross.fill",
+                text: card.interpretation(for: .health, reversed: isReversed)
+            )
             
             // Daily reflection prompt
             VStack(alignment: .leading, spacing: 10) {
@@ -269,6 +314,21 @@ struct CardOfTheDayView: View {
         isReversed = generator.next() % 100 < 30
     }
     
+    private func loadRevealedState() {
+        let wasRevealed = UserDefaults.standard.bool(forKey: todayKey)
+        if wasRevealed {
+            // Skip the ritual and show the card immediately
+            isRevealed = true
+            flipRotation = 180
+            showInterpretation = true
+            isFinishing = true
+        }
+    }
+    
+    private func saveRevealedState() {
+        UserDefaults.standard.set(true, forKey: todayKey)
+    }
+    
     private func resetRitual() {
         withAnimation(.spring(response: 0.3)) {
             isPressed = false
@@ -281,6 +341,9 @@ struct CardOfTheDayView: View {
         isPressed = false  // Stops the scaleEffect shrink
         
         HapticService.shared.impact(.heavy)
+        
+        // Save revealed state
+        saveRevealedState()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
             SoundService.shared.play(.cardFlip, volume: 0.8)
