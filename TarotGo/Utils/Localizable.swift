@@ -17,7 +17,6 @@ enum L10n {
     static let edit = NSLocalizedString("common.edit", comment: "Edit button")
     static let continue_ = NSLocalizedString("common.continue", comment: "Continue button")
     static let getStarted = NSLocalizedString("common.getStarted", comment: "Get started button")
-    static let back = NSLocalizedString("common.back", comment: "Back button")
     static let comingSoon = NSLocalizedString("common.comingSoon", comment: "Coming Soon label")
     
     // MARK: - Tab Bar

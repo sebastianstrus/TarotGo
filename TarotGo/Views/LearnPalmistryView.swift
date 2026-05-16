@@ -51,13 +51,9 @@ struct LearnPalmistryView: View {
                     SoundService.shared.play(.whoosh, volume: 0.4)
                     dismiss()
                 } label: {
-                    HStack(spacing: 5) {
-                        Image(systemName: "chevron.left")
-                            .font(.system(size: 16, weight: .semibold))
-                        Text(L10n.back)
-                            .font(.system(size: 17))
-                    }
-                    .foregroundColor(AppTheme.gold)
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(AppTheme.gold)
                 }
             }
         }
