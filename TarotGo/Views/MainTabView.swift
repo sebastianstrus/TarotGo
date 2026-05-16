@@ -22,8 +22,8 @@ enum TarotTab: AnimatedTabSelectionProtocol {
     
     var symbolImage: String {
         switch self {
-        case .tarot: return "sparkles"
-        case .palmistry: return "hand.raised.fill"
+        case .tarot: return "rectangle.portrait.on.rectangle.portrait.angled.fill"
+        case .palmistry: return "hand.raised.palm.facing.fill"
         case .cosmic: return "moon.stars.fill"
         case .settings: return "gearshape.fill"
         }
@@ -63,9 +63,9 @@ struct MainTabView: View {
             }
         } effects: { tab in
             switch tab {
-            case .tarot: [.bounce.up]
-            case .palmistry: [.wiggle]
-            case .cosmic: [.pulse]
+            case .tarot: [.bounce]
+            case .palmistry: [.bounce]
+            case .cosmic: [.bounce]
             case .settings: [.rotate]
             }
         }
