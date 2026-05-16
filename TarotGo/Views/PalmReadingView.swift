@@ -252,7 +252,7 @@ struct PalmResultView: View {
                 // Hand Shape Section
                 VStack(alignment: .leading, spacing: 16) {
                     HStack {
-                        Image(systemName: "hand.point.up.left.fill")
+                        Image(systemName: "hand.raised.palm.facing.fill")
                             .foregroundStyle(AppTheme.goldGradient)
                         Text(NSLocalizedString("palm.handShape.title", comment: "Your Hand Shape"))
                             .font(AppTheme.serifFont(size: 22, weight: .medium))

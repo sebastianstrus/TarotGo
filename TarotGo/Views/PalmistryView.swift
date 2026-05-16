@@ -24,7 +24,7 @@ struct PalmistryView: View {
                         
                         // Section title with gold styling
                         VStack(spacing: 10) {
-                            Image(systemName: "hand.raised.fill")
+                            Image(systemName: "hand.raised.palm.facing.fill")
                                 .font(.system(size: 50))
                                 .foregroundStyle(AppTheme.goldGradient)
                                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)

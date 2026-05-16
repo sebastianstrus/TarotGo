@@ -93,6 +93,9 @@ struct CardOfTheDayView: View {
             }
             .onAppear {
                 loadTodayCard()
+                // Reset VortexSystem fire position to center
+                let fireSystem = VortexSystem.fire
+                fireSystem.position = [0.5, 0.5]
             }
             .onReceive(pressTimer) { _ in
                 if isPressed && !isRevealed && !isFinishing {
