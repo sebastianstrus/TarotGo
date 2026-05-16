@@ -237,7 +237,7 @@ struct CardsGridTabView: View {
                 ForEach(uniqueCards, id: \.id) { card in
                     NavigationLink(destination: CardDetailView(card: card)) {
                         VStack(spacing: 8) {
-                            CardView(card: card)
+                            CardView(card: card, showFront: true)
                                 .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                             
                             Text(card.name)
@@ -312,7 +312,7 @@ struct YearEnergyDetailCard: View {
                 
                 NavigationLink(destination: CardDetailView(card: card)) {
                     HStack(spacing: 16) {
-                        CardView(card: card)
+                        CardView(card: card, showFront: true)
                             .frame(width: 80)
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                         
@@ -399,7 +399,7 @@ struct PositionDetailCard: View {
                 
                 NavigationLink(destination: CardDetailView(card: card)) {
                     HStack(spacing: 16) {
-                        CardView(card: card)
+                        CardView(card: card, showFront: true)
                             .frame(width: 80)
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                         
@@ -497,7 +497,7 @@ struct CardLinkView: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            CardView(card: card)
+            CardView(card: card, showFront: true)
                 .frame(width: 100)
                 .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                 .shadow(color: AppTheme.gold.opacity(0.2), radius: 10, x: 0, y: 5)
@@ -627,7 +627,7 @@ struct CurrentYearCard: View {
                 
                 NavigationLink(destination: CardDetailView(card: card)) {
                     HStack(spacing: 12) {
-                        CardView(card: card)
+                        CardView(card: card, showFront: true)
                             .frame(width: 60)
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                         
@@ -705,7 +705,7 @@ struct YearDetailCard: View {
                 
                 NavigationLink(destination: CardDetailView(card: card)) {
                     HStack(spacing: 12) {
-                        CardView(card: card)
+                        CardView(card: card, showFront: true)
                             .frame(width: 60)
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                         
