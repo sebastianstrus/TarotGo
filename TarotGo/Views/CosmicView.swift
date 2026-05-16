@@ -61,8 +61,7 @@ struct CosmicView: View {
                                 NavigationButton(
                                     icon: "sparkle.magnifyingglass",
                                     title: L10n.horoscopeTitle,
-                                    subtitle: L10n.horoscopeSubtitle,
-                                    isComingSoon: true
+                                    subtitle: L10n.horoscopeSubtitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -77,8 +76,7 @@ struct CosmicView: View {
                                 NavigationButton(
                                     icon: "circle.grid.cross.fill",
                                     title: L10n.cosmogramTitle,
-                                    subtitle: L10n.cosmogramSubtitle,
-                                    isComingSoon: true
+                                    subtitle: L10n.cosmogramSubtitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -93,8 +91,7 @@ struct CosmicView: View {
                                 NavigationButton(
                                     icon: "number.circle.fill",
                                     title: L10n.numerologyTitle,
-                                    subtitle: L10n.numerologySubtitle,
-                                    isComingSoon: true
+                                    subtitle: L10n.numerologySubtitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -109,8 +106,7 @@ struct CosmicView: View {
                                 NavigationButton(
                                     icon: "moon.circle.fill",
                                     title: L10n.lunarCalendarTitle,
-                                    subtitle: L10n.lunarCalendarSubtitle,
-                                    isComingSoon: true
+                                    subtitle: L10n.lunarCalendarSubtitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -125,8 +121,7 @@ struct CosmicView: View {
                                 NavigationButton(
                                     icon: "heart.circle.fill",
                                     title: L10n.compatibilityTitle,
-                                    subtitle: L10n.compatibilitySubtitle,
-                                    isComingSoon: true
+                                    subtitle: L10n.compatibilitySubtitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
