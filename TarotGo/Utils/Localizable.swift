@@ -32,10 +32,12 @@ enum L10n {
     // MARK: - Palmistry View
     static let palmistryViewTitle = NSLocalizedString("palmistryView.title", comment: "Palmistry")
     static let palmistryViewSubtitle = NSLocalizedString("palmistryView.subtitle", comment: "Secrets written in your hands")
+    static let palmistryViewFooter = NSLocalizedString("palmistryView.footer", comment: "Your destiny lies in your hands")
     
     // MARK: - Cosmic View
     static let cosmicViewTitle = NSLocalizedString("cosmicView.title", comment: "Cosmic")
     static let cosmicViewSubtitle = NSLocalizedString("cosmicView.subtitle", comment: "Explore celestial influences")
+    static let cosmicViewFooter = NSLocalizedString("cosmicView.footer", comment: "The stars illuminate your path")
     
     // MARK: - Learn Palmistry
     static let learnPalmistryTitle = NSLocalizedString("learnPalmistry.title", comment: "Learn Palmistry")

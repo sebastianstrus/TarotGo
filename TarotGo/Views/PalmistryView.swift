@@ -80,7 +80,7 @@ struct PalmistryView: View {
                                 .fill(AppTheme.goldGradient)
                                 .frame(width: 35, height: 1)
                             
-                            Text(L10n.homeFooter)
+                            Text(L10n.palmistryViewFooter)
                                 .font(AppTheme.serifFont(size: 13, weight: .light))
                                 .foregroundColor(AppTheme.textTertiary)
                             
