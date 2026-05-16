@@ -1,0 +1,374 @@
+//
+//  CosmogramView.swift
+//  TarotGo
+//
+//  Birth chart / cosmogram visualization
+//
+
+import SwiftUI
+
+struct CosmogramView: View {
+    @State private var showBirthDateInput = false
+    @State private var birthDate: Date?
+    
+    var body: some View {
+        ZStack {
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
+            
+            ScrollView {
+                VStack(spacing: 30) {
+                    // Header
+                    VStack(spacing: 12) {
+                        Image(systemName: "circle.grid.cross.fill")
+                            .font(.system(size: 50))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
+                        
+                        Text(L10n.cosmogramTitle)
+                            .font(AppTheme.serifFont(size: 32, weight: .light))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .multilineTextAlignment(.center)
+                        
+                        Text(L10n.cosmogramSubtitle)
+                            .font(.system(size: 15, weight: .light))
+                            .foregroundColor(AppTheme.textSecondary)
+                            .multilineTextAlignment(.center)
+                    }
+                    .padding(.top, 20)
+                    
+                    if let birthDate = birthDate {
+                        cosmogramContent(for: birthDate)
+                    } else {
+                        birthDatePrompt
+                    }
+                    
+                    Spacer(minLength: 20)
+                }
+                .padding(.horizontal)
+            }
+        }
+        .navigationTitle(L10n.cosmogramTitle)
+        .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showBirthDateInput) {
+            BirthDateInputView(isPresented: $showBirthDateInput) { date in
+                birthDate = date
+            }
+        }
+        .onAppear {
+            birthDate = AstrologyService.shared.userBirthDate
+            if birthDate == nil {
+                showBirthDateInput = true
+            }
+        }
+    }
+    
+    private var birthDatePrompt: some View {
+        VStack(spacing: 20) {
+            Image(systemName: "calendar.badge.plus")
+                .font(.system(size: 60))
+                .foregroundColor(AppTheme.gold.opacity(0.6))
+            
+            Text("Enter Your Birth Date")
+                .font(AppTheme.serifFont(size: 24, weight: .light))
+                .foregroundStyle(AppTheme.goldGradient)
+            
+            Text("Generate your personal birth chart based on your birth date")
+                .font(.system(size: 15))
+                .foregroundColor(AppTheme.textSecondary)
+                .multilineTextAlignment(.center)
+            
+            Button {
+                showBirthDateInput = true
+            } label: {
+                Text("Add Birth Date")
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(AppTheme.goldGradient)
+                    .cornerRadius(12)
+            }
+            .padding(.horizontal, 40)
+        }
+        .padding(.top, 60)
+    }
+    
+    private func cosmogramContent(for date: Date) -> some View {
+        let sunSign = AstrologyService.shared.zodiacSign(from: date)
+        let moonSign = LunarService.shared.moonZodiacSign(for: date)
+        let risingSign = calculateRisingSign(from: date)
+        
+        return VStack(spacing: 30) {
+            // Birth Chart Wheel
+            chartWheel(sun: sunSign, moon: moonSign, rising: risingSign)
+            
+            // Big Three
+            VStack(spacing: 16) {
+                Text("Your Big Three")
+                    .font(AppTheme.serifFont(size: 20, weight: .medium))
+                    .foregroundStyle(AppTheme.goldGradient)
+                
+                bigThreeCard(
+                    title: "Sun Sign",
+                    sign: sunSign,
+                    description: "Your core identity and life force",
+                    detail: sunSignDescription(sunSign)
+                )
+                
+                bigThreeCard(
+                    title: "Moon Sign",
+                    sign: moonSign,
+                    description: "Your emotional nature and inner world",
+                    detail: moonSignDescription(moonSign)
+                )
+                
+                bigThreeCard(
+                    title: "Rising Sign",
+                    sign: risingSign,
+                    description: "Your outward personality and first impression",
+                    detail: risingSignDescription(risingSign)
+                )
+            }
+            
+            // Elements & Modalities
+            elementModality(sun: sunSign, moon: moonSign, rising: risingSign)
+            
+            // Life Purpose
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(AppTheme.gold)
+                    Text("Your Cosmic Blueprint")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+                
+                Text("Your chart reveals a unique combination of energies. The \(sunSign.name) Sun gives you core vitality, while your \(moonSign.name) Moon shapes your emotional landscape. With \(risingSign.name) rising, you present yourself to the world with distinct grace. Together, these create your cosmic fingerprint.")
+                    .font(.system(size: 15, weight: .light))
+                    .foregroundColor(AppTheme.textSecondary)
+                    .lineSpacing(6)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(AppTheme.darkNavy.opacity(0.6))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                    )
+            )
+        }
+    }
+    
+    private func chartWheel(sun: ZodiacSign, moon: ZodiacSign, rising: ZodiacSign) -> some View {
+        GeometryReader { geometry in
+            let size = min(geometry.size.width, 300)
+            
+            ZStack {
+                // Outer circle
+                Circle()
+                    .stroke(AppTheme.gold.opacity(0.3), lineWidth: 2)
+                    .frame(width: size, height: size)
+                
+                // Inner circles
+                Circle()
+                    .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                    .frame(width: size * 0.75, height: size * 0.75)
+                
+                Circle()
+                    .stroke(AppTheme.gold.opacity(0.1), lineWidth: 1)
+                    .frame(width: size * 0.5, height: size * 0.5)
+                
+                // Zodiac positions
+                ForEach(Array(ZodiacSign.allCases.enumerated()), id: \.offset) { index, sign in
+                    let angle = Double(index) * 30.0 - 90.0
+                    let radius = size / 2
+                    
+                    Text(sign.symbol)
+                        .font(.system(size: 20))
+                        .foregroundColor(
+                            sign == sun || sign == moon || sign == rising ?
+                            AppTheme.gold : AppTheme.gold.opacity(0.4)
+                        )
+                        .position(
+                            x: size/2 + cos(angle * .pi / 180) * (radius - 25),
+                            y: size/2 + sin(angle * .pi / 180) * (radius - 25)
+                        )
+                }
+                
+                // Center - Sun
+                VStack(spacing: 4) {
+                    Text("☉")
+                        .font(.system(size: 40))
+                    Text(sun.name)
+                        .font(.system(size: 12, weight: .medium))
+                        .foregroundColor(AppTheme.gold)
+                }
+            }
+            .frame(width: size, height: size)
+            .frame(maxWidth: .infinity)
+        }
+        .frame(height: 320)
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 15)
+                .fill(AppTheme.darkNavy.opacity(0.6))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 15)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+        )
+    }
+    
+    private func bigThreeCard(title: String, sign: ZodiacSign, description: String, detail: String) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Text(sign.symbol)
+                    .font(.system(size: 30))
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(title)
+                        .font(.system(size: 12, weight: .medium))
+                        .foregroundColor(AppTheme.textSecondary)
+                    
+                    Text(sign.name)
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+                
+                Spacer()
+            }
+            
+            Text(description)
+                .font(.system(size: 13, weight: .medium))
+                .foregroundColor(AppTheme.gold.opacity(0.8))
+            
+            Text(detail)
+                .font(.system(size: 14, weight: .light))
+                .foregroundColor(AppTheme.textSecondary)
+                .lineSpacing(4)
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(AppTheme.darkNavy.opacity(0.4))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                )
+        )
+    }
+    
+    private func elementModality(sun: ZodiacSign, moon: ZodiacSign, rising: ZodiacSign) -> some View {
+        let sunElement = element(for: sun)
+        let moonElement = element(for: moon)
+        let risingElement = element(for: rising)
+        
+        return VStack(spacing: 16) {
+            Text("Elemental Balance")
+                .font(AppTheme.serifFont(size: 18, weight: .medium))
+                .foregroundStyle(AppTheme.goldGradient)
+            
+            HStack(spacing: 12) {
+                elementPill(sunElement)
+                elementPill(moonElement)
+                elementPill(risingElement)
+            }
+            
+            Text(elementBalanceDescription(sun: sunElement, moon: moonElement, rising: risingElement))
+                .font(.system(size: 13, weight: .light))
+                .foregroundColor(AppTheme.textSecondary)
+                .multilineTextAlignment(.center)
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(AppTheme.darkNavy.opacity(0.4))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                )
+        )
+    }
+    
+    private func elementPill(_ element: String) -> some View {
+        HStack(spacing: 6) {
+            Text(elementSymbol(element))
+                .font(.system(size: 14))
+            Text(element)
+                .font(.system(size: 13, weight: .medium))
+                .foregroundColor(AppTheme.gold)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(
+            Capsule()
+                .fill(AppTheme.darkNavy.opacity(0.6))
+                .overlay(
+                    Capsule()
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+        )
+    }
+    
+    // MARK: - Calculations
+    
+    private func calculateRisingSign(from date: Date) -> ZodiacSign {
+        // Simplified: use hour of birth (approximation)
+        let hour = Calendar.current.component(.hour, from: date)
+        let signIndex = (hour / 2) % 12
+        return ZodiacSign.allCases[signIndex]
+    }
+    
+    private func element(for sign: ZodiacSign) -> String {
+        switch sign {
+        case .aries, .leo, .sagittarius: return "Fire"
+        case .taurus, .virgo, .capricorn: return "Earth"
+        case .gemini, .libra, .aquarius: return "Air"
+        case .cancer, .scorpio, .pisces: return "Water"
+        }
+    }
+    
+    private func elementSymbol(_ element: String) -> String {
+        switch element {
+        case "Fire": return "🔥"
+        case "Earth": return "🌍"
+        case "Air": return "💨"
+        case "Water": return "💧"
+        default: return "✨"
+        }
+    }
+    
+    private func sunSignDescription(_ sign: ZodiacSign) -> String {
+        return "Your Sun in \(sign.name) illuminates your path with unique qualities. This is your essential self, your vitality, and the core of your being."
+    }
+    
+    private func moonSignDescription(_ sign: ZodiacSign) -> String {
+        return "With the Moon in \(sign.name), your emotional world is colored by distinct sensibilities. This placement reveals how you process feelings and seek comfort."
+    }
+    
+    private func risingSignDescription(_ sign: ZodiacSign) -> String {
+        return "\(sign.name) rising shapes how others perceive you and how you approach new situations. This is your mask and your authentic first impression."
+    }
+    
+    private func elementBalanceDescription(sun: String, moon: String, rising: String) -> String {
+        let elements = [sun, moon, rising]
+        let uniqueElements = Set(elements)
+        
+        if uniqueElements.count == 1 {
+            return "All three placements share the \(sun) element, creating powerful focus and intensity in this energy."
+        } else if uniqueElements.count == 2 {
+            return "Your chart balances two elemental energies, creating dynamic interplay between different life approaches."
+        } else {
+            return "Three different elements create a well-rounded, multifaceted personality with diverse strengths and perspectives."
+        }
+    }
+}
+
+#Preview {
+    NavigationStack {
+        CosmogramView()
+    }
+}

@@ -53,10 +53,8 @@ struct CosmicView: View {
                         // Cosmic options
                         VStack(spacing: 14) {
                             // Horoscope
-                            Button {
-                                HapticService.shared.impact(.light)
-                                SoundService.shared.play(.whoosh, volume: 0.4)
-                                // TODO: Navigate to Horoscope
+                            NavigationLink {
+                                HoroscopeView()
                             } label: {
                                 NavigationButton(
                                     icon: "sparkle.magnifyingglass",
@@ -65,13 +63,14 @@ struct CosmicView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .disabled(true)
-                            
-                            // Cosmogram
-                            Button {
+                            .simultaneousGesture(TapGesture().onEnded {
                                 HapticService.shared.impact(.light)
                                 SoundService.shared.play(.whoosh, volume: 0.4)
-                                // TODO: Navigate to Cosmogram
+                            })
+                            
+                            // Cosmogram
+                            NavigationLink {
+                                CosmogramView()
                             } label: {
                                 NavigationButton(
                                     icon: "circle.grid.cross.fill",
@@ -80,13 +79,14 @@ struct CosmicView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .disabled(true)
-                            
-                            // Numerology
-                            Button {
+                            .simultaneousGesture(TapGesture().onEnded {
                                 HapticService.shared.impact(.light)
                                 SoundService.shared.play(.whoosh, volume: 0.4)
-                                // TODO: Navigate to Numerology
+                            })
+                            
+                            // Numerology
+                            NavigationLink {
+                                NumerologyView()
                             } label: {
                                 NavigationButton(
                                     icon: "number.circle.fill",
@@ -95,13 +95,14 @@ struct CosmicView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .disabled(true)
-                            
-                            // Lunar Calendar
-                            Button {
+                            .simultaneousGesture(TapGesture().onEnded {
                                 HapticService.shared.impact(.light)
                                 SoundService.shared.play(.whoosh, volume: 0.4)
-                                // TODO: Navigate to Lunar Calendar
+                            })
+                            
+                            // Lunar Calendar
+                            NavigationLink {
+                                LunarCalendarView()
                             } label: {
                                 NavigationButton(
                                     icon: "moon.circle.fill",
@@ -110,13 +111,14 @@ struct CosmicView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .disabled(true)
-                            
-                            // Compatibility
-                            Button {
+                            .simultaneousGesture(TapGesture().onEnded {
                                 HapticService.shared.impact(.light)
                                 SoundService.shared.play(.whoosh, volume: 0.4)
-                                // TODO: Navigate to Compatibility
+                            })
+                            
+                            // Compatibility
+                            NavigationLink {
+                                CompatibilityView()
                             } label: {
                                 NavigationButton(
                                     icon: "heart.circle.fill",
@@ -125,7 +127,10 @@ struct CosmicView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .disabled(true)
+                            .simultaneousGesture(TapGesture().onEnded {
+                                HapticService.shared.impact(.light)
+                                SoundService.shared.play(.whoosh, volume: 0.4)
+                            })
                         }
                         .padding(.horizontal, 30)
                         
