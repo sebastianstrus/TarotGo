@@ -21,6 +21,7 @@ struct CardOfTheDayView: View {
     @State private var cardFrame: CGRect = .zero
     @State private var gestureCancelled: Bool = false
     @State private var showVibeCheck: Bool = false
+    @State private var initialTouchLocation: CGPoint = .zero
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -82,6 +83,7 @@ struct CardOfTheDayView: View {
                     }
                     .padding(.horizontal)
                 }
+                .scrollDisabled(false)
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -159,6 +161,10 @@ struct CardOfTheDayView: View {
                     perspective: 0.5
                 )
         }
+        .shadow(color: !isRevealed && isPressed ? AppTheme.gold.opacity(0.6) : .clear, radius: 20, x: 0, y: 0)
+        .shadow(color: !isRevealed && isPressed ? AppTheme.gold.opacity(0.4) : .clear, radius: 40, x: 0, y: 0)
+        .animation(.easeInOut(duration: 1.0), value: isPressed)
+        .animation(.easeInOut(duration: 1.0), value: isRevealed)
         .background(
             GeometryReader { geometry in
                 Color.clear
@@ -170,31 +176,32 @@ struct CardOfTheDayView: View {
                     }
             }
         )
-        .gesture(
-            DragGesture(minimumDistance: 0, coordinateSpace: .global)
+        .onLongPressGesture(minimumDuration: 0.2, maximumDistance: 50) {
+            // Long press confirmed - activate the press state
+            guard !isRevealed && !isFinishing else { return }
+            withAnimation(.spring(response: 0.3)) {
+                isPressed = true
+            }
+        } onPressingChanged: { pressing in
+            guard !isRevealed && !isFinishing else { return }
+            
+            if !pressing && isPressed {
+                // Finger lifted before completion
+                resetRitual()
+            }
+        }
+        .simultaneousGesture(
+            // Track finger movement to cancel if it moves off the card
+            DragGesture(minimumDistance: 50, coordinateSpace: .global)
                 .onChanged { value in
-                    guard !isRevealed && !isFinishing && !gestureCancelled else { return }
+                    guard isPressed && !isRevealed && !isFinishing else { return }
                     
-                    if !isPressed {
-                        withAnimation(.spring(response: 0.3)) {
-                            isPressed = true
-                        }
-                    }
-                    
-                    // Check if finger has moved off the card
+                    // Only track if already pressing - allows scroll otherwise
                     let touchPoint = value.location
                     if !cardFrame.contains(touchPoint) {
-                        // Finger moved off the card, cancel the ritual
                         gestureCancelled = true
                         resetRitual()
                     }
-                }
-                .onEnded { _ in
-                    if !isRevealed && !isFinishing && pressProgress < totalPressDuration {
-                        resetRitual()
-                    }
-                    // Reset gesture cancelled flag for next gesture
-                    gestureCancelled = false
                 }
         )
     }
