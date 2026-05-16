@@ -27,14 +27,20 @@ struct CardOfTheDayView: View {
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
     
-    // UserDefaults keys for persistence (include birth date hash for uniqueness)
+    // UserDefaults keys for persistence (include birth date for uniqueness)
     private var todayKey: String {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.year, .month, .day], from: Date())
         
-        // Include birth date hash to make key unique per user
-        let birthDateHash = AstrologyService.shared.userBirthDate?.timeIntervalSince1970.hashValue ?? 0
-        return "cardOfDay_\(components.year ?? 0)_\(components.month ?? 0)_\(components.day ?? 0)_\(birthDateHash)_revealed"
+        // Include birth date string to make key unique per user (use stable string representation)
+        let birthDateString: String
+        if let birthDate = AstrologyService.shared.userBirthDate {
+            let birthComponents = calendar.dateComponents([.year, .month, .day], from: birthDate)
+            birthDateString = "\(birthComponents.year ?? 0)_\(birthComponents.month ?? 0)_\(birthComponents.day ?? 0)"
+        } else {
+            birthDateString = "none"
+        }
+        return "cardOfDay_\(components.year ?? 0)_\(components.month ?? 0)_\(components.day ?? 0)_\(birthDateString)_revealed"
     }
     
     var body: some View {
@@ -108,6 +114,8 @@ struct CardOfTheDayView: View {
                 BirthDateInputView(isPresented: $showBirthDateInput) { date in
                     // Reload the card with the new personalized seed
                     loadTodayCard()
+                    // Reload the revealed state with the new key
+                    loadRevealedState()
                 }
             }
             .onAppear {
