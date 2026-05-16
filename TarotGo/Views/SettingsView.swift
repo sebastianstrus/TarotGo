@@ -21,6 +21,7 @@ struct SettingsView: View {
     @State private var showOnboarding: Bool = false
     @State private var showPermissionAlert: Bool = false
     @State private var hasAppeared: Bool = false
+    @State private var showBirthDateInput: Bool = false
     
     private var selectedCardBack: CardBackStyle {
         CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
@@ -32,6 +33,71 @@ struct SettingsView: View {
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
             List {
+                // Birth Date Section (at the top)
+                Section {
+                    if let birthDate = AstrologyService.shared.userBirthDate {
+                        VStack(alignment: .leading, spacing: 12) {
+                            HStack {
+                                Text(L10n.settingsBirthDate)
+                                    .foregroundColor(AppTheme.textPrimary)
+                                Spacer()
+                                Button(L10n.settingsChange) {
+                                    showBirthDateInput = true
+                                }
+                                .foregroundStyle(AppTheme.goldGradient)
+                                .font(.system(size: 14))
+                            }
+                            
+                            HStack(spacing: 16) {
+                                Text(birthDate.formatted(date: .long, time: .omitted))
+                                    .foregroundColor(AppTheme.gold.opacity(0.8))
+                                    .font(.system(size: 15))
+                                
+                                Spacer()
+                                
+                                let zodiacSign = AstrologyService.shared.zodiacSign(from: birthDate)
+                                HStack(spacing: 4) {
+                                    Text(zodiacSign.symbol)
+                                        .font(.system(size: 18))
+                                    Text(zodiacSign.name)
+                                        .font(.system(size: 13))
+                                        .foregroundColor(AppTheme.gold.opacity(0.7))
+                                }
+                            }
+                        }
+                        .listRowSeparator(.hidden)
+                    } else {
+                        Button {
+                            showBirthDateInput = true
+                        } label: {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(L10n.settingsAddBirthDate)
+                                        .foregroundColor(AppTheme.textPrimary)
+                                    Text(L10n.settingsAddBirthDateDesc)
+                                        .font(.system(size: 12))
+                                        .foregroundColor(AppTheme.textSecondary)
+                                }
+                                Spacer()
+                                Image(systemName: "plus.circle.fill")
+                                    .foregroundStyle(AppTheme.goldGradient)
+                                    .font(.system(size: 24))
+                            }
+                        }
+                        .listRowSeparator(.hidden)
+                    }
+                } header: {
+                    Text(L10n.settingsPersonalization)
+                        .foregroundColor(AppTheme.gold)
+                } footer: {
+                    Text(L10n.settingsBirthDateFooter)
+                        .foregroundColor(AppTheme.textSecondary)
+                }
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.5))
+                )
+                
                 Section {
                     Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
                         .listRowSeparator(.hidden)
@@ -278,6 +344,11 @@ struct SettingsView: View {
         }
         .fullScreenCover(isPresented: $showOnboarding) {
             OnboardingFlowView(isPresented: $showOnboarding)
+        }
+        .sheet(isPresented: $showBirthDateInput) {
+            BirthDateInputView(isPresented: $showBirthDateInput) { date in
+                // Birth date is already saved in the service
+            }
         }
         .alert(L10n.settingsNotificationPermissionTitle, isPresented: $showPermissionAlert) {
             Button(L10n.settingsNotificationPermissionCancel, role: .cancel) {

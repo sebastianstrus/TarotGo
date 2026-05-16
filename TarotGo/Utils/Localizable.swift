@@ -305,6 +305,25 @@ enum L10n {
     static let settingsLegal = NSLocalizedString("settings.legal", comment: "Legal")
     static let settingsPrivacyPolicy = NSLocalizedString("settings.privacyPolicy", comment: "Privacy Policy")
     static let settingsTermsOfService = NSLocalizedString("settings.termsOfService", comment: "Terms of Service")
+    
+    // Birth Date Settings
+    static let settingsPersonalization = NSLocalizedString("settings.personalization", comment: "Personalization")
+    static let settingsBirthDate = NSLocalizedString("settings.birthDate", comment: "Birth Date")
+    static let settingsChange = NSLocalizedString("settings.change", comment: "Change")
+    static let settingsAddBirthDate = NSLocalizedString("settings.addBirthDate", comment: "Add Birth Date")
+    static let settingsAddBirthDateDesc = NSLocalizedString("settings.addBirthDate.desc", comment: "Personalize your readings with astrology")
+    static let settingsBirthDateFooter = NSLocalizedString("settings.birthDate.footer", comment: "Your birth date enables personalized card of the day and astrological insights. It's stored locally and never shared.")
+    
+    static let skip = NSLocalizedString("common.skip", comment: "Skip")
+    
+    // Birth Date Input
+    static let birthDateInputTitle = NSLocalizedString("birthDateInput.title", comment: "Your Birth Date")
+    static let birthDateInputDescription = NSLocalizedString("birthDateInput.description", comment: "Enter your birth date to unlock personalized daily cards and astrological insights")
+    static let birthDateInputSelectDate = NSLocalizedString("birthDateInput.selectDate", comment: "Select Your Birth Date")
+    static let birthDateInputZodiacSign = NSLocalizedString("birthDateInput.zodiacSign", comment: "Zodiac Sign")
+    static let birthDateInputLifePath = NSLocalizedString("birthDateInput.lifePath", comment: "Life Path")
+    static let birthDateInputNumerology = NSLocalizedString("birthDateInput.numerology", comment: "Numerology")
+    static let birthDateInputPrivacy = NSLocalizedString("birthDateInput.privacy", comment: "Your birth date is stored securely on your device and never shared")
 
     // MARK: - Spread Types
     static let spreadSingleCard = NSLocalizedString("spread.singleCard", comment: "Single Card")
@@ -823,4 +842,7 @@ enum L10n {
     static func palmQuickSummaryFate(_ depth: String) -> String {
         String(format: NSLocalizedString("palm.quickSummary.fate", value: "%@ - shows the role of destiny and external influences in your path", comment: "Quick summary for fate line"), depth)
     }
+    
+    // MARK: - Astrology / Zodiac Signs
+    // These are used by AstrologyService for zodiac sign names
 }

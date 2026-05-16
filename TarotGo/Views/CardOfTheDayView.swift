@@ -22,15 +22,19 @@ struct CardOfTheDayView: View {
     @State private var gestureCancelled: Bool = false
     @State private var showVibeCheck: Bool = false
     @State private var initialTouchLocation: CGPoint = .zero
+    @State private var showBirthDateInput: Bool = false
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
     
-    // UserDefaults keys for persistence
+    // UserDefaults keys for persistence (include birth date hash for uniqueness)
     private var todayKey: String {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.year, .month, .day], from: Date())
-        return "cardOfDay_\(components.year ?? 0)_\(components.month ?? 0)_\(components.day ?? 0)_revealed"
+        
+        // Include birth date hash to make key unique per user
+        let birthDateHash = AstrologyService.shared.userBirthDate?.timeIntervalSince1970.hashValue ?? 0
+        return "cardOfDay_\(components.year ?? 0)_\(components.month ?? 0)_\(components.day ?? 0)_\(birthDateHash)_revealed"
     }
     
     var body: some View {
@@ -100,7 +104,17 @@ struct CardOfTheDayView: View {
             .sheet(isPresented: $showVibeCheck) {
                 VibeCheckView()
             }
+            .sheet(isPresented: $showBirthDateInput) {
+                BirthDateInputView(isPresented: $showBirthDateInput) { date in
+                    // Reload the card with the new personalized seed
+                    loadTodayCard()
+                }
+            }
             .onAppear {
+                // Check if birth date is needed and not set
+                if !AstrologyService.shared.hasBirthDate {
+                    showBirthDateInput = true
+                }
                 loadTodayCard()
                 loadRevealedState()
                 // Reset VortexSystem fire position to center
@@ -307,12 +321,19 @@ struct CardOfTheDayView: View {
     }
     
     private func loadTodayCard() {
-        // Use current date as seed for reproducible random card each day
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day], from: Date())
-        let seed = (components.year ?? 0) * 10000 + (components.month ?? 0) * 100 + (components.day ?? 0)
+        // Use personalized seed based on user's birth date (if available)
+        let currentDate = Date()
+        let seed: UInt64
         
-        var generator = SeededRandomGenerator(seed: UInt64(seed))
+        if let birthDate = AstrologyService.shared.userBirthDate {
+            // Use personalized seed combining date, zodiac sign, and life path number
+            seed = AstrologyService.shared.personalizedSeed(for: currentDate, birthDate: birthDate)
+        } else {
+            // Fall back to date-only seed
+            seed = AstrologyService.shared.defaultSeed(for: currentDate)
+        }
+        
+        var generator = SeededRandomGenerator(seed: seed)
         let allCards = TarotDeck.allCards
         let randomIndex = Int(generator.next() % UInt64(allCards.count))
         todayCard = allCards[randomIndex]
