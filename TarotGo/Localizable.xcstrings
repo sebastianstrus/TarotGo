@@ -131935,18 +131935,89 @@
       }
     },
     "tab.cosmic": {
-      "comment": "Cosmic tab"
-    },
-    "tab.palmistry": {
-      "comment": "Palmistry tab"
-    },
-    "tab.settings": {
-      "comment": "Settings tab"
-    },
-    "tab.tarot": {
-      "comment": "Tarot tab"
-    },
-    "Tap any city to see its vibe": {},
+          "comment": "Cosmic tab",
+          "extractionState": "manual",
+          "localizations": {
+            "de": { "stringUnit": { "state": "translated", "value": "Kosmos" } },
+            "en": { "stringUnit": { "state": "translated", "value": "Cosmic" } },
+            "es": { "stringUnit": { "state": "translated", "value": "Cósmico" } },
+            "fr": { "stringUnit": { "state": "translated", "value": "Cosmique" } },
+            "it": { "stringUnit": { "state": "translated", "value": "Cosmico" } },
+            "ja": { "stringUnit": { "state": "translated", "value": "コズミック" } },
+            "nb": { "stringUnit": { "state": "translated", "value": "Kosmisk" } },
+            "pl": { "stringUnit": { "state": "translated", "value": "Kosmos" } },
+            "pt-BR": { "stringUnit": { "state": "translated", "value": "Cósmico" } },
+            "sv": { "stringUnit": { "state": "translated", "value": "Kosmisk" } },
+            "uk": { "stringUnit": { "state": "translated", "value": "Космічний" } }
+          }
+        },
+        "tab.palmistry": {
+          "comment": "Palmistry tab",
+          "extractionState": "manual",
+          "localizations": {
+            "de": { "stringUnit": { "state": "translated", "value": "Handlesen" } },
+            "en": { "stringUnit": { "state": "translated", "value": "Palmistry" } },
+            "es": { "stringUnit": { "state": "translated", "value": "Quiromancia" } },
+            "fr": { "stringUnit": { "state": "translated", "value": "Chiromancie" } },
+            "it": { "stringUnit": { "state": "translated", "value": "Chiromanzia" } },
+            "ja": { "stringUnit": { "state": "translated", "value": "手相" } },
+            "nb": { "stringUnit": { "state": "translated", "value": "Kiromanti" } },
+            "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja" } },
+            "pt-BR": { "stringUnit": { "state": "translated", "value": "Quiromancia" } },
+            "sv": { "stringUnit": { "state": "translated", "value": "Kiromanti" } },
+            "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія" } }
+          }
+        },
+        "tab.settings": {
+          "comment": "Settings tab",
+          "extractionState": "manual",
+          "localizations": {
+            "de": { "stringUnit": { "state": "translated", "value": "Einstellungen" } },
+            "en": { "stringUnit": { "state": "translated", "value": "Settings" } },
+            "es": { "stringUnit": { "state": "translated", "value": "Ajustes" } },
+            "fr": { "stringUnit": { "state": "translated", "value": "Réglages" } },
+            "it": { "stringUnit": { "state": "translated", "value": "Impostazioni" } },
+            "ja": { "stringUnit": { "state": "translated", "value": "設定" } },
+            "nb": { "stringUnit": { "state": "translated", "value": "Innstillinger" } },
+            "pl": { "stringUnit": { "state": "translated", "value": "Ustawienia" } },
+            "pt-BR": { "stringUnit": { "state": "translated", "value": "Ajustes" } },
+            "sv": { "stringUnit": { "state": "translated", "value": "Inställningar" } },
+            "uk": { "stringUnit": { "state": "translated", "value": "Налаштування" } }
+          }
+        },
+        "tab.tarot": {
+          "comment": "Tarot tab",
+          "extractionState": "manual",
+          "localizations": {
+            "de": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "en": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "es": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "fr": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "it": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "ja": { "stringUnit": { "state": "translated", "value": "タロット" } },
+            "nb": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "pl": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "pt-BR": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "sv": { "stringUnit": { "state": "translated", "value": "Tarot" } },
+            "uk": { "stringUnit": { "state": "translated", "value": "Таро" } }
+          }
+        },
+        "Tap any city to see its vibe": {
+              "extractionState": "manual",
+              "localizations": {
+                "de": { "stringUnit": { "state": "translated", "value": "Tippe auf eine Stadt, um ihren Vibe zu sehen" } },
+                "en": { "stringUnit": { "state": "translated", "value": "Tap any city to see its vibe" } },
+                "es": { "stringUnit": { "state": "translated", "value": "Toca cualquier ciudad para ver su vibra" } },
+                "fr": { "stringUnit": { "state": "translated", "value": "Appuyez auf une ville pour voir son mood" } },
+                "it": { "stringUnit": { "state": "translated", "value": "Tocca qualsiasi città per vedere la sua atmosfera" } },
+                "ja": { "stringUnit": { "state": "translated", "value": "都市をタップしてそのバイブスを見る" } },
+                "nb": { "stringUnit": { "state": "translated", "value": "Trykk på en by for å se stemningen" } },
+                "pl": { "stringUnit": { "state": "translated", "value": "Stuknij dowolne miasto, aby poczuć jego klimat" } },
+                "pt-BR": { "stringUnit": { "state": "translated", "value": "Toque em qualquer cidade para ver a vibe dela" } },
+                "sv": { "stringUnit": { "state": "translated", "value": "Tryck på valfri stad för att se dess vibe" } },
+                "uk": { "stringUnit": { "state": "translated", "value": "Торкніться будь-якого міста, щоб відчути його вайб" } }
+              }
+            },
     "Tap to view card details": {
       "comment": "A label displayed underneath a card's name.",
       "isCommentAutoGenerated": true
