@@ -9043,25 +9043,25 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kosmisch"
+            "value": "Kosmos"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cósmico"
+            "value": "Cosmos"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cosmique"
+            "value": "Cosmos"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cosmico"
+            "value": "Cosmo"
           }
         },
         "ja": {
@@ -9073,31 +9073,31 @@
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kosmisk"
+            "value": "Kosmos"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kosmiczny"
+            "value": "Kosmos"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cósmico"
+            "value": "Cosmos"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kosmisk"
+            "value": "Kosmos"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Космічний"
+            "value": "Космос"
           }
         }
       }
