@@ -1214,6 +1214,31 @@ enum L10n {
     static let palmistryFaqDisclaimerTitle = NSLocalizedString("palmistryFaq.disclaimer.title", comment: "Important")
     static let palmistryFaqDisclaimerText = NSLocalizedString("palmistryFaq.disclaimer.text", comment: "Palmistry is intended for entertainment and self-reflection purposes only. It should not replace professional advice for health, legal, or financial matters.")
     
+    // MARK: - Horoscope & Cosmogram
+    static let time = NSLocalizedString("Time", comment: "A label for the time picker.")
+    static let palmReadingCameraDescription = NSLocalizedString("To read your palm, we need access to your camera. Your palm image is processed locally and never leaves your device.", comment: "A description of the camera access required to read your palm.")
+    static let todaysLuckyElements = NSLocalizedString("Today's Lucky Elements", comment: "A heading for the lucky elements of the day.")
+    static let tryAgain = NSLocalizedString("Try Again", comment: "A button that triggers a new photo capture when pressed.")
+    static let useMyBirthDate = NSLocalizedString("Use My Birth Date", comment: "A button that allows users to use their birth date to select their zodiac sign.")
+    static let viewCardDetails = NSLocalizedString("View card details", comment: "A label describing a button that will open a new screen.")
+    static let viewCardDetailsCapitalized = NSLocalizedString("View Card Details", comment: "A label describing a button that will open a new screen.")
+    static let yearEnergy = NSLocalizedString("Year Energy", comment: "A label displayed in the year energy detail card.")
+    static let yourBigThree = NSLocalizedString("Your Big Three", comment: "A heading for the user's Big Three zodiac signs.")
+    
+    // Format strings
+    static func yourChartReveals(_ sun: String, _ moon: String, _ rising: String) -> String {
+        String(format: NSLocalizedString("Your chart reveals a unique combination of energies. The %1$@ Sun gives you core vitality, while your %2$@ Moon shapes your emotional landscape. With %3$@ rising, you present yourself to the world with distinct grace. Together, these create your cosmic fingerprint.", comment: "A paragraph describing the user's cosmic blueprint, highlighting their Sun sign, Moon sign, and rising sign."), sun, moon, rising)
+    }
+    
+    static let yourCosmicBlueprint = NSLocalizedString("Your Cosmic Blueprint", comment: "A title for the user's cosmic blueprint.")
+    static let yourLifePathNumber = NSLocalizedString("Your Life Path Number", comment: "A label displayed above the user's life path number.")
+    
+    static func yourNumerologyComplements(_ sign: String) -> String {
+        String(format: NSLocalizedString("Your numerology complements your %@ energy", comment: "A description of how the user's numerology relates to their zodiac sign."), sign)
+    }
+    
+    static let yourPersonalNumbers = NSLocalizedString("Your Personal Numbers", comment: "A label displayed above the user's numerology numbers.")
+    
     // MARK: - Astrology / Zodiac Signs
     // These are used by AstrologyService for zodiac sign names
 }
