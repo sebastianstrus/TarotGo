@@ -122745,6 +122745,710 @@
         }
       }
     },
+    "palmBasicMeanings.apollo.meaning": {
+      "comment": "Below the ring finger. Represents creativity, happiness, and success.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Unter dem Ringfinger. Steht für Kreativität, Glück und Erfolg." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Below the ring finger. Represents creativity, happiness, and success." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Debajo del dedo anular. Representa creatividad, felicidad y éxito." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Sous l'annulaire. Représente la créativité, le bonheur et le succès." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Sotto l'anulare. Rappresenta creatività, felicità e successo." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "薬指の下。創造性、幸福、成功を表します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Under ringfingeren. Representerer kreativitet, lykke og suksess." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pod palcem serdecznym. Reprezentuje kreatywność, szczęście i sukces." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Abaixo do dedo anelar. Representa criatividade, felicidade e sucesso." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Under ringfingret. Representerar kreativitet, lycka och framgång." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Під безіменним пальцем. Уособлює творчість, щастя та успіх." } }
+      }
+    },
+    "palmBasicMeanings.apollo.title": {
+      "comment": "Mount of Apollo (Sun)",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Berg des Apollo (Sonne)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mount of Apollo (Sun)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Monte de Apolo (Sol)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mont d'Apollon (Soleil)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Monte di Apollo (Sole)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "アポロ丘（太陽）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Apollos berg (Solen)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórze Apolla (Słońce)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Monte de Apolo (Sol)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Apollos berg (Solen)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорб Аполлона (Сонце)" } }
+      }
+    },
+    "palmBasicMeanings.diagram.title": {
+      "comment": "Palm Reading Map",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Handlese-Karte" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palm Reading Map" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Mapa de la quiromancia" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Carte de la chiromancie" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Mappa della chiromanzia" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相占いマップ" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesingskart" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Mapa chiromancji" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Mapa da leitura de mãos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläskarta" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Карта хіромантії" } }
+      }
+    },
+    "palmBasicMeanings.fateLine.description": {
+      "comment": "A vertical line running up the center of the palm (not everyone has this line).",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Eine vertikale Linie, die die Mitte der Handfläche hinaufläuft (nicht jeder hat diese Linie)." } },
+        "en": { "stringUnit": { "state": "translated", "value": "A vertical line running up the center of the palm (not everyone has this line)." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Una línea vertical que sube por el centro de la palma (no todos tienen esta línea)." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Une ligne verticale remontant le centre de la paume (tout le monde n'a pas cette ligne)." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Una linea verticale che risale il centro del palmo (non tutti hanno questa linea)." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手のひらの中心を縦に走る線（誰にでもあるわけではありません）。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "En vertikal linje som går opp midten av håndflaten (ikke alle har denne linjen)." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pionowa linia biegnąca przez środek dłoni (nie każdy ją ma)." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Uma linha vertical que sobe pelo centro da palma (nem todos têm esta linha)." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "En vertikal linje som löper upp genom handflatans mitt (alla har inte denna linje)." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Вертикальна лінія, що проходить вгору по центру долоні (ця лінія є не у всіх)." } }
+      }
+    },
+    "palmBasicMeanings.fateLine.meaning": {
+      "comment": "Represents career, life direction, and the influence of external forces. A strong Fate Line suggests a clear path, while its absence indicates freedom to create your own destiny.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Steht für Karriere, Lebensrichtung und den Einfluss äußerer Kräfte. Eine starke Schicksalslinie deutet auf einen klaren Weg hin, während ihr Fehlen auf Freiheit hindeutet, dein eigenes Schicksal zu erschaffen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Represents career, life direction, and the influence of external forces. A strong Fate Line suggests a clear path, while its absence indicates freedom to create your own destiny." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Representa la carrera, la dirección de la vida y la influencia de fuerzas externas. Una línea del destino fuerte sugiere un camino claro, mientras que su ausencia indica libertad para crear tu propio destino." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Représente la carrière, la direction de la vie et l'influence des forces extérieures. Une ligne de destinée forte suggère un chemin clair, tandis que son absence indique la liberté de créer votre propre destin." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Rappresenta carriera, direzione di vita e l'influenza di forze esterne. Una linea del destino forte suggerisce un percorso chiaro, mentre la sua assenza indica libertà di creare il proprio destino." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "キャリア、人生の方向性、外的な力の影響を表します。強い運命線は明確な道を示し、ない場合は自分自身の運命を創造する自由を示します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Representerer karriere, livsretning og påvirkning fra ytre krefter. En sterk skjebnelinje antyder en klar vei, mens fraværet indikerer frihet til å skape din egen skjebne." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Reprezentuje karierę, kierunek życia i wpływ sił zewnętrznych. Silna linia losu sugeruje jasną ścieżkę, podczas gdy jej brak wskazuje na wolność tworzenia własnego przeznaczenia." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Representa carreira, direção de vida e a influência de forças externas. Uma Linha do Destino forte sugere um caminho claro, enquanto sua ausência indica liberdade para criar seu próprio destino." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Representerar karriär, livsriktning och påverkan av yttre krafter. En stark ödeslinje antyder en tydlig väg, medan dess frånvaro indikerar frihet att skapa ditt eget öde." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Уособлює кар'єру, життєвий напрямок та вплив зовнішніх сил. Сильна лінія долі вказує на чіткий шлях, тоді як її відсутність свідчить про свободу творити власну долю." } }
+      }
+    },
+    "palmBasicMeanings.fateLine.title": {
+      "comment": "Fate Line",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Schicksalslinie" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Fate Line" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Línea del Destino" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Ligne de Destinée" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Linea del Destino" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "運命線" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Skjebnelinjen" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Linia Losu" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Linha do Destino" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ödeslinjen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лінія Долі" } }
+      }
+    },
+    "palmBasicMeanings.fingers.intro": {
+      "comment": "Each finger carries its own significance:",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Jeder Finger hat seine eigene Bedeutung:" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Each finger carries its own significance:" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Cada dedo tiene su propio significado:" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Chaque doigt a sa propre signification :" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Ogni dito ha il suo significato:" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "各指にはそれぞれ独自の意味があります：" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hver finger har sin egen betydning:" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Każdy palec ma swoje znaczenie:" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Cada dedo carrega seu próprio significado:" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Varje finger har sin egen betydelse:" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Кожен палець має своє значення:" } }
+      }
+    },
+    "palmBasicMeanings.fingers.title": {
+      "comment": "The Fingers",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Die Finger" } },
+        "en": { "stringUnit": { "state": "translated", "value": "The Fingers" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Los Dedos" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les Doigts" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Le Dita" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "指" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Fingrene" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Palce" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Os Dedos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Fingrarna" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пальці" } }
+      }
+    },
+    "palmBasicMeanings.headLine.description": {
+      "comment": "The horizontal line below the Heart Line.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Die horizontale Linie unter der Herzlinie." } },
+        "en": { "stringUnit": { "state": "translated", "value": "The horizontal line below the Heart Line." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La línea horizontal debajo de la línea del corazón." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La ligne horizontale sous la ligne du cœur." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La linea orizzontale sotto la linea del cuore." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "感情線の下にある水平線。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Den horisontale linjen under hjertelinjen." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pozioma linia poniżej linii serca." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A linha horizontal abaixo da Linha do Coração." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Den horisontella linjen under hjärtlinjen." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Горизонтальна лінія під Лінією Серця." } }
+      }
+    },
+    "palmBasicMeanings.headLine.meaning": {
+      "comment": "Reveals your thinking style, intellect, and decision-making approach. A long line indicates analytical thinking, while a shorter line suggests more direct, practical reasoning.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Zeigt deinen Denkstil, Intellekt und Entscheidungsansatz. Eine lange Linie deutet auf analytisches Denken hin, während eine kürzere Linie auf direktere, praktische Überlegungen hindeutet." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Reveals your thinking style, intellect, and decision-making approach. A long line indicates analytical thinking, while a shorter line suggests more direct, practical reasoning." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Revela tu estilo de pensamiento, intelecto y enfoque para la toma de decisiones. Una línea larga indica pensamiento analítico, mientras que una línea más corta sugiere un razonamiento más directo y práctico." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Révèle votre style de pensée, votre intellect et votre approche de la prise de décision. Une longue ligne indique une pensée analytique, tandis qu'une ligne plus courte suggère un raisonnement plus direct et pratique." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Rivela il tuo stile di pensiero, intelletto e approccio decisionale. Una linea lunga indica un pensiero analitico, mentre una linea più corta suggerisce un ragionamento più diretto e pratico." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "思考スタイル、知性、決断力を明らかにします。長い線は分析的思考を示し、短い線はより直接的で実用的な思考を示唆します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Avslører din tenkestil, intellekt og beslutningstilnærming. En lang linje indikerer analytisk tenkning, mens en kortere linje antyder mer direkte, praktisk resonnering." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ujawnia twój styl myślenia, intelekt i podejście do podejmowania decyzji. Długa linia wskazuje na myślenie analityczne, podczas gdy krótsza linia sugeruje bardziej bezpośrednie, praktyczne rozumowanie." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Revela seu estilo de pensamento, intelecto e abordagem de tomada de decisão. Uma linha longa indica pensamento analítico, enquanto uma linha mais curta sugere raciocínio mais direto e prático." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Avslöjar din tankestil, intelligens och beslutsfattande. En lång linje indikerar analytiskt tänkande, medan en kortare linje antyder mer direkt, praktiskt resonemang." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Розкриває ваш стиль мислення, інтелект та підхід до прийняття рішень. Довга лінія вказує на аналітичне мислення, тоді як коротша лінія свідчить про більш прямий, практичний підхід." } }
+      }
+    },
+    "palmBasicMeanings.headLine.title": {
+      "comment": "Head Line",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Kopflinie" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Head Line" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Línea de la Cabeza" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Ligne de Tête" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Linea della Testa" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "頭脳線" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hodepanel" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Linia Głowy" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Linha da Cabeça" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Huvudlinjen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лінія Голови" } }
+      }
+    },
+    "palmBasicMeanings.heartLine.description": {
+      "comment": "The uppermost horizontal line running across your palm.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Die oberste horizontale Linie, die über deine Handfläche verläuft." } },
+        "en": { "stringUnit": { "state": "translated", "value": "The uppermost horizontal line running across your palm." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La línea horizontal más alta que cruza la palma de tu mano." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La ligne horizontale la plus haute traversant votre paume." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La linea orizzontale più alta che attraversa il palmo della tua mano." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手のひらを横切る一番上の水平線。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Den øverste horisontale linjen som går over håndflaten." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Najwyższa pozioma linia biegnąca przez dłoń." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A linha horizontal mais alta que atravessa sua palma." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Den översta horisontella linjen som löper över handflatan." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Найвища горизонтальна лінія, що перетинає вашу долоню." } }
+      }
+    },
+    "palmBasicMeanings.heartLine.meaning": {
+      "comment": "Represents emotions, relationships, and how you give and receive love. A deep, clear line suggests strong emotional connections, while a faint line may indicate emotional reserve.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Steht für Emotionen, Beziehungen und wie du Liebe gibst und empfängst. Eine tiefe, klare Linie deutet auf starke emotionale Verbindungen hin, während eine schwache Linie emotionale Zurückhaltung anzeigen kann." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Represents emotions, relationships, and how you give and receive love. A deep, clear line suggests strong emotional connections, while a faint line may indicate emotional reserve." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Representa emociones, relaciones y cómo das y recibes amor. Una línea profunda y clara sugiere fuertes conexiones emocionales, mientras que una línea débil puede indicar reserva emocional." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Représente les émotions, les relations et la façon dont vous donnez et recevez l'amour. Une ligne profonde et claire suggère des liens émotionnels forts, tandis qu'une ligne faible peut indiquer une réserve émotionnelle." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Rappresenta emozioni, relazioni e come dai e ricevi amore. Una linea profonda e chiara suggerisce forti connessioni emotive, mentre una linea debole può indicare riserva emotiva." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "感情、人間関係、愛の与え方・受け取り方を表します。深くはっきりした線は強い情緒的繋がりを示し、薄い線は感情の抑制を示すことがあります。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Representerer følelser, relasjoner og hvordan du gir og mottar kjærlighet. En dyp, klar linje antyder sterke følelsesmessige forbindelser, mens en svak linje kan indikere følelsesmessig tilbakeholdenhet." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Reprezentuje emocje, relacje oraz to, jak dajesz i otrzymujesz miłość. Głęboka, wyraźna linia sugeruje silne więzi emocjonalne, podczas gdy słaba linia może wskazywać na powściągliwość emocjonalną." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Representa emoções, relacionamentos e como você dá e recebe amor. Uma linha profunda e clara sugere fortes conexões emocionais, enquanto uma linha fraca pode indicar reserva emocional." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Representerar känslor, relationer och hur du ger och tar emot kärlek. En djup, tydlig linje antyder starka känslomässiga band, medan en svag linje kan indikera känslomässig tillbakadragenhet." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Уособлює емоції, стосунки та те, як ви даруєте і отримуєте любов. Глибока, чітка лінія вказує на сильні емоційні зв'язки, тоді як слабка лінія може свідчити про емоційну стриманість." } }
+      }
+    },
+    "palmBasicMeanings.heartLine.title": {
+      "comment": "Heart Line",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Herzlinie" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Heart Line" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Línea del Corazón" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Ligne du Cœur" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Linea del Cuore" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "感情線" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hjertelinjen" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Linia Serca" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Linha do Coração" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Hjärtlinjen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лінія Серця" } }
+      }
+    },
+    "palmBasicMeanings.index.meaning": {
+      "comment": "Leadership, ambition, and authority.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Führung, Ehrgeiz und Autorität." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Leadership, ambition, and authority." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Liderazgo, ambición y autoridad." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Leadership, ambition et autorité." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Leadership, ambizione e autorità." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "リーダーシップ、野心、権威。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Lederskap, ambisjoner og autoritet." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Przywództwo, ambicja i autorytet." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Liderança, ambição e autoridade." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ledarskap, ambition och auktoritet." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лідерство, амбітність та авторитет." } }
+      }
+    },
+    "palmBasicMeanings.index.title": {
+      "comment": "Index Finger (Jupiter)",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Zeigefinger (Jupiter)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Index Finger (Jupiter)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Dedo Índice (Júpiter)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Index (Jupiter)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Dito Indice (Giove)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "人差し指（木星）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Pekerfinger (Jupiter)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Palec Wskazujący (Jowisz)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Dedo Indicador (Júpiter)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Pekfinger (Jupiter)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Вказівний палець (Юпітер)" } }
+      }
+    },
+    "palmBasicMeanings.jupiter.meaning": {
+      "comment": "Below the index finger. Associated with ambition, leadership, and confidence.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Unter dem Zeigefinger. Verbunden mit Ehrgeiz, Führung und Selbstvertrauen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Below the index finger. Associated with ambition, leadership, and confidence." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Debajo del dedo índice. Asociado con la ambición, el liderazgo y la confianza." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Sous l'index. Associé à l'ambition, au leadership et à la confiance." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Sotto l'indice. Associato ad ambizione, leadership e fiducia in se stessi." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "人差し指の下。野心、リーダーシップ、自信と関連しています。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Under pekefingeren. Forbundet med ambisjoner, lederskap og selvtillit." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pod palcem wskazującym. Związane z ambicją, przywództwem i pewnością siebie." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Abaixo do dedo indicador. Associado à ambição, liderança e confiança." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Under pekfingret. Förknippas med ambition, ledarskap och självförtroende." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Під вказівним пальцем. Пов'язаний з амбітністю, лідерством та впевненістю." } }
+      }
+    },
+    "palmBasicMeanings.jupiter.title": {
+      "comment": "Mount of Jupiter",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Berg des Jupiter" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mount of Jupiter" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Monte de Júpiter" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mont de Jupiter" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Monte di Giove" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "木星丘" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Jupiters berg" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórze Jowisza" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Monte de Júpiter" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Jupiters berg" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорб Юпітера" } }
+      }
+    },
+    "palmBasicMeanings.lifeLine.description": {
+      "comment": "The curved line that wraps around the base of your thumb.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Die gebogene Linie, die sich um die Basis deines Daumens schlängelt." } },
+        "en": { "stringUnit": { "state": "translated", "value": "The curved line that wraps around the base of your thumb." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La línea curva que rodea la base de tu pulgar." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La ligne courbe qui entoure la base de votre pouce." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La linea curva che avvolge la base del tuo pollice." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "親指の付け根を囲む曲線。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Den buede linjen som slynger seg rundt bunnen av tommelen." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zakrzywiona linia owijająca się wokół nasady kciuka." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A linha curva que envolve a base do seu polegar." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Den böjda linjen som slingrar sig runt basen av tummen." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Вигнута лінія, що огинає основу вашого великого пальця." } }
+      }
+    },
+    "palmBasicMeanings.lifeLine.meaning": {
+      "comment": "Indicates vitality, physical health, and major life changes. Contrary to myth, it doesn't predict lifespan but shows the quality and intensity of your life energy.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Zeigt Vitalität, körperliche Gesundheit und große Lebensveränderungen an. Entgegen einem Mythos sagt sie nicht die Lebensdauer voraus, sondern zeigt die Qualität und Intensität deiner Lebensenergie." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Indicates vitality, physical health, and major life changes. Contrary to myth, it doesn't predict lifespan but shows the quality and intensity of your life energy." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Indica vitalidad, salud física y grandes cambios en la vida. Contrario al mito, no predice la esperanza de vida sino que muestra la calidad e intensidad de tu energía vital." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Indique la vitalité, la santé physique et les grands changements de vie. Contrairement au mythe, elle ne prédit pas la durée de vie mais montre la qualité et l'intensité de votre énergie vitale." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Indica vitalità, salute fisica e grandi cambiamenti di vita. Contrariamente al mito, non predice la durata della vita ma mostra la qualità e l'intensità della tua energia vitale." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "活力、健康状態、人生の大きな変化を示します。寿命を予測するという神話に反して、実際は生命力の質と強さを示します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Indikerer vitalitet, fysisk helse og store livsendringer. I motsetning til myten, forutsier den ikke levetid, men viser kvaliteten og intensiteten av livsenergien din." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wskazuje witalność, zdrowie fizyczne i ważne zmiany życiowe. W przeciwieństwie do mitu, nie przewiduje długości życia, ale pokazuje jakość i intensywność twojej energii życiowej." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Indica vitalidade, saúde física e grandes mudanças de vida. Ao contrário do mito, não prevê a duração da vida, mas mostra a qualidade e a intensidade da sua energia vital." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Indikerar vitalitet, fysisk hälsa och stora livsförändringar. I motsats till myten förutsäger den inte livslängd utan visar kvaliteten och intensiteten i din livsenergi." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Вказує на життєву енергію, фізичне здоров'я та важливі життєві зміни. Всупереч міфу, вона не передбачає тривалість життя, а показує якість та інтенсивність вашої життєвої енергії." } }
+      }
+    },
+    "palmBasicMeanings.lifeLine.title": {
+      "comment": "Life Line",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Lebenslinie" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Life Line" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Línea de la Vida" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Ligne de Vie" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Linea della Vita" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "生命線" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Livslinjen" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Linia Życia" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Linha da Vida" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Livslinjen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лінія Життя" } }
+      }
+    },
+    "palmBasicMeanings.majorLines.title": {
+      "comment": "The Major Lines",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Die Hauptlinien" } },
+        "en": { "stringUnit": { "state": "translated", "value": "The Major Lines" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Las Líneas Principales" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les Lignes Majeures" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Le Linee Principali" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "主要な線" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hovedlinjene" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Główne Linie" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "As Linhas Principais" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Huvudlinjerna" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Головні Лінії" } }
+      }
+    },
+    "palmBasicMeanings.mars.meaning": {
+      "comment": "Two areas between thumb and fingers. Represent courage, aggression, and determination.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Zwei Bereiche zwischen Daumen und Fingern. Stehen für Mut, Aggression und Entschlossenheit." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Two areas between thumb and fingers. Represent courage, aggression, and determination." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Dos áreas entre el pulgar y los dedos. Representan coraje, agresión y determinación." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Deux zones entre le pouce et les doigts. Représentent le courage, l'agressivité et la détermination." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Due aree tra pollice e dita. Rappresentano coraggio, aggressività e determinazione." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "親指と指の間にある2つの領域。勇気、攻撃性、決意を表します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "To områder mellom tommelen og fingrene. Representerer mot, aggresjon og besluttsomhet." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dwa obszary między kciukiem a palcami. Reprezentują odwagę, agresję i determinację." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Duas áreas entre o polegar e os dedos. Representam coragem, agressividade e determinação." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Två områden mellan tummen och fingrarna. Representerar mod, aggression och beslutsamhet." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Дві ділянки між великим пальцем та іншими пальцями. Уособлюють мужність, агресивність та рішучість." } }
+      }
+    },
+    "palmBasicMeanings.mars.title": {
+      "comment": "Mounts of Mars",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Berge des Mars" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mounts of Mars" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Montes de Marte" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Monts de Mars" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Monti di Marte" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "火星丘" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Mars' berg" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórza Marsa" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Montes de Marte" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Mars berg" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорби Марса" } }
+      }
+    },
+    "palmBasicMeanings.mercury.meaning": {
+      "comment": "Below the pinky finger. Associated with communication, wit, and business acumen.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Unter dem kleinen Finger. Verbunden mit Kommunikation, Scharfsinn und Geschäftssinn." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Below the pinky finger. Associated with communication, wit, and business acumen." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Debajo del dedo meñique. Asociado con la comunicación, el ingenio y la perspicacia para los negocios." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Sous l'auriculaire. Associé à la communication, l'esprit et le sens des affaires." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Sotto il mignolo. Associato a comunicazione, arguzia e senso degli affari." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "小指の下。コミュニケーション、機知、ビジネス感覚と関連しています。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Under lillefingeren. Forbundet med kommunikasjon, vidd og forretningssans." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pod małym palcem. Związane z komunikacją, dowcipem i zmysłem biznesowym." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Abaixo do dedo mínimo. Associado à comunicação, sagacidade e perspicácia nos negócios." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Under lillfingret. Förknippas med kommunikation, kvickhet och affärssinne." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Під мізинцем. Пов'язаний з комунікацією, дотепністю та діловою хваткою." } }
+      }
+    },
+    "palmBasicMeanings.mercury.title": {
+      "comment": "Mount of Mercury",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Berg des Merkur" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mount of Mercury" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Monte de Mercurio" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mont de Mercure" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Monte di Mercurio" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "水星丘" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Merkurs berg" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórze Merkurego" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Monte de Mercúrio" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Merkurius berg" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорб Меркурія" } }
+      }
+    },
+    "palmBasicMeanings.middle.meaning": {
+      "comment": "Responsibility, balance, and introspection.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Verantwortung, Ausgeglichenheit und Selbstreflexion." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Responsibility, balance, and introspection." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Responsabilidad, equilibrio e introspección." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Responsabilité, équilibre et introspection." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Responsabilità, equilibrio e introspezione." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "責任感、バランス、内省。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ansvar, balanse og introspeksjon." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odpowiedzialność, równowaga i introspekcja." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Responsabilidade, equilíbrio e introspecção." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ansvar, balans och introspektion." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відповідальність, баланс та самоаналіз." } }
+      }
+    },
+    "palmBasicMeanings.middle.title": {
+      "comment": "Middle Finger (Saturn)",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Mittelfinger (Saturn)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Middle Finger (Saturn)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Dedo Medio (Saturno)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Majeur (Saturne)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Dito Medio (Saturno)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "中指（土星）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Langfinger (Saturn)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Palec Środkowy (Saturn)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Dedo Médio (Saturno)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Långfinger (Saturnus)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Середній палець (Сатурн)" } }
+      }
+    },
+    "palmBasicMeanings.moon.meaning": {
+      "comment": "On the outer edge of palm. Relates to imagination, intuition, and emotions.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Am äußeren Rand der Handfläche. Steht für Vorstellungskraft, Intuition und Emotionen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "On the outer edge of palm. Relates to imagination, intuition, and emotions." } },
+        "es": { "stringUnit": { "state": "translated", "value": "En el borde exterior de la palma. Se relaciona con la imaginación, la intuición y las emociones." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Sur le bord extérieur de la paume. Se rapporte à l'imagination, à l'intuition et aux émotions." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Sul bordo esterno del palmo. Si riferisce a immaginazione, intuizione ed emozioni." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手のひらの外側の端。想像力、直感、感情に関連します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "På ytterkanten av håndflaten. Relaterer til fantasi, intuisjon og følelser." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Na zewnętrznej krawędzi dłoni. Odnosi się do wyobraźni, intuicji i emocji." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Na borda externa da palma. Relaciona-se com imaginação, intuição e emoções." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "På handflatans ytterkant. Relaterar till fantasi, intuition och känslor." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "На зовнішньому краю долоні. Пов'язаний з уявою, інтуїцією та емоціями." } }
+      }
+    },
+    "palmBasicMeanings.moon.title": {
+      "comment": "Mount of the Moon",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Berg des Mondes" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mount of the Moon" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Monte de la Luna" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mont de la Lune" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Monte della Luna" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "月丘" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Månens berg" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórze Księżyca" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Monte da Lua" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Månens berg" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорб Місяця" } }
+      }
+    },
+    "palmBasicMeanings.mounts.intro": {
+      "comment": "Mounts are the fleshy pads on your palm, each associated with planetary energies and personality traits:",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Berge sind die fleischigen Polster auf deiner Handfläche, die jeweils mit planetarischen Energien und Persönlichkeitsmerkmalen verbunden sind:" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mounts are the fleshy pads on your palm, each associated with planetary energies and personality traits:" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Los montes son las almohadillas carnosas en la palma de tu mano, cada uno asociado con energías planetarias y rasgos de personalidad:" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les monts sont les zones charnues de votre paume, chacun étant associé à des énergies planétaires et à des traits de personnalité :" } },
+        "it": { "stringUnit": { "state": "translated", "value": "I monti sono i cuscinetti carnosi sul palmo della tua mano, ciascuno associato a energie planetarie e tratti della personalità:" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "丘は手のひらの肉厚な部分で、それぞれが惑星のエネルギーと性格特性に関連しています：" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Berg er de kjøttfulle putene på håndflaten, hver forbundet med planetariske energier og personlighetstrekk:" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórza to mięsiste poduszki na dłoni, każde związane z energiami planetarnymi i cechami osobowości:" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Os montes são as almofadas carnudas na sua palma, cada um associado a energias planetárias e traços de personalidade:" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Berg är de köttiga kuddarna på handflatan, var och en förknippad med planetariska energier och personlighetsdrag:" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорби - це м'ясисті подушечки на вашій долоні, кожен з яких пов'язаний з планетарними енергіями та рисами характеру:" } }
+      }
+    },
+    "palmBasicMeanings.mounts.title": {
+      "comment": "The Mounts",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Die Berge" } },
+        "en": { "stringUnit": { "state": "translated", "value": "The Mounts" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Los Montes" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les Monts" } },
+        "it": { "stringUnit": { "state": "translated", "value": "I Monti" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "丘" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Bergene" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórza" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Os Montes" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Bergen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорби" } }
+      }
+    },
+    "palmBasicMeanings.pinky.meaning": {
+      "comment": "Communication, intelligence, and persuasion.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Kommunikation, Intelligenz und Überzeugungskraft." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Communication, intelligence, and persuasion." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Comunicación, inteligencia y persuasión." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Communication, intelligence et persuasion." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Comunicazione, intelligenza e persuasione." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "コミュニケーション、知性、説得力。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Kommunikasjon, intelligens og overtalelsesevne." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Komunikacja, inteligencja i perswazja." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Comunicação, inteligência e persuasão." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Kommunikation, intelligens och övertalningsförmåga." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Комунікація, інтелект та переконання." } }
+      }
+    },
+    "palmBasicMeanings.pinky.title": {
+      "comment": "Pinky Finger (Mercury)",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Kleiner Finger (Merkur)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Pinky Finger (Mercury)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Dedo Meñique (Mercurio)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Auriculaire (Mercure)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Mignolo (Mercurio)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "小指（水星）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Lillefinger (Merkur)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Mały Palec (Merkury)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Dedo Mínimo (Mercúrio)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Lillfinger (Merkurius)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Мізинець (Меркурій)" } }
+      }
+    },
+    "palmBasicMeanings.ring.meaning": {
+      "comment": "Creativity, expression, and happiness.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Kreativität, Ausdruck und Glück." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Creativity, expression, and happiness." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Creatividad, expresión y felicidad." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Créativité, expression et bonheur." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Creatività, espressione e felicità." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "創造性、表現力、幸福。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Kreativitet, uttrykk og lykke." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Kreatywność, ekspresja i szczęście." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Criatividade, expressão e felicidade." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Kreativitet, uttryck och lycka." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Творчість, самовираження та щастя." } }
+      }
+    },
+    "palmBasicMeanings.ring.title": {
+      "comment": "Ring Finger (Apollo)",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Ringfinger (Apollo)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Ring Finger (Apollo)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Dedo Anular (Apolo)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Annulaire (Apollon)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Anulare (Apollo)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "薬指（アポロ）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ringfinger (Apollo)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Palec Serdeczny (Apollo)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Dedo Anelar (Apolo)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ringfinger (Apollo)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Безіменний палець (Аполлон)" } }
+      }
+    },
+    "palmBasicMeanings.saturn.meaning": {
+      "comment": "Below the middle finger. Relates to responsibility, wisdom, and discipline.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Unter dem Mittelfinger. Steht für Verantwortung, Weisheit und Disziplin." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Below the middle finger. Relates to responsibility, wisdom, and discipline." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Debajo del dedo medio. Se relaciona con la responsabilidad, la sabiduría y la disciplina." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Sous le majeur. Se rapporte à la responsabilité, la sagesse et la discipline." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Sotto il dito medio. Si riferisce a responsabilità, saggezza e disciplina." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "中指の下。責任感、知恵、規律に関連します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Under langfingeren. Relaterer til ansvar, visdom og disiplin." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pod palcem środkowym. Odnosi się do odpowiedzialności, mądrości i dyscypliny." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Abaixo do dedo médio. Relaciona-se com responsabilidade, sabedoria e disciplina." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Under långfingret. Relaterar till ansvar, visdom och disciplin." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Під середнім пальцем. Пов'язаний з відповідальністю, мудрістю та дисципліною." } }
+      }
+    },
+    "palmBasicMeanings.saturn.title": {
+      "comment": "Mount of Saturn",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Berg des Saturn" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mount of Saturn" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Monte de Saturno" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mont de Saturne" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Monte di Saturno" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "土星丘" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Saturns berg" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórze Saturna" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Monte de Saturno" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Saturnus berg" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорб Сатурна" } }
+      }
+    },
+    "palmBasicMeanings.subtitle": {
+      "comment": "Understanding Your Hand",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Deine Hand verstehen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Understanding Your Hand" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Comprendiendo tu Mano" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Comprendre votre Main" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Comprendere la tua Mano" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "あなたの手を理解する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Forstå din hånd" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zrozumieć swoją dłoń" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Entendendo sua Mão" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förstå din hand" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Розуміння вашої руки" } }
+      }
+    },
+    "palmBasicMeanings.thumb.meaning": {
+      "comment": "Willpower, logic, and self-control.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Willenskraft, Logik und Selbstkontrolle." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Willpower, logic, and self-control." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Fuerza de voluntad, lógica y autocontrol." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Volonté, logique et maîtrise de soi." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Forza di volontà, logica e autocontrollo." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "意志力、論理性、自己制御。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Viljestyrke, logikk og selvkontroll." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Siła woli, logika i samokontrola." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Força de vontade, lógica e autocontrole." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Viljestyrka, logik och självkontroll." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Сила волі, логіка та самоконтроль." } }
+      }
+    },
+    "palmBasicMeanings.thumb.title": {
+      "comment": "Thumb",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Daumen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Thumb" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Pulgar" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pouce" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Pollice" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "親指" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Tommel" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Kciuk" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Polegar" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Tumme" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Великий палець" } }
+      }
+    },
+    "palmBasicMeanings.title": {
+      "comment": "Palm Basic Meanings",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen Grundbedeutungen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palm Basic Meanings" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Significados Básicos de la Palma" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Significations de Base de la Paume" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Significati Base del Palmo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相の基本の意味" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Grunnleggende håndlesingsbetydninger" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Podstawowe Znaczenia w Chiromancji" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Significados Básicos da Palma" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Grundläggande handflatsbetydelser" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Основні значення хіромантії" } }
+      }
+    },
+    "palmBasicMeanings.venus.meaning": {
+      "comment": "Located at the base of the thumb. Represents love, passion, and vitality.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "An der Daumenbasis gelegen. Steht für Liebe, Leidenschaft und Vitalität." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Located at the base of the thumb. Represents love, passion, and vitality." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Ubicado en la base del pulgar. Representa amor, pasión y vitalidad." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Situé à la base du pouce. Représente l'amour, la passion et la vitalité." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Situato alla base del pollice. Rappresenta amore, passione e vitalità." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "親指の付け根に位置。愛、情熱、活力を表します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ligger ved bunnen av tommelen. Representerer kjærlighet, lidenskap og vitalitet." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Znajduje się u nasady kciuka. Reprezentuje miłość, pasję i witalność." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Localizado na base do polegar. Representa amor, paixão e vitalidade." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Belägen vid tummens bas. Representerar kärlek, passion och vitalitet." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Розташований біля основи великого пальця. Уособлює любов, пристрасть та життєву енергію." } }
+      }
+    },
+    "palmBasicMeanings.venus.title": {
+      "comment": "Mount of Venus",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Berg der Venus" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mount of Venus" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Monte de Venus" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mont de Vénus" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Monte di Venere" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "金星丘" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Venus' berg" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzgórze Wenus" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Monte de Vênus" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Venus berg" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пагорб Венери" } }
+      }
+    },
     "palmistryFaq.answer1": {
       "comment": "Palmistry is not scientifically validated. It's best understood as a tool for self-reflection and personal insight rather than empirical prediction.",
       "localizations": {
