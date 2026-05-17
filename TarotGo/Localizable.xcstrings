@@ -15102,353 +15102,513 @@
     "historyOfPalmistry.ancient.intro": {
       "comment": "The practice of palm reading has roots in multiple ancient civilizations, each contributing unique perspectives to this sacred art.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The practice of palm reading has roots in multiple ancient civilizations, each contributing unique perspectives to this sacred art."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die Praxis des Handlesens hat ihre Wurzeln in mehreren alten Zivilisationen, von denen jede einzigartige Perspektiven zu dieser heiligen Kunst beigetragen hat." } },
+        "en": { "stringUnit": { "state": "translated", "value": "The practice of palm reading has roots in multiple ancient civilizations, each contributing unique perspectives to this sacred art." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La práctica de la lectura de la palma tiene raíces en múltiples civilizaciones antiguas, cada una aportando perspectivas únicas a este arte sagrado." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La pratique de la lecture de la paume a ses racines dans de multiples civilisations anciennes, chacune apportant des perspectives uniques à cet art sacré." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La pratica della lettura del palmo ha radici in molteplici civiltà antiche, ognuna delle quali ha contribuito con prospettive uniche a quest'arte sacra." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相の実践は複数の古代文明にルーツを持ち、それぞれがこの神聖な芸術に独自の視点を提供してきました。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Praksisen med håndlesing har røtter i flere eldgamle sivilisasjoner, hver med unike perspektiver på denne hellige kunsten." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Praktyka czytania z dłoni ma korzenie w wielu starożytnych cywilizacjach, z których każda wniosła unikalne perspektywy do tej świętej sztuki." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A prática da leitura das mãos tem raízes em múltiplas civilizações antigas, cada uma contribuindo com perspectivas únicas para esta arte sagrada." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsningens praktik har rötter i flera forntida civilisationer, var och en med unika perspektiv på denna heliga konst." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Практика читання долоні має коріння в багатьох стародавніх цивілізаціях, кожна з яких зробила унікальний внесок у це священне мистецтво." } }
       }
     },
     "historyOfPalmistry.ancient.title": {
       "comment": "Ancient Origins",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ancient Origins"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Ursprünge im Altertum" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Ancient Origins" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Orígenes antiguos" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Origines anciennes" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Origini antiche" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "古代の起源" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Gamle opprinnelser" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Starożytne początki" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Origens antigas" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Forntida ursprung" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Стародавнє походження" } }
       }
     },
     "historyOfPalmistry.china.text": {
       "comment": "In ancient China, palm reading was integrated with traditional medicine and philosophy. Practitioners believed the hand revealed the balance of yin and yang energies within the body.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "In ancient China, palm reading was integrated with traditional medicine and philosophy. Practitioners believed the hand revealed the balance of yin and yang energies within the body."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Im alten China war das Handlesen mit der traditionellen Medizin und Philosophie verbunden. Praktizierende glaubten, dass die Hand das Gleichgewicht von Yin- und Yang-Energien im Körper offenbarte." } },
+        "en": { "stringUnit": { "state": "translated", "value": "In ancient China, palm reading was integrated with traditional medicine and philosophy. Practitioners believed the hand revealed the balance of yin and yang energies within the body." } },
+        "es": { "stringUnit": { "state": "translated", "value": "En la antigua China, la lectura de la palma se integró con la medicina y la filosofía tradicionales. Los practicantes creían que la mano revelaba el equilibrio de las energías yin y yang dentro del cuerpo." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Dans la Chine ancienne, la lecture de la paume était intégrée à la médecine et à la philosophie traditionnelles. Les praticiens croyaient que la main révélait l'équilibre des énergies yin et yang dans le corps." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Nell'antica Cina, la lettura del palmo era integrata con la medicina e la filosofia tradizionali. I praticanti credevano che la mano rivelasse l'equilibrio delle energie yin e yang all'interno del corpo." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "古代中国では、手相は伝統医学や哲学と統合されていました。実践者たちは、手が体内の陰と陽のエネルギーのバランスを明らかにすると信じていました。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "I det gamle Kina var håndlesing integrert med tradisjonell medisin og filosofi. Utøvere trodde at hånden avslørte balansen av yin- og yang-energier i kroppen." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "W starożytnych Chinach czytanie z dłoni było zintegrowane z tradycyjną medycyną i filozofią. Praktycy wierzyli, że dłoń ujawnia równowagę energii yin i yang w ciele." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Na antiga China, a leitura das mãos foi integrada à medicina e filosofia tradicionais. Os praticantes acreditavam que a mão revelava o equilíbrio das energias yin e yang dentro do corpo." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "I det forntida Kina integrerades handläsning med traditionell medicin och filosofi. Utövare trodde att handen avslöjade balansen mellan yin- och yang-energier i kroppen." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "У стародавньому Китаї читання долоні було інтегроване з традиційною медициною та філософією. Практики вірили, що рука розкриває баланс енергій інь та ян в організмі." } }
       }
     },
     "historyOfPalmistry.china.title": {
       "comment": "China and I Ching",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "China and I Ching"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "China und I Ging" } },
+        "en": { "stringUnit": { "state": "translated", "value": "China and I Ching" } },
+        "es": { "stringUnit": { "state": "translated", "value": "China y el I Ching" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Chine et I Ching" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Cina e I Ching" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "中国と易経" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Kina og I Ching" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiny i I Ching" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "China e I Ching" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Kina och I Ching" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Китай та І Цзин" } }
       }
     },
     "historyOfPalmistry.egypt.text": {
       "comment": "Ancient Egyptians studied hands as a way to understand divine will. Hieroglyphics show priests examining palms during religious ceremonies and healing rituals.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ancient Egyptians studied hands as a way to understand divine will. Hieroglyphics show priests examining palms during religious ceremonies and healing rituals."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die alten Ägypter untersuchten Hände, um den göttlichen Willen zu verstehen. Hieroglyphen zeigen Priester, die bei religiösen Zeremonien und Heilungsritualen Handflächen untersuchen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Ancient Egyptians studied hands as a way to understand divine will. Hieroglyphics show priests examining palms during religious ceremonies and healing rituals." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Los antiguos egipcios estudiaban las manos como una forma de entender la voluntad divina. Los jeroglíficos muestran a sacerdotes examinando palmas durante ceremonias religiosas y rituales de curación." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les anciens Égyptiens étudiaient les mains pour comprendre la volonté divine. Les hiéroglyphes montrent des prêtres examinant les paumes lors de cérémonies religieuses et de rituels de guérison." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Gli antichi egizi studiavano le mani per comprendere la volontà divina. I geroglifici mostrano sacerdoti che esaminano i palmi durante cerimonie religiose e rituali di guarigione." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "古代エジプト人は、神の意志を理解する方法として手を研究しました。象形文字には、宗教儀式や治癒の儀式の際に手のひらを調べる司祭たちが描かれています。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Gamle egyptere studerte hender for å forstå guddommelig vilje. Hieroglyfer viser prester som undersøker hender under religiøse seremonier og helbredelsesritualer." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Starożytni Egipcjanie badali dłonie, aby zrozumieć boską wolę. Hieroglify przedstawiają kapłanów badających dłonie podczas ceremonii religijnych i rytuałów uzdrawiania." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Os antigos egípcios estudavam as mãos como uma forma de entender a vontade divina. Hieróglifos mostram sacerdotes examinando palmas durante cerimônias religiosas e rituais de cura." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Forntida egyptier studerade händer för att förstå gudomlig vilja. Hieroglyfer visar präster som undersöker handflator under religiösa ceremonier och helningsritualer." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Стародавні єгиптяни вивчали руки, щоб зрозуміти божественну волю. Ієрогліфи зображують жерців, які досліджують долоні під час релігійних церемоній та цілющих ритуалів." } }
       }
     },
     "historyOfPalmistry.egypt.title": {
       "comment": "Egypt and the Mysteries",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Egypt and the Mysteries"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Ägypten und die Mysterien" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Egypt and the Mysteries" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Egipto y los Misterios" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Égypte et les Mystères" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Egitto e i Misteri" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "エジプトと神秘" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Egypt og mysteriene" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Egipt i tajemnice" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Egito e os Mistérios" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Egypten och mysterierna" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Єгипет і містерії" } }
       }
     },
     "historyOfPalmistry.greece.text": {
       "comment": "Aristotle and other Greek philosophers studied palmistry as a science. They associated different parts of the hand with planets and elements, creating systematic methods still used today.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aristotle and other Greek philosophers studied palmistry as a science. They associated different parts of the hand with planets and elements, creating systematic methods still used today."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Aristoteles und andere griechische Philosophen studierten das Handlesen als Wissenschaft. Sie verknüpften verschiedene Teile der Hand mit Planeten und Elementen und schufen systematische Methoden, die noch heute verwendet werden." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Aristotle and other Greek philosophers studied palmistry as a science. They associated different parts of the hand with planets and elements, creating systematic methods still used today." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Aristóteles y otros filósofos griegos estudiaron la quiromancia como una ciencia. Asociaron diferentes partes de la mano con planetas y elementos, creando métodos sistemáticos que aún se utilizan hoy en día." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Aristote et d'autres philosophes grecs ont étudié la chiromancie comme une science. Ils ont associé différentes parties de la main à des planètes et des éléments, créant des méthodes systématiques encore utilisées aujourd'hui." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Aristotele e altri filosofi greci studiarono la chiromanzia come scienza. Associarono diverse parti della mano a pianeti ed elementi, creando metodi sistematici ancora oggi in uso." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "アリストテレスをはじめとするギリシャの哲学者たちは、手相を科学として研究しました。彼らは手の異なる部分を惑星や元素と関連付け、今日でも使われている体系的な方法を生み出しました。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Aristoteles og andre greske filosofer studerte håndlesing som en vitenskap. De assosierte forskjellige deler av hånden med planeter og elementer, og skapte systematiske metoder som fortsatt brukes i dag." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Arystoteles i inni greccy filozofowie badali chiromancję jako naukę. Powiązali różne części dłoni z planetami i żywiołami, tworząc systematyczne metody używane do dziś." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Aristóteles e outros filósofos gregos estudaram a quiromancia como uma ciência. Eles associaram diferentes partes da mão a planetas e elementos, criando métodos sistemáticos ainda usados hoje." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Aristoteles och andra grekiska filosofer studerade handläsning som en vetenskap. De associerade olika delar av handen med planeter och element, och skapade systematiska metoder som fortfarande används idag." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Арістотель та інші грецькі філософи вивчали хіромантію як науку. Вони пов'язували різні частини руки з планетами та елементами, створюючи систематичні методи, які використовуються й сьогодні." } }
       }
     },
     "historyOfPalmistry.greece.title": {
       "comment": "Ancient Greece",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ancient Greece"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Antikes Griechenland" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Ancient Greece" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Antigua Grecia" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Grèce antique" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Antica Grecia" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "古代ギリシャ" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Antikkens Hellas" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Starożytna Grecja" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Grécia Antiga" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Antikens Grekland" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Стародавня Греція" } }
       }
     },
     "historyOfPalmistry.india.text": {
       "comment": "Ancient Hindu texts dating back 5,000 years contain detailed references to palm reading. The Vedic scriptures describe how the lines of the hand reflect one's karma and spiritual journey.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ancient Hindu texts dating back 5,000 years contain detailed references to palm reading. The Vedic scriptures describe how the lines of the hand reflect one's karma and spiritual journey."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Alte hinduistische Texte, die 5.000 Jahre zurückreichen, enthalten detaillierte Hinweise auf das Handlesen. Die vedischen Schriften beschreiben, wie die Linien der Hand das Karma und die spirituelle Reise eines Menschen widerspiegeln." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Ancient Hindu texts dating back 5,000 years contain detailed references to palm reading. The Vedic scriptures describe how the lines of the hand reflect one's karma and spiritual journey." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Textos hindúes antiguos que datan de hace 5,000 años contienen referencias detalladas a la lectura de la palma. Las escrituras védicas describen cómo las líneas de la mano reflejan el karma y el viaje espiritual de uno." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Des textes hindous anciens datant de 5 000 ans contiennent des références détaillées à la lecture de la paume. Les écritures védiques décrivent comment les lignes de la main reflètent le karma et le voyage spirituel d'une personne." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Antichi testi indù risalenti a 5.000 anni fa contengono riferimenti dettagliati alla lettura del palmo. Le scritture vediche descrivono come le linee della mano riflettono il karma e il viaggio spirituale di una persona." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "5000年前の古代ヒンドゥー教のテキストには、手相に関する詳細な記述が含まれています。ヴェーダの聖典には、手の線がどのようにカルマと精神的な旅を反映しているかが描かれています。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Gamle hinduistiske tekster som dateres 5000 år tilbake inneholder detaljerte referanser til håndlesing. De vediske skriftene beskriver hvordan håndens linjer gjenspeiler ens karma og åndelige reise." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Starożytne teksty hinduskie sprzed 5000 lat zawierają szczegółowe odniesienia do czytania z dłoni. Pisma wedyjskie opisują, jak linie dłoni odzwierciedlają karmę i duchową podróż człowieka." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Textos hindus antigos que datam de 5.000 anos contêm referências detalhadas à leitura das mãos. As escrituras védicas descrevem como as linhas da mão refletem o carma e a jornada espiritual de uma pessoa." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Forntida hinduiska texter som går tillbaka 5 000 år innehåller detaljerade referenser till handläsning. De vediska skrifterna beskriver hur handens linjer speglar ens karma och andliga resa." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Стародавні індуїстські тексти, що датуються 5000 роками, містять детальні згадки про читання долоні. Ведичні писання описують, як лінії руки відображають карму та духовну подорож людини." } }
       }
     },
     "historyOfPalmistry.india.title": {
       "comment": "India and Vedic Tradition",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "India and Vedic Tradition"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Indien und vedische Tradition" } },
+        "en": { "stringUnit": { "state": "translated", "value": "India and Vedic Tradition" } },
+        "es": { "stringUnit": { "state": "translated", "value": "India y la tradición védica" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Inde et tradition védique" } },
+        "it": { "stringUnit": { "state": "translated", "value": "India e tradizione vedica" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "インドとヴェーダの伝統" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "India og vedisk tradisjon" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Indie i tradycja wedyjska" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Índia e Tradição Védica" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Indien och vedisk tradition" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Індія та ведична традиція" } }
       }
     },
     "historyOfPalmistry.intro": {
       "comment": "Palmistry, also known as chiromancy, is one of humanity's oldest methods of divination and self-discovery. For thousands of years, people across cultures have looked to their hands for insights into character, destiny, and life's path.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry, also known as chiromancy, is one of humanity's oldest methods of divination and self-discovery. For thousands of years, people across cultures have looked to their hands for insights into character, destiny, and life's path."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen, auch Chiromantie genannt, ist eine der ältesten Methoden der Menschheit zur Wahrsagung und Selbstfindung. Seit Jahrtausenden blicken Menschen aller Kulturen auf ihre Hände, um Erkenntnisse über Charakter, Schicksal und Lebensweg zu gewinnen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry, also known as chiromancy, is one of humanity's oldest methods of divination and self-discovery. For thousands of years, people across cultures have looked to their hands for insights into character, destiny, and life's path." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia, también conocida como quiromancía, es uno de los métodos más antiguos de adivinación y autodescubrimiento de la humanidad. Durante miles de años, personas de todas las culturas han mirado sus manos para obtener información sobre el carácter, el destino y el camino de la vida." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie est l'une des plus anciennes méthodes de divination et de découverte de soi de l'humanité. Depuis des milliers d'années, des personnes de toutes cultures ont regardé leurs mains pour obtenir des aperçus sur le caractère, le destin et le chemin de vie." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia è uno dei metodi più antichi dell'umanità per la divinazione e l'auto-scoperta. Per migliaia di anni, persone di tutte le culture hanno guardato le loro mani per ottenere intuizioni sul carattere, il destino e il percorso di vita." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相占いは、人類最古の占いと自己発見の方法の一つです。何千年もの間、様々な文化の人々が、性格、運命、人生の道筋についての洞察を得るために自分の手を見つめてきました。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing, også kjent as kiromanti, er en av menneskehetens eldste metoder for spådom og selvutforskelse. I tusenvis av år har folk på tvers av kulturer sett på hendene sine for innsikt i karakter, skjebne og livsvei." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja to jedna z najstarszych metod wróżenia i samopoznania ludzkości. Od tysięcy lat ludzie z różnych kultur patrzą na swoje dłonie, aby uzyskać wgląd w charakter, przeznaczenie i ścieżkę życia." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia é um dos métodos mais antigos da humanidade para adivinhação e autodescoberta. Por milhares de anos, pessoas de todas as culturas olharam para suas mãos em busca de insights sobre caráter, destino e caminho de vida." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning, även känt som kiromanti, är en av mänsklighetens äldsta metoder för spådom och självupptäckt. I tusentals år har människor över kulturer sett på sina händer för insikter om karaktär, öde och livsväg." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія — один із найдавніших методів ворожіння та самопізнання людства. Протягом тисячоліть люди різних культур зверталися до своїх рук, щоб отримати розуміння характеру, долі та життєвого шляху." } }
       }
     },
     "historyOfPalmistry.modern.text": {
       "comment": "In the 19th and 20th centuries, palmistry became popular in Western society. Notable practitioners like Cheiro brought palm reading to royal courts and wrote influential texts that standardized interpretations.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "In the 19th and 20th centuries, palmistry became popular in Western society. Notable practitioners like Cheiro brought palm reading to royal courts and wrote influential texts that standardized interpretations."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Im 19. und 20. Jahrhundert wurde Handlesen in der westlichen Gesellschaft populär. Bedeutende Praktizierende wie Cheiro brachten das Handlesen an königliche Höfe und schrieben einflussreiche Texte, die die Deutungen standardisierten." } },
+        "en": { "stringUnit": { "state": "translated", "value": "In the 19th and 20th centuries, palmistry became popular in Western society. Notable practitioners like Cheiro brought palm reading to royal courts and wrote influential texts that standardized interpretations." } },
+        "es": { "stringUnit": { "state": "translated", "value": "En los siglos XIX y XX, la quiromancia se hizo popular en la sociedad occidental. Practicantes notables como Cheiro llevaron la lectura de la palma a las cortes reales y escribieron textos influyentes que estandarizaron las interpretaciones." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Aux XIXe et XXe siècles, la chiromancie est devenue populaire dans la société occidentale. Des praticiens notables comme Cheiro ont apporté la lecture de la paume aux cours royales et ont écrit des textes influents qui ont standardisé les interprétations." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Nel XIX e XX secolo, la chiromanzia divenne popolare nella società occidentale. Praticanti notevoli come Cheiro portarono la lettura del palmo alle corti reali e scrissero testi influenti che standardizzarono le interpretazioni." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "19世紀から20世紀にかけて、手相は西洋社会で人気を博しました。シェイロのような著名な実践者は手相を宮廷に持ち込み、解釈を標準化する影響力のあるテキストを執筆しました。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "På 1800- og 1900-tallet ble håndlesing populært i det vestlige samfunnet. Betydelige utøvere som Cheiro brakte håndlesing til kongelige hoff og skrev innflytelsesrike tekster som standardiserte tolkninger." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "W XIX i XX wieku chiromancja stała się popularna w społeczeństwie zachodnim. Znani praktycy, tacy jak Cheiro, wprowadzili czytanie z dłoni na dwory królewskie i napisali wpływowe teksty, które ujednoliciły interpretacje." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Nos séculos XIX e XX, a quiromancia tornou-se popular na sociedade ocidental. Praticantes notáveis como Cheiro levaram a leitura das mãos às cortes reais e escreveram textos influentes que padronizaram as interpretações." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "På 1800- och 1900-talen blev handläsning populärt i det västerländska samhället. Framstående utövare som Cheiro förde handläsning till kungliga hov och skrev inflytelserika texter som standardiserade tolkningar." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "У 19-20 століттях хіромантія стала популярною в західному суспільстві. Відомі практики, такі як Шейро, принесли читання долонь до королівських дворів і написали впливові тексти, які стандартизували тлумачення." } }
       }
     },
     "historyOfPalmistry.modern.title": {
       "comment": "Modern Era",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Modern Era"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Moderne Ära" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Modern Era" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Era moderna" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Ère moderne" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Era moderna" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "現代" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Moderne tid" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Nowożytność" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Era Moderna" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Modern tid" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Сучасна епоха" } }
       }
     },
     "historyOfPalmistry.renaissance.text": {
       "comment": "During the Renaissance, palmistry experienced a revival among European scholars who sought to merge ancient wisdom with emerging scientific methods.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "During the Renaissance, palmistry experienced a revival among European scholars who sought to merge ancient wisdom with emerging scientific methods."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Während der Renaissance erlebte das Handlesen eine Wiederbelebung unter europäischen Gelehrten, die versuchten, altes Wissen mit aufkommenden wissenschaftlichen Methoden zu verschmelzen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "During the Renaissance, palmistry experienced a revival among European scholars who sought to merge ancient wisdom with emerging scientific methods." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Durante el Renacimiento, la quiromancia experimentó un renacimiento entre los eruditos europeos que buscaban fusionar la sabiduría antigua con los métodos científicos emergentes." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pendant la Renaissance, la chiromancie a connu un renouveau parmi les érudits européens qui cherchaient à fusionner la sagesse ancienne avec les méthodes scientifiques émergentes." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Durante il Rinascimento, la chiromanzia conobbe una rinascita tra gli studiosi europei che cercavano di fondere la saggezza antica con i metodi scientifici emergenti." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "ルネサンス期、古代の知恵と新興の科学的方法を融合させようとしたヨーロッパの学者たちの間で、手相が復活しました。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Under renessansen opplevde håndlesing en gjenoppblomstring blant europeiske lærde som søkte å forene gammel visdom med nye vitenskapelige metoder." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "W okresie renesansu chiromancja przeżyła odrodzenie wśród europejskich uczonych, którzy starali się połączyć starożytną mądrość z pojawiającymi się metodami naukowymi." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Durante o Renascimento, a quiromancia experimentou um renascimento entre os estudiosos europeus que buscavam fundir a sabedoria antiga com os métodos científicos emergentes." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Under renässansen upplevde handläsning en återupplivning bland europeiska forskare som försökte förena gammal visdom med nya vetenskapliga metoder." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Під час Відродження хіромантія пережила відродження серед європейських науковців, які прагнули поєднати давню мудрість з новими науковими методами." } }
       }
     },
     "historyOfPalmistry.renaissance.title": {
       "comment": "Renaissance Revival",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Renaissance Revival"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Wiederbelebung in der Renaissance" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Renaissance Revival" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Renacimiento del Renacimiento" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Renaissance de la Renaissance" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Rinascita rinascimentale" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "ルネサンス復興" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Renessansens gjenoppblomstring" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odrodzenie renesansowe" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Renascimento Renascentista" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Renässansens återupplivning" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відродження Ренесансу" } }
       }
     },
     "historyOfPalmistry.subtitle": {
       "comment": "Ancient Art of Hand Reading",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ancient Art of Hand Reading"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Alte Kunst des Handlesens" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Ancient Art of Hand Reading" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Arte antiguo de la lectura de la mano" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Art ancien de la lecture de la main" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Antica arte della lettura della mano" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "古代の手相術" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Gammel kunsten å lese hender" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Starożytna sztuka czytania z dłoni" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Arte antiga da leitura das mãos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Forntida konsten att läsa händer" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Давнє мистецтво читання рук" } }
       }
     },
     "historyOfPalmistry.timeline.era": {
       "comment": "Era",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Era"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Epoche" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Era" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Era" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Ère" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Epoca" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "時代" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Tidsperiode" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Epoka" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Era" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Era" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Епоха" } }
       }
     },
     "historyOfPalmistry.timeline.era1": {
       "comment": "3000 BCE",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "3000 BCE"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "3000 v. Chr." } },
+        "en": { "stringUnit": { "state": "translated", "value": "3000 BCE" } },
+        "es": { "stringUnit": { "state": "translated", "value": "3000 a.C." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "3000 av. J.-C." } },
+        "it": { "stringUnit": { "state": "translated", "value": "3000 a.C." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "紀元前3000年" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "3000 f.Kr." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "3000 p.n.e." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "3000 a.C." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "3000 f.Kr." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "3000 р. до н.е." } }
       }
     },
     "historyOfPalmistry.timeline.era2": {
       "comment": "384–322 BCE",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "384–322 BCE"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "384–322 v. Chr." } },
+        "en": { "stringUnit": { "state": "translated", "value": "384–322 BCE" } },
+        "es": { "stringUnit": { "state": "translated", "value": "384–322 a.C." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "384–322 av. J.-C." } },
+        "it": { "stringUnit": { "state": "translated", "value": "384–322 a.C." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "紀元前384年～322年" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "384–322 f.Kr." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "384–322 p.n.e." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "384–322 a.C." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "384–322 f.Kr." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "384–322 рр. до н.е." } }
       }
     },
     "historyOfPalmistry.timeline.era3": {
       "comment": "Middle Ages",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Middle Ages"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Mittelalter" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Middle Ages" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Edad Media" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Moyen Âge" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Medioevo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "中世" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Middelalderen" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Średniowiecze" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Idade Média" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Medeltiden" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Середньовіччя" } }
       }
     },
     "historyOfPalmistry.timeline.era4": {
       "comment": "Renaissance",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Renaissance"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Renaissance" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Renaissance" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Renacimiento" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Renaissance" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Rinascimento" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "ルネサンス" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Renessansen" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Renesans" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Renascimento" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Renässansen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ренесанс" } }
       }
     },
     "historyOfPalmistry.timeline.era5": {
       "comment": "19th–20th Century",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "19th–20th Century"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "19.–20. Jahrhundert" } },
+        "en": { "stringUnit": { "state": "translated", "value": "19th–20th Century" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Siglos XIX–XX" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "XIXe–XXe siècle" } },
+        "it": { "stringUnit": { "state": "translated", "value": "XIX–XX secolo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "19～20世紀" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "1800–1900-tallet" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "XIX–XX wiek" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Séculos XIX–XX" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "1800–1900-talet" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "19–20 століття" } }
       }
     },
     "historyOfPalmistry.timeline.milestone": {
       "comment": "Milestone",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Milestone"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Meilenstein" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Milestone" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Hito" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Jalon" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Pietra miliare" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "画期的な出来事" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Milepæl" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Punkt zwrotny" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Marco" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Milstolpe" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Віха" } }
       }
     },
     "historyOfPalmistry.timeline.milestone1": {
       "comment": "Earliest references to palm reading appear in Vedic texts in India.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Earliest references to palm reading appear in Vedic texts in India."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die frühesten Hinweise auf Handlesen erscheinen in vedischen Texten in Indien." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Earliest references to palm reading appear in Vedic texts in India." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Las primeras referencias a la lectura de la palma aparecen en textos védicos en la India." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les premières références à la lecture de la paume apparaissent dans les textes védiques en Inde." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Le prime riferimenti alla lettura del palmo appaiono nei testi vedici in India." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相に関する最も初期の記述は、インドのヴェーダのテキストに見られます。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "De tidligste referansene til håndlesing vises i vediske tekster i India." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Najwcześniejsze wzmianki o czytaniu z dłoni pojawiają się w tekstach wedyjskich w Indiach." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "As primeiras referências à leitura das mãos aparecem em textos védicos na Índia." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "De tidigaste referenserna till handläsning finns i vediska texter i Indien." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Найраніші згадки про читання долоні з'являються у ведичних текстах в Індії." } }
       }
     },
     "historyOfPalmistry.timeline.milestone2": {
       "comment": "Aristotle writes about palmistry, establishing philosophical foundations.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aristotle writes about palmistry, establishing philosophical foundations."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Aristoteles schreibt über Handlesen und legt philosophische Grundlagen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Aristotle writes about palmistry, establishing philosophical foundations." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Aristóteles escribe sobre quiromancia, estableciendo fundamentos filosóficos." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Aristote écrit sur la chiromancie, établissant des fondements philosophiques." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Aristotele scrive sulla chiromanzia, stabilendo le fondamenta filosofiche." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "アリストテレスが手相について書き、哲学的な基礎を確立しました。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Aristoteles skriver om håndlesing, og etablerer filosofiske grunnlag." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Arystoteles pisze o chiromancji, ustanawiając filozoficzne podstawy." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Aristóteles escreve sobre quiromancia, estabelecendo fundamentos filosóficos." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Aristoteles skriver om handläsning och etablerar filosofiska grunder." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Арістотель пише про хіромантію, закладаючи філософські основи." } }
       }
     },
     "historyOfPalmistry.timeline.milestone3": {
       "comment": "Palmistry spreads through Europe via Romani culture and scholarly texts.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry spreads through Europe via Romani culture and scholarly texts."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen verbreitet sich in Europa durch die Kultur der Roma und gelehrte Texte." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry spreads through Europe via Romani culture and scholarly texts." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia se extiende por Europa a través de la cultura romaní y textos académicos." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie se répand en Europe par le biais de la culture romani et des textes savants." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia si diffonde in Europa attraverso la cultura rom e i testi accademici." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相はロマ文化と学術文書を通じてヨーロッパに広まります。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing sprer seg gjennom Europa via romani-kultur og lærde tekster." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja rozprzestrzenia się w Europie poprzez kulturę romską i teksty naukowe." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia se espalha pela Europa através da cultura cigana e textos acadêmicos." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning sprids genom Europa via romsk kultur och lärda texter." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія поширюється Європою через культуру рома та наукові тексти." } }
       }
     },
     "historyOfPalmistry.timeline.milestone4": {
       "comment": "European scholars revive interest in palmistry as both art and proto-science.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "European scholars revive interest in palmistry as both art and proto-science."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Europäische Gelehrte beleben das Interesse am Handlesen als Kunst und Protowissenschaft wieder." } },
+        "en": { "stringUnit": { "state": "translated", "value": "European scholars revive interest in palmistry as both art and proto-science." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Los eruditos europeos renuevan el interés por la quiromancia tanto como arte como protociencia." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les érudits européens ravivent l'intérêt pour la chiromancie à la fois comme art et comme proto-science." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Gli studiosi europei rinnovano l'interesse per la chiromanzia sia come arte che come protoscienza." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "ヨーロッパの学者たちは、芸術としても原科学としても手相への関心を復活させます。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Europeiske lærde gjenopplever interessen for håndlesing som både kunst og protovitenskap." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Europejscy uczeni odnawiają zainteresowanie chiromancją zarówno jako sztuką, jak i proto-nauką." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Estudiosos europeus renovam o interesse pela quiromancia tanto como arte quanto como protociência." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Europeiska forskare återuppväcker intresset för handläsning som både konst och protovetenskap." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Європейські науковці відроджують інтерес до хіромантії як до мистецтва, так і до протонауки." } }
       }
     },
     "historyOfPalmistry.timeline.milestone5": {
       "comment": "Palmistry gains popularity in Western society; standardized systems emerge.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry gains popularity in Western society; standardized systems emerge."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen gewinnt in der westlichen Gesellschaft an Popularität; standardisierte Systeme entstehen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry gains popularity in Western society; standardized systems emerge." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia gana popularidad en la sociedad occidental; surgen sistemas estandarizados." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie gagne en popularité dans la société occidentale ; des systèmes standardisés émergent." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia guadagna popolarità nella società occidentale; emergono sistemi standardizzati." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相が西洋社会で人気を博し、標準化されたシステムが登場します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing vinner popularitet i det vestlige samfunnet; standardiserte systemer dukker opp." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja zyskuje popularność w społeczeństwie zachodnim; pojawiają się ujednolicone systemy." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia ganha popularidade na sociedade ocidental; sistemas padronizados surgem." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning vinner popularitet i det västerländska samhället; standardiserade system uppstår." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія набуває популярності в західному суспільстві; з'являються стандартизовані системи." } }
       }
     },
     "historyOfPalmistry.timeline.title": {
       "comment": "Timeline",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Timeline"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Zeitleiste" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Timeline" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Cronología" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Chronologie" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Cronologia" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "年表" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Tidslinje" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Oś czasu" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Linha do tempo" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Tidslinje" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хронологія" } }
       }
     },
     "historyOfPalmistry.title": {
       "comment": "History of Palmistry",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "History of Palmistry"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Geschichte des Handlesens" } },
+        "en": { "stringUnit": { "state": "translated", "value": "History of Palmistry" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Historia de la quiromancia" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Histoire de la chiromancie" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Storia della chiromanzia" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相占いの歴史" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesingens historie" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Historia chiromancji" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "História da quiromancia" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsningens historia" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Історія хіромантії" } }
       }
     },
     "historyOfPalmistry.western.intro": {
       "comment": "Palmistry traveled westward along trade routes, evolving as it encountered Greek philosophy and European mysticism.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry traveled westward along trade routes, evolving as it encountered Greek philosophy and European mysticism."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Das Handlesen reiste entlang der Handelswege nach Westen und entwickelte sich weiter, als es auf die griechische Philosophie und die europäische Mystik traf." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry traveled westward along trade routes, evolving as it encountered Greek philosophy and European mysticism." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia viajó hacia el oeste a lo largo de las rutas comerciales, evolucionando al encontrarse con la filosofía griega y el misticismo europeo." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie a voyagé vers l'ouest le long des routes commerciales, évoluant au contact de la philosophie grecque et du mysticisme européen." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia viaggiò verso ovest lungo le rotte commerciali, evolvendosi quando incontrò la filosofia greca e il misticismo europeo." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は交易路に沿って西へ旅し、ギリシャ哲学やヨーロッパの神秘主義と出会いながら進化しました。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing reiste vestover langs handelsruter, og utviklet seg etter hvert som det møtte gresk filosofi og europeisk mystikk." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja podróżowała na zachód szlakami handlowymi, ewoluując, gdy napotykała grecką filozofię i europejski mistycyzm." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia viajou para o oeste ao longo das rotas comerciais, evoluindo ao encontrar a filosofia grega e o misticismo europeu." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning reste västerut längs handelsvägar och utvecklades när den mötte grekisk filosofi och europeisk mystik." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія подорожувала на захід торговельними шляхами, розвиваючись під впливом грецької філософії та європейського містицизму." } }
       }
     },
     "historyOfPalmistry.western.title": {
       "comment": "Western Development",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Western Development"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Westliche Entwicklung" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Western Development" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Desarrollo occidental" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Développement occidental" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Sviluppo occidentale" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "西洋における発展" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Vestlig utvikling" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Rozwój zachodni" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Desenvolvimento Ocidental" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Västerländsk utveckling" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Західний розвиток" } }
       }
     },
     "home.cardDictionary": {
