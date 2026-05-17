@@ -19106,7 +19106,6 @@
         "uk": { "stringUnit": { "state": "translated", "value": "Глибокі, чіткі лінії" } }
       }
     },
-    {
       "howToReadPalm.step3.bullet2.text": {
         "comment": "Suggest challenges, transitions, or areas needing attention.",
         "localizations": {
@@ -19426,7 +19425,6 @@
           "sv": { "stringUnit": { "state": "translated", "value": "Hur man läser en handflata" } },
           "uk": { "stringUnit": { "state": "translated", "value": "Як читати долоню" } }
         }
-      }
     },
     "Illuminated": {},
     "Image not found: %@": {
