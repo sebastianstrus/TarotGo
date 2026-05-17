@@ -18773,451 +18773,658 @@
     "howToReadPalm.remember.text": {
       "comment": "Your palm is a map of tendencies, not a fixed fate. Use palmistry as a tool for self-understanding and growth, not prediction.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Your palm is a map of tendencies, not a fixed fate. Use palmistry as a tool for self-understanding and growth, not prediction."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Deine Handfläche ist eine Landkarte der Neigungen, kein festgelegtes Schicksal. Nutze Handlesen als Werkzeug für Selbstverständnis und Wachstum, nicht für Vorhersagen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Your palm is a map of tendencies, not a fixed fate. Use palmistry as a tool for self-understanding and growth, not prediction." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Tu palma es un mapa de tendencias, no un destino fijo. Usa la quiromancia como una herramienta para el autoconocimiento y el crecimiento, no para la predicción." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Votre paume est une carte des tendances, pas un destin fixe. Utilisez la chiromancie comme un outil de compréhension de soi et de croissance, pas de prédiction." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Il tuo palmo è una mappa di tendenze, non un destino fisso. Usa la chiromanzia come strumento per la conoscenza di sé e la crescita, non per la predizione." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "あなたの手のひらは傾向の地図であり、固定された運命ではありません。予測ではなく、自己理解と成長のためのツールとして手相を使ってください。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndflaten din er et kart over tendenser, ikke en fast skjebne. Bruk håndlesing som et verktøy for selvforståelse og vekst, ikke for prediksjon." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Twoja dłoń jest mapą tendencji, nie stałym przeznaczeniem. Używaj chiromancji jako narzędzia do samorozumienia i rozwoju, a nie przewidywania." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua palma é um mapa de tendências, não um destino fixo. Use a quiromancia como uma ferramenta para autocompreensão e crescimento, não para previsão." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Din handflata är en karta över tendenser, inte ett fast öde. Använd handläsning som ett verktyg för självförståelse och tillväxt, inte förutsägelse." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ваша долоня — це карта тенденцій, а не фіксована доля. Використовуйте хіромантію як інструмент для саморозуміння та зростання, а не для передбачення." } }
       }
     },
     "howToReadPalm.remember.title": {
       "comment": "Remember",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Remember"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Denke daran" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Remember" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Recuerda" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Rappelez-vous" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Ricorda" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "覚えておいてください" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Husk" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pamiętaj" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Lembre-se" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Kom ihåg" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пам'ятайте" } }
       }
     },
     "howToReadPalm.step1.bullet1.text": {
       "comment": "Your dominant hand (the one you write with) shows your present and future—how you're actively shaping your life through choices and actions.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Your dominant hand (the one you write with) shows your present and future—how you're actively shaping your life through choices and actions."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Deine dominante Hand (die, mit der du schreibst) zeigt deine Gegenwart und Zukunft – wie du dein Leben aktiv durch Entscheidungen und Handlungen formst." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Your dominant hand (the one you write with) shows your present and future—how you're actively shaping your life through choices and actions." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Tu mano dominante (con la que escribes) muestra tu presente y futuro—cómo estás moldeando activamente tu vida a través de elecciones y acciones." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Votre main dominante (celle avec laquelle vous écrivez) montre votre présent et votre avenir — comment vous façonnez activement votre vie par vos choix et actions." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La tua mano dominante (quella con cui scrivi) mostra il tuo presente e futuro—come stai attivamente plasmando la tua vita attraverso scelte e azioni." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "利き手（字を書く方の手）は現在と未来を示します—つまり、選択と行動を通じて積極的に人生を形作っている様子です。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Din dominante hånd (den du skriver med) viser din nåtid og fremtid – hvordan du aktivt former livet ditt gjennom valg og handlinger." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Twoja dominująca dłoń (ta, którą piszesz) pokazuje twoją teraźniejszość i przyszłość – jak aktywnie kształtujesz swoje życie poprzez wybory i działania." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua mão dominante (aquela com que você escreve) mostra seu presente e futuro — como você está ativamente moldando sua vida através de escolhas e ações." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Din dominanta hand (den du skriver med) visar din nutid och framtid – hur du aktivt formar ditt liv genom val och handlingar." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ваша домінантна рука (та, якою ви пишете) показує ваше сьогодення та майбутнє — як ви активно формуєте своє життя через вибір та дії." } }
       }
     },
     "howToReadPalm.step1.bullet1.title": {
       "comment": "Dominant Hand",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dominant Hand"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Dominante Hand" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Dominant Hand" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Mano dominante" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Main dominante" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Mano dominante" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "利き手" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Dominant hånd" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dłoń dominująca" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Mão dominante" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Dominant hand" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Домінантна рука" } }
       }
     },
     "howToReadPalm.step1.bullet2.text": {
       "comment": "Your non-dominant hand represents your potential, inherited traits, and past influences—the foundation you were born with.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Your non-dominant hand represents your potential, inherited traits, and past influences—the foundation you were born with."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Deine nicht-dominante Hand repräsentiert dein Potenzial, vererbte Eigenschaften und vergangene Einflüsse – die Grundlage, mit der du geboren wurdest." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Your non-dominant hand represents your potential, inherited traits, and past influences—the foundation you were born with." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Tu mano no dominante representa tu potencial, rasgos heredados e influencias pasadas—los cimientos con los que naciste." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Votre main non dominante représente votre potentiel, vos traits hérités et vos influences passées — les fondements avec lesquels vous êtes né." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La tua mano non dominante rappresenta il tuo potenziale, i tratti ereditati e le influenze passate—le fondamenta con cui sei nato." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "利き手でない方の手は、可能性、遺伝的特性、過去の影響—生まれ持った基盤を表します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Din ikke-dominante hånd representerer ditt potensial, arvede trekk og tidligere påvirkninger – grunnlaget du ble født med." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Twoja nie-dominująca dłoń reprezentuje twój potencjał, odziedziczone cechy i przeszłe wpływy – fundament, z którym się urodziłeś." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua mão não dominante representa seu potencial, traços herdados e influências passadas — a base com a qual você nasceu." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Din icke-dominanta hand representerar din potential, ärftliga drag och tidigare influenser – grunden du föddes med." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ваша недомінантна рука представляє ваш потенціал, успадковані риси та минулі впливи — основу, з якою ви народилися." } }
       }
     },
     "howToReadPalm.step1.bullet2.title": {
       "comment": "Non-Dominant Hand",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Non-Dominant Hand"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Nicht-dominante Hand" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Non-Dominant Hand" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Mano no dominante" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Main non dominante" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Mano non dominante" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "非利き手" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ikke-dominant hånd" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dłoń nie-dominująca" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Mão não dominante" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Icke-dominant hand" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Недомінантна рука" } }
       }
     },
     "howToReadPalm.step1.intro": {
       "comment": "The first step in palm reading is deciding which hand to read.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The first step in palm reading is deciding which hand to read."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Der erste Schritt beim Handlesen ist die Entscheidung, welche Hand gelesen werden soll." } },
+        "en": { "stringUnit": { "state": "translated", "value": "The first step in palm reading is deciding which hand to read." } },
+        "es": { "stringUnit": { "state": "translated", "value": "El primer paso en la lectura de la palma es decidir qué mano leer." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La première étape de la lecture de la paume consiste à décider quelle main lire." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Il primo passo nella lettura del palmo è decidere quale mano leggere." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相を読む最初のステップは、どちらの手を読むか決めることです。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Det første trinnet i håndlesing er å bestemme hvilken hånd du skal lese." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pierwszym krokiem w czytaniu z dłoni jest podjęcie decyzji, którą rękę czytać." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "O primeiro passo na leitura das mãos é decidir qual mão ler." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Det första steget i handläsning är att bestämma vilken hand du ska läsa." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Перший крок у читанні долоні — вирішити, яку руку читати." } }
       }
     },
     "howToReadPalm.step1.proTip": {
       "comment": "For a complete reading, examine both hands and note the differences between them.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "For a complete reading, examine both hands and note the differences between them."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Untersuche für eine vollständige Lesung beide Hände und notiere die Unterschiede zwischen ihnen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "For a complete reading, examine both hands and note the differences between them." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Para una lectura completa, examina ambas manos y observa las diferencias entre ellas." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pour une lecture complète, examinez les deux mains et notez les différences entre elles." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Per una lettura completa, esamina entrambe le mani e nota le differenze tra loro." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "完全な鑑定を行うには、両方の手を調べ、それらの違いを記録してください。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "For en fullstendig lesning, undersøk begge hender og merk forskjellene mellom dem." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Aby uzyskać pełny odczyt, zbadaj obie dłonie i zwróć uwagę na różnice między nimi." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Para uma leitura completa, examine ambas as mãos e observe as diferenças entre elas." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "För en komplett läsning, undersök båda händerna och notera skillnaderna mellan dem." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Для повного читання огляньте обидві руки та занотуйте відмінності між ними." } }
       }
     },
     "howToReadPalm.step1.title": {
       "comment": "Choose the Hand",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Choose the Hand"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Wähle die Hand" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Choose the Hand" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Elige la mano" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Choisissez la main" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Scegli la mano" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手を選ぶ" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Velg hånden" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wybierz rękę" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Escolha a mão" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Välj handen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Виберіть руку" } }
       }
     },
     "howToReadPalm.step2.bullet1.text": {
       "comment": "Practical, grounded, reliable. Value stability and hard work.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Practical, grounded, reliable. Value stability and hard work."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Praktisch, geerdet, zuverlässig. Schätzen Stabilität und harte Arbeit." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Practical, grounded, reliable. Value stability and hard work." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Prácticos, centrados, confiables. Valoran la estabilidad y el trabajo duro." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pratiques, ancrés, fiables. Valorisent la stabilité et le travail acharné." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Pratici, radicati, affidabili. Apprezzano stabilità e duro lavoro." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "実用的、地に足がついた、信頼できる。安定と努力を重んじる。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Praktiske, jordnære, pålitelige. Verdsetter stabilitet og hardt arbeid." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Praktyczni, uziemieni, niezawodni. Cenią stabilność i ciężką pracę." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Práticos, firmes, confiáveis. Valorizam estabilidade e trabalho duro." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Praktiska, jordnära, pålitliga. Värdesätter stabilitet och hårt arbete." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Практичні, приземлені, надійні. Цінують стабільність і важку працю." } }
       }
     },
     "howToReadPalm.step2.bullet1.title": {
       "comment": "Earth Hands (square palm, short fingers)",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Earth Hands (square palm, short fingers)"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Erdhände (quadratische Handfläche, kurze Finger)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Earth Hands (square palm, short fingers)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Manos de Tierra (palma cuadrada, dedos cortos)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mains de Terre (paume carrée, doigts courts)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Mani di Terra (palmo quadrato, dita corte)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "地の手（正方形の手のひら、短い指）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Jordhender (firkantet håndflate, korte fingre)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ręce Ziemi (kwadratowa dłoń, krótkie palce)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Mãos de Terra (palma quadrada, dedos curtos)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Jordhänder (fyrkantig handflata, korta fingrar)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Руки Землі (квадратна долоня, короткі пальці)" } }
       }
     },
     "howToReadPalm.step2.bullet2.text": {
       "comment": "Intellectual, communicative, social. Love ideas and mental stimulation.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Intellectual, communicative, social. Love ideas and mental stimulation."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Intellektuell, kommunikativ, gesellig. Lieben Ideen und geistige Anregung." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Intellectual, communicative, social. Love ideas and mental stimulation." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Intelectuales, comunicativos, sociales. Aman las ideas y la estimulación mental." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Intellectuels, communicatifs, sociaux. Aiment les idées et la stimulation mentale." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Intellettuali, comunicativi, socievoli. Amano le idee e la stimolazione mentale." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "知的、コミュニケーション能力が高い、社交的。アイデアと精神的な刺激を愛する。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Intellektuelle, kommunikative, sosiale. Elsker ideer og mental stimulering." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Intelektualni, komunikatywni, towarzyscy. Uwielbiają pomysły i stymulację umysłową." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Intelectuais, comunicativos, sociais. Amam ideias e estimulação mental." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Intellektuella, kommunikativa, sociala. Älskar idéer och mental stimulans." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Інтелектуальні, комунікабельні, соціальні. Люблять ідеї та розумову стимуляцію." } }
       }
     },
     "howToReadPalm.step2.bullet2.title": {
       "comment": "Air Hands (square palm, long fingers)",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Air Hands (square palm, long fingers)"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Lufthände (quadratische Handfläche, lange Finger)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Air Hands (square palm, long fingers)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Manos de Aire (palma cuadrada, dedos largos)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mains d'Air (paume carrée, doigts longs)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Mani d'Aria (palmo quadrato, dita lunghe)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "風の手（正方形の手のひら、長い指）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Lufthender (firkantet håndflate, lange fingre)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ręce Powietrza (kwadratowa dłoń, długie palce)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Mãos de Ar (palma quadrada, dedos longos)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Lufthänder (fyrkantig handflata, långa fingrar)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Руки Повітря (квадратна долоня, довгі пальці)" } }
       }
     },
     "howToReadPalm.step2.bullet3.text": {
       "comment": "Emotional, intuitive, creative. Deeply sensitive to feelings.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Emotional, intuitive, creative. Deeply sensitive to feelings."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Emotional, intuitiv, kreativ. Tief empfindsam für Gefühle." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Emotional, intuitive, creative. Deeply sensitive to feelings." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Emocionales, intuitivos, creativos. Profundamente sensibles a los sentimientos." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Émotionnels, intuitifs, créatifs. Profondément sensibles aux sentiments." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Emotivi, intuitivi, creativi. Profondamente sensibili ai sentimenti." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "感情的、直感的、創造的。感情に深く敏感。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Følelsesmessige, intuitive, kreative. Dypt sensitive for følelser." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Emocjonalni, intuicyjni, kreatywni. Głęboko wrażliwi na uczucia." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Emocionais, intuitivos, criativos. Profundamente sensíveis aos sentimentos." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Känslomässiga, intuitiva, kreativa. Djupt känsliga för känslor." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Емоційні, інтуїтивні, творчі. Глибоко чутливі до почуттів." } }
       }
     },
     "howToReadPalm.step2.bullet3.title": {
       "comment": "Water Hands (rectangular palm, long fingers)",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Water Hands (rectangular palm, long fingers)"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Wasserhände (rechteckige Handfläche, lange Finger)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Water Hands (rectangular palm, long fingers)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Manos de Agua (palma rectangular, dedos largos)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mains d'Eau (paume rectangulaire, doigts longs)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Mani d'Acqua (palmo rettangolare, dita lunghe)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "水の手（長方形の手のひら、長い指）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Vannhender (rektangulær håndflate, lange fingre)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ręce Wody (prostokątna dłoń, długie palce)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Mãos de Água (palma retangular, dedos longos)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vattenhänder (rektangulär handflata, långa fingrar)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Руки Води (прямокутна долоня, довгі пальці)" } }
       }
     },
     "howToReadPalm.step2.bullet4.text": {
       "comment": "Passionate, energetic, spontaneous. Driven by enthusiasm.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Passionate, energetic, spontaneous. Driven by enthusiasm."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Leidenschaftlich, energisch, spontan. Von Begeisterung angetrieben." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Passionate, energetic, spontaneous. Driven by enthusiasm." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Apasionados, enérgicos, espontáneos. Impulsados por el entusiasmo." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Passionnés, énergiques, spontanés. Animés par l'enthousiasme." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Appassionati, energici, spontanei. Guidati dall'entusiasmo." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "情熱的、エネルギッシュ、自発的。熱意に駆り立てられる。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Lidenskapelige, energiske, spontane. Drevet av entusiasme." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Namiętni, energiczni, spontaniczni. Napędzani entuzjazmem." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Apaixonados, enérgicos, espontâneos. Impulsionados pelo entusiasmo." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Lidelsefulla, energiska, spontana. Drivna av entusiasm." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пристрасні, енергійні, спонтанні. Керуються ентузіазмом." } }
       }
     },
     "howToReadPalm.step2.bullet4.title": {
       "comment": "Fire Hands (rectangular palm, short fingers)",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fire Hands (rectangular palm, short fingers)"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Feuerhände (rechteckige Handfläche, kurze Finger)" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Fire Hands (rectangular palm, short fingers)" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Manos de Fuego (palma rectangular, dedos cortos)" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mains de Feu (paume rectangulaire, doigts courts)" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Mani di Fuoco (palmo rettangolare, dita corte)" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "火の手（長方形の手のひら、短い指）" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ildhender (rektangulær håndflate, korte fingre)" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ręce Ognia (prostokątna dłoń, krótkie palce)" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Mãos de Fogo (palma retangular, dedos curtos)" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Eldhänder (rektangulär handflata, korta fingrar)" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Руки Вогню (прямокутна долоня, короткі пальці)" } }
       }
     },
     "howToReadPalm.step2.intro": {
       "comment": "The overall shape of the hand reveals personality traits, similar to the elements in astrology:",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The overall shape of the hand reveals personality traits, similar to the elements in astrology:"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die Gesamtform der Hand offenbart Persönlichkeitsmerkmale, ähnlich den Elementen in der Astrologie:" } },
+        "en": { "stringUnit": { "state": "translated", "value": "The overall shape of the hand reveals personality traits, similar to the elements in astrology:" } },
+        "es": { "stringUnit": { "state": "translated", "value": "La forma general de la mano revela rasgos de personalidad, similares a los elementos en astrología:" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La forme générale de la main révèle des traits de personnalité, similaires aux éléments en astrologie :" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La forma complessiva della mano rivela tratti della personalità, simili agli elementi in astrologia:" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手の全体的な形は、占星術の元素と同様に、性格特性を明らかにします：" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Den generelle formen på hånden avslører personlighetstrekk, likt elementene i astrologi:" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ogólny kształt dłoni ujawnia cechy osobowości, podobnie jak żywioły w astrologii:" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A forma geral da mão revela traços de personalidade, semelhantes aos elementos da astrologia:" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handens övergripande form avslöjar personlighetsdrag, liknande elementen i astrologin:" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Загальна форма руки розкриває риси особистості, подібно до елементів в астрології:" } }
       }
     },
     "howToReadPalm.step2.title": {
       "comment": "Examine the Hand Shape",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Examine the Hand Shape"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Untersuche die Handform" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Examine the Hand Shape" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Examina la forma de la mano" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Examinez la forme de la main" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Esamina la forma della mano" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手の形を調べる" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Undersøk håndformen" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zbadaj kształt dłoni" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Examine a forma da mão" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Undersök handformen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Дослідіть форму руки" } }
       }
     },
     "howToReadPalm.step3.bullet1.text": {
       "comment": "Indicate strong energy in that area of life.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Indicate strong energy in that area of life."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Zeigen starke Energie in diesem Lebensbereich an." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Indicate strong energy in that area of life." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Indican fuerte energía en esa área de la vida." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Indiquent une forte énergie dans ce domaine de la vie." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Indicano una forte energia in quell'area della vita." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "その生活分野での強いエネルギーを示します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Indikerer sterk energi på det området av livet." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wskazują silną energię w tym obszarze życia." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Indicam forte energia nessa área da vida." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Indikerar stark energi inom det området av livet." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Вказують на сильну енергію в цій сфері життя." } }
       }
     },
     "howToReadPalm.step3.bullet1.title": {
       "comment": "Deep, clear lines",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Deep, clear lines"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Tiefe, klare Linien" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Deep, clear lines" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Líneas profundas y claras" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Lignes profondes et claires" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Linee profonde e chiare" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "深くはっきりした線" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Dype, klare linjer" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Głębokie, wyraźne linie" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Linhas profundas e claras" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Djupa, tydliga linjer" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Глибокі, чіткі лінії" } }
       }
     },
-    "howToReadPalm.step3.bullet2.text": {
-      "comment": "Suggest challenges, transitions, or areas needing attention.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Suggest challenges, transitions, or areas needing attention."
-          }
+    {
+      "howToReadPalm.step3.bullet2.text": {
+        "comment": "Suggest challenges, transitions, or areas needing attention.",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Deuten auf Herausforderungen, Übergänge oder Bereiche hin, die Aufmerksamkeit benötigen." } },
+          "en": { "stringUnit": { "state": "translated", "value": "Suggest challenges, transitions, or areas needing attention." } },
+          "es": { "stringUnit": { "state": "translated", "value": "Sugieren desafíos, transiciones o áreas que necesitan atención." } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Suggèrent des défis, des transitions ou des domaines nécessitant une attention particulière." } },
+          "it": { "stringUnit": { "state": "translated", "value": "Suggeriscono sfide, transizioni o aree che necessitano attenzione." } },
+          "ja": { "stringUnit": { "state": "translated", "value": "課題、移行、または注意を必要とする領域を示唆します。" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Antyder utfordringer, overganger eller områder som trenger oppmerksomhet." } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Sugerują wyzwania, przejścia lub obszary wymagające uwagi." } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Sugerem desafios, transições ou áreas que precisam de atenção." } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Antyder utmaningar, övergångar eller områden som behöver uppmärksamhet." } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Вказують на виклики, переходи або сфери, що потребують уваги." } }
         }
-      }
-    },
-    "howToReadPalm.step3.bullet2.title": {
-      "comment": "Faint or broken lines",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Faint or broken lines"
-          }
+      },
+      "howToReadPalm.step3.bullet2.title": {
+        "comment": "Faint or broken lines",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Schwache oder unterbrochene Linien" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Faint or broken lines" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Líneas tenues o rotas" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Lignes faibles ou brisées" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Linee deboli o spezzate" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "薄いまたは途切れた線" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Svake eller brutte linjer" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Słabe lub przerwane linie" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Linhas fracas ou quebradas" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Svagare eller brutna linjer" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Слабкі або перервані лінії" } }
         }
-      }
-    },
-    "howToReadPalm.step3.bullet3.text": {
-      "comment": "Usually positive, indicating opportunities or multiple paths.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usually positive, indicating opportunities or multiple paths."
-          }
+      },
+      "howToReadPalm.step3.bullet3.text": {
+        "comment": "Usually positive, indicating opportunities or multiple paths.",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Normalerweise positiv und weist auf Chancen oder mehrere Wege hin." } },
+          "en": { "stringUnit": { "state": "translated", "value": "Usually positive, indicating opportunities or multiple paths." } },
+          "es": { "stringUnit": { "state": "translated", "value": "Generalmente positivo, indicando oportunidades o múltiples caminos." } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Généralement positif, indiquant des opportunités ou plusieurs chemins." } },
+          "it": { "stringUnit": { "state": "translated", "value": "Di solito positivo, indica opportunità o percorsi multipli." } },
+          "ja": { "stringUnit": { "state": "translated", "value": "通常は肯定的で、機会や複数の道を示しています。" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Vanligvis positivt, indikerer muligheter eller flere veier." } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Zazwyczaj pozytywne, wskazuje na możliwości lub wiele ścieżek." } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Geralmente positivo, indicando oportunidades ou múltiplos caminhos." } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Vanligtvis positivt, indikerar möjligheter eller flera vägar." } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Зазвичай позитивний, вказує на можливості або кілька шляхів." } }
         }
-      }
-    },
-    "howToReadPalm.step3.bullet3.title": {
-      "comment": "Branches",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Branches"
-          }
+      },
+      "howToReadPalm.step3.bullet3.title": {
+        "comment": "Branches",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Verzweigungen" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Branches" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Ramas" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Branches" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Rami" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "分岐" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Grener" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Odgałęzienia" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Ramos" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Grenar" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Розгалуження" } }
         }
-      }
-    },
-    "howToReadPalm.step3.intro": {
-      "comment": "Focus on the four main lines, paying attention to their depth, length, and any breaks or branches:",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Focus on the four main lines, paying attention to their depth, length, and any breaks or branches:"
-          }
+      },
+      "howToReadPalm.step3.intro": {
+        "comment": "Focus on the four main lines, paying attention to their depth, length, and any breaks or branches:",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Konzentrieren Sie sich auf die vier Hauptlinien und achten Sie auf Tiefe, Länge sowie Unterbrechungen oder Verzweigungen:" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Focus on the four main lines, paying attention to their depth, length, and any breaks or branches:" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Concéntrese en las cuatro líneas principales, prestando atención a su profundidad, longitud y cualquier rotura o rama:" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Concentrez-vous sur les quatre lignes principales, en prêtant attention à leur profondeur, longueur et à toute cassure ou branche :" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Concentrati sulle quattro linee principali, prestando attenzione alla profondità, lunghezza ed eventuali interruzioni o rami:" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "4本の主要な線に焦点を当て、その深さ、長さ、途切れや分岐に注意してください：" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Fokuser på de fire hovedlinjene, og vær oppmerksom på dybde, lengde og eventuelle brudd eller grener:" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Skup się na czterech głównych liniach, zwracając uwagę na ich głębokość, długość oraz wszelkie przerwania lub odgałęzienia:" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Concentre-se nas quatro linhas principais, prestando atenção à profundidade, comprimento e quaisquer quebras ou ramos:" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Fokusera på de fyra huvudlinjerna, var uppmärksam på deras djup, längd och eventuella brott eller grenar:" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Зосередьтеся на чотирьох головних лініях, звертаючи увагу на їхню глибину, довжину та будь-які розриви або розгалуження:" } }
         }
-      }
-    },
-    "howToReadPalm.step3.proTip": {
-      "comment": "Lines can change over time! Your palm is not fixed—it evolves with you.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lines can change over time! Your palm is not fixed—it evolves with you."
-          }
+      },
+      "howToReadPalm.step3.proTip": {
+        "comment": "Lines can change over time! Your palm is not fixed—it evolves with you.",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Linien können sich mit der Zeit verändern! Deine Handfläche ist nicht festgelegt – sie entwickelt sich mit dir." } },
+          "en": { "stringUnit": { "state": "translated", "value": "Lines can change over time! Your palm is not fixed—it evolves with you." } },
+          "es": { "stringUnit": { "state": "translated", "value": "¡Las líneas pueden cambiar con el tiempo! Tu palma no es fija: evoluciona contigo." } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Les lignes peuvent changer avec le temps ! Votre paume n'est pas fixe – elle évolue avec vous." } },
+          "it": { "stringUnit": { "state": "translated", "value": "Le linee possono cambiare nel tempo! Il palmo non è fisso: si evolve con te." } },
+          "ja": { "stringUnit": { "state": "translated", "value": "線は時間とともに変わります！手のひらは固定されておらず、あなたとともに進化します。" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Linjer kan endres over tid! Håndflaten din er ikke fast – den utvikler seg med deg." } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Linie mogą zmieniać się z czasem! Twoja dłoń nie jest niezmienna – ewoluuje razem z tobą." } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "As linhas podem mudar com o tempo! Sua palma não é fixa – ela evolui com você." } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Linjer kan förändras över tid! Din handflata är inte fast – den utvecklas med dig." } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Лінії можуть змінюватися з часом! Ваша долоня не є фіксованою – вона розвивається разом із вами." } }
         }
-      }
-    },
-    "howToReadPalm.step3.title": {
-      "comment": "Read the Major Lines",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Read the Major Lines"
-          }
+      },
+      "howToReadPalm.step3.title": {
+        "comment": "Read the Major Lines",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Die Hauptlinien lesen" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Read the Major Lines" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Leer las líneas principales" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Lire les lignes principales" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Leggere le linee principali" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "主要な線を読む" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Les hovedlinjene" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Odczytaj główne linie" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Leia as linhas principais" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Läs huvudlinjerna" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Прочитайте головні лінії" } }
         }
-      }
-    },
-    "howToReadPalm.step4.bullet1.text": {
-      "comment": "Show active qualities (e.g., prominent Venus mount = passionate nature).",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show active qualities (e.g., prominent Venus mount = passionate nature)."
-          }
+      },
+      "howToReadPalm.step4.bullet1.text": {
+        "comment": "Show active qualities (e.g., prominent Venus mount = passionate nature).",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Zeigen aktive Eigenschaften (z. B. ausgeprägter Venusberg = leidenschaftliches Wesen)." } },
+          "en": { "stringUnit": { "state": "translated", "value": "Show active qualities (e.g., prominent Venus mount = passionate nature)." } },
+          "es": { "stringUnit": { "state": "translated", "value": "Muestran cualidades activas (ej. monte de Venus prominente = naturaleza apasionada)." } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Montrent des qualités actives (ex. mont de Vénus proéminent = nature passionnée)." } },
+          "it": { "stringUnit": { "state": "translated", "value": "Mostrano qualità attive (es. Monte di Venere prominente = natura passionale)." } },
+          "ja": { "stringUnit": { "state": "translated", "value": "活発な資質を示します（例：金星丘が発達している＝情熱的な性質）。" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Viser aktive egenskaper (f.eks. fremtredende Venusberg = lidenskapelig natur)." } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Wskazują aktywne cechy (np. wydatna Góra Wenus = namiętna natura)." } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Mostram qualidades ativas (ex. Monte de Vênus proeminente = natureza apaixonada)." } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Visar aktiva egenskaper (t.ex. framträdande Venusberg = passionerad natur)." } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Вказують на активні якості (наприклад, виражений пагорб Венери = пристрасна натура)." } }
         }
-      }
-    },
-    "howToReadPalm.step4.bullet1.title": {
-      "comment": "Well-developed mounts",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Well-developed mounts"
-          }
+      },
+      "howToReadPalm.step4.bullet1.title": {
+        "comment": "Well-developed mounts",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Gut entwickelte Hügel (Mounts)" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Well-developed mounts" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Montes bien desarrollados" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Monts bien développés" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Monti ben sviluppati" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "よく発達した丘" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Velutviklede hauger (mounts)" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Dobrze rozwinięte wzgórza" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Montes bem desenvolvidos" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Välutvecklade berg" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Добре розвинені пагорби" } }
         }
-      }
-    },
-    "howToReadPalm.step4.bullet2.text": {
-      "comment": "Suggest those qualities are less emphasized in your personality.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Suggest those qualities are less emphasized in your personality."
-          }
+      },
+      "howToReadPalm.step4.bullet2.text": {
+        "comment": "Suggest those qualities are less emphasized in your personality.",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Deuten darauf hin, dass diese Eigenschaften in Ihrer Persönlichkeit weniger betont sind." } },
+          "en": { "stringUnit": { "state": "translated", "value": "Suggest those qualities are less emphasized in your personality." } },
+          "es": { "stringUnit": { "state": "translated", "value": "Sugieren que esas cualidades están menos enfatizadas en tu personalidad." } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Suggèrent que ces qualités sont moins marquées dans votre personnalité." } },
+          "it": { "stringUnit": { "state": "translated", "value": "Suggeriscono che queste qualità sono meno enfatizzate nella tua personalità." } },
+          "ja": { "stringUnit": { "state": "translated", "value": "それらの資質があなたの性格においてあまり強調されていないことを示唆します。" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Antyder at disse egenskapene er mindre vektlagt i personligheten din." } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Sugerują, że te cechy są mniej widoczne w twojej osobowości." } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Sugerem que essas qualidades são menos enfatizadas na sua personalidade." } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Antyder att dessa egenskaper är mindre betonade i din personlighet." } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Вказують на те, що ці якості менш виражені у вашій особистості." } }
         }
-      }
-    },
-    "howToReadPalm.step4.bullet2.title": {
-      "comment": "Flat mounts",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Flat mounts"
-          }
+      },
+      "howToReadPalm.step4.bullet2.title": {
+        "comment": "Flat mounts",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Flache Hügel" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Flat mounts" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Montes planos" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Monts plats" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Monti piatti" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "平らな丘" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Flate hauger" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Płaskie wzgórza" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Montes planos" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Platta berg" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Плоскі пагорби" } }
         }
-      }
-    },
-    "howToReadPalm.step4.intro": {
-      "comment": "Feel the mounts (the fleshy pads) on your palm. Prominent mounts indicate strong traits:",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Feel the mounts (the fleshy pads) on your palm. Prominent mounts indicate strong traits:"
-          }
+      },
+      "howToReadPalm.step4.intro": {
+        "comment": "Feel the mounts (the fleshy pads) on your palm. Prominent mounts indicate strong traits:",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Fühle die Hügel (die fleischigen Polster) auf deiner Handfläche. Ausgeprägte Hügel deuten auf starke Eigenschaften hin:" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Feel the mounts (the fleshy pads) on your palm. Prominent mounts indicate strong traits:" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Siente los montes (las almohadillas carnosas) en tu palma. Los montes prominentes indican rasgos fuertes:" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Sentez les monts (les coussinets charnus) sur votre paume. Des monts proéminents indiquent des traits forts :" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Senti i monti (i cuscinetti carnosi) sul palmo. Monti prominenti indicano tratti forti:" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "手のひらの丘（肉厚のパッド）を感じてみてください。発達した丘は強い特性を示します：" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Kjenn på haugene (de kjøttfulle putene) i håndflaten din. Fremtredende hauger indikerer sterke trekk:" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Poczuj wzgórza (mięsiste poduszki) na swojej dłoni. Wyraźne wzgórza wskazują na silne cechy:" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Sinta os montes (as almofadas carnudas) na sua palma. Montes proeminentes indicam traços fortes:" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Känn på bergen (de köttiga kuddarna) i din handflata. Framträdande berg indikerar starka drag:" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Помацайте пагорби (м’ясисті подушечки) на долоні. Виражені пагорби вказують на сильні риси:" } }
         }
-      }
-    },
-    "howToReadPalm.step4.title": {
-      "comment": "Study the Mounts",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Study the Mounts"
-          }
+      },
+      "howToReadPalm.step4.title": {
+        "comment": "Study the Mounts",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Die Hügel (Mounts) untersuchen" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Study the Mounts" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Estudiar los montes" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Étudier les monts" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Studiare i monti" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "丘を調べる" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Studer haugene" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Zbadaj wzgórza" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Estude os montes" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Studera bergen" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Вивчіть пагорби" } }
         }
-      }
-    },
-    "howToReadPalm.step5.bullet1.text": {
-      "comment": "Do the hand shape and lines tell a consistent story?",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Do the hand shape and lines tell a consistent story?"
-          }
+      },
+      "howToReadPalm.step5.bullet1.text": {
+        "comment": "Do the hand shape and lines tell a consistent story?",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Ergeben Handform und Linien eine konsistente Geschichte?" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Do the hand shape and lines tell a consistent story?" } },
+          "es": { "stringUnit": { "state": "translated", "value": "¿La forma de la mano y las líneas cuentan una historia coherente?" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "La forme de la main et les lignes racontent-elles une histoire cohérente ?" } },
+          "it": { "stringUnit": { "state": "translated", "value": "La forma della mano e le linee raccontano una storia coerente?" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "手の形と線は一貫したストーリーを伝えていますか？" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Forteller håndformen og linjene en sammenhengende historie?" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Czy kształt dłoni i linie tworzą spójną historię?" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "A forma da mão e as linhas contam uma história consistente?" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Berättar handformen och linjerna en sammanhängande historia?" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Чи розповідають форма руки та лінії узгоджену історію?" } }
         }
-      }
-    },
-    "howToReadPalm.step5.bullet1.title": {
-      "comment": "Look for patterns",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Look for patterns"
-          }
+      },
+      "howToReadPalm.step5.bullet1.title": {
+        "comment": "Look for patterns",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Nach Mustern suchen" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Look for patterns" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Buscar patrones" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Chercher des schémas" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Cerca schemi" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "パターンを探す" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Se etter mønstre" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Szukaj wzorców" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Procure padrões" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Titta efter mönster" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Шукайте закономірності" } }
         }
-      }
-    },
-    "howToReadPalm.step5.bullet2.text": {
-      "comment": "What stands out to you most? That's often where the important message lies.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "What stands out to you most? That's often where the important message lies."
-          }
+      },
+      "howToReadPalm.step5.bullet2.text": {
+        "comment": "What stands out to you most? That's often where the important message lies.",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Was fällt dir am meisten auf? Dort liegt oft die wichtige Botschaft." } },
+          "en": { "stringUnit": { "state": "translated", "value": "What stands out to you most? That's often where the important message lies." } },
+          "es": { "stringUnit": { "state": "translated", "value": "¿Qué es lo que más te llama la atención? Ahí suele estar el mensaje importante." } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Qu’est-ce qui vous frappe le plus ? C’est souvent là que se trouve le message important." } },
+          "it": { "stringUnit": { "state": "translated", "value": "Cosa ti colpisce di più? È lì che spesso si trova il messaggio importante." } },
+          "ja": { "stringUnit": { "state": "translated", "value": "何が最も目立ちますか？そこに重要なメッセージがあることがよくあります。" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Hva skiller seg mest ut for deg? Det er ofte der den viktige meldingen ligger." } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Co przykuwa twoją uwagę najbardziej? Tam często kryje się ważna wiadomość." } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "O que mais se destaca para você? É aí que geralmente está a mensagem importante." } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Vad sticker ut mest för dig? Det är ofta där det viktiga budskapet finns." } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Що найбільше привертає вашу увагу? Саме там часто криється важливе повідомлення." } }
         }
-      }
-    },
-    "howToReadPalm.step5.bullet2.title": {
-      "comment": "Trust intuition",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Trust intuition"
-          }
+      },
+      "howToReadPalm.step5.bullet2.title": {
+        "comment": "Trust intuition",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Vertraue der Intuition" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Trust intuition" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Confía en la intuición" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Faites confiance à l’intuition" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Fidati dell’intuizione" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "直感を信じる" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Stol på intuisjonen" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Zaufaj intuicji" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Confie na intuição" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Lita på intuitionen" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Довіряйте інтуїції" } }
         }
-      }
-    },
-    "howToReadPalm.step5.intro": {
-      "comment": "Palm reading is holistic—no single feature tells the whole story. Combine all elements:",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palm reading is holistic—no single feature tells the whole story. Combine all elements:"
-          }
+      },
+      "howToReadPalm.step5.intro": {
+        "comment": "Palm reading is holistic—no single feature tells the whole story. Combine all elements:",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Handlesen ist ganzheitlich – kein einzelnes Merkmal erzählt die ganze Geschichte. Kombiniere alle Elemente:" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Palm reading is holistic—no single feature tells the whole story. Combine all elements:" } },
+          "es": { "stringUnit": { "state": "translated", "value": "La quiromancia es holística: ninguna característica por sí sola cuenta toda la historia. Combina todos los elementos:" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie est holistique – aucune caractéristique unique ne raconte toute l’histoire. Combinez tous les éléments :" } },
+          "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia è olistica: nessuna singola caratteristica racconta l’intera storia. Combina tutti gli elementi:" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "手相占いは全体論的です。単一の特徴だけが全てを語るわけではありません。すべての要素を組み合わせてください：" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing er helhetlig – ingen enkelt funksjon forteller hele historien. Kombiner alle elementene:" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja jest holistyczna – żadna pojedyncza cecha nie opowiada całej historii. Połącz wszystkie elementy:" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia é holística – nenhuma característica isolada conta toda a história. Combine todos os elementos:" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Handläsning är holistisk – ingen enskild funktion berättar hela historien. Kombinera alla element:" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія є холістичною – жодна окрема ознака не розповідає всієї історії. Поєднайте всі елементи:" } }
         }
-      }
-    },
-    "howToReadPalm.step5.title": {
-      "comment": "Interpret Everything Together",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Interpret Everything Together"
-          }
+      },
+      "howToReadPalm.step5.title": {
+        "comment": "Interpret Everything Together",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Alles gemeinsam interpretieren" } },
+          "en": { "stringUnit": { "state": "translated", "value": "Interpret Everything Together" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Interpretar todo en conjunto" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Interpréter l’ensemble" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Interpretare tutto insieme" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "すべてをまとめて解釈する" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Tolk alt sammen" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Interpretuj wszystko razem" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Interprete tudo junto" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Tolka allt tillsammans" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Інтерпретуйте все разом" } }
         }
-      }
-    },
-    "howToReadPalm.title": {
-      "comment": "How to Read a Palm",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "How to Read a Palm"
-          }
+      },
+      "howToReadPalm.title": {
+        "comment": "How to Read a Palm",
+        "localizations": {
+          "de": { "stringUnit": { "state": "translated", "value": "Wie man eine Handfläche liest" } },
+          "en": { "stringUnit": { "state": "translated", "value": "How to Read a Palm" } },
+          "es": { "stringUnit": { "state": "translated", "value": "Cómo leer una palma" } },
+          "fr": { "stringUnit": { "state": "translated", "value": "Comment lire une paume" } },
+          "it": { "stringUnit": { "state": "translated", "value": "Come leggere il palmo" } },
+          "ja": { "stringUnit": { "state": "translated", "value": "手相の見方" } },
+          "nb": { "stringUnit": { "state": "translated", "value": "Hvordan lese en håndflate" } },
+          "pl": { "stringUnit": { "state": "translated", "value": "Jak czytać z dłoni" } },
+          "pt-BR": { "stringUnit": { "state": "translated", "value": "Como ler a palma da mão" } },
+          "sv": { "stringUnit": { "state": "translated", "value": "Hur man läser en handflata" } },
+          "uk": { "stringUnit": { "state": "translated", "value": "Як читати долоню" } }
         }
       }
     },

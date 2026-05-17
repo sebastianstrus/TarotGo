@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct PalmBasicMeaningsView: View {
+    // Get current language code for localized palm image
+    private var currentLanguageCode: String {
+        let languageCode = Locale.current.language.languageCode?.identifier ?? "en"
+        // Handle special case for Brazilian Portuguese
+        if languageCode == "pt", Locale.current.region?.identifier == "BR" {
+            return "pt-BR"
+        }
+        return languageCode
+    }
+    
+    // Get localized palm image name
+    private var palmImageName: String {
+        "palm_\(currentLanguageCode)"
+    }
+    
     var body: some View {
         ZStack {
             Color.clear
@@ -39,7 +54,7 @@ struct PalmBasicMeaningsView: View {
                                 .font(AppTheme.serifFont(size: 20, weight: .semibold))
                                 .foregroundStyle(AppTheme.goldGradient)
                             
-                            Image("palm_en")
+                            Image(palmImageName)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(maxWidth: .infinity)
