@@ -83,7 +83,7 @@ struct HoroscopeView: View {
                 .font(.system(size: 60))
                 .foregroundColor(AppTheme.gold.opacity(0.6))
             
-            Text("Select Your Zodiac Sign")
+            Text(L10n.selectYourZodiacSign)
                 .font(AppTheme.serifFont(size: 24, weight: .light))
                 .foregroundStyle(AppTheme.goldGradient)
             
@@ -97,7 +97,7 @@ struct HoroscopeView: View {
                 } label: {
                     HStack {
                         Image(systemName: "calendar.badge.plus")
-                        Text("Use My Birth Date")
+                        Text(L10n.useMyBirthDate)
                     }
                     .font(.system(size: 16, weight: .medium))
                     .foregroundColor(.white)
@@ -112,7 +112,7 @@ struct HoroscopeView: View {
                 } label: {
                     HStack {
                         Image(systemName: "list.bullet.circle")
-                        Text("Choose Manually")
+                        Text(L10n.chooseManually)
                     }
                     .font(.system(size: 16, weight: .medium))
                     .foregroundColor(AppTheme.gold)
@@ -158,35 +158,35 @@ struct HoroscopeView: View {
             
             // Today's Reading
             horoscopeCard(
-                title: "Today's Overview",
+                title: L10n.todaysOverview,
                 icon: "sun.max.fill",
                 content: dailyReading(for: sign)
             )
             
             // Love & Relationships
             horoscopeCard(
-                title: "Love & Relationships",
+                title: L10n.loveAndRelationships,
                 icon: "heart.fill",
                 content: loveReading(for: sign)
             )
             
             // Career & Finance
             horoscopeCard(
-                title: "Career & Finance",
+                title: L10n.careerAndFinance,
                 icon: "briefcase.fill",
                 content: careerReading(for: sign)
             )
             
             // Lucky Elements
             VStack(spacing: 16) {
-                Text("Today's Lucky Elements")
+                Text(L10n.todaysLuckyElements)
                     .font(AppTheme.serifFont(size: 18, weight: .medium))
                     .foregroundStyle(AppTheme.goldGradient)
                 
                 HStack(spacing: 20) {
-                    luckyElement(icon: "paintpalette.fill", label: "Color", value: luckyColor(for: sign))
-                    luckyElement(icon: "number.circle.fill", label: "Number", value: "\(luckyNumber(for: sign))")
-                    luckyElement(icon: "clock.fill", label: "Time", value: luckyTime(for: sign))
+                    luckyElement(icon: "paintpalette.fill", label: L10n.color, value: luckyColor(for: sign))
+                    luckyElement(icon: "number.circle.fill", label: L10n.number, value: "\(luckyNumber(for: sign))")
+                    luckyElement(icon: "clock.fill", label: L10n.time, value: luckyTime(for: sign))
                 }
             }
             .padding()
@@ -270,7 +270,7 @@ struct HoroscopeView: View {
     }
     
     private func luckyColor(for sign: ZodiacSign) -> String {
-        let colors = ["Gold", "Silver", "Blue", "Green", "Red", "Purple", "Orange"]
+        let colors = [L10n.luckyColorGold, L10n.luckyColorSilver, L10n.luckyColorBlue, L10n.luckyColorGreen, L10n.luckyColorRed, L10n.luckyColorPurple, L10n.luckyColorOrange]
         return colors[getDailySeed(for: sign) % colors.count]
     }
     
@@ -279,55 +279,55 @@ struct HoroscopeView: View {
     }
     
     private func luckyTime(for sign: ZodiacSign) -> String {
-        let times = ["Morning", "Noon", "Afternoon", "Evening", "Night"]
+        let times = [L10n.luckyTimeMorning, L10n.luckyTimeNoon, L10n.luckyTimeAfternoon, L10n.luckyTimeEvening, L10n.luckyTimeNight]
         return times[getDailySeed(for: sign) % times.count]
     }
     
     private func signDateRange(for sign: ZodiacSign) -> String {
         switch sign {
-        case .aries: return "Mar 21 - Apr 19"
-        case .taurus: return "Apr 20 - May 20"
-        case .gemini: return "May 21 - Jun 20"
-        case .cancer: return "Jun 21 - Jul 22"
-        case .leo: return "Jul 23 - Aug 22"
-        case .virgo: return "Aug 23 - Sep 22"
-        case .libra: return "Sep 23 - Oct 22"
-        case .scorpio: return "Oct 23 - Nov 21"
-        case .sagittarius: return "Nov 22 - Dec 21"
-        case .capricorn: return "Dec 22 - Jan 19"
-        case .aquarius: return "Jan 20 - Feb 18"
-        case .pisces: return "Feb 19 - Mar 20"
+        case .aries: return L10n.ariesDateRange
+        case .taurus: return L10n.taurusDateRange
+        case .gemini: return L10n.geminiDateRange
+        case .cancer: return L10n.cancerDateRange
+        case .leo: return L10n.leoDateRange
+        case .virgo: return L10n.virgoDateRange
+        case .libra: return L10n.libraDateRange
+        case .scorpio: return L10n.scorpioDateRange
+        case .sagittarius: return L10n.sagittariusDateRange
+        case .capricorn: return L10n.capricornDateRange
+        case .aquarius: return L10n.aquariusDateRange
+        case .pisces: return L10n.piscesDateRange
         }
     }
     
     // Daily reading variations for each sign
     private func getDailyReadings(for sign: ZodiacSign) -> [String] {
         return [
-            "Today brings fresh opportunities for growth. Trust your instincts and embrace new experiences with an open heart.",
-            "The cosmic energy today favors reflection and planning. Take time to consider your next steps carefully.",
-            "Your natural strengths shine brightly today. Don't hesitate to showcase your talents and unique perspective.",
-            "A day of unexpected connections and meaningful conversations. Stay open to wisdom from unlikely sources.",
-            "Today's energy supports transformation. Let go of what no longer serves you and welcome positive change."
+            L10n.dailyReading1,
+            L10n.dailyReading2,
+            L10n.dailyReading3,
+            L10n.dailyReading4,
+            L10n.dailyReading5
         ]
     }
     
     private func getLoveReadings(for sign: ZodiacSign) -> [String] {
         return [
-            "Communication flows easily in your relationships today. Express your feelings with honesty and compassion.",
-            "A romantic opportunity may present itself unexpectedly. Stay present and authentic in your interactions.",
-            "Focus on deepening existing bonds rather than seeking new connections. Quality over quantity brings fulfillment.",
-            "Your emotional intuition is heightened. Trust your heart's wisdom in matters of love and connection.",
-            "Independence and partnership find beautiful balance today. Honor both your needs and those of loved ones."
+            L10n.loveReading1,
+            L10n.loveReading2,
+            L10n.loveReading3,
+            L10n.loveReading4,
+            L10n.loveReading5
         ]
     }
     
     private func getCareerReadings(for sign: ZodiacSign) -> [String] {
         return [
-            "Professional recognition is on the horizon. Your hard work and dedication are being noticed by those who matter.",
-            "Collaboration brings success today. Seek input from colleagues and build on collective wisdom.",
-            "Financial decisions require careful consideration. Trust your analytical mind and avoid impulsive choices.",
-            "Your creative solutions impress others. Don't be afraid to think outside the box and propose innovative ideas.",
-            "A good day for planning long-term goals. Set clear intentions and take practical steps toward your aspirations."
+            L10n.careerReading1,
+            L10n.careerReading2,
+            L10n.careerReading3,
+            L10n.careerReading4,
+            L10n.careerReading5
         ]
     }
 }
@@ -380,11 +380,11 @@ struct SignPickerView: View {
                     .padding()
                 }
             }
-            .navigationTitle("Select Your Sign")
+            .navigationTitle(L10n.selectYourSign)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button(L10n.cancel) {
                         isPresented = false
                     }
                     .foregroundStyle(AppTheme.goldGradient)

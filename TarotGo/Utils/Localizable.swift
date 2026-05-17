@@ -1239,6 +1239,71 @@ enum L10n {
     
     static let yourPersonalNumbers = NSLocalizedString("Your Personal Numbers", comment: "A label displayed above the user's numerology numbers.")
     
+    // MARK: - Horoscope View
+    static let selectYourZodiacSign = NSLocalizedString("Select Your Zodiac Sign", comment: "Prompt for selecting zodiac sign")
+    static let chooseManually = NSLocalizedString("Choose Manually", comment: "Button to manually choose zodiac sign")
+    static let todaysOverview = NSLocalizedString("Today's Overview", comment: "Horoscope section title")
+    static let loveAndRelationships = NSLocalizedString("Love & Relationships", comment: "Horoscope section title")
+    static let careerAndFinance = NSLocalizedString("Career & Finance", comment: "Horoscope section title")
+    
+    // Lucky Elements
+    static let color = NSLocalizedString("Color", comment: "Lucky color label")
+    static let number = NSLocalizedString("Number", comment: "Lucky number label")
+    
+    // Lucky Colors
+    static let luckyColorGold = NSLocalizedString("Gold", comment: "Lucky color: Gold")
+    static let luckyColorSilver = NSLocalizedString("Silver", comment: "Lucky color: Silver")
+    static let luckyColorBlue = NSLocalizedString("Blue", comment: "Lucky color: Blue")
+    static let luckyColorGreen = NSLocalizedString("Green", comment: "Lucky color: Green")
+    static let luckyColorRed = NSLocalizedString("Red", comment: "Lucky color: Red")
+    static let luckyColorPurple = NSLocalizedString("Purple", comment: "Lucky color: Purple")
+    static let luckyColorOrange = NSLocalizedString("Orange", comment: "Lucky color: Orange")
+    
+    // Lucky Times
+    static let luckyTimeMorning = NSLocalizedString("Morning", comment: "Lucky time: Morning")
+    static let luckyTimeNoon = NSLocalizedString("Noon", comment: "Lucky time: Noon")
+    static let luckyTimeAfternoon = NSLocalizedString("Afternoon", comment: "Lucky time: Afternoon")
+    static let luckyTimeEvening = NSLocalizedString("Evening", comment: "Lucky time: Evening")
+    static let luckyTimeNight = NSLocalizedString("Night", comment: "Lucky time: Night")
+    
+    // Sign Picker
+    static let selectYourSign = NSLocalizedString("Select Your Sign", comment: "Sign picker title")
+    
+    // Zodiac Date Ranges
+    static let ariesDateRange = NSLocalizedString("Mar 21 - Apr 19", comment: "Aries date range")
+    static let taurusDateRange = NSLocalizedString("Apr 20 - May 20", comment: "Taurus date range")
+    static let geminiDateRange = NSLocalizedString("May 21 - Jun 20", comment: "Gemini date range")
+    static let cancerDateRange = NSLocalizedString("Jun 21 - Jul 22", comment: "Cancer date range")
+    static let leoDateRange = NSLocalizedString("Jul 23 - Aug 22", comment: "Leo date range")
+    static let virgoDateRange = NSLocalizedString("Aug 23 - Sep 22", comment: "Virgo date range")
+    static let libraDateRange = NSLocalizedString("Sep 23 - Oct 22", comment: "Libra date range")
+    static let scorpioDateRange = NSLocalizedString("Oct 23 - Nov 21", comment: "Scorpio date range")
+    static let sagittariusDateRange = NSLocalizedString("Nov 22 - Dec 21", comment: "Sagittarius date range")
+    static let capricornDateRange = NSLocalizedString("Dec 22 - Jan 19", comment: "Capricorn date range")
+    static let aquariusDateRange = NSLocalizedString("Jan 20 - Feb 18", comment: "Aquarius date range")
+    static let piscesDateRange = NSLocalizedString("Feb 19 - Mar 20", comment: "Pisces date range")
+    
+    // Daily Readings (5 variations)
+    static let dailyReading1 = NSLocalizedString("Today brings fresh opportunities for growth. Trust your instincts and embrace new experiences with an open heart.", comment: "Daily horoscope reading variation 1")
+    static let dailyReading2 = NSLocalizedString("The cosmic energy today favors reflection and planning. Take time to consider your next steps carefully.", comment: "Daily horoscope reading variation 2")
+    static let dailyReading3 = NSLocalizedString("Your natural strengths shine brightly today. Don't hesitate to showcase your talents and unique perspective.", comment: "Daily horoscope reading variation 3")
+    static let dailyReading4 = NSLocalizedString("A day of unexpected connections and meaningful conversations. Stay open to wisdom from unlikely sources.", comment: "Daily horoscope reading variation 4")
+    static let dailyReading5 = NSLocalizedString("Today's energy supports transformation. Let go of what no longer serves you and welcome positive change.", comment: "Daily horoscope reading variation 5")
+    
+    // Love Readings (5 variations)
+    static let loveReading1 = NSLocalizedString("Communication flows easily in your relationships today. Express your feelings with honesty and compassion.", comment: "Love horoscope reading variation 1")
+    static let loveReading2 = NSLocalizedString("A romantic opportunity may present itself unexpectedly. Stay present and authentic in your interactions.", comment: "Love horoscope reading variation 2")
+    static let loveReading3 = NSLocalizedString("Focus on deepening existing bonds rather than seeking new connections. Quality over quantity brings fulfillment.", comment: "Love horoscope reading variation 3")
+    static let loveReading4 = NSLocalizedString("Your emotional intuition is heightened. Trust your heart's wisdom in matters of love and connection.", comment: "Love horoscope reading variation 4")
+    static let loveReading5 = NSLocalizedString("Independence and partnership find beautiful balance today. Honor both your needs and those of loved ones.", comment: "Love horoscope reading variation 5")
+    
+    // Career Readings (5 variations)
+    static let careerReading1 = NSLocalizedString("Professional recognition is on the horizon. Your hard work and dedication are being noticed by those who matter.", comment: "Career horoscope reading variation 1")
+    static let careerReading2 = NSLocalizedString("Collaboration brings success today. Seek input from colleagues and build on collective wisdom.", comment: "Career horoscope reading variation 2")
+    static let careerReading3 = NSLocalizedString("Financial decisions require careful consideration. Trust your analytical mind and avoid impulsive choices.", comment: "Career horoscope reading variation 3")
+    static let careerReading4 = NSLocalizedString("Your creative solutions impress others. Don't be afraid to think outside the box and propose innovative ideas.", comment: "Career horoscope reading variation 4")
+    static let careerReading5 = NSLocalizedString("A good day for planning long-term goals. Set clear intentions and take practical steps toward your aspirations.", comment: "Career horoscope reading variation 5")
+    
     // MARK: - Astrology / Zodiac Signs
     // These are used by AstrologyService for zodiac sign names
 }
