@@ -108822,117 +108822,193 @@
     "learnPalmistry.basicMeanings.subtitle": {
       "comment": "Lines, mounts and fingers",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lines, mounts and fingers"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Linien, Berge und Finger" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Lines, mounts and fingers" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Líneas, montes y dedos" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Lignes, monts et doigts" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Linee, monti e dita" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "線、丘、指" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Linjer, berg og fingre" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Linie, wzgórza i palce" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Linhas, montes e dedos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Linjer, berg och fingrar" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лінії, пагорби та пальці" } }
       }
     },
     "learnPalmistry.basicMeanings.title": {
       "comment": "Palm Basic Meanings",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palm Basic Meanings"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen Grundbedeutungen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palm Basic Meanings" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Significados Básicos de la Palma" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Significations de Base de la Paume" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Significati Base del Palmo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相の基本の意味" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Grunnleggende håndlesingsbetydninger" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Podstawowe Znaczenia w Chiromancji" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Significados Básicos da Palma" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Grundläggande handflatsbetydelser" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Основні значення хіромантії" } }
       }
     },
     "learnPalmistry.comingSoon": {
-      "comment": "Content coming soon"
+      "comment": "Content coming soon",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Inhalt erscheint bald" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Content coming soon" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Contenido próximamente" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Contenu à venir" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Contenuto in arrivo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "コンテンツは近日公開" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Innhold kommer snart" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Treść już wkrótce" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Conteúdo em breve" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Innehåll kommer snart" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Контент незабаром" } }
+      }
     },
     "learnPalmistry.description": {
-      "comment": "Discover the ancient art of palmistry. Learn to read the lines, mounts, and shapes that reveal your destiny."
+      "comment": "Discover the ancient art of palmistry. Learn to read the lines, mounts, and shapes that reveal your destiny.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Entdecke die alte Kunst des Handlesens. Lerne die Linien, Berge und Formen zu lesen, die dein Schicksal offenbaren." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Discover the ancient art of palmistry. Learn to read the lines, mounts, and shapes that reveal your destiny." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Descubre el antiguo arte de la quiromancia. Aprende a leer las líneas, montes y formas que revelan tu destino." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Découvrez l'art ancien de la chiromancie. Apprenez à lire les lignes, les monts et les formes qui révèlent votre destin." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Scopri l'antica arte della chiromanzia. Impara a leggere le linee, i monti e le forme che rivelano il tuo destino." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相占いの古代芸術を発見しましょう。運命を明らかにする線、丘、形を読むことを学びます。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Oppdag den gamle kunsten håndlesing. Lær å lese linjene, bergene og formene som avslører skjebnen din." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odkryj starożytną sztukę chiromancji. Naucz się czytać linie, wzgórza i kształty, które ujawniają twoje przeznaczenie." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Descubra a antiga arte da quiromancia. Aprenda a ler as linhas, montes e formas que revelam seu destino." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Upptäck den gamla konsten handläsning. Lär dig läsa linjerna, bergen och formerna som avslöjar ditt öde." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відкрийте для себе давнє мистецтво хіромантії. Навчіться читати лінії, пагорби та форми, які розкривають вашу долю." } }
+      }
     },
     "learnPalmistry.faq.subtitle": {
       "comment": "Common questions",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Common questions"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Häufige Fragen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Common questions" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Preguntas comunes" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Questions courantes" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Domande comuni" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "よくある質問" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Vanlige spørsmål" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Częste pytania" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Perguntas comuns" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vanliga frågor" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Поширені запитання" } }
       }
     },
     "learnPalmistry.faq.title": {
       "comment": "FAQ",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "FAQ"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "FAQ" } },
+        "en": { "stringUnit": { "state": "translated", "value": "FAQ" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Preguntas frecuentes" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "FAQ" } },
+        "it": { "stringUnit": { "state": "translated", "value": "FAQ" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "よくある質問" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ofte stilte spørsmål" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Często zadawane pytania" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Perguntas frequentes" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vanliga frågor och svar" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Часті запитання" } }
       }
     },
     "learnPalmistry.history.subtitle": {
       "comment": "Origins and evolution",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Origins and evolution"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Ursprünge und Entwicklung" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Origins and evolution" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Orígenes y evolución" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Origines et évolution" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Origini ed evoluzione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "起源と進化" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Opprinnelse og utvikling" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Początki i ewolucja" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Origens e evolução" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ursprung och utveckling" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Походження та еволюція" } }
       }
     },
     "learnPalmistry.history.title": {
       "comment": "History of Palmistry",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "History of Palmistry"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Geschichte des Handlesens" } },
+        "en": { "stringUnit": { "state": "translated", "value": "History of Palmistry" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Historia de la quiromancia" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Histoire de la chiromancie" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Storia della chiromanzia" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相占いの歴史" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesingens historie" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Historia chiromancji" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "História da quiromancia" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsningens historia" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Історія хіромантії" } }
       }
     },
     "learnPalmistry.howToRead.subtitle": {
       "comment": "Master palm reading",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Master palm reading"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen meistern" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Master palm reading" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Domina la lectura de la palma" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Maîtriser la lecture de la paume" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Padroneggia la lettura del palmo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相占いをマスターする" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Mestre håndlesing" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Opanuj czytanie z dłoni" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Domine a leitura das mãos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Bemästra handläsning" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Опануйте читання долоні" } }
       }
     },
     "learnPalmistry.howToRead.title": {
       "comment": "How to Read",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "How to Read"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Wie man liest" } },
+        "en": { "stringUnit": { "state": "translated", "value": "How to Read" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Cómo leer" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Comment lire" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Come leggere" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "読み方" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hvordan lese" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Jak czytać" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Como ler" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Hur man läser" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Як читати" } }
       }
     },
     "learnPalmistry.mind.subtitle": {
       "comment": "Self-discovery tool",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Self-discovery tool"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Werkzeug zur Selbstfindung" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Self-discovery tool" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Herramienta de autodescubrimiento" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Outil de découverte de soi" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Strumento di auto-scoperta" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自己発見のツール" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Verktøy for selvutforskelse" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Narzędzie samopoznania" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Ferramenta de autodescoberta" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Verktyg för självupptäckt" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Інструмент самопізнання" } }
       }
     },
     "learnPalmistry.mind.title": {
       "comment": "Palmistry & Mind",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry & Mind"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen & Geist" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry & Mind" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Quiromancia y mente" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Chiromancie et esprit" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Chiromanzia e mente" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相と心" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing & sinn" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja i umysł" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Quiromancia e Mente" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning & sinne" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія та розум" } }
       }
     },
     "learnPalmistry.subtitle": {
