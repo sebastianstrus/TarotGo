@@ -60,6 +60,44 @@ enum L10n {
     
     static let compatibilityTitle = NSLocalizedString("compatibility.title", comment: "Compatibility")
     static let compatibilitySubtitle = NSLocalizedString("compatibility.subtitle", comment: "Discover your cosmic connections")
+    static let compatibilityYourSign = NSLocalizedString("compatibility.yourSign", comment: "Your Sign")
+    static let compatibilityPartnerSign = NSLocalizedString("compatibility.partnerSign", comment: "Partner's Sign")
+    static let compatibilitySelectPrompt = NSLocalizedString("compatibility.selectPrompt", comment: "Select both zodiac signs to see compatibility")
+    static let compatibilityScore = NSLocalizedString("compatibility.score", comment: "Compatibility Score")
+    static let compatibilityElementalMatch = NSLocalizedString("compatibility.elementalMatch", comment: "Elemental Match")
+    static let compatibilityOverall = NSLocalizedString("compatibility.overall", comment: "Overall Compatibility")
+    static let compatibilityStrengths = NSLocalizedString("compatibility.strengths", comment: "Strengths")
+    static let compatibilityChallenges = NSLocalizedString("compatibility.challenges", comment: "Challenges")
+    static let compatibilityAdvice = NSLocalizedString("compatibility.advice", comment: "Advice")
+    
+    // Rating levels
+    static let compatibilityRatingExcellent = NSLocalizedString("compatibility.rating.excellent", comment: "Excellent Match")
+    static let compatibilityRatingVeryCompatible = NSLocalizedString("compatibility.rating.veryCompatible", comment: "Very Compatible")
+    static let compatibilityRatingGood = NSLocalizedString("compatibility.rating.good", comment: "Good Match")
+    static let compatibilityRatingModerate = NSLocalizedString("compatibility.rating.moderate", comment: "Moderate Compatibility")
+    static let compatibilityRatingChallenging = NSLocalizedString("compatibility.rating.challenging", comment: "Challenging but Possible")
+    
+    // Elements
+    static let compatibilityElementFire = NSLocalizedString("compatibility.element.fire", comment: "Fire")
+    static let compatibilityElementEarth = NSLocalizedString("compatibility.element.earth", comment: "Earth")
+    static let compatibilityElementAir = NSLocalizedString("compatibility.element.air", comment: "Air")
+    static let compatibilityElementWater = NSLocalizedString("compatibility.element.water", comment: "Water")
+    
+    // Element descriptions
+    static let compatibilityElementDescSame = NSLocalizedString("compatibility.elementDesc.same", comment: "Same element description")
+    static let compatibilityElementDescFireAir = NSLocalizedString("compatibility.elementDesc.fireAir", comment: "Fire and Air description")
+    static let compatibilityElementDescEarthWater = NSLocalizedString("compatibility.elementDesc.earthWater", comment: "Earth and Water description")
+    static let compatibilityElementDescDifferent = NSLocalizedString("compatibility.elementDesc.different", comment: "Different elements description")
+    
+    // Detailed texts
+    static let compatibilityOverallText = NSLocalizedString("compatibility.overallText", comment: "Overall compatibility text")
+    static let compatibilityStrengthsSameElement = NSLocalizedString("compatibility.strengthsSameElement", comment: "Strengths for same element")
+    static let compatibilityStrengthsFireAir = NSLocalizedString("compatibility.strengthsFireAir", comment: "Strengths for Fire/Air")
+    static let compatibilityStrengthsEarthWater = NSLocalizedString("compatibility.strengthsEarthWater", comment: "Strengths for Earth/Water")
+    static let compatibilityStrengthsDifferent = NSLocalizedString("compatibility.strengthsDifferent", comment: "Strengths for different elements")
+    static let compatibilityChallengesSameElement = NSLocalizedString("compatibility.challengesSameElement", comment: "Challenges for same element")
+    static let compatibilityChallengesDifferent = NSLocalizedString("compatibility.challengesDifferent", comment: "Challenges for different elements")
+    static let compatibilityAdviceText = NSLocalizedString("compatibility.adviceText", comment: "General advice text")
 
     // MARK: - Home
     static let homeTitle = NSLocalizedString("home.title", comment: "TarotGo title")

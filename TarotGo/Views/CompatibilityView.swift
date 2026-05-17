@@ -43,7 +43,7 @@ struct CompatibilityView: View {
                     // Sign Selection
                     HStack(spacing: 20) {
                         signButton(
-                            title: "Your Sign",
+                            title: L10n.compatibilityYourSign,
                             sign: yourSign,
                             action: {
                                 if AstrologyService.shared.hasBirthDate {
@@ -59,7 +59,7 @@ struct CompatibilityView: View {
                             .foregroundStyle(AppTheme.goldGradient)
                         
                         signButton(
-                            title: "Partner's Sign",
+                            title: L10n.compatibilityPartnerSign,
                             sign: partnerSign,
                             action: { showPartnerSignPicker = true }
                         )
@@ -135,7 +135,7 @@ struct CompatibilityView: View {
                 .font(.system(size: 40))
                 .foregroundColor(AppTheme.gold.opacity(0.6))
             
-            Text("Select both zodiac signs to see compatibility")
+            Text(L10n.compatibilitySelectPrompt)
                 .font(.system(size: 15, weight: .light))
                 .foregroundColor(AppTheme.textSecondary)
                 .multilineTextAlignment(.center)
@@ -149,7 +149,7 @@ struct CompatibilityView: View {
         return VStack(spacing: 24) {
             // Compatibility Score
             VStack(spacing: 16) {
-                Text("Compatibility Score")
+                Text(L10n.compatibilityScore)
                     .font(AppTheme.serifFont(size: 20, weight: .medium))
                     .foregroundStyle(AppTheme.goldGradient)
                 
@@ -188,25 +188,25 @@ struct CompatibilityView: View {
             
             // Detailed Analysis
             analysisCard(
-                title: "Overall Compatibility",
+                title: L10n.compatibilityOverall,
                 icon: "heart.fill",
                 content: overallCompatibility(your: yourSign, partner: partnerSign)
             )
             
             analysisCard(
-                title: "Strengths",
+                title: L10n.compatibilityStrengths,
                 icon: "star.fill",
                 content: strengths(your: yourSign, partner: partnerSign)
             )
             
             analysisCard(
-                title: "Challenges",
+                title: L10n.compatibilityChallenges,
                 icon: "exclamationmark.triangle.fill",
                 content: challenges(your: yourSign, partner: partnerSign)
             )
             
             analysisCard(
-                title: "Advice",
+                title: L10n.compatibilityAdvice,
                 icon: "lightbulb.fill",
                 content: advice(your: yourSign, partner: partnerSign)
             )
@@ -245,7 +245,7 @@ struct CompatibilityView: View {
         let partnerElement = element(for: partnerSign)
         
         return VStack(spacing: 12) {
-            Text("Elemental Match")
+            Text(L10n.compatibilityElementalMatch)
                 .font(.system(size: 16, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
             
@@ -291,10 +291,10 @@ struct CompatibilityView: View {
     
     private func element(for sign: ZodiacSign) -> String {
         switch sign {
-        case .aries, .leo, .sagittarius: return "Fire"
-        case .taurus, .virgo, .capricorn: return "Earth"
-        case .gemini, .libra, .aquarius: return "Air"
-        case .cancer, .scorpio, .pisces: return "Water"
+        case .aries, .leo, .sagittarius: return L10n.compatibilityElementFire
+        case .taurus, .virgo, .capricorn: return L10n.compatibilityElementEarth
+        case .gemini, .libra, .aquarius: return L10n.compatibilityElementAir
+        case .cancer, .scorpio, .pisces: return L10n.compatibilityElementWater
         }
     }
     
@@ -333,31 +333,31 @@ struct CompatibilityView: View {
     
     private func compatibilityRating(_ score: Double) -> String {
         switch score {
-        case 90...100: return "Excellent Match"
-        case 80..<90: return "Very Compatible"
-        case 70..<80: return "Good Match"
-        case 60..<70: return "Moderate Compatibility"
-        default: return "Challenging but Possible"
+        case 90...100: return L10n.compatibilityRatingExcellent
+        case 80..<90: return L10n.compatibilityRatingVeryCompatible
+        case 70..<80: return L10n.compatibilityRatingGood
+        case 60..<70: return L10n.compatibilityRatingModerate
+        default: return L10n.compatibilityRatingChallenging
         }
     }
     
     private func elementDescription(your yourElement: String, partner partnerElement: String) -> String {
         if yourElement == partnerElement {
-            return "Same element - natural understanding and shared values"
+            return L10n.compatibilityElementDescSame
         }
         
         // Check compatible pairings
-        if (yourElement == "Fire" && partnerElement == "Air") || (yourElement == "Air" && partnerElement == "Fire") {
-            return "Fire and Air energize each other beautifully"
-        } else if (yourElement == "Earth" && partnerElement == "Water") || (yourElement == "Water" && partnerElement == "Earth") {
-            return "Earth and Water nurture and support one another"
+        if (yourElement == L10n.compatibilityElementFire && partnerElement == L10n.compatibilityElementAir) || (yourElement == L10n.compatibilityElementAir && partnerElement == L10n.compatibilityElementFire) {
+            return L10n.compatibilityElementDescFireAir
+        } else if (yourElement == L10n.compatibilityElementEarth && partnerElement == L10n.compatibilityElementWater) || (yourElement == L10n.compatibilityElementWater && partnerElement == L10n.compatibilityElementEarth) {
+            return L10n.compatibilityElementDescEarthWater
         }
         
-        return "Different elements bring unique dynamics"
+        return L10n.compatibilityElementDescDifferent
     }
     
     private func overallCompatibility(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
-        return "This pairing brings together \(yourSign.name) and \(partnerSign.name), creating a dynamic relationship with unique strengths. While every relationship requires effort, understanding your astrological compatibility can help navigate challenges and celebrate your connection's natural flow."
+        return String(format: L10n.compatibilityOverallText, yourSign.name, partnerSign.name)
     }
     
     private func strengths(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
@@ -365,13 +365,13 @@ struct CompatibilityView: View {
         let partnerElement = element(for: partnerSign)
         
         if yourElement == partnerElement {
-            return "Shared values and natural understanding create a strong foundation. You speak the same emotional language and intuitively grasp each other's needs and motivations."
-        } else if ["Fire", "Air"].contains(yourElement) && ["Fire", "Air"].contains(partnerElement) {
-            return "Your energies complement each other perfectly. Together you inspire growth, adventure, and intellectual stimulation. Communication flows easily and you motivate each other."
-        } else if ["Earth", "Water"].contains(yourElement) && ["Earth", "Water"].contains(partnerElement) {
-            return "You provide each other with security and emotional depth. This pairing excels at creating a nurturing, stable environment where both partners feel safe to be vulnerable."
+            return L10n.compatibilityStrengthsSameElement
+        } else if [L10n.compatibilityElementFire, L10n.compatibilityElementAir].contains(yourElement) && [L10n.compatibilityElementFire, L10n.compatibilityElementAir].contains(partnerElement) {
+            return L10n.compatibilityStrengthsFireAir
+        } else if [L10n.compatibilityElementEarth, L10n.compatibilityElementWater].contains(yourElement) && [L10n.compatibilityElementEarth, L10n.compatibilityElementWater].contains(partnerElement) {
+            return L10n.compatibilityStrengthsEarthWater
         } else {
-            return "Your differences create opportunities for growth and learning. Each partner brings unique perspectives that help broaden the other's worldview and capabilities."
+            return L10n.compatibilityStrengthsDifferent
         }
     }
     
@@ -380,14 +380,14 @@ struct CompatibilityView: View {
         let partnerElement = element(for: partnerSign)
         
         if yourElement == partnerElement {
-            return "Too much similarity can lead to blind spots. Make sure to maintain individual identities and seek outside perspectives when needed."
+            return L10n.compatibilityChallengesSameElement
         } else {
-            return "Different elemental energies may require conscious effort to understand each other's needs and communication styles. Patience and open dialogue are essential."
+            return L10n.compatibilityChallengesDifferent
         }
     }
     
     private func advice(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
-        return "Focus on appreciation rather than judgment. What seems like a difference can be a complementary strength. Practice active listening, celebrate your unique connection, and remember that all relationships thrive on mutual respect and effort."
+        return L10n.compatibilityAdviceText
     }
 }
 
