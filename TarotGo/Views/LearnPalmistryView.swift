@@ -8,55 +8,91 @@
 import SwiftUI
 
 struct LearnPalmistryView: View {
-    @Environment(\.dismiss) var dismiss
-    
     var body: some View {
         ZStack {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
-            VStack(spacing: 30) {
-                // Header
-                VStack(spacing: 15) {
-                    Image(systemName: "book.pages.fill")
-                        .font(.system(size: 60))
-                        .foregroundStyle(AppTheme.goldGradient)
-                        .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
+            ScrollView {
+                VStack(spacing: 20) {
+                    // Top spacing
+                    Spacer()
+                        .frame(height: 20)
                     
-                    Text(L10n.learnPalmistryTitle)
-                        .font(AppTheme.serifFont(size: 32, weight: .regular))
-                        .foregroundStyle(AppTheme.goldGradient)
-                        .multilineTextAlignment(.center)
+                    // Page title
+                    VStack(spacing: 8) {
+                        Text(L10n.learnPalmistryTitle)
+                            .font(AppTheme.serifFont(size: 32, weight: .medium))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 8, x: 0, y: 4)
+                        
+                        Text(L10n.learnPalmistrySubtitle)
+                            .font(.system(size: 15, weight: .light))
+                            .foregroundColor(AppTheme.textSecondary)
+                            .multilineTextAlignment(.center)
+                    }
+                    .padding(.bottom, 10)
                     
-                    Text(L10n.learnPalmistryComingSoon)
-                        .font(.system(size: 16, weight: .light))
-                        .foregroundColor(AppTheme.textSecondary)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 40)
+                    // Navigation options
+                    VStack(spacing: 14) {
+                        // 1. History of Palmistry
+                        NavigationLink(destination: HistoryOfPalmistryView()) {
+                            LearnOptionButton(
+                                icon: "scroll.fill",
+                                title: L10n.learnPalmistryHistoryTitle,
+                                subtitle: L10n.learnPalmistryHistorySubtitle
+                            )
+                        }
+                        .buttonStyle(HomeButtonStyle())
+                        
+                        // 2. Palm Basic Meanings
+                        NavigationLink(destination: PalmBasicMeaningsView()) {
+                            LearnOptionButton(
+                                icon: "hand.raised.fill",
+                                title: L10n.learnPalmistryBasicMeaningsTitle,
+                                subtitle: L10n.learnPalmistryBasicMeaningsSubtitle
+                            )
+                        }
+                        .buttonStyle(HomeButtonStyle())
+                        
+                        // 3. How to Read
+                        NavigationLink(destination: HowToReadPalmView()) {
+                            LearnOptionButton(
+                                icon: "book.pages.fill",
+                                title: L10n.learnPalmistryHowToReadTitle,
+                                subtitle: L10n.learnPalmistryHowToReadSubtitle
+                            )
+                        }
+                        .buttonStyle(HomeButtonStyle())
+                        
+                        // 4. Palmistry & Mind
+                        NavigationLink(destination: PalmistryAndMindView()) {
+                            LearnOptionButton(
+                                icon: "brain.head.profile.fill",
+                                title: L10n.learnPalmistryMindTitle,
+                                subtitle: L10n.learnPalmistryMindSubtitle
+                            )
+                        }
+                        .buttonStyle(HomeButtonStyle())
+                        
+                        // 5. FAQ
+                        NavigationLink(destination: PalmistryFAQView()) {
+                            LearnOptionButton(
+                                icon: "questionmark.circle.fill",
+                                title: L10n.learnPalmistryFaqTitle,
+                                subtitle: L10n.learnPalmistryFaqSubtitle
+                            )
+                        }
+                        .buttonStyle(HomeButtonStyle())
+                    }
+                    .padding(.horizontal, 30)
+                    
+                    Spacer()
+                        .frame(height: 30)
                 }
-                
-                // Content will be added later
-                Text(L10n.learnPalmistryDescription)
-                    .font(.system(size: 15, weight: .regular))
-                    .foregroundColor(AppTheme.textSecondary)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 40)
             }
         }
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    HapticService.shared.impact(.light)
-                    SoundService.shared.play(.whoosh, volume: 0.4)
-                    dismiss()
-                } label: {
-                    Image(systemName: "chevron.left")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(AppTheme.gold)
-                }
-            }
-        }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

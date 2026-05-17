@@ -843,6 +843,256 @@ enum L10n {
         String(format: NSLocalizedString("palm.quickSummary.fate", value: "%@ - shows the role of destiny and external influences in your path", comment: "Quick summary for fate line"), depth)
     }
     
+    // MARK: - Learn Palmistry
+    // Main Learn Palmistry View
+    static let learnPalmistryHistoryTitle = NSLocalizedString("learnPalmistry.history.title", comment: "History of Palmistry")
+    static let learnPalmistryHistorySubtitle = NSLocalizedString("learnPalmistry.history.subtitle", comment: "Origins and evolution")
+    
+    static let learnPalmistryBasicMeaningsTitle = NSLocalizedString("learnPalmistry.basicMeanings.title", comment: "Palm Basic Meanings")
+    static let learnPalmistryBasicMeaningsSubtitle = NSLocalizedString("learnPalmistry.basicMeanings.subtitle", comment: "Lines, mounts and fingers")
+    
+    static let learnPalmistryHowToReadTitle = NSLocalizedString("learnPalmistry.howToRead.title", comment: "How to Read")
+    static let learnPalmistryHowToReadSubtitle = NSLocalizedString("learnPalmistry.howToRead.subtitle", comment: "Master palm reading")
+    
+    static let learnPalmistryMindTitle = NSLocalizedString("learnPalmistry.mind.title", comment: "Palmistry & Mind")
+    static let learnPalmistryMindSubtitle = NSLocalizedString("learnPalmistry.mind.subtitle", comment: "Self-discovery tool")
+    
+    static let learnPalmistryFaqTitle = NSLocalizedString("learnPalmistry.faq.title", comment: "FAQ")
+    static let learnPalmistryFaqSubtitle = NSLocalizedString("learnPalmistry.faq.subtitle", comment: "Common questions")
+    
+    // History of Palmistry View
+    static let historyOfPalmistryTitle = NSLocalizedString("historyOfPalmistry.title", comment: "History of Palmistry")
+    static let historyOfPalmistrySubtitle = NSLocalizedString("historyOfPalmistry.subtitle", comment: "Ancient Art of Hand Reading")
+    static let historyOfPalmistryIntro = NSLocalizedString("historyOfPalmistry.intro", comment: "Palmistry, also known as chiromancy, is one of humanity's oldest methods of divination and self-discovery. For thousands of years, people across cultures have looked to their hands for insights into character, destiny, and life's path.")
+    
+    static let historyOfPalmistryAncientTitle = NSLocalizedString("historyOfPalmistry.ancient.title", comment: "Ancient Origins")
+    static let historyOfPalmistryAncientIntro = NSLocalizedString("historyOfPalmistry.ancient.intro", comment: "The practice of palm reading has roots in multiple ancient civilizations, each contributing unique perspectives to this sacred art.")
+    
+    static let historyOfPalmistryIndiaTitle = NSLocalizedString("historyOfPalmistry.india.title", comment: "India and Vedic Tradition")
+    static let historyOfPalmistryIndiaText = NSLocalizedString("historyOfPalmistry.india.text", comment: "Ancient Hindu texts dating back 5,000 years contain detailed references to palm reading. The Vedic scriptures describe how the lines of the hand reflect one's karma and spiritual journey.")
+    
+    static let historyOfPalmistryChinaTitle = NSLocalizedString("historyOfPalmistry.china.title", comment: "China and I Ching")
+    static let historyOfPalmistryChinaText = NSLocalizedString("historyOfPalmistry.china.text", comment: "In ancient China, palm reading was integrated with traditional medicine and philosophy. Practitioners believed the hand revealed the balance of yin and yang energies within the body.")
+    
+    static let historyOfPalmistryEgyptTitle = NSLocalizedString("historyOfPalmistry.egypt.title", comment: "Egypt and the Mysteries")
+    static let historyOfPalmistryEgyptText = NSLocalizedString("historyOfPalmistry.egypt.text", comment: "Ancient Egyptians studied hands as a way to understand divine will. Hieroglyphics show priests examining palms during religious ceremonies and healing rituals.")
+    
+    static let historyOfPalmistryWesternTitle = NSLocalizedString("historyOfPalmistry.western.title", comment: "Western Development")
+    static let historyOfPalmistryWesternIntro = NSLocalizedString("historyOfPalmistry.western.intro", comment: "Palmistry traveled westward along trade routes, evolving as it encountered Greek philosophy and European mysticism.")
+    
+    static let historyOfPalmistryGreeceTitle = NSLocalizedString("historyOfPalmistry.greece.title", comment: "Ancient Greece")
+    static let historyOfPalmistryGreeceText = NSLocalizedString("historyOfPalmistry.greece.text", comment: "Aristotle and other Greek philosophers studied palmistry as a science. They associated different parts of the hand with planets and elements, creating systematic methods still used today.")
+    
+    static let historyOfPalmistryRenaissanceTitle = NSLocalizedString("historyOfPalmistry.renaissance.title", comment: "Renaissance Revival")
+    static let historyOfPalmistryRenaissanceText = NSLocalizedString("historyOfPalmistry.renaissance.text", comment: "During the Renaissance, palmistry experienced a revival among European scholars who sought to merge ancient wisdom with emerging scientific methods.")
+    
+    static let historyOfPalmistryModernTitle = NSLocalizedString("historyOfPalmistry.modern.title", comment: "Modern Era")
+    static let historyOfPalmistryModernText = NSLocalizedString("historyOfPalmistry.modern.text", comment: "In the 19th and 20th centuries, palmistry became popular in Western society. Notable practitioners like Cheiro brought palm reading to royal courts and wrote influential texts that standardized interpretations.")
+    
+    // History Timeline
+    static let historyOfPalmistryTimelineTitle = NSLocalizedString("historyOfPalmistry.timeline.title", comment: "Timeline")
+    static let historyOfPalmistryTimelineEraHeader = NSLocalizedString("historyOfPalmistry.timeline.era", comment: "Era")
+    static let historyOfPalmistryTimelineMilestoneHeader = NSLocalizedString("historyOfPalmistry.timeline.milestone", comment: "Milestone")
+    
+    static let historyOfPalmistryTimelineEra1 = NSLocalizedString("historyOfPalmistry.timeline.era1", comment: "3000 BCE")
+    static let historyOfPalmistryTimelineMilestone1 = NSLocalizedString("historyOfPalmistry.timeline.milestone1", comment: "Earliest references to palm reading appear in Vedic texts in India.")
+    
+    static let historyOfPalmistryTimelineEra2 = NSLocalizedString("historyOfPalmistry.timeline.era2", comment: "384–322 BCE")
+    static let historyOfPalmistryTimelineMilestone2 = NSLocalizedString("historyOfPalmistry.timeline.milestone2", comment: "Aristotle writes about palmistry, establishing philosophical foundations.")
+    
+    static let historyOfPalmistryTimelineEra3 = NSLocalizedString("historyOfPalmistry.timeline.era3", comment: "Middle Ages")
+    static let historyOfPalmistryTimelineMilestone3 = NSLocalizedString("historyOfPalmistry.timeline.milestone3", comment: "Palmistry spreads through Europe via Romani culture and scholarly texts.")
+    
+    static let historyOfPalmistryTimelineEra4 = NSLocalizedString("historyOfPalmistry.timeline.era4", comment: "Renaissance")
+    static let historyOfPalmistryTimelineMilestone4 = NSLocalizedString("historyOfPalmistry.timeline.milestone4", comment: "European scholars revive interest in palmistry as both art and proto-science.")
+    
+    static let historyOfPalmistryTimelineEra5 = NSLocalizedString("historyOfPalmistry.timeline.era5", comment: "19th–20th Century")
+    static let historyOfPalmistryTimelineMilestone5 = NSLocalizedString("historyOfPalmistry.timeline.milestone5", comment: "Palmistry gains popularity in Western society; standardized systems emerge.")
+    
+    // Palm Basic Meanings View
+    static let palmBasicMeaningsTitle = NSLocalizedString("palmBasicMeanings.title", comment: "Palm Basic Meanings")
+    static let palmBasicMeaningsSubtitle = NSLocalizedString("palmBasicMeanings.subtitle", comment: "Understanding Your Hand")
+    static let palmBasicMeaningsDiagramTitle = NSLocalizedString("palmBasicMeanings.diagram.title", comment: "Palm Reading Map")
+    
+    static let palmBasicMeaningsMajorLinesTitle = NSLocalizedString("palmBasicMeanings.majorLines.title", comment: "The Major Lines")
+    
+    static let palmBasicMeaningsHeartLineTitle = NSLocalizedString("palmBasicMeanings.heartLine.title", comment: "Heart Line")
+    static let palmBasicMeaningsHeartLineDescription = NSLocalizedString("palmBasicMeanings.heartLine.description", comment: "The uppermost horizontal line running across your palm.")
+    static let palmBasicMeaningsHeartLineMeaning = NSLocalizedString("palmBasicMeanings.heartLine.meaning", comment: "Represents emotions, relationships, and how you give and receive love. A deep, clear line suggests strong emotional connections, while a faint line may indicate emotional reserve.")
+    
+    static let palmBasicMeaningsHeadLineTitle = NSLocalizedString("palmBasicMeanings.headLine.title", comment: "Head Line")
+    static let palmBasicMeaningsHeadLineDescription = NSLocalizedString("palmBasicMeanings.headLine.description", comment: "The horizontal line below the Heart Line.")
+    static let palmBasicMeaningsHeadLineMeaning = NSLocalizedString("palmBasicMeanings.headLine.meaning", comment: "Reveals your thinking style, intellect, and decision-making approach. A long line indicates analytical thinking, while a shorter line suggests more direct, practical reasoning.")
+    
+    static let palmBasicMeaningsLifeLineTitle = NSLocalizedString("palmBasicMeanings.lifeLine.title", comment: "Life Line")
+    static let palmBasicMeaningsLifeLineDescription = NSLocalizedString("palmBasicMeanings.lifeLine.description", comment: "The curved line that wraps around the base of your thumb.")
+    static let palmBasicMeaningsLifeLineMeaning = NSLocalizedString("palmBasicMeanings.lifeLine.meaning", comment: "Indicates vitality, physical health, and major life changes. Contrary to myth, it doesn't predict lifespan but shows the quality and intensity of your life energy.")
+    
+    static let palmBasicMeaningsFateLineTitle = NSLocalizedString("palmBasicMeanings.fateLine.title", comment: "Fate Line")
+    static let palmBasicMeaningsFateLineDescription = NSLocalizedString("palmBasicMeanings.fateLine.description", comment: "A vertical line running up the center of the palm (not everyone has this line).")
+    static let palmBasicMeaningsFateLineMeaning = NSLocalizedString("palmBasicMeanings.fateLine.meaning", comment: "Represents career, life direction, and the influence of external forces. A strong Fate Line suggests a clear path, while its absence indicates freedom to create your own destiny.")
+    
+    static let palmBasicMeaningsMountsTitle = NSLocalizedString("palmBasicMeanings.mounts.title", comment: "The Mounts")
+    static let palmBasicMeaningsMountsIntro = NSLocalizedString("palmBasicMeanings.mounts.intro", comment: "Mounts are the fleshy pads on your palm, each associated with planetary energies and personality traits:")
+    
+    static let palmBasicMeaningsVenusTitle = NSLocalizedString("palmBasicMeanings.venus.title", comment: "Mount of Venus")
+    static let palmBasicMeaningsVenusMeaning = NSLocalizedString("palmBasicMeanings.venus.meaning", comment: "Located at the base of the thumb. Represents love, passion, and vitality.")
+    
+    static let palmBasicMeaningsJupiterTitle = NSLocalizedString("palmBasicMeanings.jupiter.title", comment: "Mount of Jupiter")
+    static let palmBasicMeaningsJupiterMeaning = NSLocalizedString("palmBasicMeanings.jupiter.meaning", comment: "Below the index finger. Associated with ambition, leadership, and confidence.")
+    
+    static let palmBasicMeaningsSaturnTitle = NSLocalizedString("palmBasicMeanings.saturn.title", comment: "Mount of Saturn")
+    static let palmBasicMeaningsSaturnMeaning = NSLocalizedString("palmBasicMeanings.saturn.meaning", comment: "Below the middle finger. Relates to responsibility, wisdom, and discipline.")
+    
+    static let palmBasicMeaningsApolloTitle = NSLocalizedString("palmBasicMeanings.apollo.title", comment: "Mount of Apollo (Sun)")
+    static let palmBasicMeaningsApolloMeaning = NSLocalizedString("palmBasicMeanings.apollo.meaning", comment: "Below the ring finger. Represents creativity, happiness, and success.")
+    
+    static let palmBasicMeaningsMercuryTitle = NSLocalizedString("palmBasicMeanings.mercury.title", comment: "Mount of Mercury")
+    static let palmBasicMeaningsMercuryMeaning = NSLocalizedString("palmBasicMeanings.mercury.meaning", comment: "Below the pinky finger. Associated with communication, wit, and business acumen.")
+    
+    static let palmBasicMeaningsMarsTitle = NSLocalizedString("palmBasicMeanings.mars.title", comment: "Mounts of Mars")
+    static let palmBasicMeaningsMarsMeaning = NSLocalizedString("palmBasicMeanings.mars.meaning", comment: "Two areas between thumb and fingers. Represent courage, aggression, and determination.")
+    
+    static let palmBasicMeaningsMoonTitle = NSLocalizedString("palmBasicMeanings.moon.title", comment: "Mount of the Moon")
+    static let palmBasicMeaningsMoonMeaning = NSLocalizedString("palmBasicMeanings.moon.meaning", comment: "On the outer edge of palm. Relates to imagination, intuition, and emotions.")
+    
+    static let palmBasicMeaningsFingersTitle = NSLocalizedString("palmBasicMeanings.fingers.title", comment: "The Fingers")
+    static let palmBasicMeaningsFingersIntro = NSLocalizedString("palmBasicMeanings.fingers.intro", comment: "Each finger carries its own significance:")
+    
+    static let palmBasicMeaningsThumbTitle = NSLocalizedString("palmBasicMeanings.thumb.title", comment: "Thumb")
+    static let palmBasicMeaningsThumbMeaning = NSLocalizedString("palmBasicMeanings.thumb.meaning", comment: "Willpower, logic, and self-control.")
+    
+    static let palmBasicMeaningsIndexTitle = NSLocalizedString("palmBasicMeanings.index.title", comment: "Index Finger (Jupiter)")
+    static let palmBasicMeaningsIndexMeaning = NSLocalizedString("palmBasicMeanings.index.meaning", comment: "Leadership, ambition, and authority.")
+    
+    static let palmBasicMeaningsMiddleTitle = NSLocalizedString("palmBasicMeanings.middle.title", comment: "Middle Finger (Saturn)")
+    static let palmBasicMeaningsMiddleMeaning = NSLocalizedString("palmBasicMeanings.middle.meaning", comment: "Responsibility, balance, and introspection.")
+    
+    static let palmBasicMeaningsRingTitle = NSLocalizedString("palmBasicMeanings.ring.title", comment: "Ring Finger (Apollo)")
+    static let palmBasicMeaningsRingMeaning = NSLocalizedString("palmBasicMeanings.ring.meaning", comment: "Creativity, expression, and happiness.")
+    
+    static let palmBasicMeaningsPinkyTitle = NSLocalizedString("palmBasicMeanings.pinky.title", comment: "Pinky Finger (Mercury)")
+    static let palmBasicMeaningsPinkyMeaning = NSLocalizedString("palmBasicMeanings.pinky.meaning", comment: "Communication, intelligence, and persuasion.")
+    
+    // How to Read Palm View
+    static let howToReadPalmTitle = NSLocalizedString("howToReadPalm.title", comment: "How to Read a Palm")
+    
+    static let howToReadPalmStep1Title = NSLocalizedString("howToReadPalm.step1.title", comment: "Choose the Hand")
+    static let howToReadPalmStep1Intro = NSLocalizedString("howToReadPalm.step1.intro", comment: "The first step in palm reading is deciding which hand to read.")
+    static let howToReadPalmStep1Bullet1Title = NSLocalizedString("howToReadPalm.step1.bullet1.title", comment: "Dominant Hand")
+    static let howToReadPalmStep1Bullet1Text = NSLocalizedString("howToReadPalm.step1.bullet1.text", comment: "Your dominant hand (the one you write with) shows your present and future—how you're actively shaping your life through choices and actions.")
+    static let howToReadPalmStep1Bullet2Title = NSLocalizedString("howToReadPalm.step1.bullet2.title", comment: "Non-Dominant Hand")
+    static let howToReadPalmStep1Bullet2Text = NSLocalizedString("howToReadPalm.step1.bullet2.text", comment: "Your non-dominant hand represents your potential, inherited traits, and past influences—the foundation you were born with.")
+    static let howToReadPalmStep1ProTip = NSLocalizedString("howToReadPalm.step1.proTip", comment: "For a complete reading, examine both hands and note the differences between them.")
+    
+    static let howToReadPalmStep2Title = NSLocalizedString("howToReadPalm.step2.title", comment: "Examine the Hand Shape")
+    static let howToReadPalmStep2Intro = NSLocalizedString("howToReadPalm.step2.intro", comment: "The overall shape of the hand reveals personality traits, similar to the elements in astrology:")
+    static let howToReadPalmStep2Bullet1Title = NSLocalizedString("howToReadPalm.step2.bullet1.title", comment: "Earth Hands (square palm, short fingers)")
+    static let howToReadPalmStep2Bullet1Text = NSLocalizedString("howToReadPalm.step2.bullet1.text", comment: "Practical, grounded, reliable. Value stability and hard work.")
+    static let howToReadPalmStep2Bullet2Title = NSLocalizedString("howToReadPalm.step2.bullet2.title", comment: "Air Hands (square palm, long fingers)")
+    static let howToReadPalmStep2Bullet2Text = NSLocalizedString("howToReadPalm.step2.bullet2.text", comment: "Intellectual, communicative, social. Love ideas and mental stimulation.")
+    static let howToReadPalmStep2Bullet3Title = NSLocalizedString("howToReadPalm.step2.bullet3.title", comment: "Water Hands (rectangular palm, long fingers)")
+    static let howToReadPalmStep2Bullet3Text = NSLocalizedString("howToReadPalm.step2.bullet3.text", comment: "Emotional, intuitive, creative. Deeply sensitive to feelings.")
+    static let howToReadPalmStep2Bullet4Title = NSLocalizedString("howToReadPalm.step2.bullet4.title", comment: "Fire Hands (rectangular palm, short fingers)")
+    static let howToReadPalmStep2Bullet4Text = NSLocalizedString("howToReadPalm.step2.bullet4.text", comment: "Passionate, energetic, spontaneous. Driven by enthusiasm.")
+    
+    static let howToReadPalmStep3Title = NSLocalizedString("howToReadPalm.step3.title", comment: "Read the Major Lines")
+    static let howToReadPalmStep3Intro = NSLocalizedString("howToReadPalm.step3.intro", comment: "Focus on the four main lines, paying attention to their depth, length, and any breaks or branches:")
+    static let howToReadPalmStep3Bullet1Title = NSLocalizedString("howToReadPalm.step3.bullet1.title", comment: "Deep, clear lines")
+    static let howToReadPalmStep3Bullet1Text = NSLocalizedString("howToReadPalm.step3.bullet1.text", comment: "Indicate strong energy in that area of life.")
+    static let howToReadPalmStep3Bullet2Title = NSLocalizedString("howToReadPalm.step3.bullet2.title", comment: "Faint or broken lines")
+    static let howToReadPalmStep3Bullet2Text = NSLocalizedString("howToReadPalm.step3.bullet2.text", comment: "Suggest challenges, transitions, or areas needing attention.")
+    static let howToReadPalmStep3Bullet3Title = NSLocalizedString("howToReadPalm.step3.bullet3.title", comment: "Branches")
+    static let howToReadPalmStep3Bullet3Text = NSLocalizedString("howToReadPalm.step3.bullet3.text", comment: "Usually positive, indicating opportunities or multiple paths.")
+    static let howToReadPalmStep3ProTip = NSLocalizedString("howToReadPalm.step3.proTip", comment: "Lines can change over time! Your palm is not fixed—it evolves with you.")
+    
+    static let howToReadPalmStep4Title = NSLocalizedString("howToReadPalm.step4.title", comment: "Study the Mounts")
+    static let howToReadPalmStep4Intro = NSLocalizedString("howToReadPalm.step4.intro", comment: "Feel the mounts (the fleshy pads) on your palm. Prominent mounts indicate strong traits:")
+    static let howToReadPalmStep4Bullet1Title = NSLocalizedString("howToReadPalm.step4.bullet1.title", comment: "Well-developed mounts")
+    static let howToReadPalmStep4Bullet1Text = NSLocalizedString("howToReadPalm.step4.bullet1.text", comment: "Show active qualities (e.g., prominent Venus mount = passionate nature).")
+    static let howToReadPalmStep4Bullet2Title = NSLocalizedString("howToReadPalm.step4.bullet2.title", comment: "Flat mounts")
+    static let howToReadPalmStep4Bullet2Text = NSLocalizedString("howToReadPalm.step4.bullet2.text", comment: "Suggest those qualities are less emphasized in your personality.")
+    
+    static let howToReadPalmStep5Title = NSLocalizedString("howToReadPalm.step5.title", comment: "Interpret Everything Together")
+    static let howToReadPalmStep5Intro = NSLocalizedString("howToReadPalm.step5.intro", comment: "Palm reading is holistic—no single feature tells the whole story. Combine all elements:")
+    static let howToReadPalmStep5Bullet1Title = NSLocalizedString("howToReadPalm.step5.bullet1.title", comment: "Look for patterns")
+    static let howToReadPalmStep5Bullet1Text = NSLocalizedString("howToReadPalm.step5.bullet1.text", comment: "Do the hand shape and lines tell a consistent story?")
+    static let howToReadPalmStep5Bullet2Title = NSLocalizedString("howToReadPalm.step5.bullet2.title", comment: "Trust intuition")
+    static let howToReadPalmStep5Bullet2Text = NSLocalizedString("howToReadPalm.step5.bullet2.text", comment: "What stands out to you most? That's often where the important message lies.")
+    
+    static let howToReadPalmRememberTitle = NSLocalizedString("howToReadPalm.remember.title", comment: "Remember")
+    static let howToReadPalmRememberText = NSLocalizedString("howToReadPalm.remember.text", comment: "Your palm is a map of tendencies, not a fixed fate. Use palmistry as a tool for self-understanding and growth, not prediction.")
+    
+    // Palmistry & Mind View
+    static let palmistryMindTitle = NSLocalizedString("palmistryMind.title", comment: "Palmistry & Mind")
+    static let palmistryMindSubtitle = NSLocalizedString("palmistryMind.subtitle", comment: "A Tool for Self-Discovery")
+    
+    static let palmistryMindSection1Title = NSLocalizedString("palmistryMind.section1.title", comment: "Palmistry as a Self-Discovery Tool")
+    static let palmistryMindSection1Text = NSLocalizedString("palmistryMind.section1.text", comment: "Palmistry offers a unique mirror for self-reflection. By examining the lines and shapes of your hands, you engage in an ancient practice of introspection that can reveal patterns in your thinking, feeling, and behaving.")
+    
+    static let palmistryMindSection2Title = NSLocalizedString("palmistryMind.section2.title", comment: "The Mind-Body Connection")
+    static let palmistryMindSection2Text = NSLocalizedString("palmistryMind.section2.text", comment: "Your hands are directly connected to your brain through more nerve endings than almost any other part of your body. Some practitioners believe that repeated thoughts and behaviors can actually shape the lines on your palms over time, creating a physical map of your mental and emotional patterns.")
+    static let palmistryMindSection2Insight = NSLocalizedString("palmistryMind.section2.insight", comment: "This is why palmistry encourages you to see yourself not as fixed, but as constantly evolving. The person you become shapes the very lines you read.")
+    
+    static let palmistryMindSection3Title = NSLocalizedString("palmistryMind.section3.title", comment: "Understanding Personality Through Your Palm")
+    static let palmistryMindSection3Intro = NSLocalizedString("palmistryMind.section3.intro", comment: "Palm reading can illuminate aspects of your personality you might not have fully recognized:")
+    static let palmistryMindSection3Bullet1Title = NSLocalizedString("palmistryMind.section3.bullet1.title", comment: "Emotional Patterns")
+    static let palmistryMindSection3Bullet1Text = NSLocalizedString("palmistryMind.section3.bullet1.text", comment: "The Heart Line reveals how you process emotions and form connections, helping you understand relationship patterns.")
+    static let palmistryMindSection3Bullet2Title = NSLocalizedString("palmistryMind.section3.bullet2.title", comment: "Mental Approach")
+    static let palmistryMindSection3Bullet2Text = NSLocalizedString("palmistryMind.section3.bullet2.text", comment: "The Head Line shows your thinking style—are you more analytical or intuitive? Practical or imaginative?")
+    static let palmistryMindSection3Bullet3Title = NSLocalizedString("palmistryMind.section3.bullet3.title", comment: "Life Energy")
+    static let palmistryMindSection3Bullet3Text = NSLocalizedString("palmistryMind.section3.bullet3.text", comment: "The Life Line indicates your vitality and how you approach challenges, revealing your core resilience.")
+    
+    static let palmistryMindSection4Title = NSLocalizedString("palmistryMind.section4.title", comment: "Palmistry for Awareness and Growth")
+    static let palmistryMindSection4Intro = NSLocalizedString("palmistryMind.section4.intro", comment: "Using palmistry as a mindfulness practice can help you:")
+    static let palmistryMindSection4Bullet1Title = NSLocalizedString("palmistryMind.section4.bullet1.title", comment: "Recognize Strengths")
+    static let palmistryMindSection4Bullet1Text = NSLocalizedString("palmistryMind.section4.bullet1.text", comment: "Identify your natural talents and gifts that you can develop further.")
+    static let palmistryMindSection4Bullet2Title = NSLocalizedString("palmistryMind.section4.bullet2.title", comment: "Acknowledge Challenges")
+    static let palmistryMindSection4Bullet2Text = NSLocalizedString("palmistryMind.section4.bullet2.text", comment: "See where you might face obstacles, allowing you to prepare and adapt.")
+    
+    static let palmistryMindSection5Title = NSLocalizedString("palmistryMind.section5.title", comment: "The Power of Observation")
+    static let palmistryMindSection5Text = NSLocalizedString("palmistryMind.section5.text", comment: "The simple act of studying your palm—really looking at it—creates a moment of presence and connection with yourself. In our busy lives, palmistry offers a reason to pause, reflect, and ask: 'Who am I? What am I becoming?'")
+    
+    static let palmistryMindConclusion = NSLocalizedString("palmistryMind.conclusion", comment: "Like tarot, palmistry doesn't dictate your fate—it illuminates possibilities. Your hands hold stories, but you're the author writing them.")
+    static let palmistryMindInsightLabel = NSLocalizedString("palmistryMind.insight.label", comment: "Insight:")
+    
+    // Palmistry FAQ View
+    static let palmistryFaqTitle = NSLocalizedString("palmistryFaq.title", comment: "Palmistry FAQ")
+    static let palmistryFaqSubtitle = NSLocalizedString("palmistryFaq.subtitle", comment: "Frequently Asked Questions")
+    
+    static let palmistryFaqQuestion1 = NSLocalizedString("palmistryFaq.question1", comment: "Is palmistry scientifically proven?")
+    static let palmistryFaqAnswer1 = NSLocalizedString("palmistryFaq.answer1", comment: "Palmistry is not scientifically validated. It's best understood as a tool for self-reflection and personal insight rather than empirical prediction.")
+    
+    static let palmistryFaqQuestion2 = NSLocalizedString("palmistryFaq.question2", comment: "Can palmistry predict my future?")
+    static let palmistryFaqAnswer2 = NSLocalizedString("palmistryFaq.answer2", comment: "Palmistry doesn't predict fixed outcomes. It reveals tendencies, patterns, and potentials based on your current state. Your choices shape your future.")
+    
+    static let palmistryFaqQuestion3 = NSLocalizedString("palmistryFaq.question3", comment: "Which hand should I read?")
+    static let palmistryFaqAnswer3 = NSLocalizedString("palmistryFaq.answer3", comment: "Your dominant hand shows your present and conscious choices. Your non-dominant hand reveals inherited traits and potential. Read both for a complete picture.")
+    
+    static let palmistryFaqQuestion4 = NSLocalizedString("palmistryFaq.question4", comment: "Do my palm lines change over time?")
+    static let palmistryFaqAnswer4 = NSLocalizedString("palmistryFaq.answer4", comment: "Yes! Palm lines can and do change as you grow and your circumstances shift. They reflect your current life path, not a permanent fate.")
+    
+    static let palmistryFaqQuestion5 = NSLocalizedString("palmistryFaq.question5", comment: "Does the Life Line show how long I'll live?")
+    static let palmistryFaqAnswer5 = NSLocalizedString("palmistryFaq.answer5", comment: "No. This is a common myth. The Life Line indicates vitality and life quality, not lifespan.")
+    
+    static let palmistryFaqQuestion6 = NSLocalizedString("palmistryFaq.question6", comment: "What if I don't have a Fate Line?")
+    static let palmistryFaqAnswer6 = NSLocalizedString("palmistryFaq.answer6", comment: "Not everyone has a visible Fate Line. Its absence suggests freedom to create your own path without strong external influences.")
+    
+    static let palmistryFaqQuestion7 = NSLocalizedString("palmistryFaq.question7", comment: "What do breaks in my lines mean?")
+    static let palmistryFaqAnswer7 = NSLocalizedString("palmistryFaq.answer7", comment: "Breaks can indicate transitions, challenges, or significant changes in that area of life. They're not necessarily negative—often they represent growth through transformation.")
+    
+    static let palmistryFaqQuestion8 = NSLocalizedString("palmistryFaq.question8", comment: "Can palmistry help with decisions?")
+    static let palmistryFaqAnswer8 = NSLocalizedString("palmistryFaq.answer8", comment: "Palmistry can illuminate your natural tendencies and strengths, helping you make more informed choices. However, trust your judgment and intuition above all.")
+    
+    static let palmistryFaqQuestion9 = NSLocalizedString("palmistryFaq.question9", comment: "Do men and women's palms differ?")
+    static let palmistryFaqAnswer9 = NSLocalizedString("palmistryFaq.answer9", comment: "The same principles apply to all palms regardless of gender. Individual variation matters more than gender-based differences.")
+    
+    static let palmistryFaqQuestion10 = NSLocalizedString("palmistryFaq.question10", comment: "Is palmistry connected to any religion?")
+    static let palmistryFaqAnswer10 = NSLocalizedString("palmistryFaq.answer10", comment: "Palmistry has been practiced across many cultures and spiritual traditions, but it's not inherently religious. It's a tool anyone can use for self-understanding.")
+    
+    static let palmistryFaqDisclaimerTitle = NSLocalizedString("palmistryFaq.disclaimer.title", comment: "Important")
+    static let palmistryFaqDisclaimerText = NSLocalizedString("palmistryFaq.disclaimer.text", comment: "Palmistry is intended for entertainment and self-reflection purposes only. It should not replace professional advice for health, legal, or financial matters.")
+    
     // MARK: - Astrology / Zodiac Signs
     // These are used by AstrologyService for zodiac sign names
 }
