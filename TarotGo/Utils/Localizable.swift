@@ -1304,6 +1304,37 @@ enum L10n {
     static let careerReading4 = NSLocalizedString("Your creative solutions impress others. Don't be afraid to think outside the box and propose innovative ideas.", comment: "Career horoscope reading variation 4")
     static let careerReading5 = NSLocalizedString("A good day for planning long-term goals. Set clear intentions and take practical steps toward your aspirations.", comment: "Career horoscope reading variation 5")
     
+    // MARK: - Numerology View
+    static let enterYourBirthDate = NSLocalizedString("Enter Your Birth Date", comment: "Prompt to enter birth date for numerology")
+    static let discoverNumerologyProfile = NSLocalizedString("Discover your numerology profile based on your birth date", comment: "Description of numerology feature")
+    static let addBirthDate = NSLocalizedString("Add Birth Date", comment: "Button to add birth date")
+    
+    // Personal Numbers
+    static let expression = NSLocalizedString("Expression", comment: "Expression number label")
+    static let soulUrge = NSLocalizedString("Soul Urge", comment: "Soul urge number label")
+    static let birthday = NSLocalizedString("Birthday", comment: "Birthday number label")
+    static let maturity = NSLocalizedString("Maturity", comment: "Maturity number label")
+    
+    // Personal Number Descriptions
+    static let yourNaturalTalents = NSLocalizedString("Your natural talents", comment: "Expression number description")
+    static let yourInnerDesires = NSLocalizedString("Your inner desires", comment: "Soul urge number description")
+    static let yourSpecialGift = NSLocalizedString("Your special gift", comment: "Birthday number description")
+    static let yourLaterLifeFocus = NSLocalizedString("Your later life focus", comment: "Maturity number description")
+    
+    // Life Path Meanings
+    static let lifePathMeaning1 = NSLocalizedString("The Leader - Independent, ambitious, and pioneering. You are here to forge new paths and inspire others with your courage.", comment: "Life path 1 meaning")
+    static let lifePathMeaning2 = NSLocalizedString("The Peacemaker - Diplomatic, sensitive, and cooperative. You bring harmony and balance to relationships and situations.", comment: "Life path 2 meaning")
+    static let lifePathMeaning3 = NSLocalizedString("The Creative - Expressive, optimistic, and social. You inspire joy and creativity in everything you touch.", comment: "Life path 3 meaning")
+    static let lifePathMeaning4 = NSLocalizedString("The Builder - Practical, disciplined, and hardworking. You create solid foundations and lasting structures.", comment: "Life path 4 meaning")
+    static let lifePathMeaning5 = NSLocalizedString("The Freedom Seeker - Adventurous, versatile, and dynamic. You embrace change and seek diverse experiences.", comment: "Life path 5 meaning")
+    static let lifePathMeaning6 = NSLocalizedString("The Nurturer - Responsible, caring, and protective. You create harmony in home and community.", comment: "Life path 6 meaning")
+    static let lifePathMeaning7 = NSLocalizedString("The Seeker - Analytical, introspective, and spiritual. You search for deeper truths and wisdom.", comment: "Life path 7 meaning")
+    static let lifePathMeaning8 = NSLocalizedString("The Powerhouse - Ambitious, authoritative, and material. You master the material world with confidence.", comment: "Life path 8 meaning")
+    static let lifePathMeaning9 = NSLocalizedString("The Humanitarian - Compassionate, wise, and selfless. You serve the greater good with understanding.", comment: "Life path 9 meaning")
+    static let lifePathMeaning11 = NSLocalizedString("The Illuminator - Intuitive, inspirational, and enlightened. You bring spiritual insights to the world.", comment: "Life path 11 meaning")
+    static let lifePathMeaning22 = NSLocalizedString("The Master Builder - Visionary, practical, and transformative. You manifest grand visions into reality.", comment: "Life path 22 meaning")
+    static let lifePathMeaningDefault = NSLocalizedString("Your unique number holds special meaning in your life journey.", comment: "Default life path meaning")
+    
     // MARK: - Astrology / Zodiac Signs
     // These are used by AstrologyService for zodiac sign names
 }

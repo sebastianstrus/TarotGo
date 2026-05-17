@@ -69,11 +69,11 @@ struct NumerologyView: View {
                 .font(.system(size: 60))
                 .foregroundColor(AppTheme.gold.opacity(0.6))
             
-            Text("Enter Your Birth Date")
+            Text(L10n.enterYourBirthDate)
                 .font(AppTheme.serifFont(size: 24, weight: .light))
                 .foregroundStyle(AppTheme.goldGradient)
             
-            Text("Discover your numerology profile based on your birth date")
+            Text(L10n.discoverNumerologyProfile)
                 .font(.system(size: 15))
                 .foregroundColor(AppTheme.textSecondary)
                 .multilineTextAlignment(.center)
@@ -81,7 +81,7 @@ struct NumerologyView: View {
             Button {
                 showBirthDateInput = true
             } label: {
-                Text("Add Birth Date")
+                Text(L10n.addBirthDate)
                     .font(.system(size: 16, weight: .medium))
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
@@ -101,7 +101,7 @@ struct NumerologyView: View {
         return VStack(spacing: 24) {
             // Life Path Number Card
             VStack(spacing: 16) {
-                Text("Your Life Path Number")
+                Text(L10n.yourLifePathNumber)
                     .font(AppTheme.serifFont(size: 20, weight: .medium))
                     .foregroundStyle(AppTheme.goldGradient)
                 
@@ -128,33 +128,33 @@ struct NumerologyView: View {
             
             // Personal Numbers Grid
             VStack(spacing: 16) {
-                Text("Your Personal Numbers")
+                Text(L10n.yourPersonalNumbers)
                     .font(AppTheme.serifFont(size: 18, weight: .medium))
                     .foregroundStyle(AppTheme.goldGradient)
                 
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
                     personalNumberCard(
-                        title: "Expression",
+                        title: L10n.expression,
                         number: expressionNumber(from: date),
-                        description: "Your natural talents"
+                        description: L10n.yourNaturalTalents
                     )
                     
                     personalNumberCard(
-                        title: "Soul Urge",
+                        title: L10n.soulUrge,
                         number: soulUrgeNumber(from: date),
-                        description: "Your inner desires"
+                        description: L10n.yourInnerDesires
                     )
                     
                     personalNumberCard(
-                        title: "Birthday",
+                        title: L10n.birthday,
                         number: birthdayNumber(from: date),
-                        description: "Your special gift"
+                        description: L10n.yourSpecialGift
                     )
                     
                     personalNumberCard(
-                        title: "Maturity",
+                        title: L10n.maturity,
                         number: maturityNumber(from: date, lifePath: lifePathNumber),
-                        description: "Your later life focus"
+                        description: L10n.yourLaterLifeFocus
                     )
                 }
             }
@@ -169,7 +169,7 @@ struct NumerologyView: View {
                         .foregroundStyle(AppTheme.goldGradient)
                 }
                 
-                Text("Your numerology complements your \(zodiacSign.name) energy")
+                Text(L10n.yourNumerologyComplements(zodiacSign.name))
                     .font(.system(size: 14, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
                     .multilineTextAlignment(.center)
@@ -218,29 +218,29 @@ struct NumerologyView: View {
     private func lifePathMeaning(for number: Int) -> String {
         switch number {
         case 1:
-            return "The Leader - Independent, ambitious, and pioneering. You are here to forge new paths and inspire others with your courage."
+            return L10n.lifePathMeaning1
         case 2:
-            return "The Peacemaker - Diplomatic, sensitive, and cooperative. You bring harmony and balance to relationships and situations."
+            return L10n.lifePathMeaning2
         case 3:
-            return "The Creative - Expressive, optimistic, and social. You inspire joy and creativity in everything you touch."
+            return L10n.lifePathMeaning3
         case 4:
-            return "The Builder - Practical, disciplined, and hardworking. You create solid foundations and lasting structures."
+            return L10n.lifePathMeaning4
         case 5:
-            return "The Freedom Seeker - Adventurous, versatile, and dynamic. You embrace change and seek diverse experiences."
+            return L10n.lifePathMeaning5
         case 6:
-            return "The Nurturer - Responsible, caring, and protective. You create harmony in home and community."
+            return L10n.lifePathMeaning6
         case 7:
-            return "The Seeker - Analytical, introspective, and spiritual. You search for deeper truths and wisdom."
+            return L10n.lifePathMeaning7
         case 8:
-            return "The Powerhouse - Ambitious, authoritative, and material. You master the material world with confidence."
+            return L10n.lifePathMeaning8
         case 9:
-            return "The Humanitarian - Compassionate, wise, and selfless. You serve the greater good with understanding."
+            return L10n.lifePathMeaning9
         case 11:
-            return "The Illuminator - Intuitive, inspirational, and enlightened. You bring spiritual insights to the world."
+            return L10n.lifePathMeaning11
         case 22:
-            return "The Master Builder - Visionary, practical, and transformative. You manifest grand visions into reality."
+            return L10n.lifePathMeaning22
         default:
-            return "Your unique number holds special meaning in your life journey."
+            return L10n.lifePathMeaningDefault
         }
     }
     
