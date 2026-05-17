@@ -122745,1027 +122745,788 @@
         }
       }
     },
-    "palmBasicMeanings.apollo.meaning": {
-      "comment": "Below the ring finger. Represents creativity, happiness, and success.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Below the ring finger. Represents creativity, happiness, and success."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.apollo.title": {
-      "comment": "Mount of Apollo (Sun)",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mount of Apollo (Sun)"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.diagram.title": {
-      "comment": "Palm Reading Map",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palm Reading Map"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.fateLine.description": {
-      "comment": "A vertical line running up the center of the palm (not everyone has this line).",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A vertical line running up the center of the palm (not everyone has this line)."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.fateLine.meaning": {
-      "comment": "Represents career, life direction, and the influence of external forces. A strong Fate Line suggests a clear path, while its absence indicates freedom to create your own destiny.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Represents career, life direction, and the influence of external forces. A strong Fate Line suggests a clear path, while its absence indicates freedom to create your own destiny."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.fateLine.title": {
-      "comment": "Fate Line",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fate Line"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.fingers.intro": {
-      "comment": "Each finger carries its own significance:",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Each finger carries its own significance:"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.fingers.title": {
-      "comment": "The Fingers",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Fingers"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.headLine.description": {
-      "comment": "The horizontal line below the Heart Line.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The horizontal line below the Heart Line."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.headLine.meaning": {
-      "comment": "Reveals your thinking style, intellect, and decision-making approach. A long line indicates analytical thinking, while a shorter line suggests more direct, practical reasoning.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reveals your thinking style, intellect, and decision-making approach. A long line indicates analytical thinking, while a shorter line suggests more direct, practical reasoning."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.headLine.title": {
-      "comment": "Head Line",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Head Line"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.heartLine.description": {
-      "comment": "The uppermost horizontal line running across your palm.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The uppermost horizontal line running across your palm."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.heartLine.meaning": {
-      "comment": "Represents emotions, relationships, and how you give and receive love. A deep, clear line suggests strong emotional connections, while a faint line may indicate emotional reserve.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Represents emotions, relationships, and how you give and receive love. A deep, clear line suggests strong emotional connections, while a faint line may indicate emotional reserve."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.heartLine.title": {
-      "comment": "Heart Line",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Heart Line"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.index.meaning": {
-      "comment": "Leadership, ambition, and authority.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Leadership, ambition, and authority."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.index.title": {
-      "comment": "Index Finger (Jupiter)",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Index Finger (Jupiter)"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.jupiter.meaning": {
-      "comment": "Below the index finger. Associated with ambition, leadership, and confidence.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Below the index finger. Associated with ambition, leadership, and confidence."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.jupiter.title": {
-      "comment": "Mount of Jupiter",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mount of Jupiter"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.lifeLine.description": {
-      "comment": "The curved line that wraps around the base of your thumb.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The curved line that wraps around the base of your thumb."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.lifeLine.meaning": {
-      "comment": "Indicates vitality, physical health, and major life changes. Contrary to myth, it doesn't predict lifespan but shows the quality and intensity of your life energy.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Indicates vitality, physical health, and major life changes. Contrary to myth, it doesn't predict lifespan but shows the quality and intensity of your life energy."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.lifeLine.title": {
-      "comment": "Life Line",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Life Line"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.majorLines.title": {
-      "comment": "The Major Lines",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Major Lines"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.mars.meaning": {
-      "comment": "Two areas between thumb and fingers. Represent courage, aggression, and determination.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Two areas between thumb and fingers. Represent courage, aggression, and determination."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.mars.title": {
-      "comment": "Mounts of Mars",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mounts of Mars"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.mercury.meaning": {
-      "comment": "Below the pinky finger. Associated with communication, wit, and business acumen.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Below the pinky finger. Associated with communication, wit, and business acumen."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.mercury.title": {
-      "comment": "Mount of Mercury",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mount of Mercury"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.middle.meaning": {
-      "comment": "Responsibility, balance, and introspection.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Responsibility, balance, and introspection."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.middle.title": {
-      "comment": "Middle Finger (Saturn)",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Middle Finger (Saturn)"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.moon.meaning": {
-      "comment": "On the outer edge of palm. Relates to imagination, intuition, and emotions.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "On the outer edge of palm. Relates to imagination, intuition, and emotions."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.moon.title": {
-      "comment": "Mount of the Moon",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mount of the Moon"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.mounts.intro": {
-      "comment": "Mounts are the fleshy pads on your palm, each associated with planetary energies and personality traits:",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mounts are the fleshy pads on your palm, each associated with planetary energies and personality traits:"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.mounts.title": {
-      "comment": "The Mounts",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Mounts"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.pinky.meaning": {
-      "comment": "Communication, intelligence, and persuasion.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Communication, intelligence, and persuasion."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.pinky.title": {
-      "comment": "Pinky Finger (Mercury)",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pinky Finger (Mercury)"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.ring.meaning": {
-      "comment": "Creativity, expression, and happiness.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Creativity, expression, and happiness."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.ring.title": {
-      "comment": "Ring Finger (Apollo)",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ring Finger (Apollo)"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.saturn.meaning": {
-      "comment": "Below the middle finger. Relates to responsibility, wisdom, and discipline.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Below the middle finger. Relates to responsibility, wisdom, and discipline."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.saturn.title": {
-      "comment": "Mount of Saturn",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mount of Saturn"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.subtitle": {
-      "comment": "Understanding Your Hand",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Understanding Your Hand"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.thumb.meaning": {
-      "comment": "Willpower, logic, and self-control.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Willpower, logic, and self-control."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.thumb.title": {
-      "comment": "Thumb",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Thumb"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.title": {
-      "comment": "Palm Basic Meanings",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palm Basic Meanings"
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.venus.meaning": {
-      "comment": "Located at the base of the thumb. Represents love, passion, and vitality.",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Located at the base of the thumb. Represents love, passion, and vitality."
-          }
-        }
-      }
-    },
-    "palmBasicMeanings.venus.title": {
-      "comment": "Mount of Venus",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mount of Venus"
-          }
-        }
-      }
-    },
     "palmistryFaq.answer1": {
       "comment": "Palmistry is not scientifically validated. It's best understood as a tool for self-reflection and personal insight rather than empirical prediction.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry is not scientifically validated. It's best understood as a tool for self-reflection and personal insight rather than empirical prediction."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen ist wissenschaftlich nicht belegt. Es ist am besten als Werkzeug zur Selbstreflexion und persönlichen Einsicht zu verstehen, nicht als empirische Vorhersage." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry is not scientifically validated. It's best understood as a tool for self-reflection and personal insight rather than empirical prediction." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia no está validada científicamente. Es mejor entenderla como una herramienta de autorreflexión y conocimiento personal, no como una predicción empírica." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie n'est pas scientifiquement validée. Elle est mieux comprise comme un outil d'introspection et de perspicacité personnelle plutôt que de prédiction empirique." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia non è scientificamente validata. È meglio intenderla come uno strumento di autoriflessione e intuizione personale piuttosto che di previsione empirica." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は科学的に証明されているわけではありません。経験的な予測というよりも、自己反省と個人的な洞察のためのツールとして理解するのが最適です。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing er ikke vitenskapelig validert. Det forstås best som et verktøy for selvrefleksjon og personlig innsikt, snarere enn empirisk prediksjon." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja nie jest naukowo potwierdzona. Najlepiej rozumieć ją jako narzędzie do autorefleksji i osobistego wglądu, a nie empirycznego przewidywania." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia não é cientificamente validada. É melhor entendida como uma ferramenta para auto-reflexão e percepção pessoal, em vez de previsão empírica." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning är inte vetenskapligt validerat. Det förstås bäst som ett verktyg för självreflektion och personlig insikt snarare än empirisk förutsägelse." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія не має наукового підтвердження. Її найкраще розуміти як інструмент для саморефлексії та особистого розуміння, а не емпіричного передбачення." } }
       }
     },
     "palmistryFaq.answer2": {
       "comment": "Palmistry doesn't predict fixed outcomes. It reveals tendencies, patterns, and potentials based on your current state. Your choices shape your future.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry doesn't predict fixed outcomes. It reveals tendencies, patterns, and potentials based on your current state. Your choices shape your future."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen sagt keine festgelegten Ergebnisse voraus. Es zeigt Tendenzen, Muster und Potenziale basierend auf deinem aktuellen Zustand. Deine Entscheidungen formen deine Zukunft." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry doesn't predict fixed outcomes. It reveals tendencies, patterns, and potentials based on your current state. Your choices shape your future." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia no predice resultados fijos. Revela tendencias, patrones y potenciales basados en tu estado actual. Tus elecciones dan forma a tu futuro." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie ne prédit pas des résultats fixes. Elle révèle des tendances, des schémas et des potentiels basés sur votre état actuel. Vos choix façonnent votre avenir." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia non predice risultati fissi. Rivela tendenze, schemi e potenzialità basate sul tuo stato attuale. Le tue scelte modellano il tuo futuro." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は固定された結果を予測するものではありません。現在の状態に基づいた傾向、パターン、可能性を明らかにします。あなたの選択が未来を形作ります。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing forutsier ikke faste utfall. Det avslører tendenser, mønstre og potensialer basert på din nåværende tilstand. Dine valg former fremtiden din." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja nie przewiduje stałych wyników. Ujawnia tendencje, wzorce i potencjały oparte na twoim obecnym stanie. Twoje wybory kształtują twoją przyszłość." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia não prevê resultados fixos. Ela revela tendências, padrões e potenciais com base no seu estado atual. Suas escolhas moldam seu futuro." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning förutsäger inte fasta resultat. Den avslöjar tendenser, mönster och potentialer baserat på ditt nuvarande tillstånd. Dina val formar din framtid." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія не передбачає фіксованих результатів. Вона розкриває тенденції, патерни та потенціали, що базуються на вашому поточному стані. Ваш вибір формує ваше майбутнє." } }
       }
     },
     "palmistryFaq.answer3": {
       "comment": "Your dominant hand shows your present and conscious choices. Your non-dominant hand reveals inherited traits and potential. Read both for a complete picture.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Your dominant hand shows your present and conscious choices. Your non-dominant hand reveals inherited traits and potential. Read both for a complete picture."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Deine dominante Hand zeigt deine gegenwärtigen und bewussten Entscheidungen. Deine nicht-dominante Hand offenbart vererbte Eigenschaften und Potenziale. Lies beide für ein vollständiges Bild." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Your dominant hand shows your present and conscious choices. Your non-dominant hand reveals inherited traits and potential. Read both for a complete picture." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Tu mano dominante muestra tus elecciones presentes y conscientes. Tu mano no dominante revela rasgos heredados y potencial. Lee ambas para obtener una imagen completa." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Votre main dominante montre vos choix présents et conscients. Votre main non dominante révèle les traits hérités et le potentiel. Lisez les deux pour une image complète." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La tua mano dominante mostra le tue scelte presenti e consapevoli. La tua mano non dominante rivela tratti ereditati e potenziale. Leggi entrambe per un quadro completo." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "利き手は現在の意識的な選択を示します。利き手でない方は遺伝的特性と可能性を明らかにします。完全な像を得るには両方を読みましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Din dominante hånd viser dine nåværende og bevisste valg. Din ikke-dominante hånd avslører arvede trekk og potensial. Les begge for et fullstendig bilde." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Twoja dominująca dłoń pokazuje twoje obecne i świadome wybory. Twoja nie-dominująca dłoń ujawnia odziedziczone cechy i potencjał. Przeczytaj obie, aby uzyskać pełny obraz." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua mão dominante mostra suas escolhas presentes e conscientes. Sua mão não dominante revela traços herdados e potencial. Leia ambas para obter uma imagem completa." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Din dominanta hand visar dina nuvarande och medvetna val. Din icke-dominanta hand avslöjar ärftliga drag och potential. Läs båda för en komplett bild." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ваша домінантна рука показує ваші теперішні та свідомі вибори. Ваша недомінантна рука розкриває успадковані риси та потенціал. Читайте обидві для повної картини." } }
       }
     },
     "palmistryFaq.answer4": {
       "comment": "Yes! Palm lines can and do change as you grow and your circumstances shift. They reflect your current life path, not a permanent fate.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Yes! Palm lines can and do change as you grow and your circumstances shift. They reflect your current life path, not a permanent fate."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Ja! Handlinien können sich verändern, und sie tun es auch, wenn du wächst und sich deine Umstände ändern. Sie spiegeln deinen aktuellen Lebensweg wider, kein permanentes Schicksal." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Yes! Palm lines can and do change as you grow and your circumstances shift. They reflect your current life path, not a permanent fate." } },
+        "es": { "stringUnit": { "state": "translated", "value": "¡Sí! Las líneas de la palma pueden y cambian a medida que creces y tus circunstancias cambian. Reflejan tu camino de vida actual, no un destino permanente." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Oui ! Les lignes de la paume peuvent et changent à mesure que vous grandissez et que votre situation évolue. Elles reflètent votre chemin de vie actuel, pas un destin permanent." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Sì! Le linee del palmo possono e cambiano con la tua crescita e il mutare delle circostanze. Riflettono il tuo attuale percorso di vita, non un destino permanente." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "はい！手のひらの線は、あなたの成長や状況の変化に伴って変化します。それらは現在の人生の道筋を反映しており、永続的な運命ではありません。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ja! Håndlinjer kan og blir endret etter hvert som du vokser og omstendighetene dine endrer seg. De gjenspeiler din nåværende livsvei, ikke en permanent skjebne." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Tak! Linie dłoni mogą i zmieniają się wraz z twoim rozwojem i zmianą okoliczności. Odzwierciedlają twoją obecną ścieżkę życiową, a nie trwały los." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sim! As linhas da palma podem e mudam à medida que você cresce e suas circunstâncias mudam. Elas refletem seu caminho de vida atual, não um destino permanente." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ja! Handlinjer kan och förändras när du växer och dina omständigheter skiftar. De speglar din nuvarande livsväg, inte ett permanent öde." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Так! Лінії на долоні можуть і змінюються з вашим зростанням та зміною обставин. Вони відображають ваш поточний життєвий шлях, а не постійну долю." } }
       }
     },
     "palmistryFaq.answer5": {
       "comment": "No. This is a common myth. The Life Line indicates vitality and life quality, not lifespan.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "No. This is a common myth. The Life Line indicates vitality and life quality, not lifespan."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Nein. Das ist ein weit verbreiteter Mythos. Die Lebenslinie zeigt Vitalität und Lebensqualität an, nicht die Lebensdauer." } },
+        "en": { "stringUnit": { "state": "translated", "value": "No. This is a common myth. The Life Line indicates vitality and life quality, not lifespan." } },
+        "es": { "stringUnit": { "state": "translated", "value": "No. Este es un mito común. La línea de la vida indica vitalidad y calidad de vida, no la esperanza de vida." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Non. C'est un mythe courant. La ligne de vie indique la vitalité et la qualité de vie, pas la durée de vie." } },
+        "it": { "stringUnit": { "state": "translated", "value": "No. Questo è un mito comune. La linea della vita indica vitalità e qualità della vita, non la durata della vita." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "いいえ。これはよくある誤解です。生命線は寿命ではなく、活力と人生の質を示します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Nei. Dette er en vanlig myte. Livslinjen indikerer vitalitet og livskvalitet, ikke levetid." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Nie. To powszechny mit. Linia życia wskazuje na witalność i jakość życia, a nie długość życia." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Não. Este é um mito comum. A Linha da Vida indica vitalidade e qualidade de vida, não a duração da vida." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Nej. Detta är en vanlig myt. Livslinjen indikerar vitalitet och livskvalitet, inte livslängd." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ні. Це поширений міф. Лінія Життя вказує на життєву енергію та якість життя, а не на тривалість життя." } }
       }
     },
     "palmistryFaq.answer6": {
       "comment": "Not everyone has a visible Fate Line. Its absence suggests freedom to create your own path without strong external influences.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Not everyone has a visible Fate Line. Its absence suggests freedom to create your own path without strong external influences."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Nicht jeder hat eine sichtbare Schicksalslinie. Ihre Abwesenheit deutet auf Freiheit hin, deinen eigenen Weg ohne starke äußere Einflüsse zu gehen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Not everyone has a visible Fate Line. Its absence suggests freedom to create your own path without strong external influences." } },
+        "es": { "stringUnit": { "state": "translated", "value": "No todos tienen una línea del destino visible. Su ausencia sugiere libertad para crear tu propio camino sin fuertes influencias externas." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Tout le monde n'a pas une ligne de destinée visible. Son absence suggère la liberté de créer votre propre chemin sans fortes influences extérieures." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Non tutti hanno una linea del destino visibile. La sua assenza suggerisce la libertà di creare il proprio percorso senza forti influenze esterne." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "誰もがはっきりとした運命線を持っているわけではありません。ない場合は、外部の強い影響を受けずに自分自身の道を創造する自由を示唆しています。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ikke alle har en synlig skjebnelinje. Fraværet antyder frihet til å skape din egen vei uten sterke ytre påvirkninger." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Nie każdy ma widoczną linię losu. Jej brak sugeruje swobodę tworzenia własnej ścieżki bez silnych wpływów zewnętrznych." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Nem todos têm uma Linha do Destino visível. Sua ausência sugere liberdade para criar seu próprio caminho sem fortes influências externas." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Alla har inte en synlig ödeslinje. Dess frånvaro antyder frihet att skapa din egen väg utan starka yttre påverkan." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Не кожен має видиму лінію долі. Її відсутність вказує на свободу створювати власний шлях без сильного зовнішнього впливу." } }
       }
     },
     "palmistryFaq.answer7": {
       "comment": "Breaks can indicate transitions, challenges, or significant changes in that area of life. They're not necessarily negative—often they represent growth through transformation.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Breaks can indicate transitions, challenges, or significant changes in that area of life. They're not necessarily negative—often they represent growth through transformation."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Unterbrechungen können auf Übergänge, Herausforderungen oder bedeutende Veränderungen in diesem Lebensbereich hindeuten. Sie sind nicht unbedingt negativ – oft stehen sie für Wachstum durch Transformation." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Breaks can indicate transitions, challenges, or significant changes in that area of life. They're not necessarily negative—often they represent growth through transformation." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Las roturas pueden indicar transiciones, desafíos o cambios significativos en esa área de la vida. No son necesariamente negativas; a menudo representan crecimiento a través de la transformación." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les ruptures peuvent indiquer des transitions, des défis ou des changements importants dans ce domaine de la vie. Elles ne sont pas nécessairement négatives — elles représentent souvent une croissance par la transformation." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Le interruzioni possono indicare transizioni, sfide o cambiamenti significativi in quell'area della vita. Non sono necessariamente negative—spesso rappresentano la crescita attraverso la trasformazione." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "切れ目は、その人生の分野における移行、課題、または重要な変化を示すことがあります。必ずしも否定的ではなく、変容を通じた成長を表すことがよくあります。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Brudd kan indikere overganger, utfordringer eller betydelige endringer i det området av livet. De er ikke nødvendigvis negative – ofte representerer de vekst gjennom transformasjon." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Przerwy mogą wskazywać na przejścia, wyzwania lub znaczące zmiany w tej dziedzinie życia. Nie są koniecznie negatywne – często reprezentują wzrost poprzez transformację." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Quebras podem indicar transições, desafios ou mudanças significativas nessa área da vida. Elas não são necessariamente negativas — frequentemente representam crescimento através da transformação." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Brytningar kan indikera övergångar, utmaningar eller betydande förändringar inom det området av livet. De är inte nödvändigtvis negativa – de representerar ofta tillväxt genom transformation." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Розриви можуть вказувати на переходи, виклики або значні зміни в цій сфері життя. Вони не обов'язково є негативними — часто вони представляють зростання через трансформацію." } }
       }
     },
     "palmistryFaq.answer8": {
       "comment": "Palmistry can illuminate your natural tendencies and strengths, helping you make more informed choices. However, trust your judgment and intuition above all.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry can illuminate your natural tendencies and strengths, helping you make more informed choices. However, trust your judgment and intuition above all."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen kann deine natürlichen Neigungen und Stärken beleuchten und dir helfen, fundiertere Entscheidungen zu treffen. Vertraue jedoch vor allem deinem Urteilsvermögen und deiner Intuition." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry can illuminate your natural tendencies and strengths, helping you make more informed choices. However, trust your judgment and intuition above all." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia puede iluminar tus tendencias y fortalezas naturales, ayudándote a tomar decisiones más informadas. Sin embargo, confía sobre todo en tu juicio e intuición." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie peut éclairer vos tendances et vos forces naturelles, vous aidant à faire des choix plus éclairés. Cependant, faites avant tout confiance à votre jugement et à votre intuition." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia può illuminare le tue tendenze e i tuoi punti di forza naturali, aiutandoti a fare scelte più consapevoli. Tuttavia, fidati soprattutto del tuo giudizio e della tua intuizione." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相はあなたの生来の傾向や強みを明らかにし、より情報に基づいた選択をするのに役立ちます。しかし、何よりも自分の判断と直感を信じてください。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing kan belyse dine naturlige tendenser og styrker, og hjelpe deg å ta mer informerte valg. Stol imidlertid på din egen dømmekraft og intuisjon fremfor alt." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja może oświetlić twoje naturalne tendencje i mocne strony, pomagając ci podejmować bardziej świadome decyzje. Przede wszystkim jednak zaufaj swojemu osądowi i intuicji." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia pode iluminar suas tendências e forças naturais, ajudando-o a fazer escolhas mais informadas. No entanto, confie acima de tudo em seu julgamento e intuição." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning kan belysa dina naturliga tendenser och styrkor, och hjälpa dig att fatta mer välgrundade beslut. Men lita framför allt på ditt omdöme och din intuition." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія може висвітлити ваші природні схильності та сильні сторони, допомагаючи робити більш обґрунтований вибір. Однак, перш за все, довіряйте власному судженню та інтуїції." } }
       }
     },
     "palmistryFaq.answer9": {
       "comment": "The same principles apply to all palms regardless of gender. Individual variation matters more than gender-based differences.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The same principles apply to all palms regardless of gender. Individual variation matters more than gender-based differences."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die gleichen Prinzipien gelten für alle Handflächen, unabhängig vom Geschlecht. Individuelle Unterschiede sind wichtiger als geschlechtsspezifische Unterschiede." } },
+        "en": { "stringUnit": { "state": "translated", "value": "The same principles apply to all palms regardless of gender. Individual variation matters more than gender-based differences." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Los mismos principios se aplican a todas las palmas, independientemente del género. La variación individual importa más que las diferencias de género." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les mêmes principes s'appliquent à toutes les paumes, quel que soit le sexe. La variation individuelle importe plus que les différences liées au sexe." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Gli stessi principi si applicano a tutti i palmi, indipendentemente dal genere. La variazione individuale è più importante delle differenze di genere." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "同じ原則が性別に関係なく全ての手のひらに当てはまります。個人差は性差よりも重要です。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "De samme prinsippene gjelder for alle hender uavhengig av kjønn. Individuell variasjon betyr mer enn kjønnsbaserte forskjeller." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Te same zasady dotyczą wszystkich dłoni, niezależnie od płci. Indywidualne różnice są ważniejsze niż różnice między płciami." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Os mesmos princípios se aplicam a todas as palmas, independentemente do gênero. A variação individual é mais importante do que as diferenças baseadas em gênero." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Samma principer gäller för alla handflator oavsett kön. Individuell variation är viktigare än könsbaserade skillnader." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ті самі принципи застосовуються до всіх долонь, незалежно від статі. Індивідуальні відмінності важливіші, ніж гендерні відмінності." } }
       }
     },
     "palmistryFaq.answer10": {
       "comment": "Palmistry has been practiced across many cultures and spiritual traditions, but it's not inherently religious. It's a tool anyone can use for self-understanding.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry has been practiced across many cultures and spiritual traditions, but it's not inherently religious. It's a tool anyone can use for self-understanding."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen wird in vielen Kulturen und spirituellen Traditionen praktiziert, ist aber nicht an sich religiös. Es ist ein Werkzeug, das jeder für sein Selbstverständnis nutzen kann." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry has been practiced across many cultures and spiritual traditions, but it's not inherently religious. It's a tool anyone can use for self-understanding." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia se ha practicado en muchas culturas y tradiciones espirituales, pero no es inherentemente religiosa. Es una herramienta que cualquiera puede usar para la autocomprensión." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie a été pratiquée dans de nombreuses cultures et traditions spirituelles, mais elle n'est pas intrinsèquement religieuse. C'est un outil que chacun peut utiliser pour se comprendre soi-même." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia è stata praticata in molte culture e tradizioni spirituali, ma non è intrinsecamente religiosa. È uno strumento che chiunque può usare per la conoscenza di sé." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は多くの文化や精神的な伝統で実践されてきましたが、本質的に宗教的なものではありません。それは誰でも自己理解のために使えるツールです。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing har blitt praktisert i mange kulturer og spirituelle tradisjoner, men det er ikke iboende religiøst. Det er et verktøy alle kan bruke for selvforståelse." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja była praktykowana w wielu kulturach i tradycjach duchowych, ale nie jest z natury religijna. To narzędzie, którego każdy może użyć do samopoznania." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia tem sido praticada em muitas culturas e tradições espirituais, mas não é inerentemente religiosa. É uma ferramenta que qualquer um pode usar para o autoconhecimento." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning har praktiserats i många kulturer och andliga traditioner, men det är inte i sig religiöst. Det är ett verktyg som alla kan använda för självförståelse." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантію практикували в багатьох культурах і духовних традиціях, але вона не є релігійною за своєю суттю. Це інструмент, який кожен може використовувати для саморозуміння." } }
       }
     },
     "palmistryFaq.disclaimer.text": {
       "comment": "Palmistry is intended for entertainment and self-reflection purposes only. It should not replace professional advice for health, legal, or financial matters.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry is intended for entertainment and self-reflection purposes only. It should not replace professional advice for health, legal, or financial matters."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen ist nur für Unterhaltungs- und Selbstreflexionszwecke gedacht. Es sollte keine professionelle Beratung in Gesundheits-, Rechts- oder Finanzangelegenheiten ersetzen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry is intended for entertainment and self-reflection purposes only. It should not replace professional advice for health, legal, or financial matters." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia tiene fines de entretenimiento y autorreflexión únicamente. No debe reemplazar el asesoramiento profesional en asuntos de salud, legales o financieros." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie est destinée uniquement à des fins de divertissement et d'introspection. Elle ne doit pas remplacer les conseils professionnels pour les questions de santé, juridiques ou financières." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia è intesa solo per scopi di intrattenimento e autoriflessione. Non dovrebbe sostituire la consulenza professionale per questioni sanitarie, legali o finanziarie." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相はエンターテインメントと自己反省のみを目的としています。健康、法律、または財務問題に関する専門的なアドバイスに代わるものではありません。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing er kun ment for underholdning og selvrefleksjon. Det bør ikke erstatte profesjonell rådgivning for helse-, juridiske eller økonomiske forhold." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja jest przeznaczona wyłącznie do celów rozrywkowych i autorefleksji. Nie powinna zastępować profesjonalnej porady w sprawach zdrowotnych, prawnych lub finansowych." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia destina-se apenas a fins de entretenimento e auto-reflexão. Não deve substituir o aconselhamento profissional para questões de saúde, legais ou financeiras." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning är endast avsedd för underhållning och självreflektion. Det bör inte ersätta professionell rådgivning för hälso-, juridiska eller ekonomiska frågor." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія призначена лише для розважальних цілей та саморефлексії. Вона не повинна замінювати професійні консультації з питань здоров'я, права чи фінансів." } }
       }
     },
     "palmistryFaq.disclaimer.title": {
       "comment": "Important",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Important"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Wichtig" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Important" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Importante" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Important" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Importante" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "重要" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Viktig" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ważne" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Importante" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Viktigt" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Важливо" } }
       }
     },
     "palmistryFaq.question1": {
       "comment": "Is palmistry scientifically proven?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Is palmistry scientifically proven?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Ist Handlesen wissenschaftlich bewiesen?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Is palmistry scientifically proven?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Está la quiromancia científicamente probada?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie est-elle scientifiquement prouvée ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia è scientificamente provata?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は科学的に証明されていますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Er håndlesing vitenskapelig bevist?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czy chiromancja jest naukowo udowodniona?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia é cientificamente comprovada?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Är handläsning vetenskapligt bevisat?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Чи науково доведена хіромантія?" } }
       }
     },
     "palmistryFaq.question2": {
       "comment": "Can palmistry predict my future?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Can palmistry predict my future?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Kann Handlesen meine Zukunft vorhersagen?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Can palmistry predict my future?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Puede la quiromancia predecir mi futuro?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie peut-elle prédire mon avenir ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia può predire il mio futuro?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は私の未来を予測できますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Kan håndlesing forutsi fremtiden min?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czy chiromancja może przewidzieć moją przyszłość?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia pode prever meu futuro?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Kan handläsning förutsäga min framtid?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Чи може хіромантія передбачити моє майбутнє?" } }
       }
     },
     "palmistryFaq.question3": {
       "comment": "Which hand should I read?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Which hand should I read?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Welche Hand sollte ich lesen?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Which hand should I read?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Qué mano debo leer?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Quelle main dois-je lire ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Quale mano dovrei leggere?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "どちらの手を読むべきですか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hvilken hånd bør jeg lese?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Którą rękę powinienem czytać?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Qual mão devo ler?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vilken hand ska jag läsa?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Яку руку мені читати?" } }
       }
     },
     "palmistryFaq.question4": {
       "comment": "Do my palm lines change over time?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Do my palm lines change over time?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Verändern sich meine Handlinien im Laufe der Zeit?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Do my palm lines change over time?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Cambian mis líneas de la palma con el tiempo?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Mes lignes de la main changent-elles avec le temps ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Le mie linee del palmo cambiano nel tempo?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手のひらの線は時間とともに変化しますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Endrer håndlinjene mine seg over tid?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czy moje linie dłoni zmieniają się z czasem?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Minhas linhas da palma mudam com o tempo?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förändras mina handlinjer över tiden?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Чи змінюються мої лінії на долоні з часом?" } }
       }
     },
     "palmistryFaq.question5": {
       "comment": "Does the Life Line show how long I'll live?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Does the Life Line show how long I'll live?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Zeigt die Lebenslinie, wie lange ich leben werde?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Does the Life Line show how long I'll live?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿La línea de la vida muestra cuánto tiempo viviré?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La ligne de vie montre-t-elle combien de temps je vais vivre ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La linea della vita mostra per quanto tempo vivrò?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "生命線は私がどれだけ長生きするかを示しますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Viser livslinjen hvor lenge jeg vil leve?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czy linia życia pokazuje, jak długo będę żyć?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A Linha da Vida mostra por quanto tempo viverei?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Visar livslinjen hur länge jag kommer att leva?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Чи показує Лінія Життя, як довго я проживу?" } }
       }
     },
     "palmistryFaq.question6": {
       "comment": "What if I don't have a Fate Line?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "What if I don't have a Fate Line?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Was ist, wenn ich keine Schicksalslinie habe?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "What if I don't have a Fate Line?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Qué pasa si no tengo una línea del destino?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Et si je n'ai pas de ligne de destinée ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "E se non ho una linea del destino?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "運命線がない場合はどうなりますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hva om jeg ikke har en skjebnelinje?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Co jeśli nie mam linii losu?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "E se eu não tiver uma Linha do Destino?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vad händer om jag inte har en ödeslinje?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Що, якщо у мене немає лінії долі?" } }
       }
     },
     "palmistryFaq.question7": {
       "comment": "What do breaks in my lines mean?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "What do breaks in my lines mean?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Was bedeuten Unterbrechungen in meinen Linien?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "What do breaks in my lines mean?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Qué significan las roturas en mis líneas?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Que signifient les ruptures dans mes lignes ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Cosa significano le interruzioni nelle mie linee?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "線の切れ目は何を意味しますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hva betyr brudd i linjene mine?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Co oznaczają przerwy w moich liniach?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "O que significam as quebras nas minhas linhas?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vad betyder brytningar i mina linjer?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Що означають розриви в моїх лініях?" } }
       }
     },
     "palmistryFaq.question8": {
       "comment": "Can palmistry help with decisions?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Can palmistry help with decisions?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Kann Handlesen bei Entscheidungen helfen?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Can palmistry help with decisions?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Puede la quiromancia ayudar con las decisiones?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie peut-elle aider à prendre des décisions ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia può aiutare con le decisioni?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は決断に役立ちますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Kan håndlesing hjelpe med beslutninger?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czy chiromancja może pomóc w podejmowaniu decyzji?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia pode ajudar com decisões?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Kan handläsning hjälpa till med beslut?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Чи може хіромантія допомогти з рішеннями?" } }
       }
     },
     "palmistryFaq.question9": {
       "comment": "Do men and women's palms differ?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Do men and women's palms differ?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Unterscheiden sich die Handflächen von Männern und Frauen?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Do men and women's palms differ?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Las palmas de hombres y mujeres son diferentes?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les paumes des hommes et des femmes sont-elles différentes ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "I palmi di uomini e donne sono diversi?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "男性と女性の手のひらは違いますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Er menn og kvinners hender forskjellige?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czy dłonie mężczyzn i kobiet różnią się?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "As palmas de homens e mulheres diferem?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Skiljer sig mäns och kvinnors handflator åt?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Чи відрізняються долоні чоловіків та жінок?" } }
       }
     },
     "palmistryFaq.question10": {
       "comment": "Is palmistry connected to any religion?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Is palmistry connected to any religion?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Ist Handlesen mit einer Religion verbunden?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Is palmistry connected to any religion?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "¿Está la quiromancia conectada con alguna religión?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie est-elle liée à une religion ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia è collegata a qualche religione?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は何か宗教と関係がありますか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Er håndlesing forbundet med noen religion?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czy chiromancja jest związana z jakąś religią?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia está ligada a alguma religião?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Är handläsning kopplat till någon religion?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Чи пов'язана хіромантія з якоюсь релігією?" } }
       }
     },
     "palmistryFaq.subtitle": {
       "comment": "Frequently Asked Questions",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Frequently Asked Questions"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Häufig gestellte Fragen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Frequently Asked Questions" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Preguntas Frecuentes" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Foire aux questions" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Domande frequenti" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "よくある質問" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ofte stilte spørsmål" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Często zadawane pytania" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Perguntas Frequentes" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vanliga frågor" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Часті запитання" } }
       }
     },
     "palmistryFaq.title": {
       "comment": "Palmistry FAQ",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry FAQ"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen FAQ" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry FAQ" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Preguntas frecuentes sobre quiromancia" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "FAQ Chiromancie" } },
+        "it": { "stringUnit": { "state": "translated", "value": "FAQ Chiromanzia" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相占いFAQ" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing FAQ" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "FAQ Chiromancja" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Perguntas Frequentes sobre Quiromancia" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning FAQ" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Поширені запитання про хіромантію" } }
       }
     },
     "palmistryMind.conclusion": {
       "comment": "Like tarot, palmistry doesn't dictate your fate—it illuminates possibilities. Your hands hold stories, but you're the author writing them.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Like tarot, palmistry doesn't dictate your fate—it illuminates possibilities. Your hands hold stories, but you're the author writing them."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Wie Tarot diktiert Handlesen nicht dein Schicksal – es erhellt Möglichkeiten. Deine Hände enthalten Geschichten, aber du bist der Autor, der sie schreibt." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Like tarot, palmistry doesn't dictate your fate—it illuminates possibilities. Your hands hold stories, but you're the author writing them." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Como el tarot, la quiromancia no dicta tu destino: ilumina posibilidades. Tus manos tienen historias, pero tú eres el autor que las escribe." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Comme le tarot, la chiromancie ne dicte pas votre destin — elle éclaire les possibilités. Vos mains contiennent des histoires, mais c'est vous l'auteur qui les écrivez." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Come i tarocchi, la chiromanzia non detta il tuo destino—illumina le possibilità. Le tue mani custodiscono storie, ma sei tu l'autore che le scrive." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "タロットのように、手相はあなたの運命を決定づけるものではなく、可能性を照らし出します。あなたの手には物語が宿っていますが、それを書いているのはあなた自身です。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Som tarot, dikterer ikke håndlesing skjebnen din – det belyser muligheter. Hendene dine inneholder historier, men det er du som er forfatteren som skriver dem." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Podobnie jak tarot, chiromancja nie dyktuje twojego przeznaczenia – rozświetla możliwości. Twoje dłonie zawierają historie, ale to ty jesteś ich autorem." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Como o tarô, a quiromancia não dita o seu destino — ela ilumina possibilidades. Suas mãos guardam histórias, mas você é o autor que as escreve." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Liksom tarot, dikterar inte handläsning ditt öde – det belyser möjligheter. Dina händer bär på berättelser, men det är du som är författaren som skriver dem." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Як і таро, хіромантія не диктує вашу долю — вона висвітлює можливості. Ваші руки тримають історії, але ви є автором, який їх пише." } }
       }
     },
     "palmistryMind.insight.label": {
       "comment": "Insight:",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Insight:"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Einblick:" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Insight:" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Perspectiva:" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Perspective :" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Intuizione:" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "洞察：" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Innsikt:" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wgląd:" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Visão:" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Insikt:" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Розуміння:" } }
       }
     },
     "palmistryMind.section1.text": {
       "comment": "Palmistry offers a unique mirror for self-reflection. By examining the lines and shapes of your hands, you engage in an ancient practice of introspection that can reveal patterns in your thinking, feeling, and behaving.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry offers a unique mirror for self-reflection. By examining the lines and shapes of your hands, you engage in an ancient practice of introspection that can reveal patterns in your thinking, feeling, and behaving."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen bietet einen einzigartigen Spiegel für Selbstreflexion. Indem du die Linien und Formen deiner Hände untersuchst, begibst du dich auf eine uralte Praxis der Introspektion, die Muster in deinem Denken, Fühlen und Verhalten offenbaren kann." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry offers a unique mirror for self-reflection. By examining the lines and shapes of your hands, you engage in an ancient practice of introspection that can reveal patterns in your thinking, feeling, and behaving." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia ofrece un espejo único para la autorreflexión. Al examinar las líneas y formas de tus manos, participas en una antigua práctica de introspección que puede revelar patrones en tu pensamiento, sentimiento y comportamiento." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie offre un miroir unique pour l'introspection. En examinant les lignes et les formes de vos mains, vous vous engagez dans une pratique ancienne d'introspection qui peut révéler des schémas dans votre façon de penser, de ressentir et d'agir." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia offre uno specchio unico per l'autoriflessione. Esaminando le linee e le forme delle tue mani, ti impegni in un'antica pratica di introspezione che può rivelare schemi nel tuo pensare, sentire e comportarti." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は自己反省のためのユニークな鏡を提供します。手の線や形を調べることで、思考、感情、行動のパターンを明らかにすることができる古代の内省の実践に従事することになります。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing tilbyr et unikt speil for selvrefleksjon. Ved å undersøke linjene og formene på hendene dine, engasjerer du deg i en gammel praksis med introspeksjon som kan avsløre mønstre i din tenkning, følelser og atferd." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja oferuje wyjątkowe lustro do autorefleksji. Badając linie i kształty swoich dłoni, angażujesz się w starożytną praktykę introspekcji, która może ujawnić wzorce w twoim myśleniu, odczuwaniu i zachowaniu." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A quiromancia oferece um espelho único para a auto-reflexão. Ao examinar as linhas e formas das suas mãos, você se envolve numa antiga prática de introspecção que pode revelar padrões no seu pensamento, sentimento e comportamento." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning erbjuder en unik spegel för självreflektion. Genom att undersöka dina händers linjer och former deltar du i en uråldrig praxis av introspektion som kan avslöja mönster i ditt tänkande, kännande och beteende." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія пропонує унікальне дзеркало для саморефлексії. Досліджуючи лінії та форми ваших рук, ви залучаєтеся до стародавньої практики інтроспекції, яка може розкрити шаблони вашого мислення, почуттів та поведінки." } }
       }
     },
     "palmistryMind.section1.title": {
       "comment": "Palmistry as a Self-Discovery Tool",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry as a Self-Discovery Tool"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen als Werkzeug zur Selbstfindung" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry as a Self-Discovery Tool" } },
+        "es": { "stringUnit": { "state": "translated", "value": "La quiromancia como herramienta de autodescubrimiento" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La chiromancie comme outil de découverte de soi" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La chiromanzia come strumento di auto-scoperta" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自己発見のツールとしての手相" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing som et verktøy for selvutforskelse" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja jako narzędzie samopoznania" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A Quiromancia como Ferramenta de Autodescoberta" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning som ett verktyg för självupptäckt" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія як інструмент самопізнання" } }
       }
     },
     "palmistryMind.section2.insight": {
       "comment": "This is why palmistry encourages you to see yourself not as fixed, but as constantly evolving. The person you become shapes the very lines you read.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "This is why palmistry encourages you to see yourself not as fixed, but as constantly evolving. The person you become shapes the very lines you read."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Deshalb ermutigt dich Handlesen, dich selbst nicht als festgelegt, sondern als sich ständig weiterentwickelnd zu sehen. Die Person, die du wirst, formt die Linien, die du liest." } },
+        "en": { "stringUnit": { "state": "translated", "value": "This is why palmistry encourages you to see yourself not as fixed, but as constantly evolving. The person you become shapes the very lines you read." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Por eso la quiromancia te anima a verte a ti mismo no como algo fijo, sino en constante evolución. La persona en la que te conviertes da forma a las líneas que lees." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "C'est pourquoi la chiromancie vous encourage à vous voir non pas comme figé, mais comme en constante évolution. La personne que vous devenez façonne les lignes que vous lisez." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Ecco perché la chiromanzia ti incoraggia a vedere te stesso non come fisso, ma come in continua evoluzione. La persona che diventi modella le stesse linee che leggi." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "これが、手相があなた自身を固定されたものではなく、常に進化しているものとして見ることを奨励する理由です。あなたがなる人物が、あなたが読む線そのものを形作ります。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Dette er grunnen til at håndlesing oppmuntrer deg til å se deg selv ikke som fastlåst, men som i konstant utvikling. Personen du blir, former nettopp de linjene du leser." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dlatego chiromancja zachęca cię do postrzegania siebie nie jako kogoś niezmiennego, ale stale ewoluującego. Osoba, którą się stajesz, kształtuje linie, które czytasz." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "É por isso que a quiromancia incentiva você a ver a si mesmo não como fixo, mas como em constante evolução. A pessoa que você se torna molda as próprias linhas que você lê." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Det är därför handläsning uppmuntrar dig att se dig själv inte som fixerad, utan som ständigt föränderlig. Personen du blir formar just de linjer du läser." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ось чому хіромантія заохочує вас бачити себе не як незмінного, а як такого, що постійно розвивається. Людина, якою ви стаєте, формує ті самі лінії, які ви читаєте." } }
       }
     },
     "palmistryMind.section2.text": {
       "comment": "Your hands are directly connected to your brain through more nerve endings than almost any other part of your body. Some practitioners believe that repeated thoughts and behaviors can actually shape the lines on your palms over time, creating a physical map of your mental and emotional patterns.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Your hands are directly connected to your brain through more nerve endings than almost any other part of your body. Some practitioners believe that repeated thoughts and behaviors can actually shape the lines on your palms over time, creating a physical map of your mental and emotional patterns."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Deine Hände sind durch mehr Nervenenden direkt mit deinem Gehirn verbunden als fast jeder andere Teil deines Körpers. Einige Praktizierende glauben, dass wiederholte Gedanken und Verhaltensweisen tatsächlich die Linien auf deinen Handflächen im Laufe der Zeit formen können, wodurch eine physische Landkarte deiner mentalen und emotionalen Muster entsteht." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Your hands are directly connected to your brain through more nerve endings than almost any other part of your body. Some practitioners believe that repeated thoughts and behaviors can actually shape the lines on your palms over time, creating a physical map of your mental and emotional patterns." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Tus manos están directamente conectadas a tu cerebro a través de más terminaciones nerviosas que casi cualquier otra parte de tu cuerpo. Algunos practicantes creen que los pensamientos y comportamientos repetidos pueden moldear las líneas de tus palmas con el tiempo, creando un mapa físico de tus patrones mentales y emocionales." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Vos mains sont directement connectées à votre cerveau par plus de terminaisons nerveuses que presque n'importe quelle autre partie de votre corps. Certains praticiens pensent que les pensées et les comportements répétés peuvent effectivement façonner les lignes de vos paumes au fil du temps, créant une carte physique de vos schémas mentaux et émotionnels." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Le tue mani sono direttamente collegate al tuo cervello attraverso più terminazioni nervose di quasi qualsiasi altra parte del tuo corpo. Alcuni praticanti credono che pensieri e comportamenti ripetuti possano effettivamente modellare le linee sui tuoi palmi nel tempo, creando una mappa fisica dei tuoi schemi mentali ed emotivi." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "あなたの手は、他のほとんどの部位よりも多くの神経終末を介して脳に直接接続されています。繰り返される思考や行動が時間の経過とともに手のひらの線を実際に形成し、精神的・感情的なパターンの物理的な地図を作り出すと信じる実践者もいます。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hendene dine er direkte koblet til hjernen din gjennom flere nerveender enn nesten noen annen del av kroppen. Noen utøvere mener at gjentatte tanker og atferd faktisk kan forme linjene på håndflatene dine over tid, og skape et fysisk kart over dine mentale og følelsesmessige mønstre." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Twoje dłonie są bezpośrednio połączone z mózgiem przez więcej zakończeń nerwowych niż prawie każda inna część ciała. Niektórzy praktycy uważają, że powtarzające się myśli i zachowania mogą z czasem kształtować linie na dłoniach, tworząc fizyczną mapę twoich wzorców mentalnych i emocjonalnych." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Suas mãos estão diretamente conectadas ao seu cérebro através de mais terminações nervosas do que quase qualquer outra parte do seu corpo. Alguns praticantes acreditam que pensamentos e comportamentos repetidos podem, de fato, moldar as linhas nas suas palmas ao longo do tempo, criando um mapa físico dos seus padrões mentais e emocionais." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Dina händer är direkt anslutna till din hjärna genom fler nervändar än nästan någon annan del av din kropp. Vissa utövare tror att upprepade tankar och beteenden faktiskt kan forma linjerna på dina handflator över tid, vilket skapar en fysisk karta över dina mentala och känslomässiga mönster." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ваші руки безпосередньо пов'язані з вашим мозком через більшу кількість нервових закінчень, ніж майже будь-яка інша частина вашого тіла. Деякі практики вважають, що повторювані думки та поведінка з часом можуть формувати лінії на ваших долонях, створюючи фізичну карту ваших ментальних та емоційних патернів." } }
       }
     },
     "palmistryMind.section2.title": {
       "comment": "The Mind-Body Connection",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Mind-Body Connection"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die Verbindung von Geist und Körper" } },
+        "en": { "stringUnit": { "state": "translated", "value": "The Mind-Body Connection" } },
+        "es": { "stringUnit": { "state": "translated", "value": "La conexión mente-cuerpo" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La connexion corps-esprit" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La connessione mente-corpo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "心と体のつながり" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Kropp-sinn-tilkoblingen" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Połączenie umysłu z ciałem" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A Conexão Mente-Corpo" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Kropp-sinn-kopplingen" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Зв'язок розуму та тіла" } }
       }
     },
     "palmistryMind.section3.bullet1.text": {
       "comment": "The Heart Line reveals how you process emotions and form connections, helping you understand relationship patterns.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Heart Line reveals how you process emotions and form connections, helping you understand relationship patterns."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die Herzlinie zeigt, wie du Emotionen verarbeitest und Verbindungen knüpfst, und hilft dir, Beziehungsmuster zu verstehen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "The Heart Line reveals how you process emotions and form connections, helping you understand relationship patterns." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La línea del corazón revela cómo procesas las emociones y formas conexiones, ayudándote a comprender los patrones de relación." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La ligne du cœur révèle comment vous traitez les émotions et formez des liens, vous aidant à comprendre les schémas relationnels." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La linea del cuore rivela come elabori le emozioni e formi connessioni, aiutandoti a capire gli schemi relazionali." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "感情線は、感情の処理方法や人間関係の築き方を明らかにし、関係性のパターンを理解するのに役立ちます。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hjertelinjen avslører hvordan du behandler følelser og danner forbindelser, og hjelper deg å forstå relasjonsmønstre." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Linia serca ujawnia, jak przetwarzasz emocje i tworzysz więzi, pomagając ci zrozumieć wzorce relacji." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A Linha do Coração revela como você processa emoções e forma conexões, ajudando-o a compreender padrões de relacionamento." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Hjärtlinjen avslöjar hur du bearbetar känslor och skapar relationer, vilket hjälper dig att först relationsmönster." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лінія Серця розкриває, як ви обробляєте емоції та формуєте зв'язки, допомагаючи зрозуміти патерни стосунків." } }
       }
     },
     "palmistryMind.section3.bullet1.title": {
       "comment": "Emotional Patterns",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Emotional Patterns"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Emotionale Muster" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Emotional Patterns" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Patrones emocionales" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Schémas émotionnels" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Schemi emotivi" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "感情のパターン" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Følelsesmessige mønstre" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzorce emocjonalne" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Padrões Emocionais" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Känslomönster" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Емоційні патерни" } }
       }
     },
     "palmistryMind.section3.bullet2.text": {
       "comment": "The Head Line shows your thinking style—are you more analytical or intuitive? Practical or imaginative?",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Head Line shows your thinking style—are you more analytical or intuitive? Practical or imaginative?"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die Kopflinie zeigt deinen Denkstil – bist du eher analytisch oder intuitiv? Praktisch oder fantasievoll?" } },
+        "en": { "stringUnit": { "state": "translated", "value": "The Head Line shows your thinking style—are you more analytical or intuitive? Practical or imaginative?" } },
+        "es": { "stringUnit": { "state": "translated", "value": "La línea de la cabeza muestra tu estilo de pensamiento: ¿eres más analítico o intuitivo? ¿Práctico o imaginativo?" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La ligne de tête montre votre style de pensée — êtes-vous plus analytique ou intuitif ? Pratique ou imaginatif ?" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La linea della testa mostra il tuo stile di pensiero: sei più analitico o intuitivo? Pratico o fantasioso?" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "頭脳線は思考スタイルを示します—あなたはより分析的ですか、直感的ですか？実用的ですか、想像力豊かですか？" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hodelinjen viser din tenkestil – er du mer analytisk eller intuitiv? Praktisk eller fantasifull?" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Linia głowy pokazuje twój styl myślenia – czy jesteś bardziej analityczny czy intuicyjny? Praktyczny czy wyobraźni?" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A Linha da Cabeça mostra seu estilo de pensamento — você é mais analítico ou intuitivo? Prático ou imaginativo?" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Huvudlinjen visar din tankestil – är du mer analytisk eller intuitiv? Praktisk eller fantasifull?" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лінія Голови показує ваш стиль мислення – ви більш аналітичний чи інтуїтивний? Практичний чи з багатою уявою?" } }
       }
     },
     "palmistryMind.section3.bullet2.title": {
       "comment": "Mental Approach",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mental Approach"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Mentaler Ansatz" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Mental Approach" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Enfoque mental" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Approche mentale" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Approccio mentale" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "精神的なアプローチ" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Mental tilnærming" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Podejście mentalne" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Abordagem Mental" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Mental inställning" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ментальний підхід" } }
       }
     },
     "palmistryMind.section3.bullet3.text": {
       "comment": "The Life Line indicates your vitality and how you approach challenges, revealing your core resilience.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Life Line indicates your vitality and how you approach challenges, revealing your core resilience."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die Lebenslinie zeigt deine Vitalität und wie du Herausforderungen angehst und offenbart deine innere Widerstandsfähigkeit." } },
+        "en": { "stringUnit": { "state": "translated", "value": "The Life Line indicates your vitality and how you approach challenges, revealing your core resilience." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La línea de la vida indica tu vitalidad y cómo abordas los desafíos, revelando tu resiliencia central." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La ligne de vie indique votre vitalité et la façon dont vous abordez les défis, révélant votre résilience profonde." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La linea della vita indica la tua vitalità e come affronti le sfide, rivelando la tua resilienza di base." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "生命線は活力と課題への取り組み方を示し、あなたの中核的な回復力を明らかにします。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Livslinjen indikerer din vitalitet og hvordan du nærmer deg utfordringer, og avslører din kjerne-robusthet." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Linia życia wskazuje twoją witalność i sposób podejścia do wyzwań, ujawniając twoją podstawową odporność." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A Linha da Vida indica sua vitalidade e como você enfrenta desafios, revelando sua resiliência central." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Livslinjen indikerar din vitalitet och hur du hanterar utmaningar, och avslöjar din kärnresiliens." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Лінія Життя вказує на вашу життєву енергію та те, як ви ставитеся до викликів, розкриваючи вашу основну стійкість." } }
       }
     },
     "palmistryMind.section3.bullet3.title": {
       "comment": "Life Energy",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Life Energy"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Lebensenergie" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Life Energy" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Energía vital" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Énergie vitale" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Energia vitale" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "生命力" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Livsenergi" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Energia życiowa" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Energia Vital" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Livsenergi" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Життєва енергія" } }
       }
     },
     "palmistryMind.section3.intro": {
       "comment": "Palm reading can illuminate aspects of your personality you might not have fully recognized:",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palm reading can illuminate aspects of your personality you might not have fully recognized:"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen kann Aspekte deiner Persönlichkeit beleuchten, die du vielleicht nicht vollständig erkannt hast:" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palm reading can illuminate aspects of your personality you might not have fully recognized:" } },
+        "es": { "stringUnit": { "state": "translated", "value": "La lectura de la palma puede iluminar aspectos de tu personalidad que quizás no hayas reconocido completamente:" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "La lecture de la paume peut éclairer des aspects de votre personnalité que vous n'avez peut-être pas pleinement reconnus :" } },
+        "it": { "stringUnit": { "state": "translated", "value": "La lettura del palmo può illuminare aspetti della tua personalità che forse non hai pienamente riconosciuto:" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相は、あなたが完全には認識していないかもしれない性格の側面を明らかにすることができます：" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing kan belyse aspekter ved din personlighet du kanskje ikke fullt ut har gjenkjent:" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czytanie z dłoni może oświetlić aspekty twojej osobowości, których mogłeś nie w pełni rozpoznać:" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A leitura das mãos pode iluminar aspectos da sua personalidade que você pode não ter reconhecido totalmente:" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning kan belysa aspekter av din personlighet som du kanske inte helt har erkänt:" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Читання долоні може висвітлити аспекти вашої особистості, які ви, можливо, не повністю усвідомлювали:" } }
       }
     },
     "palmistryMind.section3.title": {
       "comment": "Understanding Personality Through Your Palm",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Understanding Personality Through Your Palm"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Persönlichkeit verstehen durch deine Hand" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Understanding Personality Through Your Palm" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Entendiendo la personalidad a través de tu palma" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Comprendre la personnalité à travers votre paume" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Comprendere la personalità attraverso il tuo palmo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手のひらを通して性格を理解する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Forstå personlighet gjennom håndflaten din" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zrozumienie osobowości przez twoją dłoń" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Entendendo a Personalidade Através da Sua Palma" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förstå personlighet genom din handflata" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Розуміння особистості через вашу долоню" } }
       }
     },
     "palmistryMind.section4.bullet1.text": {
       "comment": "Identify your natural talents and gifts that you can develop further.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Identify your natural talents and gifts that you can develop further."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Erkenne deine natürlichen Talente und Gaben, die du weiterentwickeln kannst." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Identify your natural talents and gifts that you can develop further." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Identifica tus talentos y dones naturales que puedes desarrollar aún más." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Identifiez vos talents et dons naturels que vous pouvez développer davantage." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Identifica i tuoi talenti e doni naturali che puoi sviluppare ulteriormente." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "さらに伸ばすことができるあなたの生来の才能や賜物を特定します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Identifiser dine naturlige talenter og gaver som du kan utvikle videre." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zidentyfikuj swoje naturalne talenty i dary, które możesz dalej rozwijać." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Identifique seus talentos e dons naturais que você pode desenvolver ainda mais." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Identifiera dina naturliga talanger och gåvor som du kan utveckla vidare." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Визначте свої природні таланти та здібності, які ви можете розвивати далі." } }
       }
     },
     "palmistryMind.section4.bullet1.title": {
       "comment": "Recognize Strengths",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Recognize Strengths"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Stärken erkennen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Recognize Strengths" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Reconocer fortalezas" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Reconnaître ses forces" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Riconoscere i punti di forza" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "強みを認識する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Gjenkjenne styrker" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Rozpoznawanie mocnych stron" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Reconhecer Pontos Fortes" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Känn igen styrkor" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Визнання сильних сторін" } }
       }
     },
     "palmistryMind.section4.bullet2.text": {
       "comment": "See where you might face obstacles, allowing you to prepare and adapt.",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "See where you might face obstacles, allowing you to prepare and adapt."
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Erkenne, wo du auf Hindernisse stoßen könntest, um dich vorbereiten und anpassen zu können." } },
+        "en": { "stringUnit": { "state": "translated", "value": "See where you might face obstacles, allowing you to prepare and adapt." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Observa dónde podrías enfrentar obstáculos, permitiéndote prepararte y adaptarte." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Voyez où vous pourriez rencontrer des obstacles, ce qui vous permet de vous préparer et de vous adapter." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Scopri dove potresti incontrare ostacoli, permettendoti di prepararti e adattarti." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "どこで障害に直面する可能性があるかを確認し、準備と適応を可能にします。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Se hvor du kan møte hindringer, slik at du kan forberede deg og tilpasse deg." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zobacz, gdzie możesz napotkać przeszkody, co pozwoli ci się przygotować i dostosować." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Veja onde você pode enfrentar obstáculos, permitindo que você se prepare e se adapte." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Se var du kan möta hinder, så att du kan förbereda dig och anpassa dig." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Побачте, де ви можете зіткнутися з перешкодами, що дозволить вам підготуватися та адаптуватися." } }
       }
     },
     "palmistryMind.section4.bullet2.title": {
       "comment": "Acknowledge Challenges",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Acknowledge Challenges"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Herausforderungen anerkennen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Acknowledge Challenges" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Reconocer desafíos" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Reconnaître les défis" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Riconoscere le sfide" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "課題を認識する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Erkjenne utfordringer" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Uznawanie wyzwań" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Reconhecer Desafios" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Erkänn utmaningar" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Визнання викликів" } }
       }
     },
     "palmistryMind.section4.intro": {
       "comment": "Using palmistry as a mindfulness practice can help you:",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Using palmistry as a mindfulness practice can help you:"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen als Achtsamkeitspraxis kann dir helfen:" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Using palmistry as a mindfulness practice can help you:" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Usar la quiromancia como una práctica de atención plena puede ayudarte a:" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Utiliser la chiromancie comme pratique de pleine conscience peut vous aider à :" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Usare la chiromanzia come pratica di consapevolezza può aiutarti a:" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "マインドフルネスの実践として手相を使用することは、次のことに役立ちます：" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Å bruke håndlesing som en mindfulness-praksis kan hjelpe deg med å:" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Używanie chiromancji jako praktyki uważności może ci pomóc:" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Usar a quiromancia como uma prática de atenção plena pode ajudá-lo a:" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Att använda handläsning som en mindfulnessövning kan hjälpa dig att:" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Використання хіромантії як практики усвідомленості може допомогти вам:" } }
       }
     },
     "palmistryMind.section4.title": {
       "comment": "Palmistry for Awareness and Growth",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry for Awareness and Growth"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen für Bewusstsein und Wachstum" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry for Awareness and Growth" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Quiromancia para la conciencia y el crecimiento" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Chiromancie pour la conscience et la croissance" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Chiromanzia per consapevolezza e crescita" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "気づきと成長のための手相" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing for bevissthet og vekst" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja dla świadomości i rozwoju" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Quiromancia para Conscientização e Crescimento" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning för medvetenhet och tillväxt" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія для усвідомленості та зростання" } }
       }
     },
     "palmistryMind.section5.text": {
       "comment": "The simple act of studying your palm—really looking at it—creates a moment of presence and connection with yourself. In our busy lives, palmistry offers a reason to pause, reflect, and ask: 'Who am I? What am I becoming?'",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The simple act of studying your palm—really looking at it—creates a moment of presence and connection with yourself. In our busy lives, palmistry offers a reason to pause, reflect, and ask: 'Who am I? What am I becoming?'"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Schon der einfache Akt, deine Handfläche zu studieren – sie wirklich anzuschauen – schafft einen Moment der Präsenz und Verbindung mit dir selbst. In unserem hektischen Leben bietet Handlesen einen Grund, innezuhalten, zu reflektieren und zu fragen: 'Wer bin ich? Was werde ich?'" } },
+        "en": { "stringUnit": { "state": "translated", "value": "The simple act of studying your palm—really looking at it—creates a moment of presence and connection with yourself. In our busy lives, palmistry offers a reason to pause, reflect, and ask: 'Who am I? What am I becoming?'" } },
+        "es": { "stringUnit": { "state": "translated", "value": "El simple acto de estudiar tu palma (mirarla realmente) crea un momento de presencia y conexión contigo mismo. En nuestras vidas ocupadas, la quiromancia ofrece una razón para hacer una pausa, reflexionar y preguntarse: '¿Quién soy? ¿En qué me estoy convirtiendo?'" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Le simple fait d'étudier votre paume — de vraiment la regarder — crée un moment de présence et de connexion avec vous-même. Dans nos vies trépidantes, la chiromancie offre une raison de faire une pause, de réfléchir et de se demander : « Qui suis-je ? Que deviens-je ? »" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Il semplice atto di studiare il tuo palmo—guardarlo davvero—crea un momento di presenza e connessione con te stesso. Nelle nostre vite frenetiche, la chiromanzia offre una ragione per fermarsi, riflettere e chiedersi: 'Chi sono? Cosa sto diventando?'" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自分の手のひらを研究するという単純な行為—実際に見つめること—は、自分自身とのつながりと現在の瞬間を生み出します。忙しい日常生活の中で、手相は立ち止まり、反省し、そして問いかける理由を提供します：「私は誰？私は何になりつつあるのか？」" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Den enkle handlingen å studere håndflaten din – virkelig se på den – skaper et øyeblikk av nærvær og forbindelse med deg selv. I våre travle liv gir håndlesing en grunn til å stoppe opp, reflektere og spørre: 'Hvem er jeg? Hva blir jeg til?'" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Prosty akt studiowania swojej dłoni – naprawdę patrzenia na nią – tworzy chwilę obecności i połączenia z samym sobą. W naszym zabieganym życiu chiromancja daje powód, by zatrzymać się, zastanowić i zapytać: „Kim jestem? Kim się staję?”" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "O simples ato de estudar sua palma – realmente olhar para ela – cria um momento de presença e conexão consigo mesmo. Em nossas vidas agitadas, a quiromancia oferece uma razão para fazer uma pausa, refletir e perguntar: 'Quem sou eu? No que estou me tornando?'" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Den enkla handlingen att studera din handflata – verkligen titta på den – skapar ett ögonblick av närvaro och kontakt med dig själv. I våra hektiska liv ger handläsning en anledning att pausa, reflektera och fråga: 'Vem är jag? Vad håller jag på att bli?'" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Проста дія вивчення своєї долоні – справжнє дивлення на неї – створює момент присутності та зв'язку з собою. У нашому напруженому житті хіромантія дає причину зупинитися, поміркувати та запитати: 'Хто я? Ким я стаю?'" } }
       }
     },
     "palmistryMind.section5.title": {
       "comment": "The Power of Observation",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Power of Observation"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Die Kraft der Beobachtung" } },
+        "en": { "stringUnit": { "state": "translated", "value": "The Power of Observation" } },
+        "es": { "stringUnit": { "state": "translated", "value": "El poder de la observación" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Le pouvoir de l'observation" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Il potere dell'osservazione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "観察の力" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Kraften i observasjon" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Siła obserwacji" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "O Poder da Observação" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Observationens kraft" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Сила спостереження" } }
       }
     },
     "palmistryMind.subtitle": {
       "comment": "A Tool for Self-Discovery",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A Tool for Self-Discovery"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Ein Werkzeug zur Selbstfindung" } },
+        "en": { "stringUnit": { "state": "translated", "value": "A Tool for Self-Discovery" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Una herramienta para el autodescubrimiento" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Un outil de découverte de soi" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Uno strumento per l'auto-scoperta" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自己発見のためのツール" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Et verktøy for selvutforskelse" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Narzędzie do samopoznania" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Uma Ferramenta para Autodescoberta" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ett verktyg för självupptäckt" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Інструмент для самопізнання" } }
       }
     },
     "palmistryMind.title": {
       "comment": "Palmistry & Mind",
       "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palmistry & Mind"
-          }
-        }
+        "de": { "stringUnit": { "state": "translated", "value": "Handlesen & Geist" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Palmistry & Mind" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Quiromancia y mente" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Chiromancie et esprit" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Chiromanzia e mente" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手相と心" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndlesing & sinn" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Chiromancja i umysł" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Quiromancia e Mente" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handläsning & sinne" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хіромантія та розум" } }
       }
     },
     "palmistryView.footer": {
