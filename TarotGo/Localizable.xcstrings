@@ -121288,268 +121288,388 @@
         }
       }
     },
-    "moonPhase.firstQuarter" : {
-      "comment" : "First Quarter",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "First Quarter"
-          }
-        }
+    "moonPhase.firstQuarter": {
+      "comment": "First Quarter",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Erstes Viertel" } },
+        "en": { "stringUnit": { "state": "translated", "value": "First Quarter" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Cuarto Creciente" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Premier Quartier" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Primo Quarto" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "上弦の月" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Første kvarter" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pierwsza Kwadra" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Quarto Crescente" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Första kvarteret" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Перша чверть" } }
       }
     },
-    "moonPhase.firstQuarter.desc" : {
-      "comment" : "Time for decision and commitment. Push through obstacles with determination.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time for decision and commitment. Push through obstacles with determination."
-          }
-        }
+    "moonPhase.firstQuarter.desc": {
+      "comment": "Time for decision and commitment. Push through obstacles with determination.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Zeit für Entscheidungen und Engagement. Überwinde Hindernisse mit Entschlossenheit." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Time for decision and commitment. Push through obstacles with determination." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Tiempo para decisiones y compromiso. Supera obstáculos con determinación." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Temps pour les décisions et l'engagement. Surmontez les obstacles avec détermination." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Momento per decisioni e impegno. Supera gli ostacoli con determinazione." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "決断とコミットメントの時。決意を持って障害を乗り越えましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Tid for beslutninger og forpliktelse. Press gjennom hindringer med besluttsomhet." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czas na decyzje i zaangażowanie. Pokonuj przeszkody z determinacją." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Hora de decisão e compromisso. Supere obstáculos com determinação." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Dags för beslut och engagemang. Ta dig igenom hinder med beslutsamhet." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Час для рішень і зобов'язань. Долайте перешкоди з рішучістю." } }
       }
     },
-    "moonPhase.firstQuarter.energy" : {
-      "comment" : "Action & Determination",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Action & Determination"
-          }
-        }
+    "moonPhase.firstQuarter.energy": {
+      "comment": "Action & Determination",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Aktion & Entschlossenheit" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Action & Determination" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Acción y Determinación" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Action & Détermination" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Azione e Determinazione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "行動と決意" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Handling & Besluttsomhet" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Działanie i Determinacja" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Ação e Determinação" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Handling & Beslutsamhet" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Дія та Рішучість" } }
       }
     },
-    "moonPhase.fullMoon" : {
-      "comment" : "Full Moon",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Full Moon"
-          }
-        }
+    "moonPhase.fullMoon": {
+      "comment": "Full Moon",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Vollmond" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Full Moon" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Luna Llena" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pleine Lune" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Luna Piena" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "満月" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Fullmåne" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pełnia Księżyca" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Lua Cheia" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Fullmåne" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Повний Місяць" } }
       }
     },
-    "moonPhase.fullMoon.desc" : {
-      "comment" : "Peak energy for manifestation, celebration, and emotional release. Harvest what you've sown.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Peak energy for manifestation, celebration, and emotional release. Harvest what you've sown."
-          }
-        }
+    "moonPhase.fullMoon.desc": {
+      "comment": "Peak energy for manifestation, celebration, and emotional release. Harvest what you've sown.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Höchste Energie für Manifestation, Feier und emotionales Loslassen. Ernte, was du gesät hast." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Peak energy for manifestation, celebration, and emotional release. Harvest what you've sown." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Energía máxima para la manifestación, celebración y liberación emocional. Cosecha lo que has sembrado." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Énergie maximale pour la manifestation, la célébration et la libération émotionnelle. Récoltez ce que vous avez semé." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Energia massima per manifestazione, celebrazione e rilascio emotivo. Raccogli ciò che hai seminato." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "顕現、祝福、感情の解放のためのピークエネルギー。蒔いた種を収穫しましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Toppenergi for manifestasjon, feiring og emosjonell frigjøring. Høst det du har sådd." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Szczytowa energia do manifestacji, celebracji i uwalniania emocji. Zbierz to, co zasiałeś." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Energia máxima para manifestação, celebração e liberação emocional. Colha o que plantou." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Toppenergi för manifestation, firande och känslomässig frigörelse. Skörda vad du har sått." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пікова енергія для прояву, святкування та емоційного звільнення. Зберіть те, що посіяли." } }
       }
     },
-    "moonPhase.fullMoon.energy" : {
-      "comment" : "Manifestation & Release",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Manifestation & Release"
-          }
-        }
+    "moonPhase.fullMoon.energy": {
+      "comment": "Manifestation & Release",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Manifestation & Loslassen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Manifestation & Release" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Manifestación y Liberación" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Manifestation & Libération" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Manifestazione e Rilascio" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "顕現と解放" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Manifestasjon & Frigjøring" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Manifestacja i Uwolnienie" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Manifestação e Liberação" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Manifestation & Frigörelse" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Прояв і Звільнення" } }
       }
     },
-    "moonPhase.lastQuarter" : {
-      "comment" : "Last Quarter",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Last Quarter"
-          }
-        }
+    "moonPhase.lastQuarter": {
+      "comment": "Last Quarter",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Letztes Viertel" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Last Quarter" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Cuarto Menguante" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Dernier Quartier" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Ultimo Quarto" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "下弦の月" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Siste kvarter" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ostatnia Kwadra" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Quarto Minguante" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Sista kvarteret" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Остання чверть" } }
       }
     },
-    "moonPhase.lastQuarter.desc" : {
-      "comment" : "Release what no longer serves you. Let go and create space for renewal.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Release what no longer serves you. Let go and create space for renewal."
-          }
-        }
+    "moonPhase.lastQuarter.desc": {
+      "comment": "Release what no longer serves you. Let go and create space for renewal.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Lass los, was dir nicht mehr dient. Löse dich und schaffe Raum für Erneuerung." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Release what no longer serves you. Let go and create space for renewal." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Libera lo que ya no te sirve. Suelta y crea espacio para la renovación." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Libérez ce qui ne vous sert plus. Lâchez prise et créez un espace pour le renouveau." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Lascia andare ciò che non ti serve più. Liberati e crea spazio per il rinnovamento." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自分に役立たないものを手放しましょう。手放し、再生のためのスペースを作りましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Slipp det som ikke lenger tjener deg. La gå og skap rom for fornyelse." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Uwolnij to, co już ci nie służy. Odrzuć i stwórz przestrzeń na odnowę." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Libere o que não serve mais para você. Deixe ir e crie espaço para renovação." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Släpp det som inte längre tjänar dig. Släpp taget och skapa utrymme för förnyelse." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відпустіть те, що більше не служить вам. Відпустіть і створіть простір для оновлення." } }
       }
     },
-    "moonPhase.lastQuarter.energy" : {
-      "comment" : "Letting Go & Forgiveness",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Letting Go & Forgiveness"
-          }
-        }
+    "moonPhase.lastQuarter.energy": {
+      "comment": "Letting Go & Forgiveness",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Loslassen & Vergebung" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Letting Go & Forgiveness" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Soltar y Perdonar" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Lâcher Prise & Pardon" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Lasciare Andare e Perdono" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手放しと許し" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Slippe tak & Tilgivelse" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odrzucanie i Przebaczenie" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Deixar Ir e Perdão" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Släppa taget & Förlåtelse" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відпускання та Прощення" } }
       }
     },
-    "moonPhase.newMoon" : {
-      "comment" : "New Moon",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New Moon"
-          }
-        }
+    "moonPhase.newMoon": {
+      "comment": "New Moon",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Neumond" } },
+        "en": { "stringUnit": { "state": "translated", "value": "New Moon" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Luna Nueva" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Nouvelle Lune" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Luna Nuova" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "新月" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Nymåne" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Nów" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Lua Nova" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Nymåne" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Молодик" } }
       }
     },
-    "moonPhase.newMoon.desc" : {
-      "comment" : "A time for new beginnings, setting intentions, and planting seeds for the future.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A time for new beginnings, setting intentions, and planting seeds for the future."
-          }
-        }
+    "moonPhase.newMoon.desc": {
+      "comment": "A time for new beginnings, setting intentions, and planting seeds for the future.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Eine Zeit für Neuanfänge, das Setzen von Absichten und das Pflanzen von Samen für die Zukunft." } },
+        "en": { "stringUnit": { "state": "translated", "value": "A time for new beginnings, setting intentions, and planting seeds for the future." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Un momento para nuevos comienzos, establecer intenciones y plantar semillas para el futuro." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Un moment pour les nouveaux départs, fixer des intentions et planter des graines pour l'avenir." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Un momento per nuovi inizi, fissare intenzioni e piantare semi per il futuro." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "新たな始まり、意図を設定し、未来の種を蒔く時。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "En tid for nye begynnelser, å sette intensjoner og så frø for fremtiden." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Czas na nowe początki, ustalanie intencji i sadzenie nasion na przyszłość." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Um momento para novos começos, definir intenções e plantar sementes para o futuro." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "En tid för nya början, att sätta avsikter och plantera frön för framtiden." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Час для нових починань, встановлення намірів і посіву насіння на майбутнє." } }
       }
     },
-    "moonPhase.newMoon.energy" : {
-      "comment" : "Intention & New Beginnings",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Intention & New Beginnings"
-          }
-        }
+    "moonPhase.newMoon.energy": {
+      "comment": "Intention & New Beginnings",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Absicht & Neuanfänge" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Intention & New Beginnings" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Intención y Nuevos Comienzos" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Intention & Nouveaux Départs" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Intenzione e Nuovi Inizi" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "意図と新たな始まり" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Intensjon & Nye begynnelser" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Intencja i Nowe Początki" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Intenção e Novos Começos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Avsikt & Nya början" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Намір і Нові Починання" } }
       }
     },
-    "moonPhase.waningCrescent" : {
-      "comment" : "Waning Crescent",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Waning Crescent"
-          }
-        }
+    "moonPhase.waningCrescent": {
+      "comment": "Waning Crescent",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Abnehmende Sichel" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Waning Crescent" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Luna Menguante" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Croissant Décroissant" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Luna Calante" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "下弦の三日月" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Minkende månesigd" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Sierp Księżyca" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Lua Minguante" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Avtagande skära" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Спадаючий півмісяць" } }
       }
     },
-    "moonPhase.waningCrescent.desc" : {
-      "comment" : "Rest, restore, and prepare for the next cycle. Surrender and trust.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rest, restore, and prepare for the next cycle. Surrender and trust."
-          }
-        }
+    "moonPhase.waningCrescent.desc": {
+      "comment": "Rest, restore, and prepare for the next cycle. Surrender and trust.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Ruhe dich aus, stelle deine Energie wieder her und bereite dich auf den nächsten Zyklus vor. Vertraue und ergebe dich." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Rest, restore, and prepare for the next cycle. Surrender and trust." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Descansa, restaura y prepárate para el próximo ciclo. Entrégate y confía." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Reposez-vous, restaurez-vous et préparez-vous pour le prochain cycle. Abandonnez-vous et faites confiance." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Riposa, ripristina e preparati per il prossimo ciclo. Abbandonati e fidati." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "休息し、回復し、次のサイクルに備えましょう。委ねて信頼しましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hvil, gjenopprett og forbered deg på neste syklus. Overgi deg og stol på." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odpocznij, odzyskaj siły i przygotuj się na następny cykl. Poddaj się i zaufaj." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Descanse, restaure e prepare-se para o próximo ciclo. Entregue-se e confie." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vila, återställ och förbered dig för nästa cykel. Överlämna dig och lita på." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відпочиньте, відновіться та підготуйтеся до наступного циклу. Здайтеся і довіртеся." } }
       }
     },
-    "moonPhase.waningCrescent.energy" : {
-      "comment" : "Rest & Surrender",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rest & Surrender"
-          }
-        }
+    "moonPhase.waningCrescent.energy": {
+      "comment": "Rest & Surrender",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Ruhe & Hingabe" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Rest & Surrender" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Descanso y Entrega" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Repos & Abandon" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Riposo e Abbandono" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "休息と委ね" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hvile & Overgivelse" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odpoczynek i Poddanie" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Descanso e Entrega" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vila & Överlämnande" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відпочинок і Здача" } }
       }
     },
-    "moonPhase.waningGibbous" : {
-      "comment" : "Waning Gibbous",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Waning Gibbous"
-          }
-        }
+    "moonPhase.waningGibbous": {
+      "comment": "Waning Gibbous",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Abnehmender Mond" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Waning Gibbous" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Luna Gibosa Menguante" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Lune Gibbeuse Décroissante" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Gibbosa Calante" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "下弦の凸月" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Minkende måne" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Księżyc garbaty" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Lua Gibosa Minguante" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Avtagande halvmåne" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Спадаючий опуклий Місяць" } }
       }
     },
-    "moonPhase.waningGibbous.desc" : {
-      "comment" : "Share your wisdom and gratitude. Reflect on lessons learned.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share your wisdom and gratitude. Reflect on lessons learned."
-          }
-        }
+    "moonPhase.waningGibbous.desc": {
+      "comment": "Share your wisdom and gratitude. Reflect on lessons learned.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Teile deine Weisheit und Dankbarkeit. Reflektiere über die gelernten Lektionen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Share your wisdom and gratitude. Reflect on lessons learned." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Comparte tu sabiduría y gratitud. Reflexiona sobre las lecciones aprendidas." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Partagez votre sagesse et votre gratitude. Réfléchissez aux leçons apprises." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Condividi la tua saggezza e gratitudine. Rifletti sulle lezioni apprese." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "あなたの知恵と感謝を共有しましょう。学んだ教訓を振り返りましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Del din visdom og takknemlighet. Reflekter over lærdommene." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Podziel się swoją mądrością i wdzięcznością. Zastanów się nad zdobytymi lekcjami." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Compartilhe sua sabedoria e gratidão. Reflita sobre as lições aprendidas." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Dela din visdom och tacksamhet. Reflektera över lärdomar." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Поділіться своєю мудрістю та вдячністю. Поміркуйте над засвоєними уроками." } }
       }
     },
-    "moonPhase.waningGibbous.energy" : {
-      "comment" : "Gratitude & Sharing",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gratitude & Sharing"
-          }
-        }
+    "moonPhase.waningGibbous.energy": {
+      "comment": "Gratitude & Sharing",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Dankbarkeit & Teilen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Gratitude & Sharing" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Gratitud y Compartir" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Gratitude & Partage" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Gratitudine e Condivisione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "感謝と共有" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Takknemlighet & Deling" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wdzięczność i Dzielenie się" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Gratidão e Compartilhamento" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Tacksamhet & Delande" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Вдячність і Ділення" } }
       }
     },
-    "moonPhase.waxingCrescent" : {
-      "comment" : "Waxing Crescent",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Waxing Crescent"
-          }
-        }
+    "moonPhase.waxingCrescent": {
+      "comment": "Waxing Crescent",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Zunehmende Sichel" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Waxing Crescent" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Luna Creciente" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Croissant Croissant" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Luna Crescente" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "上弦の三日月" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Voksende månesigd" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Nów Księżyca" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Lua Crescente" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Växande skära" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Зростаючий півмісяць" } }
       }
     },
-    "moonPhase.waxingCrescent.desc" : {
-      "comment" : "Energy is building. Take initial action on your goals and remain flexible.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Energy is building. Take initial action on your goals and remain flexible."
-          }
-        }
+    "moonPhase.waxingCrescent.desc": {
+      "comment": "Energy is building. Take initial action on your goals and remain flexible.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Energie baut sich auf. Ergreife erste Maßnahmen für deine Ziele und bleibe flexibel." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Energy is building. Take initial action on your goals and remain flexible." } },
+        "es": { "stringUnit": { "state": "translated", "value": "La energía está aumentando. Toma medidas iniciales hacia tus metas y mantente flexible." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "L'énergie monte. Agissez sur vos objectifs et restez flexible." } },
+        "it": { "stringUnit": { "state": "translated", "value": "L'energia sta crescendo. Agisci inizialmente sui tuoi obiettivi e rimani flessibile." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "エネルギーが高まっています。目標に向けて最初の行動を起こし、柔軟に対応しましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Energi bygges opp. Ta initielle skritt mot målene dine og vær fleksibel." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Energia rośnie. Podejmij początkowe działania w kierunku swoich celów i bądź elastyczny." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "A energia está crescendo. Tome medidas iniciais em direção aos seus objetivos e mantenha-se flexível." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Energi byggs upp. Ta första stegen mot dina mål och var flexibel." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Енергія наростає. Зробіть перші кроки до своїх цілей і залишайтеся гнучкими." } }
       }
     },
-    "moonPhase.waxingCrescent.energy" : {
-      "comment" : "Growth & Expansion",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Growth & Expansion"
-          }
-        }
+    "moonPhase.waxingCrescent.energy": {
+      "comment": "Growth & Expansion",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Wachstum & Expansion" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Growth & Expansion" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Crecimiento y Expansión" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Croissance & Expansion" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Crescita ed Espansione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "成長と拡大" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Vekst & Utvidelse" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wzrost i Ekspansja" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Crescimento e Expansão" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Tillväxt & Expansion" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Зростання та Розширення" } }
       }
     },
-    "moonPhase.waxingGibbous" : {
-      "comment" : "Waxing Gibbous",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Waxing Gibbous"
-          }
-        }
+    "moonPhase.waxingGibbous": {
+      "comment": "Waxing Gibbous",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Zunehmender Mond" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Waxing Gibbous" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Luna Gibosa Creciente" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Lune Gibbeuse Croissante" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Gibbosa Crescente" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "上弦の凸月" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Voksende måne" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Księżyc garbaty" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Lua Gibosa Crescente" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Växande halvmåne" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Зростаючий опуклий Місяць" } }
       }
     },
-    "moonPhase.waxingGibbous.desc" : {
-      "comment" : "Refine your plans and adjust your approach. Success is within reach.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Refine your plans and adjust your approach. Success is within reach."
-          }
-        }
+    "moonPhase.waxingGibbous.desc": {
+      "comment": "Refine your plans and adjust your approach. Success is within reach.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Verfeinere deine Pläne und passe deine Vorgehensweise an. Der Erfolg ist zum Greifen nah." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Refine your plans and adjust your approach. Success is within reach." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Refina tus planes y ajusta tu enfoque. El éxito está al alcance." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Affinez vos plans et ajustez votre approche. Le succès est à portée de main." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Affina i tuoi piani e modifica il tuo approccio. Il successo è a portata di mano." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "計画を磨き、アプローチを調整しましょう。成功はもうすぐそこです。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Foredle planene dine og juster tilnærmingen din. Suksess er innen rekkevidde." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dopracuj swoje plany i dostosuj podejście. Sukces jest w zasięgu ręki." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Refine seus planos e ajuste sua abordagem. O sucesso está ao alcance." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förfina dina planer och justera din metod. Framgången är inom räckhåll." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Удоскональте свої плани та скоригуйте підхід. Успіх уже близько." } }
       }
     },
-    "moonPhase.waxingGibbous.energy" : {
-      "comment" : "Refinement & Adjustment",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Refinement & Adjustment"
-          }
-        }
+    "moonPhase.waxingGibbous.energy": {
+      "comment": "Refinement & Adjustment",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Verfeinerung & Anpassung" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Refinement & Adjustment" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Refinamiento y Ajuste" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Affinement & Ajustement" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Perfezionamento e Regolazione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "洗練と調整" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Foredling & Justering" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dopracowanie i Dostosowanie" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Refinamento e Ajuste" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förfining & Justering" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Удосконалення та Коригування" } }
       }
     },
     "Not prominently visible" : {
