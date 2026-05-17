@@ -52,7 +52,7 @@ struct LunarCalendarView: View {
                                 Text("\(Int(illumination))%")
                                     .font(.system(size: 24, weight: .light))
                                     .foregroundStyle(AppTheme.goldGradient)
-                                Text("Illuminated")
+                                Text(L10n.lunarCalendarIlluminated)
                                     .font(.system(size: 12, weight: .light))
                                     .foregroundColor(AppTheme.textSecondary)
                             }
@@ -69,7 +69,7 @@ struct LunarCalendarView: View {
                                         .font(.system(size: 16, weight: .medium))
                                         .foregroundStyle(AppTheme.goldGradient)
                                 }
-                                Text("Moon in")
+                                Text(L10n.lunarCalendarMoonIn)
                                     .font(.system(size: 12, weight: .light))
                                     .foregroundColor(AppTheme.textSecondary)
                             }
@@ -113,7 +113,7 @@ struct LunarCalendarView: View {
                     
                     // Upcoming Phases
                     VStack(spacing: 16) {
-                        Text("Upcoming Moon Phases")
+                        Text(L10n.lunarCalendarUpcomingPhases)
                             .font(AppTheme.serifFont(size: 18, weight: .medium))
                             .foregroundStyle(AppTheme.goldGradient)
                         
@@ -136,7 +136,7 @@ struct LunarCalendarView: View {
                                     Spacer()
                                     
                                     if Calendar.current.isDateInToday(item.date) {
-                                        Text("Today")
+                                        Text(L10n.lunarCalendarToday)
                                             .font(.system(size: 11, weight: .medium))
                                             .foregroundColor(AppTheme.gold)
                                             .padding(.horizontal, 8)
@@ -165,7 +165,7 @@ struct LunarCalendarView: View {
                         HStack {
                             Image(systemName: "moon.stars.fill")
                                 .foregroundColor(AppTheme.gold)
-                            Text("Ritual Suggestions")
+                            Text(L10n.lunarCalendarRitualSuggestions)
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundStyle(AppTheme.goldGradient)
                         }
@@ -225,59 +225,59 @@ struct LunarCalendarView: View {
         switch phase {
         case .newMoon:
             return [
-                "Set intentions for the upcoming lunar cycle",
-                "Journal about new beginnings you wish to invite",
-                "Create a vision board for your goals",
-                "Light a candle and meditate on fresh starts"
+                L10n.ritualNewMoon1,
+                L10n.ritualNewMoon2,
+                L10n.ritualNewMoon3,
+                L10n.ritualNewMoon4
             ]
         case .waxingCrescent:
             return [
-                "Take the first concrete steps toward your goals",
-                "Research and gather resources you'll need",
-                "Connect with others who support your vision",
-                "Practice affirmations for growth and expansion"
+                L10n.ritualWaxingCrescent1,
+                L10n.ritualWaxingCrescent2,
+                L10n.ritualWaxingCrescent3,
+                L10n.ritualWaxingCrescent4
             ]
         case .firstQuarter:
             return [
-                "Make important decisions with confidence",
-                "Address and work through any obstacles",
-                "Take bold action on your plans",
-                "Review progress and adjust your approach"
+                L10n.ritualFirstQuarter1,
+                L10n.ritualFirstQuarter2,
+                L10n.ritualFirstQuarter3,
+                L10n.ritualFirstQuarter4
             ]
         case .waxingGibbous:
             return [
-                "Refine and polish your projects",
-                "Seek feedback and make improvements",
-                "Practice patience as success approaches",
-                "Prepare for upcoming manifestations"
+                L10n.ritualWaxingGibbous1,
+                L10n.ritualWaxingGibbous2,
+                L10n.ritualWaxingGibbous3,
+                L10n.ritualWaxingGibbous4
             ]
         case .fullMoon:
             return [
-                "Celebrate achievements and express gratitude",
-                "Release what no longer serves your growth",
-                "Charge crystals and tools under moonlight",
-                "Perform a releasing ritual or ceremony"
+                L10n.ritualFullMoon1,
+                L10n.ritualFullMoon2,
+                L10n.ritualFullMoon3,
+                L10n.ritualFullMoon4
             ]
         case .waningGibbous:
             return [
-                "Share your knowledge and experiences",
-                "Express gratitude for lessons learned",
-                "Help others with your newfound wisdom",
-                "Reflect on the cycle's teachings"
+                L10n.ritualWaningGibbous1,
+                L10n.ritualWaningGibbous2,
+                L10n.ritualWaningGibbous3,
+                L10n.ritualWaningGibbous4
             ]
         case .lastQuarter:
             return [
-                "Let go of limiting beliefs and patterns",
-                "Forgive yourself and others",
-                "Clear physical and energetic clutter",
-                "Journal about what you're ready to release"
+                L10n.ritualLastQuarter1,
+                L10n.ritualLastQuarter2,
+                L10n.ritualLastQuarter3,
+                L10n.ritualLastQuarter4
             ]
         case .waningCrescent:
             return [
-                "Rest and restore your energy",
-                "Practice deep meditation or contemplation",
-                "Trust in the natural cycles of life",
-                "Prepare for the new moon's fresh start"
+                L10n.ritualWaningCrescent1,
+                L10n.ritualWaningCrescent2,
+                L10n.ritualWaningCrescent3,
+                L10n.ritualWaningCrescent4
             ]
         }
     }

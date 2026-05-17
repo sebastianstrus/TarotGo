@@ -57,6 +57,89 @@ enum L10n {
     
     static let lunarCalendarTitle = NSLocalizedString("lunarCalendar.title", comment: "Lunar Calendar")
     static let lunarCalendarSubtitle = NSLocalizedString("lunarCalendar.subtitle", comment: "Follow the moon's phases")
+    static let lunarCalendarIlluminated = NSLocalizedString("lunarCalendar.illuminated", comment: "Illuminated")
+    static let lunarCalendarMoonIn = NSLocalizedString("lunarCalendar.moonIn", comment: "Moon in")
+    static let lunarCalendarUpcomingPhases = NSLocalizedString("lunarCalendar.upcomingPhases", comment: "Upcoming Moon Phases")
+    static let lunarCalendarToday = NSLocalizedString("lunarCalendar.today", comment: "Today")
+    static let lunarCalendarRitualSuggestions = NSLocalizedString("lunarCalendar.ritualSuggestions", comment: "Ritual Suggestions")
+    
+    // Moon Phase Names
+    static let moonPhaseNewMoon = NSLocalizedString("moonPhase.newMoon", comment: "New Moon")
+    static let moonPhaseWaxingCrescent = NSLocalizedString("moonPhase.waxingCrescent", comment: "Waxing Crescent")
+    static let moonPhaseFirstQuarter = NSLocalizedString("moonPhase.firstQuarter", comment: "First Quarter")
+    static let moonPhaseWaxingGibbous = NSLocalizedString("moonPhase.waxingGibbous", comment: "Waxing Gibbous")
+    static let moonPhaseFullMoon = NSLocalizedString("moonPhase.fullMoon", comment: "Full Moon")
+    static let moonPhaseWaningGibbous = NSLocalizedString("moonPhase.waningGibbous", comment: "Waning Gibbous")
+    static let moonPhaseLastQuarter = NSLocalizedString("moonPhase.lastQuarter", comment: "Last Quarter")
+    static let moonPhaseWaningCrescent = NSLocalizedString("moonPhase.waningCrescent", comment: "Waning Crescent")
+    
+    // Moon Phase Descriptions
+    static let moonPhaseNewMoonDesc = NSLocalizedString("moonPhase.newMoon.desc", comment: "A time for new beginnings, setting intentions, and planting seeds for the future.")
+    static let moonPhaseWaxingCrescentDesc = NSLocalizedString("moonPhase.waxingCrescent.desc", comment: "Energy is building. Take initial action on your goals and remain flexible.")
+    static let moonPhaseFirstQuarterDesc = NSLocalizedString("moonPhase.firstQuarter.desc", comment: "Time for decision and commitment. Push through obstacles with determination.")
+    static let moonPhaseWaxingGibbousDesc = NSLocalizedString("moonPhase.waxingGibbous.desc", comment: "Refine your plans and adjust your approach. Success is within reach.")
+    static let moonPhaseFullMoonDesc = NSLocalizedString("moonPhase.fullMoon.desc", comment: "Peak energy for manifestation, celebration, and emotional release. Harvest what you've sown.")
+    static let moonPhaseWaningGibbousDesc = NSLocalizedString("moonPhase.waningGibbous.desc", comment: "Share your wisdom and gratitude. Reflect on lessons learned.")
+    static let moonPhaseLastQuarterDesc = NSLocalizedString("moonPhase.lastQuarter.desc", comment: "Release what no longer serves you. Let go and create space for renewal.")
+    static let moonPhaseWaningCrescentDesc = NSLocalizedString("moonPhase.waningCrescent.desc", comment: "Rest, restore, and prepare for the next cycle. Surrender and trust.")
+    
+    // Moon Phase Energy Titles
+    static let moonPhaseNewMoonEnergy = NSLocalizedString("moonPhase.newMoon.energy", comment: "Intention & New Beginnings")
+    static let moonPhaseWaxingCrescentEnergy = NSLocalizedString("moonPhase.waxingCrescent.energy", comment: "Growth & Expansion")
+    static let moonPhaseFirstQuarterEnergy = NSLocalizedString("moonPhase.firstQuarter.energy", comment: "Action & Determination")
+    static let moonPhaseWaxingGibbousEnergy = NSLocalizedString("moonPhase.waxingGibbous.energy", comment: "Refinement & Adjustment")
+    static let moonPhaseFullMoonEnergy = NSLocalizedString("moonPhase.fullMoon.energy", comment: "Manifestation & Release")
+    static let moonPhaseWaningGibbousEnergy = NSLocalizedString("moonPhase.waningGibbous.energy", comment: "Gratitude & Sharing")
+    static let moonPhaseLastQuarterEnergy = NSLocalizedString("moonPhase.lastQuarter.energy", comment: "Letting Go & Forgiveness")
+    static let moonPhaseWaningCrescentEnergy = NSLocalizedString("moonPhase.waningCrescent.energy", comment: "Rest & Surrender")
+    
+    // Ritual Suggestions - New Moon
+    static let ritualNewMoon1 = NSLocalizedString("ritual.newMoon.1", comment: "Set intentions for the upcoming lunar cycle")
+    static let ritualNewMoon2 = NSLocalizedString("ritual.newMoon.2", comment: "Journal about new beginnings you wish to invite")
+    static let ritualNewMoon3 = NSLocalizedString("ritual.newMoon.3", comment: "Create a vision board for your goals")
+    static let ritualNewMoon4 = NSLocalizedString("ritual.newMoon.4", comment: "Light a candle and meditate on fresh starts")
+    
+    // Ritual Suggestions - Waxing Crescent
+    static let ritualWaxingCrescent1 = NSLocalizedString("ritual.waxingCrescent.1", comment: "Take the first concrete steps toward your goals")
+    static let ritualWaxingCrescent2 = NSLocalizedString("ritual.waxingCrescent.2", comment: "Research and gather resources you'll need")
+    static let ritualWaxingCrescent3 = NSLocalizedString("ritual.waxingCrescent.3", comment: "Connect with others who support your vision")
+    static let ritualWaxingCrescent4 = NSLocalizedString("ritual.waxingCrescent.4", comment: "Practice affirmations for growth and expansion")
+    
+    // Ritual Suggestions - First Quarter
+    static let ritualFirstQuarter1 = NSLocalizedString("ritual.firstQuarter.1", comment: "Make important decisions with confidence")
+    static let ritualFirstQuarter2 = NSLocalizedString("ritual.firstQuarter.2", comment: "Address and work through any obstacles")
+    static let ritualFirstQuarter3 = NSLocalizedString("ritual.firstQuarter.3", comment: "Take bold action on your plans")
+    static let ritualFirstQuarter4 = NSLocalizedString("ritual.firstQuarter.4", comment: "Review progress and adjust your approach")
+    
+    // Ritual Suggestions - Waxing Gibbous
+    static let ritualWaxingGibbous1 = NSLocalizedString("ritual.waxingGibbous.1", comment: "Refine and polish your projects")
+    static let ritualWaxingGibbous2 = NSLocalizedString("ritual.waxingGibbous.2", comment: "Seek feedback and make improvements")
+    static let ritualWaxingGibbous3 = NSLocalizedString("ritual.waxingGibbous.3", comment: "Practice patience as success approaches")
+    static let ritualWaxingGibbous4 = NSLocalizedString("ritual.waxingGibbous.4", comment: "Prepare for upcoming manifestations")
+    
+    // Ritual Suggestions - Full Moon
+    static let ritualFullMoon1 = NSLocalizedString("ritual.fullMoon.1", comment: "Celebrate achievements and express gratitude")
+    static let ritualFullMoon2 = NSLocalizedString("ritual.fullMoon.2", comment: "Release what no longer serves your growth")
+    static let ritualFullMoon3 = NSLocalizedString("ritual.fullMoon.3", comment: "Charge crystals and tools under moonlight")
+    static let ritualFullMoon4 = NSLocalizedString("ritual.fullMoon.4", comment: "Perform a releasing ritual or ceremony")
+    
+    // Ritual Suggestions - Waning Gibbous
+    static let ritualWaningGibbous1 = NSLocalizedString("ritual.waningGibbous.1", comment: "Share your knowledge and experiences")
+    static let ritualWaningGibbous2 = NSLocalizedString("ritual.waningGibbous.2", comment: "Express gratitude for lessons learned")
+    static let ritualWaningGibbous3 = NSLocalizedString("ritual.waningGibbous.3", comment: "Help others with your newfound wisdom")
+    static let ritualWaningGibbous4 = NSLocalizedString("ritual.waningGibbous.4", comment: "Reflect on the cycle's teachings")
+    
+    // Ritual Suggestions - Last Quarter
+    static let ritualLastQuarter1 = NSLocalizedString("ritual.lastQuarter.1", comment: "Let go of limiting beliefs and patterns")
+    static let ritualLastQuarter2 = NSLocalizedString("ritual.lastQuarter.2", comment: "Forgive yourself and others")
+    static let ritualLastQuarter3 = NSLocalizedString("ritual.lastQuarter.3", comment: "Clear physical and energetic clutter")
+    static let ritualLastQuarter4 = NSLocalizedString("ritual.lastQuarter.4", comment: "Journal about what you're ready to release")
+    
+    // Ritual Suggestions - Waning Crescent
+    static let ritualWaningCrescent1 = NSLocalizedString("ritual.waningCrescent.1", comment: "Rest and restore your energy")
+    static let ritualWaningCrescent2 = NSLocalizedString("ritual.waningCrescent.2", comment: "Practice deep meditation or contemplation")
+    static let ritualWaningCrescent3 = NSLocalizedString("ritual.waningCrescent.3", comment: "Trust in the natural cycles of life")
+    static let ritualWaningCrescent4 = NSLocalizedString("ritual.waningCrescent.4", comment: "Prepare for the new moon's fresh start")
     
     static let compatibilityTitle = NSLocalizedString("compatibility.title", comment: "Compatibility")
     static let compatibilitySubtitle = NSLocalizedString("compatibility.subtitle", comment: "Discover your cosmic connections")

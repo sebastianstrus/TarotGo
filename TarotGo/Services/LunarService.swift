@@ -7,15 +7,28 @@
 
 import Foundation
 
-enum MoonPhase: String, CaseIterable {
-    case newMoon = "New Moon"
-    case waxingCrescent = "Waxing Crescent"
-    case firstQuarter = "First Quarter"
-    case waxingGibbous = "Waxing Gibbous"
-    case fullMoon = "Full Moon"
-    case waningGibbous = "Waning Gibbous"
-    case lastQuarter = "Last Quarter"
-    case waningCrescent = "Waning Crescent"
+enum MoonPhase: CaseIterable {
+    case newMoon
+    case waxingCrescent
+    case firstQuarter
+    case waxingGibbous
+    case fullMoon
+    case waningGibbous
+    case lastQuarter
+    case waningCrescent
+    
+    var rawValue: String {
+        switch self {
+        case .newMoon: return L10n.moonPhaseNewMoon
+        case .waxingCrescent: return L10n.moonPhaseWaxingCrescent
+        case .firstQuarter: return L10n.moonPhaseFirstQuarter
+        case .waxingGibbous: return L10n.moonPhaseWaxingGibbous
+        case .fullMoon: return L10n.moonPhaseFullMoon
+        case .waningGibbous: return L10n.moonPhaseWaningGibbous
+        case .lastQuarter: return L10n.moonPhaseLastQuarter
+        case .waningCrescent: return L10n.moonPhaseWaningCrescent
+        }
+    }
     
     var symbol: String {
         switch self {
@@ -33,34 +46,34 @@ enum MoonPhase: String, CaseIterable {
     var description: String {
         switch self {
         case .newMoon:
-            return "A time for new beginnings, setting intentions, and planting seeds for the future."
+            return L10n.moonPhaseNewMoonDesc
         case .waxingCrescent:
-            return "Energy is building. Take initial action on your goals and remain flexible."
+            return L10n.moonPhaseWaxingCrescentDesc
         case .firstQuarter:
-            return "Time for decision and commitment. Push through obstacles with determination."
+            return L10n.moonPhaseFirstQuarterDesc
         case .waxingGibbous:
-            return "Refine your plans and adjust your approach. Success is within reach."
+            return L10n.moonPhaseWaxingGibbousDesc
         case .fullMoon:
-            return "Peak energy for manifestation, celebration, and emotional release. Harvest what you've sown."
+            return L10n.moonPhaseFullMoonDesc
         case .waningGibbous:
-            return "Share your wisdom and gratitude. Reflect on lessons learned."
+            return L10n.moonPhaseWaningGibbousDesc
         case .lastQuarter:
-            return "Release what no longer serves you. Let go and create space for renewal."
+            return L10n.moonPhaseLastQuarterDesc
         case .waningCrescent:
-            return "Rest, restore, and prepare for the next cycle. Surrender and trust."
+            return L10n.moonPhaseWaningCrescentDesc
         }
     }
     
     var energy: String {
         switch self {
-        case .newMoon: return "Intention & New Beginnings"
-        case .waxingCrescent: return "Growth & Expansion"
-        case .firstQuarter: return "Action & Determination"
-        case .waxingGibbous: return "Refinement & Adjustment"
-        case .fullMoon: return "Manifestation & Release"
-        case .waningGibbous: return "Gratitude & Sharing"
-        case .lastQuarter: return "Letting Go & Forgiveness"
-        case .waningCrescent: return "Rest & Surrender"
+        case .newMoon: return L10n.moonPhaseNewMoonEnergy
+        case .waxingCrescent: return L10n.moonPhaseWaxingCrescentEnergy
+        case .firstQuarter: return L10n.moonPhaseFirstQuarterEnergy
+        case .waxingGibbous: return L10n.moonPhaseWaxingGibbousEnergy
+        case .fullMoon: return L10n.moonPhaseFullMoonEnergy
+        case .waningGibbous: return L10n.moonPhaseWaningGibbousEnergy
+        case .lastQuarter: return L10n.moonPhaseLastQuarterEnergy
+        case .waningCrescent: return L10n.moonPhaseWaningCrescentEnergy
         }
     }
 }

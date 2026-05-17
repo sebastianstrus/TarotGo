@@ -9773,485 +9773,2135 @@
         }
       }
     },
-    "common.skip": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Überspringen" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Skip" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Omitir" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Ignorer" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Salta" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "スキップ" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Hopp over" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Pomiń" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Pular" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Hoppa över" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Пропустити" } }
+    "common.skip" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überspringen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omitir"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ignorer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salta"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スキップ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hopp over"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pomiń"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pular"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoppa över"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропустити"
+          }
         }
+      }
     },
-    "compatibility.advice": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Ratschlag" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Advice" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Consejo" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Conseil" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Consiglio" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "アドバイス" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Råd" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Rada" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Conselho" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Råd" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Порада" } }
+    "compatibility.advice" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ratschlag"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Advice"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consejo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conseil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consiglio"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アドバイス"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Råd"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rada"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conselho"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Råd"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Порада"
+          }
         }
+      }
     },
-    "compatibility.adviceText": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Konzentrieren Sie sich auf Wertschätzung statt auf Verurteilung. Was wie ein Unterschied erscheint, kann eine ergänzende Stärke sein. Üben Sie aktives Zuhören, feiern Sie Ihre einzigartige Verbindung und denken Sie daran, dass alle Beziehungen von gegenseitigem Respekt und Einsatz leben." } },
-            "en": { "stringUnit": { "state": "translated", "value": "Focus on appreciation rather than judgment. What seems like a difference can be a complementary strength. Practice active listening, celebrate your unique connection, and remember that all relationships thrive on mutual respect and effort." } },
-            "es": { "stringUnit": { "state": "translated", "value": "Concéntrate en la apreciación en lugar del juicio. Lo que parece una diferencia puede ser una fortaleza complementaria. Practica la escucha activa, celebra tu conexión única y recuerda que todas las relaciones prosperan con respeto mutuo y esfuerzo." } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Concentrez-vous sur l’appréciation plutôt que sur le jugement. Ce qui semble être une différence peut être une force complémentaire. Pratiquez l’écoute active, célébrez votre connexion unique et rappelez-vous que toutes les relations prospèrent grâce au respect mutuel et aux efforts." } },
-            "it": { "stringUnit": { "state": "translated", "value": "Concentrati sull'apprezzamento piuttosto che sul giudizio. Quello che sembra una differenza può essere un punto di forza complementare. Pratica l'ascolto attivo, celebra la vostra connessione unica e ricorda che tutte le relazioni prosperano grazie al rispetto reciproco e all'impegno." } },
-            "ja": { "stringUnit": { "state": "translated", "value": "判断ではなく感謝に焦点を当ててください。違いに見えるものも、補い合う強みになり得ます。アクティブリスニングを実践し、あなたたち独自のつながりを祝い、すべての関係は相互尊重と努力によって育まれることを忘れないでください。" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Fokuser på verdsettelse heller enn dømmekraft. Det som virker som en forskjell kan være en komplementær styrke. Øv på aktiv lytting, feir deres unike forbindelse, og husk at alle forhold trives med gjensidig respekt og innsats." } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Skoncentruj się na docenianiu, a nie ocenianiu. To, co wydaje się różnicą, może być uzupełniającą się siłą. Ćwicz aktywne słuchanie, celebruj swoją wyjątkową więź i pamiętaj, że wszystkie relacje rozwijają się dzięki wzajemnemu szacunkowi i wysiłkowi." } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Concentre-se na apreciação em vez do julgamento. O que parece uma diferença pode ser uma força complementar. Pratique a escuta ativa, celebre sua conexão única e lembre-se de que todos os relacionamentos prosperam com respeito mútuo e esforço." } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Fokusera på uppskattning snarare än bedömning. Det som verkar vara en skillnad kan vara en kompletterande styrka. Öva aktivt lyssnande, fira er unika koppling och kom ihåg att alla relationer frodas på ömsesidig respekt och ansträngning." } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Зосередьтеся на вдячності, а не на засудженні. Те, що здається відмінністю, може бути взаємодоповнюючою силою. Практикуйте активне слухання, святкуйте ваш унікальний зв’язок і пам’ятайте, що всі стосунки процвітають завдяки взаємній повазі та зусиллям." } }
+    "compatibility.adviceText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konzentrieren Sie sich auf Wertschätzung statt auf Verurteilung. Was wie ein Unterschied erscheint, kann eine ergänzende Stärke sein. Üben Sie aktives Zuhören, feiern Sie Ihre einzigartige Verbindung und denken Sie daran, dass alle Beziehungen von gegenseitigem Respekt und Einsatz leben."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Focus on appreciation rather than judgment. What seems like a difference can be a complementary strength. Practice active listening, celebrate your unique connection, and remember that all relationships thrive on mutual respect and effort."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concéntrate en la apreciación en lugar del juicio. Lo que parece una diferencia puede ser una fortaleza complementaria. Practica la escucha activa, celebra tu conexión única y recuerda que todas las relaciones prosperan con respeto mutuo y esfuerzo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concentrez-vous sur l’appréciation plutôt que sur le jugement. Ce qui semble être une différence peut être une force complémentaire. Pratiquez l’écoute active, célébrez votre connexion unique et rappelez-vous que toutes les relations prospèrent grâce au respect mutuel et aux efforts."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concentrati sull'apprezzamento piuttosto che sul giudizio. Quello che sembra una differenza può essere un punto di forza complementare. Pratica l'ascolto attivo, celebra la vostra connessione unica e ricorda che tutte le relazioni prosperano grazie al rispetto reciproco e all'impegno."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "判断ではなく感謝に焦点を当ててください。違いに見えるものも、補い合う強みになり得ます。アクティブリスニングを実践し、あなたたち独自のつながりを祝い、すべての関係は相互尊重と努力によって育まれることを忘れないでください。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fokuser på verdsettelse heller enn dømmekraft. Det som virker som en forskjell kan være en komplementær styrke. Øv på aktiv lytting, feir deres unike forbindelse, og husk at alle forhold trives med gjensidig respekt og innsats."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skoncentruj się na docenianiu, a nie ocenianiu. To, co wydaje się różnicą, może być uzupełniającą się siłą. Ćwicz aktywne słuchanie, celebruj swoją wyjątkową więź i pamiętaj, że wszystkie relacje rozwijają się dzięki wzajemnemu szacunkowi i wysiłkowi."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concentre-se na apreciação em vez do julgamento. O que parece uma diferença pode ser uma força complementar. Pratique a escuta ativa, celebre sua conexão única e lembre-se de que todos os relacionamentos prosperam com respeito mútuo e esforço."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fokusera på uppskattning snarare än bedömning. Det som verkar vara en skillnad kan vara en kompletterande styrka. Öva aktivt lyssnande, fira er unika koppling och kom ihåg att alla relationer frodas på ömsesidig respekt och ansträngning."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зосередьтеся на вдячності, а не на засудженні. Те, що здається відмінністю, може бути взаємодоповнюючою силою. Практикуйте активне слухання, святкуйте ваш унікальний зв’язок і пам’ятайте, що всі стосунки процвітають завдяки взаємній повазі та зусиллям."
+          }
         }
+      }
     },
-    "compatibility.challenges": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Herausforderungen" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Challenges" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Desafíos" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Défis" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Sfide" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "課題" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Utfordringer" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Wyzwania" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Desafios" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Utmaningar" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Виклики" } }
+    "compatibility.challenges" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Herausforderungen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Challenges"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desafíos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Défis"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sfide"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "課題"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utfordringer"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wyzwania"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desafios"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utmaningar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виклики"
+          }
         }
+      }
     },
-    "compatibility.challengesDifferent": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Unterschiedliche Elementarenergien erfordern möglicherweise bewusste Anstrengungen, um die Bedürfnisse und Kommunikationsstile des anderen zu verstehen. Geduld und offener Dialog sind unerlässlich." } },
-            "en": { "stringUnit": { "state": "translated", "value": "Different elemental energies may require conscious effort to understand each other's needs and communication styles. Patience and open dialogue are essential." } },
-            "es": { "stringUnit": { "state": "translated", "value": "Diferentes energías elementales pueden requerir un esfuerzo consciente para comprender las necesidades y estilos de comunicación del otro. La paciencia y el diálogo abierto son esenciales." } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Différentes énergies élémentaires peuvent nécessiter un effort conscient pour comprendre les besoins et les styles de communication de l’autre. La patience et un dialogue ouvert sont essentiels." } },
-            "it": { "stringUnit": { "state": "translated", "value": "Diverse energie elementali possono richiedere uno sforzo consapevole per comprendere i bisogni e gli stili comunicativi dell'altro. Pazienza e dialogo aperto sono essenziali." } },
-            "ja": { "stringUnit": { "state": "translated", "value": "異なる元素のエネルギーは、相手のニーズやコミュニケーションスタイルを理解するために意識的な努力を必要とする場合があります。忍耐とオープンな対話が不可欠です。" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Ulike elementære energier kan kreve bevisst innsats for å forstå hverandres behov og kommunikasjonsstiler. Tålmodighet og åpen dialog er avgjørende." } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Różne energie żywiołów mogą wymagać świadomego wysiłku, aby zrozumieć potrzeby i style komunikacji drugiej osoby. Cierpliwość i otwarty dialog są niezbędne." } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Diferentes energias elementares podem exigir esforço consciente para entender as necessidades e estilos de comunicação um do outro. Paciência e diálogo aberto são essenciais." } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Olika elementära energier kan kräva medveten ansträngning för att förstå varandras behov och kommunikationsstilar. Tålamod och öppen dialog är avgörande." } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Різні стихійні енергії можуть вимагати свідомих зусиль для розуміння потреб і стилів спілкування один одного. Терпіння та відкритий діалог є важливими." } }
+    "compatibility.challengesDifferent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unterschiedliche Elementarenergien erfordern möglicherweise bewusste Anstrengungen, um die Bedürfnisse und Kommunikationsstile des anderen zu verstehen. Geduld und offener Dialog sind unerlässlich."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Different elemental energies may require conscious effort to understand each other's needs and communication styles. Patience and open dialogue are essential."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diferentes energías elementales pueden requerir un esfuerzo consciente para comprender las necesidades y estilos de comunicación del otro. La paciencia y el diálogo abierto son esenciales."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Différentes énergies élémentaires peuvent nécessiter un effort conscient pour comprendre les besoins et les styles de communication de l’autre. La patience et un dialogue ouvert sont essentiels."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diverse energie elementali possono richiedere uno sforzo consapevole per comprendere i bisogni e gli stili comunicativi dell'altro. Pazienza e dialogo aperto sono essenziali."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "異なる元素のエネルギーは、相手のニーズやコミュニケーションスタイルを理解するために意識的な努力を必要とする場合があります。忍耐とオープンな対話が不可欠です。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulike elementære energier kan kreve bevisst innsats for å forstå hverandres behov og kommunikasjonsstiler. Tålmodighet og åpen dialog er avgjørende."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Różne energie żywiołów mogą wymagać świadomego wysiłku, aby zrozumieć potrzeby i style komunikacji drugiej osoby. Cierpliwość i otwarty dialog są niezbędne."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diferentes energias elementares podem exigir esforço consciente para entender as necessidades e estilos de comunicação um do outro. Paciência e diálogo aberto são essenciais."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olika elementära energier kan kräva medveten ansträngning för att förstå varandras behov och kommunikationsstilar. Tålamod och öppen dialog är avgörande."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Різні стихійні енергії можуть вимагати свідомих зусиль для розуміння потреб і стилів спілкування один одного. Терпіння та відкритий діалог є важливими."
+          }
         }
+      }
     },
-    "compatibility.challengesSameElement": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Zu viel Ähnlichkeit kann zu blinden Flecken führen. Achten Sie darauf, Ihre individuelle Identität zu bewahren und holen Sie sich bei Bedarf externe Perspektiven ein." } },
-            "en": { "stringUnit": { "state": "translated", "value": "Too much similarity can lead to blind spots. Make sure to maintain individual identities and seek outside perspectives when needed." } },
-            "es": { "stringUnit": { "state": "translated", "value": "Demasiada similitud puede generar puntos ciegos. Asegúrate de mantener identidades individuales y busca perspectivas externas cuando sea necesario." } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Trop de similitudes peut conduire à des angles morts. Assurez-vous de maintenir des identités individuelles et de rechercher des perspectives extérieures si nécessaire." } },
-            "it": { "stringUnit": { "state": "translated", "value": "Troppa somiglianza può portare a punti ciechi. Assicurati di mantenere identità individuali e cerca prospettive esterne quando necessario." } },
-            "ja": { "stringUnit": { "state": "translated", "value": "類似点が多すぎると、盲点が生じる可能性があります。個人のアイデンティティを維持し、必要に応じて外部の視点を求めるようにしてください。" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "For mye likhet kan føre til blinde flekker. Sørg for å opprettholde individuelle identiteter og søk eksterne perspektiver når det er nødvendig." } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Zbyt duże podobieństwo może prowadzić do ślepych punktów. Pamiętaj o zachowaniu indywidualnych tożsamości i szukaj zewnętrznych perspektyw, gdy jest to potrzebne." } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Muita semelhança pode levar a pontos cegos. Certifique-se de manter identidades individuais e busque perspectivas externas quando necessário." } },
-            "sv": { "stringUnit": { "state": "translated", "value": "För mycket likhet kan leda till blinda fläckar. Se till att behålla individuella identiteter och sök externa perspektiv vid behov." } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Занадто велика схожість може призвести до сліпих плям. Переконайтеся, що ви зберігаєте індивідуальну ідентичність і звертаєтеся до зовнішніх перспектив, коли це необхідно." } }
+    "compatibility.challengesSameElement" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zu viel Ähnlichkeit kann zu blinden Flecken führen. Achten Sie darauf, Ihre individuelle Identität zu bewahren und holen Sie sich bei Bedarf externe Perspektiven ein."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Too much similarity can lead to blind spots. Make sure to maintain individual identities and seek outside perspectives when needed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demasiada similitud puede generar puntos ciegos. Asegúrate de mantener identidades individuales y busca perspectivas externas cuando sea necesario."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trop de similitudes peut conduire à des angles morts. Assurez-vous de maintenir des identités individuelles et de rechercher des perspectives extérieures si nécessaire."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Troppa somiglianza può portare a punti ciechi. Assicurati di mantenere identità individuali e cerca prospettive esterne quando necessario."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "類似点が多すぎると、盲点が生じる可能性があります。個人のアイデンティティを維持し、必要に応じて外部の視点を求めるようにしてください。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For mye likhet kan føre til blinde flekker. Sørg for å opprettholde individuelle identiteter og søk eksterne perspektiver når det er nødvendig."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbyt duże podobieństwo może prowadzić do ślepych punktów. Pamiętaj o zachowaniu indywidualnych tożsamości i szukaj zewnętrznych perspektyw, gdy jest to potrzebne."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muita semelhança pode levar a pontos cegos. Certifique-se de manter identidades individuais e busque perspectivas externas quando necessário."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "För mycket likhet kan leda till blinda fläckar. Se till att behålla individuella identiteter och sök externa perspektiv vid behov."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Занадто велика схожість може призвести до сліпих плям. Переконайтеся, що ви зберігаєте індивідуальну ідентичність і звертаєтеся до зовнішніх перспектив, коли це необхідно."
+          }
         }
+      }
     },
-    "compatibility.element.air": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Luft" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Air" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Aire" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Air" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Aria" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "風" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Luft" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Powietrze" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Ar" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Luft" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Повітря" } }
+    "compatibility.element.air" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luft"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Air"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aire"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Air"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aria"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "風"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luft"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powietrze"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luft"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повітря"
+          }
         }
+      }
     },
-    "compatibility.element.earth": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Erde" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Earth" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Tierra" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Terre" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Terra" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "地" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Jord" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Ziemia" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Terra" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Jord" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Земля" } }
+    "compatibility.element.earth" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erde"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Earth"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tierra"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terra"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jord"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ziemia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terra"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jord"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Земля"
+          }
         }
+      }
     },
-    "compatibility.element.fire": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Feuer" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Fire" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Fuego" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Feu" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Fuoco" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "火" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Ild" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Ogień" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Fogo" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Eld" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Вогонь" } }
+    "compatibility.element.fire" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feuer"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fire"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuego"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feu"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuoco"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "火"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ild"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogień"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fogo"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eld"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вогонь"
+          }
         }
+      }
     },
-    "compatibility.element.water": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Wasser" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Water" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Agua" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Eau" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Acqua" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "水" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Vann" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Woda" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Água" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Vatten" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Вода" } }
+    "compatibility.element.water" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wasser"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Water"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agua"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eau"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acqua"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "水"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vann"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Woda"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Água"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vatten"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вода"
+          }
         }
+      }
     },
-    "compatibility.elementalMatch": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Elementare Übereinstimmung" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Elemental Match" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Conexión Elemental" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Affinité Élémentaire" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Abbinamento Elementale" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "元素のマッチング" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Elementær match" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Dopasowanie żywiołów" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Conexão Elementar" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Elementär matchning" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Стихійна відповідність" } }
+    "compatibility.elementalMatch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elementare Übereinstimmung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elemental Match"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conexión Elemental"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affinité Élémentaire"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbinamento Elementale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "元素のマッチング"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elementær match"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dopasowanie żywiołów"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conexão Elementar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elementär matchning"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стихійна відповідність"
+          }
         }
+      }
     },
-    "compatibility.elementDesc.different": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Unterschiedliche Elemente bringen einzigartige Dynamiken mit sich" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Different elements bring unique dynamics" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Diferentes elementos aportan dinámicas únicas" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Différents éléments apportent des dynamiques uniques" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Elementi diversi portano dinamiche uniche" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "異なる元素が独自のダイナミクスをもたらします" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Ulike elementer gir unik dynamikk" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Różne żywioły wnoszą unikalną dynamikę" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Elementos diferentes trazem dinâmicas únicas" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Olika element ger unik dynamik" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Різні елементи приносять унікальну динаміку" } }
+    "compatibility.elementDesc.different" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unterschiedliche Elemente bringen einzigartige Dynamiken mit sich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Different elements bring unique dynamics"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diferentes elementos aportan dinámicas únicas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Différents éléments apportent des dynamiques uniques"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elementi diversi portano dinamiche uniche"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "異なる元素が独自のダイナミクスをもたらします"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulike elementer gir unik dynamikk"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Różne żywioły wnoszą unikalną dynamikę"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elementos diferentes trazem dinâmicas únicas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olika element ger unik dynamik"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Різні елементи приносять унікальну динаміку"
+          }
         }
+      }
     },
-    "compatibility.elementDesc.earthWater": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Erde und Wasser nähren und unterstützen einander" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Earth and Water nurture and support one another" } },
-            "es": { "stringUnit": { "state": "translated", "value": "La Tierra y el Agua se nutren y se apoyan mutuamente" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "La Terre et l’Eau se nourrissent et se soutiennent mutuellement" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Terra e Acqua si nutrono e si supportano a vicenda" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "地と水は互いに育み合い支え合います" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Jord og Vann nærer og støtter hverandre" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Ziemia i Woda wzajemnie się odżywiają i wspierają" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Terra e Água se nutrem e se apoiam mutuamente" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Jord och Vatten vårdar och stödjer varandra" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Земля та Вода живлять і підтримують одна одну" } }
+    "compatibility.elementDesc.earthWater" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erde und Wasser nähren und unterstützen einander"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Earth and Water nurture and support one another"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Tierra y el Agua se nutren y se apoyan mutuamente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Terre et l’Eau se nourrissent et se soutiennent mutuellement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terra e Acqua si nutrono e si supportano a vicenda"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地と水は互いに育み合い支え合います"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jord og Vann nærer og støtter hverandre"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ziemia i Woda wzajemnie się odżywiają i wspierają"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terra e Água se nutrem e se apoiam mutuamente"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jord och Vatten vårdar och stödjer varandra"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Земля та Вода живлять і підтримують одна одну"
+          }
         }
+      }
     },
-    "compatibility.elementDesc.fireAir": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Feuer und Luft energetisieren sich gegenseitig wunderbar" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Fire and Air energize each other beautifully" } },
-            "es": { "stringUnit": { "state": "translated", "value": "El Fuego y el Aire se energizan maravillosamente" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Le Feu et l’Air s’énergisent magnifiquement" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Fuoco e Aria si energizzano splendidamente a vicenda" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "火と風は美しくお互いにエネルギーを与え合います" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Ild og Luft gir hverandre energi på en vakker måte" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Ogień i Powietrze doskonale się wzajemnie energetyzują" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Fogo e Ar se energizam lindamente" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Eld och Luft ger varandra energi på ett vackert sätt" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Вогонь і Повітря чудово заряджають одне одного енергією" } }
+    "compatibility.elementDesc.fireAir" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feuer und Luft energetisieren sich gegenseitig wunderbar"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fire and Air energize each other beautifully"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El Fuego y el Aire se energizan maravillosamente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Feu et l’Air s’énergisent magnifiquement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuoco e Aria si energizzano splendidamente a vicenda"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "火と風は美しくお互いにエネルギーを与え合います"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ild og Luft gir hverandre energi på en vakker måte"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogień i Powietrze doskonale się wzajemnie energetyzują"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fogo e Ar se energizam lindamente"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eld och Luft ger varandra energi på ett vackert sätt"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вогонь і Повітря чудово заряджають одне одного енергією"
+          }
         }
+      }
     },
-    "compatibility.elementDesc.same": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Gleiches Element - natürliches Verständnis und gemeinsame Werte" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Same element - natural understanding and shared values" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Mismo elemento: comprensión natural y valores compartidos" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Même élément - compréhension naturelle et valeurs partagées" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Stesso elemento - comprensione naturale e valori condivisi" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "同じ元素 - 自然な理解と共有された価値観" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Samme element - naturlig forståelse og felles verdier" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Ten sam żywioł - naturalne zrozumienie i wspólne wartości" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Mesmo elemento - compreensão natural e valores compartilhados" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Samma element - naturlig förståelse och delade värderingar" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Однаковий елемент - природне розуміння та спільні цінності" } }
+    "compatibility.elementDesc.same" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gleiches Element - natürliches Verständnis und gemeinsame Werte"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Same element - natural understanding and shared values"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mismo elemento: comprensión natural y valores compartidos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Même élément - compréhension naturelle et valeurs partagées"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stesso elemento - comprensione naturale e valori condivisi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同じ元素 - 自然な理解と共有された価値観"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samme element - naturlig forståelse og felles verdier"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ten sam żywioł - naturalne zrozumienie i wspólne wartości"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesmo elemento - compreensão natural e valores compartilhados"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samma element - naturlig förståelse och delade värderingar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Однаковий елемент - природне розуміння та спільні цінності"
+          }
         }
+      }
     },
-    "compatibility.overall": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Gesamtkompatibilität" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Overall Compatibility" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Compatibilidad General" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Compatibilité Globale" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Compatibilità Generale" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "総合的な相性" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Generell kompatibilitet" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Ogólna zgodność" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Compatibilidade Geral" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Övergripande kompatibilitet" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Загальна сумісність" } }
+    "compatibility.overall" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gesamtkompatibilität"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overall Compatibility"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilidad General"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilité Globale"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilità Generale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "総合的な相性"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generell kompatibilitet"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogólna zgodność"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilidade Geral"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Övergripande kompatibilitet"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загальна сумісність"
+          }
         }
+      }
     },
-    "compatibility.overallText": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Diese Paarung bringt %1$@ und %2$@ zusammen und schafft eine dynamische Beziehung mit einzigartigen Stärken. Während jede Beziehung Anstrengung erfordert, kann das Verständnis Ihrer astrologischen Kompatibilität helfen, Herausforderungen zu meistern und den natürlichen Fluss Ihrer Verbindung zu feiern." } },
-            "en": { "stringUnit": { "state": "translated", "value": "This pairing brings together %1$@ and %2$@, creating a dynamic relationship with unique strengths. While every relationship requires effort, understanding your astrological compatibility can help navigate challenges and celebrate your connection's natural flow." } },
-            "es": { "stringUnit": { "state": "translated", "value": "Esta combinación reúne a %1$@ y %2$@, creando una relación dinámica con fortalezas únicas. Si bien toda relación requiere esfuerzo, comprender su compatibilidad astrológica puede ayudar a superar desafíos y celebrar el flujo natural de su conexión." } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Cette association rassemble %1$@ et %2$@, créant une relation dynamique avec des forces uniques. Bien que toute relation demande des efforts, comprendre votre compatibilité astrologique peut aider à surmonter les défis et à célébrer le flux naturel de votre connexion." } },
-            "it": { "stringUnit": { "state": "translated", "value": "Questo abbinamento riunisce %1$@ e %2$@, creando una relazione dinamica con punti di forza unici. Sebbene ogni relazione richieda impegno, comprendere la tua compatibilità astrologica può aiutare ad affrontare le sfide e celebrare il flusso naturale della vostra connessione." } },
-            "ja": { "stringUnit": { "state": "translated", "value": "この組み合わせは %1$@ と %2$@ を結びつけ、独自の強みを持つダイナミックな関係を生み出します。どんな関係にも努力は必要ですが、占星術的な相性を理解することで、課題を乗り越え、あなたたちのつながりの自然な流れを祝うことができます。" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Dette paret bringer sammen %1$@ og %2$@, og skaper et dynamisk forhold med unike styrker. Selv om alle forhold krever innsats, kan forståelse av din astrologiske kompatibilitet hjelpe deg med å navigere utfordringer og feire forbindelsens naturlige flyt." } },
-            "pl": { "stringUnit": { "state": "translated", "value": "To połączenie łączy %1$@ i %2$@, tworząc dynamiczną relację z unikalnymi mocnymi stronami. Chociaż każdy związek wymaga wysiłku, zrozumienie swojej astrologicznej zgodności może pomóc w radzeniu sobie z wyzwaniami i celebrowaniu naturalnego przepływu waszej więzi." } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Esta combinação reúne %1$@ e %2$@, criando um relacionamento dinâmico com pontos fortes únicos. Embora todo relacionamento exija esforço, entender sua compatibilidade astrológica pode ajudar a navegar pelos desafios e celebrar o fluxo natural da sua conexão." } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Denna kombination sammanför %1$@ och %2$@, vilket skapar en dynamisk relation med unika styrkor. Även om varje relation kräver ansträngning, kan förståelsen av din astrologiska kompatibilitet hjälpa dig att navigera utmaningar och fira er anslutnings naturliga flöde." } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Ця пара об'єднує %1$@ та %2$@, створюючи динамічні стосунки з унікальними сильними сторонами. Хоча будь-які стосунки потребують зусиль, розуміння вашої астрологічної сумісності може допомогти подолати виклики та відсвяткувати природний плин вашого зв'язку." } }
+    "compatibility.overallText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Paarung bringt %1$@ und %2$@ zusammen und schafft eine dynamische Beziehung mit einzigartigen Stärken. Während jede Beziehung Anstrengung erfordert, kann das Verständnis Ihrer astrologischen Kompatibilität helfen, Herausforderungen zu meistern und den natürlichen Fluss Ihrer Verbindung zu feiern."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This pairing brings together %1$@ and %2$@, creating a dynamic relationship with unique strengths. While every relationship requires effort, understanding your astrological compatibility can help navigate challenges and celebrate your connection's natural flow."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta combinación reúne a %1$@ y %2$@, creando una relación dinámica con fortalezas únicas. Si bien toda relación requiere esfuerzo, comprender su compatibilidad astrológica puede ayudar a superar desafíos y celebrar el flujo natural de su conexión."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette association rassemble %1$@ et %2$@, créant une relation dynamique avec des forces uniques. Bien que toute relation demande des efforts, comprendre votre compatibilité astrologique peut aider à surmonter les défis et à célébrer le flux naturel de votre connexion."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo abbinamento riunisce %1$@ e %2$@, creando una relazione dinamica con punti di forza unici. Sebbene ogni relazione richieda impegno, comprendere la tua compatibilità astrologica può aiutare ad affrontare le sfide e celebrare il flusso naturale della vostra connessione."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この組み合わせは %1$@ と %2$@ を結びつけ、独自の強みを持つダイナミックな関係を生み出します。どんな関係にも努力は必要ですが、占星術的な相性を理解することで、課題を乗り越え、あなたたちのつながりの自然な流れを祝うことができます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dette paret bringer sammen %1$@ og %2$@, og skaper et dynamisk forhold med unike styrker. Selv om alle forhold krever innsats, kan forståelse av din astrologiske kompatibilitet hjelpe deg med å navigere utfordringer og feire forbindelsens naturlige flyt."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To połączenie łączy %1$@ i %2$@, tworząc dynamiczną relację z unikalnymi mocnymi stronami. Chociaż każdy związek wymaga wysiłku, zrozumienie swojej astrologicznej zgodności może pomóc w radzeniu sobie z wyzwaniami i celebrowaniu naturalnego przepływu waszej więzi."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta combinação reúne %1$@ e %2$@, criando um relacionamento dinâmico com pontos fortes únicos. Embora todo relacionamento exija esforço, entender sua compatibilidade astrológica pode ajudar a navegar pelos desafios e celebrar o fluxo natural da sua conexão."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denna kombination sammanför %1$@ och %2$@, vilket skapar en dynamisk relation med unika styrkor. Även om varje relation kräver ansträngning, kan förståelsen av din astrologiska kompatibilitet hjälpa dig att navigera utmaningar och fira er anslutnings naturliga flöde."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ця пара об'єднує %1$@ та %2$@, створюючи динамічні стосунки з унікальними сильними сторонами. Хоча будь-які стосунки потребують зусиль, розуміння вашої астрологічної сумісності може допомогти подолати виклики та відсвяткувати природний плин вашого зв'язку."
+          }
         }
+      }
     },
-    "compatibility.partnerSign": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Sternzeichen des Partners" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Partner's Sign" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Signo de la pareja" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Signe du partenaire" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Segno del partner" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "相手の星座" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Partnerens tegn" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Znak partnera" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Signo do parceiro" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Partnerns tecken" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Знак партнера" } }
+    "compatibility.partnerSign" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sternzeichen des Partners"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partner's Sign"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signo de la pareja"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signe du partenaire"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segno del partner"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相手の星座"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partnerens tegn"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Znak partnera"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signo do parceiro"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partnerns tecken"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Знак партнера"
+          }
         }
+      }
     },
-    "compatibility.rating.challenging": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Herausfordernd, aber möglich" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Challenging but Possible" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Desafiante pero posible" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Difficile mais possible" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Impegnativo ma possibile" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "挑戦的だが可能" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Utfordrende, men mulig" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Wyzwanie, ale możliwe" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Desafiador, mas possível" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Utmanande men möjligt" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Складно, але можливо" } }
+    "compatibility.rating.challenging" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Herausfordernd, aber möglich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Challenging but Possible"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desafiante pero posible"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Difficile mais possible"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impegnativo ma possibile"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "挑戦的だが可能"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utfordrende, men mulig"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wyzwanie, ale możliwe"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desafiador, mas possível"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utmanande men möjligt"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Складно, але можливо"
+          }
         }
+      }
     },
-    "compatibility.rating.excellent": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Ausgezeichnete Übereinstimmung" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Excellent Match" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Excelente combinación" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Excellent accord" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Ottima corrispondenza" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "素晴らしい相性" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Utmerket match" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Doskonałe dopasowanie" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Excelente combinação" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Utmärkt match" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Чудова відповідність" } }
+    "compatibility.rating.excellent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausgezeichnete Übereinstimmung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excellent Match"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excelente combinación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excellent accord"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ottima corrispondenza"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "素晴らしい相性"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utmerket match"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doskonałe dopasowanie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excelente combinação"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utmärkt match"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чудова відповідність"
+          }
         }
+      }
     },
-    "compatibility.rating.good": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Gute Übereinstimmung" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Good Match" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Buena combinación" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Bon accord" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Buona corrispondenza" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "良い相性" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "God match" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Dobre dopasowanie" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Boa combinação" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Bra match" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Хороша відповідність" } }
+    "compatibility.rating.good" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gute Übereinstimmung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Good Match"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buena combinación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bon accord"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buona corrispondenza"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "良い相性"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "God match"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dobre dopasowanie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boa combinação"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bra match"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хороша відповідність"
+          }
         }
+      }
     },
-    "compatibility.rating.moderate": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Mäßige Kompatibilität" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Moderate Compatibility" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Compatibilidad moderada" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Compatibilité modérée" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Compatibilità moderata" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "中程度の相性" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Moderat kompatibilitet" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Umiarkowana zgodność" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Compatibilidade moderada" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Måttlig kompatibilitet" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Помірна сумісність" } }
+    "compatibility.rating.moderate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mäßige Kompatibilität"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moderate Compatibility"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilidad moderada"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilité modérée"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilità moderata"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中程度の相性"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moderat kompatibilitet"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umiarkowana zgodność"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilidade moderada"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Måttlig kompatibilitet"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помірна сумісність"
+          }
         }
+      }
     },
-    "compatibility.rating.veryCompatible": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Sehr kompatibel" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Very Compatible" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Muy compatible" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Très compatible" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Molto compatibile" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "非常に相性が良い" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Svært kompatible" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Bardzo zgodne" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Muito compatível" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Mycket kompatibla" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Дуже сумісні" } }
+    "compatibility.rating.veryCompatible" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sehr kompatibel"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Very Compatible"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muy compatible"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Très compatible"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Molto compatibile"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非常に相性が良い"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svært kompatible"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bardzo zgodne"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muito compatível"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mycket kompatibla"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дуже сумісні"
+          }
         }
+      }
     },
-    "compatibility.score": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Kompatibilitätswert" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Compatibility Score" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Puntuación de compatibilidad" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Score de compatibilité" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Punteggio di compatibilità" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "相性スコア" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Kompatibilitetspoeng" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Wynik zgodności" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Pontuação de compatibilidade" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Kompatibilitetspoäng" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Оцінка сумісності" } }
+    "compatibility.score" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kompatibilitätswert"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibility Score"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puntuación de compatibilidad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Score de compatibilité"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punteggio di compatibilità"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相性スコア"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kompatibilitetspoeng"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wynik zgodności"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pontuação de compatibilidade"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kompatibilitetspoäng"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оцінка сумісності"
+          }
         }
+      }
     },
-    "compatibility.selectPrompt": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Wählen Sie beide Sternzeichen aus, um die Kompatibilität zu sehen" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Select both zodiac signs to see compatibility" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Selecciona ambos signos del zodiaco para ver la compatibilidad" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Sélectionnez les deux signes du zodiaque pour voir la compatibilité" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Seleziona entrambi i segni zodiacali per vedere la compatibilità" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "両方の星座を選択して相性を表示" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Velg begge stjernetegnene for å se kompatibilitet" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Wybierz oba znaki zodiaku, aby zobaczyć zgodność" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Selecione ambos os signos do zodíaco para ver a compatibilidade" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Välj båda stjärntecknen för att se kompatibilitet" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Виберіть обидва знаки зодіаку, щоб побачити сумісність" } }
+    "compatibility.selectPrompt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wählen Sie beide Sternzeichen aus, um die Kompatibilität zu sehen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select both zodiac signs to see compatibility"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona ambos signos del zodiaco para ver la compatibilidad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionnez les deux signes du zodiaque pour voir la compatibilité"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona entrambi i segni zodiacali per vedere la compatibilità"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "両方の星座を選択して相性を表示"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg begge stjernetegnene for å se kompatibilitet"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz oba znaki zodiaku, aby zobaczyć zgodność"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecione ambos os signos do zodíaco para ver a compatibilidade"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj båda stjärntecknen för att se kompatibilitet"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виберіть обидва знаки зодіаку, щоб побачити сумісність"
+          }
         }
+      }
     },
-    "compatibility.strengths": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Stärken" } },
-            "en": { "stringUnit": { "state": "translated", "value": "Strengths" } },
-            "es": { "stringUnit": { "state": "translated", "value": "Fortalezas" } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Forces" } },
-            "it": { "stringUnit": { "state": "translated", "value": "Punti di forza" } },
-            "ja": { "stringUnit": { "state": "translated", "value": "強み" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Styrker" } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Mocne strony" } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Pontos fortes" } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Styrkor" } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Сильні сторони" } }
+    "compatibility.strengths" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stärken"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strengths"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortalezas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forces"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punti di forza"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "強み"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Styrker"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mocne strony"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pontos fortes"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Styrkor"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сильні сторони"
+          }
         }
+      }
     },
-    "compatibility.strengthsDifferent": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Ihre Unterschiede schaffen Möglichkeiten für Wachstum und Lernen. Jeder Partner bringt einzigartige Perspektiven ein, die die Weltanschauung und Fähigkeiten des anderen erweitern." } },
-            "en": { "stringUnit": { "state": "translated", "value": "Your differences create opportunities for growth and learning. Each partner brings unique perspectives that help broaden the other's worldview and capabilities." } },
-            "es": { "stringUnit": { "state": "translated", "value": "Tus diferencias crean oportunidades de crecimiento y aprendizaje. Cada pareja aporta perspectivas únicas que ayudan a ampliar la visión del mundo y las capacidades del otro." } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Vos différences créent des opportunités de croissance et d’apprentissage. Chaque partenaire apporte des perspectives uniques qui aident à élargir la vision du monde et les capacités de l’autre." } },
-            "it": { "stringUnit": { "state": "translated", "value": "Le vostre differenze creano opportunità di crescita e apprendimento. Ogni partner porta prospettive uniche che aiutano ad ampliare la visione del mondo e le capacità dell'altro." } },
-            "ja": { "stringUnit": { "state": "translated", "value": "あなたたちの違いが成長と学びの機会を生み出します。それぞれのパートナーが独自の視点をもたらし、相手の世界観と能力を広げる助けとなります。" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Deres forskjeller skaper muligheter for vekst og læring. Hver partner bringer unike perspektiver som bidrar til å utvide den andres verdensbilde og evner." } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Wasze różnice stwarzają możliwości rozwoju i uczenia się. Każdy partner wnosi unikalne perspektywy, które pomagają poszerzyć światopogląd i możliwości drugiej osoby." } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Suas diferenças criam oportunidades de crescimento e aprendizado. Cada parceiro traz perspectivas únicas que ajudam a ampliar a visão de mundo e as capacidades do outro." } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Era olikheter skapar möjligheter till tillväxt och lärande. Varje partner ger unika perspektiv som hjälper till att bredda den andras världsbild och förmågor." } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Ваші відмінності створюють можливості для зростання та навчання. Кожен партнер приносить унікальні перспективи, які допомагають розширити світогляд і здібності іншого." } }
+    "compatibility.strengthsDifferent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ihre Unterschiede schaffen Möglichkeiten für Wachstum und Lernen. Jeder Partner bringt einzigartige Perspektiven ein, die die Weltanschauung und Fähigkeiten des anderen erweitern."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your differences create opportunities for growth and learning. Each partner brings unique perspectives that help broaden the other's worldview and capabilities."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tus diferencias crean oportunidades de crecimiento y aprendizaje. Cada pareja aporta perspectivas únicas que ayudan a ampliar la visión del mundo y las capacidades del otro."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vos différences créent des opportunités de croissance et d’apprentissage. Chaque partenaire apporte des perspectives uniques qui aident à élargir la vision du monde et les capacités de l’autre."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le vostre differenze creano opportunità di crescita e apprendimento. Ogni partner porta prospettive uniche che aiutano ad ampliare la visione del mondo e le capacità dell'altro."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたたちの違いが成長と学びの機会を生み出します。それぞれのパートナーが独自の視点をもたらし、相手の世界観と能力を広げる助けとなります。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deres forskjeller skaper muligheter for vekst og læring. Hver partner bringer unike perspektiver som bidrar til å utvide den andres verdensbilde og evner."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wasze różnice stwarzają możliwości rozwoju i uczenia się. Każdy partner wnosi unikalne perspektywy, które pomagają poszerzyć światopogląd i możliwości drugiej osoby."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suas diferenças criam oportunidades de crescimento e aprendizado. Cada parceiro traz perspectivas únicas que ajudam a ampliar a visão de mundo e as capacidades do outro."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Era olikheter skapar möjligheter till tillväxt och lärande. Varje partner ger unika perspektiv som hjälper till att bredda den andras världsbild och förmågor."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваші відмінності створюють можливості для зростання та навчання. Кожен партнер приносить унікальні перспективи, які допомагають розширити світогляд і здібності іншого."
+          }
         }
+      }
     },
-    "compatibility.strengthsEarthWater": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Sie bieten einander Sicherheit und emotionale Tiefe. Diese Paarung ist hervorragend darin, ein nährendes, stabiles Umfeld zu schaffen, in dem sich beide Partner sicher fühlen, verletzlich zu sein." } },
-            "en": { "stringUnit": { "state": "translated", "value": "You provide each other with security and emotional depth. This pairing excels at creating a nurturing, stable environment where both partners feel safe to be vulnerable." } },
-            "es": { "stringUnit": { "state": "translated", "value": "Se proporcionan mutuamente seguridad y profundidad emocional. Esta combinación sobresale en la creación de un entorno nutritivo y estable donde ambos se sienten seguros para ser vulnerables." } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Vous vous apportez mutuellement sécurité et profondeur émotionnelle. Cette association excelle dans la création d’un environnement nourricier et stable où les deux partenaires se sentent en sécurité pour être vulnérables." } },
-            "it": { "stringUnit": { "state": "translated", "value": "Vi fornite a vicenda sicurezza e profondità emotiva. Questa combinazione eccelle nel creare un ambiente nutriente e stabile in cui entrambi i partner si sentono al sicuro nell'essere vulnerabili." } },
-            "ja": { "stringUnit": { "state": "translated", "value": "あなたたちは互いに安心感と感情的な深さを提供し合います。この組み合わせは、両方のパートナーが安心して弱さを見せられる、育成的で安定した環境を作り出すことに優れています。" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Dere gir hverandre trygghet og emosjonell dybde. Dette paret utmerker seg ved å skape et nærende, stabilt miljø der begge partnere føler seg trygge på å være sårbare." } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Zapewniacie sobie nawzajem bezpieczeństwo i głębię emocjonalną. To połączenie doskonale tworzy pielęgnujące, stabilne środowisko, w którym oboje partnerzy czują się bezpiecznie, aby być wrażliwymi." } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Vocês se proporcionam segurança e profundidade emocional. Esta combinação é excelente para criar um ambiente nutritivo e estável, onde ambos se sentem seguros para serem vulneráveis." } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Ni ger varandra trygghet och känslomässigt djup. Denna kombination utmärker sig för att skapa en vårdande, stabil miljö där båda parter känner sig trygga med att vara sårbara." } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Ви даруєте одне одному безпеку та емоційну глибину. Ця пара чудово створює турботливе, стабільне середовище, де обидва партнери почуваються в безпеці, щоб бути вразливими." } }
+    "compatibility.strengthsEarthWater" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sie bieten einander Sicherheit und emotionale Tiefe. Diese Paarung ist hervorragend darin, ein nährendes, stabiles Umfeld zu schaffen, in dem sich beide Partner sicher fühlen, verletzlich zu sein."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You provide each other with security and emotional depth. This pairing excels at creating a nurturing, stable environment where both partners feel safe to be vulnerable."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se proporcionan mutuamente seguridad y profundidad emocional. Esta combinación sobresale en la creación de un entorno nutritivo y estable donde ambos se sienten seguros para ser vulnerables."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous vous apportez mutuellement sécurité et profondeur émotionnelle. Cette association excelle dans la création d’un environnement nourricier et stable où les deux partenaires se sentent en sécurité pour être vulnérables."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi fornite a vicenda sicurezza e profondità emotiva. Questa combinazione eccelle nel creare un ambiente nutriente e stabile in cui entrambi i partner si sentono al sicuro nell'essere vulnerabili."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたたちは互いに安心感と感情的な深さを提供し合います。この組み合わせは、両方のパートナーが安心して弱さを見せられる、育成的で安定した環境を作り出すことに優れています。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dere gir hverandre trygghet og emosjonell dybde. Dette paret utmerker seg ved å skape et nærende, stabilt miljø der begge partnere føler seg trygge på å være sårbare."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapewniacie sobie nawzajem bezpieczeństwo i głębię emocjonalną. To połączenie doskonale tworzy pielęgnujące, stabilne środowisko, w którym oboje partnerzy czują się bezpiecznie, aby być wrażliwymi."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vocês se proporcionam segurança e profundidade emocional. Esta combinação é excelente para criar um ambiente nutritivo e estável, onde ambos se sentem seguros para serem vulneráveis."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ni ger varandra trygghet och känslomässigt djup. Denna kombination utmärker sig för att skapa en vårdande, stabil miljö där båda parter känner sig trygga med att vara sårbara."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ви даруєте одне одному безпеку та емоційну глибину. Ця пара чудово створює турботливе, стабільне середовище, де обидва партнери почуваються в безпеці, щоб бути вразливими."
+          }
         }
+      }
     },
-    "compatibility.strengthsFireAir": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Ihre Energien ergänzen sich perfekt. Gemeinsam inspirieren Sie Wachstum, Abenteuer und intellektuelle Anregung. Die Kommunikation fließt leicht und Sie motivieren sich gegenseitig." } },
-            "en": { "stringUnit": { "state": "translated", "value": "Your energies complement each other perfectly. Together you inspire growth, adventure, and intellectual stimulation. Communication flows easily and you motivate each other." } },
-            "es": { "stringUnit": { "state": "translated", "value": "Tus energías se complementan perfectamente. Juntos inspiran crecimiento, aventura y estimulación intelectual. La comunicación fluye fácilmente y se motivan mutuamente." } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Vos énergies se complètent parfaitement. Ensemble, vous inspirez la croissance, l’aventure et la stimulation intellectuelle. La communication est fluide et vous vous motivez mutuellement." } },
-            "it": { "stringUnit": { "state": "translated", "value": "Le vostre energie si completano perfettamente. Insieme ispirate crescita, avventura e stimolazione intellettuale. La comunicazione scorre facilmente e vi motivate a vicenda." } },
-            "ja": { "stringUnit": { "state": "translated", "value": "あなたたちのエネルギーは完璧に補い合います。一緒に成長、冒険、知的刺激を促進します。コミュニケーションはスムーズに流れ、互いに動機づけ合います。" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Energiene deres utfyller hverandre perfekt. Sammen inspirerer dere til vekst, eventyr og intellektuell stimulering. Kommunikasjonen flyter lett, og dere motiverer hverandre." } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Wasze energie doskonale się uzupełniają. Razem inspirujecie wzrost, przygodę i stymulację intelektualną. Komunikacja przebiega swobodnie i wzajemnie się motywujecie." } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Suas energias se complementam perfeitamente. Juntos, vocês inspiram crescimento, aventura e estímulo intelectual. A comunicação flui facilmente e vocês se motivam mutuamente." } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Era energier kompletterar varandra perfekt. Tillsammans inspirerar ni tillväxt, äventyr och intellektuell stimulans. Kommunikationen flyter lätt och ni motiverar varandra." } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Ваші енергії ідеально доповнюють одна одну. Разом ви надихаєте на зростання, пригоди та інтелектуальну стимуляцію. Спілкування відбувається легко, і ви мотивуєте одне одного." } }
+    "compatibility.strengthsFireAir" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ihre Energien ergänzen sich perfekt. Gemeinsam inspirieren Sie Wachstum, Abenteuer und intellektuelle Anregung. Die Kommunikation fließt leicht und Sie motivieren sich gegenseitig."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your energies complement each other perfectly. Together you inspire growth, adventure, and intellectual stimulation. Communication flows easily and you motivate each other."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tus energías se complementan perfectamente. Juntos inspiran crecimiento, aventura y estimulación intelectual. La comunicación fluye fácilmente y se motivan mutuamente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vos énergies se complètent parfaitement. Ensemble, vous inspirez la croissance, l’aventure et la stimulation intellectuelle. La communication est fluide et vous vous motivez mutuellement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le vostre energie si completano perfettamente. Insieme ispirate crescita, avventura e stimolazione intellettuale. La comunicazione scorre facilmente e vi motivate a vicenda."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたたちのエネルギーは完璧に補い合います。一緒に成長、冒険、知的刺激を促進します。コミュニケーションはスムーズに流れ、互いに動機づけ合います。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energiene deres utfyller hverandre perfekt. Sammen inspirerer dere til vekst, eventyr og intellektuell stimulering. Kommunikasjonen flyter lett, og dere motiverer hverandre."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wasze energie doskonale się uzupełniają. Razem inspirujecie wzrost, przygodę i stymulację intelektualną. Komunikacja przebiega swobodnie i wzajemnie się motywujecie."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suas energias se complementam perfeitamente. Juntos, vocês inspiram crescimento, aventura e estímulo intelectual. A comunicação flui facilmente e vocês se motivam mutuamente."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Era energier kompletterar varandra perfekt. Tillsammans inspirerar ni tillväxt, äventyr och intellektuell stimulans. Kommunikationen flyter lätt och ni motiverar varandra."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваші енергії ідеально доповнюють одна одну. Разом ви надихаєте на зростання, пригоди та інтелектуальну стимуляцію. Спілкування відбувається легко, і ви мотивуєте одне одного."
+          }
         }
+      }
     },
-    "compatibility.strengthsSameElement": {
-        "extractionState": "manual",
-        "localizations": {
-            "de": { "stringUnit": { "state": "translated", "value": "Gemeinsame Werte und natürliches Verständnis schaffen ein starkes Fundament. Sie sprechen die gleiche emotionale Sprache und erfassen intuitiv die Bedürfnisse und Motivationen des anderen." } },
-            "en": { "stringUnit": { "state": "translated", "value": "Shared values and natural understanding create a strong foundation. You speak the same emotional language and intuitively grasp each other's needs and motivations." } },
-            "es": { "stringUnit": { "state": "translated", "value": "Los valores compartidos y la comprensión natural crean una base sólida. Hablan el mismo lenguaje emocional y comprenden intuitivamente las necesidades y motivaciones del otro." } },
-            "fr": { "stringUnit": { "state": "translated", "value": "Des valeurs partagées et une compréhension naturelle créent une base solide. Vous parlez le même langage émotionnel et saisissez intuitivement les besoins et motivations de l’autre." } },
-            "it": { "stringUnit": { "state": "translated", "value": "Valori condivisi e comprensione naturale creano una solida base. Parlate lo stesso linguaggio emotivo e cogliete intuitivamente i bisogni e le motivazioni dell'altro." } },
-            "ja": { "stringUnit": { "state": "translated", "value": "共有された価値観と自然な理解が強固な基盤を作ります。あなたたちは同じ感情言語を話し、相手のニーズや動機を直感的に理解します。" } },
-            "nb": { "stringUnit": { "state": "translated", "value": "Felles verdier og naturlig forståelse skaper et sterkt fundament. Dere snakker samme emosjonelle språk og forstår intuitivt hverandres behov og motivasjoner." } },
-            "pl": { "stringUnit": { "state": "translated", "value": "Wspólne wartości i naturalne zrozumienie tworzą solidną podstawę. Mówicie tym samym emocjonalnym językiem i intuicyjnie rozumiecie potrzeby i motywacje drugiej osoby." } },
-            "pt-BR": { "stringUnit": { "state": "translated", "value": "Valores compartilhados e compreensão natural criam uma base sólida. Vocês falam a mesma linguagem emocional e compreendem intuitivamente as necessidades e motivações um do outro." } },
-            "sv": { "stringUnit": { "state": "translated", "value": "Delade värderingar och naturlig förståelse skapar en stark grund. Ni talar samma känslomässiga språk och förstår intuitivt varandras behov och motivationer." } },
-            "uk": { "stringUnit": { "state": "translated", "value": "Спільні цінності та природне розуміння створюють міцну основу. Ви розмовляєте однією емоційною мовою та інтуїтивно розумієте потреби й мотивації одне одного." } }
+    "compatibility.strengthsSameElement" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemeinsame Werte und natürliches Verständnis schaffen ein starkes Fundament. Sie sprechen die gleiche emotionale Sprache und erfassen intuitiv die Bedürfnisse und Motivationen des anderen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared values and natural understanding create a strong foundation. You speak the same emotional language and intuitively grasp each other's needs and motivations."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los valores compartidos y la comprensión natural crean una base sólida. Hablan el mismo lenguaje emocional y comprenden intuitivamente las necesidades y motivaciones del otro."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Des valeurs partagées et une compréhension naturelle créent une base solide. Vous parlez le même langage émotionnel et saisissez intuitivement les besoins et motivations de l’autre."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valori condivisi e comprensione naturale creano una solida base. Parlate lo stesso linguaggio emotivo e cogliete intuitivamente i bisogni e le motivazioni dell'altro."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "共有された価値観と自然な理解が強固な基盤を作ります。あなたたちは同じ感情言語を話し、相手のニーズや動機を直感的に理解します。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Felles verdier og naturlig forståelse skaper et sterkt fundament. Dere snakker samme emosjonelle språk og forstår intuitivt hverandres behov og motivasjoner."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wspólne wartości i naturalne zrozumienie tworzą solidną podstawę. Mówicie tym samym emocjonalnym językiem i intuicyjnie rozumiecie potrzeby i motywacje drugiej osoby."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valores compartilhados e compreensão natural criam uma base sólida. Vocês falam a mesma linguagem emocional e compreendem intuitivamente as necessidades e motivações um do outro."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delade värderingar och naturlig förståelse skapar en stark grund. Ni talar samma känslomässiga språk och förstår intuitivt varandras behov och motivationer."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спільні цінності та природне розуміння створюють міцну основу. Ви розмовляєте однією емоційною мовою та інтуїтивно розумієте потреби й мотивації одне одного."
+          }
         }
+      }
     },
     "compatibility.subtitle" : {
       "comment" : "Discover your cosmic connections",
@@ -24638,9 +26288,6 @@
           }
         }
       }
-    },
-    "Illuminated" : {
-
     },
     "Image not found: %@" : {
       "comment" : "A label that appears when the system can't find an image for a tarot card. The argument is the name of the card.",
@@ -115397,6 +117044,39 @@
       "comment" : "A heading for the life timeline of the user.",
       "isCommentAutoGenerated" : true
     },
+    "lunarCalendar.illuminated" : {
+      "comment" : "Illuminated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Illuminated"
+          }
+        }
+      }
+    },
+    "lunarCalendar.moonIn" : {
+      "comment" : "Moon in",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moon in"
+          }
+        }
+      }
+    },
+    "lunarCalendar.ritualSuggestions" : {
+      "comment" : "Ritual Suggestions",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ritual Suggestions"
+          }
+        }
+      }
+    },
     "lunarCalendar.subtitle" : {
       "comment" : "Follow the moon's phases",
       "localizations" : {
@@ -115535,6 +117215,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Місячний календар"
+          }
+        }
+      }
+    },
+    "lunarCalendar.today" : {
+      "comment" : "Today",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today"
+          }
+        }
+      }
+    },
+    "lunarCalendar.upcomingPhases" : {
+      "comment" : "Upcoming Moon Phases",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upcoming Moon Phases"
           }
         }
       }
@@ -119586,8 +121288,269 @@
         }
       }
     },
-    "Moon in" : {
-
+    "moonPhase.firstQuarter" : {
+      "comment" : "First Quarter",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "First Quarter"
+          }
+        }
+      }
+    },
+    "moonPhase.firstQuarter.desc" : {
+      "comment" : "Time for decision and commitment. Push through obstacles with determination.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time for decision and commitment. Push through obstacles with determination."
+          }
+        }
+      }
+    },
+    "moonPhase.firstQuarter.energy" : {
+      "comment" : "Action & Determination",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action & Determination"
+          }
+        }
+      }
+    },
+    "moonPhase.fullMoon" : {
+      "comment" : "Full Moon",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full Moon"
+          }
+        }
+      }
+    },
+    "moonPhase.fullMoon.desc" : {
+      "comment" : "Peak energy for manifestation, celebration, and emotional release. Harvest what you've sown.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peak energy for manifestation, celebration, and emotional release. Harvest what you've sown."
+          }
+        }
+      }
+    },
+    "moonPhase.fullMoon.energy" : {
+      "comment" : "Manifestation & Release",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manifestation & Release"
+          }
+        }
+      }
+    },
+    "moonPhase.lastQuarter" : {
+      "comment" : "Last Quarter",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last Quarter"
+          }
+        }
+      }
+    },
+    "moonPhase.lastQuarter.desc" : {
+      "comment" : "Release what no longer serves you. Let go and create space for renewal.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Release what no longer serves you. Let go and create space for renewal."
+          }
+        }
+      }
+    },
+    "moonPhase.lastQuarter.energy" : {
+      "comment" : "Letting Go & Forgiveness",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letting Go & Forgiveness"
+          }
+        }
+      }
+    },
+    "moonPhase.newMoon" : {
+      "comment" : "New Moon",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Moon"
+          }
+        }
+      }
+    },
+    "moonPhase.newMoon.desc" : {
+      "comment" : "A time for new beginnings, setting intentions, and planting seeds for the future.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A time for new beginnings, setting intentions, and planting seeds for the future."
+          }
+        }
+      }
+    },
+    "moonPhase.newMoon.energy" : {
+      "comment" : "Intention & New Beginnings",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intention & New Beginnings"
+          }
+        }
+      }
+    },
+    "moonPhase.waningCrescent" : {
+      "comment" : "Waning Crescent",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waning Crescent"
+          }
+        }
+      }
+    },
+    "moonPhase.waningCrescent.desc" : {
+      "comment" : "Rest, restore, and prepare for the next cycle. Surrender and trust.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rest, restore, and prepare for the next cycle. Surrender and trust."
+          }
+        }
+      }
+    },
+    "moonPhase.waningCrescent.energy" : {
+      "comment" : "Rest & Surrender",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rest & Surrender"
+          }
+        }
+      }
+    },
+    "moonPhase.waningGibbous" : {
+      "comment" : "Waning Gibbous",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waning Gibbous"
+          }
+        }
+      }
+    },
+    "moonPhase.waningGibbous.desc" : {
+      "comment" : "Share your wisdom and gratitude. Reflect on lessons learned.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share your wisdom and gratitude. Reflect on lessons learned."
+          }
+        }
+      }
+    },
+    "moonPhase.waningGibbous.energy" : {
+      "comment" : "Gratitude & Sharing",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratitude & Sharing"
+          }
+        }
+      }
+    },
+    "moonPhase.waxingCrescent" : {
+      "comment" : "Waxing Crescent",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waxing Crescent"
+          }
+        }
+      }
+    },
+    "moonPhase.waxingCrescent.desc" : {
+      "comment" : "Energy is building. Take initial action on your goals and remain flexible.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energy is building. Take initial action on your goals and remain flexible."
+          }
+        }
+      }
+    },
+    "moonPhase.waxingCrescent.energy" : {
+      "comment" : "Growth & Expansion",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Growth & Expansion"
+          }
+        }
+      }
+    },
+    "moonPhase.waxingGibbous" : {
+      "comment" : "Waxing Gibbous",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waxing Gibbous"
+          }
+        }
+      }
+    },
+    "moonPhase.waxingGibbous.desc" : {
+      "comment" : "Refine your plans and adjust your approach. Success is within reach.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refine your plans and adjust your approach. Success is within reach."
+          }
+        }
+      }
+    },
+    "moonPhase.waxingGibbous.energy" : {
+      "comment" : "Refinement & Adjustment",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refinement & Adjustment"
+          }
+        }
+      }
     },
     "Not prominently visible" : {
       "comment" : "A description of a card's interpretation if it is not prominently visible.",
@@ -140749,8 +142712,517 @@
       "comment" : "A description of the primary energy of the year.",
       "isCommentAutoGenerated" : true
     },
-    "Ritual Suggestions" : {
-
+    "ritual.firstQuarter.1": {
+      "comment": "Make important decisions with confidence",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Triff wichtige Entscheidungen mit Selbstvertrauen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Make important decisions with confidence" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Toma decisiones importantes con confianza" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Prenez des décisions importantes avec confiance" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Prendi decisioni importanti con fiducia" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自信を持って重要な決断を下す" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ta viktige beslutninger med selvtillit" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Podejmuj ważne decyzje z pewnością siebie" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Tome decisões importantes com confiança" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Fatta viktiga beslut med självförtroende" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Приймайте важливі рішення впевнено" } }
+      }
+    },
+    "ritual.firstQuarter.2": {
+      "comment": "Address and work through any obstacles",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Gehe Hindernisse an und arbeite sie durch" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Address and work through any obstacles" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Aborda y supera cualquier obstáculo" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Affrontez et surmontez les obstacles" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Affronta e supera eventuali ostacoli" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "障害に対処し、乗り越える" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Håndter og arbeid gjennom hindringer" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Radź sobie z przeszkodami i pracuj nad ich pokonaniem" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Enfrente e supere quaisquer obstáculos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Hantera och arbeta igenom hinder" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Працюйте з перешкодами та долайте їх" } }
+      }
+    },
+    "ritual.firstQuarter.3": {
+      "comment": "Take bold action on your plans",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Ergreife mutige Maßnahmen für deine Pläne" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Take bold action on your plans" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Actúa con valentía en tus planes" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Agissez avec audace sur vos plans" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Agisci con coraggio nei tuoi piani" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "計画に大胆に行動する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ta modige skritt for planene dine" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Działaj śmiało zgodnie ze swoimi planami" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Aja com ousadia em seus planos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vidta modiga åtgärder för dina planer" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Дійте сміливо за своїми планами" } }
+      }
+    },
+    "ritual.firstQuarter.4": {
+      "comment": "Review progress and adjust your approach",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Überprüfe den Fortschritt und passe deine Vorgehensweise an" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Review progress and adjust your approach" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Revisa el progreso y ajusta tu enfoque" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Examinez vos progrès et ajustez votre approche" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Rivedi i progressi e modifica il tuo approccio" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "進捗を確認し、アプローチを調整する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Gjennomgå fremgangen og juster tilnærmingen din" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Sprawdź postępy i dostosuj swoje podejście" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Revise o progresso e ajuste sua abordagem" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Granska framsteg och justera din metod" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Перегляньте прогрес і скоригуйте підхід" } }
+      }
+    },
+    "ritual.fullMoon.1": {
+      "comment": "Celebrate achievements and express gratitude",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Feiere Erfolge und drücke Dankbarkeit aus" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Celebrate achievements and express gratitude" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Celebra los logros y expresa gratitud" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Célébrez vos réussites et exprimez votre gratitude" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Festeggia i risultati ed esprimi gratitudine" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "達成を祝い、感謝を表現する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Feire prestasjoner og uttrykk takknemlighet" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Świętuj osiągnięcia i wyrażaj wdzięczność" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Comemore conquistas e expresse gratidão" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Fira framgångar och uttryck tacksamhet" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Святкуйте досягнення та висловлюйте вдячність" } }
+      }
+    },
+    "ritual.fullMoon.2": {
+      "comment": "Release what no longer serves your growth",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Lass los, was deinem Wachstum nicht mehr dient" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Release what no longer serves your growth" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Suelta lo que ya no sirve a tu crecimiento" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Libérez ce qui ne sert plus votre croissance" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Lascia andare ciò che non serve più alla tua crescita" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自分の成長に役立たないものを手放す" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Slipp det som ikke lenger tjener veksten din" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odrzuć to, co nie służy już Twojemu rozwojowi" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Libere o que não serve mais ao seu crescimento" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Släpp det som inte längre tjänar din tillväxt" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відпустіть те, що більше не служить вашому зростанню" } }
+      }
+    },
+    "ritual.fullMoon.3": {
+      "comment": "Charge crystals and tools under moonlight",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Lade Kristalle und Werkzeuge im Mondlicht auf" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Charge crystals and tools under moonlight" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Carga cristales y herramientas bajo la luz de la luna" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Chargez les cristaux et outils au clair de lune" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Carica cristalli e strumenti al chiaro di luna" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "月光でクリスタルや道具をチャージする" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Lad krystaller og verktøy i måneskinn" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Naładuj kryształy i narzędzia w świetle księżyca" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Carregue cristais e ferramentas sob o luar" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ladda kristaller och verktyg i månsken" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Заряджайте кристали та інструменти у місячному світлі" } }
+      }
+    },
+    "ritual.fullMoon.4": {
+      "comment": "Perform a releasing ritual or ceremony",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Führe ein Loslass-Ritual oder eine Zeremonie durch" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Perform a releasing ritual or ceremony" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Realiza un ritual o ceremonia de liberación" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Effectuez un rituel ou une cérémonie de libération" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Esegui un rituale o una cerimonia di rilascio" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手放しの儀式やセレモニーを行う" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Utfør en frigjøringsritual eller seremoni" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wykonaj rytuał lub ceremonię uwalniania" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Realize um ritual ou cerimônia de liberação" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Utför en frigörelseritual eller ceremoni" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Проведіть ритуал або церемонію звільнення" } }
+      }
+    },
+    "ritual.lastQuarter.1": {
+      "comment": "Let go of limiting beliefs and patterns",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Lass limitierende Glaubenssätze und Muster los" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Let go of limiting beliefs and patterns" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Deja ir creencias y patrones limitantes" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Lâchez prise sur les croyances et schémas limitants" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Lascia andare credenze e schemi limitanti" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "制限する信念やパターンを手放す" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Slipp begrensende tro og mønstre" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odrzuć ograniczające przekonania i schematy" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Abandone crenças e padrões limitantes" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Släpp begränsande övertygelser och mönster" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відпустіть обмежуючі переконання та шаблони" } }
+      }
+    },
+    "ritual.lastQuarter.2": {
+      "comment": "Forgive yourself and others",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Verzeihe dir selbst und anderen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Forgive yourself and others" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Perdónate a ti mismo y a los demás" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pardonnez-vous et pardonnez aux autres" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Perdona te stesso e gli altri" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自分自身と他人を許す" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Tilgi deg selv og andre" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wybacz sobie i innym" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Perdoe a si mesmo e aos outros" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förlåt dig själv och andra" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Пробачте собі та іншим" } }
+      }
+    },
+    "ritual.lastQuarter.3": {
+      "comment": "Clear physical and energetic clutter",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Räume physisches und energetisches Chaos auf" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Clear physical and energetic clutter" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Limpia el desorden físico y energético" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Débarrassez-vous du désordre physique et énergétique" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Rimuovi il disordine fisico ed energetico" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "物理的・エネルギーの乱れを浄化する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Rydd fysisk og energetisk rot" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Usuń fizyczny i energetyczny bałagan" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Limpe a desordem física e energética" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Rensa fysisk och energetisk oreda" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Очистіть фізичний та енергетичний безлад" } }
+      }
+    },
+    "ritual.lastQuarter.4": {
+      "comment": "Journal about what you're ready to release",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Schreibe in dein Tagebuch, was du loslassen möchtest" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Journal about what you're ready to release" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Escribe en tu diario sobre lo que estás listo para soltar" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Tenez un journal sur ce que vous êtes prêt à libérer" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Scrivi nel diario ciò che sei pronto a lasciare andare" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "手放す準備ができたことをジャーナルに書く" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Skriv i dagboken om hva du er klar til å slippe" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pisz w dzienniku o tym, co jesteś gotów odrzucić" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Escreva no diário sobre o que você está pronto para liberar" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Skriv i din dagbok om vad du är redo att släppa" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Запишіть у щоденник те, що ви готові відпустити" } }
+      }
+    },
+    "ritual.newMoon.1": {
+      "comment": "Set intentions for the upcoming lunar cycle",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Setze Absichten für den kommenden Mondzyklus" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Set intentions for the upcoming lunar cycle" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Establece intenciones para el próximo ciclo lunar" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Fixez des intentions pour le cycle lunaire à venir" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Imposta intenzioni per il prossimo ciclo lunare" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "次の月のサイクルの意図を設定する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Sett intensjoner for den kommende månesyklusen" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Ustal intencje na nadchodzący cykl księżycowy" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Defina intenções para o próximo ciclo lunar" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Sätt avsikter för den kommande måncykeln" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Встановіть наміри на наступний місячний цикл" } }
+      }
+    },
+    "ritual.newMoon.2": {
+      "comment": "Journal about new beginnings you wish to invite",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Schreibe über neue Anfänge, die du einladen möchtest" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Journal about new beginnings you wish to invite" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Escribe sobre los nuevos comienzos que deseas invitar" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Tenez un journal sur les nouveaux départs que vous souhaitez inviter" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Scrivi nel diario i nuovi inizi che desideri invitare" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "招き入れたい新たな始まりについてジャーナルに書く" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Skriv om nye begynnelser du ønsker å invitere" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pisz o nowych początkach, które chcesz zaprosić" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Escreva sobre novos começos que você deseja convidar" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Skriv om nya början du vill bjuda in" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Запишіть про нові починання, які ви хочете запросити" } }
+      }
+    },
+    "ritual.newMoon.3": {
+      "comment": "Create a vision board for your goals",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Erstelle ein Vision Board für deine Ziele" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Create a vision board for your goals" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Crea un tablero de visión para tus metas" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Créez un tableau de vision pour vos objectifs" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Crea una bacheca dei desideri per i tuoi obiettivi" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "目標のためのビジョンボードを作成する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Lag et visjonstavle for målene dine" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Stwórz tablicę wizji dla swoich celów" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Crie um quadro de visão para seus objetivos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Skapa en visionboard för dina mål" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Створіть дошку бачень для своїх цілей" } }
+      }
+    },
+    "ritual.newMoon.4": {
+      "comment": "Light a candle and meditate on fresh starts",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Zünde eine Kerze an und meditiere über Neuanfänge" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Light a candle and meditate on fresh starts" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Enciende una vela y medita sobre nuevos comienzos" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Allumez une bougie et méditez sur les nouveaux départs" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Accendi una candela e medita sui nuovi inizi" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "ろうそくを灯し、新たな始まりについて瞑想する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Tenn et lys og mediter over nye begynnelser" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zapal świecę i medytuj o nowych początkach" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Acenda uma vela e medite sobre novos começos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Tänd ett ljus och meditera över nya början" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Запаліть свічку та медитуйте про нові починання" } }
+      }
+    },
+    "ritual.waningCrescent.1": {
+      "comment": "Rest and restore your energy",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Ruhe dich aus und stelle deine Energie wieder her" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Rest and restore your energy" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Descansa y restaura tu energía" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Reposez-vous et restaurez votre énergie" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Riposa e ripristina la tua energia" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "休息し、エネルギーを回復する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hvil og gjenopprett energien din" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Odpocznij i odzyskaj energię" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Descanse e restaure sua energia" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Vila och återställ din energi" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Відпочиньте та відновіть свою енергію" } }
+      }
+    },
+    "ritual.waningCrescent.2": {
+      "comment": "Practice deep meditation or contemplation",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Übe tiefe Meditation oder Kontemplation" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Practice deep meditation or contemplation" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Practica meditación o contemplación profunda" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pratiquez une méditation ou une contemplation profonde" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Pratica meditazione profonda o contemplazione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "深い瞑想または観想を行う" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Praktiser dyp meditasjon eller kontemplasjon" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Praktykuj głęboką medytację lub kontemplację" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Pratique meditação ou contemplação profunda" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Utöva djup meditation eller kontemplation" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Практикуйте глибоку медитацію або споглядання" } }
+      }
+    },
+    "ritual.waningCrescent.3": {
+      "comment": "Trust in the natural cycles of life",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Vertraue auf die natürlichen Zyklen des Lebens" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Trust in the natural cycles of life" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Confía en los ciclos naturales de la vida" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Ayez confiance dans les cycles naturels de la vie" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Fidati dei cicli naturali della vita" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "人生の自然なサイクルを信頼する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Stol på livets naturlige sykluser" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zaufaj naturalnym cyklom życia" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Confie nos ciclos naturais da vida" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Lita på livets naturliga cykler" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Довіряйте природним циклам життя" } }
+      }
+    },
+    "ritual.waningCrescent.4": {
+      "comment": "Prepare for the new moon's fresh start",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Bereite dich auf den Neuanfang des Neumonds vor" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Prepare for the new moon's fresh start" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Prepárate para el nuevo comienzo de la luna nueva" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Préparez-vous au nouveau départ de la nouvelle lune" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Preparati per il nuovo inizio della luna nuova" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "新月の新たな始まりに備える" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Forbered deg på nymånens nye start" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Przygotuj się na nowy początek nowiu" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Prepare-se para o novo começo da lua nova" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förbered dig för nymånens nya början" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Підготуйтеся до нового початку молодика" } }
+      }
+    },
+    "ritual.waningGibbous.1": {
+      "comment": "Share your knowledge and experiences",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Teile dein Wissen und deine Erfahrungen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Share your knowledge and experiences" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Comparte tu conocimiento y experiencias" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Partagez vos connaissances et expériences" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Condividi le tue conoscenze ed esperienze" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "知識と経験を共有する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Del din kunnskap og erfaringer" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dziel się swoją wiedzą i doświadczeniami" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Compartilhe seu conhecimento e experiências" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Dela din kunskap och dina erfarenheter" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Діліться своїми знаннями та досвідом" } }
+      }
+    },
+    "ritual.waningGibbous.2": {
+      "comment": "Express gratitude for lessons learned",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Drücke Dankbarkeit für die gelernten Lektionen aus" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Express gratitude for lessons learned" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Expresa gratitud por las lecciones aprendidas" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Exprimez votre gratitude pour les leçons apprises" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Esprimi gratitudine per le lezioni apprese" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "学んだ教訓に感謝を表現する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Uttrykk takknemlighet for lærdommene" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Wyraź wdzięczność za zdobyte lekcje" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Expresse gratidão pelas lições aprendidas" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Uttryck tacksamhet för lärdomar" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Висловіть вдячність за засвоєні уроки" } }
+      }
+    },
+    "ritual.waningGibbous.3": {
+      "comment": "Help others with your newfound wisdom",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Hilf anderen mit deiner neu gewonnenen Weisheit" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Help others with your newfound wisdom" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Ayuda a otros con tu sabiduría recién adquirida" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Aidez les autres avec votre sagesse nouvellement acquise" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Aiuta gli altri con la tua nuova saggezza" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "新たに得た知恵で他人を助ける" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Hjelp andre med din nyvunne visdom" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Pomagaj innym swoją nowo zdobytą mądrością" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Ajude os outros com sua sabedoria recém-adquirida" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Hjälp andra med din nyfunna visdom" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Допомагайте іншим своєю новознайденою мудрістю" } }
+      }
+    },
+    "ritual.waningGibbous.4": {
+      "comment": "Reflect on the cycle's teachings",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Reflektiere über die Lehren des Zyklus" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Reflect on the cycle's teachings" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Reflexiona sobre las enseñanzas del ciclo" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Réfléchissez aux enseignements du cycle" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Rifletti sugli insegnamenti del ciclo" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "サイクルの教えを振り返る" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Reflekter over syklusens lærdommer" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zastanów się nad naukami cyklu" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Reflita sobre os ensinamentos do ciclo" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Reflektera över cykelns lärdomar" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Поміркуйте над вченнями циклу" } }
+      }
+    },
+    "ritual.waxingCrescent.1": {
+      "comment": "Take the first concrete steps toward your goals",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Mache die ersten konkreten Schritte in Richtung deiner Ziele" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Take the first concrete steps toward your goals" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Da los primeros pasos concretos hacia tus metas" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Faites les premiers pas concrets vers vos objectifs" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Fai i primi passi concreti verso i tuoi obiettivi" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "目標に向けて最初の具体的なステップを踏む" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Ta de første konkrete skrittene mot målene dine" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zrób pierwsze konkretne kroki w kierunku swoich celów" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Dê os primeiros passos concretos em direção aos seus objetivos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ta de första konkreta stegen mot dina mål" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Зробіть перші конкретні кроки до своїх цілей" } }
+      }
+    },
+    "ritual.waxingCrescent.2": {
+      "comment": "Research and gather resources you'll need",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Recherchiere und sammle die benötigten Ressourcen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Research and gather resources you'll need" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Investiga y reúne los recursos que necesitarás" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Recherchez et rassemblez les ressources dont vous aurez besoin" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Ricerca e raccogli le risorse di cui avrai bisogno" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "必要なリソースを調査し集める" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Undersøk og samle ressursene du trenger" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Zbadaj i zbierz zasoby, których będziesz potrzebować" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Pesquise e reúna os recursos que você precisará" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Forska och samla de resurser du behöver" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Досліджуйте та збирайте необхідні ресурси" } }
+      }
+    },
+    "ritual.waxingCrescent.3": {
+      "comment": "Connect with others who support your vision",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Verbinde dich mit anderen, die deine Vision unterstützen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Connect with others who support your vision" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Conéctate con otros que apoyen tu visión" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Connectez-vous avec d'autres personnes qui soutiennent votre vision" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Connettiti con altri che supportano la tua visione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "自分のビジョンをサポートする人々とつながる" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Koble deg til andre som støtter din visjon" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Połącz się z innymi, którzy wspierają twoją wizję" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Conecte-se com outras pessoas que apoiam sua visão" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Anslut till andra som stödjer din vision" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Зв'яжіться з іншими, хто підтримує ваше бачення" } }
+      }
+    },
+    "ritual.waxingCrescent.4": {
+      "comment": "Practice affirmations for growth and expansion",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Übe Affirmationen für Wachstum und Expansion" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Practice affirmations for growth and expansion" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Practica afirmaciones para el crecimiento y la expansión" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pratiquez des affirmations pour la croissance et l'expansion" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Pratica affermazioni per crescita ed espansione" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "成長と拡大のためのアファメーションを実践する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Praktiser bekreftelser for vekst og utvidelse" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Praktykuj afirmacje dla wzrostu i ekspansji" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Pratique afirmações para crescimento e expansão" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Utöva affirmationer för tillväxt och expansion" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Практикуйте афірмації для зростання та розширення" } }
+      }
+    },
+    "ritual.waxingGibbous.1": {
+      "comment": "Refine and polish your projects",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Verfeinere und poliere deine Projekte" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Refine and polish your projects" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Refina y pule tus proyectos" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Affinez et peaufinez vos projets" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Affina e perfeziona i tuoi progetti" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "プロジェクトを磨き上げる" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Foredle og poler prosjektene dine" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dopracuj i wygładź swoje projekty" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Refine e finalize seus projetos" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förfina och polera dina projekt" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Удосконалюйте та поліруйте свої проєкти" } }
+      }
+    },
+    "ritual.waxingGibbous.2": {
+      "comment": "Seek feedback and make improvements",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Suche Feedback und nimm Verbesserungen vor" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Seek feedback and make improvements" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Busca retroalimentación y realiza mejoras" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Demandez des commentaires et apportez des améliorations" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Cerca feedback e apporta miglioramenti" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "フィードバックを求め、改善する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Søk tilbakemelding og gjør forbedringer" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Szukaj opinii i wprowadzaj ulepszenia" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Busque feedback e faça melhorias" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Sök feedback och gör förbättringar" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Шукайте зворотний зв'язок і вносьте покращення" } }
+      }
+    },
+    "ritual.waxingGibbous.3": {
+      "comment": "Practice patience as success approaches",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Übe Geduld, während der Erfolg näher rückt" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Practice patience as success approaches" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Practica la paciencia mientras se acerca el éxito" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Pratiquez la patience à l'approche du succès" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Pratica la pazienza mentre il successo si avvicina" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "成功が近づくにつれて忍耐を実践する" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Praktiser tålmodighet når suksessen nærmer seg" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Praktykuj cierpliwość, gdy sukces się zbliża" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Pratique a paciência enquanto o sucesso se aproxima" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Utöva tålamod när framgången närmar sig" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Практикуйте терпіння, коли успіх наближається" } }
+      }
+    },
+    "ritual.waxingGibbous.4": {
+      "comment": "Prepare for upcoming manifestations",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Bereite dich auf bevorstehende Manifestationen vor" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Prepare for upcoming manifestations" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Prepárate para las próximas manifestaciones" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Préparez-vous aux manifestations à venir" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Preparati per le prossime manifestazioni" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "今後の現実化に備える" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Forbered deg på kommende manifestasjoner" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Przygotuj się na nadchodzące manifestacje" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Prepare-se para as próximas manifestações" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Förbered dig för kommande manifestationer" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Підготуйтеся до майбутніх проявів" } }
+      }
     },
     "Select Your Sign" : {
       "comment" : "A title for a screen that lets the user select their zodiac sign.",
@@ -149235,9 +151707,6 @@
       "comment" : "A description of the camera access required to read your palm.",
       "isCommentAutoGenerated" : true
     },
-    "Today" : {
-
-    },
     "Today's Lucky Elements" : {
       "comment" : "A heading for the lucky elements of the day.",
       "isCommentAutoGenerated" : true
@@ -149245,9 +151714,6 @@
     "Try Again" : {
       "comment" : "A button that triggers a new photo capture when pressed.",
       "isCommentAutoGenerated" : true
-    },
-    "Upcoming Moon Phases" : {
-
     },
     "Use My Birth Date" : {
       "comment" : "A button that allows users to use their birth date to select their zodiac sign.",
