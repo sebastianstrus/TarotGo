@@ -213,13 +213,52 @@
       }
     },
     "A good day for planning long-term goals. Set clear intentions and take practical steps toward your aspirations.": {
-      "comment": "Career horoscope reading variation 5"
+      "comment": "Career horoscope reading variation 5",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Ein guter Tag für die Planung langfristiger Ziele. Setze klare Absichten und mache praktische Schritte in Richtung deiner Wünsche." } },
+        "en": { "stringUnit": { "state": "translated", "value": "A good day for planning long-term goals. Set clear intentions and take practical steps toward your aspirations." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Un buen día para planificar metas a largo plazo. Establece intenciones claras y da pasos prácticos hacia tus aspiraciones." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Une bonne journée pour planifier des objectifs à long terme. Fixez des intentions claires et prenez des mesures concrètes vers vos aspirations." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Un buon giorno per pianificare obiettivi a lungo termine. Stabilisci intenzioni chiare e fai passi concreti verso le tue aspirazioni." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "長期的な目標を計画するのに良い日です。明確な意図を設定し、あなたの願望に向けて実践的な一歩を踏み出しましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "En god dag for å planlegge langsiktige mål. Sett klare intensjoner og ta praktiske skritt mot dine ambisjoner." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dobry dzień na planowanie długoterminowych celów. Ustal jasne intencje i podejmij praktyczne kroki w kierunku swoich aspiracji." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Um bom dia para planejar metas de longo prazo. Estabeleça intenções claras e dê passos práticos em direção às suas aspirações." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "En bra dag för att planera långsiktiga mål. Sätt tydliga avsikter och ta praktiska steg mot dina aspirationer." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Хороший день для планування довгострокових цілей. Встановіть чіткі наміри та зробіть практичні кроки до своїх прагнень." } }
+      }
     },
     "A romantic opportunity may present itself unexpectedly. Stay present and authentic in your interactions.": {
-      "comment": "Love horoscope reading variation 2"
+      "comment": "Love horoscope reading variation 2",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Eine romantische Gelegenheit könnte sich unerwartet ergeben. Bleibe präsent und authentisch in deinen Interaktionen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "A romantic opportunity may present itself unexpectedly. Stay present and authentic in your interactions." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Una oportunidad romántica puede presentarse inesperadamente. Mantente presente y auténtico en tus interacciones." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Une opportunité romantique peut se présenter de façon inattendue. Restez présent et authentique dans vos interactions." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Un'opportunità romantica potrebbe presentarsi inaspettatamente. Rimani presente e autentico nelle tue interazioni." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "予期せぬロマンティックな機会が訪れるかもしれません。交流の際は、今この瞬間に立ち会い、誠実でいてください。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "En romantisk mulighet kan dukke opp uventet. Vær til stede og autentisk i dine interaksjoner." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Romantyczna okazja może pojawić się niespodziewanie. Bądź obecny i autentyczny w swoich interakcjach." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Uma oportunidade romântica pode surgir inesperadamente. Mantenha-se presente e autêntico em suas interações." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "En romantisk möjlighet kan dyka upp oväntat. Var närvarande och autentisk i dina interaktioner." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Романтична можливість може з'явитися несподівано. Будьте присутніми та автентичними у своїх взаємодіях." } }
+      }
     },
     "Add Birth Date": {
-      "comment": "Button to add birth date"
+      "comment": "Button to add birth date",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Geburtsdatum hinzufügen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Add Birth Date" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Agregar fecha de nacimiento" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Ajouter la date de naissance" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Aggiungi data di nascita" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "生年月日を追加" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Legg til fødselsdato" } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Dodaj datę urodzenia" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Adicionar data de nascimento" } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Lägg till födelsedatum" } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Додати дату народження" } }
+      }
     },
     "Afternoon": {
       "comment": "Lucky time: Afternoon",
