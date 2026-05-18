@@ -121841,31 +121841,31 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Meine Matrix Berechnen"
+            "value" : "Matrix Berechnen"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Calculate My Matrix"
+            "value" : "Calculate Matrix"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Calcular Mi Matriz"
+            "value" : "Calcular Matriz"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Calculer Ma Matrice"
+            "value" : "Calculer la Matrice"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Calcola la Mia Matrice"
+            "value" : "Calcola la Matrice"
           }
         },
         "ja" : {
@@ -121877,31 +121877,31 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Beregn Min Matrise"
+            "value" : "Beregn Matrise"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Oblicz Moją Matrycę"
+            "value" : "Oblicz Matrycę"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Calcular Minha Matriz"
+            "value" : "Calcular Matriz"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Beräkna Min Matrix"
+            "value" : "Beräkna Matrix"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Розрахувати Мою Матрицю"
+            "value" : "Розрахувати Матрицю"
           }
         }
       }

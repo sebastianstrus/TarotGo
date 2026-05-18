@@ -212,7 +212,7 @@ enum L10n {
     static let matrixDescription = NSLocalizedString("matrix.description", comment: "Destiny Matrix is a numerology system that maps the energies of your birth date to the 22 Major Arcana cards of the Tarot. Each position reveals different aspects of your life path, talents, and purpose.")
     static let matrixEnterBirthDate = NSLocalizedString("matrix.enterBirthDate", comment: "Enter Your Birth Date")
     static let matrixBirthDate = NSLocalizedString("matrix.birthDate", comment: "Birth Date")
-    static let matrixCalculate = NSLocalizedString("matrix.calculate", comment: "Calculate My Matrix")
+    static let matrixCalculate = NSLocalizedString("matrix.calculate", comment: "Calculate Matrix")
     static let matrixCalculateForOther = NSLocalizedString("matrix.calculateForOther", comment: "Calculate for someone else")
     static let matrixYourBirthDate = NSLocalizedString("matrix.yourBirthDate", comment: "Your Birth Date")
     
