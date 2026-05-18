@@ -17968,7 +17968,20 @@
       }
     },
     "Financial decisions require careful consideration. Trust your analytical mind and avoid impulsive choices.": {
-      "comment": "Career horoscope reading variation 3"
+      "comment": "Career horoscope reading variation 3",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Finanzielle Entscheidungen erfordern sorgfältige Überlegung. Vertraue deinem analytischen Verstand und vermeide impulsive Entscheidungen." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Financial decisions require careful consideration. Trust your analytical mind and avoid impulsive choices." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Las decisiones financieras requieren una consideración cuidadosa. Confía en tu mente analítica y evita decisiones impulsivas." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Les décisions financières nécessitent une réflexion approfondie. Faites confiance à votre esprit analytique et évitez les choix impulsifs." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Le decisioni finanziarie richiedono un'attenta considerazione. Fidati della tua mente analitica ed evita scelte impulsive." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "金銭的な決断には慎重な検討が必要です。分析的な思考を信じ、衝動的な選択は避けましょう。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Økonomiske beslutninger krever nøye overveielse. Stol på ditt analytiske sinn og unngå impulsive valg." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Decyzje finansowe wymagają starannego rozważenia. Zaufaj swojemu analitycznemu umysłowi i unikaj impulsywnych wyborów." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Decisões financeiras exigem consideração cuidadosa. Confie em sua mente analítica e evite escolhas impulsivas." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ekonomiska beslut kräver noggrant övervägande. Lita på ditt analytiska sinne och undvik impulsiva val." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Фінансові рішення потребують ретельного обмірковування. Довіряйте своєму аналітичному розуму та уникайте імпульсивних виборів." } }
+      }
     },
     "Financial opportunities present themselves in unexpected ways. Stay alert and trust your business instincts.": {
       "comment": "Career horoscope reading variation 2",
