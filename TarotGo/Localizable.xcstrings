@@ -162511,7 +162511,20 @@
       }
     },
     "Your chart reveals a unique combination of energies. The %1$@ Sun gives you core vitality, while your %2$@ Moon shapes your emotional landscape. With %3$@ rising, you present yourself to the world with distinct grace. Together, these create your cosmic fingerprint.": {
-      "comment": "A paragraph describing the user's cosmic blueprint, highlighting their Sun sign, Moon sign, and rising sign."
+      "comment": "A paragraph describing the user's cosmic blueprint, highlighting their Sun sign, Moon sign, and rising sign.",
+      "localizations": {
+        "de": { "stringUnit": { "state": "translated", "value": "Dein Horoskop offenbart eine einzigartige Kombination von Energien. Die %1$@-Sonne verleiht dir deine Kernvitalität, während dein %2$@-Mond deine emotionale Landschaft prägt. Mit %3$@ im Aszendenten präsentierst du dich der Welt mit besonderer Anmut. Zusammen bilden sie deinen kosmischen Fingerabdruck." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Your chart reveals a unique combination of energies. The %1$@ Sun gives you core vitality, while your %2$@ Moon shapes your emotional landscape. With %3$@ rising, you present yourself to the world with distinct grace. Together, these create your cosmic fingerprint." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Tu carta revela una combinación única de energías. El Sol en %1$@ te da vitalidad central, mientras que tu Luna en %2$@ moldea tu paisaje emocional. Con %3$@ ascendente, te presentas al mundo con una gracia distintiva. Juntos, crean tu huella digital cósmica." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Votre thème astral révèle une combinaison unique d'énergies. Le Soleil en %1$@ vous donne votre vitalité fondamentale, tandis que votre Lune en %2$@ façonne votre paysage émotionnel. Avec %3$@ ascendant, vous vous présentez au monde avec une grâce distincte. Ensemble, ils créent votre empreinte cosmique." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Il tuo tema natale rivela una combinazione unica di energie. Il Sole in %1$@ ti dà vitalità centrale, mentre la tua Luna in %2$@ modella il tuo paesaggio emotivo. Con %3$@ ascendente, ti presenti al mondo con grazia distintiva. Insieme, creano la tua impronta cosmica." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "あなたのチャートは独自のエネルギー構成を示しています。%1$@の太陽は中核的な活力を与え、%2$@の月は感情的な基盤を形成します。%3$@のアセンダントを持つあなたは、独特の優雅さをもって世界に自己表現します。これらがひとつになり、あなたの宇宙的な指紋を創り出します。" } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Horoskopet ditt avslører en unik kombinasjon av energier. %1$@-solen gir deg kjernevitale, mens %2$@-månen former ditt følelsesmessige landskap. Med %3$@ stigende, presenterer du deg for verden med særegen ynde. Sammen skaper disse ditt kosmiske fingeravtrykk." } },
+        "pl": { "stringUnit": { "state": "translated", "value": "Twój horoskop ujawnia unikalną kombinację energii. Słońce w %1$@ daje ci podstawową witalność, podczas gdy Księżyc w %2$@ kształtuje twój krajobraz emocjonalny. Z %3$@ w ascendenckie, prezentujesz się światu z wyjątkową gracją. Razem tworzą twój kosmiczny odcisk palca." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Seu mapa revela uma combinação única de energias. O Sol em %1$@ lhe dá vitalidade central, enquanto sua Lua em %2$@ molda sua paisagem emocional. Com %3$@ ascendente, você se apresenta ao mundo com graça distinta. Juntos, eles criam sua impressão digital cósmica." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ditt horoskop avslöjar en unik kombination av energier. %1$@-solen ger dig din kärnvitalitet, medan din %2$@-måne formar ditt känslomässiga landskap. Med %3$@ stigande presenterar du dig för världen med särskild grace. Tillsammans skapar de ditt kosmiska fingeravtryck." } },
+        "uk": { "stringUnit": { "state": "translated", "value": "Ваша карта розкриває унікальну комбінацію енергій. Сонце в %1$@ дає вам основну життєву силу, тоді як Місяць у %2$@ формує ваш емоційний ландшафт. З %3$@ у висхідному знаку ви представляєте себе світу з особливою грацією. Разом вони створюють ваш космічний відбиток пальця." } }
+      }
     },
     "Your Cosmic Blueprint": {
       "comment": "A title for the user's cosmic blueprint.",
