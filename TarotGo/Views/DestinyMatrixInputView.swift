@@ -126,6 +126,7 @@ struct DestinyMatrixInputView: View {
                                     .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
                             )
                             .padding(.horizontal, 20)
+                            .transition(.opacity.combined(with: .scale))
                         } else {
                             // Show saved birth date
                             VStack(spacing: 12) {
@@ -149,8 +150,10 @@ struct DestinyMatrixInputView: View {
                                     .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
                             )
                             .padding(.horizontal, 20)
+                            .transition(.opacity.combined(with: .scale))
                         }
                     }
+                    .animation(.easeInOut(duration: 0.3), value: calculateForOther)
                     
                     // Calculate Button
                     Button {
