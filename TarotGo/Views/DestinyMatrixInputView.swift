@@ -11,6 +11,7 @@ struct DestinyMatrixInputView: View {
     @State private var birthDate = Date()
     @State private var showResult = false
     @State private var calculatedMatrix: DestinyMatrix?
+    @State private var showBirthDateInput: Bool = false
     
     // Limit date range to reasonable bounds
     private let minDate = Calendar.current.date(from: DateComponents(year: 1900, month: 1, day: 1)) ?? Date()
@@ -135,6 +136,21 @@ struct DestinyMatrixInputView: View {
         .navigationDestination(isPresented: $showResult) {
             if let matrix = calculatedMatrix {
                 DestinyMatrixResultView(matrix: matrix)
+            }
+        }
+        .sheet(isPresented: $showBirthDateInput) {
+            BirthDateInputView(isPresented: $showBirthDateInput) { date in
+                // Birth date is saved in the service, update local state
+                birthDate = date
+            }
+        }
+        .onAppear {
+            // Load birth date from settings if available
+            if let savedBirthDate = AstrologyService.shared.userBirthDate {
+                birthDate = savedBirthDate
+            } else {
+                // Show birth date input sheet if not set
+                showBirthDateInput = true
             }
         }
     }
