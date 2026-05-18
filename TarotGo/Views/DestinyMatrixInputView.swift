@@ -26,10 +26,11 @@ struct DestinyMatrixInputView: View {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
-            ScrollView {
-                VStack(spacing: 20) {
-                    Spacer()
-                        .frame(height: 0)
+            GeometryReader { geometry in
+                ScrollView {
+                    VStack(spacing: 20) {
+                        Spacer()
+                            .frame(height: 0)
                     
                     // Header
                     VStack(spacing: 15) {
@@ -62,7 +63,8 @@ struct DestinyMatrixInputView: View {
                             .foregroundColor(AppTheme.textSecondary)
                             .lineSpacing(4)
                     }
-                    .padding(.horizontal, 30)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
                     .padding(.vertical, 20)
                     .background(
                         RoundedRectangle(cornerRadius: 16)
@@ -89,7 +91,8 @@ struct DestinyMatrixInputView: View {
                                     .labelsHidden()
                                     .tint(AppTheme.gold)
                             }
-                            .padding(.horizontal, 20)
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 30)
                         }
                         
                         // Show date picker only if calculating for someone else or no saved date
@@ -109,12 +112,13 @@ struct DestinyMatrixInputView: View {
                                 .labelsHidden()
                                 .colorScheme(.dark)
                                 .frame(maxWidth: .infinity)
-                                .padding(.horizontal, 20)
                                 
                                 Text(formattedDate)
                                     .font(AppTheme.serifFont(size: 20, weight: .medium))
                                     .foregroundColor(AppTheme.gold)
                             }
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 20)
                             .padding(.vertical, 25)
                             .background(
                                 RoundedRectangle(cornerRadius: 16)
@@ -126,6 +130,7 @@ struct DestinyMatrixInputView: View {
                                     .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
                             )
                             .padding(.horizontal, 20)
+                            .transition(.opacity.combined(with: .scale))
                         } else {
                             // Show saved birth date
                             VStack(spacing: 12) {
@@ -138,6 +143,7 @@ struct DestinyMatrixInputView: View {
                                     .foregroundColor(AppTheme.gold)
                             }
                             .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 20)
                             .padding(.vertical, 30)
                             .background(
                                 RoundedRectangle(cornerRadius: 16)
@@ -149,8 +155,10 @@ struct DestinyMatrixInputView: View {
                                     .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
                             )
                             .padding(.horizontal, 20)
+                            .transition(.opacity.combined(with: .scale))
                         }
                     }
+                    .animation(.easeInOut(duration: 0.3), value: calculateForOther)
                     
                     // Calculate Button
                     Button {
@@ -178,6 +186,8 @@ struct DestinyMatrixInputView: View {
                     Spacer()
                         .frame(height: 40)
                 }
+                .frame(width: geometry.size.width)
+            }
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -196,7 +206,9 @@ struct DestinyMatrixInputView: View {
             HapticService.shared.impact(.light)
             // Reset to saved date when toggling off, or to current date when toggling on
             if !newValue, let savedBirthDate = AstrologyService.shared.userBirthDate {
-                birthDate = savedBirthDate
+                withAnimation(.easeInOut(duration: 0.3)) {
+                    birthDate = savedBirthDate
+                }
             }
         }
     }
