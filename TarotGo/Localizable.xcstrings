@@ -2784,19 +2784,74 @@
     },
     "birthDateInput.description" : {
       "extractionState" : "manual",
-      "localizations": {
-              "de": { "stringUnit": { "state": "translated", "value": "Gib dein Geburtsdatum ein, um personalisierte Tageskarten, die Schicksalsmatrix und astrologische Einsichten freizuschalten" } },
-              "en": { "stringUnit": { "state": "translated", "value": "Enter your birth date to unlock personalized daily cards, Destiny Matrix, and astrological insights" } },
-              "es": { "stringUnit": { "state": "translated", "value": "Ingresa tu fecha de nacimiento para desbloquear cartas diarias personalizadas, la Matriz del Destino y conocimientos astrológicos" } },
-              "fr": { "stringUnit": { "state": "translated", "value": "Entrez votre date de naissance pour débloquer des cartes quotidiennes personnalisées, la Matrice du Destin et des perspectives astrologiques" } },
-              "it": { "stringUnit": { "state": "translated", "value": "Inserisci la tua data di nascita per sbloccare carte giornaliere personalizzate, la Matrice del Destino e approfondimenti astrologici" } },
-              "ja": { "stringUnit": { "state": "translated", "value": "生年月日を入力して、パーソナライズされた今日のカード、運命のマトリックス、占星術の洞察をアンロックしましょう" } },
-              "nb": { "stringUnit": { "state": "translated", "value": "Skriv inn fødselsdatoen din for å låse opp personlige dagskort, Skjebnematrisen og astrologiske innsikter" } },
-              "pl": { "stringUnit": { "state": "translated", "value": "Wprowadź swoją datę urodzenia, aby odblokować spersonalizowane karty dnia, Matrycę Przeznaczenia i wgląd astrologiczny" } },
-              "pt-BR": { "stringUnit": { "state": "translated", "value": "Digite sua data de nascimento para desbloquear cartas diárias personalizadas, a Matriz do Destino e insights astrológicos" } },
-              "sv": { "stringUnit": { "state": "translated", "value": "Ange ditt födelsedatum för att låsa upp personliga dagskort, Ödesmatrisen och astrologiska insikter" } },
-              "uk": { "stringUnit": { "state": "translated", "value": "Введіть свою дату народження, щоб розблокувати персоналізовані щоденні карти, Матрицю Долі та астрологічні прогнози" } }
-            }
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gib dein Geburtsdatum ein, um personalisierte Tageskarten, die Schicksalsmatrix und astrologische Einsichten freizuschalten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your birth date to unlock personalized daily cards, Destiny Matrix, and astrological insights"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa tu fecha de nacimiento para desbloquear cartas diarias personalizadas, la Matriz del Destino y conocimientos astrológicos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrez votre date de naissance pour débloquer des cartes quotidiennes personnalisées, la Matrice du Destin et des perspectives astrologiques"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci la tua data di nascita per sbloccare carte giornaliere personalizzate, la Matrice del Destino e approfondimenti astrologici"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生年月日を入力して、パーソナライズされた今日のカード、運命のマトリックス、占星術の洞察をアンロックしましょう"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv inn fødselsdatoen din for å låse opp personlige dagskort, Skjebnematrisen og astrologiske innsikter"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wprowadź swoją datę urodzenia, aby odblokować spersonalizowane karty dnia, Matrycę Przeznaczenia i wgląd astrologiczny"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Digite sua data de nascimento para desbloquear cartas diárias personalizadas, a Matriz do Destino e insights astrológicos"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ange ditt födelsedatum för att låsa upp personliga dagskort, Ödesmatrisen och astrologiska insikter"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введіть свою дату народження, щоб розблокувати персоналізовані щоденні карти, Матрицю Долі та астрологічні прогнози"
+          }
+        }
+      }
     },
     "birthDateInput.lifePath" : {
       "extractionState" : "manual",
@@ -152415,16 +152470,16 @@
     "settings.birthDate.footer": {
       "comment": "Privacy and personalization info about birth date usage",
       "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Dein Geburtsdatum ermöglicht personalisierte Tageskarten, die Schicksalsmatrix und astrologische Einsichten. Es wird lokal gespeichert und niemals geteilt." } },
-        "en": { "stringUnit": { "state": "translated", "value": "Your birth date enables personalized card of the day, Destiny Matrix, and astrological insights. It's stored locally and never shared." } },
-        "es": { "stringUnit": { "state": "translated", "value": "Tu fecha de nacimiento permite la carta del día personalizada, la Matriz del Destino y conocimientos astrológicos. Se almacena localmente y nunca se comparte." } },
+        "de": { "stringUnit": { "state": "translated", "value": "Dein Geburtsdatum ermöglicht eine personalisierte Tageskarte, die Schicksalsmatrix und astrologische Einsichten. Es wird lokal gespeichert und niemals geteilt." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Your birth date enables a personalized card of the day, the Destiny Matrix, and astrological insights. It's stored locally and never shared." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Tu fecha de nacimiento permite una carta del día personalizada, la Matriz del Destino y conocimientos astrológicos. Se almacena localmente y nunca se comparte." } },
         "fr": { "stringUnit": { "state": "translated", "value": "Votre date de naissance permet une carte du jour personnalisée, la Matrice du Destin et des perspectives astrologiques. Elle est stockée localement et jamais partagée." } },
-        "it": { "stringUnit": { "state": "translated", "value": "La tua data di nascita consente la carta del giorno personalizzata, la Matrice del Destino e approfondimenti astrologici. Viene memorizzata localmente e mai condivisa." } },
+        "it": { "stringUnit": { "state": "translated", "value": "La tua data di nascita consente una carta del giorno personalizzata, la Matrice del Destino e approfondimenti astrologici. Viene memorizzata localmente e mai condivisa." } },
         "ja": { "stringUnit": { "state": "translated", "value": "生年月日を設定すると、パーソナライズされた今日のカード、運命のマトリックス、占星術の洞察が可能になります。データは端末内に保存され、共有されることはありません。" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Fødselsdatoen din muliggjør personlig dagens kort, Skjebnematrisen og astrologiske innsikter. Den lagres lokalt og deles aldri." } },
+        "nb": { "stringUnit": { "state": "translated", "value": "Fødselsdatoen din muliggjør en personlig dagens kort, Skjebnematrisen og astrologiske innsikter. Den lagres lokalt og deles aldri." } },
         "pl": { "stringUnit": { "state": "translated", "value": "Twoja data urodzenia umożliwia spersonalizowaną kartę dnia, Matrycę Przeznaczenia i wgląd astrologiczny. Jest przechowywana lokalnie i nigdy nie udostępniana." } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua data de nascimento permite a carta do dia personalizada, a Matriz do Destino e insights astrológicos. Ela é armazenada localmente e nunca compartilhada." } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Ditt födelsedatum möjliggör personligt dagskort, Ödesmatrisen och astrologiska insikter. Det lagras lokalt och delas aldrig." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua data de nascimento permite uma carta do dia personalizada, a Matriz do Destino e insights astrológicos. Ela é armazenada localmente e nunca compartilhada." } },
+        "sv": { "stringUnit": { "state": "translated", "value": "Ditt födelsedatum möjliggör ett personligt dagskort, Ödesmatrisen och astrologiska insikter. Det lagras lokalt och delas aldrig." } },
         "uk": { "stringUnit": { "state": "translated", "value": "Ваша дата народження дозволяє отримувати персоналізовану карту дня, Матрицю Долі та астрологічні прогнози. Вона зберігається локально і ніколи не передається." } }
       }
     },

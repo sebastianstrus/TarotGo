@@ -433,7 +433,7 @@ enum L10n {
     static let settingsChange = NSLocalizedString("settings.change", comment: "Change")
     static let settingsAddBirthDate = NSLocalizedString("settings.addBirthDate", comment: "Add Birth Date")
     static let settingsAddBirthDateDesc = NSLocalizedString("settings.addBirthDate.desc", comment: "Personalize your readings with astrology")
-    static let settingsBirthDateFooter = NSLocalizedString("settings.birthDate.footer", comment: "Your birth date enables personalized card of the day, Destiny Matrix and astrological insights. It's stored locally and never shared.")
+    static let settingsBirthDateFooter = NSLocalizedString("settings.birthDate.footer", comment: "Your birth date enables a personalized card of the day, the Destiny Matrix, and astrological insights. It's stored locally and never shared.")
     
     static let skip = NSLocalizedString("common.skip", comment: "Skip")
     
