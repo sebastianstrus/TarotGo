@@ -95,8 +95,11 @@ struct SettingsView: View {
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
                 
                 Section {
                     Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
@@ -142,8 +145,11 @@ struct SettingsView: View {
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
                 
                 Section {
                     Toggle(L10n.settingsSoundEnabled, isOn: $isSoundEnabled)
@@ -166,8 +172,11 @@ struct SettingsView: View {
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
                 
                 Section {
                     VStack(alignment: .leading, spacing: 12) {
@@ -230,8 +239,11 @@ struct SettingsView: View {
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
                 
                 Section {
                     Button {
@@ -272,8 +284,11 @@ struct SettingsView: View {
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
                 
                 Section {
                     Button {
@@ -309,8 +324,11 @@ struct SettingsView: View {
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
                 
                 Section {
                     HStack {
@@ -326,11 +344,16 @@ struct SettingsView: View {
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.5))
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
             }
+            .listStyle(.insetGrouped)
             .scrollContentBackground(.hidden)
             .foregroundColor(AppTheme.textPrimary)
+            .environment(\.defaultMinListRowHeight, 50)
         }
         .navigationTitle(L10n.settingsTitle)
         .navigationBarTitleDisplayMode(.inline)
