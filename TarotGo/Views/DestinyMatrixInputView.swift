@@ -211,6 +211,11 @@ struct DestinyMatrixInputView: View {
         HapticService.shared.impact(.medium)
         SoundService.shared.play(.whoosh, volume: 0.5)
         
+        // Save birth date if this is for the user (not for someone else) and no saved date exists
+        if !calculateForOther && !hasSavedBirthDate {
+            AstrologyService.shared.userBirthDate = birthDate
+        }
+        
         // Calculate matrix
         calculatedMatrix = DestinyMatrixCalculator.shared.calculate(from: birthDate)
         
