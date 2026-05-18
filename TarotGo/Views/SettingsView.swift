@@ -16,12 +16,12 @@ struct SettingsView: View {
     @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
     @AppStorage("isSoundEnabled") private var isSoundEnabled: Bool = true
     
-    @State private var showingTimePicker: Bool = false
     @State private var toggleState: Bool = false
     @State private var showOnboarding: Bool = false
     @State private var showPermissionAlert: Bool = false
     @State private var hasAppeared: Bool = false
     @State private var showBirthDateInput: Bool = false
+    @State private var selectedDate: Date = Date()
     
     private var selectedCardBack: CardBackStyle {
         CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
@@ -110,15 +110,20 @@ struct SettingsView: View {
                         .tint(AppTheme.gold)
                     
                     if toggleState {
-                        HStack {
-                            Text(L10n.settingsReminderTime)
-                            Spacer()
-                            Text(formattedTime)
-                                .foregroundColor(AppTheme.gold.opacity(0.8))
-                        }
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                            showingTimePicker = true
+                        DatePicker(
+                            L10n.settingsReminderTime,
+                            selection: $selectedDate,
+                            displayedComponents: .hourAndMinute
+                        )
+                        .datePickerStyle(.compact)
+                        .tint(AppTheme.gold)
+                        .onChange(of: selectedDate) { oldValue, newValue in
+                            let components = Calendar.current.dateComponents([.hour, .minute], from: newValue)
+                            notificationHour = components.hour ?? 9
+                            notificationMinute = components.minute ?? 0
+                            Task {
+                                await scheduleNotification()
+                            }
                         }
                         .listRowSeparator(.hidden)
                     }
@@ -327,19 +332,17 @@ struct SettingsView: View {
         .onAppear {
             toggleState = notificationEnabled
             soundService.isSoundEnabled = isSoundEnabled
+            
+            // Initialize selectedDate from stored hour and minute
+            var components = DateComponents()
+            components.hour = notificationHour
+            components.minute = notificationMinute
+            if let date = Calendar.current.date(from: components) {
+                selectedDate = date
+            }
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 hasAppeared = true
-            }
-        }
-        .sheet(isPresented: $showingTimePicker) {
-            TimePickerSheet(
-                hour: $notificationHour,
-                minute: $notificationMinute,
-                isPresented: $showingTimePicker
-            ) {
-                Task {
-                    await scheduleNotification()
-                }
             }
         }
         .fullScreenCover(isPresented: $showOnboarding) {
@@ -361,20 +364,6 @@ struct SettingsView: View {
         } message: {
             Text(L10n.settingsNotificationPermissionMessage)
         }
-    }
-    
-    private var formattedTime: String {
-        let formatter = DateFormatter()
-        formatter.timeStyle = .short
-        
-        var components = DateComponents()
-        components.hour = notificationHour
-        components.minute = notificationMinute
-        
-        if let date = Calendar.current.date(from: components) {
-            return formatter.string(from: date)
-        }
-        return "\(notificationHour):\(String(format: "%02d", notificationMinute))"
     }
     
     private var currentLanguageName: String {
@@ -446,71 +435,6 @@ struct SettingsView: View {
     private func openURL(_ urlString: String) {
         if let url = URL(string: urlString) {
             UIApplication.shared.open(url)
-        }
-    }
-}
-
-struct TimePickerSheet: View {
-    @Binding var hour: Int
-    @Binding var minute: Int
-    @Binding var isPresented: Bool
-    let onSave: () -> Void
-    
-    @State private var selectedDate: Date
-    
-    init(hour: Binding<Int>, minute: Binding<Int>, isPresented: Binding<Bool>, onSave: @escaping () -> Void) {
-        self._hour = hour
-        self._minute = minute
-        self._isPresented = isPresented
-        self.onSave = onSave
-        
-        var components = DateComponents()
-        components.hour = hour.wrappedValue
-        components.minute = minute.wrappedValue
-        _selectedDate = State(initialValue: Calendar.current.date(from: components) ?? Date())
-    }
-    
-    var body: some View {
-        NavigationStack {
-            ZStack {
-                Color.clear
-                    .background(AnimatedBackgroundView().ignoresSafeArea())
-                
-                VStack {
-                    DatePicker(
-                        "Time",
-                        selection: $selectedDate,
-                        displayedComponents: .hourAndMinute
-                    )
-                    .datePickerStyle(.wheel)
-                    .labelsHidden()
-                    .colorScheme(.dark)
-                    
-                    Spacer()
-                }
-                .padding()
-            }
-            .navigationTitle(L10n.settingsSetReminderTime)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button(L10n.cancel) {
-                        isPresented = false
-                    }
-                    .foregroundStyle(AppTheme.goldGradient)
-                }
-                
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(L10n.save) {
-                        let components = Calendar.current.dateComponents([.hour, .minute], from: selectedDate)
-                        hour = components.hour ?? 9
-                        minute = components.minute ?? 0
-                        isPresented = false
-                        onSave()
-                    }
-                    .foregroundStyle(AppTheme.goldGradient)
-                }
-            }
         }
     }
 }

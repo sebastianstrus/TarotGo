@@ -186,7 +186,7 @@ struct BirthDateInputView: View {
     
     private func saveBirthDate() {
         HapticService.shared.impact(.medium)
-        SoundService.shared.play(.success, volume: 0.6)
+        SoundService.shared.play(.click, volume: 0.6)
         
         AstrologyService.shared.userBirthDate = selectedDate
         onSave(selectedDate)
