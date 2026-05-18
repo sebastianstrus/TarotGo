@@ -333,10 +333,10 @@ struct CosmogramView: View {
     
     private func elementSymbol(_ element: String) -> String {
         switch element {
-        case "Fire": return "🔥"
-        case "Earth": return "🌍"
-        case "Air": return "💨"
-        case "Water": return "💧"
+        case L10n.elementFire: return "🔥"
+        case L10n.elementEarth: return "🌍"
+        case L10n.elementAir: return "💨"
+        case L10n.elementWater: return "💧"
         default: return "✨"
         }
     }
