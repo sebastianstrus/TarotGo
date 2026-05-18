@@ -439,7 +439,7 @@ enum L10n {
     
     // Birth Date Input
     static let birthDateInputTitle = NSLocalizedString("birthDateInput.title", comment: "Your Birth Date")
-    static let birthDateInputDescription = NSLocalizedString("birthDateInput.description", comment: "Enter your birth date to unlock personalized daily cards and astrological insights")
+    static let birthDateInputDescription = NSLocalizedString("birthDateInput.description", comment: "Enter your birth date to unlock personalized daily cards, Destiny Matrix, and astrological insights")
     static let birthDateInputSelectDate = NSLocalizedString("birthDateInput.selectDate", comment: "Select Your Birth Date")
     static let birthDateInputZodiacSign = NSLocalizedString("birthDateInput.zodiacSign", comment: "Zodiac Sign")
     static let birthDateInputLifePath = NSLocalizedString("birthDateInput.lifePath", comment: "Life Path")
