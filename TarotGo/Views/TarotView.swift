@@ -69,7 +69,8 @@ struct TarotView: View {
                             .buttonStyle(PlainButtonStyle())
                             
                             // Destiny Matrix
-                            NavigationLink(destination: DestinyMatrixInputView()) {
+                            NavigationLink(destination: DestinyMatrixInputView()
+                                .toolbar(.hidden, for: .tabBar)) {
                                 NavigationButton(
                                     icon: "star.circle.fill",
                                     title: L10n.homeDestinyMatrix,

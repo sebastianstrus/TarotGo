@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct DestinyMatrixResultView: View {
     let matrix: DestinyMatrix
+    @EnvironmentObject var appViewModel: AppViewModel
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var modelContext
     @State private var selectedPosition: MatrixPosition?
     @State private var selectedYear: YearlyEnergy?
     @State private var selectedTab: Tab = .diagram
+    @State private var showExitConfirmation: Bool = false
+    @State private var sessionSaved: Bool = false
+    @State private var notes: String = ""
+    @FocusState private var isNotesFocused: Bool
     
     enum Tab: String, CaseIterable {
         case diagram
@@ -88,9 +96,135 @@ struct DestinyMatrixResultView: View {
                         .tag(Tab.yearAnalysis)
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
+                
+                // Action Buttons
+                VStack(spacing: 12) {
+                    Divider()
+                        .background(AppTheme.gold.opacity(0.3))
+                        .padding(.horizontal, 20)
+                    
+                    HStack(spacing: 12) {
+                        // Save button
+                        Button {
+                            saveSession()
+                        } label: {
+                            HStack(spacing: 8) {
+                                Image(systemName: sessionSaved ? "checkmark.circle.fill" : "square.and.arrow.down")
+                                    .font(.system(size: 16))
+                                Text(sessionSaved ? L10n.summaryReadingSaved : L10n.summarySaveReading)
+                                    .font(.system(size: 16, weight: .semibold))
+                            }
+                            .foregroundColor(sessionSaved ? Color.green : AppTheme.deepNavy)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .background(
+                                sessionSaved ?
+                                    LinearGradient(colors: [Color.green.opacity(0.3)], startPoint: .leading, endPoint: .trailing) :
+                                    AppTheme.goldGradient
+                            )
+                            .cornerRadius(12)
+                            .shadow(color: sessionSaved ? Color.green.opacity(0.3) : AppTheme.gold.opacity(0.4), radius: 8)
+                        }
+                        .disabled(sessionSaved)
+                        
+                        // Share button
+                        Button {
+                            shareMatrix()
+                        } label: {
+                            Image(systemName: "square.and.arrow.up")
+                                .font(.system(size: 16))
+                                .foregroundStyle(AppTheme.goldGradient)
+                                .frame(width: 50, height: 50)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .stroke(AppTheme.gold.opacity(0.6), lineWidth: 2)
+                                )
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 16)
+                }
+                .background(AppTheme.deepNavy.opacity(0.5))
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    showExitConfirmation = true
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+            }
+        }
+        .confirmationDialog(
+            L10n.exitReadingTitle,
+            isPresented: $showExitConfirmation,
+            titleVisibility: .visible
+        ) {
+            Button(L10n.exitReadingConfirm, role: .destructive) {
+                appViewModel.returnToHome()
+                dismiss()
+            }
+            Button(L10n.exitReadingCancel, role: .cancel) {}
+        } message: {
+            Text(L10n.exitReadingMessage)
+        }
+    }
+    
+    private func saveSession() {
+        let session = DestinyMatrixSession(birthDate: matrix.birthDate)
+        session.notes = notes.isEmpty ? nil : notes
+        
+        modelContext.insert(session)
+        
+        do {
+            try modelContext.save()
+            withAnimation {
+                sessionSaved = true
+            }
+            HapticService.shared.impact(.medium)
+        } catch {
+            print("Failed to save destiny matrix session: \(error)")
+        }
+    }
+    
+    private func shareMatrix() {
+        // Create a shareable text summary
+        var shareText = "My Destiny Matrix\n"
+        shareText += "Birth Date: \(matrix.formattedBirthDate)\n\n"
+        
+        if let centerPos = matrix.centerPosition {
+            shareText += "Center Energy: \(centerPos.number)"
+            if let card = centerPos.tarotCard {
+                shareText += " - \(card.name)"
+            }
+            shareText += "\n\n"
+        }
+        
+        shareText += "Key Positions:\n"
+        for position in matrix.positions.prefix(5) {
+            shareText += "• \(position.position.displayName): \(position.number)"
+            if let card = position.tarotCard {
+                shareText += " (\(card.name))"
+            }
+            shareText += "\n"
+        }
+        
+        shareText += "\n✨ Generated with TarotGo"
+        
+        // Share using UIActivityViewController
+        let activityVC = UIActivityViewController(
+            activityItems: [shareText],
+            applicationActivities: nil
+        )
+        
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let rootVC = windowScene.windows.first?.rootViewController {
+            rootVC.present(activityVC, animated: true)
+        }
     }
 }
 
