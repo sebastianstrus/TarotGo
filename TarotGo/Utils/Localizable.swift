@@ -1239,6 +1239,41 @@ enum L10n {
     
     static let yourPersonalNumbers = NSLocalizedString("Your Personal Numbers", comment: "A label displayed above the user's numerology numbers.")
     
+    // MARK: - Cosmogram View
+    static let enterYourBirthDateCosmogram = NSLocalizedString("cosmogram.enterBirthDate", comment: "Enter Your Birth Date")
+    static let generateBirthChartPrompt = NSLocalizedString("cosmogram.generatePrompt", comment: "Generate your personal birth chart based on your birth date")
+    static let addBirthDateButton = NSLocalizedString("cosmogram.addBirthDate", comment: "Add Birth Date")
+    static let bigThreeTitle = NSLocalizedString("cosmogram.bigThree", comment: "Your Big Three")
+    static let sunSignTitle = NSLocalizedString("cosmogram.sunSign", comment: "Sun Sign")
+    static let sunSignDescription = NSLocalizedString("cosmogram.sunSign.desc", comment: "Your core identity and life force")
+    static let moonSignTitle = NSLocalizedString("cosmogram.moonSign", comment: "Moon Sign")
+    static let moonSignDescription = NSLocalizedString("cosmogram.moonSign.desc", comment: "Your emotional nature and inner world")
+    static let risingSignTitle = NSLocalizedString("cosmogram.risingSign", comment: "Rising Sign")
+    static let risingSignDescription = NSLocalizedString("cosmogram.risingSign.desc", comment: "Your outward personality and first impression")
+    static let elementalBalanceTitle = NSLocalizedString("cosmogram.elementalBalance", comment: "Elemental Balance")
+    static let elementFire = NSLocalizedString("cosmogram.element.fire", comment: "Fire")
+    static let elementEarth = NSLocalizedString("cosmogram.element.earth", comment: "Earth")
+    static let elementAir = NSLocalizedString("cosmogram.element.air", comment: "Air")
+    static let elementWater = NSLocalizedString("cosmogram.element.water", comment: "Water")
+    
+    // Cosmogram element balance descriptions
+    static func elementBalanceSame(_ element: String) -> String {
+        String(format: NSLocalizedString("cosmogram.elementBalance.same", comment: "All three placements share the %@ element, creating powerful focus and intensity in this energy."), element)
+    }
+    static let elementBalanceTwoElements = NSLocalizedString("cosmogram.elementBalance.two", comment: "Your chart balances two elemental energies, creating dynamic interplay between different life approaches.")
+    static let elementBalanceThreeElements = NSLocalizedString("cosmogram.elementBalance.three", comment: "Three different elements create a well-rounded, multifaceted personality with diverse strengths and perspectives.")
+    
+    // Cosmogram sign descriptions
+    static func sunSignDetail(_ sign: String) -> String {
+        String(format: NSLocalizedString("cosmogram.sunSign.detail", comment: "Your Sun in %@ illuminates your path with unique qualities. This is your essential self, your vitality, and the core of your being."), sign)
+    }
+    static func moonSignDetail(_ sign: String) -> String {
+        String(format: NSLocalizedString("cosmogram.moonSign.detail", comment: "With the Moon in %@, your emotional world is colored by distinct sensibilities. This placement reveals how you process feelings and seek comfort."), sign)
+    }
+    static func risingSignDetail(_ sign: String) -> String {
+        String(format: NSLocalizedString("cosmogram.risingSign.detail", comment: "%@ rising shapes how others perceive you and how you approach new situations. This is your mask and your authentic first impression."), sign)
+    }
+    
     // MARK: - Horoscope View
     static let selectYourZodiacSign = NSLocalizedString("Select Your Zodiac Sign", comment: "Prompt for selecting zodiac sign")
     static let chooseManually = NSLocalizedString("Choose Manually", comment: "Button to manually choose zodiac sign")

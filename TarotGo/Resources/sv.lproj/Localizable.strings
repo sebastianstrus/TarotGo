@@ -1,0 +1,22 @@
+/* Cosmogram View */
+"cosmogram.enterBirthDate" = "Ange Ditt Födelsedatum";
+"cosmogram.generatePrompt" = "Generera ditt personliga födelsehoroskop baserat på ditt födelsedatum";
+"cosmogram.addBirthDate" = "Lägg till Födelsedatum";
+"cosmogram.bigThree" = "Dina Stora Tre";
+"cosmogram.sunSign" = "Soltecken";
+"cosmogram.sunSign.desc" = "Din kärnidentitet och livskraft";
+"cosmogram.moonSign" = "Måntecken";
+"cosmogram.moonSign.desc" = "Din emotionella natur och inre värld";
+"cosmogram.risingSign" = "Ascendent";
+"cosmogram.risingSign.desc" = "Din yttre personlighet och första intryck";
+"cosmogram.elementalBalance" = "Elementär Balans";
+"cosmogram.element.fire" = "Eld";
+"cosmogram.element.earth" = "Jord";
+"cosmogram.element.air" = "Luft";
+"cosmogram.element.water" = "Vatten";
+"cosmogram.elementBalance.same" = "Alla tre placeringarna delar %@-elementet och skapar kraftfullt fokus och intensitet i denna energi.";
+"cosmogram.elementBalance.two" = "Ditt diagram balanserar två elementära energier och skapar dynamiskt samspel mellan olika livsansatser.";
+"cosmogram.elementBalance.three" = "Tre olika element skapar en balanserad, mångfacetterad personlighet med olika styrkor och perspektiv.";
+"cosmogram.sunSign.detail" = "Din sol i %@ lyser upp din väg med unika egenskaper. Detta är ditt väsentliga jag, din vitalitet och kärnan i din varelse.";
+"cosmogram.moonSign.detail" = "Med månen i %@ är din emotionella värld färgad av distinkta känsligheter. Denna placering avslöjar hur du bearbetar känslor och söker tröst.";
+"cosmogram.risingSign.detail" = "%@ stigande formar hur andra uppfattar dig och hur du närmar dig nya situationer. Detta är din mask och ditt autentiska första intryck.";

@@ -69,11 +69,11 @@ struct CosmogramView: View {
                 .font(.system(size: 60))
                 .foregroundColor(AppTheme.gold.opacity(0.6))
             
-            Text("Enter Your Birth Date")
+            Text(L10n.enterYourBirthDateCosmogram)
                 .font(AppTheme.serifFont(size: 24, weight: .light))
                 .foregroundStyle(AppTheme.goldGradient)
             
-            Text("Generate your personal birth chart based on your birth date")
+            Text(L10n.generateBirthChartPrompt)
                 .font(.system(size: 15))
                 .foregroundColor(AppTheme.textSecondary)
                 .multilineTextAlignment(.center)
@@ -81,7 +81,7 @@ struct CosmogramView: View {
             Button {
                 showBirthDateInput = true
             } label: {
-                Text("Add Birth Date")
+                Text(L10n.addBirthDateButton)
                     .font(.system(size: 16, weight: .medium))
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
@@ -105,28 +105,28 @@ struct CosmogramView: View {
             
             // Big Three
             VStack(spacing: 16) {
-                Text("Your Big Three")
+                Text(L10n.bigThreeTitle)
                     .font(AppTheme.serifFont(size: 20, weight: .medium))
                     .foregroundStyle(AppTheme.goldGradient)
                 
                 bigThreeCard(
-                    title: "Sun Sign",
+                    title: L10n.sunSignTitle,
                     sign: sunSign,
-                    description: "Your core identity and life force",
+                    description: L10n.sunSignDescription,
                     detail: sunSignDescription(sunSign)
                 )
                 
                 bigThreeCard(
-                    title: "Moon Sign",
+                    title: L10n.moonSignTitle,
                     sign: moonSign,
-                    description: "Your emotional nature and inner world",
+                    description: L10n.moonSignDescription,
                     detail: moonSignDescription(moonSign)
                 )
                 
                 bigThreeCard(
-                    title: "Rising Sign",
+                    title: L10n.risingSignTitle,
                     sign: risingSign,
-                    description: "Your outward personality and first impression",
+                    description: L10n.risingSignDescription,
                     detail: risingSignDescription(risingSign)
                 )
             }
@@ -139,12 +139,12 @@ struct CosmogramView: View {
                 HStack {
                     Image(systemName: "star.fill")
                         .foregroundColor(AppTheme.gold)
-                    Text("Your Cosmic Blueprint")
+                    Text(L10n.yourCosmicBlueprint)
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundStyle(AppTheme.goldGradient)
                 }
                 
-                Text("Your chart reveals a unique combination of energies. The \(sunSign.name) Sun gives you core vitality, while your \(moonSign.name) Moon shapes your emotional landscape. With \(risingSign.name) rising, you present yourself to the world with distinct grace. Together, these create your cosmic fingerprint.")
+                Text(L10n.yourChartReveals(sunSign.name, moonSign.name, risingSign.name))
                     .font(.system(size: 15, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
                     .lineSpacing(6)
@@ -267,7 +267,7 @@ struct CosmogramView: View {
         let risingElement = element(for: rising)
         
         return VStack(spacing: 16) {
-            Text("Elemental Balance")
+            Text(L10n.elementalBalanceTitle)
                 .font(AppTheme.serifFont(size: 18, weight: .medium))
                 .foregroundStyle(AppTheme.goldGradient)
             
@@ -324,10 +324,10 @@ struct CosmogramView: View {
     
     private func element(for sign: ZodiacSign) -> String {
         switch sign {
-        case .aries, .leo, .sagittarius: return "Fire"
-        case .taurus, .virgo, .capricorn: return "Earth"
-        case .gemini, .libra, .aquarius: return "Air"
-        case .cancer, .scorpio, .pisces: return "Water"
+        case .aries, .leo, .sagittarius: return L10n.elementFire
+        case .taurus, .virgo, .capricorn: return L10n.elementEarth
+        case .gemini, .libra, .aquarius: return L10n.elementAir
+        case .cancer, .scorpio, .pisces: return L10n.elementWater
         }
     }
     
@@ -342,15 +342,15 @@ struct CosmogramView: View {
     }
     
     private func sunSignDescription(_ sign: ZodiacSign) -> String {
-        return "Your Sun in \(sign.name) illuminates your path with unique qualities. This is your essential self, your vitality, and the core of your being."
+        return L10n.sunSignDetail(sign.name)
     }
     
     private func moonSignDescription(_ sign: ZodiacSign) -> String {
-        return "With the Moon in \(sign.name), your emotional world is colored by distinct sensibilities. This placement reveals how you process feelings and seek comfort."
+        return L10n.moonSignDetail(sign.name)
     }
     
     private func risingSignDescription(_ sign: ZodiacSign) -> String {
-        return "\(sign.name) rising shapes how others perceive you and how you approach new situations. This is your mask and your authentic first impression."
+        return L10n.risingSignDetail(sign.name)
     }
     
     private func elementBalanceDescription(sun: String, moon: String, rising: String) -> String {
@@ -358,11 +358,11 @@ struct CosmogramView: View {
         let uniqueElements = Set(elements)
         
         if uniqueElements.count == 1 {
-            return "All three placements share the \(sun) element, creating powerful focus and intensity in this energy."
+            return L10n.elementBalanceSame(sun)
         } else if uniqueElements.count == 2 {
-            return "Your chart balances two elemental energies, creating dynamic interplay between different life approaches."
+            return L10n.elementBalanceTwoElements
         } else {
-            return "Three different elements create a well-rounded, multifaceted personality with diverse strengths and perspectives."
+            return L10n.elementBalanceThreeElements
         }
     }
 }

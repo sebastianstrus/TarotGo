@@ -1,0 +1,22 @@
+/* Cosmogram View */
+"cosmogram.enterBirthDate" = "Geben Sie Ihr Geburtsdatum ein";
+"cosmogram.generatePrompt" = "Erstellen Sie Ihr persönliches Geburtshoroskop basierend auf Ihrem Geburtsdatum";
+"cosmogram.addBirthDate" = "Geburtsdatum hinzufügen";
+"cosmogram.bigThree" = "Ihre Großen Drei";
+"cosmogram.sunSign" = "Sonnenzeichen";
+"cosmogram.sunSign.desc" = "Ihre Kernidentität und Lebenskraft";
+"cosmogram.moonSign" = "Mondzeichen";
+"cosmogram.moonSign.desc" = "Ihre emotionale Natur und innere Welt";
+"cosmogram.risingSign" = "Aszendent";
+"cosmogram.risingSign.desc" = "Ihre äußere Persönlichkeit und erster Eindruck";
+"cosmogram.elementalBalance" = "Elementare Balance";
+"cosmogram.element.fire" = "Feuer";
+"cosmogram.element.earth" = "Erde";
+"cosmogram.element.air" = "Luft";
+"cosmogram.element.water" = "Wasser";
+"cosmogram.elementBalance.same" = "Alle drei Platzierungen teilen das %@-Element und schaffen kraftvolle Fokussierung und Intensität in dieser Energie.";
+"cosmogram.elementBalance.two" = "Ihr Horoskop balanciert zwei elementare Energien und schafft ein dynamisches Zusammenspiel zwischen verschiedenen Lebensansätzen.";
+"cosmogram.elementBalance.three" = "Drei verschiedene Elemente schaffen eine vielseitige, facettenreiche Persönlichkeit mit verschiedenen Stärken und Perspektiven.";
+"cosmogram.sunSign.detail" = "Ihre Sonne in %@ erleuchtet Ihren Weg mit einzigartigen Qualitäten. Dies ist Ihr wesentliches Selbst, Ihre Vitalität und der Kern Ihres Seins.";
+"cosmogram.moonSign.detail" = "Mit dem Mond in %@ ist Ihre emotionale Welt von besonderen Sensibilitäten geprägt. Diese Platzierung zeigt, wie Sie Gefühle verarbeiten und Trost suchen.";
+"cosmogram.risingSign.detail" = "%@ im Aszendenten prägt, wie andere Sie wahrnehmen und wie Sie neue Situationen angehen. Dies ist Ihre Maske und Ihr authentischer erster Eindruck.";

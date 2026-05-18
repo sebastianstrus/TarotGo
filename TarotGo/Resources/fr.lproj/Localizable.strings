@@ -1,0 +1,22 @@
+/* Cosmogram View */
+"cosmogram.enterBirthDate" = "Entrez Votre Date de Naissance";
+"cosmogram.generatePrompt" = "Générez votre thème astral personnel basé sur votre date de naissance";
+"cosmogram.addBirthDate" = "Ajouter la Date de Naissance";
+"cosmogram.bigThree" = "Vos Trois Grands";
+"cosmogram.sunSign" = "Signe Solaire";
+"cosmogram.sunSign.desc" = "Votre identité centrale et force vitale";
+"cosmogram.moonSign" = "Signe Lunaire";
+"cosmogram.moonSign.desc" = "Votre nature émotionnelle et monde intérieur";
+"cosmogram.risingSign" = "Signe Ascendant";
+"cosmogram.risingSign.desc" = "Votre personnalité extérieure et première impression";
+"cosmogram.elementalBalance" = "Équilibre Élémentaire";
+"cosmogram.element.fire" = "Feu";
+"cosmogram.element.earth" = "Terre";
+"cosmogram.element.air" = "Air";
+"cosmogram.element.water" = "Eau";
+"cosmogram.elementBalance.same" = "Les trois placements partagent l'élément %@, créant une concentration puissante et une intensité dans cette énergie.";
+"cosmogram.elementBalance.two" = "Votre thème équilibre deux énergies élémentaires, créant une interaction dynamique entre différentes approches de vie.";
+"cosmogram.elementBalance.three" = "Trois éléments différents créent une personnalité équilibrée et multifacette avec diverses forces et perspectives.";
+"cosmogram.sunSign.detail" = "Votre Soleil en %@ illumine votre chemin avec des qualités uniques. C'est votre essence, votre vitalité et le cœur de votre être.";
+"cosmogram.moonSign.detail" = "Avec la Lune en %@, votre monde émotionnel est coloré par des sensibilités distinctes. Ce placement révèle comment vous traitez les sentiments et cherchez le réconfort.";
+"cosmogram.risingSign.detail" = "%@ ascendant façonne comment les autres vous perçoivent et comment vous abordez de nouvelles situations. C'est votre masque et votre authentique première impression.";

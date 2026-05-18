@@ -1,0 +1,22 @@
+/* Cosmogram View */
+"cosmogram.enterBirthDate" = "生年月日を入力";
+"cosmogram.generatePrompt" = "生年月日に基づいてパーソナルな出生図を作成します";
+"cosmogram.addBirthDate" = "生年月日を追加";
+"cosmogram.bigThree" = "ビッグスリー";
+"cosmogram.sunSign" = "太陽星座";
+"cosmogram.sunSign.desc" = "あなたの核となるアイデンティティと生命力";
+"cosmogram.moonSign" = "月星座";
+"cosmogram.moonSign.desc" = "あなたの感情的な性質と内面世界";
+"cosmogram.risingSign" = "上昇星座";
+"cosmogram.risingSign.desc" = "あなたの外向的な性格と第一印象";
+"cosmogram.elementalBalance" = "エレメントバランス";
+"cosmogram.element.fire" = "火";
+"cosmogram.element.earth" = "地";
+"cosmogram.element.air" = "風";
+"cosmogram.element.water" = "水";
+"cosmogram.elementBalance.same" = "3つの配置すべてが%@エレメントを共有し、このエネルギーに強力な集中と強度を生み出します。";
+"cosmogram.elementBalance.two" = "あなたのチャートは2つのエレメントエネルギーをバランスさせ、異なる人生へのアプローチ間で動的な相互作用を生み出します。";
+"cosmogram.elementBalance.three" = "3つの異なるエレメントが、多様な強みと視点を持つバランスの取れた多面的な性格を作り出します。";
+"cosmogram.sunSign.detail" = "%@の太陽はユニークな資質であなたの道を照らします。これはあなたの本質的な自己、活力、そして存在の核心です。";
+"cosmogram.moonSign.detail" = "%@の月により、あなたの感情世界は独特の感受性で彩られています。この配置は、感情をどう処理し慰めを求めるかを明らかにします。";
+"cosmogram.risingSign.detail" = "%@上昇は、他者があなたをどう認識し、新しい状況にどう取り組むかを形成します。これはあなたの仮面であり、本物の第一印象です。";

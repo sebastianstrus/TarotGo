@@ -1,0 +1,22 @@
+/* Cosmogram View */
+"cosmogram.enterBirthDate" = "Enter Your Birth Date";
+"cosmogram.generatePrompt" = "Generate your personal birth chart based on your birth date";
+"cosmogram.addBirthDate" = "Add Birth Date";
+"cosmogram.bigThree" = "Your Big Three";
+"cosmogram.sunSign" = "Sun Sign";
+"cosmogram.sunSign.desc" = "Your core identity and life force";
+"cosmogram.moonSign" = "Moon Sign";
+"cosmogram.moonSign.desc" = "Your emotional nature and inner world";
+"cosmogram.risingSign" = "Rising Sign";
+"cosmogram.risingSign.desc" = "Your outward personality and first impression";
+"cosmogram.elementalBalance" = "Elemental Balance";
+"cosmogram.element.fire" = "Fire";
+"cosmogram.element.earth" = "Earth";
+"cosmogram.element.air" = "Air";
+"cosmogram.element.water" = "Water";
+"cosmogram.elementBalance.same" = "All three placements share the %@ element, creating powerful focus and intensity in this energy.";
+"cosmogram.elementBalance.two" = "Your chart balances two elemental energies, creating dynamic interplay between different life approaches.";
+"cosmogram.elementBalance.three" = "Three different elements create a well-rounded, multifaceted personality with diverse strengths and perspectives.";
+"cosmogram.sunSign.detail" = "Your Sun in %@ illuminates your path with unique qualities. This is your essential self, your vitality, and the core of your being.";
+"cosmogram.moonSign.detail" = "With the Moon in %@, your emotional world is colored by distinct sensibilities. This placement reveals how you process feelings and seek comfort.";
+"cosmogram.risingSign.detail" = "%@ rising shapes how others perceive you and how you approach new situations. This is your mask and your authentic first impression.";
