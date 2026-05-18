@@ -110,19 +110,25 @@ struct SettingsView: View {
                         .tint(AppTheme.gold)
                     
                     if toggleState {
-                        DatePicker(
-                            L10n.settingsReminderTime,
-                            selection: $selectedDate,
-                            displayedComponents: .hourAndMinute
-                        )
-                        .datePickerStyle(.compact)
-                        .tint(AppTheme.gold)
-                        .onChange(of: selectedDate) { oldValue, newValue in
-                            let components = Calendar.current.dateComponents([.hour, .minute], from: newValue)
-                            notificationHour = components.hour ?? 9
-                            notificationMinute = components.minute ?? 0
-                            Task {
-                                await scheduleNotification()
+                        HStack {
+                            Text(L10n.settingsReminderTime)
+                                .foregroundColor(AppTheme.textPrimary)
+                            Spacer()
+                            DatePicker(
+                                "",
+                                selection: $selectedDate,
+                                displayedComponents: .hourAndMinute
+                            )
+                            .labelsHidden()
+                            .colorScheme(.dark)
+                            .tint(AppTheme.gold)
+                            .onChange(of: selectedDate) { oldValue, newValue in
+                                let components = Calendar.current.dateComponents([.hour, .minute], from: newValue)
+                                notificationHour = components.hour ?? 9
+                                notificationMinute = components.minute ?? 0
+                                Task {
+                                    await scheduleNotification()
+                                }
                             }
                         }
                         .listRowSeparator(.hidden)
