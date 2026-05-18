@@ -43,7 +43,7 @@ struct LearnPalmistryView: View {
                                 subtitle: L10n.learnPalmistryHistorySubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                         
                         // 2. Palm Basic Meanings
                         NavigationLink(destination: PalmBasicMeaningsView()) {
@@ -53,7 +53,7 @@ struct LearnPalmistryView: View {
                                 subtitle: L10n.learnPalmistryBasicMeaningsSubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                         
                         // 3. How to Read
                         NavigationLink(destination: HowToReadPalmView()) {
@@ -63,7 +63,7 @@ struct LearnPalmistryView: View {
                                 subtitle: L10n.learnPalmistryHowToReadSubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                         
                         // 4. Palmistry & Mind
                         NavigationLink(destination: PalmistryAndMindView()) {
@@ -73,7 +73,7 @@ struct LearnPalmistryView: View {
                                 subtitle: L10n.learnPalmistryMindSubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                         
                         // 5. FAQ
                         NavigationLink(destination: PalmistryFAQView()) {
@@ -83,7 +83,7 @@ struct LearnPalmistryView: View {
                                 subtitle: L10n.learnPalmistryFaqSubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                     }
                     .padding(.horizontal, 30)
                     

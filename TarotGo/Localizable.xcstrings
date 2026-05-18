@@ -2578,116 +2578,501 @@
         }
       }
     },
-    "birthDateInput.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Gib dein Geburtsdatum ein, um personalisierte tägliche Karten und astrologische Einsichten zu erhalten" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Enter your birth date to unlock personalized daily cards and astrological insights" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Ingresa tu fecha de nacimiento para desbloquear cartas diarias personalizadas y conocimientos astrológicos" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Saisissez votre date de naissance pour débloquer des cartes quotidiennes personnalisées et des insights astrologiques" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Inserisci la tua data di nascita per sbloccare carte giornaliere personalizzate e approfondimenti astrologici" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "生年月日を入力して、パーソナライズされた每日のカードと占星術の洞察をアンロックしましょう" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Skriv inn fødselsdatoen din for å låse opp personlige daglige kort og astrologiske innsikter" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Wprowadź swoją datę urodzenia, aby odblokować spersonalizowane codzienne karty i astrologiczne spostrzeżenia" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Insira sua data de nascimento para desbloquear cartas diárias personalizadas e insights astrológicos" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Ange ditt födelsedatum för att låsa upp personliga dagliga kort och astrologiska insikter" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Введіть дату народження, щоб отримати персоналізовані щоденні карти та астрологічні прогнози" } }
+    "birthDateInput.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gib dein Geburtsdatum ein, um personalisierte tägliche Karten und astrologische Einsichten zu erhalten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your birth date to unlock personalized daily cards and astrological insights"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa tu fecha de nacimiento para desbloquear cartas diarias personalizadas y conocimientos astrológicos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saisissez votre date de naissance pour débloquer des cartes quotidiennes personnalisées et des insights astrologiques"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci la tua data di nascita per sbloccare carte giornaliere personalizzate e approfondimenti astrologici"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生年月日を入力して、パーソナライズされた每日のカードと占星術の洞察をアンロックしましょう"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv inn fødselsdatoen din for å låse opp personlige daglige kort og astrologiske innsikter"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wprowadź swoją datę urodzenia, aby odblokować spersonalizowane codzienne karty i astrologiczne spostrzeżenia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insira sua data de nascimento para desbloquear cartas diárias personalizadas e insights astrológicos"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ange ditt födelsedatum för att låsa upp personliga dagliga kort och astrologiska insikter"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введіть дату народження, щоб отримати персоналізовані щоденні карти та астрологічні прогнози"
+          }
+        }
       }
     },
-    "birthDateInput.lifePath": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Lebensweg" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Life Path" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Camino de vida" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Chemin de vie" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Percorso di vita" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "ライフパス" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Livsvei" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Ścieżka życia" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Caminho de vida" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Livsväg" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Життєвий шлях" } }
+    "birthDateInput.lifePath" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebensweg"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Life Path"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camino de vida"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chemin de vie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Percorso di vita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライフパス"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livsvei"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ścieżka życia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caminho de vida"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livsväg"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Життєвий шлях"
+          }
+        }
       }
     },
-    "birthDateInput.numerology": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Numerologie" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Numerology" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Numerología" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Numérologie" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Numerologia" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "数秘術" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Numerologi" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Numerologia" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Numerologia" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Numerologi" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Нумерологія" } }
+    "birthDateInput.numerology" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerologie"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerology"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerología"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numérologie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerologia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数秘術"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerologi"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerologia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerologia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerologi"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нумерологія"
+          }
+        }
       }
     },
-    "birthDateInput.privacy": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Dein Geburtsdatum wird sicher auf deinem Gerät gespeichert und niemals geteilt" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Your birth date is stored securely on your device and never shared" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Tu fecha de nacimiento se almacena de forma segura en tu dispositivo y nunca se comparte" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Votre date de naissance est stockée en toute sécurité sur votre appareil et jamais partagée" } },
-        "it": { "stringUnit": { "state": "translated", "value": "La tua data di nascita è memorizzata in modo sicuro sul tuo dispositivo e non viene mai condivisa" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "あなたの生年月日は端末内に安全に保存され、共有されることはありません" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Fødselsdatoen din lagres sikkert på enheten din og deles aldri" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Twoja data urodzenia jest przechowywana bezpiecznie na Twoim urządzeniu i nigdy nie udostępniana" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua data de nascimento é armazenada com segurança no seu dispositivo e nunca é compartilhada" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Ditt födelsedatum lagras säkert på din enhet och delas aldrig" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Ваша дата народження зберігається безпечно на вашому пристрої та ніколи не передається" } }
+    "birthDateInput.privacy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Geburtsdatum wird sicher auf deinem Gerät gespeichert und niemals geteilt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your birth date is stored securely on your device and never shared"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu fecha de nacimiento se almacena de forma segura en tu dispositivo y nunca se comparte"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre date de naissance est stockée en toute sécurité sur votre appareil et jamais partagée"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua data di nascita è memorizzata in modo sicuro sul tuo dispositivo e non viene mai condivisa"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生年月日は端末内に安全に保存され、共有されることはありません"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fødselsdatoen din lagres sikkert på enheten din og deles aldri"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja data urodzenia jest przechowywana bezpiecznie na Twoim urządzeniu i nigdy nie udostępniana"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua data de nascimento é armazenada com segurança no seu dispositivo e nunca é compartilhada"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditt födelsedatum lagras säkert på din enhet och delas aldrig"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша дата народження зберігається безпечно на вашому пристрої та ніколи не передається"
+          }
+        }
       }
     },
-    "birthDateInput.selectDate": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Wähle dein Geburtsdatum" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Select Your Birth Date" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Selecciona tu fecha de nacimiento" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Sélectionnez votre date de naissance" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Seleziona la tua data di nascita" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "生年月日を選択" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Velg fødselsdatoen din" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Wybierz swoją datę urodzenia" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Selecione sua data de nascimento" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Välj ditt födelsedatum" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Оберіть дату народження" } }
+    "birthDateInput.selectDate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle dein Geburtsdatum"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select Your Birth Date"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona tu fecha de nacimiento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionnez votre date de naissance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona la tua data di nascita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生年月日を選択"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg fødselsdatoen din"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz swoją datę urodzenia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecione sua data de nascimento"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj ditt födelsedatum"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оберіть дату народження"
+          }
+        }
       }
     },
-    "birthDateInput.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Dein Geburtsdatum" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Your Birth Date" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Tu fecha de nacimiento" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Votre date de naissance" } },
-        "it": { "stringUnit": { "state": "translated", "value": "La tua data di nascita" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "あなたの生年月日" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Fødselsdatoen din" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Twoja data urodzenia" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua data de nascimento" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Ditt födelsedatum" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Ваша дата народження" } }
+    "birthDateInput.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Geburtsdatum"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Birth Date"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu fecha de nacimiento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre date de naissance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua data di nascita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの生年月日"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fødselsdatoen din"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja data urodzenia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua data de nascimento"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditt födelsedatum"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша дата народження"
+          }
+        }
       }
     },
-    "birthDateInput.zodiacSign": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Sternzeichen" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Zodiac Sign" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Signo del zodíaco" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Signe du zodiaque" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Segno zodiacale" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "星座" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Stjernetegn" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Znak zodiaku" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Signo do zodíaco" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Stjärntecken" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Знак зодіаку" } }
+    "birthDateInput.zodiacSign" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sternzeichen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zodiac Sign"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signo del zodíaco"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signe du zodiaque"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segno zodiacale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "星座"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stjernetegn"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Znak zodiaku"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signo do zodíaco"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stjärntecken"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Знак зодіаку"
+          }
+        }
       }
     },
     "Birthday" : {
@@ -127141,21 +127526,76 @@
         }
       }
     },
-    "Open Settings": {
-      "comment": "A button that opens the user's device settings.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Einstellungen öffnen" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Open Settings" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Abrir Configuración" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Ouvrir les réglages" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Apri Impostazioni" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "設定を開く" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Åpne innstillinger" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Otwórz ustawienia" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Abrir Configurações" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Öppna inställningar" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Відкрити налаштування" } }
+    "Open Settings" : {
+      "comment" : "A button that opens the user's device settings.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen öffnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Settings"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir Configuración"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir les réglages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri Impostazioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を開く"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åpne innstillinger"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otwórz ustawienia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir Configurações"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppna inställningar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відкрити налаштування"
+          }
+        }
       }
     },
     "Orange" : {
@@ -149966,36 +150406,146 @@
         }
       }
     },
-    "settings.addBirthDate": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Geburtsdatum hinzufügen" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Add Birth Date" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Agregar fecha de nacimiento" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Ajouter la date de naissance" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Aggiungi data di nascita" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "生年月日を追加" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Legg til fødselsdato" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Dodaj datę urodzenia" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Adicionar data de nascimento" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Lägg till födelsedatum" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Додати дату народження" } }
+    "settings.addBirthDate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geburtsdatum hinzufügen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Birth Date"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar fecha de nacimiento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter la date de naissance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi data di nascita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生年月日を追加"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til fødselsdato"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj datę urodzenia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar data de nascimento"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till födelsedatum"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Додати дату народження"
+          }
+        }
       }
     },
-    "settings.addBirthDate.desc": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Personalisiere deine Lesungen mit Astrologie" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Personalize your readings with astrology" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Personaliza tus lecturas con astrología" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Personnalisez vos lectures avec l'astrologie" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Personalizza le tue letture con l'astrologia" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "占星術でリーディングをパーソナライズ" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Personliggjør lesningene dine med astrologi" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Spersonalizuj swoje odczyty dzięki astrologii" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Personalize suas leituras com astrologia" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Personanpassa dina läsningar med astrologi" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Персоналізуйте свої читання за допомогою астрології" } }
+    "settings.addBirthDate.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalisiere deine Lesungen mit Astrologie"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalize your readings with astrology"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personaliza tus lecturas con astrología"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personnalisez vos lectures avec l'astrologie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalizza le tue letture con l'astrologia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "占星術でリーディングをパーソナライズ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personliggjør lesningene dine med astrologi"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spersonalizuj swoje odczyty dzięki astrologii"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalize suas leituras com astrologia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personanpassa dina läsningar med astrologi"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Персоналізуйте свої читання за допомогою астрології"
+          }
+        }
       }
     },
     "settings.appearance" : {
@@ -150070,36 +150620,146 @@
         }
       }
     },
-    "settings.birthDate": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Geburtsdatum" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Birth Date" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Fecha de Nacimiento" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Date de Naissance" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Data di Nascita" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "生年月日" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Fødselsdato" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Data Urodzenia" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Data de Nascimento" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Födelsedatum" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Дата Народження" } }
+    "settings.birthDate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geburtsdatum"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birth Date"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fecha de Nacimiento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date de Naissance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data di Nascita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生年月日"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fødselsdato"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data Urodzenia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data de Nascimento"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Födelsedatum"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дата Народження"
+          }
+        }
       }
     },
-    "settings.birthDate.footer": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Dein Geburtsdatum ermöglicht personalisierte Tageskarten und astrologische Einsichten. Es wird lokal gespeichert und niemals geteilt." } },
-        "en": { "stringUnit": { "state": "translated", "value": "Your birth date enables personalized card of the day and astrological insights. It's stored locally and never shared." } },
-        "es": { "stringUnit": { "state": "translated", "value": "Tu fecha de nacimiento permite una carta del día personalizada y conocimientos astrológicos. Se almacena localmente y nunca se comparte." } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Votre date de naissance permet une carte du jour personnalisée et des perspectives astrologiques. Elle est stockée localement et jamais partagée." } },
-        "it": { "stringUnit": { "state": "translated", "value": "La tua data di nascita consente la carta del giorno personalizzata e approfondimenti astrologici. Viene memorizzata localmente e mai condivisa." } },
-        "ja": { "stringUnit": { "state": "translated", "value": "生年月日を設定すると、パーソナライズされた今日のカードと占星術的な洞察が可能になります。データは端末内に保存され、共有されることはありません。" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Fødselsdatoen din muliggjør personlig dagens kort og astrologiske innsikter. Den lagres lokalt og deles aldri." } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Twoja data urodzenia umożliwia spersonalizowaną kartę dnia i wgląd astrologiczny. Jest przechowywana lokalnie i nigdy nie udostępniana." } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Sua data de nascimento permite uma carta do dia personalizada e insights astrológicos. Ela é armazenada localmente e nunca compartilhada." } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Ditt födelsedatum möjliggör personligt dagskort och astrologiska insikter. Det lagras lokalt och delas aldrig." } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Ваша дата народження дозволяє отримувати персоналізовану карту дня та астрологічні прогнози. Вона зберігається локально і ніколи не передається." } }
+    "settings.birthDate.footer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Geburtsdatum ermöglicht personalisierte Tageskarten und astrologische Einsichten. Es wird lokal gespeichert und niemals geteilt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your birth date enables personalized card of the day and astrological insights. It's stored locally and never shared."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu fecha de nacimiento permite una carta del día personalizada y conocimientos astrológicos. Se almacena localmente y nunca se comparte."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre date de naissance permet une carte du jour personnalisée et des perspectives astrologiques. Elle est stockée localement et jamais partagée."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua data di nascita consente la carta del giorno personalizzata e approfondimenti astrologici. Viene memorizzata localmente e mai condivisa."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生年月日を設定すると、パーソナライズされた今日のカードと占星術的な洞察が可能になります。データは端末内に保存され、共有されることはありません。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fødselsdatoen din muliggjør personlig dagens kort og astrologiske innsikter. Den lagres lokalt og deles aldri."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja data urodzenia umożliwia spersonalizowaną kartę dnia i wgląd astrologiczny. Jest przechowywana lokalnie i nigdy nie udostępniana."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua data de nascimento permite uma carta do dia personalizada e insights astrológicos. Ela é armazenada localmente e nunca compartilhada."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditt födelsedatum möjliggör personligt dagskort och astrologiska insikter. Det lagras lokalt och delas aldrig."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша дата народження дозволяє отримувати персоналізовану карту дня та астрологічні прогнози. Вона зберігається локально і ніколи не передається."
+          }
+        }
       }
     },
     "settings.cardBack" : {
@@ -150822,20 +151482,75 @@
         }
       }
     },
-    "settings.change": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Ändern" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Change" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Cambiar" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Modifier" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Cambia" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "変更" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Endre" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Zmień" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Alterar" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Ändra" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Змінити" } }
+    "settings.change" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ändern"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変更"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endre"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zmień"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alterar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ändra"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Змінити"
+          }
+        }
       }
     },
     "settings.dailyReminder" : {
@@ -151697,20 +152412,75 @@
         }
       }
     },
-    "settings.personalization": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": { "stringUnit": { "state": "translated", "value": "Personalisierung" } },
-        "en": { "stringUnit": { "state": "translated", "value": "Personalization" } },
-        "es": { "stringUnit": { "state": "translated", "value": "Personalización" } },
-        "fr": { "stringUnit": { "state": "translated", "value": "Personnalisation" } },
-        "it": { "stringUnit": { "state": "translated", "value": "Personalizzazione" } },
-        "ja": { "stringUnit": { "state": "translated", "value": "パーソナライズ" } },
-        "nb": { "stringUnit": { "state": "translated", "value": "Personalisering" } },
-        "pl": { "stringUnit": { "state": "translated", "value": "Personalizacja" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Personalização" } },
-        "sv": { "stringUnit": { "state": "translated", "value": "Personalisering" } },
-        "uk": { "stringUnit": { "state": "translated", "value": "Персоналізація" } }
+    "settings.personalization" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalisierung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalization"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalización"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personnalisation"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalizzazione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パーソナライズ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalisering"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalizacja"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalização"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalisering"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Персоналізація"
+          }
+        }
       }
     },
     "settings.privacyPolicy" : {

@@ -59,7 +59,9 @@ struct MainTabView: View {
             }
             
             Tab.init(TarotTab.settings.title, systemImage: TarotTab.settings.symbolImage, value: .settings) {
-                SettingsView()
+                NavigationStack {
+                    SettingsView()
+                }
             }
         } effects: { tab in
             switch tab {

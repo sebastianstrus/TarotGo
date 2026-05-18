@@ -43,7 +43,7 @@ struct LearnTarotView: View {
                                 subtitle: L10n.learnHistorySubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                         
                         // 2. Card Basic Meanings
                         NavigationLink(destination: CardBasicMeaningsView()) {
@@ -53,7 +53,7 @@ struct LearnTarotView: View {
                                 subtitle: L10n.learnBasicMeaningsSubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                         
                         // 3. How to Read
                         NavigationLink(destination: HowToReadView()) {
@@ -63,7 +63,7 @@ struct LearnTarotView: View {
                                 subtitle: L10n.learnHowToReadSubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                         
                         // 4. Tarot & Mind
                         NavigationLink(destination: TarotAndMindView()) {
@@ -73,7 +73,7 @@ struct LearnTarotView: View {
                                 subtitle: L10n.learnTarotMindSubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                         
                         // 5. FAQ
                         NavigationLink(destination: FAQView()) {
@@ -83,7 +83,7 @@ struct LearnTarotView: View {
                                 subtitle: L10n.learnFaqSubtitle
                             )
                         }
-                        .buttonStyle(HomeButtonStyle())
+                        .buttonStyle(MainButtonStyle())
                     }
                     .padding(.horizontal, 30)
                     
