@@ -93,65 +93,65 @@ struct DestinyMatrixInputView: View {
                         }
                         
                         // Show date picker only if calculating for someone else or no saved date
-                        if calculateForOther || !hasSavedBirthDate {
-                            VStack(spacing: 20) {
-                                Text(L10n.matrixEnterBirthDate)
-                                    .font(.system(size: 18, weight: .medium))
-                                    .foregroundColor(AppTheme.textPrimary)
-                                
-                                DatePicker(
-                                    "",
-                                    selection: $birthDate,
-                                    in: minDate...maxDate,
-                                    displayedComponents: .date
+                        Group {
+                            if calculateForOther || !hasSavedBirthDate {
+                                VStack(spacing: 20) {
+                                    Text(L10n.matrixEnterBirthDate)
+                                        .font(.system(size: 18, weight: .medium))
+                                        .foregroundColor(AppTheme.textPrimary)
+                                    
+                                    DatePicker(
+                                        "",
+                                        selection: $birthDate,
+                                        in: minDate...maxDate,
+                                        displayedComponents: .date
+                                    )
+                                    .datePickerStyle(.wheel)
+                                    .labelsHidden()
+                                    .colorScheme(.dark)
+                                    .frame(maxWidth: .infinity)
+                                    
+                                    Text(formattedDate)
+                                        .font(AppTheme.serifFont(size: 20, weight: .medium))
+                                        .foregroundColor(AppTheme.gold)
+                                }
+                                .padding(.vertical, 25)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 16)
+                                        .fill(AppTheme.cardGradient)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 16)
+                                                .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                                        )
+                                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
                                 )
-                                .datePickerStyle(.wheel)
-                                .labelsHidden()
-                                .colorScheme(.dark)
+                                .transition(.opacity.combined(with: .scale))
+                            } else {
+                                // Show saved birth date
+                                VStack(spacing: 12) {
+                                    Text(L10n.matrixYourBirthDate)
+                                        .font(.system(size: 18, weight: .medium))
+                                        .foregroundColor(AppTheme.textPrimary)
+                                    
+                                    Text(formattedDate)
+                                        .font(AppTheme.serifFont(size: 24, weight: .medium))
+                                        .foregroundColor(AppTheme.gold)
+                                }
                                 .frame(maxWidth: .infinity)
-                                .padding(.horizontal, 20)
-                                
-                                Text(formattedDate)
-                                    .font(AppTheme.serifFont(size: 20, weight: .medium))
-                                    .foregroundColor(AppTheme.gold)
+                                .padding(.vertical, 30)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 16)
+                                        .fill(AppTheme.cardGradient)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 16)
+                                                .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                                        )
+                                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
+                                )
+                                .transition(.opacity.combined(with: .scale))
                             }
-                            .padding(.vertical, 25)
-                            .background(
-                                RoundedRectangle(cornerRadius: 16)
-                                    .fill(AppTheme.cardGradient)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 16)
-                                            .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
-                                    )
-                                    .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
-                            )
-                            .padding(.horizontal, 20)
-                            .transition(.opacity.combined(with: .scale))
-                        } else {
-                            // Show saved birth date
-                            VStack(spacing: 12) {
-                                Text(L10n.matrixYourBirthDate)
-                                    .font(.system(size: 18, weight: .medium))
-                                    .foregroundColor(AppTheme.textPrimary)
-                                
-                                Text(formattedDate)
-                                    .font(AppTheme.serifFont(size: 24, weight: .medium))
-                                    .foregroundColor(AppTheme.gold)
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 30)
-                            .background(
-                                RoundedRectangle(cornerRadius: 16)
-                                    .fill(AppTheme.cardGradient)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 16)
-                                            .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
-                                    )
-                                    .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
-                            )
-                            .padding(.horizontal, 20)
-                            .transition(.opacity.combined(with: .scale))
                         }
+                        .padding(.horizontal, 20)
                     }
                     .animation(.easeInOut(duration: 0.3), value: calculateForOther)
                     
