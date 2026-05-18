@@ -213,6 +213,8 @@ enum L10n {
     static let matrixEnterBirthDate = NSLocalizedString("matrix.enterBirthDate", comment: "Enter Your Birth Date")
     static let matrixBirthDate = NSLocalizedString("matrix.birthDate", comment: "Birth Date")
     static let matrixCalculate = NSLocalizedString("matrix.calculate", comment: "Calculate My Matrix")
+    static let matrixCalculateForOther = NSLocalizedString("matrix.calculateForOther", comment: "Calculate for someone else")
+    static let matrixYourBirthDate = NSLocalizedString("matrix.yourBirthDate", comment: "Your Birth Date")
     
     static let matrixYourMatrix = NSLocalizedString("matrix.yourMatrix", comment: "Your Destiny Matrix")
     static let matrixTapCircle = NSLocalizedString("matrix.tapCircle", comment: "Tap any circle to see its meaning")
