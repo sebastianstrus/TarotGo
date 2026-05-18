@@ -70,7 +70,7 @@ struct BirthDateInputView: View {
                                 .foregroundColor(AppTheme.textPrimary)
                             
                             DatePicker(
-                                "Birth Date",
+                                L10n.settingsBirthDate,
                                 selection: $selectedDate,
                                 in: ...Date(),
                                 displayedComponents: .date
