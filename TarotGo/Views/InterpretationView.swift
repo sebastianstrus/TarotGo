@@ -22,6 +22,8 @@ struct InterpretationView: View {
     @State private var interpretationText: String = ""
     @State private var navigateToSummary: Bool = false
     @State private var updatedDrawnCards: [DrawnCard] = []
+    @State private var showExitConfirmation: Bool = false
+    @Environment(\.dismiss) private var dismiss
     
     private var currentCard: DrawnCard? {
         guard currentCardIndex < drawnCards.count else { return nil }
@@ -78,6 +80,30 @@ struct InterpretationView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    showExitConfirmation = true
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+            }
+        }
+        .confirmationDialog(
+            L10n.exitReadingTitle,
+            isPresented: $showExitConfirmation,
+            titleVisibility: .visible
+        ) {
+            Button(L10n.exitReadingConfirm, role: .destructive) {
+                appViewModel.returnToHome()
+                dismiss()
+            }
+            Button(L10n.exitReadingCancel, role: .cancel) {}
+        } message: {
+            Text(L10n.exitReadingMessage)
+        }
         .navigationDestination(isPresented: $navigateToSummary) {
             SummaryView(
                 drawnCards: updatedDrawnCards,

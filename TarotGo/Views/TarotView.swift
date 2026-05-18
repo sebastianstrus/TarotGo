@@ -142,6 +142,7 @@ struct TarotView: View {
             .navigationBarHidden(true)
             .navigationDestination(isPresented: $navigateToNewReading) {
                 NewReadingView()
+                    .toolbar(.hidden, for: .tabBar)
             }
             .navigationDestination(isPresented: $navigateToDailyCard) {
                 CardOfTheDayView()

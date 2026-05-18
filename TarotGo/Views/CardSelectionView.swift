@@ -21,7 +21,9 @@ struct CardSelectionView: View {
     @State private var selectedCards: [TarotCard] = []
     @State private var animatingCardId: String?
     @State private var isProcessingSelection: Bool = false
+    @State private var showExitConfirmation: Bool = false
     @Namespace private var cardNamespace
+    @Environment(\.dismiss) private var dismiss
     
     init(category: IntentionCategory, customQuestion: String?, spreadType: SpreadType) {
         self.category = category
@@ -101,6 +103,30 @@ struct CardSelectionView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    showExitConfirmation = true
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+            }
+        }
+        .confirmationDialog(
+            L10n.exitReadingTitle,
+            isPresented: $showExitConfirmation,
+            titleVisibility: .visible
+        ) {
+            Button(L10n.exitReadingConfirm, role: .destructive) {
+                appViewModel.returnToHome()
+                dismiss()
+            }
+            Button(L10n.exitReadingCancel, role: .cancel) {}
+        } message: {
+            Text(L10n.exitReadingMessage)
+        }
         .navigationDestination(isPresented: $navigateToInterpretation) {
             InterpretationView(
                 drawnCards: viewModel.drawnCards,

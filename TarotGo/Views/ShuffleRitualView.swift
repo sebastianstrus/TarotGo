@@ -79,6 +79,8 @@ struct ShuffleRitualView: View {
     @State private var deckFrame: CGRect = .zero
     @State private var fireSoundTask: DispatchWorkItem?
     @State private var gestureCancelled: Bool = false
+    @State private var showExitConfirmation: Bool = false
+    @Environment(\.dismiss) private var dismiss
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
@@ -118,6 +120,30 @@ struct ShuffleRitualView: View {
                 .allowsHitTesting(false)
             }
             .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showExitConfirmation = true
+                    } label: {
+                        Image(systemName: "xmark")
+                            .foregroundStyle(AppTheme.goldGradient)
+                    }
+                }
+            }
+            .confirmationDialog(
+                L10n.exitReadingTitle,
+                isPresented: $showExitConfirmation,
+                titleVisibility: .visible
+            ) {
+                Button(L10n.exitReadingConfirm, role: .destructive) {
+                    appViewModel.returnToHome()
+                    dismiss()
+                }
+                Button(L10n.exitReadingCancel, role: .cancel) {}
+            } message: {
+                Text(L10n.exitReadingMessage)
+            }
             .navigationDestination(isPresented: $navigateToReading) {
                 CardSelectionView(
                     category: category,

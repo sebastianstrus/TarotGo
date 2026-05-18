@@ -21,6 +21,7 @@ struct SummaryView: View {
     @State private var notes: String = ""
     @State private var sessionSaved: Bool = false
     @State private var sharePDFURL: URL?
+    @State private var showExitConfirmation: Bool = false
     @FocusState private var isNotesFocused: Bool
     
     var body: some View {
@@ -79,7 +80,11 @@ struct SummaryView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    returnToHome()
+                    if sessionSaved {
+                        returnToHome()
+                    } else {
+                        showExitConfirmation = true
+                    }
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundStyle(AppTheme.goldGradient)
@@ -97,6 +102,18 @@ struct SummaryView: View {
         .contentShape(Rectangle())
         .onTapGesture {
             isNotesFocused = false
+        }
+        .confirmationDialog(
+            L10n.exitReadingTitle,
+            isPresented: $showExitConfirmation,
+            titleVisibility: .visible
+        ) {
+            Button(L10n.exitReadingConfirm, role: .destructive) {
+                returnToHome()
+            }
+            Button(L10n.exitReadingCancel, role: .cancel) {}
+        } message: {
+            Text(L10n.exitReadingMessage)
         }
         .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
             sharePDFURL = nil

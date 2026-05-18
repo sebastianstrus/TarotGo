@@ -354,6 +354,12 @@ enum L10n {
     static let interpretationContinue = NSLocalizedString("interpretation.continue", comment: "Continue")
     static let interpretationSeeFullReading = NSLocalizedString("interpretation.seeFullReading", comment: "See Full Reading")
 
+    // MARK: - Exit Reading Confirmation
+    static let exitReadingTitle = NSLocalizedString("exitReading.title", comment: "End Reading?")
+    static let exitReadingMessage = NSLocalizedString("exitReading.message", comment: "Your progress will be lost if you exit now.")
+    static let exitReadingConfirm = NSLocalizedString("exitReading.confirm", comment: "End Reading")
+    static let exitReadingCancel = NSLocalizedString("exitReading.cancel", comment: "Continue Reading")
+
     // MARK: - Summary
     static let summaryYourReading = NSLocalizedString("summary.yourReading", comment: "Your Reading")
     static let summaryOverallInsight = NSLocalizedString("summary.overallInsight", comment: "Overall Insight")
