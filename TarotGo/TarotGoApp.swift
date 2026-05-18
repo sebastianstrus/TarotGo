@@ -68,6 +68,7 @@ struct RootView: View {
                 }
             }
         }
+        .preferredColorScheme(.dark)
         .animation(.easeInOut(duration: 0.5), value: appViewModel.showSplashScreen)
         .animation(.easeInOut(duration: 0.5), value: appViewModel.hasCompletedOnboarding)
         .onChange(of: scenePhase) { oldPhase, newPhase in
