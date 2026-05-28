@@ -289,6 +289,17 @@ enum L10n {
     static let matrixFuture = NSLocalizedString("matrix.position.future", comment: "Future Potential")
     static let matrixFutureDesc = NSLocalizedString("matrix.position.future.desc", comment: "Where your energy is headed")
 
+    // MARK: - Destiny Matrix History
+    static let matrixHistoryTitle = NSLocalizedString("matrixHistory.title", comment: "Saved Matrices")
+    static let matrixHistoryEmpty = NSLocalizedString("matrixHistory.empty", comment: "No saved matrices yet")
+    static let matrixHistoryEmptyDesc = NSLocalizedString("matrixHistory.empty.desc", comment: "Your saved Destiny Matrices will appear here")
+    static let matrixHistoryDeleteAlert = NSLocalizedString("matrixHistory.deleteAlert", comment: "Delete Matrix")
+    static let matrixHistoryDeleteMessage = NSLocalizedString("matrixHistory.deleteMessage", comment: "Are you sure you want to delete this saved matrix? This action cannot be undone.")
+    static let matrixHistoryDelete = NSLocalizedString("matrixHistory.delete", comment: "Delete Matrix")
+    static let matrixHistorySavedOn = NSLocalizedString("matrixHistory.savedOn", comment: "Saved on")
+    static let homeMatrixHistory = NSLocalizedString("home.matrixHistory", comment: "Saved Matrices")
+    static let homeMatrixHistorySubtitle = NSLocalizedString("home.matrixHistory.subtitle", comment: "Review your saved Destiny Matrices")
+
     // MARK: - Splash Screen
     static let splashJourneyBegins = NSLocalizedString("splash.journeyBegins", comment: "Your Journey Begins")
     

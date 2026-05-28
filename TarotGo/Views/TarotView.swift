@@ -78,6 +78,16 @@ struct TarotView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
+
+                            // Saved Destiny Matrices
+                            NavigationLink(destination: DestinyMatrixHistoryView()) {
+                                NavigationButton(
+                                    icon: "star.square.on.square.fill",
+                                    title: L10n.homeMatrixHistory,
+                                    subtitle: L10n.homeMatrixHistorySubtitle
+                                )
+                            }
+                            .buttonStyle(NavigationButtonStyle())
                             
                             // Card of the day
                             NavigationLink(destination: CardOfTheDayView()) {
