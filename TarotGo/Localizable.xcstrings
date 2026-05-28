@@ -24877,10 +24877,28 @@
       }
     },
     "home.matrixHistory" : {
-      "comment" : "Saved Matrices"
+      "comment" : "Saved Matrices",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Matrices"
+          }
+        }
+      }
     },
     "home.matrixHistory.subtitle" : {
-      "comment" : "Review your saved Destiny Matrices"
+      "comment" : "Review your saved Destiny Matrices",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review your saved Destiny Matrices"
+          }
+        }
+      }
     },
     "home.newReading" : {
       "extractionState" : "manual",
@@ -126118,25 +126136,88 @@
       }
     },
     "matrixHistory.delete" : {
-      "comment" : "Delete Matrix"
+      "comment" : "Delete Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Matrix"
+          }
+        }
+      }
     },
     "matrixHistory.deleteAlert" : {
-      "comment" : "Delete Matrix"
+      "comment" : "Delete Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Matrix"
+          }
+        }
+      }
     },
     "matrixHistory.deleteMessage" : {
-      "comment" : "Are you sure you want to delete this saved matrix? This action cannot be undone."
+      "comment" : "Are you sure you want to delete this saved matrix? This action cannot be undone.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to delete this saved matrix? This action cannot be undone."
+          }
+        }
+      }
     },
     "matrixHistory.empty" : {
-      "comment" : "No saved matrices yet"
+      "comment" : "No saved matrices yet",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No saved matrices yet"
+          }
+        }
+      }
     },
     "matrixHistory.empty.desc" : {
-      "comment" : "Your saved Destiny Matrices will appear here"
+      "comment" : "Your saved Destiny Matrices will appear here",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your saved Destiny Matrices will appear here"
+          }
+        }
+      }
     },
     "matrixHistory.savedOn" : {
-      "comment" : "Saved on"
+      "comment" : "Saved on",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved on"
+          }
+        }
+      }
     },
     "matrixHistory.title" : {
-      "comment" : "Saved Matrices"
+      "comment" : "Saved Matrices",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Matrices"
+          }
+        }
+      }
     },
     "Maturity" : {
       "comment" : "Numerology: Maturity number label",
