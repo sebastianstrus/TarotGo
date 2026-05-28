@@ -12,6 +12,7 @@ struct DestinyMatrixInputView: View {
     @State private var showResult = false
     @State private var calculatedMatrix: DestinyMatrix?
     @State private var calculateForOther: Bool = false
+    @State private var isCalculating: Bool = false
     
     // Limit date range to reasonable bounds
     private let minDate = Calendar.current.date(from: DateComponents(year: 1900, month: 1, day: 1)) ?? Date()
@@ -182,6 +183,11 @@ struct DestinyMatrixInputView: View {
                         .frame(height: 40)
                 }
             }
+
+            if isCalculating {
+                MatrixCalculatingOverlay()
+                    .transition(.opacity)
+            }
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: $showResult) {
@@ -211,20 +217,174 @@ struct DestinyMatrixInputView: View {
     }
     
     private func calculateMatrix() {
+        guard !isCalculating else { return }
+
         HapticService.shared.impact(.medium)
         SoundService.shared.play(.whoosh, volume: 0.5)
-        
+
         // Save birth date if this is for the user (not for someone else) and no saved date exists
         if !calculateForOther && !hasSavedBirthDate {
             AstrologyService.shared.userBirthDate = birthDate
         }
-        
-        // Calculate matrix
+
+        // Calculate matrix immediately so it's ready when the ritual ends
         calculatedMatrix = DestinyMatrixCalculator.shared.calculate(from: birthDate)
-        
-        // Show result
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            showResult = true
+
+        // Begin mystical reveal
+        withAnimation(.easeInOut(duration: 0.4)) {
+            isCalculating = true
+        }
+        SoundService.shared.play(.magic, volume: 0.5)
+
+        // Mid-ritual heartbeat haptics
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            HapticService.shared.impact(.light)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.4) {
+            HapticService.shared.impact(.light)
+        }
+
+        // Reveal the result after the ritual completes
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.6) {
+            SoundService.shared.play(.bellChime, volume: 0.6)
+            HapticService.shared.impact(.success)
+            withAnimation(.easeInOut(duration: 0.4)) {
+                isCalculating = false
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                showResult = true
+            }
+        }
+    }
+}
+
+// MARK: - Mystical Calculating Overlay
+
+private struct MatrixCalculatingOverlay: View {
+    @State private var outerRotation: Double = 0
+    @State private var innerRotation: Double = 0
+    @State private var ringRotation: Double = 0
+    @State private var pulse: CGFloat = 0.85
+    @State private var glow: Double = 0.35
+    @State private var sparkleScale: CGFloat = 0.8
+    @State private var appear: Bool = false
+
+    var body: some View {
+        ZStack {
+            // Dimmed mystical backdrop
+            Color.black.opacity(0.75)
+                .ignoresSafeArea()
+                .background(.ultraThinMaterial.opacity(0.9))
+
+            // Radiant glow behind the geometry
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            AppTheme.gold.opacity(glow),
+                            AppTheme.mysticalPurple.opacity(glow * 0.6),
+                            Color.clear
+                        ],
+                        center: .center,
+                        startRadius: 10,
+                        endRadius: 220
+                    )
+                )
+                .frame(width: 440, height: 440)
+                .blur(radius: 30)
+
+            // Sacred geometry: octagram from two rotating squares
+            ZStack {
+                // Outer rotating ring with orbiting golden dots
+                ZStack {
+                    Circle()
+                        .stroke(AppTheme.gold.opacity(0.25), lineWidth: 1)
+                        .frame(width: 260, height: 260)
+
+                    ForEach(0..<12, id: \.self) { i in
+                        Circle()
+                            .fill(AppTheme.goldGradient)
+                            .frame(width: 6, height: 6)
+                            .shadow(color: AppTheme.gold.opacity(0.8), radius: 6)
+                            .offset(y: -130)
+                            .rotationEffect(.degrees(Double(i) * 30))
+                    }
+                }
+                .rotationEffect(.degrees(ringRotation))
+
+                // Outer square
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(AppTheme.goldGradient, lineWidth: 2)
+                    .frame(width: 200, height: 200)
+                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 12)
+                    .rotationEffect(.degrees(outerRotation))
+
+                // Inner square (counter-rotating) — together forms an octagram
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(AppTheme.goldGradient, lineWidth: 2)
+                    .frame(width: 200, height: 200)
+                    .shadow(color: AppTheme.lightGold.opacity(0.6), radius: 12)
+                    .rotationEffect(.degrees(innerRotation))
+
+                // Diamond connecting points
+                RoundedRectangle(cornerRadius: 2)
+                    .stroke(AppTheme.gold.opacity(0.5), lineWidth: 1)
+                    .frame(width: 120, height: 120)
+                    .rotationEffect(.degrees(-outerRotation * 0.5))
+
+                // Pulsing inner core
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [AppTheme.lightGold, AppTheme.gold.opacity(0.0)],
+                            center: .center,
+                            startRadius: 2,
+                            endRadius: 60
+                        )
+                    )
+                    .frame(width: 120, height: 120)
+                    .scaleEffect(pulse)
+                    .shadow(color: AppTheme.gold.opacity(0.9), radius: 20)
+
+                // Central sparkles icon
+                Image(systemName: "sparkles")
+                    .font(.system(size: 40, weight: .light))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.9), radius: 10)
+                    .scaleEffect(sparkleScale)
+            }
+            .opacity(appear ? 1 : 0)
+            .scaleEffect(appear ? 1 : 0.6)
+
+            // Title beneath geometry
+            VStack {
+                Spacer()
+                Text(L10n.matrixTitle)
+                    .font(AppTheme.serifFont(size: 24, weight: .regular))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.5), radius: 8)
+                    .opacity(appear ? 1 : 0)
+                    .padding(.bottom, 120)
+            }
+        }
+        .onAppear {
+            withAnimation(.easeOut(duration: 0.5)) {
+                appear = true
+            }
+            withAnimation(.linear(duration: 8).repeatForever(autoreverses: false)) {
+                outerRotation = 360
+            }
+            withAnimation(.linear(duration: 6).repeatForever(autoreverses: false)) {
+                innerRotation = -360
+            }
+            withAnimation(.linear(duration: 12).repeatForever(autoreverses: false)) {
+                ringRotation = 360
+            }
+            withAnimation(.easeInOut(duration: 1.2).repeatForever(autoreverses: true)) {
+                pulse = 1.15
+                glow = 0.7
+                sparkleScale = 1.15
+            }
         }
     }
 }
