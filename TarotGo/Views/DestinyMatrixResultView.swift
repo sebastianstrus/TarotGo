@@ -152,7 +152,11 @@ struct DestinyMatrixResultView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    showExitConfirmation = true
+                    if sessionSaved {
+                        appViewModel.returnToHome()
+                    } else {
+                        showExitConfirmation = true
+                    }
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundStyle(AppTheme.goldGradient)
@@ -166,7 +170,6 @@ struct DestinyMatrixResultView: View {
         ) {
             Button(L10n.exitReadingConfirm, role: .destructive) {
                 appViewModel.returnToHome()
-                dismiss()
             }
             Button(L10n.exitReadingCancel, role: .cancel) {}
         } message: {

@@ -11,6 +11,7 @@ struct TarotView: View {
     @EnvironmentObject var appViewModel: AppViewModel
     @State private var navigateToNewReading: Bool = false
     @State private var navigateToDailyCard: Bool = false
+    @State private var navigateToDestinyMatrix: Bool = false
     
     var body: some View {
         NavigationStack(path: $appViewModel.navigationPath) {
@@ -69,15 +70,17 @@ struct TarotView: View {
                             .buttonStyle(PlainButtonStyle())
                             
                             // Destiny Matrix
-                            NavigationLink(destination: DestinyMatrixInputView()
-                                .toolbar(.hidden, for: .tabBar)) {
+                            Button {
+                                HapticService.shared.impact(.light)
+                                navigateToDestinyMatrix = true
+                            } label: {
                                 NavigationButton(
                                     icon: "star.circle.fill",
                                     title: L10n.homeDestinyMatrix,
                                     subtitle: L10n.homeDestinyMatrixSubtitle
                                 )
                             }
-                            .buttonStyle(NavigationButtonStyle())
+                            .buttonStyle(PlainButtonStyle())
 
                             // Saved Destiny Matrices
                             NavigationLink(destination: DestinyMatrixHistoryView()) {
@@ -158,10 +161,15 @@ struct TarotView: View {
             .navigationDestination(isPresented: $navigateToDailyCard) {
                 CardOfTheDayView()
             }
+            .navigationDestination(isPresented: $navigateToDestinyMatrix) {
+                DestinyMatrixInputView()
+                    .toolbar(.hidden, for: .tabBar)
+            }
             .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
                 if shouldDismiss {
                     SoundService.shared.play(.whoosh, volume: 0.4)
                     navigateToNewReading = false
+                    navigateToDestinyMatrix = false
                 }
             }
             .onReceive(appViewModel.$shouldNavigateToDailyCard) { shouldNavigate in
