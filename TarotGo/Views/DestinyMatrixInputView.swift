@@ -220,7 +220,6 @@ struct DestinyMatrixInputView: View {
         guard !isCalculating else { return }
 
         HapticService.shared.impact(.medium)
-        SoundService.shared.play(.whoosh, volume: 0.5)
 
         // Save birth date if this is for the user (not for someone else) and no saved date exists
         if !calculateForOther && !hasSavedBirthDate {
@@ -234,7 +233,7 @@ struct DestinyMatrixInputView: View {
         withAnimation(.easeInOut(duration: 0.4)) {
             isCalculating = true
         }
-        SoundService.shared.play(.magic, volume: 0.5)
+        SoundService.shared.play(.generate, volume: 0.5)
 
         // Mid-ritual heartbeat haptics
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
@@ -245,8 +244,7 @@ struct DestinyMatrixInputView: View {
         }
 
         // Reveal the result after the ritual completes
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.6) {
-            SoundService.shared.play(.bellChime, volume: 0.6)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.1) {
             HapticService.shared.impact(.success)
             withAnimation(.easeInOut(duration: 0.4)) {
                 isCalculating = false
@@ -345,13 +343,6 @@ private struct MatrixCalculatingOverlay: View {
                     .frame(width: 120, height: 120)
                     .scaleEffect(pulse)
                     .shadow(color: AppTheme.gold.opacity(0.9), radius: 20)
-
-                // Central sparkles icon
-                Image(systemName: "sparkles")
-                    .font(.system(size: 40, weight: .light))
-                    .foregroundStyle(AppTheme.goldGradient)
-                    .shadow(color: AppTheme.gold.opacity(0.9), radius: 10)
-                    .scaleEffect(sparkleScale)
             }
             .opacity(appear ? 1 : 0)
             .scaleEffect(appear ? 1 : 0.6)
