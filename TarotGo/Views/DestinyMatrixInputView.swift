@@ -246,11 +246,14 @@ struct DestinyMatrixInputView: View {
         // Reveal the result after the ritual completes
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.1) {
             HapticService.shared.impact(.success)
-            withAnimation(.easeInOut(duration: 0.4)) {
-                isCalculating = false
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                showResult = true
+            // Push the result view while the overlay still covers the input view,
+            // so the input view is never exposed during the transition.
+            showResult = true
+            // Dismiss the overlay after the navigation push completes.
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                withAnimation(.easeInOut(duration: 0.4)) {
+                    isCalculating = false
+                }
             }
         }
     }
