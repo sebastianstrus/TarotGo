@@ -16,7 +16,6 @@ struct DestinyMatrixResultView: View {
     @State private var selectedPosition: MatrixPosition?
     @State private var selectedYear: YearlyEnergy?
     @State private var selectedTab: Tab = .diagram
-    @State private var showExitConfirmation: Bool = false
     @State private var sessionSaved: Bool = false
     @State private var notes: String = ""
     @FocusState private var isNotesFocused: Bool
@@ -103,43 +102,22 @@ struct DestinyMatrixResultView: View {
                         .background(AppTheme.gold.opacity(0.3))
                         .padding(.horizontal, 20)
                     
-                    HStack(spacing: 12) {
-                        // Save button
-                        Button {
-                            saveSession()
-                        } label: {
-                            HStack(spacing: 8) {
-                                Image(systemName: sessionSaved ? "checkmark.circle.fill" : "square.and.arrow.down")
-                                    .font(.system(size: 16))
-                                Text(sessionSaved ? L10n.summaryReadingSaved : L10n.summarySaveReading)
-                                    .font(.system(size: 16, weight: .semibold))
-                            }
-                            .foregroundColor(sessionSaved ? Color.green : AppTheme.deepNavy)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 14)
-                            .background(
-                                sessionSaved ?
-                                    LinearGradient(colors: [Color.green.opacity(0.3)], startPoint: .leading, endPoint: .trailing) :
-                                    AppTheme.goldGradient
-                            )
-                            .cornerRadius(12)
-                            .shadow(color: sessionSaved ? Color.green.opacity(0.3) : AppTheme.gold.opacity(0.4), radius: 8)
-                        }
-                        .disabled(sessionSaved)
-                        
-                        // Share button
-                        Button {
-                            shareMatrix()
-                        } label: {
+                    // Share button
+                    Button {
+                        shareMatrix()
+                    } label: {
+                        HStack(spacing: 8) {
                             Image(systemName: "square.and.arrow.up")
                                 .font(.system(size: 16))
-                                .foregroundStyle(AppTheme.goldGradient)
-                                .frame(width: 50, height: 50)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .stroke(AppTheme.gold.opacity(0.6), lineWidth: 2)
-                                )
+                            Text(L10n.summaryShareReading)
+                                .font(.system(size: 16, weight: .semibold))
                         }
+                        .foregroundColor(AppTheme.deepNavy)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 14)
+                        .background(AppTheme.goldGradient)
+                        .cornerRadius(12)
+                        .shadow(color: AppTheme.gold.opacity(0.4), radius: 8)
                     }
                     .padding(.horizontal, 20)
                     .padding(.bottom, 16)
@@ -152,28 +130,17 @@ struct DestinyMatrixResultView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    if sessionSaved {
-                        appViewModel.returnToHome()
-                    } else {
-                        showExitConfirmation = true
-                    }
+                    appViewModel.returnToHome()
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundStyle(AppTheme.goldGradient)
                 }
             }
         }
-        .confirmationDialog(
-            L10n.exitReadingTitle,
-            isPresented: $showExitConfirmation,
-            titleVisibility: .visible
-        ) {
-            Button(L10n.exitReadingConfirm, role: .destructive) {
-                appViewModel.returnToHome()
+        .onAppear {
+            if !sessionSaved {
+                saveSession()
             }
-            Button(L10n.exitReadingCancel, role: .cancel) {}
-        } message: {
-            Text(L10n.exitReadingMessage)
         }
     }
     
@@ -185,10 +152,7 @@ struct DestinyMatrixResultView: View {
         
         do {
             try modelContext.save()
-            withAnimation {
-                sessionSaved = true
-            }
-            HapticService.shared.impact(.medium)
+            sessionSaved = true
         } catch {
             print("Failed to save destiny matrix session: \(error)")
         }
