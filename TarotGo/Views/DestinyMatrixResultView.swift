@@ -70,6 +70,9 @@ struct DestinyMatrixResultView: View {
                             tab: tab,
                             isSelected: selectedTab == tab
                         ) {
+                            if selectedTab != tab {
+                                SoundService.shared.play(.click)
+                            }
                             withAnimation(.spring(response: 0.3)) {
                                 selectedTab = tab
                             }

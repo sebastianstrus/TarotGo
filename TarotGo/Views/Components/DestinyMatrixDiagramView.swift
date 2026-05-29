@@ -69,12 +69,19 @@ struct DestinyMatrixDiagramView: View {
                     )
                     .zIndex(selectedPosition?.id == position.id ? 1 : 0)
                     .onTapGesture {
+                        let isAlreadySelected = selectedPosition?.id == position.id
                         withAnimation(.spring(response: 0.3)) {
-                            selectedPosition = position
-                            selectedYear = nil // Clear year selection when position is selected
+                            if isAlreadySelected {
+                                selectedPosition = nil
+                            } else {
+                                selectedPosition = position
+                                selectedYear = nil // Clear year selection when position is selected
+                            }
                         }
                         HapticService.shared.impact(.light)
-                        SoundService.shared.play(.magicButton, volume: 0.5)
+                        if !isAlreadySelected {
+                            SoundService.shared.play(.magicButton, volume: 0.5)
+                        }
                     }
                 }
             }
@@ -179,12 +186,19 @@ struct OuterYearlyRingView: View {
                 )
                 .zIndex(selectedYear?.id == yearEnergy.id ? 1 : 0)
                 .onTapGesture {
+                    let isAlreadySelected = selectedYear?.id == yearEnergy.id
                     withAnimation(.spring(response: 0.3)) {
-                        selectedYear = yearEnergy
-                        selectedPosition = nil // Clear position selection when year is selected
+                        if isAlreadySelected {
+                            selectedYear = nil
+                        } else {
+                            selectedYear = yearEnergy
+                            selectedPosition = nil // Clear position selection when year is selected
+                        }
                     }
                     HapticService.shared.impact(.light)
-                    SoundService.shared.play(.magicButton, volume: 0.5)
+                    if !isAlreadySelected {
+                        SoundService.shared.play(.magicButton, volume: 0.5)
+                    }
                 }
             }
         }
