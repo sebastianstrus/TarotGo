@@ -17,7 +17,14 @@ class PalmAnalysisService {
     private init() {}
     
     // Analyze palm image and generate reading
-    func analyzePalm(image: UIImage) async throws -> PalmReading {
+    func analyzePalm(image originalImage: UIImage) async throws -> PalmReading {
+        // Normalize the UIImage so its cgImage matches the displayed
+        // orientation. Camera captures usually arrive with .right
+        // orientation (sensor is landscape, display is portrait), which
+        // means Vision and edge-detection would otherwise see a sideways
+        // hand and produce noisier landmarks.
+        let image = normalizeOrientation(of: originalImage)
+
         // Step 1: Detect hand landmarks
         let handLandmarks = try await detectHandLandmarks(in: image)
 
@@ -33,6 +40,9 @@ class PalmAnalysisService {
         // Step 5: Analyze palm mounts
         let mounts = analyzePalmMounts(using: handLandmarks)
 
+        // Debug dump — one block per scan, easy to paste as a new column in a tracking table.
+        logDebugReading(lines: lineCharacteristics, handShape: handShape, mounts: mounts)
+
         // Step 6: Create palm reading
         return PalmReading(
             heartLine: lineCharacteristics.heartLine,
@@ -42,6 +52,54 @@ class PalmAnalysisService {
             mounts: mounts,
             handShape: handShape
         )
+    }
+
+    // MARK: - Debug Logging
+
+    private func logDebugReading(
+        lines: (
+            heartLine: PalmLineCharacteristics,
+            headLine: PalmLineCharacteristics,
+            lifeLine: PalmLineCharacteristics,
+            fateLine: PalmLineCharacteristics?
+        ),
+        handShape: HandShapeAnalysis,
+        mounts: [PalmMountCharacteristics]
+    ) {
+        let absent = "—"
+        let fateLength = lines.fateLine?.length.rawValue ?? absent
+        let fateDepth = lines.fateLine?.depth.rawValue ?? absent
+        let fateContinuity = lines.fateLine?.continuity.rawValue ?? absent
+
+        var rows: [(String, String)] = [
+            ("Heart length",     lines.heartLine.length.rawValue),
+            ("Heart depth",      lines.heartLine.depth.rawValue),
+            ("Heart continuity", lines.heartLine.continuity.rawValue),
+            ("Head length",      lines.headLine.length.rawValue),
+            ("Head depth",       lines.headLine.depth.rawValue),
+            ("Head continuity",  lines.headLine.continuity.rawValue),
+            ("Life length",      lines.lifeLine.length.rawValue),
+            ("Life depth",       lines.lifeLine.depth.rawValue),
+            ("Life continuity",  lines.lifeLine.continuity.rawValue),
+            ("Fate length",      fateLength),
+            ("Fate depth",       fateDepth),
+            ("Fate continuity",  fateContinuity),
+            ("Hand shape",       handShape.shapeType.rawValue),
+            ("Finger length",    handShape.fingerLength.rawValue),
+            ("Palm ratio",       handShape.palmRatio.rawValue)
+        ]
+        for m in mounts {
+            rows.append(("Mount \(m.mount.rawValue)", m.prominence.rawValue))
+        }
+
+        let labelWidth = rows.map { $0.0.count }.max() ?? 0
+        var output = "\n========== Palm Reading ==========\n"
+        for (label, value) in rows {
+            let padding = String(repeating: " ", count: labelWidth - label.count)
+            output += "\(label):\(padding)  \(value)\n"
+        }
+        output += "==================================\n"
+        print(output)
     }
     
     // MARK: - Hand Detection
@@ -233,21 +291,46 @@ class PalmAnalysisService {
 
         guard let cgImage = image.cgImage,
               let edgeUIImage = applyEdgeDetection(to: image),
-              let edgeCGImage = edgeUIImage.cgImage else {
+              let edgeCGImage = edgeUIImage.cgImage,
+              let edgePixels = decodeRGBA(from: edgeCGImage) else {
             throw PalmAnalysisError.processingFailed
         }
 
         let imageSize = CGSize(width: cgImage.width, height: cgImage.height)
 
-        let heartROI = roiForHeartLine(palmPoints: palmPoints, imageSize: imageSize)
-        let headROI = roiForHeadLine(palmPoints: palmPoints, imageSize: imageSize)
-        let lifeROI = roiForLifeLine(palmPoints: palmPoints, imageSize: imageSize)
-        let fateROI = roiForFateLine(palmPoints: palmPoints, imageSize: imageSize)
+        // Build a hand-local frame so ROIs follow the palm regardless of
+        // how the hand is rotated in the photo. palmRight points from the
+        // index MCP to the little MCP (so the thumb side is always at a < 0);
+        // palmUp points from the wrist up to the middle MCP.
+        let wrist = toImagePoint(palmPoints.wrist, imageSize: imageSize)
+        let indexBase = toImagePoint(palmPoints.indexBase, imageSize: imageSize)
+        let middleBase = toImagePoint(palmPoints.middleBase, imageSize: imageSize)
+        let littleBase = toImagePoint(palmPoints.littleBase, imageSize: imageSize)
 
-        let heartLine = analyzeLineCharacteristics(in: edgeCGImage, roi: heartROI, line: .heart, axis: .horizontal)
-        let headLine = analyzeLineCharacteristics(in: edgeCGImage, roi: headROI, line: .head, axis: .horizontal)
-        let lifeLine = analyzeLineCharacteristics(in: edgeCGImage, roi: lifeROI, line: .life, axis: .vertical)
-        let fateLine = analyzeFateLineCharacteristics(in: edgeCGImage, roi: fateROI)
+        let handFrame = HandFrame(
+            wrist: wrist,
+            palmRight: CGPoint(x: littleBase.x - indexBase.x, y: littleBase.y - indexBase.y),
+            palmUp: CGPoint(x: middleBase.x - wrist.x, y: middleBase.y - wrist.y)
+        )
+
+        print(String(format: "[PalmAnalysis] handFrame wrist=(%.0f, %.0f) palmRight=(%.0f, %.0f) palmUp=(%.0f, %.0f) imageSize=%dx%d",
+                     wrist.x, wrist.y, handFrame.palmRight.x, handFrame.palmRight.y,
+                     handFrame.palmUp.x, handFrame.palmUp.y, cgImage.width, cgImage.height))
+
+        // ROIs in hand-local coordinates. (a, b) where:
+        //   a ∈ [-0.5, 0.5] runs along palmRight (across the palm)
+        //   b ∈ [0, 1] runs along palmUp (wrist → MCPs)
+        // Tightened ranges to stay well inside the palm interior so the
+        // samples don't pick up palm-background or finger-crease edges.
+        let heartRect = HandLocalRect(aRange: -0.32 ... 0.32, bRange: 0.72 ... 0.86)
+        let headRect  = HandLocalRect(aRange: -0.32 ... 0.32, bRange: 0.48 ... 0.62)
+        let lifeRect  = HandLocalRect(aRange: -0.42 ... -0.22, bRange: 0.30 ... 0.85)
+        let fateRect  = HandLocalRect(aRange: -0.10 ... 0.10, bRange: 0.28 ... 0.78)
+
+        let heartLine = analyzeLine(edgePixels, handFrame: handFrame, rect: heartRect, line: .heart, axis: .horizontal)
+        let headLine  = analyzeLine(edgePixels, handFrame: handFrame, rect: headRect,  line: .head,  axis: .horizontal)
+        let lifeLine  = analyzeLine(edgePixels, handFrame: handFrame, rect: lifeRect,  line: .life,  axis: .vertical)
+        let fateLine  = analyzeFateLine(edgePixels, handFrame: handFrame, rect: fateRect)
 
         return (heartLine, headLine, lifeLine, fateLine)
     }
@@ -261,80 +344,70 @@ class PalmAnalysisService {
         )
     }
 
-    // Heart line: a thin horizontal band immediately below the MCP row.
-    private func roiForHeartLine(palmPoints: PalmKeyPoints, imageSize: CGSize) -> CGRect {
-        let wrist = toImagePoint(palmPoints.wrist, imageSize: imageSize)
-        let mcps = [palmPoints.indexBase, palmPoints.middleBase, palmPoints.ringBase, palmPoints.littleBase]
-            .map { toImagePoint($0, imageSize: imageSize) }
-        let mcpMinX = mcps.map(\.x).min() ?? 0
-        let mcpMaxX = mcps.map(\.x).max() ?? imageSize.width
-        let mcpY = mcps.map(\.y).reduce(0, +) / CGFloat(mcps.count)
-        let palmHeight = max(1, wrist.y - mcpY)
+    // Hand-local 2D frame. (a, b) coordinates live in palm space and are
+    // mapped to image pixels via toImage so that ROIs stay on the palm
+    // regardless of how the hand is rotated in the photograph.
+    private struct HandFrame {
+        let wrist: CGPoint
+        let palmRight: CGPoint
+        let palmUp: CGPoint
 
-        return CGRect(
-            x: mcpMinX,
-            y: mcpY + palmHeight * 0.05,
-            width: max(1, mcpMaxX - mcpMinX),
-            height: palmHeight * 0.18
-        )
+        func toImage(a: CGFloat, b: CGFloat) -> CGPoint {
+            return CGPoint(
+                x: wrist.x + a * palmRight.x + b * palmUp.x,
+                y: wrist.y + a * palmRight.y + b * palmUp.y
+            )
+        }
     }
 
-    // Head line: horizontal band roughly one-third down the palm.
-    private func roiForHeadLine(palmPoints: PalmKeyPoints, imageSize: CGSize) -> CGRect {
-        let wrist = toImagePoint(palmPoints.wrist, imageSize: imageSize)
-        let mcps = [palmPoints.indexBase, palmPoints.middleBase, palmPoints.ringBase, palmPoints.littleBase]
-            .map { toImagePoint($0, imageSize: imageSize) }
-        let mcpMinX = mcps.map(\.x).min() ?? 0
-        let mcpMaxX = mcps.map(\.x).max() ?? imageSize.width
-        let mcpY = mcps.map(\.y).reduce(0, +) / CGFloat(mcps.count)
-        let palmHeight = max(1, wrist.y - mcpY)
-
-        return CGRect(
-            x: mcpMinX,
-            y: mcpY + palmHeight * 0.28,
-            width: max(1, mcpMaxX - mcpMinX),
-            height: palmHeight * 0.20
-        )
+    private struct HandLocalRect {
+        let aRange: ClosedRange<CGFloat>
+        let bRange: ClosedRange<CGFloat>
     }
 
-    // Life line: curves from index MCP around the thumb base to the wrist.
-    // Approximated as the bounding box of those three landmarks.
-    private func roiForLifeLine(palmPoints: PalmKeyPoints, imageSize: CGSize) -> CGRect {
-        let wrist = toImagePoint(palmPoints.wrist, imageSize: imageSize)
-        let thumb = toImagePoint(palmPoints.thumbBase, imageSize: imageSize)
-        let index = toImagePoint(palmPoints.indexBase, imageSize: imageSize)
+    // Pre-decoded RGBA representation of the edge image, used for
+    // pixel-precise brightness lookups during hand-local ROI sampling.
+    private struct EdgePixels {
+        let buffer: [UInt8]
+        let width: Int
+        let height: Int
+        let bytesPerRow: Int
 
-        let xs = [wrist.x, thumb.x, index.x]
-        let ys = [wrist.y, thumb.y, index.y]
-        let minX = xs.min() ?? 0
-        let maxX = xs.max() ?? imageSize.width
-        let minY = ys.min() ?? 0
-        let maxY = ys.max() ?? imageSize.height
-
-        return CGRect(
-            x: minX,
-            y: minY,
-            width: max(1, maxX - minX),
-            height: max(1, maxY - minY)
-        )
+        func brightness(atPixel x: Int, _ y: Int) -> UInt32? {
+            guard x >= 0, x < width, y >= 0, y < height else { return nil }
+            let offset = y * bytesPerRow + x * 4
+            let r = UInt32(buffer[offset])
+            let g = UInt32(buffer[offset + 1])
+            let b = UInt32(buffer[offset + 2])
+            return (r + g + b) / 3
+        }
     }
 
-    // Fate line: vertical band running from below the middle finger toward the wrist.
-    private func roiForFateLine(palmPoints: PalmKeyPoints, imageSize: CGSize) -> CGRect {
-        let wrist = toImagePoint(palmPoints.wrist, imageSize: imageSize)
-        let middle = toImagePoint(palmPoints.middleBase, imageSize: imageSize)
-        let index = toImagePoint(palmPoints.indexBase, imageSize: imageSize)
-        let ring = toImagePoint(palmPoints.ringBase, imageSize: imageSize)
+    private func decodeRGBA(from cgImage: CGImage) -> EdgePixels? {
+        let width = cgImage.width
+        let height = cgImage.height
+        let bytesPerPixel = 4
+        let bytesPerRow = width * bytesPerPixel
+        var buffer = [UInt8](repeating: 0, count: width * height * bytesPerPixel)
 
-        let palmWidth = max(1, abs(ring.x - index.x))
-        let palmHeight = max(1, wrist.y - middle.y)
+        guard let context = CGContext(
+            data: &buffer,
+            width: width,
+            height: height,
+            bitsPerComponent: 8,
+            bytesPerRow: bytesPerRow,
+            space: CGColorSpaceCreateDeviceRGB(),
+            bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+        ) else {
+            return nil
+        }
 
-        return CGRect(
-            x: middle.x - palmWidth * 0.25,
-            y: middle.y + palmHeight * 0.20,
-            width: palmWidth * 0.50,
-            height: palmHeight * 0.65
-        )
+        context.draw(cgImage, in: CGRect(x: 0, y: 0, width: width, height: height))
+        return EdgePixels(buffer: buffer, width: width, height: height, bytesPerRow: bytesPerRow)
+    }
+
+    private func lerp(_ range: ClosedRange<CGFloat>, t: CGFloat) -> CGFloat {
+        return range.lowerBound + (range.upperBound - range.lowerBound) * t
     }
     
     private func getPalmKeyPoints(from observation: VNHumanHandPoseObservation) throws -> PalmKeyPoints {
@@ -357,39 +430,62 @@ class PalmAnalysisService {
     }
     
     // MARK: - Image Processing
-    
+
+    // Re-renders a UIImage so its underlying cgImage matches the displayed
+    // orientation (imageOrientation becomes .up). Required because Vision
+    // and Core Image read raw cgImage pixels — without this, a portrait
+    // photo from the camera (orientation .right) would be processed sideways.
+    private func normalizeOrientation(of image: UIImage) -> UIImage {
+        guard image.imageOrientation != .up else { return image }
+        let format = UIGraphicsImageRendererFormat.default()
+        format.scale = image.scale
+        let renderer = UIGraphicsImageRenderer(size: image.size, format: format)
+        return renderer.image { _ in
+            image.draw(in: CGRect(origin: .zero, size: image.size))
+        }
+    }
+
     private func applyEdgeDetection(to image: UIImage) -> UIImage? {
         guard let cgImage = image.cgImage else { return nil }
         let ciImage = CIImage(cgImage: cgImage)
-        
-        // Apply edge detection filter
+
+        // Boost local contrast before running edge detection. Palm creases
+        // are low-contrast relative to background features; widening the
+        // luminance distribution makes them register in CIEdges.
+        let prepped: CIImage
+        if let contrastFilter = CIFilter(name: "CIColorControls") {
+            contrastFilter.setValue(ciImage, forKey: kCIInputImageKey)
+            contrastFilter.setValue(1.35, forKey: kCIInputContrastKey)
+            contrastFilter.setValue(0.0, forKey: kCIInputSaturationKey)
+            prepped = contrastFilter.outputImage ?? ciImage
+        } else {
+            prepped = ciImage
+        }
+
         guard let filter = CIFilter(name: "CIEdges") else { return nil }
-        filter.setValue(ciImage, forKey: kCIInputImageKey)
+        filter.setValue(prepped, forKey: kCIInputImageKey)
         filter.setValue(2.0, forKey: kCIInputIntensityKey)
-        
+
         guard let outputImage = filter.outputImage else { return nil }
-        
+
         let context = CIContext()
         guard let processedCGImage = context.createCGImage(outputImage, from: outputImage.extent) else {
             return nil
         }
-        
+
         return UIImage(cgImage: processedCGImage)
     }
     
     // MARK: - Per-Line Metric Mapping
 
-    // Reads edge metrics from the line's ROI and maps them deterministically
-    // to length / depth / continuity. No randomness — same image yields the
-    // same reading.
-    private func analyzeLineCharacteristics(
-        in edgeImage: CGImage,
-        roi: CGRect,
+    private func analyzeLine(
+        _ edgePixels: EdgePixels,
+        handFrame: HandFrame,
+        rect: HandLocalRect,
         line: PalmLine,
         axis: LineAxis
     ) -> PalmLineCharacteristics {
-        guard let metrics = computeLineMetrics(in: edgeImage, roi: roi, axis: axis) else {
-            // ROI unusable (off-image or too small) — return a neutral default.
+        guard let metrics = sampleLineMetrics(edgePixels, handFrame: handFrame, rect: rect, axis: axis) else {
             return PalmLineCharacteristics(line: line, length: .medium, depth: .moderate, continuity: .continuous)
         }
 
@@ -420,15 +516,22 @@ class PalmAnalysisService {
             continuity = .broken
         }
 
+        print(String(format: "[PalmAnalysis] %@: edges=%.3f intensity=%.3f coverage=%.3f → %@/%@/%@",
+                     line.rawValue, metrics.edgeRatio, metrics.avgIntensity, metrics.coverage,
+                     length.rawValue, depth.rawValue, continuity.rawValue))
+
         return PalmLineCharacteristics(line: line, length: length, depth: depth, continuity: continuity)
     }
 
     // Fate line is often absent in real palms; only declare it present when
     // the ROI shows a clear vertical signal above the noise floor.
-    private func analyzeFateLineCharacteristics(in edgeImage: CGImage, roi: CGRect) -> PalmLineCharacteristics? {
-        guard let metrics = computeLineMetrics(in: edgeImage, roi: roi, axis: .vertical) else {
+    private func analyzeFateLine(_ edgePixels: EdgePixels, handFrame: HandFrame, rect: HandLocalRect) -> PalmLineCharacteristics? {
+        guard let metrics = sampleLineMetrics(edgePixels, handFrame: handFrame, rect: rect, axis: .vertical) else {
             return nil
         }
+
+        print(String(format: "[PalmAnalysis] fate:  edges=%.3f intensity=%.3f coverage=%.3f",
+                     metrics.edgeRatio, metrics.avgIntensity, metrics.coverage))
 
         let minimumEdgeRatio: Float = 0.020
         let minimumCoverage: Float = 0.35
@@ -454,79 +557,70 @@ class PalmAnalysisService {
         return PalmLineCharacteristics(line: .fate, length: length, depth: depth, continuity: continuity)
     }
 
-    // Pixel-level scan of the edge image within the given ROI. Single pass
-    // over RGBA buffer collects edge count, intensity sum, and per-strip edge
-    // counts so we don't need to walk the buffer three times.
-    private func computeLineMetrics(in edgeImage: CGImage, roi: CGRect, axis: LineAxis) -> LineMetrics? {
-        let imageBounds = CGRect(x: 0, y: 0, width: edgeImage.width, height: edgeImage.height)
-        let clamped = roi.integral.intersection(imageBounds)
-        guard clamped.width >= 4, clamped.height >= 4,
-              let cropped = edgeImage.cropping(to: clamped) else {
-            return nil
+    // Samples the edge image on a regular grid laid out in hand-local
+    // coordinates. Each (a, b) sample is mapped through HandFrame.toImage to
+    // a pixel; brightness above the edge threshold contributes to edge count
+    // and per-strip coverage along the line's primary axis.
+    private func sampleLineMetrics(
+        _ edgePixels: EdgePixels,
+        handFrame: HandFrame,
+        rect: HandLocalRect,
+        axis: LineAxis
+    ) -> LineMetrics? {
+        let alongSamples = 64
+        let acrossSamples = 12
+        let aSamples: Int
+        let bSamples: Int
+        switch axis {
+        case .horizontal:
+            aSamples = alongSamples
+            bSamples = acrossSamples
+        case .vertical:
+            aSamples = acrossSamples
+            bSamples = alongSamples
         }
 
-        let width = cropped.width
-        let height = cropped.height
-        let bytesPerPixel = 4
-        let bytesPerRow = width * bytesPerPixel
-        var pixels = [UInt8](repeating: 0, count: width * height * bytesPerPixel)
-
-        guard let context = CGContext(
-            data: &pixels,
-            width: width,
-            height: height,
-            bitsPerComponent: 8,
-            bytesPerRow: bytesPerRow,
-            space: CGColorSpaceCreateDeviceRGB(),
-            bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
-        ) else {
-            return nil
-        }
-
-        context.draw(cropped, in: CGRect(x: 0, y: 0, width: width, height: height))
-
-        // Edge brightness threshold (0-255). CIEdges output has mostly dark
-        // pixels with bright streaks where edges live; ~80 catches most palm
-        // creases without picking up noise.
         let edgeThreshold: UInt32 = 80
         let stripCount = 8
         var stripHasEdge = [Bool](repeating: false, count: stripCount)
         var edgeCount = 0
         var intensitySum: UInt64 = 0
-        let totalPixels = width * height
+        var totalSamples = 0
 
-        let stripDivisor: Int
-        switch axis {
-        case .horizontal: stripDivisor = max(1, width / stripCount)
-        case .vertical:   stripDivisor = max(1, height / stripCount)
-        }
+        for ai in 0..<aSamples {
+            for bi in 0..<bSamples {
+                let a = lerp(rect.aRange, t: CGFloat(ai) / CGFloat(max(1, aSamples - 1)))
+                let b = lerp(rect.bRange, t: CGFloat(bi) / CGFloat(max(1, bSamples - 1)))
+                let point = handFrame.toImage(a: a, b: b)
+                let x = Int(point.x.rounded())
+                let y = Int(point.y.rounded())
 
-        for y in 0..<height {
-            for x in 0..<width {
-                let i = (y * width + x) * bytesPerPixel
-                let r = UInt32(pixels[i])
-                let g = UInt32(pixels[i + 1])
-                let b = UInt32(pixels[i + 2])
-                let brightness = (r + g + b) / 3
+                guard let brightness = edgePixels.brightness(atPixel: x, y) else { continue }
+
                 intensitySum += UInt64(brightness)
+                totalSamples += 1
+
                 if brightness >= edgeThreshold {
                     edgeCount += 1
                     let stripIndex: Int
                     switch axis {
-                    case .horizontal: stripIndex = min(stripCount - 1, x / stripDivisor)
-                    case .vertical:   stripIndex = min(stripCount - 1, y / stripDivisor)
+                    case .horizontal: stripIndex = min(stripCount - 1, ai * stripCount / aSamples)
+                    case .vertical:   stripIndex = min(stripCount - 1, bi * stripCount / bSamples)
                     }
                     stripHasEdge[stripIndex] = true
                 }
             }
         }
 
-        let stripsWithEdge = stripHasEdge.filter { $0 }.count
-        let edgeRatio = Float(edgeCount) / Float(totalPixels)
-        let avgIntensity = Float(intensitySum) / Float(totalPixels) / 255.0
-        let coverage = Float(stripsWithEdge) / Float(stripCount)
+        // If too few samples land inside the image, the metric is unreliable.
+        guard totalSamples > 16 else { return nil }
 
-        return LineMetrics(edgeRatio: edgeRatio, avgIntensity: avgIntensity, coverage: coverage)
+        let stripsWithEdge = stripHasEdge.filter { $0 }.count
+        return LineMetrics(
+            edgeRatio: Float(edgeCount) / Float(totalSamples),
+            avgIntensity: Float(intensitySum) / Float(totalSamples) / 255.0,
+            coverage: Float(stripsWithEdge) / Float(stripCount)
+        )
     }
 
     private func calculateDistance(from point1: VNRecognizedPoint, to point2: VNRecognizedPoint) -> CGFloat {
