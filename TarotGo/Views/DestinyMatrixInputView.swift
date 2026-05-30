@@ -190,6 +190,7 @@ struct DestinyMatrixInputView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(isCalculating)
         .navigationDestination(isPresented: $showResult) {
             if let matrix = calculatedMatrix {
                 DestinyMatrixResultView(matrix: matrix)
