@@ -18,11 +18,8 @@ struct SummaryView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
     
-    @State private var notes: String = ""
     @State private var sessionSaved: Bool = false
     @State private var sharePDFURL: URL?
-    @State private var showExitConfirmation: Bool = false
-    @FocusState private var isNotesFocused: Bool
     
     var body: some View {
         ZStack {
@@ -64,9 +61,6 @@ struct SummaryView: View {
                         CardSummaryCard(drawnCard: drawnCard, index: index + 1)
                     }
                     
-                    // Notes section
-                    notesSection
-                    
                     // Action buttons
                     actionButtons
                     
@@ -80,46 +74,23 @@ struct SummaryView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    if sessionSaved {
-                        returnToHome()
-                    } else {
-                        showExitConfirmation = true
-                    }
+                    returnToHome()
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundStyle(AppTheme.goldGradient)
                 }
             }
-            
-            ToolbarItemGroup(placement: .keyboard) {
-                Spacer()
-                Button(L10n.done) {
-                    isNotesFocused = false
-                }
-                .foregroundStyle(AppTheme.goldGradient)
-            }
-        }
-        .contentShape(Rectangle())
-        .onTapGesture {
-            isNotesFocused = false
-        }
-        .confirmationDialog(
-            L10n.exitReadingTitle,
-            isPresented: $showExitConfirmation,
-            titleVisibility: .visible
-        ) {
-            Button(L10n.exitReadingConfirm, role: .destructive) {
-                returnToHome()
-            }
-            Button(L10n.exitReadingCancel, role: .cancel) {}
-        } message: {
-            Text(L10n.exitReadingMessage)
         }
         .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
             sharePDFURL = nil
         }) {
             if let pdfURL = sharePDFURL {
                 ShareSheet(items: [pdfURL])
+            }
+        }
+        .onAppear {
+            if !sessionSaved {
+                saveSession()
             }
         }
     }
@@ -178,62 +149,8 @@ struct SummaryView: View {
         )
     }
     
-    private var notesSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(L10n.summaryReflections)
-                .font(AppTheme.serifFont(size: 20, weight: .medium))
-                .foregroundStyle(AppTheme.goldGradient)
-            
-            TextEditor(text: $notes)
-                .frame(minHeight: 120)
-                .padding(12)
-                .background(AppTheme.darkNavy.opacity(0.4))
-                .cornerRadius(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
-                )
-                .foregroundColor(AppTheme.textPrimary)
-                .font(.system(size: 16))
-                .scrollContentBackground(.hidden)
-                .focused($isNotesFocused)
-                .tint(AppTheme.gold)
-        }
-        .padding(20)
-        .background(
-            RoundedRectangle(cornerRadius: 15)
-                .fill(AppTheme.darkNavy.opacity(0.3))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
-                )
-        )
-    }
-    
     private var actionButtons: some View {
         VStack(spacing: 15) {
-            // Save button
-            Button {
-                saveSession()
-            } label: {
-                HStack {
-                    Image(systemName: sessionSaved ? "checkmark.circle.fill" : "square.and.arrow.down")
-                    Text(sessionSaved ? L10n.summaryReadingSaved : L10n.summarySaveReading)
-                }
-                .font(AppTheme.serifFont(size: 18, weight: .semibold))
-                .foregroundColor(sessionSaved ? Color.green : AppTheme.deepNavy)
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(
-                    sessionSaved ? 
-                    LinearGradient(colors: [Color.green.opacity(0.3)], startPoint: .leading, endPoint: .trailing) :
-                    AppTheme.goldGradient
-                )
-                .cornerRadius(15)
-                .shadow(color: sessionSaved ? Color.green.opacity(0.3) : AppTheme.gold.opacity(0.5), radius: 10)
-            }
-            .disabled(sessionSaved)
-            
             // Share button
             Button {
                 prepareShareContent()
@@ -271,24 +188,15 @@ struct SummaryView: View {
             spreadType: spreadType,
             drawnCards: drawnCards
         )
-        session.notes = notes.isEmpty ? nil : notes
         
         modelContext.insert(session)
         
         do {
             try modelContext.save()
-            withAnimation {
-                sessionSaved = true
-            }
-            mediumHaptic()
+            sessionSaved = true
         } catch {
             print("Failed to save session: \(error)")
         }
-    }
-    
-    private func mediumHaptic() {
-        let generator = UIImpactFeedbackGenerator(style: .medium)
-        generator.impactOccurred()
     }
     
     private func prepareShareContent() {
@@ -298,7 +206,7 @@ struct SummaryView: View {
             category: category,
             customQuestion: customQuestion,
             spreadType: spreadType,
-            notes: notes.isEmpty ? nil : notes,
+            notes: nil,
             date: Date()
         )
     }
