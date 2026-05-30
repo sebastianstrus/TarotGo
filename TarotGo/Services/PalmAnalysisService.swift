@@ -20,8 +20,11 @@ class PalmAnalysisService {
     func analyzePalm(image: UIImage) async throws -> PalmReading {
         // Step 1: Detect hand landmarks
         let handLandmarks = try await detectHandLandmarks(in: image)
-        
-        // Step 2: Isolate palm region
+
+        // Step 2: Validate that the hand is open with extended fingers
+        try validateOpenPalm(handLandmarks)
+
+        // Step 3: Isolate palm region
         let palmRegion = extractPalmRegion(from: image, using: handLandmarks)
         
         // Step 3: Analyze palm lines using edge detection
@@ -75,7 +78,74 @@ class PalmAnalysisService {
             }
         }
     }
-    
+
+    // MARK: - Open Palm Validation
+
+    // Verifies that the detected hand is open with extended fingers and that
+    // the key landmarks are confident enough to support a meaningful reading.
+    // A closed fist still registers as a "hand" in Vision, so this guard
+    // prevents the rest of the pipeline from running on bent/curled fingers.
+    private func validateOpenPalm(_ observation: VNHumanHandPoseObservation) throws {
+        // Vision recognizes joints with confidence in [0, 1]. Anything below
+        // this is too unreliable to base a reading on.
+        let minimumConfidence: Float = 0.3
+        // Ratio of straight-line MCP→TIP distance to the sum of the three
+        // finger segments. 1.0 means a perfectly straight finger; a fist
+        // collapses to ~0.4. 0.80 is a comfortable threshold that still
+        // accepts a naturally relaxed open hand.
+        let straightnessThreshold: CGFloat = 0.80
+
+        let fingers: [(mcp: VNHumanHandPoseObservation.JointName,
+                       pip: VNHumanHandPoseObservation.JointName,
+                       dip: VNHumanHandPoseObservation.JointName,
+                       tip: VNHumanHandPoseObservation.JointName)] = [
+            (.indexMCP, .indexPIP, .indexDIP, .indexTip),
+            (.middleMCP, .middlePIP, .middleDIP, .middleTip),
+            (.ringMCP, .ringPIP, .ringDIP, .ringTip),
+            (.littleMCP, .littlePIP, .littleDIP, .littleTip)
+        ]
+
+        // Confidence gate first: if any required joint is missing or weak,
+        // bail out before we trust the geometry.
+        let requiredJoints: [VNHumanHandPoseObservation.JointName] = [
+            .wrist,
+            .indexMCP, .indexTip,
+            .middleMCP, .middleTip,
+            .ringMCP, .ringTip,
+            .littleMCP, .littleTip
+        ]
+        for joint in requiredJoints {
+            guard let point = try? observation.recognizedPoint(joint),
+                  point.confidence >= minimumConfidence else {
+                throw PalmAnalysisError.lowConfidence
+            }
+        }
+
+        // Straightness check per finger.
+        for finger in fingers {
+            guard let mcp = try? observation.recognizedPoint(finger.mcp),
+                  let pip = try? observation.recognizedPoint(finger.pip),
+                  let dip = try? observation.recognizedPoint(finger.dip),
+                  let tip = try? observation.recognizedPoint(finger.tip) else {
+                throw PalmAnalysisError.lowConfidence
+            }
+
+            let directDistance = calculateDistance(from: mcp, to: tip)
+            let segmentedDistance = calculateDistance(from: mcp, to: pip)
+                + calculateDistance(from: pip, to: dip)
+                + calculateDistance(from: dip, to: tip)
+
+            guard segmentedDistance > 0 else {
+                throw PalmAnalysisError.fingersNotExtended
+            }
+
+            let straightness = directDistance / segmentedDistance
+            if straightness < straightnessThreshold {
+                throw PalmAnalysisError.fingersNotExtended
+            }
+        }
+    }
+
     // MARK: - Palm Region Extraction
     
     private func extractPalmRegion(from image: UIImage, using landmarks: VNHumanHandPoseObservation) -> UIImage {
@@ -464,14 +534,20 @@ struct PalmKeyPoints {
 enum PalmAnalysisError: LocalizedError {
     case invalidImage
     case noHandDetected
+    case fingersNotExtended
+    case lowConfidence
     case processingFailed
-    
+
     var errorDescription: String? {
         switch self {
         case .invalidImage:
             return "The image could not be processed. Please try taking another photo."
         case .noHandDetected:
             return "No hand detected in the image. Please ensure your palm is clearly visible and well-lit."
+        case .fingersNotExtended:
+            return "Please open your hand and extend all your fingers. A closed fist or curled fingers cannot be read."
+        case .lowConfidence:
+            return "Your palm couldn't be clearly identified. Show the inside of your hand to the camera with good lighting and try again."
         case .processingFailed:
             return "Failed to analyze the palm lines. Please try again with better lighting."
         }
