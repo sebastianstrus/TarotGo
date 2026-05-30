@@ -40,7 +40,7 @@ class PalmReadingViewModel: ObservableObject {
         isAnalyzing = true
 
         HapticService.shared.impact(.medium)
-        SoundService.shared.play(.magic, volume: 0.5)
+        SoundService.shared.play(.generate, volume: 0.5)
 
         // Mid-ritual heartbeat haptics to match the mystical overlay pacing.
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) { [weak self] in
@@ -70,7 +70,6 @@ class PalmReadingViewModel: ObservableObject {
             currentPhase = .results
 
             HapticService.shared.impact(.success)
-            SoundService.shared.play(.success, volume: 0.6)
 
         } catch {
             errorMessage = error.localizedDescription
