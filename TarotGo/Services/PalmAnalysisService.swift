@@ -449,22 +449,43 @@ class PalmAnalysisService {
         guard let cgImage = image.cgImage else { return nil }
         let ciImage = CIImage(cgImage: cgImage)
 
-        // Boost local contrast before running edge detection. Palm creases
-        // are low-contrast relative to background features; widening the
-        // luminance distribution makes them register in CIEdges.
+        // Auto-exposure: bring the scene's mean luminance to a fixed target
+        // before edge detection so dim photos and bright photos produce
+        // comparable edge signal. Without this, a small change in ambient
+        // light between captures shifts the entire metric distribution.
+        let exposureNormalized: CIImage
+        if let sceneMean = computeMeanLuminance(of: ciImage), sceneMean > 0.01 {
+            let targetLuminance: Float = 0.55
+            let evAdjustment = log2(targetLuminance / sceneMean)
+            let clampedEV = max(-1.5, min(2.5, evAdjustment))
+            print(String(format: "[PalmAnalysis] scene mean=%.3f EV adjust=%.2f", sceneMean, clampedEV))
+            if let expFilter = CIFilter(name: "CIExposureAdjust") {
+                expFilter.setValue(ciImage, forKey: kCIInputImageKey)
+                expFilter.setValue(clampedEV, forKey: kCIInputEVKey)
+                exposureNormalized = expFilter.outputImage ?? ciImage
+            } else {
+                exposureNormalized = ciImage
+            }
+        } else {
+            exposureNormalized = ciImage
+        }
+
+        // Boost local contrast and desaturate. Palm creases are low-contrast
+        // relative to background features; widening the luminance
+        // distribution makes them register in CIEdges.
         let prepped: CIImage
         if let contrastFilter = CIFilter(name: "CIColorControls") {
-            contrastFilter.setValue(ciImage, forKey: kCIInputImageKey)
-            contrastFilter.setValue(1.35, forKey: kCIInputContrastKey)
+            contrastFilter.setValue(exposureNormalized, forKey: kCIInputImageKey)
+            contrastFilter.setValue(1.4, forKey: kCIInputContrastKey)
             contrastFilter.setValue(0.0, forKey: kCIInputSaturationKey)
-            prepped = contrastFilter.outputImage ?? ciImage
+            prepped = contrastFilter.outputImage ?? exposureNormalized
         } else {
-            prepped = ciImage
+            prepped = exposureNormalized
         }
 
         guard let filter = CIFilter(name: "CIEdges") else { return nil }
         filter.setValue(prepped, forKey: kCIInputImageKey)
-        filter.setValue(2.0, forKey: kCIInputIntensityKey)
+        filter.setValue(3.0, forKey: kCIInputIntensityKey)
 
         guard let outputImage = filter.outputImage else { return nil }
 
@@ -474,6 +495,26 @@ class PalmAnalysisService {
         }
 
         return UIImage(cgImage: processedCGImage)
+    }
+
+    // Returns the average luminance (0...1) of the entire image.
+    private func computeMeanLuminance(of ciImage: CIImage) -> Float? {
+        guard let avgFilter = CIFilter(name: "CIAreaAverage") else { return nil }
+        avgFilter.setValue(ciImage, forKey: kCIInputImageKey)
+        avgFilter.setValue(CIVector(cgRect: ciImage.extent), forKey: kCIInputExtentKey)
+        guard let outImage = avgFilter.outputImage else { return nil }
+
+        var bitmap = [UInt8](repeating: 0, count: 4)
+        let context = CIContext()
+        context.render(
+            outImage,
+            toBitmap: &bitmap,
+            rowBytes: 4,
+            bounds: CGRect(x: 0, y: 0, width: 1, height: 1),
+            format: .RGBA8,
+            colorSpace: CGColorSpaceCreateDeviceRGB()
+        )
+        return (Float(bitmap[0]) + Float(bitmap[1]) + Float(bitmap[2])) / (3.0 * 255.0)
     }
     
     // MARK: - Per-Line Metric Mapping
@@ -504,12 +545,15 @@ class PalmAnalysisService {
             length = .short
         }
 
-        // Wide moderate band so typical palm-line intensities (0.08-0.18)
-        // sit comfortably inside it rather than flipping at the boundary.
+        // Adaptive thresholding compresses post-edge intensities into a
+        // narrower band (~0.02-0.10 for typical palms). Bucket boundaries
+        // are placed in the gaps between observed line clusters so faint
+        // lines (life ≈ 0.027) split from moderate lines (heart/head/fate
+        // ≈ 0.05-0.07) without flipping at boundaries.
         let depth: PalmLineCharacteristics.LineDepth
-        if metrics.avgIntensity >= 0.20 {
+        if metrics.avgIntensity >= 0.085 {
             depth = .deep
-        } else if metrics.avgIntensity >= 0.07 {
+        } else if metrics.avgIntensity >= 0.038 {
             depth = .moderate
         } else {
             depth = .faint
@@ -558,8 +602,8 @@ class PalmAnalysisService {
         else { length = .short }
 
         let depth: PalmLineCharacteristics.LineDepth
-        if metrics.avgIntensity >= 0.20 { depth = .deep }
-        else if metrics.avgIntensity >= 0.07 { depth = .moderate }
+        if metrics.avgIntensity >= 0.085 { depth = .deep }
+        else if metrics.avgIntensity >= 0.038 { depth = .moderate }
         else { depth = .faint }
 
         let continuity: PalmLineCharacteristics.LineContinuity
@@ -571,9 +615,11 @@ class PalmAnalysisService {
     }
 
     // Samples the edge image on a regular grid laid out in hand-local
-    // coordinates. Each (a, b) sample is mapped through HandFrame.toImage to
-    // a pixel; brightness above the edge threshold contributes to edge count
-    // and per-strip coverage along the line's primary axis.
+    // coordinates. Two-pass: first pass collects sample brightnesses to
+    // compute an ROI-adaptive threshold (mean * factor), second pass
+    // counts edges and strip coverage. Adaptive threshold means a dim
+    // capture's faint edges still register relative to the local noise
+    // floor instead of being clipped by a fixed 80/255 cutoff.
     private func sampleLineMetrics(
         _ edgePixels: EdgePixels,
         handFrame: HandFrame,
@@ -593,12 +639,10 @@ class PalmAnalysisService {
             bSamples = alongSamples
         }
 
-        let edgeThreshold: UInt32 = 80
-        let stripCount = 8
-        var stripHasEdge = [Bool](repeating: false, count: stripCount)
-        var edgeCount = 0
+        struct Sample { let brightness: UInt32; let ai: Int; let bi: Int }
+        var samples: [Sample] = []
+        samples.reserveCapacity(aSamples * bSamples)
         var intensitySum: UInt64 = 0
-        var totalSamples = 0
 
         for ai in 0..<aSamples {
             for bi in 0..<bSamples {
@@ -609,29 +653,41 @@ class PalmAnalysisService {
                 let y = Int(point.y.rounded())
 
                 guard let brightness = edgePixels.brightness(atPixel: x, y) else { continue }
-
+                samples.append(Sample(brightness: brightness, ai: ai, bi: bi))
                 intensitySum += UInt64(brightness)
-                totalSamples += 1
-
-                if brightness >= edgeThreshold {
-                    edgeCount += 1
-                    let stripIndex: Int
-                    switch axis {
-                    case .horizontal: stripIndex = min(stripCount - 1, ai * stripCount / aSamples)
-                    case .vertical:   stripIndex = min(stripCount - 1, bi * stripCount / bSamples)
-                    }
-                    stripHasEdge[stripIndex] = true
-                }
             }
         }
 
-        // If too few samples land inside the image, the metric is unreliable.
-        guard totalSamples > 16 else { return nil }
+        guard samples.count > 16 else { return nil }
+
+        let totalSamples = samples.count
+        let meanBrightness = Float(intensitySum) / Float(totalSamples)
+
+        // Adaptive threshold: edge pixels must be substantially above the
+        // ROI's mean brightness. Floor of 18 prevents false edges in
+        // completely flat ROIs (where mean * factor would be near zero).
+        let edgeThreshold = max(UInt32(18), UInt32(meanBrightness * 2.6))
+
+        let stripCount = 8
+        var stripHasEdge = [Bool](repeating: false, count: stripCount)
+        var edgeCount = 0
+
+        for sample in samples {
+            if sample.brightness >= edgeThreshold {
+                edgeCount += 1
+                let stripIndex: Int
+                switch axis {
+                case .horizontal: stripIndex = min(stripCount - 1, sample.ai * stripCount / aSamples)
+                case .vertical:   stripIndex = min(stripCount - 1, sample.bi * stripCount / bSamples)
+                }
+                stripHasEdge[stripIndex] = true
+            }
+        }
 
         let stripsWithEdge = stripHasEdge.filter { $0 }.count
         return LineMetrics(
             edgeRatio: Float(edgeCount) / Float(totalSamples),
-            avgIntensity: Float(intensitySum) / Float(totalSamples) / 255.0,
+            avgIntensity: meanBrightness / 255.0,
             coverage: Float(stripsWithEdge) / Float(stripCount)
         )
     }
