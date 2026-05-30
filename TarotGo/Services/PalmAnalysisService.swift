@@ -31,19 +31,46 @@ class PalmAnalysisService {
         // Step 2: Validate that the hand is open with extended fingers
         try validateOpenPalm(handLandmarks)
 
-        // Step 3: Analyze palm lines using edge detection on the original image
-        let lineCharacteristics = try await analyzePalmLines(in: image, landmarks: handLandmarks)
+        // Step 3: Build the edge image + hand-local frame. Both lines and
+        // mounts read from this shared pipeline so edge detection runs once.
+        let palmPoints = try getPalmKeyPoints(from: handLandmarks)
 
-        // Step 4: Analyze hand shape
+        guard let cgImage = image.cgImage,
+              let edgeUIImage = applyEdgeDetection(to: image),
+              let edgeCGImage = edgeUIImage.cgImage,
+              let edgePixels = decodeRGBA(from: edgeCGImage) else {
+            throw PalmAnalysisError.processingFailed
+        }
+
+        let imageSize = CGSize(width: cgImage.width, height: cgImage.height)
+        let wrist = toImagePoint(palmPoints.wrist, imageSize: imageSize)
+        let indexBase = toImagePoint(palmPoints.indexBase, imageSize: imageSize)
+        let middleBase = toImagePoint(palmPoints.middleBase, imageSize: imageSize)
+        let littleBase = toImagePoint(palmPoints.littleBase, imageSize: imageSize)
+
+        let handFrame = HandFrame(
+            wrist: wrist,
+            palmRight: CGPoint(x: littleBase.x - indexBase.x, y: littleBase.y - indexBase.y),
+            palmUp: CGPoint(x: middleBase.x - wrist.x, y: middleBase.y - wrist.y)
+        )
+
+        print(String(format: "[PalmAnalysis] handFrame wrist=(%.0f, %.0f) palmRight=(%.0f, %.0f) palmUp=(%.0f, %.0f) imageSize=%dx%d",
+                     wrist.x, wrist.y, handFrame.palmRight.x, handFrame.palmRight.y,
+                     handFrame.palmUp.x, handFrame.palmUp.y, cgImage.width, cgImage.height))
+
+        // Step 4: Analyze palm lines deterministically from the edge image
+        let lineCharacteristics = analyzePalmLines(edgePixels: edgePixels, handFrame: handFrame)
+
+        // Step 5: Analyze hand shape (uses landmark geometry only)
         let handShape = analyzeHandShape(using: handLandmarks)
 
-        // Step 5: Analyze palm mounts
-        let mounts = analyzePalmMounts(using: handLandmarks)
+        // Step 6: Analyze palm mounts deterministically from the edge image
+        let mounts = analyzePalmMounts(edgePixels: edgePixels, handFrame: handFrame)
 
         // Debug dump — one block per scan, easy to paste as a new column in a tracking table.
         logDebugReading(lines: lineCharacteristics, handShape: handShape, mounts: mounts)
 
-        // Step 6: Create palm reading
+        // Step 7: Create palm reading
         return PalmReading(
             heartLine: lineCharacteristics.heartLine,
             headLine: lineCharacteristics.headLine,
@@ -281,42 +308,12 @@ class PalmAnalysisService {
         let coverage: Float     // fraction of strips along the line's axis that contain at least one edge pixel
     }
 
-    private func analyzePalmLines(in image: UIImage, landmarks: VNHumanHandPoseObservation) async throws -> (
+    private func analyzePalmLines(edgePixels: EdgePixels, handFrame: HandFrame) -> (
         heartLine: PalmLineCharacteristics,
         headLine: PalmLineCharacteristics,
         lifeLine: PalmLineCharacteristics,
         fateLine: PalmLineCharacteristics?
     ) {
-        let palmPoints = try getPalmKeyPoints(from: landmarks)
-
-        guard let cgImage = image.cgImage,
-              let edgeUIImage = applyEdgeDetection(to: image),
-              let edgeCGImage = edgeUIImage.cgImage,
-              let edgePixels = decodeRGBA(from: edgeCGImage) else {
-            throw PalmAnalysisError.processingFailed
-        }
-
-        let imageSize = CGSize(width: cgImage.width, height: cgImage.height)
-
-        // Build a hand-local frame so ROIs follow the palm regardless of
-        // how the hand is rotated in the photo. palmRight points from the
-        // index MCP to the little MCP (so the thumb side is always at a < 0);
-        // palmUp points from the wrist up to the middle MCP.
-        let wrist = toImagePoint(palmPoints.wrist, imageSize: imageSize)
-        let indexBase = toImagePoint(palmPoints.indexBase, imageSize: imageSize)
-        let middleBase = toImagePoint(palmPoints.middleBase, imageSize: imageSize)
-        let littleBase = toImagePoint(palmPoints.littleBase, imageSize: imageSize)
-
-        let handFrame = HandFrame(
-            wrist: wrist,
-            palmRight: CGPoint(x: littleBase.x - indexBase.x, y: littleBase.y - indexBase.y),
-            palmUp: CGPoint(x: middleBase.x - wrist.x, y: middleBase.y - wrist.y)
-        )
-
-        print(String(format: "[PalmAnalysis] handFrame wrist=(%.0f, %.0f) palmRight=(%.0f, %.0f) palmUp=(%.0f, %.0f) imageSize=%dx%d",
-                     wrist.x, wrist.y, handFrame.palmRight.x, handFrame.palmRight.y,
-                     handFrame.palmUp.x, handFrame.palmUp.y, cgImage.width, cgImage.height))
-
         // ROIs in hand-local coordinates. (a, b) where:
         //   a ∈ [-0.5, 0.5] runs along palmRight (across the palm)
         //   b ∈ [0, 1] runs along palmUp (wrist → MCPs)
@@ -757,101 +754,63 @@ class PalmAnalysisService {
     }
     
     // MARK: - Mount Analysis
-    
-    private func analyzePalmMounts(using landmarks: VNHumanHandPoseObservation) -> [PalmMountCharacteristics] {
-        guard let palmPoints = try? getPalmKeyPoints(from: landmarks) else {
-            return []
+
+    // Each mount is a region of the palm. Prominent mounts physically bulge
+    // - we cannot measure that in 2D, so we use edge density in the mount's
+    // ROI as a proxy: prominent mounts have more skin folding, creases,
+    // and texture relative to flat (smooth) regions.
+    private func analyzePalmMounts(edgePixels: EdgePixels, handFrame: HandFrame) -> [PalmMountCharacteristics] {
+        // ROIs in hand-local coordinates. Thumb side sits at a < 0 (because
+        // palmRight is defined as index → little, away from the thumb).
+        let mountROIs: [(mount: PalmMount, rect: HandLocalRect)] = [
+            // Finger-base mounts: bands just below each MCP.
+            (.jupiter,   HandLocalRect(aRange: -0.50 ... -0.28, bRange: 0.76 ... 0.92)),
+            (.saturn,    HandLocalRect(aRange: -0.12 ...  0.12, bRange: 0.76 ... 0.92)),
+            (.apollo,    HandLocalRect(aRange:  0.15 ...  0.32, bRange: 0.76 ... 0.92)),
+            (.mercury,   HandLocalRect(aRange:  0.34 ...  0.50, bRange: 0.76 ... 0.92)),
+            // Side mounts: Venus is the thumb ball, Moon (Luna) is on the
+            // percussion side opposite the thumb, near the wrist.
+            (.venus,     HandLocalRect(aRange: -0.55 ... -0.32, bRange: 0.15 ... 0.50)),
+            (.moon,      HandLocalRect(aRange:  0.32 ...  0.50, bRange: 0.12 ... 0.42)),
+            // Mars Upper (active): thumb side mid-palm.
+            // Mars Lower (passive): percussion side mid-palm.
+            (.marsUpper, HandLocalRect(aRange: -0.42 ... -0.25, bRange: 0.55 ... 0.72)),
+            (.marsLower, HandLocalRect(aRange:  0.28 ...  0.48, bRange: 0.48 ... 0.65)),
+            // Neptune sits at the bottom-center of the palm between Venus
+            // and Moon, right above the wrist.
+            (.neptune,   HandLocalRect(aRange: -0.18 ...  0.18, bRange: 0.05 ... 0.22))
+        ]
+
+        var results: [PalmMountCharacteristics] = []
+        for (mount, rect) in mountROIs {
+            let metrics = sampleLineMetrics(edgePixels, handFrame: handFrame, rect: rect, axis: .horizontal)
+            let prominence = mountProminence(from: metrics)
+            if let m = metrics {
+                print(String(format: "[PalmAnalysis] mount %@: edges=%.3f intensity=%.3f → %@",
+                             mount.rawValue, m.edgeRatio, m.avgIntensity, prominence.rawValue))
+            } else {
+                print("[PalmAnalysis] mount \(mount.rawValue): off-image → \(prominence.rawValue)")
+            }
+            results.append(PalmMountCharacteristics(mount: mount, prominence: prominence))
         }
-        
-        var mounts: [PalmMountCharacteristics] = []
-        
-        // Analyze each mount based on finger base positions and palm geometry
-        // Jupiter Mount (under index finger)
-        let jupiterProminence = analyzeMountProminence(
-            basePoint: palmPoints.indexBase,
-            adjacentPoints: [palmPoints.middleBase],
-            palmPoints: palmPoints
-        )
-        mounts.append(PalmMountCharacteristics(mount: .jupiter, prominence: jupiterProminence))
-        
-        // Saturn Mount (under middle finger)
-        let saturnProminence = analyzeMountProminence(
-            basePoint: palmPoints.middleBase,
-            adjacentPoints: [palmPoints.indexBase, palmPoints.ringBase],
-            palmPoints: palmPoints
-        )
-        mounts.append(PalmMountCharacteristics(mount: .saturn, prominence: saturnProminence))
-        
-        // Apollo Mount (under ring finger)
-        let apolloProminence = analyzeMountProminence(
-            basePoint: palmPoints.ringBase,
-            adjacentPoints: [palmPoints.middleBase, palmPoints.littleBase],
-            palmPoints: palmPoints
-        )
-        mounts.append(PalmMountCharacteristics(mount: .apollo, prominence: apolloProminence))
-        
-        // Mercury Mount (under pinky)
-        let mercuryProminence = analyzeMountProminence(
-            basePoint: palmPoints.littleBase,
-            adjacentPoints: [palmPoints.ringBase],
-            palmPoints: palmPoints
-        )
-        mounts.append(PalmMountCharacteristics(mount: .mercury, prominence: mercuryProminence))
-        
-        // Venus Mount (thumb ball) - typically prominent
-        let venusProminence = analyzeMountProminence(
-            basePoint: palmPoints.thumbBase,
-            adjacentPoints: [palmPoints.wrist],
-            palmPoints: palmPoints
-        )
-        mounts.append(PalmMountCharacteristics(mount: .venus, prominence: venusProminence))
-        
-        // Mars Mounts - analyzed based on palm regions
-        mounts.append(PalmMountCharacteristics(
-            mount: .marsUpper,
-            prominence: [.normal, .normal, .prominent].randomElement() ?? .normal
-        ))
-        mounts.append(PalmMountCharacteristics(
-            mount: .marsLower,
-            prominence: [.normal, .normal, .prominent].randomElement() ?? .normal
-        ))
-        
-        // Moon Mount (opposite side from thumb)
-        mounts.append(PalmMountCharacteristics(
-            mount: .moon,
-            prominence: [.normal, .prominent, .prominent].randomElement() ?? .normal
-        ))
-        
-        // Neptune Mount (at wrist)
-        mounts.append(PalmMountCharacteristics(
-            mount: .neptune,
-            prominence: [.flat, .normal, .normal].randomElement() ?? .normal
-        ))
-        
-        return mounts
+        return results
     }
-    
-    private func analyzeMountProminence(
-        basePoint: VNRecognizedPoint,
-        adjacentPoints: [VNRecognizedPoint],
-        palmPoints: PalmKeyPoints
-    ) -> PalmMountCharacteristics.MountProminence {
-        // Calculate relative position and spacing
-        // In a production app, this would analyze the actual image elevation
-        // For now, we use geometric heuristics
-        
-        let baseY = basePoint.location.y
-        let wristY = palmPoints.wrist.location.y
-        
-        // Mounts higher up on the palm (closer to fingers) tend to be more prominent
-        let relativeHeight = abs(baseY - wristY)
-        
-        if relativeHeight > 0.35 {
-            return [.prominent, .prominent, .normal].randomElement() ?? .prominent
-        } else if relativeHeight > 0.25 {
-            return [.normal, .normal, .prominent].randomElement() ?? .normal
+
+    private func mountProminence(from metrics: LineMetrics?) -> PalmMountCharacteristics.MountProminence {
+        // Off-image or undersampled ROIs default to .normal rather than .flat
+        // so a clipped landmark doesn't read as a missing mount.
+        guard let metrics = metrics else { return .normal }
+
+        // Same metric scale as the line analyzer (adaptive thresholding
+        // already normalizes for lighting). Bands picked so that smooth
+        // regions land in .flat, typical palm skin in .normal, and
+        // well-developed mounts with visible creases in .prominent.
+        if metrics.edgeRatio >= 0.065 {
+            return .prominent
+        } else if metrics.edgeRatio >= 0.028 {
+            return .normal
         } else {
-            return [.flat, .normal, .normal].randomElement() ?? .normal
+            return .flat
         }
     }
 }
