@@ -53,9 +53,11 @@ struct PalmistryView: View {
                         // Palmistry options
                         VStack(spacing: 14) {
                             // Palm Reading
-                            NavigationLink(destination: PalmReadingView()) {
+                            NavigationLink(destination: PalmReadingView()
+                                .toolbar(.hidden, for: .tabBar)
+                            ) {
                                 NavigationButton(
-                                    icon: "hand.raised.fill",
+                                    icon: "hand.raised.palm.facing.fill",
                                     title: L10n.palmReadingTitle,
                                     subtitle: L10n.palmReadingSubtitle
                                 )

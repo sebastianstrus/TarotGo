@@ -48,7 +48,7 @@ struct LearnPalmistryView: View {
                         // 2. Palm Basic Meanings
                         NavigationLink(destination: PalmBasicMeaningsView()) {
                             LearnOptionButton(
-                                icon: "hand.raised.fill",
+                                icon: "hand.raised.palm.facing.fill",
                                 title: L10n.learnPalmistryBasicMeaningsTitle,
                                 subtitle: L10n.learnPalmistryBasicMeaningsSubtitle
                             )

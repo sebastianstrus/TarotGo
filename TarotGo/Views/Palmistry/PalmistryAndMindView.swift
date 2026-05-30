@@ -124,7 +124,7 @@ struct PalmistryInsightBox: View {
     
     var body: some View {
         HStack(alignment: .top, spacing: 10) {
-            Image(systemName: "hand.raised.fill")
+            Image(systemName: "hand.raised.palm.facing.fill")
                 .font(.system(size: 20))
                 .foregroundStyle(AppTheme.goldGradient)
                 .padding(.top, 2)

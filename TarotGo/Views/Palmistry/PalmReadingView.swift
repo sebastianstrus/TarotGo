@@ -61,13 +61,13 @@ struct IntroductionView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 30) {
+            VStack(spacing: 20) {
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 10)
                 
                 // Header
                 VStack(spacing: 15) {
-                    Image(systemName: "hand.raised.fill")
+                    Image(systemName: "hand.raised.palm.facing.fill")
                         .font(.system(size: 70))
                         .foregroundStyle(AppTheme.goldGradient)
                         .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
@@ -261,7 +261,7 @@ private struct PalmReadingOverlay: View {
                 }
 
                 // Central palm icon
-                Image(systemName: "hand.raised.fill")
+                Image(systemName: "hand.raised.palm.facing.fill")
                     .font(.system(size: 96))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.9), radius: 18)
@@ -393,11 +393,11 @@ struct PalmResultView: View {
         ScrollView {
             VStack(spacing: 25) {
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 10)
                 
                 // Header
                 VStack(spacing: 12) {
-                    Image(systemName: "hand.raised.fill")
+                    Image(systemName: "hand.raised.palm.facing.fill")
                         .font(.system(size: 50))
                         .foregroundStyle(AppTheme.goldGradient)
                     
