@@ -489,35 +489,45 @@ class PalmAnalysisService {
             return PalmLineCharacteristics(line: line, length: .medium, depth: .moderate, continuity: .continuous)
         }
 
+        // Combined length score: combining edgeRatio and coverage damps the
+        // noise of either signal alone — they are correlated but noisy in
+        // different ways, so the sum is more stable across captures of the
+        // same palm than either individually.
+        let lengthScore = metrics.edgeRatio * 8 + metrics.coverage * 0.3
+
         let length: PalmLineCharacteristics.LineLength
-        if metrics.coverage >= 0.62 {
+        if lengthScore >= 0.70 {
             length = .long
-        } else if metrics.coverage >= 0.30 {
+        } else if lengthScore >= 0.40 {
             length = .medium
         } else {
             length = .short
         }
 
+        // Wide moderate band so typical palm-line intensities (0.08-0.18)
+        // sit comfortably inside it rather than flipping at the boundary.
         let depth: PalmLineCharacteristics.LineDepth
-        if metrics.avgIntensity >= 0.15 {
+        if metrics.avgIntensity >= 0.20 {
             depth = .deep
-        } else if metrics.avgIntensity >= 0.06 {
+        } else if metrics.avgIntensity >= 0.07 {
             depth = .moderate
         } else {
             depth = .faint
         }
 
+        // Continuity from edgeRatio alone: density of edge samples reflects
+        // how unbroken the line signal is across its ROI.
         let continuity: PalmLineCharacteristics.LineContinuity
-        if metrics.coverage >= 0.78 && metrics.edgeRatio >= 0.035 {
+        if metrics.edgeRatio >= 0.05 {
             continuity = .continuous
-        } else if metrics.coverage >= 0.45 {
+        } else if metrics.edgeRatio >= 0.020 {
             continuity = .chained
         } else {
             continuity = .broken
         }
 
-        print(String(format: "[PalmAnalysis] %@: edges=%.3f intensity=%.3f coverage=%.3f → %@/%@/%@",
-                     line.rawValue, metrics.edgeRatio, metrics.avgIntensity, metrics.coverage,
+        print(String(format: "[PalmAnalysis] %@: edges=%.3f intensity=%.3f coverage=%.3f score=%.3f → %@/%@/%@",
+                     line.rawValue, metrics.edgeRatio, metrics.avgIntensity, metrics.coverage, lengthScore,
                      length.rawValue, depth.rawValue, continuity.rawValue))
 
         return PalmLineCharacteristics(line: line, length: length, depth: depth, continuity: continuity)
@@ -530,9 +540,12 @@ class PalmAnalysisService {
             return nil
         }
 
-        print(String(format: "[PalmAnalysis] fate:  edges=%.3f intensity=%.3f coverage=%.3f",
-                     metrics.edgeRatio, metrics.avgIntensity, metrics.coverage))
+        let lengthScore = metrics.edgeRatio * 8 + metrics.coverage * 0.3
 
+        print(String(format: "[PalmAnalysis] fate:  edges=%.3f intensity=%.3f coverage=%.3f score=%.3f",
+                     metrics.edgeRatio, metrics.avgIntensity, metrics.coverage, lengthScore))
+
+        // Presence gate: require both a minimum edge density and coverage.
         let minimumEdgeRatio: Float = 0.020
         let minimumCoverage: Float = 0.35
         guard metrics.edgeRatio >= minimumEdgeRatio, metrics.coverage >= minimumCoverage else {
@@ -540,18 +553,18 @@ class PalmAnalysisService {
         }
 
         let length: PalmLineCharacteristics.LineLength
-        if metrics.coverage >= 0.65 { length = .long }
-        else if metrics.coverage >= 0.40 { length = .medium }
+        if lengthScore >= 0.70 { length = .long }
+        else if lengthScore >= 0.40 { length = .medium }
         else { length = .short }
 
         let depth: PalmLineCharacteristics.LineDepth
-        if metrics.avgIntensity >= 0.12 { depth = .deep }
-        else if metrics.avgIntensity >= 0.05 { depth = .moderate }
+        if metrics.avgIntensity >= 0.20 { depth = .deep }
+        else if metrics.avgIntensity >= 0.07 { depth = .moderate }
         else { depth = .faint }
 
         let continuity: PalmLineCharacteristics.LineContinuity
-        if metrics.coverage >= 0.75 && metrics.edgeRatio >= 0.035 { continuity = .continuous }
-        else if metrics.coverage >= 0.50 { continuity = .chained }
+        if metrics.edgeRatio >= 0.05 { continuity = .continuous }
+        else if metrics.edgeRatio >= 0.020 { continuity = .chained }
         else { continuity = .broken }
 
         return PalmLineCharacteristics(line: .fate, length: length, depth: depth, continuity: continuity)
@@ -649,9 +662,12 @@ class PalmAnalysisService {
         // Calculate finger length (using middle finger as reference)
         let fingerLength = calculateDistance(from: palmPoints.middleBase, to: middleTip)
         
-        // Determine palm ratio
+        // Determine palm ratio. Threshold raised to 1.25 because Vision's
+        // normalized landmark coordinates squash the y axis on portrait
+        // photos, so the ratio sits near 1.1-1.2 for most square-ish palms
+        // and would otherwise flip square↔rectangular between captures.
         let heightToWidthRatio = palmHeight / palmWidth
-        let palmRatio: HandShapeAnalysis.PalmRatio = heightToWidthRatio > 1.15 ? .rectangular : .square
+        let palmRatio: HandShapeAnalysis.PalmRatio = heightToWidthRatio > 1.25 ? .rectangular : .square
         
         // Determine finger length relative to palm
         let fingerToPalmRatio = fingerLength / palmHeight
