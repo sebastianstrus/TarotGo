@@ -38,30 +38,47 @@ class PalmReadingViewModel: ObservableObject {
         capturedImage = image
         currentPhase = .analyzing
         isAnalyzing = true
-        
+
         HapticService.shared.impact(.medium)
         SoundService.shared.play(.magic, volume: 0.5)
-        
+
+        // Mid-ritual heartbeat haptics to match the mystical overlay pacing.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) { [weak self] in
+            guard self?.currentPhase == .analyzing else { return }
+            HapticService.shared.impact(.light)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.4) { [weak self] in
+            guard self?.currentPhase == .analyzing else { return }
+            HapticService.shared.impact(.light)
+        }
+
+        let overlayStart = Date()
+        let minimumOverlayDuration: TimeInterval = 4.4
+
         do {
-            // Add slight delay for mystical effect
-            try await Task.sleep(nanoseconds: 1_500_000_000) // 1.5 seconds
-            
             // Analyze the palm
             let reading = try await PalmAnalysisService.shared.analyzePalm(image: image)
-            
+
+            // Ensure the mystical overlay stays visible for the full ritual duration.
+            let elapsed = Date().timeIntervalSince(overlayStart)
+            if elapsed < minimumOverlayDuration {
+                let remaining = minimumOverlayDuration - elapsed
+                try await Task.sleep(nanoseconds: UInt64(remaining * 1_000_000_000))
+            }
+
             palmReading = reading
             currentPhase = .results
-            
+
             HapticService.shared.impact(.success)
             SoundService.shared.play(.success, volume: 0.6)
-            
+
         } catch {
             errorMessage = error.localizedDescription
             showError = true
             currentPhase = .cameraCapture
             HapticService.shared.impact(.error)
         }
-        
+
         isAnalyzing = false
     }
     

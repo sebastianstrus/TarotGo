@@ -22,7 +22,8 @@ struct PalmReadingView: View {
             case .cameraCapture:
                 PalmCaptureView(viewModel: viewModel)
             case .analyzing:
-                AnalyzingView()
+                PalmReadingOverlay()
+                    .transition(.opacity)
             case .results:
                 if let reading = viewModel.palmReading {
                     PalmResultView(reading: reading, viewModel: viewModel)
@@ -162,34 +163,222 @@ struct InfoCard: View {
     }
 }
 
-// MARK: - Analyzing View
+// MARK: - Mystical Palm Reading Overlay
 
-struct AnalyzingView: View {
-    @State private var rotation: Double = 0
-    
+private struct PalmReadingOverlay: View {
+    @State private var outerRingRotation: Double = 0
+    @State private var innerRingRotation: Double = 0
+    @State private var pulse: CGFloat = 0.9
+    @State private var glow: Double = 0.35
+    @State private var appear: Bool = false
+    @State private var lineProgress: CGFloat = 0
+    @State private var scanLineOffset: CGFloat = -90
+    @State private var rippleProgress: CGFloat = 0
+
     var body: some View {
-        VStack(spacing: 30) {
-            Image(systemName: "hand.raised.fill")
-                .font(.system(size: 80))
-                .foregroundStyle(AppTheme.goldGradient)
-                .rotationEffect(.degrees(rotation))
-                .shadow(color: AppTheme.gold.opacity(0.5), radius: 20)
-                .onAppear {
-                    withAnimation(.linear(duration: 2).repeatForever(autoreverses: false)) {
-                        rotation = 360
+        ZStack {
+            // Dimmed mystical backdrop
+            Color.black.opacity(0.75)
+                .ignoresSafeArea()
+                .background(.ultraThinMaterial.opacity(0.9))
+
+            // Radiant glow behind the palm
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            AppTheme.gold.opacity(glow),
+                            AppTheme.mysticalPurple.opacity(glow * 0.6),
+                            Color.clear
+                        ],
+                        center: .center,
+                        startRadius: 10,
+                        endRadius: 220
+                    )
+                )
+                .frame(width: 440, height: 440)
+                .blur(radius: 30)
+
+            // Concentric energy ripples expanding outward
+            ZStack {
+                ForEach(0..<3, id: \.self) { i in
+                    Circle()
+                        .stroke(AppTheme.gold.opacity(0.5), lineWidth: 1.2)
+                        .frame(width: 180, height: 180)
+                        .scaleEffect(0.6 + rippleProgress + CGFloat(i) * 0.35)
+                        .opacity(Double(1 - rippleProgress) * (1 - Double(i) * 0.25))
+                }
+            }
+
+            // Main mystical geometry
+            ZStack {
+                // Outer rotating ring with orbiting golden dots
+                ZStack {
+                    Circle()
+                        .stroke(AppTheme.gold.opacity(0.25), lineWidth: 1)
+                        .frame(width: 280, height: 280)
+
+                    ForEach(0..<8, id: \.self) { i in
+                        Circle()
+                            .fill(AppTheme.goldGradient)
+                            .frame(width: 6, height: 6)
+                            .shadow(color: AppTheme.gold.opacity(0.8), radius: 6)
+                            .offset(y: -140)
+                            .rotationEffect(.degrees(Double(i) * 45))
                     }
                 }
-            
-            VStack(spacing: 12) {
-                Text(L10n.palmReadingAnalyzing)
-                    .font(AppTheme.serifFont(size: 28, weight: .medium))
+                .rotationEffect(.degrees(outerRingRotation))
+
+                // Inner counter-rotating ring with smaller dots
+                ZStack {
+                    Circle()
+                        .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                        .frame(width: 220, height: 220)
+
+                    ForEach(0..<12, id: \.self) { i in
+                        Circle()
+                            .fill(AppTheme.lightGold)
+                            .frame(width: 3, height: 3)
+                            .shadow(color: AppTheme.gold.opacity(0.7), radius: 4)
+                            .offset(y: -110)
+                            .rotationEffect(.degrees(Double(i) * 30))
+                    }
+                }
+                .rotationEffect(.degrees(innerRingRotation))
+
+                // Palm lines being "read" (traced in with shimmer)
+                ZStack {
+                    ForEach(0..<4, id: \.self) { i in
+                        PalmLineShape(lineIndex: i)
+                            .trim(from: 0, to: lineProgress)
+                            .stroke(
+                                AppTheme.goldGradient,
+                                style: StrokeStyle(lineWidth: 1.6, lineCap: .round)
+                            )
+                            .shadow(color: AppTheme.gold.opacity(0.8), radius: 4)
+                            .frame(width: 150, height: 170)
+                    }
+                }
+
+                // Central palm icon
+                Image(systemName: "hand.raised.fill")
+                    .font(.system(size: 96))
                     .foregroundStyle(AppTheme.goldGradient)
-                
-                Text(L10n.palmReadingAnalyzingDesc)
-                    .font(.system(size: 16, weight: .light))
-                    .foregroundColor(AppTheme.textSecondary)
+                    .shadow(color: AppTheme.gold.opacity(0.9), radius: 18)
+                    .scaleEffect(pulse)
+
+                // Horizontal scanning line traveling over the palm
+                ZStack {
+                    Rectangle()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color.clear,
+                                    AppTheme.lightGold.opacity(0.9),
+                                    Color.clear
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(width: 180, height: 3)
+                        .shadow(color: AppTheme.gold.opacity(0.9), radius: 8)
+                        .blur(radius: 1)
+                        .offset(y: scanLineOffset)
+                }
+                .frame(width: 200, height: 200)
+                .mask(Circle().frame(width: 200, height: 200))
+            }
+            .opacity(appear ? 1 : 0)
+            .scaleEffect(appear ? 1 : 0.6)
+
+            // Title beneath geometry
+            VStack {
+                Spacer()
+                VStack(spacing: 10) {
+                    Text(L10n.palmReadingAnalyzing)
+                        .font(AppTheme.serifFont(size: 24, weight: .regular))
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .shadow(color: AppTheme.gold.opacity(0.5), radius: 8)
+
+                    Text(L10n.palmReadingAnalyzingDesc)
+                        .font(.system(size: 14, weight: .light))
+                        .foregroundColor(AppTheme.textSecondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 40)
+                }
+                .opacity(appear ? 1 : 0)
+                .padding(.bottom, 100)
             }
         }
+        .onAppear {
+            withAnimation(.easeOut(duration: 0.5)) {
+                appear = true
+            }
+            withAnimation(.linear(duration: 12).repeatForever(autoreverses: false)) {
+                outerRingRotation = 360
+            }
+            withAnimation(.linear(duration: 9).repeatForever(autoreverses: false)) {
+                innerRingRotation = -360
+            }
+            withAnimation(.easeInOut(duration: 1.4).repeatForever(autoreverses: true)) {
+                pulse = 1.08
+                glow = 0.7
+            }
+            withAnimation(.easeInOut(duration: 2.2)) {
+                lineProgress = 1.0
+            }
+            withAnimation(.easeInOut(duration: 1.6).repeatForever(autoreverses: true)) {
+                scanLineOffset = 90
+            }
+            withAnimation(.easeOut(duration: 2.0).repeatForever(autoreverses: false)) {
+                rippleProgress = 1.0
+            }
+        }
+    }
+}
+
+// Hand-drawn palm line paths used for the tracing effect.
+private struct PalmLineShape: Shape {
+    let lineIndex: Int
+
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        let w = rect.width
+        let h = rect.height
+        switch lineIndex {
+        case 0: // Heart line — upper curve across the palm
+            path.move(to: CGPoint(x: w * 0.08, y: h * 0.30))
+            path.addCurve(
+                to: CGPoint(x: w * 0.90, y: h * 0.24),
+                control1: CGPoint(x: w * 0.35, y: h * 0.14),
+                control2: CGPoint(x: w * 0.65, y: h * 0.18)
+            )
+        case 1: // Head line — middle, slightly descending
+            path.move(to: CGPoint(x: w * 0.12, y: h * 0.46))
+            path.addCurve(
+                to: CGPoint(x: w * 0.86, y: h * 0.52),
+                control1: CGPoint(x: w * 0.35, y: h * 0.42),
+                control2: CGPoint(x: w * 0.62, y: h * 0.56)
+            )
+        case 2: // Life line — arcs from index toward wrist
+            path.move(to: CGPoint(x: w * 0.30, y: h * 0.18))
+            path.addCurve(
+                to: CGPoint(x: w * 0.22, y: h * 0.92),
+                control1: CGPoint(x: w * 0.08, y: h * 0.50),
+                control2: CGPoint(x: w * 0.14, y: h * 0.78)
+            )
+        case 3: // Fate line — vertical from wrist toward middle finger
+            path.move(to: CGPoint(x: w * 0.56, y: h * 0.94))
+            path.addCurve(
+                to: CGPoint(x: w * 0.50, y: h * 0.32),
+                control1: CGPoint(x: w * 0.60, y: h * 0.70),
+                control2: CGPoint(x: w * 0.46, y: h * 0.50)
+            )
+        default:
+            break
+        }
+        return path
     }
 }
 
