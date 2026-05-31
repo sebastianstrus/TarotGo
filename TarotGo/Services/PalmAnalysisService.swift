@@ -9,12 +9,60 @@ import Foundation
 import Vision
 import UIKit
 import CoreImage
+import MediaPipeTasksVision
 
-@MainActor
+// Single point in palm space — wraps MediaPipe's NormalizedLandmark in our
+// own type so the rest of the service doesn't have to know about Vision or
+// MediaPipe specifically. Coordinates are normalized [0, 1] with origin at
+// TOP-LEFT (matching MediaPipe's convention and standard image pixel layout).
+struct PalmLandmark {
+    let x: CGFloat
+    let y: CGFloat
+    let z: CGFloat
+}
+
+// Indexes into the MediaPipe HandLandmarker output (21 landmarks per hand).
+// These match the standard MediaPipe hand landmark topology.
+private enum HandLandmark: Int {
+    case wrist = 0
+    case thumbCMC = 1, thumbMP = 2, thumbIP = 3, thumbTip = 4
+    case indexMCP = 5, indexPIP = 6, indexDIP = 7, indexTip = 8
+    case middleMCP = 9, middlePIP = 10, middleDIP = 11, middleTip = 12
+    case ringMCP = 13, ringPIP = 14, ringDIP = 15, ringTip = 16
+    case littleMCP = 17, littlePIP = 18, littleDIP = 19, littleTip = 20
+}
+
+// Not @MainActor on purpose: the analysis pipeline is heavy (MediaPipe +
+// Vision + per-pixel sampling) and would otherwise freeze the UI when
+// awaited from a @MainActor view model. Without the annotation the work
+// runs on the global cooperative executor, off the main thread.
 class PalmAnalysisService {
     static let shared = PalmAnalysisService()
-    
+
     private init() {}
+
+    // MediaPipe HandLandmarker, lazily created once. Loading the .task model
+    // costs ~50-100 ms; re-using the same instance across scans amortizes
+    // that cost.
+    private lazy var handLandmarker: HandLandmarker? = {
+        guard let modelPath = Bundle.main.path(forResource: "hand_landmarker", ofType: "task") else {
+            print("[PalmAnalysis] hand_landmarker.task not found in bundle")
+            return nil
+        }
+        let options = HandLandmarkerOptions()
+        options.runningMode = .image
+        options.numHands = 1
+        options.minHandDetectionConfidence = 0.5
+        options.minHandPresenceConfidence = 0.5
+        options.minTrackingConfidence = 0.5
+        options.baseOptions.modelAssetPath = modelPath
+        do {
+            return try HandLandmarker(options: options)
+        } catch {
+            print("[PalmAnalysis] HandLandmarker init failed: \(error)")
+            return nil
+        }
+    }()
     
     // Analyze palm image and generate reading
     func analyzePalm(image originalImage: UIImage) async throws -> PalmReading {
@@ -130,87 +178,59 @@ class PalmAnalysisService {
     }
     
     // MARK: - Hand Detection
-    
-    private func detectHandLandmarks(in image: UIImage) async throws -> VNHumanHandPoseObservation {
-        guard let cgImage = image.cgImage else {
+
+    // Runs MediaPipe's HandLandmarker on the image and returns 21 palm
+    // landmarks. MediaPipe's hand model is more geometrically stable than
+    // Apple Vision's hand pose request — landmarks barely drift between
+    // captures of the same palm in similar conditions.
+    private func detectHandLandmarks(in image: UIImage) async throws -> [PalmLandmark] {
+        guard let landmarker = handLandmarker else {
+            throw PalmAnalysisError.processingFailed
+        }
+        guard let mpImage = try? MPImage(uiImage: image) else {
             throw PalmAnalysisError.invalidImage
         }
-        
-        return try await withCheckedThrowingContinuation { continuation in
-            let request = VNDetectHumanHandPoseRequest { request, error in
-                if let error = error {
-                    continuation.resume(throwing: error)
-                    return
-                }
-                
-                guard let observations = request.results as? [VNHumanHandPoseObservation],
-                      let firstHand = observations.first else {
-                    continuation.resume(throwing: PalmAnalysisError.noHandDetected)
-                    return
-                }
-                
-                continuation.resume(returning: firstHand)
-            }
-            
-            let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
-            do {
-                try handler.perform([request])
-            } catch {
-                continuation.resume(throwing: error)
-            }
+
+        let result: HandLandmarkerResult
+        do {
+            result = try landmarker.detect(image: mpImage)
+        } catch {
+            print("[PalmAnalysis] HandLandmarker.detect failed: \(error)")
+            throw PalmAnalysisError.noHandDetected
         }
+
+        guard let firstHand = result.landmarks.first, firstHand.count == 21 else {
+            throw PalmAnalysisError.noHandDetected
+        }
+
+        return firstHand.map { PalmLandmark(x: CGFloat($0.x), y: CGFloat($0.y), z: CGFloat($0.z)) }
     }
 
     // MARK: - Open Palm Validation
 
-    // Verifies that the detected hand is open with extended fingers and that
-    // the key landmarks are confident enough to support a meaningful reading.
-    // A closed fist still registers as a "hand" in Vision, so this guard
-    // prevents the rest of the pipeline from running on bent/curled fingers.
-    private func validateOpenPalm(_ observation: VNHumanHandPoseObservation) throws {
-        // Vision recognizes joints with confidence in [0, 1]. Anything below
-        // this is too unreliable to base a reading on.
-        let minimumConfidence: Float = 0.3
+    // Verifies that the detected hand is open with extended fingers.
+    // MediaPipe always returns 21 landmarks when detection succeeds, so we
+    // skip per-landmark confidence checks (already enforced by the
+    // detector's minHandDetectionConfidence threshold) and just gate on
+    // finger straightness — which catches fists and curled fingers.
+    private func validateOpenPalm(_ landmarks: [PalmLandmark]) throws {
         // Ratio of straight-line MCP→TIP distance to the sum of the three
-        // finger segments. 1.0 means a perfectly straight finger; a fist
-        // collapses to ~0.4. 0.80 is a comfortable threshold that still
-        // accepts a naturally relaxed open hand.
+        // finger segments. 1.0 = perfectly straight; a fist collapses to
+        // ~0.4. 0.80 accepts a naturally relaxed open hand.
         let straightnessThreshold: CGFloat = 0.80
 
-        let fingers: [(mcp: VNHumanHandPoseObservation.JointName,
-                       pip: VNHumanHandPoseObservation.JointName,
-                       dip: VNHumanHandPoseObservation.JointName,
-                       tip: VNHumanHandPoseObservation.JointName)] = [
+        let fingers: [(mcp: HandLandmark, pip: HandLandmark, dip: HandLandmark, tip: HandLandmark)] = [
             (.indexMCP, .indexPIP, .indexDIP, .indexTip),
             (.middleMCP, .middlePIP, .middleDIP, .middleTip),
             (.ringMCP, .ringPIP, .ringDIP, .ringTip),
             (.littleMCP, .littlePIP, .littleDIP, .littleTip)
         ]
 
-        // Confidence gate first: if any required joint is missing or weak,
-        // bail out before we trust the geometry.
-        let requiredJoints: [VNHumanHandPoseObservation.JointName] = [
-            .wrist,
-            .indexMCP, .indexTip,
-            .middleMCP, .middleTip,
-            .ringMCP, .ringTip,
-            .littleMCP, .littleTip
-        ]
-        for joint in requiredJoints {
-            guard let point = try? observation.recognizedPoint(joint),
-                  point.confidence >= minimumConfidence else {
-                throw PalmAnalysisError.lowConfidence
-            }
-        }
-
-        // Straightness check per finger.
         for finger in fingers {
-            guard let mcp = try? observation.recognizedPoint(finger.mcp),
-                  let pip = try? observation.recognizedPoint(finger.pip),
-                  let dip = try? observation.recognizedPoint(finger.dip),
-                  let tip = try? observation.recognizedPoint(finger.tip) else {
-                throw PalmAnalysisError.lowConfidence
-            }
+            let mcp = landmarks[finger.mcp.rawValue]
+            let pip = landmarks[finger.pip.rawValue]
+            let dip = landmarks[finger.dip.rawValue]
+            let tip = landmarks[finger.tip.rawValue]
 
             let directDistance = calculateDistance(from: mcp, to: tip)
             let segmentedDistance = calculateDistance(from: mcp, to: pip)
@@ -228,73 +248,6 @@ class PalmAnalysisService {
         }
     }
 
-    // MARK: - Palm Region Extraction
-    
-    private func extractPalmRegion(from image: UIImage, using landmarks: VNHumanHandPoseObservation) -> UIImage {
-        guard let cgImage = image.cgImage else { return image }
-        
-        // Get key points to define palm boundary
-        guard let wrist = try? landmarks.recognizedPoint(.wrist),
-              let thumbCMC = try? landmarks.recognizedPoint(.thumbCMC),
-              let indexMCP = try? landmarks.recognizedPoint(.indexMCP),
-              let middleMCP = try? landmarks.recognizedPoint(.middleMCP),
-              let ringMCP = try? landmarks.recognizedPoint(.ringMCP),
-              let littleMCP = try? landmarks.recognizedPoint(.littleMCP),
-              let indexTip = try? landmarks.recognizedPoint(.indexTip),
-              let littleTip = try? landmarks.recognizedPoint(.littleTip) else {
-            return image
-        }
-        
-        // Vision framework uses normalized coordinates (0-1), origin at bottom-left
-        // We need to convert to image coordinates
-        let imageHeight = CGFloat(cgImage.height)
-        let imageWidth = CGFloat(cgImage.width)
-        
-        // Convert normalized points to image coordinates
-        func toImageCoords(_ point: VNRecognizedPoint) -> CGPoint {
-            return CGPoint(
-                x: point.location.x * imageWidth,
-                y: (1.0 - point.location.y) * imageHeight // Flip Y axis
-            )
-        }
-        
-        let wristPoint = toImageCoords(wrist)
-        let thumbPoint = toImageCoords(thumbCMC)
-        let indexBasePoint = toImageCoords(indexMCP)
-        let middleBasePoint = toImageCoords(middleMCP)
-        let ringBasePoint = toImageCoords(ringMCP)
-        let littleBasePoint = toImageCoords(littleMCP)
-        let indexTipPoint = toImageCoords(indexTip)
-        let littleTipPoint = toImageCoords(littleTip)
-        
-        // Calculate bounding box with some padding
-        let points = [wristPoint, thumbPoint, indexBasePoint, middleBasePoint, 
-                     ringBasePoint, littleBasePoint, indexTipPoint, littleTipPoint]
-        
-        let minX = points.map { $0.x }.min() ?? 0
-        let maxX = points.map { $0.x }.max() ?? imageWidth
-        let minY = points.map { $0.y }.min() ?? 0
-        let maxY = points.map { $0.y }.max() ?? imageHeight
-        
-        // Add padding (10% on each side)
-        let paddingX = (maxX - minX) * 0.1
-        let paddingY = (maxY - minY) * 0.1
-        
-        let cropRect = CGRect(
-            x: max(0, minX - paddingX),
-            y: max(0, minY - paddingY),
-            width: min(imageWidth - minX + paddingX, maxX - minX + 2 * paddingX),
-            height: min(imageHeight - minY + paddingY, maxY - minY + 2 * paddingY)
-        )
-        
-        // Crop the image
-        guard let croppedCGImage = cgImage.cropping(to: cropRect) else {
-            return image
-        }
-        
-        return UIImage(cgImage: croppedCGImage, scale: image.scale, orientation: image.imageOrientation)
-    }
-    
     // MARK: - Line Analysis
 
     private enum LineAxis {
@@ -320,9 +273,9 @@ class PalmAnalysisService {
         // Tightened ranges to stay well inside the palm interior so the
         // samples don't pick up palm-background or finger-crease edges.
         let heartRect = HandLocalRect(aRange: -0.32 ... 0.32, bRange: 0.72 ... 0.86)
-        let headRect  = HandLocalRect(aRange: -0.32 ... 0.32, bRange: 0.48 ... 0.62)
+        let headRect  = HandLocalRect(aRange: -0.32 ... 0.32, bRange: 0.45 ... 0.66)
         let lifeRect  = HandLocalRect(aRange: -0.42 ... -0.22, bRange: 0.30 ... 0.85)
-        let fateRect  = HandLocalRect(aRange: -0.10 ... 0.10, bRange: 0.28 ... 0.78)
+        let fateRect  = HandLocalRect(aRange: -0.12 ... 0.12, bRange: 0.25 ... 0.82)
 
         let heartLine = analyzeLine(edgePixels, handFrame: handFrame, rect: heartRect, line: .heart, axis: .horizontal)
         let headLine  = analyzeLine(edgePixels, handFrame: handFrame, rect: headRect,  line: .head,  axis: .horizontal)
@@ -332,12 +285,13 @@ class PalmAnalysisService {
         return (heartLine, headLine, lifeLine, fateLine)
     }
 
-    // Converts a Vision normalized point (origin bottom-left) into top-left
-    // pixel coordinates of the given image.
-    private func toImagePoint(_ point: VNRecognizedPoint, imageSize: CGSize) -> CGPoint {
+    // Converts a MediaPipe-style PalmLandmark (normalized [0,1], top-left
+    // origin) into top-left image pixel coordinates. No Y-flip needed —
+    // MediaPipe's convention already matches the image pixel layout.
+    private func toImagePoint(_ landmark: PalmLandmark, imageSize: CGSize) -> CGPoint {
         return CGPoint(
-            x: point.location.x * imageSize.width,
-            y: (1.0 - point.location.y) * imageSize.height
+            x: landmark.x * imageSize.width,
+            y: landmark.y * imageSize.height
         )
     }
 
@@ -407,22 +361,19 @@ class PalmAnalysisService {
         return range.lowerBound + (range.upperBound - range.lowerBound) * t
     }
     
-    private func getPalmKeyPoints(from observation: VNHumanHandPoseObservation) throws -> PalmKeyPoints {
-        // Extract key points from hand landmarks
-        let wrist = try observation.recognizedPoint(.wrist)
-        let thumbCMC = try observation.recognizedPoint(.thumbCMC)
-        let indexMCP = try observation.recognizedPoint(.indexMCP)
-        let middleMCP = try observation.recognizedPoint(.middleMCP)
-        let ringMCP = try observation.recognizedPoint(.ringMCP)
-        let littleMCP = try observation.recognizedPoint(.littleMCP)
-        
+    // Pull the palm-anatomical landmarks we care about out of MediaPipe's
+    // 21-landmark output. Throws if the array isn't fully populated.
+    private func getPalmKeyPoints(from landmarks: [PalmLandmark]) throws -> PalmKeyPoints {
+        guard landmarks.count >= 21 else {
+            throw PalmAnalysisError.noHandDetected
+        }
         return PalmKeyPoints(
-            wrist: wrist,
-            thumbBase: thumbCMC,
-            indexBase: indexMCP,
-            middleBase: middleMCP,
-            ringBase: ringMCP,
-            littleBase: littleMCP
+            wrist:      landmarks[HandLandmark.wrist.rawValue],
+            thumbBase:  landmarks[HandLandmark.thumbCMC.rawValue],
+            indexBase:  landmarks[HandLandmark.indexMCP.rawValue],
+            middleBase: landmarks[HandLandmark.middleMCP.rawValue],
+            ringBase:   landmarks[HandLandmark.ringMCP.rawValue],
+            littleBase: landmarks[HandLandmark.littleMCP.rawValue]
         )
     }
     
@@ -481,9 +432,10 @@ class PalmAnalysisService {
         request.contrastAdjustment = 2.0
         // Palm creases are darker than surrounding skin.
         request.detectsDarkOnLight = true
-        // Higher dimension catches finer creases. 1024 is a good balance of
-        // detail and speed; 0 would use the full image at the cost of latency.
-        request.maximumImageDimension = 1024
+        // Lower internal processing dimension speeds up Vision considerably.
+        // 768 still catches major palm creases at 12MP input but cuts work
+        // by ~30% vs 1024.
+        request.maximumImageDimension = 768
 
         let handler = VNImageRequestHandler(cgImage: normalizedCG, options: [:])
         do {
@@ -528,10 +480,16 @@ class PalmAnalysisService {
         context.setFillColor(CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 1))
         context.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
 
-        // White fill + stroke for contour interiors and outlines.
-        context.setFillColor(CGColor(srgbRed: 1, green: 1, blue: 1, alpha: 1))
+        // White stroke only — filling causes Vision's outer palm contour to
+        // paint the entire palm white (with even-odd, child crease contours
+        // become black holes — the inverse of what we want). Stroking
+        // outlines all contour boundaries (including nested crease
+        // boundaries) so palm lines show as white stripes on a black
+        // background. Line width is wide enough that our ROI sampling
+        // grid (~25 px between samples on a typical palm) reliably hits
+        // the stripes.
         context.setStrokeColor(CGColor(srgbRed: 1, green: 1, blue: 1, alpha: 1))
-        context.setLineWidth(2.0)
+        context.setLineWidth(10.0)
         context.setLineCap(.round)
         context.setLineJoin(.round)
 
@@ -546,7 +504,7 @@ class PalmAnalysisService {
             let normalizedPath = contour.normalizedPath
             if let scaledPath = normalizedPath.copy(using: &transform) {
                 context.addPath(scaledPath)
-                context.drawPath(using: .eoFillStroke)
+                context.strokePath()
             }
         }
 
@@ -593,35 +551,38 @@ class PalmAnalysisService {
         // same palm than either individually.
         let lengthScore = metrics.edgeRatio * 8 + metrics.coverage * 0.3
 
+        // Calibrated to Vision contour mask values: with binary stroke
+        // mask, edge ratios run higher than CIEdges did. Medium threshold
+        // dropped to 0.30 so borderline head/fate captures stabilize at
+        // "medium" instead of flipping between "short" and "medium".
         let length: PalmLineCharacteristics.LineLength
         if lengthScore >= 0.70 {
             length = .long
-        } else if lengthScore >= 0.40 {
+        } else if lengthScore >= 0.30 {
             length = .medium
         } else {
             length = .short
         }
 
-        // Adaptive thresholding compresses post-edge intensities into a
-        // narrower band (~0.02-0.10 for typical palms). Bucket boundaries
-        // are placed in the gaps between observed line clusters so faint
-        // lines (life ≈ 0.027) split from moderate lines (heart/head/fate
-        // ≈ 0.05-0.07) without flipping at boundaries.
+        // Depth tuned for contour-mask intensities. Heart areas with many
+        // overlapping creases yield ~0.18-0.25 (deep), normal palm regions
+        // ~0.05-0.10 (moderate), smooth skin below (faint).
         let depth: PalmLineCharacteristics.LineDepth
-        if metrics.avgIntensity >= 0.085 {
+        if metrics.avgIntensity >= 0.14 {
             depth = .deep
-        } else if metrics.avgIntensity >= 0.038 {
+        } else if metrics.avgIntensity >= 0.05 {
             depth = .moderate
         } else {
             depth = .faint
         }
 
-        // Continuity from edgeRatio alone: density of edge samples reflects
-        // how unbroken the line signal is across its ROI.
+        // Continuity tuned to 0.035: head/fate edges in 0.04-0.08 range
+        // reliably stabilize at "continuous" instead of flipping to
+        // "chained" at the previous 0.05 boundary.
         let continuity: PalmLineCharacteristics.LineContinuity
-        if metrics.edgeRatio >= 0.05 {
+        if metrics.edgeRatio >= 0.035 {
             continuity = .continuous
-        } else if metrics.edgeRatio >= 0.020 {
+        } else if metrics.edgeRatio >= 0.015 {
             continuity = .chained
         } else {
             continuity = .broken
@@ -655,17 +616,17 @@ class PalmAnalysisService {
 
         let length: PalmLineCharacteristics.LineLength
         if lengthScore >= 0.70 { length = .long }
-        else if lengthScore >= 0.40 { length = .medium }
+        else if lengthScore >= 0.30 { length = .medium }
         else { length = .short }
 
         let depth: PalmLineCharacteristics.LineDepth
-        if metrics.avgIntensity >= 0.085 { depth = .deep }
-        else if metrics.avgIntensity >= 0.038 { depth = .moderate }
+        if metrics.avgIntensity >= 0.14 { depth = .deep }
+        else if metrics.avgIntensity >= 0.05 { depth = .moderate }
         else { depth = .faint }
 
         let continuity: PalmLineCharacteristics.LineContinuity
-        if metrics.edgeRatio >= 0.05 { continuity = .continuous }
-        else if metrics.edgeRatio >= 0.020 { continuity = .chained }
+        if metrics.edgeRatio >= 0.035 { continuity = .continuous }
+        else if metrics.edgeRatio >= 0.015 { continuity = .chained }
         else { continuity = .broken }
 
         return PalmLineCharacteristics(line: .fate, length: length, depth: depth, continuity: continuity)
@@ -720,10 +681,13 @@ class PalmAnalysisService {
         let totalSamples = samples.count
         let meanBrightness = Float(intensitySum) / Float(totalSamples)
 
-        // Adaptive threshold: edge pixels must be substantially above the
-        // ROI's mean brightness. Floor of 18 prevents false edges in
-        // completely flat ROIs (where mean * factor would be near zero).
-        let edgeThreshold = max(UInt32(18), UInt32(meanBrightness * 2.6))
+        // Fixed mid-point threshold. The contour mask is essentially binary
+        // (white strokes on black), so a pixel is either inside a stroke
+        // (≈255) or in background (0), with anti-aliased ramp in between.
+        // 128 cleanly separates the two. Earlier adaptive formula
+        // (mean * 2.6) saturated above 255 when ROI was densely stroked,
+        // producing the misleading "edges=0 intensity=0.4" combination.
+        let edgeThreshold: UInt32 = 128
 
         let stripCount = 8
         var stripHasEdge = [Bool](repeating: false, count: stripCount)
@@ -749,36 +713,36 @@ class PalmAnalysisService {
         )
     }
 
-    private func calculateDistance(from point1: VNRecognizedPoint, to point2: VNRecognizedPoint) -> CGFloat {
-        let dx = point1.location.x - point2.location.x
-        let dy = point1.location.y - point2.location.y
+    private func calculateDistance(from a: PalmLandmark, to b: PalmLandmark) -> CGFloat {
+        let dx = a.x - b.x
+        let dy = a.y - b.y
         return sqrt(dx * dx + dy * dy)
     }
     
     // MARK: - Hand Shape Analysis
     
-    private func analyzeHandShape(using landmarks: VNHumanHandPoseObservation) -> HandShapeAnalysis {
+    private func analyzeHandShape(using landmarks: [PalmLandmark]) -> HandShapeAnalysis {
         guard let palmPoints = try? getPalmKeyPoints(from: landmarks),
-              let middleTip = try? landmarks.recognizedPoint(.middleTip) else {
-            // Return default if analysis fails
+              landmarks.count > HandLandmark.middleTip.rawValue else {
             return HandShapeAnalysis(
                 shapeType: .earth,
                 fingerLength: .average,
                 palmRatio: .square
             )
         }
-        
-        // Calculate palm dimensions
+        let middleTip = landmarks[HandLandmark.middleTip.rawValue]
+
+        // Calculate palm dimensions in normalized coords.
         let palmWidth = calculateDistance(from: palmPoints.indexBase, to: palmPoints.littleBase)
         let palmHeight = calculateDistance(from: palmPoints.wrist, to: palmPoints.middleBase)
-        
+
         // Calculate finger length (using middle finger as reference)
         let fingerLength = calculateDistance(from: palmPoints.middleBase, to: middleTip)
-        
-        // Determine palm ratio. Threshold raised to 1.25 because Vision's
-        // normalized landmark coordinates squash the y axis on portrait
-        // photos, so the ratio sits near 1.1-1.2 for most square-ish palms
-        // and would otherwise flip square↔rectangular between captures.
+
+        // Determine palm ratio. Threshold raised to 1.25 because normalized
+        // landmark coords squash the y axis on portrait photos, so the
+        // ratio sits near 1.1-1.2 for most square-ish palms and would
+        // otherwise flip square↔rectangular between captures.
         let heightToWidthRatio = palmHeight / palmWidth
         let palmRatio: HandShapeAnalysis.PalmRatio = heightToWidthRatio > 1.25 ? .rectangular : .square
         
@@ -878,12 +842,12 @@ class PalmAnalysisService {
 // MARK: - Supporting Types
 
 struct PalmKeyPoints {
-    let wrist: VNRecognizedPoint
-    let thumbBase: VNRecognizedPoint
-    let indexBase: VNRecognizedPoint
-    let middleBase: VNRecognizedPoint
-    let ringBase: VNRecognizedPoint
-    let littleBase: VNRecognizedPoint
+    let wrist: PalmLandmark
+    let thumbBase: PalmLandmark
+    let indexBase: PalmLandmark
+    let middleBase: PalmLandmark
+    let ringBase: PalmLandmark
+    let littleBase: PalmLandmark
 }
 
 enum PalmAnalysisError: LocalizedError {

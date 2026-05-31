@@ -138113,6 +138113,54 @@
         }
       }
     },
+    "palm.review.retake" : {
+      "comment" : "Button to discard captured photo and take a new one",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Retake"
+          }
+        }
+      }
+    },
+    "palm.review.subtitle" : {
+      "comment" : "Instruction below the captured photo title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Make sure your palm is clearly visible inside the guide."
+          }
+        }
+      }
+    },
+    "palm.review.title" : {
+      "comment" : "Title shown above the captured photo on the review screen",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Use This Photo?"
+          }
+        }
+      }
+    },
+    "palm.review.use" : {
+      "comment" : "Button to confirm captured photo and start palm analysis",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Read My Palm"
+          }
+        }
+      }
+    },
     "palmBasicMeanings.apollo.meaning" : {
       "comment" : "Below the ring finger. Represents creativity, happiness, and success.",
       "localizations" : {

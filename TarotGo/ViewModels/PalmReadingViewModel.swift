@@ -22,22 +22,54 @@ class PalmReadingViewModel: ObservableObject {
     enum ReadingPhase {
         case introduction
         case cameraCapture
+        case reviewCapture
         case analyzing
         case results
     }
-    
+
     // Initialize and start the reading flow
     func startReading() {
         currentPhase = .cameraCapture
         HapticService.shared.impact(.light)
         SoundService.shared.play(.whoosh, volume: 0.4)
     }
-    
+
+    // Camera delivered a photo. Park it on the review screen so the user
+    // can decide whether to keep it or retake before we burn time on the
+    // full analysis pipeline.
+    func setCapturedImage(_ image: UIImage) {
+        capturedImage = image
+        currentPhase = .reviewCapture
+        HapticService.shared.impact(.light)
+        SoundService.shared.play(.click, volume: 0.4)
+    }
+
+    // User confirmed the captured photo — kick off the analysis.
+    func confirmAnalysis() {
+        guard let image = capturedImage else { return }
+        Task {
+            await processPalmImage(image)
+        }
+    }
+
+    // User wants a different shot — go back to live capture.
+    func retakePhoto() {
+        capturedImage = nil
+        currentPhase = .cameraCapture
+        HapticService.shared.impact(.light)
+    }
+
     // Process captured palm image
     func processPalmImage(_ image: UIImage) async {
         capturedImage = image
         currentPhase = .analyzing
         isAnalyzing = true
+
+        // Give SwiftUI a runloop tick to redraw the analyzing overlay
+        // before we start the heavy MediaPipe + Vision pipeline. Without
+        // this yield the overlay can appear noticeably late on devices
+        // where the analyze call doesn't suspend immediately.
+        await Task.yield()
 
         HapticService.shared.impact(.medium)
         SoundService.shared.play(.generate, volume: 0.5)

@@ -21,6 +21,10 @@ struct PalmReadingView: View {
                 IntroductionView(viewModel: viewModel)
             case .cameraCapture:
                 PalmCaptureView(viewModel: viewModel)
+            case .reviewCapture:
+                if let image = viewModel.capturedImage {
+                    PalmReviewView(image: image, viewModel: viewModel)
+                }
             case .analyzing:
                 PalmReadingOverlay()
                     .transition(.opacity)
@@ -160,6 +164,81 @@ struct InfoCard: View {
                         .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
+    }
+}
+
+// MARK: - Capture Review
+
+// Shown immediately after the camera delivers a photo. The user sees the
+// captured still and chooses to retake (back to live camera) or confirm
+// (start the analysis pipeline). Mirrors iPhone's native camera review UX.
+struct PalmReviewView: View {
+    let image: UIImage
+    @ObservedObject var viewModel: PalmReadingViewModel
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Spacer()
+                .frame(height: 10)
+
+            Text(NSLocalizedString("palm.review.title", value: "Use This Photo?", comment: "Title shown above the captured photo on the review screen"))
+                .font(AppTheme.serifFont(size: 24, weight: .medium))
+                .foregroundStyle(AppTheme.goldGradient)
+
+            Text(NSLocalizedString("palm.review.subtitle", value: "Make sure your palm is clearly visible inside the guide.", comment: "Instruction below the captured photo title"))
+                .font(.system(size: 14, weight: .light))
+                .foregroundColor(AppTheme.textSecondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 30)
+
+            Image(uiImage: image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(AppTheme.gold.opacity(0.4), lineWidth: 1.5)
+                )
+                .padding(.horizontal, 24)
+                .shadow(color: AppTheme.gold.opacity(0.25), radius: 14, x: 0, y: 6)
+
+            HStack(spacing: 14) {
+                Button {
+                    viewModel.retakePhoto()
+                } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "arrow.uturn.backward")
+                        Text(NSLocalizedString("palm.review.retake", value: "Retake", comment: "Button to discard captured photo and take a new one"))
+                    }
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundColor(AppTheme.gold)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 16)
+                    .background(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(AppTheme.gold.opacity(0.6), lineWidth: 1.5)
+                    )
+                }
+
+                Button {
+                    viewModel.confirmAnalysis()
+                } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "sparkles")
+                        Text(NSLocalizedString("palm.review.use", value: "Read My Palm", comment: "Button to confirm captured photo and start palm analysis"))
+                    }
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundColor(.black)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 16)
+                    .background(AppTheme.goldGradient)
+                    .cornerRadius(30)
+                    .shadow(color: AppTheme.gold.opacity(0.4), radius: 12, x: 0, y: 6)
+                }
+            }
+            .padding(.horizontal, 24)
+            .padding(.bottom, 30)
+        }
     }
 }
 

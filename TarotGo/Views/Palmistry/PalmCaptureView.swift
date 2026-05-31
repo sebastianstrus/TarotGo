@@ -20,9 +20,10 @@ struct PalmCaptureView: View {
             VStack(spacing: 20) {
                 if hasPermission {
                     CameraPreviewView(onCapture: { image in
-                        Task {
-                            await viewModel.processPalmImage(image)
-                        }
+                        // Don't kick off analysis directly — park the photo
+                        // on the review screen so the user can confirm or
+                        // retake before we burn time on the pipeline.
+                        viewModel.setCapturedImage(image)
                     })
                 } else {
                     permissionPrompt
@@ -215,6 +216,15 @@ class CameraViewController: UIViewController {
     }
     
     @objc private func capturePhoto() {
+        // Freeze the live preview immediately so the user gets the same
+        // "shutter caught the moment" feedback as the native camera. The
+        // preview connection is independent of the photo output, so the
+        // photo capture itself still proceeds normally — only the preview
+        // feed is paused at the last frame.
+        previewLayer?.connection?.isEnabled = false
+        captureButton.isEnabled = false
+        captureButton.alpha = 0.5
+
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
     }
