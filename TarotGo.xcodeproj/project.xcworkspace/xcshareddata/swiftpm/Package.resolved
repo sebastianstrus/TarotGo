@@ -1,6 +1,15 @@
 {
-  "originHash" : "d69181d6f7ac7ed194c92e0176df9478348a6d43402119f2976529fc28c9cdd8",
+  "originHash" : "15cc8e6a459e484ae955a8d3e7812b21d14e3ee6bf88b48ced640cdb68ca1ea6",
   "pins" : [
+    {
+      "identity" : "swifttasksvision",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/paescebu/SwiftTasksVision.git",
+      "state" : {
+        "revision" : "2cba94cf7d38ace98e32dc08d1de7a6895f05057",
+        "version" : "0.10.21"
+      }
+    },
     {
       "identity" : "vortex",
       "kind" : "remoteSourceControl",

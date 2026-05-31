@@ -36,9 +36,9 @@ class PalmAnalysisService {
         let palmPoints = try getPalmKeyPoints(from: handLandmarks)
 
         guard let cgImage = image.cgImage,
-              let edgeUIImage = applyEdgeDetection(to: image),
-              let edgeCGImage = edgeUIImage.cgImage,
-              let edgePixels = decodeRGBA(from: edgeCGImage) else {
+              let contourMaskImage = detectContoursMask(of: image),
+              let contourCGImage = contourMaskImage.cgImage,
+              let edgePixels = decodeRGBA(from: contourCGImage) else {
             throw PalmAnalysisError.processingFailed
         }
 
@@ -442,14 +442,17 @@ class PalmAnalysisService {
         }
     }
 
-    private func applyEdgeDetection(to image: UIImage) -> UIImage? {
+    // Detects palm-line contours via Apple's Vision framework and rasterizes
+    // them into a binary mask. Replaces the older CIEdges-based gradient
+    // detector. Advantages: Vision's contour detector is purpose-built for
+    // line-like structures, handles low contrast better, and gives us vector
+    // paths (so we could later filter by length, curvature, etc.).
+    private func detectContoursMask(of image: UIImage) -> UIImage? {
         guard let cgImage = image.cgImage else { return nil }
         let ciImage = CIImage(cgImage: cgImage)
 
-        // Auto-exposure: bring the scene's mean luminance to a fixed target
-        // before edge detection so dim photos and bright photos produce
-        // comparable edge signal. Without this, a small change in ambient
-        // light between captures shifts the entire metric distribution.
+        // Auto-exposure normalize so Vision sees consistent brightness
+        // regardless of ambient light.
         let exposureNormalized: CIImage
         if let sceneMean = computeMeanLuminance(of: ciImage), sceneMean > 0.01 {
             let targetLuminance: Float = 0.55
@@ -467,31 +470,88 @@ class PalmAnalysisService {
             exposureNormalized = ciImage
         }
 
-        // Boost local contrast and desaturate. Palm creases are low-contrast
-        // relative to background features; widening the luminance
-        // distribution makes them register in CIEdges.
-        let prepped: CIImage
-        if let contrastFilter = CIFilter(name: "CIColorControls") {
-            contrastFilter.setValue(exposureNormalized, forKey: kCIInputImageKey)
-            contrastFilter.setValue(1.4, forKey: kCIInputContrastKey)
-            contrastFilter.setValue(0.0, forKey: kCIInputSaturationKey)
-            prepped = contrastFilter.outputImage ?? exposureNormalized
-        } else {
-            prepped = exposureNormalized
-        }
-
-        guard let filter = CIFilter(name: "CIEdges") else { return nil }
-        filter.setValue(prepped, forKey: kCIInputImageKey)
-        filter.setValue(3.0, forKey: kCIInputIntensityKey)
-
-        guard let outputImage = filter.outputImage else { return nil }
-
         let context = CIContext()
-        guard let processedCGImage = context.createCGImage(outputImage, from: outputImage.extent) else {
+        guard let normalizedCG = context.createCGImage(exposureNormalized, from: exposureNormalized.extent) else {
             return nil
         }
 
-        return UIImage(cgImage: processedCGImage)
+        let request = VNDetectContoursRequest()
+        // contrastAdjustment widens the luminance distribution before contour
+        // tracing — palm creases are subtle, so we push this above default.
+        request.contrastAdjustment = 2.0
+        // Palm creases are darker than surrounding skin.
+        request.detectsDarkOnLight = true
+        // Higher dimension catches finer creases. 1024 is a good balance of
+        // detail and speed; 0 would use the full image at the cost of latency.
+        request.maximumImageDimension = 1024
+
+        let handler = VNImageRequestHandler(cgImage: normalizedCG, options: [:])
+        do {
+            try handler.perform([request])
+        } catch {
+            print("[PalmAnalysis] contour detection failed: \(error)")
+            return nil
+        }
+
+        guard let observation = request.results?.first as? VNContoursObservation else {
+            return nil
+        }
+
+        print("[PalmAnalysis] contours total=\(observation.contourCount) topLevel=\(observation.topLevelContourCount)")
+
+        return rasterizeContours(observation, size: CGSize(width: cgImage.width, height: cgImage.height))
+    }
+
+    // Draws the detected contours into a black-and-white mask the same size
+    // as the input image. Top-level contour paths already include their
+    // children combined with the even-odd winding rule, so iterating
+    // topLevelContours and using .eoFillStroke renders the entire hierarchy.
+    private func rasterizeContours(_ observation: VNContoursObservation, size: CGSize) -> UIImage? {
+        let width = Int(size.width)
+        let height = Int(size.height)
+        let bytesPerPixel = 4
+        let bytesPerRow = width * bytesPerPixel
+
+        guard let context = CGContext(
+            data: nil,
+            width: width,
+            height: height,
+            bitsPerComponent: 8,
+            bytesPerRow: bytesPerRow,
+            space: CGColorSpaceCreateDeviceRGB(),
+            bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+        ) else {
+            return nil
+        }
+
+        // Black background.
+        context.setFillColor(CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 1))
+        context.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
+
+        // White fill + stroke for contour interiors and outlines.
+        context.setFillColor(CGColor(srgbRed: 1, green: 1, blue: 1, alpha: 1))
+        context.setStrokeColor(CGColor(srgbRed: 1, green: 1, blue: 1, alpha: 1))
+        context.setLineWidth(2.0)
+        context.setLineCap(.round)
+        context.setLineJoin(.round)
+
+        // Vision returns paths in normalized [0,1] coordinates with origin
+        // at bottom-left. CGContext's default coordinate system is also
+        // bottom-left, so a plain scale by image size lands the contours
+        // at the right pixel positions — the resulting CGImage reads back
+        // with the standard top-left orientation our sampler expects.
+        var transform = CGAffineTransform(scaleX: size.width, y: size.height)
+
+        for contour in observation.topLevelContours {
+            let normalizedPath = contour.normalizedPath
+            if let scaledPath = normalizedPath.copy(using: &transform) {
+                context.addPath(scaledPath)
+                context.drawPath(using: .eoFillStroke)
+            }
+        }
+
+        guard let outputImage = context.makeImage() else { return nil }
+        return UIImage(cgImage: outputImage)
     }
 
     // Returns the average luminance (0...1) of the entire image.
