@@ -47,7 +47,18 @@ class PalmReadingViewModel: ObservableObject {
     // User confirmed the captured photo — kick off the analysis.
     func confirmAnalysis() {
         guard let image = capturedImage else { return }
+        // Switch to the analyzing phase synchronously so SwiftUI swaps to
+        // PalmReadingOverlay on the same runloop tick as the button tap.
+        currentPhase = .analyzing
+        isAnalyzing = true
+        // Haptic is instantaneous — keep it on the sync path for immediate
+        // tactile feedback.
+        HapticService.shared.impact(.medium)
         Task {
+            // Sound playback can take 50-150ms to spin up its audio session.
+            // Run it inside the Task so it doesn't block the runloop tick
+            // that swaps the view to PalmReadingOverlay.
+            SoundService.shared.play(.generate, volume: 0.5)
             await processPalmImage(image)
         }
     }
@@ -62,17 +73,10 @@ class PalmReadingViewModel: ObservableObject {
     // Process captured palm image
     func processPalmImage(_ image: UIImage) async {
         capturedImage = image
+        // Defensive: if called directly (not via confirmAnalysis) ensure the
+        // overlay phase is set. The duplicate assignment is harmless.
         currentPhase = .analyzing
         isAnalyzing = true
-
-        // Give SwiftUI a runloop tick to redraw the analyzing overlay
-        // before we start the heavy MediaPipe + Vision pipeline. Without
-        // this yield the overlay can appear noticeably late on devices
-        // where the analyze call doesn't suspend immediately.
-        await Task.yield()
-
-        HapticService.shared.impact(.medium)
-        SoundService.shared.play(.generate, volume: 0.5)
 
         // Mid-ritual heartbeat haptics to match the mystical overlay pacing.
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) { [weak self] in
