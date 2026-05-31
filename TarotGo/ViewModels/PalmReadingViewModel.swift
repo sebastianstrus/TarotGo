@@ -78,6 +78,14 @@ class PalmReadingViewModel: ObservableObject {
         currentPhase = .analyzing
         isAnalyzing = true
 
+        // Give SwiftUI ~6 frames at 60fps to render PalmReadingOverlay and
+        // fire its onAppear animations before the heavy MediaPipe + Vision
+        // pipeline starts contending for CPU and GPU. Without this nudge,
+        // the analysis kicks off in the same runloop tick as the phase
+        // change and the entrance animations don't have time to start
+        // visibly playing.
+        try? await Task.sleep(nanoseconds: 100_000_000)
+
         // Mid-ritual heartbeat haptics to match the mystical overlay pacing.
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) { [weak self] in
             guard self?.currentPhase == .analyzing else { return }

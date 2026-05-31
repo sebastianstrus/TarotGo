@@ -391,10 +391,7 @@ private struct PalmReadingOverlay: View {
             }
         }
         .onAppear {
-            // 0.08s entrance — below the ~100ms threshold where humans
-            // perceive a delay, but still long enough for the easeOut curve
-            // to feel like a deliberate animation rather than a pop.
-            withAnimation(.easeOut(duration: 0.08)) {
+            withAnimation(.easeOut(duration: 0.5)) {
                 appear = true
             }
             withAnimation(.linear(duration: 12).repeatForever(autoreverses: false)) {
