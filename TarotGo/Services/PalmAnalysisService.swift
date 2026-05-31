@@ -63,6 +63,21 @@ class PalmAnalysisService {
             return nil
         }
     }()
+
+    // Shared CIContext — first-time creation includes Metal pipeline
+    // compilation that can stutter the UI. Re-using the same instance
+    // across scans amortizes that cost.
+    //
+    // priorityRequestLow tells CoreImage to yield GPU access to other
+    // Metal consumers (like SwiftUI's animation renderer) when there's
+    // contention. Without this option Vision/CoreImage can starve the
+    // overlay's animations mid-flight for a couple hundred milliseconds.
+    private lazy var ciContext: CIContext = {
+        let options: [CIContextOption: Any] = [
+            .priorityRequestLow: true
+        ]
+        return CIContext(options: options)
+    }()
     
     // Analyze palm image and generate reading
     func analyzePalm(image originalImage: UIImage) async throws -> PalmReading {
@@ -71,7 +86,15 @@ class PalmAnalysisService {
         // orientation (sensor is landscape, display is portrait), which
         // means Vision and edge-detection would otherwise see a sideways
         // hand and produce noisier landmarks.
-        let image = normalizeOrientation(of: originalImage)
+        let oriented = normalizeOrientation(of: originalImage)
+
+        // Downscale to a max dimension of 1536. The full 3024×4032 capture
+        // takes ~48 MB just for the RGBA pixel buffer in decodeRGBA — that
+        // allocation + the corresponding CGContext.draw is the dominant
+        // source of mid-animation UI stutter. At 1536-wide max the buffer
+        // drops to ~7 MB and palm creases are still well-resolved (~3 px
+        // wide instead of ~6 px).
+        let image = downscale(oriented, maxDimension: 1536)
 
         // Step 1: Detect hand landmarks
         let handLandmarks = try await detectHandLandmarks(in: image)
@@ -393,6 +416,23 @@ class PalmAnalysisService {
         }
     }
 
+    // Downsamples a UIImage so its longer edge is at most maxDimension
+    // (points). Drops scale to 1.0 to avoid Retina-doubling the pixel count.
+    // Returns the input untouched if it's already small enough.
+    private func downscale(_ image: UIImage, maxDimension: CGFloat) -> UIImage {
+        let longest = max(image.size.width, image.size.height)
+        guard longest > maxDimension else { return image }
+        let scale = maxDimension / longest
+        let targetSize = CGSize(width: image.size.width * scale,
+                                height: image.size.height * scale)
+        let format = UIGraphicsImageRendererFormat.default()
+        format.scale = 1.0
+        let renderer = UIGraphicsImageRenderer(size: targetSize, format: format)
+        return renderer.image { _ in
+            image.draw(in: CGRect(origin: .zero, size: targetSize))
+        }
+    }
+
     // Detects palm-line contours via Apple's Vision framework and rasterizes
     // them into a binary mask. Replaces the older CIEdges-based gradient
     // detector. Advantages: Vision's contour detector is purpose-built for
@@ -421,8 +461,7 @@ class PalmAnalysisService {
             exposureNormalized = ciImage
         }
 
-        let context = CIContext()
-        guard let normalizedCG = context.createCGImage(exposureNormalized, from: exposureNormalized.extent) else {
+        guard let normalizedCG = ciContext.createCGImage(exposureNormalized, from: exposureNormalized.extent) else {
             return nil
         }
 
@@ -520,8 +559,7 @@ class PalmAnalysisService {
         guard let outImage = avgFilter.outputImage else { return nil }
 
         var bitmap = [UInt8](repeating: 0, count: 4)
-        let context = CIContext()
-        context.render(
+        ciContext.render(
             outImage,
             toBitmap: &bitmap,
             rowBytes: 4,

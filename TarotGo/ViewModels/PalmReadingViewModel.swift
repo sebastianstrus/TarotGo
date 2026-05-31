@@ -47,20 +47,70 @@ class PalmReadingViewModel: ObservableObject {
     // User confirmed the captured photo — kick off the analysis.
     func confirmAnalysis() {
         guard let image = capturedImage else { return }
-        // Switch to the analyzing phase synchronously so SwiftUI swaps to
-        // PalmReadingOverlay on the same runloop tick as the button tap.
         currentPhase = .analyzing
         isAnalyzing = true
-        // Haptic is instantaneous — keep it on the sync path for immediate
-        // tactile feedback.
         HapticService.shared.impact(.medium)
-        Task {
-            // Sound playback can take 50-150ms to spin up its audio session.
-            // Run it inside the Task so it doesn't block the runloop tick
-            // that swaps the view to PalmReadingOverlay.
+
+        // Defer sound to background — its audio session activation can
+        // spike main thread on first play.
+        Task.detached(priority: .utility) {
             SoundService.shared.play(.generate, volume: 0.5)
-            await processPalmImage(image)
         }
+
+        // Run the actual analysis as a fully detached task at background
+        // priority. Background QoS pushes the work toward the efficiency
+        // cores which don't share L2 cache with the performance core
+        // running SwiftUI's animation render — eliminates the cache
+        // pressure that causes the mid-animation stutter.
+        Task.detached(priority: .background) { [weak self] in
+            guard let self else { return }
+            do {
+                let reading = try await PalmAnalysisService.shared.analyzePalm(image: image)
+                await self.handleAnalysisResult(.success(reading))
+            } catch {
+                await self.handleAnalysisResult(.failure(error))
+            }
+        }
+
+        // Schedule the heartbeat haptics on main while the overlay plays.
+        scheduleHeartbeatHaptics()
+    }
+
+    private func scheduleHeartbeatHaptics() {
+        let overlayStart = Date()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) { [weak self] in
+            guard self?.currentPhase == .analyzing else { return }
+            HapticService.shared.impact(.light)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.4) { [weak self] in
+            guard self?.currentPhase == .analyzing else { return }
+            HapticService.shared.impact(.light)
+        }
+        analysisStartDate = overlayStart
+    }
+
+    private var analysisStartDate: Date = Date()
+
+    private func handleAnalysisResult(_ result: Result<PalmReading, Error>) async {
+        // Hold the mystical overlay for at least 4.4s so it doesn't blink
+        // through on fast captures.
+        let minimum: TimeInterval = 4.4
+        let elapsed = Date().timeIntervalSince(analysisStartDate)
+        if elapsed < minimum {
+            try? await Task.sleep(nanoseconds: UInt64((minimum - elapsed) * 1_000_000_000))
+        }
+        switch result {
+        case .success(let reading):
+            palmReading = reading
+            currentPhase = .results
+            HapticService.shared.impact(.success)
+        case .failure(let error):
+            errorMessage = error.localizedDescription
+            showError = true
+            currentPhase = .cameraCapture
+            HapticService.shared.impact(.error)
+        }
+        isAnalyzing = false
     }
 
     // User wants a different shot — go back to live capture.

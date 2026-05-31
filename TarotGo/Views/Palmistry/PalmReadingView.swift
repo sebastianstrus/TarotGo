@@ -239,20 +239,39 @@ struct PalmReviewView: View {
             .padding(.horizontal, 24)
             .padding(.bottom, 30)
         }
+        // Pre-warm PalmReadingOverlay while the user is deciding whether
+        // to use the captured photo. Rendering it once compiles all the
+        // Metal shaders (material, blurs, shadows, gradients) and allocates
+        // GPU textures, so by the time the user taps "Read My Palm" the
+        // overlay can paint smoothly on the very first frame. Opacity 0.001
+        // (not 0) is enough to keep SwiftUI from optimizing the view away
+        // — at 0 SwiftUI skips rendering entirely and shaders never compile.
+        .background(
+            PalmReadingOverlay()
+                .opacity(0.001)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
+        )
     }
 }
 
 // MARK: - Mystical Palm Reading Overlay
 
 private struct PalmReadingOverlay: View {
-    @State private var outerRingRotation: Double = 0
-    @State private var innerRingRotation: Double = 0
-    @State private var pulse: CGFloat = 0.9
-    @State private var glow: Double = 0.35
+    // Initial values are intentionally placed mid-animation so the first
+    // rendered frame already looks like the overlay is in motion. SwiftUI's
+    // onAppear fires one runloop tick after the view appears, so without
+    // these mid-state defaults the user would briefly see a static scene
+    // (dots at the top of the ring, scan line above frame, no ripples)
+    // before the animations kick in.
+    @State private var outerRingRotation: Double = 12
+    @State private var innerRingRotation: Double = -10
+    @State private var pulse: CGFloat = 1.0
+    @State private var glow: Double = 0.55
     @State private var appear: Bool = false
     @State private var lineProgress: CGFloat = 0
-    @State private var scanLineOffset: CGFloat = -90
-    @State private var rippleProgress: CGFloat = 0
+    @State private var scanLineOffset: CGFloat = 20
+    @State private var rippleProgress: CGFloat = 0.35
 
     var body: some View {
         ZStack {
