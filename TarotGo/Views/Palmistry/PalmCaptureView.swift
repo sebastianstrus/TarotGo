@@ -258,7 +258,7 @@ class CameraViewController: UIViewController {
     }
     
     private func updateHandGuidePosition() {
-        let width = view.bounds.width * 0.7
+        let width = view.bounds.width * 0.9
         let height = width * 1.3
         let x = (view.bounds.width - width) / 2
         let y = (view.bounds.height - height) / 2
