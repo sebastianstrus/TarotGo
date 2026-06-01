@@ -36,12 +36,22 @@ class PalmReadingViewModel: ObservableObject {
 
     // Camera delivered a photo. Park it on the review screen so the user
     // can decide whether to keep it or retake before we burn time on the
-    // full analysis pipeline.
+    // full analysis pipeline. Stays in the .cameraCapture phase while
+    // PalmCaptureView plays its shrink animation; PalmCaptureView calls
+    // completeCaptureAnimation() at the end of that spring to flip the
+    // phase to .reviewCapture.
     func setCapturedImage(_ image: UIImage) {
         capturedImage = image
-        currentPhase = .reviewCapture
         HapticService.shared.impact(.light)
         SoundService.shared.play(.click, volume: 0.4)
+    }
+
+    // Called by PalmCaptureView once its capture-shrink animation lands
+    // at the review thumbnail's position. Switches the phase so
+    // PalmReviewView takes over rendering at the same spot.
+    func completeCaptureAnimation() {
+        guard currentPhase == .cameraCapture, capturedImage != nil else { return }
+        currentPhase = .reviewCapture
     }
 
     // User confirmed the captured photo — kick off the analysis.

@@ -10,29 +10,102 @@ import AVFoundation
 
 struct PalmCaptureView: View {
     @ObservedObject var viewModel: PalmReadingViewModel
-    @State private var showCamera = false
     @State private var hasPermission = false
-    
+    // 0 = captured image fills the screen (matches the just-vanished
+    //     camera preview). 1 = captured image sits at PalmReviewView's
+    //     framed-thumbnail position. Animated when the photo arrives.
+    @State private var shrinkProgress: CGFloat = 0
+
     var body: some View {
-        ZStack {
-            Color.black.ignoresSafeArea()
-            
-            VStack(spacing: 20) {
-                if hasPermission {
+        GeometryReader { geo in
+            ZStack {
+                Color.black
+
+                if !hasPermission {
+                    permissionPrompt
+                } else if let captured = viewModel.capturedImage {
+                    captureShrinkAnimation(captured: captured, in: geo.size)
+                } else {
                     CameraPreviewView(onCapture: { image in
                         // Don't kick off analysis directly — park the photo
                         // on the review screen so the user can confirm or
                         // retake before we burn time on the pipeline.
                         viewModel.setCapturedImage(image)
                     })
-                } else {
-                    permissionPrompt
                 }
             }
         }
+        .ignoresSafeArea()
         .task {
             hasPermission = await viewModel.checkCameraPermission()
         }
+    }
+
+    // Animates the captured image from a full-screen rect down to an
+    // approximation of where PalmReviewView will then display the same
+    // photo. Once the spring lands, the view model flips the phase and
+    // PalmReviewView's real Image takes over at that landing position.
+    @ViewBuilder
+    private func captureShrinkAnimation(captured: UIImage, in size: CGSize) -> some View {
+        let imageAspect = max(captured.size.width / max(captured.size.height, 1), 0.001)
+        let target = reviewImageFrame(in: size, imageAspect: imageAspect)
+        let p = shrinkProgress
+
+        let width = size.width + (target.width - size.width) * p
+        let height = size.height + (target.height - size.height) * p
+        let centerX = (size.width / 2) + (target.midX - size.width / 2) * p
+        let centerY = (size.height / 2) + (target.midY - size.height / 2) * p
+        let cornerRadius: CGFloat = 20 * p
+
+        Image(uiImage: captured)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: width, height: height)
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+            .position(x: centerX, y: centerY)
+            .shadow(color: AppTheme.gold.opacity(0.25 * p), radius: 14 * p, x: 0, y: 6 * p)
+            .allowsHitTesting(false)
+            .onAppear {
+                withAnimation(.spring(response: 0.65, dampingFraction: 0.82)) {
+                    shrinkProgress = 1
+                }
+                Task { @MainActor in
+                    try? await Task.sleep(nanoseconds: 700_000_000)
+                    viewModel.completeCaptureAnimation()
+                }
+            }
+    }
+
+    // Approximation of where PalmReviewView's Image is laid out within
+    // a full-screen rect (status bar + nav bar at the top, home indicator
+    // at the bottom, title/subtitle/buttons within the VStack). Used as
+    // the landing position of the shrink animation so the hand-off to
+    // PalmReviewView feels visually continuous.
+    private func reviewImageFrame(in size: CGSize, imageAspect: CGFloat) -> CGRect {
+        let horizontalPadding: CGFloat = 24
+        let topInset: CGFloat = 220   // safe area + nav bar + spacer + title + spacing + subtitle + spacing
+        let bottomInset: CGFloat = 175 // spacing + buttons + bottom padding + safe area
+
+        let availableWidth = max(size.width - 2 * horizontalPadding, 1)
+        let availableHeight = max(size.height - topInset - bottomInset, 1)
+
+        let widthFromHeight = availableHeight * imageAspect
+        let heightFromWidth = availableWidth / imageAspect
+
+        let imageWidth: CGFloat
+        let imageHeight: CGFloat
+        if widthFromHeight <= availableWidth {
+            imageHeight = availableHeight
+            imageWidth = widthFromHeight
+        } else {
+            imageWidth = availableWidth
+            imageHeight = heightFromWidth
+        }
+
+        let x = (size.width - imageWidth) / 2
+        let y = topInset + (availableHeight - imageHeight) / 2
+
+        return CGRect(x: x, y: y, width: imageWidth, height: imageHeight)
     }
     
     private var permissionPrompt: some View {

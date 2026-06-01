@@ -10,12 +10,12 @@ import SwiftUI
 struct PalmReadingView: View {
     @StateObject private var viewModel = PalmReadingViewModel()
     @Environment(\.dismiss) private var dismiss
-    
+
     var body: some View {
         ZStack {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
-            
+
             switch viewModel.currentPhase {
             case .introduction:
                 IntroductionView(viewModel: viewModel)
