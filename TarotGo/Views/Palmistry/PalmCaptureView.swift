@@ -241,8 +241,54 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
               let image = UIImage(data: imageData) else {
             return
         }
-        
-        onCapture?(image)
+
+        let framedImage = cropToPreviewBounds(image) ?? image
+        onCapture?(framedImage)
+    }
+
+    // The preview layer uses .resizeAspectFill, so the live view crops the
+    // sides (or top/bottom) of the camera feed to cover the screen. The raw
+    // photo coming back from AVCapturePhotoOutput is the full sensor frame
+    // and therefore contains more area than the user saw while framing.
+    // We replicate the preview's aspect-fill crop on the captured image so
+    // the saved photo matches what was visible behind the hand guide.
+    private func cropToPreviewBounds(_ image: UIImage) -> UIImage? {
+        guard let previewBounds = previewLayer?.bounds,
+              previewBounds.width > 0, previewBounds.height > 0 else {
+            return nil
+        }
+
+        let upright = normalizedToUp(image)
+        guard let cgImage = upright.cgImage else { return nil }
+
+        let imageW = CGFloat(cgImage.width)
+        let imageH = CGFloat(cgImage.height)
+        let scale = max(previewBounds.width / imageW, previewBounds.height / imageH)
+        let visibleW = previewBounds.width / scale
+        let visibleH = previewBounds.height / scale
+        let originX = (imageW - visibleW) / 2
+        let originY = (imageH - visibleH) / 2
+
+        let cropRect = CGRect(x: originX, y: originY, width: visibleW, height: visibleH)
+            .intersection(CGRect(x: 0, y: 0, width: imageW, height: imageH))
+            .integral
+
+        guard !cropRect.isNull, !cropRect.isEmpty,
+              let cropped = cgImage.cropping(to: cropRect) else {
+            return nil
+        }
+
+        return UIImage(cgImage: cropped, scale: upright.scale, orientation: .up)
+    }
+
+    private func normalizedToUp(_ image: UIImage) -> UIImage {
+        guard image.imageOrientation != .up else { return image }
+        let format = UIGraphicsImageRendererFormat.default()
+        format.scale = image.scale
+        let renderer = UIGraphicsImageRenderer(size: image.size, format: format)
+        return renderer.image { _ in
+            image.draw(in: CGRect(origin: .zero, size: image.size))
+        }
     }
 }
 
