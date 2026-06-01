@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 // PalmReviewView publishes the global rect of its review thumbnail
 // through this key so PalmCaptureView's shrink animation can land at
@@ -526,8 +527,10 @@ private struct PalmLineShape: Shape {
 struct PalmResultView: View {
     let reading: PalmReading
     @ObservedObject var viewModel: PalmReadingViewModel
+    @Environment(\.modelContext) private var modelContext
     @State private var selectedLine: PalmLine?
-    
+    @State private var sessionSaved: Bool = false
+
     var body: some View {
         ScrollView {
             VStack(spacing: 25) {
@@ -712,6 +715,23 @@ struct PalmResultView: View {
                 .padding(.top, 10)
                 .padding(.bottom, 30)
             }
+        }
+        .onAppear {
+            if !sessionSaved {
+                saveSession()
+            }
+        }
+    }
+
+    private func saveSession() {
+        let imageData = viewModel.capturedImage?.jpegData(compressionQuality: 0.8)
+        let session = PalmReadingSession(palmReading: reading, capturedImageData: imageData)
+        modelContext.insert(session)
+        do {
+            try modelContext.save()
+            sessionSaved = true
+        } catch {
+            print("Failed to save palm reading session: \(error)")
         }
     }
 }

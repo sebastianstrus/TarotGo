@@ -144764,6 +144764,126 @@
         }
       }
     },
+    "palmHistory.button.subtitle" : {
+      "comment" : "Review your saved palm readings",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review your saved palm readings"
+          }
+        }
+      }
+    },
+    "palmHistory.button.title" : {
+      "comment" : "Saved Readings",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Readings"
+          }
+        }
+      }
+    },
+    "palmHistory.capturedImage" : {
+      "comment" : "Captured Image",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Captured Image"
+          }
+        }
+      }
+    },
+    "palmHistory.delete" : {
+      "comment" : "Delete Reading",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Reading"
+          }
+        }
+      }
+    },
+    "palmHistory.deleteAlert" : {
+      "comment" : "Delete Reading",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Reading"
+          }
+        }
+      }
+    },
+    "palmHistory.deleteMessage" : {
+      "comment" : "Are you sure you want to delete this saved palm reading? This action cannot be undone.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to delete this saved palm reading? This action cannot be undone."
+          }
+        }
+      }
+    },
+    "palmHistory.empty" : {
+      "comment" : "No saved palm readings yet",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No saved palm readings yet"
+          }
+        }
+      }
+    },
+    "palmHistory.empty.desc" : {
+      "comment" : "Your saved palm readings will appear here",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your saved palm readings will appear here"
+          }
+        }
+      }
+    },
+    "palmHistory.savedOn" : {
+      "comment" : "Saved on",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved on"
+          }
+        }
+      }
+    },
+    "palmHistory.title" : {
+      "comment" : "Saved Readings",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Readings"
+          }
+        }
+      }
+    },
     "palmistryView.footer" : {
       "comment" : "Your destiny lies in your hands",
       "extractionState" : "manual",

@@ -678,7 +678,19 @@ enum L10n {
     static let palmReadingCameraDesc = NSLocalizedString("palmReading.camera.desc", comment: "To read your palm, we need access to your camera. Your palm image is processed locally and never leaves your device.")
     static let palmReadingOpenSettings = NSLocalizedString("palmReading.openSettings", comment: "Open Settings")
     static let palmReadingPlaceHand = NSLocalizedString("palmReading.placeHand", comment: "Place your palm within the guide")
-    
+
+    // MARK: - Palm Reading History
+    static let palmHistoryTitle = NSLocalizedString("palmHistory.title", comment: "Saved Readings")
+    static let palmHistoryButtonTitle = NSLocalizedString("palmHistory.button.title", comment: "Saved Readings")
+    static let palmHistoryButtonSubtitle = NSLocalizedString("palmHistory.button.subtitle", comment: "Review your saved palm readings")
+    static let palmHistoryEmpty = NSLocalizedString("palmHistory.empty", comment: "No saved palm readings yet")
+    static let palmHistoryEmptyDesc = NSLocalizedString("palmHistory.empty.desc", comment: "Your saved palm readings will appear here")
+    static let palmHistorySavedOn = NSLocalizedString("palmHistory.savedOn", comment: "Saved on")
+    static let palmHistoryDeleteAlert = NSLocalizedString("palmHistory.deleteAlert", comment: "Delete Reading")
+    static let palmHistoryDeleteMessage = NSLocalizedString("palmHistory.deleteMessage", comment: "Are you sure you want to delete this saved palm reading? This action cannot be undone.")
+    static let palmHistoryDelete = NSLocalizedString("palmHistory.delete", comment: "Delete Reading")
+    static let palmHistoryCapturedImage = NSLocalizedString("palmHistory.capturedImage", comment: "Captured Image")
+
     // MARK: - Learn Tarot
     // Main Learn View
     static let homeLearnTarot = NSLocalizedString("home.learnTarot", comment: "Learn Tarot")

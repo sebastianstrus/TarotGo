@@ -63,7 +63,17 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            
+
+                            // Saved Palm Readings
+                            NavigationLink(destination: PalmReadingHistoryView()) {
+                                NavigationButton(
+                                    icon: "book.fill",
+                                    title: L10n.palmHistoryButtonTitle,
+                                    subtitle: L10n.palmHistoryButtonSubtitle
+                                )
+                            }
+                            .buttonStyle(NavigationButtonStyle())
+
                             // Learn Palmistry
                             NavigationLink(destination: LearnPalmistryView()) {
                                 NavigationButton(
