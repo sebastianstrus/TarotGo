@@ -250,7 +250,7 @@ class CameraViewController: UIViewController {
         view.addSubview(captureButton)
         
         NSLayoutConstraint.activate([
-            captureButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
+            captureButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
             captureButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             captureButton.widthAnchor.constraint(equalToConstant: 80),
             captureButton.heightAnchor.constraint(equalToConstant: 80)
@@ -261,7 +261,14 @@ class CameraViewController: UIViewController {
         let width = view.bounds.width * 0.9
         let height = width * 1.6
         let x = (view.bounds.width - width) / 2
-        let y = (view.bounds.height - height) / 2
+
+        // Center between the instruction label and the capture button rather
+        // than the whole view, so the label's bottom edge doesn't clip the
+        // top arc of the guide.
+        let topInset = view.safeAreaInsets.top + 90
+        let bottomInset = view.safeAreaInsets.bottom + 110
+        let available = view.bounds.height - topInset - bottomInset
+        let y = topInset + max(0, (available - height) / 2)
         
         let path = UIBezierPath()
         
