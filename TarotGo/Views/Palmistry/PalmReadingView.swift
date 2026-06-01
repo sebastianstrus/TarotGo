@@ -7,9 +7,22 @@
 
 import SwiftUI
 
+// PalmReviewView publishes the global rect of its review thumbnail
+// through this key so PalmCaptureView's shrink animation can land at
+// the exact pixel position the real Image will occupy. Without this,
+// the animation aims at a hand-tuned approximation and there's a
+// visible jump when the phase flips.
+struct PalmReviewImageFrameKey: PreferenceKey {
+    static var defaultValue: CGRect? = nil
+    static func reduce(value: inout CGRect?, nextValue: () -> CGRect?) {
+        value = nextValue() ?? value
+    }
+}
+
 struct PalmReadingView: View {
     @StateObject private var viewModel = PalmReadingViewModel()
     @Environment(\.dismiss) private var dismiss
+    @State private var reviewImageFrame: CGRect? = nil
 
     var body: some View {
         ZStack {
@@ -20,7 +33,18 @@ struct PalmReadingView: View {
             case .introduction:
                 IntroductionView(viewModel: viewModel)
             case .cameraCapture:
-                PalmCaptureView(viewModel: viewModel)
+                PalmCaptureView(viewModel: viewModel, reviewImageFrame: reviewImageFrame)
+
+                // Render PalmReviewView underneath, invisibly, the moment
+                // a photo arrives. Its Image reports its actual frame via
+                // PalmReviewImageFrameKey, and PalmCaptureView uses that
+                // exact rect as the shrink-animation target — so the hand-
+                // off when the phase flips happens without any jump.
+                if let image = viewModel.capturedImage {
+                    PalmReviewView(image: image, viewModel: viewModel)
+                        .opacity(0)
+                        .allowsHitTesting(false)
+                }
             case .reviewCapture:
                 if let image = viewModel.capturedImage {
                     PalmReviewView(image: image, viewModel: viewModel)
@@ -32,6 +56,11 @@ struct PalmReadingView: View {
                 if let reading = viewModel.palmReading {
                     PalmResultView(reading: reading, viewModel: viewModel)
                 }
+            }
+        }
+        .onPreferenceChange(PalmReviewImageFrameKey.self) { frame in
+            if let frame = frame {
+                reviewImageFrame = frame
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -194,6 +223,18 @@ struct PalmReviewView: View {
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .background(
+                    // Reports this image's actual rendered rect (global
+                    // coords) up through PalmReviewImageFrameKey so
+                    // PalmCaptureView's shrink animation can target the
+                    // exact landing position with no jump at hand-off.
+                    GeometryReader { proxy in
+                        Color.clear.preference(
+                            key: PalmReviewImageFrameKey.self,
+                            value: proxy.frame(in: .global)
+                        )
+                    }
+                )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)

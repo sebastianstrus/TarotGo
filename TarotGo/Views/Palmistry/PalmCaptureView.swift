@@ -10,6 +10,11 @@ import AVFoundation
 
 struct PalmCaptureView: View {
     @ObservedObject var viewModel: PalmReadingViewModel
+    // Exact rect (global coords) where PalmReviewView's Image will land,
+    // reported via PalmReviewImageFrameKey. When non-nil it's used as the
+    // shrink animation's target; when nil, fallbackReviewImageFrame() is
+    // used as a best-guess until the real value comes through.
+    var reviewImageFrame: CGRect? = nil
     @State private var hasPermission = false
     // 0 = captured image fills the screen (matches the just-vanished
     //     camera preview). 1 = captured image sits at PalmReviewView's
@@ -41,14 +46,17 @@ struct PalmCaptureView: View {
         }
     }
 
-    // Animates the captured image from a full-screen rect down to an
-    // approximation of where PalmReviewView will then display the same
-    // photo. Once the spring lands, the view model flips the phase and
-    // PalmReviewView's real Image takes over at that landing position.
+    // Animates the captured image from a full-screen rect down to the
+    // exact rect where PalmReviewView's Image will sit. PalmReadingView
+    // renders PalmReviewView invisibly behind us while we're in
+    // .cameraCapture so its Image's global frame propagates up through
+    // PalmReviewImageFrameKey, arriving here as `reviewImageFrame`. The
+    // hardcoded fallback only runs if that preference hasn't reached us
+    // yet (e.g. preference resolves a tick after onAppear fires).
     @ViewBuilder
     private func captureShrinkAnimation(captured: UIImage, in size: CGSize) -> some View {
         let imageAspect = max(captured.size.width / max(captured.size.height, 1), 0.001)
-        let target = reviewImageFrame(in: size, imageAspect: imageAspect)
+        let target = reviewImageFrame ?? fallbackReviewImageFrame(in: size, imageAspect: imageAspect)
         let p = shrinkProgress
 
         let width = size.width + (target.width - size.width) * p
@@ -76,12 +84,10 @@ struct PalmCaptureView: View {
             }
     }
 
-    // Approximation of where PalmReviewView's Image is laid out within
-    // a full-screen rect (status bar + nav bar at the top, home indicator
-    // at the bottom, title/subtitle/buttons within the VStack). Used as
-    // the landing position of the shrink animation so the hand-off to
-    // PalmReviewView feels visually continuous.
-    private func reviewImageFrame(in size: CGSize, imageAspect: CGFloat) -> CGRect {
+    // Hand-tuned approximation of PalmReviewView's image rect within a
+    // full-screen frame, used only until the real frame arrives through
+    // PalmReviewImageFrameKey.
+    private func fallbackReviewImageFrame(in size: CGSize, imageAspect: CGFloat) -> CGRect {
         let horizontalPadding: CGFloat = 24
         let topInset: CGFloat = 220   // safe area + nav bar + spacer + title + spacing + subtitle + spacing
         let bottomInset: CGFloat = 175 // spacing + buttons + bottom padding + safe area
