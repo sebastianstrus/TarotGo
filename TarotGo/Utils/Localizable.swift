@@ -1407,6 +1407,292 @@ enum L10n {
     static let lifePathMeaning22 = NSLocalizedString("The Master Builder - Visionary, practical, and transformative. You manifest grand visions into reality.", comment: "Life path 22 meaning")
     static let lifePathMeaningDefault = NSLocalizedString("Your unique number holds special meaning in your life journey.", comment: "Default life path meaning")
     
+    // MARK: - Learn Destiny Matrix
+    // Main Learn Destiny Matrix View
+    static let homeLearnDestinyMatrix = NSLocalizedString("home.learnDestinyMatrix", comment: "Learn Destiny Matrix")
+    static let homeLearnDestinyMatrixSubtitle = NSLocalizedString("home.learnDestinyMatrix.subtitle", comment: "Understand the 22 energies and your chart")
+
+    static let learnDestinyMatrixTitle = NSLocalizedString("learnDestinyMatrix.title", comment: "Learn Destiny Matrix")
+    static let learnDestinyMatrixSubtitle = NSLocalizedString("learnDestinyMatrix.subtitle", comment: "Decode the blueprint of your soul")
+
+    // Learn Options
+    static let learnDestinyMatrixHistoryTitle = NSLocalizedString("learnDestinyMatrix.history.title", comment: "History of the Matrix")
+    static let learnDestinyMatrixHistorySubtitle = NSLocalizedString("learnDestinyMatrix.history.subtitle", comment: "Origins and evolution")
+
+    static let learnDestinyMatrixBasicMeaningsTitle = NSLocalizedString("learnDestinyMatrix.basicMeanings.title", comment: "The 22 Energies")
+    static let learnDestinyMatrixBasicMeaningsSubtitle = NSLocalizedString("learnDestinyMatrix.basicMeanings.subtitle", comment: "Archetypes and meanings")
+
+    static let learnDestinyMatrixHowToReadTitle = NSLocalizedString("learnDestinyMatrix.howToRead.title", comment: "How to Read Your Matrix")
+    static let learnDestinyMatrixHowToReadSubtitle = NSLocalizedString("learnDestinyMatrix.howToRead.subtitle", comment: "Map your personal chart")
+
+    static let learnDestinyMatrixMindTitle = NSLocalizedString("learnDestinyMatrix.mind.title", comment: "Matrix & Mind")
+    static let learnDestinyMatrixMindSubtitle = NSLocalizedString("learnDestinyMatrix.mind.subtitle", comment: "Self-reflection tool")
+
+    static let learnDestinyMatrixFaqTitle = NSLocalizedString("learnDestinyMatrix.faq.title", comment: "FAQ")
+    static let learnDestinyMatrixFaqSubtitle = NSLocalizedString("learnDestinyMatrix.faq.subtitle", comment: "Common questions")
+
+    // History of Destiny Matrix View
+    static let historyOfMatrixTitle = NSLocalizedString("historyOfMatrix.title", comment: "History of the Destiny Matrix")
+    static let historyOfMatrixSubtitle = NSLocalizedString("historyOfMatrix.subtitle", comment: "Ancient Wisdom, Modern System")
+    static let historyOfMatrixIntro = NSLocalizedString("historyOfMatrix.intro", comment: "The Destiny Matrix is a contemporary spiritual system that blends ancient wisdom traditions—numerology, the Major Arcana of the Tarot, and Eastern energy practices—into a single personal chart calculated from your date of birth.")
+
+    static let historyOfMatrixRootsTitle = NSLocalizedString("historyOfMatrix.roots.title", comment: "Ancient Roots")
+    static let historyOfMatrixRootsIntro = NSLocalizedString("historyOfMatrix.roots.intro", comment: "Though the Matrix itself is a modern system, every part of it draws from traditions that span thousands of years.")
+
+    static let historyOfMatrixNumerologyTitle = NSLocalizedString("historyOfMatrix.numerology.title", comment: "Pythagorean Numerology")
+    static let historyOfMatrixNumerologyText = NSLocalizedString("historyOfMatrix.numerology.text", comment: "The mathematical backbone of the Matrix comes from Pythagorean numerology (6th century BCE), which taught that numbers carry archetypal vibrations and that a birth date reveals a soul's blueprint.")
+
+    static let historyOfMatrixTarotTitle = NSLocalizedString("historyOfMatrix.tarot.title", comment: "Tarot's Major Arcana")
+    static let historyOfMatrixTarotText = NSLocalizedString("historyOfMatrix.tarot.text", comment: "The 22 energies of the Matrix correspond directly to the 22 Major Arcana of the Tarot—archetypes refined in Renaissance Europe to describe every stage of the human journey from The Fool to The World.")
+
+    static let historyOfMatrixChakraTitle = NSLocalizedString("historyOfMatrix.chakra.title", comment: "Vedic Chakra System")
+    static let historyOfMatrixChakraText = NSLocalizedString("historyOfMatrix.chakra.text", comment: "From the Indian Vedic tradition, the Matrix borrows the seven-chakra model used to describe how life energy flows through key centers in the human body, from material survival to higher spiritual awareness.")
+
+    static let historyOfMatrixModernTitle = NSLocalizedString("historyOfMatrix.modern.title", comment: "Modern Formulation")
+    static let historyOfMatrixModernIntro = NSLocalizedString("historyOfMatrix.modern.intro", comment: "The system as practiced today took shape in the early 21st century, drawing the older traditions together into one diagram.")
+
+    static let historyOfMatrixLadiniTitle = NSLocalizedString("historyOfMatrix.ladini.title", comment: "Natalia Ladini")
+    static let historyOfMatrixLadiniText = NSLocalizedString("historyOfMatrix.ladini.text", comment: "Russian researcher Natalia Ladini is credited with systematizing the modern Destiny Matrix in the 2000s, mapping the 22 archetypes onto a precise octagonal diagram derived from the birth date.")
+
+    static let historyOfMatrixGlobalTitle = NSLocalizedString("historyOfMatrix.global.title", comment: "Global Spread")
+    static let historyOfMatrixGlobalText = NSLocalizedString("historyOfMatrix.global.text", comment: "From Eastern Europe, the Matrix has spread worldwide, embraced by coaches, healers, and self-development practitioners as a practical tool for archetypal self-discovery.")
+
+    // History Timeline
+    static let historyOfMatrixTimelineTitle = NSLocalizedString("historyOfMatrix.timeline.title", comment: "Timeline")
+    static let historyOfMatrixTimelineEraHeader = NSLocalizedString("historyOfMatrix.timeline.era", comment: "Era")
+    static let historyOfMatrixTimelineMilestoneHeader = NSLocalizedString("historyOfMatrix.timeline.milestone", comment: "Milestone")
+
+    static let historyOfMatrixTimelineEra1 = NSLocalizedString("historyOfMatrix.timeline.era1", comment: "6th c. BCE")
+    static let historyOfMatrixTimelineMilestone1 = NSLocalizedString("historyOfMatrix.timeline.milestone1", comment: "Pythagoras teaches that numbers express the divine order of the cosmos.")
+
+    static let historyOfMatrixTimelineEra2 = NSLocalizedString("historyOfMatrix.timeline.era2", comment: "Ancient India")
+    static let historyOfMatrixTimelineMilestone2 = NSLocalizedString("historyOfMatrix.timeline.milestone2", comment: "Vedic texts describe the seven chakras as centers of life energy.")
+
+    static let historyOfMatrixTimelineEra3 = NSLocalizedString("historyOfMatrix.timeline.era3", comment: "15th century")
+    static let historyOfMatrixTimelineMilestone3 = NSLocalizedString("historyOfMatrix.timeline.milestone3", comment: "The Major Arcana of the Tarot is shaped in Renaissance Italy.")
+
+    static let historyOfMatrixTimelineEra4 = NSLocalizedString("historyOfMatrix.timeline.era4", comment: "20th century")
+    static let historyOfMatrixTimelineMilestone4 = NSLocalizedString("historyOfMatrix.timeline.milestone4", comment: "Jungian archetype theory revives interest in symbolic self-knowledge.")
+
+    static let historyOfMatrixTimelineEra5 = NSLocalizedString("historyOfMatrix.timeline.era5", comment: "2000s")
+    static let historyOfMatrixTimelineMilestone5 = NSLocalizedString("historyOfMatrix.timeline.milestone5", comment: "Natalia Ladini systematizes the modern Destiny Matrix.")
+
+    // Matrix Basic Meanings View
+    static let matrixBasicMeaningsTitle = NSLocalizedString("matrixBasicMeanings.title", comment: "The 22 Energies")
+    static let matrixBasicMeaningsSubtitle = NSLocalizedString("matrixBasicMeanings.subtitle", comment: "Archetypes of the Matrix")
+    static let matrixBasicMeaningsIntro = NSLocalizedString("matrixBasicMeanings.intro", comment: "Every position in the Destiny Matrix is filled by one of 22 universal energies. Each energy carries a gift to develop and a shadow to integrate. These archetypes correspond to the 22 Major Arcana of the Tarot.")
+    static let matrixBasicMeaningsListTitle = NSLocalizedString("matrixBasicMeanings.list.title", comment: "The 22 Archetypes")
+    static let matrixBasicMeaningsLightLabel = NSLocalizedString("matrixBasicMeanings.light.label", comment: "Light")
+    static let matrixBasicMeaningsShadowLabel = NSLocalizedString("matrixBasicMeanings.shadow.label", comment: "Shadow")
+
+    // 22 Energies — name, light, shadow
+    static let matrixEnergy1Name = NSLocalizedString("matrixEnergy.1.name", comment: "1 — The Magician")
+    static let matrixEnergy1Light = NSLocalizedString("matrixEnergy.1.light", comment: "Initiative, willpower, focused action, mastery of skills.")
+    static let matrixEnergy1Shadow = NSLocalizedString("matrixEnergy.1.shadow", comment: "Manipulation, scattered energy, ego-driven choices.")
+
+    static let matrixEnergy2Name = NSLocalizedString("matrixEnergy.2.name", comment: "2 — The High Priestess")
+    static let matrixEnergy2Light = NSLocalizedString("matrixEnergy.2.light", comment: "Intuition, inner wisdom, calm depth, sacred knowledge.")
+    static let matrixEnergy2Shadow = NSLocalizedString("matrixEnergy.2.shadow", comment: "Coldness, secrecy, withdrawal from life.")
+
+    static let matrixEnergy3Name = NSLocalizedString("matrixEnergy.3.name", comment: "3 — The Empress")
+    static let matrixEnergy3Light = NSLocalizedString("matrixEnergy.3.light", comment: "Creativity, abundance, nurturing love, sensual joy.")
+    static let matrixEnergy3Shadow = NSLocalizedString("matrixEnergy.3.shadow", comment: "Possessiveness, dependency, smothering care.")
+
+    static let matrixEnergy4Name = NSLocalizedString("matrixEnergy.4.name", comment: "4 — The Emperor")
+    static let matrixEnergy4Light = NSLocalizedString("matrixEnergy.4.light", comment: "Leadership, structure, stability, mastery of resources.")
+    static let matrixEnergy4Shadow = NSLocalizedString("matrixEnergy.4.shadow", comment: "Tyranny, rigidity, need to control everything.")
+
+    static let matrixEnergy5Name = NSLocalizedString("matrixEnergy.5.name", comment: "5 — The Hierophant")
+    static let matrixEnergy5Light = NSLocalizedString("matrixEnergy.5.light", comment: "Teaching, tradition, wisdom transmitted to others.")
+    static let matrixEnergy5Shadow = NSLocalizedString("matrixEnergy.5.shadow", comment: "Dogmatism, conformity, fear of new ideas.")
+
+    static let matrixEnergy6Name = NSLocalizedString("matrixEnergy.6.name", comment: "6 — The Lovers")
+    static let matrixEnergy6Light = NSLocalizedString("matrixEnergy.6.light", comment: "Conscious choice, alignment of values, soulful partnership.")
+    static let matrixEnergy6Shadow = NSLocalizedString("matrixEnergy.6.shadow", comment: "Indecision, codependency, divided heart.")
+
+    static let matrixEnergy7Name = NSLocalizedString("matrixEnergy.7.name", comment: "7 — The Chariot")
+    static let matrixEnergy7Light = NSLocalizedString("matrixEnergy.7.light", comment: "Willpower, discipline, victory through focused effort.")
+    static let matrixEnergy7Shadow = NSLocalizedString("matrixEnergy.7.shadow", comment: "Aggression, ego conflict, overdrive.")
+
+    static let matrixEnergy8Name = NSLocalizedString("matrixEnergy.8.name", comment: "8 — Justice")
+    static let matrixEnergy8Light = NSLocalizedString("matrixEnergy.8.light", comment: "Fairness, balance, honest decisions, karmic harmony.")
+    static let matrixEnergy8Shadow = NSLocalizedString("matrixEnergy.8.shadow", comment: "Harsh judgment, score-keeping, cold detachment.")
+
+    static let matrixEnergy9Name = NSLocalizedString("matrixEnergy.9.name", comment: "9 — The Hermit")
+    static let matrixEnergy9Light = NSLocalizedString("matrixEnergy.9.light", comment: "Inner search, solitude as gift, mentorship, deep wisdom.")
+    static let matrixEnergy9Shadow = NSLocalizedString("matrixEnergy.9.shadow", comment: "Isolation, avoidance of intimacy, loneliness.")
+
+    static let matrixEnergy10Name = NSLocalizedString("matrixEnergy.10.name", comment: "10 — Wheel of Fortune")
+    static let matrixEnergy10Light = NSLocalizedString("matrixEnergy.10.light", comment: "Trust in cycles, lucky timing, faith in the flow of life.")
+    static let matrixEnergy10Shadow = NSLocalizedString("matrixEnergy.10.shadow", comment: "Passivity, gambling on chance, blaming fate.")
+
+    static let matrixEnergy11Name = NSLocalizedString("matrixEnergy.11.name", comment: "11 — Strength")
+    static let matrixEnergy11Light = NSLocalizedString("matrixEnergy.11.light", comment: "Courage, gentle power, mastery of impulses, inner calm.")
+    static let matrixEnergy11Shadow = NSLocalizedString("matrixEnergy.11.shadow", comment: "Brutality, suppressed anger, raw force.")
+
+    static let matrixEnergy12Name = NSLocalizedString("matrixEnergy.12.name", comment: "12 — The Hanged Man")
+    static let matrixEnergy12Light = NSLocalizedString("matrixEnergy.12.light", comment: "Sacrifice for growth, surrender, fresh perspective.")
+    static let matrixEnergy12Shadow = NSLocalizedString("matrixEnergy.12.shadow", comment: "Victimhood, stagnation, martyr complex.")
+
+    static let matrixEnergy13Name = NSLocalizedString("matrixEnergy.13.name", comment: "13 — Death (Transformation)")
+    static let matrixEnergy13Light = NSLocalizedString("matrixEnergy.13.light", comment: "Endings that bring renewal, deep transformation, rebirth.")
+    static let matrixEnergy13Shadow = NSLocalizedString("matrixEnergy.13.shadow", comment: "Clinging to the past, fear of letting go.")
+
+    static let matrixEnergy14Name = NSLocalizedString("matrixEnergy.14.name", comment: "14 — Temperance")
+    static let matrixEnergy14Light = NSLocalizedString("matrixEnergy.14.light", comment: "Integration, healing, balance of opposites, harmony.")
+    static let matrixEnergy14Shadow = NSLocalizedString("matrixEnergy.14.shadow", comment: "Extremes, imbalance, impatience with process.")
+
+    static let matrixEnergy15Name = NSLocalizedString("matrixEnergy.15.name", comment: "15 — The Devil")
+    static let matrixEnergy15Light = NSLocalizedString("matrixEnergy.15.light", comment: "Magnetism, sensual aliveness, healthy material drive.")
+    static let matrixEnergy15Shadow = NSLocalizedString("matrixEnergy.15.shadow", comment: "Addiction, attachment, shadow appetites, manipulation.")
+
+    static let matrixEnergy16Name = NSLocalizedString("matrixEnergy.16.name", comment: "16 — The Tower")
+    static let matrixEnergy16Light = NSLocalizedString("matrixEnergy.16.light", comment: "Sudden breakthroughs, liberation from false structures.")
+    static let matrixEnergy16Shadow = NSLocalizedString("matrixEnergy.16.shadow", comment: "Crisis, destruction, ego collapse, abrupt loss.")
+
+    static let matrixEnergy17Name = NSLocalizedString("matrixEnergy.17.name", comment: "17 — The Star")
+    static let matrixEnergy17Light = NSLocalizedString("matrixEnergy.17.light", comment: "Hope, inspiration, talent, healing radiance.")
+    static let matrixEnergy17Shadow = NSLocalizedString("matrixEnergy.17.shadow", comment: "Idealization, escapism, disconnect from reality.")
+
+    static let matrixEnergy18Name = NSLocalizedString("matrixEnergy.18.name", comment: "18 — The Moon")
+    static let matrixEnergy18Light = NSLocalizedString("matrixEnergy.18.light", comment: "Dreams, deep intuition, contact with the subconscious.")
+    static let matrixEnergy18Shadow = NSLocalizedString("matrixEnergy.18.shadow", comment: "Illusion, fear, anxiety, hidden enemies of the mind.")
+
+    static let matrixEnergy19Name = NSLocalizedString("matrixEnergy.19.name", comment: "19 — The Sun")
+    static let matrixEnergy19Light = NSLocalizedString("matrixEnergy.19.light", comment: "Joy, vitality, success, radiant self-expression.")
+    static let matrixEnergy19Shadow = NSLocalizedString("matrixEnergy.19.shadow", comment: "Ego inflation, burnout, demand for constant praise.")
+
+    static let matrixEnergy20Name = NSLocalizedString("matrixEnergy.20.name", comment: "20 — Judgment")
+    static let matrixEnergy20Light = NSLocalizedString("matrixEnergy.20.light", comment: "Calling, awakening, hearing your life's purpose.")
+    static let matrixEnergy20Shadow = NSLocalizedString("matrixEnergy.20.shadow", comment: "Self-judgment, guilt, fear of being seen.")
+
+    static let matrixEnergy21Name = NSLocalizedString("matrixEnergy.21.name", comment: "21 — The World")
+    static let matrixEnergy21Light = NSLocalizedString("matrixEnergy.21.light", comment: "Completion, integration, wholeness, mastery of a cycle.")
+    static let matrixEnergy21Shadow = NSLocalizedString("matrixEnergy.21.shadow", comment: "Stagnation in comfort, fear of the next chapter.")
+
+    static let matrixEnergy22Name = NSLocalizedString("matrixEnergy.22.name", comment: "22 — The Fool")
+    static let matrixEnergy22Light = NSLocalizedString("matrixEnergy.22.light", comment: "Freedom, openness, fearless new beginnings, trust.")
+    static let matrixEnergy22Shadow = NSLocalizedString("matrixEnergy.22.shadow", comment: "Irresponsibility, naivety, scattered direction.")
+
+    // How To Read Matrix View
+    static let howToReadMatrixTitle = NSLocalizedString("howToReadMatrix.title", comment: "How to Read Your Matrix")
+
+    static let howToReadMatrixStep1Title = NSLocalizedString("howToReadMatrix.step1.title", comment: "Calculate Your Chart")
+    static let howToReadMatrixStep1Intro = NSLocalizedString("howToReadMatrix.step1.intro", comment: "Your Matrix is built from your date of birth—day, month, and year. Each part is reduced to a single energy between 1 and 22, then combined to fill every position on the diagram.")
+    static let howToReadMatrixStep1Bullet1Title = NSLocalizedString("howToReadMatrix.step1.bullet1.title", comment: "Enter Birth Date")
+    static let howToReadMatrixStep1Bullet1Text = NSLocalizedString("howToReadMatrix.step1.bullet1.text", comment: "Use your exact birth date. The system handles the math for you.")
+    static let howToReadMatrixStep1Bullet2Title = NSLocalizedString("howToReadMatrix.step1.bullet2.title", comment: "Trust the Numbers")
+    static let howToReadMatrixStep1Bullet2Text = NSLocalizedString("howToReadMatrix.step1.bullet2.text", comment: "Don't worry about manual calculation—what matters is the meaning behind each energy.")
+    static let howToReadMatrixStep1ProTip = NSLocalizedString("howToReadMatrix.step1.proTip", comment: "If you're unsure of an exact time zone, the day, month, and year are what shape the Matrix.")
+
+    static let howToReadMatrixStep2Title = NSLocalizedString("howToReadMatrix.step2.title", comment: "Find the Central Square")
+    static let howToReadMatrixStep2Intro = NSLocalizedString("howToReadMatrix.step2.intro", comment: "At the heart of your Matrix is a square with four corner energies and a central one. Together they describe who you are and how you move through life.")
+    static let howToReadMatrixStep2Bullet1Title = NSLocalizedString("howToReadMatrix.step2.bullet1.title", comment: "Character (Sky)")
+    static let howToReadMatrixStep2Bullet1Text = NSLocalizedString("howToReadMatrix.step2.bullet1.text", comment: "Your conscious personality and the qualities you naturally express.")
+    static let howToReadMatrixStep2Bullet2Title = NSLocalizedString("howToReadMatrix.step2.bullet2.title", comment: "Karma (Earth)")
+    static let howToReadMatrixStep2Bullet2Text = NSLocalizedString("howToReadMatrix.step2.bullet2.text", comment: "Patterns carried from the past that ask to be transformed in this lifetime.")
+    static let howToReadMatrixStep2Bullet3Title = NSLocalizedString("howToReadMatrix.step2.bullet3.title", comment: "Talents & Comfort Zone")
+    static let howToReadMatrixStep2Bullet3Text = NSLocalizedString("howToReadMatrix.step2.bullet3.text", comment: "The gifts you bring forward and the comfortable habits you tend to repeat.")
+    static let howToReadMatrixStep2Bullet4Title = NSLocalizedString("howToReadMatrix.step2.bullet4.title", comment: "Heart / Mission Core")
+    static let howToReadMatrixStep2Bullet4Text = NSLocalizedString("howToReadMatrix.step2.bullet4.text", comment: "The integrating energy at the center—your essence and the gateway to your purpose.")
+
+    static let howToReadMatrixStep3Title = NSLocalizedString("howToReadMatrix.step3.title", comment: "Read the Life Lines")
+    static let howToReadMatrixStep3Intro = NSLocalizedString("howToReadMatrix.step3.intro", comment: "Around the central square are lines that describe your main areas of life. Each line is built from several energies that work together.")
+    static let howToReadMatrixStep3Bullet1Title = NSLocalizedString("howToReadMatrix.step3.bullet1.title", comment: "Money & Finance Line")
+    static let howToReadMatrixStep3Bullet1Text = NSLocalizedString("howToReadMatrix.step3.bullet1.text", comment: "How you attract resources, your relationship to abundance, and where money flows freely or gets blocked.")
+    static let howToReadMatrixStep3Bullet2Title = NSLocalizedString("howToReadMatrix.step3.bullet2.title", comment: "Relationship Line")
+    static let howToReadMatrixStep3Bullet2Text = NSLocalizedString("howToReadMatrix.step3.bullet2.text", comment: "How you bond with partners, the lessons love brings, and what kind of relationships nourish you.")
+    static let howToReadMatrixStep3Bullet3Title = NSLocalizedString("howToReadMatrix.step3.bullet3.title", comment: "Family & Ancestral Line")
+    static let howToReadMatrixStep3Bullet3Text = NSLocalizedString("howToReadMatrix.step3.bullet3.text", comment: "Patterns inherited from your family system that influence your roots and sense of belonging.")
+    static let howToReadMatrixStep3ProTip = NSLocalizedString("howToReadMatrix.step3.proTip", comment: "Read each line as a story: light versions describe what flows naturally, shadow versions show what's ready to be healed.")
+
+    static let howToReadMatrixStep4Title = NSLocalizedString("howToReadMatrix.step4.title", comment: "Look at Your Mission")
+    static let howToReadMatrixStep4Intro = NSLocalizedString("howToReadMatrix.step4.intro", comment: "The mission points reveal your purpose—why your soul chose this lifetime and the contribution you're invited to make.")
+    static let howToReadMatrixStep4Bullet1Title = NSLocalizedString("howToReadMatrix.step4.bullet1.title", comment: "Personal Mission")
+    static let howToReadMatrixStep4Bullet1Text = NSLocalizedString("howToReadMatrix.step4.bullet1.text", comment: "The growth your soul came here to experience for itself.")
+    static let howToReadMatrixStep4Bullet2Title = NSLocalizedString("howToReadMatrix.step4.bullet2.title", comment: "Social Mission")
+    static let howToReadMatrixStep4Bullet2Text = NSLocalizedString("howToReadMatrix.step4.bullet2.text", comment: "How you're meant to serve and what gift you offer to the world.")
+
+    static let howToReadMatrixStep5Title = NSLocalizedString("howToReadMatrix.step5.title", comment: "Bring It All Together")
+    static let howToReadMatrixStep5Intro = NSLocalizedString("howToReadMatrix.step5.intro", comment: "Once you understand the parts, read the whole Matrix as a conversation between archetypes. Notice repeated energies and how the light and shadow sides relate.")
+    static let howToReadMatrixStep5Bullet1Title = NSLocalizedString("howToReadMatrix.step5.bullet1.title", comment: "Look for Repetitions")
+    static let howToReadMatrixStep5Bullet1Text = NSLocalizedString("howToReadMatrix.step5.bullet1.text", comment: "Energies that appear in multiple positions carry a strong theme in your life.")
+    static let howToReadMatrixStep5Bullet2Title = NSLocalizedString("howToReadMatrix.step5.bullet2.title", comment: "Hold Light & Shadow Together")
+    static let howToReadMatrixStep5Bullet2Text = NSLocalizedString("howToReadMatrix.step5.bullet2.text", comment: "Each energy has both gifts and challenges. Working consciously with the shadow side is where real growth happens.")
+
+    static let howToReadMatrixRememberTitle = NSLocalizedString("howToReadMatrix.remember.title", comment: "Remember")
+    static let howToReadMatrixRememberText = NSLocalizedString("howToReadMatrix.remember.text", comment: "Your Matrix is a map, not a verdict. It points to potentials and patterns—your free will and conscious choices write the actual story of your life.")
+
+    // Matrix & Mind View
+    static let matrixMindTitle = NSLocalizedString("matrixMind.title", comment: "Matrix & Mind")
+    static let matrixMindSubtitle = NSLocalizedString("matrixMind.subtitle", comment: "A Tool for Self-Reflection")
+
+    static let matrixMindSection1Title = NSLocalizedString("matrixMind.section1.title", comment: "A Map of Inner Archetypes")
+    static let matrixMindSection1Text = NSLocalizedString("matrixMind.section1.text", comment: "The Destiny Matrix can be understood as a map of inner archetypes—universal patterns that live inside every person. Reading your chart isn't about predicting fate; it's about meeting the parts of yourself that shape how you think, feel, and choose.")
+
+    static let matrixMindSection2Title = NSLocalizedString("matrixMind.section2.title", comment: "Working with the Shadow")
+    static let matrixMindSection2Text = NSLocalizedString("matrixMind.section2.text", comment: "Each of the 22 energies carries both a light expression and a shadow expression. The shadow is not bad—it's the part of an archetype that runs unconsciously when ignored. Naming it gently is the first step toward integration.")
+    static let matrixMindSection2Insight = NSLocalizedString("matrixMind.section2.insight", comment: "What you can name, you can work with. What stays unconscious, controls you.")
+
+    static let matrixMindSection3Title = NSLocalizedString("matrixMind.section3.title", comment: "Patterns of Behavior")
+    static let matrixMindSection3Intro = NSLocalizedString("matrixMind.section3.intro", comment: "When you look at the lines and positions of your Matrix, you start to see how certain patterns repeat across areas of life:")
+    static let matrixMindSection3Bullet1Title = NSLocalizedString("matrixMind.section3.bullet1.title", comment: "Comfort Zone")
+    static let matrixMindSection3Bullet1Text = NSLocalizedString("matrixMind.section3.bullet1.text", comment: "Habits and identities you cling to because they feel safe—even when they no longer serve growth.")
+    static let matrixMindSection3Bullet2Title = NSLocalizedString("matrixMind.section3.bullet2.title", comment: "Karmic Loops")
+    static let matrixMindSection3Bullet2Text = NSLocalizedString("matrixMind.section3.bullet2.text", comment: "Situations that keep reappearing in slightly different costumes until the lesson is consciously met.")
+    static let matrixMindSection3Bullet3Title = NSLocalizedString("matrixMind.section3.bullet3.title", comment: "Ancestral Patterns")
+    static let matrixMindSection3Bullet3Text = NSLocalizedString("matrixMind.section3.bullet3.text", comment: "Family inheritances—beliefs, fears, and gifts—visible in the family/karmic positions of your chart.")
+
+    static let matrixMindSection4Title = NSLocalizedString("matrixMind.section4.title", comment: "Mindful Practice")
+    static let matrixMindSection4Intro = NSLocalizedString("matrixMind.section4.intro", comment: "The Matrix becomes most powerful when used as a mirror for daily reflection rather than as a forecast.")
+    static let matrixMindSection4Bullet1Title = NSLocalizedString("matrixMind.section4.bullet1.title", comment: "Journaling")
+    static let matrixMindSection4Bullet1Text = NSLocalizedString("matrixMind.section4.bullet1.text", comment: "Pick one energy from your chart and journal on its light and shadow as you noticed them this week.")
+    static let matrixMindSection4Bullet2Title = NSLocalizedString("matrixMind.section4.bullet2.title", comment: "Conscious Choice")
+    static let matrixMindSection4Bullet2Text = NSLocalizedString("matrixMind.section4.bullet2.text", comment: "When you recognize a pattern playing out, pause and ask: which side of this energy do I want to express right now?")
+
+    static let matrixMindSection5Title = NSLocalizedString("matrixMind.section5.title", comment: "From Insight to Choice")
+    static let matrixMindSection5Text = NSLocalizedString("matrixMind.section5.text", comment: "Reading your Matrix is not the end—it's the start of a conscious dialogue with yourself. The chart describes the landscape; you choose the path. Used gently, it can support therapy, coaching, and any path of self-understanding.")
+
+    static let matrixMindConclusion = NSLocalizedString("matrixMind.conclusion", comment: "The Matrix doesn't decide who you are. It invites you to remember who you came here to be.")
+    static let matrixMindInsightLabel = NSLocalizedString("matrixMind.insight.label", comment: "Insight")
+
+    // Destiny Matrix FAQ View
+    static let matrixFaqTitle = NSLocalizedString("matrixFaq.title", comment: "Frequently Asked Questions")
+    static let matrixFaqSubtitle = NSLocalizedString("matrixFaq.subtitle", comment: "Common questions about the Destiny Matrix")
+
+    static let matrixFaqQuestion1 = NSLocalizedString("matrixFaq.question1", comment: "What is the Destiny Matrix?")
+    static let matrixFaqAnswer1 = NSLocalizedString("matrixFaq.answer1", comment: "The Destiny Matrix is a personal chart built from your date of birth that maps 22 universal energies onto key positions of your life: your personality, relationships, money, family, and mission. It combines numerology, Tarot archetypes, and the Eastern chakra system into one diagram.")
+
+    static let matrixFaqQuestion2 = NSLocalizedString("matrixFaq.question2", comment: "Is the Matrix the same as numerology?")
+    static let matrixFaqAnswer2 = NSLocalizedString("matrixFaq.answer2", comment: "Numerology is one of its ingredients but not the whole system. The Matrix uses numerological calculation to place 22 archetypal energies—rooted in the Major Arcana of the Tarot—onto a specific diagram, giving a more layered picture than numbers alone.")
+
+    static let matrixFaqQuestion3 = NSLocalizedString("matrixFaq.question3", comment: "Why are there exactly 22 energies?")
+    static let matrixFaqAnswer3 = NSLocalizedString("matrixFaq.answer3", comment: "The 22 energies correspond to the 22 Major Arcana of the Tarot—a complete cycle of archetypes describing the human journey from beginning (The Fool) to wholeness (The World).")
+
+    static let matrixFaqQuestion4 = NSLocalizedString("matrixFaq.question4", comment: "Can my Matrix change over time?")
+    static let matrixFaqAnswer4 = NSLocalizedString("matrixFaq.answer4", comment: "The chart itself is fixed because it's calculated from your birth date. What changes is your relationship to it—how consciously you express the light or shadow side of each energy as you grow.")
+
+    static let matrixFaqQuestion5 = NSLocalizedString("matrixFaq.question5", comment: "How is it different from Tarot or astrology?")
+    static let matrixFaqAnswer5 = NSLocalizedString("matrixFaq.answer5", comment: "Tarot is a divination tool that responds to a specific question in the moment. Astrology maps planetary positions at your birth. The Matrix is a fixed birth-chart of archetypes, focused on identity, purpose, and personal patterns rather than transits or one-off questions.")
+
+    static let matrixFaqQuestion6 = NSLocalizedString("matrixFaq.question6", comment: "Can it predict the future?")
+    static let matrixFaqAnswer6 = NSLocalizedString("matrixFaq.answer6", comment: "The Matrix doesn't predict events. It describes potentials, patterns, and lessons. Your choices, awareness, and effort decide which version of each energy actually shows up in your life.")
+
+    static let matrixFaqQuestion7 = NSLocalizedString("matrixFaq.question7", comment: "Do I need a birth time or place?")
+    static let matrixFaqAnswer7 = NSLocalizedString("matrixFaq.answer7", comment: "No. Unlike a natal astrology chart, the Destiny Matrix only needs your day, month, and year of birth.")
+
+    static let matrixFaqQuestion8 = NSLocalizedString("matrixFaq.question8", comment: "Can I read someone else's Matrix?")
+    static let matrixFaqAnswer8 = NSLocalizedString("matrixFaq.answer8", comment: "Yes—if they share their birth date with you. Many people use it to better understand their partner, family member, or child. Always read with respect and ask before sharing interpretations.")
+
+    static let matrixFaqQuestion9 = NSLocalizedString("matrixFaq.question9", comment: "Is the Destiny Matrix a religion?")
+    static let matrixFaqAnswer9 = NSLocalizedString("matrixFaq.answer9", comment: "No. The Matrix is a symbolic self-development tool. It can sit alongside any faith—or none—and works as a mirror for reflection rather than as a belief system.")
+
+    static let matrixFaqQuestion10 = NSLocalizedString("matrixFaq.question10", comment: "How should I start working with my chart?")
+    static let matrixFaqAnswer10 = NSLocalizedString("matrixFaq.answer10", comment: "Begin with the central square—your personality, karma, talents, and core energy. Read both the light and shadow sides. Then explore one life line at a time (money, relationships, family) over several weeks rather than all at once.")
+
+    static let matrixFaqDisclaimerTitle = NSLocalizedString("matrixFaq.disclaimer.title", comment: "Important Note")
+    static let matrixFaqDisclaimerText = NSLocalizedString("matrixFaq.disclaimer.text", comment: "The Destiny Matrix is offered as a tool for reflection and self-discovery. It is not a substitute for medical, psychological, legal, or financial advice. Trust your own judgment and seek qualified professionals when you need real-world support.")
+
     // MARK: - Astrology / Zodiac Signs
     // These are used by AstrologyService for zodiac sign names
 }

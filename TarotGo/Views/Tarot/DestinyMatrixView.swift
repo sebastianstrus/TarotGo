@@ -65,13 +65,23 @@ struct DestinyMatrixView: View {
                                 )
                             }
                             .buttonStyle(PlainButtonStyle())
-                            
+
                             // Saved Destiny Matrices
                             NavigationLink(destination: DestinyMatrixHistoryView()) {
                                 NavigationButton(
                                     icon: "star.square.on.square.fill",
                                     title: L10n.homeMatrixHistory,
                                     subtitle: L10n.homeMatrixHistorySubtitle
+                                )
+                            }
+                            .buttonStyle(NavigationButtonStyle())
+
+                            // Learn Destiny Matrix
+                            NavigationLink(destination: LearnDestinyMatrixView()) {
+                                NavigationButton(
+                                    icon: "graduationcap.fill",
+                                    title: L10n.homeLearnDestinyMatrix,
+                                    subtitle: L10n.homeLearnDestinyMatrixSubtitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
