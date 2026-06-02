@@ -16,6 +16,7 @@ protocol AnimatedTabSelectionProtocol: CaseIterable, Hashable {
 // MARK: - TarotTab Enum
 enum TarotTab: AnimatedTabSelectionProtocol {
     case tarot
+    case destinyMatrix
     case palmistry
     case cosmic
     case settings
@@ -23,6 +24,7 @@ enum TarotTab: AnimatedTabSelectionProtocol {
     var symbolImage: String {
         switch self {
         case .tarot: return "rectangle.portrait.on.rectangle.portrait.angled.fill"
+        case .destinyMatrix: return "star.circle.fill"
         case .palmistry: return "hand.raised.palm.facing.fill"
         case .cosmic: return "moon.stars.fill"
         case .settings: return "gearshape.fill"
@@ -32,6 +34,7 @@ enum TarotTab: AnimatedTabSelectionProtocol {
     var title: String {
         switch self {
         case .tarot: return L10n.tabTarot
+        case .destinyMatrix: return L10n.tabDestinyMatrix
         case .palmistry: return L10n.tabPalmistry
         case .cosmic: return L10n.tabCosmic
         case .settings: return L10n.tabSettings
@@ -50,6 +53,10 @@ struct MainTabView: View {
                 TarotView()
             }
             
+            Tab.init(TarotTab.destinyMatrix.title, systemImage: TarotTab.destinyMatrix.symbolImage, value: .destinyMatrix) {
+                DestinyMatrixView()
+            }
+            
             Tab.init(TarotTab.palmistry.title, systemImage: TarotTab.palmistry.symbolImage, value: .palmistry) {
                 PalmistryView()
             }
@@ -66,6 +73,7 @@ struct MainTabView: View {
         } effects: { tab in
             switch tab {
             case .tarot: [.bounce.byLayer]
+            case .destinyMatrix: [.bounce.byLayer]
             case .palmistry: [.bounce.byLayer]
             case .cosmic: [.bounce.byLayer]
             case .settings: [.rotate]

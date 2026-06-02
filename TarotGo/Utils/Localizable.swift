@@ -21,6 +21,7 @@ enum L10n {
     
     // MARK: - Tab Bar
     static let tabTarot = NSLocalizedString("tab.tarot", comment: "Tarot tab")
+    static let tabDestinyMatrix = NSLocalizedString("tab.destinyMatrix", comment: "Destiny Matrix tab")
     static let tabPalmistry = NSLocalizedString("tab.palmistry", comment: "Palmistry tab")
     static let tabCosmic = NSLocalizedString("tab.cosmic", comment: "Cosmic tab")
     static let tabSettings = NSLocalizedString("tab.settings", comment: "Settings tab")
@@ -33,6 +34,11 @@ enum L10n {
     static let palmistryViewTitle = NSLocalizedString("palmistryView.title", comment: "Palmistry")
     static let palmistryViewSubtitle = NSLocalizedString("palmistryView.subtitle", comment: "Secrets written in your hands")
     static let palmistryViewFooter = NSLocalizedString("palmistryView.footer", comment: "Your destiny lies in your hands")
+    
+    // MARK: - Destiny Matrix View
+    static let destinyMatrixViewTitle = NSLocalizedString("destinyMatrixView.title", comment: "Destiny Matrix")
+    static let destinyMatrixViewSubtitle = NSLocalizedString("destinyMatrixView.subtitle", comment: "Your personal energy map")
+    static let destinyMatrixViewFooter = NSLocalizedString("destinyMatrixView.footer", comment: "Discover the blueprint of your soul")
     
     // MARK: - Cosmic View
     static let cosmicViewTitle = NSLocalizedString("cosmicView.title", comment: "Cosmic")
