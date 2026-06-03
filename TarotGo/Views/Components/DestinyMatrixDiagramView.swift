@@ -104,11 +104,11 @@ struct PositionCircleView: View {
     private var circleSize: CGFloat {
         switch position.position {
         case .center:
-            return size * (pdfMode ? 0.18 : 0.15)
+            return size * (pdfMode ? 0.16 : 0.15)
         case .personalPower, .socialRealization, .spiritualDevelopment, .planetaryInfluence:
-            return size * (pdfMode ? 0.115 : 0.11)
+            return size * (pdfMode ? 0.10 : 0.11)
         default:
-            return size * (pdfMode ? 0.11 : 0.09)
+            return size * (pdfMode ? 0.095 : 0.09)
         }
     }
 
