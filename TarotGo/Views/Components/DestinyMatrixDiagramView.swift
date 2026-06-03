@@ -113,14 +113,13 @@ struct PositionCircleView: View {
     }
 
     private var fontSize: CGFloat {
-        let multiplier: CGFloat = pdfMode ? 1.5 : 1.0
         switch position.position {
         case .center:
-            return 24 * multiplier
+            return pdfMode ? 72 : 24
         case .personalPower, .socialRealization, .spiritualDevelopment, .planetaryInfluence:
-            return 20 * multiplier
+            return pdfMode ? 50 : 20
         default:
-            return 16 * multiplier
+            return pdfMode ? 36 : 16
         }
     }
 
@@ -234,7 +233,7 @@ struct YearMarkerView: View {
         return pdfMode ? 11 : 5
     }
     private var ageFontSize: CGFloat { pdfMode ? 12 : 8 }
-    private var labelInset: CGFloat { pdfMode ? 0.07 : 0.04 }
+    private var labelInset: CGFloat { pdfMode ? 0.035 : 0.04 }
 
     var body: some View {
         let angle = angleForAge(yearEnergy.age)
