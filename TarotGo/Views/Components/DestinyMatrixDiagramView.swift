@@ -11,18 +11,20 @@ struct DestinyMatrixDiagramView: View {
     let matrix: DestinyMatrix
     @Binding var selectedPosition: MatrixPosition?
     @Binding var selectedYear: YearlyEnergy?
-    
+    var pdfMode: Bool = false
+
     var body: some View {
         GeometryReader { geometry in
             let size = min(geometry.size.width, geometry.size.height)
-            
+
             ZStack {
                 // Outer ring with yearly energies
                 OuterYearlyRingView(
                     yearlyEnergies: matrix.yearlyEnergies,
                     size: size,
                     selectedYear: $selectedYear,
-                    selectedPosition: $selectedPosition
+                    selectedPosition: $selectedPosition,
+                    pdfMode: pdfMode
                 )
                 // Background square frame
                 Path { path in
@@ -65,7 +67,8 @@ struct DestinyMatrixDiagramView: View {
                     PositionCircleView(
                         position: position,
                         size: size,
-                        isSelected: selectedPosition?.id == position.id
+                        isSelected: selectedPosition?.id == position.id,
+                        pdfMode: pdfMode
                     )
                     .zIndex(selectedPosition?.id == position.id ? 1 : 0)
                     .onTapGesture {
@@ -96,36 +99,46 @@ struct PositionCircleView: View {
     let position: MatrixPosition
     let size: CGFloat
     let isSelected: Bool
-    
+    var pdfMode: Bool = false
+
     private var circleSize: CGFloat {
         switch position.position {
         case .center:
-            return size * 0.15
+            return size * (pdfMode ? 0.18 : 0.15)
         case .personalPower, .socialRealization, .spiritualDevelopment, .planetaryInfluence:
-            return size * 0.11
+            return size * (pdfMode ? 0.13 : 0.11)
         default:
-            return size * 0.09
+            return size * (pdfMode ? 0.11 : 0.09)
         }
     }
-    
+
     private var fontSize: CGFloat {
+        let multiplier: CGFloat = pdfMode ? 1.5 : 1.0
         switch position.position {
         case .center:
-            return 24
+            return 24 * multiplier
         case .personalPower, .socialRealization, .spiritualDevelopment, .planetaryInfluence:
-            return 20
+            return 20 * multiplier
         default:
-            return 16
+            return 16 * multiplier
         }
     }
-    
+
+    private var isCenterHighlighted: Bool {
+        pdfMode && position.position == .center
+    }
+
+    private var showsGoldFill: Bool {
+        isSelected || isCenterHighlighted
+    }
+
     var body: some View {
         ZStack {
             // Main circle
             Circle()
                 .fill(
                     LinearGradient(
-                        colors: isSelected
+                        colors: showsGoldFill
                             ? [AppTheme.lightGold, AppTheme.gold]
                             : [AppTheme.midNavy.opacity(0.6), AppTheme.deepNavy.opacity(0.8)],
                         startPoint: .topLeading,
@@ -136,21 +149,21 @@ struct PositionCircleView: View {
                 .overlay(
                     Circle()
                         .stroke(
-                            isSelected ? AppTheme.lightGold : AppTheme.gold.opacity(0.6),
-                            lineWidth: isSelected ? 3 : 2
+                            showsGoldFill ? AppTheme.lightGold : AppTheme.gold.opacity(0.6),
+                            lineWidth: showsGoldFill ? 3 : 2
                         )
                 )
                 .shadow(
-                    color: isSelected ? AppTheme.gold.opacity(0.4) : AppTheme.gold.opacity(0.2),
-                    radius: isSelected ? 8 : 6,
+                    color: showsGoldFill ? AppTheme.gold.opacity(0.4) : AppTheme.gold.opacity(0.2),
+                    radius: showsGoldFill ? 8 : 6,
                     x: 0,
                     y: 4
                 )
-            
+
             // Number
             Text("\(position.number)")
                 .font(.system(size: fontSize, weight: .bold, design: .rounded))
-                .foregroundColor(isSelected ? .black : AppTheme.textPrimary)
+                .foregroundColor(showsGoldFill ? .black : AppTheme.textPrimary)
         }
         .position(
             x: position.x * size,
@@ -168,7 +181,8 @@ struct OuterYearlyRingView: View {
     let size: CGFloat
     @Binding var selectedYear: YearlyEnergy?
     @Binding var selectedPosition: MatrixPosition?
-    
+    var pdfMode: Bool = false
+
     var body: some View {
         ZStack {
             // Outer circle - positioned to align with year circle centers
@@ -176,13 +190,14 @@ struct OuterYearlyRingView: View {
                 .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
                 .frame(width: size * 1.02, height: size * 1.02)
                 .position(x: size / 2, y: size / 2)
-            
+
             // Age markers and energy numbers - display all years 1-80
             ForEach(yearlyEnergies.filter { $0.age > 0 }, id: \.id) { yearEnergy in
                 YearMarkerView(
                     yearEnergy: yearEnergy,
                     size: size,
-                    isSelected: selectedYear?.id == yearEnergy.id
+                    isSelected: selectedYear?.id == yearEnergy.id,
+                    pdfMode: pdfMode
                 )
                 .zIndex(selectedYear?.id == yearEnergy.id ? 1 : 0)
                 .onTapGesture {
@@ -211,18 +226,27 @@ struct YearMarkerView: View {
     let yearEnergy: YearlyEnergy
     let size: CGFloat
     let isSelected: Bool
-    
+    var pdfMode: Bool = false
+
+    private var circleDiameter: CGFloat { pdfMode ? 22 : 11 }
+    private var energyFontSize: CGFloat {
+        if isSelected { return pdfMode ? 13 : 7 }
+        return pdfMode ? 11 : 5
+    }
+    private var ageFontSize: CGFloat { pdfMode ? 12 : 8 }
+    private var labelInset: CGFloat { pdfMode ? 0.07 : 0.04 }
+
     var body: some View {
         let angle = angleForAge(yearEnergy.age)
         // Outer ring diameter is size * 1.02, so radius is size * 0.51
         // Position circle centers ON the ring stroke
         let ringRadius = size * 0.51
-        let labelRadius = size * 0.47 // Further in for the label
+        let labelRadius = size * (0.51 - labelInset) // Further in for the label
         let circleX = size / 2 + ringRadius * cos(angle)
         let circleY = size / 2 + ringRadius * sin(angle)
         let labelX = size / 2 + labelRadius * cos(angle)
         let labelY = size / 2 + labelRadius * sin(angle)
-        
+
         ZStack {
             // Circle with energy number
             ZStack {
@@ -234,7 +258,7 @@ struct YearMarkerView: View {
                                 ? LinearGradient(colors: [AppTheme.gold.opacity(0.8)], startPoint: .top, endPoint: .bottom)
                                 : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
                     )
-                    .frame(width: 11, height: 11)
+                    .frame(width: circleDiameter, height: circleDiameter)
                     .overlay(
                         Circle()
                             .stroke(
@@ -250,18 +274,18 @@ struct YearMarkerView: View {
                         x: 0,
                         y: 3
                     )
-                
+
                 // Energy number
                 Text("\(yearEnergy.primaryEnergy)")
-                    .font(.system(size: isSelected ? 7 : 5, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded))
+                    .font(.system(size: energyFontSize, weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium), design: .rounded))
                     .foregroundColor(isSelected ? .black : (yearEnergy.isCurrentYear ? .black.opacity(0.8) : AppTheme.textPrimary))
             }
             .scaleEffect(isSelected ? 1.5 : 1.0)
             .position(x: circleX, y: circleY)
-            
+
             // Age label positioned further out from center - show for all ages
             Text("\(yearEnergy.age)")
-                .font(.system(size: 8, weight: isSelected ? .bold : .medium))
+                .font(.system(size: ageFontSize, weight: isSelected ? .bold : .medium))
                 .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.7))
                 .position(x: labelX, y: labelY)
         }

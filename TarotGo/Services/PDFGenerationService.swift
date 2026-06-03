@@ -7,6 +7,7 @@
 
 import UIKit
 import PDFKit
+import SwiftUI
 
 class PDFGenerationService {
     static let shared = PDFGenerationService()
@@ -564,6 +565,24 @@ class PDFGenerationService {
     
     // MARK: - Destiny Matrix PDF
 
+    @MainActor
+    private func renderDestinyMatrixDiagramImage(matrix: DestinyMatrix, size: CGFloat) -> UIImage? {
+        let view = DestinyMatrixDiagramView(
+            matrix: matrix,
+            selectedPosition: .constant(nil),
+            selectedYear: .constant(nil),
+            pdfMode: true
+        )
+        .frame(width: size, height: size)
+        .padding(size * 0.06)
+        .background(AppTheme.deepNavy)
+
+        let renderer = ImageRenderer(content: view)
+        renderer.scale = 3
+        return renderer.uiImage
+    }
+
+    @MainActor
     func generateDestinyMatrixPDF(
         matrix: DestinyMatrix,
         notes: String?,
@@ -634,6 +653,31 @@ class PDFGenerationService {
             )
 
             yPosition += 25
+
+            // Destiny Matrix diagram
+            let diagramRenderSize: CGFloat = 800
+            if let diagramImage = renderDestinyMatrixDiagramImage(matrix: matrix, size: diagramRenderSize) {
+                let drawSize: CGFloat = min(contentWidth, 360)
+                let diagramX = (pageWidth - drawSize) / 2
+                let diagramRect = CGRect(x: diagramX, y: yPosition, width: drawSize, height: drawSize)
+                let cornerRadius: CGFloat = 16
+
+                context.cgContext.saveGState()
+                let clipPath = UIBezierPath(roundedRect: diagramRect, cornerRadius: cornerRadius)
+                clipPath.addClip()
+                diagramImage.draw(in: diagramRect)
+                context.cgContext.restoreGState()
+
+                context.cgContext.saveGState()
+                let borderPath = UIBezierPath(roundedRect: diagramRect, cornerRadius: cornerRadius)
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.5).setStroke()
+                borderPath.lineWidth = 1
+                borderPath.stroke()
+                context.cgContext.restoreGState()
+
+                yPosition += drawSize + 25
+            }
+
             drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
             yPosition += 25
 
@@ -1371,23 +1415,31 @@ class PDFGenerationService {
         }
 
         let interpretationText = reading.interpretation(for: line)
-        let boxStartY = yPosition
-        yPosition += 12
-        yPosition = drawText(
-            interpretationText,
-            at: CGPoint(x: margin, y: yPosition),
-            width: contentWidth,
-            font: .systemFont(ofSize: 13, weight: .light),
-            color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+        let interpFont = UIFont.systemFont(ofSize: 13, weight: .light)
+        let interpParagraph = NSMutableParagraphStyle()
+        interpParagraph.lineSpacing = 3
+        let interpAttributes: [NSAttributedString.Key: Any] = [
+            .font: interpFont,
+            .paragraphStyle: interpParagraph
+        ]
+        let interpString = NSAttributedString(string: interpretationText, attributes: interpAttributes)
+        let interpRect = interpString.boundingRect(
+            with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
+            options: [.usesLineFragmentOrigin, .usesFontLeading],
+            context: nil
         )
-        yPosition += 16
+
+        let boxTopInset: CGFloat = 12
+        let boxBottomInset: CGFloat = 16
+        let boxStartY = yPosition
+        let boxHeight = interpRect.height + boxTopInset + boxBottomInset
 
         context.cgContext.saveGState()
         let boxRect = CGRect(
             x: margin - 8,
             y: boxStartY,
             width: contentWidth + 16,
-            height: yPosition - boxStartY
+            height: boxHeight
         )
         UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
         let interpBox = UIBezierPath(roundedRect: boxRect, cornerRadius: 8)
@@ -1397,7 +1449,16 @@ class PDFGenerationService {
         interpBox.stroke()
         context.cgContext.restoreGState()
 
-        yPosition += 12
+        yPosition += boxTopInset
+        yPosition = drawText(
+            interpretationText,
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: interpFont,
+            color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+        )
+
+        yPosition = boxStartY + boxHeight + 12
         return yPosition
     }
 
@@ -1428,15 +1489,51 @@ class PDFGenerationService {
         )
         yPosition += 8
 
+        let mountText = PalmInterpretations.mountInterpretation(for: mount)
+        let mountFont = UIFont.systemFont(ofSize: 12, weight: .light)
+        let mountParagraph = NSMutableParagraphStyle()
+        mountParagraph.lineSpacing = 3
+        let mountAttributes: [NSAttributedString.Key: Any] = [
+            .font: mountFont,
+            .paragraphStyle: mountParagraph
+        ]
+        let mountString = NSAttributedString(string: mountText, attributes: mountAttributes)
+        let mountRect = mountString.boundingRect(
+            with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
+            options: [.usesLineFragmentOrigin, .usesFontLeading],
+            context: nil
+        )
+
+        let boxTopInset: CGFloat = 12
+        let boxBottomInset: CGFloat = 16
+        let boxStartY = yPosition
+        let boxHeight = mountRect.height + boxTopInset + boxBottomInset
+
+        context.cgContext.saveGState()
+        let boxRect = CGRect(
+            x: margin - 8,
+            y: boxStartY,
+            width: contentWidth + 16,
+            height: boxHeight
+        )
+        UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
+        let mountBox = UIBezierPath(roundedRect: boxRect, cornerRadius: 8)
+        mountBox.fill()
+        UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setStroke()
+        mountBox.lineWidth = 1
+        mountBox.stroke()
+        context.cgContext.restoreGState()
+
+        yPosition += boxTopInset
         yPosition = drawText(
-            PalmInterpretations.mountInterpretation(for: mount),
+            mountText,
             at: CGPoint(x: margin, y: yPosition),
             width: contentWidth,
-            font: .systemFont(ofSize: 12, weight: .light),
+            font: mountFont,
             color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         )
 
-        yPosition += 10
+        yPosition = boxStartY + boxHeight + 10
         return yPosition
     }
 
