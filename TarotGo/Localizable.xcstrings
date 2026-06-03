@@ -166804,6 +166804,258 @@
           }
         }
       }
+    },
+    "pdf.matrix.title" : {
+      "comment" : "Your Destiny Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Destiny Matrix"
+          }
+        }
+      }
+    },
+    "pdf.matrix.birthDate" : {
+      "comment" : "Birth Date:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birth Date:"
+          }
+        }
+      }
+    },
+    "pdf.matrix.savedOn" : {
+      "comment" : "Saved on:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved on:"
+          }
+        }
+      }
+    },
+    "pdf.matrix.coreEssence" : {
+      "comment" : "Core Essence",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Core Essence"
+          }
+        }
+      }
+    },
+    "pdf.matrix.keyPositions" : {
+      "comment" : "Key Positions",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key Positions"
+          }
+        }
+      }
+    },
+    "pdf.matrix.currentYear" : {
+      "comment" : "Current Year Energy",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current Year Energy"
+          }
+        }
+      }
+    },
+    "pdf.matrix.energy" : {
+      "comment" : "Energy:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energy:"
+          }
+        }
+      }
+    },
+    "pdf.matrix.year" : {
+      "comment" : "Year",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Year"
+          }
+        }
+      }
+    },
+    "pdf.matrix.age" : {
+      "comment" : "Age",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Age"
+          }
+        }
+      }
+    },
+    "pdf.palm.title" : {
+      "comment" : "Your Palm Reading",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Palm Reading"
+          }
+        }
+      }
+    },
+    "pdf.palm.savedOn" : {
+      "comment" : "Saved on:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved on:"
+          }
+        }
+      }
+    },
+    "pdf.palm.capturedImage" : {
+      "comment" : "Captured Palm",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Captured Palm"
+          }
+        }
+      }
+    },
+    "pdf.palm.handShape" : {
+      "comment" : "Hand Shape",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hand Shape"
+          }
+        }
+      }
+    },
+    "pdf.palm.fingerLength" : {
+      "comment" : "Finger Length:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finger Length:"
+          }
+        }
+      }
+    },
+    "pdf.palm.shape" : {
+      "comment" : "Palm Shape:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palm Shape:"
+          }
+        }
+      }
+    },
+    "pdf.palm.lines" : {
+      "comment" : "Palm Lines",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palm Lines"
+          }
+        }
+      }
+    },
+    "pdf.palm.mounts" : {
+      "comment" : "Palm Mounts",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palm Mounts"
+          }
+        }
+      }
+    },
+    "pdf.palm.length" : {
+      "comment" : "Length:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Length:"
+          }
+        }
+      }
+    },
+    "pdf.palm.depth" : {
+      "comment" : "Depth:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depth:"
+          }
+        }
+      }
+    },
+    "pdf.palm.continuity" : {
+      "comment" : "Continuity:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuity:"
+          }
+        }
+      }
+    },
+    "pdf.palm.prominence" : {
+      "comment" : "Prominence:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prominence:"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"

@@ -159,6 +159,7 @@ struct DestinyMatrixSessionDetailView: View {
     @State private var editedNotes: String
     @State private var isEditingNotes: Bool = false
     @State private var showDeleteAlert: Bool = false
+    @State private var sharePDFURL: URL?
     @FocusState private var isNotesFocused: Bool
 
     init(session: DestinyMatrixSession) {
@@ -262,6 +263,13 @@ struct DestinyMatrixSessionDetailView: View {
         } message: {
             Text(L10n.matrixHistoryDeleteMessage)
         }
+        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+            sharePDFURL = nil
+        }) {
+            if let pdfURL = sharePDFURL {
+                ShareSheet(items: [pdfURL])
+            }
+        }
         .onAppear {
             if matrix == nil {
                 matrix = DestinyMatrixCalculator.shared.calculate(from: session.birthDate)
@@ -336,6 +344,24 @@ struct DestinyMatrixSessionDetailView: View {
                     )
             )
 
+            // Share button
+            Button {
+                shareMatrix()
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.system(size: 16))
+                    Text(L10n.summaryShareReading)
+                        .font(.system(size: 16, weight: .semibold))
+                }
+                .foregroundColor(AppTheme.deepNavy)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 14)
+                .background(AppTheme.goldGradient)
+                .cornerRadius(12)
+                .shadow(color: AppTheme.gold.opacity(0.4), radius: 8)
+            }
+
             // Delete button
             Button {
                 showDeleteAlert = true
@@ -367,6 +393,15 @@ struct DestinyMatrixSessionDetailView: View {
         try? modelContext.save()
         HapticService.shared.impact(.medium)
         dismiss()
+    }
+
+    private func shareMatrix() {
+        guard let matrix = matrix else { return }
+        sharePDFURL = PDFGenerationService.shared.generateDestinyMatrixPDF(
+            matrix: matrix,
+            notes: editedNotes.isEmpty ? nil : editedNotes,
+            savedDate: session.date
+        )
     }
 }
 

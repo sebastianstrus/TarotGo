@@ -562,6 +562,884 @@ class PDFGenerationService {
         }
     }
     
+    // MARK: - Destiny Matrix PDF
+
+    func generateDestinyMatrixPDF(
+        matrix: DestinyMatrix,
+        notes: String?,
+        savedDate: Date
+    ) -> URL? {
+        let pdfMetaData = [
+            kCGPDFContextCreator: "TarotGo",
+            kCGPDFContextAuthor: "TarotGo App",
+            kCGPDFContextTitle: "Destiny Matrix - \(matrix.formattedBirthDate)"
+        ]
+        let format = UIGraphicsPDFRendererFormat()
+        format.documentInfo = pdfMetaData as [String: Any]
+
+        let pageWidth = 8.5 * 72.0
+        let pageHeight = 11.0 * 72.0
+        let pageRect = CGRect(x: 0, y: 0, width: pageWidth, height: pageHeight)
+
+        let renderer = UIGraphicsPDFRenderer(bounds: pageRect, format: format)
+
+        let data = renderer.pdfData { context in
+            var pageNumber = 1
+            context.beginPage()
+
+            drawMysticalBackground(in: pageRect, context: context.cgContext)
+
+            var yPosition: CGFloat = 50
+            let margin: CGFloat = 60
+            let contentWidth = pageWidth - (2 * margin)
+
+            // Header
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setFill()
+            drawStar(at: CGPoint(x: pageWidth / 2, y: 30), size: 12, context: context.cgContext)
+            yPosition += 30
+
+            // Title
+            yPosition = drawText(
+                L10n.pdfMatrixTitle,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 32, weight: .bold),
+                color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+            )
+
+            yPosition += 10
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Birth date
+            drawCrescent(at: CGPoint(x: margin + 8, y: yPosition + 8), size: 5, context: context.cgContext)
+            yPosition = drawText(
+                "\(L10n.pdfMatrixBirthDate) \(matrix.formattedBirthDate)",
+                at: CGPoint(x: margin + 25, y: yPosition),
+                width: contentWidth - 25,
+                font: .systemFont(ofSize: 14, weight: .medium),
+                color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+            )
+
+            yPosition += 10
+            let savedFormatter = DateFormatter()
+            savedFormatter.dateStyle = .long
+            savedFormatter.timeStyle = .short
+            yPosition = drawText(
+                "\(L10n.pdfMatrixSavedOn) \(savedFormatter.string(from: savedDate))",
+                at: CGPoint(x: margin + 25, y: yPosition),
+                width: contentWidth - 25,
+                font: .systemFont(ofSize: 12, weight: .light),
+                color: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+            )
+
+            yPosition += 25
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Core Essence (center position) section
+            if let center = matrix.centerPosition {
+                yPosition = drawSectionHeader(
+                    title: L10n.pdfMatrixCoreEssence,
+                    at: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context.cgContext
+                )
+                yPosition += 5
+
+                yPosition = drawMatrixPositionDetail(
+                    position: center,
+                    isHighlighted: true,
+                    yPosition: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    pageWidth: pageWidth,
+                    context: context
+                )
+
+                yPosition += 25
+            }
+
+            // Current Year Energy
+            if let currentYear = matrix.currentYearEnergy {
+                if yPosition > pageHeight - 280 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
+                yPosition = drawSectionHeader(
+                    title: L10n.pdfMatrixCurrentYear,
+                    at: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context.cgContext
+                )
+                yPosition += 5
+
+                yPosition = drawYearlyEnergyDetail(
+                    yearEnergy: currentYear,
+                    yPosition: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    pageWidth: pageWidth,
+                    context: context
+                )
+
+                yPosition += 25
+            }
+
+            // Key positions section
+            if yPosition > pageHeight - 200 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition = drawSectionHeader(
+                title: L10n.pdfMatrixKeyPositions,
+                at: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                context: context.cgContext
+            )
+            yPosition += 10
+
+            // Order positions (skip center since it was already shown)
+            let priorityOrder: [MatrixPosition.PositionType] = [
+                .personalPower, .socialRealization, .spiritualDevelopment, .planetaryInfluence,
+                .purpose, .talents, .money, .relationships, .health, .karma,
+                .male, .female, .sky, .earth, .comfort, .past, .present, .future
+            ]
+            let orderedPositions = priorityOrder.compactMap { type in
+                matrix.positions.first { $0.position == type }
+            }
+
+            for (index, position) in orderedPositions.enumerated() {
+                if yPosition > pageHeight - 240 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
+                yPosition = drawMatrixPositionDetail(
+                    position: position,
+                    isHighlighted: false,
+                    yPosition: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    pageWidth: pageWidth,
+                    context: context
+                )
+
+                if index < orderedPositions.count - 1 {
+                    let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+                    goldColor.withAlphaComponent(0.3).setStroke()
+                    let leftLine = UIBezierPath()
+                    leftLine.move(to: CGPoint(x: margin, y: yPosition + 10))
+                    leftLine.addLine(to: CGPoint(x: pageWidth / 2 - 20, y: yPosition + 10))
+                    leftLine.lineWidth = 0.5
+                    leftLine.stroke()
+                    let rightLine = UIBezierPath()
+                    rightLine.move(to: CGPoint(x: pageWidth / 2 + 20, y: yPosition + 10))
+                    rightLine.addLine(to: CGPoint(x: pageWidth - margin, y: yPosition + 10))
+                    rightLine.lineWidth = 0.5
+                    rightLine.stroke()
+                    goldColor.setFill()
+                    drawStar(at: CGPoint(x: pageWidth / 2, y: yPosition + 10), size: 5, context: context.cgContext)
+                    yPosition += 25
+                }
+            }
+
+            // Notes
+            if let notes = notes, !notes.isEmpty {
+                if yPosition > pageHeight - 200 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
+                yPosition += 15
+                yPosition = drawSectionHeader(title: L10n.summaryReflections, at: yPosition, margin: margin, contentWidth: contentWidth, context: context.cgContext)
+                yPosition += 5
+
+                let notesFont = UIFont.systemFont(ofSize: 12, weight: .regular)
+                let notesAttributes: [NSAttributedString.Key: Any] = [.font: notesFont]
+                let notesString = NSAttributedString(string: notes, attributes: notesAttributes)
+                let notesRect = notesString.boundingRect(with: CGSize(width: contentWidth - 20, height: .greatestFiniteMagnitude), options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
+
+                context.cgContext.saveGState()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.05).setFill()
+                let notesBox = UIBezierPath(roundedRect: CGRect(x: margin - 10, y: yPosition - 10, width: contentWidth + 20, height: notesRect.height + 30), cornerRadius: 8)
+                notesBox.fill()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.3).setStroke()
+                notesBox.lineWidth = 1
+                notesBox.stroke()
+                drawStar(at: CGPoint(x: margin - 5, y: yPosition - 5), size: 4, context: context.cgContext)
+                drawStar(at: CGPoint(x: pageWidth - margin + 5, y: yPosition - 5), size: 4, context: context.cgContext)
+                context.cgContext.restoreGState()
+
+                yPosition = drawText(notes, at: CGPoint(x: margin, y: yPosition), width: contentWidth, font: notesFont, color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0))
+            }
+
+            drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+        }
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let filename = "DestinyMatrix_\(dateFormatter.string(from: matrix.birthDate)).pdf"
+        let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent(filename)
+
+        do {
+            try data.write(to: tempURL)
+            return tempURL
+        } catch {
+            return nil
+        }
+    }
+
+    private func drawMatrixPositionDetail(
+        position: MatrixPosition,
+        isHighlighted: Bool,
+        yPosition initialY: CGFloat,
+        margin: CGFloat,
+        contentWidth: CGFloat,
+        pageWidth: CGFloat,
+        context: UIGraphicsPDFRendererContext
+    ) -> CGFloat {
+        var yPosition = initialY
+
+        let sectionTopY = yPosition
+        yPosition += 5
+
+        // Draw circular number badge
+        drawCardPositionBadge(position: position.number, at: CGPoint(x: margin, y: yPosition), context: context.cgContext)
+
+        // Position title
+        yPosition = drawText(
+            position.position.displayName,
+            at: CGPoint(x: margin + 50, y: yPosition + 5),
+            width: contentWidth - 50 - 110,
+            font: .systemFont(ofSize: 18, weight: .semibold),
+            color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        )
+
+        yPosition += 4
+
+        // Position description
+        yPosition = drawText(
+            position.position.description,
+            at: CGPoint(x: margin + 50, y: yPosition),
+            width: contentWidth - 50 - 110,
+            font: .italicSystemFont(ofSize: 12),
+            color: UIColor(red: 0.45, green: 0.45, blue: 0.45, alpha: 1.0)
+        )
+
+        yPosition += 10
+
+        // Card image on the right
+        if let card = position.tarotCard, let cardImage = UIImage(named: card.id) {
+            let cardImageHeight: CGFloat = 110
+            let cardImageWidth: CGFloat = cardImageHeight * (1108.0 / 1900.0)
+            let cardX = pageWidth - margin - cardImageWidth
+            let cornerRadius = cardImageWidth * 0.06
+
+            let imageRect = CGRect(x: cardX, y: sectionTopY + 5, width: cardImageWidth, height: cardImageHeight)
+
+            context.cgContext.saveGState()
+            let cardBg = UIBezierPath(roundedRect: imageRect, cornerRadius: cornerRadius)
+            UIColor.white.setFill()
+            cardBg.fill()
+            cardBg.addClip()
+            cardImage.draw(in: imageRect)
+            context.cgContext.restoreGState()
+
+            context.cgContext.saveGState()
+            let borderPath = UIBezierPath(roundedRect: imageRect, cornerRadius: cornerRadius)
+            UIColor.gray.setStroke()
+            borderPath.lineWidth = 0.5
+            borderPath.stroke()
+            context.cgContext.restoreGState()
+        }
+
+        // Energy number + card name
+        if let card = position.tarotCard {
+            let energyText = "\(L10n.pdfMatrixEnergy) \(position.number) • \(card.localizedName)"
+            yPosition = drawText(
+                energyText,
+                at: CGPoint(x: margin + 50, y: yPosition),
+                width: contentWidth - 50 - 110,
+                font: .systemFont(ofSize: 13, weight: .medium),
+                color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+            )
+        } else {
+            yPosition = drawText(
+                "\(L10n.pdfMatrixEnergy) \(position.number)",
+                at: CGPoint(x: margin + 50, y: yPosition),
+                width: contentWidth - 50 - 110,
+                font: .systemFont(ofSize: 13, weight: .medium),
+                color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+            )
+        }
+
+        // Ensure image takes minimum space
+        let imageBottomY = sectionTopY + 5 + 110
+        if yPosition < imageBottomY {
+            yPosition = imageBottomY
+        }
+
+        // Optional highlighted background
+        if isHighlighted {
+            context.cgContext.saveGState()
+            let boxRect = CGRect(
+                x: margin - 12,
+                y: sectionTopY - 5,
+                width: contentWidth + 24,
+                height: yPosition - sectionTopY + 18
+            )
+            let highlightBox = UIBezierPath(roundedRect: boxRect, cornerRadius: 12)
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.08).setFill()
+            highlightBox.fill()
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.4).setStroke()
+            highlightBox.lineWidth = 1
+            highlightBox.stroke()
+            context.cgContext.restoreGState()
+        }
+
+        yPosition += 18
+
+        return yPosition
+    }
+
+    private func drawYearlyEnergyDetail(
+        yearEnergy: YearlyEnergy,
+        yPosition initialY: CGFloat,
+        margin: CGFloat,
+        contentWidth: CGFloat,
+        pageWidth: CGFloat,
+        context: UIGraphicsPDFRendererContext
+    ) -> CGFloat {
+        var yPosition = initialY
+        let sectionTopY = yPosition
+        yPosition += 5
+
+        drawCardPositionBadge(position: yearEnergy.primaryEnergy, at: CGPoint(x: margin, y: yPosition), context: context.cgContext)
+
+        let title = "\(L10n.pdfMatrixYear) \(yearEnergy.year) • \(L10n.pdfMatrixAge) \(yearEnergy.age)"
+        yPosition = drawText(
+            title,
+            at: CGPoint(x: margin + 50, y: yPosition + 5),
+            width: contentWidth - 50 - 110,
+            font: .systemFont(ofSize: 18, weight: .semibold),
+            color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        )
+
+        yPosition += 8
+
+        if let card = yearEnergy.primaryCard {
+            yPosition = drawText(
+                "\(L10n.pdfMatrixEnergy) \(yearEnergy.primaryEnergy) • \(card.localizedName)",
+                at: CGPoint(x: margin + 50, y: yPosition),
+                width: contentWidth - 50 - 110,
+                font: .systemFont(ofSize: 13, weight: .medium),
+                color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+            )
+
+            if let cardImage = UIImage(named: card.id) {
+                let cardImageHeight: CGFloat = 110
+                let cardImageWidth: CGFloat = cardImageHeight * (1108.0 / 1900.0)
+                let cardX = pageWidth - margin - cardImageWidth
+                let cornerRadius = cardImageWidth * 0.06
+
+                let imageRect = CGRect(x: cardX, y: sectionTopY + 5, width: cardImageWidth, height: cardImageHeight)
+
+                context.cgContext.saveGState()
+                let cardBg = UIBezierPath(roundedRect: imageRect, cornerRadius: cornerRadius)
+                UIColor.white.setFill()
+                cardBg.fill()
+                cardBg.addClip()
+                cardImage.draw(in: imageRect)
+                context.cgContext.restoreGState()
+
+                context.cgContext.saveGState()
+                let borderPath = UIBezierPath(roundedRect: imageRect, cornerRadius: cornerRadius)
+                UIColor.gray.setStroke()
+                borderPath.lineWidth = 0.5
+                borderPath.stroke()
+                context.cgContext.restoreGState()
+            }
+        }
+
+        let imageBottomY = sectionTopY + 5 + 110
+        if yPosition < imageBottomY {
+            yPosition = imageBottomY
+        }
+
+        yPosition += 12
+        return yPosition
+    }
+
+    // MARK: - Palm Reading PDF
+
+    func generatePalmReadingPDF(
+        reading: PalmReading,
+        capturedImageData: Data?,
+        notes: String?,
+        savedDate: Date
+    ) -> URL? {
+        let pdfMetaData = [
+            kCGPDFContextCreator: "TarotGo",
+            kCGPDFContextAuthor: "TarotGo App",
+            kCGPDFContextTitle: "Palm Reading"
+        ]
+        let format = UIGraphicsPDFRendererFormat()
+        format.documentInfo = pdfMetaData as [String: Any]
+
+        let pageWidth = 8.5 * 72.0
+        let pageHeight = 11.0 * 72.0
+        let pageRect = CGRect(x: 0, y: 0, width: pageWidth, height: pageHeight)
+
+        let renderer = UIGraphicsPDFRenderer(bounds: pageRect, format: format)
+
+        let data = renderer.pdfData { context in
+            var pageNumber = 1
+            context.beginPage()
+
+            drawMysticalBackground(in: pageRect, context: context.cgContext)
+
+            var yPosition: CGFloat = 50
+            let margin: CGFloat = 60
+            let contentWidth = pageWidth - (2 * margin)
+
+            // Header decorative star
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setFill()
+            drawStar(at: CGPoint(x: pageWidth / 2, y: 30), size: 12, context: context.cgContext)
+            yPosition += 30
+
+            // Title
+            yPosition = drawText(
+                L10n.pdfPalmTitle,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 32, weight: .bold),
+                color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+            )
+
+            yPosition += 10
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Saved date
+            drawCrescent(at: CGPoint(x: margin + 8, y: yPosition + 8), size: 5, context: context.cgContext)
+            let savedFormatter = DateFormatter()
+            savedFormatter.dateStyle = .long
+            savedFormatter.timeStyle = .short
+            yPosition = drawText(
+                "\(L10n.pdfPalmSavedOn) \(savedFormatter.string(from: savedDate))",
+                at: CGPoint(x: margin + 25, y: yPosition),
+                width: contentWidth - 25,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+            )
+
+            yPosition += 25
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Captured image
+            if let imageData = capturedImageData, let palmImage = UIImage(data: imageData) {
+                yPosition = drawSectionHeader(
+                    title: L10n.pdfPalmCapturedImage,
+                    at: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context.cgContext
+                )
+                yPosition += 5
+
+                let maxImageHeight: CGFloat = 240
+                let aspect = palmImage.size.width / max(palmImage.size.height, 1)
+                let imageHeight: CGFloat = maxImageHeight
+                let imageWidth: CGFloat = min(contentWidth, imageHeight * aspect)
+                let imageX = margin + (contentWidth - imageWidth) / 2
+                let imageRect = CGRect(x: imageX, y: yPosition, width: imageWidth, height: imageHeight)
+
+                context.cgContext.saveGState()
+                let bg = UIBezierPath(roundedRect: imageRect, cornerRadius: 12)
+                UIColor.white.setFill()
+                bg.fill()
+                bg.addClip()
+                palmImage.draw(in: imageRect)
+                context.cgContext.restoreGState()
+
+                context.cgContext.saveGState()
+                let border = UIBezierPath(roundedRect: imageRect, cornerRadius: 12)
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.5).setStroke()
+                border.lineWidth = 1
+                border.stroke()
+                context.cgContext.restoreGState()
+
+                yPosition += imageHeight + 25
+            }
+
+            // Overall interpretation
+            if yPosition > pageHeight - 220 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition = drawSectionHeader(
+                title: L10n.palmReadingOverall,
+                at: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                context: context.cgContext
+            )
+            yPosition += 5
+
+            let overallBoxStartY = yPosition
+            yPosition += 12
+            yPosition = drawText(
+                reading.overallInterpretation,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+            )
+            yPosition += 18
+
+            context.cgContext.saveGState()
+            let overallBox = UIBezierPath(
+                roundedRect: CGRect(x: margin - 10, y: overallBoxStartY, width: contentWidth + 20, height: yPosition - overallBoxStartY),
+                cornerRadius: 10
+            )
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
+            overallBox.lineWidth = 1
+            overallBox.stroke()
+            context.cgContext.restoreGState()
+
+            yPosition += 25
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Hand shape
+            if yPosition > pageHeight - 250 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition = drawSectionHeader(
+                title: L10n.pdfPalmHandShape,
+                at: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                context: context.cgContext
+            )
+            yPosition += 5
+
+            yPosition = drawText(
+                reading.handShape.shapeType.description,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 16, weight: .semibold),
+                color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+            )
+            yPosition += 6
+
+            let handMetaText = "\(L10n.pdfPalmFingerLength) \(reading.handShape.fingerLength.description)  •  \(L10n.pdfPalmShape) \(reading.handShape.palmRatio.description)"
+            yPosition = drawText(
+                handMetaText,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .italicSystemFont(ofSize: 12),
+                color: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+            )
+            yPosition += 10
+
+            yPosition = drawText(
+                PalmInterpretations.handShapeInterpretation(for: reading.handShape),
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+            )
+
+            yPosition += 25
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Palm lines
+            if yPosition > pageHeight - 220 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition = drawSectionHeader(
+                title: L10n.pdfPalmLines,
+                at: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                context: context.cgContext
+            )
+            yPosition += 10
+
+            let lines: [(PalmLine, PalmLineCharacteristics?)] = [
+                (.heart, reading.heartLine),
+                (.head, reading.headLine),
+                (.life, reading.lifeLine),
+                (.fate, reading.fateLine)
+            ]
+
+            for (index, entry) in lines.enumerated() {
+                if yPosition > pageHeight - 200 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
+                yPosition = drawPalmLineDetail(
+                    line: entry.0,
+                    characteristics: entry.1,
+                    reading: reading,
+                    yPosition: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context
+                )
+
+                if index < lines.count - 1 {
+                    let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+                    goldColor.withAlphaComponent(0.3).setStroke()
+                    let leftLine = UIBezierPath()
+                    leftLine.move(to: CGPoint(x: margin, y: yPosition + 8))
+                    leftLine.addLine(to: CGPoint(x: pageWidth / 2 - 20, y: yPosition + 8))
+                    leftLine.lineWidth = 0.5
+                    leftLine.stroke()
+                    let rightLine = UIBezierPath()
+                    rightLine.move(to: CGPoint(x: pageWidth / 2 + 20, y: yPosition + 8))
+                    rightLine.addLine(to: CGPoint(x: pageWidth - margin, y: yPosition + 8))
+                    rightLine.lineWidth = 0.5
+                    rightLine.stroke()
+                    goldColor.setFill()
+                    drawStar(at: CGPoint(x: pageWidth / 2, y: yPosition + 8), size: 5, context: context.cgContext)
+                    yPosition += 22
+                }
+            }
+
+            // Palm mounts
+            if !reading.mounts.isEmpty {
+                if yPosition > pageHeight - 220 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
+                yPosition += 15
+                yPosition = drawSectionHeader(
+                    title: L10n.pdfPalmMounts,
+                    at: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context.cgContext
+                )
+                yPosition += 10
+
+                for (index, mount) in reading.mounts.enumerated() {
+                    if yPosition > pageHeight - 160 {
+                        drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                        pageNumber += 1
+                        context.beginPage()
+                        drawMysticalBackground(in: pageRect, context: context.cgContext)
+                        yPosition = 60
+                    }
+
+                    yPosition = drawPalmMountDetail(
+                        mount: mount,
+                        yPosition: yPosition,
+                        margin: margin,
+                        contentWidth: contentWidth,
+                        context: context
+                    )
+
+                    if index < reading.mounts.count - 1 {
+                        yPosition += 12
+                    }
+                }
+            }
+
+            // Notes
+            if let notes = notes, !notes.isEmpty {
+                if yPosition > pageHeight - 200 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
+                yPosition += 20
+                yPosition = drawSectionHeader(title: L10n.summaryReflections, at: yPosition, margin: margin, contentWidth: contentWidth, context: context.cgContext)
+                yPosition += 5
+
+                let notesFont = UIFont.systemFont(ofSize: 12, weight: .regular)
+                let notesAttributes: [NSAttributedString.Key: Any] = [.font: notesFont]
+                let notesString = NSAttributedString(string: notes, attributes: notesAttributes)
+                let notesRect = notesString.boundingRect(with: CGSize(width: contentWidth - 20, height: .greatestFiniteMagnitude), options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
+
+                context.cgContext.saveGState()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.05).setFill()
+                let notesBox = UIBezierPath(roundedRect: CGRect(x: margin - 10, y: yPosition - 10, width: contentWidth + 20, height: notesRect.height + 30), cornerRadius: 8)
+                notesBox.fill()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.3).setStroke()
+                notesBox.lineWidth = 1
+                notesBox.stroke()
+                drawStar(at: CGPoint(x: margin - 5, y: yPosition - 5), size: 4, context: context.cgContext)
+                drawStar(at: CGPoint(x: pageWidth - margin + 5, y: yPosition - 5), size: 4, context: context.cgContext)
+                context.cgContext.restoreGState()
+
+                yPosition = drawText(notes, at: CGPoint(x: margin, y: yPosition), width: contentWidth, font: notesFont, color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0))
+            }
+
+            drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+        }
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let filename = "PalmReading_\(dateFormatter.string(from: savedDate)).pdf"
+        let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent(filename)
+
+        do {
+            try data.write(to: tempURL)
+            return tempURL
+        } catch {
+            return nil
+        }
+    }
+
+    private func drawPalmLineDetail(
+        line: PalmLine,
+        characteristics: PalmLineCharacteristics?,
+        reading: PalmReading,
+        yPosition initialY: CGFloat,
+        margin: CGFloat,
+        contentWidth: CGFloat,
+        context: UIGraphicsPDFRendererContext
+    ) -> CGFloat {
+        var yPosition = initialY
+
+        yPosition = drawText(
+            line.localizedName,
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: .systemFont(ofSize: 17, weight: .semibold),
+            color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        )
+        yPosition += 6
+
+        if let characteristics = characteristics {
+            let metaText = "\(L10n.pdfPalmLength) \(characteristics.length.description)  •  \(L10n.pdfPalmDepth) \(characteristics.depth.description)  •  \(L10n.pdfPalmContinuity) \(characteristics.continuity.description)"
+            yPosition = drawText(
+                metaText,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .italicSystemFont(ofSize: 12),
+                color: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+            )
+            yPosition += 10
+        }
+
+        let interpretationText = reading.interpretation(for: line)
+        let boxStartY = yPosition
+        yPosition += 12
+        yPosition = drawText(
+            interpretationText,
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: .systemFont(ofSize: 13, weight: .light),
+            color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+        )
+        yPosition += 16
+
+        context.cgContext.saveGState()
+        let boxRect = CGRect(
+            x: margin - 8,
+            y: boxStartY,
+            width: contentWidth + 16,
+            height: yPosition - boxStartY
+        )
+        UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
+        let interpBox = UIBezierPath(roundedRect: boxRect, cornerRadius: 8)
+        interpBox.fill()
+        UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setStroke()
+        interpBox.lineWidth = 1
+        interpBox.stroke()
+        context.cgContext.restoreGState()
+
+        yPosition += 12
+        return yPosition
+    }
+
+    private func drawPalmMountDetail(
+        mount: PalmMountCharacteristics,
+        yPosition initialY: CGFloat,
+        margin: CGFloat,
+        contentWidth: CGFloat,
+        context: UIGraphicsPDFRendererContext
+    ) -> CGFloat {
+        var yPosition = initialY
+
+        yPosition = drawText(
+            mount.mount.localizedName,
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: .systemFont(ofSize: 15, weight: .semibold),
+            color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        )
+        yPosition += 4
+
+        yPosition = drawText(
+            "\(L10n.pdfPalmProminence) \(mount.prominence.description)",
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: .italicSystemFont(ofSize: 12),
+            color: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+        )
+        yPosition += 8
+
+        yPosition = drawText(
+            PalmInterpretations.mountInterpretation(for: mount),
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: .systemFont(ofSize: 12, weight: .light),
+            color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+        )
+
+        yPosition += 10
+        return yPosition
+    }
+
     @discardableResult
     private func drawText(
         _ text: String,

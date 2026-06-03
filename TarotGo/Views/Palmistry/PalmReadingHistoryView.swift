@@ -151,6 +151,7 @@ struct PalmReadingSessionDetailView: View {
     @State private var editedNotes: String
     @State private var isEditingNotes: Bool = false
     @State private var showDeleteAlert: Bool = false
+    @State private var sharePDFURL: URL?
     @FocusState private var isNotesFocused: Bool
 
     init(session: PalmReadingSession) {
@@ -199,6 +200,13 @@ struct PalmReadingSessionDetailView: View {
             }
         } message: {
             Text(L10n.palmHistoryDeleteMessage)
+        }
+        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+            sharePDFURL = nil
+        }) {
+            if let pdfURL = sharePDFURL {
+                ShareSheet(items: [pdfURL])
+            }
         }
     }
 
@@ -445,6 +453,25 @@ struct PalmReadingSessionDetailView: View {
                     )
                     .padding(.horizontal, 20)
 
+                    // Share button
+                    Button {
+                        sharePalm(reading: reading)
+                    } label: {
+                        HStack(spacing: 8) {
+                            Image(systemName: "square.and.arrow.up")
+                                .font(.system(size: 16))
+                            Text(L10n.summaryShareReading)
+                                .font(.system(size: 16, weight: .semibold))
+                        }
+                        .foregroundColor(AppTheme.deepNavy)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 14)
+                        .background(AppTheme.goldGradient)
+                        .cornerRadius(12)
+                        .shadow(color: AppTheme.gold.opacity(0.4), radius: 8)
+                    }
+                    .padding(.horizontal, 20)
+
                     // Delete button
                     Button {
                         showDeleteAlert = true
@@ -480,6 +507,15 @@ struct PalmReadingSessionDetailView: View {
         try? modelContext.save()
         HapticService.shared.impact(.medium)
         dismiss()
+    }
+
+    private func sharePalm(reading: PalmReading) {
+        sharePDFURL = PDFGenerationService.shared.generatePalmReadingPDF(
+            reading: reading,
+            capturedImageData: session.capturedImageData,
+            notes: editedNotes.isEmpty ? nil : editedNotes,
+            savedDate: session.date
+        )
     }
 }
 

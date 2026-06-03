@@ -395,6 +395,31 @@ enum L10n {
     static let pdfCards = NSLocalizedString("pdf.cards", comment: "Cards")
     static let pdfPersonalReflections = NSLocalizedString("pdf.personalReflections", comment: "Personal Reflections")
 
+    // MARK: - PDF Export - Destiny Matrix
+    static let pdfMatrixTitle = NSLocalizedString("pdf.matrix.title", comment: "Your Destiny Matrix")
+    static let pdfMatrixBirthDate = NSLocalizedString("pdf.matrix.birthDate", comment: "Birth Date:")
+    static let pdfMatrixSavedOn = NSLocalizedString("pdf.matrix.savedOn", comment: "Saved on:")
+    static let pdfMatrixCoreEssence = NSLocalizedString("pdf.matrix.coreEssence", comment: "Core Essence")
+    static let pdfMatrixKeyPositions = NSLocalizedString("pdf.matrix.keyPositions", comment: "Key Positions")
+    static let pdfMatrixCurrentYear = NSLocalizedString("pdf.matrix.currentYear", comment: "Current Year Energy")
+    static let pdfMatrixEnergy = NSLocalizedString("pdf.matrix.energy", comment: "Energy:")
+    static let pdfMatrixYear = NSLocalizedString("pdf.matrix.year", comment: "Year")
+    static let pdfMatrixAge = NSLocalizedString("pdf.matrix.age", comment: "Age")
+
+    // MARK: - PDF Export - Palm Reading
+    static let pdfPalmTitle = NSLocalizedString("pdf.palm.title", comment: "Your Palm Reading")
+    static let pdfPalmSavedOn = NSLocalizedString("pdf.palm.savedOn", comment: "Saved on:")
+    static let pdfPalmCapturedImage = NSLocalizedString("pdf.palm.capturedImage", comment: "Captured Palm")
+    static let pdfPalmHandShape = NSLocalizedString("pdf.palm.handShape", comment: "Hand Shape")
+    static let pdfPalmFingerLength = NSLocalizedString("pdf.palm.fingerLength", comment: "Finger Length:")
+    static let pdfPalmShape = NSLocalizedString("pdf.palm.shape", comment: "Palm Shape:")
+    static let pdfPalmLines = NSLocalizedString("pdf.palm.lines", comment: "Palm Lines")
+    static let pdfPalmMounts = NSLocalizedString("pdf.palm.mounts", comment: "Palm Mounts")
+    static let pdfPalmLength = NSLocalizedString("pdf.palm.length", comment: "Length:")
+    static let pdfPalmDepth = NSLocalizedString("pdf.palm.depth", comment: "Depth:")
+    static let pdfPalmContinuity = NSLocalizedString("pdf.palm.continuity", comment: "Continuity:")
+    static let pdfPalmProminence = NSLocalizedString("pdf.palm.prominence", comment: "Prominence:")
+
     // MARK: - History
     static let historyTitle = NSLocalizedString("history.title", comment: "Reading History")
     static let historyFilter = NSLocalizedString("history.filter", comment: "Filter:")

@@ -18,6 +18,7 @@ struct DestinyMatrixResultView: View {
     @State private var selectedTab: Tab = .diagram
     @State private var sessionSaved: Bool = false
     @State private var notes: String = ""
+    @State private var sharePDFURL: URL?
     @FocusState private var isNotesFocused: Bool
     
     enum Tab: String, CaseIterable {
@@ -145,8 +146,15 @@ struct DestinyMatrixResultView: View {
                 saveSession()
             }
         }
+        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+            sharePDFURL = nil
+        }) {
+            if let pdfURL = sharePDFURL {
+                ShareSheet(items: [pdfURL])
+            }
+        }
     }
-    
+
     private func saveSession() {
         let session = DestinyMatrixSession(birthDate: matrix.birthDate)
         session.notes = notes.isEmpty ? nil : notes
@@ -162,39 +170,11 @@ struct DestinyMatrixResultView: View {
     }
     
     private func shareMatrix() {
-        // Create a shareable text summary
-        var shareText = "My Destiny Matrix\n"
-        shareText += "Birth Date: \(matrix.formattedBirthDate)\n\n"
-        
-        if let centerPos = matrix.centerPosition {
-            shareText += "Center Energy: \(centerPos.number)"
-            if let card = centerPos.tarotCard {
-                shareText += " - \(card.name)"
-            }
-            shareText += "\n\n"
-        }
-        
-        shareText += "Key Positions:\n"
-        for position in matrix.positions.prefix(5) {
-            shareText += "• \(position.position.displayName): \(position.number)"
-            if let card = position.tarotCard {
-                shareText += " (\(card.name))"
-            }
-            shareText += "\n"
-        }
-        
-        shareText += "\n✨ Generated with TarotGo"
-        
-        // Share using UIActivityViewController
-        let activityVC = UIActivityViewController(
-            activityItems: [shareText],
-            applicationActivities: nil
+        sharePDFURL = PDFGenerationService.shared.generateDestinyMatrixPDF(
+            matrix: matrix,
+            notes: notes.isEmpty ? nil : notes,
+            savedDate: Date()
         )
-        
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let rootVC = windowScene.windows.first?.rootViewController {
-            rootVC.present(activityVC, animated: true)
-        }
     }
 }
 
