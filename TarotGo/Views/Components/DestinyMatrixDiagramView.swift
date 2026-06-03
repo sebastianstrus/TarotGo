@@ -227,10 +227,10 @@ struct YearMarkerView: View {
     let isSelected: Bool
     var pdfMode: Bool = false
 
-    private var circleDiameter: CGFloat { pdfMode ? 22 : 11 }
+    private var circleDiameter: CGFloat { pdfMode ? 28 : 11 }
     private var energyFontSize: CGFloat {
-        if isSelected { return pdfMode ? 13 : 7 }
-        return pdfMode ? 11 : 5
+        if isSelected { return pdfMode ? 16 : 7 }
+        return pdfMode ? 14 : 5
     }
     private var ageFontSize: CGFloat { pdfMode ? 12 : 8 }
     private var labelInset: CGFloat { pdfMode ? 0.035 : 0.04 }
