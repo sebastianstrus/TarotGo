@@ -1110,24 +1110,62 @@ class PDFGenerationService {
             drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
             yPosition += 25
 
-            // Captured image
+            // Overall Reading section with image on the right
+            if yPosition > pageHeight - 320 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
             if let imageData = capturedImageData, let palmImage = UIImage(data: imageData) {
-                yPosition = drawSectionHeader(
-                    title: L10n.pdfPalmCapturedImage,
+                let imageColumnWidth: CGFloat = 200
+                let maxImageHeight: CGFloat = 280
+                let aspect = palmImage.size.width / max(palmImage.size.height, 1)
+                var imageWidth = imageColumnWidth
+                var imageHeight = imageWidth / max(aspect, 0.01)
+                if imageHeight > maxImageHeight {
+                    imageHeight = maxImageHeight
+                    imageWidth = imageHeight * aspect
+                }
+
+                let columnGap: CGFloat = 20
+                let leftColumnWidth = contentWidth - imageColumnWidth - columnGap
+                let imageX = margin + leftColumnWidth + columnGap + (imageColumnWidth - imageWidth) / 2
+                let sectionStartY = yPosition
+
+                var leftY = drawSectionHeader(
+                    title: L10n.palmReadingOverall,
                     at: yPosition,
                     margin: margin,
-                    contentWidth: contentWidth,
+                    contentWidth: leftColumnWidth,
                     context: context.cgContext
                 )
-                yPosition += 5
+                leftY += 5
 
-                let maxImageHeight: CGFloat = 240
-                let aspect = palmImage.size.width / max(palmImage.size.height, 1)
-                let imageHeight: CGFloat = maxImageHeight
-                let imageWidth: CGFloat = min(contentWidth, imageHeight * aspect)
-                let imageX = margin + (contentWidth - imageWidth) / 2
-                let imageRect = CGRect(x: imageX, y: yPosition, width: imageWidth, height: imageHeight)
+                let overallBoxStartY = leftY
+                leftY += 12
+                leftY = drawText(
+                    reading.overallInterpretation,
+                    at: CGPoint(x: margin, y: leftY),
+                    width: leftColumnWidth,
+                    font: .systemFont(ofSize: 13, weight: .light),
+                    color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+                )
+                leftY += 18
 
+                context.cgContext.saveGState()
+                let overallBox = UIBezierPath(
+                    roundedRect: CGRect(x: margin - 10, y: overallBoxStartY, width: leftColumnWidth + 20, height: leftY - overallBoxStartY),
+                    cornerRadius: 10
+                )
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
+                overallBox.lineWidth = 1
+                overallBox.stroke()
+                context.cgContext.restoreGState()
+
+                let imageRect = CGRect(x: imageX, y: sectionStartY, width: imageWidth, height: imageHeight)
                 context.cgContext.saveGState()
                 let bg = UIBezierPath(roundedRect: imageRect, cornerRadius: 12)
                 UIColor.white.setFill()
@@ -1143,47 +1181,38 @@ class PDFGenerationService {
                 border.stroke()
                 context.cgContext.restoreGState()
 
-                yPosition += imageHeight + 25
+                yPosition = max(leftY, sectionStartY + imageHeight)
+            } else {
+                yPosition = drawSectionHeader(
+                    title: L10n.palmReadingOverall,
+                    at: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context.cgContext
+                )
+                yPosition += 5
+
+                let overallBoxStartY = yPosition
+                yPosition += 12
+                yPosition = drawText(
+                    reading.overallInterpretation,
+                    at: CGPoint(x: margin, y: yPosition),
+                    width: contentWidth,
+                    font: .systemFont(ofSize: 13, weight: .light),
+                    color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+                )
+                yPosition += 18
+
+                context.cgContext.saveGState()
+                let overallBox = UIBezierPath(
+                    roundedRect: CGRect(x: margin - 10, y: overallBoxStartY, width: contentWidth + 20, height: yPosition - overallBoxStartY),
+                    cornerRadius: 10
+                )
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
+                overallBox.lineWidth = 1
+                overallBox.stroke()
+                context.cgContext.restoreGState()
             }
-
-            // Overall interpretation
-            if yPosition > pageHeight - 220 {
-                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
-                pageNumber += 1
-                context.beginPage()
-                drawMysticalBackground(in: pageRect, context: context.cgContext)
-                yPosition = 60
-            }
-
-            yPosition = drawSectionHeader(
-                title: L10n.palmReadingOverall,
-                at: yPosition,
-                margin: margin,
-                contentWidth: contentWidth,
-                context: context.cgContext
-            )
-            yPosition += 5
-
-            let overallBoxStartY = yPosition
-            yPosition += 12
-            yPosition = drawText(
-                reading.overallInterpretation,
-                at: CGPoint(x: margin, y: yPosition),
-                width: contentWidth,
-                font: .systemFont(ofSize: 13, weight: .light),
-                color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
-            )
-            yPosition += 18
-
-            context.cgContext.saveGState()
-            let overallBox = UIBezierPath(
-                roundedRect: CGRect(x: margin - 10, y: overallBoxStartY, width: contentWidth + 20, height: yPosition - overallBoxStartY),
-                cornerRadius: 10
-            )
-            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
-            overallBox.lineWidth = 1
-            overallBox.stroke()
-            context.cgContext.restoreGState()
 
             yPosition += 25
             drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
