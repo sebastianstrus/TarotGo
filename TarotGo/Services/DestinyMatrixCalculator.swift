@@ -179,7 +179,7 @@ class DestinyMatrixCalculator {
             number: future,
             position: .future,
             x: 0.04,
-            y: 0.15
+            y: 0.13
         ))
         
         // Present (middle left)(18)
@@ -197,7 +197,7 @@ class DestinyMatrixCalculator {
             number: past,
             position: .past,
             x: 0.04,
-            y: 0.85
+            y: 0.87
         ))
         
         // Calculate yearly energies
