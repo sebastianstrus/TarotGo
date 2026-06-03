@@ -1133,7 +1133,6 @@ class PDFGenerationService {
                 let columnGap: CGFloat = 20
                 let leftColumnWidth = contentWidth - imageColumnWidth - columnGap
                 let imageX = margin + leftColumnWidth + columnGap + (imageColumnWidth - imageWidth) / 2
-                let sectionStartY = yPosition
 
                 var leftY = drawSectionHeader(
                     title: L10n.palmReadingOverall,
@@ -1165,7 +1164,7 @@ class PDFGenerationService {
                 overallBox.stroke()
                 context.cgContext.restoreGState()
 
-                let imageRect = CGRect(x: imageX, y: sectionStartY, width: imageWidth, height: imageHeight)
+                let imageRect = CGRect(x: imageX, y: overallBoxStartY, width: imageWidth, height: imageHeight)
                 context.cgContext.saveGState()
                 let bg = UIBezierPath(roundedRect: imageRect, cornerRadius: 12)
                 UIColor.white.setFill()
@@ -1181,7 +1180,7 @@ class PDFGenerationService {
                 border.stroke()
                 context.cgContext.restoreGState()
 
-                yPosition = max(leftY, sectionStartY + imageHeight)
+                yPosition = max(leftY, overallBoxStartY + imageHeight)
             } else {
                 yPosition = drawSectionHeader(
                     title: L10n.palmReadingOverall,
