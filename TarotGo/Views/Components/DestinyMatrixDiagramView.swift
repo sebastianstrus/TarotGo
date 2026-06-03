@@ -106,7 +106,7 @@ struct PositionCircleView: View {
         case .center:
             return size * (pdfMode ? 0.18 : 0.15)
         case .personalPower, .socialRealization, .spiritualDevelopment, .planetaryInfluence:
-            return size * (pdfMode ? 0.13 : 0.11)
+            return size * (pdfMode ? 0.115 : 0.11)
         default:
             return size * (pdfMode ? 0.11 : 0.09)
         }

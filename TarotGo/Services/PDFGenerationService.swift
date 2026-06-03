@@ -683,6 +683,17 @@ class PDFGenerationService {
 
             // Core Essence (center position) section
             if let center = matrix.centerPosition {
+                // Keep the Core Essence section together: if it won't fit comfortably
+                // on the remaining page, push it to the next page so the highlighted
+                // box isn't sliced by the page break.
+                if yPosition > pageHeight - 260 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
                 yPosition = drawSectionHeader(
                     title: L10n.pdfMatrixCoreEssence,
                     at: yPosition,
