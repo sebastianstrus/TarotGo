@@ -148868,7 +148868,16 @@
       }
     },
     "pdf.matrix.currentYearDesc" : {
-      "comment" : "Your guiding energy this year, shaping the themes, lessons and opportunities woven into your path."
+      "comment" : "Your guiding energy this year, shaping the themes, lessons and opportunities woven into your path.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your guiding energy this year, shaping the themes, lessons and opportunities woven into your path."
+          }
+        }
+      }
     },
     "pdf.matrix.energy" : {
       "comment" : "Energy:",
@@ -148895,7 +148904,16 @@
       }
     },
     "pdf.matrix.lifeTimeline" : {
-      "comment" : "Life Timeline"
+      "comment" : "Life Timeline",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Life Timeline"
+          }
+        }
+      }
     },
     "pdf.matrix.savedOn" : {
       "comment" : "Saved on:",
@@ -148934,7 +148952,16 @@
       }
     },
     "pdf.matrix.years" : {
-      "comment" : "years"
+      "comment" : "years",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "years"
+          }
+        }
+      }
     },
     "pdf.overallInsight" : {
       "comment" : "Overall insight section header in PDF export",
