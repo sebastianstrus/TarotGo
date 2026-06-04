@@ -813,6 +813,63 @@ class PDFGenerationService {
                 }
             }
 
+            // Life Timeline section (year analysis)
+            if !matrix.yearlyEnergies.isEmpty {
+                if yPosition > pageHeight - 260 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
+                yPosition += 10
+                yPosition = drawSectionHeader(
+                    title: L10n.pdfMatrixLifeTimeline,
+                    at: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context.cgContext
+                )
+                yPosition += 8
+
+                if let currentYear = matrix.currentYearEnergy {
+                    yPosition = drawCurrentYearTimelineCard(
+                        yearEnergy: currentYear,
+                        yPosition: yPosition,
+                        margin: margin,
+                        contentWidth: contentWidth,
+                        context: context
+                    )
+                    yPosition += 18
+                }
+
+                for startAge in stride(from: 1, through: 71, by: 10) {
+                    let decadeYears = matrix.yearlyEnergies.filter { $0.age >= startAge && $0.age <= startAge + 9 }
+                    if decadeYears.isEmpty { continue }
+
+                    if yPosition > pageHeight - 110 {
+                        drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                        pageNumber += 1
+                        context.beginPage()
+                        drawMysticalBackground(in: pageRect, context: context.cgContext)
+                        yPosition = 60
+                    }
+
+                    yPosition = drawDecadeRow(
+                        decadeStart: startAge,
+                        years: decadeYears,
+                        yPosition: yPosition,
+                        margin: margin,
+                        contentWidth: contentWidth,
+                        context: context
+                    )
+                    yPosition += 14
+                }
+
+                yPosition += 10
+            }
+
             // Notes
             if let notes = notes, !notes.isEmpty {
                 if yPosition > pageHeight - 200 {
@@ -1041,6 +1098,230 @@ class PDFGenerationService {
 
         yPosition += 12
         return yPosition
+    }
+
+    // MARK: - Life Timeline Helpers
+
+    private func drawCurrentYearTimelineCard(
+        yearEnergy: YearlyEnergy,
+        yPosition initialY: CGFloat,
+        margin: CGFloat,
+        contentWidth: CGFloat,
+        context: UIGraphicsPDFRendererContext
+    ) -> CGFloat {
+        let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        let boxTopY = initialY
+        let innerLeft = margin + 4
+        let innerWidth = contentWidth - 8
+        var yPosition = boxTopY + 14
+
+        let labelText = L10n.pdfMatrixCurrentYear.uppercased()
+        let labelFont = UIFont.systemFont(ofSize: 10, weight: .semibold)
+        let labelAttrs: [NSAttributedString.Key: Any] = [
+            .font: labelFont,
+            .foregroundColor: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0),
+            .kern: 1.2
+        ]
+        (labelText as NSString).draw(
+            at: CGPoint(x: innerLeft, y: yPosition),
+            withAttributes: labelAttrs
+        )
+        yPosition += labelFont.lineHeight + 4
+
+        let title = "\(L10n.pdfMatrixYear) \(yearEnergy.year) • \(L10n.pdfMatrixAge) \(yearEnergy.age)"
+        let titleFont = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        yPosition = drawText(
+            title,
+            at: CGPoint(x: innerLeft, y: yPosition),
+            width: innerWidth - 70,
+            font: titleFont,
+            color: goldColor
+        )
+
+        // Energy badge on the right
+        let badgeRadius: CGFloat = 22
+        let badgeCenter = CGPoint(
+            x: margin + contentWidth - badgeRadius - 6,
+            y: boxTopY + 14 + badgeRadius + 4
+        )
+
+        goldColor.setFill()
+        UIBezierPath(
+            arcCenter: badgeCenter,
+            radius: badgeRadius,
+            startAngle: 0,
+            endAngle: .pi * 2,
+            clockwise: true
+        ).fill()
+
+        let energyText = "\(yearEnergy.primaryEnergy)" as NSString
+        let energyFont = UIFont.systemFont(ofSize: 18, weight: .bold)
+        let energyAttrs: [NSAttributedString.Key: Any] = [
+            .font: energyFont,
+            .foregroundColor: UIColor.black
+        ]
+        let energySize = energyText.size(withAttributes: energyAttrs)
+        energyText.draw(
+            at: CGPoint(
+                x: badgeCenter.x - energySize.width / 2,
+                y: badgeCenter.y - energySize.height / 2
+            ),
+            withAttributes: energyAttrs
+        )
+
+        yPosition += 10
+
+        // Description sentence
+        yPosition = drawText(
+            L10n.pdfMatrixCurrentYearDesc,
+            at: CGPoint(x: innerLeft, y: yPosition),
+            width: innerWidth,
+            font: .italicSystemFont(ofSize: 12),
+            color: UIColor(red: 0.35, green: 0.35, blue: 0.35, alpha: 1.0)
+        )
+
+        if let card = yearEnergy.primaryCard {
+            yPosition += 8
+            let keywords = card.localizedKeywords.prefix(4).joined(separator: " • ")
+            let cardLine = keywords.isEmpty
+                ? card.localizedName
+                : "\(card.localizedName) — \(keywords)"
+            yPosition = drawText(
+                cardLine,
+                at: CGPoint(x: innerLeft, y: yPosition),
+                width: innerWidth,
+                font: .systemFont(ofSize: 13, weight: .medium),
+                color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+            )
+        }
+
+        yPosition += 12
+
+        let boxRect = CGRect(
+            x: margin - 8,
+            y: boxTopY,
+            width: contentWidth + 16,
+            height: yPosition - boxTopY
+        )
+        context.cgContext.saveGState()
+        let boxPath = UIBezierPath(roundedRect: boxRect, cornerRadius: 12)
+        UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.08).setFill()
+        boxPath.fill()
+        UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.4).setStroke()
+        boxPath.lineWidth = 1
+        boxPath.stroke()
+        context.cgContext.restoreGState()
+
+        return yPosition
+    }
+
+    private func drawDecadeRow(
+        decadeStart: Int,
+        years: [YearlyEnergy],
+        yPosition initialY: CGFloat,
+        margin: CGFloat,
+        contentWidth: CGFloat,
+        context: UIGraphicsPDFRendererContext
+    ) -> CGFloat {
+        var yPosition = initialY
+
+        let labelText = "\(decadeStart)-\(decadeStart + 9) \(L10n.pdfMatrixYears)"
+        yPosition = drawText(
+            labelText,
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: .systemFont(ofSize: 13, weight: .semibold),
+            color: UIColor(red: 0.45, green: 0.45, blue: 0.45, alpha: 1.0)
+        )
+        yPosition += 6
+
+        let chipCount = max(years.count, 1)
+        let chipSpacing: CGFloat = 6
+        let totalSpacing = chipSpacing * CGFloat(chipCount - 1)
+        let chipWidth = (contentWidth - totalSpacing) / CGFloat(chipCount)
+        let circleSize: CGFloat = min(28, chipWidth - 4)
+        let ageFontSize: CGFloat = 8
+        let yearFontSize: CGFloat = 7
+        let rowHeight = ageFontSize + 3 + circleSize + 2 + yearFontSize + 4
+
+        let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        let mutedColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+
+        for (index, year) in years.enumerated() {
+            let chipX = margin + CGFloat(index) * (chipWidth + chipSpacing)
+            let centerX = chipX + chipWidth / 2
+
+            // Age label (top)
+            let ageText = "\(year.age)" as NSString
+            let ageFont = UIFont.systemFont(ofSize: ageFontSize, weight: .medium)
+            let ageAttrs: [NSAttributedString.Key: Any] = [
+                .font: ageFont,
+                .foregroundColor: mutedColor
+            ]
+            let ageSize = ageText.size(withAttributes: ageAttrs)
+            ageText.draw(
+                at: CGPoint(x: centerX - ageSize.width / 2, y: yPosition),
+                withAttributes: ageAttrs
+            )
+
+            // Circle
+            let circleCenter = CGPoint(
+                x: centerX,
+                y: yPosition + ageFontSize + 3 + circleSize / 2
+            )
+            let circlePath = UIBezierPath(
+                arcCenter: circleCenter,
+                radius: circleSize / 2,
+                startAngle: 0,
+                endAngle: .pi * 2,
+                clockwise: true
+            )
+            if year.isCurrentYear {
+                goldColor.setFill()
+            } else {
+                UIColor(red: 0.95, green: 0.93, blue: 0.88, alpha: 1.0).setFill()
+            }
+            circlePath.fill()
+            goldColor.withAlphaComponent(year.isCurrentYear ? 1.0 : 0.4).setStroke()
+            circlePath.lineWidth = year.isCurrentYear ? 1.5 : 0.8
+            circlePath.stroke()
+
+            // Energy number
+            let energyText = "\(year.primaryEnergy)" as NSString
+            let energyFont = UIFont.systemFont(ofSize: 11, weight: .bold)
+            let energyAttrs: [NSAttributedString.Key: Any] = [
+                .font: energyFont,
+                .foregroundColor: year.isCurrentYear
+                    ? UIColor.black
+                    : UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+            ]
+            let energySize = energyText.size(withAttributes: energyAttrs)
+            energyText.draw(
+                at: CGPoint(
+                    x: circleCenter.x - energySize.width / 2,
+                    y: circleCenter.y - energySize.height / 2
+                ),
+                withAttributes: energyAttrs
+            )
+
+            // Year (bottom)
+            let yearText = "\(year.year)" as NSString
+            let yearFont = UIFont.systemFont(ofSize: yearFontSize, weight: .regular)
+            let yearAttrs: [NSAttributedString.Key: Any] = [
+                .font: yearFont,
+                .foregroundColor: mutedColor
+            ]
+            let yearSize = yearText.size(withAttributes: yearAttrs)
+            yearText.draw(
+                at: CGPoint(
+                    x: centerX - yearSize.width / 2,
+                    y: circleCenter.y + circleSize / 2 + 2
+                ),
+                withAttributes: yearAttrs
+            )
+        }
+
+        return yPosition + rowHeight
     }
 
     // MARK: - Palm Reading PDF

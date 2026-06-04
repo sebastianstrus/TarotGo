@@ -15434,6 +15434,222 @@
         }
       }
     },
+    "destinyMatrixView.footer" : {
+      "comment" : "Discover the blueprint of your soul",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entdecken Sie den Bauplan Ihrer Seele"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover the blueprint of your soul"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubre el plano de tu alma"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Découvrez le plan de votre âme"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scopri il progetto della tua anima"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "魂の設計図を発見する"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppdag sjelens blåkopi"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odkryj plan swojej duszy"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubra o projeto da sua alma"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upptäck din själs ritning"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відкрийте план вашої душі"
+          }
+        }
+      }
+    },
+    "destinyMatrixView.subtitle" : {
+      "comment" : "Your personal energy map",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ihre persönliche Energiekarte"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your personal energy map"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu mapa de energía personal"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre carte énergétique personnelle"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua mappa energetica personale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの個人エネルギーマップ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditt personlige energikart"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja osobista mapa energii"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seu mapa de energia pessoal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din personliga energikarta"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша особиста енергетична карта"
+          }
+        }
+      }
+    },
+    "destinyMatrixView.title" : {
+      "comment" : "Destiny Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schicksalsmatrix"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destiny Matrix"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matriz del Destino"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrice du Destin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrice del Destino"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デスティニー・マトリックス"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjebnematrise"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matryca Losu"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matriz do Destino"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ödesmatris"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Матриця Долі"
+          }
+        }
+      }
+    },
     "dictionary.allCards" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -21821,6 +22037,336 @@
         }
       }
     },
+    "historyOfMatrix.chakra.text" : {
+      "comment" : "From the Indian Vedic tradition, the Matrix borrows the seven-chakra model used to describe how life energy flows through key centers in the human body, from material survival to higher spiritual awareness.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From the Indian Vedic tradition, the Matrix borrows the seven-chakra model used to describe how life energy flows through key centers in the human body, from material survival to higher spiritual awareness."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.chakra.title" : {
+      "comment" : "Vedic Chakra System",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedic Chakra System"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.global.text" : {
+      "comment" : "From Eastern Europe, the Matrix has spread worldwide, embraced by coaches, healers, and self-development practitioners as a practical tool for archetypal self-discovery.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From Eastern Europe, the Matrix has spread worldwide, embraced by coaches, healers, and self-development practitioners as a practical tool for archetypal self-discovery."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.global.title" : {
+      "comment" : "Global Spread",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Global Spread"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.intro" : {
+      "comment" : "The Destiny Matrix is a contemporary spiritual system that blends ancient wisdom traditions—numerology, the Major Arcana of the Tarot, and Eastern energy practices—into a single personal chart calculated from your date of birth.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Destiny Matrix is a contemporary spiritual system that blends ancient wisdom traditions—numerology, the Major Arcana of the Tarot, and Eastern energy practices—into a single personal chart calculated from your date of birth."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.ladini.text" : {
+      "comment" : "Russian researcher Natalia Ladini is credited with systematizing the modern Destiny Matrix in the 2000s, mapping the 22 archetypes onto a precise octagonal diagram derived from the birth date.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Russian researcher Natalia Ladini is credited with systematizing the modern Destiny Matrix in the 2000s, mapping the 22 archetypes onto a precise octagonal diagram derived from the birth date."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.ladini.title" : {
+      "comment" : "Natalia Ladini",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Natalia Ladini"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.modern.intro" : {
+      "comment" : "The system as practiced today took shape in the early 21st century, drawing the older traditions together into one diagram.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The system as practiced today took shape in the early 21st century, drawing the older traditions together into one diagram."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.modern.title" : {
+      "comment" : "Modern Formulation",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modern Formulation"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.numerology.text" : {
+      "comment" : "The mathematical backbone of the Matrix comes from Pythagorean numerology (6th century BCE), which taught that numbers carry archetypal vibrations and that a birth date reveals a soul's blueprint.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The mathematical backbone of the Matrix comes from Pythagorean numerology (6th century BCE), which taught that numbers carry archetypal vibrations and that a birth date reveals a soul's blueprint."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.numerology.title" : {
+      "comment" : "Pythagorean Numerology",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pythagorean Numerology"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.roots.intro" : {
+      "comment" : "Though the Matrix itself is a modern system, every part of it draws from traditions that span thousands of years.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Though the Matrix itself is a modern system, every part of it draws from traditions that span thousands of years."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.roots.title" : {
+      "comment" : "Ancient Roots",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancient Roots"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.subtitle" : {
+      "comment" : "Ancient Wisdom, Modern System",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancient Wisdom, Modern System"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.tarot.text" : {
+      "comment" : "The 22 energies of the Matrix correspond directly to the 22 Major Arcana of the Tarot—archetypes refined in Renaissance Europe to describe every stage of the human journey from The Fool to The World.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The 22 energies of the Matrix correspond directly to the 22 Major Arcana of the Tarot—archetypes refined in Renaissance Europe to describe every stage of the human journey from The Fool to The World."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.tarot.title" : {
+      "comment" : "Tarot's Major Arcana",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarot's Major Arcana"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.era" : {
+      "comment" : "Era",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Era"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.era1" : {
+      "comment" : "6th c. BCE",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6th c. BCE"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.era2" : {
+      "comment" : "Ancient India",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancient India"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.era3" : {
+      "comment" : "15th century",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15th century"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.era4" : {
+      "comment" : "20th century",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20th century"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.era5" : {
+      "comment" : "2000s",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2000s"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.milestone" : {
+      "comment" : "Milestone",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Milestone"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.milestone1" : {
+      "comment" : "Pythagoras teaches that numbers express the divine order of the cosmos.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pythagoras teaches that numbers express the divine order of the cosmos."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.milestone2" : {
+      "comment" : "Vedic texts describe the seven chakras as centers of life energy.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedic texts describe the seven chakras as centers of life energy."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.milestone3" : {
+      "comment" : "The Major Arcana of the Tarot is shaped in Renaissance Italy.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Major Arcana of the Tarot is shaped in Renaissance Italy."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.milestone4" : {
+      "comment" : "Jungian archetype theory revives interest in symbolic self-knowledge.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jungian archetype theory revives interest in symbolic self-knowledge."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.milestone5" : {
+      "comment" : "Natalia Ladini systematizes the modern Destiny Matrix.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Natalia Ladini systematizes the modern Destiny Matrix."
+          }
+        }
+      }
+    },
+    "historyOfMatrix.timeline.title" : {
+      "comment" : "Timeline",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timeline"
+          }
+        }
+      }
+    },
+    "historyOfMatrix.title" : {
+      "comment" : "History of the Destiny Matrix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "History of the Destiny Matrix"
+          }
+        }
+      }
+    },
     "historyOfPalmistry.ancient.intro" : {
       "comment" : "The practice of palm reading has roots in multiple ancient civilizations, each contributing unique perspectives to this sacred art.",
       "localizations" : {
@@ -24732,6 +25278,28 @@
         }
       }
     },
+    "home.learnDestinyMatrix" : {
+      "comment" : "Learn Destiny Matrix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn Destiny Matrix"
+          }
+        }
+      }
+    },
+    "home.learnDestinyMatrix.subtitle" : {
+      "comment" : "Understand the 22 energies and your chart",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Understand the 22 energies and your chart"
+          }
+        }
+      }
+    },
     "home.learnTarot" : {
       "comment" : "Learn Tarot",
       "extractionState" : "manual",
@@ -27272,6 +27840,457 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Як Читати Таро"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.remember.text" : {
+      "comment" : "Your Matrix is a map, not a verdict. It points to potentials and patterns—your free will and conscious choices write the actual story of your life.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Matrix is a map, not a verdict. It points to potentials and patterns—your free will and conscious choices write the actual story of your life."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.remember.title" : {
+      "comment" : "Remember",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remember"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step1.bullet1.text" : {
+      "comment" : "Use your exact birth date. The system handles the math for you.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use your exact birth date. The system handles the math for you."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step1.bullet1.title" : {
+      "comment" : "Enter Birth Date",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter Birth Date"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step1.bullet2.text" : {
+      "comment" : "Don't worry about manual calculation—what matters is the meaning behind each energy.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't worry about manual calculation—what matters is the meaning behind each energy."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step1.bullet2.title" : {
+      "comment" : "Trust the Numbers",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trust the Numbers"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step1.intro" : {
+      "comment" : "Your Matrix is built from your date of birth—day, month, and year. Each part is reduced to a single energy between 1 and 22, then combined to fill every position on the diagram.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Matrix is built from your date of birth—day, month, and year. Each part is reduced to a single energy between 1 and 22, then combined to fill every position on the diagram."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step1.proTip" : {
+      "comment" : "If you're unsure of an exact time zone, the day, month, and year are what shape the Matrix.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you're unsure of an exact time zone, the day, month, and year are what shape the Matrix."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step1.title" : {
+      "comment" : "Calculate Your Chart",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate Your Chart"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.bullet1.text" : {
+      "comment" : "Your conscious personality and the qualities you naturally express.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your conscious personality and the qualities you naturally express."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.bullet1.title" : {
+      "comment" : "Character (Sky)",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Character (Sky)"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.bullet2.text" : {
+      "comment" : "Patterns carried from the past that ask to be transformed in this lifetime.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patterns carried from the past that ask to be transformed in this lifetime."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.bullet2.title" : {
+      "comment" : "Karma (Earth)",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karma (Earth)"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.bullet3.text" : {
+      "comment" : "The gifts you bring forward and the comfortable habits you tend to repeat.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The gifts you bring forward and the comfortable habits you tend to repeat."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.bullet3.title" : {
+      "comment" : "Talents & Comfort Zone",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talents & Comfort Zone"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.bullet4.text" : {
+      "comment" : "The integrating energy at the center—your essence and the gateway to your purpose.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The integrating energy at the center—your essence and the gateway to your purpose."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.bullet4.title" : {
+      "comment" : "Heart / Mission Core",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heart / Mission Core"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.intro" : {
+      "comment" : "At the heart of your Matrix is a square with four corner energies and a central one. Together they describe who you are and how you move through life.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At the heart of your Matrix is a square with four corner energies and a central one. Together they describe who you are and how you move through life."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step2.title" : {
+      "comment" : "Find the Central Square",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find the Central Square"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.bullet1.text" : {
+      "comment" : "How you attract resources, your relationship to abundance, and where money flows freely or gets blocked.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How you attract resources, your relationship to abundance, and where money flows freely or gets blocked."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.bullet1.title" : {
+      "comment" : "Money & Finance Line",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Money & Finance Line"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.bullet2.text" : {
+      "comment" : "How you bond with partners, the lessons love brings, and what kind of relationships nourish you.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How you bond with partners, the lessons love brings, and what kind of relationships nourish you."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.bullet2.title" : {
+      "comment" : "Relationship Line",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relationship Line"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.bullet3.text" : {
+      "comment" : "Patterns inherited from your family system that influence your roots and sense of belonging.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patterns inherited from your family system that influence your roots and sense of belonging."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.bullet3.title" : {
+      "comment" : "Family & Ancestral Line",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family & Ancestral Line"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.intro" : {
+      "comment" : "Around the central square are lines that describe your main areas of life. Each line is built from several energies that work together.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Around the central square are lines that describe your main areas of life. Each line is built from several energies that work together."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.proTip" : {
+      "comment" : "Read each line as a story: light versions describe what flows naturally, shadow versions show what's ready to be healed.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read each line as a story: light versions describe what flows naturally, shadow versions show what's ready to be healed."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step3.title" : {
+      "comment" : "Read the Life Lines",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read the Life Lines"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step4.bullet1.text" : {
+      "comment" : "The growth your soul came here to experience for itself.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The growth your soul came here to experience for itself."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step4.bullet1.title" : {
+      "comment" : "Personal Mission",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personal Mission"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step4.bullet2.text" : {
+      "comment" : "How you're meant to serve and what gift you offer to the world.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How you're meant to serve and what gift you offer to the world."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step4.bullet2.title" : {
+      "comment" : "Social Mission",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Social Mission"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step4.intro" : {
+      "comment" : "The mission points reveal your purpose—why your soul chose this lifetime and the contribution you're invited to make.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The mission points reveal your purpose—why your soul chose this lifetime and the contribution you're invited to make."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step4.title" : {
+      "comment" : "Look at Your Mission",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look at Your Mission"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step5.bullet1.text" : {
+      "comment" : "Energies that appear in multiple positions carry a strong theme in your life.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energies that appear in multiple positions carry a strong theme in your life."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step5.bullet1.title" : {
+      "comment" : "Look for Repetitions",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look for Repetitions"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step5.bullet2.text" : {
+      "comment" : "Each energy has both gifts and challenges. Working consciously with the shadow side is where real growth happens.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each energy has both gifts and challenges. Working consciously with the shadow side is where real growth happens."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step5.bullet2.title" : {
+      "comment" : "Hold Light & Shadow Together",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold Light & Shadow Together"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step5.intro" : {
+      "comment" : "Once you understand the parts, read the whole Matrix as a conversation between archetypes. Notice repeated energies and how the light and shadow sides relate.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Once you understand the parts, read the whole Matrix as a conversation between archetypes. Notice repeated energies and how the light and shadow sides relate."
+          }
+        }
+      }
+    },
+    "howToReadMatrix.step5.title" : {
+      "comment" : "Bring It All Together",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bring It All Together"
+          }
+        }
+      }
+    },
+    "howToReadMatrix.title" : {
+      "comment" : "How to Read Your Matrix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How to Read Your Matrix"
           }
         }
       }
@@ -120235,6 +121254,138 @@
         }
       }
     },
+    "learnDestinyMatrix.basicMeanings.subtitle" : {
+      "comment" : "Archetypes and meanings",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archetypes and meanings"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.basicMeanings.title" : {
+      "comment" : "The 22 Energies",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The 22 Energies"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.faq.subtitle" : {
+      "comment" : "Common questions",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Common questions"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.faq.title" : {
+      "comment" : "FAQ",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FAQ"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.history.subtitle" : {
+      "comment" : "Origins and evolution",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Origins and evolution"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.history.title" : {
+      "comment" : "History of the Matrix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "History of the Matrix"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.howToRead.subtitle" : {
+      "comment" : "Map your personal chart",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Map your personal chart"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.howToRead.title" : {
+      "comment" : "How to Read Your Matrix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How to Read Your Matrix"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.mind.subtitle" : {
+      "comment" : "Self-reflection tool",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Self-reflection tool"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.mind.title" : {
+      "comment" : "Matrix & Mind",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrix & Mind"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.subtitle" : {
+      "comment" : "Decode the blueprint of your soul",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decode the blueprint of your soul"
+          }
+        }
+      }
+    },
+    "learnDestinyMatrix.title" : {
+      "comment" : "Learn Destiny Matrix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn Destiny Matrix"
+          }
+        }
+      }
+    },
     "learnPalmistry.basicMeanings.subtitle" : {
       "comment" : "Lines, mounts and fingers",
       "localizations" : {
@@ -126135,6 +127286,1062 @@
         }
       }
     },
+    "matrixBasicMeanings.intro" : {
+      "comment" : "Every position in the Destiny Matrix is filled by one of 22 universal energies. Each energy carries a gift to develop and a shadow to integrate. These archetypes correspond to the 22 Major Arcana of the Tarot.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every position in the Destiny Matrix is filled by one of 22 universal energies. Each energy carries a gift to develop and a shadow to integrate. These archetypes correspond to the 22 Major Arcana of the Tarot."
+          }
+        }
+      }
+    },
+    "matrixBasicMeanings.light.label" : {
+      "comment" : "Light",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light"
+          }
+        }
+      }
+    },
+    "matrixBasicMeanings.list.title" : {
+      "comment" : "The 22 Archetypes",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The 22 Archetypes"
+          }
+        }
+      }
+    },
+    "matrixBasicMeanings.shadow.label" : {
+      "comment" : "Shadow",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shadow"
+          }
+        }
+      }
+    },
+    "matrixBasicMeanings.subtitle" : {
+      "comment" : "Archetypes of the Matrix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archetypes of the Matrix"
+          }
+        }
+      }
+    },
+    "matrixBasicMeanings.title" : {
+      "comment" : "The 22 Energies",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The 22 Energies"
+          }
+        }
+      }
+    },
+    "matrixEnergy.1.light" : {
+      "comment" : "Initiative, willpower, focused action, mastery of skills.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Initiative, willpower, focused action, mastery of skills."
+          }
+        }
+      }
+    },
+    "matrixEnergy.1.name" : {
+      "comment" : "1 — The Magician",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 — The Magician"
+          }
+        }
+      }
+    },
+    "matrixEnergy.1.shadow" : {
+      "comment" : "Manipulation, scattered energy, ego-driven choices.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manipulation, scattered energy, ego-driven choices."
+          }
+        }
+      }
+    },
+    "matrixEnergy.2.light" : {
+      "comment" : "Intuition, inner wisdom, calm depth, sacred knowledge.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intuition, inner wisdom, calm depth, sacred knowledge."
+          }
+        }
+      }
+    },
+    "matrixEnergy.2.name" : {
+      "comment" : "2 — The High Priestess",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 — The High Priestess"
+          }
+        }
+      }
+    },
+    "matrixEnergy.2.shadow" : {
+      "comment" : "Coldness, secrecy, withdrawal from life.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coldness, secrecy, withdrawal from life."
+          }
+        }
+      }
+    },
+    "matrixEnergy.3.light" : {
+      "comment" : "Creativity, abundance, nurturing love, sensual joy.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creativity, abundance, nurturing love, sensual joy."
+          }
+        }
+      }
+    },
+    "matrixEnergy.3.name" : {
+      "comment" : "3 — The Empress",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 — The Empress"
+          }
+        }
+      }
+    },
+    "matrixEnergy.3.shadow" : {
+      "comment" : "Possessiveness, dependency, smothering care.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Possessiveness, dependency, smothering care."
+          }
+        }
+      }
+    },
+    "matrixEnergy.4.light" : {
+      "comment" : "Leadership, structure, stability, mastery of resources.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leadership, structure, stability, mastery of resources."
+          }
+        }
+      }
+    },
+    "matrixEnergy.4.name" : {
+      "comment" : "4 — The Emperor",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4 — The Emperor"
+          }
+        }
+      }
+    },
+    "matrixEnergy.4.shadow" : {
+      "comment" : "Tyranny, rigidity, need to control everything.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tyranny, rigidity, need to control everything."
+          }
+        }
+      }
+    },
+    "matrixEnergy.5.light" : {
+      "comment" : "Teaching, tradition, wisdom transmitted to others.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teaching, tradition, wisdom transmitted to others."
+          }
+        }
+      }
+    },
+    "matrixEnergy.5.name" : {
+      "comment" : "5 — The Hierophant",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 — The Hierophant"
+          }
+        }
+      }
+    },
+    "matrixEnergy.5.shadow" : {
+      "comment" : "Dogmatism, conformity, fear of new ideas.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dogmatism, conformity, fear of new ideas."
+          }
+        }
+      }
+    },
+    "matrixEnergy.6.light" : {
+      "comment" : "Conscious choice, alignment of values, soulful partnership.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conscious choice, alignment of values, soulful partnership."
+          }
+        }
+      }
+    },
+    "matrixEnergy.6.name" : {
+      "comment" : "6 — The Lovers",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6 — The Lovers"
+          }
+        }
+      }
+    },
+    "matrixEnergy.6.shadow" : {
+      "comment" : "Indecision, codependency, divided heart.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indecision, codependency, divided heart."
+          }
+        }
+      }
+    },
+    "matrixEnergy.7.light" : {
+      "comment" : "Willpower, discipline, victory through focused effort.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Willpower, discipline, victory through focused effort."
+          }
+        }
+      }
+    },
+    "matrixEnergy.7.name" : {
+      "comment" : "7 — The Chariot",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7 — The Chariot"
+          }
+        }
+      }
+    },
+    "matrixEnergy.7.shadow" : {
+      "comment" : "Aggression, ego conflict, overdrive.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggression, ego conflict, overdrive."
+          }
+        }
+      }
+    },
+    "matrixEnergy.8.light" : {
+      "comment" : "Fairness, balance, honest decisions, karmic harmony.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fairness, balance, honest decisions, karmic harmony."
+          }
+        }
+      }
+    },
+    "matrixEnergy.8.name" : {
+      "comment" : "8 — Justice",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8 — Justice"
+          }
+        }
+      }
+    },
+    "matrixEnergy.8.shadow" : {
+      "comment" : "Harsh judgment, score-keeping, cold detachment.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harsh judgment, score-keeping, cold detachment."
+          }
+        }
+      }
+    },
+    "matrixEnergy.9.light" : {
+      "comment" : "Inner search, solitude as gift, mentorship, deep wisdom.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inner search, solitude as gift, mentorship, deep wisdom."
+          }
+        }
+      }
+    },
+    "matrixEnergy.9.name" : {
+      "comment" : "9 — The Hermit",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "9 — The Hermit"
+          }
+        }
+      }
+    },
+    "matrixEnergy.9.shadow" : {
+      "comment" : "Isolation, avoidance of intimacy, loneliness.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isolation, avoidance of intimacy, loneliness."
+          }
+        }
+      }
+    },
+    "matrixEnergy.10.light" : {
+      "comment" : "Trust in cycles, lucky timing, faith in the flow of life.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trust in cycles, lucky timing, faith in the flow of life."
+          }
+        }
+      }
+    },
+    "matrixEnergy.10.name" : {
+      "comment" : "10 — Wheel of Fortune",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 — Wheel of Fortune"
+          }
+        }
+      }
+    },
+    "matrixEnergy.10.shadow" : {
+      "comment" : "Passivity, gambling on chance, blaming fate.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passivity, gambling on chance, blaming fate."
+          }
+        }
+      }
+    },
+    "matrixEnergy.11.light" : {
+      "comment" : "Courage, gentle power, mastery of impulses, inner calm.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Courage, gentle power, mastery of impulses, inner calm."
+          }
+        }
+      }
+    },
+    "matrixEnergy.11.name" : {
+      "comment" : "11 — Strength",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "11 — Strength"
+          }
+        }
+      }
+    },
+    "matrixEnergy.11.shadow" : {
+      "comment" : "Brutality, suppressed anger, raw force.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brutality, suppressed anger, raw force."
+          }
+        }
+      }
+    },
+    "matrixEnergy.12.light" : {
+      "comment" : "Sacrifice for growth, surrender, fresh perspective.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sacrifice for growth, surrender, fresh perspective."
+          }
+        }
+      }
+    },
+    "matrixEnergy.12.name" : {
+      "comment" : "12 — The Hanged Man",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12 — The Hanged Man"
+          }
+        }
+      }
+    },
+    "matrixEnergy.12.shadow" : {
+      "comment" : "Victimhood, stagnation, martyr complex.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Victimhood, stagnation, martyr complex."
+          }
+        }
+      }
+    },
+    "matrixEnergy.13.light" : {
+      "comment" : "Endings that bring renewal, deep transformation, rebirth.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endings that bring renewal, deep transformation, rebirth."
+          }
+        }
+      }
+    },
+    "matrixEnergy.13.name" : {
+      "comment" : "13 — Death (Transformation)",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "13 — Death (Transformation)"
+          }
+        }
+      }
+    },
+    "matrixEnergy.13.shadow" : {
+      "comment" : "Clinging to the past, fear of letting go.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clinging to the past, fear of letting go."
+          }
+        }
+      }
+    },
+    "matrixEnergy.14.light" : {
+      "comment" : "Integration, healing, balance of opposites, harmony.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Integration, healing, balance of opposites, harmony."
+          }
+        }
+      }
+    },
+    "matrixEnergy.14.name" : {
+      "comment" : "14 — Temperance",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "14 — Temperance"
+          }
+        }
+      }
+    },
+    "matrixEnergy.14.shadow" : {
+      "comment" : "Extremes, imbalance, impatience with process.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extremes, imbalance, impatience with process."
+          }
+        }
+      }
+    },
+    "matrixEnergy.15.light" : {
+      "comment" : "Magnetism, sensual aliveness, healthy material drive.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magnetism, sensual aliveness, healthy material drive."
+          }
+        }
+      }
+    },
+    "matrixEnergy.15.name" : {
+      "comment" : "15 — The Devil",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 — The Devil"
+          }
+        }
+      }
+    },
+    "matrixEnergy.15.shadow" : {
+      "comment" : "Addiction, attachment, shadow appetites, manipulation.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Addiction, attachment, shadow appetites, manipulation."
+          }
+        }
+      }
+    },
+    "matrixEnergy.16.light" : {
+      "comment" : "Sudden breakthroughs, liberation from false structures.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudden breakthroughs, liberation from false structures."
+          }
+        }
+      }
+    },
+    "matrixEnergy.16.name" : {
+      "comment" : "16 — The Tower",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "16 — The Tower"
+          }
+        }
+      }
+    },
+    "matrixEnergy.16.shadow" : {
+      "comment" : "Crisis, destruction, ego collapse, abrupt loss.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crisis, destruction, ego collapse, abrupt loss."
+          }
+        }
+      }
+    },
+    "matrixEnergy.17.light" : {
+      "comment" : "Hope, inspiration, talent, healing radiance.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hope, inspiration, talent, healing radiance."
+          }
+        }
+      }
+    },
+    "matrixEnergy.17.name" : {
+      "comment" : "17 — The Star",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "17 — The Star"
+          }
+        }
+      }
+    },
+    "matrixEnergy.17.shadow" : {
+      "comment" : "Idealization, escapism, disconnect from reality.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idealization, escapism, disconnect from reality."
+          }
+        }
+      }
+    },
+    "matrixEnergy.18.light" : {
+      "comment" : "Dreams, deep intuition, contact with the subconscious.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dreams, deep intuition, contact with the subconscious."
+          }
+        }
+      }
+    },
+    "matrixEnergy.18.name" : {
+      "comment" : "18 — The Moon",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "18 — The Moon"
+          }
+        }
+      }
+    },
+    "matrixEnergy.18.shadow" : {
+      "comment" : "Illusion, fear, anxiety, hidden enemies of the mind.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Illusion, fear, anxiety, hidden enemies of the mind."
+          }
+        }
+      }
+    },
+    "matrixEnergy.19.light" : {
+      "comment" : "Joy, vitality, success, radiant self-expression.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Joy, vitality, success, radiant self-expression."
+          }
+        }
+      }
+    },
+    "matrixEnergy.19.name" : {
+      "comment" : "19 — The Sun",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "19 — The Sun"
+          }
+        }
+      }
+    },
+    "matrixEnergy.19.shadow" : {
+      "comment" : "Ego inflation, burnout, demand for constant praise.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ego inflation, burnout, demand for constant praise."
+          }
+        }
+      }
+    },
+    "matrixEnergy.20.light" : {
+      "comment" : "Calling, awakening, hearing your life's purpose.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calling, awakening, hearing your life's purpose."
+          }
+        }
+      }
+    },
+    "matrixEnergy.20.name" : {
+      "comment" : "20 — Judgment",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20 — Judgment"
+          }
+        }
+      }
+    },
+    "matrixEnergy.20.shadow" : {
+      "comment" : "Self-judgment, guilt, fear of being seen.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Self-judgment, guilt, fear of being seen."
+          }
+        }
+      }
+    },
+    "matrixEnergy.21.light" : {
+      "comment" : "Completion, integration, wholeness, mastery of a cycle.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completion, integration, wholeness, mastery of a cycle."
+          }
+        }
+      }
+    },
+    "matrixEnergy.21.name" : {
+      "comment" : "21 — The World",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "21 — The World"
+          }
+        }
+      }
+    },
+    "matrixEnergy.21.shadow" : {
+      "comment" : "Stagnation in comfort, fear of the next chapter.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stagnation in comfort, fear of the next chapter."
+          }
+        }
+      }
+    },
+    "matrixEnergy.22.light" : {
+      "comment" : "Freedom, openness, fearless new beginnings, trust.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Freedom, openness, fearless new beginnings, trust."
+          }
+        }
+      }
+    },
+    "matrixEnergy.22.name" : {
+      "comment" : "22 — The Fool",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "22 — The Fool"
+          }
+        }
+      }
+    },
+    "matrixEnergy.22.shadow" : {
+      "comment" : "Irresponsibility, naivety, scattered direction.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Irresponsibility, naivety, scattered direction."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer1" : {
+      "comment" : "The Destiny Matrix is a personal chart built from your date of birth that maps 22 universal energies onto key positions of your life: your personality, relationships, money, family, and mission. It combines numerology, Tarot archetypes, and the Eastern chakra system into one diagram.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Destiny Matrix is a personal chart built from your date of birth that maps 22 universal energies onto key positions of your life: your personality, relationships, money, family, and mission. It combines numerology, Tarot archetypes, and the Eastern chakra system into one diagram."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer2" : {
+      "comment" : "Numerology is one of its ingredients but not the whole system. The Matrix uses numerological calculation to place 22 archetypal energies—rooted in the Major Arcana of the Tarot—onto a specific diagram, giving a more layered picture than numbers alone.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numerology is one of its ingredients but not the whole system. The Matrix uses numerological calculation to place 22 archetypal energies—rooted in the Major Arcana of the Tarot—onto a specific diagram, giving a more layered picture than numbers alone."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer3" : {
+      "comment" : "The 22 energies correspond to the 22 Major Arcana of the Tarot—a complete cycle of archetypes describing the human journey from beginning (The Fool) to wholeness (The World).",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The 22 energies correspond to the 22 Major Arcana of the Tarot—a complete cycle of archetypes describing the human journey from beginning (The Fool) to wholeness (The World)."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer4" : {
+      "comment" : "The chart itself is fixed because it's calculated from your birth date. What changes is your relationship to it—how consciously you express the light or shadow side of each energy as you grow.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The chart itself is fixed because it's calculated from your birth date. What changes is your relationship to it—how consciously you express the light or shadow side of each energy as you grow."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer5" : {
+      "comment" : "Tarot is a divination tool that responds to a specific question in the moment. Astrology maps planetary positions at your birth. The Matrix is a fixed birth-chart of archetypes, focused on identity, purpose, and personal patterns rather than transits or one-off questions.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarot is a divination tool that responds to a specific question in the moment. Astrology maps planetary positions at your birth. The Matrix is a fixed birth-chart of archetypes, focused on identity, purpose, and personal patterns rather than transits or one-off questions."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer6" : {
+      "comment" : "The Matrix doesn't predict events. It describes potentials, patterns, and lessons. Your choices, awareness, and effort decide which version of each energy actually shows up in your life.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Matrix doesn't predict events. It describes potentials, patterns, and lessons. Your choices, awareness, and effort decide which version of each energy actually shows up in your life."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer7" : {
+      "comment" : "No. Unlike a natal astrology chart, the Destiny Matrix only needs your day, month, and year of birth.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No. Unlike a natal astrology chart, the Destiny Matrix only needs your day, month, and year of birth."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer8" : {
+      "comment" : "Yes—if they share their birth date with you. Many people use it to better understand their partner, family member, or child. Always read with respect and ask before sharing interpretations.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes—if they share their birth date with you. Many people use it to better understand their partner, family member, or child. Always read with respect and ask before sharing interpretations."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer9" : {
+      "comment" : "No. The Matrix is a symbolic self-development tool. It can sit alongside any faith—or none—and works as a mirror for reflection rather than as a belief system.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No. The Matrix is a symbolic self-development tool. It can sit alongside any faith—or none—and works as a mirror for reflection rather than as a belief system."
+          }
+        }
+      }
+    },
+    "matrixFaq.answer10" : {
+      "comment" : "Begin with the central square—your personality, karma, talents, and core energy. Read both the light and shadow sides. Then explore one life line at a time (money, relationships, family) over several weeks rather than all at once.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin with the central square—your personality, karma, talents, and core energy. Read both the light and shadow sides. Then explore one life line at a time (money, relationships, family) over several weeks rather than all at once."
+          }
+        }
+      }
+    },
+    "matrixFaq.disclaimer.text" : {
+      "comment" : "The Destiny Matrix is offered as a tool for reflection and self-discovery. It is not a substitute for medical, psychological, legal, or financial advice. Trust your own judgment and seek qualified professionals when you need real-world support.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Destiny Matrix is offered as a tool for reflection and self-discovery. It is not a substitute for medical, psychological, legal, or financial advice. Trust your own judgment and seek qualified professionals when you need real-world support."
+          }
+        }
+      }
+    },
+    "matrixFaq.disclaimer.title" : {
+      "comment" : "Important Note",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Important Note"
+          }
+        }
+      }
+    },
+    "matrixFaq.question1" : {
+      "comment" : "What is the Destiny Matrix?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What is the Destiny Matrix?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question2" : {
+      "comment" : "Is the Matrix the same as numerology?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Is the Matrix the same as numerology?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question3" : {
+      "comment" : "Why are there exactly 22 energies?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Why are there exactly 22 energies?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question4" : {
+      "comment" : "Can my Matrix change over time?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can my Matrix change over time?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question5" : {
+      "comment" : "How is it different from Tarot or astrology?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How is it different from Tarot or astrology?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question6" : {
+      "comment" : "Can it predict the future?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can it predict the future?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question7" : {
+      "comment" : "Do I need a birth time or place?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do I need a birth time or place?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question8" : {
+      "comment" : "Can I read someone else's Matrix?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can I read someone else's Matrix?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question9" : {
+      "comment" : "Is the Destiny Matrix a religion?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Is the Destiny Matrix a religion?"
+          }
+        }
+      }
+    },
+    "matrixFaq.question10" : {
+      "comment" : "How should I start working with my chart?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How should I start working with my chart?"
+          }
+        }
+      }
+    },
+    "matrixFaq.subtitle" : {
+      "comment" : "Common questions about the Destiny Matrix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Common questions about the Destiny Matrix"
+          }
+        }
+      }
+    },
+    "matrixFaq.title" : {
+      "comment" : "Frequently Asked Questions",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frequently Asked Questions"
+          }
+        }
+      }
+    },
     "matrixHistory.delete" : {
       "comment" : "Delete Matrix",
       "extractionState" : "manual",
@@ -126215,6 +128422,281 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saved Matrices"
+          }
+        }
+      }
+    },
+    "matrixMind.conclusion" : {
+      "comment" : "The Matrix doesn't decide who you are. It invites you to remember who you came here to be.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Matrix doesn't decide who you are. It invites you to remember who you came here to be."
+          }
+        }
+      }
+    },
+    "matrixMind.insight.label" : {
+      "comment" : "Insight",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insight"
+          }
+        }
+      }
+    },
+    "matrixMind.section1.text" : {
+      "comment" : "The Destiny Matrix can be understood as a map of inner archetypes—universal patterns that live inside every person. Reading your chart isn't about predicting fate; it's about meeting the parts of yourself that shape how you think, feel, and choose.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Destiny Matrix can be understood as a map of inner archetypes—universal patterns that live inside every person. Reading your chart isn't about predicting fate; it's about meeting the parts of yourself that shape how you think, feel, and choose."
+          }
+        }
+      }
+    },
+    "matrixMind.section1.title" : {
+      "comment" : "A Map of Inner Archetypes",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Map of Inner Archetypes"
+          }
+        }
+      }
+    },
+    "matrixMind.section2.insight" : {
+      "comment" : "What you can name, you can work with. What stays unconscious, controls you.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What you can name, you can work with. What stays unconscious, controls you."
+          }
+        }
+      }
+    },
+    "matrixMind.section2.text" : {
+      "comment" : "Each of the 22 energies carries both a light expression and a shadow expression. The shadow is not bad—it's the part of an archetype that runs unconsciously when ignored. Naming it gently is the first step toward integration.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each of the 22 energies carries both a light expression and a shadow expression. The shadow is not bad—it's the part of an archetype that runs unconsciously when ignored. Naming it gently is the first step toward integration."
+          }
+        }
+      }
+    },
+    "matrixMind.section2.title" : {
+      "comment" : "Working with the Shadow",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Working with the Shadow"
+          }
+        }
+      }
+    },
+    "matrixMind.section3.bullet1.text" : {
+      "comment" : "Habits and identities you cling to because they feel safe—even when they no longer serve growth.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Habits and identities you cling to because they feel safe—even when they no longer serve growth."
+          }
+        }
+      }
+    },
+    "matrixMind.section3.bullet1.title" : {
+      "comment" : "Comfort Zone",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comfort Zone"
+          }
+        }
+      }
+    },
+    "matrixMind.section3.bullet2.text" : {
+      "comment" : "Situations that keep reappearing in slightly different costumes until the lesson is consciously met.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Situations that keep reappearing in slightly different costumes until the lesson is consciously met."
+          }
+        }
+      }
+    },
+    "matrixMind.section3.bullet2.title" : {
+      "comment" : "Karmic Loops",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karmic Loops"
+          }
+        }
+      }
+    },
+    "matrixMind.section3.bullet3.text" : {
+      "comment" : "Family inheritances—beliefs, fears, and gifts—visible in the family/karmic positions of your chart.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family inheritances—beliefs, fears, and gifts—visible in the family/karmic positions of your chart."
+          }
+        }
+      }
+    },
+    "matrixMind.section3.bullet3.title" : {
+      "comment" : "Ancestral Patterns",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancestral Patterns"
+          }
+        }
+      }
+    },
+    "matrixMind.section3.intro" : {
+      "comment" : "When you look at the lines and positions of your Matrix, you start to see how certain patterns repeat across areas of life:",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When you look at the lines and positions of your Matrix, you start to see how certain patterns repeat across areas of life:"
+          }
+        }
+      }
+    },
+    "matrixMind.section3.title" : {
+      "comment" : "Patterns of Behavior",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patterns of Behavior"
+          }
+        }
+      }
+    },
+    "matrixMind.section4.bullet1.text" : {
+      "comment" : "Pick one energy from your chart and journal on its light and shadow as you noticed them this week.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick one energy from your chart and journal on its light and shadow as you noticed them this week."
+          }
+        }
+      }
+    },
+    "matrixMind.section4.bullet1.title" : {
+      "comment" : "Journaling",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Journaling"
+          }
+        }
+      }
+    },
+    "matrixMind.section4.bullet2.text" : {
+      "comment" : "When you recognize a pattern playing out, pause and ask: which side of this energy do I want to express right now?",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When you recognize a pattern playing out, pause and ask: which side of this energy do I want to express right now?"
+          }
+        }
+      }
+    },
+    "matrixMind.section4.bullet2.title" : {
+      "comment" : "Conscious Choice",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conscious Choice"
+          }
+        }
+      }
+    },
+    "matrixMind.section4.intro" : {
+      "comment" : "The Matrix becomes most powerful when used as a mirror for daily reflection rather than as a forecast.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Matrix becomes most powerful when used as a mirror for daily reflection rather than as a forecast."
+          }
+        }
+      }
+    },
+    "matrixMind.section4.title" : {
+      "comment" : "Mindful Practice",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mindful Practice"
+          }
+        }
+      }
+    },
+    "matrixMind.section5.text" : {
+      "comment" : "Reading your Matrix is not the end—it's the start of a conscious dialogue with yourself. The chart describes the landscape; you choose the path. Used gently, it can support therapy, coaching, and any path of self-understanding.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading your Matrix is not the end—it's the start of a conscious dialogue with yourself. The chart describes the landscape; you choose the path. Used gently, it can support therapy, coaching, and any path of self-understanding."
+          }
+        }
+      }
+    },
+    "matrixMind.section5.title" : {
+      "comment" : "From Insight to Choice",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From Insight to Choice"
+          }
+        }
+      }
+    },
+    "matrixMind.subtitle" : {
+      "comment" : "A Tool for Self-Reflection",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Tool for Self-Reflection"
+          }
+        }
+      }
+    },
+    "matrixMind.title" : {
+      "comment" : "Matrix & Mind",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrix & Mind"
           }
         }
       }
@@ -141285,6 +143767,126 @@
         }
       }
     },
+    "palmHistory.button.subtitle" : {
+      "comment" : "Review your saved palm readings",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review your saved palm readings"
+          }
+        }
+      }
+    },
+    "palmHistory.button.title" : {
+      "comment" : "Saved Readings",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Readings"
+          }
+        }
+      }
+    },
+    "palmHistory.capturedImage" : {
+      "comment" : "Captured Image",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Captured Image"
+          }
+        }
+      }
+    },
+    "palmHistory.delete" : {
+      "comment" : "Delete Reading",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Reading"
+          }
+        }
+      }
+    },
+    "palmHistory.deleteAlert" : {
+      "comment" : "Delete Reading",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Reading"
+          }
+        }
+      }
+    },
+    "palmHistory.deleteMessage" : {
+      "comment" : "Are you sure you want to delete this saved palm reading? This action cannot be undone.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to delete this saved palm reading? This action cannot be undone."
+          }
+        }
+      }
+    },
+    "palmHistory.empty" : {
+      "comment" : "No saved palm readings yet",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No saved palm readings yet"
+          }
+        }
+      }
+    },
+    "palmHistory.empty.desc" : {
+      "comment" : "Your saved palm readings will appear here",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your saved palm readings will appear here"
+          }
+        }
+      }
+    },
+    "palmHistory.savedOn" : {
+      "comment" : "Saved on",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved on"
+          }
+        }
+      }
+    },
+    "palmHistory.title" : {
+      "comment" : "Saved Readings",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Readings"
+          }
+        }
+      }
+    },
     "palmistryFaq.answer1" : {
       "comment" : "Palmistry is not scientifically validated. It's best understood as a tool for self-reflection and personal insight rather than empirical prediction.",
       "localizations" : {
@@ -144764,126 +147366,6 @@
         }
       }
     },
-    "palmHistory.button.subtitle" : {
-      "comment" : "Review your saved palm readings",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Review your saved palm readings"
-          }
-        }
-      }
-    },
-    "palmHistory.button.title" : {
-      "comment" : "Saved Readings",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saved Readings"
-          }
-        }
-      }
-    },
-    "palmHistory.capturedImage" : {
-      "comment" : "Captured Image",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captured Image"
-          }
-        }
-      }
-    },
-    "palmHistory.delete" : {
-      "comment" : "Delete Reading",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete Reading"
-          }
-        }
-      }
-    },
-    "palmHistory.deleteAlert" : {
-      "comment" : "Delete Reading",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete Reading"
-          }
-        }
-      }
-    },
-    "palmHistory.deleteMessage" : {
-      "comment" : "Are you sure you want to delete this saved palm reading? This action cannot be undone.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you sure you want to delete this saved palm reading? This action cannot be undone."
-          }
-        }
-      }
-    },
-    "palmHistory.empty" : {
-      "comment" : "No saved palm readings yet",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No saved palm readings yet"
-          }
-        }
-      }
-    },
-    "palmHistory.empty.desc" : {
-      "comment" : "Your saved palm readings will appear here",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your saved palm readings will appear here"
-          }
-        }
-      }
-    },
-    "palmHistory.savedOn" : {
-      "comment" : "Saved on",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saved on"
-          }
-        }
-      }
-    },
-    "palmHistory.title" : {
-      "comment" : "Saved Readings",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saved Readings"
-          }
-        }
-      }
-    },
     "palmistryView.footer" : {
       "comment" : "Your destiny lies in your hands",
       "extractionState" : "manual",
@@ -146337,6 +148819,123 @@
         }
       }
     },
+    "pdf.matrix.age" : {
+      "comment" : "Age",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Age"
+          }
+        }
+      }
+    },
+    "pdf.matrix.birthDate" : {
+      "comment" : "Birth Date:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birth Date:"
+          }
+        }
+      }
+    },
+    "pdf.matrix.coreEssence" : {
+      "comment" : "Core Essence",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Core Essence"
+          }
+        }
+      }
+    },
+    "pdf.matrix.currentYear" : {
+      "comment" : "Current Year Energy",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current Year Energy"
+          }
+        }
+      }
+    },
+    "pdf.matrix.currentYearDesc" : {
+      "comment" : "Your guiding energy this year, shaping the themes, lessons and opportunities woven into your path."
+    },
+    "pdf.matrix.energy" : {
+      "comment" : "Energy:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energy:"
+          }
+        }
+      }
+    },
+    "pdf.matrix.keyPositions" : {
+      "comment" : "Key Positions",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key Positions"
+          }
+        }
+      }
+    },
+    "pdf.matrix.lifeTimeline" : {
+      "comment" : "Life Timeline"
+    },
+    "pdf.matrix.savedOn" : {
+      "comment" : "Saved on:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved on:"
+          }
+        }
+      }
+    },
+    "pdf.matrix.title" : {
+      "comment" : "Your Destiny Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Destiny Matrix"
+          }
+        }
+      }
+    },
+    "pdf.matrix.year" : {
+      "comment" : "Year",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Year"
+          }
+        }
+      }
+    },
+    "pdf.matrix.years" : {
+      "comment" : "years"
+    },
     "pdf.overallInsight" : {
       "comment" : "Overall insight section header in PDF export",
       "extractionState" : "manual",
@@ -146405,6 +149004,150 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Загальне Розуміння"
+          }
+        }
+      }
+    },
+    "pdf.palm.capturedImage" : {
+      "comment" : "Captured Palm",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Captured Palm"
+          }
+        }
+      }
+    },
+    "pdf.palm.continuity" : {
+      "comment" : "Continuity:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuity:"
+          }
+        }
+      }
+    },
+    "pdf.palm.depth" : {
+      "comment" : "Depth:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depth:"
+          }
+        }
+      }
+    },
+    "pdf.palm.fingerLength" : {
+      "comment" : "Finger Length:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finger Length:"
+          }
+        }
+      }
+    },
+    "pdf.palm.handShape" : {
+      "comment" : "Hand Shape",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hand Shape"
+          }
+        }
+      }
+    },
+    "pdf.palm.length" : {
+      "comment" : "Length:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Length:"
+          }
+        }
+      }
+    },
+    "pdf.palm.lines" : {
+      "comment" : "Palm Lines",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palm Lines"
+          }
+        }
+      }
+    },
+    "pdf.palm.mounts" : {
+      "comment" : "Palm Mounts",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palm Mounts"
+          }
+        }
+      }
+    },
+    "pdf.palm.prominence" : {
+      "comment" : "Prominence:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prominence:"
+          }
+        }
+      }
+    },
+    "pdf.palm.savedOn" : {
+      "comment" : "Saved on:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved on:"
+          }
+        }
+      }
+    },
+    "pdf.palm.shape" : {
+      "comment" : "Palm Shape:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palm Shape:"
+          }
+        }
+      }
+    },
+    "pdf.palm.title" : {
+      "comment" : "Your Palm Reading",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Palm Reading"
           }
         }
       }
@@ -159772,222 +162515,6 @@
         }
       }
     },
-    "destinyMatrixView.title" : {
-      "comment" : "Destiny Matrix",
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Schicksalsmatrix"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Destiny Matrix"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Matriz del Destino"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Matrice du Destin"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Matrice del Destino"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デスティニー・マトリックス"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skjebnematrise"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Matryca Losu"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Matriz do Destino"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ödesmatris"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Матриця Долі"
-          }
-        }
-      }
-    },
-    "destinyMatrixView.subtitle" : {
-      "comment" : "Your personal energy map",
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ihre persönliche Energiekarte"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your personal energy map"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu mapa de energía personal"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Votre carte énergétique personnelle"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La tua mappa energetica personale"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "あなたの個人エネルギーマップ"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ditt personlige energikart"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Twoja osobista mapa energii"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seu mapa de energia pessoal"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Din personliga energikarta"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ваша особиста енергетична карта"
-          }
-        }
-      }
-    },
-    "destinyMatrixView.footer" : {
-      "comment" : "Discover the blueprint of your soul",
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Entdecken Sie den Bauplan Ihrer Seele"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Discover the blueprint of your soul"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descubre el plano de tu alma"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Découvrez le plan de votre âme"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scopri il progetto della tua anima"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "魂の設計図を発見する"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Oppdag sjelens blåkopi"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Odkryj plan swojej duszy"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descubra o projeto da sua alma"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Upptäck din själs ritning"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Відкрийте план вашої душі"
-          }
-        }
-      }
-    },
     "tab.palmistry" : {
       "comment" : "Palmistry tab",
       "extractionState" : "manual",
@@ -164535,2524 +167062,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ваше унікальне число має особливе значення у вашій життєвій подорожі."
-          }
-        }
-      }
-    },
-    "home.learnDestinyMatrix" : {
-      "comment" : "Learn Destiny Matrix",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Learn Destiny Matrix"
-          }
-        }
-      }
-    },
-    "home.learnDestinyMatrix.subtitle" : {
-      "comment" : "Understand the 22 energies and your chart",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Understand the 22 energies and your chart"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.title" : {
-      "comment" : "Learn Destiny Matrix",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Learn Destiny Matrix"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.subtitle" : {
-      "comment" : "Decode the blueprint of your soul",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Decode the blueprint of your soul"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.history.title" : {
-      "comment" : "History of the Matrix",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "History of the Matrix"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.history.subtitle" : {
-      "comment" : "Origins and evolution",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Origins and evolution"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.basicMeanings.title" : {
-      "comment" : "The 22 Energies",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The 22 Energies"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.basicMeanings.subtitle" : {
-      "comment" : "Archetypes and meanings",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Archetypes and meanings"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.howToRead.title" : {
-      "comment" : "How to Read Your Matrix",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How to Read Your Matrix"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.howToRead.subtitle" : {
-      "comment" : "Map your personal chart",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Map your personal chart"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.mind.title" : {
-      "comment" : "Matrix & Mind",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Matrix & Mind"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.mind.subtitle" : {
-      "comment" : "Self-reflection tool",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Self-reflection tool"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.faq.title" : {
-      "comment" : "FAQ",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FAQ"
-          }
-        }
-      }
-    },
-    "learnDestinyMatrix.faq.subtitle" : {
-      "comment" : "Common questions",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Common questions"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.title" : {
-      "comment" : "History of the Destiny Matrix",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "History of the Destiny Matrix"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.subtitle" : {
-      "comment" : "Ancient Wisdom, Modern System",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ancient Wisdom, Modern System"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.intro" : {
-      "comment" : "The Destiny Matrix is a contemporary spiritual system that blends ancient wisdom traditions—numerology, the Major Arcana of the Tarot, and Eastern energy practices—into a single personal chart calculated from your date of birth.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Destiny Matrix is a contemporary spiritual system that blends ancient wisdom traditions—numerology, the Major Arcana of the Tarot, and Eastern energy practices—into a single personal chart calculated from your date of birth."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.roots.title" : {
-      "comment" : "Ancient Roots",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ancient Roots"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.roots.intro" : {
-      "comment" : "Though the Matrix itself is a modern system, every part of it draws from traditions that span thousands of years.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Though the Matrix itself is a modern system, every part of it draws from traditions that span thousands of years."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.numerology.title" : {
-      "comment" : "Pythagorean Numerology",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pythagorean Numerology"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.numerology.text" : {
-      "comment" : "The mathematical backbone of the Matrix comes from Pythagorean numerology (6th century BCE), which taught that numbers carry archetypal vibrations and that a birth date reveals a soul's blueprint.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The mathematical backbone of the Matrix comes from Pythagorean numerology (6th century BCE), which taught that numbers carry archetypal vibrations and that a birth date reveals a soul's blueprint."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.tarot.title" : {
-      "comment" : "Tarot's Major Arcana",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tarot's Major Arcana"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.tarot.text" : {
-      "comment" : "The 22 energies of the Matrix correspond directly to the 22 Major Arcana of the Tarot—archetypes refined in Renaissance Europe to describe every stage of the human journey from The Fool to The World.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The 22 energies of the Matrix correspond directly to the 22 Major Arcana of the Tarot—archetypes refined in Renaissance Europe to describe every stage of the human journey from The Fool to The World."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.chakra.title" : {
-      "comment" : "Vedic Chakra System",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vedic Chakra System"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.chakra.text" : {
-      "comment" : "From the Indian Vedic tradition, the Matrix borrows the seven-chakra model used to describe how life energy flows through key centers in the human body, from material survival to higher spiritual awareness.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "From the Indian Vedic tradition, the Matrix borrows the seven-chakra model used to describe how life energy flows through key centers in the human body, from material survival to higher spiritual awareness."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.modern.title" : {
-      "comment" : "Modern Formulation",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Modern Formulation"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.modern.intro" : {
-      "comment" : "The system as practiced today took shape in the early 21st century, drawing the older traditions together into one diagram.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The system as practiced today took shape in the early 21st century, drawing the older traditions together into one diagram."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.ladini.title" : {
-      "comment" : "Natalia Ladini",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Natalia Ladini"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.ladini.text" : {
-      "comment" : "Russian researcher Natalia Ladini is credited with systematizing the modern Destiny Matrix in the 2000s, mapping the 22 archetypes onto a precise octagonal diagram derived from the birth date.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Russian researcher Natalia Ladini is credited with systematizing the modern Destiny Matrix in the 2000s, mapping the 22 archetypes onto a precise octagonal diagram derived from the birth date."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.global.title" : {
-      "comment" : "Global Spread",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Global Spread"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.global.text" : {
-      "comment" : "From Eastern Europe, the Matrix has spread worldwide, embraced by coaches, healers, and self-development practitioners as a practical tool for archetypal self-discovery.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "From Eastern Europe, the Matrix has spread worldwide, embraced by coaches, healers, and self-development practitioners as a practical tool for archetypal self-discovery."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.title" : {
-      "comment" : "Timeline",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Timeline"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.era" : {
-      "comment" : "Era",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Era"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.milestone" : {
-      "comment" : "Milestone",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Milestone"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.era1" : {
-      "comment" : "6th c. BCE",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "6th c. BCE"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.milestone1" : {
-      "comment" : "Pythagoras teaches that numbers express the divine order of the cosmos.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pythagoras teaches that numbers express the divine order of the cosmos."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.era2" : {
-      "comment" : "Ancient India",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ancient India"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.milestone2" : {
-      "comment" : "Vedic texts describe the seven chakras as centers of life energy.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vedic texts describe the seven chakras as centers of life energy."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.era3" : {
-      "comment" : "15th century",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "15th century"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.milestone3" : {
-      "comment" : "The Major Arcana of the Tarot is shaped in Renaissance Italy.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Major Arcana of the Tarot is shaped in Renaissance Italy."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.era4" : {
-      "comment" : "20th century",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "20th century"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.milestone4" : {
-      "comment" : "Jungian archetype theory revives interest in symbolic self-knowledge.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Jungian archetype theory revives interest in symbolic self-knowledge."
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.era5" : {
-      "comment" : "2000s",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "2000s"
-          }
-        }
-      }
-    },
-    "historyOfMatrix.timeline.milestone5" : {
-      "comment" : "Natalia Ladini systematizes the modern Destiny Matrix.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Natalia Ladini systematizes the modern Destiny Matrix."
-          }
-        }
-      }
-    },
-    "matrixBasicMeanings.title" : {
-      "comment" : "The 22 Energies",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The 22 Energies"
-          }
-        }
-      }
-    },
-    "matrixBasicMeanings.subtitle" : {
-      "comment" : "Archetypes of the Matrix",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Archetypes of the Matrix"
-          }
-        }
-      }
-    },
-    "matrixBasicMeanings.intro" : {
-      "comment" : "Every position in the Destiny Matrix is filled by one of 22 universal energies. Each energy carries a gift to develop and a shadow to integrate. These archetypes correspond to the 22 Major Arcana of the Tarot.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Every position in the Destiny Matrix is filled by one of 22 universal energies. Each energy carries a gift to develop and a shadow to integrate. These archetypes correspond to the 22 Major Arcana of the Tarot."
-          }
-        }
-      }
-    },
-    "matrixBasicMeanings.list.title" : {
-      "comment" : "The 22 Archetypes",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The 22 Archetypes"
-          }
-        }
-      }
-    },
-    "matrixBasicMeanings.light.label" : {
-      "comment" : "Light",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Light"
-          }
-        }
-      }
-    },
-    "matrixBasicMeanings.shadow.label" : {
-      "comment" : "Shadow",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shadow"
-          }
-        }
-      }
-    },
-    "matrixEnergy.1.name" : {
-      "comment" : "1 — The Magician",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1 — The Magician"
-          }
-        }
-      }
-    },
-    "matrixEnergy.1.light" : {
-      "comment" : "Initiative, willpower, focused action, mastery of skills.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Initiative, willpower, focused action, mastery of skills."
-          }
-        }
-      }
-    },
-    "matrixEnergy.1.shadow" : {
-      "comment" : "Manipulation, scattered energy, ego-driven choices.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Manipulation, scattered energy, ego-driven choices."
-          }
-        }
-      }
-    },
-    "matrixEnergy.2.name" : {
-      "comment" : "2 — The High Priestess",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "2 — The High Priestess"
-          }
-        }
-      }
-    },
-    "matrixEnergy.2.light" : {
-      "comment" : "Intuition, inner wisdom, calm depth, sacred knowledge.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Intuition, inner wisdom, calm depth, sacred knowledge."
-          }
-        }
-      }
-    },
-    "matrixEnergy.2.shadow" : {
-      "comment" : "Coldness, secrecy, withdrawal from life.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coldness, secrecy, withdrawal from life."
-          }
-        }
-      }
-    },
-    "matrixEnergy.3.name" : {
-      "comment" : "3 — The Empress",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "3 — The Empress"
-          }
-        }
-      }
-    },
-    "matrixEnergy.3.light" : {
-      "comment" : "Creativity, abundance, nurturing love, sensual joy.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Creativity, abundance, nurturing love, sensual joy."
-          }
-        }
-      }
-    },
-    "matrixEnergy.3.shadow" : {
-      "comment" : "Possessiveness, dependency, smothering care.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Possessiveness, dependency, smothering care."
-          }
-        }
-      }
-    },
-    "matrixEnergy.4.name" : {
-      "comment" : "4 — The Emperor",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "4 — The Emperor"
-          }
-        }
-      }
-    },
-    "matrixEnergy.4.light" : {
-      "comment" : "Leadership, structure, stability, mastery of resources.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leadership, structure, stability, mastery of resources."
-          }
-        }
-      }
-    },
-    "matrixEnergy.4.shadow" : {
-      "comment" : "Tyranny, rigidity, need to control everything.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tyranny, rigidity, need to control everything."
-          }
-        }
-      }
-    },
-    "matrixEnergy.5.name" : {
-      "comment" : "5 — The Hierophant",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "5 — The Hierophant"
-          }
-        }
-      }
-    },
-    "matrixEnergy.5.light" : {
-      "comment" : "Teaching, tradition, wisdom transmitted to others.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Teaching, tradition, wisdom transmitted to others."
-          }
-        }
-      }
-    },
-    "matrixEnergy.5.shadow" : {
-      "comment" : "Dogmatism, conformity, fear of new ideas.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dogmatism, conformity, fear of new ideas."
-          }
-        }
-      }
-    },
-    "matrixEnergy.6.name" : {
-      "comment" : "6 — The Lovers",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "6 — The Lovers"
-          }
-        }
-      }
-    },
-    "matrixEnergy.6.light" : {
-      "comment" : "Conscious choice, alignment of values, soulful partnership.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conscious choice, alignment of values, soulful partnership."
-          }
-        }
-      }
-    },
-    "matrixEnergy.6.shadow" : {
-      "comment" : "Indecision, codependency, divided heart.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Indecision, codependency, divided heart."
-          }
-        }
-      }
-    },
-    "matrixEnergy.7.name" : {
-      "comment" : "7 — The Chariot",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "7 — The Chariot"
-          }
-        }
-      }
-    },
-    "matrixEnergy.7.light" : {
-      "comment" : "Willpower, discipline, victory through focused effort.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Willpower, discipline, victory through focused effort."
-          }
-        }
-      }
-    },
-    "matrixEnergy.7.shadow" : {
-      "comment" : "Aggression, ego conflict, overdrive.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aggression, ego conflict, overdrive."
-          }
-        }
-      }
-    },
-    "matrixEnergy.8.name" : {
-      "comment" : "8 — Justice",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "8 — Justice"
-          }
-        }
-      }
-    },
-    "matrixEnergy.8.light" : {
-      "comment" : "Fairness, balance, honest decisions, karmic harmony.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fairness, balance, honest decisions, karmic harmony."
-          }
-        }
-      }
-    },
-    "matrixEnergy.8.shadow" : {
-      "comment" : "Harsh judgment, score-keeping, cold detachment.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Harsh judgment, score-keeping, cold detachment."
-          }
-        }
-      }
-    },
-    "matrixEnergy.9.name" : {
-      "comment" : "9 — The Hermit",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "9 — The Hermit"
-          }
-        }
-      }
-    },
-    "matrixEnergy.9.light" : {
-      "comment" : "Inner search, solitude as gift, mentorship, deep wisdom.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inner search, solitude as gift, mentorship, deep wisdom."
-          }
-        }
-      }
-    },
-    "matrixEnergy.9.shadow" : {
-      "comment" : "Isolation, avoidance of intimacy, loneliness.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Isolation, avoidance of intimacy, loneliness."
-          }
-        }
-      }
-    },
-    "matrixEnergy.10.name" : {
-      "comment" : "10 — Wheel of Fortune",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "10 — Wheel of Fortune"
-          }
-        }
-      }
-    },
-    "matrixEnergy.10.light" : {
-      "comment" : "Trust in cycles, lucky timing, faith in the flow of life.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trust in cycles, lucky timing, faith in the flow of life."
-          }
-        }
-      }
-    },
-    "matrixEnergy.10.shadow" : {
-      "comment" : "Passivity, gambling on chance, blaming fate.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Passivity, gambling on chance, blaming fate."
-          }
-        }
-      }
-    },
-    "matrixEnergy.11.name" : {
-      "comment" : "11 — Strength",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "11 — Strength"
-          }
-        }
-      }
-    },
-    "matrixEnergy.11.light" : {
-      "comment" : "Courage, gentle power, mastery of impulses, inner calm.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Courage, gentle power, mastery of impulses, inner calm."
-          }
-        }
-      }
-    },
-    "matrixEnergy.11.shadow" : {
-      "comment" : "Brutality, suppressed anger, raw force.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Brutality, suppressed anger, raw force."
-          }
-        }
-      }
-    },
-    "matrixEnergy.12.name" : {
-      "comment" : "12 — The Hanged Man",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "12 — The Hanged Man"
-          }
-        }
-      }
-    },
-    "matrixEnergy.12.light" : {
-      "comment" : "Sacrifice for growth, surrender, fresh perspective.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sacrifice for growth, surrender, fresh perspective."
-          }
-        }
-      }
-    },
-    "matrixEnergy.12.shadow" : {
-      "comment" : "Victimhood, stagnation, martyr complex.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Victimhood, stagnation, martyr complex."
-          }
-        }
-      }
-    },
-    "matrixEnergy.13.name" : {
-      "comment" : "13 — Death (Transformation)",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "13 — Death (Transformation)"
-          }
-        }
-      }
-    },
-    "matrixEnergy.13.light" : {
-      "comment" : "Endings that bring renewal, deep transformation, rebirth.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Endings that bring renewal, deep transformation, rebirth."
-          }
-        }
-      }
-    },
-    "matrixEnergy.13.shadow" : {
-      "comment" : "Clinging to the past, fear of letting go.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Clinging to the past, fear of letting go."
-          }
-        }
-      }
-    },
-    "matrixEnergy.14.name" : {
-      "comment" : "14 — Temperance",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "14 — Temperance"
-          }
-        }
-      }
-    },
-    "matrixEnergy.14.light" : {
-      "comment" : "Integration, healing, balance of opposites, harmony.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Integration, healing, balance of opposites, harmony."
-          }
-        }
-      }
-    },
-    "matrixEnergy.14.shadow" : {
-      "comment" : "Extremes, imbalance, impatience with process.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Extremes, imbalance, impatience with process."
-          }
-        }
-      }
-    },
-    "matrixEnergy.15.name" : {
-      "comment" : "15 — The Devil",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "15 — The Devil"
-          }
-        }
-      }
-    },
-    "matrixEnergy.15.light" : {
-      "comment" : "Magnetism, sensual aliveness, healthy material drive.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Magnetism, sensual aliveness, healthy material drive."
-          }
-        }
-      }
-    },
-    "matrixEnergy.15.shadow" : {
-      "comment" : "Addiction, attachment, shadow appetites, manipulation.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Addiction, attachment, shadow appetites, manipulation."
-          }
-        }
-      }
-    },
-    "matrixEnergy.16.name" : {
-      "comment" : "16 — The Tower",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "16 — The Tower"
-          }
-        }
-      }
-    },
-    "matrixEnergy.16.light" : {
-      "comment" : "Sudden breakthroughs, liberation from false structures.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sudden breakthroughs, liberation from false structures."
-          }
-        }
-      }
-    },
-    "matrixEnergy.16.shadow" : {
-      "comment" : "Crisis, destruction, ego collapse, abrupt loss.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crisis, destruction, ego collapse, abrupt loss."
-          }
-        }
-      }
-    },
-    "matrixEnergy.17.name" : {
-      "comment" : "17 — The Star",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "17 — The Star"
-          }
-        }
-      }
-    },
-    "matrixEnergy.17.light" : {
-      "comment" : "Hope, inspiration, talent, healing radiance.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hope, inspiration, talent, healing radiance."
-          }
-        }
-      }
-    },
-    "matrixEnergy.17.shadow" : {
-      "comment" : "Idealization, escapism, disconnect from reality.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Idealization, escapism, disconnect from reality."
-          }
-        }
-      }
-    },
-    "matrixEnergy.18.name" : {
-      "comment" : "18 — The Moon",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "18 — The Moon"
-          }
-        }
-      }
-    },
-    "matrixEnergy.18.light" : {
-      "comment" : "Dreams, deep intuition, contact with the subconscious.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dreams, deep intuition, contact with the subconscious."
-          }
-        }
-      }
-    },
-    "matrixEnergy.18.shadow" : {
-      "comment" : "Illusion, fear, anxiety, hidden enemies of the mind.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Illusion, fear, anxiety, hidden enemies of the mind."
-          }
-        }
-      }
-    },
-    "matrixEnergy.19.name" : {
-      "comment" : "19 — The Sun",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "19 — The Sun"
-          }
-        }
-      }
-    },
-    "matrixEnergy.19.light" : {
-      "comment" : "Joy, vitality, success, radiant self-expression.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Joy, vitality, success, radiant self-expression."
-          }
-        }
-      }
-    },
-    "matrixEnergy.19.shadow" : {
-      "comment" : "Ego inflation, burnout, demand for constant praise.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ego inflation, burnout, demand for constant praise."
-          }
-        }
-      }
-    },
-    "matrixEnergy.20.name" : {
-      "comment" : "20 — Judgment",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "20 — Judgment"
-          }
-        }
-      }
-    },
-    "matrixEnergy.20.light" : {
-      "comment" : "Calling, awakening, hearing your life's purpose.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Calling, awakening, hearing your life's purpose."
-          }
-        }
-      }
-    },
-    "matrixEnergy.20.shadow" : {
-      "comment" : "Self-judgment, guilt, fear of being seen.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Self-judgment, guilt, fear of being seen."
-          }
-        }
-      }
-    },
-    "matrixEnergy.21.name" : {
-      "comment" : "21 — The World",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "21 — The World"
-          }
-        }
-      }
-    },
-    "matrixEnergy.21.light" : {
-      "comment" : "Completion, integration, wholeness, mastery of a cycle.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Completion, integration, wholeness, mastery of a cycle."
-          }
-        }
-      }
-    },
-    "matrixEnergy.21.shadow" : {
-      "comment" : "Stagnation in comfort, fear of the next chapter.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stagnation in comfort, fear of the next chapter."
-          }
-        }
-      }
-    },
-    "matrixEnergy.22.name" : {
-      "comment" : "22 — The Fool",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "22 — The Fool"
-          }
-        }
-      }
-    },
-    "matrixEnergy.22.light" : {
-      "comment" : "Freedom, openness, fearless new beginnings, trust.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Freedom, openness, fearless new beginnings, trust."
-          }
-        }
-      }
-    },
-    "matrixEnergy.22.shadow" : {
-      "comment" : "Irresponsibility, naivety, scattered direction.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Irresponsibility, naivety, scattered direction."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.title" : {
-      "comment" : "How to Read Your Matrix",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How to Read Your Matrix"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step1.title" : {
-      "comment" : "Calculate Your Chart",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Calculate Your Chart"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step1.intro" : {
-      "comment" : "Your Matrix is built from your date of birth—day, month, and year. Each part is reduced to a single energy between 1 and 22, then combined to fill every position on the diagram.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your Matrix is built from your date of birth—day, month, and year. Each part is reduced to a single energy between 1 and 22, then combined to fill every position on the diagram."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step1.bullet1.title" : {
-      "comment" : "Enter Birth Date",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enter Birth Date"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step1.bullet1.text" : {
-      "comment" : "Use your exact birth date. The system handles the math for you.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Use your exact birth date. The system handles the math for you."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step1.bullet2.title" : {
-      "comment" : "Trust the Numbers",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trust the Numbers"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step1.bullet2.text" : {
-      "comment" : "Don't worry about manual calculation—what matters is the meaning behind each energy.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Don't worry about manual calculation—what matters is the meaning behind each energy."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step1.proTip" : {
-      "comment" : "If you're unsure of an exact time zone, the day, month, and year are what shape the Matrix.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "If you're unsure of an exact time zone, the day, month, and year are what shape the Matrix."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.title" : {
-      "comment" : "Find the Central Square",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Find the Central Square"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.intro" : {
-      "comment" : "At the heart of your Matrix is a square with four corner energies and a central one. Together they describe who you are and how you move through life.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "At the heart of your Matrix is a square with four corner energies and a central one. Together they describe who you are and how you move through life."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.bullet1.title" : {
-      "comment" : "Character (Sky)",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Character (Sky)"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.bullet1.text" : {
-      "comment" : "Your conscious personality and the qualities you naturally express.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your conscious personality and the qualities you naturally express."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.bullet2.title" : {
-      "comment" : "Karma (Earth)",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Karma (Earth)"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.bullet2.text" : {
-      "comment" : "Patterns carried from the past that ask to be transformed in this lifetime.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patterns carried from the past that ask to be transformed in this lifetime."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.bullet3.title" : {
-      "comment" : "Talents & Comfort Zone",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Talents & Comfort Zone"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.bullet3.text" : {
-      "comment" : "The gifts you bring forward and the comfortable habits you tend to repeat.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The gifts you bring forward and the comfortable habits you tend to repeat."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.bullet4.title" : {
-      "comment" : "Heart / Mission Core",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Heart / Mission Core"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step2.bullet4.text" : {
-      "comment" : "The integrating energy at the center—your essence and the gateway to your purpose.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The integrating energy at the center—your essence and the gateway to your purpose."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.title" : {
-      "comment" : "Read the Life Lines",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Read the Life Lines"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.intro" : {
-      "comment" : "Around the central square are lines that describe your main areas of life. Each line is built from several energies that work together.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Around the central square are lines that describe your main areas of life. Each line is built from several energies that work together."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.bullet1.title" : {
-      "comment" : "Money & Finance Line",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Money & Finance Line"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.bullet1.text" : {
-      "comment" : "How you attract resources, your relationship to abundance, and where money flows freely or gets blocked.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How you attract resources, your relationship to abundance, and where money flows freely or gets blocked."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.bullet2.title" : {
-      "comment" : "Relationship Line",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Relationship Line"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.bullet2.text" : {
-      "comment" : "How you bond with partners, the lessons love brings, and what kind of relationships nourish you.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How you bond with partners, the lessons love brings, and what kind of relationships nourish you."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.bullet3.title" : {
-      "comment" : "Family & Ancestral Line",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Family & Ancestral Line"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.bullet3.text" : {
-      "comment" : "Patterns inherited from your family system that influence your roots and sense of belonging.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patterns inherited from your family system that influence your roots and sense of belonging."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step3.proTip" : {
-      "comment" : "Read each line as a story: light versions describe what flows naturally, shadow versions show what's ready to be healed.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Read each line as a story: light versions describe what flows naturally, shadow versions show what's ready to be healed."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step4.title" : {
-      "comment" : "Look at Your Mission",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Look at Your Mission"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step4.intro" : {
-      "comment" : "The mission points reveal your purpose—why your soul chose this lifetime and the contribution you're invited to make.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The mission points reveal your purpose—why your soul chose this lifetime and the contribution you're invited to make."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step4.bullet1.title" : {
-      "comment" : "Personal Mission",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Personal Mission"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step4.bullet1.text" : {
-      "comment" : "The growth your soul came here to experience for itself.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The growth your soul came here to experience for itself."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step4.bullet2.title" : {
-      "comment" : "Social Mission",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Social Mission"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step4.bullet2.text" : {
-      "comment" : "How you're meant to serve and what gift you offer to the world.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How you're meant to serve and what gift you offer to the world."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step5.title" : {
-      "comment" : "Bring It All Together",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bring It All Together"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step5.intro" : {
-      "comment" : "Once you understand the parts, read the whole Matrix as a conversation between archetypes. Notice repeated energies and how the light and shadow sides relate.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Once you understand the parts, read the whole Matrix as a conversation between archetypes. Notice repeated energies and how the light and shadow sides relate."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step5.bullet1.title" : {
-      "comment" : "Look for Repetitions",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Look for Repetitions"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step5.bullet1.text" : {
-      "comment" : "Energies that appear in multiple positions carry a strong theme in your life.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Energies that appear in multiple positions carry a strong theme in your life."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step5.bullet2.title" : {
-      "comment" : "Hold Light & Shadow Together",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hold Light & Shadow Together"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.step5.bullet2.text" : {
-      "comment" : "Each energy has both gifts and challenges. Working consciously with the shadow side is where real growth happens.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Each energy has both gifts and challenges. Working consciously with the shadow side is where real growth happens."
-          }
-        }
-      }
-    },
-    "howToReadMatrix.remember.title" : {
-      "comment" : "Remember",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remember"
-          }
-        }
-      }
-    },
-    "howToReadMatrix.remember.text" : {
-      "comment" : "Your Matrix is a map, not a verdict. It points to potentials and patterns—your free will and conscious choices write the actual story of your life.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your Matrix is a map, not a verdict. It points to potentials and patterns—your free will and conscious choices write the actual story of your life."
-          }
-        }
-      }
-    },
-    "matrixMind.title" : {
-      "comment" : "Matrix & Mind",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Matrix & Mind"
-          }
-        }
-      }
-    },
-    "matrixMind.subtitle" : {
-      "comment" : "A Tool for Self-Reflection",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A Tool for Self-Reflection"
-          }
-        }
-      }
-    },
-    "matrixMind.section1.title" : {
-      "comment" : "A Map of Inner Archetypes",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A Map of Inner Archetypes"
-          }
-        }
-      }
-    },
-    "matrixMind.section1.text" : {
-      "comment" : "The Destiny Matrix can be understood as a map of inner archetypes—universal patterns that live inside every person. Reading your chart isn't about predicting fate; it's about meeting the parts of yourself that shape how you think, feel, and choose.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Destiny Matrix can be understood as a map of inner archetypes—universal patterns that live inside every person. Reading your chart isn't about predicting fate; it's about meeting the parts of yourself that shape how you think, feel, and choose."
-          }
-        }
-      }
-    },
-    "matrixMind.section2.title" : {
-      "comment" : "Working with the Shadow",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Working with the Shadow"
-          }
-        }
-      }
-    },
-    "matrixMind.section2.text" : {
-      "comment" : "Each of the 22 energies carries both a light expression and a shadow expression. The shadow is not bad—it's the part of an archetype that runs unconsciously when ignored. Naming it gently is the first step toward integration.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Each of the 22 energies carries both a light expression and a shadow expression. The shadow is not bad—it's the part of an archetype that runs unconsciously when ignored. Naming it gently is the first step toward integration."
-          }
-        }
-      }
-    },
-    "matrixMind.section2.insight" : {
-      "comment" : "What you can name, you can work with. What stays unconscious, controls you.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What you can name, you can work with. What stays unconscious, controls you."
-          }
-        }
-      }
-    },
-    "matrixMind.section3.title" : {
-      "comment" : "Patterns of Behavior",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patterns of Behavior"
-          }
-        }
-      }
-    },
-    "matrixMind.section3.intro" : {
-      "comment" : "When you look at the lines and positions of your Matrix, you start to see how certain patterns repeat across areas of life:",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "When you look at the lines and positions of your Matrix, you start to see how certain patterns repeat across areas of life:"
-          }
-        }
-      }
-    },
-    "matrixMind.section3.bullet1.title" : {
-      "comment" : "Comfort Zone",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comfort Zone"
-          }
-        }
-      }
-    },
-    "matrixMind.section3.bullet1.text" : {
-      "comment" : "Habits and identities you cling to because they feel safe—even when they no longer serve growth.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Habits and identities you cling to because they feel safe—even when they no longer serve growth."
-          }
-        }
-      }
-    },
-    "matrixMind.section3.bullet2.title" : {
-      "comment" : "Karmic Loops",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Karmic Loops"
-          }
-        }
-      }
-    },
-    "matrixMind.section3.bullet2.text" : {
-      "comment" : "Situations that keep reappearing in slightly different costumes until the lesson is consciously met.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Situations that keep reappearing in slightly different costumes until the lesson is consciously met."
-          }
-        }
-      }
-    },
-    "matrixMind.section3.bullet3.title" : {
-      "comment" : "Ancestral Patterns",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ancestral Patterns"
-          }
-        }
-      }
-    },
-    "matrixMind.section3.bullet3.text" : {
-      "comment" : "Family inheritances—beliefs, fears, and gifts—visible in the family/karmic positions of your chart.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Family inheritances—beliefs, fears, and gifts—visible in the family/karmic positions of your chart."
-          }
-        }
-      }
-    },
-    "matrixMind.section4.title" : {
-      "comment" : "Mindful Practice",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mindful Practice"
-          }
-        }
-      }
-    },
-    "matrixMind.section4.intro" : {
-      "comment" : "The Matrix becomes most powerful when used as a mirror for daily reflection rather than as a forecast.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Matrix becomes most powerful when used as a mirror for daily reflection rather than as a forecast."
-          }
-        }
-      }
-    },
-    "matrixMind.section4.bullet1.title" : {
-      "comment" : "Journaling",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Journaling"
-          }
-        }
-      }
-    },
-    "matrixMind.section4.bullet1.text" : {
-      "comment" : "Pick one energy from your chart and journal on its light and shadow as you noticed them this week.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pick one energy from your chart and journal on its light and shadow as you noticed them this week."
-          }
-        }
-      }
-    },
-    "matrixMind.section4.bullet2.title" : {
-      "comment" : "Conscious Choice",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conscious Choice"
-          }
-        }
-      }
-    },
-    "matrixMind.section4.bullet2.text" : {
-      "comment" : "When you recognize a pattern playing out, pause and ask: which side of this energy do I want to express right now?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "When you recognize a pattern playing out, pause and ask: which side of this energy do I want to express right now?"
-          }
-        }
-      }
-    },
-    "matrixMind.section5.title" : {
-      "comment" : "From Insight to Choice",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "From Insight to Choice"
-          }
-        }
-      }
-    },
-    "matrixMind.section5.text" : {
-      "comment" : "Reading your Matrix is not the end—it's the start of a conscious dialogue with yourself. The chart describes the landscape; you choose the path. Used gently, it can support therapy, coaching, and any path of self-understanding.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reading your Matrix is not the end—it's the start of a conscious dialogue with yourself. The chart describes the landscape; you choose the path. Used gently, it can support therapy, coaching, and any path of self-understanding."
-          }
-        }
-      }
-    },
-    "matrixMind.conclusion" : {
-      "comment" : "The Matrix doesn't decide who you are. It invites you to remember who you came here to be.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Matrix doesn't decide who you are. It invites you to remember who you came here to be."
-          }
-        }
-      }
-    },
-    "matrixMind.insight.label" : {
-      "comment" : "Insight",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insight"
-          }
-        }
-      }
-    },
-    "matrixFaq.title" : {
-      "comment" : "Frequently Asked Questions",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Frequently Asked Questions"
-          }
-        }
-      }
-    },
-    "matrixFaq.subtitle" : {
-      "comment" : "Common questions about the Destiny Matrix",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Common questions about the Destiny Matrix"
-          }
-        }
-      }
-    },
-    "matrixFaq.question1" : {
-      "comment" : "What is the Destiny Matrix?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What is the Destiny Matrix?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer1" : {
-      "comment" : "The Destiny Matrix is a personal chart built from your date of birth that maps 22 universal energies onto key positions of your life: your personality, relationships, money, family, and mission. It combines numerology, Tarot archetypes, and the Eastern chakra system into one diagram.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Destiny Matrix is a personal chart built from your date of birth that maps 22 universal energies onto key positions of your life: your personality, relationships, money, family, and mission. It combines numerology, Tarot archetypes, and the Eastern chakra system into one diagram."
-          }
-        }
-      }
-    },
-    "matrixFaq.question2" : {
-      "comment" : "Is the Matrix the same as numerology?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the Matrix the same as numerology?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer2" : {
-      "comment" : "Numerology is one of its ingredients but not the whole system. The Matrix uses numerological calculation to place 22 archetypal energies—rooted in the Major Arcana of the Tarot—onto a specific diagram, giving a more layered picture than numbers alone.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Numerology is one of its ingredients but not the whole system. The Matrix uses numerological calculation to place 22 archetypal energies—rooted in the Major Arcana of the Tarot—onto a specific diagram, giving a more layered picture than numbers alone."
-          }
-        }
-      }
-    },
-    "matrixFaq.question3" : {
-      "comment" : "Why are there exactly 22 energies?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Why are there exactly 22 energies?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer3" : {
-      "comment" : "The 22 energies correspond to the 22 Major Arcana of the Tarot—a complete cycle of archetypes describing the human journey from beginning (The Fool) to wholeness (The World).",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The 22 energies correspond to the 22 Major Arcana of the Tarot—a complete cycle of archetypes describing the human journey from beginning (The Fool) to wholeness (The World)."
-          }
-        }
-      }
-    },
-    "matrixFaq.question4" : {
-      "comment" : "Can my Matrix change over time?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Can my Matrix change over time?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer4" : {
-      "comment" : "The chart itself is fixed because it's calculated from your birth date. What changes is your relationship to it—how consciously you express the light or shadow side of each energy as you grow.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The chart itself is fixed because it's calculated from your birth date. What changes is your relationship to it—how consciously you express the light or shadow side of each energy as you grow."
-          }
-        }
-      }
-    },
-    "matrixFaq.question5" : {
-      "comment" : "How is it different from Tarot or astrology?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How is it different from Tarot or astrology?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer5" : {
-      "comment" : "Tarot is a divination tool that responds to a specific question in the moment. Astrology maps planetary positions at your birth. The Matrix is a fixed birth-chart of archetypes, focused on identity, purpose, and personal patterns rather than transits or one-off questions.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tarot is a divination tool that responds to a specific question in the moment. Astrology maps planetary positions at your birth. The Matrix is a fixed birth-chart of archetypes, focused on identity, purpose, and personal patterns rather than transits or one-off questions."
-          }
-        }
-      }
-    },
-    "matrixFaq.question6" : {
-      "comment" : "Can it predict the future?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Can it predict the future?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer6" : {
-      "comment" : "The Matrix doesn't predict events. It describes potentials, patterns, and lessons. Your choices, awareness, and effort decide which version of each energy actually shows up in your life.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Matrix doesn't predict events. It describes potentials, patterns, and lessons. Your choices, awareness, and effort decide which version of each energy actually shows up in your life."
-          }
-        }
-      }
-    },
-    "matrixFaq.question7" : {
-      "comment" : "Do I need a birth time or place?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Do I need a birth time or place?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer7" : {
-      "comment" : "No. Unlike a natal astrology chart, the Destiny Matrix only needs your day, month, and year of birth.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No. Unlike a natal astrology chart, the Destiny Matrix only needs your day, month, and year of birth."
-          }
-        }
-      }
-    },
-    "matrixFaq.question8" : {
-      "comment" : "Can I read someone else's Matrix?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Can I read someone else's Matrix?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer8" : {
-      "comment" : "Yes—if they share their birth date with you. Many people use it to better understand their partner, family member, or child. Always read with respect and ask before sharing interpretations.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yes—if they share their birth date with you. Many people use it to better understand their partner, family member, or child. Always read with respect and ask before sharing interpretations."
-          }
-        }
-      }
-    },
-    "matrixFaq.question9" : {
-      "comment" : "Is the Destiny Matrix a religion?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the Destiny Matrix a religion?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer9" : {
-      "comment" : "No. The Matrix is a symbolic self-development tool. It can sit alongside any faith—or none—and works as a mirror for reflection rather than as a belief system.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No. The Matrix is a symbolic self-development tool. It can sit alongside any faith—or none—and works as a mirror for reflection rather than as a belief system."
-          }
-        }
-      }
-    },
-    "matrixFaq.question10" : {
-      "comment" : "How should I start working with my chart?",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How should I start working with my chart?"
-          }
-        }
-      }
-    },
-    "matrixFaq.answer10" : {
-      "comment" : "Begin with the central square—your personality, karma, talents, and core energy. Read both the light and shadow sides. Then explore one life line at a time (money, relationships, family) over several weeks rather than all at once.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Begin with the central square—your personality, karma, talents, and core energy. Read both the light and shadow sides. Then explore one life line at a time (money, relationships, family) over several weeks rather than all at once."
-          }
-        }
-      }
-    },
-    "matrixFaq.disclaimer.title" : {
-      "comment" : "Important Note",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Important Note"
-          }
-        }
-      }
-    },
-    "matrixFaq.disclaimer.text" : {
-      "comment" : "The Destiny Matrix is offered as a tool for reflection and self-discovery. It is not a substitute for medical, psychological, legal, or financial advice. Trust your own judgment and seek qualified professionals when you need real-world support.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Destiny Matrix is offered as a tool for reflection and self-discovery. It is not a substitute for medical, psychological, legal, or financial advice. Trust your own judgment and seek qualified professionals when you need real-world support."
-          }
-        }
-      }
-    },
-    "pdf.matrix.title" : {
-      "comment" : "Your Destiny Matrix",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your Destiny Matrix"
-          }
-        }
-      }
-    },
-    "pdf.matrix.birthDate" : {
-      "comment" : "Birth Date:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Birth Date:"
-          }
-        }
-      }
-    },
-    "pdf.matrix.savedOn" : {
-      "comment" : "Saved on:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saved on:"
-          }
-        }
-      }
-    },
-    "pdf.matrix.coreEssence" : {
-      "comment" : "Core Essence",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Core Essence"
-          }
-        }
-      }
-    },
-    "pdf.matrix.keyPositions" : {
-      "comment" : "Key Positions",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Key Positions"
-          }
-        }
-      }
-    },
-    "pdf.matrix.currentYear" : {
-      "comment" : "Current Year Energy",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Current Year Energy"
-          }
-        }
-      }
-    },
-    "pdf.matrix.energy" : {
-      "comment" : "Energy:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Energy:"
-          }
-        }
-      }
-    },
-    "pdf.matrix.year" : {
-      "comment" : "Year",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Year"
-          }
-        }
-      }
-    },
-    "pdf.matrix.age" : {
-      "comment" : "Age",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Age"
-          }
-        }
-      }
-    },
-    "pdf.palm.title" : {
-      "comment" : "Your Palm Reading",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your Palm Reading"
-          }
-        }
-      }
-    },
-    "pdf.palm.savedOn" : {
-      "comment" : "Saved on:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saved on:"
-          }
-        }
-      }
-    },
-    "pdf.palm.capturedImage" : {
-      "comment" : "Captured Palm",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captured Palm"
-          }
-        }
-      }
-    },
-    "pdf.palm.handShape" : {
-      "comment" : "Hand Shape",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hand Shape"
-          }
-        }
-      }
-    },
-    "pdf.palm.fingerLength" : {
-      "comment" : "Finger Length:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finger Length:"
-          }
-        }
-      }
-    },
-    "pdf.palm.shape" : {
-      "comment" : "Palm Shape:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Palm Shape:"
-          }
-        }
-      }
-    },
-    "pdf.palm.lines" : {
-      "comment" : "Palm Lines",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Palm Lines"
-          }
-        }
-      }
-    },
-    "pdf.palm.mounts" : {
-      "comment" : "Palm Mounts",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Palm Mounts"
-          }
-        }
-      }
-    },
-    "pdf.palm.length" : {
-      "comment" : "Length:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Length:"
-          }
-        }
-      }
-    },
-    "pdf.palm.depth" : {
-      "comment" : "Depth:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Depth:"
-          }
-        }
-      }
-    },
-    "pdf.palm.continuity" : {
-      "comment" : "Continuity:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continuity:"
-          }
-        }
-      }
-    },
-    "pdf.palm.prominence" : {
-      "comment" : "Prominence:",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prominence:"
           }
         }
       }

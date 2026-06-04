@@ -405,6 +405,9 @@ enum L10n {
     static let pdfMatrixEnergy = NSLocalizedString("pdf.matrix.energy", comment: "Energy:")
     static let pdfMatrixYear = NSLocalizedString("pdf.matrix.year", comment: "Year")
     static let pdfMatrixAge = NSLocalizedString("pdf.matrix.age", comment: "Age")
+    static let pdfMatrixLifeTimeline = NSLocalizedString("pdf.matrix.lifeTimeline", comment: "Life Timeline")
+    static let pdfMatrixYears = NSLocalizedString("pdf.matrix.years", comment: "years")
+    static let pdfMatrixCurrentYearDesc = NSLocalizedString("pdf.matrix.currentYearDesc", comment: "Your guiding energy this year, shaping the themes, lessons and opportunities woven into your path.")
 
     // MARK: - PDF Export - Palm Reading
     static let pdfPalmTitle = NSLocalizedString("pdf.palm.title", comment: "Your Palm Reading")
