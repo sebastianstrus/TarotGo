@@ -183,7 +183,8 @@ struct TarotWheelMenuView: View {
             let size = min(geometry.size.width, geometry.size.height)
             let center = CGPoint(x: size / 2, y: size / 2)
             let outerRadius = size / 2 - 10
-            let innerRadius = size * 0.18
+            let centerCircleRadius = size * 0.16
+            let innerRadius = centerCircleRadius + size * 0.06 // gap between center and segments
             let labelRadius = (outerRadius + innerRadius) / 2
             let segmentAngle = 360.0 / Double(options.count)
 
@@ -270,12 +271,13 @@ struct TarotWheelMenuView: View {
                     .allowsHitTesting(false)
                 }
 
-                // Decorative dots between segments at the inner edge
+                // Decorative dots between segments, sitting just inside each segment's inner edge
                 ForEach(0..<options.count, id: \.self) { index in
                     let degrees = startAngleFor(index: index, segmentAngle: segmentAngle)
                     let radians = degrees * .pi / 180
-                    let x = center.x + cos(radians) * innerRadius
-                    let y = center.y + sin(radians) * innerRadius
+                    let dotRadius = (innerRadius + centerCircleRadius) / 2
+                    let x = center.x + cos(radians) * dotRadius
+                    let y = center.y + sin(radians) * dotRadius
 
                     Circle()
                         .fill(AppTheme.gold)
@@ -289,14 +291,14 @@ struct TarotWheelMenuView: View {
                 ZStack {
                     Circle()
                         .fill(AppTheme.deepNavy)
-                        .frame(width: innerRadius * 2, height: innerRadius * 2)
+                        .frame(width: centerCircleRadius * 2, height: centerCircleRadius * 2)
 
                     Circle()
                         .stroke(AppTheme.goldGradient, lineWidth: 2)
-                        .frame(width: innerRadius * 2, height: innerRadius * 2)
+                        .frame(width: centerCircleRadius * 2, height: centerCircleRadius * 2)
 
                     Image(systemName: "sun.max.fill")
-                        .font(.system(size: innerRadius * 1.1))
+                        .font(.system(size: centerCircleRadius * 1.1))
                         .foregroundStyle(AppTheme.goldGradient)
                         .shadow(color: AppTheme.gold.opacity(0.6), radius: 6)
                 }
