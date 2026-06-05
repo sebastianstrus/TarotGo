@@ -568,9 +568,9 @@ extension VortexSystem {
             angularSpeed: [0, 0, 0.16],
             angularSpeedVariation: [0, 0, 0.2],
             colors: .ramp(
+                .gray.opacity(0.5),
                 .gray.opacity(0.7),
-                .gray.opacity(1.0),
-                .gray.opacity(0.9),
+                .gray.opacity(0.65),
                 .gray.opacity(0)
             ),
             size: 1.0,
