@@ -175,11 +175,14 @@ struct TarotWheelMenuView: View {
     let options: [TarotWheelOption]
     let onSelect: (TarotWheelOption) -> Void
 
+    private let segmentGapDegrees: Double = 5
+    private let segmentCornerRadius: CGFloat = 16
+
     var body: some View {
         GeometryReader { geometry in
             let size = min(geometry.size.width, geometry.size.height)
             let center = CGPoint(x: size / 2, y: size / 2)
-            let outerRadius = size / 2
+            let outerRadius = size / 2 - 10
             let innerRadius = size * 0.18
             let labelRadius = (outerRadius + innerRadius) / 2
             let segmentAngle = 360.0 / Double(options.count)
@@ -197,14 +200,16 @@ struct TarotWheelMenuView: View {
 
                 // Segments
                 ForEach(Array(options.enumerated()), id: \.element.id) { index, option in
-                    let startAngle = startAngleFor(index: index, segmentAngle: segmentAngle)
-                    let endAngle = startAngle + segmentAngle
+                    let rawStart = startAngleFor(index: index, segmentAngle: segmentAngle)
+                    let startAngle = rawStart + segmentGapDegrees / 2
+                    let endAngle = rawStart + segmentAngle - segmentGapDegrees / 2
 
-                    WheelSegmentShape(
+                    RoundedWheelSegmentShape(
                         startAngle: .degrees(startAngle),
                         endAngle: .degrees(endAngle),
                         innerRadius: innerRadius,
-                        outerRadius: outerRadius - 8
+                        outerRadius: outerRadius,
+                        cornerRadius: segmentCornerRadius
                     )
                     .fill(
                         LinearGradient(
@@ -217,20 +222,22 @@ struct TarotWheelMenuView: View {
                         )
                     )
                     .overlay(
-                        WheelSegmentShape(
+                        RoundedWheelSegmentShape(
                             startAngle: .degrees(startAngle),
                             endAngle: .degrees(endAngle),
                             innerRadius: innerRadius,
-                            outerRadius: outerRadius - 8
+                            outerRadius: outerRadius,
+                            cornerRadius: segmentCornerRadius
                         )
                         .stroke(AppTheme.gold.opacity(0.7), lineWidth: 1)
                     )
                     .contentShape(
-                        WheelSegmentShape(
+                        RoundedWheelSegmentShape(
                             startAngle: .degrees(startAngle),
                             endAngle: .degrees(endAngle),
                             innerRadius: innerRadius,
-                            outerRadius: outerRadius - 8
+                            outerRadius: outerRadius,
+                            cornerRadius: segmentCornerRadius
                         )
                     )
                     .onTapGesture {
@@ -341,6 +348,92 @@ struct WheelSegmentShape: Shape {
         )
         path.closeSubpath()
         return path
+    }
+}
+
+/// A donut-sector with rounded corners at each of its four vertices.
+///
+/// Corners are softened by insetting along both adjacent edges by `cornerRadius`,
+/// then bridging the gap with a quadratic curve whose control point is the
+/// original sharp corner.
+struct RoundedWheelSegmentShape: Shape {
+    let startAngle: Angle
+    let endAngle: Angle
+    let innerRadius: CGFloat
+    let outerRadius: CGFloat
+    let cornerRadius: CGFloat
+
+    func path(in rect: CGRect) -> Path {
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        let a1 = CGFloat(startAngle.radians)
+        let a2 = CGFloat(endAngle.radians)
+
+        // Cap the corner radius so insets never collide.
+        let halfSpan = (a2 - a1) / 2
+        let maxRadial = (outerRadius - innerRadius) * 0.45
+        let maxOuterArc = halfSpan * outerRadius * 0.9
+        let maxInnerArc = halfSpan * innerRadius * 0.9
+        let cr = max(0, min(cornerRadius, min(maxRadial, min(maxOuterArc, maxInnerArc))))
+
+        // Angular insets so the rounded corners sit cleanly on each arc.
+        let outerAngularInset = cr / outerRadius
+        let innerAngularInset = cr / innerRadius
+
+        let outerStartA = a1 + outerAngularInset
+        let outerEndA = a2 - outerAngularInset
+        let innerStartA = a1 + innerAngularInset
+        let innerEndA = a2 - innerAngularInset
+
+        let outerInsetR = outerRadius - cr
+        let innerInsetR = innerRadius + cr
+
+        // Corner anchor points (original sharp corners — used as quad-curve controls).
+        let cornerOuterStart = point(center: center, angle: a1, radius: outerRadius)
+        let cornerOuterEnd = point(center: center, angle: a2, radius: outerRadius)
+        let cornerInnerEnd = point(center: center, angle: a2, radius: innerRadius)
+        let cornerInnerStart = point(center: center, angle: a1, radius: innerRadius)
+
+        // Inset points on each edge, near each corner.
+        let outerArcStart = point(center: center, angle: outerStartA, radius: outerRadius)
+        let outerArcEnd = point(center: center, angle: outerEndA, radius: outerRadius)
+        let innerArcStart = point(center: center, angle: innerStartA, radius: innerRadius)
+        let innerArcEnd = point(center: center, angle: innerEndA, radius: innerRadius)
+
+        let radialOuterStart = point(center: center, angle: a1, radius: outerInsetR)
+        let radialOuterEnd = point(center: center, angle: a2, radius: outerInsetR)
+        let radialInnerStart = point(center: center, angle: a1, radius: innerInsetR)
+        let radialInnerEnd = point(center: center, angle: a2, radius: innerInsetR)
+
+        var path = Path()
+        path.move(to: radialOuterStart)
+        path.addQuadCurve(to: outerArcStart, control: cornerOuterStart)
+        path.addArc(
+            center: center,
+            radius: outerRadius,
+            startAngle: .radians(Double(outerStartA)),
+            endAngle: .radians(Double(outerEndA)),
+            clockwise: false
+        )
+        path.addQuadCurve(to: radialOuterEnd, control: cornerOuterEnd)
+        path.addLine(to: radialInnerEnd)
+        path.addQuadCurve(to: innerArcEnd, control: cornerInnerEnd)
+        path.addArc(
+            center: center,
+            radius: innerRadius,
+            startAngle: .radians(Double(innerEndA)),
+            endAngle: .radians(Double(innerStartA)),
+            clockwise: true
+        )
+        path.addQuadCurve(to: radialInnerStart, control: cornerInnerStart)
+        path.closeSubpath()
+        return path
+    }
+
+    private func point(center: CGPoint, angle: CGFloat, radius: CGFloat) -> CGPoint {
+        CGPoint(
+            x: center.x + cos(angle) * radius,
+            y: center.y + sin(angle) * radius
+        )
     }
 }
 
