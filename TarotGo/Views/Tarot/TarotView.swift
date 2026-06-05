@@ -189,15 +189,8 @@ struct TarotWheelMenuView: View {
             let segmentAngle = 360.0 / Double(options.count)
 
             ZStack {
-                // Decorative outermost ring
-                Circle()
-                    .stroke(AppTheme.goldGradient, lineWidth: 2)
-                    .frame(width: size, height: size)
-                    .shadow(color: AppTheme.gold.opacity(0.4), radius: 8)
-
-                Circle()
-                    .fill(AppTheme.deepPurple.opacity(0.35))
-                    .frame(width: size - 4, height: size - 4)
+                // Mystic outer ring (layered)
+                MysticOuterRing(size: size)
 
                 // Segments
                 ForEach(Array(options.enumerated()), id: \.element.id) { index, option in
@@ -324,6 +317,106 @@ struct TarotWheelMenuView: View {
 }
 
 // MARK: - Segment Shape
+
+// MARK: - Mystic Outer Ring
+
+/// A decorative multi-layer ring used as the wheel's backdrop.
+///
+/// Composition (outside → inside):
+///  1. Soft golden outer glow.
+///  2. Thin outer gold stroke.
+///  3. Dark purple band, filled and with a faint inner gold rim.
+///  4. A "starfield" of tiny twinkling dots scattered around the ring.
+///  5. Four diamond-shaped ornaments at the cardinal points.
+///  6. A second, thicker gold stroke marking the inner edge of the band.
+struct MysticOuterRing: View {
+    let size: CGFloat
+
+    /// Width of the decorative band (between the two gold strokes).
+    private var bandWidth: CGFloat { size * 0.045 }
+
+    private var outerStrokeRadius: CGFloat { size / 2 }
+    private var innerStrokeRadius: CGFloat { outerStrokeRadius - bandWidth }
+    private var starRadius: CGFloat { outerStrokeRadius - bandWidth / 2 }
+
+    var body: some View {
+        ZStack {
+            // 1. Soft outer glow
+            Circle()
+                .stroke(AppTheme.gold.opacity(0.35), lineWidth: 8)
+                .frame(width: size + 4, height: size + 4)
+                .blur(radius: 6)
+
+            // 3. Purple band fill
+            Circle()
+                .fill(
+                    LinearGradient(
+                        colors: [
+                            AppTheme.deepPurple.opacity(0.55),
+                            AppTheme.midNavy.opacity(0.5),
+                            AppTheme.deepPurple.opacity(0.55)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .frame(width: size, height: size)
+
+            // Interior fill (covers band where the wheel sits)
+            Circle()
+                .fill(AppTheme.deepPurple.opacity(0.35))
+                .frame(width: size - bandWidth * 2, height: size - bandWidth * 2)
+
+            // 2. Outer gold stroke
+            Circle()
+                .stroke(AppTheme.goldGradient, lineWidth: 1.5)
+                .frame(width: size, height: size)
+                .shadow(color: AppTheme.gold.opacity(0.5), radius: 6)
+
+            // 6. Inner gold stroke
+            Circle()
+                .stroke(AppTheme.goldGradient, lineWidth: 1.5)
+                .frame(width: size - bandWidth * 2, height: size - bandWidth * 2)
+
+            // Faint hairline in the middle of the band
+            Circle()
+                .stroke(AppTheme.gold.opacity(0.25), lineWidth: 0.5)
+                .frame(width: size - bandWidth, height: size - bandWidth)
+
+            // 4. Starfield around the band
+            ForEach(0..<24, id: \.self) { index in
+                let angle = Double(index) * (360.0 / 24.0)
+                let radians = angle * .pi / 180
+                let x = size / 2 + cos(radians) * starRadius
+                let y = size / 2 + sin(radians) * starRadius
+                let isLarge = index % 3 == 0
+
+                Image(systemName: isLarge ? "sparkle" : "star.fill")
+                    .font(.system(size: isLarge ? 7 : 3))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .opacity(isLarge ? 0.95 : 0.65)
+                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 2)
+                    .position(x: x, y: y)
+            }
+
+            // 5. Diamond ornaments at cardinal points
+            ForEach(0..<4, id: \.self) { index in
+                let angle = Double(index) * 90.0 - 90.0
+                let radians = angle * .pi / 180
+                let x = size / 2 + cos(radians) * starRadius
+                let y = size / 2 + sin(radians) * starRadius
+
+                Image(systemName: "diamond.fill")
+                    .font(.system(size: 9))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.8), radius: 3)
+                    .position(x: x, y: y)
+            }
+        }
+        .frame(width: size, height: size)
+        .allowsHitTesting(false)
+    }
+}
 
 struct WheelSegmentShape: Shape {
     let startAngle: Angle
