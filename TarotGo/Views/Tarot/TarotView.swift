@@ -363,24 +363,24 @@ struct MysticOuterRing: View {
                 .blur(radius: 6)
 
             // 3. Purple band fill
-            Circle()
-                .fill(
-                    LinearGradient(
-                        colors: [
-                            AppTheme.deepPurple.opacity(0.55),
-                            AppTheme.midNavy.opacity(0.5),
-                            AppTheme.deepPurple.opacity(0.55)
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
-                .frame(width: size, height: size)
+//            Circle()
+//                .fill(
+//                    LinearGradient(
+//                        colors: [
+//                            AppTheme.deepPurple.opacity(0.55),
+//                            AppTheme.midNavy.opacity(0.5),
+//                            AppTheme.deepPurple.opacity(0.55)
+//                        ],
+//                        startPoint: .topLeading,
+//                        endPoint: .bottomTrailing
+//                    )
+//                )
+//                .frame(width: size, height: size)
 
             // Interior fill (covers band where the wheel sits)
-            Circle()
-                .fill(AppTheme.deepPurple.opacity(0.35))
-                .frame(width: size - bandWidth * 2, height: size - bandWidth * 2)
+//            Circle()
+//                .fill(AppTheme.deepPurple.opacity(0.35))
+//                .frame(width: size - bandWidth * 2, height: size - bandWidth * 2)
 
             // 2. Outer gold stroke
             Circle()
@@ -389,9 +389,9 @@ struct MysticOuterRing: View {
                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 6)
 
             // 6. Inner gold stroke
-            Circle()
-                .stroke(AppTheme.goldGradient, lineWidth: 1.5)
-                .frame(width: size - bandWidth * 2, height: size - bandWidth * 2)
+//            Circle()
+//                .stroke(AppTheme.goldGradient, lineWidth: 1.5)
+//                .frame(width: size - bandWidth * 2, height: size - bandWidth * 2)
 
             // Faint hairline in the middle of the band
             Circle()
