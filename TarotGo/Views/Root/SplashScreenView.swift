@@ -16,10 +16,8 @@ struct SplashScreenView: View {
     
     var body: some View {
         ZStack {
-            // Elegant background matching app icon
-            AppTheme.backgroundGradient
-                .ignoresSafeArea()
-            
+            AnimatedBackgroundView()
+
             // Golden particles
             ParticleSystemView()
                 .opacity(particlesOpacity)
