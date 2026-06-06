@@ -263,40 +263,14 @@ struct TarotWheelMenuView: View {
                     .position(x: x, y: y)
                     .allowsHitTesting(false)
                 }
-
-                // Decorative dots between segments, sitting just inside each segment's inner edge
-                ForEach(0..<options.count, id: \.self) { index in
-                    let degrees = startAngleFor(index: index, segmentAngle: segmentAngle)
-                    let radians = degrees * .pi / 180
-                    let dotRadius = (innerRadius + centerCircleRadius) / 2
-                    let x = center.x + cos(radians) * dotRadius
-                    let y = center.y + sin(radians) * dotRadius
-
-                    Circle()
-                        .fill(AppTheme.gold)
-                        .frame(width: 5, height: 5)
-                        .shadow(color: AppTheme.gold.opacity(0.8), radius: 3)
-                        .position(x: x, y: y)
-                        .allowsHitTesting(false)
-                }
-
-                // Center circle
-                ZStack {
-                    Circle()
-                        .fill(AppTheme.deepNavy)
-                        .frame(width: centerCircleRadius * 2, height: centerCircleRadius * 2)
-
-                    Circle()
-                        .stroke(AppTheme.goldGradient, lineWidth: 2)
-                        .frame(width: centerCircleRadius * 2, height: centerCircleRadius * 2)
-
-                    Image(systemName: "sun.max.fill")
-                        .font(.system(size: centerCircleRadius * 1.1))
-                        .foregroundStyle(AppTheme.goldGradient)
-                        .shadow(color: AppTheme.gold.opacity(0.6), radius: 6)
-                }
-                .position(center)
-                .allowsHitTesting(false)
+                
+                
+                Image("sun512")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: centerCircleRadius * 2.6, height: centerCircleRadius * 2.6)
+                    .position(center)
+                    .allowsHitTesting(false)
             }
             .frame(width: size, height: size)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
