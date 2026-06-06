@@ -45,17 +45,7 @@ struct LearnPalmistryView: View {
                         }
                         .buttonStyle(MainButtonStyle())
                         
-                        // 2. Palm Basic Meanings
-                        NavigationLink(destination: PalmBasicMeaningsView()) {
-                            LearnOptionButton(
-                                icon: "hand.raised.palm.facing.fill",
-                                title: L10n.learnPalmistryBasicMeaningsTitle,
-                                subtitle: L10n.learnPalmistryBasicMeaningsSubtitle
-                            )
-                        }
-                        .buttonStyle(MainButtonStyle())
-                        
-                        // 3. How to Read
+                        // 2. How to Read
                         NavigationLink(destination: HowToReadPalmView()) {
                             LearnOptionButton(
                                 icon: "book.pages.fill",
@@ -65,7 +55,7 @@ struct LearnPalmistryView: View {
                         }
                         .buttonStyle(MainButtonStyle())
                         
-                        // 4. Palmistry & Mind
+                        // 3. Palmistry & Mind
                         NavigationLink(destination: PalmistryAndMindView()) {
                             LearnOptionButton(
                                 icon: "brain.head.profile.fill",
@@ -75,7 +65,7 @@ struct LearnPalmistryView: View {
                         }
                         .buttonStyle(MainButtonStyle())
                         
-                        // 5. FAQ
+                        // 4. FAQ
                         NavigationLink(destination: PalmistryFAQView()) {
                             LearnOptionButton(
                                 icon: "questionmark.circle.fill",
