@@ -59,7 +59,7 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.12, y: geo.size.height * 0.42)
+                            .position(x: geo.size.width * 0.13, y: geo.size.height * 0.35)
 
                             // Index — History of Palmistry
                             NavigationLink(destination: HistoryOfPalmistryView()) {
@@ -70,7 +70,7 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.30, y: geo.size.height * 0.14)
+                            .position(x: geo.size.width * 0.34, y: geo.size.height * 0.18)
 
                             // Middle — How to Read
                             NavigationLink(destination: HowToReadPalmView()) {
@@ -81,7 +81,7 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.48, y: geo.size.height * 0.07)
+                            .position(x: geo.size.width * 0.50, y: geo.size.height * 0.12)
 
                             // Ring — Palmistry & Mind
                             NavigationLink(destination: PalmistryAndMindView()) {
@@ -92,7 +92,7 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.66, y: geo.size.height * 0.11)
+                            .position(x: geo.size.width * 0.66, y: geo.size.height * 0.20)
 
                             // Pinky — FAQ
                             NavigationLink(destination: PalmistryFAQView()) {
@@ -103,7 +103,7 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.84, y: geo.size.height * 0.18)
+                            .position(x: geo.size.width * 0.87, y: geo.size.height * 0.32)
 
                             // Center of palm — Palm Reading (larger)
                             NavigationLink(destination: PalmReadingView()
@@ -136,21 +136,6 @@ private struct PalmFingerButton: View {
 
     var body: some View {
         VStack(spacing: 4) {
-            ZStack {
-                Circle()
-                    .fill(AppTheme.deepNavy.opacity(0.65))
-                    .frame(width: 44, height: 44)
-                    .overlay(
-                        Circle()
-                            .stroke(AppTheme.gold.opacity(0.6), lineWidth: 1)
-                    )
-                    .shadow(color: AppTheme.gold.opacity(0.25), radius: 10)
-
-                Image(systemName: icon)
-                    .font(.system(size: 18))
-                    .foregroundStyle(AppTheme.goldGradient)
-            }
-
             VStack(spacing: 1) {
                 Text(title)
                     .font(.system(size: 10, weight: .medium))
@@ -165,6 +150,21 @@ private struct PalmFingerButton: View {
                     .minimumScaleFactor(0.7)
             }
             .multilineTextAlignment(.center)
+            
+            ZStack {
+                Circle()
+                    .fill(AppTheme.deepNavy.opacity(0.65))
+                    .frame(width: 44, height: 44)
+                    .overlay(
+                        Circle()
+                            .stroke(AppTheme.gold.opacity(0.6), lineWidth: 1)
+                    )
+                    .shadow(color: AppTheme.gold.opacity(0.25), radius: 10)
+
+                Image(systemName: icon)
+                    .font(.system(size: 18))
+                    .foregroundStyle(AppTheme.goldGradient)
+            }
         }
         .frame(width: 96)
     }
