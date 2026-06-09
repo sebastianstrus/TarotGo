@@ -204,6 +204,9 @@ enum L10n {
 
     static let homeDestinyMatrix = NSLocalizedString("home.destinyMatrix", comment: "Destiny Matrix")
     static let homeDestinyMatrixSubtitle = NSLocalizedString("home.destinyMatrix.subtitle", comment: "Discover your life's blueprint")
+
+    static let homeCoupleDestiny = NSLocalizedString("home.coupleDestiny", comment: "Couple Destiny")
+    static let homeCoupleDestinySubtitle = NSLocalizedString("home.coupleDestiny.subtitle", comment: "Explore shared energy")
     
     static let homeCardDictionary = NSLocalizedString("home.cardDictionary", comment: "Card Dictionary")
     static let homeCardDictionarySubtitle = NSLocalizedString("home.cardDictionary.subtitle", comment: "Explore all 78 tarot cards")
