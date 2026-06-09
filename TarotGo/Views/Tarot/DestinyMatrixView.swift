@@ -109,7 +109,7 @@ struct DestinyMatrixView: View {
         GeometryReader { geometry in
             let side = min(geometry.size.width - 20, geometry.size.height)
             let ringSize = side
-            let buttonRadius = ringSize * 0.42
+            let buttonRadius = ringSize * 0.39
 
             ZStack {
                 // Outer ring decoration
@@ -136,7 +136,7 @@ struct DestinyMatrixView: View {
                         icon: "star.circle.fill",
                         title: L10n.homeDestinyMatrix,
                         subtitle: L10n.homeDestinyMatrixSubtitle,
-                        labelPosition: .below
+                        labelPosition: .above
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
@@ -152,7 +152,7 @@ struct DestinyMatrixView: View {
                         icon: "heart.circle.fill",
                         title: L10n.homeCoupleDestiny,
                         subtitle: L10n.homeCoupleDestinySubtitle,
-                        labelPosition: .right
+                        labelPosition: .below
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
@@ -168,7 +168,7 @@ struct DestinyMatrixView: View {
                         icon: "graduationcap.fill",
                         title: L10n.homeLearnDestinyMatrix,
                         subtitle: L10n.homeLearnDestinyMatrixSubtitle,
-                        labelPosition: .above
+                        labelPosition: .below
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
@@ -184,7 +184,7 @@ struct DestinyMatrixView: View {
                         icon: "star.square.on.square.fill",
                         title: L10n.homeMatrixHistory,
                         subtitle: L10n.homeMatrixHistorySubtitle,
-                        labelPosition: .left
+                        labelPosition: .below
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
