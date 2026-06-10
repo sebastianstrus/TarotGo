@@ -130,10 +130,10 @@ private struct CosmicOrbitMenu: View {
                 )
 
                 node(
-                    icon: "circle.grid.cross.fill",
-                    title: L10n.cosmogramTitle,
-                    subtitle: L10n.cosmogramSubtitle,
-                    destination: AnyView(CosmogramView()),
+                    icon: "heart.circle.fill",
+                    title: L10n.compatibilityTitle,
+                    subtitle: L10n.compatibilitySubtitle,
+                    destination: AnyView(CompatibilityView()),
                     center: center,
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
@@ -143,10 +143,10 @@ private struct CosmicOrbitMenu: View {
                 )
 
                 node(
-                    icon: "heart.circle.fill",
-                    title: L10n.compatibilityTitle,
-                    subtitle: L10n.compatibilitySubtitle,
-                    destination: AnyView(CompatibilityView()),
+                    icon: "circle.grid.cross.fill",
+                    title: L10n.cosmogramTitle,
+                    subtitle: L10n.cosmogramSubtitle,
+                    destination: AnyView(CosmogramView()),
                     center: center,
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
