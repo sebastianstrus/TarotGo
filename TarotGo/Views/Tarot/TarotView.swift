@@ -311,49 +311,16 @@ struct MysticOuterRing: View {
 
     var body: some View {
         ZStack {
-            // 1. Soft outer glow
             Circle()
                 .stroke(AppTheme.gold.opacity(0.35), lineWidth: 8)
                 .frame(width: size + 4, height: size + 4)
                 .blur(radius: 6)
 
-            // 3. Purple band fill
-//            Circle()
-//                .fill(
-//                    LinearGradient(
-//                        colors: [
-//                            AppTheme.deepPurple.opacity(0.55),
-//                            AppTheme.midNavy.opacity(0.5),
-//                            AppTheme.deepPurple.opacity(0.55)
-//                        ],
-//                        startPoint: .topLeading,
-//                        endPoint: .bottomTrailing
-//                    )
-//                )
-//                .frame(width: size, height: size)
-
-            // Interior fill (covers band where the wheel sits)
-//            Circle()
-//                .fill(AppTheme.deepPurple.opacity(0.35))
-//                .frame(width: size - bandWidth * 2, height: size - bandWidth * 2)
-
-            // 2. Outer gold stroke
             Circle()
                 .stroke(AppTheme.goldGradient, lineWidth: 1.5)
                 .frame(width: size, height: size)
                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 6)
 
-            // 6. Inner gold stroke
-//            Circle()
-//                .stroke(AppTheme.goldGradient, lineWidth: 1.5)
-//                .frame(width: size - bandWidth * 2, height: size - bandWidth * 2)
-
-            // Faint hairline in the middle of the band
-            Circle()
-                .stroke(AppTheme.gold.opacity(0.25), lineWidth: 0.5)
-                .frame(width: size - bandWidth, height: size - bandWidth)
-
-            // 4. Starfield around the band
             ForEach(0..<24, id: \.self) { index in
                 let angle = Double(index) * (360.0 / 24.0)
                 let radians = angle * .pi / 180
@@ -369,7 +336,6 @@ struct MysticOuterRing: View {
                     .position(x: x, y: y)
             }
 
-            // 5. Diamond ornaments at cardinal points
             ForEach(0..<4, id: \.self) { index in
                 let angle = Double(index) * 90.0 - 90.0
                 let radians = angle * .pi / 180
