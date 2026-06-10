@@ -198,24 +198,20 @@ struct TarotWheelMenuView: View {
                     let startAngle = rawStart + segmentGapDegrees / 2
                     let endAngle = rawStart + segmentAngle - segmentGapDegrees / 2
 
-                    RoundedWheelSegmentShape(
-                        startAngle: .degrees(startAngle),
-                        endAngle: .degrees(endAngle),
-                        innerRadius: innerRadius,
-                        outerRadius: outerRadius,
-                        cornerRadius: segmentCornerRadius
-                    )
-                    .fill(
-                        LinearGradient(
-                            colors: [
-                                AppTheme.midNavy.opacity(0.85),
-                                AppTheme.deepNavy.opacity(0.9)
-                            ],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
+                    Image("bg-button")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: size, height: size)
+                        .clipShape(
+                            RoundedWheelSegmentShape(
+                                startAngle: .degrees(startAngle),
+                                endAngle: .degrees(endAngle),
+                                innerRadius: innerRadius,
+                                outerRadius: outerRadius,
+                                cornerRadius: segmentCornerRadius
+                            )
                         )
-                    )
-                    .overlay(
+                        .overlay(
                         RoundedWheelSegmentShape(
                             startAngle: .degrees(startAngle),
                             endAngle: .degrees(endAngle),
