@@ -99,8 +99,8 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: -0.18,
-                    relY: -0.42,
-                    labelOffset: CGSize(width: 0, height: 38)
+                    relY: -0.25,
+                    labelOffset: CGSize(width: 0, height: -50)
                 )
 
                 node(
@@ -111,10 +111,9 @@ private struct CosmicOrbitMenu: View {
                     center: center,
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
-                    relX: 0.38,
-                    relY: -0.28,
-                    labelOffset: CGSize(width: 50, height: 0),
-                    labelAlignment: .leading
+                    relX: 0.26,
+                    relY: -0.30,
+                    labelOffset: CGSize(width: 0, height: -50)
                 )
 
                 node(
@@ -125,10 +124,9 @@ private struct CosmicOrbitMenu: View {
                     center: center,
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
-                    relX: -0.40,
-                    relY: 0.05,
-                    labelOffset: CGSize(width: -50, height: 0),
-                    labelAlignment: .trailing
+                    relX: -0.35,
+                    relY: 0.21,
+                    labelOffset: CGSize(width: 0, height: 50),
                 )
 
                 node(
@@ -139,9 +137,9 @@ private struct CosmicOrbitMenu: View {
                     center: center,
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
-                    relX: -0.05,
-                    relY: 0.30,
-                    labelOffset: CGSize(width: 0, height: 38)
+                    relX: -0.02,
+                    relY: 0.28,
+                    labelOffset: CGSize(width: 0, height: 50)
                 )
 
                 node(
@@ -152,9 +150,9 @@ private struct CosmicOrbitMenu: View {
                     center: center,
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
-                    relX: 0.34,
-                    relY: 0.36,
-                    labelOffset: CGSize(width: 0, height: 38)
+                    relX: 0.32,
+                    relY: 0.12,
+                    labelOffset: CGSize(width: 0, height: 50)
                 )
             }
             .frame(width: w, height: h)
