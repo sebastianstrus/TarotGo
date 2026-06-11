@@ -199,6 +199,12 @@ private struct CircularRingButton: View {
 
     var body: some View {
         ZStack {
+            Image("bg-button")
+                .resizable()
+                .scaledToFit()
+                .clipShape(Circle())
+                .frame(width: buttonSize * 0.82, height: buttonSize * 0.82)
+
             Image("button-ring")
                 .resizable()
                 .scaledToFit()
