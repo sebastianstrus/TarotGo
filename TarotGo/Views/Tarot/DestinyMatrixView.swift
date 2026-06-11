@@ -123,7 +123,7 @@ struct DestinyMatrixView: View {
                 Image("inner-ring")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: ringSize * 0.36, height: ringSize * 0.36)
+                    .frame(width: ringSize * 0.5, height: ringSize * 0.5)
                     .shadow(color: AppTheme.gold.opacity(0.5), radius: 12)
 
                 // Top button - Destiny Matrix
