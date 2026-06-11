@@ -134,8 +134,7 @@ struct DestinyMatrixView: View {
                 } label: {
                     CircularRingButton(
                         icon: "star.circle.fill",
-                        title: L10n.homeDestinyMatrix,
-                        labelPosition: .above
+                        title: L10n.homeDestinyMatrix
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
@@ -149,8 +148,7 @@ struct DestinyMatrixView: View {
                 } label: {
                     CircularRingButton(
                         icon: "heart.circle.fill",
-                        title: L10n.homeCoupleDestiny,
-                        labelPosition: .below
+                        title: L10n.homeCoupleDestiny
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
@@ -164,8 +162,7 @@ struct DestinyMatrixView: View {
                 } label: {
                     CircularRingButton(
                         icon: "graduationcap.fill",
-                        title: L10n.homeLearnDestinyMatrix,
-                        labelPosition: .below
+                        title: L10n.homeLearnDestinyMatrix
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
@@ -179,8 +176,7 @@ struct DestinyMatrixView: View {
                 } label: {
                     CircularRingButton(
                         icon: "star.square.on.square.fill",
-                        title: L10n.homeMatrixHistory,
-                        labelPosition: .below
+                        title: L10n.homeMatrixHistory
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
@@ -195,69 +191,36 @@ struct DestinyMatrixView: View {
 
 // MARK: - Circular Ring Button
 
-private enum RingButtonLabelPosition {
-    case above, below, left, right
-}
-
 private struct CircularRingButton: View {
     let icon: String
     let title: String
-    let labelPosition: RingButtonLabelPosition
 
-    private let iconSize: CGFloat = 58
-    private let labelGap: CGFloat = 10
-    private let labelWidth: CGFloat = 110
+    private let buttonSize: CGFloat = 110
 
     var body: some View {
         ZStack {
-            // Icon stays centered at (0, 0) in the local coordinate system
-            ZStack {
-                Circle()
-                    .fill(AppTheme.cardGradient)
-                    .frame(width: iconSize, height: iconSize)
-                    .overlay(
-                        Circle()
-                            .stroke(AppTheme.goldGradient, lineWidth: 1.5)
-                    )
-                    .shadow(color: AppTheme.gold.opacity(0.5), radius: 8)
+            Image("button-ring")
+                .resizable()
+                .scaledToFit()
+                .frame(width: buttonSize, height: buttonSize)
+                .shadow(color: AppTheme.gold.opacity(0.5), radius: 8)
 
+            VStack(spacing: 6) {
                 Image(systemName: icon)
                     .font(.system(size: 24))
                     .foregroundStyle(AppTheme.goldGradient)
+
+                Text(title)
+                    .font(AppTheme.serifFont(size: 12, weight: .medium))
+                    .foregroundColor(AppTheme.textPrimary)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.7)
+                    .frame(width: buttonSize * 0.65)
             }
-
-            // Label positioned via offset so it doesn't change the button's hit area
-            labelView
-                .offset(labelOffset)
         }
-        .frame(width: iconSize, height: iconSize)
-        .contentShape(Rectangle())
-    }
-
-    private var labelView: some View {
-        VStack(spacing: 2) {
-            Text(title)
-                .font(AppTheme.serifFont(size: 14, weight: .medium))
-                .foregroundColor(AppTheme.textPrimary)
-                .lineLimit(1)
-                .minimumScaleFactor(0.8)
-        }
-        .frame(width: labelWidth)
-    }
-
-    private var labelOffset: CGSize {
-        let verticalGap = iconSize / 2 + labelGap + 18
-        let horizontalGap = iconSize / 2 + labelGap + labelWidth / 2
-        switch labelPosition {
-        case .above:
-            return CGSize(width: 0, height: -verticalGap)
-        case .below:
-            return CGSize(width: 0, height: verticalGap)
-        case .left:
-            return CGSize(width: -horizontalGap, height: 0)
-        case .right:
-            return CGSize(width: horizontalGap, height: 0)
-        }
+        .frame(width: buttonSize, height: buttonSize)
+        .contentShape(Circle())
     }
 }
 
