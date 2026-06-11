@@ -98,8 +98,7 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: -0.18,
-                    relY: -0.25,
-                    labelOffset: CGSize(width: 0, height: -50)
+                    relY: -0.25
                 )
 
                 node(
@@ -110,8 +109,7 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: 0.26,
-                    relY: -0.30,
-                    labelOffset: CGSize(width: 0, height: -50)
+                    relY: -0.30
                 )
 
                 node(
@@ -122,8 +120,7 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: -0.35,
-                    relY: 0.21,
-                    labelOffset: CGSize(width: 0, height: 50),
+                    relY: 0.21
                 )
 
                 node(
@@ -134,8 +131,7 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: -0.02,
-                    relY: 0.28,
-                    labelOffset: CGSize(width: 0, height: 50)
+                    relY: 0.28
                 )
 
                 node(
@@ -146,8 +142,7 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: 0.32,
-                    relY: 0.12,
-                    labelOffset: CGSize(width: 0, height: 50)
+                    relY: 0.12
                 )
             }
             .frame(width: w, height: h)
@@ -165,9 +160,7 @@ private struct CosmicOrbitMenu: View {
         bgWidth: CGFloat,
         bgHeight: CGFloat,
         relX: CGFloat,
-        relY: CGFloat,
-        labelOffset: CGSize,
-        labelAlignment: TextAlignment = .center
+        relY: CGFloat
     ) -> some View {
         let x = center.x + bgWidth * relX
         let y = center.y + bgHeight * relY
@@ -175,12 +168,7 @@ private struct CosmicOrbitMenu: View {
         NavigationLink {
             destination
         } label: {
-            CosmicOrbitNode(
-                icon: icon,
-                title: title,
-                labelOffset: labelOffset,
-                labelAlignment: labelAlignment
-            )
+            CosmicOrbitNode(icon: icon, title: title)
         }
         .buttonStyle(CosmicNodeButtonStyle())
         .simultaneousGesture(TapGesture().onEnded {
@@ -196,44 +184,39 @@ private struct CosmicOrbitMenu: View {
 private struct CosmicOrbitNode: View {
     let icon: String
     let title: String
-    let labelOffset: CGSize
-    let labelAlignment: TextAlignment
 
     private let buttonSize: CGFloat = 90
 
     var body: some View {
         ZStack {
-            // The clickable round button
-            ZStack {
-                Image("bg-ring")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: buttonSize, height: buttonSize)
-                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
+            Image("bg-ring")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: buttonSize, height: buttonSize)
+                .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
 
-                Image(systemName: icon)
-                    .font(.system(size: 22, weight: .semibold))
-                    .foregroundStyle(AppTheme.goldGradient)
-            }
+            Image(systemName: icon)
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundStyle(AppTheme.goldGradient)
 
-            // Label
-            VStack(alignment: horizontalAlignment, spacing: 2) {
-                Text(title)
-                    .font(AppTheme.serifFont(size: 13, weight: .semibold))
-                    .foregroundColor(AppTheme.textPrimary)
-            }
-            .multilineTextAlignment(labelAlignment)
-            .fixedSize(horizontal: true, vertical: false)
-            .shadow(color: .black.opacity(0.6), radius: 4)
-            .offset(labelOffset)
-        }
-    }
-
-    private var horizontalAlignment: HorizontalAlignment {
-        switch labelAlignment {
-        case .leading: return .leading
-        case .trailing: return .trailing
-        case .center: return .center
+            // Curved label docked on the bottom edge of the ring
+            Text(title)
+                .font(AppTheme.serifFont(size: 11, weight: .semibold))
+                .foregroundStyle(AppTheme.goldGradient)
+                .lineLimit(1)
+                .fixedSize(horizontal: true, vertical: false)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 4)
+                .background(
+                    Capsule()
+                        .fill(AppTheme.deepNavy)
+                )
+                .overlay(
+                    Capsule()
+                        .stroke(AppTheme.goldGradient, lineWidth: 1)
+                )
+                .shadow(color: .black.opacity(0.6), radius: 3)
+                .offset(y: buttonSize / 2 - 6)
         }
     }
 }
