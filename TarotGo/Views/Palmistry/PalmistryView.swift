@@ -61,26 +61,17 @@ struct PalmistryView: View {
                             .position(x: geo.size.width * 0.13, y: geo.size.height * 0.35)
 
                             // Index — History of Palmistry
-                            NavigationLink(destination: HistoryOfPalmistryView()) {
+
+                            NavigationLink(destination: PalmistryFAQView()) {
                                 PalmFingerButton(
-                                    icon: "scroll.fill",
-                                    title: L10n.learnPalmistryHistoryTitle
+                                    icon: "questionmark.circle.fill",
+                                    title: L10n.learnPalmistryFaqTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
                             .position(x: geo.size.width * 0.34, y: geo.size.height * 0.18)
 
                             // Middle — How to Read
-                            NavigationLink(destination: HowToReadPalmView()) {
-                                PalmFingerButton(
-                                    icon: "book.pages.fill",
-                                    title: L10n.learnPalmistryHowToReadTitle
-                                )
-                            }
-                            .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.50, y: geo.size.height * 0.12)
-
-                            // Ring — Palmistry & Mind
                             NavigationLink(destination: PalmistryAndMindView()) {
                                 PalmFingerButton(
                                     icon: "brain.head.profile.fill",
@@ -88,13 +79,23 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
+                            .position(x: geo.size.width * 0.50, y: geo.size.height * 0.12)
+
+                            // Ring — Palmistry & Mind
+                            NavigationLink(destination: HowToReadPalmView()) {
+                                PalmFingerButton(
+                                    icon: "book.pages.fill",
+                                    title: L10n.learnPalmistryHowToReadTitle
+                                )
+                            }
+                            .buttonStyle(NavigationButtonStyle())
                             .position(x: geo.size.width * 0.66, y: geo.size.height * 0.20)
 
                             // Pinky — FAQ
-                            NavigationLink(destination: PalmistryFAQView()) {
+                            NavigationLink(destination: HistoryOfPalmistryView()) {
                                 PalmFingerButton(
-                                    icon: "questionmark.circle.fill",
-                                    title: L10n.learnPalmistryFaqTitle
+                                    icon: "scroll.fill",
+                                    title: L10n.learnPalmistryHistoryTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
