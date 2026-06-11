@@ -199,31 +199,21 @@ private struct CosmicOrbitNode: View {
     let labelOffset: CGSize
     let labelAlignment: TextAlignment
 
-    private let buttonSize: CGFloat = 52
+    private let buttonSize: CGFloat = 90
 
     var body: some View {
         ZStack {
             // The clickable round button
             ZStack {
-                Circle()
-                    .fill(
-                        RadialGradient(
-                            colors: [AppTheme.lightGold, AppTheme.gold, AppTheme.darkGold],
-                            center: .center,
-                            startRadius: 2,
-                            endRadius: buttonSize / 2
-                        )
-                    )
+                Image("bg-ring")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                     .frame(width: buttonSize, height: buttonSize)
-                    .overlay(
-                        Circle()
-                            .stroke(AppTheme.lightGold.opacity(0.9), lineWidth: 1)
-                    )
                     .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
 
                 Image(systemName: icon)
                     .font(.system(size: 22, weight: .semibold))
-                    .foregroundColor(AppTheme.deepNavy)
+                    .foregroundStyle(AppTheme.goldGradient)
             }
 
             // Label
