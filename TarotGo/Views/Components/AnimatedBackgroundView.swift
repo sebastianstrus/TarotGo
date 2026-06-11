@@ -23,8 +23,8 @@ struct AnimatedBackgroundView: View {
                     startRadius: 0,
                     endRadius: 80
                 )
-                .frame(width: 180, height: 180)
-                .blur(radius: 8)
+                .frame(width: 120, height: 120)
+                .blur(radius: 5)
                 .tag("circle")
             }
             .ignoresSafeArea()
@@ -43,11 +43,11 @@ extension VortexSystem {
         tags: ["circle"],
         position: [0.5, 1.15],
         shape: .box(width: 1.2, height: 0.1),
-        birthRate: 18,
-        lifespan: 105,
-        lifespanVariation: 30,
-        speed: 0.02,
-        speedVariation: 0.01,
+        birthRate: 8,
+        lifespan: 40,
+        lifespanVariation: 10,
+        speed: 0.001,
+        speedVariation: 0.001,
         angle: .degrees(0),
         angleRange: .degrees(40),
         acceleration: [0, -0.01],

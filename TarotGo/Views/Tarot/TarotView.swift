@@ -111,9 +111,9 @@ struct TarotView: View {
                 destination: .cardOfDay
             ),
             TarotWheelOption(
-                icon: "books.vertical.fill",
-                title: L10n.homeCardDictionary,
-                destination: .dictionary
+                icon: "graduationcap.fill",
+                title: L10n.homeLearnTarot,
+                destination: .learn
             ),
             TarotWheelOption(
                 icon: "book.fill",
@@ -121,9 +121,9 @@ struct TarotView: View {
                 destination: .history
             ),
             TarotWheelOption(
-                icon: "graduationcap.fill",
-                title: L10n.homeLearnTarot,
-                destination: .learn
+                icon: "books.vertical.fill",
+                title: L10n.homeCardDictionary,
+                destination: .dictionary
             )
         ]
     }
@@ -248,12 +248,15 @@ struct TarotWheelMenuView: View {
                             .foregroundStyle(AppTheme.goldGradient)
 
                         Text(option.title)
-                            .font(AppTheme.serifFont(size: 12, weight: .medium))
+                            .font(AppTheme.serifFont(size: 11, weight: .semibold))
+                            .textCase(.uppercase)
+                            .tracking(0.3)
                             .foregroundStyle(AppTheme.goldGradient)
                             .multilineTextAlignment(.center)
                             .lineLimit(2)
-                            .minimumScaleFactor(0.7)
+                            .minimumScaleFactor(0.6)
                             .fixedSize(horizontal: false, vertical: true)
+                            .shadow(color: .black.opacity(0.6), radius: 3, x: 0, y: 1)
                     }
                     .frame(width: segmentLabelWidth(outerRadius: outerRadius, innerRadius: innerRadius))
                     .position(x: x, y: y)
@@ -282,7 +285,7 @@ struct TarotWheelMenuView: View {
 
     private func segmentLabelWidth(outerRadius: CGFloat, innerRadius: CGFloat) -> CGFloat {
         // Roughly the chord width at the label radius
-        max(60, (outerRadius - innerRadius) * 0.95)
+        max(60, (outerRadius - innerRadius) * 0.80)
     }
 }
 
