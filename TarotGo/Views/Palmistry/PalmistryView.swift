@@ -54,8 +54,7 @@ struct PalmistryView: View {
                             NavigationLink(destination: PalmReadingHistoryView()) {
                                 PalmFingerButton(
                                     icon: "book.fill",
-                                    title: L10n.palmHistoryButtonTitle,
-                                    subtitle: L10n.palmHistoryButtonSubtitle
+                                    title: L10n.palmHistoryButtonTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -65,8 +64,7 @@ struct PalmistryView: View {
                             NavigationLink(destination: HistoryOfPalmistryView()) {
                                 PalmFingerButton(
                                     icon: "scroll.fill",
-                                    title: L10n.learnPalmistryHistoryTitle,
-                                    subtitle: L10n.learnPalmistryHistorySubtitle
+                                    title: L10n.learnPalmistryHistoryTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -76,8 +74,7 @@ struct PalmistryView: View {
                             NavigationLink(destination: HowToReadPalmView()) {
                                 PalmFingerButton(
                                     icon: "book.pages.fill",
-                                    title: L10n.learnPalmistryHowToReadTitle,
-                                    subtitle: L10n.learnPalmistryHowToReadSubtitle
+                                    title: L10n.learnPalmistryHowToReadTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -87,8 +84,7 @@ struct PalmistryView: View {
                             NavigationLink(destination: PalmistryAndMindView()) {
                                 PalmFingerButton(
                                     icon: "brain.head.profile.fill",
-                                    title: L10n.learnPalmistryMindTitle,
-                                    subtitle: L10n.learnPalmistryMindSubtitle
+                                    title: L10n.learnPalmistryMindTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -98,8 +94,7 @@ struct PalmistryView: View {
                             NavigationLink(destination: PalmistryFAQView()) {
                                 PalmFingerButton(
                                     icon: "questionmark.circle.fill",
-                                    title: L10n.learnPalmistryFaqTitle,
-                                    subtitle: L10n.learnPalmistryFaqSubtitle
+                                    title: L10n.learnPalmistryFaqTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -111,8 +106,7 @@ struct PalmistryView: View {
                             ) {
                                 PalmCenterButton(
                                     icon: "hand.raised.palm.facing.fill",
-                                    title: L10n.palmReadingTitle,
-                                    subtitle: L10n.palmReadingSubtitle
+                                    title: L10n.palmReadingTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -128,11 +122,10 @@ struct PalmistryView: View {
     }
 }
 
-/// Compact fingertip button — gold-circle icon with title and subtitle below.
+/// Compact fingertip button — gold-circle icon with title below.
 private struct PalmFingerButton: View {
     let icon: String
     let title: String
-    let subtitle: String
 
     var body: some View {
         VStack(spacing: 4) {
@@ -142,15 +135,9 @@ private struct PalmFingerButton: View {
                     .foregroundColor(AppTheme.textPrimary)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
-
-                Text(subtitle)
-                    .font(.system(size: 8, weight: .light))
-                    .foregroundColor(AppTheme.textTertiary)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
             }
             .multilineTextAlignment(.center)
-            
+
             ZStack {
                 Circle()
                     .fill(AppTheme.deepNavy.opacity(0.65))
@@ -170,11 +157,10 @@ private struct PalmFingerButton: View {
     }
 }
 
-/// Larger center-of-palm button — gold-circle icon with title and subtitle below.
+/// Larger center-of-palm button — gold-circle icon with title below.
 private struct PalmCenterButton: View {
     let icon: String
     let title: String
-    let subtitle: String
 
     var body: some View {
         VStack(spacing: 6) {
@@ -198,12 +184,6 @@ private struct PalmCenterButton: View {
                     .font(AppTheme.serifFont(size: 15, weight: .medium))
                     .foregroundColor(AppTheme.textPrimary)
                     .lineLimit(1)
-
-                Text(subtitle)
-                    .font(.system(size: 11, weight: .light))
-                    .foregroundColor(AppTheme.textTertiary)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
             }
             .multilineTextAlignment(.center)
         }

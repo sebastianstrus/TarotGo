@@ -93,7 +93,6 @@ private struct CosmicOrbitMenu: View {
                 node(
                     icon: "sparkle.magnifyingglass",
                     title: L10n.horoscopeTitle,
-                    subtitle: L10n.horoscopeSubtitle,
                     destination: AnyView(HoroscopeView()),
                     center: center,
                     bgWidth: bgWidth,
@@ -106,7 +105,6 @@ private struct CosmicOrbitMenu: View {
                 node(
                     icon: "moon.circle.fill",
                     title: L10n.lunarCalendarTitle,
-                    subtitle: L10n.lunarCalendarSubtitle,
                     destination: AnyView(LunarCalendarView()),
                     center: center,
                     bgWidth: bgWidth,
@@ -119,7 +117,6 @@ private struct CosmicOrbitMenu: View {
                 node(
                     icon: "number.circle.fill",
                     title: L10n.numerologyTitle,
-                    subtitle: L10n.numerologySubtitle,
                     destination: AnyView(NumerologyView()),
                     center: center,
                     bgWidth: bgWidth,
@@ -132,7 +129,6 @@ private struct CosmicOrbitMenu: View {
                 node(
                     icon: "heart.circle.fill",
                     title: L10n.compatibilityTitle,
-                    subtitle: L10n.compatibilitySubtitle,
                     destination: AnyView(CompatibilityView()),
                     center: center,
                     bgWidth: bgWidth,
@@ -145,7 +141,6 @@ private struct CosmicOrbitMenu: View {
                 node(
                     icon: "circle.grid.cross.fill",
                     title: L10n.cosmogramTitle,
-                    subtitle: L10n.cosmogramSubtitle,
                     destination: AnyView(CosmogramView()),
                     center: center,
                     bgWidth: bgWidth,
@@ -165,7 +160,6 @@ private struct CosmicOrbitMenu: View {
     private func node(
         icon: String,
         title: String,
-        subtitle: String,
         destination: AnyView,
         center: CGPoint,
         bgWidth: CGFloat,
@@ -184,7 +178,6 @@ private struct CosmicOrbitMenu: View {
             CosmicOrbitNode(
                 icon: icon,
                 title: title,
-                subtitle: subtitle,
                 labelOffset: labelOffset,
                 labelAlignment: labelAlignment
             )
@@ -203,7 +196,6 @@ private struct CosmicOrbitMenu: View {
 private struct CosmicOrbitNode: View {
     let icon: String
     let title: String
-    let subtitle: String
     let labelOffset: CGSize
     let labelAlignment: TextAlignment
 
@@ -239,9 +231,6 @@ private struct CosmicOrbitNode: View {
                 Text(title)
                     .font(AppTheme.serifFont(size: 13, weight: .semibold))
                     .foregroundColor(AppTheme.textPrimary)
-                Text(subtitle)
-                    .font(.system(size: 10, weight: .light))
-                    .foregroundColor(AppTheme.textTertiary)
             }
             .multilineTextAlignment(labelAlignment)
             .fixedSize(horizontal: true, vertical: false)

@@ -135,7 +135,6 @@ struct DestinyMatrixView: View {
                     CircularRingButton(
                         icon: "star.circle.fill",
                         title: L10n.homeDestinyMatrix,
-                        subtitle: L10n.homeDestinyMatrixSubtitle,
                         labelPosition: .above
                     )
                 }
@@ -151,7 +150,6 @@ struct DestinyMatrixView: View {
                     CircularRingButton(
                         icon: "heart.circle.fill",
                         title: L10n.homeCoupleDestiny,
-                        subtitle: L10n.homeCoupleDestinySubtitle,
                         labelPosition: .below
                     )
                 }
@@ -167,7 +165,6 @@ struct DestinyMatrixView: View {
                     CircularRingButton(
                         icon: "graduationcap.fill",
                         title: L10n.homeLearnDestinyMatrix,
-                        subtitle: L10n.homeLearnDestinyMatrixSubtitle,
                         labelPosition: .below
                     )
                 }
@@ -183,7 +180,6 @@ struct DestinyMatrixView: View {
                     CircularRingButton(
                         icon: "star.square.on.square.fill",
                         title: L10n.homeMatrixHistory,
-                        subtitle: L10n.homeMatrixHistorySubtitle,
                         labelPosition: .below
                     )
                 }
@@ -206,7 +202,6 @@ private enum RingButtonLabelPosition {
 private struct CircularRingButton: View {
     let icon: String
     let title: String
-    let subtitle: String
     let labelPosition: RingButtonLabelPosition
 
     private let iconSize: CGFloat = 58
@@ -246,12 +241,6 @@ private struct CircularRingButton: View {
                 .foregroundColor(AppTheme.textPrimary)
                 .lineLimit(1)
                 .minimumScaleFactor(0.8)
-
-            Text(subtitle)
-                .font(.system(size: 10, weight: .light))
-                .foregroundColor(AppTheme.textTertiary)
-                .multilineTextAlignment(.center)
-                .lineLimit(2)
         }
         .frame(width: labelWidth)
     }
