@@ -50,7 +50,7 @@ struct PalmistryView: View {
                                 .frame(width: geo.size.width, height: geo.size.height)
 
                             NavigationLink(destination: PalmReadingHistoryView()) {
-                                PalmFingerButton(
+                                PalmButton(
                                     icon: "book.fill",
                                     title: L10n.palmHistoryButtonTitle
                                 )
@@ -58,26 +58,26 @@ struct PalmistryView: View {
                             .buttonStyle(NavigationButtonStyle())
                             .position(x: geo.size.width * 0.13, y: geo.size.height * 0.35)
 
-                            NavigationLink(destination: PalmistryFAQView()) {
-                                PalmFingerButton(
-                                    icon: "questionmark.circle.fill",
-                                    title: L10n.learnPalmistryFaqTitle
+                            NavigationLink(destination: PalmistryAndMindView()) {
+                                PalmButton(
+                                    icon: "brain.head.profile.fill",
+                                    title: L10n.learnPalmistryMindTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
                             .position(x: geo.size.width * 0.34, y: geo.size.height * 0.18)
 
-                            NavigationLink(destination: PalmistryAndMindView()) {
-                                PalmFingerButton(
-                                    icon: "brain.head.profile.fill",
-                                    title: L10n.learnPalmistryMindTitle
+                            NavigationLink(destination: PalmistryFAQView()) {
+                                PalmButton(
+                                    icon: "questionmark.circle.fill",
+                                    title: L10n.learnPalmistryFaqTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
                             .position(x: geo.size.width * 0.50, y: geo.size.height * 0.12)
 
                             NavigationLink(destination: HowToReadPalmView()) {
-                                PalmFingerButton(
+                                PalmButton(
                                     icon: "book.pages.fill",
                                     title: L10n.learnPalmistryHowToReadTitle
                                 )
@@ -86,7 +86,7 @@ struct PalmistryView: View {
                             .position(x: geo.size.width * 0.66, y: geo.size.height * 0.20)
 
                             NavigationLink(destination: HistoryOfPalmistryView()) {
-                                PalmFingerButton(
+                                PalmButton(
                                     icon: "scroll.fill",
                                     title: L10n.learnPalmistryHistoryTitle
                                 )
@@ -97,9 +97,10 @@ struct PalmistryView: View {
                             NavigationLink(destination: PalmReadingView()
                                 .toolbar(.hidden, for: .tabBar)
                             ) {
-                                PalmCenterButton(
+                                PalmButton(
                                     icon: "hand.raised.palm.facing.fill",
-                                    title: L10n.palmReadingTitle
+                                    title: L10n.palmReadingTitle,
+                                    scale: 1.6
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -115,72 +116,211 @@ struct PalmistryView: View {
     }
 }
 
-/// Compact fingertip button — gold-circle icon with title below.
-private struct PalmFingerButton: View {
+private struct PalmButton: View {
     let icon: String
     let title: String
+    var scale: CGFloat = 1.0
+
+    private var circleSize: CGFloat { 90 * scale }
+    private var capsuleThickness: CGFloat { 16 * scale }
+    private var fontSize: CGFloat { 9 * scale }
+    private var iconSize: CGFloat { 22 * scale }
+    // Midline of the capsule sits exactly on the ring's border
+    private var arcRadius: CGFloat { circleSize / 2 }
+    // Square frame large enough to hold the full capsule centered on the ring center
+    private var capsuleFrameSize: CGFloat { circleSize + capsuleThickness + 2 * scale }
+
+    private var angleSpan: Double {
+        let attrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: fontSize, weight: .semibold)
+        ]
+        let textWidth = (title as NSString).size(withAttributes: attrs).width
+        let textAngle = Double(textWidth / arcRadius)
+        return textAngle + 0.28
+    }
 
     var body: some View {
-        VStack(spacing: 4) {
-            VStack(spacing: 1) {
-                Text(title)
-                    .font(.system(size: 10, weight: .medium))
-                    .foregroundColor(AppTheme.textPrimary)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-            }
-            .multilineTextAlignment(.center)
+        ZStack {
+            // Ring & icon
+            Image("bg-button")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: circleSize / 2, height: circleSize / 2)
+                .clipShape(Circle())
 
+            Image("bg-palmring")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: circleSize, height: circleSize)
+                .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
+
+            Image(systemName: icon)
+                .font(.system(size: iconSize, weight: .semibold))
+                .foregroundStyle(AppTheme.goldGradient)
+
+            // Curved capsule label centered on ring center
             ZStack {
-                Circle()
-                    .fill(AppTheme.deepNavy.opacity(0.65))
-                    .frame(width: 44, height: 44)
-                    .overlay(
-                        Circle()
-                            .stroke(AppTheme.gold.opacity(0.6), lineWidth: 1)
-                    )
-                    .shadow(color: AppTheme.gold.opacity(0.25), radius: 10)
+                let canvasCenter = capsuleFrameSize / 2
+                ForEach([
+                    Double.pi / 2 - angleSpan / 2,
+                    Double.pi / 2 + angleSpan / 2
+                ], id: \.self) { angle in
+                    Circle()
+                        .fill(AppTheme.deepNavy)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(AppTheme.gold, lineWidth: 1)
+                        )
+                        .frame(width: capsuleThickness + 1, height: capsuleThickness + 1)
+                        .position(
+                            x: canvasCenter + arcRadius * CGFloat(cos(angle)),
+                            y: canvasCenter + arcRadius * CGFloat(sin(angle))
+                        )
+                }
 
-                Image(systemName: icon)
-                    .font(.system(size: 18))
-                    .foregroundStyle(AppTheme.goldGradient)
+                ArcSegment(radius: arcRadius,
+                           thickness: capsuleThickness,
+                           angleSpan: angleSpan)
+                    .fill(AppTheme.deepNavy)
+
+                ArcOuterLine(radius: arcRadius,
+                             thickness: capsuleThickness,
+                             angleSpan: angleSpan)
+                    .stroke(AppTheme.gold, lineWidth: 1)
+
+                ArcInnerLine(radius: arcRadius,
+                             thickness: capsuleThickness,
+                             angleSpan: angleSpan)
+                    .stroke(AppTheme.gold, lineWidth: 1)
+
+                ArcText(text: title,
+                        radius: arcRadius,
+                        fontSize: fontSize,
+                        radialOffset: -scale)
             }
+            .frame(width: capsuleFrameSize, height: capsuleFrameSize)
+            .shadow(color: .black.opacity(0.6), radius: 3)
         }
-        .frame(width: 96)
+        .frame(width: circleSize, height: capsuleFrameSize)
     }
 }
 
-/// Larger center-of-palm button — gold-circle icon with title below.
-private struct PalmCenterButton: View {
-    let icon: String
-    let title: String
+// MARK: - Arc shapes & text
+
+private struct ArcSegment: Shape {
+    let radius: CGFloat
+    let thickness: CGFloat
+    let angleSpan: Double
+
+    func path(in rect: CGRect) -> Path {
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        let innerRadius = radius - thickness / 2
+        let outerRadius = radius + thickness / 2
+        let startAngle = Double.pi / 2 - angleSpan / 2
+        let endAngle   = Double.pi / 2 + angleSpan / 2
+
+        var path = Path()
+        path.addArc(center: center, radius: outerRadius,
+                    startAngle: .radians(startAngle),
+                    endAngle: .radians(endAngle),
+                    clockwise: false)
+        path.addArc(center: center, radius: innerRadius,
+                    startAngle: .radians(endAngle),
+                    endAngle: .radians(startAngle),
+                    clockwise: true)
+        path.closeSubpath()
+        return path
+    }
+}
+
+private struct ArcOuterLine: Shape {
+    let radius: CGFloat
+    let thickness: CGFloat
+    let angleSpan: Double
+
+    func path(in rect: CGRect) -> Path {
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        let outerRadius = radius + thickness / 2
+        let startAngle = Double.pi / 2 - angleSpan / 2
+        let endAngle   = Double.pi / 2 + angleSpan / 2
+
+        var path = Path()
+        path.addArc(center: center, radius: outerRadius,
+                    startAngle: .radians(startAngle),
+                    endAngle: .radians(endAngle),
+                    clockwise: false)
+        return path
+    }
+}
+
+private struct ArcInnerLine: Shape {
+    let radius: CGFloat
+    let thickness: CGFloat
+    let angleSpan: Double
+
+    func path(in rect: CGRect) -> Path {
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        let innerRadius = radius - thickness / 2
+        let startAngle = Double.pi / 2 - angleSpan / 2
+        let endAngle   = Double.pi / 2 + angleSpan / 2
+
+        var path = Path()
+        path.addArc(center: center, radius: innerRadius,
+                    startAngle: .radians(startAngle),
+                    endAngle: .radians(endAngle),
+                    clockwise: false)
+        return path
+    }
+}
+
+private struct ArcText: View {
+    let text: String
+    let radius: CGFloat
+    let fontSize: CGFloat
+    var radialOffset: CGFloat = 0
 
     var body: some View {
-        VStack(spacing: 6) {
-            ZStack {
-                Circle()
-                    .fill(AppTheme.deepNavy.opacity(0.75))
-                    .frame(width: 76, height: 76)
-                    .overlay(
-                        Circle()
-                            .stroke(AppTheme.gold.opacity(0.7), lineWidth: 1.5)
-                    )
-                    .shadow(color: AppTheme.gold.opacity(0.4), radius: 16)
+        Canvas { context, size in
+            let center = CGPoint(x: size.width / 2, y: size.height / 2)
+            let characters = Array(text)
 
-                Image(systemName: icon)
-                    .font(.system(size: 32))
-                    .foregroundStyle(AppTheme.goldGradient)
+            let charWidths: [CGFloat] = characters.map { char in
+                context.resolve(
+                    Text(String(char))
+                        .font(.system(size: fontSize, weight: .semibold, design: .serif))
+                ).measure(in: size).width
             }
 
-            VStack(spacing: 2) {
-                Text(title)
-                    .font(AppTheme.serifFont(size: 15, weight: .medium))
-                    .foregroundColor(AppTheme.textPrimary)
-                    .lineLimit(1)
+            let totalWidth = charWidths.reduce(0, +)
+            let totalAngle = totalWidth / radius
+            var currentAngle = (.pi / 2) + (totalAngle / 2)
+
+            for (i, char) in characters.enumerated() {
+                let charAngle = charWidths[i] / radius
+                currentAngle -= charAngle / 2
+
+                let x = center.x + radius * cos(currentAngle)
+                let y = center.y + radius * sin(currentAngle)
+
+                let resolved = context.resolve(
+                    Text(String(char))
+                        .font(.system(size: fontSize, weight: .semibold, design: .serif))
+                        .foregroundColor(AppTheme.lightGold)
+                )
+                let charSize = resolved.measure(in: size)
+
+                context.drawLayer { ctx in
+                    ctx.translateBy(x: x, y: y)
+                    ctx.rotate(by: Angle(radians: currentAngle - .pi / 2))
+                    ctx.draw(resolved,
+                             at: CGPoint(x: -charSize.width / 2,
+                                         y: -charSize.height / 2 + radialOffset),
+                             anchor: .topLeading)
+                }
+
+                currentAngle -= charAngle / 2
             }
-            .multilineTextAlignment(.center)
         }
-        .frame(width: 200)
     }
 }
 
