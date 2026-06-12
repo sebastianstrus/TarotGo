@@ -65,7 +65,7 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.34, y: geo.size.height * 0.18)
+                            .position(x: geo.size.width * 0.32, y: geo.size.height * 0.20)
 
                             NavigationLink(destination: PalmistryFAQView()) {
                                 PalmButton(
@@ -83,7 +83,7 @@ struct PalmistryView: View {
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.66, y: geo.size.height * 0.20)
+                            .position(x: geo.size.width * 0.68, y: geo.size.height * 0.22)
 
                             NavigationLink(destination: HistoryOfPalmistryView()) {
                                 PalmButton(
@@ -119,7 +119,7 @@ struct PalmistryView: View {
 private struct PalmButton: View {
     let icon: String
     let title: String
-    var scale: CGFloat = 1.0
+    var scale: CGFloat = 0.9
 
     private var circleSize: CGFloat { 90 * scale }
     private var capsuleThickness: CGFloat { 16 * scale }
