@@ -188,8 +188,10 @@ private struct CosmicOrbitNode: View {
     private let circleSize: CGFloat = 90
     private let capsuleThickness: CGFloat = 16
     private let fontSize: CGFloat = 9
-    private var arcRadius: CGFloat { circleSize / 2 + 4 }
-    private var totalHeight: CGFloat { circleSize + capsuleThickness + 4 }
+    // Midline of the capsule sits exactly on the ring's border
+    private var arcRadius: CGFloat { circleSize / 2 }
+    // Square frame large enough to hold the full capsule centered on the ring center
+    private var capsuleFrameSize: CGFloat { circleSize + capsuleThickness + 2 }
 
     private var angleSpan: Double {
         let attrs: [NSAttributedString.Key: Any] = [
@@ -197,27 +199,25 @@ private struct CosmicOrbitNode: View {
         ]
         let textWidth = (title as NSString).size(withAttributes: attrs).width
         let textAngle = Double(textWidth / arcRadius)
-        return textAngle + 0.5
+        return textAngle + 0.28
     }
 
     var body: some View {
         ZStack {
             // Ring & icon
-            ZStack {
-                Image("bg-ring")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: circleSize, height: circleSize)
-                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
+            Image("bg-ring")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: circleSize, height: circleSize)
+                .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
 
-                Image(systemName: icon)
-                    .font(.system(size: 22, weight: .semibold))
-                    .foregroundStyle(AppTheme.goldGradient)
-            }
+            Image(systemName: icon)
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundStyle(AppTheme.goldGradient)
 
-            // Curved capsule label docked on the bottom edge of the ring
+            // Curved capsule label centered on ring center
             ZStack {
-                let canvasCenter = totalHeight / 2
+                let canvasCenter = capsuleFrameSize / 2
                 ForEach([
                     Double.pi / 2 - angleSpan / 2,
                     Double.pi / 2 + angleSpan / 2
@@ -250,13 +250,15 @@ private struct CosmicOrbitNode: View {
                              angleSpan: angleSpan)
                     .stroke(AppTheme.gold, lineWidth: 1)
 
-                ArcText(text: title, radius: arcRadius, fontSize: fontSize)
+                ArcText(text: title,
+                        radius: arcRadius,
+                        fontSize: fontSize,
+                        radialOffset: -1)
             }
-            .frame(width: totalHeight, height: totalHeight)
-            .offset(y: capsuleThickness * 0.55)
+            .frame(width: capsuleFrameSize, height: capsuleFrameSize)
             .shadow(color: .black.opacity(0.6), radius: 3)
         }
-        .frame(width: circleSize, height: totalHeight)
+        .frame(width: circleSize, height: capsuleFrameSize)
     }
 }
 
@@ -332,6 +334,7 @@ private struct ArcText: View {
     let text: String
     let radius: CGFloat
     let fontSize: CGFloat
+    var radialOffset: CGFloat = 0
 
     var body: some View {
         Canvas { context, size in
@@ -367,7 +370,8 @@ private struct ArcText: View {
                     ctx.translateBy(x: x, y: y)
                     ctx.rotate(by: Angle(radians: currentAngle - .pi / 2))
                     ctx.draw(resolved,
-                             at: CGPoint(x: -charSize.width / 2, y: -charSize.height / 2),
+                             at: CGPoint(x: -charSize.width / 2,
+                                         y: -charSize.height / 2 + radialOffset),
                              anchor: .topLeading)
                 }
 
