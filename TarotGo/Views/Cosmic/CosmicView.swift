@@ -205,6 +205,12 @@ private struct CosmicOrbitNode: View {
     var body: some View {
         ZStack {
             // Ring & icon
+            Image("bg-button")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: circleSize / 2, height: circleSize / 2)
+                .clipShape(Circle())
+
             Image("bg-ring")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
