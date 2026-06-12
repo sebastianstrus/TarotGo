@@ -38,7 +38,7 @@ struct LearnTarotView: View {
                         // 1. History of Tarot
                         NavigationLink(destination: HistoryOfTarotView()) {
                             LearnOptionButton(
-                                icon: "scroll.fill",
+                                icon: "ic_tarot_history",
                                 title: L10n.learnHistoryTitle,
                                 subtitle: L10n.learnHistorySubtitle
                             )
@@ -48,7 +48,7 @@ struct LearnTarotView: View {
                         // 2. Card Basic Meanings
                         NavigationLink(destination: CardBasicMeaningsView()) {
                             LearnOptionButton(
-                                icon: "square.grid.2x2.fill",
+                                icon: "ic_tarot_basic_meanings",
                                 title: L10n.learnBasicMeaningsTitle,
                                 subtitle: L10n.learnBasicMeaningsSubtitle
                             )
@@ -58,7 +58,7 @@ struct LearnTarotView: View {
                         // 3. How to Read
                         NavigationLink(destination: HowToReadView()) {
                             LearnOptionButton(
-                                icon: "book.pages.fill",
+                                icon: "ic_tarot_how_to_read",
                                 title: L10n.learnHowToReadTitle,
                                 subtitle: L10n.learnHowToReadSubtitle
                             )
@@ -68,7 +68,7 @@ struct LearnTarotView: View {
                         // 4. Tarot & Mind
                         NavigationLink(destination: TarotAndMindView()) {
                             LearnOptionButton(
-                                icon: "brain.head.profile.fill",
+                                icon: "ic_tarot_and_mind",
                                 title: L10n.learnTarotMindTitle,
                                 subtitle: L10n.learnTarotMindSubtitle
                             )
@@ -78,7 +78,7 @@ struct LearnTarotView: View {
                         // 5. FAQ
                         NavigationLink(destination: FAQView()) {
                             LearnOptionButton(
-                                icon: "questionmark.circle.fill",
+                                icon: "ic_faq",
                                 title: L10n.learnFaqTitle,
                                 subtitle: L10n.learnFaqSubtitle
                             )
@@ -104,20 +104,10 @@ struct LearnOptionButton: View {
     
     var body: some View {
         HStack(spacing: 14) {
-            // Gold icon background
-            ZStack {
-                Circle()
-                    .fill(AppTheme.cardGradient)
-                    .frame(width: 46, height: 46)
-                    .overlay(
-                        Circle()
-                            .stroke(AppTheme.gold.opacity(0.5), lineWidth: 1.5)
-                    )
-                
-                Image(systemName: icon)
-                    .font(.system(size: 22))
-                    .foregroundStyle(AppTheme.goldGradient)
-            }
+            Image(icon)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 46, height: 46)
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
