@@ -101,27 +101,27 @@ struct TarotView: View {
     private var wheelOptions: [TarotWheelOption] {
         [
             TarotWheelOption(
-                icon: "sparkles",
+                icon: "ic_new_tarot_reading",
                 title: L10n.homeNewReading,
                 destination: .newReading
             ),
             TarotWheelOption(
-                icon: "sun.max.fill",
+                icon: "ic_card_of_the_day",
                 title: L10n.homeCardOfDay,
                 destination: .cardOfDay
             ),
             TarotWheelOption(
-                icon: "graduationcap.fill",
+                icon: "ic_learn_tarot",
                 title: L10n.homeLearnTarot,
                 destination: .learn
             ),
             TarotWheelOption(
-                icon: "book.fill",
+                icon: "ic_saved_tarot_readings",
                 title: L10n.homeHistory,
                 destination: .history
             ),
             TarotWheelOption(
-                icon: "books.vertical.fill",
+                icon: "ic_card_dictionary",
                 title: L10n.homeCardDictionary,
                 destination: .dictionary
             )
@@ -242,10 +242,11 @@ struct TarotWheelMenuView: View {
                     let x = center.x + cos(midRadians) * labelRadius
                     let y = center.y + sin(midRadians) * labelRadius
 
-                    VStack(spacing: 6) {
-                        Image(systemName: option.icon)
-                            .font(.system(size: 22, weight: .light))
-                            .foregroundStyle(AppTheme.goldGradient)
+                    VStack(spacing: 0) {
+                        Image(option.icon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40, height: 40)
 
                         Text(option.title)
                             .font(AppTheme.serifFont(size: 11, weight: .semibold))
