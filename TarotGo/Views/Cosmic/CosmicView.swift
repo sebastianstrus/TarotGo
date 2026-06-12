@@ -185,38 +185,194 @@ private struct CosmicOrbitNode: View {
     let icon: String
     let title: String
 
-    private let buttonSize: CGFloat = 90
+    private let circleSize: CGFloat = 90
+    private let capsuleThickness: CGFloat = 16
+    private let fontSize: CGFloat = 9
+    private var arcRadius: CGFloat { circleSize / 2 + 4 }
+    private var totalHeight: CGFloat { circleSize + capsuleThickness + 4 }
+
+    private var angleSpan: Double {
+        let attrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: fontSize, weight: .semibold)
+        ]
+        let textWidth = (title as NSString).size(withAttributes: attrs).width
+        let textAngle = Double(textWidth / arcRadius)
+        return textAngle + 0.5
+    }
 
     var body: some View {
         ZStack {
-            Image("bg-ring")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: buttonSize, height: buttonSize)
-                .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
+            // Ring & icon
+            ZStack {
+                Image("bg-ring")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: circleSize, height: circleSize)
+                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
 
-            Image(systemName: icon)
-                .font(.system(size: 22, weight: .semibold))
-                .foregroundStyle(AppTheme.goldGradient)
+                Image(systemName: icon)
+                    .font(.system(size: 22, weight: .semibold))
+                    .foregroundStyle(AppTheme.goldGradient)
+            }
 
-            // Curved label docked on the bottom edge of the ring
-            Text(title)
-                .font(AppTheme.serifFont(size: 11, weight: .semibold))
-                .foregroundStyle(AppTheme.goldGradient)
-                .lineLimit(1)
-                .fixedSize(horizontal: true, vertical: false)
-                .padding(.horizontal, 10)
-                .padding(.vertical, 4)
-                .background(
-                    Capsule()
+            // Curved capsule label docked on the bottom edge of the ring
+            ZStack {
+                let canvasCenter = totalHeight / 2
+                ForEach([
+                    Double.pi / 2 - angleSpan / 2,
+                    Double.pi / 2 + angleSpan / 2
+                ], id: \.self) { angle in
+                    Circle()
                         .fill(AppTheme.deepNavy)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(AppTheme.gold, lineWidth: 1)
+                        )
+                        .frame(width: capsuleThickness + 1, height: capsuleThickness + 1)
+                        .position(
+                            x: canvasCenter + arcRadius * CGFloat(cos(angle)),
+                            y: canvasCenter + arcRadius * CGFloat(sin(angle))
+                        )
+                }
+
+                ArcSegment(radius: arcRadius,
+                           thickness: capsuleThickness,
+                           angleSpan: angleSpan)
+                    .fill(AppTheme.deepNavy)
+
+                ArcOuterLine(radius: arcRadius,
+                             thickness: capsuleThickness,
+                             angleSpan: angleSpan)
+                    .stroke(AppTheme.gold, lineWidth: 1)
+
+                ArcInnerLine(radius: arcRadius,
+                             thickness: capsuleThickness,
+                             angleSpan: angleSpan)
+                    .stroke(AppTheme.gold, lineWidth: 1)
+
+                ArcText(text: title, radius: arcRadius, fontSize: fontSize)
+            }
+            .frame(width: totalHeight, height: totalHeight)
+            .offset(y: capsuleThickness * 0.55)
+            .shadow(color: .black.opacity(0.6), radius: 3)
+        }
+        .frame(width: circleSize, height: totalHeight)
+    }
+}
+
+// MARK: - Arc shapes & text
+
+private struct ArcSegment: Shape {
+    let radius: CGFloat
+    let thickness: CGFloat
+    let angleSpan: Double
+
+    func path(in rect: CGRect) -> Path {
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        let innerRadius = radius - thickness / 2
+        let outerRadius = radius + thickness / 2
+        let startAngle = Double.pi / 2 - angleSpan / 2
+        let endAngle   = Double.pi / 2 + angleSpan / 2
+
+        var path = Path()
+        path.addArc(center: center, radius: outerRadius,
+                    startAngle: .radians(startAngle),
+                    endAngle: .radians(endAngle),
+                    clockwise: false)
+        path.addArc(center: center, radius: innerRadius,
+                    startAngle: .radians(endAngle),
+                    endAngle: .radians(startAngle),
+                    clockwise: true)
+        path.closeSubpath()
+        return path
+    }
+}
+
+private struct ArcOuterLine: Shape {
+    let radius: CGFloat
+    let thickness: CGFloat
+    let angleSpan: Double
+
+    func path(in rect: CGRect) -> Path {
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        let outerRadius = radius + thickness / 2
+        let startAngle = Double.pi / 2 - angleSpan / 2
+        let endAngle   = Double.pi / 2 + angleSpan / 2
+
+        var path = Path()
+        path.addArc(center: center, radius: outerRadius,
+                    startAngle: .radians(startAngle),
+                    endAngle: .radians(endAngle),
+                    clockwise: false)
+        return path
+    }
+}
+
+private struct ArcInnerLine: Shape {
+    let radius: CGFloat
+    let thickness: CGFloat
+    let angleSpan: Double
+
+    func path(in rect: CGRect) -> Path {
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        let innerRadius = radius - thickness / 2
+        let startAngle = Double.pi / 2 - angleSpan / 2
+        let endAngle   = Double.pi / 2 + angleSpan / 2
+
+        var path = Path()
+        path.addArc(center: center, radius: innerRadius,
+                    startAngle: .radians(startAngle),
+                    endAngle: .radians(endAngle),
+                    clockwise: false)
+        return path
+    }
+}
+
+private struct ArcText: View {
+    let text: String
+    let radius: CGFloat
+    let fontSize: CGFloat
+
+    var body: some View {
+        Canvas { context, size in
+            let center = CGPoint(x: size.width / 2, y: size.height / 2)
+            let characters = Array(text)
+
+            let charWidths: [CGFloat] = characters.map { char in
+                context.resolve(
+                    Text(String(char))
+                        .font(.system(size: fontSize, weight: .semibold, design: .serif))
+                ).measure(in: size).width
+            }
+
+            let totalWidth = charWidths.reduce(0, +)
+            let totalAngle = totalWidth / radius
+            var currentAngle = (.pi / 2) + (totalAngle / 2)
+
+            for (i, char) in characters.enumerated() {
+                let charAngle = charWidths[i] / radius
+                currentAngle -= charAngle / 2
+
+                let x = center.x + radius * cos(currentAngle)
+                let y = center.y + radius * sin(currentAngle)
+
+                let resolved = context.resolve(
+                    Text(String(char))
+                        .font(.system(size: fontSize, weight: .semibold, design: .serif))
+                        .foregroundColor(AppTheme.lightGold)
                 )
-                .overlay(
-                    Capsule()
-                        .stroke(AppTheme.goldGradient, lineWidth: 1)
-                )
-                .shadow(color: .black.opacity(0.6), radius: 3)
-                .offset(y: buttonSize / 2 - 6)
+                let charSize = resolved.measure(in: size)
+
+                context.drawLayer { ctx in
+                    ctx.translateBy(x: x, y: y)
+                    ctx.rotate(by: Angle(radians: currentAngle - .pi / 2))
+                    ctx.draw(resolved,
+                             at: CGPoint(x: -charSize.width / 2, y: -charSize.height / 2),
+                             anchor: .topLeading)
+                }
+
+                currentAngle -= charAngle / 2
+            }
         }
     }
 }
