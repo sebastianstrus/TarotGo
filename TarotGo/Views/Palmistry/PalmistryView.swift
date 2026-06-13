@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PalmistryView: View {
     @EnvironmentObject var appViewModel: AppViewModel
+    @State private var navigateToPalmReading: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -94,9 +95,9 @@ struct PalmistryView: View {
                             .buttonStyle(NavigationButtonStyle())
                             .position(x: geo.size.width * 0.87, y: geo.size.height * 0.32)
 
-                            NavigationLink(destination: PalmReadingView()
-                                .toolbar(.hidden, for: .tabBar)
-                            ) {
+                            Button {
+                                navigateToPalmReading = true
+                            } label: {
                                 PalmButton(
                                     icon: "hand.raised.palm.facing.fill",
                                     title: L10n.palmReadingTitle,
@@ -112,6 +113,15 @@ struct PalmistryView: View {
                 }
             }
             .navigationBarHidden(true)
+            .navigationDestination(isPresented: $navigateToPalmReading) {
+                PalmReadingView()
+            }
+            .toolbar(appViewModel.tabBarVisibility, for: .tabBar)
+            .onChange(of: navigateToPalmReading) { _, isActive in
+                withAnimation(.easeInOut(duration: 0.25)) {
+                    appViewModel.tabBarVisibility = isActive ? .hidden : .visible
+                }
+            }
         }
     }
 }
