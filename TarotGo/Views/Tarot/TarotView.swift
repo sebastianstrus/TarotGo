@@ -81,6 +81,13 @@ struct TarotView: View {
             .navigationDestination(item: $destination) { dest in
                 destinationView(for: dest)
             }
+            .toolbar(appViewModel.tabBarVisibility, for: .tabBar)
+            .onChange(of: destination) { _, newValue in
+                withAnimation(.easeInOut(duration: 0.25)) {
+                    let shouldHide = newValue == .newReading || newValue == .cardOfDay
+                    appViewModel.tabBarVisibility = shouldHide ? .hidden : .visible
+                }
+            }
             .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
                 if shouldDismiss {
                     SoundService.shared.play(.whoosh, volume: 0.4)
@@ -140,7 +147,6 @@ struct TarotView: View {
         switch destination {
         case .newReading:
             NewReadingView()
-                .toolbar(.hidden, for: .tabBar)
         case .cardOfDay:
             CardOfTheDayView()
         case .dictionary:

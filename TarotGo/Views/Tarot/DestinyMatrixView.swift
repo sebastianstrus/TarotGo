@@ -14,6 +14,10 @@ struct DestinyMatrixView: View {
     @State private var navigateToHistory: Bool = false
     @State private var navigateToLearn: Bool = false
 
+    private var isAnyDestinationActive: Bool {
+        navigateToDestinyMatrix || navigateToCoupleDestiny || navigateToHistory || navigateToLearn
+    }
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -80,19 +84,21 @@ struct DestinyMatrixView: View {
             .navigationBarHidden(true)
             .navigationDestination(isPresented: $navigateToDestinyMatrix) {
                 DestinyMatrixInputView()
-                    .toolbar(.hidden, for: .tabBar)
             }
             .navigationDestination(isPresented: $navigateToCoupleDestiny) {
                 CoupleDestinyView()
-                    .toolbar(.hidden, for: .tabBar)
             }
             .navigationDestination(isPresented: $navigateToHistory) {
                 DestinyMatrixHistoryView()
-                    .toolbar(.hidden, for: .tabBar)
             }
             .navigationDestination(isPresented: $navigateToLearn) {
                 LearnDestinyMatrixView()
-                    .toolbar(.hidden, for: .tabBar)
+            }
+            .toolbar(appViewModel.tabBarVisibility, for: .tabBar)
+            .onChange(of: isAnyDestinationActive) { _, isActive in
+                withAnimation(.easeInOut(duration: 0.25)) {
+                    appViewModel.tabBarVisibility = isActive ? .hidden : .visible
+                }
             }
             .onReceive(appViewModel.$shouldDismissToRoot) { shouldDismiss in
                 if shouldDismiss {

@@ -17,6 +17,7 @@ class AppViewModel: ObservableObject {
     @Published var navigationPath = NavigationPath()
     @Published var shouldDismissToRoot: Bool = false
     @Published var shouldNavigateToDailyCard: Bool = false
+    @Published var tabBarVisibility: Visibility = .visible
     
     @AppStorage("hasLaunchedBefore") private var hasLaunchedBefore: Bool = false
     @AppStorage("hasCompletedOnboardingFlow") private var hasCompletedOnboardingFlow: Bool = false
