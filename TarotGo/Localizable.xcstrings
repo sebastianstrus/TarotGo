@@ -162619,67 +162619,67 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Schicksalsmatrix"
+            "value" : "Matrix"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Destiny Matrix"
+            "value" : "Matrix"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Matriz del Destino"
+            "value" : "Matriz"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Matrice du Destin"
+            "value" : "Matrice"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Matrice del Destino"
+            "value" : "Matrice"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "デスティニー・マトリックス"
+            "value" : "マトリックス"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Skjebnematrise"
+            "value" : "Matrise"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Matryca Losu"
+            "value" : "Matryca"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Matriz do Destino"
+            "value" : "Matriz"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ödesmatris"
+            "value" : "Matris"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Матриця Долі"
+            "value" : "Матриця"
           }
         }
       }
