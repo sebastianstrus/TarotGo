@@ -19,9 +19,10 @@ struct CosmicView: View {
                 VStack(spacing: 0) {
                     // Header
                     VStack(spacing: 10) {
-                        Image(systemName: "moon.stars.fill")
-                            .font(.system(size: 44))
-                            .foregroundStyle(AppTheme.goldGradient)
+                        Image("ic_cosmic")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 64, height: 64)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
 
                         Text(L10n.cosmicViewTitle)
@@ -91,7 +92,7 @@ private struct CosmicOrbitMenu: View {
                     .position(center)
 
                 node(
-                    icon: "sparkle.magnifyingglass",
+                    icon: "ic_cosmic_horoscope",
                     title: L10n.horoscopeTitle,
                     destination: AnyView(HoroscopeView()),
                     center: center,
@@ -102,7 +103,7 @@ private struct CosmicOrbitMenu: View {
                 )
 
                 node(
-                    icon: "moon.circle.fill",
+                    icon: "ic_cosmic_lunar_calendar",
                     title: L10n.lunarCalendarTitle,
                     destination: AnyView(LunarCalendarView()),
                     center: center,
@@ -113,7 +114,7 @@ private struct CosmicOrbitMenu: View {
                 )
 
                 node(
-                    icon: "number.circle.fill",
+                    icon: "ic_cosmic_numerology",
                     title: L10n.numerologyTitle,
                     destination: AnyView(NumerologyView()),
                     center: center,
@@ -124,7 +125,7 @@ private struct CosmicOrbitMenu: View {
                 )
 
                 node(
-                    icon: "heart.circle.fill",
+                    icon: "ic_cosmic_compatibility",
                     title: L10n.compatibilityTitle,
                     destination: AnyView(CompatibilityView()),
                     center: center,
@@ -135,7 +136,7 @@ private struct CosmicOrbitMenu: View {
                 )
 
                 node(
-                    icon: "circle.grid.cross.fill",
+                    icon: "ic_cosmic_cosmogram",
                     title: L10n.cosmogramTitle,
                     destination: AnyView(CosmogramView()),
                     center: center,
@@ -205,21 +206,31 @@ private struct CosmicOrbitNode: View {
     var body: some View {
         ZStack {
             // Ring & icon
-            Image("bg-button")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: circleSize / 2, height: circleSize / 2)
-                .clipShape(Circle())
+            
 
+            
             Image("bg-ring")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: circleSize, height: circleSize)
                 .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
+            
+//            Circle()
+//                .fill(.black)
+//                .frame(width: circleSize * 0.6, height: circleSize * 0.6)
+            
+            Image("bg-button")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: circleSize * 0.5, height: circleSize * 0.5)
+                .clipShape(Circle())
 
-            Image(systemName: icon)
-                .font(.system(size: 22, weight: .semibold))
-                .foregroundStyle(AppTheme.goldGradient)
+
+            Image(icon)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 32, height: 32)
+
 
             // Curved capsule label centered on ring center
             ZStack {
