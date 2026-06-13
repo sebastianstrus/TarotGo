@@ -51,45 +51,32 @@ enum ARDisplayMode: String, CaseIterable, Identifiable {
     }
 }
 
-// Main AR Gallery View with mode selection
-struct ARGalleryView: View {
+// Full-screen AR presentation with close button
+struct ARGalleryPresentationView: View {
+    let mode: ARDisplayMode
     @Environment(\.dismiss) private var dismiss
-    @State private var showModeSelection = true
-    @State private var selectedMode: ARDisplayMode?
     
     var body: some View {
         ZStack {
-            if let mode = selectedMode {
-                // Show the selected AR mode
-                ARGalleryContainerView(mode: mode)
-                    .ignoresSafeArea()
-                
-                // Close button overlay
-                VStack {
-                    HStack {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .font(.system(size: 32))
-                                .foregroundColor(.white)
-                                .shadow(color: .black.opacity(0.3), radius: 5)
-                        }
-                        .padding()
-                        
-                        Spacer()
+            ARGalleryContainerView(mode: mode)
+                .ignoresSafeArea()
+            
+            VStack {
+                HStack {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.system(size: 32))
+                            .foregroundColor(.white)
+                            .shadow(color: .black.opacity(0.3), radius: 5)
                     }
+                    .padding()
                     
                     Spacer()
                 }
-            }
-        }
-        .sheet(isPresented: $showModeSelection) {
-            ARModeSelectionSheet(selectedMode: $selectedMode, isPresented: $showModeSelection)
-        }
-        .onChange(of: selectedMode) { oldValue, newValue in
-            if newValue == nil && !showModeSelection {
-                dismiss()
+                
+                Spacer()
             }
         }
     }
@@ -203,5 +190,5 @@ struct ARGalleryContainerView: View {
 }
 
 #Preview {
-    ARGalleryView()
+    ARGalleryPresentationView(mode: .tarotPark)
 }

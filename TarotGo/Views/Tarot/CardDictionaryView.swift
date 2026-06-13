@@ -10,7 +10,8 @@ import SwiftUI
 struct CardDictionaryView: View {
     @State private var selectedSuit: TarotSuit? = nil
     @State private var searchText: String = ""
-    @State private var showARGallery: Bool = false
+    @State private var showARModeSelection: Bool = false
+    @State private var selectedARMode: ARDisplayMode? = nil
     
     private var filteredCards: [TarotCard] {
         var cards = TarotDeck.allCards
@@ -65,7 +66,7 @@ struct CardDictionaryView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    showARGallery = true
+                    showARModeSelection = true
                 } label: {
                     Image(systemName: "cube.transparent")
                         .font(.system(size: 20))
@@ -73,8 +74,11 @@ struct CardDictionaryView: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: $showARGallery) {
-            ARGalleryView()
+        .sheet(isPresented: $showARModeSelection) {
+            ARModeSelectionSheet(selectedMode: $selectedARMode, isPresented: $showARModeSelection)
+        }
+        .fullScreenCover(item: $selectedARMode) { mode in
+            ARGalleryPresentationView(mode: mode)
         }
     }
     
