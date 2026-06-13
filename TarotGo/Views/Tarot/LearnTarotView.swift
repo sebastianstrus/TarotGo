@@ -104,10 +104,21 @@ struct LearnOptionButton: View {
     
     var body: some View {
         HStack(spacing: 14) {
-            Image(icon)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 46, height: 46)
+            // Gold icon background
+            ZStack {
+                Circle()
+                    .fill(AppTheme.cardGradient)
+                    .frame(width: 46, height: 46)
+                    .overlay(
+                        Circle()
+                            .stroke(AppTheme.gold.opacity(0.5), lineWidth: 1.5)
+                    )
+
+                Image(icon)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 30, height: 30)
+            }
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
