@@ -90,6 +90,9 @@ private struct CosmicOrbitMenu: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: bgWidth)
                     .position(center)
+                
+                PulsingCosmicSun(size: bgWidth * 0.13)
+                    .position(x: w * 0.49, y: h * 0.45)
 
                 node(
                     icon: "ic_cosmic_horoscope",
@@ -177,6 +180,29 @@ private struct CosmicOrbitMenu: View {
             SoundService.shared.play(.whoosh, volume: 0.4)
         })
         .position(x: x, y: y)
+    }
+}
+
+// MARK: - Pulsing Sun
+
+private struct PulsingCosmicSun: View {
+    let size: CGFloat
+    @State private var pulse = false
+
+    var body: some View {
+        Image("cosmic-sun")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: size, height: size)
+            .shadow(color: AppTheme.gold.opacity(pulse ? 0.9 : 0.3),
+                    radius: pulse ? 4 : 2)
+            .shadow(color: AppTheme.gold.opacity(pulse ? 0.7 : 0.2),
+                    radius: pulse ? 6 : 3)
+            .onAppear {
+                withAnimation(.easeInOut(duration: 1.6).repeatForever(autoreverses: true)) {
+                    pulse = true
+                }
+            }
     }
 }
 
