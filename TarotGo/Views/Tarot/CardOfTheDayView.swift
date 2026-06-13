@@ -52,9 +52,10 @@ struct CardOfTheDayView: View {
                 ScrollView {
                     VStack(spacing: 30) {
                         VStack(spacing: 10) {
-                            Image(systemName: "sun.max.fill")
-                                .font(.system(size: 50))
-                                .foregroundStyle(AppTheme.goldGradient)
+                            Image("ic_card_of_the_day")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 64, height: 64)
                                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                             
                             Text(L10n.cardOfDayTitle)
