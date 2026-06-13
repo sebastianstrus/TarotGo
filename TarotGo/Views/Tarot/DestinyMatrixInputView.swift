@@ -34,9 +34,10 @@ struct DestinyMatrixInputView: View {
                     
                     // Header
                     VStack(spacing: 15) {
-                        Image(systemName: "star.circle.fill")
-                            .font(.system(size: 60))
-                            .foregroundStyle(AppTheme.goldGradient)
+                        Image("ic_destiny_matrix")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 72, height: 72)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                         
                         Text(L10n.matrixTitle)
