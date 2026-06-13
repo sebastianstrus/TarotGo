@@ -266,13 +266,17 @@ struct TarotWheelMenuView: View {
                         )
                 }
 
-                // Icons + labels (overlaid so taps still hit segments below)
+                // Icons + labels (overlaid so taps still hit segments below).
+                // Both the scale and radial position track the segment's scale so
+                // the label drifts outward in lock-step with the expanding segment.
                 ForEach(Array(options.enumerated()), id: \.element.id) { index, option in
                     let midDegrees = startAngleFor(index: index, segmentAngle: segmentAngle) + segmentAngle / 2
                     let midRadians = midDegrees * .pi / 180
-                    let x = center.x + cos(midRadians) * labelRadius
-                    let y = center.y + sin(midRadians) * labelRadius
                     let highlight = pressedIndex == index || burstIndex == index
+                    let scale: CGFloat = burstIndex == index ? 1.07 : (pressedIndex == index ? 1.03 : 1.0)
+                    let effectiveRadius = labelRadius * scale
+                    let x = center.x + cos(midRadians) * effectiveRadius
+                    let y = center.y + sin(midRadians) * effectiveRadius
 
                     VStack(spacing: 0) {
                         Image(option.icon)
@@ -292,7 +296,7 @@ struct TarotWheelMenuView: View {
                             .shadow(color: .black.opacity(0.6), radius: 3, x: 0, y: 1)
                     }
                     .frame(width: segmentLabelWidth(outerRadius: outerRadius, innerRadius: innerRadius))
-                    .scaleEffect(burstIndex == index ? 1.12 : (pressedIndex == index ? 1.06 : 1.0))
+                    .scaleEffect(scale)
                     .shadow(color: highlight ? AppTheme.gold.opacity(0.7) : .clear, radius: highlight ? 8 : 0)
                     .position(x: x, y: y)
                     .allowsHitTesting(false)
