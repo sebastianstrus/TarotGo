@@ -22,9 +22,10 @@ struct LunarCalendarView: View {
                 VStack(spacing: 30) {
                     // Header
                     VStack(spacing: 12) {
-                        Image(systemName: "moon.circle.fill")
-                            .font(.system(size: 50))
-                            .foregroundStyle(AppTheme.goldGradient)
+                        Image("ic_cosmic_lunar_calendar")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 64, height: 64)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                         
                         Text(L10n.lunarCalendarTitle)

@@ -21,9 +21,10 @@ struct HoroscopeView: View {
                 VStack(spacing: 30) {
                     // Header
                     VStack(spacing: 12) {
-                        Image(systemName: "sparkle.magnifyingglass")
-                            .font(.system(size: 50))
-                            .foregroundStyle(AppTheme.goldGradient)
+                        Image("ic_cosmic_horoscope")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 64, height: 64)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
                         
                         Text(L10n.horoscopeTitle)
