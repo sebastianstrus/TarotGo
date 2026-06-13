@@ -13,6 +13,9 @@ struct DestinyMatrixView: View {
     @State private var navigateToCoupleDestiny: Bool = false
     @State private var navigateToHistory: Bool = false
     @State private var navigateToLearn: Bool = false
+    @State private var galaxyRotationBack: Double = 0
+    @State private var galaxyRotationMiddle: Double = 0
+    @State private var galaxyRotationFront: Double = 0
 
     private var isAnyDestinationActive: Bool {
         navigateToDestinyMatrix || navigateToCoupleDestiny || navigateToHistory || navigateToLearn
@@ -118,15 +121,52 @@ struct DestinyMatrixView: View {
             let buttonRadius = ringSize * 0.39
 
             ZStack {
-                // Outer ring decoration
                 Image("outer-ring")
                     .resizable()
                     .scaledToFit()
                     .frame(width: ringSize, height: ringSize)
                     .shadow(color: AppTheme.gold.opacity(0.4), radius: 20)
 
-                // Inner ring with galaxy
-                Image("inner-ring")
+                Image("spiral-galaxy")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: ringSize * 0.44, height: ringSize * 0.44)
+                    .opacity(1)
+                    .clipShape(Circle())
+                    .rotationEffect(.degrees(galaxyRotationBack))
+                    .onAppear {
+                        withAnimation(.linear(duration: 5.3).repeatForever(autoreverses: false)) {
+                            galaxyRotationBack = 360
+                        }
+                    }
+                
+                Image("spiral-galaxy")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: ringSize * 0.44, height: ringSize * 0.44)
+                    .opacity(0.7)
+                    .clipShape(Circle())
+                    .rotationEffect(.degrees(galaxyRotationMiddle))
+                    .onAppear {
+                        withAnimation(.linear(duration: 4.1).repeatForever(autoreverses: false)) {
+                            galaxyRotationMiddle = 360
+                        }
+                    }
+                
+                Image("spiral-galaxy")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: ringSize * 0.44, height: ringSize * 0.44)
+                    .opacity(0.5)
+                    .clipShape(Circle())
+                    .rotationEffect(.degrees(galaxyRotationFront))
+                    .onAppear {
+                        withAnimation(.linear(duration: 2.3).repeatForever(autoreverses: false)) {
+                            galaxyRotationFront = 360
+                        }
+                    }
+                
+                Image("matrix-ring")
                     .resizable()
                     .scaledToFit()
                     .frame(width: ringSize * 0.5, height: ringSize * 0.5)
