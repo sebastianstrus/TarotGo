@@ -103,7 +103,7 @@ struct CardDictionaryView: View {
                 // All cards button
                 FilterChip(
                     title: L10n.dictionaryAllCards,
-                    icon: "square.grid.2x2",
+                    icon: "ic_cards_all",
                     isSelected: selectedSuit == nil
                 ) {
                     withAnimation {
@@ -114,7 +114,7 @@ struct CardDictionaryView: View {
                 // Major Arcana
                 FilterChip(
                     title: TarotSuit.majorArcana.localizedName,
-                    icon: "sparkles",
+                    icon: "ic_cards_arcana",
                     isSelected: selectedSuit == .majorArcana
                 ) {
                     withAnimation {
@@ -125,7 +125,7 @@ struct CardDictionaryView: View {
                 // Cups
                 FilterChip(
                     title: TarotSuit.cups.localizedName,
-                    icon: "cup.and.saucer",
+                    icon: "ic_cards_cups",
                     isSelected: selectedSuit == .cups
                 ) {
                     withAnimation {
@@ -136,7 +136,7 @@ struct CardDictionaryView: View {
                 // Pentacles
                 FilterChip(
                     title: TarotSuit.pentacles.localizedName,
-                    icon: "circle.hexagongrid",
+                    icon: "ic_cards_pentacles",
                     isSelected: selectedSuit == .pentacles
                 ) {
                     withAnimation {
@@ -147,7 +147,7 @@ struct CardDictionaryView: View {
                 // Swords
                 FilterChip(
                     title: TarotSuit.swords.localizedName,
-                    icon: "flame",
+                    icon: "ic_cards_swords",
                     isSelected: selectedSuit == .swords
                 ) {
                     withAnimation {
@@ -158,7 +158,7 @@ struct CardDictionaryView: View {
                 // Wands
                 FilterChip(
                     title: TarotSuit.wands.localizedName,
-                    icon: "wand.and.stars",
+                    icon: "ic_cards_wands",
                     isSelected: selectedSuit == .wands
                 ) {
                     withAnimation {
@@ -180,8 +180,11 @@ struct FilterChip: View {
     var body: some View {
         Button(action: action) {
             HStack(spacing: 6) {
-                Image(systemName: icon)
-                    .font(.system(size: 14))
+                Image(icon)
+                    .resizable()
+                    .renderingMode(.template)
+                    .scaledToFit()
+                    .frame(width: 18, height: 18)
                 Text(title)
                     .font(.system(size: 14, weight: .medium))
             }
