@@ -182,6 +182,11 @@ struct TarotWheelMenuView: View {
     let options: [TarotWheelOption]
     let onSelect: (TarotWheelOption) -> Void
 
+    @State private var pressedIndex: Int? = nil
+    @State private var burstIndex: Int? = nil
+    @State private var sunRotation: Double = 0
+    @State private var ringPulse: CGFloat = 1.0
+
     private let segmentGapDegrees: Double = 5
     private let segmentCornerRadius: CGFloat = 16
 
@@ -196,50 +201,69 @@ struct TarotWheelMenuView: View {
             let segmentAngle = 360.0 / Double(options.count)
 
             ZStack {
-                // Mystic outer ring (layered)
+                // Mystic outer ring (layered) with breathing pulse
                 MysticOuterRing(size: size)
+                    .scaleEffect(ringPulse)
 
                 // Segments
                 ForEach(Array(options.enumerated()), id: \.element.id) { index, option in
                     let rawStart = startAngleFor(index: index, segmentAngle: segmentAngle)
                     let startAngle = rawStart + segmentGapDegrees / 2
                     let endAngle = rawStart + segmentAngle - segmentGapDegrees / 2
+                    let isPressed = pressedIndex == index
+                    let isBurst = burstIndex == index
+                    let highlight = isPressed || isBurst
+
+                    let shape = RoundedWheelSegmentShape(
+                        startAngle: .degrees(startAngle),
+                        endAngle: .degrees(endAngle),
+                        innerRadius: innerRadius,
+                        outerRadius: outerRadius,
+                        cornerRadius: segmentCornerRadius
+                    )
 
                     Image("bg-button")
                         .resizable()
                         .scaledToFill()
                         .frame(width: size, height: size)
-                        .clipShape(
-                            RoundedWheelSegmentShape(
-                                startAngle: .degrees(startAngle),
-                                endAngle: .degrees(endAngle),
-                                innerRadius: innerRadius,
-                                outerRadius: outerRadius,
-                                cornerRadius: segmentCornerRadius
-                            )
+                        .clipShape(shape)
+                        .overlay(
+                            shape
+                                .fill(AppTheme.goldGradient)
+                                .opacity(isBurst ? 0.45 : (isPressed ? 0.22 : 0))
                         )
                         .overlay(
-                        RoundedWheelSegmentShape(
-                            startAngle: .degrees(startAngle),
-                            endAngle: .degrees(endAngle),
-                            innerRadius: innerRadius,
-                            outerRadius: outerRadius,
-                            cornerRadius: segmentCornerRadius
+                            shape
+                                .stroke(
+                                    highlight ? AppTheme.gold : AppTheme.gold.opacity(0.7),
+                                    lineWidth: highlight ? 2 : 1
+                                )
                         )
-                        .stroke(AppTheme.gold.opacity(0.7), lineWidth: 1)
-                    )
-                    .contentShape(
-                        RoundedWheelSegmentShape(
-                            startAngle: .degrees(startAngle),
-                            endAngle: .degrees(endAngle),
-                            innerRadius: innerRadius,
-                            outerRadius: outerRadius,
-                            cornerRadius: segmentCornerRadius
+                        .scaleEffect(isBurst ? 1.07 : (isPressed ? 1.03 : 1.0))
+                        .shadow(
+                            color: highlight ? AppTheme.gold.opacity(0.8) : .clear,
+                            radius: isBurst ? 18 : (isPressed ? 10 : 0)
                         )
-                    )
-                    .onTapGesture {
-                        onSelect(option)
-                    }
+                        .contentShape(shape)
+                        .gesture(
+                            DragGesture(minimumDistance: 0)
+                                .onChanged { _ in
+                                    guard pressedIndex != index else { return }
+                                    withAnimation(.easeOut(duration: 0.12)) {
+                                        pressedIndex = index
+                                    }
+                                    HapticService.shared.impact(.soft)
+                                }
+                                .onEnded { value in
+                                    let moved = hypot(value.translation.width, value.translation.height) > 10
+                                    withAnimation(.easeOut(duration: 0.2)) {
+                                        pressedIndex = nil
+                                    }
+                                    if !moved {
+                                        triggerBurstAndSelect(index: index, option: option)
+                                    }
+                                }
+                        )
                 }
 
                 // Icons + labels (overlaid so taps still hit segments below)
@@ -248,6 +272,7 @@ struct TarotWheelMenuView: View {
                     let midRadians = midDegrees * .pi / 180
                     let x = center.x + cos(midRadians) * labelRadius
                     let y = center.y + sin(midRadians) * labelRadius
+                    let highlight = pressedIndex == index || burstIndex == index
 
                     VStack(spacing: 0) {
                         Image(option.icon)
@@ -267,22 +292,51 @@ struct TarotWheelMenuView: View {
                             .shadow(color: .black.opacity(0.6), radius: 3, x: 0, y: 1)
                     }
                     .frame(width: segmentLabelWidth(outerRadius: outerRadius, innerRadius: innerRadius))
+                    .scaleEffect(burstIndex == index ? 1.12 : (pressedIndex == index ? 1.06 : 1.0))
+                    .shadow(color: highlight ? AppTheme.gold.opacity(0.7) : .clear, radius: highlight ? 8 : 0)
                     .position(x: x, y: y)
                     .allowsHitTesting(false)
                 }
-                
-                
+
+
                 Image("sun512")
                     .resizable()
                     .scaledToFit()
                     .frame(width: centerCircleRadius * 2.6, height: centerCircleRadius * 2.6)
+                    .rotationEffect(.degrees(sunRotation))
                     .position(center)
                     .allowsHitTesting(false)
             }
             .frame(width: size, height: size)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .onAppear {
+                startAmbientAnimations()
+            }
         }
         .aspectRatio(1, contentMode: .fit)
+    }
+
+    /// Plays a burst highlight on the tapped segment, then forwards the selection.
+    private func triggerBurstAndSelect(index: Int, option: TarotWheelOption) {
+        withAnimation(.spring(response: 0.28, dampingFraction: 0.5)) {
+            burstIndex = index
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) {
+            withAnimation(.easeOut(duration: 0.2)) {
+                burstIndex = nil
+            }
+            onSelect(option)
+        }
+    }
+
+    /// Starts the continuous ambient animations (sun spin, ring breathing).
+    private func startAmbientAnimations() {
+        withAnimation(.linear(duration: 90).repeatForever(autoreverses: false)) {
+            sunRotation = 360
+        }
+        withAnimation(.easeInOut(duration: 2.6).repeatForever(autoreverses: true)) {
+            ringPulse = 1.018
+        }
     }
 
     /// Returns the start angle (in degrees) for the segment at `index`.

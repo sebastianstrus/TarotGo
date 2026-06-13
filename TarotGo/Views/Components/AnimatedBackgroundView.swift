@@ -16,19 +16,19 @@ struct AnimatedBackgroundView: View {
                 .scaledToFill()
                 .ignoresSafeArea()
 
-//            VortexView(VortexSystem.sharedFog) {
-//                RadialGradient(
-//                    colors: [.gray.opacity(1.0), .gray.opacity(0)],
-//                    center: .center,
-//                    startRadius: 0,
-//                    endRadius: 80
-//                )
-//                .frame(width: 120, height: 120)
-//                .blur(radius: 5)
-//                .tag("circle")
-//            }
-//            .ignoresSafeArea()
-//            .allowsHitTesting(false)
+            VortexView(VortexSystem.sharedFog) {
+                RadialGradient(
+                    colors: [.gray.opacity(1.0), .gray.opacity(0)],
+                    center: .center,
+                    startRadius: 0,
+                    endRadius: 80
+                )
+                .frame(width: 120, height: 120)
+                .blur(radius: 5)
+                .tag("circle")
+            }
+            .ignoresSafeArea()
+            .allowsHitTesting(false)
         }
     }
 }
