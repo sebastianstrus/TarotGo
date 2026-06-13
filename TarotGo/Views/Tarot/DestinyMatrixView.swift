@@ -133,7 +133,7 @@ struct DestinyMatrixView: View {
                     navigateToDestinyMatrix = true
                 } label: {
                     CircularRingButton(
-                        icon: "star.circle.fill",
+                        icon: "ic_destiny_matrix",
                         title: L10n.homeDestinyMatrix
                     )
                 }
@@ -147,7 +147,7 @@ struct DestinyMatrixView: View {
                     navigateToCoupleDestiny = true
                 } label: {
                     CircularRingButton(
-                        icon: "heart.circle.fill",
+                        icon: "ic_couple_destiny",
                         title: L10n.homeCoupleDestiny
                     )
                 }
@@ -161,7 +161,7 @@ struct DestinyMatrixView: View {
                     navigateToLearn = true
                 } label: {
                     CircularRingButton(
-                        icon: "graduationcap.fill",
+                        icon: "ic_learn_tarot",
                         title: L10n.homeLearnDestinyMatrix
                     )
                 }
@@ -175,7 +175,7 @@ struct DestinyMatrixView: View {
                     navigateToHistory = true
                 } label: {
                     CircularRingButton(
-                        icon: "star.square.on.square.fill",
+                        icon: "ic_saved_matrices",
                         title: L10n.homeMatrixHistory
                     )
                 }
@@ -211,10 +211,11 @@ private struct CircularRingButton: View {
                 .frame(width: buttonSize, height: buttonSize)
                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 8)
 
-            VStack(spacing: 6) {
-                Image(systemName: icon)
-                    .font(.system(size: 24))
-                    .foregroundStyle(AppTheme.goldGradient)
+            VStack(spacing: 0) {
+                Image(icon)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 32, height: 32)
 
                 Text(title)
                     .font(AppTheme.serifFont(size: 12, weight: .medium))

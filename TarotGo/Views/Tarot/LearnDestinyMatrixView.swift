@@ -38,7 +38,7 @@ struct LearnDestinyMatrixView: View {
                         // 1. History of the Matrix
                         NavigationLink(destination: HistoryOfDestinyMatrixView()) {
                             LearnOptionButton(
-                                icon: "scroll.fill",
+                                icon: "ic_matrix_learn_history",
                                 title: L10n.learnDestinyMatrixHistoryTitle,
                                 subtitle: L10n.learnDestinyMatrixHistorySubtitle
                             )
@@ -48,7 +48,7 @@ struct LearnDestinyMatrixView: View {
                         // 2. The 22 Energies
                         NavigationLink(destination: DestinyMatrixBasicMeaningsView()) {
                             LearnOptionButton(
-                                icon: "square.grid.2x2.fill",
+                                icon: "ic_matrix_learn_energies",
                                 title: L10n.learnDestinyMatrixBasicMeaningsTitle,
                                 subtitle: L10n.learnDestinyMatrixBasicMeaningsSubtitle
                             )
@@ -58,7 +58,7 @@ struct LearnDestinyMatrixView: View {
                         // 3. How to Read Your Matrix
                         NavigationLink(destination: HowToReadMatrixView()) {
                             LearnOptionButton(
-                                icon: "book.pages.fill",
+                                icon: "ic_matrix_learn_how_to_read",
                                 title: L10n.learnDestinyMatrixHowToReadTitle,
                                 subtitle: L10n.learnDestinyMatrixHowToReadSubtitle
                             )
@@ -68,7 +68,7 @@ struct LearnDestinyMatrixView: View {
                         // 4. Matrix & Mind
                         NavigationLink(destination: DestinyMatrixAndMindView()) {
                             LearnOptionButton(
-                                icon: "brain.head.profile.fill",
+                                icon: "ic_matrix_learn_mind",
                                 title: L10n.learnDestinyMatrixMindTitle,
                                 subtitle: L10n.learnDestinyMatrixMindSubtitle
                             )
@@ -78,7 +78,7 @@ struct LearnDestinyMatrixView: View {
                         // 5. FAQ
                         NavigationLink(destination: DestinyMatrixFAQView()) {
                             LearnOptionButton(
-                                icon: "questionmark.circle.fill",
+                                icon: "ic_faq",
                                 title: L10n.learnDestinyMatrixFaqTitle,
                                 subtitle: L10n.learnDestinyMatrixFaqSubtitle
                             )
