@@ -80,9 +80,10 @@ struct CardDictionaryView: View {
     
     private var headerView: some View {
         VStack(spacing: 8) {
-            Image(systemName: "books.vertical.fill")
-                .font(.system(size: 40))
-                .foregroundStyle(AppTheme.goldGradient)
+            Image("ic_card_dictionary")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 56, height: 56)
                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
             
             Text(L10n.dictionaryTitle)
