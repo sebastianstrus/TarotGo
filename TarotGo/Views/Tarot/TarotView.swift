@@ -304,21 +304,27 @@ struct TarotWheelMenuView: View {
 
 
                 // Flashlight beam shining in the direction the sun's face is looking.
-                // The beam tip sits at the sun's center and extends downward in local
-                // space, so it stays in sync with the sun's rotation (which orients the
-                // face downward at sunRotation == 0).
+                // The beam tip sits at the wheel center and extends to the outer ring,
+                // so its base corners land on the segment boundaries — making the beam
+                // light up exactly one segment as the sun rotates.
+                let segmentSweepDegrees = segmentAngle + segmentGapDegrees
+                let beamHalfAngleRad = (segmentSweepDegrees / 2.0) * .pi / 180
+                let beamLength = outerRadius + 20
+                let beamBaseWidth = 2 * beamLength * CGFloat(tan(beamHalfAngleRad))
+                let beamFrameSide = beamLength * 2.4 // accommodates rotation of the cone
+
                 ZStack {
                     SunBeamShape(
-                        tipWidth: centerCircleRadius * 0.55,
-                        baseWidth: centerCircleRadius * 3.6,
-                        length: outerRadius * 0.92
+                        tipWidth: 0,
+                        baseWidth: beamBaseWidth,
+                        length: beamLength
                     )
                     .fill(
                         LinearGradient(
                             stops: [
-                                .init(color: Color(red: 1.0, green: 0.92, blue: 0.55).opacity(0.65), location: 0.5),
-                                .init(color: Color(red: 1.0, green: 0.82, blue: 0.40).opacity(0.30), location: 0.78),
-                                .init(color: Color.clear, location: 1.0)
+                                .init(color: Color(red: 1.0, green: 0.92, blue: 0.55).opacity(0.55), location: 0.5),
+                                .init(color: Color(red: 1.0, green: 0.82, blue: 0.40).opacity(0.25), location: 0.78),
+                                .init(color: Color.clear, location: 0.92)
                             ],
                             startPoint: .top,
                             endPoint: .bottom
@@ -327,16 +333,16 @@ struct TarotWheelMenuView: View {
                     .blur(radius: 16)
 
                     SunBeamShape(
-                        tipWidth: centerCircleRadius * 0.28,
-                        baseWidth: centerCircleRadius * 2.2,
-                        length: outerRadius * 0.86
+                        tipWidth: 0,
+                        baseWidth: beamBaseWidth * 0.55,
+                        length: beamLength
                     )
                     .fill(
                         LinearGradient(
                             stops: [
                                 .init(color: Color(red: 1.0, green: 0.97, blue: 0.78).opacity(0.85), location: 0.5),
-                                .init(color: Color(red: 1.0, green: 0.88, blue: 0.50).opacity(0.35), location: 0.80),
-                                .init(color: Color.clear, location: 1.0)
+                                .init(color: Color(red: 1.0, green: 0.88, blue: 0.50).opacity(0.30), location: 0.80),
+                                .init(color: Color.clear, location: 0.92)
                             ],
                             startPoint: .top,
                             endPoint: .bottom
@@ -344,7 +350,7 @@ struct TarotWheelMenuView: View {
                     )
                     .blur(radius: 6)
                 }
-                .frame(width: outerRadius * 2, height: outerRadius * 2)
+                .frame(width: beamFrameSide, height: beamFrameSide)
                 .blendMode(.plusLighter)
                 .rotationEffect(.degrees(sunRotation))
                 .position(center)
