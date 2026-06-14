@@ -298,6 +298,54 @@ enum L10n {
     static let matrixFuture = NSLocalizedString("matrix.position.future", comment: "Future Potential")
     static let matrixFutureDesc = NSLocalizedString("matrix.position.future.desc", comment: "Where your energy is headed")
 
+    // MARK: - Couple Matrix
+    static let coupleMatrixTitle = NSLocalizedString("coupleMatrix.title", comment: "Couple Matrix")
+    static let coupleMatrixSubtitle = NSLocalizedString("coupleMatrix.subtitle", comment: "Map the shared energies of two souls")
+    static let coupleMatrixWhatIs = NSLocalizedString("coupleMatrix.whatIs", comment: "What is the Couple Matrix?")
+    static let coupleMatrixDescription = NSLocalizedString("coupleMatrix.description", comment: "The Couple Matrix combines the birth energies of two partners using the 22 Major Arcana to reveal the heart, karma, and purpose of your union.")
+    static let coupleMatrixYourBirthDate = NSLocalizedString("coupleMatrix.yourBirthDate", comment: "Your Birth Date")
+    static let coupleMatrixUseMyBirthDate = NSLocalizedString("coupleMatrix.useMyBirthDate", comment: "Use my saved birth date")
+    static let coupleMatrixEnterPartnerABirthDate = NSLocalizedString("coupleMatrix.enterPartnerABirthDate", comment: "Enter Partner A's Birth Date")
+    static let coupleMatrixEnterPartnerBBirthDate = NSLocalizedString("coupleMatrix.enterPartnerBBirthDate", comment: "Enter Partner B's Birth Date")
+    static let coupleMatrixCalculate = NSLocalizedString("coupleMatrix.calculate", comment: "Calculate Couple Matrix")
+    static let coupleMatrixYourMatrix = NSLocalizedString("coupleMatrix.yourMatrix", comment: "Your Couple Matrix")
+
+    // Couple Matrix Position Names
+    static let coupleMatrixPartnerA = NSLocalizedString("coupleMatrix.position.partnerA", comment: "Partner A")
+    static let coupleMatrixPartnerADesc = NSLocalizedString("coupleMatrix.position.partnerA.desc", comment: "The core energy of the first partner")
+
+    static let coupleMatrixPartnerB = NSLocalizedString("coupleMatrix.position.partnerB", comment: "Partner B")
+    static let coupleMatrixPartnerBDesc = NSLocalizedString("coupleMatrix.position.partnerB.desc", comment: "The core energy of the second partner")
+
+    static let coupleMatrixUnion = NSLocalizedString("coupleMatrix.position.union", comment: "Union")
+    static let coupleMatrixUnionDesc = NSLocalizedString("coupleMatrix.position.union.desc", comment: "The combined essence at the heart of your relationship")
+
+    static let coupleMatrixLove = NSLocalizedString("coupleMatrix.position.love", comment: "Love Line")
+    static let coupleMatrixLoveDesc = NSLocalizedString("coupleMatrix.position.love.desc", comment: "How affection flows between the two of you")
+
+    static let coupleMatrixKarma = NSLocalizedString("coupleMatrix.position.karma", comment: "Shared Karma")
+    static let coupleMatrixKarmaDesc = NSLocalizedString("coupleMatrix.position.karma.desc", comment: "Lessons your souls have come together to resolve")
+
+    static let coupleMatrixMoney = NSLocalizedString("coupleMatrix.position.money", comment: "Shared Abundance")
+    static let coupleMatrixMoneyDesc = NSLocalizedString("coupleMatrix.position.money.desc", comment: "Material harmony you create together")
+
+    static let coupleMatrixSexuality = NSLocalizedString("coupleMatrix.position.sexuality", comment: "Passion")
+    static let coupleMatrixSexualityDesc = NSLocalizedString("coupleMatrix.position.sexuality.desc", comment: "The intimate energy and chemistry you share")
+
+    static let coupleMatrixChildren = NSLocalizedString("coupleMatrix.position.children", comment: "Creative Legacy")
+    static let coupleMatrixChildrenDesc = NSLocalizedString("coupleMatrix.position.children.desc", comment: "Children, projects, and the legacy you build together")
+
+    static let coupleMatrixPurpose = NSLocalizedString("coupleMatrix.position.purpose", comment: "Purpose of the Union")
+    static let coupleMatrixPurposeDesc = NSLocalizedString("coupleMatrix.position.purpose.desc", comment: "What this relationship is here to fulfill")
+
+    static let coupleMatrixHealth = NSLocalizedString("coupleMatrix.position.health", comment: "Vitality")
+    static let coupleMatrixHealthDesc = NSLocalizedString("coupleMatrix.position.health.desc", comment: "The living energy that sustains your bond")
+
+    static let coupleMatrixYearsTogether = NSLocalizedString("coupleMatrix.yearsTogether", comment: "Years Together")
+    static let coupleMatrixCurrentYearEnergy = NSLocalizedString("coupleMatrix.currentYearEnergy", comment: "Current Year Energy")
+    static let coupleMatrixYearEnergy = NSLocalizedString("coupleMatrix.yearEnergy", comment: "Year Energy")
+    static let coupleMatrixEnergyForYear = NSLocalizedString("coupleMatrix.energyForYear", comment: "Energy for this year")
+
     // MARK: - Destiny Matrix History
     static let matrixHistoryTitle = NSLocalizedString("matrixHistory.title", comment: "Saved Matrices")
     static let matrixHistoryEmpty = NSLocalizedString("matrixHistory.empty", comment: "No saved matrices yet")
@@ -306,6 +354,9 @@ enum L10n {
     static let matrixHistoryDeleteMessage = NSLocalizedString("matrixHistory.deleteMessage", comment: "Are you sure you want to delete this saved matrix? This action cannot be undone.")
     static let matrixHistoryDelete = NSLocalizedString("matrixHistory.delete", comment: "Delete Matrix")
     static let matrixHistorySavedOn = NSLocalizedString("matrixHistory.savedOn", comment: "Saved on")
+    static let matrixHistoryFilterAll = NSLocalizedString("matrixHistory.filter.all", comment: "All")
+    static let matrixHistoryFilterSingle = NSLocalizedString("matrixHistory.filter.single", comment: "Single")
+    static let matrixHistoryFilterCouple = NSLocalizedString("matrixHistory.filter.couple", comment: "Couple")
     static let homeMatrixHistory = NSLocalizedString("home.matrixHistory", comment: "Saved Matrices")
     static let homeMatrixHistorySubtitle = NSLocalizedString("home.matrixHistory.subtitle", comment: "Review your saved Destiny Matrices")
 

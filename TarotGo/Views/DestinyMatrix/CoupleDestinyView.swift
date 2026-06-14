@@ -2,36 +2,410 @@
 //  CoupleDestinyView.swift
 //  TarotGo
 //
-//  Created by Sebastian Strus on 6/9/26.
+//  Entry view for the Couple Matrix feature: collects two partner birth dates.
 //
 
 import SwiftUI
 
 struct CoupleDestinyView: View {
+    @State private var birthDateA = Date()
+    @State private var birthDateB = Date()
+    @State private var showResult = false
+    @State private var calculatedMatrix: CoupleMatrix?
+    @State private var useSavedDateForA: Bool = true
+    @State private var isCalculating: Bool = false
+
+    private let minDate = Calendar.current.date(from: DateComponents(year: 1900, month: 1, day: 1)) ?? Date()
+    private let maxDate = Date()
+
+    private var hasSavedBirthDate: Bool {
+        AstrologyService.shared.userBirthDate != nil
+    }
+
     var body: some View {
         ZStack {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
 
-            VStack(spacing: 16) {
-                Image(systemName: "heart.circle.fill")
-                    .font(.system(size: 60))
-                    .foregroundStyle(AppTheme.goldGradient)
-                    .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
+            ScrollView {
+                VStack(spacing: 20) {
+                    Spacer().frame(height: 0)
 
-                Text(L10n.homeCoupleDestiny)
-                    .font(AppTheme.serifFont(size: 32, weight: .regular))
-                    .foregroundStyle(AppTheme.goldGradient)
+                    header
 
-                Text(L10n.comingSoon)
-                    .font(.system(size: 16, weight: .light))
-                    .foregroundColor(AppTheme.textSecondary)
+                    descriptionCard
+
+                    partnerASection
+                    partnerBSection
+
+                    calculateButton
+
+                    Spacer().frame(height: 40)
+                }
+            }
+
+            if isCalculating {
+                CoupleMatrixCalculatingOverlay()
+                    .transition(.opacity)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(isCalculating)
+        .navigationDestination(isPresented: $showResult) {
+            if let matrix = calculatedMatrix {
+                CoupleMatrixResultView(matrix: matrix)
+            }
+        }
+        .onAppear {
+            if let saved = AstrologyService.shared.userBirthDate {
+                birthDateA = saved
+            }
+        }
+        .onChange(of: useSavedDateForA) { _, newValue in
+            HapticService.shared.impact(.light)
+            if newValue, let saved = AstrologyService.shared.userBirthDate {
+                birthDateA = saved
+            }
+        }
+    }
+
+    // MARK: - Header
+
+    private var header: some View {
+        VStack(spacing: 15) {
+            Image(systemName: "heart.circle.fill")
+                .font(.system(size: 60))
+                .foregroundStyle(AppTheme.goldGradient)
+                .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
+
+            Text(L10n.coupleMatrixTitle)
+                .font(AppTheme.serifFont(size: 32, weight: .regular))
+                .foregroundStyle(AppTheme.goldGradient)
+                .multilineTextAlignment(.center)
+
+            Text(L10n.coupleMatrixSubtitle)
+                .font(.system(size: 16, weight: .light))
+                .foregroundColor(AppTheme.textSecondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 30)
+        }
+        .padding(.bottom, 10)
+    }
+
+    private var descriptionCard: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(L10n.coupleMatrixWhatIs)
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundColor(AppTheme.gold)
+
+            Text(L10n.coupleMatrixDescription)
+                .font(.system(size: 15))
+                .foregroundColor(AppTheme.textSecondary)
+                .lineSpacing(4)
+        }
+        .padding(.horizontal, 30)
+        .padding(.vertical, 20)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(AppTheme.cardGradient)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+        )
+        .padding(.horizontal, 20)
+    }
+
+    // MARK: - Partner A
+
+    private var partnerASection: some View {
+        VStack(spacing: 16) {
+            HStack {
+                Text(L10n.coupleMatrixPartnerA)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(AppTheme.goldGradient)
+                Spacer()
+            }
+
+            if hasSavedBirthDate {
+                HStack {
+                    Text(L10n.coupleMatrixUseMyBirthDate)
+                        .font(.system(size: 15, weight: .medium))
+                        .foregroundColor(AppTheme.textPrimary)
+                    Spacer()
+                    Toggle("", isOn: $useSavedDateForA)
+                        .labelsHidden()
+                        .tint(AppTheme.gold)
+                }
+            }
+
+            Group {
+                if useSavedDateForA && hasSavedBirthDate {
+                    savedBirthDateCard(date: birthDateA, label: L10n.coupleMatrixYourBirthDate)
+                } else {
+                    datePickerCard(
+                        title: L10n.coupleMatrixEnterPartnerABirthDate,
+                        date: $birthDateA
+                    )
+                }
+            }
+            .animation(.easeInOut(duration: 0.25), value: useSavedDateForA)
+        }
+        .padding(.horizontal, 20)
+    }
+
+    // MARK: - Partner B
+
+    private var partnerBSection: some View {
+        VStack(spacing: 16) {
+            HStack {
+                Text(L10n.coupleMatrixPartnerB)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(AppTheme.goldGradient)
+                Spacer()
+            }
+
+            datePickerCard(
+                title: L10n.coupleMatrixEnterPartnerBBirthDate,
+                date: $birthDateB
+            )
+        }
+        .padding(.horizontal, 20)
+    }
+
+    // MARK: - Reusable cards
+
+    private func datePickerCard(title: String, date: Binding<Date>) -> some View {
+        VStack(spacing: 16) {
+            Text(title)
+                .font(.system(size: 16, weight: .medium))
+                .foregroundColor(AppTheme.textPrimary)
+
+            DatePicker(
+                "",
+                selection: date,
+                in: minDate...maxDate,
+                displayedComponents: .date
+            )
+            .datePickerStyle(.wheel)
+            .labelsHidden()
+            .colorScheme(.dark)
+            .frame(maxWidth: .infinity)
+
+            Text(formatted(date.wrappedValue))
+                .font(AppTheme.serifFont(size: 18, weight: .medium))
+                .foregroundColor(AppTheme.gold)
+        }
+        .padding(.vertical, 20)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(AppTheme.cardGradient)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+                .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
+        )
+    }
+
+    private func savedBirthDateCard(date: Date, label: String) -> some View {
+        VStack(spacing: 12) {
+            Text(label)
+                .font(.system(size: 16, weight: .medium))
+                .foregroundColor(AppTheme.textPrimary)
+
+            Text(formatted(date))
+                .font(AppTheme.serifFont(size: 22, weight: .medium))
+                .foregroundColor(AppTheme.gold)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 24)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(AppTheme.cardGradient)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+                .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
+        )
+    }
+
+    // MARK: - Calculate
+
+    private var calculateButton: some View {
+        Button {
+            calculate()
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "sparkles")
+                    .font(.system(size: 20))
+                Text(L10n.coupleMatrixCalculate)
+                    .font(.system(size: 18, weight: .semibold))
+            }
+            .foregroundColor(.black)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 18)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.4), radius: 10, x: 0, y: 5)
+            )
+        }
+        .padding(.horizontal, 20)
+        .padding(.top, 10)
+    }
+
+    private func formatted(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        return formatter.string(from: date)
+    }
+
+    private func calculate() {
+        guard !isCalculating else { return }
+
+        HapticService.shared.impact(.medium)
+
+        // If the user has no saved birth date and they used Partner A as themselves,
+        // save it for them.
+        if !hasSavedBirthDate {
+            AstrologyService.shared.userBirthDate = birthDateA
+        }
+
+        calculatedMatrix = CoupleMatrixCalculator.shared.calculate(
+            birthDateA: birthDateA,
+            birthDateB: birthDateB
+        )
+
+        withAnimation(.easeInOut(duration: 0.4)) {
+            isCalculating = true
+        }
+        SoundService.shared.play(.generate, volume: 0.5)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            HapticService.shared.impact(.light)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.4) {
+            HapticService.shared.impact(.light)
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.4) {
+            HapticService.shared.impact(.success)
+            showResult = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                withAnimation(.easeInOut(duration: 0.4)) {
+                    isCalculating = false
+                }
+            }
+        }
+    }
+}
+
+// MARK: - Calculating Overlay
+
+private struct CoupleMatrixCalculatingOverlay: View {
+    @State private var outerRotation: Double = 0
+    @State private var innerRotation: Double = 0
+    @State private var ringRotation: Double = 0
+    @State private var pulse: CGFloat = 0.85
+    @State private var glow: Double = 0.35
+    @State private var appear: Bool = false
+
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.75)
+                .ignoresSafeArea()
+                .background(.ultraThinMaterial.opacity(0.9))
+
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            AppTheme.gold.opacity(glow),
+                            AppTheme.mysticalPurple.opacity(glow * 0.6),
+                            Color.clear
+                        ],
+                        center: .center,
+                        startRadius: 10,
+                        endRadius: 220
+                    )
+                )
+                .frame(width: 440, height: 440)
+                .blur(radius: 30)
+
+            ZStack {
+                ZStack {
+                    Circle()
+                        .stroke(AppTheme.gold.opacity(0.25), lineWidth: 1)
+                        .frame(width: 260, height: 260)
+
+                    ForEach(0..<12, id: \.self) { i in
+                        Circle()
+                            .fill(AppTheme.goldGradient)
+                            .frame(width: 6, height: 6)
+                            .shadow(color: AppTheme.gold.opacity(0.8), radius: 6)
+                            .offset(y: -130)
+                            .rotationEffect(.degrees(Double(i) * 30))
+                    }
+                }
+                .rotationEffect(.degrees(ringRotation))
+
+                Image(systemName: "heart.fill")
+                    .font(.system(size: 80))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 12)
+                    .scaleEffect(pulse)
+                    .rotationEffect(.degrees(-outerRotation * 0.1))
+
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(AppTheme.goldGradient, lineWidth: 2)
+                    .frame(width: 200, height: 200)
+                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 12)
+                    .rotationEffect(.degrees(outerRotation))
+
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(AppTheme.goldGradient, lineWidth: 2)
+                    .frame(width: 200, height: 200)
+                    .shadow(color: AppTheme.lightGold.opacity(0.6), radius: 12)
+                    .rotationEffect(.degrees(innerRotation))
+            }
+            .opacity(appear ? 1 : 0)
+            .scaleEffect(appear ? 1 : 0.6)
+
+            VStack {
+                Spacer()
+                Text(L10n.coupleMatrixTitle)
+                    .font(AppTheme.serifFont(size: 24, weight: .regular))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .shadow(color: AppTheme.gold.opacity(0.5), radius: 8)
+                    .opacity(appear ? 1 : 0)
+                    .padding(.bottom, 120)
+            }
+        }
+        .onAppear {
+            withAnimation(.easeOut(duration: 0.5)) {
+                appear = true
+            }
+            withAnimation(.linear(duration: 8).repeatForever(autoreverses: false)) {
+                outerRotation = 360
+            }
+            withAnimation(.linear(duration: 6).repeatForever(autoreverses: false)) {
+                innerRotation = -360
+            }
+            withAnimation(.linear(duration: 12).repeatForever(autoreverses: false)) {
+                ringRotation = 360
+            }
+            withAnimation(.easeInOut(duration: 1.2).repeatForever(autoreverses: true)) {
+                pulse = 1.15
+                glow = 0.7
+            }
+        }
     }
 }
 
 #Preview {
-    CoupleDestinyView()
+    NavigationStack {
+        CoupleDestinyView()
+    }
 }

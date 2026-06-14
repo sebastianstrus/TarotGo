@@ -17,6 +17,7 @@ struct TarotGoApp: App {
         let schema = Schema([
             ReadingSession.self,
             DestinyMatrixSession.self,
+            CoupleMatrixSession.self,
             PalmReadingSession.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)

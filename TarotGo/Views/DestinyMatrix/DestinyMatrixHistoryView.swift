@@ -8,36 +8,116 @@
 import SwiftUI
 import SwiftData
 
+enum MatrixHistoryFilter: String, CaseIterable {
+    case all
+    case single
+    case couple
+
+    var title: String {
+        switch self {
+        case .all: return L10n.matrixHistoryFilterAll
+        case .single: return L10n.matrixHistoryFilterSingle
+        case .couple: return L10n.matrixHistoryFilterCouple
+        }
+    }
+}
+
 struct DestinyMatrixHistoryView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query(sort: \DestinyMatrixSession.date, order: .reverse) private var sessions: [DestinyMatrixSession]
+    @Query(sort: \DestinyMatrixSession.date, order: .reverse) private var singleSessions: [DestinyMatrixSession]
+    @Query(sort: \CoupleMatrixSession.date, order: .reverse) private var coupleSessions: [CoupleMatrixSession]
+    @State private var filter: MatrixHistoryFilter = .all
+
+    private var isEmpty: Bool {
+        switch filter {
+        case .all: return singleSessions.isEmpty && coupleSessions.isEmpty
+        case .single: return singleSessions.isEmpty
+        case .couple: return coupleSessions.isEmpty
+        }
+    }
+
+    private var showSingles: Bool { filter == .all || filter == .single }
+    private var showCouples: Bool { filter == .all || filter == .couple }
 
     var body: some View {
         ZStack {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
 
-            if sessions.isEmpty {
-                emptyStateView
-            } else {
-                ScrollView {
-                    LazyVStack(spacing: 15) {
-                        ForEach(sessions) { session in
-                            NavigationLink {
-                                DestinyMatrixSessionDetailView(session: session)
-                            } label: {
-                                DestinyMatrixSessionCard(session: session)
+            VStack(spacing: 0) {
+                filterBar
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+                    .padding(.bottom, 12)
+
+                if isEmpty {
+                    emptyStateView
+                } else {
+                    ScrollView {
+                        LazyVStack(spacing: 15) {
+                            if showSingles {
+                                ForEach(singleSessions) { session in
+                                    NavigationLink {
+                                        DestinyMatrixSessionDetailView(session: session)
+                                    } label: {
+                                        DestinyMatrixSessionCard(session: session)
+                                    }
+                                    .buttonStyle(PlainButtonStyle())
+                                }
                             }
-                            .buttonStyle(PlainButtonStyle())
+                            if showCouples {
+                                ForEach(coupleSessions) { session in
+                                    NavigationLink {
+                                        CoupleMatrixSessionDetailView(session: session)
+                                    } label: {
+                                        CoupleMatrixSessionCard(session: session)
+                                    }
+                                    .buttonStyle(PlainButtonStyle())
+                                }
+                            }
                         }
+                        .padding()
                     }
-                    .padding()
                 }
             }
         }
         .navigationTitle(L10n.matrixHistoryTitle)
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(.dark, for: .navigationBar)
+    }
+
+    private var filterBar: some View {
+        HStack(spacing: 0) {
+            ForEach(MatrixHistoryFilter.allCases, id: \.self) { option in
+                Button {
+                    HapticService.shared.impact(.light)
+                    withAnimation(.spring(response: 0.3)) {
+                        filter = option
+                    }
+                } label: {
+                    Text(option.title)
+                        .font(.system(size: 14, weight: filter == option ? .semibold : .regular))
+                        .foregroundColor(filter == option ? .black : AppTheme.textSecondary)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(
+                            filter == option
+                                ? AnyView(AppTheme.goldGradient)
+                                : AnyView(Color.clear)
+                        )
+                        .cornerRadius(10)
+                }
+            }
+        }
+        .padding(4)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(AppTheme.darkNavy.opacity(0.4))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(AppTheme.gold.opacity(0.25), lineWidth: 1)
+                )
+        )
     }
 
     private var emptyStateView: some View {
@@ -402,6 +482,217 @@ struct DestinyMatrixSessionDetailView: View {
             notes: editedNotes.isEmpty ? nil : editedNotes,
             savedDate: session.date
         )
+    }
+}
+
+// MARK: - Couple Matrix Session Card
+
+struct CoupleMatrixSessionCard: View {
+    let session: CoupleMatrixSession
+
+    private var matrix: CoupleMatrix {
+        CoupleMatrixCalculator.shared.calculate(
+            birthDateA: session.birthDateA,
+            birthDateB: session.birthDateB
+        )
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(L10n.coupleMatrixTitle)
+                        .font(AppTheme.serifFont(size: 18, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
+
+                    Text("\(session.formattedBirthDateA) · \(session.formattedBirthDateB)")
+                        .font(.system(size: 13, weight: .light))
+                        .foregroundColor(AppTheme.gold.opacity(0.7))
+                }
+
+                Spacer()
+
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 14))
+                    .foregroundColor(AppTheme.gold.opacity(0.6))
+            }
+
+            if let union = matrix.unionPosition {
+                HStack(spacing: 12) {
+                    ZStack {
+                        Circle()
+                            .fill(AppTheme.goldGradient)
+                            .frame(width: 44, height: 44)
+
+                        Text("\(union.number)")
+                            .font(.system(size: 18, weight: .bold, design: .rounded))
+                            .foregroundColor(.black)
+                    }
+
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(union.position.displayName)
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundColor(AppTheme.textPrimary)
+
+                        if let card = union.tarotCard {
+                            Text(card.name)
+                                .font(.system(size: 13, weight: .light))
+                                .foregroundColor(AppTheme.textSecondary)
+                                .lineLimit(1)
+                        }
+                    }
+
+                    Spacer()
+                }
+            }
+
+            HStack {
+                Label("\(L10n.matrixHistorySavedOn) \(session.formattedSaveDate)", systemImage: "clock")
+                    .font(.system(size: 12, weight: .light))
+                    .foregroundColor(AppTheme.gold.opacity(0.7))
+
+                Spacer()
+
+                Image(systemName: "heart.fill")
+                    .font(.system(size: 12))
+                    .foregroundColor(AppTheme.gold.opacity(0.7))
+            }
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 15)
+                .fill(AppTheme.darkNavy.opacity(0.5))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 15)
+                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                )
+        )
+    }
+}
+
+// MARK: - Couple Matrix Session Detail View
+
+struct CoupleMatrixSessionDetailView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
+    let session: CoupleMatrixSession
+
+    @State private var matrix: CoupleMatrix?
+    @State private var selectedPosition: CoupleMatrixPosition?
+    @State private var selectedYear: CoupleYearlyEnergy?
+    @State private var selectedTab: CoupleMatrixResultView.Tab = .diagram
+    @State private var showDeleteAlert: Bool = false
+
+    var body: some View {
+        ZStack {
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
+
+            if let matrix = matrix {
+                VStack(spacing: 0) {
+                    VStack(spacing: 8) {
+                        Text(L10n.coupleMatrixYourMatrix)
+                            .font(AppTheme.serifFont(size: 26, weight: .regular))
+                            .foregroundStyle(AppTheme.goldGradient)
+
+                        Text("\(matrix.formattedBirthDateA) · \(matrix.formattedBirthDateB)")
+                            .font(.system(size: 13))
+                            .foregroundColor(AppTheme.textSecondary)
+
+                        Text("\(L10n.matrixHistorySavedOn) \(session.formattedSaveDate)")
+                            .font(.system(size: 12, weight: .light))
+                            .foregroundColor(AppTheme.gold.opacity(0.7))
+                    }
+                    .padding(.vertical, 16)
+
+                    HStack(spacing: 0) {
+                        ForEach(CoupleMatrixResultView.Tab.allCases, id: \.self) { tab in
+                            CoupleMatrixTabButton(
+                                tab: tab,
+                                isSelected: selectedTab == tab
+                            ) {
+                                withAnimation(.spring(response: 0.3)) {
+                                    selectedTab = tab
+                                }
+                                HapticService.shared.impact(.light)
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 15)
+
+                    TabView(selection: $selectedTab) {
+                        ScrollView {
+                            VStack(spacing: 20) {
+                                CoupleDiagramTabView(matrix: matrix, selectedPosition: $selectedPosition)
+                                    .frame(minHeight: 500)
+
+                                deleteSection
+                                    .padding(.horizontal, 20)
+                                    .padding(.bottom, 40)
+                            }
+                        }
+                        .tag(CoupleMatrixResultView.Tab.diagram)
+
+                        CouplePositionsTabView(matrix: matrix)
+                            .tag(CoupleMatrixResultView.Tab.positions)
+
+                        CoupleCardsTabView(matrix: matrix)
+                            .tag(CoupleMatrixResultView.Tab.cards)
+
+                        CoupleYearAnalysisTabView(matrix: matrix, selectedYear: $selectedYear)
+                            .tag(CoupleMatrixResultView.Tab.yearAnalysis)
+                    }
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                }
+            } else {
+                ProgressView()
+                    .tint(AppTheme.gold)
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .alert(L10n.matrixHistoryDeleteAlert, isPresented: $showDeleteAlert) {
+            Button(L10n.cancel, role: .cancel) { }
+            Button(L10n.delete, role: .destructive) {
+                deleteSession()
+            }
+        } message: {
+            Text(L10n.matrixHistoryDeleteMessage)
+        }
+        .onAppear {
+            if matrix == nil {
+                matrix = CoupleMatrixCalculator.shared.calculate(
+                    birthDateA: session.birthDateA,
+                    birthDateB: session.birthDateB
+                )
+            }
+        }
+    }
+
+    private var deleteSection: some View {
+        Button {
+            showDeleteAlert = true
+        } label: {
+            HStack {
+                Image(systemName: "trash")
+                Text(L10n.matrixHistoryDelete)
+            }
+            .font(.system(size: 16, weight: .medium))
+            .foregroundColor(.red.opacity(0.8))
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color.red.opacity(0.4), lineWidth: 2)
+            )
+        }
+    }
+
+    private func deleteSession() {
+        modelContext.delete(session)
+        try? modelContext.save()
+        HapticService.shared.impact(.medium)
+        dismiss()
     }
 }
 
