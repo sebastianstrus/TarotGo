@@ -24,6 +24,7 @@ enum SoundEffect: String {
     case toggle = "toggle"
     case magic = "magic"
     case generate = "generate"
+    case galaxy = "galaxy"
 }
 
 class SoundService: NSObject, ObservableObject {
@@ -53,7 +54,7 @@ class SoundService: NSObject, ObservableObject {
     }
     
     func preloadSounds() {
-        for sound in [SoundEffect.cardFlip, .cardShuffle, .cardDraw, .bellChime, .success, .whoosh, .magicButton, .ambientMystic, .click, .fire, .reverse, .toggle, .magic, .generate] {
+        for sound in [SoundEffect.cardFlip, .cardShuffle, .cardDraw, .bellChime, .success, .whoosh, .magicButton, .ambientMystic, .click, .fire, .reverse, .toggle, .magic, .generate, .galaxy] {
             preloadSound(sound)
         }
     }
