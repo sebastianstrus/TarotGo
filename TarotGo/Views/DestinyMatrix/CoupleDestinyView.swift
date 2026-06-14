@@ -73,9 +73,10 @@ struct CoupleDestinyView: View {
 
     private var header: some View {
         VStack(spacing: 15) {
-            Image(systemName: "heart.circle.fill")
-                .font(.system(size: 60))
-                .foregroundStyle(AppTheme.goldGradient)
+            Image("ic_couple_destiny")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 64, height: 64)
                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
 
             Text(L10n.coupleMatrixTitle)

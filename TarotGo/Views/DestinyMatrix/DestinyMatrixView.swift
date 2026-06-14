@@ -34,9 +34,10 @@ struct DestinyMatrixView: View {
 
                     // Section title with gold styling
                     VStack(spacing: 10) {
-                        Image(systemName: "star.circle.fill")
-                            .font(.system(size: 50))
-                            .foregroundStyle(AppTheme.goldGradient)
+                        Image("ic_destiny_matrix")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 64, height: 64)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
 
                         Text(L10n.destinyMatrixViewTitle)
