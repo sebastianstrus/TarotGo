@@ -186,7 +186,7 @@ struct DestinyMatrixInputView: View {
             }
 
             if isCalculating {
-                MatrixCalculatingOverlay()
+                MatrixCalculatingOverlay(title: L10n.matrixTitle)
                     .transition(.opacity)
             }
         }
@@ -263,7 +263,9 @@ struct DestinyMatrixInputView: View {
 
 // MARK: - Mystical Calculating Overlay
 
-private struct MatrixCalculatingOverlay: View {
+struct MatrixCalculatingOverlay: View {
+    let title: String
+
     @State private var outerRotation: Double = 0
     @State private var innerRotation: Double = 0
     @State private var ringRotation: Double = 0
@@ -355,7 +357,7 @@ private struct MatrixCalculatingOverlay: View {
             // Title beneath geometry
             VStack {
                 Spacer()
-                Text(L10n.matrixTitle)
+                Text(title)
                     .font(AppTheme.serifFont(size: 24, weight: .regular))
                     .foregroundStyle(AppTheme.goldGradient)
                     .shadow(color: AppTheme.gold.opacity(0.5), radius: 8)
