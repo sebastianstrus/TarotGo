@@ -234,7 +234,7 @@ struct DestinyMatrixView: View {
         .aspectRatio(1, contentMode: .fit)
         .padding(.horizontal, 10)
         .onAppear {
-            SoundService.shared.playAmbient(.galaxy, volume: 0.3, loop: true)
+            SoundService.shared.playAmbient(.galaxy, volume: 0.6, loop: true)
         }
         .onDisappear {
             SoundService.shared.stopAmbient(fadeOut: true)

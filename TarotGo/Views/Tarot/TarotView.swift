@@ -303,6 +303,53 @@ struct TarotWheelMenuView: View {
                 }
 
 
+                // Flashlight beam shining in the direction the sun's face is looking.
+                // The beam tip sits at the sun's center and extends downward in local
+                // space, so it stays in sync with the sun's rotation (which orients the
+                // face downward at sunRotation == 0).
+                ZStack {
+                    SunBeamShape(
+                        tipWidth: centerCircleRadius * 0.55,
+                        baseWidth: centerCircleRadius * 3.6,
+                        length: outerRadius * 0.92
+                    )
+                    .fill(
+                        LinearGradient(
+                            stops: [
+                                .init(color: Color(red: 1.0, green: 0.92, blue: 0.55).opacity(0.65), location: 0.5),
+                                .init(color: Color(red: 1.0, green: 0.82, blue: 0.40).opacity(0.30), location: 0.78),
+                                .init(color: Color.clear, location: 1.0)
+                            ],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .blur(radius: 16)
+
+                    SunBeamShape(
+                        tipWidth: centerCircleRadius * 0.28,
+                        baseWidth: centerCircleRadius * 2.2,
+                        length: outerRadius * 0.86
+                    )
+                    .fill(
+                        LinearGradient(
+                            stops: [
+                                .init(color: Color(red: 1.0, green: 0.97, blue: 0.78).opacity(0.85), location: 0.5),
+                                .init(color: Color(red: 1.0, green: 0.88, blue: 0.50).opacity(0.35), location: 0.80),
+                                .init(color: Color.clear, location: 1.0)
+                            ],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .blur(radius: 6)
+                }
+                .frame(width: outerRadius * 2, height: outerRadius * 2)
+                .blendMode(.plusLighter)
+                .rotationEffect(.degrees(sunRotation))
+                .position(center)
+                .allowsHitTesting(false)
+
                 Image("sun512")
                     .resizable()
                     .scaledToFit()
@@ -420,6 +467,27 @@ struct MysticOuterRing: View {
         }
         .frame(width: size, height: size)
         .allowsHitTesting(false)
+    }
+}
+
+/// A cone-shaped flashlight beam whose tip sits at the center of the rect
+/// and whose base extends straight down. Rotating the containing view
+/// pivots the beam around its tip.
+struct SunBeamShape: Shape {
+    let tipWidth: CGFloat
+    let baseWidth: CGFloat
+    let length: CGFloat
+
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        let cx = rect.midX
+        let cy = rect.midY
+        path.move(to: CGPoint(x: cx - tipWidth / 2, y: cy))
+        path.addLine(to: CGPoint(x: cx + tipWidth / 2, y: cy))
+        path.addLine(to: CGPoint(x: cx + baseWidth / 2, y: cy + length))
+        path.addLine(to: CGPoint(x: cx - baseWidth / 2, y: cy + length))
+        path.closeSubpath()
+        return path
     }
 }
 
