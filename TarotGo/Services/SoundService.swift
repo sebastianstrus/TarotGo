@@ -128,30 +128,20 @@ class SoundService: NSObject, ObservableObject {
     }
     
     func stopAmbient(fadeOut: Bool = true) {
+        guard let player = ambientPlayer else { return }
+        ambientPlayer = nil
+
         if fadeOut {
-            fadeOutAmbient()
+            fadeOutAndStop(player: player)
         } else {
-            ambientPlayer?.stop()
-            ambientPlayer = nil
+            player.stop()
         }
     }
-    
-    private func fadeOutAmbient(duration: TimeInterval = 1.0) {
-        guard let player = ambientPlayer else { return }
-        
-        let startVolume = player.volume
-        let steps = 20
-        let stepDuration = duration / Double(steps)
-        
-        for i in 0..<steps {
-            DispatchQueue.main.asyncAfter(deadline: .now() + (stepDuration * Double(i))) {
-                player.volume = startVolume * Float(steps - i) / Float(steps)
-                
-                if i == steps - 1 {
-                    player.stop()
-                    self.ambientPlayer = nil
-                }
-            }
+
+    private func fadeOutAndStop(player: AVAudioPlayer, duration: TimeInterval = 0.3) {
+        player.setVolume(0, fadeDuration: duration)
+        DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+            player.stop()
         }
     }
 }
