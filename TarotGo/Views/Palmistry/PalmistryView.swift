@@ -46,54 +46,53 @@ struct PalmistryView: View {
                             Image("gold_palm")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
+                                .overlay(alignment: .bottom) {
+                                    HStack(spacing: 6) {
+                                        NavigationLink(destination: PalmReadingHistoryView()) {
+                                            PalmCardButton(
+                                                imageName: "palm_btn1",
+                                                title: L10n.palmHistoryButtonTitle
+                                            )
+                                        }
+                                        .buttonStyle(NavigationButtonStyle())
+
+                                        NavigationLink(destination: PalmistryAndMindView()) {
+                                            PalmCardButton(
+                                                imageName: "palm_btn2",
+                                                title: L10n.learnPalmistryMindTitle
+                                            )
+                                        }
+                                        .buttonStyle(NavigationButtonStyle())
+
+                                        NavigationLink(destination: PalmistryFAQView()) {
+                                            PalmCardButton(
+                                                imageName: "palm_btn3",
+                                                title: L10n.learnPalmistryFaqTitle
+                                            )
+                                        }
+                                        .buttonStyle(NavigationButtonStyle())
+
+                                        NavigationLink(destination: HowToReadPalmView()) {
+                                            PalmCardButton(
+                                                imageName: "palm_btn4",
+                                                title: L10n.learnPalmistryHowToReadTitle
+                                            )
+                                        }
+                                        .buttonStyle(NavigationButtonStyle())
+
+                                        NavigationLink(destination: HistoryOfPalmistryView()) {
+                                            PalmCardButton(
+                                                imageName: "palm_btn5",
+                                                title: L10n.learnPalmistryHistoryTitle
+                                            )
+                                        }
+                                        .buttonStyle(NavigationButtonStyle())
+                                    }
+                                    .padding(.horizontal, 12)
+                                }
                                 .shadow(color: AppTheme.gold.opacity(0.35), radius: 30)
                                 .padding(.horizontal, 8)
                                 .frame(width: geo.size.width, height: geo.size.height)
-
-                            NavigationLink(destination: PalmReadingHistoryView()) {
-                                PalmButton(
-                                    icon: "book.fill",
-                                    title: L10n.palmHistoryButtonTitle
-                                )
-                            }
-                            .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.13, y: geo.size.height * 0.35)
-
-                            NavigationLink(destination: PalmistryAndMindView()) {
-                                PalmButton(
-                                    icon: "brain.head.profile.fill",
-                                    title: L10n.learnPalmistryMindTitle
-                                )
-                            }
-                            .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.32, y: geo.size.height * 0.20)
-
-                            NavigationLink(destination: PalmistryFAQView()) {
-                                PalmButton(
-                                    icon: "questionmark.circle.fill",
-                                    title: L10n.learnPalmistryFaqTitle
-                                )
-                            }
-                            .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.50, y: geo.size.height * 0.12)
-
-                            NavigationLink(destination: HowToReadPalmView()) {
-                                PalmButton(
-                                    icon: "book.pages.fill",
-                                    title: L10n.learnPalmistryHowToReadTitle
-                                )
-                            }
-                            .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.68, y: geo.size.height * 0.22)
-
-                            NavigationLink(destination: HistoryOfPalmistryView()) {
-                                PalmButton(
-                                    icon: "scroll.fill",
-                                    title: L10n.learnPalmistryHistoryTitle
-                                )
-                            }
-                            .buttonStyle(NavigationButtonStyle())
-                            .position(x: geo.size.width * 0.87, y: geo.size.height * 0.32)
 
                             Button {
                                 navigateToPalmReading = true
@@ -123,6 +122,35 @@ struct PalmistryView: View {
                 }
             }
         }
+    }
+}
+
+private struct PalmCardButton: View {
+    let imageName: String
+    let title: String
+
+    var body: some View {
+        GeometryReader { geo in
+            ZStack(alignment: .bottom) {
+                Image(imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .shadow(color: AppTheme.gold.opacity(0.4), radius: 6)
+
+                Text(title)
+                    .font(AppTheme.serifFont(size: 11, weight: .semibold))
+                    .foregroundStyle(AppTheme.goldGradient)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.7)
+                    .shadow(color: .black.opacity(0.6), radius: 2)
+                    .padding(.horizontal, 6)
+                    .padding(.bottom, geo.size.height * 0.12)
+                    .frame(maxWidth: .infinity)
+            }
+            .frame(width: geo.size.width, height: geo.size.height)
+        }
+        .aspectRatio(347.0 / 532.0, contentMode: .fit)
     }
 }
 
