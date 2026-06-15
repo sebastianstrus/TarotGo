@@ -50,7 +50,7 @@ struct PalmistryView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .overlay(alignment: .bottom) {
-                                    HStack(spacing: 6) {
+                                    HStack(alignment: .bottom, spacing: 4) {
                                         NavigationLink(destination: PalmReadingHistoryView()) {
                                             PalmCardButton(
                                                 imageName: "palm_btn1",
@@ -59,6 +59,9 @@ struct PalmistryView: View {
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
+                                        .offset(y: -50)
+
+                                        Spacer(minLength: 4)
 
                                         NavigationLink(destination: PalmistryAndMindView()) {
                                             PalmCardButton(
@@ -68,6 +71,9 @@ struct PalmistryView: View {
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
+                                        .offset(y: -10)
+
+                                        Spacer(minLength: 4)
 
                                         NavigationLink(destination: PalmistryFAQView()) {
                                             PalmCardButton(
@@ -78,6 +84,8 @@ struct PalmistryView: View {
                                         }
                                         .buttonStyle(NavigationButtonStyle())
 
+                                        Spacer(minLength: 4)
+
                                         NavigationLink(destination: HowToReadPalmView()) {
                                             PalmCardButton(
                                                 imageName: "palm_btn4",
@@ -86,6 +94,9 @@ struct PalmistryView: View {
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
+                                        .offset(y: -10)
+
+                                        Spacer(minLength: 4)
 
                                         NavigationLink(destination: HistoryOfPalmistryView()) {
                                             PalmCardButton(
@@ -95,6 +106,7 @@ struct PalmistryView: View {
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
+                                        .offset(y: -50)
                                     }
                                     .padding(.horizontal, 12)
                                 }
