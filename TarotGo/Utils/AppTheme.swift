@@ -57,6 +57,7 @@ struct AppTheme {
     // Accent colors
     static let mysticalPurple = Color(red: 138/255, green: 43/255, blue: 226/255)
     static let deepPurple = Color(red: 75/255, green: 0/255, blue: 130/255)
+    static let darkPlum = Color(red: 44/255, green: 14/255, blue: 50/255)
     
     // Placeholder
     static let grayPlaceholder = Color(red: 255/255, green: 255/255, blue: 255/255, opacity: 0.6)

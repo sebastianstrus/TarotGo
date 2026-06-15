@@ -204,7 +204,7 @@ private struct PalmButton: View {
                     Double.pi / 2 + angleSpan / 2
                 ], id: \.self) { angle in
                     Circle()
-                        .fill(AppTheme.deepNavy)
+                        .fill(AppTheme.darkPlum)
                         .overlay(
                             Circle()
                                 .strokeBorder(AppTheme.gold, lineWidth: 1)
@@ -219,7 +219,7 @@ private struct PalmButton: View {
                 ArcSegment(radius: arcRadius,
                            thickness: capsuleThickness,
                            angleSpan: angleSpan)
-                    .fill(AppTheme.deepNavy)
+                    .fill(AppTheme.darkPlum)
 
                 ArcOuterLine(radius: arcRadius,
                              thickness: capsuleThickness,
