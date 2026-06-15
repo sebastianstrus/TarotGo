@@ -58,6 +58,12 @@ struct CosmicView: View {
 // MARK: - Orbit Menu
 
 private struct CosmicOrbitMenu: View {
+    private struct Orbit {
+        let rx: CGFloat
+        let ry: CGFloat
+        let period: Double
+    }
+
     var body: some View {
         GeometryReader { geo in
             let w = geo.size.width
@@ -66,6 +72,8 @@ private struct CosmicOrbitMenu: View {
             let bgWidth = min(w, h * 1.05)
             let bgHeight = bgWidth * 0.78
             let center = CGPoint(x: w / 2, y: h / 2)
+            // Single shared orbit so the nodes never overtake each other.
+            let sharedOrbit = Orbit(rx: 0.42, ry: 0.32, period: 36)
 
             ZStack {
                 Image("bg-cosmos")
@@ -73,69 +81,94 @@ private struct CosmicOrbitMenu: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: bgWidth)
                     .position(center)
-                
+
+                // Golden orbit line that the nodes travel along.
+//                Ellipse()
+//                    .stroke(AppTheme.gold.opacity(0.65), lineWidth: 1)
+//                    .frame(
+//                        width: 2 * sharedOrbit.rx * bgWidth,
+//                        height: 2 * sharedOrbit.ry * bgHeight
+//                    )
+//                    .shadow(color: AppTheme.gold.opacity(0.55), radius: 4)
+//                    .position(center)
+
                 PulsingCosmicSun(size: bgWidth * 0.13)
-                    .position(x: w * 0.49, y: h * 0.45)
+                    .position(x: w * 0.51, y: h * 0.46)
 
-                node(
-                    icon: "ic_cosmic_horoscope",
-                    title: L10n.horoscopeTitle,
-                    destination: AnyView(HoroscopeView()),
-                    center: center,
-                    bgWidth: bgWidth,
-                    bgHeight: bgHeight,
-                    relX: -0.18,
-                    relY: -0.25,
-                    animationDelay: 0.0
-                )
+                TimelineView(.animation) { ctx in
+                    let t = ctx.date.timeIntervalSinceReferenceDate
+                    // Five nodes spaced evenly around the ellipse (72° apart).
+                    let basePhase = 0.0
+                    let step = 2 * Double.pi / 5
 
-                node(
-                    icon: "ic_cosmic_lunar_calendar",
-                    title: L10n.lunarCalendarTitle,
-                    destination: AnyView(LunarCalendarView()),
-                    center: center,
-                    bgWidth: bgWidth,
-                    bgHeight: bgHeight,
-                    relX: 0.26,
-                    relY: -0.30,
-                    animationDelay: 0.35
-                )
+                    ZStack {
+                        orbitingNode(
+                            icon: "ic_cosmic_horoscope",
+                            title: L10n.horoscopeTitle,
+                            destination: AnyView(HoroscopeView()),
+                            center: center,
+                            bgWidth: bgWidth,
+                            bgHeight: bgHeight,
+                            orbit: sharedOrbit,
+                            startPhase: basePhase + step * 0,
+                            time: t,
+                            animationDelay: 0.0
+                        )
 
-                node(
-                    icon: "ic_cosmic_numerology",
-                    title: L10n.numerologyTitle,
-                    destination: AnyView(NumerologyView()),
-                    center: center,
-                    bgWidth: bgWidth,
-                    bgHeight: bgHeight,
-                    relX: -0.35,
-                    relY: 0.21,
-                    animationDelay: 0.7
-                )
+                        orbitingNode(
+                            icon: "ic_cosmic_lunar_calendar",
+                            title: L10n.lunarCalendarTitle,
+                            destination: AnyView(LunarCalendarView()),
+                            center: center,
+                            bgWidth: bgWidth,
+                            bgHeight: bgHeight,
+                            orbit: sharedOrbit,
+                            startPhase: basePhase + step * 1,
+                            time: t,
+                            animationDelay: 0.35
+                        )
 
-                node(
-                    icon: "ic_cosmic_compatibility",
-                    title: L10n.compatibilityTitle,
-                    destination: AnyView(CompatibilityView()),
-                    center: center,
-                    bgWidth: bgWidth,
-                    bgHeight: bgHeight,
-                    relX: -0.02,
-                    relY: 0.28,
-                    animationDelay: 1.05
-                )
+                        orbitingNode(
+                            icon: "ic_cosmic_numerology",
+                            title: L10n.numerologyTitle,
+                            destination: AnyView(NumerologyView()),
+                            center: center,
+                            bgWidth: bgWidth,
+                            bgHeight: bgHeight,
+                            orbit: sharedOrbit,
+                            startPhase: basePhase + step * 2,
+                            time: t,
+                            animationDelay: 0.7
+                        )
 
-                node(
-                    icon: "ic_cosmic_cosmogram",
-                    title: L10n.cosmogramTitle,
-                    destination: AnyView(CosmogramView()),
-                    center: center,
-                    bgWidth: bgWidth,
-                    bgHeight: bgHeight,
-                    relX: 0.32,
-                    relY: 0.12,
-                    animationDelay: 1.4
-                )
+                        orbitingNode(
+                            icon: "ic_cosmic_compatibility",
+                            title: L10n.compatibilityTitle,
+                            destination: AnyView(CompatibilityView()),
+                            center: center,
+                            bgWidth: bgWidth,
+                            bgHeight: bgHeight,
+                            orbit: sharedOrbit,
+                            startPhase: basePhase + step * 3,
+                            time: t,
+                            animationDelay: 1.05
+                        )
+
+                        orbitingNode(
+                            icon: "ic_cosmic_cosmogram",
+                            title: L10n.cosmogramTitle,
+                            destination: AnyView(CosmogramView()),
+                            center: center,
+                            bgWidth: bgWidth,
+                            bgHeight: bgHeight,
+                            orbit: sharedOrbit,
+                            startPhase: basePhase + step * 4,
+                            time: t,
+                            animationDelay: 1.4
+                        )
+                    }
+                    .frame(width: w, height: h)
+                }
             }
             .frame(width: w, height: h)
         }
@@ -144,19 +177,28 @@ private struct CosmicOrbitMenu: View {
     }
 
     @ViewBuilder
-    private func node(
+    private func orbitingNode(
         icon: String,
         title: String,
         destination: AnyView,
         center: CGPoint,
         bgWidth: CGFloat,
         bgHeight: CGFloat,
-        relX: CGFloat,
-        relY: CGFloat,
+        orbit: Orbit,
+        startPhase: Double,
+        time: TimeInterval,
         animationDelay: Double
     ) -> some View {
-        let x = center.x + bgWidth * relX
-        let y = center.y + bgHeight * relY
+        let angle = startPhase + 2 * Double.pi * time / orbit.period
+        let cosA = CGFloat(cos(angle))
+        let sinA = CGFloat(sin(angle))
+        let x = center.x + orbit.rx * bgWidth * cosA
+        let y = center.y + orbit.ry * bgHeight * sinA
+        // Depth 0 at the farthest point (top of orbit), 1 at the closest (bottom).
+        let depth = (sinA + 1) / 2
+        // Closest stays at full size; farthest shrinks to 0.4.
+        let minScale: CGFloat = 0.4
+        let scale = minScale + (1.0 - minScale) * depth
 
         NavigationLink {
             destination
@@ -168,7 +210,9 @@ private struct CosmicOrbitMenu: View {
             HapticService.shared.impact(.light)
             SoundService.shared.play(.whoosh, volume: 0.4)
         })
+        .scaleEffect(scale)
         .position(x: x, y: y)
+        .zIndex(Double(sinA))
     }
 }
 
@@ -202,7 +246,6 @@ private struct CosmicOrbitNode: View {
     let title: String
     let animationDelay: Double
 
-    @State private var float: Bool = false
     @State private var glow: Bool = false
     @State private var iconSpin: Bool = false
 
@@ -304,15 +347,11 @@ private struct CosmicOrbitNode: View {
             .shadow(color: .black.opacity(0.6), radius: 3)
         }
         .frame(width: circleSize, height: capsuleFrameSize)
-        .offset(y: float ? -4 : 4)
         .onAppear { startAnimations() }
     }
 
     private func startAnimations() {
         DispatchQueue.main.asyncAfter(deadline: .now() + animationDelay) {
-            withAnimation(.easeInOut(duration: 2.6).repeatForever(autoreverses: true)) {
-                float = true
-            }
             withAnimation(.easeInOut(duration: 1.9).repeatForever(autoreverses: true)) {
                 glow = true
             }
