@@ -54,7 +54,8 @@ struct PalmistryView: View {
                                         NavigationLink(destination: PalmReadingHistoryView()) {
                                             PalmCardButton(
                                                 imageName: "palm_btn1",
-                                                title: L10n.palmHistoryButtonTitle
+                                                title: L10n.palmHistoryButtonTitle,
+                                                phase: 0.0
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
@@ -62,7 +63,8 @@ struct PalmistryView: View {
                                         NavigationLink(destination: PalmistryAndMindView()) {
                                             PalmCardButton(
                                                 imageName: "palm_btn2",
-                                                title: L10n.learnPalmistryMindTitle
+                                                title: L10n.learnPalmistryMindTitle,
+                                                phase: 1.1
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
@@ -70,7 +72,8 @@ struct PalmistryView: View {
                                         NavigationLink(destination: PalmistryFAQView()) {
                                             PalmCardButton(
                                                 imageName: "palm_btn3",
-                                                title: L10n.learnPalmistryFaqTitle
+                                                title: L10n.learnPalmistryFaqTitle,
+                                                phase: 2.3
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
@@ -78,7 +81,8 @@ struct PalmistryView: View {
                                         NavigationLink(destination: HowToReadPalmView()) {
                                             PalmCardButton(
                                                 imageName: "palm_btn4",
-                                                title: L10n.learnPalmistryHowToReadTitle
+                                                title: L10n.learnPalmistryHowToReadTitle,
+                                                phase: 3.6
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
@@ -86,7 +90,8 @@ struct PalmistryView: View {
                                         NavigationLink(destination: HistoryOfPalmistryView()) {
                                             PalmCardButton(
                                                 imageName: "palm_btn5",
-                                                title: L10n.learnPalmistryHistoryTitle
+                                                title: L10n.learnPalmistryHistoryTitle,
+                                                phase: 4.8
                                             )
                                         }
                                         .buttonStyle(NavigationButtonStyle())
@@ -130,29 +135,39 @@ struct PalmistryView: View {
 private struct PalmCardButton: View {
     let imageName: String
     let title: String
+    var phase: Double = 0
 
     var body: some View {
-        Image(imageName)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .shadow(color: AppTheme.gold.opacity(0.4), radius: 6)
-            .overlay {
-                GeometryReader { geo in
-                    Text(title)
-                        .font(AppTheme.serifFont(size: 8, weight: .semibold))
-                        .foregroundStyle(AppTheme.goldGradient)
-                        .multilineTextAlignment(.center)
-                        .lineLimit(3)
-                        .minimumScaleFactor(0.7)
-                        .shadow(color: .black.opacity(0.6), radius: 2)
-                        .padding(.horizontal, 8)
-                        .frame(width: geo.size.width,
-                               height: geo.size.height * 0.32,
-                               alignment: .center)
-                        .position(x: geo.size.width * 0.5,
-                                  y: geo.size.height * 0.68)
+        TimelineView(.animation) { context in
+            let t = context.date.timeIntervalSinceReferenceDate
+            let bob = sin(t * 1.1 + phase) * 3.5
+            let sway = sin(t * 0.7 + phase * 1.3) * 1.5
+            let tilt = sin(t * 0.9 + phase * 0.8) * 1.6
+
+            Image(imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .shadow(color: AppTheme.gold.opacity(0.4), radius: 6)
+                .overlay {
+                    GeometryReader { geo in
+                        Text(title)
+                            .font(AppTheme.serifFont(size: 8, weight: .semibold))
+                            .foregroundStyle(AppTheme.goldGradient)
+                            .multilineTextAlignment(.center)
+                            .lineLimit(3)
+                            .minimumScaleFactor(0.7)
+                            .shadow(color: .black.opacity(0.6), radius: 2)
+                            .padding(.horizontal, 8)
+                            .frame(width: geo.size.width,
+                                   height: geo.size.height * 0.32,
+                                   alignment: .center)
+                            .position(x: geo.size.width * 0.5,
+                                      y: geo.size.height * 0.68)
+                    }
                 }
-            }
+                .rotationEffect(.degrees(tilt))
+                .offset(x: sway, y: bob)
+        }
     }
 }
 
