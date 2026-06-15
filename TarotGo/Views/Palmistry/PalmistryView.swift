@@ -237,7 +237,6 @@ private struct PalmButton: View {
                         radialOffset: -scale)
             }
             .frame(width: capsuleFrameSize, height: capsuleFrameSize)
-            .shadow(color: .black.opacity(0.6), radius: 3)
         }
         .frame(width: circleSize, height: capsuleFrameSize)
     }
