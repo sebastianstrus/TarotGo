@@ -85,7 +85,8 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: -0.18,
-                    relY: -0.25
+                    relY: -0.25,
+                    animationDelay: 0.0
                 )
 
                 node(
@@ -96,7 +97,8 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: 0.26,
-                    relY: -0.30
+                    relY: -0.30,
+                    animationDelay: 0.35
                 )
 
                 node(
@@ -107,7 +109,8 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: -0.35,
-                    relY: 0.21
+                    relY: 0.21,
+                    animationDelay: 0.7
                 )
 
                 node(
@@ -118,7 +121,8 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: -0.02,
-                    relY: 0.28
+                    relY: 0.28,
+                    animationDelay: 1.05
                 )
 
                 node(
@@ -129,7 +133,8 @@ private struct CosmicOrbitMenu: View {
                     bgWidth: bgWidth,
                     bgHeight: bgHeight,
                     relX: 0.32,
-                    relY: 0.12
+                    relY: 0.12,
+                    animationDelay: 1.4
                 )
             }
             .frame(width: w, height: h)
@@ -147,7 +152,8 @@ private struct CosmicOrbitMenu: View {
         bgWidth: CGFloat,
         bgHeight: CGFloat,
         relX: CGFloat,
-        relY: CGFloat
+        relY: CGFloat,
+        animationDelay: Double
     ) -> some View {
         let x = center.x + bgWidth * relX
         let y = center.y + bgHeight * relY
@@ -155,7 +161,7 @@ private struct CosmicOrbitMenu: View {
         NavigationLink {
             destination
         } label: {
-            CosmicOrbitNode(icon: icon, title: title)
+            CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay)
         }
         .buttonStyle(CosmicNodeButtonStyle())
         .simultaneousGesture(TapGesture().onEnded {
@@ -194,6 +200,11 @@ private struct PulsingCosmicSun: View {
 private struct CosmicOrbitNode: View {
     let icon: String
     let title: String
+    let animationDelay: Double
+
+    @State private var float: Bool = false
+    @State private var glow: Bool = false
+    @State private var iconSpin: Bool = false
 
     private let circleSize: CGFloat = 90
     private let capsuleThickness: CGFloat = 16
@@ -214,31 +225,39 @@ private struct CosmicOrbitNode: View {
 
     var body: some View {
         ZStack {
-            // Ring & icon
-            
+            // Pulsing outer aura
+            Circle()
+                .fill(AppTheme.gold.opacity(glow ? 0.28 : 0.08))
+                .frame(width: circleSize * 1.25, height: circleSize * 1.25)
+                .blur(radius: 14)
+                .scaleEffect(glow ? 1.08 : 0.92)
 
-            
             Image("bg-ring")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: circleSize, height: circleSize)
-                .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
-            
-//            Circle()
-//                .fill(.black)
-//                .frame(width: circleSize * 0.6, height: circleSize * 0.6)
-            
+                .shadow(color: AppTheme.gold.opacity(glow ? 0.95 : 0.5),
+                        radius: glow ? 14 : 8)
+
             Image("bg-button")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: circleSize * 0.5, height: circleSize * 0.5)
                 .clipShape(Circle())
+                .overlay(
+                    Circle()
+                        .stroke(AppTheme.lightGold.opacity(glow ? 0.5 : 0.15), lineWidth: 0.6)
+                )
 
 
             Image(icon)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 32, height: 32)
+                .rotation3DEffect(
+                    .degrees(iconSpin ? 6 : -6),
+                    axis: (x: 1, y: 0.3, z: 0)
+                )
 
 
             // Curved capsule label centered on ring center
@@ -285,6 +304,22 @@ private struct CosmicOrbitNode: View {
             .shadow(color: .black.opacity(0.6), radius: 3)
         }
         .frame(width: circleSize, height: capsuleFrameSize)
+        .offset(y: float ? -4 : 4)
+        .onAppear { startAnimations() }
+    }
+
+    private func startAnimations() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + animationDelay) {
+            withAnimation(.easeInOut(duration: 2.6).repeatForever(autoreverses: true)) {
+                float = true
+            }
+            withAnimation(.easeInOut(duration: 1.9).repeatForever(autoreverses: true)) {
+                glow = true
+            }
+            withAnimation(.easeInOut(duration: 3.4).repeatForever(autoreverses: true)) {
+                iconSpin = true
+            }
+        }
     }
 }
 
@@ -410,8 +445,13 @@ private struct ArcText: View {
 private struct CosmicNodeButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .scaleEffect(configuration.isPressed ? 0.92 : 1.0)
-            .animation(.spring(response: 0.3), value: configuration.isPressed)
+            .scaleEffect(configuration.isPressed ? 0.86 : 1.0)
+            .rotationEffect(.degrees(configuration.isPressed ? -3 : 0))
+            .brightness(configuration.isPressed ? 0.18 : 0)
+            .shadow(color: AppTheme.lightGold.opacity(configuration.isPressed ? 0.7 : 0.0),
+                    radius: configuration.isPressed ? 14 : 0)
+            .animation(.spring(response: 0.35, dampingFraction: 0.55),
+                       value: configuration.isPressed)
     }
 }
 
