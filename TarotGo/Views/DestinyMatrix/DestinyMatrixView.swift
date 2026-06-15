@@ -156,10 +156,11 @@ struct DestinyMatrixView: View {
                 } label: {
                     CircularRingButton(
                         icon: "ic_destiny_matrix",
-                        title: L10n.homeDestinyMatrix
+                        title: L10n.homeDestinyMatrix,
+                        animationDelay: 0.0
                     )
                 }
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(RingButtonPressStyle())
                 .offset(y: -buttonRadius)
 
                 // Right button - Couple Destiny
@@ -170,10 +171,11 @@ struct DestinyMatrixView: View {
                 } label: {
                     CircularRingButton(
                         icon: "ic_couple_destiny",
-                        title: L10n.homeCoupleDestiny
+                        title: L10n.homeCoupleDestiny,
+                        animationDelay: 0.3
                     )
                 }
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(RingButtonPressStyle())
                 .offset(x: buttonRadius)
 
                 // Bottom button - Learn Matrix
@@ -184,10 +186,11 @@ struct DestinyMatrixView: View {
                 } label: {
                     CircularRingButton(
                         icon: "ic_learn_destiny_matrix",
-                        title: L10n.homeLearnDestinyMatrix
+                        title: L10n.homeLearnDestinyMatrix,
+                        animationDelay: 0.6
                     )
                 }
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(RingButtonPressStyle())
                 .offset(y: buttonRadius)
 
                 // Left button - Saved Matrices
@@ -198,10 +201,11 @@ struct DestinyMatrixView: View {
                 } label: {
                     CircularRingButton(
                         icon: "ic_saved_matrices",
-                        title: L10n.homeMatrixHistory
+                        title: L10n.homeMatrixHistory,
+                        animationDelay: 0.9
                     )
                 }
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(RingButtonPressStyle())
                 .offset(x: -buttonRadius)
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
@@ -222,28 +226,49 @@ struct DestinyMatrixView: View {
 private struct CircularRingButton: View {
     let icon: String
     let title: String
+    let animationDelay: Double
+
+    @State private var float: Bool = false
+    @State private var glow: Bool = false
+    @State private var iconWobble: Bool = false
 
     private let buttonSize: CGFloat = 110
 
     var body: some View {
         ZStack {
+            Circle()
+                .fill(AppTheme.gold.opacity(glow ? 0.30 : 0.08))
+                .frame(width: buttonSize * 1.15, height: buttonSize * 1.15)
+                .blur(radius: 14)
+                .scaleEffect(glow ? 1.08 : 0.92)
+
             Image("bg-button")
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
                 .frame(width: buttonSize * 0.82, height: buttonSize * 0.82)
+                .overlay(
+                    Circle()
+                        .stroke(AppTheme.lightGold.opacity(glow ? 0.5 : 0.15), lineWidth: 0.6)
+                        .frame(width: buttonSize * 0.82, height: buttonSize * 0.82)
+                )
 
             Image("button-ring")
                 .resizable()
                 .scaledToFit()
                 .frame(width: buttonSize, height: buttonSize)
-                .shadow(color: AppTheme.gold.opacity(0.5), radius: 8)
+                .shadow(color: AppTheme.gold.opacity(glow ? 0.95 : 0.5),
+                        radius: glow ? 14 : 8)
 
             VStack(spacing: 0) {
                 Image(icon)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
+                    .rotation3DEffect(
+                        .degrees(iconWobble ? 6 : -6),
+                        axis: (x: 1, y: 0.3, z: 0)
+                    )
 
                 Text(title)
                     .font(AppTheme.serifFont(size: 12, weight: .medium))
@@ -256,6 +281,35 @@ private struct CircularRingButton: View {
         }
         .frame(width: buttonSize, height: buttonSize)
         .contentShape(Circle())
+        .offset(y: float ? -3 : 3)
+        .onAppear { startAnimations() }
+    }
+
+    private func startAnimations() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + animationDelay) {
+            withAnimation(.easeInOut(duration: 2.6).repeatForever(autoreverses: true)) {
+                float = true
+            }
+            withAnimation(.easeInOut(duration: 1.9).repeatForever(autoreverses: true)) {
+                glow = true
+            }
+            withAnimation(.easeInOut(duration: 3.4).repeatForever(autoreverses: true)) {
+                iconWobble = true
+            }
+        }
+    }
+}
+
+private struct RingButtonPressStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.86 : 1.0)
+            .rotationEffect(.degrees(configuration.isPressed ? -3 : 0))
+            .brightness(configuration.isPressed ? 0.18 : 0)
+            .shadow(color: AppTheme.lightGold.opacity(configuration.isPressed ? 0.7 : 0.0),
+                    radius: configuration.isPressed ? 14 : 0)
+            .animation(.spring(response: 0.35, dampingFraction: 0.55),
+                       value: configuration.isPressed)
     }
 }
 
