@@ -130,27 +130,27 @@ private struct PalmCardButton: View {
     let title: String
 
     var body: some View {
-        GeometryReader { geo in
-            ZStack(alignment: .bottom) {
-                Image(imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .shadow(color: AppTheme.gold.opacity(0.4), radius: 6)
-
-                Text(title)
-                    .font(AppTheme.serifFont(size: 11, weight: .semibold))
-                    .foregroundStyle(AppTheme.goldGradient)
-                    .multilineTextAlignment(.center)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.7)
-                    .shadow(color: .black.opacity(0.6), radius: 2)
-                    .padding(.horizontal, 6)
-                    .padding(.bottom, geo.size.height * 0.12)
-                    .frame(maxWidth: .infinity)
+        Image(imageName)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .shadow(color: AppTheme.gold.opacity(0.4), radius: 6)
+            .overlay {
+                GeometryReader { geo in
+                    Text(title)
+                        .font(AppTheme.serifFont(size: 8, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(3)
+                        .minimumScaleFactor(0.7)
+                        .shadow(color: .black.opacity(0.6), radius: 2)
+                        .padding(.horizontal, 8)
+                        .frame(width: geo.size.width,
+                               height: geo.size.height * 0.32,
+                               alignment: .center)
+                        .position(x: geo.size.width * 0.5,
+                                  y: geo.size.height * 0.68)
+                }
             }
-            .frame(width: geo.size.width, height: geo.size.height)
-        }
-        .aspectRatio(347.0 / 532.0, contentMode: .fit)
     }
 }
 
