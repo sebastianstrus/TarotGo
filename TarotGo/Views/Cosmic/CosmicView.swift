@@ -73,7 +73,7 @@ private struct CosmicOrbitMenu: View {
             let bgHeight = bgWidth * 0.78
             let center = CGPoint(x: w / 2, y: h / 2)
             // Single shared orbit so the nodes never overtake each other.
-            let sharedOrbit = Orbit(rx: 0.42, ry: 0.32, period: 36)
+            let sharedOrbit = Orbit(rx: 0.42, ry: 0.32, period: 24)
 
             ZStack {
                 Image("bg-cosmos")
