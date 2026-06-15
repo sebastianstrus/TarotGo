@@ -102,39 +102,41 @@ struct SettingsView: View {
                 .padding(.vertical, 4)
                 
                 Section {
-                    Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
-                        .listRowSeparator(.hidden)
-                        .onChange(of: toggleState) { oldValue, newValue in
-                            if hasAppeared && oldValue != newValue {
-                                soundService.play(.toggle)
+                    VStack {
+                        Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
+                            .listRowSeparator(.hidden)
+                            .onChange(of: toggleState) { oldValue, newValue in
+                                if hasAppeared && oldValue != newValue {
+                                    soundService.play(.toggle)
+                                }
+                                handleNotificationToggle(newValue)
                             }
-                            handleNotificationToggle(newValue)
-                        }
-                        .tint(AppTheme.gold)
-                    
-                    if toggleState {
-                        HStack {
-                            Text(L10n.settingsReminderTime)
-                                .foregroundColor(AppTheme.textPrimary)
-                            Spacer()
-                            DatePicker(
-                                "",
-                                selection: $selectedDate,
-                                displayedComponents: .hourAndMinute
-                            )
-                            .labelsHidden()
-                            .colorScheme(.dark)
                             .tint(AppTheme.gold)
-                            .onChange(of: selectedDate) { oldValue, newValue in
-                                let components = Calendar.current.dateComponents([.hour, .minute], from: newValue)
-                                notificationHour = components.hour ?? 9
-                                notificationMinute = components.minute ?? 0
-                                Task {
-                                    await scheduleNotification()
+                        
+                        if toggleState {
+                            HStack {
+                                Text(L10n.settingsReminderTime)
+                                    .foregroundColor(AppTheme.textPrimary)
+                                Spacer()
+                                DatePicker(
+                                    "",
+                                    selection: $selectedDate,
+                                    displayedComponents: .hourAndMinute
+                                )
+                                .labelsHidden()
+                                .colorScheme(.dark)
+                                .tint(AppTheme.gold)
+                                .onChange(of: selectedDate) { oldValue, newValue in
+                                    let components = Calendar.current.dateComponents([.hour, .minute], from: newValue)
+                                    notificationHour = components.hour ?? 9
+                                    notificationMinute = components.minute ?? 0
+                                    Task {
+                                        await scheduleNotification()
+                                    }
                                 }
                             }
+                            .listRowSeparator(.hidden)
                         }
-                        .listRowSeparator(.hidden)
                     }
                 } header: {
                     Text(L10n.settingsNotifications)
@@ -246,35 +248,37 @@ struct SettingsView: View {
                 .padding(.vertical, 4)
                 
                 Section {
-                    Button {
-                        showOnboarding = true
-                    } label: {
-                        HStack {
-                            Text(L10n.settingsIntroSlides)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .font(.system(size: 14))
-                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                    VStack(spacing: 12) {
+                        Button {
+                            showOnboarding = true
+                        } label: {
+                            HStack {
+                                Text(L10n.settingsIntroSlides)
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(AppTheme.gold.opacity(0.6))
+                            }
+                            .foregroundColor(AppTheme.textPrimary)
                         }
-                        .foregroundColor(AppTheme.textPrimary)
-                    }
-                    .listRowSeparator(.hidden)
-                    
-                    Button {
-                        openLanguageSettings()
-                    } label: {
-                        HStack {
-                            Text(L10n.settingsLanguage)
-                            Spacer()
-                            Text(currentLanguageName)
-                                .foregroundColor(AppTheme.gold.opacity(0.8))
-                            Image(systemName: "chevron.right")
-                                .font(.system(size: 14))
-                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        .listRowSeparator(.hidden)
+                        
+                        Button {
+                            openLanguageSettings()
+                        } label: {
+                            HStack {
+                                Text(L10n.settingsLanguage)
+                                Spacer()
+                                Text(currentLanguageName)
+                                    .foregroundColor(AppTheme.gold.opacity(0.8))
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(AppTheme.gold.opacity(0.6))
+                            }
+                            .foregroundColor(AppTheme.textPrimary)
                         }
-                        .foregroundColor(AppTheme.textPrimary)
+                        .listRowSeparator(.hidden)
                     }
-                    .listRowSeparator(.hidden)
                 } header: {
                     Text(L10n.settingsInfo)
                         .foregroundColor(AppTheme.gold)
@@ -291,33 +295,35 @@ struct SettingsView: View {
                 .padding(.vertical, 4)
                 
                 Section {
-                    Button {
-                        openURL("https://tarot-go.com/privacy.html")
-                    } label: {
-                        HStack {
-                            Text(L10n.settingsPrivacyPolicy)
-                            Spacer()
-                            Image(systemName: "arrow.up.right")
-                                .font(.system(size: 12))
-                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                    VStack(spacing: 12) {
+                        Button {
+                            openURL("https://tarot-go.com/privacy.html")
+                        } label: {
+                            HStack {
+                                Text(L10n.settingsPrivacyPolicy)
+                                Spacer()
+                                Image(systemName: "arrow.up.right")
+                                    .font(.system(size: 12))
+                                    .foregroundColor(AppTheme.gold.opacity(0.6))
+                            }
+                            .foregroundColor(AppTheme.textPrimary)
                         }
-                        .foregroundColor(AppTheme.textPrimary)
-                    }
-                    .listRowSeparator(.hidden)
-                    
-                    Button {
-                        openURL("https://tarot-go.com/terms.html")
-                    } label: {
-                        HStack {
-                            Text(L10n.settingsTermsOfService)
-                            Spacer()
-                            Image(systemName: "arrow.up.right")
-                                .font(.system(size: 12))
-                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        .listRowSeparator(.hidden)
+                        
+                        Button {
+                            openURL("https://tarot-go.com/terms.html")
+                        } label: {
+                            HStack {
+                                Text(L10n.settingsTermsOfService)
+                                Spacer()
+                                Image(systemName: "arrow.up.right")
+                                    .font(.system(size: 12))
+                                    .foregroundColor(AppTheme.gold.opacity(0.6))
+                            }
+                            .foregroundColor(AppTheme.textPrimary)
                         }
-                        .foregroundColor(AppTheme.textPrimary)
+                        .listRowSeparator(.hidden)
                     }
-                    .listRowSeparator(.hidden)
                 } header: {
                     Text(L10n.settingsLegal)
                         .foregroundColor(AppTheme.gold)
