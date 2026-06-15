@@ -92,7 +92,7 @@ struct DestinyMatrixView: View {
 
     private var ringSection: some View {
         GeometryReader { geometry in
-            let side = min(geometry.size.width - 20, geometry.size.height)
+            let side = max(0, min(geometry.size.width - 20, geometry.size.height))
             let ringSize = side
             let buttonRadius = ringSize * 0.39
 
@@ -183,7 +183,7 @@ struct DestinyMatrixView: View {
                     navigateToLearn = true
                 } label: {
                     CircularRingButton(
-                        icon: "ic_learn_tarot",
+                        icon: "ic_learn_destiny_matrix",
                         title: L10n.homeLearnDestinyMatrix
                     )
                 }
