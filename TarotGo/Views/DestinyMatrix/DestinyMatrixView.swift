@@ -28,18 +28,10 @@ struct DestinyMatrixView: View {
                     .background(AnimatedBackgroundView().ignoresSafeArea())
 
                 VStack(spacing: 0) {
-                    // Top spacing
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 40)
 
-                    // Section title with gold styling
                     VStack(spacing: 10) {
-                        Image("ic_destiny_matrix")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 64, height: 64)
-                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
-
                         Text(L10n.destinyMatrixViewTitle)
                             .font(AppTheme.serifFont(size: 36, weight: .regular))
                             .foregroundStyle(AppTheme.goldGradient)
@@ -63,26 +55,9 @@ struct DestinyMatrixView: View {
 
                     Spacer(minLength: 0)
 
-                    // Ring with 4 circular buttons
                     ringSection
 
                     Spacer(minLength: 0)
-
-                    // Footer with golden accent
-                    HStack(spacing: 10) {
-                        Rectangle()
-                            .fill(AppTheme.goldGradient)
-                            .frame(width: 35, height: 1)
-
-                        Text(L10n.destinyMatrixViewFooter)
-                            .font(AppTheme.serifFont(size: 13, weight: .light))
-                            .foregroundColor(AppTheme.textTertiary)
-
-                        Rectangle()
-                            .fill(AppTheme.goldGradient)
-                            .frame(width: 35, height: 1)
-                    }
-                    .padding(.bottom, 20)
                 }
             }
             .navigationBarHidden(true)

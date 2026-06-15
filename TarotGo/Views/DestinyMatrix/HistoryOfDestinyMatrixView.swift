@@ -18,7 +18,6 @@ struct HistoryOfDestinyMatrixView: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    // Page title
                     VStack(alignment: .leading, spacing: 8) {
                         Text(L10n.historyOfMatrixTitle)
                             .font(AppTheme.serifFont(size: 32, weight: .medium))

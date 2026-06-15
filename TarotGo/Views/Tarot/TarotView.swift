@@ -18,15 +18,10 @@ struct TarotView: View {
                     .background(AnimatedBackgroundView().ignoresSafeArea())
 
                 VStack(spacing: 0) {
-                    Spacer().frame(height: 10)
+                    Spacer()
+                        .frame(height: 40)
 
-                    // Section title with gold styling
                     VStack(spacing: 10) {
-                        Image("ic_tarot")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 64, height: 64)
-                            .shadow(color: AppTheme.gold.opacity(0.5), radius: 10, x: 0, y: 5)
 
                         Text(L10n.tarotViewTitle)
                             .font(AppTheme.serifFont(size: 36, weight: .regular))
@@ -51,30 +46,13 @@ struct TarotView: View {
 
                     Spacer(minLength: 0)
 
-                    // Circular wheel menu
                     TarotWheelMenuView(
                         options: wheelOptions,
                         onSelect: handleSelection
                     )
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 10)
 
                     Spacer(minLength: 0)
-
-                    // Footer with golden accent
-                    HStack(spacing: 10) {
-                        Rectangle()
-                            .fill(AppTheme.goldGradient)
-                            .frame(width: 35, height: 1)
-
-                        Text(L10n.homeFooter)
-                            .font(AppTheme.serifFont(size: 13, weight: .light))
-                            .foregroundColor(AppTheme.textTertiary)
-
-                        Rectangle()
-                            .fill(AppTheme.goldGradient)
-                            .frame(width: 35, height: 1)
-                    }
-                    .padding(.bottom, 20)
                 }
             }
             .navigationBarHidden(true)

@@ -18,13 +18,14 @@ struct PalmistryView: View {
                     .background(AnimatedBackgroundView().ignoresSafeArea())
 
                 VStack(spacing: 0) {
-                    // Section title with gold styling
+                    Spacer()
+                        .frame(height: 40)
+                    
                     VStack(spacing: 8) {
                         Text(L10n.palmistryViewTitle)
                             .font(AppTheme.serifFont(size: 36, weight: .regular))
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 8, x: 0, y: 4)
-                            .padding(.top, 10)
 
                         HStack(spacing: 6) {
                             Image(systemName: "star.fill")
@@ -40,7 +41,8 @@ struct PalmistryView: View {
                                 .foregroundColor(AppTheme.gold)
                         }
                     }
-                    .padding(.top, 10)
+                    
+                    Spacer(minLength: 0)
 
                     GeometryReader { geo in
                         ZStack {
