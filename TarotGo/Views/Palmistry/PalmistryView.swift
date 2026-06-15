@@ -160,6 +160,7 @@ private struct PalmButton: View {
     let icon: String
     let title: String
     var scale: CGFloat = 1.2
+    @State private var sparkAnimating: Bool = false
 
     private var circleSize: CGFloat { 90 * scale }
     private var capsuleThickness: CGFloat { 16 * scale }
@@ -181,25 +182,26 @@ private struct PalmButton: View {
 
     var body: some View {
         ZStack {
-            // Ring & icon
-            Image("bg-button")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: circleSize / 2, height: circleSize / 2)
-                .clipShape(Circle())
-                .opacity(0.85)
 
             Image("bg-palmring")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: circleSize, height: circleSize)
                 .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
-                .opacity(0.85)
+                .opacity(1)
+            
+            Image("palm-spark")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: circleSize * 0.5, height: circleSize * 0.5)
+                .scaleEffect(sparkAnimating ? 0.6 : 1)
+                //.opacity(sparkAnimating ? 0.7 : 1)
+                .animation(
+                    .easeInOut(duration: 1.2).repeatForever(autoreverses: true),
+                    value: sparkAnimating
+                )
+                .onAppear { sparkAnimating = true }
 
-//            Image(systemName: icon)
-//                .font(.system(size: iconSize, weight: .semibold))
-//                .foregroundStyle(AppTheme.goldGradient)
-//                .scaleEffect(x: -1, y: 1)
 
             // Curved capsule label centered on ring center
             ZStack {
