@@ -102,8 +102,7 @@ struct PalmistryView: View {
                             } label: {
                                 PalmButton(
                                     icon: "hand.raised.fill",
-                                    title: L10n.palmReadingTitle,
-                                    scale: 1.6
+                                    title: L10n.palmReadingTitle
                                 )
                             }
                             .buttonStyle(NavigationButtonStyle())
@@ -160,7 +159,7 @@ private struct PalmCardButton: View {
 private struct PalmButton: View {
     let icon: String
     let title: String
-    var scale: CGFloat = 0.9
+    var scale: CGFloat = 1.2
 
     private var circleSize: CGFloat { 90 * scale }
     private var capsuleThickness: CGFloat { 16 * scale }
@@ -188,17 +187,19 @@ private struct PalmButton: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: circleSize / 2, height: circleSize / 2)
                 .clipShape(Circle())
+                .opacity(0.85)
 
             Image("bg-palmring")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: circleSize, height: circleSize)
                 .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
+                .opacity(0.85)
 
-            Image(systemName: icon)
-                .font(.system(size: iconSize, weight: .semibold))
-                .foregroundStyle(AppTheme.goldGradient)
-                .scaleEffect(x: -1, y: 1)
+//            Image(systemName: icon)
+//                .font(.system(size: iconSize, weight: .semibold))
+//                .foregroundStyle(AppTheme.goldGradient)
+//                .scaleEffect(x: -1, y: 1)
 
             // Curved capsule label centered on ring center
             ZStack {
