@@ -24,6 +24,7 @@ struct PalmistryView: View {
                             .font(AppTheme.serifFont(size: 36, weight: .regular))
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.5), radius: 8, x: 0, y: 4)
+                            .padding(.top, 10)
 
                         HStack(spacing: 6) {
                             Image(systemName: "star.fill")
@@ -98,7 +99,7 @@ struct PalmistryView: View {
                                 navigateToPalmReading = true
                             } label: {
                                 PalmButton(
-                                    icon: "hand.raised.palm.facing.fill",
+                                    icon: "hand.raised.fill",
                                     title: L10n.palmReadingTitle,
                                     scale: 1.6
                                 )
@@ -195,6 +196,7 @@ private struct PalmButton: View {
             Image(systemName: icon)
                 .font(.system(size: iconSize, weight: .semibold))
                 .foregroundStyle(AppTheme.goldGradient)
+                .scaleEffect(x: -1, y: 1)
 
             // Curved capsule label centered on ring center
             ZStack {
