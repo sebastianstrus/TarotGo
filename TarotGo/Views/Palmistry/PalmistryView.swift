@@ -214,8 +214,12 @@ private struct PalmButton: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: circleSize, height: circleSize)
-                .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
-                .opacity(1)
+                .shadow(color: AppTheme.gold.opacity(sparkAnimating ? 0.5 : 0.95), radius: sparkAnimating ? 8 : 24)
+                .shadow(color: AppTheme.gold.opacity(sparkAnimating ? 0.3 : 0.7), radius: sparkAnimating ? 14 : 40)
+                .animation(
+                    .easeInOut(duration: 1.2).repeatForever(autoreverses: true),
+                    value: sparkAnimating
+                )
             
             Image("palm-spark")
                 .resizable()
