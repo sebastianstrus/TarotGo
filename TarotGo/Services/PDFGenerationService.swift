@@ -11,9 +11,22 @@ import SwiftUI
 
 class PDFGenerationService {
     static let shared = PDFGenerationService()
-    
+
     private init() {}
-    
+
+    // MARK: - App Icon
+
+    private static func appIconImage() -> UIImage? {
+        if let icons = Bundle.main.infoDictionary?["CFBundleIcons"] as? [String: Any],
+           let primaryIcon = icons["CFBundlePrimaryIcon"] as? [String: Any],
+           let iconFiles = primaryIcon["CFBundleIconFiles"] as? [String],
+           let lastIcon = iconFiles.last,
+           let image = UIImage(named: lastIcon) {
+            return image
+        }
+        return UIImage(named: "app_new_icon")
+    }
+
     // MARK: - Decorative Elements
     
     private func drawMysticalBackground(in rect: CGRect, context: CGContext) {
@@ -274,13 +287,29 @@ class PDFGenerationService {
             UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setFill()
             drawStar(at: CGPoint(x: pageWidth / 2, y: 30), size: 12, context: context.cgContext)
             yPosition += 30
-            
-            // Title
+
+            // App Icon (centered)
+            if let appIcon = Self.appIconImage() {
+                let iconSize: CGFloat = 60
+                let iconX = (pageWidth - iconSize) / 2
+                let iconRect = CGRect(x: iconX, y: yPosition, width: iconSize, height: iconSize)
+                context.cgContext.saveGState()
+                let iconPath = UIBezierPath(roundedRect: iconRect, cornerRadius: iconSize * 0.22)
+                iconPath.addClip()
+                appIcon.draw(in: iconRect)
+                context.cgContext.restoreGState()
+                yPosition += iconSize + 15
+            }
+
+            // Title (centered)
+            let titleFont = UIFont.systemFont(ofSize: 32, weight: .bold)
+            let titleSize = L10n.summaryYourTarotGoReading.size(withAttributes: [.font: titleFont])
+            let titleX = (pageWidth - titleSize.width) / 2
             yPosition = drawText(
-                L10n.summaryYourReading,
-                at: CGPoint(x: margin, y: yPosition),
-                width: contentWidth,
-                font: .systemFont(ofSize: 32, weight: .bold),
+                L10n.summaryYourTarotGoReading,
+                at: CGPoint(x: titleX, y: yPosition),
+                width: titleSize.width + 1,
+                font: titleFont,
                 color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
             )
             
@@ -381,7 +410,7 @@ class PDFGenerationService {
                 yPosition += 40
                 drawCardPositionBadge(position: index + 1, at: CGPoint(x: margin, y: yPosition), context: context.cgContext)
                 
-                let positionText = "\(index + 1). \(drawnCard.position.name)"
+                let positionText = drawnCard.position.name
                 yPosition = drawText(
                     positionText,
                     at: CGPoint(x: margin + 45, y: yPosition + 5),
@@ -546,7 +575,37 @@ class PDFGenerationService {
                 
                 yPosition = drawText(notes, at: CGPoint(x: margin, y: yPosition), width: contentWidth, font: notesFont, color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0))
             }
-            
+
+            // App Store Promo
+            let appStorePromoHeight: CGFloat = 70
+            if yPosition > pageHeight - appStorePromoHeight - 60 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition += 30
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 20
+
+            yPosition = drawText(
+                "Download TarotGo on the App Store:",
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .medium),
+                color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+            )
+            yPosition += 5
+            yPosition = drawText(
+                "https://apps.apple.com/app/id6762875158",
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+            )
+
             drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
         }
         
@@ -617,12 +676,28 @@ class PDFGenerationService {
             drawStar(at: CGPoint(x: pageWidth / 2, y: 30), size: 12, context: context.cgContext)
             yPosition += 30
 
-            // Title
+            // App Icon (centered)
+            if let appIcon = Self.appIconImage() {
+                let iconSize: CGFloat = 60
+                let iconX = (pageWidth - iconSize) / 2
+                let iconRect = CGRect(x: iconX, y: yPosition, width: iconSize, height: iconSize)
+                context.cgContext.saveGState()
+                let iconPath = UIBezierPath(roundedRect: iconRect, cornerRadius: iconSize * 0.22)
+                iconPath.addClip()
+                appIcon.draw(in: iconRect)
+                context.cgContext.restoreGState()
+                yPosition += iconSize + 15
+            }
+
+            // Title (centered)
+            let titleFont = UIFont.systemFont(ofSize: 32, weight: .bold)
+            let titleSize = L10n.pdfMatrixTitle.size(withAttributes: [.font: titleFont])
+            let titleX = (pageWidth - titleSize.width) / 2
             yPosition = drawText(
                 L10n.pdfMatrixTitle,
-                at: CGPoint(x: margin, y: yPosition),
-                width: contentWidth,
-                font: .systemFont(ofSize: 32, weight: .bold),
+                at: CGPoint(x: titleX, y: yPosition),
+                width: titleSize.width + 1,
+                font: titleFont,
                 color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
             )
 
@@ -902,6 +977,36 @@ class PDFGenerationService {
 
                 yPosition = drawText(notes, at: CGPoint(x: margin, y: yPosition), width: contentWidth, font: notesFont, color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0))
             }
+
+            // App Store Promo
+            let appStorePromoHeight: CGFloat = 70
+            if yPosition > pageHeight - appStorePromoHeight - 60 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition += 30
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 20
+
+            yPosition = drawText(
+                "Download TarotGo on the App Store:",
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .medium),
+                color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+            )
+            yPosition += 5
+            yPosition = drawText(
+                "https://apps.apple.com/app/id6762875158",
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+            )
 
             drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
         }
@@ -1361,12 +1466,28 @@ class PDFGenerationService {
             drawStar(at: CGPoint(x: pageWidth / 2, y: 30), size: 12, context: context.cgContext)
             yPosition += 30
 
-            // Title
+            // App Icon (centered)
+            if let appIcon = Self.appIconImage() {
+                let iconSize: CGFloat = 60
+                let iconX = (pageWidth - iconSize) / 2
+                let iconRect = CGRect(x: iconX, y: yPosition, width: iconSize, height: iconSize)
+                context.cgContext.saveGState()
+                let iconPath = UIBezierPath(roundedRect: iconRect, cornerRadius: iconSize * 0.22)
+                iconPath.addClip()
+                appIcon.draw(in: iconRect)
+                context.cgContext.restoreGState()
+                yPosition += iconSize + 15
+            }
+
+            // Title (centered)
+            let titleFont = UIFont.systemFont(ofSize: 32, weight: .bold)
+            let titleSize = L10n.pdfPalmTitle.size(withAttributes: [.font: titleFont])
+            let titleX = (pageWidth - titleSize.width) / 2
             yPosition = drawText(
                 L10n.pdfPalmTitle,
-                at: CGPoint(x: margin, y: yPosition),
-                width: contentWidth,
-                font: .systemFont(ofSize: 32, weight: .bold),
+                at: CGPoint(x: titleX, y: yPosition),
+                width: titleSize.width + 1,
+                font: titleFont,
                 color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
             )
 
@@ -1685,6 +1806,36 @@ class PDFGenerationService {
 
                 yPosition = drawText(notes, at: CGPoint(x: margin, y: yPosition), width: contentWidth, font: notesFont, color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0))
             }
+
+            // App Store Promo
+            let appStorePromoHeight: CGFloat = 70
+            if yPosition > pageHeight - appStorePromoHeight - 60 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition += 30
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 20
+
+            yPosition = drawText(
+                "Download TarotGo on the App Store:",
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .medium),
+                color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+            )
+            yPosition += 5
+            yPosition = drawText(
+                "https://apps.apple.com/app/id6762875158",
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+            )
 
             drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
         }

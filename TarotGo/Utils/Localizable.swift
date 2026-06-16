@@ -433,6 +433,7 @@ enum L10n {
 
     // MARK: - Summary
     static let summaryYourReading = NSLocalizedString("summary.yourReading", comment: "Your Reading")
+    static let summaryYourTarotGoReading = NSLocalizedString("summary.yourTarotGoReading", comment: "Your TarotGo Reading")
     static let summaryOverallInsight = NSLocalizedString("summary.overallInsight", comment: "Overall Insight")
     static let summaryReflections = NSLocalizedString("summary.reflections", comment: "Your Reflections")
     static let summarySaveReading = NSLocalizedString("summary.saveReading", comment: "Save Reading")

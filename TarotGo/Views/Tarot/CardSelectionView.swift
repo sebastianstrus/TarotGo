@@ -163,18 +163,42 @@ struct CardSelectionView: View {
     }
     
     private var selectedCardsView: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 10) {
-                ForEach(selectedCards, id: \.id) { card in
-                    CardView()
-                        .frame(height: 80)
-                        .matchedGeometryEffect(id: "card-\(card.id)", in: cardNamespace)
+        VStack(spacing: 8) {
+            if positions.count == 10 {
+                HStack(spacing: 10) {
+                    ForEach(0..<5, id: \.self) { index in
+                        cardSlot(at: index)
+                    }
+                }
+                HStack(spacing: 10) {
+                    ForEach(5..<10, id: \.self) { index in
+                        cardSlot(at: index)
+                    }
+                }
+            } else {
+                HStack(spacing: 10) {
+                    ForEach(0..<positions.count, id: \.self) { index in
+                        cardSlot(at: index)
+                    }
                 }
             }
-            .padding(.horizontal)
-            .padding(.vertical, 5)
         }
-        .frame(height: 95)
+        .padding(.horizontal)
+        .padding(.vertical, 5)
+        .frame(height: positions.count == 10 ? 185 : 95)
+    }
+
+    @ViewBuilder
+    private func cardSlot(at index: Int) -> some View {
+        if index < selectedCards.count {
+            let card = selectedCards[index]
+            CardView()
+                .frame(height: 80)
+                .matchedGeometryEffect(id: "card-\(card.id)", in: cardNamespace)
+        } else {
+            Color.clear
+                .frame(width: 80 * 1108.0 / 1900.0, height: 80)
+        }
     }
     
     private var cardFanView: some View {

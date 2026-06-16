@@ -162900,6 +162900,17 @@
         }
       }
     },
+    "summary.yourTarotGoReading" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your TarotGo Reading"
+          }
+        }
+      }
+    },
     "summary.yourReading" : {
       "extractionState" : "manual",
       "localizations" : {
