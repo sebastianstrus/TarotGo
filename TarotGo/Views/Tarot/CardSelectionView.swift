@@ -241,13 +241,15 @@ struct CardSelectionView: View {
             let cardCount = viewModel.availableCards.count
             let fanInSelection = geometry.frame(in: .named("selection"))
 
-            // Cards radiate from a pivot point one card-height below their
-            // centers, so each card sweeps along an arc. Equivalent to using
-            // `.rotationEffect(angle, anchor: (0.5, 1.5))` but expressed as
-            // rotate-around-center + offset so SwiftUI hit-testing picks up
-            // each card at its visible position.
-            let angleStep: Double = cardCount > 30 ? 1.0 : 3.0
-            let pivotDistance: CGFloat = 150.0
+            // Cards radiate from a pivot point close below their centers and
+            // sweep through a wide angle, producing a near-semicircular arc.
+            // Each card's z-index increases with its index so the rightmost
+            // card sits on top of the stack and is fully visible.
+            let angleStep: Double = cardCount > 30 ? 1.6 : 3.0
+            let pivotDistance: CGFloat = 110.0
+            // Shift the ZStack up so the outer cards' downward drop fits in the
+            // fan frame.
+            let centerYOffset: CGFloat = -25.0
 
             ZStack {
                 ForEach(Array(viewModel.availableCards.enumerated()), id: \.element.id) { index, card in
@@ -260,7 +262,7 @@ struct CardSelectionView: View {
 
                     let srcCenter = CGPoint(
                         x: fanInSelection.midX + visualOffsetX,
-                        y: fanInSelection.minY + geometry.size.height / 2 + visualOffsetY
+                        y: fanInSelection.minY + geometry.size.height / 2 + centerYOffset + visualOffsetY
                     )
 
                     if !isCardSelected && !isFlying {
@@ -269,7 +271,7 @@ struct CardSelectionView: View {
                             .shadow(color: .black.opacity(0.45), radius: 6, x: 0, y: 4)
                             .rotationEffect(.degrees(angle))
                             .offset(x: visualOffsetX, y: visualOffsetY)
-                            .zIndex(Double(cardCount - abs(index - cardCount / 2)))
+                            .zIndex(Double(index))
                             .onTapGesture {
                                 selectCard(card, srcCenter: srcCenter, srcAngle: angle)
                             }
@@ -277,7 +279,7 @@ struct CardSelectionView: View {
                 }
             }
             .frame(width: geometry.size.width, height: 240)
-            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+            .position(x: geometry.size.width / 2, y: geometry.size.height / 2 + centerYOffset)
         }
         .frame(height: 280)
     }
