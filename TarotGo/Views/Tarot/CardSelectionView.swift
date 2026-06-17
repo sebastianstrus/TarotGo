@@ -239,37 +239,36 @@ struct CardSelectionView: View {
     private var cardFanView: some View {
         GeometryReader { geometry in
             let cardCount = viewModel.availableCards.count
-            let totalWidth = geometry.size.width - 40
-            // Tighter spacing for more cards
-            let spacing = min(totalWidth / CGFloat(max(cardCount, 1)), 8)
             let fanInSelection = geometry.frame(in: .named("selection"))
 
-            // Angle and drop are scaled down for large decks so the outermost
-            // cards stay inside the fan frame.
-            let angleStep: Double = cardCount > 30 ? 1.4 : 2.5
-            let yMultiplier: CGFloat = cardCount > 30 ? 1.2 : 2.0
+            // Cards radiate from a pivot point one card-height below their
+            // centers, so each card sweeps along an arc. Equivalent to using
+            // `.rotationEffect(angle, anchor: (0.5, 1.5))` but expressed as
+            // rotate-around-center + offset so SwiftUI hit-testing picks up
+            // each card at its visible position.
+            let angleStep: Double = cardCount > 30 ? 1.0 : 3.0
+            let pivotDistance: CGFloat = 150.0
 
             ZStack {
                 ForEach(Array(viewModel.availableCards.enumerated()), id: \.element.id) { index, card in
                     let angle = Double(index - cardCount / 2) * angleStep
-                    let xOffset = CGFloat(index - cardCount / 2) * spacing
-                    let yOffset = CGFloat(abs(angle)) * yMultiplier
+                    let angleRad = angle * .pi / 180.0
+                    let visualOffsetX = pivotDistance * CGFloat(sin(angleRad))
+                    let visualOffsetY = pivotDistance * CGFloat(1.0 - cos(angleRad))
                     let isCardSelected = viewModel.selectedCardIds.contains(card.id)
                     let isFlying = flying?.card.id == card.id
 
-                    // Card center in the "selection" coordinate space — inner
-                    // ZStack is centered in the fan's GeometryReader, so each
-                    // card's center is (fan.midX + xOffset, fan.midY + yOffset).
                     let srcCenter = CGPoint(
-                        x: fanInSelection.midX + xOffset,
-                        y: fanInSelection.minY + geometry.size.height / 2 + yOffset
+                        x: fanInSelection.midX + visualOffsetX,
+                        y: fanInSelection.minY + geometry.size.height / 2 + visualOffsetY
                     )
 
                     if !isCardSelected && !isFlying {
                         CardView()
                             .frame(width: 100, height: 150)
+                            .shadow(color: .black.opacity(0.45), radius: 6, x: 0, y: 4)
                             .rotationEffect(.degrees(angle))
-                            .offset(x: xOffset, y: yOffset)
+                            .offset(x: visualOffsetX, y: visualOffsetY)
                             .zIndex(Double(cardCount - abs(index - cardCount / 2)))
                             .onTapGesture {
                                 selectCard(card, srcCenter: srcCenter, srcAngle: angle)
