@@ -265,7 +265,7 @@ struct CardSelectionView: View {
                         let isPopping = poppingCardId == card.id
                         CardView()
                             .frame(width: 100, height: 150)
-                            .shadow(color: .black.opacity(0.45), radius: 6, x: 0, y: 4)
+                            .shadow(color: .black.opacity(0.45), radius: 2, x: 0, y: 2)
                             .rotationEffect(.degrees(angle))
                             .offset(x: visualOffsetX, y: visualOffsetY - (isPopping ? 70 : 0))
                             .scaleEffect(isPopping ? 1.15 : 1.0)
