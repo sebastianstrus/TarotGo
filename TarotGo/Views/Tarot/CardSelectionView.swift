@@ -31,6 +31,7 @@ struct CardSelectionView: View {
     // Flying-card animation state
     @State private var slotFrames: [Int: CGRect] = [:]
     @State private var flying: FlyingCardState?
+    @State private var poppingCardId: String?
 
     @Environment(\.dismiss) private var dismiss
 
@@ -266,11 +267,16 @@ struct CardSelectionView: View {
                     )
 
                     if !isCardSelected && !isFlying {
+                        let isPopping = poppingCardId == card.id
                         CardView()
                             .frame(width: 100, height: 150)
                             .shadow(color: .black.opacity(0.45), radius: 6, x: 0, y: 4)
                             .rotationEffect(.degrees(angle))
-                            .offset(x: visualOffsetX, y: visualOffsetY)
+                            .offset(x: visualOffsetX, y: visualOffsetY - (isPopping ? 70 : 0))
+                            .scaleEffect(isPopping ? 1.15 : 1.0)
+                            // Keep the card at its natural z-index even while
+                            // popping, so it rises out of the stack between
+                            // its neighbours instead of teleporting on top.
                             .zIndex(Double(index))
                             .onTapGesture {
                                 selectCard(card, srcCenter: srcCenter, srcAngle: angle)
@@ -325,26 +331,28 @@ struct CardSelectionView: View {
         HapticService.shared.impact(.medium)
         SoundService.shared.play(.cardDraw, volume: 0.7)
 
-        // Spawn the flying card at the fan card's current pose. The fan card
-        // is removed in the same frame (because `flying?.card.id == card.id`
-        // becomes true), so visually nothing changes at this instant.
-        flying = FlyingCardState(
-            card: card,
-            srcCenter: srcCenter,
-            srcSize: CGSize(width: 100, height: 150),
-            srcAngle: srcAngle,
-            dstCenter: CGPoint(x: dstFrame.midX, y: dstFrame.midY),
-            dstSize: dstFrame.size,
-            phase: .rest
-        )
-
-        // Phase 1: pop — scale up, lift up, KEEP the fan rotation.
-        withAnimation(.spring(response: 0.35, dampingFraction: 0.65)) {
-            flying?.phase = .popped
+        // Phase 1: pop the card *inside the fan* — it lifts and scales in its
+        // own place (with a raised z-index) so it visibly rises out of the
+        // stack instead of teleporting to the front overlay.
+        withAnimation(.spring(response: 0.35, dampingFraction: 0.7)) {
+            poppingCardId = card.id
         }
 
-        // Phase 2: glide to the slot — position, size, AND rotation animate.
+        // Phase 2: hand the card off to the flying overlay (already at the
+        // popped pose, so the swap is invisible) and glide it to the slot —
+        // position, size, AND rotation animate together.
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            flying = FlyingCardState(
+                card: card,
+                srcCenter: srcCenter,
+                srcSize: CGSize(width: 100, height: 150),
+                srcAngle: srcAngle,
+                dstCenter: CGPoint(x: dstFrame.midX, y: dstFrame.midY),
+                dstSize: dstFrame.size,
+                phase: .popped
+            )
+            poppingCardId = nil
+
             withAnimation(.spring(response: 0.6, dampingFraction: 0.85)) {
                 flying?.phase = .landed
             }
