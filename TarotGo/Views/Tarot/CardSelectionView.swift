@@ -89,13 +89,14 @@ struct CardSelectionView: View {
                             .font(AppTheme.serifFont(size: 24, weight: .light))
                             .foregroundStyle(AppTheme.goldGradient)
                             .shadow(color: AppTheme.gold.opacity(0.3), radius: 8)
-                        
+                            .lineLimit(1)
+
                         Text(position.description)
                             .font(.system(size: 14, weight: .light))
                             .foregroundColor(AppTheme.textSecondary)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
-                            .lineLimit(2)
+                            .lineLimit(2, reservesSpace: true)
                     }
                 }
                 
@@ -119,8 +120,6 @@ struct CardSelectionView: View {
                 }
                 
                 cardFanView
-
-                Spacer()
             }
 
             if let f = flying {
@@ -245,12 +244,16 @@ struct CardSelectionView: View {
             let spacing = min(totalWidth / CGFloat(max(cardCount, 1)), 8)
             let fanInSelection = geometry.frame(in: .named("selection"))
 
+            // Angle and drop are scaled down for large decks so the outermost
+            // cards stay inside the fan frame.
+            let angleStep: Double = cardCount > 30 ? 1.4 : 2.5
+            let yMultiplier: CGFloat = cardCount > 30 ? 1.2 : 2.0
+
             ZStack {
                 ForEach(Array(viewModel.availableCards.enumerated()), id: \.element.id) { index, card in
-                    // Smaller angle increment for smoother fan with more cards
-                    let angle = Double(index - cardCount / 2) * 2.5
+                    let angle = Double(index - cardCount / 2) * angleStep
                     let xOffset = CGFloat(index - cardCount / 2) * spacing
-                    let yOffset = abs(angle) * 3
+                    let yOffset = CGFloat(abs(angle)) * yMultiplier
                     let isCardSelected = viewModel.selectedCardIds.contains(card.id)
                     let isFlying = flying?.card.id == card.id
 
@@ -274,10 +277,10 @@ struct CardSelectionView: View {
                     }
                 }
             }
-            .frame(width: geometry.size.width, height: 300)
+            .frame(width: geometry.size.width, height: 240)
             .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
         }
-        .frame(height: 400)
+        .frame(height: 280)
     }
 
     @ViewBuilder
