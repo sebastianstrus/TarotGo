@@ -122,11 +122,6 @@ struct CardSelectionView: View {
                 
                 cardFanView
             }
-
-            if let f = flying {
-                flyingCardView(f)
-                    .allowsHitTesting(false)
-            }
         }
         .coordinateSpace(name: "selection")
         .onPreferenceChange(SlotFramesKey.self) { slotFrames = $0 }
@@ -283,31 +278,45 @@ struct CardSelectionView: View {
                             }
                     }
                 }
+
+                // Flying card lives *inside* the fan ZStack so it keeps the
+                // original card's natural z-index — it stays between the fan
+                // cards as it starts moving, and only becomes fully visible as
+                // it physically rises above its neighbours.
+                if let f = flying,
+                   let originalFanIndex = viewModel.availableCards.firstIndex(where: { $0.id == f.card.id }) {
+                    let phase = f.phase
+                    let targetCenter: CGPoint = {
+                        switch phase {
+                        case .rest: return f.srcCenter
+                        case .popped: return CGPoint(x: f.srcCenter.x, y: f.srcCenter.y - 70)
+                        case .landed: return f.dstCenter
+                        }
+                    }()
+                    // Offset relative to the ZStack's centre (which sits at
+                    // `geometry.size.height / 2 + centerYOffset` in the
+                    // GeometryReader, i.e. `fanInSelection.minY + that` in
+                    // selection space).
+                    let offsetX = targetCenter.x - fanInSelection.midX
+                    let offsetY = targetCenter.y - fanInSelection.minY - (geometry.size.height / 2 + centerYOffset)
+                    let size: CGSize = (phase == .landed) ? f.dstSize : f.srcSize
+                    let angle: Double = (phase == .landed) ? 0 : f.srcAngle
+                    let scale: CGFloat = (phase == .popped) ? 1.15 : 1.0
+
+                    CardView()
+                        .frame(width: size.width, height: size.height)
+                        .shadow(color: .black.opacity(0.45), radius: 6, x: 0, y: 4)
+                        .rotationEffect(.degrees(angle))
+                        .scaleEffect(scale)
+                        .offset(x: offsetX, y: offsetY)
+                        .zIndex(Double(originalFanIndex))
+                        .allowsHitTesting(false)
+                }
             }
             .frame(width: geometry.size.width, height: 240)
             .position(x: geometry.size.width / 2, y: geometry.size.height / 2 + centerYOffset)
         }
         .frame(height: 280)
-    }
-
-    @ViewBuilder
-    private func flyingCardView(_ f: FlyingCardState) -> some View {
-        let center: CGPoint = {
-            switch f.phase {
-            case .rest: return f.srcCenter
-            case .popped: return CGPoint(x: f.srcCenter.x, y: f.srcCenter.y - 70)
-            case .landed: return f.dstCenter
-            }
-        }()
-        let size: CGSize = (f.phase == .landed) ? f.dstSize : f.srcSize
-        let angle: Double = (f.phase == .landed) ? 0 : f.srcAngle
-        let scale: CGFloat = (f.phase == .popped) ? 1.15 : 1.0
-
-        CardView()
-            .frame(width: size.width, height: size.height)
-            .rotationEffect(.degrees(angle))
-            .scaleEffect(scale)
-            .position(center)
     }
     
     private func setupCards() {
