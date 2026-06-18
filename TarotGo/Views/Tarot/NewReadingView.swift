@@ -21,6 +21,7 @@ struct NewReadingView: View {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
+            ScrollViewReader { proxy in
             ScrollView {
                 VStack(spacing: 20) {
                     Spacer()
@@ -140,9 +141,18 @@ struct NewReadingView: View {
                 
                 Spacer()
                     .frame(height: 50)
+                    .id("bottomAnchor")
             }
             .onTapGesture {
                 isTextFieldFocused = false
+            }
+            .onChange(of: selectedCategory) { _, newValue in
+                if newValue != nil {
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        proxy.scrollTo("bottomAnchor", anchor: .bottom)
+                    }
+                }
+            }
             }
             }
         }
