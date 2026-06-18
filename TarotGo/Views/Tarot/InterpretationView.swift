@@ -85,8 +85,10 @@ struct InterpretationView: View {
             }
             .onChange(of: selectedResonance) { _, newValue in
                 if newValue != nil {
-                    withAnimation(.easeInOut(duration: 0.5)) {
-                        proxy.scrollTo("interpretationBottomAnchor", anchor: .bottom)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            proxy.scrollTo("interpretationBottomAnchor", anchor: .bottom)
+                        }
                     }
                 }
             }
