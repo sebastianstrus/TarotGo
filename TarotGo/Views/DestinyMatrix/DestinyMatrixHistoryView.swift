@@ -582,6 +582,7 @@ struct CoupleMatrixSessionDetailView: View {
     @State private var selectedYear: CoupleYearlyEnergy?
     @State private var selectedTab: CoupleMatrixResultView.Tab = .diagram
     @State private var showDeleteAlert: Bool = false
+    @State private var sharePDFURL: URL?
 
     var body: some View {
         ZStack {
@@ -631,7 +632,7 @@ struct CoupleMatrixSessionDetailView: View {
                                 )
                                 .frame(minHeight: 540)
 
-                                deleteSection
+                                actionsSection
                                     .padding(.horizontal, 20)
                                     .padding(.bottom, 40)
                             }
@@ -663,6 +664,13 @@ struct CoupleMatrixSessionDetailView: View {
         } message: {
             Text(L10n.matrixHistoryDeleteMessage)
         }
+        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+            sharePDFURL = nil
+        }) {
+            if let pdfURL = sharePDFURL {
+                ShareSheet(items: [pdfURL])
+            }
+        }
         .onAppear {
             if matrix == nil {
                 matrix = CoupleMatrixCalculator.shared.calculate(
@@ -673,23 +681,53 @@ struct CoupleMatrixSessionDetailView: View {
         }
     }
 
-    private var deleteSection: some View {
-        Button {
-            showDeleteAlert = true
-        } label: {
-            HStack {
-                Image(systemName: "trash")
-                Text(L10n.matrixHistoryDelete)
+    private var actionsSection: some View {
+        VStack(spacing: 20) {
+            // Share button
+            Button {
+                shareMatrix()
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.system(size: 16))
+                    Text(L10n.coupleMatrixShareMatrix)
+                        .font(.system(size: 16, weight: .semibold))
+                }
+                .foregroundColor(AppTheme.deepNavy)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 14)
+                .background(AppTheme.goldGradient)
+                .cornerRadius(12)
+                .shadow(color: AppTheme.gold.opacity(0.4), radius: 8)
             }
-            .font(.system(size: 16, weight: .medium))
-            .foregroundColor(.red.opacity(0.8))
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 15)
-                    .stroke(Color.red.opacity(0.4), lineWidth: 2)
-            )
+
+            // Delete button
+            Button {
+                showDeleteAlert = true
+            } label: {
+                HStack {
+                    Image(systemName: "trash")
+                    Text(L10n.matrixHistoryDelete)
+                }
+                .font(.system(size: 16, weight: .medium))
+                .foregroundColor(.red.opacity(0.8))
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 15)
+                        .stroke(Color.red.opacity(0.4), lineWidth: 2)
+                )
+            }
         }
+    }
+
+    private func shareMatrix() {
+        guard let matrix = matrix else { return }
+        sharePDFURL = PDFGenerationService.shared.generateCoupleMatrixPDF(
+            matrix: matrix,
+            notes: session.notes,
+            savedDate: session.date
+        )
     }
 
     private func deleteSession() {

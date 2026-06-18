@@ -240,6 +240,7 @@ enum L10n {
     static let matrixUniqueCards = NSLocalizedString("matrix.uniqueCards", comment: "Unique Cards in Your Matrix")
     static let matrixAllPositions = NSLocalizedString("matrix.allPositions", comment: "All 19 Positions")
     static let matrixShareMatrix = NSLocalizedString("matrix.shareMatrix", comment: "Share Destiny Matrix")
+    static let coupleMatrixShareMatrix = NSLocalizedString("coupleMatrix.shareMatrix", comment: "Share Couple Matrix")
     
     // Matrix Position Names
     static let matrixCenter = NSLocalizedString("matrix.position.center", comment: "Center")
@@ -464,6 +465,14 @@ enum L10n {
     static let pdfMatrixLifeTimeline = NSLocalizedString("pdf.matrix.lifeTimeline", comment: "Life Timeline")
     static let pdfMatrixYears = NSLocalizedString("pdf.matrix.years", comment: "years")
     static let pdfMatrixCurrentYearDesc = NSLocalizedString("pdf.matrix.currentYearDesc", comment: "Your guiding energy this year, shaping the themes, lessons and opportunities woven into your path.")
+
+    // MARK: - PDF Export - Couple Matrix
+    static let pdfCoupleMatrixTitle = NSLocalizedString("pdf.coupleMatrix.title", comment: "Your Couple Matrix")
+    static let pdfCoupleMatrixHeartOfUnion = NSLocalizedString("pdf.coupleMatrix.heartOfUnion", comment: "Heart of Union")
+    static let pdfCoupleMatrixPartnerEnergies = NSLocalizedString("pdf.coupleMatrix.partnerEnergies", comment: "Partner Energies")
+    static let pdfCoupleMatrixSharedAspects = NSLocalizedString("pdf.coupleMatrix.sharedAspects", comment: "Shared Aspects")
+    static let pdfCoupleMatrixYearsTimeline = NSLocalizedString("pdf.coupleMatrix.yearsTimeline", comment: "Years Together Timeline")
+    static let pdfCoupleMatrixCurrentYearDesc = NSLocalizedString("pdf.coupleMatrix.currentYearDesc", comment: "The guiding energy of your union this year, shaping the lessons and opportunities woven into your shared path.")
 
     // MARK: - PDF Export - Palm Reading
     static let pdfPalmTitle = NSLocalizedString("pdf.palm.title", comment: "Your Palm Reading")
