@@ -583,6 +583,14 @@ struct CoupleMatrixSessionDetailView: View {
     @State private var selectedTab: CoupleMatrixResultView.Tab = .diagram
     @State private var showDeleteAlert: Bool = false
     @State private var sharePDFURL: URL?
+    @State private var editedNotes: String
+    @State private var isEditingNotes: Bool = false
+    @FocusState private var isNotesFocused: Bool
+
+    init(session: CoupleMatrixSession) {
+        self.session = session
+        _editedNotes = State(initialValue: session.notes ?? "")
+    }
 
     var body: some View {
         ZStack {
@@ -632,7 +640,7 @@ struct CoupleMatrixSessionDetailView: View {
                                 )
                                 .frame(minHeight: 540)
 
-                                actionsSection
+                                notesAndActionsSection
                                     .padding(.horizontal, 20)
                                     .padding(.bottom, 40)
                             }
@@ -656,6 +664,23 @@ struct CoupleMatrixSessionDetailView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button(L10n.done) {
+                    isNotesFocused = false
+                    if isEditingNotes {
+                        isEditingNotes = false
+                        saveNotes()
+                    }
+                }
+                .foregroundStyle(AppTheme.goldGradient)
+            }
+        }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            isNotesFocused = false
+        }
         .alert(L10n.matrixHistoryDeleteAlert, isPresented: $showDeleteAlert) {
             Button(L10n.cancel, role: .cancel) { }
             Button(L10n.delete, role: .destructive) {
@@ -681,8 +706,73 @@ struct CoupleMatrixSessionDetailView: View {
         }
     }
 
-    private var actionsSection: some View {
+    private var notesAndActionsSection: some View {
         VStack(spacing: 20) {
+            // Notes
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    Text(L10n.summaryReflections)
+                        .font(AppTheme.serifFont(size: 20, weight: .medium))
+                        .foregroundStyle(AppTheme.goldGradient)
+
+                    Spacer()
+
+                    Button {
+                        isEditingNotes.toggle()
+                        if !isEditingNotes {
+                            saveNotes()
+                        }
+                    } label: {
+                        Text(isEditingNotes ? L10n.done : L10n.edit)
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(AppTheme.goldGradient)
+                    }
+                }
+
+                if isEditingNotes {
+                    TextEditor(text: $editedNotes)
+                        .frame(minHeight: 120)
+                        .padding(12)
+                        .background(AppTheme.darkNavy.opacity(0.4))
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                        )
+                        .foregroundColor(AppTheme.textPrimary)
+                        .font(.system(size: 16))
+                        .scrollContentBackground(.hidden)
+                        .focused($isNotesFocused)
+                        .tint(AppTheme.gold)
+                        .onAppear {
+                            isNotesFocused = true
+                        }
+                } else {
+                    if !editedNotes.isEmpty {
+                        Text(editedNotes)
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundColor(AppTheme.textPrimary)
+                            .lineSpacing(6)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    } else {
+                        Text(L10n.historyNoReflections)
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundColor(AppTheme.textSecondary.opacity(0.6))
+                            .italic()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+            }
+            .padding(20)
+            .background(
+                RoundedRectangle(cornerRadius: 15)
+                    .fill(AppTheme.darkNavy.opacity(0.3))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 15)
+                            .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                    )
+            )
+
             // Share button
             Button {
                 shareMatrix()
@@ -721,11 +811,17 @@ struct CoupleMatrixSessionDetailView: View {
         }
     }
 
+    private func saveNotes() {
+        session.notes = editedNotes.isEmpty ? nil : editedNotes
+        try? modelContext.save()
+        HapticService.shared.impact(.light)
+    }
+
     private func shareMatrix() {
         guard let matrix = matrix else { return }
         sharePDFURL = PDFGenerationService.shared.generateCoupleMatrixPDF(
             matrix: matrix,
-            notes: session.notes,
+            notes: editedNotes.isEmpty ? nil : editedNotes,
             savedDate: session.date
         )
     }
