@@ -33,6 +33,9 @@ struct CardSelectionView: View {
     @State private var flying: FlyingCardState?
     @State private var poppingCardId: String?
 
+    // Initial fan-in animation state
+    @State private var fanAppeared: Bool = false
+
     @Environment(\.dismiss) private var dismiss
 
     private struct FlyingCardState: Equatable {
@@ -166,6 +169,12 @@ struct CardSelectionView: View {
         .onAppear {
             setupCards()
             SoundService.shared.playAmbient(.ambientMystic, volume: 0.15)
+            if !fanAppeared {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                    SoundService.shared.play(.cardShuffle, volume: 0.5)
+                    fanAppeared = true
+                }
+            }
         }
         .onDisappear {
             SoundService.shared.stopAmbient()
@@ -263,16 +272,24 @@ struct CardSelectionView: View {
 
                     if !isCardSelected && !isFlying {
                         let isPopping = poppingCardId == card.id
+                        let effectiveAngle = fanAppeared ? angle : 0
+                        let effectiveOffsetX = fanAppeared ? visualOffsetX : 0
+                        let effectiveOffsetY = fanAppeared ? visualOffsetY : 0
                         CardView()
                             .frame(width: 100, height: 150)
                             .shadow(color: .black.opacity(0.45), radius: 2, x: 0, y: 2)
-                            .rotationEffect(.degrees(angle))
-                            .offset(x: visualOffsetX, y: visualOffsetY - (isPopping ? 70 : 0))
+                            .rotationEffect(.degrees(effectiveAngle))
+                            .offset(x: effectiveOffsetX, y: effectiveOffsetY - (isPopping ? 70 : 0))
                             .scaleEffect(isPopping ? 1.15 : 1.0)
                             // Keep the card at its natural z-index even while
                             // popping, so it rises out of the stack between
                             // its neighbours instead of teleporting on top.
                             .zIndex(Double(index))
+                            .allowsHitTesting(fanAppeared)
+                            .animation(
+                                .spring(response: 0.9, dampingFraction: 0.82),
+                                value: fanAppeared
+                            )
                             .onTapGesture {
                                 selectCard(card, srcCenter: srcCenter, srcAngle: angle)
                             }
