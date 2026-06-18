@@ -457,28 +457,17 @@ struct CoupleYearAnalysisTabView: View {
                         ))
                 }
 
-                VStack(alignment: .leading, spacing: 12) {
+                VStack(alignment: .leading, spacing: 18) {
                     Text(L10n.coupleMatrixYearsTogether)
                         .font(AppTheme.serifFont(size: 22, weight: .medium))
                         .foregroundStyle(AppTheme.goldGradient)
                         .padding(.horizontal, 20)
 
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 12) {
-                            ForEach(matrix.yearlyEnergies) { year in
-                                CoupleYearChipView(
-                                    yearEnergy: year,
-                                    isSelected: selectedYear?.id == year.id
-                                )
-                                .onTapGesture {
-                                    withAnimation(.spring(response: 0.3)) {
-                                        selectedYear = year
-                                    }
-                                    HapticService.shared.impact(.light)
-                                }
-                            }
-                        }
-                        .padding(.horizontal, 20)
+                    ForEach(decadeGroups, id: \.key) { group in
+                        CoupleYearGroupSection(
+                            yearsInGroup: group.years,
+                            selectedYear: $selectedYear
+                        )
                     }
                 }
                 .padding(.top, 10)
@@ -486,6 +475,59 @@ struct CoupleYearAnalysisTabView: View {
                 Spacer(minLength: 40)
             }
             .padding(.top, 20)
+        }
+    }
+
+    /// Group years so each row ends at a decade boundary
+    /// (e.g. 2026–2030, 2031–2040, 2041–2050, 2051–2060, 2061–2069).
+    private var decadeGroups: [(key: Int, years: [CoupleYearlyEnergy])] {
+        let grouped = Dictionary(grouping: matrix.yearlyEnergies) { year in
+            (year.year - 1) / 10
+        }
+        return grouped
+            .map { (key: $0.key, years: $0.value.sorted { $0.year < $1.year }) }
+            .sorted { $0.key < $1.key }
+    }
+}
+
+// MARK: - Year Group Section
+
+struct CoupleYearGroupSection: View {
+    let yearsInGroup: [CoupleYearlyEnergy]
+    @Binding var selectedYear: CoupleYearlyEnergy?
+
+    private var sectionTitle: String {
+        guard let first = yearsInGroup.first, let last = yearsInGroup.last else { return "" }
+        if first.year == last.year {
+            return "\(first.year)"
+        }
+        return "\(first.year) – \(last.year)"
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(sectionTitle)
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundColor(AppTheme.textSecondary)
+                .padding(.horizontal, 20)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(yearsInGroup) { year in
+                        CoupleYearChipView(
+                            yearEnergy: year,
+                            isSelected: selectedYear?.id == year.id
+                        )
+                        .onTapGesture {
+                            withAnimation(.spring(response: 0.3)) {
+                                selectedYear = year
+                            }
+                            HapticService.shared.impact(.light)
+                        }
+                    }
+                }
+                .padding(.horizontal, 20)
+            }
         }
     }
 }

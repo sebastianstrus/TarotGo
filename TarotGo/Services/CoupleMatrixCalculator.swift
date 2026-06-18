@@ -68,7 +68,10 @@ class CoupleMatrixCalculator {
 
     // MARK: - Yearly Energies
 
-    /// Calculate the next 30 years of couple energies starting from the current calendar year.
+    /// Number of yearly couple energies to project forward from the current calendar year.
+    static let yearlyEnergyHorizon: Int = 44
+
+    /// Calculate the projected yearly couple energies starting from the current calendar year.
     func calculateYearlyEnergies(
         birthDateA: Date,
         birthDateB: Date,
@@ -83,7 +86,7 @@ class CoupleMatrixCalculator {
         let (dB, mB, _) = components(of: birthDateB)
 
         var energies: [CoupleYearlyEnergy] = []
-        for offset in 0..<30 {
+        for offset in 0..<Self.yearlyEnergyHorizon {
             let year = currentYear + offset
             // Couple's "personal year" = day+month of both partners + current year
             let sum = dA + mA + dB + mB + year

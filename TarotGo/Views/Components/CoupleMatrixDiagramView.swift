@@ -448,11 +448,11 @@ private struct CoupleYearlyRingView: View {
     @Binding var selectedYear: CoupleYearlyEnergy?
     @Binding var selectedPosition: CoupleMatrixPosition?
 
-    /// 22 years around the ring — one for each Major Arcana
-    private let visibleYears: Int = 22
+    /// All projected couple years arranged around the ring
+    private var visibleYears: Int { yearlyEnergies.count }
 
     var body: some View {
-        let displayed = Array(yearlyEnergies.prefix(visibleYears))
+        let displayed = yearlyEnergies
 
         ZStack {
             Circle()
@@ -494,14 +494,21 @@ private struct CoupleYearMarkerView: View {
     let size: CGFloat
     let isSelected: Bool
 
+    /// Visually accent the decade boundaries so the ring stays readable at 44 markers
+    private var isDecadeMarker: Bool {
+        yearEnergy.year % 10 == 0
+    }
+
     var body: some View {
         let angle = angleForIndex(yearEnergy.yearsTogetherIndex)
         let ringRadius = size * 0.51
-        let labelRadius = size * 0.47
+        let labelRadius = size * 0.465
         let circleX = size / 2 + ringRadius * cos(angle)
         let circleY = size / 2 + ringRadius * sin(angle)
         let labelX = size / 2 + labelRadius * cos(angle)
         let labelY = size / 2 + labelRadius * sin(angle)
+
+        let baseDiameter: CGFloat = 10
 
         ZStack {
             ZStack {
@@ -511,16 +518,20 @@ private struct CoupleYearMarkerView: View {
                             ? AppTheme.goldGradient
                             : (yearEnergy.isCurrentYear
                                 ? LinearGradient(colors: [AppTheme.gold.opacity(0.85)], startPoint: .top, endPoint: .bottom)
-                                : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.7)], startPoint: .top, endPoint: .bottom))
+                                : (isDecadeMarker
+                                    ? LinearGradient(colors: [AppTheme.gold.opacity(0.32)], startPoint: .top, endPoint: .bottom)
+                                    : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.7)], startPoint: .top, endPoint: .bottom)))
                     )
-                    .frame(width: 13, height: 13)
+                    .frame(width: baseDiameter, height: baseDiameter)
                     .overlay(
                         Circle()
                             .stroke(
                                 isSelected
                                     ? AppTheme.lightGold
-                                    : (yearEnergy.isCurrentYear ? AppTheme.gold : AppTheme.gold.opacity(0.45)),
-                                lineWidth: isSelected ? 2 : 1
+                                    : (yearEnergy.isCurrentYear
+                                        ? AppTheme.gold
+                                        : (isDecadeMarker ? AppTheme.gold.opacity(0.8) : AppTheme.gold.opacity(0.4))),
+                                lineWidth: isSelected ? 1.6 : (isDecadeMarker ? 1.1 : 0.9)
                             )
                     )
                     .shadow(
@@ -530,7 +541,7 @@ private struct CoupleYearMarkerView: View {
 
                 Text("\(yearEnergy.primaryEnergy)")
                     .font(.system(
-                        size: isSelected ? 8 : 6,
+                        size: isSelected ? 8 : 5,
                         weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium),
                         design: .rounded
                     ))
@@ -540,13 +551,16 @@ private struct CoupleYearMarkerView: View {
                             : (yearEnergy.isCurrentYear ? .black.opacity(0.85) : AppTheme.textPrimary)
                     )
             }
-            .scaleEffect(isSelected ? 1.55 : 1.0)
+            .scaleEffect(isSelected ? 1.7 : 1.0)
             .position(x: circleX, y: circleY)
 
-            Text(yearLabel)
-                .font(.system(size: 7, weight: isSelected ? .bold : .medium))
-                .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.75))
-                .position(x: labelX, y: labelY)
+            // Only label the current year and every decade boundary to avoid clutter
+            if isSelected || yearEnergy.isCurrentYear || isDecadeMarker {
+                Text(yearLabel)
+                    .font(.system(size: 6.5, weight: isSelected ? .bold : .medium))
+                    .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.8))
+                    .position(x: labelX, y: labelY)
+            }
         }
         .animation(.spring(response: 0.2), value: isSelected)
     }
