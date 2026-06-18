@@ -650,6 +650,7 @@ struct CoupleYearChipView: View {
                 .font(.system(size: 11))
                 .foregroundColor(AppTheme.textTertiary)
         }
+        .padding(.vertical, 4)
         .scaleEffect(isSelected ? 1.05 : 1.0)
         .animation(.spring(response: 0.2), value: isSelected)
     }
