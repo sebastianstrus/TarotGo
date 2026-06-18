@@ -123,26 +123,48 @@ struct PositionCircleView: View {
         }
     }
 
-    private var isCenterHighlighted: Bool {
-        pdfMode && position.position == .center
+    private var isCenter: Bool {
+        position.position == .center
     }
 
     private var showsGoldFill: Bool {
-        isSelected || isCenterHighlighted
+        isSelected || isCenter
+    }
+
+    private var unselectedFill: LinearGradient {
+        if isCenter {
+            return LinearGradient(
+                colors: [AppTheme.lightGold, AppTheme.gold],
+                startPoint: .topLeading, endPoint: .bottomTrailing
+            )
+        }
+        return LinearGradient(
+            colors: [AppTheme.midNavy.opacity(0.6), AppTheme.deepNavy.opacity(0.8)],
+            startPoint: .topLeading, endPoint: .bottomTrailing
+        )
     }
 
     var body: some View {
         ZStack {
+            // Outer gold halo glow
+            Circle()
+                .fill(
+                    AppTheme.gold.opacity(
+                        isSelected ? 0.45 : (isCenter ? 0.30 : 0.18)
+                    )
+                )
+                .frame(width: circleSize * 1.6, height: circleSize * 1.6)
+                .blur(radius: 8)
+
             // Main circle
             Circle()
                 .fill(
-                    LinearGradient(
-                        colors: showsGoldFill
-                            ? [AppTheme.lightGold, AppTheme.gold]
-                            : [AppTheme.midNavy.opacity(0.6), AppTheme.deepNavy.opacity(0.8)],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
+                    isSelected
+                        ? LinearGradient(
+                            colors: [AppTheme.lightGold, AppTheme.gold],
+                            startPoint: .topLeading, endPoint: .bottomTrailing
+                        )
+                        : unselectedFill
                 )
                 .frame(width: circleSize, height: circleSize)
                 .overlay(
@@ -153,8 +175,10 @@ struct PositionCircleView: View {
                         )
                 )
                 .shadow(
-                    color: showsGoldFill ? AppTheme.gold.opacity(0.4) : AppTheme.gold.opacity(0.2),
-                    radius: showsGoldFill ? 8 : 6,
+                    color: isSelected
+                        ? AppTheme.gold.opacity(0.5)
+                        : AppTheme.gold.opacity(isCenter ? 0.4 : 0.3),
+                    radius: isSelected ? 10 : 6,
                     x: 0,
                     y: 4
                 )
@@ -168,7 +192,7 @@ struct PositionCircleView: View {
             x: position.x * size,
             y: position.y * size
         )
-        .scaleEffect(isSelected ? 1.05 : 1.0)
+        .scaleEffect(isSelected ? 1.08 : 1.0)
         .animation(.spring(response: 0.3), value: isSelected)
     }
 }
