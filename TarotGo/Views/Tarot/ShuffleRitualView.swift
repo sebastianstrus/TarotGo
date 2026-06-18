@@ -449,7 +449,7 @@ struct ShuffleRitualView: View {
                     // Small internal stack offset per half — visible as a stack, but not bulky
                     let stackX = CGFloat(positionInHalf) * 0.12
                     let stackY = -CGFloat(positionInHalf) * 0.15
-                    cardStates[i].offsetX = side * 90 + side * stackX
+                    cardStates[i].offsetX = side * 130 + side * stackX
                     cardStates[i].offsetY = -20 + stackY
                     cardStates[i].rotation = Double(side) * 5
                     cardStates[i].tilt3DX = -8
@@ -474,8 +474,8 @@ struct ShuffleRitualView: View {
                     let depthT = Double(positionInHalf) / Double(max(half - 1, 1))
                     let stackX = CGFloat(positionInHalf) * 0.12
                     let stackY = -CGFloat(positionInHalf) * 0.15
-                    // Inward bow: cards bend toward the centerline
-                    cardStates[i].offsetX = side * 82 + side * stackX - CGFloat(side) * CGFloat(depthT) * 6
+                    // Inward bow: cards bend toward the centerline but never cross it
+                    cardStates[i].offsetX = side * 115 + side * stackX - CGFloat(side) * CGFloat(depthT) * 8
                     cardStates[i].offsetY = -28 + stackY - CGFloat(depthT) * 3
                     cardStates[i].rotation = Double(side) * 2.5
                     cardStates[i].tilt3DY = Double(side) * 26
