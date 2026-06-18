@@ -624,8 +624,12 @@ struct CoupleMatrixSessionDetailView: View {
                     TabView(selection: $selectedTab) {
                         ScrollView {
                             VStack(spacing: 20) {
-                                CoupleDiagramTabView(matrix: matrix, selectedPosition: $selectedPosition)
-                                    .frame(minHeight: 500)
+                                CoupleDiagramTabView(
+                                    matrix: matrix,
+                                    selectedPosition: $selectedPosition,
+                                    selectedYear: $selectedYear
+                                )
+                                .frame(minHeight: 540)
 
                                 deleteSection
                                     .padding(.horizontal, 20)

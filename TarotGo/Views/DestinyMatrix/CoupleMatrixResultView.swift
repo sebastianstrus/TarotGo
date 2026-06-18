@@ -55,7 +55,8 @@ struct CoupleMatrixResultView: View {
                 TabView(selection: $selectedTab) {
                     CoupleDiagramTabView(
                         matrix: matrix,
-                        selectedPosition: $selectedPosition
+                        selectedPosition: $selectedPosition,
+                        selectedYear: $selectedYear
                     )
                     .tag(Tab.diagram)
 
@@ -183,16 +184,28 @@ struct CoupleMatrixTabButton: View {
 struct CoupleDiagramTabView: View {
     let matrix: CoupleMatrix
     @Binding var selectedPosition: CoupleMatrixPosition?
+    @Binding var selectedYear: CoupleYearlyEnergy?
 
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                CoupleMatrixDiagramView(matrix: matrix, selectedPosition: $selectedPosition)
-                    .frame(height: 360)
-                    .padding(.horizontal, 20)
+                CoupleMatrixDiagramView(
+                    matrix: matrix,
+                    selectedPosition: $selectedPosition,
+                    selectedYear: $selectedYear
+                )
+                .frame(height: 400)
+                .padding(.horizontal, 12)
 
                 if let position = selectedPosition {
                     CouplePositionDetailCard(position: position)
+                        .padding(.horizontal, 20)
+                        .transition(.asymmetric(
+                            insertion: .scale.combined(with: .opacity),
+                            removal: .opacity
+                        ))
+                } else if let year = selectedYear {
+                    CoupleYearCard(yearEnergy: year, isHighlighted: year.isCurrentYear)
                         .padding(.horizontal, 20)
                         .transition(.asymmetric(
                             insertion: .scale.combined(with: .opacity),
