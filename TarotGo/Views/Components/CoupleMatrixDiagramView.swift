@@ -502,13 +502,13 @@ private struct CoupleYearMarkerView: View {
     var body: some View {
         let angle = angleForIndex(yearEnergy.yearsTogetherIndex)
         let ringRadius = size * 0.51
-        let labelRadius = size * 0.465
+        let labelRadius = size * 0.455
         let circleX = size / 2 + ringRadius * cos(angle)
         let circleY = size / 2 + ringRadius * sin(angle)
         let labelX = size / 2 + labelRadius * cos(angle)
         let labelY = size / 2 + labelRadius * sin(angle)
 
-        let baseDiameter: CGFloat = 10
+        let baseDiameter: CGFloat = 11
 
         ZStack {
             ZStack {
@@ -531,7 +531,7 @@ private struct CoupleYearMarkerView: View {
                                     : (yearEnergy.isCurrentYear
                                         ? AppTheme.gold
                                         : (isDecadeMarker ? AppTheme.gold.opacity(0.8) : AppTheme.gold.opacity(0.4))),
-                                lineWidth: isSelected ? 1.6 : (isDecadeMarker ? 1.1 : 0.9)
+                                lineWidth: isSelected ? 1.6 : (isDecadeMarker ? 1.1 : 1)
                             )
                     )
                     .shadow(
@@ -541,7 +541,7 @@ private struct CoupleYearMarkerView: View {
 
                 Text("\(yearEnergy.primaryEnergy)")
                     .font(.system(
-                        size: isSelected ? 8 : 5,
+                        size: isSelected ? 7 : 5,
                         weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium),
                         design: .rounded
                     ))
@@ -551,16 +551,23 @@ private struct CoupleYearMarkerView: View {
                             : (yearEnergy.isCurrentYear ? .black.opacity(0.85) : AppTheme.textPrimary)
                     )
             }
-            .scaleEffect(isSelected ? 1.7 : 1.0)
+            .scaleEffect(isSelected ? 1.55 : 1.0)
             .position(x: circleX, y: circleY)
 
-            // Only label the current year and every decade boundary to avoid clutter
-            if isSelected || yearEnergy.isCurrentYear || isDecadeMarker {
-                Text(yearLabel)
-                    .font(.system(size: 6.5, weight: isSelected ? .bold : .medium))
-                    .foregroundColor(isSelected ? AppTheme.gold : AppTheme.textTertiary.opacity(0.8))
-                    .position(x: labelX, y: labelY)
-            }
+            // Every marker gets a year label
+            Text(yearLabel)
+                .font(.system(
+                    size: isSelected ? 8 : 7,
+                    weight: isSelected ? .bold : (yearEnergy.isCurrentYear || isDecadeMarker ? .semibold : .medium)
+                ))
+                .foregroundColor(
+                    isSelected
+                        ? AppTheme.gold
+                        : (yearEnergy.isCurrentYear || isDecadeMarker
+                            ? AppTheme.gold.opacity(0.9)
+                            : AppTheme.textTertiary.opacity(0.8))
+                )
+                .position(x: labelX, y: labelY)
         }
         .animation(.spring(response: 0.2), value: isSelected)
     }
