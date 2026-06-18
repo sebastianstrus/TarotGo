@@ -407,9 +407,8 @@ struct ShuffleRitualView: View {
         }
         SoundService.shared.stop(.fire)
         
-        // Initial heavy hit + shuffle sound
+        // Initial heavy hit
         HapticService.shared.impact(.heavy)
-        SoundService.shared.play(.cardShuffle, volume: 0.7)
         
         runShuffleSequence()
     }
@@ -439,7 +438,10 @@ struct ShuffleRitualView: View {
         // ───────────────────────────────────────────────
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4)  { applyCut(half: half) }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.85) { applyBridge(half: half) }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.20) { applyRiffle(half: half, zIndexBase: 1000) }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.20) {
+            SoundService.shared.play(.cardShuffle, volume: 0.7)
+            applyRiffle(half: half, zIndexBase: 1000)
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.35) { HapticService.shared.impact(.soft) }
         
         // ───────────────────────────────────────────────
@@ -447,7 +449,10 @@ struct ShuffleRitualView: View {
         // ───────────────────────────────────────────────
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.45) { applyCut(half: half) }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.90) { applyBridge(half: half) }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.25) { applyRiffle(half: half, zIndexBase: 2000) }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.25) {
+            SoundService.shared.play(.cardShuffle, volume: 0.7)
+            applyRiffle(half: half, zIndexBase: 2000)
+        }
         
         // ───────────────────────────────────────────────
         // PHASE — Square-up (6.50 – 6.90s)
