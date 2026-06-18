@@ -424,10 +424,9 @@ struct ShuffleRitualView: View {
         let half = count / 2
         
         // ───────────────────────────────────────────────
-        // PHASE 1 — Lift (0.00 – 0.55s)
-        // The deck rises with a small tilt.
+        // PHASE 1 — Lift (0.00 – 0.35s)
         // ───────────────────────────────────────────────
-        withAnimation(.easeOut(duration: 0.55)) {
+        withAnimation(.easeOut(duration: 0.35)) {
             for i in 0..<count {
                 cardStates[i].offsetY = -CGFloat(i) * 0.15 - 12
                 cardStates[i].tilt3DX = -8
@@ -436,91 +435,25 @@ struct ShuffleRitualView: View {
         }
         
         // ───────────────────────────────────────────────
-        // PHASE 2 — Cut (0.60 – 1.45s)
-        // The deck cleanly splits into two thick halves.
-        // Each half keeps its internal stack offset so it still reads as a stack of 39 cards.
+        // PASS 1 — Cut → Bridge → Riffle (0.40 – 3.35s)
         // ───────────────────────────────────────────────
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-            withAnimation(.spring(response: 0.6, dampingFraction: 0.82)) {
-                for i in 0..<count {
-                    let isLeft = i < half
-                    let side: CGFloat = isLeft ? -1 : 1
-                    let positionInHalf = isLeft ? i : (i - half)
-                    // Small internal stack offset per half — visible as a stack, but not bulky
-                    let stackX = CGFloat(positionInHalf) * 0.12
-                    let stackY = -CGFloat(positionInHalf) * 0.15
-                    cardStates[i].offsetX = side * 130 + side * stackX
-                    cardStates[i].offsetY = -20 + stackY
-                    cardStates[i].rotation = Double(side) * 5
-                    cardStates[i].tilt3DX = -8
-                    cardStates[i].tilt3DY = Double(side) * 16
-                    cardStates[i].scale = 0.97
-                    cardStates[i].zIndex = Double(positionInHalf) + (isLeft ? 0 : Double(half))
-                }
-            }
-            HapticService.shared.impact(.soft)
-        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4)  { applyCut(half: half) }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.85) { applyBridge(half: half) }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.20) { applyRiffle(half: half, zIndexBase: 1000) }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.35) { HapticService.shared.impact(.soft) }
         
         // ───────────────────────────────────────────────
-        // PHASE 3 — Bridge (1.50 – 2.20s)
-        // Each half bows inward — the classic riffle-shuffle pre-bend.
+        // PASS 2 — Cut → Bridge → Riffle (3.45 – 6.40s)
         // ───────────────────────────────────────────────
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            withAnimation(.easeInOut(duration: 0.55)) {
-                for i in 0..<count {
-                    let isLeft = i < half
-                    let side: CGFloat = isLeft ? -1 : 1
-                    let positionInHalf = isLeft ? i : (i - half)
-                    let depthT = Double(positionInHalf) / Double(max(half - 1, 1))
-                    let stackX = CGFloat(positionInHalf) * 0.12
-                    let stackY = -CGFloat(positionInHalf) * 0.15
-                    // Inward bow: cards bend toward the centerline but never cross it
-                    cardStates[i].offsetX = side * 115 + side * stackX - CGFloat(side) * CGFloat(depthT) * 8
-                    cardStates[i].offsetY = -28 + stackY - CGFloat(depthT) * 3
-                    cardStates[i].rotation = Double(side) * 2.5
-                    cardStates[i].tilt3DY = Double(side) * 26
-                }
-            }
-        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.45) { applyCut(half: half) }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.90) { applyBridge(half: half) }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.25) { applyRiffle(half: half, zIndexBase: 2000) }
         
         // ───────────────────────────────────────────────
-        // PHASE 4 — Riffle (2.25 – 5.40s)
-        // 78 cards alternately zip into the center one at a time.
-        // ~40ms between drops → ~3.1s of staccato riffle.
+        // PHASE — Square-up (6.50 – 6.90s)
         // ───────────────────────────────────────────────
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.25) {
-            for n in 0..<count {
-                let isLeft = n % 2 == 0
-                let positionInHalf = n / 2
-                let cardIndex = isLeft ? positionInHalf : (half + positionInHalf)
-                let stagger = Double(n) * 0.04
-                DispatchQueue.main.asyncAfter(deadline: .now() + stagger) {
-                    let jitterX = CGFloat.random(in: -3...3)
-                    let jitterY = CGFloat.random(in: -2...2)
-                    let jitterRot = Double.random(in: -1.8...1.8)
-                    withAnimation(.spring(response: 0.28, dampingFraction: 0.74)) {
-                        cardStates[cardIndex].offsetX = jitterX
-                        cardStates[cardIndex].offsetY = jitterY
-                        cardStates[cardIndex].rotation = jitterRot
-                        cardStates[cardIndex].tilt3DX = 0
-                        cardStates[cardIndex].tilt3DY = 0
-                        cardStates[cardIndex].scale = 1.0
-                        cardStates[cardIndex].zIndex = Double(1000 + n)
-                    }
-                    // Light haptic every 4th card — ~8 Hz for a pleasant riffle texture, not a buzz
-                    if n % 4 == 0 {
-                        HapticService.shared.impact(.light)
-                    }
-                }
-            }
-        }
-        
-        // ───────────────────────────────────────────────
-        // PHASE 5 — Square-up (5.45 – 6.15s)
-        // The deck settles into its resting form with a soft tap.
-        // ───────────────────────────────────────────────
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.45) {
-            withAnimation(.spring(response: 0.45, dampingFraction: 0.86)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6.5) {
+            withAnimation(.spring(response: 0.42, dampingFraction: 0.86)) {
                 for i in 0..<count {
                     cardStates[i].offsetX = CGFloat(i) * 0.15
                     cardStates[i].offsetY = -CGFloat(i) * 0.15
@@ -535,10 +468,9 @@ struct ShuffleRitualView: View {
         }
         
         // ───────────────────────────────────────────────
-        // PHASE 6 — Ready (6.30s)
-        // Bell chime + success haptic signal the deck is shuffled.
+        // PHASE — Ready (6.95s)
         // ───────────────────────────────────────────────
-        DispatchQueue.main.asyncAfter(deadline: .now() + 6.3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6.95) {
             withAnimation {
                 phase = .complete
             }
@@ -546,9 +478,80 @@ struct ShuffleRitualView: View {
             HapticService.shared.impact(.success)
         }
         
-        // Navigate to next view
-        DispatchQueue.main.asyncAfter(deadline: .now() + 7.6) {
+        // Navigate
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7.75) {
             navigateToReading = true
+        }
+    }
+    
+    // MARK: - Shuffle pass helpers
+    
+    private func applyCut(half: Int) {
+        let count = cardCount
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.82)) {
+            for i in 0..<count {
+                let isLeft = i < half
+                let side: CGFloat = isLeft ? -1 : 1
+                let positionInHalf = isLeft ? i : (i - half)
+                let stackX = CGFloat(positionInHalf) * 0.12
+                let stackY = -CGFloat(positionInHalf) * 0.15
+                cardStates[i].offsetX = side * 130 + side * stackX
+                cardStates[i].offsetY = -20 + stackY
+                cardStates[i].rotation = Double(side) * 5
+                cardStates[i].tilt3DX = -8
+                cardStates[i].tilt3DY = Double(side) * 16
+                cardStates[i].scale = 0.97
+                cardStates[i].zIndex = Double(positionInHalf) + (isLeft ? 0 : Double(half))
+            }
+        }
+        HapticService.shared.impact(.soft)
+    }
+    
+    private func applyBridge(half: Int) {
+        let count = cardCount
+        withAnimation(.easeInOut(duration: 0.4)) {
+            for i in 0..<count {
+                let isLeft = i < half
+                let side: CGFloat = isLeft ? -1 : 1
+                let positionInHalf = isLeft ? i : (i - half)
+                let depthT = Double(positionInHalf) / Double(max(half - 1, 1))
+                let stackX = CGFloat(positionInHalf) * 0.12
+                let stackY = -CGFloat(positionInHalf) * 0.15
+                cardStates[i].offsetX = side * 115 + side * stackX - CGFloat(side) * CGFloat(depthT) * 8
+                cardStates[i].offsetY = -28 + stackY - CGFloat(depthT) * 3
+                cardStates[i].rotation = Double(side) * 2.5
+                cardStates[i].tilt3DY = Double(side) * 26
+            }
+        }
+    }
+    
+    // Cards alternately zip into the center one at a time.
+    // ~28ms between drops → faster than before, ~2.2s per pass.
+    private func applyRiffle(half: Int, zIndexBase: Int) {
+        let count = cardCount
+        for n in 0..<count {
+            let isLeft = n % 2 == 0
+            let positionInHalf = n / 2
+            let cardIndex = isLeft ? positionInHalf : (half + positionInHalf)
+            let stagger = Double(n) * 0.028
+            DispatchQueue.main.asyncAfter(deadline: .now() + stagger) {
+                let jitterX = CGFloat.random(in: -3...3)
+                let jitterY = CGFloat.random(in: -2...2)
+                let jitterRot = Double.random(in: -1.8...1.8)
+                withAnimation(.spring(response: 0.26, dampingFraction: 0.76)) {
+                    cardStates[cardIndex].offsetX = jitterX
+                    cardStates[cardIndex].offsetY = jitterY
+                    cardStates[cardIndex].rotation = jitterRot
+                    cardStates[cardIndex].tilt3DX = 0
+                    cardStates[cardIndex].tilt3DY = 0
+                    cardStates[cardIndex].scale = 1.0
+                    cardStates[cardIndex].zIndex = Double(zIndexBase + n)
+                }
+                // Light haptic every 5th card — ~7 Hz, pleasant riffle texture without a buzz
+                if n % 5 == 0 {
+                    HapticService.shared.impact(.light)
+                }
+            }
         }
     }
     
