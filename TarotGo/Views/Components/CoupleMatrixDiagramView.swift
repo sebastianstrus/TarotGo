@@ -12,6 +12,7 @@ struct CoupleMatrixDiagramView: View {
     @Binding var selectedPosition: CoupleMatrixPosition?
     var selectedYear: Binding<CoupleYearlyEnergy?>? = nil
     var showsYearlyRing: Bool = true
+    var pdfMode: Bool = false
 
     private let partnerAAccent = Color(red: 232/255, green: 120/255, blue: 160/255)
     private let partnerBAccent = Color(red: 110/255, green: 160/255, blue: 235/255)
@@ -27,7 +28,8 @@ struct CoupleMatrixDiagramView: View {
                         yearlyEnergies: matrix.yearlyEnergies,
                         size: size,
                         selectedYear: yearBinding,
-                        selectedPosition: $selectedPosition
+                        selectedPosition: $selectedPosition,
+                        pdfMode: pdfMode
                     )
                 }
 
@@ -85,7 +87,8 @@ struct CoupleMatrixDiagramView: View {
                         size: size,
                         isSelected: selectedPosition?.id == position.id,
                         partnerAAccent: partnerAAccent,
-                        partnerBAccent: partnerBAccent
+                        partnerBAccent: partnerBAccent,
+                        pdfMode: pdfMode
                     )
                     .zIndex(selectedPosition?.id == position.id ? 1 : 0)
                     .onTapGesture {
@@ -296,28 +299,29 @@ private struct CoupleMatrixPositionCircle: View {
     let isSelected: Bool
     let partnerAAccent: Color
     let partnerBAccent: Color
+    var pdfMode: Bool = false
 
     private var circleSize: CGFloat {
         switch position.position {
-        case .union: return size * 0.14
-        case .partnerA, .partnerB: return size * 0.115
-        default: return size * 0.088
+        case .union: return size * (pdfMode ? 0.15 : 0.14)
+        case .partnerA, .partnerB: return size * (pdfMode ? 0.125 : 0.115)
+        default: return size * (pdfMode ? 0.095 : 0.088)
         }
     }
 
     private var fontSize: CGFloat {
         switch position.position {
-        case .union: return 22
-        case .partnerA, .partnerB: return 18
-        default: return 14
+        case .union: return pdfMode ? 64 : 22
+        case .partnerA, .partnerB: return pdfMode ? 52 : 18
+        default: return pdfMode ? 40 : 14
         }
     }
 
     private var labelFontSize: CGFloat {
         switch position.position {
-        case .union: return 9
-        case .partnerA, .partnerB: return 8
-        default: return 7.5
+        case .union: return pdfMode ? 24 : 9
+        case .partnerA, .partnerB: return pdfMode ? 22 : 8
+        default: return pdfMode ? 20 : 7.5
         }
     }
 
@@ -447,6 +451,7 @@ private struct CoupleYearlyRingView: View {
     let size: CGFloat
     @Binding var selectedYear: CoupleYearlyEnergy?
     @Binding var selectedPosition: CoupleMatrixPosition?
+    var pdfMode: Bool = false
 
     /// All projected couple years arranged around the ring
     private var visibleYears: Int { yearlyEnergies.count }
@@ -465,7 +470,8 @@ private struct CoupleYearlyRingView: View {
                     yearEnergy: yearEnergy,
                     totalYears: visibleYears,
                     size: size,
-                    isSelected: selectedYear?.id == yearEnergy.id
+                    isSelected: selectedYear?.id == yearEnergy.id,
+                    pdfMode: pdfMode
                 )
                 .zIndex(selectedYear?.id == yearEnergy.id ? 1 : 0)
                 .onTapGesture {
@@ -493,6 +499,7 @@ private struct CoupleYearMarkerView: View {
     let totalYears: Int
     let size: CGFloat
     let isSelected: Bool
+    var pdfMode: Bool = false
 
     /// Visually accent the decade boundaries so the ring stays readable at 44 markers
     private var isDecadeMarker: Bool {
@@ -508,7 +515,9 @@ private struct CoupleYearMarkerView: View {
         let labelX = size / 2 + labelRadius * cos(angle)
         let labelY = size / 2 + labelRadius * sin(angle)
 
-        let baseDiameter: CGFloat = 11
+        let baseDiameter: CGFloat = pdfMode ? 28 : 11
+        let energyFontSize: CGFloat = pdfMode ? (isSelected ? 16 : 14) : (isSelected ? 7 : 5)
+        let yearLabelFontSize: CGFloat = pdfMode ? (isSelected ? 18 : 16) : (isSelected ? 8 : 7)
 
         ZStack {
             ZStack {
@@ -541,7 +550,7 @@ private struct CoupleYearMarkerView: View {
 
                 Text("\(yearEnergy.primaryEnergy)")
                     .font(.system(
-                        size: isSelected ? 7 : 5,
+                        size: energyFontSize,
                         weight: isSelected ? .bold : (yearEnergy.isCurrentYear ? .semibold : .medium),
                         design: .rounded
                     ))
@@ -557,7 +566,7 @@ private struct CoupleYearMarkerView: View {
             // Every marker gets a year label
             Text(yearLabel)
                 .font(.system(
-                    size: isSelected ? 8 : 7,
+                    size: yearLabelFontSize,
                     weight: isSelected ? .bold : (yearEnergy.isCurrentYear || isDecadeMarker ? .semibold : .medium)
                 ))
                 .foregroundColor(

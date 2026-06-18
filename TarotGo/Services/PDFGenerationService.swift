@@ -1437,7 +1437,8 @@ class PDFGenerationService {
             matrix: matrix,
             selectedPosition: .constant(nil),
             selectedYear: .constant(nil),
-            showsYearlyRing: false
+            showsYearlyRing: true,
+            pdfMode: true
         )
         .frame(width: size, height: size)
         .padding(size * 0.06)
