@@ -35,6 +35,7 @@ struct InterpretationView: View {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
+            ScrollViewReader { proxy in
             ScrollView {
                 VStack(spacing: 30) {
                     if let card = currentCard {
@@ -74,9 +75,21 @@ struct InterpretationView: View {
                         if selectedResonance != nil {
                             continueButton
                         }
+
+                        Color.clear
+                            .frame(height: 1)
+                            .id("interpretationBottomAnchor")
                     }
                 }
                 .padding()
+            }
+            .onChange(of: selectedResonance) { _, newValue in
+                if newValue != nil {
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        proxy.scrollTo("interpretationBottomAnchor", anchor: .bottom)
+                    }
+                }
+            }
             }
         }
         .navigationBarTitleDisplayMode(.inline)
