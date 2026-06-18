@@ -239,6 +239,7 @@ enum L10n {
     static let matrixViewCardDetails = NSLocalizedString("matrix.viewCardDetails", comment: "View Card Details")
     static let matrixUniqueCards = NSLocalizedString("matrix.uniqueCards", comment: "Unique Cards in Your Matrix")
     static let matrixAllPositions = NSLocalizedString("matrix.allPositions", comment: "All 19 Positions")
+    static let matrixShareMatrix = NSLocalizedString("matrix.shareMatrix", comment: "Share Destiny Matrix")
     
     // Matrix Position Names
     static let matrixCenter = NSLocalizedString("matrix.position.center", comment: "Center")

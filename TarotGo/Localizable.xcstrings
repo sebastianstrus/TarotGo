@@ -126974,6 +126974,18 @@
         }
       }
     },
+    "matrix.shareMatrix" : {
+      "comment" : "Share Destiny Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share Destiny Matrix"
+          }
+        }
+      }
+    },
     "matrix.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {

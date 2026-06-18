@@ -431,7 +431,7 @@ struct DestinyMatrixSessionDetailView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "square.and.arrow.up")
                         .font(.system(size: 16))
-                    Text(L10n.summaryShareReading)
+                    Text(L10n.matrixShareMatrix)
                         .font(.system(size: 16, weight: .semibold))
                 }
                 .foregroundColor(AppTheme.deepNavy)
