@@ -761,7 +761,7 @@ class PDFGenerationService {
                 // Keep the Core Essence section together: if it won't fit comfortably
                 // on the remaining page, push it to the next page so the highlighted
                 // box isn't sliced by the page break.
-                if yPosition > pageHeight - 260 {
+                if yPosition > pageHeight - 320 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -785,6 +785,9 @@ class PDFGenerationService {
                     margin: margin,
                     contentWidth: contentWidth,
                     pageWidth: pageWidth,
+                    pageHeight: pageHeight,
+                    pageRect: pageRect,
+                    pageNumber: &pageNumber,
                     context: context
                 )
 
@@ -793,7 +796,7 @@ class PDFGenerationService {
 
             // Current Year Energy
             if let currentYear = matrix.currentYearEnergy {
-                if yPosition > pageHeight - 280 {
+                if yPosition > pageHeight - 320 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -816,6 +819,9 @@ class PDFGenerationService {
                     margin: margin,
                     contentWidth: contentWidth,
                     pageWidth: pageWidth,
+                    pageHeight: pageHeight,
+                    pageRect: pageRect,
+                    pageNumber: &pageNumber,
                     context: context
                 )
 
@@ -823,7 +829,7 @@ class PDFGenerationService {
             }
 
             // Key positions section
-            if yPosition > pageHeight - 200 {
+            if yPosition > pageHeight - 320 {
                 drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                 pageNumber += 1
                 context.beginPage()
@@ -851,7 +857,7 @@ class PDFGenerationService {
             }
 
             for (index, position) in orderedPositions.enumerated() {
-                if yPosition > pageHeight - 240 {
+                if index > 0 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -866,31 +872,16 @@ class PDFGenerationService {
                     margin: margin,
                     contentWidth: contentWidth,
                     pageWidth: pageWidth,
+                    pageHeight: pageHeight,
+                    pageRect: pageRect,
+                    pageNumber: &pageNumber,
                     context: context
                 )
-
-                if index < orderedPositions.count - 1 {
-                    let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
-                    goldColor.withAlphaComponent(0.3).setStroke()
-                    let leftLine = UIBezierPath()
-                    leftLine.move(to: CGPoint(x: margin, y: yPosition + 10))
-                    leftLine.addLine(to: CGPoint(x: pageWidth / 2 - 20, y: yPosition + 10))
-                    leftLine.lineWidth = 0.5
-                    leftLine.stroke()
-                    let rightLine = UIBezierPath()
-                    rightLine.move(to: CGPoint(x: pageWidth / 2 + 20, y: yPosition + 10))
-                    rightLine.addLine(to: CGPoint(x: pageWidth - margin, y: yPosition + 10))
-                    rightLine.lineWidth = 0.5
-                    rightLine.stroke()
-                    goldColor.setFill()
-                    drawStar(at: CGPoint(x: pageWidth / 2, y: yPosition + 10), size: 5, context: context.cgContext)
-                    yPosition += 25
-                }
             }
 
             // Life Timeline section (year analysis)
             if !matrix.yearlyEnergies.isEmpty {
-                if yPosition > pageHeight - 260 {
+                if yPosition > pageHeight - 320 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -1024,6 +1015,100 @@ class PDFGenerationService {
         }
     }
 
+    // MARK: - Card Meanings
+
+    private func drawCardMeanings(
+        card: TarotCard,
+        yPosition initialY: CGFloat,
+        margin: CGFloat,
+        contentWidth: CGFloat,
+        pageWidth: CGFloat,
+        pageHeight: CGFloat,
+        pageRect: CGRect,
+        pageNumber: inout Int,
+        context: UIGraphicsPDFRendererContext
+    ) -> CGFloat {
+        var yPosition = initialY
+
+        let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        let textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+        let categoryFont = UIFont.systemFont(ofSize: 12, weight: .semibold)
+        let bodyFont = UIFont.systemFont(ofSize: 11, weight: .light)
+
+        let categories: [(String, IntentionCategory)] = [
+            (L10n.dictionaryGeneral, .general),
+            (L10n.categoryLove, .love),
+            (L10n.categoryCareer, .career),
+            (L10n.categoryFinance, .finance),
+            (L10n.categoryHealth, .health)
+        ]
+
+        // Section header
+        if yPosition > pageHeight - 80 {
+            drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+            pageNumber += 1
+            context.beginPage()
+            drawMysticalBackground(in: pageRect, context: context.cgContext)
+            yPosition = 60
+        }
+
+        yPosition = drawText(
+            L10n.dictionaryMeanings,
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: .systemFont(ofSize: 13, weight: .semibold),
+            color: goldColor
+        )
+        yPosition += 6
+
+        let bodyParagraph = NSMutableParagraphStyle()
+        bodyParagraph.lineSpacing = 3
+
+        for (categoryName, category) in categories {
+            let interpretation = card.interpretation(for: category, reversed: false)
+
+            let bodyAttrs: [NSAttributedString.Key: Any] = [
+                .font: bodyFont,
+                .paragraphStyle: bodyParagraph
+            ]
+            let interpString = NSAttributedString(string: interpretation, attributes: bodyAttrs)
+            let interpRect = interpString.boundingRect(
+                with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
+                options: [.usesLineFragmentOrigin, .usesFontLeading],
+                context: nil
+            )
+            let estimatedSectionHeight: CGFloat = 22 + interpRect.height + 10
+
+            if yPosition + estimatedSectionHeight > pageHeight - 60 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition = drawText(
+                categoryName,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: categoryFont,
+                color: goldColor
+            )
+            yPosition += 2
+
+            yPosition = drawText(
+                interpretation,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: bodyFont,
+                color: textColor
+            )
+            yPosition += 8
+        }
+
+        return yPosition
+    }
+
     private func drawMatrixPositionDetail(
         position: MatrixPosition,
         isHighlighted: Bool,
@@ -1031,6 +1116,9 @@ class PDFGenerationService {
         margin: CGFloat,
         contentWidth: CGFloat,
         pageWidth: CGFloat,
+        pageHeight: CGFloat,
+        pageRect: CGRect,
+        pageNumber: inout Int,
         context: UIGraphicsPDFRendererContext
     ) -> CGFloat {
         var yPosition = initialY
@@ -1134,6 +1222,20 @@ class PDFGenerationService {
 
         yPosition += 18
 
+        if let card = position.tarotCard {
+            yPosition = drawCardMeanings(
+                card: card,
+                yPosition: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                pageWidth: pageWidth,
+                pageHeight: pageHeight,
+                pageRect: pageRect,
+                pageNumber: &pageNumber,
+                context: context
+            )
+        }
+
         return yPosition
     }
 
@@ -1143,6 +1245,9 @@ class PDFGenerationService {
         margin: CGFloat,
         contentWidth: CGFloat,
         pageWidth: CGFloat,
+        pageHeight: CGFloat,
+        pageRect: CGRect,
+        pageNumber: inout Int,
         context: UIGraphicsPDFRendererContext
     ) -> CGFloat {
         var yPosition = initialY
@@ -1202,6 +1307,21 @@ class PDFGenerationService {
         }
 
         yPosition += 12
+
+        if let card = yearEnergy.primaryCard {
+            yPosition = drawCardMeanings(
+                card: card,
+                yPosition: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                pageWidth: pageWidth,
+                pageHeight: pageHeight,
+                pageRect: pageRect,
+                pageNumber: &pageNumber,
+                context: context
+            )
+        }
+
         return yPosition
     }
 
@@ -1578,7 +1698,7 @@ class PDFGenerationService {
 
             // Heart of Union section (the .union position highlighted)
             if let union = matrix.unionPosition {
-                if yPosition > pageHeight - 260 {
+                if yPosition > pageHeight - 320 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -1602,6 +1722,9 @@ class PDFGenerationService {
                     margin: margin,
                     contentWidth: contentWidth,
                     pageWidth: pageWidth,
+                    pageHeight: pageHeight,
+                    pageRect: pageRect,
+                    pageNumber: &pageNumber,
                     context: context
                 )
 
@@ -1610,7 +1733,7 @@ class PDFGenerationService {
 
             // Current Year Energy
             if let currentYear = matrix.currentYearEnergy {
-                if yPosition > pageHeight - 280 {
+                if yPosition > pageHeight - 320 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -1633,6 +1756,9 @@ class PDFGenerationService {
                     margin: margin,
                     contentWidth: contentWidth,
                     pageWidth: pageWidth,
+                    pageHeight: pageHeight,
+                    pageRect: pageRect,
+                    pageNumber: &pageNumber,
                     context: context
                 )
 
@@ -1646,7 +1772,7 @@ class PDFGenerationService {
             }
 
             if !partnerPositions.isEmpty {
-                if yPosition > pageHeight - 200 {
+                if yPosition > pageHeight - 320 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -1679,6 +1805,9 @@ class PDFGenerationService {
                         margin: margin,
                         contentWidth: contentWidth,
                         pageWidth: pageWidth,
+                        pageHeight: pageHeight,
+                        pageRect: pageRect,
+                        pageNumber: &pageNumber,
                         context: context
                     )
 
@@ -1713,7 +1842,7 @@ class PDFGenerationService {
             }
 
             if !aspectPositions.isEmpty {
-                if yPosition > pageHeight - 200 {
+                if yPosition > pageHeight - 320 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -1746,6 +1875,9 @@ class PDFGenerationService {
                         margin: margin,
                         contentWidth: contentWidth,
                         pageWidth: pageWidth,
+                        pageHeight: pageHeight,
+                        pageRect: pageRect,
+                        pageNumber: &pageNumber,
                         context: context
                     )
 
@@ -1771,7 +1903,7 @@ class PDFGenerationService {
 
             // Years Together Timeline
             if !matrix.yearlyEnergies.isEmpty {
-                if yPosition > pageHeight - 260 {
+                if yPosition > pageHeight - 320 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -1916,6 +2048,9 @@ class PDFGenerationService {
         margin: CGFloat,
         contentWidth: CGFloat,
         pageWidth: CGFloat,
+        pageHeight: CGFloat,
+        pageRect: CGRect,
+        pageNumber: inout Int,
         context: UIGraphicsPDFRendererContext
     ) -> CGFloat {
         var yPosition = initialY
@@ -2019,6 +2154,20 @@ class PDFGenerationService {
 
         yPosition += 18
 
+        if let card = position.tarotCard {
+            yPosition = drawCardMeanings(
+                card: card,
+                yPosition: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                pageWidth: pageWidth,
+                pageHeight: pageHeight,
+                pageRect: pageRect,
+                pageNumber: &pageNumber,
+                context: context
+            )
+        }
+
         return yPosition
     }
 
@@ -2028,6 +2177,9 @@ class PDFGenerationService {
         margin: CGFloat,
         contentWidth: CGFloat,
         pageWidth: CGFloat,
+        pageHeight: CGFloat,
+        pageRect: CGRect,
+        pageNumber: inout Int,
         context: UIGraphicsPDFRendererContext
     ) -> CGFloat {
         var yPosition = initialY
@@ -2087,6 +2239,21 @@ class PDFGenerationService {
         }
 
         yPosition += 12
+
+        if let card = yearEnergy.primaryCard {
+            yPosition = drawCardMeanings(
+                card: card,
+                yPosition: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                pageWidth: pageWidth,
+                pageHeight: pageHeight,
+                pageRect: pageRect,
+                pageNumber: &pageNumber,
+                context: context
+            )
+        }
+
         return yPosition
     }
 
