@@ -2396,7 +2396,23 @@ class PDFGenerationService {
             yPosition = imageBottomY
         }
 
-        yPosition += 24
+        // Highlighted box around the year energy section
+        context.cgContext.saveGState()
+        let boxRect = CGRect(
+            x: margin - 12,
+            y: sectionTopY - 5,
+            width: contentWidth + 24,
+            height: yPosition - sectionTopY + 18
+        )
+        let highlightBox = UIBezierPath(roundedRect: boxRect, cornerRadius: 12)
+        UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.08).setFill()
+        highlightBox.fill()
+        UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.4).setStroke()
+        highlightBox.lineWidth = 1
+        highlightBox.stroke()
+        context.cgContext.restoreGState()
+
+        yPosition += 30
 
         if let card = yearEnergy.primaryCard {
             yPosition = drawCardMeanings(
