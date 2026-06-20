@@ -149561,10 +149561,28 @@
       }
     },
     "pdf.matrix.energyLegend" : {
-      "comment" : "Energy Legend"
+      "comment" : "Energy Legend",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energy Legend"
+          }
+        }
+      }
     },
     "pdf.matrix.energyLegendIntro" : {
-      "comment" : "Every circle in your timeline carries a number from 1 to 22 — each tied to a Major Arcana card. Use this legend as a quick guide to the essence each number holds."
+      "comment" : "Every circle in your timeline carries a number from 1 to 22 — each tied to a Major Arcana card. Use this legend as a quick guide to the essence each number holds.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every circle in your timeline carries a number from 1 to 22 — each tied to a Major Arcana card. Use this legend as a quick guide to the essence each number holds."
+          }
+        }
+      }
     },
     "pdf.matrix.keyPositions" : {
       "comment" : "Key Positions",
