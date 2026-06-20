@@ -867,7 +867,7 @@ class PDFGenerationService {
 
                 yPosition = drawMatrixPositionDetail(
                     position: position,
-                    isHighlighted: false,
+                    isHighlighted: true,
                     yPosition: yPosition,
                     margin: margin,
                     contentWidth: contentWidth,
