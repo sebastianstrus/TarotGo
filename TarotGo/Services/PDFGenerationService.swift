@@ -2076,8 +2076,29 @@ class PDFGenerationService {
                         contentWidth: contentWidth,
                         context: context
                     )
-                    yPosition += 18
+                    yPosition += 30
+
+                    if let card = currentYear.primaryCard {
+                        yPosition = drawCardMeanings(
+                            card: card,
+                            yPosition: yPosition,
+                            margin: margin,
+                            contentWidth: contentWidth,
+                            pageWidth: pageWidth,
+                            pageHeight: pageHeight,
+                            pageRect: pageRect,
+                            pageNumber: &pageNumber,
+                            context: context
+                        )
+                    }
                 }
+
+                // Always start the year circles on a fresh page
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
 
                 // Group years by decade (year-based, not age-based)
                 let grouped = Dictionary(grouping: matrix.yearlyEnergies) { year in
@@ -2564,10 +2585,10 @@ class PDFGenerationService {
         )
         yPosition += 6
 
-        let chipCount = max(years.count, 1)
+        let columnCount = 10
         let chipSpacing: CGFloat = 6
-        let totalSpacing = chipSpacing * CGFloat(chipCount - 1)
-        let chipWidth = (contentWidth - totalSpacing) / CGFloat(chipCount)
+        let totalSpacing = chipSpacing * CGFloat(columnCount - 1)
+        let chipWidth = (contentWidth - totalSpacing) / CGFloat(columnCount)
         let circleSize: CGFloat = min(28, chipWidth - 4)
         let yearFontSize: CGFloat = 8
         let rowHeight = circleSize + 2 + yearFontSize + 4
@@ -2575,8 +2596,9 @@ class PDFGenerationService {
         let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
         let mutedColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
 
-        for (index, year) in years.enumerated() {
-            let chipX = margin + CGFloat(index) * (chipWidth + chipSpacing)
+        for year in years {
+            let columnIndex = (year.year - 1) % columnCount
+            let chipX = margin + CGFloat(columnIndex) * (chipWidth + chipSpacing)
             let centerX = chipX + chipWidth / 2
 
             // Circle
