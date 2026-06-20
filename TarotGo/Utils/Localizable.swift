@@ -465,6 +465,8 @@ enum L10n {
     static let pdfMatrixLifeTimeline = NSLocalizedString("pdf.matrix.lifeTimeline", comment: "Life Timeline")
     static let pdfMatrixYears = NSLocalizedString("pdf.matrix.years", comment: "years")
     static let pdfMatrixCurrentYearDesc = NSLocalizedString("pdf.matrix.currentYearDesc", comment: "Your guiding energy this year, shaping the themes, lessons and opportunities woven into your path.")
+    static let pdfMatrixEnergyLegend = NSLocalizedString("pdf.matrix.energyLegend", comment: "Energy Legend")
+    static let pdfMatrixEnergyLegendIntro = NSLocalizedString("pdf.matrix.energyLegendIntro", comment: "Every circle in your timeline carries a number from 1 to 22 — each tied to a Major Arcana card. Use this legend as a quick guide to the essence each number holds.")
 
     // MARK: - PDF Export - Couple Matrix
     static let pdfCoupleMatrixTitle = NSLocalizedString("pdf.coupleMatrix.title", comment: "Your Couple Matrix")

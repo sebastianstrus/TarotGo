@@ -15668,6 +15668,18 @@
         }
       }
     },
+    "coupleMatrix.shareMatrix" : {
+      "comment" : "Share Couple Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share Couple Matrix"
+          }
+        }
+      }
+    },
     "coupleMatrix.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -149404,6 +149416,78 @@
         }
       }
     },
+    "pdf.coupleMatrix.currentYearDesc" : {
+      "comment" : "Description of current year energy for couples in PDF",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The guiding energy of your union this year, shaping the lessons and opportunities woven into your shared path."
+          }
+        }
+      }
+    },
+    "pdf.coupleMatrix.heartOfUnion" : {
+      "comment" : "Heart of Union",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heart of Union"
+          }
+        }
+      }
+    },
+    "pdf.coupleMatrix.partnerEnergies" : {
+      "comment" : "Partner Energies",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partner Energies"
+          }
+        }
+      }
+    },
+    "pdf.coupleMatrix.sharedAspects" : {
+      "comment" : "Shared Aspects",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared Aspects"
+          }
+        }
+      }
+    },
+    "pdf.coupleMatrix.title" : {
+      "comment" : "Your Couple Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Couple Matrix"
+          }
+        }
+      }
+    },
+    "pdf.coupleMatrix.yearsTimeline" : {
+      "comment" : "Years Together Timeline",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Years Together Timeline"
+          }
+        }
+      }
+    },
     "pdf.matrix.age" : {
       "comment" : "Age",
       "extractionState" : "manual",
@@ -149476,6 +149560,12 @@
         }
       }
     },
+    "pdf.matrix.energyLegend" : {
+      "comment" : "Energy Legend"
+    },
+    "pdf.matrix.energyLegendIntro" : {
+      "comment" : "Every circle in your timeline carries a number from 1 to 22 — each tied to a Major Arcana card. Use this legend as a quick guide to the essence each number holds."
+    },
     "pdf.matrix.keyPositions" : {
       "comment" : "Key Positions",
       "extractionState" : "manual",
@@ -149544,90 +149634,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "years"
-          }
-        }
-      }
-    },
-    "pdf.coupleMatrix.title" : {
-      "comment" : "Your Couple Matrix",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your Couple Matrix"
-          }
-        }
-      }
-    },
-    "pdf.coupleMatrix.heartOfUnion" : {
-      "comment" : "Heart of Union",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Heart of Union"
-          }
-        }
-      }
-    },
-    "pdf.coupleMatrix.partnerEnergies" : {
-      "comment" : "Partner Energies",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Partner Energies"
-          }
-        }
-      }
-    },
-    "pdf.coupleMatrix.sharedAspects" : {
-      "comment" : "Shared Aspects",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared Aspects"
-          }
-        }
-      }
-    },
-    "pdf.coupleMatrix.yearsTimeline" : {
-      "comment" : "Years Together Timeline",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Years Together Timeline"
-          }
-        }
-      }
-    },
-    "pdf.coupleMatrix.currentYearDesc" : {
-      "comment" : "Description of current year energy for couples in PDF",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The guiding energy of your union this year, shaping the lessons and opportunities woven into your shared path."
-          }
-        }
-      }
-    },
-    "coupleMatrix.shareMatrix" : {
-      "comment" : "Share Couple Matrix",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Couple Matrix"
           }
         }
       }
@@ -162996,17 +163002,6 @@
         }
       }
     },
-    "summary.yourTarotGoReading" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your TarotGo Reading"
-          }
-        }
-      }
-    },
     "summary.yourReading" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -163074,6 +163069,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ваше читання"
+          }
+        }
+      }
+    },
+    "summary.yourTarotGoReading" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your TarotGo Reading"
           }
         }
       }

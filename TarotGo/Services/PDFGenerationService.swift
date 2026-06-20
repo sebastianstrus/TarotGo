@@ -945,6 +945,17 @@ class PDFGenerationService {
                 }
 
                 yPosition += 10
+
+                // Energy Legend page
+                yPosition = drawEnergyLegendPage(
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    pageWidth: pageWidth,
+                    pageHeight: pageHeight,
+                    pageRect: pageRect,
+                    pageNumber: &pageNumber,
+                    context: context
+                )
             }
 
             // Notes
@@ -1483,6 +1494,134 @@ class PDFGenerationService {
             )
         }
 
+        return yPosition
+    }
+
+    private func drawEnergyLegendPage(
+        margin: CGFloat,
+        contentWidth: CGFloat,
+        pageWidth: CGFloat,
+        pageHeight: CGFloat,
+        pageRect: CGRect,
+        pageNumber: inout Int,
+        context: UIGraphicsPDFRendererContext
+    ) -> CGFloat {
+        // Start on a fresh page
+        drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+        pageNumber += 1
+        context.beginPage()
+        drawMysticalBackground(in: pageRect, context: context.cgContext)
+
+        var yPosition: CGFloat = 60
+        let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        let textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+
+        // Section header
+        yPosition = drawSectionHeader(
+            title: L10n.pdfMatrixEnergyLegend,
+            at: yPosition,
+            margin: margin,
+            contentWidth: contentWidth,
+            context: context.cgContext
+        )
+        yPosition += 6
+
+        // Intro paragraph
+        yPosition = drawText(
+            L10n.pdfMatrixEnergyLegendIntro,
+            at: CGPoint(x: margin, y: yPosition),
+            width: contentWidth,
+            font: .italicSystemFont(ofSize: 12),
+            color: UIColor(red: 0.45, green: 0.45, blue: 0.45, alpha: 1.0)
+        )
+        yPosition += 14
+
+        // Two-column grid of 22 energies
+        let cards = TarotDeck.majorArcana
+        let columnGap: CGFloat = 16
+        let columnWidth = (contentWidth - columnGap) / 2
+        let rowHeight: CGFloat = 26
+        let badgeRadius: CGFloat = 11
+        let leftColumnX = margin
+        let rightColumnX = margin + columnWidth + columnGap
+
+        let gridStartY = yPosition
+
+        for i in 0..<22 {
+            let energyNumber = i + 1
+            guard i < cards.count else { break }
+            let card = cards[i]
+
+            let isLeftColumn = i < 11
+            let columnX = isLeftColumn ? leftColumnX : rightColumnX
+            let rowIndex = isLeftColumn ? i : i - 11
+            let rowY = gridStartY + CGFloat(rowIndex) * rowHeight
+
+            // Number badge circle
+            let badgeCenter = CGPoint(x: columnX + badgeRadius, y: rowY + badgeRadius)
+            goldColor.withAlphaComponent(0.9).setFill()
+            UIBezierPath(
+                arcCenter: badgeCenter,
+                radius: badgeRadius,
+                startAngle: 0,
+                endAngle: .pi * 2,
+                clockwise: true
+            ).fill()
+
+            UIColor(red: 0.95, green: 0.93, blue: 0.88, alpha: 1.0).setFill()
+            UIBezierPath(
+                arcCenter: badgeCenter,
+                radius: badgeRadius - 2,
+                startAngle: 0,
+                endAngle: .pi * 2,
+                clockwise: true
+            ).fill()
+
+            let numberText = "\(energyNumber)" as NSString
+            let numberFont = UIFont.systemFont(ofSize: 10, weight: .bold)
+            let numberAttrs: [NSAttributedString.Key: Any] = [
+                .font: numberFont,
+                .foregroundColor: goldColor
+            ]
+            let numberSize = numberText.size(withAttributes: numberAttrs)
+            numberText.draw(
+                at: CGPoint(
+                    x: badgeCenter.x - numberSize.width / 2,
+                    y: badgeCenter.y - numberSize.height / 2
+                ),
+                withAttributes: numberAttrs
+            )
+
+            // Card name + brief keyword
+            let textX = columnX + badgeRadius * 2 + 8
+            let textWidth = columnWidth - (badgeRadius * 2 + 8)
+
+            let cardName = card.localizedName
+            let nameFont = UIFont.systemFont(ofSize: 11, weight: .semibold)
+            let nameAttrs: [NSAttributedString.Key: Any] = [
+                .font: nameFont,
+                .foregroundColor: textColor
+            ]
+            (cardName as NSString).draw(
+                in: CGRect(x: textX, y: rowY + 1, width: textWidth, height: 14),
+                withAttributes: nameAttrs
+            )
+
+            let keyword = card.localizedKeywords.first ?? ""
+            if !keyword.isEmpty {
+                let keywordFont = UIFont.italicSystemFont(ofSize: 9)
+                let keywordAttrs: [NSAttributedString.Key: Any] = [
+                    .font: keywordFont,
+                    .foregroundColor: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+                ]
+                (keyword as NSString).draw(
+                    in: CGRect(x: textX, y: rowY + 13, width: textWidth, height: 12),
+                    withAttributes: keywordAttrs
+                )
+            }
+        }
+
+        yPosition = gridStartY + 11 * rowHeight + 10
         return yPosition
     }
 
