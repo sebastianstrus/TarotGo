@@ -2711,8 +2711,9 @@ class PDFGenerationService {
                 )
                 yPosition += 10
 
+                let mountsPerPage = 3
                 for (index, mount) in reading.mounts.enumerated() {
-                    if yPosition > pageHeight - 160 {
+                    if index > 0 && index % mountsPerPage == 0 {
                         drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                         pageNumber += 1
                         context.beginPage()
@@ -2728,23 +2729,22 @@ class PDFGenerationService {
                         context: context
                     )
 
-                    if index < reading.mounts.count - 1 {
+                    let isLastMount = index == reading.mounts.count - 1
+                    let isLastOnPage = (index + 1) % mountsPerPage == 0
+                    if !isLastMount && !isLastOnPage {
                         yPosition += 12
                     }
                 }
             }
 
-            // Notes
+            // Notes (always start on a new page)
             if let notes = notes, !notes.isEmpty {
-                if yPosition > pageHeight - 200 {
-                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
-                    pageNumber += 1
-                    context.beginPage()
-                    drawMysticalBackground(in: pageRect, context: context.cgContext)
-                    yPosition = 60
-                }
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
 
-                yPosition += 20
                 yPosition = drawSectionHeader(title: L10n.summaryReflections, at: yPosition, margin: margin, contentWidth: contentWidth, context: context.cgContext)
                 yPosition += 5
 
