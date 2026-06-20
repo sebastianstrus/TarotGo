@@ -551,6 +551,7 @@ struct PositionRowView: View {
                     .font(.system(size: 13))
                     .foregroundColor(AppTheme.textTertiary)
                     .lineLimit(2)
+                    .multilineTextAlignment(.leading)
             }
             
             Spacer()
