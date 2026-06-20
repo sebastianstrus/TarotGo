@@ -905,10 +905,21 @@ class PDFGenerationService {
                         yPosition: yPosition,
                         margin: margin,
                         contentWidth: contentWidth,
+                        pageWidth: pageWidth,
+                        pageHeight: pageHeight,
+                        pageRect: pageRect,
+                        pageNumber: &pageNumber,
                         context: context
                     )
                     yPosition += 18
                 }
+
+                // Start the decade circles section on a fresh page
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
 
                 for startAge in stride(from: 1, through: 71, by: 10) {
                     let decadeYears = matrix.yearlyEnergies.filter { $0.age >= startAge && $0.age <= startAge + 9 }
@@ -1043,26 +1054,10 @@ class PDFGenerationService {
             (L10n.categoryHealth, .health)
         ]
 
-        // Section header
-        if yPosition > pageHeight - 80 {
-            drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
-            pageNumber += 1
-            context.beginPage()
-            drawMysticalBackground(in: pageRect, context: context.cgContext)
-            yPosition = 60
-        }
-
-        yPosition = drawText(
-            L10n.dictionaryMeanings,
-            at: CGPoint(x: margin, y: yPosition),
-            width: contentWidth,
-            font: .systemFont(ofSize: 13, weight: .semibold),
-            color: goldColor
-        )
-        yPosition += 6
-
         let bodyParagraph = NSMutableParagraphStyle()
         bodyParagraph.lineSpacing = 3
+
+        var meaningsHeaderDrawn = false
 
         for (categoryName, category) in categories {
             let interpretation = card.interpretation(for: category, reversed: false)
@@ -1077,14 +1072,29 @@ class PDFGenerationService {
                 options: [.usesLineFragmentOrigin, .usesFontLeading],
                 context: nil
             )
-            let estimatedSectionHeight: CGFloat = 22 + interpRect.height + 10
+            let categorySectionHeight: CGFloat = 22 + interpRect.height + 10
+            let meaningsHeaderHeight: CGFloat = meaningsHeaderDrawn ? 0 : 28
+            let requiredHeight = categorySectionHeight + meaningsHeaderHeight
 
-            if yPosition + estimatedSectionHeight > pageHeight - 60 {
+            if yPosition + requiredHeight > pageHeight - 60 {
                 drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                 pageNumber += 1
                 context.beginPage()
                 drawMysticalBackground(in: pageRect, context: context.cgContext)
                 yPosition = 60
+                meaningsHeaderDrawn = false
+            }
+
+            if !meaningsHeaderDrawn {
+                yPosition = drawText(
+                    L10n.dictionaryMeanings,
+                    at: CGPoint(x: margin, y: yPosition),
+                    width: contentWidth,
+                    font: .systemFont(ofSize: 13, weight: .semibold),
+                    color: goldColor
+                )
+                yPosition += 6
+                meaningsHeaderDrawn = true
             }
 
             yPosition = drawText(
@@ -1332,14 +1342,21 @@ class PDFGenerationService {
         yPosition initialY: CGFloat,
         margin: CGFloat,
         contentWidth: CGFloat,
+        pageWidth: CGFloat,
+        pageHeight: CGFloat,
+        pageRect: CGRect,
+        pageNumber: inout Int,
         context: UIGraphicsPDFRendererContext
     ) -> CGFloat {
         let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
-        let boxTopY = initialY
-        let innerLeft = margin + 4
-        let innerWidth = contentWidth - 8
-        var yPosition = boxTopY + 14
+        var yPosition = initialY
+        let sectionTopY = yPosition
+        yPosition += 5
 
+        // Number badge on the left
+        drawCardPositionBadge(position: yearEnergy.primaryEnergy, at: CGPoint(x: margin, y: yPosition), context: context.cgContext)
+
+        // "CURRENT YEAR" label
         let labelText = L10n.pdfMatrixCurrentYear.uppercased()
         let labelFont = UIFont.systemFont(ofSize: 10, weight: .semibold)
         let labelAttrs: [NSAttributedString.Key: Any] = [
@@ -1348,94 +1365,107 @@ class PDFGenerationService {
             .kern: 1.2
         ]
         (labelText as NSString).draw(
-            at: CGPoint(x: innerLeft, y: yPosition),
+            at: CGPoint(x: margin + 50, y: yPosition + 2),
             withAttributes: labelAttrs
         )
-        yPosition += labelFont.lineHeight + 4
+        yPosition += labelFont.lineHeight + 6
 
+        // Year • Age title
         let title = "\(L10n.pdfMatrixYear) \(yearEnergy.year) • \(L10n.pdfMatrixAge) \(yearEnergy.age)"
-        let titleFont = UIFont.systemFont(ofSize: 18, weight: .semibold)
         yPosition = drawText(
             title,
-            at: CGPoint(x: innerLeft, y: yPosition),
-            width: innerWidth - 70,
-            font: titleFont,
+            at: CGPoint(x: margin + 50, y: yPosition),
+            width: contentWidth - 50 - 110,
+            font: .systemFont(ofSize: 18, weight: .semibold),
             color: goldColor
         )
 
-        // Energy badge on the right
-        let badgeRadius: CGFloat = 22
-        let badgeCenter = CGPoint(
-            x: margin + contentWidth - badgeRadius - 6,
-            y: boxTopY + 14 + badgeRadius + 4
-        )
+        yPosition += 4
 
-        goldColor.setFill()
-        UIBezierPath(
-            arcCenter: badgeCenter,
-            radius: badgeRadius,
-            startAngle: 0,
-            endAngle: .pi * 2,
-            clockwise: true
-        ).fill()
-
-        let energyText = "\(yearEnergy.primaryEnergy)" as NSString
-        let energyFont = UIFont.systemFont(ofSize: 18, weight: .bold)
-        let energyAttrs: [NSAttributedString.Key: Any] = [
-            .font: energyFont,
-            .foregroundColor: UIColor.black
-        ]
-        let energySize = energyText.size(withAttributes: energyAttrs)
-        energyText.draw(
-            at: CGPoint(
-                x: badgeCenter.x - energySize.width / 2,
-                y: badgeCenter.y - energySize.height / 2
-            ),
-            withAttributes: energyAttrs
+        // Description
+        yPosition = drawText(
+            L10n.pdfMatrixCurrentYearDesc,
+            at: CGPoint(x: margin + 50, y: yPosition),
+            width: contentWidth - 50 - 110,
+            font: .italicSystemFont(ofSize: 12),
+            color: UIColor(red: 0.45, green: 0.45, blue: 0.45, alpha: 1.0)
         )
 
         yPosition += 10
 
-        // Description sentence
-        yPosition = drawText(
-            L10n.pdfMatrixCurrentYearDesc,
-            at: CGPoint(x: innerLeft, y: yPosition),
-            width: innerWidth,
-            font: .italicSystemFont(ofSize: 12),
-            color: UIColor(red: 0.35, green: 0.35, blue: 0.35, alpha: 1.0)
-        )
+        // Card image on the right (inside the box)
+        if let card = yearEnergy.primaryCard, let cardImage = UIImage(named: card.id) {
+            let cardImageHeight: CGFloat = 110
+            let cardImageWidth: CGFloat = cardImageHeight * (1108.0 / 1900.0)
+            let cardX = pageWidth - margin - cardImageWidth
+            let cornerRadius = cardImageWidth * 0.06
 
+            let imageRect = CGRect(x: cardX, y: sectionTopY + 5, width: cardImageWidth, height: cardImageHeight)
+
+            context.cgContext.saveGState()
+            let cardBg = UIBezierPath(roundedRect: imageRect, cornerRadius: cornerRadius)
+            UIColor.white.setFill()
+            cardBg.fill()
+            cardBg.addClip()
+            cardImage.draw(in: imageRect)
+            context.cgContext.restoreGState()
+
+            context.cgContext.saveGState()
+            let borderPath = UIBezierPath(roundedRect: imageRect, cornerRadius: cornerRadius)
+            UIColor.gray.setStroke()
+            borderPath.lineWidth = 0.5
+            borderPath.stroke()
+            context.cgContext.restoreGState()
+        }
+
+        // Energy number + card name
         if let card = yearEnergy.primaryCard {
-            yPosition += 8
-            let keywords = card.localizedKeywords.prefix(4).joined(separator: " • ")
-            let cardLine = keywords.isEmpty
-                ? card.localizedName
-                : "\(card.localizedName) — \(keywords)"
             yPosition = drawText(
-                cardLine,
-                at: CGPoint(x: innerLeft, y: yPosition),
-                width: innerWidth,
+                "\(L10n.pdfMatrixEnergy) \(yearEnergy.primaryEnergy) • \(card.localizedName)",
+                at: CGPoint(x: margin + 50, y: yPosition),
+                width: contentWidth - 50 - 110,
                 font: .systemFont(ofSize: 13, weight: .medium),
                 color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
             )
         }
 
-        yPosition += 12
+        // Ensure image takes minimum space
+        let imageBottomY = sectionTopY + 5 + 110
+        if yPosition < imageBottomY {
+            yPosition = imageBottomY
+        }
 
-        let boxRect = CGRect(
-            x: margin - 8,
-            y: boxTopY,
-            width: contentWidth + 16,
-            height: yPosition - boxTopY
-        )
+        // Highlighted box around the whole section
         context.cgContext.saveGState()
-        let boxPath = UIBezierPath(roundedRect: boxRect, cornerRadius: 12)
+        let boxRect = CGRect(
+            x: margin - 12,
+            y: sectionTopY - 5,
+            width: contentWidth + 24,
+            height: yPosition - sectionTopY + 18
+        )
+        let highlightBox = UIBezierPath(roundedRect: boxRect, cornerRadius: 12)
         UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.08).setFill()
-        boxPath.fill()
+        highlightBox.fill()
         UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.4).setStroke()
-        boxPath.lineWidth = 1
-        boxPath.stroke()
+        highlightBox.lineWidth = 1
+        highlightBox.stroke()
         context.cgContext.restoreGState()
+
+        yPosition += 18
+
+        if let card = yearEnergy.primaryCard {
+            yPosition = drawCardMeanings(
+                card: card,
+                yPosition: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                pageWidth: pageWidth,
+                pageHeight: pageHeight,
+                pageRect: pageRect,
+                pageNumber: &pageNumber,
+                context: context
+            )
+        }
 
         return yPosition
     }
