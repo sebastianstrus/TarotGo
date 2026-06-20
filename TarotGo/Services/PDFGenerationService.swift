@@ -1241,7 +1241,7 @@ class PDFGenerationService {
             context.cgContext.restoreGState()
         }
 
-        yPosition += 18
+        yPosition += 30
 
         if let card = position.tarotCard {
             yPosition = drawCardMeanings(
@@ -1343,7 +1343,7 @@ class PDFGenerationService {
         highlightBox.stroke()
         context.cgContext.restoreGState()
 
-        yPosition += 18
+        yPosition += 30
 
         if let card = yearEnergy.primaryCard {
             yPosition = drawCardMeanings(
@@ -1478,7 +1478,7 @@ class PDFGenerationService {
         highlightBox.stroke()
         context.cgContext.restoreGState()
 
-        yPosition += 18
+        yPosition += 30
 
         if let card = yearEnergy.primaryCard {
             yPosition = drawCardMeanings(
