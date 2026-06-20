@@ -941,7 +941,7 @@ class PDFGenerationService {
                         contentWidth: contentWidth,
                         context: context
                     )
-                    yPosition += 14
+                    yPosition += 10
                 }
 
                 yPosition += 10
