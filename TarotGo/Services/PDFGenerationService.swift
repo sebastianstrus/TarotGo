@@ -1975,7 +1975,7 @@ class PDFGenerationService {
                 yPosition += 10
 
                 for (index, position) in partnerPositions.enumerated() {
-                    if yPosition > pageHeight - 240 {
+                    if index > 0 {
                         drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                         pageNumber += 1
                         context.beginPage()
@@ -1985,7 +1985,7 @@ class PDFGenerationService {
 
                     yPosition = drawCouplePositionDetail(
                         position: position,
-                        isHighlighted: false,
+                        isHighlighted: true,
                         yPosition: yPosition,
                         margin: margin,
                         contentWidth: contentWidth,
@@ -1995,24 +1995,6 @@ class PDFGenerationService {
                         pageNumber: &pageNumber,
                         context: context
                     )
-
-                    if index < partnerPositions.count - 1 {
-                        let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
-                        goldColor.withAlphaComponent(0.3).setStroke()
-                        let leftLine = UIBezierPath()
-                        leftLine.move(to: CGPoint(x: margin, y: yPosition + 10))
-                        leftLine.addLine(to: CGPoint(x: pageWidth / 2 - 20, y: yPosition + 10))
-                        leftLine.lineWidth = 0.5
-                        leftLine.stroke()
-                        let rightLine = UIBezierPath()
-                        rightLine.move(to: CGPoint(x: pageWidth / 2 + 20, y: yPosition + 10))
-                        rightLine.addLine(to: CGPoint(x: pageWidth - margin, y: yPosition + 10))
-                        rightLine.lineWidth = 0.5
-                        rightLine.stroke()
-                        goldColor.setFill()
-                        drawStar(at: CGPoint(x: pageWidth / 2, y: yPosition + 10), size: 5, context: context.cgContext)
-                        yPosition += 25
-                    }
                 }
 
                 yPosition += 20
@@ -2045,7 +2027,7 @@ class PDFGenerationService {
                 yPosition += 10
 
                 for (index, position) in aspectPositions.enumerated() {
-                    if yPosition > pageHeight - 240 {
+                    if index > 0 {
                         drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                         pageNumber += 1
                         context.beginPage()
@@ -2055,7 +2037,7 @@ class PDFGenerationService {
 
                     yPosition = drawCouplePositionDetail(
                         position: position,
-                        isHighlighted: false,
+                        isHighlighted: true,
                         yPosition: yPosition,
                         margin: margin,
                         contentWidth: contentWidth,
@@ -2065,38 +2047,18 @@ class PDFGenerationService {
                         pageNumber: &pageNumber,
                         context: context
                     )
-
-                    if index < aspectPositions.count - 1 {
-                        let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
-                        goldColor.withAlphaComponent(0.3).setStroke()
-                        let leftLine = UIBezierPath()
-                        leftLine.move(to: CGPoint(x: margin, y: yPosition + 10))
-                        leftLine.addLine(to: CGPoint(x: pageWidth / 2 - 20, y: yPosition + 10))
-                        leftLine.lineWidth = 0.5
-                        leftLine.stroke()
-                        let rightLine = UIBezierPath()
-                        rightLine.move(to: CGPoint(x: pageWidth / 2 + 20, y: yPosition + 10))
-                        rightLine.addLine(to: CGPoint(x: pageWidth - margin, y: yPosition + 10))
-                        rightLine.lineWidth = 0.5
-                        rightLine.stroke()
-                        goldColor.setFill()
-                        drawStar(at: CGPoint(x: pageWidth / 2, y: yPosition + 10), size: 5, context: context.cgContext)
-                        yPosition += 25
-                    }
                 }
             }
 
             // Years Together Timeline
             if !matrix.yearlyEnergies.isEmpty {
-                if yPosition > pageHeight - 320 {
-                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
-                    pageNumber += 1
-                    context.beginPage()
-                    drawMysticalBackground(in: pageRect, context: context.cgContext)
-                    yPosition = 60
-                }
+                // Always start the Years Together Timeline on a fresh page
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
 
-                yPosition += 10
                 yPosition = drawSectionHeader(
                     title: L10n.pdfCoupleMatrixYearsTimeline,
                     at: yPosition,
@@ -2145,6 +2107,17 @@ class PDFGenerationService {
                 }
 
                 yPosition += 10
+
+                // Energy Legend page
+                yPosition = drawEnergyLegendPage(
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    pageWidth: pageWidth,
+                    pageHeight: pageHeight,
+                    pageRect: pageRect,
+                    pageNumber: &pageNumber,
+                    context: context
+                )
             }
 
             // Notes
@@ -2337,7 +2310,7 @@ class PDFGenerationService {
             context.cgContext.restoreGState()
         }
 
-        yPosition += 18
+        yPosition += 30
 
         if let card = position.tarotCard {
             yPosition = drawCardMeanings(
@@ -2423,7 +2396,7 @@ class PDFGenerationService {
             yPosition = imageBottomY
         }
 
-        yPosition += 12
+        yPosition += 24
 
         if let card = yearEnergy.primaryCard {
             yPosition = drawCardMeanings(
