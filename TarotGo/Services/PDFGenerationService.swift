@@ -479,7 +479,7 @@ class PDFGenerationService {
                     context.cgContext.restoreGState()
                 }
                 
-                let interpretation = drawnCard.card.interpretation(for: drawnCard.category, reversed: drawnCard.isReversed)
+                let interpretation = drawnCard.effectiveInterpretation
                 let interpWidth = contentWidth - 100
                 
                 // Calculate height

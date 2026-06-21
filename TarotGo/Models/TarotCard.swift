@@ -153,4 +153,15 @@ struct DrawnCard: Identifiable, Codable {
         self.category = category
         self.resonanceLevel = nil
     }
+
+    var effectiveInterpretation: String {
+        if let level = resonanceLevel, level != .resonates {
+            return card.alternativeInterpretation(
+                for: category,
+                reversed: isReversed,
+                resonanceLevel: level
+            )
+        }
+        return card.interpretation(for: category, reversed: isReversed)
+    }
 }

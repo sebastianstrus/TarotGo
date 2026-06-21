@@ -251,7 +251,7 @@ struct CardSummaryCard: View {
                     .frame(width: 60, height: 90)
             }
             
-            Text(drawnCard.card.interpretation(for: drawnCard.category, reversed: drawnCard.isReversed))
+            Text(drawnCard.effectiveInterpretation)
                 .font(.system(size: 14, weight: .light))
                 .foregroundColor(AppTheme.textSecondary)
                 .lineSpacing(5)
