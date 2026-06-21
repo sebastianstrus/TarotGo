@@ -182508,65 +182508,365 @@
       }
     },
     "summary.closing.career" : {
-      "comment" : "Regarding your career path, these cards are telling a story that requires your attention and honest reflection.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regarding your career path, these cards are telling a story that requires your attention and honest reflection."
+          "comment" : "Regarding your career path, these cards are telling a story that requires your attention and honest reflection.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Bezüglich deines Karrierewegs erzählen diese Karten eine Geschichte, die deine Aufmerksamkeit und ehrliche Reflexion erfordert."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Regarding your career path, these cards are telling a story that requires your attention and honest reflection."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "En cuanto a tu camino profesional, estas cartas cuentan una historia que requiere tu atención y una reflexión honesta."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Concernant votre parcours professionnel, ces cartes racontent une histoire qui nécessite votre attention et une réflexion honnête."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Per quanto riguarda il tuo percorso professionale, queste carte raccontano una storia che richiede la tua attenzione e un'onesta riflessione."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "あなたのキャリアパスに関して、これらのカードはあなたの注意と誠実な内省を必要とする物語を語っています。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Når det gjelder karriereveien din, forteller disse kortene en historie som krever din oppmerksomhet og ærlig refleksjon."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Jeśli chodzi o twoją ścieżkę kariery, te karty opowiadają historię, która wymaga twojej uwagi i szczerej refleksji."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Em relação à sua trajetória profissional, estas cartas contam uma história que requer sua atenção e reflexão honesta."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "När det gäller din karriärväg berättar dessa kort en historia som kräver din uppmärksamhet och ärlig reflektion."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Щодо вашого кар'єрного шляху, ці карти розповідають історію, яка потребує вашої уваги та чесного роздуму."
+              }
+            }
           }
-        }
-      }
-    },
-    "summary.closing.finance" : {
-      "comment" : "When it comes to your finances, these cards are telling a story that requires your attention and honest reflection.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "When it comes to your finances, these cards are telling a story that requires your attention and honest reflection."
+        },
+        "summary.closing.finance" : {
+          "comment" : "When it comes to your finances, these cards are telling a story that requires your attention and honest reflection.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Was deine Finanzen betrifft, erzählen diese Karten eine Geschichte, die deine Aufmerksamkeit und ehrliche Reflexion erfordert."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "When it comes to your finances, these cards are telling a story that requires your attention and honest reflection."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "En lo que respecta a tus finanzas, estas cartas cuentan una historia que requiere tu atención y una reflexión honesta."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "En ce qui concerne vos finances, ces cartes racontent une histoire qui nécessite votre attention et une réflexion honnête."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Per quanto riguarda le tue finanze, queste carte raccontano una storia che richiede la tua attenzione e un'onesta riflessione."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "あなたの財政に関して、これらのカードはあなたの注意と誠実な内省を必要とする物語を語っています。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Når det gjelder økonomien din, forteller disse kortene en historie som krever din oppmerksomhet og ærlig refleksjon."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Jeśli chodzi o twoje finanse, te karty opowiadają historię, która wymaga twojej uwagi i szczerej refleksji."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Quando se trata de suas finanças, estas cartas contam uma história que requer sua atenção e reflexão honesta."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "När det gäller din ekonomi berättar dessa kort en historia som kräver din uppmärksamhet och ärlig reflektion."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Що стосується ваших фінансів, ці карти розповідають історію, яка потребує вашої уваги та чесного роздуму."
+              }
+            }
           }
-        }
-      }
-    },
-    "summary.closing.general" : {
-      "comment" : "Looking at your life as a whole, these cards are telling a story that requires your attention and honest reflection.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Looking at your life as a whole, these cards are telling a story that requires your attention and honest reflection."
+        },
+        "summary.closing.general" : {
+          "comment" : "Looking at your life as a whole, these cards are telling a story that requires your attention and honest reflection.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Betrachtet man dein Leben als Ganzes, erzählen diese Karten eine Geschichte, die deine Aufmerksamkeit und ehrliche Reflexion erfordert."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Looking at your life as a whole, these cards are telling a story that requires your attention and honest reflection."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Mirando tu vida en su conjunto, estas cartas cuentan una historia que requiere tu atención y una reflexión honesta."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "En considérant votre vie dans son ensemble, ces cartes racontent une histoire qui nécessite votre attention et une réflexion honnête."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Guardando la tua vita nel suo insieme, queste carte raccontano una storia che richiede la tua attenzione e un'onesta riflessione."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "あなたの人生全体を見渡すと、これらのカードはあなたの注意と誠実な内省を必要とする物語を語っています。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Når du ser på livet ditt som helhet, forteller disse kortene en historie som krever din oppmerksomhet og ærlig refleksjon."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Patrząc na twoje życie jako całość, te karty opowiadają historię, która wymaga twojej uwagi i szczerej refleksji."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Olhando para sua vida como um todo, estas cartas contam uma história que requer sua atenção e reflexão honesta."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "När du ser på ditt liv som helhet berättar dessa kort en historia som kräver din uppmärksamhet och ärlig reflektion."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Дивлячись на ваше життя в цілому, ці карти розповідають історію, яка потребує вашої уваги та чесного роздуму."
+              }
+            }
           }
-        }
-      }
-    },
-    "summary.closing.health" : {
-      "comment" : "For your health and wellbeing, these cards are telling a story that requires your attention and honest reflection.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "For your health and wellbeing, these cards are telling a story that requires your attention and honest reflection."
+        },
+        "summary.closing.health" : {
+          "comment" : "For your health and wellbeing, these cards are telling a story that requires your attention and honest reflection.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Für deine Gesundheit und dein Wohlbefinden erzählen diese Karten eine Geschichte, die deine Aufmerksamkeit und ehrliche Reflexion erfordert."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "For your health and wellbeing, these cards are telling a story that requires your attention and honest reflection."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Para tu salud y bienestar, estas cartas cuentan una historia que requiere tu atención y una reflexión honesta."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Pour votre santé et votre bien-être, ces cartes racontent une histoire qui nécessite votre attention et une réflexion honnête."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Per la tua salute e benessere, queste carte raccontano una storia che richiede la tua attenzione e un'onesta riflessione."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "あなたの健康と幸福のために、これらのカードはあなたの注意と誠実な内省を必要とする物語を語っています。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "For helsen og velværet ditt, forteller disse kortene en historie som krever din oppmerksomhet og ærlig refleksjon."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dla twojego zdrowia i dobrego samopoczucia, te karty opowiadają historię, która wymaga twojej uwagi i szczerej refleksji."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Para sua saúde e bem-estar, estas cartas contam uma história que requer sua atenção e reflexão honesta."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "För din hälsa och ditt välbefinnande berättar dessa kort en historia som kräver din uppmärksamhet och ärlig reflektion."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Для вашого здоров'я та благополуччя ці карти розповідають історію, яка потребує вашої уваги та чесного роздуму."
+              }
+            }
           }
-        }
-      }
-    },
-    "summary.closing.love" : {
-      "comment" : "In matters of love, these cards are telling a story that requires your attention and honest reflection.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In matters of love, these cards are telling a story that requires your attention and honest reflection."
+        },
+        "summary.closing.love" : {
+          "comment" : "In matters of love, these cards are telling a story that requires your attention and honest reflection.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "In Liebesangelegenheiten erzählen diese Karten eine Geschichte, die deine Aufmerksamkeit und ehrliche Reflexion erfordert."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "In matters of love, these cards are telling a story that requires your attention and honest reflection."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "En asuntos de amor, estas cartas cuentan una historia que requiere tu atención y una reflexión honesta."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "En matière d'amour, ces cartes racontent une histoire qui nécessite votre attention et une réflexion honnête."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "In questioni d'amore, queste carte raccontano una storia che richiede la tua attenzione e un'onesta riflessione."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "愛の問題において、これらのカードはあなたの注意と誠実な内省を必要とする物語を語っています。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "I kjærlighetssaker forteller disse kortene en historie som krever din oppmerksomhet og ærlig refleksjon."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "W sprawach sercowych te karty opowiadają historię, która wymaga twojej uwagi i szczerej refleksji."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Em questões de amor, estas cartas contam uma história que requer sua atenção e reflexão honesta."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "I kärleksfrågor berättar dessa kort en historia som kräver din uppmärksamhet och ärlig reflektion."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "У питаннях кохання ці карти розповідають історію, яка потребує вашої уваги та чесного роздуму."
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "summary.insight.career" : {
       "comment" : "Regarding your career and professional path",
       "extractionState" : "manual",
@@ -183072,17 +183372,77 @@
       }
     },
     "summary.majorArcana.weight" : {
-      "comment" : "This reading carries significant weight. With %d Major Arcana cards, you're dealing with major life themes and important soul lessons.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This reading carries significant weight. With %d Major Arcana cards, you're dealing with major life themes and important soul lessons."
+          "comment" : "This reading carries significant weight. With %d Major Arcana cards, you're dealing with major life themes and important soul lessons.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Diese Lesung hat ein erhebliches Gewicht. Mit %d Großen Arkana-Karten hast du es mit großen Lebensthemen und wichtigen Seelenlektionen zu tun."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "This reading carries significant weight. With %d Major Arcana cards, you're dealing with major life themes and important soul lessons."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Esta lectura tiene un peso significativo. Con %d cartas de Arcanos Mayores, estás lidiando con grandes temas de vida e importantes lecciones del alma."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Cette lecture a un poids considérable. Avec %d cartes des Arcanes Majeurs, vous êtes confronté à des thèmes majeurs de la vie et à d'importantes leçons de l'âme."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Questa lettura ha un peso significativo. Con %d carte degli Arcani Maggiori, hai a che fare con grandi temi di vita e importanti lezioni dell'anima."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "このリーディングは重要な重みを持っています。%d枚の大アルカナカードがあるということは、人生の主要なテーマや重要な魂のレッスンに向き合っていることを意味します。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Denne lesningen har betydelig vekt. Med %d Store Arkana-kort, har du å gjøre med store livstemaer og viktige sjeleleksjoner."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ten odczyt ma znaczącą wagę. Z %d kartami Wielkich Arkanów masz do czynienia z ważnymi tematami życiowymi i istotnymi lekcjami duszy."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Esta leitura tem um peso significativo. Com %d cartas dos Arcanos Maiores, você está lidando com grandes temas da vida e importantes lições da alma."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Denna läsning har betydande vikt. Med %d Stora Arkana-kort hanterar du stora livsteman och viktiga själslektioner."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Це читання має значну вагу. З %d картами Старших Арканів ви маєте справу з основними життєвими темами та важливими уроками душі."
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "summary.overallInsight" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -183584,17 +183944,77 @@
       }
     },
     "summary.reversedCards" : {
-      "comment" : "I notice many reversed cards here, which suggests internal blocks or resistance to the natural flow. What are you holding onto that needs to be released?",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "I notice many reversed cards here, which suggests internal blocks or resistance to the natural flow. What are you holding onto that needs to be released?"
+          "comment" : "I notice many reversed cards here, which suggests internal blocks or resistance to the natural flow. What are you holding onto that needs to be released?",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ich bemerke viele umgekehrte Karten hier, was auf innere Blockaden oder Widerstand gegen den natürlichen Fluss hindeutet. Was hältst du fest, das losgelassen werden muss?"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "I notice many reversed cards here, which suggests internal blocks or resistance to the natural flow. What are you holding onto that needs to be released?"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Noto muchas cartas invertidas aquí, lo que sugiere bloqueos internos o resistencia al flujo natural. ¿Qué estás reteniendo que necesita ser liberado?"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Je remarque beaucoup de cartes inversées ici, ce qui suggère des blocages internes ou une résistance au flux naturel. Qu'est-ce que vous retenez qui doit être libéré ?"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Noto molte carte invertite qui, il che suggerisce blocchi interni o resistenza al flusso naturale. Cosa stai trattenendo che ha bisogno di essere rilasciato?"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "ここには逆位置のカードが多く見られます。これは内面的なブロックや自然な流れに対する抵抗を示唆しています。手放す必要があるものは何ですか？"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Jeg legger merke til mange omvendte kort her, noe som tyder på indre blokkeringer eller motstand mot den naturlige flyten. Hva holder du fast på som må slippes?"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Zauważam tutaj wiele odwróconych kart, co sugeruje wewnętrzne blokady lub opór wobec naturalnego przepływu. Czego się trzymasz, co musi zostać uwolnione?"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Percebo muitas cartas invertidas aqui, o que sugere bloqueios internos ou resistência ao fluxo natural. O que você está segurando que precisa ser liberado?"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Jag märker många omvända kort här, vilket tyder på inre blockeringar eller motstånd mot det naturliga flödet. Vad håller du fast vid som måste släppas?"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Я помічаю багато перевернутих карт тут, що вказує на внутрішні блоки або опір природному потоку. Що ви тримаєте, що потребує звільнення?"
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "summary.saveReading" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -183810,17 +184230,77 @@
       }
     },
     "summary.suit.cups" : {
-      "comment" : "Your reading is dominated by Cups, the suit of emotions and relationships. Your heart is speaking loudly right now.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your reading is dominated by Cups, the suit of emotions and relationships. Your heart is speaking loudly right now."
+          "comment" : "Your reading is dominated by Cups, the suit of emotions and relationships. Your heart is speaking loudly right now.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Deine Lesung wird von den Kelchen dominiert, der Farbe der Emotionen und Beziehungen. Dein Herz spricht gerade laut und deutlich."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Your reading is dominated by Cups, the suit of emotions and relationships. Your heart is speaking loudly right now."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Tu lectura está dominada por Copas, el palo de las emociones y las relaciones. Tu corazón está hablando en voz alta ahora mismo."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Votre lecture est dominée par les Coupes, l'enseigne des émotions et des relations. Votre cœur parle haut et fort en ce moment."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "La tua lettura è dominata dalle Coppe, il seme delle emozioni e delle relazioni. Il tuo cuore sta parlando ad alta voce in questo momento."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "あなたのリーディングはカップ（感情と人間関係のスート）に支配されています。あなたの心が今、大声で語りかけています。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Lesningen din er dominert av Kopper, fargen for følelser og relasjoner. Hjertet ditt snakker høyt og tydelig akkurat nå."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Twój odczyt jest zdominowany przez Kielichy, kolor emocji i relacji. Twoje serce mówi teraz głośno."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Sua leitura é dominada por Copas, o naipe das emoções e relacionamentos. Seu coração está falando alto agora."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Din läsning domineras av Bägare, färgen för känslor och relationer. Ditt hjärta talar högt just nu."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ваше читання домінує Кубки, масть емоцій та стосунків. Ваше серце зараз говорить голосно."
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "summary.suit.cups.dominant" : {
       "comment" : "Cups dominate - emotions and relationships",
       "extractionState" : "manual",
@@ -183894,17 +184374,77 @@
       }
     },
     "summary.suit.majorArcana" : {
-      "comment" : "The Major Arcana dominates, meaning this is about your soul's journey more than day-to-day concerns.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Major Arcana dominates, meaning this is about your soul's journey more than day-to-day concerns."
+          "comment" : "The Major Arcana dominates, meaning this is about your soul's journey more than day-to-day concerns.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Die Große Arkana dominiert, was bedeutet, dass es hier mehr um die Reise deiner Seele geht als um alltägliche Angelegenheiten."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "The Major Arcana dominates, meaning this is about your soul's journey more than day-to-day concerns."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Los Arcanos Mayores dominan, lo que significa que esto trata sobre el viaje de tu alma más que sobre preocupaciones cotidianas."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Les Arcanes Majeurs dominent, ce qui signifie qu'il s'agit davantage du voyage de votre âme que des préoccupations quotidiennes."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Gli Arcani Maggiori dominano, il che significa che si tratta più del viaggio della tua anima che delle preoccupazioni quotidiane."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "大アルカナが支配的です。これは日々の心配事というよりも、あなたの魂の旅路に関するものです。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Den Store Arkana dominerer, noe som betyr at dette handler mer om sjelens reise enn dagligdagse bekymringer."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dominują Wielkie Arkana, co oznacza, że chodzi bardziej o podróż twojej duszy niż o codzienne sprawy."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Os Arcanos Maiores dominam, o que significa que isso é mais sobre a jornada da sua alma do que sobre preocupações do dia a dia."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Den Stora Arkana dominerar, vilket betyder att detta handlar mer om din själs resa än om vardagliga bekymmer."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Старші Аркани домінують, що означає, що це більше про подорож вашої душі, ніж про повсякденні турботи."
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "summary.suit.majorArcana.dominant" : {
       "comment" : "Major Arcana dominates - soul journey",
       "extractionState" : "manual",
@@ -183978,17 +184518,77 @@
       }
     },
     "summary.suit.pentacles" : {
-      "comment" : "Pentacles ground this reading in the material world. This is about tangible results, physical reality, and practical matters.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pentacles ground this reading in the material world. This is about tangible results, physical reality, and practical matters."
+          "comment" : "Pentacles ground this reading in the material world. This is about tangible results, physical reality, and practical matters.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Die Pentakel verankern diese Lesung in der materiellen Welt. Es geht um greifbare Ergebnisse, die physische Realität und praktische Angelegenheiten."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Pentacles ground this reading in the material world. This is about tangible results, physical reality, and practical matters."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Los Pentáculos anclan esta lectura en el mundo material. Se trata de resultados tangibles, la realidad física y asuntos prácticos."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Les Pentacles ancrent cette lecture dans le monde matériel. Il s'agit de résultats tangibles, de la réalité physique et de questions pratiques."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "I Pentacoli ancorano questa lettura al mondo materiale. Si tratta di risultati tangibili, realtà fisica e questioni pratiche."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "ペンタクルはこのリーディングを物質世界に根付かせています。これは具体的な結果、物理的な現実、そして実用的な事柄に関するものです。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Pentakler forankrer denne lesningen i den materielle verden. Dette handler om håndfaste resultater, fysisk virkelighet og praktiske saker."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Pentakle zakorzeniają ten odczyt w świecie materialnym. Chodzi o namacalne rezultaty, fizyczną rzeczywistość i praktyczne sprawy."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Os Pentáculos ancoram esta leitura no mundo material. Trata-se de resultados tangíveis, realidade física e assuntos práticos."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Pentakler förankrar denna läsning i den materiella världen. Detta handlar om påtagliga resultat, fysisk verklighet och praktiska frågor."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Пентаклі вкорінюють це читання в матеріальному світі. Це про відчутні результати, фізичну реальність та практичні справи."
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "summary.suit.pentacles.dominant" : {
       "comment" : "Pentacles dominate - material and practical matters",
       "extractionState" : "manual",
@@ -184062,17 +184662,77 @@
       }
     },
     "summary.suit.swords" : {
-      "comment" : "Swords dominate this reading—there's a lot of mental energy here. You're processing, analyzing, perhaps overthinking. Your mind is very active.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Swords dominate this reading—there's a lot of mental energy here. You're processing, analyzing, perhaps overthinking. Your mind is very active."
+          "comment" : "Swords dominate this reading—there's a lot of mental energy here. You're processing, analyzing, perhaps overthinking. Your mind is very active.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Die Schwerter dominieren diese Lesung – hier gibt es viel mentale Energie. Du verarbeitest, analysierst, vielleicht überdenkst du Dinge. Dein Geist ist sehr aktiv."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Swords dominate this reading—there's a lot of mental energy here. You're processing, analyzing, perhaps overthinking. Your mind is very active."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Las Espadas dominan esta lectura—hay mucha energía mental aquí. Estás procesando, analizando, quizás sobrepensando. Tu mente está muy activa."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Les Épées dominent cette lecture—il y a beaucoup d'énergie mentale ici. Vous traitez, analysez, peut-être réfléchissez trop. Votre esprit est très actif."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Le Spade dominano questa lettura—c'è molta energia mentale qui. Stai elaborando, analizzando, forse pensando troppo. La tua mente è molto attiva."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "ソードがこのリーディングを支配しています—ここには多くの精神的エネルギーがあります。あなたは処理し、分析し、おそらく考えすぎています。あなたの心は非常に活発です。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Sverd dominerer denne lesningen—det er mye mental energi her. Du bearbeider, analyserer, kanskje overtenker. Sinnet ditt er veldig aktivt."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Miecze dominują w tym odczycie—jest tu dużo energii mentalnej. Przetwarzasz, analizujesz, może nadmiernie myślisz. Twój umysł jest bardzo aktywny."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "As Espadas dominam esta leitura—há muita energia mental aqui. Você está processando, analisando, talvez pensando demais. Sua mente está muito ativa."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Svärd dominerar denna läsning—det finns mycket mental energi här. Du bearbetar, analyserar, kanske övertänker. Ditt sinne är mycket aktivt."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Мечі домінують у цьому читанні—тут багато ментальної енергії. Ви обробляєте, аналізуєте, можливо, надто багато думаєте. Ваш розум дуже активний."
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "summary.suit.swords.dominant" : {
       "comment" : "Swords dominate - mental energy and thoughts",
       "extractionState" : "manual",
@@ -184146,17 +184806,77 @@
       }
     },
     "summary.suit.wands" : {
-      "comment" : "Wands appear frequently here, bringing fire and passion to your situation. There's creative energy and drive, but also potential for burnout.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wands appear frequently here, bringing fire and passion to your situation. There's creative energy and drive, but also potential for burnout."
+          "comment" : "Wands appear frequently here, bringing fire and passion to your situation. There's creative energy and drive, but also potential for burnout.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Die Stäbe erscheinen hier häufig und bringen Feuer und Leidenschaft in deine Situation. Es gibt kreative Energie und Antrieb, aber auch die Gefahr des Ausbrennens."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Wands appear frequently here, bringing fire and passion to your situation. There's creative energy and drive, but also potential for burnout."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Los Bastos aparecen con frecuencia aquí, trayendo fuego y pasión a tu situación. Hay energía creativa e impulso, pero también potencial de agotamiento."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Les Bâtons apparaissent fréquemment ici, apportant du feu et de la passion à votre situation. Il y a de l'énergie créative et de l'élan, mais aussi un risque d'épuisement."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "I Bastoni appaiono frequentemente qui, portando fuoco e passione alla tua situazione. C'è energia creativa e slancio, ma anche potenziale di esaurimento."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "ワンドが頻繁に登場し、あなたの状況に火と情熱をもたらしています。創造的なエネルギーと意欲がありますが、燃え尽きる可能性もあります。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Staver dukker ofte opp her, og bringer ild og lidenskap til situasjonen din. Det er kreativ energi og driv, men også potensial for utbrenthet."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Buławy pojawiają się tutaj często, wnosząc ogień i pasję do twojej sytuacji. Jest energia twórcza i motywacja, ale także potencjał do wypalenia."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Os Paus aparecem com frequência aqui, trazendo fogo e paixão para sua situação. Há energia criativa e impulso, mas também potencial para esgotamento."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Stavar dyker ofta upp här, vilket bringar eld och passion till din situation. Det finns kreativ energi och driv, men också potential för utbrändhet."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Жезли часто з'являються тут, приносячи вогонь і пристрасть до вашої ситуації. Є творча енергія та порив, але також потенціал для вигорання."
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "summary.suit.wands.dominant" : {
       "comment" : "Wands dominate - passion and creative energy",
       "extractionState" : "manual",
@@ -184301,16 +185021,77 @@
       }
     },
     "summary.yourTarotGoReading" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your TarotGo Reading"
+          "comment" : "Your TarotGo Reading",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Deine TarotGo-Lesung"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Your TarotGo Reading"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Tu lectura de TarotGo"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Votre lecture TarotGo"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "La tua lettura TarotGo"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "あなたのTarotGoリーディング"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Din TarotGo-lesning"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Twój odczyt TarotGo"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Sua leitura do TarotGo"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Din TarotGo-läsning"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ваше читання TarotGo"
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "tab.cosmic" : {
       "comment" : "Cosmic tab",
       "extractionState" : "manual",
