@@ -173,14 +173,14 @@ struct InterpretationView: View {
                         Text(card.card.localizedName)
                             .font(AppTheme.serifFont(size: 24, weight: .medium))
                             .foregroundStyle(AppTheme.goldGradient)
-                        
+
                         if card.isReversed {
                             Text(L10n.interpretationReversed)
                                 .font(.system(size: 16, weight: .light))
                                 .foregroundColor(AppTheme.gold.opacity(0.8))
                         }
                     }
-                    
+
                     // Keywords
                     let keywords = card.isReversed ? card.card.localizedReversedKeywords : card.card.localizedKeywords
                     Text(keywords.joined(separator: " • "))
@@ -189,14 +189,17 @@ struct InterpretationView: View {
                 }
                 .padding(.bottom, 10)
             }
-            
+
             // Interpretation text
             Text(interpretationText)
                 .font(.system(size: 18, weight: .light))
                 .foregroundColor(AppTheme.textPrimary)
                 .lineSpacing(8)
                 .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .contentTransition(.opacity)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 15)
@@ -206,6 +209,7 @@ struct InterpretationView: View {
                         .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
                 )
         )
+        .animation(.easeInOut(duration: 0.4), value: interpretationText)
         .transition(.opacity.combined(with: .move(edge: .bottom)))
     }
     
@@ -302,27 +306,36 @@ struct InterpretationView: View {
     }
     
     private func selectResonance(_ level: ResonanceLevel) {
-        withAnimation {
+        withAnimation(.easeInOut(duration: 0.3)) {
             selectedResonance = level
         }
-        
+
         HapticService.shared.impact(.selection)
         SoundService.shared.play(.click, volume: 0.6)
-        
-        // Update interpretation if not resonating
-        if level != .resonates, let card = currentCard {
+
+        // Update interpretation based on the selected resonance level
+        if let card = currentCard {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                withAnimation {
-                    interpretationText = card.card.alternativeInterpretation(
+                let newText: String
+                if level == .resonates {
+                    newText = card.card.interpretation(
+                        for: category,
+                        reversed: card.isReversed
+                    )
+                } else {
+                    newText = card.card.alternativeInterpretation(
                         for: category,
                         reversed: card.isReversed,
                         resonanceLevel: level
                     )
                 }
+                withAnimation(.easeInOut(duration: 0.4)) {
+                    interpretationText = newText
+                }
                 HapticService.shared.impact(.soft)
             }
         }
-        
+
         // Update the drawn card with resonance level
         if currentCardIndex < updatedDrawnCards.count {
             updatedDrawnCards[currentCardIndex].resonanceLevel = level
