@@ -229462,105 +229462,645 @@
                                                   }
                                                 }
                                               },
-    "interpretation.queen_of_swords_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Has love clarity hardened into cynicism? The reversed Queen of Swords catches the protective hardness. The wisdom from past hurt curdles into bitter certainty about future love."
-          }
-        }
-      }
-    },
-    "interpretation.queen_of_swords_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps healthy distance is part of mature love. The Queen of Swords includes space in the relationship. The room between you isn't a deficit; it's part of what makes the meeting real."
-          }
-        }
-      }
-    },
-    "interpretation.queen_of_swords_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where could clear, kind honesty change this relationship? The Queen of Swords combines the truth with the warmth. The honesty without the warmth is critique; with it, it's love."
-          }
-        }
-      }
-    },
-    "interpretation.queen_of_wands_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe an environment is dimming your fire. The reversed Queen of Wands diagnoses the location. The room is shaping you more than you're shaping it; consider changing rooms."
-          }
-        }
-      }
-    },
-    "interpretation.queen_of_wands_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Has work confidence been quietly eroded? The reversed Queen of Wands tracks the slow dim. Notice when the spark went down and what was happening then."
-          }
-        }
-      }
-    },
-    "interpretation.queen_of_wands_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps it's your turn to lead from the front. The Queen of Wands doesn't wait to be selected. The visibility you've been hesitant to claim is yours to take."
-          }
-        }
-      }
-    },
-    "interpretation.queen_of_wands_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where could your warmth and confidence at work change the room? The Queen of Wands radiates. The contribution isn't only the deliverable; it's the energy you bring."
-          }
-        }
-      }
-    },
-    "interpretation.queen_of_wands_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe your spark is being underpriced and you know it. The reversed Queen of Wands respects the inner knowing. The undercharging is rarely about the market; it's about the inner permission."
-          }
-        }
-      }
-    },
-    "interpretation.queen_of_wands_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is undervaluing your work showing up in your paycheck? The reversed Queen of Wands names the cost of the shrunken claim. The number you accept tells the next negotiation what to expect."
-          }
-        }
-      }
-    },
+                                              "interpretation.queen_of_swords_love_reversed_unclear" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Hat die Klarheit in der Liebe sich zu Zynismus verhärtet? Die umgekehrte Königin der Schwerter erfasst die schützende Härte. Die Weisheit aus vergangenen Verletzungen gerinnt zu bitterer Gewissheit über zukünftige Liebe."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Has love clarity hardened into cynicism? The reversed Queen of Swords catches the protective hardness. The wisdom from past hurt curdles into bitter certainty about future love."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "¿La claridad en el amor se ha endurecido en cinismo? La Reina de Espadas invertida captura la dureza protectora. La sabiduría del dolor pasado se cuaja en certeza amarga sobre el amor futuro."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "La clarté en amour s'est-elle durcie en cynisme ? La Reine d'Épées inversée saisit la dureté protectrice. La sagesse des blessures passées se transforme en amère certitude sur l'amour à venir."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "La chiarezza nell'amore si è indurita in cinismo? La Regina di Spade rovesciata coglie la durezza protettiva. La saggezza delle ferite passate si coagula in amara certezza sull'amore futuro."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "愛の明晰さが皮肉に硬化していませんか？逆位置のソードのクイーンは防御的な硬さを捉えます。過去の傷からの知恵は将来の愛についての苦い確信に変わります。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Har kjærlighetsklarhet herdet til kynisme? Den omvendte Sverd-dronningen fanger den beskyttende hardheten. Visdommen fra tidligere sår forvandles til bitter visshet om fremtidig kjærlighet."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Czy jasność w miłości stwardniała w cynizm? Odwrócona Królowa Mieczy uchwytuje ochronną twardość. Mądrość z przeszłych zranień skrzepła w gorzką pewność co do przyszłej miłości."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "A clareza no amor se endureceu em cinismo? A Rainha de Espadas invertida captura a dureza protetora. A sabedoria da dor passada se coagula em amarga certeza sobre o amor futuro."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Har kärleksklarhet stelnat till cynism? Den omvända Svärdens Drottning fångar den skyddande hårdheten. Visdomen från tidigare sår förvandlas till bitter visshet om framtida kärlek."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Чи затверділа ясність у коханні в цинізм? Перевернута Королева Мечів вловлює захисну жорсткість. Мудрість минулих ран перетворюється на гірку впевненість у майбутньому коханні."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "interpretation.queen_of_swords_love_upright_not_resonating" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Vielleicht ist gesunde Distanz Teil einer reifen Liebe. Die Königin der Schwerter beinhaltet Raum in der Beziehung. Der Raum zwischen euch ist kein Mangel; er ist Teil dessen, was die Begegnung real macht."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Perhaps healthy distance is part of mature love. The Queen of Swords includes space in the relationship. The room between you isn't a deficit; it's part of what makes the meeting real."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Quizás la distancia saludable es parte del amor maduro. La Reina de Espadas incluye espacio en la relación. El espacio entre ustedes no es un déficit; es parte de lo que hace real el encuentro."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Peut-être que la distance saine fait partie de l'amour mature. La Reine d'Épées inclut l'espace dans la relation. L'espace entre vous n'est pas un déficit ; il fait partie de ce qui rend la rencontre réelle."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Forse la distanza sana è parte dell'amore maturo. La Regina di Spade include lo spazio nella relazione. Lo spazio tra di voi non è un deficit; è parte di ciò che rende l'incontro reale."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "おそらく健全な距離感は成熟した愛の一部です。ソードのクイーンは関係性の中に空間を含みます。あなたたちの間の余地は欠乏ではなく、出会いを現実のものにする一部です。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Kanskje sunn avstand er en del av moden kjærlighet. Sverddronningen inkluderer rom i forholdet. Rommet mellom dere er ikke et underskudd; det er en del av det som gjør møtet virkelig."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Być może zdrowy dystans jest częścią dojrzałej miłości. Królowa Mieczy obejmuje przestrzeń w relacji. Przestrzeń między wami nie jest deficytem; jest częścią tego, co czyni spotkanie rzeczywistym."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Talvez a distância saudável seja parte do amor maduro. A Rainha de Espadas inclui espaço no relacionamento. O espaço entre vocês não é um déficit; é parte do que torna o encontro real."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Kanske är hälsosam distans en del av mogen kärlek. Svärdens Drottning inkluderar utrymme i relationen. Utrymmet mellan er är inte ett underskott; det är en del av vad som gör mötet verkligt."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Можливо, здорова дистанція є частиною зрілого кохання. Королева Мечів включає простір у стосунках. Простір між вами не є дефіцитом; це частина того, що робить зустріч реальною."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "interpretation.queen_of_swords_love_upright_unclear" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Wo könnte klare, freundliche Ehrlichkeit diese Beziehung verändern? Die Königin der Schwerter verbindet Wahrheit mit Wärme. Die Ehrlichkeit ohne Wärme ist Kritik; mit ihr ist sie Liebe."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Where could clear, kind honesty change this relationship? The Queen of Swords combines the truth with the warmth. The honesty without the warmth is critique; with it, it's love."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "¿Dónde podría la honestidad clara y amable cambiar esta relación? La Reina de Espadas combina la verdad con la calidez. La honestidad sin calidez es crítica; con ella, es amor."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Où une honnêteté claire et bienveillante pourrait-elle changer cette relation ? La Reine d'Épées combine la vérité avec la chaleur. L'honnêteté sans la chaleur est une critique ; avec elle, c'est l'amour."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Dove potrebbe l'onestà chiara e gentile cambiare questa relazione? La Regina di Spade combina la verità con il calore. L'onestà senza calore è critica; con essa, è amore."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "明晰で優しい誠実さがこの関係をどこで変えられるでしょうか？ソードのクイーンは真実と温かさを組み合わせます。温かさのない誠実さは批判です；温かさがあれば愛です。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Hvor kunne klar, vennlig ærlighet endre dette forholdet? Sverddronningen kombinerer sannhet med varme. Ærlighet uten varme er kritikk; med den er det kjærlighet."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Gdzie jasna, życzliwa uczciwość mogłaby zmienić tę relację? Królowa Mieczy łączy prawdę z ciepłem. Uczciwość bez ciepła to krytyka; z nią to miłość."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Onde a honestidade clara e gentil poderia mudar este relacionamento? A Rainha de Espadas combina a verdade com o calor. A honestidade sem o calor é crítica; com ele, é amor."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Var kunde tydlig, vänlig ärlighet förändra denna relation? Svärdens Drottning kombinerar sanningen med värmen. Ärlighet utan värme är kritik; med den är det kärlek."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Де ясна, добра чесність могла б змінити ці стосунки? Королева Мечів поєднує істину з теплом. Чесність без тепла - це критика; з нею - це любов."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "interpretation.queen_of_wands_career_reversed_not_resonating" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Vielleicht dämpft eine Umgebung dein Feuer. Die umgekehrte Königin der Stäbe diagnostiziert den Ort. Der Raum prägt dich mehr, als du ihn prägst; in Betracht ziehen, den Raum zu wechseln."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Maybe an environment is dimming your fire. The reversed Queen of Wands diagnoses the location. The room is shaping you more than you're shaping it; consider changing rooms."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Quizás un entorno está apagando tu fuego. La Reina de Bastos invertida diagnostica la ubicación. La habitación te moldea más de lo que tú la moldeas; considera cambiar de habitación."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Peut-être qu'un environnement atténue votre feu. La Reine de Bâtons inversée diagnostique l'emplacement. La pièce vous façonne plus que vous ne la façonnez ; envisagez de changer de pièce."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Forse un ambiente sta attenuando il tuo fuoco. La Regina di Bastoni rovesciata diagnostica il luogo. La stanza ti sta plasmando più di quanto tu la plasmi; considera di cambiare stanza."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "おそらく環境があなたの炎を弱めています。逆位置のワンドのクイーンは場所を診断します。部屋はあなたが形作るよりもあなたを形作っています；部屋を変えることを検討してください。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Kanskje et miljø demper ilden din. Den omvendte Stavdronningen diagnostiserer stedet. Rommet former deg mer enn du former det; vurder å skifte rom."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Być może środowisko przygłusza twój ogień. Odwrócona Królowa Różdżek diagnozuje lokalizację. Pomieszczenie kształtuje cię bardziej niż ty je kształtujesz; rozważ zmianę pomieszczenia."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Talvez um ambiente esteja diminuindo seu fogo. A Rainha de Paus invertida diagnostica a localização. A sala está te moldando mais do que você a molda; considere mudar de sala."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Kanske dämpar en miljö din eld. Den omvända Stavarnas Drottning diagnostiserar platsen. Rummet formar dig mer än du formar det; överväg att byta rum."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Можливо, середовище приглушує ваш вогонь. Перевернута Королева Жезлів діагностує місце. Кімната формує вас більше, ніж ви її; розгляньте зміну кімнати."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "interpretation.queen_of_wands_career_reversed_unclear" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Wurde das berufliche Selbstvertrauen leise untergraben? Die umgekehrte Königin der Stäbe verfolgt das langsame Erlöschen. Beachte, wann die Flamme erloschen ist und was zu dieser Zeit geschah."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Has work confidence been quietly eroded? The reversed Queen of Wands tracks the slow dim. Notice when the spark went down and what was happening then."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "¿La confianza en el trabajo se ha erosionado silenciosamente? La Reina de Bastos invertida rastrea el lento oscurecimiento. Observa cuándo disminuyó la chispa y qué estaba sucediendo entonces."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "La confiance au travail a-t-elle été silencieusement érodée ? La Reine de Bâtons inversée suit la lente diminution. Remarquez quand l'étincelle a baissé et ce qui se passait à ce moment-là."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "La fiducia nel lavoro è stata silenziosamente erosa? La Regina di Bastoni rovesciata traccia il lento offuscamento. Nota quando la scintilla si è affievolita e cosa stava succedendo allora."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "仕事への自信が静かに蝕まれていませんか？逆位置のワンドのクイーンはゆっくりとした減衰を追跡します。火花が消えた時とその時に何が起きていたかに注目してください。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Har arbeidskonfidens blitt stille erodert? Den omvendte Stavdronningen sporer den langsomme dempingen. Legg merke til når gnisten dabbet av og hva som skjedde da."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Czy pewność siebie w pracy została cicho nadszarpnięta? Odwrócona Królowa Różdżek śledzi powolne przygasanie. Zwróć uwagę, kiedy iskra zgasła i co się wtedy działo."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "A confiança no trabalho foi silenciosamente corroída? A Rainha de Paus invertida rastreia o lento escurecimento. Observe quando a faísca diminuiu e o que estava acontecendo então."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Har arbetsförtroende tyst urholkats? Den omvända Stavarnas Drottning spårar den långsamma dämpningen. Lägg märke till när gnistan minskade och vad som hände då."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Чи була впевненість у роботі тихо підірвана? Перевернута Королева Жезлів відстежує повільне затемнення. Зверніть увагу, коли іскра згасла і що тоді відбувалося."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "interpretation.queen_of_wands_career_upright_not_resonating" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Vielleicht ist es an der Zeit, dass du von vorne führst. Die Königin der Stäbe wartet nicht darauf, ausgewählt zu werden. Die Sichtbarkeit, die du zögerlich beansprucht hast, steht dir zu."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Perhaps it's your turn to lead from the front. The Queen of Wands doesn't wait to be selected. The visibility you've been hesitant to claim is yours to take."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Quizás es tu turno de liderar desde el frente. La Reina de Bastos no espera a ser seleccionada. La visibilidad que has dudado en reclamar es tuya para tomar."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Peut-être est-ce à votre tour de mener depuis le front. La Reine de Bâtons n'attend pas d'être sélectionnée. La visibilité que vous avez hésité à revendiquer est à vous de prendre."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Forse è il tuo turno di guidare dal fronte. La Regina di Bastoni non aspetta di essere selezionata. La visibilità che hai esitato a rivendicare è tua da prendere."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "おそらく、最前線からリードする番です。ワンドのクイーンは選ばれるのを待ちません。あなたが主張するのをためらっていた可視性は、あなたが取るべきものです。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Kanskje er det din tur til å lede fra fronten. Stavdronningen venter ikke på å bli valgt. Synligheten du har nølt med å kreve, er din å ta."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Być może nadszedł twój czas, by przewodzić od frontu. Królowa Różdżek nie czeka na wybranie. Widoczność, którą wahałeś się zgłosić, jest twoja do wzięcia."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Talvez seja sua vez de liderar pela frente. A Rainha de Paus não espera ser selecionada. A visibilidade que você hesitou em reivindicar é sua para tomar."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Kanske är det din tur att leda från fronten. Stavarnas Drottning väntar inte på att bli utvald. Synligheten du har tvekat att hävda är din att ta."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Можливо, настав ваш час вести з передової. Королева Жезлів не чекає, поки її оберуть. Видимість, яку ви вагалися заявити, належить вам."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "interpretation.queen_of_wands_career_upright_unclear" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Wo könnten deine Wärme und dein Selbstvertrauen bei der Arbeit den Raum verändern? Die Königin der Stäbe strahlt aus. Der Beitrag ist nicht nur das Ergebnis; es ist die Energie, die du einbringst."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Where could your warmth and confidence at work change the room? The Queen of Wands radiates. The contribution isn't only the deliverable; it's the energy you bring."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "¿Dónde podrían tu calidez y confianza en el trabajo cambiar la habitación? La Reina de Bastos irradia. La contribución no es solo el entregable; es la energía que aportas."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Où votre chaleur et votre confiance au travail pourraient-elles changer la pièce ? La Reine de Bâtons rayonne. La contribution n'est pas seulement le livrable ; c'est l'énergie que vous apportez."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Dove potrebbero il tuo calore e la tua fiducia al lavoro cambiare la stanza? La Regina di Bastoni irradia. Il contributo non è solo il risultato; è l'energia che porti."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "仕事でのあなたの温かさと自信はどこで部屋を変えられるでしょうか？ワンドのクイーンは輝きを放ちます。貢献は成果物だけでなく、あなたがもたらすエネルギーです。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Hvor kunne din varme og selvtillit på jobben endre rommet? Stavdronningen utstråler. Bidraget er ikke bare leveransen; det er energien du bringer."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Gdzie twoje ciepło i pewność siebie w pracy mogłyby zmienić pomieszczenie? Królowa Różdżek promieniuje. Wkład to nie tylko produkt końcowy; to energia, którą wnosisz."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Onde seu calor e confiança no trabalho poderiam mudar a sala? A Rainha de Paus irradia. A contribuição não é apenas o entregável; é a energia que você traz."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Var kunde din värme och självförtroende på jobbet förändra rummet? Stavarnas Drottning strålar. Bidraget är inte bara leveransen; det är energin du tillför."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Де ваше тепло та впевненість на роботі могли б змінити кімнату? Королева Жезлів випромінює. Внесок - це не лише результат; це енергія, яку ви приносите."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "interpretation.queen_of_wands_finance_reversed_not_resonating" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Vielleicht wird dein Funken unterbewertet und du weißt es. Die umgekehrte Königin der Stäbe respektiert das innere Wissen. Das Unterbieten liegt selten am Markt; es geht um die innere Erlaubnis."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Maybe your spark is being underpriced and you know it. The reversed Queen of Wands respects the inner knowing. The undercharging is rarely about the market; it's about the inner permission."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Quizás tu chispa está siendo infravalorada y lo sabes. La Reina de Bastos invertida respeta el conocimiento interno. La subvaloración rara vez se trata del mercado; se trata del permiso interno."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Peut-être que votre étincelle est sous-évaluée et vous le savez. La Reine de Bâtons inversée respecte la connaissance intérieure. La sous-facturation est rarement une question de marché ; c'est une question de permission intérieure."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Forse la tua scintilla viene sottovalutata e tu lo sai. La Regina di Bastoni rovesciata rispetta la conoscenza interiore. La sottovalutazione raramente riguarda il mercato; riguarda il permesso interiore."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "おそらくあなたの輝きは過小評価されていて、あなたはそれを知っています。逆位置のワンドのクイーンは内なる知恵を尊重します。安く見積もることは市場の問題ではなく、内なる許可の問題です。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Kanskje gnisten din blir underpriset, og du vet det. Den omvendte Stavdronningen respekterer den indre viten. Underprising handler sjelden om markedet; det handler om indre tillatelse."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Być może twoja iskra jest niedowartościowana i wiesz o tym. Odwrócona Królowa Różdżek szanuje wewnętrzną wiedzę. Zaniżanie cen rzadko dotyczy rynku; chodzi o wewnętrzne pozwolenie."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Talvez sua faísca esteja sendo subvalorizada e você sabe disso. A Rainha de Paus invertida respeita o conhecimento interior. A subcobrança raramente é sobre o mercado; é sobre a permissão interior."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Kanske är din gnista underprissatt och du vet det. Den omvända Stavarnas Drottning respekterar den inre kunskapen. Underprissättning handlar sällan om marknaden; det handlar om inre tillstånd."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Можливо, ваша іскра недооцінюється, і ви це знаєте. Перевернута Королева Жезлів поважає внутрішнє знання. Заниження ціни рідко стосується ринку; це про внутрішній дозвіл."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "interpretation.queen_of_wands_finance_reversed_unclear" : {
+                                                    "extractionState" : "manual",
+                                                    "localizations" : {
+                                                      "de" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Spiegelt sich die Unterbewertung deiner Arbeit in deinem Gehalt wider? Die umgekehrte Königin der Stäbe benennt die Kosten des geschrumpften Anspruchs. Die Zahl, die du akzeptierst, sagt der nächsten Verhandlung, was sie erwarten kann."
+                                                        }
+                                                      },
+                                                      "en" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Is undervaluing your work showing up in your paycheck? The reversed Queen of Wands names the cost of the shrunken claim. The number you accept tells the next negotiation what to expect."
+                                                        }
+                                                      },
+                                                      "es" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "¿La subvaloración de tu trabajo se refleja en tu cheque de pago? La Reina de Bastos invertida nombra el costo de la pretensión reducida. El número que aceptas le dice a la próxima negociación qué esperar."
+                                                        }
+                                                      },
+                                                      "fr" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "La sous-évaluation de votre travail se reflète-t-elle dans votre chèque de paie ? La Reine de Bâtons inversée nomme le coût de la revendication réduite. Le nombre que vous acceptez indique à la prochaine négociation à quoi s'attendre."
+                                                        }
+                                                      },
+                                                      "it" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "La sottovalutazione del tuo lavoro si riflette nella tua busta paga? La Regina di Bastoni rovesciata nomina il costo della rivendicazione ridotta. Il numero che accetti dice alla prossima trattativa cosa aspettarsi."
+                                                        }
+                                                      },
+                                                      "ja" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "あなたの仕事の過小評価が給与に現れていますか？逆位置のワンドのクイーンは縮小した請求のコストを挙げます。あなたが受け入れる数字は、次の交渉に何を期待するかを伝えます。"
+                                                        }
+                                                      },
+                                                      "nb" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Viser underprising av arbeidet ditt seg i lønningen? Den omvendte Stavdronningen nevner kostnaden for det krympede kravet. Tallet du aksepterer forteller neste forhandling hva de kan forvente."
+                                                        }
+                                                      },
+                                                      "pl" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Czy niedowartościowanie twojej pracy widać na wypłacie? Odwrócona Królowa Różdżek określa koszt zmniejszonego roszczenia. Liczba, którą akceptujesz, mówi następnej negocjacji, czego się spodziewać."
+                                                        }
+                                                      },
+                                                      "pt-BR" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "A subvalorização do seu trabalho está aparecendo no seu salário? A Rainha de Paus invertida nomeia o custo da reivindicação reduzida. O número que você aceita diz à próxima negociação o que esperar."
+                                                        }
+                                                      },
+                                                      "sv" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Visar sig undervärdering av ditt arbete i din lön? Den omvända Stavarnas Drottning namnger kostnaden för det krympta anspråket. Siffran du accepterar talar om för nästa förhandling vad de kan förvänta sig."
+                                                        }
+                                                      },
+                                                      "uk" : {
+                                                        "stringUnit" : {
+                                                          "state" : "translated",
+                                                          "value" : "Чи недооцінка вашої роботи відображається у вашій зарплаті? Перевернута Королева Жезлів називає ціну зменшеної заяви. Число, яке ви приймаєте, говорить наступним переговорам, чого очікувати."
+                                                        }
+                                                      }
+                                                    }
+                                                  },
     "interpretation.queen_of_wands_finance_upright_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
