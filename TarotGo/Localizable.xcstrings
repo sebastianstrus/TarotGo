@@ -32888,13 +32888,73 @@
         }
       }
     },
-    "howToReadMatrix.remember.text" : {
+"howToReadMatrix.remember.text" : {
       "comment" : "Your Matrix is a map, not a verdict. It points to potentials and patterns—your free will and conscious choices write the actual story of your life.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Matrix ist eine Landkarte, kein Urteil. Sie zeigt Potenziale und Muster auf – dein freier Wille und deine bewussten Entscheidungen schreiben die wahre Geschichte deines Lebens."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your Matrix is a map, not a verdict. It points to potentials and patterns—your free will and conscious choices write the actual story of your life."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Matriz es un mapa, no un veredicto. Señala potenciales y patrones: tu libre albedrío y tus elecciones conscientes escriben la historia real de tu vida."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre Matrice est une carte, pas un verdict. Elle indique des potentiels et des schémas – votre libre arbitre et vos choix conscients écrivent la véritable histoire de votre vie."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Matrice è una mappa, non una sentenza. Indica potenziali e schemi: il tuo libero arbitrio e le tue scelte consapevoli scrivono la vera storia della tua vita."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたのマトリックスは地図であり、判決ではありません。可能性とパターンを示しています。あなたの自由意志と意識的な選択が、人生の実際の物語を紡ぎます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrisen din er et kart, ikke en dom. Den peker på potensialer og mønstre – din frie vilje og bevisste valg skriver den faktiske historien om livet ditt."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja Matryca to mapa, nie wyrok. Wskazuje potencjały i wzorce – twoja wolna wola i świadome wybory piszą prawdziwą historię twojego życia."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Matriz é um mapa, não um veredito. Ela aponta potenciais e padrões – seu livre-arbítrio e escolhas conscientes escrevem a história real da sua vida."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Matris är en karta, inte en dom. Den pekar på potentialer och mönster – din fria vilja och medvetna val skriver den verkliga berättelsen om ditt liv."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша Матриця – це карта, а не вирок. Вона вказує на потенціали та патерни – ваша вільна воля та свідомі вибори пишуть справжню історію вашого життя."
           }
         }
       }
@@ -32902,10 +32962,70 @@
     "howToReadMatrix.remember.title" : {
       "comment" : "Remember",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denke daran"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remember"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recuerda"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rappelez-vous"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricorda"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "覚えておいて"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Husk"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pamiętaj"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lembre-se"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom ihåg"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пам'ятайте"
           }
         }
       }
@@ -32913,10 +33033,70 @@
     "howToReadMatrix.step1.bullet1.text" : {
       "comment" : "Use your exact birth date. The system handles the math for you.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwende dein genaues Geburtsdatum. Das System übernimmt die Berechnung für dich."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use your exact birth date. The system handles the math for you."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa tu fecha de nacimiento exacta. El sistema hace los cálculos por ti."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilisez votre date de naissance exacte. Le système effectue les calculs pour vous."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa la tua data di nascita esatta. Il sistema esegue i calcoli per te."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正確な生年月日を使用してください。システムが計算を行います。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk din nøyaktige fødselsdato. Systemet tar seg av utregningen for deg."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Użyj swojej dokładnej daty urodzenia. System zajmie się obliczeniami za ciebie."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use sua data de nascimento exata. O sistema faz os cálculos para você."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd ditt exakta födelsedatum. Systemet sköter beräkningarna åt dig."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Використовуйте свою точну дату народження. Система виконає розрахунки за вас."
           }
         }
       }
@@ -32924,10 +33104,70 @@
     "howToReadMatrix.step1.bullet1.title" : {
       "comment" : "Enter Birth Date",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geburtsdatum eingeben"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enter Birth Date"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresar fecha de nacimiento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrer la date de naissance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci data di nascita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生年月日を入力"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv inn fødselsdato"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wprowadź datę urodzenia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserir data de nascimento"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ange födelsedatum"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введіть дату народження"
           }
         }
       }
@@ -32935,10 +33175,70 @@
     "howToReadMatrix.step1.bullet2.text" : {
       "comment" : "Don't worry about manual calculation—what matters is the meaning behind each energy.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mach dir keine Sorgen um manuelle Berechnungen – was zählt, ist die Bedeutung hinter jeder Energie."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Don't worry about manual calculation—what matters is the meaning behind each energy."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No te preocupes por los cálculos manuales: lo que importa es el significado detrás de cada energía."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne vous inquiétez pas des calculs manuels – ce qui compte, c'est la signification derrière chaque énergie."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non preoccuparti dei calcoli manuali – ciò che conta è il significato dietro ogni energia."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手動計算は心配しないでください。大切なのは各エネルギーの背後にある意味です。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke bekymre deg for manuelle utregninger – det som betyr noe er meningen bak hver energi."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie martw się ręcznymi obliczeniami – liczy się znaczenie stojące za każdą energią."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não se preocupe com cálculos manuais – o que importa é o significado por trás de cada energia."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oroa dig inte för manuella beräkningar – det som betyder något är meningen bakom varje energi."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не турбуйтеся про ручні розрахунки – важливе значення, що стоїть за кожною енергією."
           }
         }
       }
@@ -32946,10 +33246,70 @@
     "howToReadMatrix.step1.bullet2.title" : {
       "comment" : "Trust the Numbers",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vertraue den Zahlen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trust the Numbers"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confía en los números"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faites confiance aux chiffres"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fidati dei numeri"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数字を信頼する"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stol på tallene"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaufaj liczbom"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confie nos números"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lita på siffrorna"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Довіртеся числам"
           }
         }
       }
@@ -32957,10 +33317,70 @@
     "howToReadMatrix.step1.intro" : {
       "comment" : "Your Matrix is built from your date of birth—day, month, and year. Each part is reduced to a single energy between 1 and 22, then combined to fill every position on the diagram.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Matrix wird aus deinem Geburtsdatum aufgebaut – Tag, Monat und Jahr. Jeder Teil wird auf eine einzelne Energie zwischen 1 und 22 reduziert und dann kombiniert, um jede Position im Diagramm zu füllen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your Matrix is built from your date of birth—day, month, and year. Each part is reduced to a single energy between 1 and 22, then combined to fill every position on the diagram."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Matriz se construye a partir de tu fecha de nacimiento: día, mes y año. Cada parte se reduce a una sola energía entre 1 y 22, luego se combina para llenar cada posición en el diagrama."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre Matrice est construite à partir de votre date de naissance – jour, mois et année. Chaque partie est réduite à une seule énergie entre 1 et 22, puis combinée pour remplir chaque position sur le diagramme."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua Matrice è costruita dalla tua data di nascita – giorno, mese e anno. Ogni parte viene ridotta a una singola energia tra 1 e 22, quindi combinata per riempire ogni posizione nel diagramma."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたのマトリックスは、生年月日（日、月、年）から構築されます。各部分は1から22の単一のエネルギーに還元され、組み合わされて図のすべての位置を埋めます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrisen din er bygget fra fødselsdatoen din – dag, måned og år. Hver del reduseres til en enkelt energi mellom 1 og 22, og kombineres deretter for å fylle hver posisjon i diagrammet."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja Matryca jest zbudowana z daty urodzenia – dnia, miesiąca i roku. Każda część jest redukowana do pojedynczej energii między 1 a 22, a następnie łączona, aby wypełnić każdą pozycję na diagramie."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua Matriz é construída a partir da sua data de nascimento – dia, mês e ano. Cada parte é reduzida a uma única energia entre 1 e 22, então combinada para preencher cada posição no diagrama."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Matris byggs från ditt födelsedatum – dag, månad och år. Varje del reduceras till en enda energi mellan 1 och 22, och kombineras sedan för att fylla varje position i diagrammet."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша Матриця будується з дати народження – дня, місяця та року. Кожна частина зводиться до однієї енергії між 1 і 22, а потім комбінується, щоб заповнити кожну позицію на діаграмі."
           }
         }
       }
@@ -32968,10 +33388,70 @@
     "howToReadMatrix.step1.proTip" : {
       "comment" : "If you're unsure of an exact time zone, the day, month, and year are what shape the Matrix.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wenn du dir bei der genauen Zeitzone unsicher bist, sind es Tag, Monat und Jahr, die die Matrix formen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "If you're unsure of an exact time zone, the day, month, and year are what shape the Matrix."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si no estás seguro de la zona horaria exacta, el día, mes y año son lo que da forma a la Matriz."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si vous n'êtes pas sûr du fuseau horaire exact, ce sont le jour, le mois et l'année qui façonnent la Matrice."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se non sei sicuro del fuso orario esatto, sono il giorno, il mese e l'anno a dare forma alla Matrice."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正確なタイムゾーンがわからない場合でも、マトリックスを形作るのは日、月、年です。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis du er usikker på en nøyaktig tidssone, er det dag, måned og år som former matrisen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeśli nie masz pewności co do dokładnej strefy czasowej, to dzień, miesiąc i rok kształtują Matrycę."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se você não tem certeza sobre o fuso horário exato, são o dia, mês e ano que moldam a Matriz."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om du är osäker på en exakt tidszon, är det dag, månad och år som formar Matrisen."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Якщо ви не впевнені щодо точного часового поясу, саме день, місяць і рік формують Матрицю."
           }
         }
       }
@@ -32979,10 +33459,70 @@
     "howToReadMatrix.step1.title" : {
       "comment" : "Calculate Your Chart",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berechne dein Diagramm"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Calculate Your Chart"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcula tu Carta"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculez votre Carte"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcola il tuo Diagramma"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "チャートを計算する"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beregn diagrammet ditt"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oblicz swoją Kartę"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcule seu Mapa"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beräkna ditt diagram"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розрахуйте свою діаграму"
           }
         }
       }
@@ -32990,10 +33530,70 @@
     "howToReadMatrix.step2.bullet1.text" : {
       "comment" : "Your conscious personality and the qualities you naturally express.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine bewusste Persönlichkeit und die Eigenschaften, die du natürlich ausdrückst."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your conscious personality and the qualities you naturally express."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu personalidad consciente y las cualidades que expresas naturalmente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre personnalité consciente et les qualités que vous exprimez naturellement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua personalità conscia e le qualità che esprimi naturalmente."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "意識的な性格と、自然に表現する資質。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din bevisste personlighet og egenskapene du naturlig uttrykker."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja świadoma osobowość i cechy, które naturalnie wyrażasz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua personalidade consciente e as qualidades que você expressa naturalmente."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din medvetna personlighet och de egenskaper du naturligt uttrycker."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша свідома особистість і якості, які ви природно виражаєте."
           }
         }
       }
@@ -33001,10 +33601,70 @@
     "howToReadMatrix.step2.bullet1.title" : {
       "comment" : "Character (Sky)",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Charakter (Himmel)"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Character (Sky)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carácter (Cielo)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caractère (Ciel)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carattere (Cielo)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "性格（天）"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karakter (Himmel)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Charakter (Niebo)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caráter (Céu)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karaktär (Himmel)"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Характер (Небо)"
           }
         }
       }
@@ -33012,10 +33672,70 @@
     "howToReadMatrix.step2.bullet2.text" : {
       "comment" : "Patterns carried from the past that ask to be transformed in this lifetime.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muster aus der Vergangenheit, die in diesem Leben transformiert werden wollen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patterns carried from the past that ask to be transformed in this lifetime."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patrones heredados del pasado que piden ser transformados en esta vida."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Des schémas hérités du passé qui demandent à être transformés dans cette vie."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schemi ereditati dal passato che chiedono di essere trasformati in questa vita."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "過去から持ち越された、この人生で変容を求めるパターン。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mønstre båret fra fortiden som ber om å bli transformert i dette livet."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wzorce przeniesione z przeszłości, które proszą o transformację w tym życiu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrões carregados do passado que pedem para ser transformados nesta vida."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mönster förda från det förflutna som ber om att transformeras i detta liv."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Патерни, перенесені з минулого, які просять трансформації в цьому житті."
           }
         }
       }
@@ -33023,10 +33743,70 @@
     "howToReadMatrix.step2.bullet2.title" : {
       "comment" : "Karma (Earth)",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karma (Erde)"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karma (Earth)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karma (Tierra)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karma (Terre)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karma (Terra)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カルマ（地）"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karma (Jord)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karma (Ziemia)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carma (Terra)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karma (Jord)"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Карма (Земля)"
           }
         }
       }
@@ -33034,10 +33814,70 @@
     "howToReadMatrix.step2.bullet3.text" : {
       "comment" : "The gifts you bring forward and the comfortable habits you tend to repeat.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Gaben, die du mitbringst, und die bequemen Gewohnheiten, die du gerne wiederholst."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "The gifts you bring forward and the comfortable habits you tend to repeat."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los dones que traes y los hábitos cómodos que tiendes a repetir."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les dons que vous apportez et les habitudes confortables que vous avez tendance à répéter."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I doni che porti con te e le abitudini comode che tendi a ripetere."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "持ち越した才能と、繰り返しがちな快適な習慣。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gavene du bringer videre og de komfortable vane ne du har en tendens til å gjenta."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dary, które przynosisz, i wygodne nawyki, które masz tendencję do powtarzania."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os dons que você traz e os hábitos confortáveis que você tende a repetir."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gåvorna du för med dig och de bekväma vanor du tenderar att upprepa."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дари, які ви приносите, і звичні звички, які ви схильні повторювати."
           }
         }
       }
@@ -33045,10 +33885,70 @@
     "howToReadMatrix.step2.bullet3.title" : {
       "comment" : "Talents & Comfort Zone",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talente & Komfortzone"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Talents & Comfort Zone"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talentos y zona de confort"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talents et zone de confort"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talenti e zona di comfort"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "才能とコンフォートゾーン"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talenter og komfortsone"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talenty i strefa komfortu"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talentos e zona de conforto"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talanger och komfortzon"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Таланти та зона комфорту"
           }
         }
       }
@@ -33056,10 +33956,70 @@
     "howToReadMatrix.step2.bullet4.text" : {
       "comment" : "The integrating energy at the center—your essence and the gateway to your purpose.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die integrierende Energie im Zentrum – deine Essenz und das Tor zu deinem Lebenszweck."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "The integrating energy at the center—your essence and the gateway to your purpose."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La energía integradora en el centro: tu esencia y la puerta de entrada a tu propósito."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'énergie intégratrice au centre – votre essence et la porte d'accès à votre objectif."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'energia integratrice al centro – la tua essenza e il portale verso il tuo scopo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中心にある統合エネルギー – あなたの本質と目的への入り口。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den integrerende energien i sentrum – essensen din og portalen til formålet ditt."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energia integrująca w centrum – twoja esencja i brama do twojego celu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A energia integradora no centro – sua essência e o portal para o seu propósito."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den integrerande energin i centrum – din essens och portalen till ditt syfte."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інтегруюча енергія в центрі – ваша сутність і ворота до вашої мети."
           }
         }
       }
@@ -33067,10 +34027,70 @@
     "howToReadMatrix.step2.bullet4.title" : {
       "comment" : "Heart / Mission Core",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Herz / Missionskern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heart / Mission Core"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corazón / Núcleo de la misión"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cœur / Noyau de la mission"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuore / Nucleo della missione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ハート / ミッションコア"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjerte / Misjonskjerne"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serce / Rdzeń misji"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coração / Núcleo da missão"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjärta / Uppdragskärna"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Серце / Ядро місії"
           }
         }
       }
@@ -33078,10 +34098,70 @@
     "howToReadMatrix.step2.intro" : {
       "comment" : "At the heart of your Matrix is a square with four corner energies and a central one. Together they describe who you are and how you move through life.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im Herzen deiner Matrix befindet sich ein Quadrat mit vier Ecken und einer zentralen Energie. Zusammen beschreiben sie, wer du bist und wie du durchs Leben gehst."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "At the heart of your Matrix is a square with four corner energies and a central one. Together they describe who you are and how you move through life."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En el corazón de tu Matriz hay un cuadrado con cuatro energías en las esquinas y una central. Juntas describen quién eres y cómo te mueves en la vida."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Au cœur de votre Matrice se trouve un carré avec quatre énergies d'angle et une centrale. Ensemble, elles décrivent qui vous êtes et comment vous évoluez dans la vie."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al centro della tua Matrice c'è un quadrato con quattro energie d'angolo e una centrale. Insieme descrivono chi sei e come ti muovi nella vita."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マトリックスの中心には、4つの角のエネルギーと中央のエネルギーを持つ正方形があります。これらが一体となって、あなたが誰であり、どのように人生を進むかを示しています。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I hjertet av matrisen din er en firkant med fire hjørneenergier og en sentral. Sammen beskriver de hvem du er og hvordan du beveger deg gjennom livet."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W sercu twojej Matrycy znajduje się kwadrat z czterema energiami w rogach i jedną centralną. Razem opisują kim jesteś i jak poruszasz się przez życie."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No coração da sua Matriz há um quadrado com quatro energias nos cantos e uma central. Juntas, elas descrevem quem você é e como você se move pela vida."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I hjärtat av din Matris finns en kvadrat med fyra hörnenergier och en central. Tillsammans beskriver de vem du är och hur du rör dig genom livet."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "У центрі вашої Матриці знаходиться квадрат із чотирма кутовими енергіями та однією центральною. Разом вони описують, хто ви і як ви рухаєтесь у житті."
           }
         }
       }
@@ -33089,10 +34169,70 @@
     "howToReadMatrix.step2.title" : {
       "comment" : "Find the Central Square",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finde das zentrale Quadrat"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Find the Central Square"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encuentra el cuadrado central"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trouvez le carré central"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trova il quadrato centrale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中心の正方形を見つける"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finn den sentrale firkanten"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Znajdź centralny kwadrat"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontre o quadrado central"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hitta den centrala kvadraten"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Знайдіть центральний квадрат"
           }
         }
       }
@@ -33100,10 +34240,70 @@
     "howToReadMatrix.step3.bullet1.text" : {
       "comment" : "How you attract resources, your relationship to abundance, and where money flows freely or gets blocked.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie du Ressourcen anziehst, deine Beziehung zum Überfluss und wo Geld frei fließt oder blockiert wird."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "How you attract resources, your relationship to abundance, and where money flows freely or gets blocked."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo atraes recursos, tu relación con la abundancia y dónde el dinero fluye libremente o se bloquea."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment vous attirez les ressources, votre relation à l'abondance et où l'argent circule librement ou se bloque."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come attiri risorse, la tua relazione con l'abbondanza e dove il denaro scorre liberamente o viene bloccato."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リソースの引き寄せ方、豊かさとの関係、お金が自由に流れるか滞るか。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan du tiltrekker deg ressurser, forholdet ditt til overflod, og hvor penger flyter fritt eller blir blokkert."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jak przyciągasz zasoby, twój związek z obfitością i gdzie pieniądze płyną swobodnie lub są blokowane."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como você atrai recursos, sua relação com a abundância e onde o dinheiro flui livremente ou é bloqueado."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur du attraherar resurser, din relation till överflöd och där pengar flyter fritt eller blockeras."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Як ви залучаєте ресурси, ваші стосунки з достатком і де гроші течуть вільно або блокуються."
           }
         }
       }
@@ -33111,10 +34311,70 @@
     "howToReadMatrix.step3.bullet1.title" : {
       "comment" : "Money & Finance Line",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geld- & Finanzlinie"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Money & Finance Line"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Línea de dinero y finanzas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ligne de l'argent et des finances"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linea del denaro e delle finanze"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マネー＆ファイナンスライン"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penger- og finanslinje"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linia pieniędzy i finansów"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linha de dinheiro e finanças"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengar- och finanslinje"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лінія грошей та фінансів"
           }
         }
       }
@@ -33122,10 +34382,70 @@
     "howToReadMatrix.step3.bullet2.text" : {
       "comment" : "How you bond with partners, the lessons love brings, and what kind of relationships nourish you.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie du dich mit Partnern verbindest, die Lektionen, die die Liebe bringt, und welche Art von Beziehungen dich nähren."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "How you bond with partners, the lessons love brings, and what kind of relationships nourish you."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo te vinculas con tus parejas, las lecciones que trae el amor y qué tipo de relaciones te nutren."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment vous vous liez avec vos partenaires, les leçons que l'amour apporte et le type de relations qui vous nourrissent."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come ti leghi ai partner, le lezioni che l'amore porta e che tipo di relazioni ti nutrono."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パートナーとの絆の築き方、愛がもたらす教訓、そしてどのような人間関係があなたを豊かにするか。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan du knytter bånd til partnere, lærdommene kjærligheten bringer, og hva slags forhold som nærer deg."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jak tworzysz więzi z partnerami, lekcje, które przynosi miłość i jakie relacje cię odżywiają."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como você se conecta com parceiros, as lições que o amor traz e que tipo de relacionamentos te nutrem."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur du knyter an till partners, de lärdomar kärleken för med sig och vilken typ av relationer som näringar dig."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Як ви будуєте зв'язки з партнерами, уроки, які приносить любов, і які стосунки живлять вас."
           }
         }
       }
@@ -33133,10 +34453,70 @@
     "howToReadMatrix.step3.bullet2.title" : {
       "comment" : "Relationship Line",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beziehungslinie"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Relationship Line"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Línea de relaciones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ligne des relations"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linea delle relazioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リレーションシップライン"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relasjonslinje"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linia relacji"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linha de relacionamentos"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relationslinje"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лінія стосунків"
           }
         }
       }
@@ -33144,10 +34524,70 @@
     "howToReadMatrix.step3.bullet3.text" : {
       "comment" : "Patterns inherited from your family system that influence your roots and sense of belonging.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muster, die von deinem Familiensystem vererbt wurden und deine Wurzeln und dein Zugehörigkeitsgefühl beeinflussen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patterns inherited from your family system that influence your roots and sense of belonging."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patrones heredados de tu sistema familiar que influyen en tus raíces y sentido de pertenencia."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Des schémas hérités de votre système familial qui influencent vos racines et votre sentiment d'appartenance."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schemi ereditati dal tuo sistema familiare che influenzano le tue radici e il senso di appartenenza."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "家族システムから受け継がれた、ルーツや帰属意識に影響を与えるパターン。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mønstre arvet fra familiesystemet ditt som påvirker røttene dine og tilhørighetsfølelsen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wzorce odziedziczone z systemu rodzinnego, które wpływają na twoje korzenie i poczucie przynależności."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrões herdados do seu sistema familiar que influenciam suas raízes e senso de pertencimento."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mönster ärvda från ditt familjesystem som påverkar dina rötter och känsla av tillhörighet."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Патерни, успадковані від вашої родинної системи, які впливають на ваше коріння та почуття приналежності."
           }
         }
       }
@@ -33155,10 +34595,70 @@
     "howToReadMatrix.step3.bullet3.title" : {
       "comment" : "Family & Ancestral Line",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familien- & Ahnenlinie"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Family & Ancestral Line"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Línea familiar y ancestral"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ligne familiale et ancestrale"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linea familiare e ancestrale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファミリー＆アンセストラルライン"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familie- og anerlinje"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linia rodzinna i przodków"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linha familiar e ancestral"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familje- och anelinje"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Родинна та предківська лінія"
           }
         }
       }
@@ -33166,10 +34666,70 @@
     "howToReadMatrix.step3.intro" : {
       "comment" : "Around the central square are lines that describe your main areas of life. Each line is built from several energies that work together.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rund um das zentrale Quadrat befinden sich Linien, die deine wichtigsten Lebensbereiche beschreiben. Jede Linie besteht aus mehreren Energien, die zusammenwirken."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Around the central square are lines that describe your main areas of life. Each line is built from several energies that work together."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alrededor del cuadrado central hay líneas que describen tus principales áreas de la vida. Cada línea está compuesta por varias energías que trabajan juntas."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autour du carré central se trouvent des lignes qui décrivent vos principaux domaines de vie. Chaque ligne est construite à partir de plusieurs énergies qui travaillent ensemble."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intorno al quadrato centrale ci sono linee che descrivono le tue principali aree di vita. Ogni linea è composta da diverse energie che lavorano insieme."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中央の正方形の周りには、人生の主要な領域を表すラインがあります。各ラインは、連携する複数のエネルギーで構成されています。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rundt den sentrale firkanten er det linjer som beskriver dine viktigste livsområder. Hver linje er bygget opp av flere energier som samarbeider."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wokół centralnego kwadratu znajdują się linie opisujące twoje główne obszary życia. Każda linia składa się z kilku energii, które współpracują ze sobą."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ao redor do quadrado central estão linhas que descrevem suas principais áreas da vida. Cada linha é construída a partir de várias energias que trabalham juntas."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Runt den centrala kvadraten finns linjer som beskriver dina viktigaste livsområden. Varje linje är uppbyggd av flera energier som samarbetar."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Навколо центрального квадрата розташовані лінії, які описують ваші головні життєві сфери. Кожна лінія побудована з кількох енергій, які працюють разом."
           }
         }
       }
@@ -33177,10 +34737,70 @@
     "howToReadMatrix.step3.proTip" : {
       "comment" : "Read each line as a story: light versions describe what flows naturally, shadow versions show what's ready to be healed.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lies jede Linie wie eine Geschichte: Die hellen Versionen beschreiben, was natürlich fließt, die Schattenversionen zeigen, was bereit ist, geheilt zu werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Read each line as a story: light versions describe what flows naturally, shadow versions show what's ready to be healed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lee cada línea como una historia: las versiones de luz describen lo que fluye naturalmente, las versiones de sombra muestran lo que está listo para sanar."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisez chaque ligne comme une histoire : les versions lumineuses décrivent ce qui coule naturellement, les versions sombres montrent ce qui est prêt à être guéri."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggi ogni linea come una storia: le versioni luce descrivono ciò che scorre naturalmente, le versioni ombra mostrano ciò che è pronto per essere guarito."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各ラインを物語として読んでください。光のバージョンは自然に流れるものを表し、影のバージョンは癒しの準備ができているものを示します。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les hver linje som en historie: lysversjoner beskriver hva som flyter naturlig, skyggeversjoner viser hva som er klart til å helbredes."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Czytaj każdą linię jak historię: jasne wersje opisują to, co płynie naturalnie, ciemne wersje pokazują, co jest gotowe do uzdrowienia."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leia cada linha como uma história: versões de luz descrevem o que flui naturalmente, versões de sombra mostram o que está pronto para ser curado."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läs varje linje som en berättelse: ljusa versioner beskriver vad som flyter naturligt, skuggversioner visar vad som är redo att läkas."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Читайте кожну лінію як історію: світлі версії описують те, що тече природно, тіньові версії показують те, що готове до зцілення."
           }
         }
       }
@@ -33188,10 +34808,70 @@
     "howToReadMatrix.step3.title" : {
       "comment" : "Read the Life Lines",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lies die Lebenslinien"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Read the Life Lines"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lee las líneas de la vida"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisez les lignes de vie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggi le linee della vita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライフラインを読む"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les livslinjene"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przeczytaj linie życia"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leia as linhas da vida"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läs livslinjerna"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прочитайте лінії життя"
           }
         }
       }
@@ -33199,10 +34879,70 @@
     "howToReadMatrix.step4.bullet1.text" : {
       "comment" : "The growth your soul came here to experience for itself.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Wachstum, das deine Seele hier zu erfahren kam."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "The growth your soul came here to experience for itself."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El crecimiento que tu alma vino aquí a experimentar por sí misma."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La croissance que votre âme est venue ici pour expérimenter par elle-même."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La crescita che la tua anima è venuta qui a sperimentare per sé stessa."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの魂が自ら体験するためにここに来た成長。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veksten sjelen din kom hit for å oppleve for seg selv."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wzrost, którego twoja dusza przyszła tu doświadczyć dla siebie."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O crescimento que sua alma veio aqui para experimentar por si mesma."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den tillväxt som din själ kom hit för att uppleva för sig själv."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зростання, яке ваша душа прийшла сюди пережити для себе."
           }
         }
       }
@@ -33210,10 +34950,70 @@
     "howToReadMatrix.step4.bullet1.title" : {
       "comment" : "Personal Mission",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Persönliche Mission"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Personal Mission"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Misión personal"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mission personnelle"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missione personale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パーソナルミッション"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personlig misjon"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Misja osobista"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missão pessoal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personligt uppdrag"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Особиста місія"
           }
         }
       }
@@ -33221,10 +35021,70 @@
     "howToReadMatrix.step4.bullet2.text" : {
       "comment" : "How you're meant to serve and what gift you offer to the world.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie du dienen sollst und welches Geschenk du der Welt machst."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "How you're meant to serve and what gift you offer to the world."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo estás destinado a servir y qué don ofreces al mundo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment vous êtes destiné à servir et quel don vous offrez au monde."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come sei destinato a servire e quale dono offri al mondo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたがどのように奉仕することを意図され、世界にどのような贈り物を提供するか。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan du er ment å tjene og hvilken gave du tilbyr verden."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jak masz służyć i jaki dar oferujesz światu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como você deve servir e que dom você oferece ao mundo."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur du är avsedd att tjäna och vilken gåva du erbjuder världen."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Як ви призначені служити і який дар ви пропонуєте світу."
           }
         }
       }
@@ -33232,10 +35092,70 @@
     "howToReadMatrix.step4.bullet2.title" : {
       "comment" : "Social Mission",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soziale Mission"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Social Mission"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Misión social"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mission sociale"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missione sociale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ソーシャルミッション"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sosial misjon"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Misja społeczna"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missão social"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Socialt uppdrag"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Соціальна місія"
           }
         }
       }
@@ -33243,10 +35163,70 @@
     "howToReadMatrix.step4.intro" : {
       "comment" : "The mission points reveal your purpose—why your soul chose this lifetime and the contribution you're invited to make.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Missionspunkte offenbaren deinen Lebenszweck – warum deine Seele dieses Leben gewählt hat und welchen Beitrag du leisten sollst."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "The mission points reveal your purpose—why your soul chose this lifetime and the contribution you're invited to make."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los puntos de misión revelan tu propósito: por qué tu alma eligió esta vida y la contribución que estás invitado a hacer."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les points de mission révèlent votre objectif – pourquoi votre âme a choisi cette vie et la contribution que vous êtes invité à apporter."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I punti missione rivelano il tuo scopo – perché la tua anima ha scelto questa vita e il contributo che sei invitato a dare."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ミッションポイントはあなたの目的を明らかにします – あなたの魂がこの人生を選んだ理由と、あなたが行うよう招かれている貢献。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Misjonspunktene avslører formålet ditt – hvorfor sjelen din valgte dette livet og bidraget du er invitert til å gjøre."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punkty misji ujawniają twój cel – dlaczego twoja dusza wybrała to życie i jaki wkład jesteś zaproszony wnieść."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os pontos de missão revelam seu propósito – por que sua alma escolheu esta vida e a contribuição que você é convidado a fazer."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uppdragspunkterna avslöjar ditt syfte – varför din själ valde detta liv och det bidrag du är inbjuden att göra."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Точки місії розкривають вашу мету – чому ваша душа обрала це життя та внесок, який вас запрошують зробити."
           }
         }
       }
@@ -33254,10 +35234,70 @@
     "howToReadMatrix.step4.title" : {
       "comment" : "Look at Your Mission",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betrachte deine Mission"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Look at Your Mission"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mira tu misión"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regardez votre mission"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guarda la tua missione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ミッションを見る"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se på misjonen din"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spójrz na swoją misję"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olhe para sua missão"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titta på ditt uppdrag"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подивіться на свою місію"
           }
         }
       }
@@ -33265,10 +35305,70 @@
     "howToReadMatrix.step5.bullet1.text" : {
       "comment" : "Energies that appear in multiple positions carry a strong theme in your life.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energien, die an mehreren Positionen erscheinen, tragen ein starkes Thema in deinem Leben."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Energies that appear in multiple positions carry a strong theme in your life."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las energías que aparecen en múltiples posiciones tienen un tema fuerte en tu vida."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les énergies qui apparaissent à plusieurs positions portent un thème fort dans votre vie."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le energie che appaiono in più posizioni portano un tema forte nella tua vita."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "複数の位置に現れるエネルギーは、あなたの人生における強いテーマを持ちます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energier som vises i flere posisjoner bærer et sterkt tema i livet ditt."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energie, które pojawiają się na wielu pozycjach, niosą ze sobą silny motyw w twoim życiu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energias que aparecem em várias posições carregam um tema forte em sua vida."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energier som visas på flera positioner bär ett starkt tema i ditt liv."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Енергії, які з'являються в кількох позиціях, несуть сильну тему у вашому житті."
           }
         }
       }
@@ -33276,10 +35376,70 @@
     "howToReadMatrix.step5.bullet1.title" : {
       "comment" : "Look for Repetitions",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Achte auf Wiederholungen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Look for Repetitions"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Busca repeticiones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherchez les répétitions"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca ripetizioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繰り返しを探す"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se etter repetisjoner"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Szukaj powtórzeń"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Procure por repetições"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let efter upprepningar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шукайте повторення"
           }
         }
       }
@@ -33287,10 +35447,70 @@
     "howToReadMatrix.step5.bullet2.text" : {
       "comment" : "Each energy has both gifts and challenges. Working consciously with the shadow side is where real growth happens.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jede Energie hat sowohl Gaben als auch Herausforderungen. Bewusst mit der Schattenseite zu arbeiten ist der Ort, an dem echtes Wachstum stattfindet."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Each energy has both gifts and challenges. Working consciously with the shadow side is where real growth happens."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada energía tiene tanto dones como desafíos. Trabajar conscientemente con el lado oscuro es donde ocurre el verdadero crecimiento."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque énergie a à la fois des dons et des défis. Travailler consciemment avec le côté ombre est là où se produit une véritable croissance."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogni energia ha sia doni che sfide. Lavorare consapevolmente con il lato ombra è dove avviene la vera crescita."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各エネルギーには才能と課題の両方があります。影の側面と意識的に取り組むことが、真の成長が起こる場所です。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hver energi har både gaver og utfordringer. Å jobbe bevisst med skyggesiden er der ekte vekst skjer."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Każda energia ma zarówno dary, jak i wyzwania. Świadoma praca z ciemną stroną jest miejscem, gdzie następuje prawdziwy rozwój."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada energia tem tanto dons quanto desafios. Trabalhar conscientemente com o lado sombra é onde o verdadeiro crescimento acontece."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varje energi har både gåvor och utmaningar. Att arbeta medvetet med skuggsidan är där verklig tillväxt sker."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кожна енергія має як дари, так і виклики. Свідома робота з тіньовою стороною є місцем, де відбувається справжнє зростання."
           }
         }
       }
@@ -33298,10 +35518,70 @@
     "howToReadMatrix.step5.bullet2.title" : {
       "comment" : "Hold Light & Shadow Together",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licht & Schatten zusammen halten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hold Light & Shadow Together"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén la luz y la sombra juntas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tenez la lumière et l'ombre ensemble"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieni insieme luce e ombra"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "光と影を一緒に保つ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold lys og skygge sammen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trzymaj razem światło i cień"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenha luz e sombra juntos"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Håll ljus och skugga tillsammans"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тримайте світло та тінь разом"
           }
         }
       }
@@ -33309,10 +35589,70 @@
     "howToReadMatrix.step5.intro" : {
       "comment" : "Once you understand the parts, read the whole Matrix as a conversation between archetypes. Notice repeated energies and how the light and shadow sides relate.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobald du die Teile verstanden hast, lies die gesamte Matrix als ein Gespräch zwischen Archetypen. Achte auf wiederholte Energien und wie die Licht- und Schattenseiten miteinander in Beziehung stehen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Once you understand the parts, read the whole Matrix as a conversation between archetypes. Notice repeated energies and how the light and shadow sides relate."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una vez que entiendas las partes, lee toda la Matriz como una conversación entre arquetipos. Nota las energías repetidas y cómo se relacionan los lados de luz y sombra."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une fois que vous avez compris les parties, lisez la Matrice entière comme une conversation entre archétypes. Remarquez les énergies répétées et comment les côtés lumineux et sombres se rapportent."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una volta comprese le parti, leggi l'intera Matrice come una conversazione tra archetipi. Nota le energie ripetute e come si relazionano i lati luce e ombra."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各部分を理解したら、マトリックス全体をアーキタイプ間の対話として読みます。繰り返されるエネルギーと、光と影の側面がどのように関係しているかに注目してください。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du forstår delene, les hele matrisen som en samtale mellom arketyper. Legg merke til gjentatte energier og hvordan lys- og skyggesidene forholder seg."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gdy zrozumiesz części, przeczytaj całą Matrycę jako rozmowę między archetypami. Zwróć uwagę na powtarzające się energie i to, jak strony światła i cienia są ze sobą powiązane."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois de entender as partes, leia a Matriz inteira como uma conversa entre arquétipos. Observe energias repetidas e como os lados de luz e sombra se relacionam."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "När du förstår delarna, läs hela Matrisen som en konversation mellan arketyper. Lägg märke till upprepade energier och hur ljus- och skuggsidorna förhåller sig."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Коли ви зрозумієте частини, читайте всю Матрицю як розмову між архетипами. Зверніть увагу на повторювані енергії та те, як співвідносяться світла та тіньова сторони."
           }
         }
       }
@@ -33320,10 +35660,70 @@
     "howToReadMatrix.step5.title" : {
       "comment" : "Bring It All Together",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles zusammenführen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bring It All Together"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unir todo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rassembler le tout"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metti tutto insieme"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてを統合する"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sett alt sammen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Połącz wszystko"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Junte tudo"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sammanfoga allt"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Об'єднайте все разом"
           }
         }
       }
@@ -33331,10 +35731,70 @@
     "howToReadMatrix.title" : {
       "comment" : "How to Read Your Matrix",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie du deine Matrix liest"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "How to Read Your Matrix"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo leer tu Matriz"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment lire votre Matrice"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come leggere la tua Matrice"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マトリックスの読み方"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvordan lese matrisen din"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jak czytać swoją Matrycę"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como ler sua Matriz"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur du läser din Matris"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Як читати вашу Матрицю"
           }
         }
       }
