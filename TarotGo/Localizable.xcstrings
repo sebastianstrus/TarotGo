@@ -220326,171 +220326,1071 @@
                                   }
                                 }
                               },
-    "interpretation.page_of_cups_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where has childlike avoidance crept in? The reversed Page of Cups catches the regression. The hard thing requires the grown-up response; the sulking is just delay."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a creative impulse deserves to be honored before it fades. The Page of Cups' offer is short-lived. The idea that came this morning may not be back next week if you ignore it."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What if a small, unexpected feeling is actually the first sign? The Page of Cups arrives quietly. The minor stirring deserves more attention than the loud distraction."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe avoidance of feelings is causing more damage than the feelings would. The reversed Page of Cups runs the cost-benefit honestly. Feeling is cheaper than the alternatives."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are unprocessed feelings becoming physical symptoms? The reversed Page of Cups locates emotion in tissue. The thing being held emotionally often gets held muscularly too."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps play is the missing health practice. The Page of Cups treats joy as treatment. Pick something your body wants to do that has no fitness purpose; do it anyway."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What would your inner child say your body needs? The Page of Cups consults the unimpressed-by-protocols voice. The honest answer is often surprisingly simple."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe sulking is standing in for the real conversation. The reversed Page of Cups exposes the indirect strategy. The withdrawal is communication; just an ineffective version."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is emotional immaturity — yours or theirs — undermining a relationship? The reversed Page of Cups identifies the regression. Notice which one of you is acting from a younger place than the situation calls for."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps an unexpected emotional message is on its way. The Page of Cups delivers feelings, not facts. The note, the call, the small revelation may arrive from where you weren't watching."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What playful, tender impulse have you been embarrassed to act on? The Page of Cups loves the small sweet gesture. The thing you've been postponing because it feels too earnest is exactly the one to send."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe long-deferred ambitions need a smaller, real first step. The reversed Page of Pentacles right-sizes the start. The microscopic version that actually happens beats the grand version that doesn't."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a project full of potential not actually moving? The reversed Page of Pentacles catches the perpetual promise. Potential without practice is just decoration."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps an entry-level approach to something new is exactly right. The Page of Pentacles begins humbly. Drop the seniority for a moment and let yourself learn from the ground."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What skill are you ready to start learning, even badly? The Page of Pentacles loves the awkward beginner phase. The willingness to be a novice is the first credential."
-          }
-        }
-      }
-    },
+                              "interpretation.page_of_cups_general_reversed_unclear" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Wo hat sich kindliches Ausweichen eingeschlichen? Die umgekehrte Page der Kelche erkennt die Regression. Die schwierige Sache erfordert die erwachsene Reaktion; das Schmollen ist nur Verzögerung."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Where has childlike avoidance crept in? The reversed Page of Cups catches the regression. The hard thing requires the grown-up response; the sulking is just delay."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "¿Dónde se ha colado la evitación infantil? La Sota de Copas invertida detecta la regresión. Lo difícil requiere la respuesta adulta; el enfurruñamiento es solo demora."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Où l'évitement enfantin s'est-il glissé ? Le Valet de Coupes inversé repère la régression. La chose difficile exige la réponse adulte ; le bouder n'est qu'un retard."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Dove si è insinuata l'evitamento infantile? Il Fante di Coppe rovesciato coglie la regressione. La cosa difficile richiede la risposta adulta; il broncio è solo un ritardo."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "子どもっぽい回避はどこに忍び込んだのか？逆位置のカップのペイジは退行を見抜く。難しいことには大人の対応が必要だ；ふくれっ面はただの遅延に過ぎない。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Hvor har barnslig unngåelse sneket seg inn? Den omvendte Page of Cups fanger regresjonen. Den vanskelige tingen krever den voksne reaksjonen; sutringen er bare utsettelse."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Gdzie wkradło się dziecięce unikanie? Odwrócona Giermek Kielichów wychwytuje regresję. Trudna sprawa wymaga dorosłej reakcji; dąsanie się to tylko opóźnienie."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Onde a evitação infantil se infiltrou? O Pajem de Copas invertido capta a regressão. A coisa difícil exige a resposta adulta; o amuo é apenas um atraso."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Var har barnsligt undvikande smugit sig in? Den omvända Page of Cups fångar regressionen. Den svåra saken kräver det vuxna svaret; surmulen är bara fördröjning."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Де вкралося дитяче уникнення? Перевернутий Паж Кубків виявляє регресію. Важка справа потребує дорослої відповіді; надування губ — це лише затримка."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_general_upright_not_resonating" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vielleicht verdient ein kreativer Impuls, geehrt zu werden, bevor er verblasst. Das Angebot des Page der Kelche ist kurzlebig. Die Idee, die heute Morgen kam, könnte nächste Woche nicht wiederkommen, wenn du sie ignorierst."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Perhaps a creative impulse deserves to be honored before it fades. The Page of Cups' offer is short-lived. The idea that came this morning may not be back next week if you ignore it."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quizás un impulso creativo merece ser honrado antes de que se desvanezca. La oferta de la Sota de Copas es de corta duración. La idea que llegó esta mañana puede no volver la próxima semana si la ignoras."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Peut-être qu'un élan créatif mérite d'être honoré avant de s'estomper. L'offre du Valet de Coupes est de courte durée. L'idée qui est venue ce matin pourrait ne pas revenir la semaine prochaine si vous l'ignorez."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Forse un impulso creativo merita di essere onorato prima che svanisca. L'offerta del Fante di Coppe è di breve durata. L'idea che è venuta stamattina potrebbe non tornare la prossima settimana se la ignori."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "おそらく創造的な衝動は、消え去る前に尊重されるに値する。カップのペイジの申し出は短命だ。今朝浮かんだアイデアは、無視すれば来週には戻ってこないかもしれない。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanskje en kreativ impuls fortjener å bli hedret før den falmer. Page of Cups' tilbud er kortvarig. Ideen som kom i morges kommer kanskje ikke tilbake neste uke hvis du ignorerer den."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Być może impuls twórczy zasługuje na uhonorowanie, zanim zaniknie. Oferta Giermka Kielichów jest krótkotrwała. Pomysł, który przyszedł dziś rano, może nie wrócić w przyszłym tygodniu, jeśli go zignorujesz."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Talvez um impulso criativo mereça ser honrado antes que desapareça. A oferta do Pajem de Copas é de curta duração. A ideia que veio esta manhã pode não voltar na próxima semana se você a ignorar."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanske förtjänar en kreativ impuls att hedras innan den bleknar. Page of Cups erbjudande är kortlivat. Idén som kom i morse kanske inte kommer tillbaka nästa vecka om du ignorerar den."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Можливо, творчий імпульс заслуговує на пошану, перш ніж згасне. Пропозиція Пажа Кубків є короткочасною. Ідея, що прийшла сьогодні вранці, може не повернутися наступного тижня, якщо ви її проігноруєте."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_general_upright_unclear" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Was, wenn ein kleines, unerwartetes Gefühl tatsächlich das erste Anzeichen ist? Der Page der Kelche kommt leise. Die kleine Regung verdient mehr Aufmerksamkeit als die laute Ablenkung."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "What if a small, unexpected feeling is actually the first sign? The Page of Cups arrives quietly. The minor stirring deserves more attention than the loud distraction."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "¿Y si un pequeño sentimiento inesperado es en realidad la primera señal? La Sota de Copas llega en silencio. El pequeño movimiento merece más atención que la distracción ruidosa."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Et si un petit sentiment inattendu était en réalité le premier signe ? Le Valet de Coupes arrive silencieusement. Le léger remue-ménage mérite plus d'attention que la distraction bruyante."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "E se un piccolo sentimento inaspettato fosse in realtà il primo segnale? Il Fante di Coppe arriva silenziosamente. Il piccolo movimento merita più attenzione della distrazione rumorosa."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "小さな予期せぬ感情が実際に最初の兆候だったらどうだろう？カップのペイジは静かにやってくる。小さな動揺は、騒がしい気晴らしよりも注目に値する。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Hva om en liten, uventet følelse faktisk er det første tegnet? Page of Cups ankommer stille. Den lille bevegelsen fortjener mer oppmerksomhet enn den høye distraksjonen."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "A co jeśli małe, nieoczekiwane uczucie jest w rzeczywistości pierwszym znakiem? Giermek Kielichów przybywa cicho. Niewielkie poruszenie zasługuje na więcej uwagi niż głośne rozproszenie."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "E se um pequeno sentimento inesperado for na verdade o primeiro sinal? O Pajem de Copas chega silenciosamente. O pequeno movimento merece mais atenção do que a distração barulhenta."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Tänk om en liten, oväntad känsla faktiskt är det första tecknet? Page of Cups anländer tyst. Den lilla rörelsen förtjänar mer uppmärksamhet än den högljudda distraktionen."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Що, якщо маленьке несподіване почуття насправді є першим знаком? Паж Кубків приходить тихо. Невелике хвилювання заслуговує більшої уваги, ніж гучне відволікання."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_health_reversed_not_resonating" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vielleicht verursacht die Vermeidung von Gefühlen mehr Schaden als die Gefühle selbst. Der umgekehrte Page der Kelche rechnet ehrlich ab. Fühlen ist billiger als die Alternativen."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Maybe avoidance of feelings is causing more damage than the feelings would. The reversed Page of Cups runs the cost-benefit honestly. Feeling is cheaper than the alternatives."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quizás evitar los sentimientos está causando más daño del que causarían los sentimientos. La Sota de Copas invertida hace el cálculo de costo-beneficio honestamente. Sentir es más barato que las alternativas."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Peut-être que l'évitement des sentiments cause plus de dégâts que les sentiments eux-mêmes. Le Valet de Coupes inversé fait le calcul coût-bénéfice honnêtement. Ressentir est moins cher que les alternatives."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Forse evitare i sentimenti sta causando più danni di quanto farebbero i sentimenti stessi. Il Fante di Coppe rovesciato fa il calcolo costi-benefici onestamente. Sentire è più economico delle alternative."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "おそらく感情の回避は、感情そのものよりも多くのダメージを引き起こしている。逆位置のカップのペイジはコストベネフィットを正直に計算する。感じることは代替案よりも安価だ。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanskje unngåelse av følelser forårsaker mer skade enn følelsene ville gjort. Den omvendte Page of Cups regner kostnad-nytte ærlig. Å føle er billigere enn alternativene."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Być może unikanie uczuć powoduje więcej szkód niż same uczucia. Odwrócona Giermek Kielichów przeprowadza uczciwą analizę kosztów i korzyści. Odczuwanie jest tańsze niż alternatywy."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Talvez evitar sentimentos esteja causando mais danos do que os sentimentos causariam. O Pajem de Copas invertido faz a análise de custo-benefício honestamente. Sentir é mais barato que as alternativas."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanske orsakar undvikande av känslor mer skada än känslorna skulle göra. Den omvända Page of Cups gör kostnads-nyttoanalysen ärligt. Att känna är billigare än alternativen."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Можливо, уникнення почуттів завдає більше шкоди, ніж самі почуття. Перевернутий Паж Кубків чесно проводить аналіз витрат і вигод. Відчувати дешевше, ніж альтернативи."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_health_reversed_unclear" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Werden unverarbeitete Gefühle zu körperlichen Symptomen? Der umgekehrte Page der Kelche lokalisiert Emotionen im Gewebe. Das, was emotional festgehalten wird, wird oft auch muskulär festgehalten."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Are unprocessed feelings becoming physical symptoms? The reversed Page of Cups locates emotion in tissue. The thing being held emotionally often gets held muscularly too."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "¿Se están convirtiendo los sentimientos no procesados en síntomas físicos? La Sota de Copas invertida ubica la emoción en el tejido. Lo que se retiene emocionalmente a menudo también se retiene muscularmente."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Les sentiments non traités deviennent-ils des symptômes physiques ? Le Valet de Coupes inversé localise l'émotion dans les tissus. Ce qui est retenu émotionnellement est souvent aussi retenu musculairement."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "I sentimenti non elaborati stanno diventando sintomi fisici? Il Fante di Coppe rovesciato localizza l'emozione nei tessuti. Ciò che viene trattenuto emotivamente viene spesso trattenuto anche muscolarmente."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "処理されていない感情が身体症状になっているのか？逆位置のカップのペイジは感情を組織に位置づける。感情的に保持されているものは、しばしば筋肉的にも保持される。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Blir ubehandlede følelser til fysiske symptomer? Den omvendte Page of Cups plasserer følelser i vevet. Det som holdes følelsesmessig, blir ofte også holdt muskulært."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Czy nieprzetworzone uczucia stają się objawami fizycznymi? Odwrócona Giermek Kielichów umiejscawia emocje w tkankach. To, co jest zatrzymywane emocjonalnie, często jest również zatrzymywane mięśniowo."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Sentimentos não processados estão se tornando sintomas físicos? O Pajem de Copas invertido localiza a emoção nos tecidos. O que é segurado emocionalmente muitas vezes também é segurado muscularmente."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Blir obearbetade känslor till fysiska symtom? Den omvända Page of Cups lokaliserar känslor i vävnaden. Det som hålls emotionellt hålls ofta också muskulärt."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Чи стають неопрацьовані почуття фізичними симптомами? Перевернутий Паж Кубків локалізує емоції в тканинах. Те, що утримується емоційно, часто також утримується м'язово."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_health_upright_not_resonating" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vielleicht ist Spiel die fehlende Gesundheitspraxis. Der Page der Kelche behandelt Freude als Therapie. Wähle etwas, das dein Körper tun möchte, das keinen Fitnesszweck hat; tu es trotzdem."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Perhaps play is the missing health practice. The Page of Cups treats joy as treatment. Pick something your body wants to do that has no fitness purpose; do it anyway."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quizás el juego es la práctica de salud que falta. La Sota de Copas trata la alegría como tratamiento. Elige algo que tu cuerpo quiera hacer que no tenga propósito físico; hazlo de todos modos."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Peut-être que le jeu est la pratique de santé manquante. Le Valet de Coupes traite la joie comme un traitement. Choisissez quelque chose que votre corps veut faire qui n'a pas de but fitness ; faites-le quand même."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Forse il gioco è la pratica di salute mancante. Il Fante di Coppe tratta la gioia come cura. Scegli qualcosa che il tuo corpo vuole fare che non ha scopo fitness; fallo comunque."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "おそらく遊びは欠けている健康習慣だ。カップのペイジは喜びを治療として扱う。フィットネスの目的がない、あなたの体がしたいことを選べ；とにかくそれをやれ。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanskje lek er den manglende helsepraksisen. Page of Cups behandler glede som behandling. Velg noe kroppen din vil gjøre som ikke har et treningsformål; gjør det likevel."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Być może zabawa jest brakującą praktyką zdrowotną. Giermek Kielichów traktuje radość jako leczenie. Wybierz coś, co twoje ciało chce zrobić, co nie ma celu fitness; zrób to mimo wszystko."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Talvez a brincadeira seja a prática de saúde que falta. O Pajem de Copas trata a alegria como tratamento. Escolha algo que seu corpo queira fazer que não tenha propósito fitness; faça mesmo assim."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanske är lek den saknade hälsopraktiken. Page of Cups behandlar glädje som behandling. Välj något din kropp vill göra som inte har något träningssyfte; gör det ändå."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Можливо, гра є відсутньою практикою здоров'я. Паж Кубків ставиться до радості як до лікування. Виберіть щось, що ваше тіло хоче зробити, що не має фітнес-мети; зробіть це все одно."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_health_upright_unclear" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Was würde dein inneres Kind sagen, dass dein Körper braucht? Der Page der Kelche befragt die von Protokollen unbeeindruckte Stimme. Die ehrliche Antwort ist oft überraschend einfach."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "What would your inner child say your body needs? The Page of Cups consults the unimpressed-by-protocols voice. The honest answer is often surprisingly simple."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "¿Qué diría tu niño interior que necesita tu cuerpo? La Sota de Copas consulta la voz no impresionada por los protocolos. La respuesta honesta suele ser sorprendentemente simple."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Que dirait votre enfant intérieur dont votre corps a besoin ? Le Valet de Coupes consulte la voix non impressionnée par les protocoles. La réponse honnête est souvent étonnamment simple."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Cosa direbbe il tuo bambino interiore di cui il tuo corpo ha bisogno? Il Fante di Coppe consulta la voce non impressionata dai protocolli. La risposta onesta è spesso sorprendentemente semplice."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "あなたのインナーチャイルドは、あなたの体に何が必要だと言うだろう？カップのペイジはプロトコルに感銘を受けない声に相談する。正直な答えはしばしば驚くほどシンプルだ。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Hva ville ditt indre barn si at kroppen din trenger? Page of Cups konsulterer stemmen som ikke er imponert av protokoller. Det ærlige svaret er ofte overraskende enkelt."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Co twoje wewnętrzne dziecko powiedziałoby, czego potrzebuje twoje ciało? Giermek Kielichów konsultuje głos niepodatny na protokoły. Szczera odpowiedź jest często zaskakująco prosta."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "O que sua criança interior diria que seu corpo precisa? O Pajem de Copas consulta a voz não impressionada por protocolos. A resposta honesta é muitas vezes surpreendentemente simples."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vad skulle ditt inre barn säga att din kropp behöver? Page of Cups konsulterar rösten som inte är imponerad av protokoll. Det ärliga svaret är ofta förvånansvärt enkelt."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Що б сказала ваша внутрішня дитина, що потрібно вашому тілу? Паж Кубків консультується з голосом, не враженим протоколами. Чеснотна відповідь часто напрочуд проста."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_love_reversed_not_resonating" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vielleicht steht Schmollen für das eigentliche Gespräch. Der umgekehrte Page der Kelche entlarvt die indirekte Strategie. Der Rückzug ist Kommunikation; nur eine ineffektive Version."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Maybe sulking is standing in for the real conversation. The reversed Page of Cups exposes the indirect strategy. The withdrawal is communication; just an ineffective version."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quizás el enfurruñamiento está sustituyendo a la conversación real. La Sota de Copas invertida expone la estrategia indirecta. El retiro es comunicación; solo una versión ineficaz."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Peut-être que le bouder remplace la vraie conversation. Le Valet de Coupes inversé expose la stratégie indirecte. Le retrait est une communication ; juste une version inefficace."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Forse il broncio sostituisce la vera conversazione. Il Fante di Coppe rovesciato espone la strategia indiretta. Il ritiro è comunicazione; solo una versione inefficace."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "おそらくふくれっ面が本当の会話の代わりをしている。逆位置のカップのペイジは間接的な戦略を暴露する。撤退はコミュニケーションだ；ただ効果のないバージョンに過ぎない。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanskje sutring står for den virkelige samtalen. Den omvendte Page of Cups avslører den indirekte strategien. Tilbaketrekningen er kommunikasjon; bare en ineffektiv versjon."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Być może dąsanie się zastępuje prawdziwą rozmowę. Odwrócona Giermek Kielichów ujawnia pośrednią strategię. Wycofanie jest komunikacją; tylko nieefektywną wersją."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Talvez o amuo esteja substituindo a conversa real. O Pajem de Copas invertido expõe a estratégia indireta. O afastamento é comunicação; apenas uma versão ineficaz."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanske står surmulen för den verkliga konversationen. Den omvända Page of Cups avslöjar den indirekta strategin. Tillbakadragandet är kommunikation; bara en ineffektiv version."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Можливо, надування губ замінює справжню розмову. Перевернутий Паж Кубків викриває непряму стратегію. Відхід — це комунікація; просто неефективна версія."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_love_reversed_unclear" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Untergräbt emotionale Unreife – deine oder seine – eine Beziehung? Der umgekehrte Page der Kelche identifiziert die Regression. Beachte, wer von euch aus einer jüngeren Position handelt, als die Situation erfordert."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Is emotional immaturity — yours or theirs — undermining a relationship? The reversed Page of Cups identifies the regression. Notice which one of you is acting from a younger place than the situation calls for."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "¿La inmadurez emocional — tuya o suya — está socavando una relación? La Sota de Copas invertida identifica la regresión. Nota cuál de ustedes está actuando desde un lugar más joven de lo que la situación requiere."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "L'immaturité émotionnelle — la vôtre ou la leur — mine-t-elle une relation ? Le Valet de Coupes inversé identifie la régression. Remarquez lequel d'entre vous agit d'un endroit plus jeune que ce que la situation exige."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "L'immaturità emotiva — tua o loro — sta minando una relazione? Il Fante di Coppe rovesciato identifica la regressione. Nota chi di voi sta agendo da un luogo più giovane di quanto la situazione richieda."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "感情的な未熟さ（あなたか相手の）が関係を損なっているのか？逆位置のカップのペイジは退行を特定する。状況が求めるよりも若い場所から行動しているのはどちらか注意せよ。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Undergraver følelsesmessig umodenhet — din eller deres — et forhold? Den omvendte Page of Cups identifiserer regresjonen. Legg merke til hvem av dere som handler fra et yngre sted enn situasjonen krever."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Czy niedojrzałość emocjonalna — twoja czy ich — podważa związek? Odwrócona Giermek Kielichów identyfikuje regresję. Zauważ, które z was działa z młodszego miejsca, niż wymaga tego sytuacja."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "A imaturidade emocional — sua ou deles — está prejudicando um relacionamento? O Pajem de Copas invertido identifica a regressão. Observe qual de vocês está agindo de um lugar mais jovem do que a situação exige."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Undergräver känslomässig omognad — din eller deras — en relation? Den omvända Page of Cups identifierar regressionen. Notera vem av er som agerar från en yngre plats än situationen kräver."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Чи підриває емоційна незрілість — ваша чи їхня — стосунки? Перевернутий Паж Кубків ідентифікує регресію. Зауважте, хто з вас діє з молодшого місця, ніж вимагає ситуація."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_love_upright_not_resonating" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vielleicht ist eine unerwartete emotionale Botschaft auf dem Weg. Der Page der Kelche überbringt Gefühle, keine Fakten. Die Notiz, der Anruf, die kleine Offenbarung könnten von dort kommen, wo du nicht hingeschaut hast."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Perhaps an unexpected emotional message is on its way. The Page of Cups delivers feelings, not facts. The note, the call, the small revelation may arrive from where you weren't watching."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quizás un mensaje emocional inesperado está en camino. La Sota de Copas entrega sentimientos, no hechos. La nota, la llamada, la pequeña revelación pueden llegar desde donde no estabas mirando."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Peut-être qu'un message émotionnel inattendu est en route. Le Valet de Coupes livre des sentiments, pas des faits. La note, l'appel, la petite révélation peuvent arriver d'où vous ne regardiez pas."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Forse un messaggio emotivo inaspettato è in arrivo. Il Fante di Coppe consegna sentimenti, non fatti. La nota, la chiamata, la piccola rivelazione potrebbero arrivare da dove non stavi guardando."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "おそらく予期せぬ感情的なメッセージが届こうとしている。カップのペイジは事実ではなく感情を届ける。メモ、電話、小さな啓示は、あなたが見ていなかった場所から届くかもしれない。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanskje en uventet følelsesmessig melding er på vei. Page of Cups leverer følelser, ikke fakta. Notatet, samtalen, den lille åpenbaringen kan komme fra der du ikke så."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Być może nieoczekiwana wiadomość emocjonalna jest w drodze. Giermek Kielichów dostarcza uczucia, nie fakty. Notatka, telefon, małe objawienie mogą nadejść z miejsca, gdzie nie patrzyłeś."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Talvez uma mensagem emocional inesperada esteja a caminho. O Pajem de Copas entrega sentimentos, não fatos. A nota, a ligação, a pequena revelação podem chegar de onde você não estava olhando."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanske är ett oväntat känslomässigt budskap på väg. Page of Cups levererar känslor, inte fakta. Anteckningen, samtalet, den lilla uppenbarelsen kan komma från där du inte tittade."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Можливо, несподіване емоційне повідомлення вже в дорозі. Паж Кубків доставляє почуття, а не факти. Записка, дзвінок, маленьке одкровення можуть прийти з того місця, куди ви не дивилися."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_cups_love_upright_unclear" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Welchem verspielten, zärtlichen Impuls warst du zu verlegen, um ihn auszuführen? Der Page der Kelche liebt die kleine süße Geste. Das, was du aufgeschoben hast, weil es dir zu ernsthaft vorkommt, ist genau das, was du senden solltest."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "What playful, tender impulse have you been embarrassed to act on? The Page of Cups loves the small sweet gesture. The thing you've been postponing because it feels too earnest is exactly the one to send."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "¿Qué impulso juguetón y tierno te ha dado vergüenza poner en práctica? La Sota de Copas ama el pequeño gesto dulce. Lo que has estado posponiendo porque se siente demasiado sincero es exactamente lo que debes enviar."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quel élan ludique et tendre avez-vous eu honte de suivre ? Le Valet de Coupes aime le petit geste doux. La chose que vous avez reportée parce qu'elle semble trop sincère est exactement celle à envoyer."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "A quale impulso giocoso e tenero sei stato imbarazzato a dare seguito? Il Fante di Coppe ama il piccolo gesto dolce. La cosa che hai rimandato perché sembra troppo sincera è esattamente quella da inviare."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "どのような遊び心のある優しい衝動に、行動することを恥ずかしく思ってきたか？カップのペイジは小さな甘いジェスチャーを愛する。あまりに真面目すぎると感じて先延ばしにしてきたことが、まさに送るべきものだ。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Hvilken leken, øm impuls har du vært flau over å handle på? Page of Cups elsker den lille søte gesten. Det du har utsatt fordi det føles for oppriktig, er akkurat det du bør sende."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Jaki zabawny, czuły impuls wstydziłeś się zrealizować? Giermek Kielichów kocha mały słodki gest. To, co odkładałeś, ponieważ wydaje się zbyt szczere, jest dokładnie tym, co powinieneś wysłać."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Que impulso brincalhão e terno você teve vergonha de agir? O Pajem de Copas ama o pequeno gesto doce. A coisa que você tem adiado porque parece muito sincera é exatamente a que deve enviar."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vilken lekfull, öm impuls har du varit generad över att agera på? Page of Cups älskar den lilla söta gesten. Det du har skjutit upp för att det känns för allvarligt är precis det du ska skicka."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "На який грайливий, ніжний імпульс вам було соромно зреагувати? Паж Кубків любить маленький милий жест. Те, що ви відкладали, тому що це здається надто серйозним, є саме тим, що слід надіслати."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_pentacles_career_reversed_not_resonating" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vielleicht brauchen lang aufgeschobene Ambitionen einen kleineren, realen ersten Schritt. Der umgekehrte Page der Pentakel setzt den Start richtig. Die mikroskopische Version, die tatsächlich passiert, schlägt die grandiose Version, die nicht passiert."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Maybe long-deferred ambitions need a smaller, real first step. The reversed Page of Pentacles right-sizes the start. The microscopic version that actually happens beats the grand version that doesn't."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quizás las ambiciones largamente aplazadas necesitan un primer paso más pequeño y real. La Sota de Pentáculos invertida ajusta el comienzo. La versión microscópica que realmente sucede vence a la versión grandiosa que no sucede."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Peut-être que les ambitions longtemps différées ont besoin d'un premier pas plus petit et réel. Le Valet de Pentacles inversé redimensionne le départ. La version microscopique qui se produit réellement bat la version grandiose qui ne se produit pas."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Forse le ambizioni a lungo rinviate hanno bisogno di un primo passo più piccolo e reale. Il Fante di Pentacoli rovesciato ridimensiona l'inizio. La versione microscopica che effettivamente accade batte la versione grandiosa che non accade."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "おそらく長く先延ばしにされた野心には、より小さく現実的な最初の一歩が必要だ。逆位置のペンタクルのペイジはスタートを適正化する。実際に起こる微視的バージョンは、起こらない壮大なバージョンに勝る。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanskje lenge utsatte ambisjoner trenger et mindre, ekte første skritt. Den omvendte Page of Pentacles tilpasser starten. Den mikroskopiske versjonen som faktisk skjer, slår den grandiose versjonen som ikke gjør det."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Być może długo odkładane ambicje potrzebują mniejszego, rzeczywistego pierwszego kroku. Odwrócona Giermek Monet dostosowuje początek. Mikroskopijna wersja, która faktycznie ma miejsce, pokonuje wielką wersję, która nie ma miejsca."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Talvez ambições há muito adiadas precisem de um primeiro passo menor e real. O Pajem de Pentáculos invertido redimensiona o começo. A versão microscópica que realmente acontece vence a versão grandiosa que não acontece."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanske länge uppskjutna ambitioner behöver ett mindre, verkligt första steg. Den omvända Page of Pentacles anpassar starten. Den mikroskopiska versionen som faktiskt händer slår den grandiosa versionen som inte gör det."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Можливо, давно відкладені амбіції потребують меншого, реального першого кроку. Перевернутий Паж Пентаклів коригує початок. Мікроскопічна версія, яка насправді відбувається, перемагає грандіозну версію, яка не відбувається."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_pentacles_career_reversed_unclear" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Bewegt sich ein Projekt voller Potenzial nicht wirklich? Der umgekehrte Page der Pentakel erwischt das ewige Versprechen. Potenzial ohne Praxis ist nur Dekoration."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Is a project full of potential not actually moving? The reversed Page of Pentacles catches the perpetual promise. Potential without practice is just decoration."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "¿Un proyecto lleno de potencial no se está moviendo realmente? La Sota de Pentáculos invertida atrapa la promesa perpetua. El potencial sin práctica es solo decoración."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Un projet plein de potentiel ne bouge-t-il pas réellement ? Le Valet de Pentacles inversé attrape la promesse perpétuelle. Le potentiel sans pratique n'est que de la décoration."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Un progetto pieno di potenziale non si sta muovendo? Il Fante di Pentacoli rovesciato coglie la promessa perpetua. Il potenziale senza pratica è solo decorazione."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "可能性に満ちたプロジェクトが実際には動いていないのか？逆位置のペンタクルのペイジは永遠の約束を捉える。実践のない可能性は単なる装飾だ。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Beveger et prosjekt fullt av potensial seg egentlig ikke? Den omvendte Page of Pentacles fanger den evige løften. Potensial uten praksis er bare dekorasjon."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Czy projekt pełen potencjału w rzeczywistości się nie porusza? Odwrócona Giermek Monet łapie wieczną obietnicę. Potencjał bez praktyki to tylko dekoracja."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Um projeto cheio de potencial não está realmente se movendo? O Pajem de Pentáculos invertido captura a promessa perpétua. Potencial sem prática é apenas decoração."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Rör sig ett projekt fullt av potential inte faktiskt? Den omvända Page of Pentacles fångar det eviga löftet. Potential utan praktik är bara dekoration."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Чи проект, сповнений потенціалу, насправді не рухається? Перевернутий Паж Пентаклів вловлює вічну обіцянку. Потенціал без практики — це просто прикраса."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_pentacles_career_upright_not_resonating" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vielleicht ist ein Einstiegsansatz für etwas Neues genau richtig. Der Page der Pentakel beginnt bescheiden. Lass die Seniorität für einen Moment fallen und lerne von Grund auf."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Perhaps an entry-level approach to something new is exactly right. The Page of Pentacles begins humbly. Drop the seniority for a moment and let yourself learn from the ground."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quizás un enfoque de nivel inicial para algo nuevo es exactamente correcto. La Sota de Pentáculos comienza humildemente. Deja la antigüedad por un momento y aprende desde cero."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Peut-être qu'une approche de niveau débutant pour quelque chose de nouveau est exactement la bonne. Le Valet de Pentacles commence humblement. Laissez de côté l'ancienneté un moment et apprenez depuis le début."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Forse un approccio entry-level a qualcosa di nuovo è esattamente giusto. Il Fante di Pentacoli inizia umilmente. Lascia perdere l'anzianità per un momento e lasciati imparare dal basso."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "おそらく新しいことへの初心者レベルのアプローチがまさに正しい。ペンタクルのペイジは謙虚に始まる。一瞬、年功序列を捨てて、基礎から学ぶことを許せ。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanskje en nybegynnertilnærming til noe nytt er akkurat riktig. Page of Pentacles begynner ydmykt. Slipp ansienniteten for et øyeblikk og la deg selv lære fra grunnen."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Być może podejście na poziomie podstawowym do czegoś nowego jest dokładnie odpowiednie. Giermek Monet zaczyna skromnie. Porzuć staż na chwilę i pozwól sobie uczyć się od podstaw."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Talvez uma abordagem de nível básico para algo novo seja exatamente certa. O Pajem de Pentáculos começa humildemente. Abandone a antiguidade por um momento e permita-se aprender do zero."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Kanske är ett instegssätt till något nytt precis rätt. Page of Pentacles börjar ödmjukt. Släpp senioriteten för ett ögonblick och låt dig själv lära från grunden."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Можливо, підхід початкового рівня до чогось нового є абсолютно правильним. Паж Пентаклів починає скромно. На мить відкиньте старшинство і дозвольте собі вчитися з основ."
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "interpretation.page_of_pentacles_career_upright_unclear" : {
+                                    "extractionState" : "manual",
+                                    "localizations" : {
+                                      "de" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Welche Fähigkeit bist du bereit zu lernen, auch wenn es schlecht läuft? Der Page der Pentakel liebt die unbeholfene Anfängerphase. Die Bereitschaft, ein Neuling zu sein, ist der erste Nachweis."
+                                        }
+                                      },
+                                      "en" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "What skill are you ready to start learning, even badly? The Page of Pentacles loves the awkward beginner phase. The willingness to be a novice is the first credential."
+                                        }
+                                      },
+                                      "es" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "¿Qué habilidad estás listo para empezar a aprender, aunque sea mal? La Sota de Pentáculos ama la fase incómoda del principiante. La disposición a ser un novato es la primera credencial."
+                                        }
+                                      },
+                                      "fr" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quelle compétence êtes-vous prêt à commencer à apprendre, même mal ? Le Valet de Pentacles aime la phase de débutant maladroit. La volonté d'être novice est le premier diplôme."
+                                        }
+                                      },
+                                      "it" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Quale abilità sei pronto a iniziare a imparare, anche male? Il Fante di Pentacoli ama la fase imbarazzante del principiante. La volontà di essere un novizio è il primo credentiale."
+                                        }
+                                      },
+                                      "ja" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "どのスキルを、たとえ下手でも学び始める準備ができているか？ペンタクルのペイジはぎこちない初心者のフェーズを愛する。初心者であることを受け入れる意志が最初の資格だ。"
+                                        }
+                                      },
+                                      "nb" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Hvilken ferdighet er du klar til å begynne å lære, selv dårlig? Page of Pentacles elsker den klønete nybegynnerfasen. Viljen til å være en nybegynner er den første kvalifikasjonen."
+                                        }
+                                      },
+                                      "pl" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Jaką umiejętność jesteś gotowy zacząć uczyć się, nawet źle? Giermek Monet kocha niezręczną fazę początkującego. Gotowość do bycia nowicjuszem jest pierwszym świadectwem."
+                                        }
+                                      },
+                                      "pt-BR" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Qual habilidade você está pronto para começar a aprender, mesmo que mal? O Pajem de Pentáculos ama a fase desconfortável do iniciante. A disposição para ser um novato é a primeira credencial."
+                                        }
+                                      },
+                                      "sv" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Vilken färdighet är du redo att börja lära dig, även dåligt? Page of Pentacles älskar den besvärliga nybörjarfasen. Viljan att vara nybörjare är den första meriten."
+                                        }
+                                      },
+                                      "uk" : {
+                                        "stringUnit" : {
+                                          "state" : "translated",
+                                          "value" : "Яку навичку ви готові почати вивчати, навіть погано? Паж Пентаклів любить незручну фазу початківця. Готовність бути новачком — це перше посвідчення."
+                                        }
+                                      }
+                                    }
+                                  },
     "interpretation.page_of_pentacles_finance_reversed_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
