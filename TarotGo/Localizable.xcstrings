@@ -183523,325 +183523,2065 @@
               }
             }
           },
-    "interpretation.death_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What in your life is ready to be composted? Death isn't tragedy — it's the necessary step for the next growth. Find what's done and let it become soil."
-          }
-        }
-      }
-    },
-    "interpretation.death_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a long denial is asking to end so healing can start. The reversed Death names what you've refused to look at. The seeing is the first step toward feeling better."
-          }
-        }
-      }
-    },
-    "interpretation.death_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you resisting a health change your body has already begun? The reversed Death shows the system in motion while the mind refuses the new terms. Catch up to what your body already knows."
-          }
-        }
-      }
-    },
-    "interpretation.death_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a transition — peri-, post-, pre- — is underway. Honor it as transformation, not malfunction. The body is moving you to a new state; assist rather than resist."
-          }
-        }
-      }
-    },
-    "interpretation.death_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What habit or coping mechanism is your body asking you to release? Death in health work is rarely catastrophic — it's the ending of what was once useful and is now in the way."
-          }
-        }
-      }
-    },
-    "interpretation.death_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe you're resisting an ending that would actually free both of you. The reversed Death asks who the holding-on is for. Sometimes the loving move is the goodbye."
-          }
-        }
-      }
-    },
-    "interpretation.death_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you holding on to a relationship that's already over in everything but name? The reversed Death insists on honesty about what's actually still alive between you. The unspoken truth is louder than you think."
-          }
-        }
-      }
-    },
-    "interpretation.death_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps an old version of this relationship is dying — but a new one is on the other side. Death transforms; it doesn't only erase. The next chapter starts when this one is allowed to finish."
-          }
-        }
-      }
-    },
-    "interpretation.death_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What aspect of how you love is asking to end so something new can begin? Death in love isn't always about leaving — sometimes it's about the version of you who showed up that needs to die so a freer one can."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe returning to an old role would actually be a step back, not security. The reversed Eight of Cups exposes the temptation to retreat. Going backward isn't safety; it's just familiar."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you hovering at the door of a job? The reversed Eight of Cups catches the prolonged threshold. Either leave or commit; the in-between costs more than either move."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the next career chapter starts with a quiet exit. The Eight of Cups doesn't slam doors; it walks. The leaving is private and resolute."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What at work do you need to leave even though it pays well? The Eight of Cups walks away from the externally enviable for the internally true. The good job that's wrong for you is still wrong."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the financial decision you keep avoiding is to stop. The reversed Eight of Cups names the unmade choice. Quitting the bad investment is sometimes the whole solution."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you flip-flopping on a financial commitment? The reversed Eight of Cups catches the indecision tax. Repeated half-leaving costs more than either staying or going."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps walking away from a money strategy is the strategy. The Eight of Cups sees that sometimes the best financial move is to stop a losing one. Cutting losses is its own kind of growth."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What financial pursuit is no longer worth what it costs you? The Eight of Cups recalculates the price. The money is real; so is what you traded to get it."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the indecision itself is what's costing you the most. The reversed Eight of Cups names the toll of suspension. Either direction is cheaper than the limbo."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where are you delaying a leaving you've already decided? The reversed Eight of Cups catches the postponed exit. The decision is made; the action is what's stalled."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps quiet departure is more honest than dramatic ending. The Eight of Cups slips out at night. The exit doesn't need an audience to count."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What are you ready to outgrow, even if it's been good? The Eight of Cups doesn't require what you leave to have been bad. Some chapters are complete while still being lovely."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a regimen has done its work and is now keeping you stuck. The reversed Eight of Cups marks the protocol that overstayed. What helped at one stage may hold you in place at the next."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you stuck deciding whether to leave a treatment? The reversed Eight of Cups catches the long debate. Make the call, even imperfectly; either choice is action."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps walking away from a routine that no longer serves is its own healing. The Eight of Cups treats leaving as medicine. The end of the wrong thing is the start of capacity for the right one."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What habit is no longer feeding you that you keep ordering? The Eight of Cups walks away from the routine that's gone empty. The familiar comfort isn't always comfort anymore."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe ambivalence is the answer. It's a no — the reversed Eight of Cups reads the indecision as the verdict. Wanting to want something isn't the same as wanting it."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you circling between staying and leaving? The reversed Eight of Cups catches the loop. The repetition itself is exhausting both of you more than a clean decision would."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps love is asking you to leave something that worked, for something that's true. The Eight of Cups doesn't promise the next chapter is better. Only that this one is over for you."
-          }
-        }
-      }
-    },
-    "interpretation.eight_of_cups_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What in this relationship is asking you to walk away from, even though it's not bad? The Eight of Cups in love is the hardest leaving — the one where you can't quite name what's wrong, except that it's no longer right."
-          }
-        }
-      }
-    },
+          "interpretation.death_general_upright_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Was in deinem Leben ist bereit, kompostiert zu werden? Der Tod ist keine Tragödie – er ist der notwendige Schritt für das nächste Wachstum. Finde, was vollendet ist, und lass es zu Erde werden."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "What in your life is ready to be composted? Death isn't tragedy — it's the necessary step for the next growth. Find what's done and let it become soil."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Qué en tu vida está listo para ser compostado? La muerte no es una tragedia, es el paso necesario para el próximo crecimiento. Encuentra lo que está terminado y deja que se convierta en tierra."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Qu'est-ce qui dans votre vie est prêt à être composté ? La mort n'est pas une tragédie — c'est l'étape nécessaire pour la prochaine croissance. Trouvez ce qui est achevé et laissez-le devenir terreau."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Cosa nella tua vita è pronto per essere compostato? La morte non è una tragedia — è il passo necessario per la prossima crescita. Trova ciò che è compiuto e lascia che diventi terra."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "あなたの人生で、堆肥化される準備ができているものは何ですか？死は悲劇ではなく、次の成長のための必要なステップです。終わったものを見つけ、それを土に変えましょう。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hva i livet ditt er klart for å bli kompostert? Døden er ikke en tragedie — det er det nødvendige steget for neste vekst. Finn det som er fullført og la det bli jord."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Co w twoim życiu jest gotowe do skompostowania? Śmierć nie jest tragedią — to konieczny krok do następnego wzrostu. Znajdź to, co się skończyło, i pozwól temu stać się ziemią."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "O que na sua vida está pronto para ser compostado? A morte não é tragédia — é o passo necessário para o próximo crescimento. Encontre o que está concluído e deixe que se torne solo."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vad i ditt liv är redo att komposteras? Döden är ingen tragedi — det är det nödvändiga steget för nästa tillväxt. Hitta vad som är avslutat och låt det bli jord."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Що у вашому житті готове до компостування? Смерть не є трагедією — це необхідний крок для наступного зростання. Знайдіть те, що завершено, і дозвольте йому стати ґрунтом."
+                    }
+                  }
+                }
+              },
+              "interpretation.death_health_reversed_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht möchte ein langes Verleugnen enden, damit Heilung beginnen kann. Der umgekehrte Tod benennt, was du nicht ansehen wolltest. Das Sehen ist der erste Schritt, um sich besser zu fühlen."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Maybe a long denial is asking to end so healing can start. The reversed Death names what you've refused to look at. The seeing is the first step toward feeling better."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Tal vez una larga negación pide terminar para que la curación pueda comenzar. La Muerte invertida nombra lo que te has negado a mirar. Ver es el primer paso para sentirse mejor."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être qu'un long déni demande à prendre fin pour que la guérison puisse commencer. La Mort inversée nomme ce que vous avez refusé de regarder. Voir est le premier pas vers un mieux-être."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse una lunga negazione chiede di finire affinché la guarigione possa iniziare. La Morte inversa nomina ciò che hai rifiutato di guardare. Il vedere è il primo passo verso il sentirsi meglio."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく長い否認が終わりを求め、癒しが始まることができるでしょう。逆位置の死神は、あなたが見ることを拒否してきたものを名指しします。見ることが、より良く感じるための第一歩です。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje en lang fornektelse ber om å ta slutt slik at helbredelse kan begynne. Den omvendte Døden navngir det du har nektet å se på. Å se er det første steget mot å føle deg bedre."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Może długie zaprzeczanie prosi o zakończenie, aby uzdrowienie mogło się rozpocząć. Odwrócona Śmierć nazywa to, czego odmawiałeś spojrzeć. Widzenie jest pierwszym krokiem do poczucia się lepiej."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez uma longa negação esteja pedindo para terminar para que a cura possa começar. A Morte invertida nomeia o que você se recusou a olhar. Ver é o primeiro passo para se sentir melhor."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske ber en lång förnekelse om att få ett slut så att läkning kan börja. Den omvända Döden namnger vad du har vägrat att se på. Att se är det första steget mot att må bättre."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, довге заперечення просить завершитися, щоб зцілення могло початися. Перевернута Смерть називає те, на що ви відмовлялися дивитися. Бачення — це перший крок до покращення самопочуття."
+                    }
+                  }
+                }
+              },
+              "interpretation.death_health_reversed_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Widerstehst du einer gesundheitlichen Veränderung, die dein Körper bereits begonnen hat? Der umgekehrte Tod zeigt das System in Bewegung, während der Geist die neuen Bedingungen ablehnt. Hol auf, was dein Körper bereits weiß."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Are you resisting a health change your body has already begun? The reversed Death shows the system in motion while the mind refuses the new terms. Catch up to what your body already knows."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Estás resistiendo un cambio de salud que tu cuerpo ya ha comenzado? La Muerte invertida muestra el sistema en movimiento mientras la mente rechaza los nuevos términos. Alcanza lo que tu cuerpo ya sabe."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Résistez-vous à un changement de santé que votre corps a déjà entamé ? La Mort inversée montre le système en mouvement tandis que l'esprit refuse les nouvelles conditions. Rattrapez ce que votre corps sait déjà."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Stai resistendo a un cambiamento di salute che il tuo corpo ha già iniziato? La Morte inversa mostra il sistema in movimento mentre la mente rifiuta i nuovi termini. Raggiungi ciò che il tuo corpo sa già."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "あなたの体がすでに始めている健康の変化に抵抗していますか？逆位置の死神は、心が新しい条件を拒否する一方で、システムが動いていることを示しています。あなたの体がすでに知っていることに追いつきましょう。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Motstår du en helseendring kroppen din allerede har begynt? Den omvendte Døden viser systemet i bevegelse mens sinnet nekter de nye vilkårene. Ta igjen det kroppen din allerede vet."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Czy opierasz się zmianie zdrowotnej, którą twoje ciało już rozpoczęło? Odwrócona Śmierć pokazuje system w ruchu, podczas gdy umysł odrzuca nowe warunki. Dogonić to, co twoje ciało już wie."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Você está resistindo a uma mudança de saúde que seu corpo já começou? A Morte invertida mostra o sistema em movimento enquanto a mente recusa os novos termos. Acompanhe o que seu corpo já sabe."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Motstår du en hälsoförändring som din kropp redan har påbörjat? Den omvända Döden visar systemet i rörelse medan sinnet vägrar de nya villkoren. Kom ikapp det din kropp redan vet."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Чи опираєтеся ви зміні здоров'я, яку ваше тіло вже розпочало? Перевернута Смерть показує систему в русі, тоді як розум відкидає нові умови. Наздоженіть те, що ваше тіло вже знає."
+                    }
+                  }
+                }
+              },
+              "interpretation.death_health_upright_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht ist ein Übergang — peri-, post-, prä- — im Gange. Ehre ihn als Transformation, nicht als Fehlfunktion. Der Körper bewegt dich in einen neuen Zustand; unterstütze statt zu widerstehen."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Perhaps a transition — peri-, post-, pre- — is underway. Honor it as transformation, not malfunction. The body is moving you to a new state; assist rather than resist."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás una transición — peri-, post-, pre- — está en curso. Honrarla como transformación, no como mal funcionamiento. El cuerpo te mueve a un nuevo estado; asiste en lugar de resistir."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être qu'une transition — péri-, post-, pré- — est en cours. Honorez-la comme une transformation, pas comme un dysfonctionnement. Le corps vous déplace vers un nouvel état ; aidez plutôt que résistez."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse una transizione — peri-, post-, pre- — è in corso. Onorala come trasformazione, non come malfunzionamento. Il corpo ti sta portando a un nuovo stato; assisti piuttosto che resistere."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく移行期 — 周産期、閉経後、準備期 — が進行中です。それを機能不全ではなく変容として尊重してください。体はあなたを新しい状態へと動かしています。抵抗するのではなく、補助してください。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje en overgang — peri-, post-, pre- — er i gang. Hedre den som transformasjon, ikke feilfunksjon. Kroppen beveger deg til en ny tilstand; hjelp heller enn å motstå."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może trwa przejście — peri-, post-, pre-. Uczcij je jako transformację, a nie nieprawidłowe działanie. Ciało przenosi cię do nowego stanu; wspomagaj, zamiast opierać się."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez uma transição — peri-, pós-, pré- — esteja em andamento. Honre-a como transformação, não como mau funcionamento. O corpo está te movendo para um novo estado; ajude em vez de resistir."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske en övergång — peri-, post-, pre- — pågår. Hedra den som transformation, inte som dysfunktion. Kroppen för dig till ett nytt tillstånd; assistera snarare än att motstå."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, перехід — пери-, пост-, пре- — триває. Шануйте його як трансформацію, а не як дисфункцію. Тіло переміщує вас у новий стан; допомагайте, а не опирайтеся."
+                    }
+                  }
+                }
+              },
+              "interpretation.death_health_upright_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Welche Gewohnheit oder Bewältigungsmechanismus bittet dein Körper dich loszulassen? Der Tod in der Gesundheitsarbeit ist selten katastrophal — es ist das Ende von etwas, das einst nützlich war und jetzt im Weg steht."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "What habit or coping mechanism is your body asking you to release? Death in health work is rarely catastrophic — it's the ending of what was once useful and is now in the way."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Qué hábito o mecanismo de afrontamiento te pide tu cuerpo que liberes? La Muerte en el trabajo de salud rara vez es catastrófica — es el final de lo que alguna vez fue útil y ahora estorba."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quelle habitude ou mécanisme d'adaptation votre corps vous demande-t-il de libérer ? La Mort dans le travail de santé est rarement catastrophique — c'est la fin de ce qui était autrefois utile et qui fait maintenant obstacle."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quale abitudine o meccanismo di adattamento il tuo corpo ti chiede di rilasciare? La Morte nel lavoro sulla salute è raramente catastrofica — è la fine di ciò che un tempo era utile e ora è d'intralcio."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "あなたの体はどの習慣や対処法を手放すように求めていますか？健康における死神はめったに壊滅的ではありません — かつて有用だったものが、今は邪魔になっていることの終わりです。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hvilken vane eller mestringsmekanisme ber kroppen din deg om å slippe? Døden i helsearbeid er sjelden katastrofal — det er slutten på det som en gang var nyttig og nå er i veien."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Jakiego nawyku lub mechanizmu radzenia sobie twoje ciało prosi cię, abyś uwolnił? Śmierć w pracy zdrowotnej rzadko jest katastrofalna — to koniec tego, co kiedyś było przydatne, a teraz przeszkadza."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Que hábito ou mecanismo de enfrentamento seu corpo está pedindo para você liberar? A Morte no trabalho de saúde raramente é catastrófica — é o fim do que antes era útil e agora está atrapalhando."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vilken vana eller copingmekanism ber din kropp dig att släppa? Döden i hälsoarbete är sällan katastrofal — det är slutet på vad som en gång var användbart och nu är i vägen."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Яку звичку чи механізм подолання ваше тіло просить вас вивільнити? Смерть у роботі зі здоров'ям рідко буває катастрофічною — це завершення того, що колись було корисним, а тепер заважає."
+                    }
+                  }
+                }
+              },
+              "interpretation.death_love_reversed_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht widerstehst du einem Ende, das euch beide tatsächlich befreien würde. Der umgekehrte Tod fragt, für wen das Festhalten ist. Manchmal ist die liebevolle Handlung der Abschied."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Maybe you're resisting an ending that would actually free both of you. The reversed Death asks who the holding-on is for. Sometimes the loving move is the goodbye."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Tal vez estás resistiendo un final que en realidad liberaría a ambos. La Muerte invertida pregunta para quién es el aferrarse. A veces, el movimiento amoroso es la despedida."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être résistez-vous à une fin qui libérerait en fait vous deux. La Mort inversée demande pour qui est l'accrochage. Parfois, le geste aimant est l'au revoir."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse stai resistendo a una fine che in realtà libererebbe entrambi. La Morte inversa chiede per chi è il trattenersi. A volte la mossa amorevole è l'addio."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらくあなたは、実際には二人を解放するであろう終わりに抵抗しています。逆位置の死神は、誰のためにしがみついているのかを問います。時には、愛の行動は別れです。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje motstår du en slutt som faktisk ville frigjort dere begge. Den omvendte Døden spør hvem det er for å holde fast. Noen ganger er den kjærlige handlingen farvel."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Może opierasz się zakończeniu, które faktycznie uwolniłoby was oboje. Odwrócona Śmierć pyta, dla kogo jest trzymanie się. Czasami miłosnym ruchem jest pożegnanie."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez você esteja resistindo a um fim que na verdade libertaria ambos. A Morte invertida pergunta para quem é o apego. Às vezes, o movimento amoroso é o adeus."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske motstår du ett slut som faktiskt skulle frigöra er båda. Den omvända Döden frågar vem hållandet är för. Ibland är den kärleksfulla handlingen adjö."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, ви опираєтеся завершенню, яке насправді звільнило б вас обох. Перевернута Смерть запитує, для кого це тримання. Іноді люблячий крок — це прощання."
+                    }
+                  }
+                }
+              },
+              "interpretation.death_love_reversed_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hältst du an einer Beziehung fest, die bereits in allem außer dem Namen vorbei ist? Der umgekehrte Tod besteht auf Ehrlichkeit darüber, was zwischen euch tatsächlich noch lebt. Die unausgesprochene Wahrheit ist lauter, als du denkst."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Are you holding on to a relationship that's already over in everything but name? The reversed Death insists on honesty about what's actually still alive between you. The unspoken truth is louder than you think."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Estás aferrándote a una relación que ya terminó en todo menos en el nombre? La Muerte invertida insiste en la honestidad sobre lo que realmente sigue vivo entre ustedes. La verdad no dicha es más fuerte de lo que piensas."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vous accrochez-vous à une relation qui est déjà terminée en tout sauf en nom ? La Mort inversée insiste sur l'honnêteté quant à ce qui est réellement encore vivant entre vous. La vérité non dite est plus forte que vous ne le pensez."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Stai trattenendo una relazione che è già finita in tutto tranne che nel nome? La Morte inversa insiste sull'onestà su ciò che è ancora vivo tra voi. La verità non detta è più forte di quanto pensi."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "名前以外はすべて終わっている関係にしがみついていますか？逆位置の死神は、あなたたちの間で実際にまだ生きているものについての正直さを主張します。言われていない真実はあなたが思うよりも大きな声を持っています。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Holder du fast i et forhold som allerede er over i alt annet enn navnet? Den omvendte Døden insisterer på ærlighet om hva som faktisk fortsatt lever mellom dere. Den usagte sannheten er høyere enn du tror."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Czy trzymasz się związku, który już się skończył we wszystkim oprócz nazwy? Odwrócona Śmierć nalega na uczciwość wobec tego, co faktycznie jeszcze żyje między wami. Niewypowiedziana prawda jest głośniejsza, niż myślisz."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Você está se agarrando a um relacionamento que já acabou em tudo, exceto no nome? A Morte invertida insiste na honestidade sobre o que ainda está vivo entre vocês. A verdade não dita é mais alta do que você pensa."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Håller du fast i en relation som redan är över i allt utom namnet? Den omvända Döden insisterar på ärlighet om vad som faktiskt fortfarande lever mellan er. Den outsagda sanningen är högre än du tror."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Чи тримаєтеся ви за стосунки, які вже закінчилися в усьому, крім назви? Перевернута Смерть наполягає на чесності щодо того, що насправді ще живе між вами. Невисловлена правда голосніша, ніж ви думаєте."
+                    }
+                  }
+                }
+              },
+              "interpretation.death_love_upright_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht stirbt eine alte Version dieser Beziehung — aber eine neue ist auf der anderen Seite. Der Tod transformiert; er löscht nicht nur aus. Das nächste Kapitel beginnt, wenn dieses zu Ende gehen darf."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Perhaps an old version of this relationship is dying — but a new one is on the other side. Death transforms; it doesn't only erase. The next chapter starts when this one is allowed to finish."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás una versión antigua de esta relación está muriendo — pero una nueva está al otro lado. La Muerte transforma; no solo borra. El próximo capítulo comienza cuando a este se le permite terminar."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être qu'une ancienne version de cette relation est en train de mourir — mais une nouvelle est de l'autre côté. La Mort transforme ; elle n'efface pas seulement. Le prochain chapitre commence quand celui-ci est autorisé à se terminer."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse una vecchia versione di questa relazione sta morendo — ma una nuova è dall'altra parte. La Morte trasforma; non solo cancella. Il prossimo capitolo inizia quando a questo è permesso di finire."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらくこの関係の古いバージョンが死につつあります — しかし新しいものがその向こう側にあります。死神は変容させます。消し去るだけではありません。次の章は、この章が終わることを許されたときに始まります。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje en gammel versjon av dette forholdet er i ferd med å dø — men en ny er på den andre siden. Døden transformerer; den sletter ikke bare. Neste kapittel begynner når dette får lov til å avsluttes."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może stara wersja tego związku umiera — ale nowa jest po drugiej stronie. Śmierć przekształca; nie tylko wymazuje. Następny rozdział zaczyna się, gdy ten może się zakończyć."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez uma versão antiga deste relacionamento esteja morrendo — mas uma nova está do outro lado. A Morte transforma; não apenas apaga. O próximo capítulo começa quando este tem permissão para terminar."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske en gammal version av denna relation håller på att dö — men en ny finns på andra sidan. Döden transformerar; den raderar inte bara. Nästa kapitel börjar när detta får avslutas."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, стара версія цих стосунків вмирає — але нова знаходиться з іншого боку. Смерть трансформує; вона не просто стирає. Наступний розділ починається, коли цьому дозволено завершитися."
+                    }
+                  }
+                }
+              },
+              "interpretation.death_love_upright_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Welcher Aspekt deiner Liebe bittet darum, zu enden, damit etwas Neues beginnen kann? Der Tod in der Liebe bedeutet nicht immer Verlassen — manchmal ist es die Version von dir, die aufgetaucht ist, die sterben muss, damit eine freiere kommen kann."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "What aspect of how you love is asking to end so something new can begin? Death in love isn't always about leaving — sometimes it's about the version of you who showed up that needs to die so a freer one can."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Qué aspecto de cómo amas está pidiendo terminar para que algo nuevo pueda comenzar? La Muerte en el amor no siempre se trata de irse — a veces se trata de la versión de ti que apareció y que necesita morir para que pueda una más libre."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quel aspect de la façon dont vous aimez demande à se terminer pour que quelque chose de nouveau puisse commencer ? La Mort en amour n'est pas toujours une question de départ — parfois, c'est la version de vous qui s'est présentée qui doit mourir pour qu'une plus libre puisse."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quale aspetto di come ami chiede di finire affinché qualcosa di nuovo possa iniziare? La Morte in amore non significa sempre lasciare — a volte è la versione di te che si è presentata che deve morire affinché una più libera possa."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "あなたの愛し方のどの側面が、何か新しいものが始まるために終わることを求めていますか？愛における死神は、必ずしも去ることではありません — 時には、現れたあなたのバージョンが死に、より自由なものが現れる必要があるのです。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hvilket aspekt av hvordan du elsker ber om å ta slutt slik at noe nytt kan begynne? Døden i kjærlighet handler ikke alltid om å forlate — noen ganger handler det om versjonen av deg som dukket opp som trenger å dø slik at en friere kan."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Jaki aspekt tego, jak kochasz, prosi o zakończenie, aby coś nowego mogło się rozpocząć? Śmierć w miłości nie zawsze oznacza odejście — czasami chodzi o wersję ciebie, która się pojawiła, która musi umrzeć, aby mogła pojawić się wolniejsza."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Que aspecto de como você ama está pedindo para terminar para que algo novo possa começar? A Morte no amor nem sempre é sobre partir — às vezes é sobre a versão de você que apareceu e que precisa morrer para que uma mais livre possa."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vilken aspekt av hur du älskar ber om att få ett slut så att något nytt kan börja? Döden i kärlek handlar inte alltid om att lämna — ibland handlar det om versionen av dig som dök upp som behöver dö så att en friare kan."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Який аспект того, як ви любите, просить завершитися, щоб щось нове могло початися? Смерть у коханні не завжди означає відхід — іноді це версія вас, яка з'явилася, яка повинна померти, щоб могла з'явитися вільніша."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_career_reversed_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht wäre eine Rückkehr in eine alte Rolle tatsächlich ein Schritt zurück, keine Sicherheit. Die umgekehrte Acht der Kelche enthüllt die Versuchung des Rückzugs. Rückwärtsgehen ist keine Sicherheit; es ist nur vertraut."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Maybe returning to an old role would actually be a step back, not security. The reversed Eight of Cups exposes the temptation to retreat. Going backward isn't safety; it's just familiar."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás volver a un rol antiguo sería en realidad un paso atrás, no seguridad. El Ocho de Copas invertido expone la tentación de retirarse. Retroceder no es seguridad; es solo familiar."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être que retourner à un ancien rôle serait en fait un pas en arrière, pas une sécurité. Le Huit de Coupes inversé expose la tentation de se retirer. Reculer n'est pas la sécurité ; c'est juste familier."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse tornare a un vecchio ruolo sarebbe in realtà un passo indietro, non sicurezza. L'Otto di Coppe invertito espone la tentazione di ritirarsi. Andare indietro non è sicurezza; è solo familiare."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく古い役割に戻ることは、実際には安全ではなく、後退となるでしょう。逆位置のカップの8は、撤退への誘惑を露呈します。後退は安全ではなく、ただ慣れ親しんでいるだけです。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje det å vende tilbake til en gammel rolle faktisk ville være et skritt tilbake, ikke sikkerhet. Den omvendte Åtte av Begre avslører fristelsen til å trekke seg tilbake. Å gå bakover er ikke sikkerhet; det er bare kjent."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może powrót do starej roli byłby faktycznie krokiem wstecz, a nie bezpieczeństwem. Odwrócona Ósemka Kielichów ujawnia pokusę wycofania się. Cofanie się nie jest bezpieczeństwem; to tylko znajomość."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez voltar a um papel antigo seria na verdade um passo atrás, não segurança. O Oito de Copas invertido expõe a tentação de recuar. Voltar não é segurança; é apenas familiar."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske skulle en återgång till en gammal roll faktiskt vara ett steg tillbaka, inte säkerhet. Den omvända Åttan av Bägare avslöjar frestelsen att dra sig tillbaka. Att gå bakåt är inte säkerhet; det är bara bekant."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, повернення до старої ролі насправді було б кроком назад, а не безпекою. Перевернута Вісімка Кубків викриває спокусу відступити. Рух назад — це не безпека; це просто звичність."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_career_reversed_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Schwebst du an der Tür eines Jobs? Die umgekehrte Acht der Kelche erfasst die verlängerte Schwelle. Entweder geh oder bleib; der Zwischenzustand kostet mehr als beide Entscheidungen."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Are you hovering at the door of a job? The reversed Eight of Cups catches the prolonged threshold. Either leave or commit; the in-between costs more than either move."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Estás flotando en la puerta de un trabajo? El Ocho de Copas invertido captura el umbral prolongado. O te vas o te comprometes; el punto intermedio cuesta más que cualquiera de las dos opciones."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Flottez-vous à la porte d'un emploi ? Le Huit de Coupes inversé capture le seuil prolongé. Soit partez, soit engagez-vous ; l'entre-deux coûte plus cher que l'un ou l'autre mouvement."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Stai fluttuando sulla porta di un lavoro? L'Otto di Coppe invertito cattura la soglia prolungata. O parti o ti impegni; la via di mezzo costa più di entrambe le mosse."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "仕事の入り口で迷っていますか？逆位置のカップの8は、長引く敷居を捉えます。去るか、コミットするか。その中間は、どちらの選択肢よりもコストがかかります。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hengler du ved døren til en jobb? Den omvendte Åtte av Begre fanger den langvarige terskelen. Enten gå eller forplikt deg; mellomtilstanden koster mer enn begge valgene."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Czy krążysz u drzwi pracy? Odwrócona Ósemka Kielichów wychwytuje przedłużający się próg. Albo odejdź, albo się zaangażuj; stan pośredni kosztuje więcej niż którakolwiek z tych opcji."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Você está pairando na porta de um emprego? O Oito de Copas invertido captura o limiar prolongado. Ou saia ou se comprometa; o meio-termo custa mais do que qualquer uma das opções."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Svävar du vid dörren till ett jobb? Den omvända Åttan av Bägare fångar den långvariga tröskeln. Antingen lämna eller engagera dig; mellanläget kostar mer än båda alternativen."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Ви затримуєтесь біля дверей роботи? Перевернута Вісімка Кубків фіксує затягнутий поріг. Або йдіть, або зобов'язуйтесь; проміжний стан коштує більше, ніж будь-який із цих кроків."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_career_upright_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht beginnt das nächste Karriere-Kapitel mit einem leisen Ausstieg. Die Acht der Kelche knallt keine Türen zu; sie geht. Das Verlassen ist privat und entschlossen."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Perhaps the next career chapter starts with a quiet exit. The Eight of Cups doesn't slam doors; it walks. The leaving is private and resolute."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás el próximo capítulo profesional comienza con una salida silenciosa. El Ocho de Copas no cierra puertas de golpe; camina. La partida es privada y resuelta."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être que le prochain chapitre de carrière commence par une sortie silencieuse. Le Huit de Coupes ne claque pas les portes ; il marche. Le départ est privé et résolu."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse il prossimo capitolo della carriera inizia con un'uscita silenziosa. L'Otto di Coppe non sbatte le porte; cammina. L'addio è privato e risoluto."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく次のキャリアの章は、静かな出口から始まります。カップの8はドアをバタンと閉めません。歩いていきます。その退出は私的で断固としたものです。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje neste karrierekapittel begynner med en stille utgang. Åtte av Begre smeller ikke dører; den går. Avgangen er privat og resolutt."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może następny rozdział kariery zaczyna się od cichego wyjścia. Ósemka Kielichów nie trzaska drzwiami; odchodzi. Odejście jest prywatne i stanowcze."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez o próximo capítulo da carreira comece com uma saída silenciosa. O Oito de Copas não bate portas; ele caminha. A partida é privada e resoluta."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske nästa karriärkapitel börjar med en tyst utgång. Åttan av Bägare smäller inte dörrar; den går. Lämnandet är privat och beslutsamt."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, наступний розділ кар'єри починається з тихого виходу. Вісімка Кубків не грюкає дверима; вона йде. Вихід є приватним і рішучим."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_career_upright_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Was bei der Arbeit musst du verlassen, auch wenn es gut bezahlt wird? Die Acht der Kelche geht weg von dem, was äußerlich beneidenswert ist, für das, was innerlich wahr ist. Der gute Job, der falsch für dich ist, bleibt falsch."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "What at work do you need to leave even though it pays well? The Eight of Cups walks away from the externally enviable for the internally true. The good job that's wrong for you is still wrong."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Qué en el trabajo necesitas dejar aunque pague bien? El Ocho de Copas se aleja de lo externamente envidiable por lo internamente verdadero. El buen trabajo que no es para ti sigue siendo incorrecto."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Qu'est-ce qui, au travail, devez-vous quitter même si cela paie bien ? Le Huit de Coupes s'éloigne de ce qui est extérieurement enviable pour ce qui est intérieurement vrai. Le bon travail qui ne vous convient pas reste mauvais."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Cosa al lavoro devi lasciare anche se paga bene? L'Otto di Coppe si allontana dall'esternamente invidiabile per l'internamente vero. Il buon lavoro che non fa per te rimane sbagliato."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "仕事で、給料が良くても何を離れる必要がありますか？カップの8は、外から見て羨ましいものから、内面の真実のために離れます。あなたに合わない良い仕事は、やはり間違っています。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hva på jobben trenger du å forlate selv om det betaler godt? Åtte av Begre går bort fra det eksternt misunnelsesverdige for det internt sanne. Den gode jobben som er feil for deg, er fortsatt feil."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Co w pracy musisz zostawić, nawet jeśli dobrze płaci? Ósemka Kielichów odchodzi od tego, co zewnętrznie godne pozazdroszczenia, dla tego, co wewnętrznie prawdziwe. Dobra praca, która jest dla ciebie zła, nadal jest zła."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "O que no trabalho você precisa deixar mesmo que pague bem? O Oito de Copas se afasta do externamente invejável pelo internamente verdadeiro. O bom trabalho que é errado para você continua errado."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vad på jobbet behöver du lämna även om det betalar bra? Åttan av Bägare går bort från det utåt avundsvärda för det inåt sanna. Det goda jobbet som är fel för dig är fortfarande fel."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Що на роботі вам потрібно залишити, навіть якщо це добре оплачується? Вісімка Кубків відходить від зовнішньо бажаного заради внутрішньо істинного. Хороша робота, яка не підходить вам, все одно є неправильною."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_finance_reversed_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht ist die finanzielle Entscheidung, die du immer wieder vermeidest, zu stoppen. Die umgekehrte Acht der Kelche benennt die ungetroffene Wahl. Die schlechte Investition aufzugeben, ist manchmal die ganze Lösung."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Maybe the financial decision you keep avoiding is to stop. The reversed Eight of Cups names the unmade choice. Quitting the bad investment is sometimes the whole solution."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás la decisión financiera que sigues evitando es detenerte. El Ocho de Copas invertido nombra la decisión no tomada. Abandonar la mala inversión es a veces toda la solución."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être que la décision financière que vous continuez à éviter est d'arrêter. Le Huit de Coupes inversé nomme le choix non fait. Quitter le mauvais investissement est parfois toute la solution."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse la decisione finanziaria che continui a evitare è fermarsi. L'Otto di Coppe invertito nomina la scelta non fatta. Abbandonare il cattivo investimento è a volte l'intera soluzione."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらくあなたが避け続けている財務上の決断は、止めることです。逆位置のカップの8は、まだされていない選択を名指しします。悪い投資をやめることが、時には完全な解決策です。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje den økonomiske avgjørelsen du fortsatt unngår, er å stoppe. Den omvendte Åtte av Begre navngir det ugjorte valget. Å slutte med den dårlige investeringen er noen ganger hele løsningen."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może decyzja finansowa, której ciągle unikasz, to zatrzymanie się. Odwrócona Ósemka Kielichów nazywa niewybraną opcję. Porzucenie złej inwestycji jest czasami całym rozwiązaniem."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez a decisão financeira que você continua evitando seja parar. O Oito de Copas invertido nomeia a escolha não feita. Sair do mau investimento é às vezes toda a solução."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske det ekonomiska beslutet du fortsätter att undvika är att sluta. Den omvända Åttan av Bägare namnger det ogjorda valet. Att sluta med den dåliga investeringen är ibland hela lösningen."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, фінансове рішення, яке ви продовжуєте уникати, — це зупинитися. Перевернута Вісімка Кубків називає незроблений вибір. Відмова від поганої інвестиції іноді є цілим рішенням."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_finance_reversed_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Schwankst du bei einer finanziellen Verpflichtung hin und her? Die umgekehrte Acht der Kelche erfasst die Steuer der Unentschlossenheit. Wiederholtes Halb-Verlassen kostet mehr als entweder Bleiben oder Gehen."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Are you flip-flopping on a financial commitment? The reversed Eight of Cups catches the indecision tax. Repeated half-leaving costs more than either staying or going."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Estás dudando en un compromiso financiero? El Ocho de Copas invertido captura el impuesto de la indecisión. La mitad de la salida repetida cuesta más que quedarse o irse."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hésitez-vous sur un engagement financier ? Le Huit de Coupes inversé capture la taxe d'indécision. Un départ à moitié répété coûte plus cher que rester ou partir."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Stai tentennando su un impegno finanziario? L'Otto di Coppe invertito cattura la tassa dell'indecisione. Il ripetuto mezzo-abbandono costa più che restare o andare."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "財政的な約束で迷っていますか？逆位置のカップの8は、優柔不断の代償を捉えます。繰り返される中途半端な離脱は、留まるか去るかのどちらよりもコストがかかります。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vingler du på en økonomisk forpliktelse? Den omvendte Åtte av Begre fanger ubesluttsomhetsskatten. Gjentatt halv-forlate koster mer enn enten å bli eller gå."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Czy wahasz się w kwestii zobowiązania finansowego? Odwrócona Ósemka Kielichów wychwytuje podatek od niezdecydowania. Powtarzające się pół-odejście kosztuje więcej niż pozostanie lub odejście."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Você está hesitando em um compromisso financeiro? O Oito de Copas invertido captura o imposto da indecisão. Sair pela metade repetidamente custa mais do que ficar ou ir."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vacklar du i ett ekonomiskt åtagande? Den omvända Åttan av Bägare fångar obeslutsamhetsskatten. Upprepad halv-lämnande kostar mer än att stanna eller gå."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Ви вагаєтесь щодо фінансового зобов'язання? Перевернута Вісімка Кубків фіксує податок на нерішучість. Повторюваний напіввихід коштує більше, ніж залишитися чи піти."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_finance_upright_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht ist das Weggehen von einer Geldstrategie die Strategie. Die Acht der Kelche sieht, dass manchmal der beste finanzielle Schritt darin besteht, eine Verluststrategie zu stoppen. Verluste zu begrenzen ist eine eigene Art von Wachstum."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Perhaps walking away from a money strategy is the strategy. The Eight of Cups sees that sometimes the best financial move is to stop a losing one. Cutting losses is its own kind of growth."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás alejarse de una estrategia monetaria es la estrategia. El Ocho de Copas ve que a veces la mejor jugada financiera es detener una perdedora. Cortar pérdidas es su propio tipo de crecimiento."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être que s'éloigner d'une stratégie financière est la stratégie. Le Huit de Coupes voit que parfois, le meilleur mouvement financier est d'arrêter une stratégie perdante. Couper les pertes est une forme de croissance en soi."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse allontanarsi da una strategia finanziaria è la strategia. L'Otto di Coppe vede che a volte la migliore mossa finanziaria è fermare una strategia in perdita. Tagliare le perdite è un tipo di crescita a sé stante."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく、お金の戦略から離れることが戦略です。カップの8は、時には最善の財務戦略は損失を出すものを止めることだと見ています。損失を切ることは、それ自体が成長の一種です。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje det å gå bort fra en pengestrategi er strategien. Åtte av Begre ser at noen ganger er det beste økonomiske trekket å stoppe en tapsstrategi. Å kutte tap er sin egen form for vekst."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może odejście od strategii pieniężnej jest strategią. Ósemka Kielichów widzi, że czasami najlepszym posunięciem finansowym jest zatrzymanie przynoszącej straty. Cięcie strat jest własnym rodzajem wzrostu."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez se afastar de uma estratégia financeira seja a estratégia. O Oito de Copas vê que às vezes a melhor jogada financeira é parar uma estratégia perdedora. Cortar perdas é seu próprio tipo de crescimento."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske att gå bort från en pengastrategi är strategin. Åttan av Bägare ser att ibland är det bästa ekonomiska draget att stoppa en förlorande. Att skära förluster är sin egen typ av tillväxt."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, відхід від фінансової стратегії є стратегією. Вісімка Кубків бачить, що іноді найкращий фінансовий крок — це зупинити збиткову стратегію. Скорочення збитків — це власний вид зростання."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_finance_upright_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Welche finanzielle Verfolgung ist nicht mehr wert, was sie dich kostet? Die Acht der Kelche berechnet den Preis neu. Das Geld ist real; ebenso das, was du dafür eingetauscht hast."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "What financial pursuit is no longer worth what it costs you? The Eight of Cups recalculates the price. The money is real; so is what you traded to get it."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Qué búsqueda financiera ya no vale lo que te cuesta? El Ocho de Copas recalcula el precio. El dinero es real; también lo es lo que intercambiaste para obtenerlo."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quelle poursuite financière ne vaut plus ce qu'elle vous coûte ? Le Huit de Coupes recalcule le prix. L'argent est réel ; tout comme ce que vous avez échangé pour l'obtenir."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quale ricerca finanziaria non vale più ciò che ti costa? L'Otto di Coppe ricalcola il prezzo. Il denaro è reale; così è ciò che hai scambiato per ottenerlo."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "どの財務上の追求が、もはやそのコストに見合わなくなっていますか？カップの8は価格を再計算します。お金は現実的です。それを得るためにあなたが犠牲にしたものも同様に現実的です。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hvilken økonomisk bestrebelse er ikke lenger verdt det det koster deg? Åtte av Begre regner om prisen. Pengene er ekte; det er også det du byttet for å få dem."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Jaka finansowa pogoń nie jest już warta tego, co cię kosztuje? Ósemka Kielichów przelicza cenę. Pieniądze są realne; tak samo jak to, co wymieniłeś, aby je zdobyć."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Qual busca financeira não vale mais o que custa para você? O Oito de Copas recalcula o preço. O dinheiro é real; assim como o que você trocou para obtê-lo."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vilken ekonomisk strävan är inte längre värd vad den kostar dig? Åttan av Bägare räknar om priset. Pengarna är verkliga; det är också vad du bytte för att få dem."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Яке фінансове прагнення більше не варте того, що воно вам коштує? Вісімка Кубків перераховує ціну. Гроші реальні; так само реальне те, чим ви обмінялися, щоб їх отримати."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_general_reversed_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht ist die Unentschlossenheit selbst das, was dich am meisten kostet. Die umgekehrte Acht der Kelche benennt den Tribut des Schwebezustands. Jede Richtung ist billiger als das Limbo."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Maybe the indecision itself is what's costing you the most. The reversed Eight of Cups names the toll of suspension. Either direction is cheaper than the limbo."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás la indecisión en sí misma es lo que más te está costando. El Ocho de Copas invertido nombra el costo de la suspensión. Cualquier dirección es más barata que el limbo."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être que l'indécision elle-même est ce qui vous coûte le plus. Le Huit de Coupes inversé nomme le tribut de la suspension. Chaque direction est moins chère que le limbes."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse l'indecisione stessa è ciò che ti costa di più. L'Otto di Coppe invertito nomina il tributo della sospensione. Entrambe le direzioni costano meno del limbo."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく優柔不断そのものが、あなたに最もコストをかけているものです。逆位置のカップの8は、保留状態の代償を名指しします。どちらの方向でも、中途半端な状態よりはコストがかかりません。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje ubesluttsomheten i seg selv er det som koster deg mest. Den omvendte Åtte av Begre navngir tollen av suspensjon. Begge retninger er billigere enn limbo."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może samo niezdecydowanie kosztuje cię najwięcej. Odwrócona Ósemka Kielichów nazywa koszt zawieszenia. Każdy kierunek jest tańszy niż stan zawieszenia."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez a própria indecisão seja o que está custando mais para você. O Oito de Copas invertido nomeia o custo da suspensão. Qualquer direção é mais barata que o limbo."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske obeslutsamheten i sig är det som kostar dig mest. Den omvända Åttan av Bägare namnger kostnaden för uppskov. Båda riktningarna är billigare än limbo."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, сама нерішучість коштує вам найбільше. Перевернута Вісімка Кубків називає ціну підвішеного стану. Будь-який напрямок дешевший, ніж стан невизначеності."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_general_reversed_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Wo verzögerst du einen Abschied, den du bereits beschlossen hast? Die umgekehrte Acht der Kelche erfasst den verschobenen Ausstieg. Die Entscheidung ist getroffen; das Handeln ist es, was stockt."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Where are you delaying a leaving you've already decided? The reversed Eight of Cups catches the postponed exit. The decision is made; the action is what's stalled."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Dónde estás retrasando una salida que ya has decidido? El Ocho de Copas invertido captura la salida pospuesta. La decisión está tomada; la acción es lo que está estancada."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Où retarde-tu un départ que tu as déjà décidé ? Le Huit de Coupes inversé capture la sortie reportée. La décision est prise ; c'est l'action qui est bloquée."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Dove stai ritardando una partenza che hai già deciso? L'Otto di Coppe invertito cattura l'uscita posticipata. La decisione è presa; l'azione è ciò che è bloccata."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "どこで、すでに決めた退出を遅らせていますか？逆位置のカップの8は、延期された出口を捉えます。決断は下されています。行動が停滞しているのです。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hvor utsetter du en avgang du allerede har bestemt deg for? Den omvendte Åtte av Begre fanger den utsatte utgangen. Beslutningen er tatt; handlingen er det som står fast."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Gdzie opóźniasz odejście, które już zdecydowałeś? Odwrócona Ósemka Kielichów wychwytuje odroczone wyjście. Decyzja zapadła; działanie jest tym, co utknęło."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Onde você está atrasando uma saída que já decidiu? O Oito de Copas invertido captura a saída adiada. A decisão está tomada; a ação é o que está parada."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Var fördröjer du ett lämnande du redan bestämt dig för? Den omvända Åttan av Bägare fångar den uppskjutna utgången. Beslutet är fattat; handlingen är vad som står stilla."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Де ви затримуєте вихід, який вже вирішили? Перевернута Вісімка Кубків фіксує відкладений вихід. Рішення прийняте; дія — це те, що зупинилося."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_general_upright_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht ist stilles Verlassen ehrlicher als dramatisches Ende. Die Acht der Kelche schlüpft nachts hinaus. Der Ausgang braucht kein Publikum, um zu zählen."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Perhaps quiet departure is more honest than dramatic ending. The Eight of Cups slips out at night. The exit doesn't need an audience to count."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás la partida silenciosa es más honesta que el final dramático. El Ocho de Copas se escapa de noche. La salida no necesita audiencia para contar."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être qu'un départ silencieux est plus honnête qu'une fin dramatique. Le Huit de Coupes s'éclipse la nuit. La sortie n'a pas besoin d'un public pour compter."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse la partenza silenziosa è più onesta della fine drammatica. L'Otto di Coppe scivola via di notte. L'uscita non ha bisogno di un pubblico per contare."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく静かな旅立ちは、劇的な結末よりも正直です。カップの8は夜にこっそりと去ります。出口が意味を持つために観客は必要ありません。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje stille avgang er mer ærlig enn dramatisk slutt. Åtte av Begre smyger seg ut om natten. Utgangen trenger ikke et publikum for å telle."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może ciche odejście jest bardziej uczciwe niż dramatyczne zakończenie. Ósemka Kielichów wymyka się nocą. Wyjście nie potrzebuje publiczności, aby się liczyło."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez a partida silenciosa seja mais honesta do que o fim dramático. O Oito de Copas escapa à noite. A saída não precisa de plateia para contar."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske är tyst avfärd mer ärlig än dramatiska slut. Åttan av Bägare smyger ut på natten. Avfärden behöver ingen publik för att räknas."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, тихий відхід є чеснішим, ніж драматичне завершення. Вісімка Кубків вислизає вночі. Вихід не потребує глядачів, щоб мати значення."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_general_upright_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Was bist du bereit zu überwachsen, auch wenn es gut war? Die Acht der Kelche erfordert nicht, dass das, was du verlässt, schlecht war. Manche Kapitel sind vollständig, während sie noch schön sind."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "What are you ready to outgrow, even if it's been good? The Eight of Cups doesn't require what you leave to have been bad. Some chapters are complete while still being lovely."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Qué estás listo para superar, aunque haya sido bueno? El Ocho de Copas no requiere que lo que dejes haya sido malo. Algunos capítulos están completos aunque sigan siendo hermosos."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Qu'êtes-vous prêt à dépasser, même si cela a été bon ? Le Huit de Coupes n'exige pas que ce que vous quittez ait été mauvais. Certains chapitres sont complets tout en étant encore beaux."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Cosa sei pronto a superare, anche se è stato positivo? L'Otto di Coppe non richiede che ciò che lasci sia stato cattivo. Alcuni capitoli sono completi pur essendo ancora belli."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "たとえそれが良かったとしても、何を超える準備ができていますか？カップの8は、あなたが去るものが悪かったことを要求しません。いくつかの章は、まだ素晴らしいものでありながら、完結しています。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hva er du klar til å vokse fra, selv om det har vært bra? Åtte av Begre krever ikke at det du forlater har vært dårlig. Noen kapitler er fullstendige mens de fortsatt er vakre."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Co jesteś gotów przerosnąć, nawet jeśli było dobre? Ósemka Kielichów nie wymaga, aby to, co zostawiasz, było złe. Niektóre rozdziały są kompletne, choć nadal piękne."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "O que você está pronto para superar, mesmo que tenha sido bom? O Oito de Copas não exige que o que você deixa tenha sido ruim. Alguns capítulos estão completos mesmo sendo ainda encantadores."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vad är du redo att växa ifrån, även om det har varit bra? Åttan av Bägare kräver inte att det du lämnar har varit dåligt. Vissa kapitel är kompletta medan de fortfarande är vackra."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Що ви готові перерости, навіть якщо це було добре? Вісімка Кубків не вимагає, щоб те, що ви залишаєте, було поганим. Деякі розділи завершені, хоча все ще прекрасні."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_health_reversed_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht hat ein Regime seine Arbeit getan und hält dich nun fest. Die umgekehrte Acht der Kelche markiert das Protokoll, das überdauert hat. Was in einer Phase half, kann dich an der nächsten Stelle festhalten."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Maybe a regimen has done its work and is now keeping you stuck. The reversed Eight of Cups marks the protocol that overstayed. What helped at one stage may hold you in place at the next."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás un régimen ha hecho su trabajo y ahora te mantiene estancado. El Ocho de Copas invertido marca el protocolo que se quedó más tiempo del debido. Lo que ayudó en una etapa puede mantenerte en su lugar en la siguiente."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être qu'un régime a fait son travail et vous maintient maintenant bloqué. Le Huit de Coupes inversé marque le protocole qui est resté trop longtemps. Ce qui a aidé à un stade peut vous maintenir en place au suivant."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse un regime ha fatto il suo lavoro e ora ti tiene bloccato. L'Otto di Coppe invertito segna il protocollo che è rimasto troppo a lungo. Ciò che ha aiutato in una fase può tenerti fermo nella successiva."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく、ある治療法が役割を果たし、今はあなたを停滞させています。逆位置のカップの8は、居残ったプロトコルを示します。ある段階で役立ったものが、次の段階であなたを縛ることがあります。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje et regime har gjort jobben sin og holder deg nå fast. Den omvendte Åtte av Begre markerer protokollen som ble for lenge. Det som hjalp på ett stadium kan holde deg på plass på det neste."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może reżim wykonał swoje zadanie i teraz trzyma cię w miejscu. Odwrócona Ósemka Kielichów oznacza protokół, który został zbyt długo. To, co pomogło na jednym etapie, może cię zatrzymać na następnym."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez um regime tenha feito seu trabalho e agora esteja te mantendo preso. O Oito de Copas invertido marca o protocolo que ficou além do tempo. O que ajudou em um estágio pode te prender no próximo."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske en regim har gjort sitt jobb och håller dig nu fast. Den omvända Åttan av Bägare markerar protokollet som stannade för länge. Det som hjälpte i ett skede kan hålla dig kvar på nästa."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, режим виконав свою роботу і тепер тримає вас у пастці. Перевернута Вісімка Кубків позначає протокол, який залишився надовго. Те, що допомогло на одному етапі, може утримувати вас на наступному."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_health_reversed_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Steckst du fest bei der Entscheidung, ob du eine Behandlung verlassen sollst? Die umgekehrte Acht der Kelche erfasst die lange Debatte. Triff die Entscheidung, auch wenn sie unvollkommen ist; jede Wahl ist eine Handlung."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Are you stuck deciding whether to leave a treatment? The reversed Eight of Cups catches the long debate. Make the call, even imperfectly; either choice is action."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Estás atascado decidiendo si dejar un tratamiento? El Ocho de Copas invertido captura el largo debate. Toma la decisión, aunque sea imperfecta; cualquier elección es acción."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Êtes-vous bloqué à décider si vous devez quitter un traitement ? Le Huit de Coupes inversé capture le long débat. Prenez la décision, même imparfaite ; chaque choix est une action."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Sei bloccato nel decidere se lasciare un trattamento? L'Otto di Coppe invertito cattura il lungo dibattito. Prendi la decisione, anche imperfetta; entrambe le scelte sono azione."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "治療をやめるかどうかの決断で行き詰まっていますか？逆位置のカップの8は、長い議論を捉えます。不完全でも決断を下してください。どちらの選択も行動です。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Står du fast i å bestemme om du skal forlate en behandling? Den omvendte Åtte av Begre fanger den lange debatten. Ta avgjørelsen, selv ufullkommen; begge valg er handling."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Czy utknąłeś w podejmowaniu decyzji o zaprzestaniu leczenia? Odwrócona Ósemka Kielichów wychwytuje długą debatę. Podejmij decyzję, nawet niedoskonałą; każdy wybór to działanie."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Você está preso decidindo se deve abandonar um tratamento? O Oito de Copas invertido captura o longo debate. Tome a decisão, mesmo imperfeita; qualquer escolha é ação."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Fastnar du i att bestämma om du ska lämna en behandling? Den omvända Åttan av Bägare fångar den långa debatten. Fatta beslutet, även ofullkomligt; båda valen är handling."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Ви застрягли, вирішуючи, чи залишити лікування? Перевернута Вісімка Кубків фіксує довгу дискусію. Прийміть рішення, навіть недосконале; будь-який вибір є дією."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_health_upright_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht ist das Weggehen von einer Routine, die nicht mehr dient, eine eigene Heilung. Die Acht der Kelche behandelt das Verlassen als Medizin. Das Ende des Falschen ist der Beginn der Kapazität für das Richtige."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Perhaps walking away from a routine that no longer serves is its own healing. The Eight of Cups treats leaving as medicine. The end of the wrong thing is the start of capacity for the right one."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás alejarse de una rutina que ya no sirve es su propia curación. El Ocho de Copas trata la partida como medicina. El final de lo incorrecto es el comienzo de la capacidad para lo correcto."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être que s'éloigner d'une routine qui ne sert plus est une guérison en soi. Le Huit de Coupes traite le départ comme un médicament. La fin de la mauvaise chose est le début de la capacité pour la bonne."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse allontanarsi da una routine che non serve più è di per sé una guarigione. L'Otto di Coppe tratta l'andarsene come medicina. La fine della cosa sbagliata è l'inizio della capacità per quella giusta."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく、もう役に立たないルーティンから離れることが、それ自体が癒しです。カップの8は、去ることを薬として扱います。間違ったことの終わりは、正しいことへの能力の始まりです。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje det å gå bort fra en rutine som ikke lenger tjener er sin egen helbredelse. Åtte av Begre behandler avgang som medisin. Slutten på det gale er starten på kapasitet for det rette."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może odejście od rutyny, która już nie służy, jest samo w sobie uzdrowieniem. Ósemka Kielichów traktuje odejście jako lekarstwo. Koniec złej rzeczy jest początkiem zdolności do dobrej."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez se afastar de uma rotina que não serve mais seja sua própria cura. O Oito de Copas trata a partida como remédio. O fim da coisa errada é o início da capacidade para a certa."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske är det att gå bort från en rutin som inte längre tjänar sin egen läkning. Åttan av Bägare behandlar lämnandet som medicin. Slutet på det felaktiga är början på kapacitet för det rätta."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, відхід від рутини, яка більше не служить, є власним зціленням. Вісімка Кубків ставиться до виходу як до ліків. Кінець неправильного — це початок здатності до правильного."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_health_upright_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Welche Gewohnheit nährt dich nicht mehr, die du weiterhin bestellst? Die Acht der Kelche geht von der Routine weg, die leer geworden ist. Der vertraute Komfort ist nicht immer noch Komfort."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "What habit is no longer feeding you that you keep ordering? The Eight of Cups walks away from the routine that's gone empty. The familiar comfort isn't always comfort anymore."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Qué hábito ya no te alimenta y sigues pidiendo? El Ocho de Copas se aleja de la rutina que se ha vaciado. La comodidad familiar ya no siempre es comodidad."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quelle habitude ne vous nourrit plus et que vous continuez à commander ? Le Huit de Coupes s'éloigne de la routine qui est devenue vide. Le confort familier n'est pas toujours encore du confort."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quale abitudine non ti nutre più e continui a ordinare? L'Otto di Coppe si allontana dalla routine che è diventata vuota. Il comfort familiare non è sempre più comfort."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "もうあなたを満たしていないのに、注文し続けている習慣は何ですか？カップの8は、空になってしまったルーティンから離れていきます。慣れ親しんだ快適さは、必ずしも快適ではなくなります。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hvilken vane mater deg ikke lenger som du fortsetter å bestille? Åtte av Begre går bort fra rutinen som har blitt tom. Den kjente komforten er ikke alltid komfort lenger."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Jaki nawyk już cię nie odżywia, a ty nadal go zamawiasz? Ósemka Kielichów odchodzi od rutyny, która stała się pusta. Znany komfort nie zawsze jest już komfortem."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Que hábito não está mais te alimentando e você continua mantendo? O Oito de Copas se afasta da rotina que ficou vazia. O conforto familiar nem sempre é mais conforto."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vilken vana matar dig inte längre som du fortsätter att beställa? Åttan av Bägare går bort från rutinen som blivit tom. Den välbekanta komforten är inte alltid komfort längre."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Яка звичка більше не живить вас, а ви продовжуєте її дотримуватися? Вісімка Кубків відходить від рутини, яка спорожніла. Звичний комфорт не завжди є комфортом."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_love_reversed_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht ist die Ambivalenz die Antwort. Es ist ein Nein — die umgekehrte Acht der Kelche liest die Unentschlossenheit als Urteil. Etwas wollen zu wollen, ist nicht dasselbe wie es zu wollen."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Maybe ambivalence is the answer. It's a no — the reversed Eight of Cups reads the indecision as the verdict. Wanting to want something isn't the same as wanting it."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás la ambivalencia es la respuesta. Es un no — el Ocho de Copas invertido lee la indecisión como el veredicto. Querer querer algo no es lo mismo que quererlo."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être que l'ambivalence est la réponse. C'est un non — le Huit de Coupes inversé lit l'indécision comme le verdict. Vouloir vouloir quelque chose n'est pas la même chose que le vouloir."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse l'ambivalenza è la risposta. È un no — l'Otto di Coppe invertito legge l'indecisione come il verdetto. Voler desiderare qualcosa non è lo stesso che volerlo."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく両価性が答えです。それはノーです — 逆位置のカップの8は、優柔不断を評決として読み取ります。何かを望みたいと思うことは、それを望むことと同じではありません。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje ambivalens er svaret. Det er et nei — den omvendte Åtte av Begre leser ubesluttsomheten som dommen. Å ville ønske noe er ikke det samme som å ønske det."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może ambiwalencja jest odpowiedzią. To nie — odwrócona Ósemka Kielichów odczytuje niezdecydowanie jako werdykt. Chcieć czegoś chcieć to nie to samo, co tego chcieć."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez a ambivalência seja a resposta. É um não — o Oito de Copas invertido lê a indecisão como o veredito. Querer querer algo não é o mesmo que querer."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske är ambivalens svaret. Det är ett nej — den omvända Åttan av Bägare läser obeslutsamheten som domen. Att vilja vilja ha något är inte samma sak som att vilja ha det."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, амбівалентність є відповіддю. Це ні — перевернута Вісімка Кубків читає нерішучість як вердикт. Бажати хотіти чогось — це не те саме, що хотіти цього."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_love_reversed_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kreist du zwischen Bleiben und Gehen? Die umgekehrte Acht der Kelche erfasst die Schleife. Die Wiederholung selbst erschöpft euch beide mehr als eine klare Entscheidung."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Are you circling between staying and leaving? The reversed Eight of Cups catches the loop. The repetition itself is exhausting both of you more than a clean decision would."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Estás dando vueltas entre quedarte e irte? El Ocho de Copas invertido captura el bucle. La repetición en sí misma agota a ambos más de lo que lo haría una decisión clara."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Tournez-vous en rond entre rester et partir ? Le Huit de Coupes inversé capture la boucle. La répétition elle-même épuise plus vous deux qu'une décision claire ne le ferait."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Stai girando in tondo tra restare e andare? L'Otto di Coppe invertito cattura il ciclo. La ripetizione stessa esaurisce entrambi più di quanto farebbe una decisione chiara."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "留まることと去ることの間をぐるぐる回っていますか？逆位置のカップの8は、そのループを捉えます。その繰り返し自体が、明確な決断よりも二人を疲弊させます。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Sirkler du mellom å bli og å forlate? Den omvendte Åtte av Begre fanger løkken. Repetisjonen i seg selv utmatter dere begge mer enn en klar avgjørelse ville gjort."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Czy krążysz między pozostaniem a odejściem? Odwrócona Ósemka Kielichów wychwytuje pętlę. Samo powtarzanie wyczerpuje was oboje bardziej niż podjęcie jasnej decyzji."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Você está circulando entre ficar e ir? O Oito de Copas invertido captura o ciclo. A repetição em si exaure ambos mais do que uma decisão clara faria."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Cirkulerar du mellan att stanna och lämna? Den omvända Åttan av Bägare fångar slingan. Upprepningen i sig utmattar er båda mer än ett rent beslut skulle göra."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Ви кружляєте між тим, щоб залишитися і піти? Перевернута Вісімка Кубків фіксує це коло. Саме повторення виснажує обох більше, ніж чітке рішення."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_love_upright_not_resonating" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vielleicht bittet die Liebe dich, etwas zu verlassen, das funktioniert hat, für etwas, das wahr ist. Die Acht der Kelche verspricht nicht, dass das nächste Kapitel besser ist. Nur dass dieses für dich vorbei ist."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Perhaps love is asking you to leave something that worked, for something that's true. The Eight of Cups doesn't promise the next chapter is better. Only that this one is over for you."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Quizás el amor te pide que dejes algo que funcionaba, por algo que es verdad. El Ocho de Copas no promete que el próximo capítulo sea mejor. Solo que este se acabó para ti."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Peut-être que l'amour vous demande de quitter quelque chose qui a fonctionné, pour quelque chose qui est vrai. Le Huit de Coupes ne promet pas que le prochain chapitre est meilleur. Seulement que celui-ci est fini pour vous."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Forse l'amore ti chiede di lasciare qualcosa che funzionava, per qualcosa che è vero. L'Otto di Coppe non promette che il prossimo capitolo sia migliore. Solo che questo è finito per te."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "おそらく愛は、あなたに機能していたものを離れ、真実のものを求めるよう求めています。カップの8は、次の章がより良いことを約束しません。ただ、この章があなたにとって終わったことだけを伝えます。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanskje ber kjærligheten deg om å forlate noe som fungerte, for noe som er sant. Åtte av Begre lover ikke at neste kapittel er bedre. Bare at dette er over for deg."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Być może miłość prosi cię, abyś zostawił coś, co działało, dla czegoś, co jest prawdziwe. Ósemka Kielichów nie obiecuje, że następny rozdział będzie lepszy. Tylko że ten się dla ciebie skończył."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Talvez o amor esteja pedindo para você deixar algo que funcionava, por algo que é verdade. O Oito de Copas não promete que o próximo capítulo seja melhor. Apenas que este acabou para você."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Kanske ber kärleken dig att lämna något som fungerade, för något som är sant. Åttan av Bägare lovar inte att nästa kapitel är bättre. Bara att detta är över för dig."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Можливо, любов просить вас залишити те, що працювало, заради того, що є істинним. Вісімка Кубків не обіцяє, що наступний розділ буде кращим. Тільки те, що цей для вас закінчений."
+                    }
+                  }
+                }
+              },
+              "interpretation.eight_of_cups_love_upright_unclear" : {
+                "extractionState" : "manual",
+                "localizations" : {
+                  "de" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Was in dieser Beziehung bittet dich, wegzugehen, auch wenn es nicht schlecht ist? Die Acht der Kelche in der Liebe ist der schwerste Abschied — der, bei dem du nicht genau benennen kannst, was falsch ist, außer dass es nicht mehr richtig ist."
+                    }
+                  },
+                  "en" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "What in this relationship is asking you to walk away from, even though it's not bad? The Eight of Cups in love is the hardest leaving — the one where you can't quite name what's wrong, except that it's no longer right."
+                    }
+                  },
+                  "es" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "¿Qué en esta relación te pide que te alejes, aunque no sea mala? El Ocho de Copas en el amor es la partida más difícil — aquella en la que no puedes nombrar exactamente lo que está mal, excepto que ya no está bien."
+                    }
+                  },
+                  "fr" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Qu'est-ce qui, dans cette relation, vous demande de vous éloigner, même si ce n'est pas mauvais ? Le Huit de Coupes en amour est le départ le plus difficile — celui où vous ne pouvez pas tout à fait nommer ce qui ne va pas, sauf que ce n'est plus juste."
+                    }
+                  },
+                  "it" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Cosa in questa relazione ti chiede di allontanarti, anche se non è negativa? L'Otto di Coppe in amore è la partenza più difficile — quella in cui non riesci a dare un nome a ciò che non va, tranne che non è più giusto."
+                    }
+                  },
+                  "ja" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "この関係の中で、悪くはないけれども何が離れるように求めていますか？愛におけるカップの8は、最も難しい別れです — 何が間違っているのかはっきりとは言えないけれど、もう正しくないという別れです。"
+                    }
+                  },
+                  "nb" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Hva i dette forholdet ber deg om å gå bort fra, selv om det ikke er dårlig? Åtte av Begre i kjærlighet er den vanskeligste avgangen — den der du ikke helt kan navngi hva som er galt, bortsett fra at det ikke lenger er riktig."
+                    }
+                  },
+                  "pl" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Co w tym związku prosi cię, abyś odszedł, nawet jeśli nie jest zły? Ósemka Kielichów w miłości to najtrudniejsze odejście — takie, w którym nie do końca potrafisz nazwać, co jest nie tak, poza tym, że to już nie jest właściwe."
+                    }
+                  },
+                  "pt-BR" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "O que neste relacionamento está pedindo para você se afastar, mesmo que não seja ruim? O Oito de Copas no amor é a partida mais difícil — aquela em que você não consegue nomear exatamente o que está errado, exceto que não é mais certo."
+                    }
+                  },
+                  "sv" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Vad i denna relation ber dig att gå ifrån, även om det inte är dåligt? Åttan av Bägare i kärlek är den svåraste avfärden — den där du inte riktigt kan sätta ord på vad som är fel, förutom att det inte längre är rätt."
+                    }
+                  },
+                  "uk" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "Що в цих стосунках просить вас відійти, навіть якщо це не погано? Вісімка Кубків у коханні — це найважчий відхід — той, де ви не можете точно назвати, що не так, окрім того, що це більше не правильно."
+                    }
+                  }
+                }
+              },
     "interpretation.eight_of_pentacles_career_reversed_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
