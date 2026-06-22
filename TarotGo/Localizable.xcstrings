@@ -234431,149 +234431,930 @@
                                                                   }
                                                                 }
                                                               },
-    "interpretation.seven_of_swords_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a financial truth being concealed somewhere? The Seven of Swords suspects the unexamined drawer. Open it; the hidden number often explains the unexplained mood."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a long deception is breaking down. Let it — the reversed Seven of Swords doesn't shore up the falsehood. Some collapses are mercies."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What hidden thing is becoming visible? The reversed Seven of Swords lifts the concealment. The information surfacing is more valuable than the comfort of the hidden version."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the indirect approach is wisdom, not avoidance. The Seven of Swords reframes the side door as legitimate. The straight confrontation isn't always the wisest one."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is sleight of hand — yours or theirs — in play? The Seven of Swords notes the trick being run. Decide whether to call it or play along, knowingly."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe denial has run out and the next step is treatment. The reversed Seven of Swords closes the door on pretending. The honesty becomes the entry to repair."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a health truth being acknowledged at last? The reversed Seven of Swords ends the avoidance. The acknowledgement is the beginning of the treatment."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a workaround for a symptom is masking the cause. The Seven of Swords' cleverness can hide what should be treated. Look behind the coping."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What about your health are you not telling anyone — including yourself? The Seven of Swords keeps the symptom secret. The silence is part of what keeps the issue alive."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe what was concealed is being returned. The reversed Seven of Swords undoes the theft. What was taken — trust, attention, energy — has a chance to come back."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a hidden truth coming out in love? The reversed Seven of Swords brings the secret forward. Decide how to respond rather than how to suppress it."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a strategic move in love is wiser than a confrontation. The Seven of Swords allows for finesse. Direct isn't always the most caring choice."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What in this relationship is being kept hidden, by either side? The Seven of Swords tracks the curated version. The unspoken thing is often louder than the spoken."
-          }
-        }
-      }
-    },
+                                                              "interpretation.seven_of_swords_finance_upright_unclear" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Wird irgendwo eine finanzielle Wahrheit verborgen? Die Sieben der Schwerter ahnt die ungeprüfte Schublade. Öffne sie; die verborgene Zahl erklärt oft die unerklärliche Stimmung."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Is a financial truth being concealed somewhere? The Seven of Swords suspects the unexamined drawer. Open it; the hidden number often explains the unexplained mood."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "¿Se está ocultando una verdad financiera en algún lugar? El Siete de Espadas sospecha del cajón no examinado. Ábrelo; el número oculto a menudo explica el estado de ánimo inexplicable."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Une vérité financière est-elle cachée quelque part ? Le Sept d'Épées soupçonne le tiroir inexploré. Ouvrez-le ; le chiffre caché explique souvent l'humeur inexpliquée."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Una verità finanziaria è nascosta da qualche parte? Il Sette di Spade sospetta del cassetto non esaminato. Aprilo; il numero nascosto spesso spiega l'umore inspiegabile."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "どこかに経済的な真実が隠されているのでしょうか？ セブン・オブ・ソードは、調べられていない引き出しを疑います。開けてみてください。隠された数字が、説明のつかない気分を説明してくれることがよくあります。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Er en finansiell sannhet skjult et sted? Syv av sverd mistenker den uundersøkte skuffen. Åpne den; det skjulte tallet forklarer ofte det uforklarlige humøret."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Czy gdzieś ukrywa się finansowa prawda? Siedem Mieczy podejrzewa niezbadaną szufladę. Otwórz ją; ukryta liczba często wyjaśnia niewytłumaczalny nastrój."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Uma verdade financeira está sendo ocultada em algum lugar? O Sete de Espadas suspeita da gaveta não examinada. Abra-a; o número oculto muitas vezes explica o humor inexplicável."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Döljs en ekonomisk sanning någonstans? Svärdens sju misstänker den oundersökta lådan. Öppna den; det dolda numret förklarar ofta det oförklarliga humöret."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Чи десь прихована фінансова правда? Сімка Мечів підозрює недосліджену шухляду. Відкрийте її; приховане число часто пояснює незрозумілий настрій."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_general_reversed_not_resonating" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vielleicht bricht eine lange Täuschung zusammen. Lass es zu – die umgekehrte Sieben der Schwerter stützt die Lüge nicht. Manche Zusammenbrüche sind Gnaden."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Maybe a long deception is breaking down. Let it — the reversed Seven of Swords doesn't shore up the falsehood. Some collapses are mercies."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Quizás un largo engaño se está desmoronando. Déjalo: el Siete de Espadas invertido no apuntala la falsedad. Algunos colapsos son misericordias."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Peut-être qu'une longue tromperie s'effondre. Laissez faire – le Sept d'Épées inversé ne soutient pas le mensonge. Certains effondrements sont des bénédictions."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Forse un lungo inganno si sta sgretolando. Lascia che sia – il Sette di Spade rovesciato non sostiene la menzogna. Alcuni crolli sono misericordie."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "もしかすると、長い欺瞞が崩れようとしているのかもしれません。そのままにしておきましょう。逆位置のセブン・オブ・ソードは虚偽を支えません。ある種の崩壊は慈悲です。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanskje en lang bedrag bryter sammen. La det skje – omvendt syv av sverd støtter ikke opp om løgnen. Noen sammenbrudd er barmhjertighet."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Być może długie oszustwo się rozpada. Pozwól na to – odwrócona Siódemka Mieczy nie podtrzymuje fałszu. Niektóre upadki są łaską."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Talvez um longo engano esteja se desfazendo. Deixe estar – o Sete de Espadas invertido não sustenta a falsidade. Alguns colapsos são misericórdias."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanske håller ett långvarigt bedrägeri på att bryta samman. Låt det ske – den omvända Svärdens sju stöttar inte upp lögnen. Vissa sammanbrott är nåd."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Можливо, довгий обман руйнується. Нехай так – перевернута Сімка Мечів не підтримує неправду. Деякі крахи – це милість."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_general_reversed_unclear" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Was wird sichtbar, das verborgen war? Die umgekehrte Sieben der Schwerter hebt die Verschleierung auf. Die Information, die auftaucht, ist wertvoller als der Trost der verborgenen Version."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "What hidden thing is becoming visible? The reversed Seven of Swords lifts the concealment. The information surfacing is more valuable than the comfort of the hidden version."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "¿Qué cosa oculta se está volviendo visible? El Siete de Espadas invertido levanta el encubrimiento. La información que surge es más valiosa que la comodidad de la versión oculta."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Quelle chose cachée devient visible ? Le Sept d'Épées inversé lève le voile. L'information qui émerge est plus précieuse que le confort de la version cachée."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Quale cosa nascosta sta diventando visibile? Il Sette di Spade rovesciato rimuove la celata. L'informazione che emerge è più preziosa del conforto della versione nascosta."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "どんな隠されたものが可視化されようとしているのでしょうか？ 逆位置のセブン・オブ・ソードは隠蔽を持ち上げます。表面化する情報は、隠されたバージョンの心地よさよりも価値があります。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Hvilken skjult ting blir synlig? Omvendt syv av sverd løfter skjulingen. Informasjonen som dukker opp er mer verdifull enn trøsten i den skjulte versjonen."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Jaka ukryta rzecz staje się widoczna? Odwrócona Siódemka Mieczy uchyla zasłonę. Informacja, która wypływa na powierzchnię, jest cenniejsza niż wygoda ukrytej wersji."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Que coisa oculta está se tornando visível? O Sete de Espadas invertido levanta o ocultamento. A informação que vem à tona é mais valiosa do que o conforto da versão oculta."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vilken dold sak blir synlig? Den omvända Svärdens sju lyfter på hemlighetsmakeriet. Informationen som kommer fram är mer värdefull än bekvämligheten med den dolda versionen."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Яка прихована річ стає видимою? Перевернута Сімка Мечів знімає приховування. Інформація, що спливає, є ціннішою, ніж комфорт прихованої версії."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_general_upright_not_resonating" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vielleicht ist der indirekte Ansatz Weisheit, nicht Vermeidung. Die Sieben der Schwerter definiert den Seiteneingang als legitim um. Die direkte Konfrontation ist nicht immer die weiseste."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Perhaps the indirect approach is wisdom, not avoidance. The Seven of Swords reframes the side door as legitimate. The straight confrontation isn't always the wisest one."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Quizás el enfoque indirecto es sabiduría, no evitación. El Siete de Espadas replantea la puerta lateral como legítima. La confrontación directa no siempre es la más sabia."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Peut-être que l'approche indirecte est de la sagesse, pas de l'évitement. Le Sept d'Épées recadre la porte dérobée comme légitime. La confrontation directe n'est pas toujours la plus sage."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Forse l'approccio indiretto è saggezza, non evitamento. Il Sette di Spade ridefinisce la porta laterale come legittima. Il confronto diretto non è sempre il più saggio."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "おそらく、間接的なアプローチは回避ではなく知恵です。セブン・オブ・ソードは脇道を正当なものとして再定義します。真っ向からの対決が常に最も賢明であるとは限りません。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanskje den indirekte tilnærmingen er visdom, ikke unngåelse. Syv av sverd omformer sideinngangen som legitim. Den direkte konfrontasjonen er ikke alltid den klokeste."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Być może pośrednie podejście jest mądrością, a nie unikaniem. Siódemka Mieczy przekonuje, że boczne drzwi są uzasadnione. Bezpośrednia konfrontacja nie zawsze jest najmądrzejsza."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Talvez a abordagem indireta seja sabedoria, não evitação. O Sete de Espadas reformula a porta lateral como legítima. A confrontação direta nem sempre é a mais sábia."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanske är det indirekta tillvägagångssättet visdom, inte undvikande. Svärdens sju omformulerar sidoingången som legitim. Den raka konfrontationen är inte alltid den klokaste."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Можливо, непрямий підхід – це мудрість, а не уникнення. Сімка Мечів переосмислює бічний вхід як законний. Пряма конфронтація не завжди є наймудрішою."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_general_upright_unclear" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Wo ist Taschenspielerei – deine oder ihre – im Spiel? Die Sieben der Schwerter bemerkt den Trick, der gespielt wird. Entscheide, ob du ihn benennen oder wissentlich mitspielen willst."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Where is sleight of hand — yours or theirs — in play? The Seven of Swords notes the trick being run. Decide whether to call it or play along, knowingly."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "¿Dónde está el juego de manos, tuyo o de ellos, en juego? El Siete de Espadas nota el truco que se está ejecutando. Decide si denunciarlo o seguir la corriente, a sabiendas."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Où y a-t-il un tour de passe-passe – le vôtre ou le leur – en jeu ? Le Sept d'Épées remarque la manigance en cours. Décidez de la dénoncer ou de jouer le jeu, en connaissance de cause."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Dove è in gioco un gioco di prestigio – tuo o loro? Il Sette di Spade nota il trucco in atto. Decidi se smascherarlo o giocare, consapevolmente."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "どこで手品（あなたのものか、彼らのものか）が行われているのでしょうか？ セブン・オブ・ソードは仕掛けられているトリックに気づきます。それを指摘するか、知った上で乗るかを決めてください。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Hvor er det lureri – ditt eller deres – på gang? Syv av sverd noterer trikset som utføres. Bestem om du vil avsløre det eller spille med, vitende."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Gdzie w grze jest sztuczka – twoja czy ich? Siódemka Mieczy dostrzega wykonywaną sztuczkę. Zdecyduj, czy ją ujawnić, czy grać dalej, świadomie."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Onde está o jogo de prestidigitação – seu ou deles – em ação? O Sete de Espadas percebe o truque que está sendo feito. Decida se vai denunciá-lo ou participar, conscientemente."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Var är det fingerfärdighet – din eller deras – på gång? Svärdens sju noterar tricket som utförs. Bestäm om du ska avslöja det eller spela med, medvetet."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Де в грі є спритність рук – ваша чи їхня? Сімка Мечів помічає трюк, який виконується. Вирішіть, чи викрити його, чи грати разом, знаючи."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_health_reversed_not_resonating" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vielleicht ist die Verleugnung erschöpft und der nächste Schritt ist die Behandlung. Die umgekehrte Sieben der Schwerter schließt die Tür zum Vortäuschen. Die Ehrlichkeit wird zum Eintritt in die Reparatur."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Maybe denial has run out and the next step is treatment. The reversed Seven of Swords closes the door on pretending. The honesty becomes the entry to repair."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Quizás la negación se ha agotado y el siguiente paso es el tratamiento. El Siete de Espadas invertido cierra la puerta a la simulación. La honestidad se convierte en la entrada a la reparación."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Peut-être que le déni a atteint ses limites et que la prochaine étape est le traitement. Le Sept d'Épées inversé ferme la porte au simulacre. L'honnêteté devient la voie vers la réparation."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Forse la negazione è finita e il passo successivo è il trattamento. Il Sette di Spade rovesciato chiude la porta alla finzione. L'onestà diventa l'ingresso alla riparazione."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "もしかすると、否認は尽き、次のステップは治療かもしれません。逆位置のセブン・オブ・ソードは、偽りのふりをするドアを閉めます。正直さが修復への入り口となります。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanskje fornektelse har tatt slutt og neste steg er behandling. Omvendt syv av sverd lukker døren for å late som. Ærlighet blir inngangen til reparasjon."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Być może zaprzeczanie się skończyło, a następnym krokiem jest leczenie. Odwrócona Siódemka Mieczy zamyka drzwi do udawania. Uczciwość staje się wejściem do naprawy."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Talvez a negação tenha se esgotado e o próximo passo seja o tratamento. O Sete de Espadas invertido fecha a porta para o fingimento. A honestidade se torna a entrada para a reparação."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanske har förnekandet tagit slut och nästa steg är behandling. Den omvända Svärdens sju stänger dörren för låtsas. Ärligheten blir ingången till reparation."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Можливо, заперечення вичерпалося, і наступним кроком є лікування. Перевернута Сімка Мечів закриває двері для вдавання. Чесність стає входом до відновлення."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_health_reversed_unclear" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Wird endlich eine gesundheitliche Wahrheit anerkannt? Die umgekehrte Sieben der Schwerter beendet das Ausweichen. Die Anerkennung ist der Beginn der Behandlung."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Is a health truth being acknowledged at last? The reversed Seven of Swords ends the avoidance. The acknowledgement is the beginning of the treatment."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "¿Se está reconociendo por fin una verdad sobre la salud? El Siete de Espadas invertido termina con la evasión. El reconocimiento es el comienzo del tratamiento."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Une vérité sur la santé est-elle enfin reconnue ? Le Sept d'Épées inversé met fin à l'évitement. La reconnaissance est le début du traitement."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Una verità sulla salute viene finalmente riconosciuta? Il Sette di Spade rovesciato mette fine all'evitamento. Il riconoscimento è l'inizio del trattamento."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "健康に関する真実がようやく認められようとしているのでしょうか？ 逆位置のセブン・オブ・ソードは回避を終わらせます。認識することが治療の始まりです。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Blir en helsesannhet endelig erkjent? Omvendt syv av sverd avslutter unngåelsen. Erkjennelsen er begynnelsen på behandlingen."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Czy prawda o zdrowiu jest wreszcie uznawana? Odwrócona Siódemka Mieczy kończy unikanie. Uznanie jest początkiem leczenia."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Uma verdade sobre a saúde está sendo finalmente reconhecida? O Sete de Espadas invertido acaba com a evitação. O reconhecimento é o início do tratamento."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Erkänns en hälso-sannning äntligen? Den omvända Svärdens sju avslutar undvikandet. Erkännandet är början på behandlingen."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Чи нарешті визнається правда про здоров'я? Перевернута Сімка Мечів припиняє уникнення. Визнання – це початок лікування."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_health_upright_not_resonating" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vielleicht verschleiert ein Workaround für ein Symptom die Ursache. Die Cleverness der Sieben der Schwerter kann verbergen, was behandelt werden sollte. Schau hinter die Bewältigung."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Perhaps a workaround for a symptom is masking the cause. The Seven of Swords' cleverness can hide what should be treated. Look behind the coping."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Quizás un recurso para un síntoma está enmascarando la causa. La astucia del Siete de Espadas puede ocultar lo que debería tratarse. Mira más allá del afrontamiento."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Peut-être qu'une solution de contournement pour un symptôme masque la cause. L'ingéniosité du Sept d'Épées peut cacher ce qui devrait être traité. Regardez au-delà de l'adaptation."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Forse un espediente per un sintomo sta mascherando la causa. L'astuzia del Sette di Spade può nascondere ciò che dovrebbe essere curato. Guarda oltre l'adattamento."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "おそらく、症状に対する回避策が原因を隠しているのでしょう。セブン・オブ・ソードの賢さは、治療されるべきものを隠してしまいます。対処法の背後を見てください。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanskje en omvei for et symptom maskerer årsaken. Syv av sverds list kan skjule det som burde behandles. Se bak mestringen."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Być może obejście objawu maskuje przyczynę. Spryt Siódemki Mieczy może ukryć to, co powinno być leczone. Spójrz poza radzenie sobie."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Talvez uma solução alternativa para um sintoma esteja mascarando a causa. A astúcia do Sete de Espadas pode esconder o que deveria ser tratado. Olhe além do enfrentamento."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanske döljer en kringgående lösning för ett symptom orsaken. Svärdens sjus listighet kan dölja vad som borde behandlas. Se bortom hanteringen."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Можливо, обхідний шлях для симптома маскує причину. Хитрість Сімки Мечів може приховати те, що слід лікувати. Подивіться за межі подолання."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_health_upright_unclear" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Was an deiner Gesundheit erzählst du niemandem – auch dir selbst nicht? Die Sieben der Schwerter hält das Symptom geheim. Das Schweigen ist Teil dessen, was das Problem am Leben erhält."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "What about your health are you not telling anyone — including yourself? The Seven of Swords keeps the symptom secret. The silence is part of what keeps the issue alive."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "¿Qué de tu salud no le estás contando a nadie, ni siquiera a ti mismo? El Siete de Espadas mantiene el síntoma en secreto. El silencio es parte de lo que mantiene vivo el problema."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Qu'est-ce que vous ne dites à personne – pas même à vous-même – à propos de votre santé ? Le Sept d'Épées garde le symptôme secret. Le silence fait partie de ce qui maintient le problème en vie."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Cosa della tua salute non stai dicendo a nessuno – incluso a te stesso? Il Sette di Spade tiene segreto il sintomo. Il silenzio è parte di ciò che mantiene vivo il problema."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "あなたの健康について、誰にも（自分自身にも）話していないことは何ですか？ セブン・オブ・ソードは症状を秘密にします。沈黙は問題を生かし続けるものの一部です。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Hva om helsen din forteller du ingen – inkludert deg selv? Syv av sverd holder symptomet hemmelig. Stillheten er en del av det som holder problemet i live."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Czego o swoim zdrowiu nie mówisz nikomu – w tym sobie? Siódemka Mieczy utrzymuje objaw w tajemnicy. Cisza jest częścią tego, co podtrzymuje problem."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "O que sobre sua saúde você não está contando a ninguém – incluindo a si mesmo? O Sete de Espadas mantém o sintoma em segredo. O silêncio é parte do que mantém o problema vivo."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vad om din hälsa berättar du inte för någon – inklusive dig själv? Svärdens sju håller symptomet hemligt. Tystnaden är en del av det som håller problemet vid liv."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Що про своє здоров'я ви нікому не розповідаєте – навіть собі? Сімка Мечів тримає симптом у таємниці. Мовчання є частиною того, що підтримує проблему."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_love_reversed_not_resonating" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vielleicht wird das, was verborgen war, zurückgegeben. Die umgekehrte Sieben der Schwerter macht den Diebstahl rückgängig. Was genommen wurde – Vertrauen, Aufmerksamkeit, Energie – hat eine Chance, zurückzukommen."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Maybe what was concealed is being returned. The reversed Seven of Swords undoes the theft. What was taken — trust, attention, energy — has a chance to come back."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Quizás lo que estaba oculto está siendo devuelto. El Siete de Espadas invertido deshace el robo. Lo que fue tomado (confianza, atención, energía) tiene la oportunidad de regresar."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Peut-être que ce qui était caché est en train d'être rendu. Le Sept d'Épées inversé annule le vol. Ce qui a été pris – la confiance, l'attention, l'énergie – a une chance de revenir."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Forse ciò che era nascosto sta venendo restituito. Il Sette di Spade rovesciato annulla il furto. Ciò che è stato preso – fiducia, attenzione, energia – ha una possibilità di tornare."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "もしかすると、隠されていたものが返還されようとしているのかもしれません。逆位置のセブン・オブ・ソードは盗みを元に戻します。奪われたもの（信頼、注意、エネルギー）は戻ってくるチャンスがあります。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanskje det som ble skjult blir returnert. Omvendt syv av sverd angrer tyveriet. Det som ble tatt – tillit, oppmerksomhet, energi – har en sjanse til å komme tilbake."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Być może to, co było ukryte, wraca. Odwrócona Siódemka Mieczy cofa kradzież. To, co zostało zabrane – zaufanie, uwaga, energia – ma szansę wrócić."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Talvez o que estava oculto esteja sendo devolvido. O Sete de Espadas invertido desfaz o roubo. O que foi tirado – confiança, atenção, energia – tem a chance de voltar."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanske återlämnas det som dolts. Den omvända Svärdens sju ogör stölden. Det som togs – förtroende, uppmärksamhet, energi – har en chans att komma tillbaka."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Можливо, те, що було приховано, повертається. Перевернута Сімка Мечів скасовує крадіжку. Те, що було забрано – довіра, увага, енергія – має шанс повернутися."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_love_reversed_unclear" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kommt eine verborgene Wahrheit in der Liebe ans Licht? Die umgekehrte Sieben der Schwerter bringt das Geheimnis nach vorne. Entscheide, wie du reagieren willst, anstatt es zu unterdrücken."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Is a hidden truth coming out in love? The reversed Seven of Swords brings the secret forward. Decide how to respond rather than how to suppress it."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "¿Está saliendo a la luz una verdad oculta en el amor? El Siete de Espadas invertido saca el secreto a la luz. Decide cómo responder en lugar de cómo suprimirlo."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Une vérité cachée émerge-t-elle en amour ? Le Sept d'Épées inversé fait avancer le secret. Décidez comment y répondre plutôt que comment le supprimer."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Una verità nascosta sta venendo fuori in amore? Il Sette di Spade rovesciato porta il segreto in avanti. Decidi come rispondere piuttosto che come sopprimerlo."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "恋愛において隠された真実が明らかになろうとしていますか？ 逆位置のセブン・オブ・ソードは秘密を表面化させます。それを抑圧する方法ではなく、どう応答するかを決めてください。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kommer en skjult sannhet frem i kjærlighet? Omvendt syv av sverd bringer hemmeligheten frem. Bestem hvordan du skal svare heller enn hvordan du skal undertrykke den."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Czy ukryta prawda wychodzi na jaw w miłości? Odwrócona Siódemka Mieczy wydobywa sekret na światło dzienne. Zdecyduj, jak zareagować, a nie jak go stłumić."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Uma verdade oculta está vindo à tona no amor? O Sete de Espadas invertido traz o segredo adiante. Decida como responder, em vez de como suprimi-lo."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kommer en dold sanning fram i kärleken? Den omvända Svärdens sju för hemligheten framåt. Bestäm hur du ska svara snarare än hur du ska undertrycka den."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Чи виходить прихована правда в коханні? Перевернута Сімка Мечів виводить таємницю назовні. Вирішіть, як відповісти, а не як її придушити."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_love_upright_not_resonating" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vielleicht ist ein strategischer Schachzug in der Liebe klüger als eine Konfrontation. Die Sieben der Schwerter erlaubt Fingerspitzengefühl. Direkt ist nicht immer die fürsorglichste Wahl."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Perhaps a strategic move in love is wiser than a confrontation. The Seven of Swords allows for finesse. Direct isn't always the most caring choice."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Quizás un movimiento estratégico en el amor es más sabio que una confrontación. El Siete de Espadas permite el tacto. Lo directo no siempre es la opción más cariñosa."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Peut-être qu'une manœuvre stratégique en amour est plus sage qu'une confrontation. Le Sept d'Épées autorise la finesse. La franchise n'est pas toujours le choix le plus attentionné."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Forse una mossa strategica in amore è più saggia di un confronto. Il Sette di Spade permette il tatto. La via diretta non è sempre la scelta più affettuosa."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "おそらく、恋愛における戦略的な動きは、対決よりも賢明です。セブン・オブ・ソードは巧妙さを許容します。直接的であることが常に最も思いやりのある選択とは限りません。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanskje et strategisk trekk i kjærlighet er klokere enn en konfrontasjon. Syv av sverd tillater finfølelse. Direkte er ikke alltid det mest omsorgsfulle valget."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Być może strategiczne posunięcie w miłości jest mądrzejsze niż konfrontacja. Siódemka Mieczy pozwala na wyczucie. Bezpośredniość nie zawsze jest najbardziej troskliwym wyborem."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Talvez um movimento estratégico no amor seja mais sábio do que uma confrontação. O Sete de Espadas permite a fineza. Direto nem sempre é a escolha mais carinhosa."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Kanske är ett strategiskt drag i kärleken klokare än en konfrontation. Svärdens sju tillåter finess. Direkt är inte alltid det mest omtänksamma valet."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Можливо, стратегічний крок у коханні є мудрішим, ніж конфронтація. Сімка Мечів дозволяє витонченість. Прямота не завжди є найбільш турботливим вибором."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "interpretation.seven_of_swords_love_upright_unclear" : {
+                                                                    "extractionState" : "manual",
+                                                                    "localizations" : {
+                                                                      "de" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Was in dieser Beziehung wird von einer Seite geheim gehalten? Die Sieben der Schwerter verfolgt die kuratierte Version. Das Unausgesprochene ist oft lauter als das Gesagte."
+                                                                        }
+                                                                      },
+                                                                      "en" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "What in this relationship is being kept hidden, by either side? The Seven of Swords tracks the curated version. The unspoken thing is often louder than the spoken."
+                                                                        }
+                                                                      },
+                                                                      "es" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "¿Qué hay en esta relación que se mantiene oculto, por cualquiera de las partes? El Siete de Espadas rastrea la versión editada. Lo no dicho suele ser más fuerte que lo dicho."
+                                                                        }
+                                                                      },
+                                                                      "fr" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Qu'est-ce qui, dans cette relation, est gardé caché par l'une ou l'autre des parties ? Le Sept d'Épées suit la version filtrée. La chose non-dite est souvent plus forte que la chose dite."
+                                                                        }
+                                                                      },
+                                                                      "it" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Cosa in questa relazione viene tenuta nascosta, da entrambe le parti? Il Sette di Spade tiene traccia della versione curata. La cosa non detta è spesso più forte di quella detta."
+                                                                        }
+                                                                      },
+                                                                      "ja" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "この関係において、どちらかの側によって隠されていることは何ですか？ セブン・オブ・ソードは編集されたバージョンを追跡します。口にされないことは、しばしば口にされることよりも強力です。"
+                                                                        }
+                                                                      },
+                                                                      "nb" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Hva i dette forholdet blir holdt skjult, av noen av sidene? Syv av sverd sporer den kuraterte versjonen. Det usagte er ofte høyere enn det talte."
+                                                                        }
+                                                                      },
+                                                                      "pl" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Co w tym związku jest ukrywane przez którąkolwiek ze stron? Siódemka Mieczy śledzi wyselekcjonowaną wersję. Niewypowiedziana rzecz jest często głośniejsza niż wypowiedziana."
+                                                                        }
+                                                                      },
+                                                                      "pt-BR" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "O que neste relacionamento está sendo mantido oculto, por qualquer um dos lados? O Sete de Espadas rastreia a versão editada. O não dito muitas vezes é mais alto do que o dito."
+                                                                        }
+                                                                      },
+                                                                      "sv" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Vad i detta förhållande hålls dolt, av någon av sidorna? Svärdens sju spårar den kurerade versionen. Det osagda är ofta högre än det sagda."
+                                                                        }
+                                                                      },
+                                                                      "uk" : {
+                                                                        "stringUnit" : {
+                                                                          "state" : "translated",
+                                                                          "value" : "Що в цих стосунках приховується з будь-якої сторони? Сімка Мечів відстежує відредаговану версію. Невисловлене часто є голоснішим, ніж висловлене."
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                              },
     "interpretation.seven_of_wands_career_reversed_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
