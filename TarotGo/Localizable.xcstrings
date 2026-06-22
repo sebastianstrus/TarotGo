@@ -232373,116 +232373,716 @@
                                                           }
                                                         }
                                                       },
-    "interpretation.seven_of_cups_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the abundance of options is itself the obstacle to choosing. The Seven of Cups makes commitment harder by keeping everything available. The choice you avoid is the relationship you have."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_cups_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Which of your love options is real and which is fantasy? The Seven of Cups offers more cups than you can drink from. Sort by what would survive a long ordinary week."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the project needs pruning, not more watering. The reversed Seven of Pentacles favors cutting back. Some growth happens through subtraction."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a career investment underperforming despite real effort? The reversed Seven of Pentacles allows the honest acknowledgement. Effort and outcome aren't always proportional."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a pause to assess beats another push. The Seven of Pentacles values the look-at-what-grew moment. Evaluate before you double down."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What long-term project deserves more patience than you've been giving? The Seven of Pentacles tends gardens, not sprouts. The thing you've nearly given up on may be in its slow growth phase."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe cutting losses now is wiser than waiting longer. The reversed Seven of Pentacles ends the sunk-cost loyalty. The future return doesn't have to honor the past investment."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a financial bet not maturing the way you expected? The reversed Seven of Pentacles asks for honesty. The story you told yourself about the investment may not match the data."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps patience is the actual financial strategy. The Seven of Pentacles believes in the long curve. Most wealth is built on the boring side of the timeline."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What financial seed is finally ready to be evaluated? The Seven of Pentacles invites the harvest check. Look at the actual yield rather than the projected one."
-          }
-        }
-      }
-    },
+                                                      "interpretation.seven_of_cups_love_upright_not_resonating" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Vielleicht ist die Fülle der Optionen selbst das Hindernis für die Wahl. Die Sieben der Kelche erschwert die Bindung, indem sie alles verfügbar hält. Die Wahl, die du vermeidest, ist die Beziehung, die du hast."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Perhaps the abundance of options is itself the obstacle to choosing. The Seven of Cups makes commitment harder by keeping everything available. The choice you avoid is the relationship you have."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quizás la abundancia de opciones es en sí misma el obstáculo para elegir. El Siete de Copas dificulta el compromiso al mantener todo disponible. La elección que evitas es la relación que tienes."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Peut-être que l'abondance d'options est elle-même l'obstacle au choix. Le Sept de Coupes rend l'engagement plus difficile en gardant tout disponible. Le choix que tu évites est la relation que tu as."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Forse l'abbondanza di opzioni è di per sé l'ostacolo alla scelta. Il Sette di Coppe rende l'impegno più difficile mantenendo tutto disponibile. La scelta che eviti è la relazione che hai."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "おそらく、選択肢の多さ自体が選択の障害になっているのでしょう。カップの7は、すべてを利用可能にすることでコミットメントをより困難にします。あなたが避けている選択が、あなたが持っている関係です。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanskje overfloden av alternativer i seg selv er hindringen for å velge. Syv av kopper gjør forpliktelse vanskeligere ved å holde alt tilgjengelig. Valget du unngår er forholdet du har."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Być może obfitość opcji sama w sobie jest przeszkodą w wyborze. Siódemka Kielichów utrudnia zaangażowanie, utrzymując wszystko dostępne. Wybór, którego unikasz, to związek, który masz."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Talvez a abundância de opções seja em si o obstáculo para escolher. O Sete de Copas torna o compromisso mais difícil mantendo tudo disponível. A escolha que você evita é o relacionamento que você tem."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanske är överflödet av alternativ i sig självt hindret för att välja. Sju av bägare gör engagemang svårare genom att hålla allt tillgängligt. Valet du undviker är förhållandet du har."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Можливо, велика кількість варіантів сама по собі є перешкодою для вибору. Сімка Кубків ускладнює зобов'язання, залишаючи все доступним. Вибір, якого ти уникаєш, є стосунками, які ти маєш."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_cups_love_upright_unclear" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Welche deiner Liebesoptionen ist real und welche Fantasie? Die Sieben der Kelche bietet mehr Kelche, als du trinken kannst. Sortiere nach dem, was eine lange gewöhnliche Woche überstehen würde."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Which of your love options is real and which is fantasy? The Seven of Cups offers more cups than you can drink from. Sort by what would survive a long ordinary week."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "¿Cuál de tus opciones de amor es real y cuál es fantasía? El Siete de Copas ofrece más copas de las que puedes beber. Clasifica por lo que sobreviviría una larga semana ordinaria."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Laquelle de tes options amoureuses est réelle et laquelle est fantastique ? Le Sept de Coupes offre plus de coupes que tu ne peux en boire. Trie par ce qui survivrait à une longue semaine ordinaire."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quale delle tue opzioni amorose è reale e quale è fantasia? Il Sette di Coppe offre più coppe di quante tu ne possa bere. Seleziona in base a ciò che sopravviverebbe a una lunga settimana ordinaria."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "あなたの恋愛の選択肢のうち、どれが現実でどれが幻想ですか？カップの7は、あなたが飲みきれないほどのカップを提供します。長い平凡な一週間を乗り切れるもので分類してください。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Hvilken av kjærlighetsalternativene dine er ekte og hvilken er fantasi? Syv av kopper tilbyr flere kopper enn du kan drikke av. Sorter etter hva som ville overleve en lang vanlig uke."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Która z twoich opcji miłosnych jest prawdziwa, a która fantazją? Siódemka Kielichów oferuje więcej kielichów, niż możesz wypić. Sortuj według tego, co przetrwałoby długi zwykły tydzień."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Qual das suas opções de amor é real e qual é fantasia? O Sete de Copas oferece mais copos do que você pode beber. Classifique pelo que sobreviveria a uma longa semana comum."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Vilket av dina kärleksalternativ är verkligt och vilket är fantasi? Sju av bägare erbjuder fler bägare än du kan dricka ur. Sortera efter vad som skulle överleva en lång vanlig vecka."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Який із твоїх варіантів кохання є реальним, а який фантазією? Сімка Кубків пропонує більше кубків, ніж ти можеш випити. Відсортуй за тим, що витримало б довгий звичайний тиждень."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_pentacles_career_reversed_not_resonating" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Vielleicht braucht das Projekt Beschneidung, nicht mehr Bewässerung. Die umgekehrte Sieben der Pentakel begünstigt das Zurückschneiden. Manches Wachstum geschieht durch Subtraktion."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Maybe the project needs pruning, not more watering. The reversed Seven of Pentacles favors cutting back. Some growth happens through subtraction."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quizás el proyecto necesita poda, no más riego. El Siete de Pentáculos invertido favorece la reducción. Algunos crecimientos ocurren mediante la sustracción."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Peut-être que le projet a besoin d'être taillé, pas d'être davantage arrosé. Le Sept de Pentacles inversé favorise la réduction. Certaines croissances se font par soustraction."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Forse il progetto ha bisogno di potatura, non di più acqua. Il Sette di Pentacoli invertito favorisce il taglio. Alcune crescite avvengono attraverso la sottrazione."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "おそらくプロジェクトには、より多くの水やりではなく剪定が必要です。逆位置のペンタクルの7は、削減を支持します。ある種の成長は引き算を通じて起こります。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanskje prosjektet trenger beskjæring, ikke mer vanning. Den omvendte syv av pentakler favoriserer å kutte ned. Noe vekst skjer gjennom subtraksjon."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Być może projekt potrzebuje przycięcia, a nie więcej podlewania. Odwrócona Siódemka Pentakli sprzyja redukcji. Niektóre wzrosty zachodzą przez odejmowanie."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Talvez o projeto precise de poda, não de mais rega. O Sete de Pentáculos invertido favorece o corte. Algum crescimento acontece através da subtração."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanske projektet behöver beskärning, inte mer vattning. Den omvända sju av pentakler gynnar att skära ner. En del tillväxt sker genom subtraktion."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Можливо, проєкт потребує обрізки, а не більше поливу. Перевернута Сімка Пентаклів сприяє скороченню. Деяке зростання відбувається через віднімання."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_pentacles_career_reversed_unclear" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Ist eine Karriereinvestition trotz echter Anstrengung unterdurchschnittlich? Die umgekehrte Sieben der Pentakel erlaubt das ehrliche Eingeständnis. Anstrengung und Ergebnis sind nicht immer proportional."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Is a career investment underperforming despite real effort? The reversed Seven of Pentacles allows the honest acknowledgement. Effort and outcome aren't always proportional."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "¿Está una inversión profesional rindiendo por debajo de lo esperado a pesar del esfuerzo real? El Siete de Pentáculos invertido permite el reconocimiento honesto. El esfuerzo y el resultado no siempre son proporcionales."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Un investissement professionnel est-il sous-performant malgré un réel effort ? Le Sept de Pentacles inversé permet la reconnaissance honnête. L'effort et le résultat ne sont pas toujours proportionnels."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Un investimento di carriera sta sottoperformando nonostante il vero impegno? Il Sette di Pentacoli invertito permette il riconoscimento onesto. Sforzo e risultato non sono sempre proporzionali."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "本当の努力にもかかわらず、キャリアへの投資は期待を下回っていますか？逆位置のペンタクルの7は、正直な認識を可能にします。努力と結果は常に比例するとは限りません。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Presterer en karriereinvestering dårligere enn forventet til tross for reell innsats? Den omvendte syv av pentakler tillater ærlig erkjennelse. Innsats og utfall er ikke alltid proporsjonale."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Czy inwestycja zawodowa przynosi gorsze wyniki mimo realnego wysiłku? Odwrócona Siódemka Pentakli pozwala na uczciwe przyznanie. Wysiłek i rezultat nie zawsze są proporcjonalne."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Um investimento de carreira está tendo baixo desempenho apesar do esforço real? O Sete de Pentáculos invertido permite o reconhecimento honesto. Esforço e resultado nem sempre são proporcionais."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Underpresterar en karriärinvestering trots verklig ansträngning? Den omvända sju av pentakler tillåter ärligt erkännande. Ansträngning och resultat är inte alltid proportionella."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Чи інвестиція в кар'єру показує низькі результати, незважаючи на реальні зусилля? Перевернута Сімка Пентаклів дозволяє чесне визнання. Зусилля та результат не завжди пропорційні."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_pentacles_career_upright_not_resonating" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Vielleicht ist eine Pause zur Bewertung besser als ein weiterer Schub. Die Sieben der Pentakel schätzt den Moment des Schauens, was gewachsen ist. Bewerte, bevor du verdoppelst."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Perhaps a pause to assess beats another push. The Seven of Pentacles values the look-at-what-grew moment. Evaluate before you double down."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quizás una pausa para evaluar vence a otro empuje. El Siete de Pentáculos valora el momento de mirar lo que creció. Evalúa antes de redoblar la apuesta."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Peut-être qu'une pause pour évaluer vaut mieux qu'une nouvelle poussée. Le Sept de Pentacles valorise le moment de regarder ce qui a poussé. Évalue avant de redoubler d'efforts."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Forse una pausa per valutare batte un'altra spinta. Il Sette di Pentacoli apprezza il momento del guarda-cosa-è-cresciuto. Valuta prima di raddoppiare."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "おそらく、評価のための一時停止がさらなる後押しに勝ります。ペンタクルの7は、何が育ったかを見る瞬間を重視します。倍賭けする前に評価してください。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanskje en pause for å vurdere slår et nytt dytt. Syv av pentakler verdsetter se-hva-som-vokste-øyeblikket. Vurder før du dobler innsatsen."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Być może przerwa na ocenę jest lepsza niż kolejne pchnięcie. Siódemka Pentakli ceni moment spojrzenia na to, co urosło. Oceń, zanim podwoisz stawkę."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Talvez uma pausa para avaliar seja melhor que outro empurrão. O Sete de Pentáculos valoriza o momento de olhar o que cresceu. Avalie antes de redobrar a aposta."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanske en paus för att bedöma slår en till push. Sju av pentakler värdesätter titta-vad-som-växte-ögonblicket. Utvärdera innan du dubblar insatsen."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Можливо, пауза для оцінки перемагає черговий поштовх. Сімка Пентаклів цінує момент погляду на те, що виросло. Оціни, перш ніж подвоїти ставку."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_pentacles_career_upright_unclear" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Welches langfristige Projekt verdient mehr Geduld, als du ihm gegeben hast? Die Sieben der Pentakel pflegt Gärten, nicht Sprossen. Das, was du fast aufgegeben hast, könnte sich in seiner langsamen Wachstumsphase befinden."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "What long-term project deserves more patience than you've been giving? The Seven of Pentacles tends gardens, not sprouts. The thing you've nearly given up on may be in its slow growth phase."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "¿Qué proyecto a largo plazo merece más paciencia de la que has estado dando? El Siete de Pentáculos cuida jardines, no brotes. Aquello que casi has abandonado puede estar en su fase de crecimiento lento."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quel projet à long terme mérite plus de patience que ce que tu lui as accordé ? Le Sept de Pentacles s'occupe des jardins, pas des pousses. Ce que tu as presque abandonné est peut-être dans sa phase de croissance lente."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quale progetto a lungo termine merita più pazienza di quella che gli hai dato? Il Sette di Pentacoli si prende cura dei giardini, non dei germogli. La cosa che hai quasi abbandonato potrebbe essere nella sua fase di crescita lenta."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "どの長期的なプロジェクトが、あなたが与えてきた以上の忍耐に値しますか？ペンタクルの7は、芽ではなく庭を育てます。あなたがほとんど諦めかけていたことは、ゆっくりとした成長段階にあるかもしれません。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Hvilket langsiktig prosjekt fortjener mer tålmodighet enn du har gitt? Syv av pentakler steller hager, ikke spirer. Tingen du nesten har gitt opp kan være i sin langsomme vekstfase."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Który długoterminowy projekt zasługuje na więcej cierpliwości, niż mu okazywałeś? Siódemka Pentakli pielęgnuje ogrody, nie kiełki. To, co prawie porzuciłeś, może być w fazie powolnego wzrostu."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Qual projeto de longo prazo merece mais paciência do que você tem dado? O Sete de Pentáculos cuida de jardins, não de brotos. Aquilo que você quase desistiu pode estar em sua fase de crescimento lento."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Vilket långsiktigt projekt förtjänar mer tålamod än du har gett? Sju av pentakler vårdar trädgårdar, inte skott. Det du nästan gett upp kan vara i sin långsamma tillväxtfas."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Який довгостроковий проєкт заслуговує на більше терпіння, ніж ти йому приділяв? Сімка Пентаклів доглядає сади, а не паростки. Те, від чого ти майже відмовився, може бути у фазі повільного зростання."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_pentacles_finance_reversed_not_resonating" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Vielleicht ist es jetzt weiser, Verluste zu begrenzen, als länger zu warten. Die umgekehrte Sieben der Pentakel beendet die Loyalität zu versunkenen Kosten. Die zukünftige Rendite muss die vergangene Investition nicht ehren."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Maybe cutting losses now is wiser than waiting longer. The reversed Seven of Pentacles ends the sunk-cost loyalty. The future return doesn't have to honor the past investment."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quizás cortar pérdidas ahora es más sabio que esperar más tiempo. El Siete de Pentáculos invertido termina con la lealtad al costo hundido. El rendimiento futuro no tiene que honrar la inversión pasada."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Peut-être que couper les pertes maintenant est plus sage que d'attendre plus longtemps. Le Sept de Pentacles inversé met fin à la loyauté envers les coûts irrécupérables. Le retour futur n'a pas à honorer l'investissement passé."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Forse tagliare le perdite ora è più saggio che aspettare ancora. Il Sette di Pentacoli invertito termina la lealtà ai costi irrecuperabili. Il rendimento futuro non deve onorare l'investimento passato."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "おそらく、今損失を確定させる方が、長く待つよりも賢明です。逆位置のペンタクルの7は、埋没費用への忠誠を終わらせます。将来のリターンは過去の投資を尊重する必要はありません。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanskje det er klokere å kutte tap nå enn å vente lenger. Den omvendte syv av pentakler avslutter lojaliteten til sunkne kostnader. Fremtidig avkastning trenger ikke ære tidligere investering."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Być może odcięcie strat teraz jest mądrzejsze niż czekanie dłużej. Odwrócona Siódemka Pentakli kończy lojalność wobec utopionych kosztów. Przyszły zwrot nie musi honorować przeszłej inwestycji."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Talvez cortar perdas agora seja mais sábio do que esperar mais tempo. O Sete de Pentáculos invertido termina com a lealdade ao custo irrecuperável. O retorno futuro não precisa honrar o investimento passado."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanske är det klokare att skära förluster nu än att vänta längre. Den omvända sju av pentakler avslutar lojaliteten till sjunkna kostnader. Framtida avkastning behöver inte hedra tidigare investering."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Можливо, скоротити збитки зараз мудріше, ніж чекати довше. Перевернута Сімка Пентаклів припиняє лояльність до безповоротних витрат. Майбутній прибуток не повинен шанувати минулі інвестиції."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_pentacles_finance_reversed_unclear" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Reift eine finanzielle Wette nicht so, wie du erwartet hast? Die umgekehrte Sieben der Pentakel verlangt nach Ehrlichkeit. Die Geschichte, die du dir über die Investition erzählt hast, könnte nicht mit den Daten übereinstimmen."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Is a financial bet not maturing the way you expected? The reversed Seven of Pentacles asks for honesty. The story you told yourself about the investment may not match the data."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "¿Está una apuesta financiera no madurando como esperabas? El Siete de Pentáculos invertido pide honestidad. La historia que te contaste sobre la inversión puede no coincidir con los datos."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Un pari financier n'arrive-t-il pas à maturité comme tu l'avais prévu ? Le Sept de Pentacles inversé demande de l'honnêteté. L'histoire que tu t'es racontée sur l'investissement peut ne pas correspondre aux données."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Una scommessa finanziaria non sta maturando come previsto? Il Sette di Pentacoli invertito chiede onestà. La storia che ti sei raccontato sull'investimento potrebbe non corrispondere ai dati."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "金融上の賭けが期待通りに成熟していませんか？逆位置のペンタクルの7は正直さを求めます。投資についてあなたが自分に語った話は、データと一致しないかもしれません。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Modnes et finansielt veddemål ikke slik du forventet? Den omvendte syv av pentakler ber om ærlighet. Historien du fortalte deg selv om investeringen stemmer kanskje ikke med dataene."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Czy finansowy zakład nie dojrzewa tak, jak się spodziewałeś? Odwrócona Siódemka Pentakli wzywa do uczciwości. Historia, którą opowiedziałeś sobie o inwestycji, może nie pasować do danych."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Uma aposta financeira não está amadurecendo como você esperava? O Sete de Pentáculos invertido pede honestidade. A história que você contou a si mesmo sobre o investimento pode não corresponder aos dados."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Mognar ett finansiellt vad inte som du förväntade dig? Den omvända sju av pentakler ber om ärlighet. Historien du berättade för dig själv om investeringen kanske inte stämmer med datan."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Чи фінансова ставка не дозріває так, як ти очікував? Перевернута Сімка Пентаклів просить чесності. Історія, яку ти розповідав собі про інвестицію, може не відповідати даним."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_pentacles_finance_upright_not_resonating" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Vielleicht ist Geduld die eigentliche Finanzstrategie. Die Sieben der Pentakel glaubt an die lange Kurve. Der meiste Wohlstand wird auf der langweiligen Seite der Zeitachse aufgebaut."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Perhaps patience is the actual financial strategy. The Seven of Pentacles believes in the long curve. Most wealth is built on the boring side of the timeline."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quizás la paciencia es la verdadera estrategia financiera. El Siete de Pentáculos cree en la curva larga. La mayor parte de la riqueza se construye en el lado aburrido de la línea de tiempo."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Peut-être que la patience est la véritable stratégie financière. Le Sept de Pentacles croit en la longue courbe. La plupart de la richesse se construit du côté ennuyeux de la chronologie."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Forse la pazienza è la vera strategia finanziaria. Il Sette di Pentacoli crede nella lunga curva. La maggior parte della ricchezza si costruisce sul lato noioso della linea temporale."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "おそらく忍耐が実際の財務戦略です。ペンタクルの7は長いカーブを信じています。ほとんどの富は、タイムラインの退屈な側面に構築されます。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanskje tålmodighet er den faktiske finansstrategien. Syv av pentakler tror på den lange kurven. Mest formue bygges på den kjedelige siden av tidslinjen."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Być może cierpliwość jest rzeczywistą strategią finansową. Siódemka Pentakli wierzy w długą krzywą. Większość bogactwa buduje się po nudnej stronie osi czasu."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Talvez a paciência seja a verdadeira estratégia financeira. O Sete de Pentáculos acredita na longa curva. A maior parte da riqueza é construída no lado chato da linha do tempo."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Kanske är tålamod den verkliga finansstrategin. Sju av pentakler tror på den långa kurvan. De flesta rikedomar byggs på den tråkiga sidan av tidslinjen."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Можливо, терпіння є справжньою фінансовою стратегією. Сімка Пентаклів вірить у довгу криву. Більшість багатства будується на нудному боці часової шкали."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "interpretation.seven_of_pentacles_finance_upright_unclear" : {
+                                                            "extractionState" : "manual",
+                                                            "localizations" : {
+                                                              "de" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Welcher finanzielle Samen ist endlich bereit, bewertet zu werden? Die Sieben der Pentakel lädt zur Ernteprüfung ein. Schau dir die tatsächliche Rendite an, nicht die prognostizierte."
+                                                                }
+                                                              },
+                                                              "en" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "What financial seed is finally ready to be evaluated? The Seven of Pentacles invites the harvest check. Look at the actual yield rather than the projected one."
+                                                                }
+                                                              },
+                                                              "es" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "¿Qué semilla financiera finalmente está lista para ser evaluada? El Siete de Pentáculos invita a la revisión de la cosecha. Mira el rendimiento real en lugar del proyectado."
+                                                                }
+                                                              },
+                                                              "fr" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quelle graine financière est enfin prête à être évaluée ? Le Sept de Pentacles invite à la vérification de la récolte. Regarde le rendement réel plutôt que le rendement prévu."
+                                                                }
+                                                              },
+                                                              "it" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Quale seme finanziario è finalmente pronto per essere valutato? Il Sette di Pentacoli invita al controllo del raccolto. Guarda il rendimento effettivo piuttosto che quello previsto."
+                                                                }
+                                                              },
+                                                              "ja" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "どの金融の種がついに評価される準備ができましたか？ペンタクルの7は収穫チェックを促します。予想された収益ではなく、実際の収益を見てください。"
+                                                                }
+                                                              },
+                                                              "nb" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Hvilket finansielt frø er endelig klart til å bli evaluert? Syv av pentakler inviterer til innhøstingskontroll. Se på den faktiske avkastningen i stedet for den forventede."
+                                                                }
+                                                              },
+                                                              "pl" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Które finansowe ziarno jest wreszcie gotowe do oceny? Siódemka Pentakli zaprasza do sprawdzenia zbiorów. Spójrz na rzeczywisty plon, a nie na prognozowany."
+                                                                }
+                                                              },
+                                                              "pt-BR" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Qual semente financeira está finalmente pronta para ser avaliada? O Sete de Pentáculos convida à verificação da colheita. Olhe para o rendimento real em vez do projetado."
+                                                                }
+                                                              },
+                                                              "sv" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Vilket finansiellt frö är äntligen redo att utvärderas? Sju av pentakler bjuder in till skördekontroll. Titta på den faktiska avkastningen snarare än den förväntade."
+                                                                }
+                                                              },
+                                                              "uk" : {
+                                                                "stringUnit" : {
+                                                                  "state" : "translated",
+                                                                  "value" : "Яке фінансове насіння нарешті готове до оцінки? Сімка Пентаклів запрошує до перевірки врожаю. Подивися на фактичну врожайність, а не на прогнозовану."
+                                                                }
+                                                              }
+                                                            }
+                                                          },
     "interpretation.seven_of_pentacles_general_reversed_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
