@@ -233083,215 +233083,1354 @@
                                                               }
                                                             }
                                                           },
-    "interpretation.seven_of_pentacles_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a sunk-cost story is keeping you tending the wrong field. The reversed Seven of Pentacles releases the loyalty to the past investment. Plant elsewhere with what you have left."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is effort going into soil that won't grow what you need? The reversed Seven of Pentacles tests the substrate. Some grounds don't produce that crop, no matter how much you water."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the harvest is closer than the daily slog suggests. The Seven of Pentacles measures over seasons. The yield isn't visible day-to-day."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What if you paused to look at what's actually grown? The Seven of Pentacles offers the assessment moment. The work might be working in ways you've stopped noticing."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe what you've tried hasn't worked. Try a different approach — the reversed Seven of Pentacles releases loyalty to a failing protocol. Persistence in the wrong direction isn't dedication."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you working hard at a routine that isn't delivering? The reversed Seven of Pentacles checks the ROI on effort. Some practices look productive without producing."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps an honest assessment of your routine — what works, what doesn't — is overdue. The Seven of Pentacles audits before it adjusts. Don't add more without removing what doesn't."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is your body slowly improving in ways too gradual to notice? The Seven of Pentacles measures over months. The day-to-day reading misses the actual trajectory."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the investment isn't matching the harvest. Reassess honestly — the reversed Seven of Pentacles removes the sentimental discount. The numbers, even in love, eventually matter."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you tending a relationship that won't grow no matter what you do? The reversed Seven of Pentacles asks the question love avoids. Some soils don't grow what you've been planting."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps assessing the relationship — not improving it — is what's needed. The Seven of Pentacles asks for honest evaluation before more effort. The seeing is its own kind of work."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_pentacles_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What in this relationship is slow-growing and worth the wait? The Seven of Pentacles values the gradual deepening. The thing that's been quiet may be becoming something substantial."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe what was hidden is now visible. Use it carefully — the reversed Seven of Swords doesn't tell you to broadcast. Choose the right moment and the right audience."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a deception at work being uncovered? The reversed Seven of Swords brings hidden things to light. Use the visibility carefully; the timing matters."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a smart workaround is more useful than a head-on fight. The Seven of Swords prefers strategy to confrontation. The indirect path sometimes arrives sooner."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is something at work being concealed — by you, by them, or both? The Seven of Swords tracks the unspoken. Notice what's being curated in the room."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe coming clean financially is the only way forward. The reversed Seven of Swords ends the maintenance of the lie. The relief on the other side outweighs the awkwardness of the admission."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a financial cover-up unraveling? The reversed Seven of Swords pulls the thread. Stay with the unraveling rather than rushing to retie it."
-          }
-        }
-      }
-    },
-    "interpretation.seven_of_swords_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the clever route around a financial obstacle is the real strategy. The Seven of Swords loves the elegant workaround. The straight path isn't always the wise one."
-          }
-        }
-      }
-    },
+                                                          "interpretation.seven_of_pentacles_general_reversed_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht hält dich eine versunkene-Kosten-Geschichte davon ab, das richtige Feld zu bestellen. Die umgekehrte Sieben der Pentakel löst die Loyalität zur vergangenen Investition. Pflanze anderswo mit dem, was dir geblieben ist."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Maybe a sunk-cost story is keeping you tending the wrong field. The reversed Seven of Pentacles releases the loyalty to the past investment. Plant elsewhere with what you have left."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás una historia de costos hundidos te mantiene cuidando el campo equivocado. El Siete de Pentáculos invertido libera la lealtad a la inversión pasada. Planta en otro lugar con lo que te queda."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être qu'une histoire de coûts irrécupérables vous maintient à cultiver le mauvais champ. Le Sept de Pentacles inversé libère la loyauté envers l'investissement passé. Plantez ailleurs avec ce qu'il vous reste."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse una storia di costi irrecuperabili ti tiene a coltivare il campo sbagliato. Il Sette di Pentacoli invertito scioglie la lealtà all'investimento passato. Pianta altrove con ciò che ti è rimasto."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく、埋没費用の物語があなたを間違った畑で働かせ続けているのでしょう。逆位置のペンタクルの7は過去の投資への忠誠心を解放します。残ったもので別の場所に種をまきましょう。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje en sunk-cost-historie holder deg i gang med å dyrke feil åker. Den reverserte Sju av Pentakler frigjør lojaliteten til den tidligere investeringen. Plant et annet sted med det du har igjen."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może historia kosztów utopionych sprawia, że uprawiasz niewłaściwe pole. Odwrócona Siódemka Pentakli uwalnia lojalność wobec przeszłej inwestycji. Zasadź gdzie indziej tym, co ci zostało."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez uma história de custo afundado esteja fazendo você cuidar do campo errado. O Sete de Pentáculos invertido libera a lealdade ao investimento passado. Plante em outro lugar com o que sobrou."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske håller en sunk-cost-historia dig kvar vid fel fält. Den omvända Sju av Pentakler frigör lojaliteten till den tidigare investeringen. Plantera någon annanstans med det du har kvar."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, історія про неповернені витрати змушує вас обробляти не те поле. Перевернута Сімка Пентаклів звільняє від вірності минулим інвестиціям. Посадіть в іншому місці тим, що у вас залишилося."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_general_reversed_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Wo fließt Mühe in Boden, der nicht das hervorbringt, was du brauchst? Die umgekehrte Sieben der Pentakel testet das Substrat. Manche Böden bringen diese Ernte nicht hervor, egal wie viel du gießt."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Where is effort going into soil that won't grow what you need? The reversed Seven of Pentacles tests the substrate. Some grounds don't produce that crop, no matter how much you water."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Dónde va el esfuerzo a tierra que no cultivará lo que necesitas? El Siete de Pentáculos invertido prueba el sustrato. Algunos terrenos no producen esa cosecha, por mucho que riegues."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Où l'effort va-t-il dans un sol qui ne fera pas pousser ce dont vous avez besoin ? Le Sept de Pentacles inversé teste le substrat. Certains terrains ne produisent pas cette récolte, peu importe combien vous arrosez."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Dove lo sforzo va in un terreno che non farà crescere ciò di cui hai bisogno? Il Sette di Pentacoli invertito testa il substrato. Alcuni terreni non producono quel raccolto, non importa quanto li innaffi."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "努力が、必要なものを育てられない土壌に注がれているのはどこでしょうか？逆位置のペンタクルの7は土壌を試します。いくら水をやっても、その作物を生産しない土地もあります。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Hvor går innsatsen ned i jord som ikke vil vokse det du trenger? Den reverserte Sju av Pentakler tester underlaget. Noen jordarter produserer ikke den avlingen, uansett hvor mye du vanner."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Gdzie wkład pracy trafia do gleby, która nie wyhoduje tego, czego potrzebujesz? Odwrócona Siódemka Pentakli testuje podłoże. Niektóre grunty nie wydadzą tej uprawy, bez względu na to, jak bardzo podlewasz."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Onde o esforço está indo para um solo que não cultivará o que você precisa? O Sete de Pentáculos invertido testa o substrato. Alguns terrenos não produzem essa colheita, não importa o quanto você regue."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Var går ansträngningen ner i jord som inte kommer att växa det du behöver? Den omvända Sju av Pentakler testar substratet. Vissa marker producerar inte den grödan, oavsett hur mycket du vattnar."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Де зусилля спрямовані в ґрунт, який не виростить те, що вам потрібно? Перевернута Сімка Пентаклів перевіряє субстрат. Деякі землі не дають цього врожаю, скільки б ви не поливали."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_general_upright_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht ist die Ernte näher, als der tägliche Trott vermuten lässt. Die Sieben der Pentakel misst über Jahreszeiten hinweg. Der Ertrag ist von Tag zu Tag nicht sichtbar."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Perhaps the harvest is closer than the daily slog suggests. The Seven of Pentacles measures over seasons. The yield isn't visible day-to-day."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás la cosecha está más cerca de lo que sugiere el trabajo diario. El Siete de Pentáculos mide a lo largo de las estaciones. El rendimiento no es visible día a día."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être que la récolte est plus proche que ne le suggère le labeur quotidien. Le Sept de Pentacles mesure sur les saisons. Le rendement n'est pas visible au jour le jour."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse il raccolto è più vicino di quanto suggerisca la fatica quotidiana. Il Sette di Pentacoli misura attraverso le stagioni. Il raccolto non è visibile giorno per giorno."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく収穫は、毎日の苦労が示すよりも近くにあるのでしょう。ペンタクルの7は季節を通して測ります。収穫量は日々は見えません。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje høsten er nærmere enn den daglige sliten antyder. Sju av Pentakler måler over årstider. Avlingen er ikke synlig dag for dag."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może żniwa są bliżej, niż sugeruje codzienna harówka. Siódemka Pentakli mierzy przez pory roku. Plon nie jest widoczny z dnia na dzień."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez a colheita esteja mais perto do que o trabalho diário sugere. O Sete de Pentáculos mede ao longo das estações. O rendimento não é visível dia após dia."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske är skörden närmare än det dagliga slit antyder. Sju av Pentakler mäter över årstider. Avkastningen är inte synlig dag för dag."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, врожай ближче, ніж здається під час щоденної праці. Сімка Пентаклів вимірює протягом сезонів. Врожайність не видно день у день."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_general_upright_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Was wäre, wenn du innehieltest, um zu sehen, was tatsächlich gewachsen ist? Die Sieben der Pentakel bietet den Moment der Bestandsaufnahme. Die Arbeit könnte wirken, auf eine Weise, die du nicht mehr bemerkst."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "What if you paused to look at what's actually grown? The Seven of Pentacles offers the assessment moment. The work might be working in ways you've stopped noticing."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Y si te detuvieras a mirar lo que realmente ha crecido? El Siete de Pentáculos ofrece el momento de evaluación. El trabajo podría estar funcionando de maneras que has dejado de notar."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Et si vous vous arrêtiez pour regarder ce qui a vraiment poussé ? Le Sept de Pentacles offre le moment d'évaluation. Le travail pourrait fonctionner d'une manière que vous avez cessé de remarquer."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "E se ti fermassi per guardare cosa è effettivamente cresciuto? Il Sette di Pentacoli offre il momento di valutazione. Il lavoro potrebbe funzionare in modi che hai smesso di notare."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "実際に何が育ったかを見るために、立ち止まってみたらどうでしょう？ペンタクルの7は評価の瞬間を提供します。仕事は、あなたが気づかなくなった方法で機能しているかもしれません。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Hva om du stanset for å se på hva som faktisk har vokst? Sju av Pentakler tilbyr vurderingsøyeblikket. Arbeidet kan fungere på måter du har sluttet å legge merke til."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "A gdybyś zatrzymał się, aby zobaczyć, co faktycznie wyrosło? Siódemka Pentakli oferuje moment oceny. Praca może działać w sposób, który przestałeś zauważać."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "E se você pausasse para olhar o que realmente cresceu? O Sete de Pentáculos oferece o momento de avaliação. O trabalho pode estar funcionando de maneiras que você parou de notar."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Tänk om du pausade för att titta på vad som faktiskt har vuxit? Sju av Pentakler erbjuder bedömningsögonblicket. Arbetet kanske fungerar på sätt du slutat lägga märke till."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Що, якби ви зупинилися, щоб подивитися, що насправді виросло? Сімка Пентаклів пропонує момент оцінки. Робота може діяти способами, які ви перестали помічати."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_health_reversed_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht hat das, was du versucht hast, nicht funktioniert. Versuche einen anderen Ansatz – die umgekehrte Sieben der Pentakel löst die Loyalität zu einem fehlgeschlagenen Protokoll. Beharrlichkeit in die falsche Richtung ist keine Hingabe."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Maybe what you've tried hasn't worked. Try a different approach — the reversed Seven of Pentacles releases loyalty to a failing protocol. Persistence in the wrong direction isn't dedication."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás lo que has intentado no ha funcionado. Prueba un enfoque diferente: el Siete de Pentáculos invertido libera la lealtad a un protocolo fallido. La persistencia en la dirección equivocada no es dedicación."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être que ce que vous avez essayé n'a pas fonctionné. Essayez une approche différente — le Sept de Pentacles inversé libère la loyauté envers un protocole qui échoue. La persistance dans la mauvaise direction n'est pas du dévouement."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse ciò che hai provato non ha funzionato. Prova un approccio diverso — il Sette di Pentacoli invertito scioglie la lealtà verso un protocollo fallimentare. La persistenza nella direzione sbagliata non è dedizione."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく、あなたが試したことはうまくいかなかったのでしょう。別のアプローチを試してみてください — 逆位置のペンタクルの7は失敗したプロトコルへの忠誠心を解放します。間違った方向への固執は献身ではありません。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje det du har prøvd ikke har fungert. Prøv en annen tilnærming — den reverserte Sju av Pentakler frigjør lojalitet til en mislykket protokoll. Vedholdenhet i feil retning er ikke dedikasjon."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może to, co próbowałeś, nie zadziałało. Wypróbuj inne podejście — odwrócona Siódemka Pentakli uwalnia lojalność wobec zawodnego protokołu. Uporczywość w złym kierunku nie jest poświęceniem."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez o que você tentou não funcionou. Tente uma abordagem diferente — o Sete de Pentáculos invertido libera a lealdade a um protocolo falho. Persistência na direção errada não é dedicação."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske det du försökt inte har fungerat. Prova ett annat tillvägagångssätt — den omvända Sju av Pentakler frigör lojalitet till ett misslyckat protokoll. Ihärdighet i fel riktning är inte hängivenhet."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, те, що ви пробували, не спрацювало. Спробуйте інший підхід — перевернута Сімка Пентаклів звільняє від вірності невдалому протоколу. Наполегливість у неправильному напрямку не є відданістю."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_health_reversed_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Arbeitest du hart an einer Routine, die keine Ergebnisse liefert? Die umgekehrte Sieben der Pentakel prüft den ROI der Anstrengung. Manche Praktiken sehen produktiv aus, ohne etwas hervorzubringen."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Are you working hard at a routine that isn't delivering? The reversed Seven of Pentacles checks the ROI on effort. Some practices look productive without producing."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Estás trabajando duro en una rutina que no está dando resultados? El Siete de Pentáculos invertido verifica el ROI del esfuerzo. Algunas prácticas parecen productivas sin producir."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Travaillez-vous dur sur une routine qui ne donne rien ? Le Sept de Pentacles inversé vérifie le ROI de l'effort. Certaines pratiques semblent productives sans produire."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Stai lavorando sodo su una routine che non sta dando risultati? Il Sette di Pentacoli invertito verifica il ROI dello sforzo. Alcune pratiche sembrano produttive senza produrre."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "成果が出ないルーティンに懸命に取り組んでいませんか？逆位置のペンタクルの7は努力のROIをチェックします。生産的に見えても実際には生み出していない習慣もあります。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Jobber du hardt med en rutine som ikke gir resultater? Den reverserte Sju av Pentakler sjekker ROI på innsats. Noen praksiser ser produktive ut uten å produsere."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Czy ciężko pracujesz nad rutyną, która nie przynosi rezultatów? Odwrócona Siódemka Pentakli sprawdza ROI wysiłku. Niektóre praktyki wyglądają na produktywne, ale nie przynoszą efektów."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Você está trabalhando duro em uma rotina que não está dando resultados? O Sete de Pentáculos invertido verifica o ROI do esforço. Algumas práticas parecem produtivas sem produzir."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Jobbar du hårt med en rutin som inte ger resultat? Den omvända Sju av Pentakler kontrollerar ROI på ansträngning. Vissa metoder ser produktiva ut utan att producera."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Ви наполегливо працюєте над рутиною, яка не дає результатів? Перевернута Сімка Пентаклів перевіряє ROI зусиль. Деякі практики виглядають продуктивними, але не виробляють."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_health_upright_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht ist eine ehrliche Bewertung deiner Routine – was funktioniert, was nicht – überfällig. Die Sieben der Pentakel prüft, bevor sie anpasst. Füge nichts hinzu, ohne das Entfernen von dem, was nicht funktioniert."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Perhaps an honest assessment of your routine — what works, what doesn't — is overdue. The Seven of Pentacles audits before it adjusts. Don't add more without removing what doesn't."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás una evaluación honesta de tu rutina — qué funciona, qué no — está atrasada. El Siete de Pentáculos audita antes de ajustar. No agregues más sin eliminar lo que no funciona."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être qu'une évaluation honnête de votre routine — ce qui fonctionne, ce qui ne fonctionne pas — est attendue. Le Sept de Pentacles audite avant d'ajuster. N'ajoutez pas sans retirer ce qui ne fonctionne pas."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse una valutazione onesta della tua routine — cosa funziona, cosa no — è tardiva. Il Sette di Pentacoli fa un audit prima di aggiustare. Non aggiungere senza rimuovere ciò che non funziona."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく、あなたのルーティンの正直な評価（何が機能し、何が機能しないか）が遅れているのでしょう。ペンタクルの7は調整前に監査を行います。機能しないものを取り除かずに、追加しないでください。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje en ærlig vurdering av rutinen din — hva som fungerer, hva som ikke gjør det — er forsinket. Sju av Pentakler reviderer før den justerer. Ikke legg til mer uten å fjerne det som ikke fungerer."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może uczciwa ocena twojej rutyny — co działa, co nie — jest spóźniona. Siódemka Pentakli dokonuje audytu przed dostosowaniem. Nie dodawaj więcej bez usuwania tego, co nie działa."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez uma avaliação honesta da sua rotina — o que funciona, o que não funciona — esteja atrasada. O Sete de Pentáculos audita antes de ajustar. Não adicione mais sem remover o que não funciona."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske en ärlig bedömning av din rutin — vad som fungerar, vad som inte gör det — är försenad. Sju av Pentakler granskar innan den justerar. Lägg inte till mer utan att ta bort det som inte fungerar."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, чесна оцінка вашої рутини — що працює, а що ні — запізнилася. Сімка Пентаклів перевіряє перед тим, як коригувати. Не додавайте більше, не видаливши те, що не працює."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_health_upright_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Wo verbessert sich dein Körper langsam auf eine Weise, die zu allmählich ist, um sie zu bemerken? Die Sieben der Pentakel misst über Monate hinweg. Die tägliche Lesung verfehlt die tatsächliche Entwicklung."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Where is your body slowly improving in ways too gradual to notice? The Seven of Pentacles measures over months. The day-to-day reading misses the actual trajectory."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Dónde está tu cuerpo mejorando lentamente de maneras demasiado graduales para notarlas? El Siete de Pentáculos mide a lo largo de meses. La lectura día a día se pierde la trayectoria real."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Où votre corps s'améliore-t-il lentement d'une manière trop progressive pour être remarquée ? Le Sept de Pentacles mesure sur des mois. La lecture quotidienne manque la trajectoire réelle."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Dove il tuo corpo sta migliorando lentamente in modi troppo graduali per essere notati? Il Sette di Pentacoli misura nel corso dei mesi. La lettura giorno per giorno perde la traiettoria reale."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "あなたの体はどこで、気づくにはあまりにも徐々にゆっくりと改善していますか？ペンタクルの7は数ヶ月にわたって測定します。日々の読み取りでは実際の軌道を見逃します。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Hvor forbedrer kroppen din seg sakte på måter som er for gradvise til å legge merke til? Sju av Pentakler måler over måneder. Dag-til-dag-lesningen bommer den faktiske banen."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Gdzie twoje ciało powoli się poprawia w sposób zbyt stopniowy, by to zauważyć? Siódemka Pentakli mierzy przez miesiące. Codzienny odczyt pomija rzeczywistą trajektorię."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Onde seu corpo está melhorando lentamente de maneiras graduais demais para serem notadas? O Sete de Pentáculos mede ao longo de meses. A leitura dia a dia perde a trajetória real."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Var förbättras din kropp långsamt på sätt som är för gradvisa för att märkas? Sju av Pentakler mäter över månader. Dag-till-dag-läsningen missar den faktiska banan."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Де ваше тіло повільно покращується способами, занадто поступовими, щоб помітити? Сімка Пентаклів вимірює протягом місяців. Щоденне читання пропускає реальну траєкторію."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_love_reversed_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht entspricht die Investition nicht der Ernte. Bewerte ehrlich neu – die umgekehrte Sieben der Pentakel entfernt den sentimentalen Rabatt. Die Zahlen, selbst in der Liebe, zählen irgendwann."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Maybe the investment isn't matching the harvest. Reassess honestly — the reversed Seven of Pentacles removes the sentimental discount. The numbers, even in love, eventually matter."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás la inversión no coincide con la cosecha. Reevalúa honestamente — el Siete de Pentáculos invertido elimina el descuento sentimental. Los números, incluso en el amor, eventualmente importan."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être que l'investissement ne correspond pas à la récolte. Réévaluez honnêtement — le Sept de Pentacles inversé supprime la remise sentimentale. Les chiffres, même en amour, finissent par compter."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse l'investimento non corrisponde al raccolto. Rivaluta onestamente — il Sette di Pentacoli invertito rimuove lo sconto sentimentale. I numeri, anche in amore, alla fine contano."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく投資が見返りに見合っていないのでしょう。正直に再評価してください — 逆位置のペンタクルの7は感傷的な割引を取り除きます。愛においてさえも、数字は最終的に重要になります。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje investeringen ikke samsvarer med høsten. Vurder på nytt ærlig — den reverserte Sju av Pentakler fjerner den sentimentale rabatten. Tallene, selv i kjærlighet, betyr noe til slutt."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może inwestycja nie odpowiada plonom. Oceń ponownie uczciwie — odwrócona Siódemka Pentakli usuwa sentymentalny rabat. Liczby, nawet w miłości, ostatecznie mają znaczenie."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez o investimento não esteja correspondendo à colheita. Reavalie honestamente — o Sete de Pentáculos invertido remove o desconto sentimental. Os números, mesmo no amor, eventualmente importam."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske investeringen inte matchar skörden. Bedöm om ärligt — den omvända Sju av Pentakler tar bort den sentimentala rabatten. Siffrorna, även i kärlek, spelar roll till slut."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, інвестиції не відповідають врожаю. Переоцініть чесно — перевернута Сімка Пентаклів знімає сентиментальну знижку. Цифри, навіть у коханні, зрештою мають значення."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_love_reversed_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Pflegst du eine Beziehung, die nicht wachsen wird, egal was du tust? Die umgekehrte Sieben der Pentakel stellt die Frage, die die Liebe vermeidet. Manche Böden lassen das nicht wachsen, was du gepflanzt hast."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Are you tending a relationship that won't grow no matter what you do? The reversed Seven of Pentacles asks the question love avoids. Some soils don't grow what you've been planting."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Estás cuidando una relación que no crecerá sin importar lo que hagas? El Siete de Pentáculos invertido hace la pregunta que el amor evita. Algunos suelos no cultivan lo que has estado plantando."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Entretenez-vous une relation qui ne grandira pas, quoi que vous fassiez ? Le Sept de Pentacles inversé pose la question que l'amour évite. Certains sols ne font pas pousser ce que vous avez planté."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Stai coltivando una relazione che non crescerà qualunque cosa tu faccia? Il Sette di Pentacoli invertito fa la domanda che l'amore evita. Alcuni terreni non fanno crescere ciò che hai piantato."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "何をしても成長しない関係を育んでいませんか？逆位置のペンタクルの7は、愛が避ける質問を投げかけます。ある土壌は、あなたが植えてきたものを育てません。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Passer du på et forhold som ikke vil vokse uansett hva du gjør? Den reverserte Sju av Pentakler stiller spørsmålet kjærlighet unngår. Noen jordarter dyrker ikke det du har plantet."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Czy pielęgnujesz związek, który nie będzie rósł, niezależnie od tego, co zrobisz? Odwrócona Siódemka Pentakli zadaje pytanie, którego miłość unika. Niektóre gleby nie wyhodują tego, co sadziłeś."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Você está cuidando de um relacionamento que não vai crescer não importa o que você faça? O Sete de Pentáculos invertido faz a pergunta que o amor evita. Alguns solos não cultivam o que você tem plantado."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Tar du hand om en relation som inte kommer att växa oavsett vad du gör? Den omvända Sju av Pentakler ställer frågan kärleken undviker. Vissa jordar odlar inte det du har planterat."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Ви доглядаєте за стосунками, які не зростатимуть, що б ви не робили? Перевернута Сімка Пентаклів ставить запитання, якого уникає любов. Деякі ґрунти не вирощують те, що ви садили."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_love_upright_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht ist die Bewertung der Beziehung – nicht ihre Verbesserung – das, was benötigt wird. Die Sieben der Pentakel bittet um eine ehrliche Bewertung, bevor mehr Mühe investiert wird. Das Sehen ist eine eigene Form der Arbeit."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Perhaps assessing the relationship — not improving it — is what's needed. The Seven of Pentacles asks for honest evaluation before more effort. The seeing is its own kind of work."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás evaluar la relación — no mejorarla — es lo que se necesita. El Siete de Pentáculos pide una evaluación honesta antes de más esfuerzo. El ver es su propio tipo de trabajo."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être que l'évaluation de la relation — et non son amélioration — est ce qui est nécessaire. Le Sept de Pentacles demande une évaluation honnête avant plus d'efforts. Le voir est un travail en soi."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse valutare la relazione — non migliorarla — è ciò che serve. Il Sette di Pentacoli chiede una valutazione onesta prima di ulteriore impegno. Il vedere è un suo tipo di lavoro."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく、関係を改善することではなく、評価することが必要なのです。ペンタクルの7は、さらなる努力の前に正直な評価を求めます。見ることはそれ自体が一つの仕事です。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje det å vurdere forholdet — ikke forbedre det — er det som trengs. Sju av Pentakler ber om ærlig evaluering før mer innsats. Å se er sin egen type arbeid."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może ocena związku — a nie jego poprawa — jest tym, czego potrzebujesz. Siódemka Pentakli prosi o uczciwą ocenę przed dalszym wysiłkiem. Widzenie jest swoistym rodzajem pracy."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez avaliar o relacionamento — não melhorá-lo — seja o que é necessário. O Sete de Pentáculos pede uma avaliação honesta antes de mais esforço. O ver é seu próprio tipo de trabalho."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske att bedöma relationen — inte förbättra den — är vad som behövs. Sju av Pentakler ber om ärlig utvärdering innan mer ansträngning. Att se är sin egen sorts arbete."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, оцінка стосунків — а не їх покращення — це те, що потрібно. Сімка Пентаклів просить чесної оцінки перед подальшими зусиллями. Бачення є своїм власним видом роботи."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_pentacles_love_upright_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Was in dieser Beziehung wächst langsam und ist das Warten wert? Die Sieben der Pentakel schätzt die allmähliche Vertiefung. Das, was still war, könnte etwas Wesentliches werden."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "What in this relationship is slow-growing and worth the wait? The Seven of Pentacles values the gradual deepening. The thing that's been quiet may be becoming something substantial."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Qué en esta relación crece lentamente y vale la pena esperar? El Siete de Pentáculos valora la profundización gradual. Lo que ha estado en silencio puede estar convirtiéndose en algo sustancial."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Qu'est-ce qui dans cette relation pousse lentement et vaut la peine d'attendre ? Le Sept de Pentacles valorise l'approfondissement progressif. Ce qui a été silencieux peut devenir quelque chose de substantiel."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Cosa in questa relazione cresce lentamente e vale l'attesa? Il Sette di Pentacoli apprezza l'approfondimento graduale. La cosa che è stata silenziosa potrebbe diventare qualcosa di sostanziale."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "この関係の中で、ゆっくりと成長し、待つ価値があるものは何ですか？ペンタクルの7は徐々に深まることを重視します。静かだったものが、実質的なものになっているかもしれません。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Hva i dette forholdet vokser sakte og er verdt å vente på? Sju av Pentakler verdsetter den gradvise fordyppingen. Det som har vært stille kan bli noe vesentlig."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Co w tym związku rośnie powoli i jest warte czekania? Siódemka Pentakli ceni stopniowe pogłębianie. To, co było ciche, może stawać się czymś znaczącym."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "O que neste relacionamento cresce lentamente e vale a pena esperar? O Sete de Pentáculos valoriza o aprofundamento gradual. O que tem estado em silêncio pode estar se tornando algo substancial."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vad i denna relation växer långsamt och är värt att vänta på? Sju av Pentakler värderar den gradvisa fördjupningen. Det som har varit tyst kan bli något substantiellt."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Що в цих стосунках повільно зростає і варте очікування? Сімка Пентаклів цінує поступове поглиблення. Те, що було тихим, може стати чимось суттєвим."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_swords_career_reversed_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht ist das, was verborgen war, jetzt sichtbar. Nutze es sorgfältig – die umgekehrte Sieben der Schwerter sagt dir nicht, es zu verbreiten. Wähle den richtigen Moment und das richtige Publikum."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Maybe what was hidden is now visible. Use it carefully — the reversed Seven of Swords doesn't tell you to broadcast. Choose the right moment and the right audience."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás lo que estaba oculto ahora es visible. Úsalo con cuidado — el Siete de Espadas invertido no te dice que lo transmitas. Elige el momento adecuado y la audiencia adecuada."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être que ce qui était caché est maintenant visible. Utilisez-le avec précaution — le Sept d'Épées inversé ne vous dit pas de le diffuser. Choisissez le bon moment et le bon public."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse ciò che era nascosto ora è visibile. Usalo con attenzione — il Sette di Spade invertito non ti dice di diffonderlo. Scegli il momento giusto e il pubblico giusto."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく、隠されていたものが今や見えるようになったのでしょう。慎重に使いましょう — 逆位置のソードの7は拡散せよとは言いません。適切なタイミングと適切な聴衆を選びましょう。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje det som var skjult nå er synlig. Bruk det forsiktig — den reverserte Sju av Sverd forteller deg ikke å kringkaste. Velg riktig øyeblikk og riktig publikum."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może to, co było ukryte, teraz jest widoczne. Użyj tego ostrożnie — odwrócona Siódemka Mieczy nie każe ci tego rozgłaszać. Wybierz odpowiedni moment i odpowiednią publiczność."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez o que estava escondido agora esteja visível. Use com cuidado — o Sete de Espadas invertido não diz para você transmitir. Escolha o momento certo e o público certo."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske det som var dolt nu är synligt. Använd det försiktigt — den omvända Sju av Svärd säger inte åt dig att sända. Välj rätt ögonblick och rätt publik."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, те, що було приховано, тепер видно. Використовуйте це обережно — перевернута Сімка Мечів не каже вам розголошувати. Виберіть правильний момент і правильну аудиторію."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_swords_career_reversed_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Wird eine Täuschung bei der Arbeit aufgedeckt? Die umgekehrte Sieben der Schwerter bringt verborgene Dinge ans Licht. Nutze die Sichtbarkeit sorgfältig; der Zeitpunkt ist wichtig."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Is a deception at work being uncovered? The reversed Seven of Swords brings hidden things to light. Use the visibility carefully; the timing matters."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Se está descubriendo un engaño en el trabajo? El Siete de Espadas invertido saca a la luz las cosas ocultas. Usa la visibilidad con cuidado; el momento importa."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Une tromperie au travail est-elle en train d'être découverte ? Le Sept d'Épées inversé met en lumière les choses cachées. Utilisez la visibilité avec précaution ; le timing est important."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Un inganno sul lavoro sta venendo alla luce? Il Sette di Spade invertito porta alla luce le cose nascoste. Usa la visibilità con attenzione; il tempismo conta."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "職場で欺瞞が暴かれつつあるのでしょうか？逆位置のソードの7は隠されたものを明らかにします。可視性を慎重に活用しましょう。タイミングが重要です。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Blir et bedrag på jobben avdekket? Den reverserte Sju av Sverd bringer skjulte ting frem i lyset. Bruk synligheten forsiktig; tidspunktet betyr noe."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Czy oszustwo w pracy zostaje ujawnione? Odwrócona Siódemka Mieczy wydobywa ukryte rzeczy na światło dzienne. Użyj widoczności ostrożnie; czas ma znaczenie."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Um engano no trabalho está sendo descoberto? O Sete de Espadas invertido traz coisas ocultas à luz. Use a visibilidade com cuidado; o momento importa."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Avslöjas ett bedrägeri på jobbet? Den omvända Sju av Svärd bringar dolda saker i ljuset. Använd synligheten försiktigt; tajmingen är viktig."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Чи розкривається обман на роботі? Перевернута Сімка Мечів виводить приховані речі на світло. Використовуйте видимість обережно; час має значення."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_swords_career_upright_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht ist ein kluger Workaround nützlicher als ein Frontalangriff. Die Sieben der Schwerter bevorzugt Strategie vor Konfrontation. Der indirekte Weg kommt manchmal früher an."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Perhaps a smart workaround is more useful than a head-on fight. The Seven of Swords prefers strategy to confrontation. The indirect path sometimes arrives sooner."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás una solución inteligente es más útil que una lucha frontal. El Siete de Espadas prefiere la estrategia a la confrontación. El camino indirecto a veces llega antes."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être qu'une solution de contournement intelligente est plus utile qu'un combat frontal. Le Sept d'Épées préfère la stratégie à la confrontation. Le chemin indirect arrive parfois plus tôt."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse una soluzione intelligente è più utile di uno scontro frontale. Il Sette di Spade preferisce la strategia al confronto. Il percorso indiretto a volte arriva prima."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく、正面からの戦いよりも賢い回避策の方が有用でしょう。ソードの7は対決よりも戦略を好みます。間接的な道は時として早く到着します。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje en smart omvei er mer nyttig enn en frontalkamp. Sju av Sverd foretrekker strategi fremfor konfrontasjon. Den indirekte veien kommer noen ganger raskere frem."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może sprytne obejście jest bardziej przydatne niż bezpośrednia walka. Siódemka Mieczy preferuje strategię od konfrontacji. Pośrednia droga czasami prowadzi szybciej."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez uma solução inteligente seja mais útil do que uma luta frontal. O Sete de Espadas prefere estratégia à confrontação. O caminho indireto às vezes chega mais cedo."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske är en smart kringgång mer användbar än en frontal fight. Sju av Svärd föredrar strategi framför konfrontation. Den indirekta vägen anländer ibland tidigare."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, розумний обхідний шлях корисніший, ніж лобова сутичка. Сімка Мечів віддає перевагу стратегії, а не конфронтації. Непрямий шлях іноді приходить швидше."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_swords_career_upright_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Wird bei der Arbeit etwas verheimlicht – von dir, von ihnen oder von beiden? Die Sieben der Schwerter verfolgt das Unausgesprochene. Beachte, was im Raum kuratiert wird."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Is something at work being concealed — by you, by them, or both? The Seven of Swords tracks the unspoken. Notice what's being curated in the room."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Se está ocultando algo en el trabajo — por ti, por ellos o por ambos? El Siete de Espadas rastrea lo no dicho. Observa lo que se está seleccionando en la sala."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quelque chose est-il dissimulé au travail — par vous, par eux, ou les deux ? Le Sept d'Épées suit ce qui n'est pas dit. Remarquez ce qui est organisé dans la pièce."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Qualcosa sul lavoro viene nascosto — da te, da loro, o da entrambi? Il Sette di Spade tiene traccia del non detto. Nota cosa viene curato nella stanza."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "職場で何かが隠されているのでしょうか — あなたによって、彼らによって、それとも両方によって？ソードの7は語られざるものを追跡します。部屋で何が厳選されているかに注目しましょう。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Blir noe på jobben skjult — av deg, av dem, eller begge? Sju av Sverd sporer det usagte. Legg merke til hva som blir kuratert i rommet."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Czy coś w pracy jest ukrywane — przez ciebie, przez nich, czy przez obie strony? Siódemka Mieczy śledzi to, co niewypowiedziane. Zwróć uwagę na to, co jest starannie dobierane w pomieszczeniu."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Algo no trabalho está sendo ocultado — por você, por eles, ou por ambos? O Sete de Espadas rastreia o não dito. Observe o que está sendo selecionado na sala."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Döljs något på jobbet — av dig, av dem, eller båda? Sju av Svärd spårar det o sagda. Notera vad som kurateras i rummet."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Щось на роботі приховується — вами, ними чи обома? Сімка Мечів відстежує невисловлене. Зверніть увагу на те, що курується в кімнаті."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_swords_finance_reversed_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht ist ein ehrlicher finanzieller Umgang der einzige Weg nach vorne. Die umgekehrte Sieben der Schwerter beendet die Aufrechterhaltung der Lüge. Die Erleichterung auf der anderen Seite wiegt die Unannehmlichkeit des Geständnisses auf."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Maybe coming clean financially is the only way forward. The reversed Seven of Swords ends the maintenance of the lie. The relief on the other side outweighs the awkwardness of the admission."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás ser honesto financieramente es la única salida. El Siete de Espadas invertido termina con el mantenimiento de la mentira. El alivio del otro lado supera la incomodidad de la admisión."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être que l'honnêteté financière est la seule voie à suivre. Le Sept d'Épées inversé met fin à l'entretien du mensonge. Le soulagement de l'autre côté l'emporte sur la gêne de l'aveu."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse essere onesti finanziariamente è l'unica via d'uscita. Il Sette di Spade invertito pone fine al mantenimento della menzogna. Il sollievo dall'altra parte supera l'imbarazzo dell'ammissione."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく、財務面で正直になることが前に進む唯一の方法でしょう。逆位置のソードの7は嘘の維持を終わらせます。向こう側の安堵は、認めることの気まずさを上回ります。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje det å være ærlig om økonomi er den eneste veien videre. Den reverserte Sju av Sverd avslutter vedlikeholdet av løgnen. Lettheten på den andre siden oppveier keitetheten ved innrømmelsen."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może bycie uczciwym finansowo to jedyna droga naprzód. Odwrócona Siódemka Mieczy kończy podtrzymywanie kłamstwa. Ulga po drugiej stronie przewyższa niezręczność przyznania się."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez ser honesto financeiramente seja o único caminho a seguir. O Sete de Espadas invertido termina a manutenção da mentira. O alívio do outro lado supera o constrangimento da admissão."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske är det enda sättet framåt att vara ärlig om ekonomin. Den omvända Sju av Svärd avslutar upprätthållandet av lögnen. Lättnaden på andra sidan överväger pinsamheten i erkännandet."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, чесність у фінансах — це єдиний шлях вперед. Перевернута Сімка Мечів припиняє підтримку брехні. Полегшення з іншого боку переважує незручність визнання."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_swords_finance_reversed_unclear" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Entwirrt sich eine finanzielle Vertuschung? Die umgekehrte Sieben der Schwerter zieht am Faden. Bleibe beim Entwirren, anstatt es hastig wieder zu verknoten."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Is a financial cover-up unraveling? The reversed Seven of Swords pulls the thread. Stay with the unraveling rather than rushing to retie it."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "¿Se está desenredando un encubrimiento financiero? El Siete de Espadas invertido tira del hilo. Quédate con el desenredo en lugar de apresurarte a atarlo de nuevo."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Un camouflage financier est-il en train de se défaire ? Le Sept d'Épées inversé tire le fil. Restez dans le dénouement plutôt que de vous précipiter pour le renouer."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Un'insabbiamento finanziario si sta dipanando? Il Sette di Spade invertito tira il filo. Resta con il dipanarsi piuttosto che affrettarti a riallacciarlo."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "財務上の隠蔽が解きほぐされつつあるのでしょうか？逆位置のソードの7は糸を引っ張ります。急いで結び直すよりも、解きほぐしに留まりましょう。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Blir et økonomisk dekke avdekket? Den reverserte Sju av Sverd trekker i tråden. Bli med i avdekkingen i stedet for å haste med å knyte den igjen."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Czy finansowe ukrywanie się rozpada? Odwrócona Siódemka Mieczy pociąga za nitkę. Pozostań z rozplątywaniem, zamiast spieszyć się z ponownym związaniem."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Um encobrimento financeiro está se desfazendo? O Sete de Espadas invertido puxa o fio. Fique com o desenrolar em vez de se apressar para amarrá-lo novamente."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Avslöjas ett finansiellt mörkläggande? Den omvända Sju av Svärd drar i tråden. Stanna med upplösningen snarare än att rusa för att knyta om den."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Чи розплутується фінансове приховування? Перевернута Сімка Мечів тягне за нитку. Залишайтеся з розплутуванням, а не поспішайте зав'язати знову."
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "interpretation.seven_of_swords_finance_upright_not_resonating" : {
+                                                              "extractionState" : "manual",
+                                                              "localizations" : {
+                                                                "de" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Vielleicht ist der clevere Weg um ein finanzielles Hindernis herum die eigentliche Strategie. Die Sieben der Schwerter liebt den eleganten Workaround. Der gerade Weg ist nicht immer der weise."
+                                                                  }
+                                                                },
+                                                                "en" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Perhaps the clever route around a financial obstacle is the real strategy. The Seven of Swords loves the elegant workaround. The straight path isn't always the wise one."
+                                                                  }
+                                                                },
+                                                                "es" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Quizás la ruta inteligente alrededor de un obstáculo financiero es la estrategia real. El Siete de Espadas ama la solución elegante. El camino recto no siempre es el sabio."
+                                                                  }
+                                                                },
+                                                                "fr" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Peut-être que la voie intelligente autour d'un obstacle financier est la véritable stratégie. Le Sept d'Épées aime la solution de contournement élégante. Le chemin direct n'est pas toujours le plus sage."
+                                                                  }
+                                                                },
+                                                                "it" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Forse la via intelligente intorno a un ostacolo finanziario è la vera strategia. Il Sette di Spade ama l'eleggante soluzione alternativa. La via diretta non è sempre quella saggia."
+                                                                  }
+                                                                },
+                                                                "ja" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "おそらく、財務上の障害を回避する賢いルートが本当の戦略なのでしょう。ソードの7はエレガントな回避策を愛します。直線的な道が常に賢明なわけではありません。"
+                                                                  }
+                                                                },
+                                                                "nb" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanskje den smarte veien rundt en økonomisk hindring er den virkelige strategien. Sju av Sverd elsker den elegante omveien. Den rette veien er ikke alltid den kloke."
+                                                                  }
+                                                                },
+                                                                "pl" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Może sprytna droga wokół finansowej przeszkody jest prawdziwą strategią. Siódemka Mieczy uwielbia eleganckie obejście. Prosta droga nie zawsze jest mądrą."
+                                                                  }
+                                                                },
+                                                                "pt-BR" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Talvez a rota inteligente em torno de um obstáculo financeiro seja a verdadeira estratégia. O Sete de Espadas ama a solução elegante. O caminho reto nem sempre é o sábio."
+                                                                  }
+                                                                },
+                                                                "sv" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Kanske är den smarta vägen runt ett finansiellt hinder den verkliga strategin. Sju av Svärd älskar den eleganta kringgången. Den raka vägen är inte alltid den kloka."
+                                                                  }
+                                                                },
+                                                                "uk" : {
+                                                                  "stringUnit" : {
+                                                                    "state" : "translated",
+                                                                    "value" : "Можливо, розумний обхід фінансової перешкоди — це справжня стратегія. Сімка Мечів любить елегантний обхідний шлях. Прямий шлях не завжди є мудрим."
+                                                                  }
+                                                                }
+                                                              },
     "interpretation.seven_of_swords_finance_upright_unclear" : {
       "extractionState" : "manual",
       "localizations" : {
