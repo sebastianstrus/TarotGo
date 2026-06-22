@@ -215001,292 +215001,1852 @@
                         }
                       }
                     },
-    "interpretation.nine_of_cups_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps satisfaction is itself a marker of health. The Nine of Cups treats contentment as physiology. The body responds to felt sufficiency as much as to nutrients."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What would real wellbeing feel like, not perform like? The Nine of Cups asks for the felt version. Performance of health and actual health are not the same."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe surface contentment is masking unmet emotional need. The reversed Nine of Cups sees through the curated calm. The fine-on-paper relationship may not be fine in the body."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is your wish in love based on what you actually want or what you've been told to want? The reversed Nine of Cups separates the original from the inherited. Check whose voice is doing the wishing."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps love right now is about deeper satisfaction than excitement. The Nine of Cups prefers fullness to fireworks. The quiet kind of love that doesn't make a story is still the real thing."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "If your wish in love came true exactly as you've imagined, would you want it? The Nine of Cups stress-tests the fantasy. Imagine the granted wish in full and see whether it still appeals."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the garden you've built needs to be shared, not just maintained. The reversed Nine of Pentacles invites you into community after a long solo phase. The next chapter has people in it."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is professional independence isolating you from new opportunity? The reversed Nine of Pentacles checks whether the garden has become a moat. The autonomy may be walling out what's needed."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the work you've done is enough. Stop adding for now — the Nine of Pentacles approves of resting on accomplishment. The next addition can wait."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where could you let yourself enjoy what you've built professionally? The Nine of Pentacles requires standing in the garden, not just tending it. Take a real moment."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe luxury is being borrowed against the future. The reversed Nine of Pentacles checks the source of the comfort. Lifestyle on credit is fragile by definition."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the appearance of comfort masking precariousness? The reversed Nine of Pentacles looks behind the curated calm. The image may be more solid than the reality."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps your financial foundation is more solid than the anxiety admits. The Nine of Pentacles catches the lagging mindset. The numbers may have updated; the feeling hasn't."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What would 'enough' feel like — and what would you do with that feeling? The Nine of Pentacles asks for the defined finish line. Imagine the day after you hit it."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the garden you've grown is starting to feel like a fence. The reversed Nine of Pentacles notes when protection becomes prison. Open a gate."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is self-reliance becoming a wall? The reversed Nine of Pentacles catches the autonomy that's become avoidance. Independence is a posture; isolation is a habit."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps independence and connection aren't opposites. The Nine of Pentacles holds both. Self-sufficiency creates the conditions for real intimacy, not the substitute for it."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What if you stopped a moment to enjoy what you actually have? The Nine of Pentacles invites the pause for inventory. The taking-stock itself is part of the reward."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe physical comfort is being used to avoid emotional truths. The reversed Nine of Pentacles catches the substitution. The wellness rituals can become a way of not feeling."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is health sustained by an isolation that's costly to your nervous system? The reversed Nine of Pentacles names the social cost of the pristine routine. The body needs company too."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps health is more present than your inner critic allows. The Nine of Pentacles disputes the harsh self-assessment. The body is often doing better than the narrator says."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where could you simply enjoy the body you have? The Nine of Pentacles relaxes the perpetual improvement project. The body wants to be inhabited, not just optimized."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the self-sufficiency is real but the loneliness is too. The reversed Nine of Pentacles holds both truths. The capability to be alone doesn't erase the wish not to be."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Has independence in love become avoidance? The reversed Nine of Pentacles checks the function of the autonomy. Sometimes 'I'm fine alone' is a wall, not a fact."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps being whole on your own makes the right relationship possible. The Nine of Pentacles loves from sufficiency, not need. The full self is the one that can actually share."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_pentacles_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What does self-sufficiency in love look like — without becoming armor? The Nine of Pentacles wants the soft independence. The wholeness on your own that doesn't reject the other."
-          }
-        }
-      }
-    },
+                    "interpretation.nine_of_cups_health_upright_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht ist Zufriedenheit selbst ein Zeichen von Gesundheit. Die Neun der Kelche betrachtet Wohlbefinden als Physiologie. Der Körper reagiert auf gefühlte Genügsamkeit ebenso wie auf Nährstoffe."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Perhaps satisfaction is itself a marker of health. The Nine of Cups treats contentment as physiology. The body responds to felt sufficiency as much as to nutrients."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás la satisfacción es en sí misma un indicador de salud. El Nueve de Copas trata la alegría como fisiología. El cuerpo responde tanto a la suficiencia sentida como a los nutrientes."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que la satisfaction est en elle-même un marqueur de santé. Le Neuf de Coupes traite le contentement comme une physiologie. Le corps répond à la suffisance ressentie autant qu'aux nutriments."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse la soddisfazione è di per sé un indicatore di salute. Il Nove di Coppe considera il benessere come fisiologia. Il corpo risponde alla sufficienza percepita tanto quanto ai nutrienti."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらく満足感そのものが健康の指標です。カップの9は充足感を生理学として扱います。身体は栄養素と同じくらい感じられる充足に反応します。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje tilfredshet i seg selv er et tegn på helse. Ni av Kopper behandler velvære som fysiologi. Kroppen reagerer på følt tilstrekkelighet like mye som på næringsstoffer."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może satysfakcja sama w sobie jest wyznacznikiem zdrowia. Dziewiątka Kielichów traktuje zadowolenie jako fizjologię. Ciało reaguje na odczuwane wystarczalność tak samo jak na składniki odżywcze."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez a satisfação seja em si um marcador de saúde. O Nove de Copas trata o contentamento como fisiologia. O corpo responde à suficiência sentida tanto quanto aos nutrientes."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske är tillfredsställelse i sig ett tecken på hälsa. Nio av Bägare behandlar välbefinnande som fysiologi. Kroppen svarar på känsla av tillräcklighet lika mycket som på näringsämnen."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, задоволення саме по собі є маркером здоров'я. Дев'ятка Кубків трактує вдоволення як фізіологію. Тіло реагує на відчуття достатку так само, як на поживні речовини."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_cups_health_upright_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Wie würde sich echtes Wohlbefinden anfühlen, nicht wie es aussieht? Die Neun der Kelche fragt nach der gefühlten Version. Die Performance von Gesundheit und tatsächliche Gesundheit sind nicht dasselbe."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "What would real wellbeing feel like, not perform like? The Nine of Cups asks for the felt version. Performance of health and actual health are not the same."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿Cómo se sentiría el verdadero bienestar, no cómo se representa? El Nueve de Copas pide la versión sentida. La representación de la salud y la salud real no son lo mismo."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "À quoi ressemblerait le vrai bien-être, pas sa performance ? Le Neuf de Coupes demande la version ressentie. La performance de la santé et la santé réelle ne sont pas la même chose."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Come sarebbe il vero benessere, non la sua performance? Il Nove di Coppe chiede la versione percepita. La performance della salute e la salute reale non sono la stessa cosa."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "本当のウェルビーイングは、パフォーマンスではなく、どのように感じられるものですか？カップの9は感じられるバージョンを求めます。健康のパフォーマンスと実際の健康は同じではありません。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hvordan ville ekte velvære føles, ikke fremstå? Ni av Kopper spør etter den følte versjonen. Fremvisning av helse og faktisk helse er ikke det samme."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Jakie byłoby prawdziwe dobre samopoczucie, nie jego pozór? Dziewiątka Kielichów pyta o odczuwaną wersję. Prezentacja zdrowia a rzeczywiste zdrowie to nie to samo."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Como seria o verdadeiro bem-estar, não a sua performance? O Nove de Copas pede a versão sentida. A performance da saúde e a saúde real não são a mesma coisa."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hur skulle verkligt välbefinnande kännas, inte framstå? Nio av Bägare frågar efter den kända versionen. Framvisning av hälsa och faktisk hälsa är inte samma sak."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Яким було б справжнє благополуччя, а не його виконання? Дев'ятка Кубків запитує про відчутну версію. Виконання здоров'я та фактичне здоров'я - не одне й те саме."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_cups_love_reversed_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht verbirgt oberflächliche Zufriedenheit unerfüllte emotionale Bedürfnisse. Die umgekehrte Neun der Kelche durchschaut die sorgfältig kuratierte Ruhe. Die Beziehung, die auf dem Papier gut aussieht, fühlt sich vielleicht nicht gut an."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Maybe surface contentment is masking unmet emotional need. The reversed Nine of Cups sees through the curated calm. The fine-on-paper relationship may not be fine in the body."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás la satisfacción superficial está ocultando una necesidad emocional insatisfecha. El Nueve de Copas invertido ve a través de la calma cuidadosamente curada. La relación que se ve bien en el papel puede no sentirse bien."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que le contentement de surface masque un besoin émotionnel non comblé. Le Neuf de Coupes inversé voit à travers le calme soigneusement organisé. La relation qui semble parfaite sur le papier peut ne pas l'être dans le corps."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse la soddisfazione superficiale maschera un bisogno emotivo insoddisfatto. Il Nove di Coppe rovesciato vede attraverso la calma curata. La relazione che sembra perfetta sulla carta potrebbe non esserlo nel corpo."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "表面的な満足が満たされない感情的なニーズを隠しているかもしれません。逆位置のカップの9は、作り込まれた静けさを見通します。書類上は良好な関係でも、身体的には良好でないかもしれません。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje overflatisk tilfredshet skjuler udekkede følelsesmessige behov. Den omvendte Ni av Kopper ser gjennom den kuraterte roen. Forholdet som ser bra ut på papiret, er kanskje ikke bra i kroppen."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może powierzchowne zadowolenie maskuje niezaspokojone potrzeby emocjonalne. Odwrócona Dziewiątka Kielichów widzi przez wyselekcjonowany spokój. Związek, który dobrze wygląda na papierze, może nie być dobry w ciele."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez a satisfação superficial esteja mascarando uma necessidade emocional não atendida. O Nove de Copas invertido vê através da calma cuidadosamente curada. O relacionamento que parece bom no papel pode não ser bom no corpo."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske döljer yttillfredsställelse ouppfyllda känslomässiga behov. Den omvända Nio av Bägare ser genom den kuraterade lugnet. Förhållandet som ser bra ut på papperet kanske inte känns bra i kroppen."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, поверхневе задоволення маскує незадоволені емоційні потреби. Перевернута Дев'ятка Кубків бачить крізь штучний спокій. Відносини, які виглядають добре на папері, можуть бути не такими в тілі."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_cups_love_reversed_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Basiert Ihr Wunsch in der Liebe auf dem, was Sie wirklich wollen, oder auf dem, was man Ihnen gesagt hat zu wollen? Die umgekehrte Neun der Kelche trennt das Ursprüngliche vom Übernommenen. Prüfen Sie, wessen Stimme den Wunsch ausspricht."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Is your wish in love based on what you actually want or what you've been told to want? The reversed Nine of Cups separates the original from the inherited. Check whose voice is doing the wishing."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿Tu deseo en el amor se basa en lo que realmente quieres o en lo que te han dicho que desees? El Nueve de Copas invertido separa lo original de lo heredado. Comprueba de quién es la voz que desea."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Votre souhait en amour est-il basé sur ce que vous voulez vraiment ou sur ce qu'on vous a dit de vouloir ? Le Neuf de Coupes inversé sépare l'original de l'hérité. Vérifiez à qui appartient la voix qui formule le souhait."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Il tuo desiderio in amore si basa su ciò che vuoi veramente o su ciò che ti è stato detto di volere? Il Nove di Coppe rovesciato separa l'originale dall'ereditato. Controlla di chi è la voce che sta desiderando."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "恋愛における願いは、本当に望むことに基づいていますか、それとも望むように言われたことに基づいていますか？逆位置のカップの9は、本来のものと受け継いだものを分けます。誰の声が願っているのかを確認してください。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Er ønsket ditt i kjærlighet basert på hva du faktisk vil, eller hva du har blitt fortalt å ville? Den omvendte Ni av Kopper skiller det originale fra det arvede. Sjekk hvis stemme som ønsker."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Czy twoje pragnienie w miłości opiera się na tym, czego naprawdę chcesz, czy na tym, czego kazano ci chcieć? Odwrócona Dziewiątka Kielichów oddziela oryginał od odziedziczonego. Sprawdź, czyj głos wyraża pragnienie."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Seu desejo no amor é baseado no que você realmente quer ou no que lhe disseram para querer? O Nove de Copas invertido separa o original do herdado. Verifique de quem é a voz que está desejando."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Är din önskan i kärlek baserad på vad du faktiskt vill eller vad du har blivit tillsagd att vilja? Den omvända Nio av Bägare separerar det ursprungliga från det ärvda. Kontrollera vems röst som önskar."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Чи ваше бажання в коханні ґрунтується на тому, чого ви справді хочете, чи на тому, чого вам сказали хотіти? Перевернута Дев'ятка Кубків відокремлює оригінальне від успадкованого. Перевірте, чий голос бажає."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_cups_love_upright_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht geht es bei der Liebe jetzt um tiefere Zufriedenheit als um Aufregung. Die Neun der Kelche bevorzugt Fülle vor Feuerwerk. Die stille Art von Liebe, die keine Geschichte schreibt, ist trotzdem das Wahre."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Perhaps love right now is about deeper satisfaction than excitement. The Nine of Cups prefers fullness to fireworks. The quiet kind of love that doesn't make a story is still the real thing."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás el amor ahora se trata de una satisfacción más profunda que la emoción. El Nueve de Copas prefiere la plenitud a los fuegos artificiales. El amor tranquilo que no hace historia sigue siendo el verdadero."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que l'amour en ce moment concerne une satisfaction plus profonde que l'excitation. Le Neuf de Coupes préfère la plénitude aux feux d'artifice. L'amour calme qui ne fait pas d'histoire reste le vrai."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse l'amore in questo momento riguarda una soddisfazione più profonda dell'eccitazione. Il Nove di Coppe preferisce la pienezza ai fuochi d'artificio. L'amore silenzioso che non fa storia è comunque la cosa vera."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらく今の恋愛は、興奮よりも深い満足感に関するものです。カップの9は花火よりも豊かさを好みます。物語にならない静かな愛でも、それは本物です。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje handler kjærlighet akkurat nå om dypere tilfredshet enn spenning. Ni av Kopper foretrekker fylde fremfor fyrverkeri. Den stille kjærligheten som ikke skaper en historie, er fortsatt den ekte tingen."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może miłość teraz dotyczy głębszej satysfakcji niż ekscytacji. Dziewiątka Kielichów woli pełnię od fajerwerków. Cicha miłość, która nie tworzy historii, wciąż jest prawdziwa."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez o amor agora seja sobre uma satisfação mais profunda do que a excitação. O Nove de Copas prefere a plenitude aos fogos de artifício. O amor silencioso que não cria uma história ainda é o verdadeiro."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske handlar kärlek just nu om djupare tillfredsställelse än spänning. Nio av Bägare föredrar fullhet framför fyrverkerier. Den tysta kärleken som inte skapar en berättelse är fortfarande den äkta varan."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, зараз кохання стосується глибшого задоволення, ніж хвилювання. Дев'ятка Кубків віддає перевагу повноті перед феєрверками. Тиха любов, яка не створює історії, все одно є справжньою."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_cups_love_upright_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Wenn Ihr Wunsch in der Liebe genau so in Erfüllung ginge, wie Sie es sich vorgestellt haben – würden Sie ihn dann wollen? Die Neun der Kelche testet die Fantasie auf Herz und Nieren. Stellen Sie sich den erfüllten Wunsch vollständig vor und sehen Sie, ob er immer noch anziehend wirkt."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "If your wish in love came true exactly as you've imagined, would you want it? The Nine of Cups stress-tests the fantasy. Imagine the granted wish in full and see whether it still appeals."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Si tu deseo en el amor se hiciera realidad exactamente como lo has imaginado, ¿lo querrías? El Nueve de Copas prueba la fantasía. Imagina el deseo concedido en su totalidad y observa si sigue siendo atractivo."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Si votre souhait en amour se réalisait exactement comme vous l'avez imaginé, le voudriez-vous ? Le Neuf de Coupes met la fantaisie à l'épreuve. Imaginez le souhait exaucé dans son intégralité et voyez s'il vous attire toujours."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Se il tuo desiderio in amore si avverasse esattamente come hai immaginato, lo vorresti? Il Nove di Coppe mette alla prova la fantasia. Immagina il desiderio esaudito per intero e vedi se ti attrae ancora."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "恋愛における願いが想像通りに叶ったとして、本当にそれを望みますか？カップの9は幻想をストレステストします。叶った願いを完全に想像し、それでも魅力を感じるかどうかを見てください。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hvis ønsket ditt i kjærlighet gikk i oppfyllelse akkurat som du har forestilt deg, ville du ønsket det? Ni av Kopper tester fantasien under stress. Forestill deg det innvilgede ønsket i sin helhet og se om det fortsatt appellerer."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Gdyby twoje pragnienie w miłości spełniło się dokładnie tak, jak sobie wyobrażałeś, czy byś go chciał? Dziewiątka Kielichów poddaje fantazję próbie. Wyobraź sobie spełnione pragnienie w całości i sprawdź, czy nadal cię pociąga."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Se o seu desejo no amor se realizasse exatamente como você imaginou, você o quereria? O Nove de Copas testa a fantasia. Imagine o desejo concedido por completo e veja se ele ainda é atraente."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Om din önskan i kärlek gick i uppfyllelse precis som du har föreställt dig, skulle du vilja ha den? Nio av Bägare stresstestar fantasin. Föreställ dig den beviljade önskan i sin helhet och se om den fortfarande tilltalar dig."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Якби ваше бажання в коханні здійснилося саме так, як ви уявляли, чи хотіли б ви цього? Дев'ятка Кубків перевіряє фантазію на міцність. Уявіть виконане бажання повністю і подивіться, чи воно все ще привабливе."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_career_reversed_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht muss der Garten, den Sie gebaut haben, geteilt werden, nicht nur gepflegt. Die umgekehrte Neun der Münzen lädt Sie nach einer langen Solo-Phase in die Gemeinschaft ein. Das nächste Kapitel hat Menschen darin."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Maybe the garden you've built needs to be shared, not just maintained. The reversed Nine of Pentacles invites you into community after a long solo phase. The next chapter has people in it."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás el jardín que has construido necesita ser compartido, no solo mantenido. El Nueve de Pentáculos invertido te invita a la comunidad después de una larga fase en solitario. El próximo capítulo tiene personas en él."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que le jardin que vous avez construit doit être partagé, pas seulement entretenu. Le Neuf de Pentacles inversé vous invite à la communauté après une longue phase en solo. Le prochain chapitre a des personnes dedans."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse il giardino che hai costruito deve essere condiviso, non solo mantenuto. Il Nove di Pentacoli rovesciato ti invita alla comunità dopo una lunga fase da solista. Il prossimo capitolo ha persone dentro."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "あなたが築いてきた庭は、維持するだけでなく共有する必要があるかもしれません。逆位置のペンタクルの9は、長いソロフェーズの後にコミュニティへとあなたを招きます。次の章には人々が登場します。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje hagen du har bygget må deles, ikke bare vedlikeholdes. Den omvendte Ni av Pentakler inviterer deg til fellesskap etter en lang solofase. Det neste kapittelet har mennesker i seg."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może ogród, który zbudowałeś, musi być współdzielony, nie tylko utrzymywany. Odwrócona Dziewiątka Pentakli zaprasza cię do społeczności po długiej fazie solo. Następny rozdział ma w sobie ludzi."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez o jardim que você construiu precise ser compartilhado, não apenas mantido. O Nove de Pentáculos invertido convida você para a comunidade após uma longa fase solo. O próximo capítulo tem pessoas nele."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske behöver trädgården du har byggt delas, inte bara underhållas. Den omvända Nio av Pentagram inviterar dig till gemenskap efter en lång solofas. Nästa kapitel har människor i sig."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, сад, який ви створили, потрібно ділити, а не просто підтримувати. Перевернута Дев'ятка Пентаклів запрошує вас до спільноти після довгої сольної фази. У наступному розділі є люди."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_career_reversed_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Isoliert Sie berufliche Unabhängigkeit von neuen Möglichkeiten? Die umgekehrte Neun der Münzen prüft, ob der Garten zu einem Burggraben geworden ist. Die Autonomie könnte das Notwendige aussperren."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Is professional independence isolating you from new opportunity? The reversed Nine of Pentacles checks whether the garden has become a moat. The autonomy may be walling out what's needed."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿La independencia profesional te está aislando de nuevas oportunidades? El Nueve de Pentáculos invertido comprueba si el jardín se ha convertido en un foso. La autonomía puede estar excluyendo lo que se necesita."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "L'indépendance professionnelle vous isole-t-elle de nouvelles opportunités ? Le Neuf de Pentacles inversé vérifie si le jardin est devenu un fossé. L'autonomie peut exclure ce qui est nécessaire."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "L'indipendenza professionale ti sta isolando da nuove opportunità? Il Nove di Pentacoli rovesciato verifica se il giardino è diventato un fossato. L'autonomia potrebbe escludere ciò che è necessario."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "職業上の独立性が新たな機会からあなたを隔離していませんか？逆位置のペンタクルの9は、庭が堀になっていないかをチェックします。自律性が必要なものを排除しているかもしれません。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Isolerer profesjonell uavhengighet deg fra nye muligheter? Den omvendte Ni av Pentakler sjekker om hagen har blitt en vollgrav. Autonomien kan stenge ute det som trengs."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Czy niezależność zawodowa izoluje cię od nowych możliwości? Odwrócona Dziewiątka Pentakli sprawdza, czy ogród stał się fosą. Autonomia może wykluczać to, co jest potrzebne."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "A independência profissional está isolando você de novas oportunidades? O Nove de Pentáculos invertido verifica se o jardim se tornou um fosso. A autonomia pode estar excluindo o que é necessário."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Isolerar professionell oberoende dig från nya möjligheter? Den omvända Nio av Pentagram kontrollerar om trädgården har blivit en vallgrav. Autonomin kan stänga ute det som behövs."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Чи професійна незалежність ізолює вас від нових можливостей? Перевернута Дев'ятка Пентаклів перевіряє, чи не став сад ровом. Автономія може виключати те, що потрібно."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_career_upright_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht ist die Arbeit, die Sie geleistet haben, genug. Hören Sie jetzt auf hinzuzufügen – die Neun der Münzen billigt das Ausruhen auf Errungenem. Die nächste Ergänzung kann warten."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Perhaps the work you've done is enough. Stop adding for now — the Nine of Pentacles approves of resting on accomplishment. The next addition can wait."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás el trabajo que has hecho es suficiente. Deja de añadir por ahora — el Nueve de Pentáculos aprueba descansar en los logros. La próxima adición puede esperar."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que le travail que vous avez fait est suffisant. Arrêtez d'ajouter pour l'instant — le Neuf de Pentacles approuve de se reposer sur ses acquis. La prochaine addition peut attendre."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse il lavoro che hai fatto è abbastanza. Smetti di aggiungere per ora — il Nove di Pentacoli approva il riposarsi sui risultati. La prossima aggiunta può aspettare."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらくあなたが成し遂げた仕事は十分です。今は追加を止めてください — ペンタクルの9は成果に安らぐことを認めています。次の追加は待つことができます。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje arbeidet du har gjort er nok. Slutt å legge til for nå — Ni av Pentakler godkjenner å hvile på prestasjoner. Neste tillegg kan vente."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może praca, którą wykonałeś, jest wystarczająca. Przestań dodawać na razie — Dziewiątka Pentakli aprobuje odpoczywanie na osiągnięciach. Następny dodatek może poczekać."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez o trabalho que você fez seja suficiente. Pare de adicionar por enquanto — o Nove de Pentáculos aprova descansar sobre a realização. A próxima adição pode esperar."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske är arbetet du har gjort tillräckligt. Sluta lägga till för nu — Nio av Pentagram godkänner att vila på prestationer. Nästa tillägg kan vänta."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, робота, яку ви виконали, є достатньою. Перестаньте додавати зараз — Дев'ятка Пентаклів схвалює відпочинок на досягнутому. Наступне доповнення може зачекати."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_career_upright_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Wo könnten Sie sich erlauben, das zu genießen, was Sie beruflich aufgebaut haben? Die Neun der Münzen verlangt, im Garten zu stehen, nicht nur ihn zu pflegen. Nehmen Sie sich einen echten Moment."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Where could you let yourself enjoy what you've built professionally? The Nine of Pentacles requires standing in the garden, not just tending it. Take a real moment."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿Dónde podrías permitirte disfrutar de lo que has construido profesionalmente? El Nueve de Pentáculos requiere estar en el jardín, no solo cuidarlo. Tómate un momento de verdad."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Où pourriez-vous vous permettre de profiter de ce que vous avez construit professionnellement ? Le Neuf de Pentacles exige de se tenir dans le jardin, pas seulement de l'entretenir. Prenez un vrai moment."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Dove potresti permetterti di godere di ciò che hai costruito professionalmente? Il Nove di Pentacoli richiede di stare nel giardino, non solo di curarlo. Prenditi un vero momento."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "職業的に築いてきたものを、どこで楽しむことを自分に許せますか？ペンタクルの9は、庭を手入れするだけでなく、その中に立つことを要求します。本当のひとときを持ってください。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hvor kan du tillate deg selv å nyte det du har bygget profesjonelt? Ni av Pentakler krever å stå i hagen, ikke bare å stelle den. Ta et ekte øyeblikk."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Gdzie mógłbyś pozwolić sobie cieszyć się tym, co zbudowałeś zawodowo? Dziewiątka Pentakli wymaga stania w ogrodzie, nie tylko dbania o niego. Weź prawdziwą chwilę."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Onde você poderia se permitir desfrutar do que construiu profissionalmente? O Nove de Pentáculos exige estar no jardim, não apenas cuidar dele. Tenha um momento real."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Var kan du tillåta dig själv att njuta av vad du har byggt professionellt? Nio av Pentagram kräver att stå i trädgården, inte bara sköta den. Ta ett riktigt ögonblick."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Де ви могли б дозволити собі насолоджуватися тим, що ви побудували професійно? Дев'ятка Пентаклів вимагає стояти в саду, а не просто доглядати за ним. Візьміть справжній момент."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_finance_reversed_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht wird der Luxus auf Kosten der Zukunft geliehen. Die umgekehrte Neun der Münzen prüft die Quelle des Komforts. Ein Lebensstil auf Kredit ist per Definition fragil."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Maybe luxury is being borrowed against the future. The reversed Nine of Pentacles checks the source of the comfort. Lifestyle on credit is fragile by definition."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás el lujo se está pidiendo prestado contra el futuro. El Nueve de Pentáculos invertido comprueba la fuente de la comodidad. El estilo de vida a crédito es frágil por definición."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que le luxe est emprunté contre l'avenir. Le Neuf de Pentacles inversé vérifie la source du confort. Le mode de vie à crédit est fragile par définition."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse il lusso è preso in prestito contro il futuro. Il Nove di Pentacoli rovesciato controlla la fonte del comfort. Lo stile di vita a credito è fragile per definizione."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらく贅沢は未来を担保に借り入れられています。逆位置のペンタクルの9は、快適さの源泉をチェックします。クレジットでのライフスタイルは定義上、脆弱です。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje luksus lånes mot fremtiden. Den omvendte Ni av Pentakler sjekker kilden til komforten. Livsstil på kreditt er per definisjon skjør."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może luksus jest pożyczany kosztem przyszłości. Odwrócona Dziewiątka Pentakli sprawdza źródło komfortu. Styl życia na kredyt jest z definicji kruchy."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez o luxo esteja sendo emprestado contra o futuro. O Nove de Pentáculos invertido verifica a fonte do conforto. Estilo de vida a crédito é frágil por definição."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske lånas lyx mot framtiden. Den omvända Nio av Pentagram kontrollerar källan till komforten. Livsstil på kredit är per definition skör."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, розкіш береться в борг проти майбутнього. Перевернута Дев'ятка Пентаклів перевіряє джерело комфорту. Спосіб життя в кредит є крихким за визначенням."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_finance_reversed_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Maskiert der Schein von Komfort prekäre Verhältnisse? Die umgekehrte Neun der Münzen schaut hinter die sorgfältig kuratierte Fassade. Das Bild mag solider sein als die Realität."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Is the appearance of comfort masking precariousness? The reversed Nine of Pentacles looks behind the curated calm. The image may be more solid than the reality."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿La apariencia de comodidad está enmascarando la precariedad? El Nueve de Pentáculos invertido mira detrás de la calma cuidada. La imagen puede ser más sólida que la realidad."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "L'apparence de confort masque-t-elle la précarité ? Le Neuf de Pentacles inversé regarde derrière le calme soigneusement organisé. L'image peut être plus solide que la réalité."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "L'apparenza di comfort sta mascherando la precarietà? Il Nove di Pentacoli rovesciato guarda dietro la calma curata. L'immagine potrebbe essere più solida della realtà."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "快適さの外見が不安定さを隠していませんか？逆位置のペンタクルの9は、作り込まれた静けさの背後を見ます。イメージは現実よりも堅固に見えるかもしれません。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Skjuler utseendet av komfort ustabilitet? Den omvendte Ni av Pentakler ser bak den kuraterte roen. Bildet kan være mer solid enn virkeligheten."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Czy pozór komfortu maskuje niepewność? Odwrócona Dziewiątka Pentakli patrzy za wyselekcjonowany spokój. Obraz może być solidniejszy niż rzeczywistość."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "A aparência de conforto está mascarando a precariedade? O Nove de Pentáculos invertido olha por trás da calma curada. A imagem pode ser mais sólida do que a realidade."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Maskerar utseendet av komfort osäkerhet? Den omvända Nio av Pentagram ser bakom den kuraterade lugnet. Bilden kan vara mer solid än verkligheten."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Чи зовнішній вигляд комфорту маскує нестабільність? Перевернута Дев'ятка Пентаклів зазирає за штучний спокій. Образ може бути більш солідним, ніж реальність."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_finance_upright_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht ist Ihre finanzielle Grundlage solider, als die Angst zugibt. Die Neun der Münzen erkennt den nachhinkenden Geisteszustand. Die Zahlen mögen sich aktualisiert haben, das Gefühl nicht."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Perhaps your financial foundation is more solid than the anxiety admits. The Nine of Pentacles catches the lagging mindset. The numbers may have updated; the feeling hasn't."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás tu base financiera es más sólida de lo que la ansiedad admite. El Nueve de Pentáculos detecta la mentalidad rezagada. Los números pueden haberse actualizado; el sentimiento no."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que votre base financière est plus solide que ne l'admet l'anxiété. Le Neuf de Pentacles saisit l'état d'esprit qui traîne. Les chiffres ont peut-être été mis à jour ; le sentiment ne l'a pas été."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse la tua base finanziaria è più solida di quanto l'ansia ammetta. Il Nove di Pentacoli coglie la mentalità in ritardo. I numeri potrebbero essersi aggiornati; la sensazione no."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらくあなたの経済的基盤は、不安が認めるよりも堅固です。ペンタクルの9は遅れている考え方を捉えます。数字は更新されたかもしれませんが、感覚は更新されていません。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje ditt økonomiske fundament er mer solid enn angsten innrømmer. Ni av Pentakler fanger opp det etterslepende tankesettet. Tallene kan ha blitt oppdatert; følelsen har ikke det."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może twoja podstawa finansowa jest solidniejsza, niż przyznaje niepokój. Dziewiątka Pentakli wyłapuje opóźnione myślenie. Liczby mogły zostać zaktualizowane; uczucie nie."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez sua base financeira seja mais sólida do que a ansiedade admite. O Nove de Pentáculos captura a mentalidade defasada. Os números podem ter sido atualizados; o sentimento não."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske är din ekonomiska grund mer solid än ångesten medger. Nio av Pentagram fångar det efterblivna tänkesättet. Siffrorna kan ha uppdaterats; känslan har inte det."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, ваша фінансова основа більш солідна, ніж визнає тривога. Дев'ятка Пентаклів вловлює відстале мислення. Цифри могли оновитися; відчуття - ні."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_finance_upright_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Wie würde sich 'genug' anfühlen – und was würden Sie mit diesem Gefühl tun? Die Neun der Münzen fragt nach der definierten Ziellinie. Stellen Sie sich den Tag nach dem Erreichen vor."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "What would 'enough' feel like — and what would you do with that feeling? The Nine of Pentacles asks for the defined finish line. Imagine the day after you hit it."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿Cómo se sentiría 'suficiente' — y qué harías con esa sensación? El Nueve de Pentáculos pide la línea de meta definida. Imagina el día después de alcanzarla."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "À quoi ressemblerait le sentiment de 'suffisant' — et que feriez-vous de ce sentiment ? Le Neuf de Pentacles demande une ligne d'arrivée définie. Imaginez le lendemain du jour où vous l'atteindrez."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Come ci si sentirebbe ad avere 'abbastanza' — e cosa faresti con quella sensazione? Il Nove di Pentacoli chiede un traguardo definito. Immagina il giorno dopo averlo raggiunto."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "『十分』とはどのような感覚で、その感覚で何をしますか？ペンタクルの9は明確なゴールラインを求めます。達成した翌日を想像してください。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hvordan ville 'nok' føles — og hva ville du gjort med den følelsen? Ni av Pentakler ber om den definerte målstreken. Forestill deg dagen etter at du når den."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Jakie byłoby uczucie 'wystarczająco' — i co byś zrobił z tym uczuciem? Dziewiątka Pentakli pyta o zdefiniowaną linię mety. Wyobraź sobie dzień po jej osiągnięciu."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Como seria a sensação de 'suficiente' — e o que você faria com essa sensação? O Nove de Pentáculos pede a linha de chegada definida. Imagine o dia seguinte a alcançá-la."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hur skulle 'tillräckligt' kännas — och vad skulle du göra med den känslan? Nio av Pentagram ber om den definierade mållinjen. Föreställ dig dagen efter att du når den."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Яким було б відчуття 'достатньо' — і що б ви зробили з цим відчуттям? Дев'ятка Пентаклів запитує про визначену фінішну пряму. Уявіть день після того, як ви її досягнете."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_general_reversed_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht beginnt der Garten, den Sie gezüchtet haben, sich wie ein Zaun anzufühlen. Die umgekehrte Neun der Münzen bemerkt, wann Schutz zum Gefängnis wird. Öffnen Sie ein Tor."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Maybe the garden you've grown is starting to feel like a fence. The reversed Nine of Pentacles notes when protection becomes prison. Open a gate."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás el jardín que has cultivado está empezando a sentirse como una valla. El Nueve de Pentáculos invertido nota cuando la protección se convierte en prisión. Abre una puerta."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que le jardin que vous avez cultivé commence à ressembler à une clôture. Le Neuf de Pentacles inversé note quand la protection devient une prison. Ouvrez une porte."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse il giardino che hai coltivato sta iniziando a sembrare una recinzione. Il Nove di Pentacoli rovesciato nota quando la protezione diventa prigione. Apri un cancello."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "あなたが育ててきた庭が、柵のように感じられ始めているかもしれません。逆位置のペンタクルの9は、保護が刑務所になるときに気づきます。門を開けてください。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje hagen du har dyrket begynner å føles som et gjerde. Den omvendte Ni av Pentakler noterer når beskyttelse blir fengsel. Åpne en port."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może ogród, który wyhodowałeś, zaczyna przypominać ogrodzenie. Odwrócona Dziewiątka Pentakli zauważa, kiedy ochrona staje się więzieniem. Otwórz bramę."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez o jardim que você cultivou esteja começando a parecer uma cerca. O Nove de Pentáculos invertido nota quando a proteção se torna prisão. Abra um portão."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske börjar trädgården du har odlat kännas som ett staket. Den omvända Nio av Pentagram noterar när skydd blir fängelse. Öppna en grind."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, сад, який ви виростили, починає здаватися парканом. Перевернута Дев'ятка Пентаклів помічає, коли захист стає в'язницею. Відчиніть ворота."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_general_reversed_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Wo wird Selbstständigkeit zu einer Mauer? Die umgekehrte Neun der Münzen erkennt die Autonomie, die zur Vermeidung geworden ist. Unabhängigkeit ist eine Haltung; Isolation ist eine Gewohnheit."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Where is self-reliance becoming a wall? The reversed Nine of Pentacles catches the autonomy that's become avoidance. Independence is a posture; isolation is a habit."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿Dónde se está convirtiendo la autosuficiencia en un muro? El Nueve de Pentáculos invertido detecta la autonomía que se ha convertido en evasión. La independencia es una postura; el aislamiento es un hábito."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Où l'autonomie devient-elle un mur ? Le Neuf de Pentacles inversé saisit l'autonomie devenue évitement. L'indépendance est une posture ; l'isolement est une habitude."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Dove l'autosufficienza sta diventando un muro? Il Nove di Pentacoli rovesciato coglie l'autonomia che è diventata evitamento. L'indipendenza è una postura; l'isolamento è un'abitudine."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "自己依存がどこで壁になっていますか？逆位置のペンタクルの9は、回避になった自律性を捉えます。独立は姿勢であり、孤立は習慣です。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hvor blir selvhjulpenhet en vegg? Den omvendte Ni av Pentakler fanger opp autonomien som har blitt unngåelse. Uavhengighet er en holdning; isolasjon er en vane."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Gdzie samodzielność staje się murem? Odwrócona Dziewiątka Pentakli wyłapuje autonomię, która stała się unikaniem. Niezależność to postawa; izolacja to nawyk."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Onde a autossuficiência está se tornando um muro? O Nove de Pentáculos invertido captura a autonomia que se tornou evitação. Independência é uma postura; isolamento é um hábito."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Var blir självtillit en vägg? Den omvända Nio av Pentagram fångar autonomi som blivit undvikande. Oberoende är en hållning; isolering är en vana."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Де самодостатність стає стіною? Перевернута Дев'ятка Пентаклів вловлює автономію, яка стала уникненням. Незалежність - це поза; ізоляція - це звичка."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_general_upright_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht sind Unabhängigkeit und Verbundenheit keine Gegensätze. Die Neun der Münzen hält beides. Selbstständigkeit schafft die Bedingungen für echte Intimität, nicht den Ersatz dafür."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Perhaps independence and connection aren't opposites. The Nine of Pentacles holds both. Self-sufficiency creates the conditions for real intimacy, not the substitute for it."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás la independencia y la conexión no son opuestos. El Nueve de Pentáculos sostiene ambos. La autosuficiencia crea las condiciones para la intimidad real, no el sustituto de ella."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que l'indépendance et la connexion ne sont pas des opposés. Le Neuf de Pentacles tient les deux. L'autosuffisance crée les conditions d'une intimité réelle, pas le substitut de celle-ci."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse indipendenza e connessione non sono opposte. Il Nove di Pentacoli tiene entrambe. L'autosufficienza crea le condizioni per l'intimità reale, non il suo sostituto."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらく独立とつながりは対極ではありません。ペンタクルの9は両方を保持します。自己充足は本当の親密さのための条件を作り出し、その代用品ではありません。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje uavhengighet og tilknytning ikke er motsetninger. Ni av Pentakler holder begge deler. Selvforsyning skaper betingelsene for ekte intimitet, ikke erstatningen for den."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może niezależność i więź nie są przeciwieństwami. Dziewiątka Pentakli trzyma obie. Samowystarczalność tworzy warunki dla prawdziwej intymności, nie jej substytut."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez independência e conexão não sejam opostos. O Nove de Pentáculos segura ambos. A autossuficiência cria as condições para a intimidade real, não o substituto dela."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske är inte oberoende och anslutning motsatser. Nio av Pentagram håller båda. Självförsörjning skapar förutsättningar för verklig intimitet, inte ersättningen för den."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, незалежність і зв'язок не є протилежностями. Дев'ятка Пентаклів тримає обидва. Самодостатність створює умови для справжньої близькості, а не її заміну."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_general_upright_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Was wäre, wenn Sie einen Moment innehalten würden, um zu genießen, was Sie tatsächlich haben? Die Neun der Münzen lädt zur Bestandsaufnahme ein. Das Innehalten selbst ist Teil der Belohnung."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "What if you stopped a moment to enjoy what you actually have? The Nine of Pentacles invites the pause for inventory. The taking-stock itself is part of the reward."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿Y si te detuvieras un momento para disfrutar de lo que realmente tienes? El Nueve de Pentáculos invita a la pausa para hacer inventario. El hacer balance en sí mismo es parte de la recompensa."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Et si vous vous arrêtiez un instant pour profiter de ce que vous avez réellement ? Le Neuf de Pentacles invite à la pause pour faire l'inventaire. Le fait de faire le point fait partie de la récompense."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "E se ti fermassi un momento per godere di ciò che hai effettivamente? Il Nove di Pentacoli invita alla pausa per l'inventario. Il fare il punto è di per sé parte della ricompensa."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "実際に持っているものを楽しむために、ちょっと立ち止まってみませんか？ペンタクルの9は棚卸しのための休止を促します。在庫確認自体が報酬の一部です。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hva om du stoppet et øyeblikk for å nyte det du faktisk har? Ni av Pentakler inviterer til pause for å ta oversikt. Å ta oversikt er i seg selv en del av belønningen."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "A co, gdybyś zatrzymał się na chwilę, aby cieszyć się tym, co faktycznie masz? Dziewiątka Pentakli zaprasza do przerwy na inwentaryzację. Samo podsumowanie jest częścią nagrody."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "E se você parasse um momento para desfrutar do que realmente tem? O Nove de Pentáculos convida à pausa para o inventário. O próprio ato de fazer o balanço é parte da recompensa."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Tänk om du stannade upp ett ögonblick för att njuta av vad du faktiskt har? Nio av Pentagram bjuder in till paus för inventering. Att ta inventering är i sig en del av belöningen."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Що, якби ви зупинилися на мить, щоб насолодитися тим, що у вас є насправді? Дев'ятка Пентаклів запрошує до паузи для інвентаризації. Сама по собі оцінка є частиною винагороди."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_health_reversed_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht wird körperlicher Komfort genutzt, um emotionalen Wahrheiten auszuweichen. Die umgekehrte Neun der Münzen erkennt die Substitution. Die Wellness-Rituale können zu einem Weg werden, nicht zu fühlen."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Maybe physical comfort is being used to avoid emotional truths. The reversed Nine of Pentacles catches the substitution. The wellness rituals can become a way of not feeling."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás la comodidad física se está utilizando para evitar verdades emocionales. El Nueve de Pentáculos invertido detecta la sustitución. Los rituales de bienestar pueden convertirse en una forma de no sentir."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que le confort physique est utilisé pour éviter les vérités émotionnelles. Le Neuf de Pentacles inversé saisit la substitution. Les rituels de bien-être peuvent devenir un moyen de ne pas ressentir."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse il comfort fisico viene utilizzato per evitare verità emotive. Il Nove di Pentacoli rovesciato coglie la sostituzione. I rituali del benessere possono diventare un modo per non sentire."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらく身体的な快適さが感情的な真実を避けるために使われています。逆位置のペンタクルの9はその代用を捉えます。ウェルネスの儀式が、感じないための方法になることがあります。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje fysisk komfort brukes for å unngå følelsesmessige sannheter. Den omvendte Ni av Pentakler fanger opp substitusjonen. Velværeritualer kan bli en måte å ikke føle på."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może fizyczny komfort jest używany do unikania emocjonalnych prawd. Odwrócona Dziewiątka Pentakli wyłapuje substytucję. Rytuały wellness mogą stać się sposobem na nieodczuwanie."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez o conforto físico esteja sendo usado para evitar verdades emocionais. O Nove de Pentáculos invertido captura a substituição. Os rituais de bem-estar podem se tornar uma maneira de não sentir."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske används fysisk komfort för att undvika känslomässiga sanningar. Den omvända Nio av Pentagram fångar substitutionen. Wellness-ritualer kan bli ett sätt att inte känna."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, фізичний комфорт використовується, щоб уникнути емоційних істин. Перевернута Дев'ятка Пентаклів вловлює підміну. Оздоровчі ритуали можуть стати способом не відчувати."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_health_reversed_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Wird die Gesundheit durch eine Isolation aufrechterhalten, die Ihrem Nervensystem schadet? Die umgekehrte Neun der Münzen benennt den sozialen Preis der makellosen Routine. Der Körper braucht auch Gesellschaft."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Is health sustained by an isolation that's costly to your nervous system? The reversed Nine of Pentacles names the social cost of the pristine routine. The body needs company too."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿La salud se mantiene mediante un aislamiento que es costoso para tu sistema nervioso? El Nueve de Pentáculos invertido nombra el costo social de la rutina impecable. El cuerpo también necesita compañía."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "La santé est-elle maintenue par un isolement qui coûte cher à votre système nerveux ? Le Neuf de Pentacles inversé nomme le coût social de la routine impeccable. Le corps a aussi besoin de compagnie."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "La salute è sostenuta da un isolamento che è costoso per il tuo sistema nervoso? Il Nove di Pentacoli rovesciato nomina il costo sociale della routine impeccabile. Anche il corpo ha bisogno di compagnia."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "健康は、神経系に負担をかける孤立によって維持されていますか？逆位置のペンタクルの9は、完璧なルーティンの社会的コストを名指しします。身体も仲間を必要とします。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Opprettholdes helsen av en isolasjon som er kostbar for nervesystemet? Den omvendte Ni av Pentakler nevner den sosiale kostnaden ved den plettfrie rutinen. Kroppen trenger også selskap."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Czy zdrowie jest utrzymywane przez izolację, która jest kosztowna dla twojego układu nerwowego? Odwrócona Dziewiątka Pentakli nazywa społeczny koszt nieskazitelnej rutyny. Ciało również potrzebuje towarzystwa."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "A saúde é sustentada por um isolamento que é custoso para o seu sistema nervoso? O Nove de Pentáculos invertido nomeia o custo social da rotina impecável. O corpo também precisa de companhia."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Upprätthålls hälsan av en isolering som är kostsam för ditt nervsystem? Den omvända Nio av Pentagram nämner den sociala kostnaden för den fläckfria rutinen. Kroppen behöver också sällskap."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Чи підтримується здоров'я ізоляцією, яка є дорогою для вашої нервової системи? Перевернута Дев'ятка Пентаклів називає соціальну ціну бездоганного розпорядку. Тіло також потребує товариства."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_health_upright_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht ist die Gesundheit präsenter, als Ihr innerer Kritiker zugibt. Die Neun der Münzen widerspricht der harschen Selbstbeurteilung. Der Körper ist oft besser dran, als der Erzähler sagt."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Perhaps health is more present than your inner critic allows. The Nine of Pentacles disputes the harsh self-assessment. The body is often doing better than the narrator says."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás la salud está más presente de lo que tu crítico interior permite. El Nueve de Pentáculos disputa la dura autoevaluación. El cuerpo a menudo está mejor de lo que dice el narrador."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que la santé est plus présente que ne le permet votre critique intérieur. Le Neuf de Pentacles conteste l'auto-évaluation sévère. Le corps va souvent mieux que ce que le narrateur dit."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse la salute è più presente di quanto il tuo critico interiore permetta. Il Nove di Pentacoli contesta la severa autovalutazione. Il corpo spesso sta meglio di quanto dica il narratore."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらく健康はあなたの内なる批評家が認めるよりも存在しています。ペンタクルの9は厳しい自己評価に異議を唱えます。身体はしばしば、語り手が言うよりも良い状態にあります。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje er helsen mer til stede enn din indre kritiker tillater. Ni av Pentakler bestrider den harde selvurderingen. Kroppen har ofte det bedre enn fortelleren sier."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może zdrowie jest bardziej obecne, niż pozwala na to twój wewnętrzny krytyk. Dziewiątka Pentakli kwestionuje surową samoocenę. Ciało często ma się lepiej, niż mówi narrator."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez a saúde esteja mais presente do que seu crítico interior permite. O Nove de Pentáculos contesta a dura autoavaliação. O corpo muitas vezes está melhor do que o narrador diz."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske är hälsan mer närvarande än din inre kritiker tillåter. Nio av Pentagram ifrågasätter den hårda självbedömningen. Kroppen mår ofta bättre än berättaren säger."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, здоров'я є більш присутнім, ніж дозволяє ваш внутрішній критик. Дев'ятка Пентаклів заперечує сувору самооцінку. Тіло часто почувається краще, ніж каже оповідач."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_health_upright_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Wo könnten Sie einfach den Körper genießen, den Sie haben? Die Neun der Münzen entspannt das ewige Verbesserungsprojekt. Der Körper möchte bewohnt werden, nicht nur optimiert."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Where could you simply enjoy the body you have? The Nine of Pentacles relaxes the perpetual improvement project. The body wants to be inhabited, not just optimized."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿Dónde podrías simplemente disfrutar del cuerpo que tienes? El Nueve de Pentáculos relaja el proyecto de mejora perpetua. El cuerpo quiere ser habitado, no solo optimizado."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Où pourriez-vous simplement profiter du corps que vous avez ? Le Neuf de Pentacles détend le projet d'amélioration perpétuelle. Le corps veut être habité, pas seulement optimisé."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Dove potresti semplicemente goderti il corpo che hai? Il Nove di Pentacoli rilassa il progetto di miglioramento perpetuo. Il corpo vuole essere abitato, non solo ottimizzato."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "あなたが持っている身体を、どこで単純に楽しむことができますか？ペンタクルの9は永遠の改善プロジェクトを和らげます。身体は最適化されるだけでなく、住まわれることを望んでいます。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hvor kan du bare nyte kroppen du har? Ni av Pentakler slapper av det evige forbedringsprosjektet. Kroppen ønsker å bli bebodd, ikke bare optimalisert."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Gdzie mógłbyś po prostu cieszyć się ciałem, które masz? Dziewiątka Pentakli rozluźnia projekt wiecznego ulepszania. Ciało chce być zamieszkiwane, nie tylko optymalizowane."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Onde você poderia simplesmente desfrutar do corpo que tem? O Nove de Pentáculos relaxa o projeto de melhoria perpétua. O corpo quer ser habitado, não apenas otimizado."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Var kan du bara njuta av kroppen du har? Nio av Pentagram slappnar av det eviga förbättringsprojektet. Kroppen vill bebos, inte bara optimeras."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Де ви могли б просто насолоджуватися тілом, яке маєте? Дев'ятка Пентаклів розслабляє проєкт вічного вдосконалення. Тіло хоче, щоб у ньому жили, а не просто його оптимізували."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_love_reversed_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht ist die Selbstständigkeit real, aber die Einsamkeit auch. Die umgekehrte Neun der Münzen hält beide Wahrheiten. Die Fähigkeit, allein zu sein, löscht den Wunsch, es nicht zu sein, nicht aus."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Maybe the self-sufficiency is real but the loneliness is too. The reversed Nine of Pentacles holds both truths. The capability to be alone doesn't erase the wish not to be."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás la autosuficiencia es real pero la soledad también. El Nueve de Pentáculos invertido sostiene ambas verdades. La capacidad de estar solo no borra el deseo de no estarlo."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être que l'autosuffisance est réelle mais la solitude aussi. Le Neuf de Pentacles inversé tient les deux vérités. La capacité à être seul n'efface pas le souhait de ne pas l'être."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse l'autosufficienza è reale ma anche la solitudine lo è. Il Nove di Pentacoli rovesciato tiene entrambe le verità. La capacità di stare soli non cancella il desiderio di non esserlo."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらく自己充足は現実的ですが、孤独も現実的です。逆位置のペンタクルの9は両方の真実を保持します。一人でいる能力は、一人でいたくないという願望を消し去ることはありません。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje selvforsyningen er ekte, men ensomheten også. Den omvendte Ni av Pentakler holder begge sannhetene. Evnen til å være alene sletter ikke ønsket om å ikke være det."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może samowystarczalność jest prawdziwa, ale samotność też. Odwrócona Dziewiątka Pentakli trzyma obie prawdy. Umiejętność bycia samemu nie wymazuje pragnienia, by nie być samemu."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez a autossuficiência seja real, mas a solidão também. O Nove de Pentáculos invertido segura ambas as verdades. A capacidade de estar sozinho não apaga o desejo de não estar."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske är självförsörjningen verklig men ensamheten också. Den omvända Nio av Pentagram håller båda sanningarna. Förmågan att vara ensam raderar inte önskan att inte vara det."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, самодостатність є реальною, але самотність теж. Перевернута Дев'ятка Пентаклів тримає обидві істини. Здатність бути наодинці не стирає бажання не бути таким."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_love_reversed_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Ist Unabhängigkeit in der Liebe zur Vermeidung geworden? Die umgekehrte Neun der Münzen prüft die Funktion der Autonomie. Manchmal ist 'mir geht es allein gut' eine Mauer, keine Tatsache."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Has independence in love become avoidance? The reversed Nine of Pentacles checks the function of the autonomy. Sometimes 'I'm fine alone' is a wall, not a fact."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿La independencia en el amor se ha convertido en evasión? El Nueve de Pentáculos invertido comprueba la función de la autonomía. A veces 'estoy bien solo' es un muro, no un hecho."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "L'indépendance en amour est-elle devenue un évitement ? Le Neuf de Pentacles inversé vérifie la fonction de l'autonomie. Parfois, 'je vais bien seul(e)' est un mur, pas un fait."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "L'indipendenza in amore è diventata evitamento? Il Nove di Pentacoli rovesciato verifica la funzione dell'autonomia. A volte 'sto bene da solo' è un muro, non un fatto."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "恋愛における独立は回避になりましたか？逆位置のペンタクルの9は自律性の機能をチェックします。時には『一人で大丈夫』は事実ではなく壁です。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Har uavhengighet i kjærlighet blitt unngåelse? Den omvendte Ni av Pentakler sjekker funksjonen til autonomien. Noen ganger er 'jeg har det bra alene' en vegg, ikke et faktum."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Czy niezależność w miłości stała się unikaniem? Odwrócona Dziewiątka Pentakli sprawdza funkcję autonomii. Czasami 'dobrze mi samemu' to mur, nie fakt."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "A independência no amor se tornou evitação? O Nove de Pentáculos invertido verifica a função da autonomia. Às vezes, 'estou bem sozinho' é um muro, não um fato."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Har oberoende i kärlek blivit undvikande? Den omvända Nio av Pentagram kontrollerar funktionen av autonomi. Ibland är 'jag mår bra ensam' en vägg, inte ett faktum."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Чи незалежність у коханні стала уникненням? Перевернута Дев'ятка Пентаклів перевіряє функцію автономії. Іноді 'мені добре самому' - це стіна, а не факт."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_love_upright_not_resonating" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Vielleicht macht es die Ganzheitlichkeit im Alleinsein möglich, die richtige Beziehung einzugehen. Die Neun der Münzen liebt aus Fülle, nicht aus Mangel. Das vollständige Selbst ist das, das wirklich teilen kann."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Perhaps being whole on your own makes the right relationship possible. The Nine of Pentacles loves from sufficiency, not need. The full self is the one that can actually share."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Quizás estar completo por tu cuenta hace posible la relación correcta. El Nueve de Pentáculos ama desde la suficiencia, no desde la necesidad. El yo completo es el que realmente puede compartir."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Peut-être qu'être entier(e) par vous-même rend la bonne relation possible. Le Neuf de Pentacles aime depuis la suffisance, pas le besoin. Le soi complet est celui qui peut vraiment partager."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Forse essere interi da soli rende possibile la relazione giusta. Il Nove di Pentacoli ama dalla sufficienza, non dal bisogno. Il sé completo è quello che può veramente condividere."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "おそらく、一人で完全であることが、正しい関係を可能にします。ペンタクルの9は、必要性ではなく充足から愛します。完全な自己こそが、実際に共有できるものです。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanskje det å være hel på egen hånd gjør det rette forholdet mulig. Ni av Pentakler elsker fra tilstrekkelighet, ikke behov. Det hele selvet er det som faktisk kan dele."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Być może bycie całością samemu sprawia, że właściwy związek staje się możliwy. Dziewiątka Pentakli kocha z wystarczalności, nie z potrzeby. Pełne ja to to, które naprawdę może się dzielić."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Talvez ser inteiro por conta própria torne possível o relacionamento certo. O Nove de Pentáculos ama a partir da suficiência, não da necessidade. O eu completo é aquele que realmente pode compartilhar."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Kanske gör helhet på egen hand det rätta förhållandet möjligt. Nio av Pentagram älskar från tillräcklighet, inte behov. Det fulla självet är det som faktiskt kan dela."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Можливо, бути цілісним самому по собі робить правильні стосунки можливими. Дев'ятка Пентаклів любить з достатку, а не з потреби. Повне я - це те, що дійсно може ділитися."
+                              }
+                            }
+                          }
+                        },
+                        "interpretation.nine_of_pentacles_love_upright_unclear" : {
+                          "extractionState" : "manual",
+                          "localizations" : {
+                            "de" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Wie sieht Selbstständigkeit in der Liebe aus – ohne zur Rüstung zu werden? Die Neun der Münzen will die weiche Unabhängigkeit. Die Ganzheitlichkeit im Alleinsein, die den anderen nicht zurückweist."
+                              }
+                            },
+                            "en" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "What does self-sufficiency in love look like — without becoming armor? The Nine of Pentacles wants the soft independence. The wholeness on your own that doesn't reject the other."
+                              }
+                            },
+                            "es" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿Cómo es la autosuficiencia en el amor — sin convertirse en armadura? El Nueve de Pentáculos quiere la independencia suave. La plenitud por tu cuenta que no rechaza al otro."
+                              }
+                            },
+                            "fr" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "À quoi ressemble l'autosuffisance en amour — sans devenir une armure ? Le Neuf de Pentacles veut l'indépendance douce. La plénitude par vous-même qui ne rejette pas l'autre."
+                              }
+                            },
+                            "it" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Come si presenta l'autosufficienza in amore — senza diventare un'armatura? Il Nove di Pentacoli vuole l'indipendenza morbida. La pienezza da soli che non rifiuta l'altro."
+                              }
+                            },
+                            "ja" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "恋愛における自己充足とは、鎧になることなくどのようなものですか？ペンタクルの9は柔らかな独立を求めます。他者を拒絶しない、自分自身での完全性。"
+                              }
+                            },
+                            "nb" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hvordan ser selvforsyning i kjærlighet ut — uten å bli rustning? Ni av Pentakler vil ha den myke uavhengigheten. Helheten på egen hånd som ikke avviser den andre."
+                              }
+                            },
+                            "pl" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Jak wygląda samowystarczalność w miłości — bez stawania się zbroją? Dziewiątka Pentakli chce miękkiej niezależności. Pełnia w sobie, która nie odrzuca drugiego."
+                              }
+                            },
+                            "pt-BR" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Como é a autossuficiência no amor — sem se tornar uma armadura? O Nove de Pentáculos quer a independência suave. A plenitude por conta própria que não rejeita o outro."
+                              }
+                            },
+                            "sv" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Hur ser självförsörjning i kärlek ut — utan att bli rustning? Nio av Pentagram vill ha det mjuka oberoendet. Helheten på egen hand som inte avvisar den andra."
+                              }
+                            },
+                            "uk" : {
+                              "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Як виглядає самодостатність у коханні — не стаючи обладунками? Дев'ятка Пентаклів хоче м'якої незалежності. Цілісність самому по собі, яка не відкидає іншого."
+                              }
+                            }
+                          }
+                        },
     "interpretation.nine_of_swords_career_reversed_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
