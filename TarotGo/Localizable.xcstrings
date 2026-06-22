@@ -186364,588 +186364,2348 @@
       }
     },
     "interpretation.five_of_cups_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where are you fixated on what's spilled when something is still standing? The Five of Cups grieves with its back to what remains. Turn around at least once."
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Was ist noch gut, das du nicht mehr anerkennst? Der Fünf der Kelche konzentriert sich auf das Verschüttete und ignoriert das Stehende. Zwei Kelche bleiben – zähle sie."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "What is still good that you've stopped acknowledging? The Five of Cups fixates on the spilled and ignores the standing. Two cups remain — count them."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Qué sigue siendo bueno que has dejado de reconocer? El Cinco de Copas se fija en lo derramado e ignora lo que está en pie. Dos copas permanecen — cuéntalas."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Qu'est-ce qui est encore bon et que tu as cessé de reconnaître ? Le Cinq de Coupes se fixe sur ce qui est renversé et ignore ce qui reste debout. Deux coupes demeurent — compte-les."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Cosa è ancora buono che hai smesso di riconoscere? Il Cinque di Coppe si fissa su ciò che è stato versato e ignora ciò che è in piedi. Due coppe rimangono — contale."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "あなたが認めるのをやめてしまった、まだ良いものは何ですか？カップの５はこぼれたものに固執し、立っているものを無視します。２つのカップが残っています — 数えてください。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hva er fortsatt bra som du har sluttet å anerkjenne? Fem av kopper fikserer på det sølte og ignorerer det som står. To kopper gjenstår — tell dem."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Co jest nadal dobre, czego przestałeś doceniać? Piątka Kielichów koncentruje się na rozlanym i ignoruje to, co stoi. Dwa kielichy pozostają — policz je."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "O que ainda é bom que você parou de reconhecer? O Cinco de Copas se fixa no que foi derramado e ignora o que está de pé. Duas copas permanecem — conte-as."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vad är fortfarande bra som du har slutat erkänna? Fem av koppar fixerar vid det spillda och ignorerar det som står. Två koppar återstår — räkna dem."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Що все ще добре, що ви перестали визнавати? П'ятірка Кубків фіксується на розлитому та ігнорує те, що стоїть. Дві чаші залишаються — порахуйте їх."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_cups_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the worst has passed, and now you tend the recovery. The reversed Five of Cups shifts the work from surviving to rebuilding. The tasks are different in each phase."
+      },
+      "interpretation.five_of_cups_health_reversed_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht war ein gesundheitlicher Verlust so prägend, dass er deine Wahrnehmung verengt hat. Der umgekehrte Fünf der Kelche lockert den trauernden Griff. Der Körper, den du noch hast, verdient es, beachtet zu werden."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe a health loss has been so defining it's narrowed your perception. The reversed Five of Cups loosens the grieving grip. The body you still have deserves to be counted."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás una pérdida de salud ha sido tan definitoria que ha estrechado tu percepción. El Cinco de Copas invertido afloja el agarre del dolor. El cuerpo que aún tienes merece ser contado."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être qu'une perte de santé a été si marquante qu'elle a rétréci votre perception. Le Cinq de Coupes inversé desserre l'emprise du deuil. Le corps que vous avez encore mérite d'être compté."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse una perdita di salute è stata così determinante da aver ristretto la tua percezione. Il Cinque di Coppe invertito allenta la presa del lutto. Il corpo che hai ancora merita di essere contato."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく健康上の損失があなたの認識を狭めるほど決定的だったのでしょう。逆位置のカップの５は悲しみの手を緩めます。あなたがまだ持っている体は数えられる価値があります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje et helsetap har vært så definerende at det har innsnevret oppfatningen din. Den omvendte fem av kopper løsner sorgens grep. Kroppen du fortsatt har fortjener å bli talt med."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może utrata zdrowia była tak definiująca, że zawęziła twoje postrzeganie. Odwrócona Piątka Kielichów rozluźnia uścisk żałoby. Ciało, które nadal masz, zasługuje na uwagę."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez uma perda de saúde tenha sido tão marcante que estreitou sua percepção. O Cinco de Copas invertido afrouxa o aperto do luto. O corpo que você ainda tem merece ser contado."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske har en hälsförlust varit så avgörande att den har smalnat av din uppfattning. Den omvända Fem av koppar lossar sorgens grepp. Kroppen du fortfarande har förtjänar att räknas."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, втрата здоров'я була настільки визначальною, що звузила ваше сприйняття. Перевернута П'ятірка Кубків послаблює хватку горя. Тіло, яке ви все ще маєте, заслуговує на увагу."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_cups_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is your body beginning to heal from a long hit? The reversed Five of Cups marks the recovery's first signs. Small returns of capacity deserve naming."
+      },
+      "interpretation.five_of_cups_health_reversed_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Beginnst du, deine aktuelle Gesundheit mehr zu schätzen? Der umgekehrte Fünf der Kelche ehrt das Erhaltene. Der Körper, der noch funktioniert, ist kein Trostpreis – er ist das eigentliche Geschenk."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Are you beginning to appreciate your current health more? The reversed Five of Cups honors the remaining. The body that still works is not a consolation prize — it's the actual gift."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Estás empezando a apreciar más tu salud actual? El Cinco de Copas invertido honra lo que queda. El cuerpo que aún funciona no es un premio de consolación — es el verdadero regalo."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Commencez-vous à apprécier davantage votre santé actuelle ? Le Cinq de Coupes inversé honore ce qui reste. Le corps qui fonctionne encore n'est pas un prix de consolation — c'est le véritable cadeau."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Stai iniziando ad apprezzare di più la tua salute attuale? Il Cinque di Coppe invertito onora ciò che rimane. Il corpo che funziona ancora non è un premio di consolazione — è il vero dono."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "現在の健康状態をもっと評価し始めていますか？逆位置のカップの５は残っているものを称えます。まだ機能している体は慰めの賞品ではありません — それは実際の贈り物です。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Begynner du å sette mer pris på din nåværende helse? Den omvendte fem av kopper ærer det som gjenstår. Kroppen som fortsatt fungerer er ikke en trøstepremie — det er den faktiske gaven."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Czy zaczynasz bardziej doceniać swoje obecne zdrowie? Odwrócona Piątka Kielichów honoruje to, co pozostało. Ciało, które nadal działa, nie jest pocieszeniem — to prawdziwy dar."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Você está começando a apreciar mais sua saúde atual? O Cinco de Copas invertido honra o que resta. O corpo que ainda funciona não é um prêmio de consolação — é o verdadeiro presente."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Börjar du uppskatta din nuvarande hälsa mer? Den omvända Fem av koppar hedrar det som återstår. Kroppen som fortfarande fungerar är inte ett tröstpris — det är den faktiska gåvan."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ви починаєте більше цінувати своє поточне здоров'я? Перевернута П'ятірка Кубків вшановує те, що залишилося. Тіло, яке все ще працює, не є втішним призом — це справжній дар."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_cups_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps unprocessed grief is showing up in the body. The Five of Cups locates the emotion in the tissues. Some symptoms ease when the underlying loss is finally felt."
+      },
+      "interpretation.five_of_cups_health_upright_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht muss ein gesundheitlicher Verlust wirklich betrauert werden, bevor etwas anderes möglich ist. Der Fünf der Kelche erlaubt die Traurigkeit. Dein Gefühlssystem hat einen Grund zu trauern."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe a health loss genuinely needs to be grieved before anything else can happen. The Five of Cups allows the sadness. Your feeling system has a reason to mourn."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás una pérdida de salud necesita ser genuinamente lamentada antes de que pueda suceder algo más. El Cinco de Copas permite la tristeza. Tu sistema emocional tiene una razón para estar de luto."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être qu'une perte de santé doit être véritablement pleurée avant que quoi que ce soit d'autre puisse se produire. Le Cinq de Coupes autorise la tristesse. Votre système émotionnel a une raison de faire son deuil."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse una perdita di salute ha bisogno di essere genuinamente elaborata prima che possa accadere qualsiasi altra cosa. Il Cinque di Coppe permette la tristezza. Il tuo sistema emotivo ha una ragione per piangere."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく健康上の損失は、何か他のことが起こる前に本当に悲しまれる必要があります。カップの５は悲しみを許します。あなたの感情システムには悲しむ理由があります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje et helsetap virkelig må sørges over før noe annet kan skje. Fem av kopper tillater sorgen. Følelsessystemet ditt har en grunn til å sørge."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może utrata zdrowia naprawdę musi zostać opłakana, zanim cokolwiek innego będzie mogło się wydarzyć. Piątka Kielichów pozwala na smutek. Twój system emocjonalny ma powód do żałoby."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez uma perda de saúde precise ser genuinamente lamentada antes que qualquer outra coisa possa acontecer. O Cinco de Copas permite a tristeza. Seu sistema emocional tem uma razão para se lamentar."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske måste en hälsförlust verkligen sörjas innan något annat kan hända. Fem av koppar tillåter sorgen. Ditt känslosystem har en anledning att sörja."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, втрату здоров'я потрібно справді оплакати, перш ніж що-небудь інше зможе статися. П'ятірка Кубків дозволяє смуток. Ваша емоційна система має причину для горя."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_cups_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What health capacity remains, even if some has been lost? The Five of Cups can fix on what the body can no longer do. The remaining function is real and often substantial."
+      },
+      "interpretation.five_of_cups_health_upright_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Was in deinem Körper funktioniert noch? Der Fünf der Kelche verengt das Sichtfeld auf das Verlorene. Die funktionierenden Teile werden übersehen – nimm sie bewusst wahr."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "What in your body still works? The Five of Cups narrows the view to what's lost. The functioning parts get overlooked — notice them deliberately."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Qué en tu cuerpo aún funciona? El Cinco de Copas reduce la vista a lo que se ha perdido. Las partes funcionales se pasan por alto — obsérvalas deliberadamente."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Qu'est-ce qui fonctionne encore dans votre corps ? Le Cinq de Coupes réduit la vue sur ce qui est perdu. Les parties fonctionnelles sont négligées — remarquez-les délibérément."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Cosa nel tuo corpo funziona ancora? Il Cinque di Coppe restringe la vista a ciò che è perduto. Le parti funzionanti vengono trascurate — notale deliberatamente."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "あなたの体の何がまだ機能していますか？カップの５は視野を失ったものに限定します。機能している部分は見落とされます — 意図的に気づいてください。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hva i kroppen din fungerer fortsatt? Fem av kopper snevrer inn synet til det som er tapt. De fungerende delene blir oversett — legg merke til dem med vilje."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Co w twoim ciele nadal działa? Piątka Kielichów zawęża widok do tego, co utracone. Części funkcjonujące są pomijane — zauważ je świadomie."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "O que no seu corpo ainda funciona? O Cinco de Copas estreita a visão para o que está perdido. As partes funcionantes são negligenciadas — observe-as deliberadamente."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vad i din kropp fungerar fortfarande? Fem av koppar smalnar av vyn till det som är förlorat. De fungerande delarna förbises — lägg märke till dem medvetet."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Що у вашому тілі все ще працює? П'ятірка Кубків звужує погляд на те, що втрачено. Функціонуючі частини залишаються непоміченими — помічайте їх свідомо."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_cups_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe recovery from a heartbreak is more underway than you think. The reversed Five of Cups outpaces the story you've been telling about how stuck you are. Look at how you actually function now."
+      },
+      "interpretation.five_of_cups_love_reversed_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht hat eine Liebesenttäuschung dein Herz verhärtet. Der umgekehrte Fünf der Kelche öffnet die Hand. Die Tasse, die du noch hältst, ist nicht leer – sie ist bereit, neu gefüllt zu werden."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe a love disappointment has hardened your heart. The reversed Five of Cups opens the hand. The cup you still hold is not empty — it's ready to be refilled."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás una decepción amorosa ha endurecido tu corazón. El Cinco de Copas invertido abre la mano. La copa que aún sostienes no está vacía — está lista para ser rellenada."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être qu'une déception amoureuse a endurci votre cœur. Le Cinq de Coupes inversé ouvre la main. La coupe que vous tenez encore n'est pas vide — elle est prête à être remplie."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse una delusione d'amore ha indurito il tuo cuore. Il Cinque di Coppe invertito apre la mano. La coppa che tieni ancora non è vuota — è pronta per essere riempita."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく恋愛の失望があなたの心を硬化させたのでしょう。逆位置のカップの５は手を開きます。あなたがまだ持っているカップは空ではありません — それは再び満たされる準備ができています。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje en kjærlighetsskuffelse har herdet hjertet ditt. Den omvendte fem av kopper åpner hånden. Koppen du fortsatt holder er ikke tom — den er klar til å fylles på nytt."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może rozczarowanie miłosne zahartowało twoje serce. Odwrócona Piątka Kielichów otwiera dłoń. Kielich, który nadal trzymasz, nie jest pusty — jest gotowy do ponownego napełnienia."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez uma decepção amorosa tenha endurecido seu coração. O Cinco de Copas invertido abre a mão. A copa que você ainda segura não está vazia — está pronta para ser reabastecida."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske har en kärleksbesvikelse härdat ditt hjärta. Den omvända Fem av koppar öppnar handen. Koppen du fortfarande håller är inte tom — den är redo att fyllas igen."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, розчарування в коханні загартувало ваше серце. Перевернута П'ятірка Кубків відкриває долоню. Чаша, яку ви все ще тримаєте, не порожня — вона готова бути наповненою знову."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_cups_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you beginning to see past a loss? The reversed Five of Cups marks the post-grief horizon. The future becomes visible again, slowly."
+      },
+      "interpretation.five_of_cups_love_reversed_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Beginnt eine Liebeswunde zu verheilen? Der umgekehrte Fünf der Kelche verzeichnet das erste Nachlassen des Schmerzes. Die Trauer ist noch da, aber sie ist nicht mehr alles, was da ist."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Is a love wound beginning to heal? The reversed Five of Cups notes the first easing of pain. The grief is still present, but it's no longer all that's present."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Está comenzando a sanar una herida de amor? El Cinco de Copas invertido nota el primer alivio del dolor. La tristeza aún está presente, pero ya no es todo lo que está presente."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Une blessure d'amour commence-t-elle à guérir ? Le Cinq de Coupes inversé note le premier soulagement de la douleur. Le chagrin est toujours présent, mais il n'est plus tout ce qui est présent."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Una ferita d'amore sta iniziando a guarire? Il Cinque di Coppe invertito nota il primo sollievo dal dolore. Il lutto è ancora presente, ma non è più tutto ciò che è presente."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "恋愛の傷が癒え始めていますか？逆位置のカップの５は最初の痛みの緩和を記録します。悲しみはまだ存在していますが、それが存在するすべてではなくなりました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Begynner et kjærlighetssår å helbrede? Den omvendte fem av kopper noterer den første lettelsen av smerte. Sorgen er fortsatt til stede, men den er ikke lenger alt som er til stede."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Czy rana miłosna zaczyna się goić? Odwrócona Piątka Kielichów odnotowuje pierwszą ulgę w bólu. Żal wciąż jest obecny, ale nie jest już wszystkim, co jest obecne."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Uma ferida de amor está começando a cicatrizar? O Cinco de Copas invertido nota o primeiro alívio da dor. A tristeza ainda está presente, mas não é mais tudo o que está presente."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Börjar ett kärlekssår att läka? Den omvända Fem av koppar noterar den första lättnaden av smärta. Sorgen är fortfarande närvarande, men den är inte längre allt som är närvarande."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Чи починає загоюватися рана кохання? Перевернута П'ятірка Кубків відзначає перше полегшення болю. Смуток все ще присутній, але він більше не є всім, що присутнє."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_cups_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps grief about love is asking to be felt rather than fixed. The Five of Cups treats heartbreak as a passage, not a problem. The feeling is the way through."
+      },
+      "interpretation.five_of_cups_love_upright_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht muss eine Liebesenttäuschung tatsächlich betrauert werden – nicht übersprungen, nicht wegerklärt. Der Fünf der Kelche erlaubt den Schmerz. Die Trauer ist der Weg durch."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe a love disappointment genuinely needs to be mourned — not skipped, not explained away. The Five of Cups allows the pain. Grief is the way through."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás una decepción amorosa necesita ser genuinamente lamentada — no saltada, no explicada. El Cinco de Copas permite el dolor. El duelo es el camino a seguir."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être qu'une déception amoureuse doit être véritablement pleurée — pas ignorée, pas expliquée. Le Cinq de Coupes autorise la douleur. Le deuil est le chemin à travers."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse una delusione d'amore deve essere genuinamente elaborata — non saltata, non razionalizzata. Il Cinque di Coppe permette il dolore. Il lutto è la via attraverso."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく恋愛の失望は本当に悲しまれる必要があります — スキップしたり、言い訳で片付けたりしないで。カップの５は痛みを許します。悲しみは通過する道です。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje en kjærlighetsskuffelse virkelig må sørges over — ikke hoppes over, ikke bortforklares. Fem av kopper tillater smerten. Sorg er veien gjennom."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może rozczarowanie miłosne naprawdę musi być opłakane — nie pominięte, nie wytłumaczone. Piątka Kielichów pozwala na ból. Żałoba jest drogą przez to."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez uma decepção amorosa precise ser genuinamente lamentada — não ignorada, não explicada. O Cinco de Copas permite a dor. O luto é o caminho para atravessar."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske måste en kärleksbesvikelse verkligen sörjas — inte hoppas över, inte bortförklaras. Fem av koppar tillåter smärtan. Sorg är vägen genom."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, розчарування в коханні дійсно потрібно оплакати — не пропускати, не пояснювати. П'ятірка Кубків дозволяє біль. Горе — це шлях крізь."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_cups_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What in this relationship is still standing that you haven't looked at? The Five of Cups in love mourns one loss while ignoring two intact things. Look again at the full picture."
+      },
+      "interpretation.five_of_cups_love_upright_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Was in deiner Liebe ist noch intakt? Der Fünf der Kelche übersieht die stehenden Kelche. Zähle, was nicht verschüttet wurde – es gibt mehr als du denkst."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "What in your love life is still intact? The Five of Cups overlooks the standing cups. Count what hasn't been spilled — there's more than you think."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Qué en tu vida amorosa sigue intacto? El Cinco de Copas pasa por alto las copas que están en pie. Cuenta lo que no se ha derramado — hay más de lo que piensas."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Qu'est-ce qui est encore intact dans votre vie amoureuse ? Le Cinq de Coupes néglige les coupes debout. Comptez ce qui n'a pas été renversé — il y en a plus que vous ne le pensez."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Cosa nella tua vita amorosa è ancora intatto? Il Cinque di Coppe trascura le coppe in piedi. Conta ciò che non è stato versato — c'è più di quanto pensi."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "あなたの恋愛生活でまだ無傷なものは何ですか？カップの５は立っているカップを見落とします。こぼれていないものを数えてください — あなたが思っているより多いです。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hva i kjærlighetslivet ditt er fortsatt intakt? Fem av kopper overser de stående koppene. Tell hva som ikke har blitt sølt — det er mer enn du tror."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Co w twoim życiu miłosnym jest nadal nienaruszone? Piątka Kielichów pomija stojące kielichy. Policz to, co nie zostało rozlane — jest tego więcej, niż myślisz."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "O que na sua vida amorosa ainda está intacto? O Cinco de Copas ignora as copas que estão de pé. Conte o que não foi derramado — há mais do que você pensa."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vad i ditt kärleksliv är fortfarande intakt? Fem av koppar förbiser de stående kopparna. Räkna vad som inte har spillts — det finns mer än du tror."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Що у вашому любовному житті все ще неушкоджене? П'ятірка Кубків не помічає чаші, що стоять. Порахуйте те, що не було розлито — цього більше, ніж ви думаєте."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe you've recovered enough to stop calling yourself struggling. The reversed Five of Pentacles updates the self-description. Identity lags behind reality; let it catch up."
+      },
+      "interpretation.five_of_pentacles_career_reversed_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht hast du einen neuen Job oder eine neue Rolle gefunden. Der umgekehrte Fünf der Münzen verlässt den Ort des Mangels. Das, was vorher knapp war, wird jetzt zugänglicher."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe you've found a new job or role. The reversed Five of Pentacles leaves the place of lack. What was scarce before becomes more available now."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás has encontrado un nuevo trabajo o rol. El Cinco de Pentáculos invertido deja el lugar de la escasez. Lo que antes era escaso ahora se vuelve más accesible."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être avez-vous trouvé un nouvel emploi ou un nouveau rôle. Le Cinq de Pentacles inversé quitte le lieu du manque. Ce qui était rare devient plus disponible maintenant."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse hai trovato un nuovo lavoro o ruolo. Il Cinque di Pentacoli invertito lascia il luogo della mancanza. Ciò che prima era scarso ora diventa più disponibile."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく新しい仕事や役割を見つけたのでしょう。逆位置のペンタクルの５は欠乏の場所を離れます。以前は不足していたものが今ではより利用可能になります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje du har funnet en ny jobb eller rolle. Den omvendte fem av pentakler forlater stedet for mangel. Det som var knapt før blir nå mer tilgjengelig."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może znalazłeś nową pracę lub rolę. Odwrócona Piątka Pentakli opuszcza miejsce niedostatku. To, co wcześniej było rzadkie, teraz staje się bardziej dostępne."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez você tenha encontrado um novo emprego ou função. O Cinco de Pentáculos invertido deixa o lugar da escassez. O que era escasso antes agora se torna mais disponível."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske har du hittat ett nytt jobb eller en ny roll. Den omvända Fem av pentagram lämnar platsen för brist. Det som var knappt innan blir nu mer tillgängligt."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, ви знайшли нову роботу або роль. Перевернута П'ятірка Пентаклів залишає місце нестачі. Те, що раніше було дефіцитним, тепер стає більш доступним."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a professional comeback underway, slowly? The reversed Five of Pentacles marks the thaw. Notice the small returns of warmth before insisting they aren't enough."
+      },
+      "interpretation.five_of_pentacles_career_reversed_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Verändert sich eine schwierige berufliche Situation? Der umgekehrte Fünf der Münzen signalisiert das Ende der härtesten Zeit. Die Kälte lässt nach – die Tür ist nicht mehr so weit entfernt."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Is a difficult work situation shifting? The reversed Five of Pentacles signals the end of the hardest stretch. The cold is easing — the door is not as far as it seemed."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Está cambiando una situación laboral difícil? El Cinco de Pentáculos invertido señala el final del tramo más difícil. El frío se está aliviando — la puerta no está tan lejos como parecía."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Une situation professionnelle difficile est-elle en train de changer ? Le Cinq de Pentacles inversé signale la fin de la période la plus difficile. Le froid s'atténue — la porte n'est pas aussi loin qu'il y paraissait."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Una situazione lavorativa difficile sta cambiando? Il Cinque di Pentacoli invertito segnala la fine del periodo più duro. Il freddo si sta attenuando — la porta non è così lontana come sembrava."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "困難な仕事の状況が変化していますか？逆位置のペンタクルの５は最も厳しい時期の終わりを知らせます。寒さが和らぎつつあります — ドアは思ったほど遠くありません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Er en vanskelig arbeidssituasjon i endring? Den omvendte fem av pentakler signaliserer slutten på den tøffeste perioden. Kulden letter — døren er ikke så langt unna som den virket."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Czy trudna sytuacja w pracy się zmienia? Odwrócona Piątka Pentakli sygnalizuje koniec najtrudniejszego okresu. Chłód ustępuje — drzwi nie są tak daleko, jak się wydawało."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Uma situação de trabalho difícil está mudando? O Cinco de Pentáculos invertido sinaliza o fim do trecho mais difícil. O frio está diminuindo — a porta não está tão longe quanto parecia."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Förändras en svår arbetssituation? Den omvända Fem av pentagram signalerar slutet på den hårdaste sträckan. Kylan lägger sig — dörren är inte så långt borta som den verkade."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Чи змінюється складна робоча ситуація? Перевернута П'ятірка Пентаклів сигналізує про кінець найважчого періоду. Холод спадає — двері не такі далекі, як здавалося."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a temporary career setback is highlighting what really matters. The Five of Pentacles clarifies through hardship. The stripped-back version shows what you actually need."
+      },
+      "interpretation.five_of_pentacles_career_upright_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht fühlt sich die Arbeit knapp an, weil du übersiehst, was vorhanden ist. Der Fünf der Münzen zeigt den Mangel – aber ist er real oder nur gefühlt? Prüfe die tatsächliche Situation."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe work feels scarce because you're missing what's present. The Five of Pentacles shows the lack — but is it real or just felt? Check the actual situation."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás el trabajo se siente escaso porque estás pasando por alto lo que está presente. El Cinco de Pentáculos muestra la falta — pero ¿es real o solo sentida? Verifica la situación real."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être que le travail semble rare parce que vous manquez ce qui est présent. Le Cinq de Pentacles montre le manque — mais est-il réel ou simplement ressenti ? Vérifiez la situation réelle."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse il lavoro sembra scarso perché stai trascurando ciò che è presente. Il Cinque di Pentacoli mostra la mancanza — ma è reale o solo percepita? Verifica la situazione effettiva."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく仕事が不足しているように感じるのは、存在するものを見逃しているからです。ペンタクルの５は欠乏を示します — しかしそれは現実なのか、それとも感じているだけなのか？実際の状況を確認してください。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje jobben føles knapp fordi du går glipp av det som er til stede. Fem av pentakler viser mangelen — men er den reell eller bare følt? Sjekk den faktiske situasjonen."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może praca wydaje się rzadka, ponieważ pomijasz to, co jest obecne. Piątka Pentakli pokazuje niedostatek — ale czy jest on rzeczywisty, czy tylko odczuwany? Sprawdź rzeczywistą sytuację."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez o trabalho pareça escasso porque você está perdendo o que está presente. O Cinco de Pentáculos mostra a falta — mas é real ou apenas sentida? Verifique a situação real."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske känns arbetet knappt eftersom du missar vad som är närvarande. Fem av pentagram visar bristen — men är den verklig eller bara känd? Kontrollera den faktiska situationen."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, робота здається дефіцитною, тому що ви не помічаєте того, що є. П'ятірка Пентаклів показує нестачу — але вона реальна чи лише відчутна? Перевірте фактичну ситуацію."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What at work is making you feel cast out? The Five of Pentacles tracks the cold. Name what specifically is making the building feel like the outside."
+      },
+      "interpretation.five_of_pentacles_career_upright_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wo im Beruf fühlst du dich ausgeschlossen oder im Stich gelassen? Der Fünf der Münzen zeigt die Kälte der Isolation. Aber sieh hin – die Kirche ist nah, die Hilfe ist näher als gedacht."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Where at work do you feel left out or unsupported? The Five of Pentacles shows the cold of isolation. But look — the church is near, help is closer than you think."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Dónde en el trabajo te sientes excluido o sin apoyo? El Cinco de Pentáculos muestra el frío del aislamiento. Pero mira — la iglesia está cerca, la ayuda está más cerca de lo que piensas."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Où au travail vous sentez-vous exclu ou sans soutien ? Le Cinq de Pentacles montre le froid de l'isolement. Mais regardez — l'église est proche, l'aide est plus proche que vous ne le pensez."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dove al lavoro ti senti escluso o senza supporto? Il Cinque di Pentacoli mostra il freddo dell'isolamento. Ma guarda — la chiesa è vicina, l'aiuto è più vicino di quanto pensi."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "仕事のどこで取り残されたり、サポートされていないと感じますか？ペンタクルの５は孤立の寒さを示します。しかし見てください — 教会は近くにあり、助けはあなたが思っているより近いです。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hvor på jobben føler du deg utelatt eller uten støtte? Fem av pentakler viser kulden av isolasjon. Men se — kirken er nær, hjelpen er nærmere enn du tror."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gdzie w pracy czujesz się pominięty lub bez wsparcia? Piątka Pentakli pokazuje chłód izolacji. Ale spójrz — kościół jest blisko, pomoc jest bliżej, niż myślisz."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Onde no trabalho você se sente excluído ou sem apoio? O Cinco de Pentáculos mostra o frio do isolamento. Mas olhe — a igreja está perto, a ajuda está mais perto do que você pensa."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Var på jobbet känner du dig utelämnad eller utan stöd? Fem av pentagram visar kylan av isolering. Men se — kyrkan är nära, hjälpen är närmare än du tror."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Де на роботі ви відчуваєте себе покинутим або без підтримки? П'ятірка Пентаклів показує холод ізоляції. Але подивіться — церква поруч, допомога ближче, ніж ви думаєте."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe you've stabilized and haven't updated your story. The reversed Five of Pentacles asks the financial story to catch up to the financial reality. Tell it accurately."
+      },
+      "interpretation.five_of_pentacles_finance_reversed_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht hat sich deine finanzielle Situation verbessert – aber du fühlst dich noch arm. Der umgekehrte Fünf der Münzen aktualisiert die Wahrnehmung. Die Kälte ist vorbei; die Erkenntnis muss folgen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe your financial situation has improved — but you still feel poor. The reversed Five of Pentacles updates the perception. The cold is over; the recognition needs to catch up."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás tu situación financiera ha mejorado — pero todavía te sientes pobre. El Cinco de Pentáculos invertido actualiza la percepción. El frío ha terminado; el reconocimiento necesita ponerse al día."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être que votre situation financière s'est améliorée — mais vous vous sentez encore pauvre. Le Cinq de Pentacles inversé met à jour la perception. Le froid est fini ; la reconnaissance doit rattraper son retard."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse la tua situazione finanziaria è migliorata — ma ti senti ancora povero. Il Cinque di Pentacoli invertito aggiorna la percezione. Il freddo è finito; il riconoscimento deve recuperare."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく経済状況は改善したのでしょう — しかしあなたはまだ貧しいと感じています。逆位置のペンタクルの５は認識を更新します。寒さは終わりました；認識が追いつく必要があります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje din økonomiske situasjon har forbedret seg — men du føler deg fortsatt fattig. Den omvendte fem av pentakler oppdaterer oppfatningen. Kulden er over; anerkjennelsen må ta igjen."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może twoja sytuacja finansowa się poprawiła — ale nadal czujesz się biedny. Odwrócona Piątka Pentakli aktualizuje postrzeganie. Chłód się skończył; uznanie musi nadrobić zaległości."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez sua situação financeira tenha melhorado — mas você ainda se sente pobre. O Cinco de Pentáculos invertido atualiza a percepção. O frio acabou; o reconhecimento precisa alcançar."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske har din ekonomiska situation förbättrats — men du känner dig fortfarande fattig. Den omvända Fem av pentagram uppdaterar uppfattningen. Kylan är över; erkännandet måste komma ikapp."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, ваша фінансова ситуація покращилася — але ви все ще відчуваєте себе бідним. Перевернута П'ятірка Пентаклів оновлює сприйняття. Холод закінчився; визнання має наздогнати."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is recovery from a money setback gradual but real? The reversed Five of Pentacles shows the trajectory rather than the position. Direction matters more than current location."
+      },
+      "interpretation.five_of_pentacles_finance_reversed_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Lichtet sich der finanzielle Nebel? Der umgekehrte Fünf der Münzen zeigt, dass die schlimmste Zeit vorbei ist. Die Ressourcen sind vielleicht immer noch knapp, aber nicht mehr so knapp wie zuvor."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Is the financial fog lifting? The reversed Five of Pentacles shows that the worst is over. Resources may still be tight, but they're not as tight as before."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Se está levantando la niebla financiera? El Cinco de Pentáculos invertido muestra que lo peor ha pasado. Los recursos pueden seguir siendo limitados, pero no tan limitados como antes."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Le brouillard financier se lève-t-il ? Le Cinq de Pentacles inversé montre que le pire est passé. Les ressources peuvent encore être limitées, mais elles ne le sont pas autant qu'avant."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "La nebbia finanziaria si sta sollevando? Il Cinque di Pentacoli invertito mostra che il peggio è passato. Le risorse potrebbero essere ancora limitate, ma non quanto prima."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "経済的な霧が晴れつつありますか？逆位置のペンタクルの５は最悪の事態が終わったことを示しています。リソースはまだ限られているかもしれませんが、以前ほどではありません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Letter den økonomiske tåken seg? Den omvendte fem av pentakler viser at det verste er over. Ressursene kan fortsatt være begrenset, men ikke like stramme som før."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Czy finansowa mgła się podnosi? Odwrócona Piątka Pentakli pokazuje, że najgorsze już za nami. Zasoby mogą być nadal ograniczone, ale nie tak bardzo jak wcześniej."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "A névoa financeira está se dissipando? O Cinco de Pentáculos invertido mostra que o pior já passou. Os recursos ainda podem estar limitados, mas não tão limitados como antes."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Lyfter den ekonomiska dimman? Den omvända Fem av pentagram visar att det värsta är över. Resurserna kan fortfarande vara knappa, men de är inte lika knappa som förut."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Чи розсіюється фінансовий туман? Перевернута П'ятірка Пентаклів показує, що найгірше позаду. Ресурси все ще можуть бути обмеженими, але не такими, як раніше."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the fear is bigger than the actual financial reality. The Five of Pentacles colors the situation darker than the numbers warrant. Look at the actual figures before the next panic."
+      },
+      "interpretation.five_of_pentacles_finance_upright_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht ist der finanzielle Mangel real – aber nicht das Ende der Geschichte. Der Fünf der Münzen zeigt die Kälte; die Kirche zeigt die Hoffnung. Es gibt Hilfe, auch wenn du sie noch nicht siehst."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe the financial lack is real — but not the end of the story. The Five of Pentacles shows the cold; the church shows the hope. Help is available, even if you can't see it yet."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás la falta financiera es real — pero no el final de la historia. El Cinco de Pentáculos muestra el frío; la iglesia muestra la esperanza. Hay ayuda disponible, aunque todavía no puedas verla."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être que le manque financier est réel — mais pas la fin de l'histoire. Le Cinq de Pentacles montre le froid ; l'église montre l'espoir. De l'aide est disponible, même si vous ne la voyez pas encore."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse la mancanza finanziaria è reale — ma non la fine della storia. Il Cinque di Pentacoli mostra il freddo; la chiesa mostra la speranza. L'aiuto è disponibile, anche se non puoi ancora vederlo."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく経済的不足は現実です — しかしそれが物語の終わりではありません。ペンタクルの５は寒さを示します；教会は希望を示します。まだ見えなくても、助けは利用可能です。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje den økonomiske mangelen er reell — men ikke slutten på historien. Fem av pentakler viser kulden; kirken viser håpet. Hjelp er tilgjengelig, selv om du ikke kan se det ennå."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może brak finansowy jest rzeczywisty — ale nie koniec historii. Piątka Pentakli pokazuje chłód; kościół pokazuje nadzieję. Pomoc jest dostępna, nawet jeśli jeszcze jej nie widzisz."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez a falta financeira seja real — mas não o fim da história. O Cinco de Pentáculos mostra o frio; a igreja mostra a esperança. Ajuda está disponível, mesmo que você ainda não possa vê-la."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske är den ekonomiska bristen verklig — men inte slutet på historien. Fem av pentagram visar kylan; kyrkan visar hoppet. Hjälp finns tillgänglig, även om du inte kan se den ännu."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, фінансова нестача реальна — але це не кінець історії. П'ятірка Пентаклів показує холод; церква показує надію. Допомога доступна, навіть якщо ви ще не бачите її."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What support is right there that you've been too proud to ask for? The Five of Pentacles walks past the lit window. The help is available; the asking is what's missing."
+      },
+      "interpretation.five_of_pentacles_finance_upright_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wo in deinen Finanzen fühlst du dich ausgeschlossen? Der Fünf der Münzen zeigt die Person, die am Fenster vorbeigeht. Aber das Licht ist an – die Hilfe ist da, auch wenn du draußen stehst."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Where in your finances do you feel left out? The Five of Pentacles shows the person walking past the window. But the light is on — help is there, even if you're standing outside."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Dónde en tus finanzas te sientes excluido? El Cinco de Pentáculos muestra a la persona que pasa junto a la ventana. Pero la luz está encendida — hay ayuda, incluso si estás fuera."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Où dans vos finances vous sentez-vous exclu ? Le Cinq de Pentacles montre la personne qui passe devant la fenêtre. Mais la lumière est allumée — de l'aide est là, même si vous êtes dehors."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dove nelle tue finanze ti senti escluso? Il Cinque di Pentacoli mostra la persona che passa davanti alla finestra. Ma la luce è accesa — l'aiuto c'è, anche se sei fuori."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "経済面のどこで取り残されたと感じますか？ペンタクルの５は窓の前を通り過ぎる人を示します。しかし明かりはついています — あなたが外に立っていても、助けはそこにあります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hvor i økonomien din føler du deg utelatt? Fem av pentakler viser personen som går forbi vinduet. Men lyset er på — hjelpen er der, selv om du står ute."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gdzie w swoich finansach czujesz się pominięty? Piątka Pentakli pokazuje osobę przechodzącą obok okna. Ale światło jest włączone — pomoc jest tam, nawet jeśli stoisz na zewnątrz."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Onde em suas finanças você se sente excluído? O Cinco de Pentáculos mostra a pessoa passando pela janela. Mas a luz está acesa — a ajuda está lá, mesmo que você esteja do lado de fora."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Var i din ekonomi känner du dig utelämnad? Fem av pentagram visar personen som går förbi fönstret. Men ljuset är på — hjälpen finns där, även om du står utanför."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Де у ваших фінансах ви відчуваєте себе покинутим? П'ятірка Пентаклів показує людину, яка проходить повз вікно. Але світло увімкнене — допомога там, навіть якщо ви стоїте зовні."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a difficult season has shifted and you haven't taken off the coat. The reversed Five of Pentacles asks for an update. The bracing posture outlasted the actual cold."
+      },
+      "interpretation.five_of_pentacles_general_reversed_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht bist du aus einer schwierigen Zeit heraus – aber dein Geist ist noch dort. Der umgekehrte Fünf der Münzen fordert die Wahrnehmung auf, mit der Realität Schritt zu halten. Du bist nicht mehr draußen im Schnee."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe you've come out of a difficult time — but your mind is still there. The reversed Five of Pentacles asks perception to catch up with reality. You're not out in the snow anymore."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás has salido de un momento difícil — pero tu mente sigue allí. El Cinco de Pentáculos invertido pide a la percepción que se ponga al día con la realidad. Ya no estás en la nieve."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être êtes-vous sorti d'une période difficile — mais votre esprit y est encore. Le Cinq de Pentacles inversé demande à la perception de rattraper la réalité. Vous n'êtes plus dehors dans la neige."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse sei uscito da un momento difficile — ma la tua mente è ancora lì. Il Cinque di Pentacoli invertito chiede alla percezione di raggiungere la realtà. Non sei più fuori nella neve."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく困難な時期を乗り越えたのでしょう — しかしあなたの心はまだそこにあります。逆位置のペンタクルの５は認識が現実に追いつくことを求めます。あなたはもう雪の中にはいません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje du har kommet ut av en vanskelig tid — men tankene dine er fortsatt der. Den omvendte fem av pentakler ber oppfatningen om å ta igjen virkeligheten. Du er ikke ute i snøen lenger."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może wyszedłeś z trudnego okresu — ale twój umysł wciąż tam jest. Odwrócona Piątka Pentakli prosi postrzeganie, by dogoniło rzeczywistość. Nie jesteś już na śniegu."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez você tenha saído de um momento difícil — mas sua mente ainda está lá. O Cinco de Pentáculos invertido pede que a percepção acompanhe a realidade. Você não está mais na neve."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske har du kommit ur en svår tid — men ditt sinne är fortfarande där. Den omvända Fem av pentagram ber uppfattningen att komma ikapp verkligheten. Du är inte längre ute i snön."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, ви вийшли з важкого періоду — але ваш розум все ще там. Перевернута П'ятірка Пентаклів просить сприйняття наздогнати реальність. Ви більше не на снігу."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is the cold ending and the warmth returning? The reversed Five of Pentacles marks the corner turn. Notice the small heat before insisting nothing has changed."
+      },
+      "interpretation.five_of_pentacles_general_reversed_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wendet sich eine Zeit der Not? Der umgekehrte Fünf der Münzen zeigt die ersten Anzeichen von Wärme. Die Kälte lässt nach – die Füße finden langsam den Weg ins Trockene."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Is a period of hardship turning? The reversed Five of Pentacles shows the first signs of warmth. The cold is easing — the feet are finding their way out of the snow."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Está girando un período de dificultad? El Cinco de Pentáculos invertido muestra los primeros signos de calor. El frío se está aliviando — los pies están encontrando el camino fuera de la nieve."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Une période de difficulté est-elle en train de se retourner ? Le Cinq de Pentacles inversé montre les premiers signes de chaleur. Le froid s'atténue — les pieds trouvent leur chemin hors de la neige."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Un periodo di difficoltà si sta invertendo? Il Cinque di Pentacoli invertito mostra i primi segni di calore. Il freddo si sta attenuando — i piedi stanno trovando la strada fuori dalla neve."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "困難な時期が好転していますか？逆位置のペンタクルの５は暖かさの最初の兆候を示しています。寒さが和らぎつつあります — 足は雪の中から道を見つけています。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Er en periode med motgang i ferd med å snu? Den omvendte fem av pentakler viser de første tegnene på varme. Kulden letter — føttene finner veien ut av snøen."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Czy okres trudności się odwraca? Odwrócona Piątka Pentakli pokazuje pierwsze oznaki ciepła. Chłód ustępuje — stopy znajdują drogę ze śniegu."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Um período de dificuldade está se revertendo? O Cinco de Pentáculos invertido mostra os primeiros sinais de calor. O frio está diminuindo — os pés estão encontrando o caminho para fora da neve."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Håller en period av svårigheter på att vända? Den omvända Fem av pentagram visar de första tecknen på värme. Kylan lägger sig — fötterna hittar vägen ut ur snön."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Чи повертається період труднощів? Перевернута П'ятірка Пентаклів показує перші ознаки тепла. Холод спадає — ноги знаходять шлях зі снігу."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps shared hardship would feel different from solo hardship. The Five of Pentacles loses some of its bite when it's not faced alone. The company is part of the warmth."
+      },
+      "interpretation.five_of_pentacles_general_upright_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht ist der Mangel real – aber die Hilfe ist näher als gedacht. Der Fünf der Münzen zeigt die Not – und die Kirche zeigt die Lösung. Du musst nicht alleine im Schnee bleiben."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe the lack is real — but help is closer than you think. The Five of Pentacles shows the hardship — and the church shows the solution. You don't have to stay out in the snow alone."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás la falta es real — pero la ayuda está más cerca de lo que piensas. El Cinco de Pentáculos muestra la dificultad — y la iglesia muestra la solución. No tienes que quedarte en la nieve solo."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être que le manque est réel — mais l'aide est plus proche que vous ne le pensez. Le Cinq de Pentacles montre la difficulté — et l'église montre la solution. Vous n'avez pas à rester dehors dans la neige seul."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse la mancanza è reale — ma l'aiuto è più vicino di quanto pensi. Il Cinque di Pentacoli mostra la difficoltà — e la chiesa mostra la soluzione. Non devi restare fuori nella neve da solo."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく不足は現実です — しかし助けはあなたが思っているより近いです。ペンタクルの５は困難を示します — そして教会は解決策を示します。あなたは一人で雪の中にいる必要はありません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje mangelen er reell — men hjelpen er nærmere enn du tror. Fem av pentakler viser motgangen — og kirken viser løsningen. Du trenger ikke å bli ute i snøen alene."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może brak jest rzeczywisty — ale pomoc jest bliżej, niż myślisz. Piątka Pentakli pokazuje trudność — a kościół pokazuje rozwiązanie. Nie musisz zostawać na śniegu sam."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez a falta seja real — mas a ajuda está mais perto do que você pensa. O Cinco de Pentáculos mostra a dificuldade — e a igreja mostra a solução. Você não precisa ficar na neve sozinho."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske bristen är verklig — men hjälpen är närmare än du tror. Fem av pentagram visar svårigheten — och kyrkan visar lösningen. Du behöver inte stanna ute i snön ensam."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, нестача реальна — але допомога ближче, ніж ви думаєте. П'ятірка Пентаклів показує труднощі — а церква показує рішення. Вам не потрібно залишатися на снігу самому."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where are you walking past a sanctuary? The Five of Pentacles often shows the lit window beside the cold path. The shelter you've been refusing is closer than you've allowed."
+      },
+      "interpretation.five_of_pentacles_general_upright_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wo in deinem Leben fühlst du dich ausgeschlossen oder arm? Der Fünf der Münzen zeigt den Ort des Mangels. Aber die Kirche ist warm und beleuchtet – die Hilfe ist da, du musst nur klopfen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Where in your life do you feel excluded or impoverished? The Five of Pentacles shows the place of lack. But the church is warm and lit — help is there; you just need to knock."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Dónde en tu vida te sientes excluido o empobrecido? El Cinco de Pentáculos muestra el lugar de la escasez. Pero la iglesia está cálida y iluminada — la ayuda está allí; solo necesitas llamar."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Où dans votre vie vous sentez-vous exclu ou appauvri ? Le Cinq de Pentacles montre le lieu du manque. Mais l'église est chaude et éclairée — l'aide est là ; il suffit de frapper."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dove nella tua vita ti senti escluso o impoverito? Il Cinque di Pentacoli mostra il luogo della mancanza. Ma la chiesa è calda e illuminata — l'aiuto è lì; devi solo bussare."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "あなたの人生のどこで排除されたり、貧しく感じたりしますか？ペンタクルの５は欠乏の場所を示します。しかし教会は暖かく明るいです — 助けはそこにあります；あなたはただノックする必要があります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hvor i livet ditt føler du deg utelatt eller fattig? Fem av pentakler viser stedet for mangel. Men kirken er varm og opplyst — hjelpen er der; du trenger bare å banke på."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gdzie w swoim życiu czujesz się wykluczony lub zubożały? Piątka Pentakli pokazuje miejsce niedostatku. Ale kościół jest ciepły i oświetlony — pomoc jest tam; wystarczy zapukać."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Onde na sua vida você se sente excluído ou empobrecido? O Cinco de Pentáculos mostra o lugar da escassez. Mas a igreja é quente e iluminada — a ajuda está lá; você só precisa bater."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Var i ditt liv känner du dig utelämnad eller fattig? Fem av pentagram visar platsen för brist. Men kyrkan är varm och upplyst — hjälpen finns där; du behöver bara knacka."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Де у вашому житті ви відчуваєте себе виключеним або збіднілим? П'ятірка Пентаклів показує місце нестачі. Але церква тепла і освітлена — допомога там; вам просто потрібно постукати."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe you've come further than you give yourself credit for. The reversed Five of Pentacles asks for an honest before-and-after. The progress is real even when daily change is invisible."
+      },
+      "interpretation.five_of_pentacles_health_reversed_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht hast du eine gesundheitliche Krise überstanden. Der umgekehrte Fünf der Münzen verzeichnet das Überleben. Der Körper ist noch da – die Erholung ist möglich, auch wenn sie Zeit braucht."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe you've survived a health crisis. The reversed Five of Pentacles records the survival. The body is still here — recovery is possible, even if it takes time."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás has sobrevivido a una crisis de salud. El Cinco de Pentáculos invertido registra la supervivencia. El cuerpo sigue aquí — la recuperación es posible, incluso si toma tiempo."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être avez-vous survécu à une crise de santé. Le Cinq de Pentacles inversé enregistre la survie. Le corps est toujours là — la guérison est possible, même si elle prend du temps."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse sei sopravvissuto a una crisi di salute. Il Cinque di Pentacoli invertito registra la sopravvivenza. Il corpo è ancora qui — la guarigione è possibile, anche se richiede tempo."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく健康危機を乗り越えたのでしょう。逆位置のペンタクルの５は生存を記録します。体はまだここにあります — 時間がかかっても回復は可能です。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje du har overlevd en helsekrise. Den omvendte fem av pentakler registrerer overlevelsen. Kroppen er fortsatt her — bedring er mulig, selv om det tar tid."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może przeżyłeś kryzys zdrowotny. Odwrócona Piątka Pentakli odnotowuje przeżycie. Ciało wciąż tu jest — powrót do zdrowia jest możliwy, nawet jeśli zajmie to czas."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez você tenha sobrevivido a uma crise de saúde. O Cinco de Pentáculos invertido registra a sobrevivência. O corpo ainda está aqui — a recuperação é possível, mesmo que leve tempo."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske har du överlevt en hälsokris. Den omvända Fem av pentagram registrerar överlevnaden. Kroppen är fortfarande här — återhämtning är möjlig, även om det tar tid."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, ви пережили кризу здоров'я. Перевернута П'ятірка Пентаклів реєструє виживання. Тіло все ще тут — одужання можливе, навіть якщо це займе час."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is healing under way even if it doesn't feel like it? The reversed Five of Pentacles trusts the trajectory the body is on. Some recoveries don't feel like recovery until they're complete."
+      },
+      "interpretation.five_of_pentacles_health_reversed_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Verbessert sich dein Gesundheitszustand langsam? Der umgekehrte Fünf der Münzen zeigt das Ende der akuten Phase. Die Genesung ist im Gange – auch wenn sie nicht schnell ist."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Is your health slowly improving? The reversed Five of Pentacles shows the end of the acute phase. Recovery is underway — even if it's not fast."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Tu salud está mejorando lentamente? El Cinco de Pentáculos invertido muestra el final de la fase aguda. La recuperación está en marcha — incluso si no es rápida."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Votre santé s'améliore-t-elle lentement ? Le Cinq de Pentacles inversé montre la fin de la phase aiguë. La guérison est en cours — même si elle n'est pas rapide."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "La tua salute sta migliorando lentamente? Il Cinque di Pentacoli invertito mostra la fine della fase acuta. La guarigione è in corso — anche se non è veloce."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "健康状態はゆっくりと改善していますか？逆位置のペンタクルの５は急性期の終わりを示します。回復は進行中です — 速くなくても。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Blir helsen din sakte bedre? Den omvendte fem av pentakler viser slutten på den akutte fasen. Bedring er i gang — selv om den ikke er rask."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Czy twoje zdrowie powoli się poprawia? Odwrócona Piątka Pentakli pokazuje koniec ostrej fazy. Powrót do zdrowia trwa — nawet jeśli nie jest szybki."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Sua saúde está melhorando lentamente? O Cinco de Pentáculos invertido mostra o fim da fase aguda. A recuperação está em andamento — mesmo que não seja rápida."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Förbättras din hälsa långsamt? Den omvända Fem av pentagram visar slutet på den akuta fasen. Återhämtning pågår — även om den inte är snabb."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ваше здоров'я повільно покращується? Перевернута П'ятірка Пентаклів показує кінець гострої фази. Одужання триває — навіть якщо воно не швидке."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps community — even online — would change everything. The Five of Pentacles underestimates how much the right group accelerates recovery. Find your people."
+      },
+      "interpretation.five_of_pentacles_health_upright_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht fühlt sich dein Körper kalt und knapp an – aber Hilfe ist da. Der Fünf der Münzen zeigt die Krankheit; die Kirche zeigt die Heilung. Du musst nicht draußen bleiben."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe your body feels cold and scarce — but help is there. The Five of Pentacles shows the illness; the church shows the healing. You don't have to stay outside."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás tu cuerpo se siente frío y escaso — pero la ayuda está allí. El Cinco de Pentáculos muestra la enfermedad; la iglesia muestra la curación. No tienes que quedarte fuera."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être que votre corps se sent froid et pauvre — mais de l'aide est là. Le Cinq de Pentacles montre la maladie ; l'église montre la guérison. Vous n'avez pas à rester dehors."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse il tuo corpo si sente freddo e carente — ma l'aiuto è lì. Il Cinque di Pentacoli mostra la malattia; la chiesa mostra la guarigione. Non devi restare fuori."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらくあなたの体は冷たく不足しているように感じます — しかし助けはそこにあります。ペンタクルの５は病気を示します；教会は治癒を示します。あなたは外にいる必要はありません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje kroppen din føles kald og knapp — men hjelpen er der. Fem av pentakler viser sykdommen; kirken viser helbredelsen. Du trenger ikke å bli ute."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może twoje ciało czuje się zimne i ubogie — ale pomoc jest tam. Piątka Pentakli pokazuje chorobę; kościół pokazuje uzdrowienie. Nie musisz zostawać na zewnątrz."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez seu corpo se sinta frio e escasso — mas a ajuda está lá. O Cinco de Pentáculos mostra a doença; a igreja mostra a cura. Você não precisa ficar do lado de fora."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske känns din kropp kall och knapp — men hjälpen finns där. Fem av pentagram visar sjukdomen; kyrkan visar läkningen. Du behöver inte stanna utanför."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, ваше тіло відчуває холод і нестачу — але допомога там. П'ятірка Пентаклів показує хворобу; церква показує зцілення. Вам не потрібно залишатися зовні."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where do you feel left out in the cold of a health journey? The Five of Pentacles tracks the isolation that often accompanies illness. The aloneness deserves naming as part of the symptom set."
+      },
+      "interpretation.five_of_pentacles_health_upright_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wo in deinem Körper fühlst du dich arm oder ausgeschlossen? Der Fünf der Münzen zeigt die Verletzlichkeit. Aber die Hilfe ist nah – du musst nur um Hilfe bitten."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Where in your body do you feel impoverished or excluded? The Five of Pentacles shows the vulnerability. But help is near — you just need to ask for it."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Dónde en tu cuerpo te sientes empobrecido o excluido? El Cinco de Pentáculos muestra la vulnerabilidad. Pero la ayuda está cerca — solo necesitas pedirla."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Où dans votre corps vous sentez-vous appauvri ou exclu ? Le Cinq de Pentacles montre la vulnérabilité. Mais l'aide est proche — il suffit de la demander."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dove nel tuo corpo ti senti impoverito o escluso? Il Cinque di Pentacoli mostra la vulnerabilità. Ma l'aiuto è vicino — devi solo chiederlo."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "あなたの体のどこで貧しく感じたり排除されたりしますか？ペンタクルの５は脆弱性を示します。しかし助けは近くにあります — あなたはただそれを求める必要があります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hvor i kroppen føler du deg fattig eller utelatt? Fem av pentakler viser sårbarheten. Men hjelpen er nær — du trenger bare å be om den."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gdzie w swoim ciele czujesz się zubożały lub wykluczony? Piątka Pentakli pokazuje wrażliwość. Ale pomoc jest blisko — wystarczy o nią poprosić."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Onde no seu corpo você se sente empobrecido ou excluído? O Cinco de Pentáculos mostra a vulnerabilidade. Mas a ajuda está perto — você só precisa pedir."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Var i din kropp känner du dig fattig eller utelämnad? Fem av pentagram visar sårbarheten. Men hjälpen är nära — du behöver bara be om den."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Де у вашому тілі ви відчуваєте себе збіднілим або виключеним? П'ятірка Пентаклів показує вразливість. Але допомога поруч — вам просто потрібно попросити її."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe support is available now that wasn't before. Use it — the reversed Five of Pentacles unlocks the door that's been closed. Don't wait for the perfect invitation."
+      },
+      "interpretation.five_of_pentacles_love_reversed_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht hast du eine Liebe verlassen, die dich ausgeschlossen hat. Der umgekehrte Fünf der Münzen markiert den Austritt aus der Kälte. Die Wärme findet sich jetzt anderswo – und du hast den Schritt gemacht."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe you've left a love that excluded you. The reversed Five of Pentacles marks the exit from the cold. Warmth is found elsewhere now — and you've made the move."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás has dejado un amor que te excluía. El Cinco de Pentáculos invertido marca la salida del frío. El calor se encuentra en otra parte ahora — y has dado el paso."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être avez-vous quitté un amour qui vous excluait. Le Cinq de Pentacles inversé marque la sortie du froid. La chaleur se trouve ailleurs maintenant — et vous avez fait le pas."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse hai lasciato un amore che ti escludeva. Il Cinque di Pentacoli invertito segna l'uscita dal freddo. Il calore si trova altrove ora — e hai fatto la mossa."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらくあなたを排除した愛を去ったのでしょう。逆位置のペンタクルの５は寒さからの出口を示します。温かさは今、別の場所にあります — そしてあなたは行動を起こしました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje du har forlatt en kjærlighet som ekskluderte deg. Den omvendte fem av pentakler markerer utgangen fra kulden. Varme finnes nå andre steder — og du har tatt steget."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może opuściłeś miłość, która cię wykluczała. Odwrócona Piątka Pentakli oznacza wyjście z chłodu. Ciepło znajduje się teraz gdzie indziej — i podjąłeś działanie."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez você tenha deixado um amor que o excluía. O Cinco de Pentáculos invertido marca a saída do frio. O calor é encontrado em outro lugar agora — e você fez a mudança."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske har du lämnat en kärlek som uteslöt dig. Den omvända Fem av pentagram markerar utgången från kylan. Värme finns nu någon annanstans — och du har gjort flytten."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, ви залишили любов, яка виключала вас. Перевернута П'ятірка Пентаклів позначає вихід з холоду. Тепло тепер знаходиться в іншому місці — і ви зробили крок."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the relationship recovery slower than expected? The reversed Five of Pentacles allows the patience. Re-warming after a long cold takes more time than the cooling did."
+      },
+      "interpretation.five_of_pentacles_love_reversed_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Taut eine lieblose Situation auf? Der umgekehrte Fünf der Münzen zeigt, dass die Kälte nachlässt. Die Liebe ist vielleicht immer noch nicht warm, aber sie friert nicht mehr."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Is a loveless situation thawing? The reversed Five of Pentacles shows the cold easing. Love may still not be warm, but it's no longer freezing."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Se está descongelando una situación sin amor? El Cinco de Pentáculos invertido muestra que el frío se alivia. El amor puede que todavía no sea cálido, pero ya no se congela."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Une situation sans amour se réchauffe-t-elle ? Le Cinq de Pentacles inversé montre que le froid s'atténue. L'amour n'est peut-être toujours pas chaud, mais il ne gèle plus."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Una situazione senza amore si sta scongelando? Il Cinque di Pentacoli invertito mostra che il freddo si sta attenuando. L'amore potrebbe non essere ancora caldo, ma non è più gelido."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "愛のない状況が溶けつつありますか？逆位置のペンタクルの５は寒さが和らいでいることを示します。愛はまだ温かくないかもしれませんが、もはや凍りついてはいません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Er en kjærlighetsløs situasjon i ferd med å tine? Den omvendte fem av pentakler viser at kulden letter. Kjærligheten er kanskje fortsatt ikke varm, men den fryser ikke lenger."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Czy sytuacja bez miłości się rozmraża? Odwrócona Piątka Pentakli pokazuje, że chłód ustępuje. Miłość może nadal nie być ciepła, ale już nie zamarza."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Uma situação sem amor está descongelando? O Cinco de Pentáculos invertido mostra que o frio está diminuindo. O amor pode ainda não ser quente, mas não está mais congelando."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tinar en kärlekslös situation? Den omvända Fem av pentagram visar att kylan lägger sig. Kärleken kanske fortfarande inte är varm, men den fryser inte längre."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Чи відтає ситуація без любові? Перевернута П'ятірка Пентаклів показує, що холод спадає. Любов може все ще не бути теплою, але вона більше не замерзає."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the loneliness has a door right next to it that you haven't opened. The Five of Pentacles points at the available warmth. The refusal to enter is more about you than them."
+      },
+      "interpretation.five_of_pentacles_love_upright_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht fühlt sich die Liebe kalt an – aber die Kälte ist nicht das Ende. Der Fünf der Münzen zeigt den Mangel; die Kirche zeigt die Wärme, die möglich ist. Bitte um Hilfe – sie ist da."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe love feels cold — but the cold is not the end. The Five of Pentacles shows the lack; the church shows the warmth that's possible. Ask for help — it's there."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás el amor se siente frío — pero el frío no es el fin. El Cinco de Pentáculos muestra la falta; la iglesia muestra el calor que es posible. Pide ayuda — está allí."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être que l'amour semble froid — mais le froid n'est pas la fin. Le Cinq de Pentacles montre le manque ; l'église montre la chaleur qui est possible. Demandez de l'aide — elle est là."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse l'amore sembra freddo — ma il freddo non è la fine. Il Cinque di Pentacoli mostra la mancanza; la chiesa mostra il calore che è possibile. Chiedi aiuto — è lì."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく愛は冷たく感じられます — しかし寒さは終わりではありません。ペンタクルの５は欠乏を示します；教会は可能な温かさを示します。助けを求めてください — それはそこにあります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje kjærligheten føles kald — men kulden er ikke slutten. Fem av pentakler viser mangelen; kirken viser varmen som er mulig. Be om hjelp — den er der."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może miłość wydaje się zimna — ale zimno nie jest końcem. Piątka Pentakli pokazuje niedostatek; kościół pokazuje ciepło, które jest możliwe. Poproś o pomoc — jest tam."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez o amor pareça frio — mas o frio não é o fim. O Cinco de Pentáculos mostra a falta; a igreja mostra o calor que é possível. Peça ajuda — ela está lá."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske kärleken känns kall — men kylan är inte slutet. Fem av pentagram visar bristen; kyrkan visar värmen som är möjlig. Be om hjälp — den finns där."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, любов здається холодною — але холод не є кінцем. П'ятірка Пентаклів показує нестачу; церква показує тепло, яке можливе. Попросіть про допомогу — вона там."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_pentacles_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where in love are you alone in a crowd? The Five of Pentacles describes loneliness with the door right there. The connection is available; the reach is the issue."
+      },
+      "interpretation.five_of_pentacles_love_upright_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wo in der Liebe fühlst du dich ausgeschlossen oder arm? Der Fünf der Münzen zeigt die Stelle der Kälte. Aber die Kirche ist warm – du musst nur eintreten."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Where in love do you feel excluded or impoverished? The Five of Pentacles shows the place of cold. But the church is warm — you just need to step inside."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Dónde en el amor te sientes excluido o empobrecido? El Cinco de Pentáculos muestra el lugar del frío. Pero la iglesia es cálida — solo necesitas entrar."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Où dans l'amour vous sentez-vous exclu ou appauvri ? Le Cinq de Pentacles montre le lieu du froid. Mais l'église est chaude — il suffit d'entrer."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dove nell'amore ti senti escluso o impoverito? Il Cinque di Pentacoli mostra il luogo del freddo. Ma la chiesa è calda — devi solo entrare."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "愛のどこで排除されたり貧しく感じたりしますか？ペンタクルの５は寒さの場所を示します。しかし教会は暖かいです — あなたはただ中に入る必要があります。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hvor i kjærligheten føler du deg utelatt eller fattig? Fem av pentakler viser stedet for kulde. Men kirken er varm — du trenger bare å gå inn."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gdzie w miłości czujesz się wykluczony lub zubożały? Piątka Pentakli pokazuje miejsce zimna. Ale kościół jest ciepły — wystarczy wejść do środka."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Onde no amor você se sente excluído ou empobrecido? O Cinco de Pentáculos mostra o lugar do frio. Mas a igreja é quente — você só precisa entrar."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Var i kärleken känner du dig utelämnad eller fattig? Fem av pentagram visar platsen för kyla. Men kyrkan är varm — du behöver bara kliva in."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Де в любові ви відчуваєте себе виключеним або збіднілим? П'ятірка Пентаклів показує місце холоду. Але церква тепла — вам просто потрібно увійти."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_swords_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a long professional grudge is ready to be put down. The reversed Five of Swords releases what no longer serves. Carrying the resentment costs you more than them."
+      },
+      "interpretation.five_of_wands_career_reversed_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht ist ein beruflicher Konflikt beigelegt. Der umgekehrte Fünf der Stäbe markiert das Ende des Kampfes. Der Wettbewerb wird zur Zusammenarbeit – die Stäbe werden nicht mehr gegeneinander geschwungen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe a work conflict has been resolved. The reversed Five of Wands marks the end of the fight. Competition turns into collaboration — the wands are no longer swung against each other."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás se ha resuelto un conflicto laboral. El Cinco de Bastos invertido marca el fin de la pelea. La competencia se convierte en colaboración — los bastos ya no se balancean el uno contra el otro."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être qu'un conflit professionnel a été résolu. Le Cinq de Bâtons inversé marque la fin du combat. La compétition se transforme en collaboration — les bâtons ne sont plus balancés les uns contre les autres."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse un conflitto lavorativo è stato risolto. Il Cinque di Bastoni invertito segna la fine della lotta. La competizione si trasforma in collaborazione — i bastoni non sono più agitati l'uno contro l'altro."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく仕事上の対立が解決されたのでしょう。逆位置のワンドの５は戦いの終わりを示します。競争は協力に変わります — ワンドはもはや互いに振り回されていません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje en arbeidskonflikt er løst. Den omvendte fem av staver markerer slutten på kampen. Konkurranse blir til samarbeid — stavene svinges ikke lenger mot hverandre."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może konflikt w pracy został rozwiązany. Odwrócona Piątka Buław oznacza koniec walki. Rywalizacja przekształca się we współpracę — buławy nie są już wymierzone przeciwko sobie."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez um conflito de trabalho tenha sido resolvido. O Cinco de Paus invertido marca o fim da luta. A competição se transforma em colaboração — os paus não são mais balançados uns contra os outros."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske har en arbetskonflikt lösts. Den omvända Fem av stavar markerar slutet på kampen. Tävling förvandlas till samarbete — stavarna svängs inte längre mot varandra."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, робочий конфлікт був вирішений. Перевернута П'ятірка Жезлів позначає кінець боротьби. Конкуренція перетворюється на співпрацю — жезли більше не розмахуються один проти одного."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_swords_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a workplace conflict resolving — finally? The reversed Five of Swords marks the end of the standoff. The reconciliation may be partial and still real."
+      },
+      "interpretation.five_of_wands_career_reversed_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Legt sich ein beruflicher Streit? Der umgekehrte Fünf der Stäbe zeigt, dass die Spannungen nachlassen. Die Konflikte werden weniger – aber sie sind vielleicht noch nicht ganz verschwunden."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Is a work dispute settling down? The reversed Five of Wands shows that tensions are easing. The conflicts are becoming fewer — but they may not be gone entirely."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Se está calmando una disputa laboral? El Cinco de Bastos invertido muestra que las tensiones se están aliviando. Los conflictos son cada vez menores — pero quizás no hayan desaparecido por completo."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Un conflit professionnel s'apaise-t-il ? Le Cinq de Bâtons inversé montre que les tensions s'atténuent. Les conflits se font moins nombreux — mais ils n'ont peut-être pas complètement disparu."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Una disputa lavorativa si sta calmando? Il Cinque di Bastoni invertito mostra che le tensioni si stanno attenuando. I conflitti stanno diventando meno frequenti — ma potrebbero non essere scomparsi del tutto."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "仕事上の争いが落ち着いてきていますか？逆位置のワンドの５は緊張が和らいでいることを示します。対立は少なくなっています — しかし完全に消えたわけではないかもしれません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Er en arbeidskonflikt i ferd med å roe seg? Den omvendte fem av staver viser at spenningene letter. Konfliktene blir færre — men de er kanskje ikke helt borte."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Czy spór w pracy się uspokaja? Odwrócona Piątka Buław pokazuje, że napięcia ustępują. Konfliktów jest coraz mniej — ale może nie zniknęły całkowicie."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Uma disputa de trabalho está se acalmando? O Cinco de Paus invertido mostra que as tensões estão diminuindo. Os conflitos estão se tornando menos frequentes — mas podem não ter desaparecido completamente."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Lägger sig en arbetskonflikt? Den omvända Fem av stavar visar att spänningarna lägger sig. Konflikterna blir färre — men de kanske inte är helt borta."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Чи вщухає робоча суперечка? Перевернута П'ятірка Жезлів показує, що напруга спадає. Конфліктів стає менше — але вони можуть зникнути не повністю."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_swords_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps winning this is losing what matters more. The Five of Swords distinguishes the tactical from the strategic. The argument won can be the relationship lost."
+      },
+      "interpretation.five_of_wands_career_upright_not_resonating" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vielleicht ist der Wettbewerb am Arbeitsplatz genau das, was dich schärft. Der Fünf der Stäbe zeigt den produktiven Kampf. Die Reibung erzeugt die Schärfe – nicht jeder Konflikt ist destruktiv."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Maybe the competition at work is exactly what sharpens you. The Five of Wands shows productive friction. The clash creates the edge — not every conflict is destructive."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quizás la competencia en el trabajo es exactamente lo que te afila. El Cinco de Bastos muestra la fricción productiva. El choque crea el filo — no todo conflicto es destructivo."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Peut-être que la compétition au travail est exactement ce qui vous aiguise. Le Cinq de Bâtons montre la friction productive. Le choc crée le tranchant — tous les conflits ne sont pas destructeurs."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forse la competizione sul lavoro è esattamente ciò che ti affina. Il Cinque di Bastoni mostra l'attrito produttivo. Lo scontro crea il taglio — non tutti i conflitti sono distruttivi."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "おそらく職場での競争こそがあなたを研ぎ澄ますものです。ワンドの５は生産的な摩擦を示します。衝突がエッジを生み出します — すべての対立が破壊的であるわけではありません。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanskje konkurransen på jobben er akkurat det som skjerper deg. Fem av staver viser produktiv friksjon. Sammenstøtet skaper kanten — ikke alle konflikter er destruktive."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Może konkurencja w pracy jest dokładnie tym, co cię wyostrza. Piątka Buław pokazuje produktywne tarcie. Zderzenie tworzy krawędź — nie każdy konflikt jest destrukcyjny."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Talvez a competição no trabalho seja exatamente o que te aguça. O Cinco de Paus mostra o atrito produtivo. O choque cria a vantagem — nem todo conflito é destrutivo."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kanske är konkurrensen på jobbet precis vad som vässar dig. Fem av stavar visar produktiv friktion. Sammandrabbningen skapar eggen — inte alla konflikter är destruktiva."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Можливо, конкуренція на роботі — це саме те, що загартовує вас. П'ятірка Жезлів показує продуктивне тертя. Зіткнення створює перевагу — не кожен конфлікт є руйнівним."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_swords_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the workplace battle worth the bridges it burns? The Five of Swords asks the cost question. Some wins cost more than the loss would have."
+      },
+      "interpretation.five_of_wands_career_upright_unclear" : {
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wo in deiner Arbeit gibt es Konflikte oder Rivalität? Der Fünf der Stäbe zeigt den Kampfplatz. Aber vielleicht ist der Kampf genau das, was voranbringt – wenn du ihn richtig führst."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Where in your work is there conflict or rivalry? The Five of Wands shows the battleground. But maybe the fight is exactly what moves things forward — if you fight it right."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Dónde en tu trabajo hay conflicto o rivalidad? El Cinco de Bastos muestra el campo de batalla. Pero quizás la pelea es exactamente lo que hace avanzar las cosas — si luchas bien."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Où dans votre travail y a-t-il des conflits ou des rivalités ? Le Cinq de Bâtons montre le champ de bataille. Mais peut-être que le combat est exactement ce qui fait avancer les choses — si vous vous battez bien."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dove nel tuo lavoro c'è conflitto o rivalità? Il Cinque di Bastoni mostra il campo di battaglia. Ma forse la lotta è esattamente ciò che fa avanzare le cose — se la combatti bene."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "仕事のどこに対立や競争がありますか？ワンドの５は戦場を示します。しかし、おそらく戦いはまさに物事を前進させるものです — 正しく戦えば。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hvor i arbeidet ditt er det konflikt eller rivalisering? Fem av staver viser slagmarken. Men kanskje kampen er akkurat det som driver ting fremover — hvis du kjemper riktig."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gdzie w twojej pracy jest konflikt lub rywalizacja? Piątka Buław pokazuje pole bitwy. Ale może walka jest dokładnie tym, co przesuwa sprawy do przodu — jeśli walczysz właściwie."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Onde no seu trabalho há conflito ou rivalidade? O Cinco de Paus mostra o campo de batalha. Mas talvez a luta seja exatamente o que faz as coisas avançarem — se você lutar direito."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Var i ditt arbete finns det konflikter eller rivalitet? Fem av stavar visar slagfältet. Men kanske är kampen precis vad som driver saker framåt — om du kämpar rätt."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Де у вашій роботі є конфлікт або суперництво? П'ятірка Жезлів показує поле бою. Але, можливо, боротьба — це саме те, що просуває справи вперед — якщо ви боретеся правильно."
+            }
           }
         }
-      }
-    },
-    "interpretation.five_of_swords_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a compromise both parties can live with is on the table. The reversed Five of Swords lets the imperfect settlement win. Holding out for perfect often loses both."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a financial dispute ready to be settled? The reversed Five of Swords softens the position. The compromise both can live with becomes visible."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps winning the financial argument is losing the relationship. The Five of Swords doesn't separate the ledger from the bond. The full cost includes both columns."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you fighting over money in ways that cost more than the money? The Five of Swords adds the relational price. The principle defended can outweigh the dollars at stake."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the truce isn't perfect, and it's still better than the war. The reversed Five of Swords accepts the imperfect peace. The exhaustion of continued fighting outweighs the imperfection of the truce."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is conflict ready to end? The reversed Five of Swords reads the room. The desire to be done has appeared on both sides; act on it."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps walking away is the win. The Five of Swords reframes withdrawal as strength. The unfought battle is its own kind of victory."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What victory is asking what it cost? The Five of Swords audits the wins. The expensive triumph is sometimes the loss in disguise."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe peace with your body is finally possible. The reversed Five of Swords ends the chronic war. The relationship can be restored even after long conflict."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a long internal battle with your body easing? The reversed Five of Swords marks the new posture. The body senses the ceasefire and adjusts accordingly."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the fight itself is the symptom. The Five of Swords proposes peace as treatment. The body responds to allyship better than warfare."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you fighting your body in a way that's making things worse? The Five of Swords battles the system that's trying to help you. The opposition itself is the symptom."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe an apology — given or received — is the bridge back. The reversed Five of Swords trusts the small reparative act. The words matter more than they seem to."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a relationship conflict ready for repair? The reversed Five of Swords notes the willingness on both sides. The first move toward repair changes the temperature."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps you were right and it didn't matter. The Five of Swords retires the need to be vindicated. Sometimes the kindest move is to drop the proof."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_swords_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the relationship win worth the cost to the relationship? The Five of Swords does the math the heat of the moment refuses. The proven point and the lost closeness rarely balance."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_wands_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a long professional tug-of-war is finally ready to end. The reversed Five of Wands names the exhaustion on both sides. The peace is available; someone has to put down their stick first."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_wands_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is workplace conflict cooling without resolving? The reversed Five of Wands catches the unfinished fight. Cooling isn't the same as resolving; the embers are still warm."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_wands_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps healthy competition is sharpening you. The Five of Wands' rivalry isn't all loss. The push from others can refine what comfort never would."
-          }
-        }
-      }
-    },
-    "interpretation.five_of_wands_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where could constructive conflict at work be a feature, not a bug? The Five of Wands sees friction as productive. The disagreement, well-held, sharpens the eventual answer."
-          }
-        }
-      }
-    },
+      },
     "interpretation.five_of_wands_finance_reversed_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
