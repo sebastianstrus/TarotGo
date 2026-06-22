@@ -221391,182 +221391,1142 @@
                                       }
                                     }
                                   },
-    "interpretation.page_of_pentacles_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe you've planned long enough. Start, badly, today — the reversed Page of Pentacles releases you from the perfect-launch requirement. The imperfect start is the start."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a financial intention staying just an intention? The reversed Page of Pentacles names the unconverted plan. The spreadsheet without the action is just an artifact."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a beginner's approach to money — learning openly — is the move. The Page of Pentacles asks questions adults pretend they know the answer to. The honest curiosity speeds the learning."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What financial habit could you start this week, however small? The Page of Pentacles loves the tiny consistent move. The $10 transferred matters more than the $1,000 planned."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a 'someday' plan is asking to become a 'today' step. The reversed Page of Pentacles collapses the timeline. Take one small action this week; the rest follows from there."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where has potential been overstaying its welcome? The reversed Page of Pentacles catches the chronic 'about to.' Potential expires when never converted into practice."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps you're earlier in the process than you think — and that's good news. The Page of Pentacles values the beginner phase. There's time to do this right; you don't need to skip stages."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What if curiosity, applied steadily, is the whole strategy? The Page of Pentacles trusts persistent interest. The thing you keep coming back to is the thing worth investing in."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe research is replacing action. The reversed Page of Pentacles catches the endless prep. The walk that happens today outperforms the perfect plan that doesn't."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a fitness or recovery plan never actually beginning? The reversed Page of Pentacles names the prelaunch state. The starting itself is the work; the optimization is later."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the beginner's joy of learning your body is missing. The Page of Pentacles re-introduces curiosity to the wellness practice. Approach the body like a student, not a project manager."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What if you started a new health habit at the easiest possible scale? The Page of Pentacles trusts the tiny door. The intervention you can't fail at gets repeated; the impressive one usually doesn't."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a person who 'has potential' has had years to show it. The reversed Page of Pentacles ends the patient wait. Potential that never converts is just charisma."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a relationship stalling because no one's investing real effort? The reversed Page of Pentacles audits the actions, not the intentions. Both parties' actual behavior is the data."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps slow-build interest is being underestimated. The Page of Pentacles favors the quiet steady pull over the fireworks. The slow start often leads to the longer story."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_pentacles_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What new, practical step could a budding relationship benefit from? The Page of Pentacles likes the small concrete gesture. The specific small move grounds the abstract feeling."
-          }
-        }
-      }
-    },
+                                  "interpretation.page_of_pentacles_finance_reversed_not_resonating" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vielleicht hast du lange genug geplant. Fang an, auch wenn es schlecht ist, heute — der umgekehrte Page der Pentacles entbindet dich von der perfekten Startvoraussetzung. Der unvollkommene Start ist der Start."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Maybe you've planned long enough. Start, badly, today — the reversed Page of Pentacles releases you from the perfect-launch requirement. The imperfect start is the start."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quizás has planeado lo suficiente. Empieza, aunque sea mal, hoy — el Paje de Pentáculos invertido te libera del requisito del lanzamiento perfecto. El comienzo imperfecto es el comienzo."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Peut-être avez-vous assez planifié. Commencez, même mal, aujourd'hui — le Page de Deniers inversé vous libère de l'exigence du lancement parfait. Le départ imparfait est le départ."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forse hai pianificato abbastanza. Inizia, anche male, oggi — il Paggio di Denari rovesciato ti libera dal requisito del lancio perfetto. L'inizio imperfetto è l'inizio."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "もう計画は十分かもしれません。今日、たとえ下手でも始めてください — 逆位置のペンタクルのページは完璧なスタートの条件からあなたを解放します。不完全な始まりが始まりです。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanskje du har planlagt lenge nok. Start, dårlig, i dag — den omvendte Page of Pentacles frigjør deg fra kravet om perfekt lansering. Den ufullkomne starten er starten."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Może planowałeś wystarczająco długo. Zacznij, nawet źle, dzisiaj — odwrócony Paź Pentakli uwalnia cię od wymogu idealnego startu. Niedoskonały początek jest początkiem."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Talvez você tenha planejado o suficiente. Comece, mesmo que mal, hoje — o Pagem de Ouros invertido libera você do requisito de lançamento perfeito. O começo imperfeito é o começo."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanske har du planerat tillräckligt länge. Börja, dåligt, idag — den omvända Page of Pentacles befriar dig från kravet på perfekt start. Den ofullkomliga starten är starten."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Можливо, ви планували достатньо довго. Почніть, навіть погано, сьогодні — перевернутий Паж Пентаклів звільняє вас від вимоги ідеального старту. Недосконалий початок — це початок."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_finance_reversed_unclear" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Bleibt eine finanzielle Absicht nur eine Absicht? Der umgekehrte Page der Pentacles benennt den nicht umgesetzten Plan. Die Tabelle ohne die Handlung ist nur ein Artefakt."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Is a financial intention staying just an intention? The reversed Page of Pentacles names the unconverted plan. The spreadsheet without the action is just an artifact."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "¿Una intención financiera se queda solo en intención? El Paje de Pentáculos invertido nombra el plan no convertido. La hoja de cálculo sin la acción es solo un artefacto."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Une intention financière reste-t-elle juste une intention ? Le Page de Deniers inversé nomme le plan non converti. Le tableur sans l'action n'est qu'un artefact."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Un'intenzione finanziaria rimane solo un'intenzione? Il Paggio di Denari rovesciato nomina il piano non convertito. Il foglio di calcolo senza l'azione è solo un artefatto."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "経済的な意図がただの意図のままですか？逆位置のペンタクルのページは実行されていない計画を名指しします。行動のないスプレッドシートはただの遺物です。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forblir en finansiell intensjon bare en intensjon? Den omvendte Page of Pentacles navngir den ukonverterte planen. Regnearket uten handling er bare et artefakt."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Czy finansowa intencja pozostaje tylko intencją? Odwrócony Paź Pentakli nazywa niezrealizowany plan. Arkusz kalkulacyjny bez działania jest tylko artefaktem."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Uma intenção financeira está ficando apenas como intenção? O Pagem de Ouros invertido nomeia o plano não convertido. A planilha sem a ação é apenas um artefato."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Förblir en finansiell avsikt bara en avsikt? Den omvända Page of Pentacles namnger den okonverterade planen. Kalkylarket utan handlingen är bara en artefakt."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Чи залишається фінансовий намір просто наміром? Перевернутий Паж Пентаклів називає нереалізований план. Електронна таблиця без дії — це просто артефакт."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_finance_upright_not_resonating" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vielleicht ist ein Anfängeransatz zum Geld — offen lernen — der richtige Schritt. Der Page der Pentacles stellt Fragen, die Erwachsene so tun, als ob sie die Antwort wüssten. Die ehrliche Neugier beschleunigt das Lernen."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Perhaps a beginner's approach to money — learning openly — is the move. The Page of Pentacles asks questions adults pretend they know the answer to. The honest curiosity speeds the learning."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quizás un enfoque de principiante al dinero — aprender abiertamente — es el movimiento. El Paje de Pentáculos hace preguntas que los adultos fingen saber. La curiosidad honesta acelera el aprendizaje."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Peut-être qu'une approche débutante de l'argent — apprendre ouvertement — est la bonne. Le Page de Deniers pose des questions dont les adultes font semblant de connaître la réponse. La curiosité honnête accélère l'apprentissage."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forse un approccio da principiante al denaro — imparare apertamente — è la mossa giusta. Il Paggio di Denari fa domande a cui gli adulti fingono di sapere rispondere. La curiosità onesta accelera l'apprendimento."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "お金に対する初心者のアプローチ — オープンに学ぶこと — が正解かもしれません。ペンタクルのページは大人が答えを知っているふりをする質問をします。正直な好奇心が学習を加速させます。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanskje en nybegynnertilnærming til penger — å lære åpent — er riktig. Page of Pentacles stiller spørsmål voksne later som de vet svaret på. Den ærlige nysgjerrigheten fremskynder læringen."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Być może podejście początkującego do pieniędzy — otwarte uczenie się — to właściwy ruch. Paź Pentakli zadaje pytania, na które dorośli udają, że znają odpowiedź. Szczera ciekawość przyspiesza naukę."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Talvez uma abordagem de iniciante ao dinheiro — aprender abertamente — seja o caminho. O Pagem de Ouros faz perguntas que os adultos fingem saber a resposta. A curiosidade honesta acelera o aprendizado."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanske är en nybörjaransats till pengar — att lära sig öppet — rätt drag. Page of Pentacles ställer frågor som vuxna låtsas veta svaret på. Den ärliga nyfikenheten påskyndar inlärningen."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Можливо, підхід новачка до грошей — відкрите навчання — є правильним кроком. Паж Пентаклів ставить запитання, на які дорослі вдають, що знають відповіді. Чесна допитливість прискорює навчання."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_finance_upright_unclear" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Welche finanzielle Gewohnheit könntest du diese Woche beginnen, egal wie klein? Der Page der Pentacles liebt die winzige, konsequente Bewegung. Die überwiesenen 10 € sind wichtiger als die geplanten 1.000 €."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "What financial habit could you start this week, however small? The Page of Pentacles loves the tiny consistent move. The $10 transferred matters more than the $1,000 planned."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "¿Qué hábito financiero podrías comenzar esta semana, por pequeño que sea? El Paje de Pentáculos ama el pequeño movimiento constante. Los $10 transferidos importan más que los $1,000 planificados."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quelle habitude financière pourriez-vous commencer cette semaine, aussi petite soit-elle ? Le Page de Deniers aime le petit mouvement cohérent. Les 10 $ transférés comptent plus que les 1 000 $ planifiés."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quale abitudine finanziaria potresti iniziare questa settimana, per quanto piccola? Il Paggio di Denari ama il piccolo movimento costante. I $10 trasferiti contano più dei $1.000 pianificati."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "今週、どんなに小さくても始められる財務習慣は何ですか？ペンタクルのページは小さな一貫した行動を愛します。移された10ドルは計画された1,000ドルよりも重要です。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Hvilken finansiell vane kan du starte denne uken, uansett hvor liten? Page of Pentacles elsker den lille konsekvente bevegelsen. De $10 som overføres betyr mer enn de $1 000 som er planlagt."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Jaki nawyk finansowy mógłbyś zacząć w tym tygodniu, nawet najmniejszy? Paź Pentakli kocha mały, konsekwentny ruch. Przelane 10 $ znaczy więcej niż zaplanowane 1 000 $."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Que hábito financeiro você poderia começar esta semana, por menor que seja? O Pagem de Ouros ama o pequeno movimento consistente. Os $10 transferidos importam mais do que os $1.000 planejados."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vilken finansiell vana kan du börja med den här veckan, hur liten som helst? Page of Pentacles älskar den lilla konsekventa rörelsen. De $10 som överförs betyder mer än de $1 000 som planerats."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Яку фінансову звичку ви могли б почати цього тижня, хоч би якою маленькою? Паж Пентаклів любить маленькі послідовні дії. Переведені 10 доларів важливіші за заплановані 1 000 доларів."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_general_reversed_not_resonating" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vielleicht bittet ein 'Irgendwann'-Plan darum, ein 'Heute'-Schritt zu werden. Der umgekehrte Page der Pentacles verkürzt die Zeitleiste. Mach einen kleinen Schritt diese Woche; der Rest folgt von selbst."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Maybe a 'someday' plan is asking to become a 'today' step. The reversed Page of Pentacles collapses the timeline. Take one small action this week; the rest follows from there."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quizás un plan de 'algún día' pide convertirse en un paso de 'hoy'. El Paje de Pentáculos invertido colapsa la línea de tiempo. Toma una pequeña acción esta semana; el resto sigue desde ahí."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Peut-être qu'un plan 'un jour' demande à devenir une étape 'aujourd'hui'. Le Page de Deniers inversé effondre le calendrier. Faites une petite action cette semaine ; le reste suit à partir de là."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forse un piano 'un giorno' chiede di diventare un passo 'oggi'. Il Paggio di Denari rovesciato collassa la linea temporale. Fai una piccola azione questa settimana; il resto segue da lì."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "「いつか」の計画が「今日」の一歩になることを求めているかもしれません。逆位置のペンタクルのページはタイムラインを短縮します。今週、小さなアクションを一つ起こしてください。残りはそこから続きます。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanskje en 'en dag'-plan ber om å bli et 'i dag'-steg. Den omvendte Page of Pentacles kollapser tidslinjen. Ta en liten handling denne uken; resten følger derfra."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Być może plan 'kiedyś' prosi o stanie się krokiem 'dzisiaj'. Odwrócony Paź Pentakli zapada oś czasu. Podejmij jedną małą akcję w tym tygodniu; reszta wynika z tego."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Talvez um plano de 'algum dia' esteja pedindo para se tornar um passo de 'hoje'. O Pagem de Ouros invertido colapsa a linha do tempo. Faça uma pequena ação esta semana; o resto segue a partir daí."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanske ber en 'någon gång'-plan om att bli ett 'idag'-steg. Den omvända Page of Pentacles kollapsar tidslinjen. Ta en liten handling den här veckan; resten följer därifrån."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Можливо, план 'колись' просить стати кроком 'сьогодні'. Перевернутий Паж Пентаклів скорочує часову лінію. Зробіть одну маленьку дію цього тижня; решта випливає звідти."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_general_reversed_unclear" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Wo hat Potenzial seinen Willkommensgruß überzogen? Der umgekehrte Page der Pentacles erwischt den chronischen 'Gleich-wird's-so-weit-sein'. Potenzial verfällt, wenn es nie in die Praxis umgesetzt wird."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Where has potential been overstaying its welcome? The reversed Page of Pentacles catches the chronic 'about to.' Potential expires when never converted into practice."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "¿Dónde ha estado el potencial quedándose más tiempo del debido? El Paje de Pentáculos invertido atrapa el crónico 'a punto de'. El potencial caduca cuando nunca se convierte en práctica."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Où le potentiel a-t-il abusé de son invitation ? Le Page de Deniers inversé attrape le 'sur le point de' chronique. Le potentiel expire quand il n'est jamais converti en pratique."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Dove il potenziale ha abusato della sua accoglienza? Il Paggio di Denari rovesciato coglie il cronico 'sta per'. Il potenziale scade quando non viene mai convertito in pratica."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "可能性はどこで歓迎を超えて長居していますか？逆位置のペンタクルのページは慢性的な「もうすぐ」を捉えます。可能性は実践に変換されないときに期限切れになります。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Hvor har potensialet oversteget sin velkomst? Den omvendte Page of Pentacles fanger den kroniske 'snart'. Potensial utløper når det aldri blir konvertert til praksis."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Gdzie potencjał przeciąga swoje powitanie? Odwrócony Paź Pentakli łapie chroniczne 'zaraz'. Potencjał wygasa, gdy nigdy nie zostaje przekształcony w praktykę."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Onde o potencial tem excedido sua estadia? O Pagem de Ouros invertido pega o crônico 'prestes a'. O potencial expira quando nunca é convertido em prática."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Var har potential överskridit sin välkomst? Den omvända Page of Pentacles fångar den kroniska 'snart'. Potential upphör när den aldrig omvandlas till praktik."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Де потенціал перевищив своє перебування? Перевернутий Паж Пентаклів вловлює хронічне 'ось-ось'. Потенціал втрачає чинність, коли ніколи не перетворюється на практику."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_general_upright_not_resonating" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vielleicht bist du früher im Prozess, als du denkst — und das ist eine gute Nachricht. Der Page der Pentacles schätzt die Anfängerphase. Es ist Zeit, das richtig zu machen; du musst keine Stufen überspringen."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Perhaps you're earlier in the process than you think — and that's good news. The Page of Pentacles values the beginner phase. There's time to do this right; you don't need to skip stages."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quizás estás más temprano en el proceso de lo que crees — y eso es una buena noticia. El Paje de Pentáculos valora la fase de principiante. Hay tiempo para hacerlo bien; no necesitas saltar etapas."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Peut-être êtes-vous plus tôt dans le processus que vous ne le pensez — et c'est une bonne nouvelle. Le Page de Deniers valorise la phase de débutant. Vous avez le temps de bien faire ; vous n'avez pas besoin de sauter des étapes."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forse sei più all'inizio del processo di quanto pensi — e questa è una buona notizia. Il Paggio di Denari valorizza la fase del principiante. C'è tempo per farlo bene; non devi saltare le fasi."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "おそらく、あなたは自分が思っているよりもプロセスの初期段階にいます — それは良い知らせです。ペンタクルのページは初心者の段階を重視します。これを正しく行う時間はあります。段階を飛ばす必要はありません。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanskje du er tidligere i prosessen enn du tror — og det er gode nyheter. Page of Pentacles verdsetter nybegynnerfasen. Det er tid til å gjøre dette riktig; du trenger ikke å hoppe over stadier."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Być może jesteś wcześniej w procesie, niż myślisz — i to jest dobra wiadomość. Paź Pentakli ceni fazę początkującą. Jest czas, aby zrobić to dobrze; nie musisz pomijać etapów."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Talvez você esteja mais no início do processo do que pensa — e isso é uma boa notícia. O Pagem de Ouros valoriza a fase de iniciante. Há tempo para fazer certo; você não precisa pular etapas."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanske är du tidigare i processen än du tror — och det är goda nyheter. Page of Pentacles värderar nybörjarfasen. Det finns tid att göra detta rätt; du behöver inte hoppa över steg."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Можливо, ви на раннішому етапі процесу, ніж думаєте — і це хороша новина. Паж Пентаклів цінує фазу початківця. Є час зробити це правильно; вам не потрібно пропускати етапи."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_general_upright_unclear" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Was, wenn Neugier, beständig angewandt, die ganze Strategie ist? Der Page der Pentacles vertraut dem beständigen Interesse. Das, worauf du immer wieder zurückkommst, ist es wert, investiert zu werden."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "What if curiosity, applied steadily, is the whole strategy? The Page of Pentacles trusts persistent interest. The thing you keep coming back to is the thing worth investing in."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "¿Y si la curiosidad, aplicada constantemente, es toda la estrategia? El Paje de Pentáculos confía en el interés persistente. Aquello a lo que sigues volviendo es aquello en lo que vale la pena invertir."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Et si la curiosité, appliquée régulièrement, était toute la stratégie ? Le Page de Deniers fait confiance à l'intérêt persistant. La chose à laquelle vous revenez sans cesse est celle qui mérite d'être investie."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "E se la curiosità, applicata costantemente, fosse l'intera strategia? Il Paggio di Denari si fida dell'interesse persistente. La cosa a cui continui a tornare è quella in cui vale la pena investire."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "好奇心を着実に適用することが戦略全体だとしたら？ペンタクルのページは持続的な関心を信頼します。あなたが何度も戻ってくるものこそが、投資する価値のあるものです。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Hva om nysgjerrighet, anvendt jevnt, er hele strategien? Page of Pentacles stoler på vedvarende interesse. Det du stadig kommer tilbake til, er det som er verdt å investere i."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "A co jeśli ciekawość, stosowana systematycznie, jest całą strategią? Paź Pentakli ufa trwałemu zainteresowaniu. Rzecz, do której ciągle wracasz, jest rzeczą, w którą warto inwestować."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "E se a curiosidade, aplicada de forma constante, for toda a estratégia? O Pagem de Ouros confia no interesse persistente. A coisa à qual você continua voltando é a coisa que vale a pena investir."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Tänk om nyfikenhet, tillämpad stadigt, är hela strategin? Page of Pentacles litar på ihållande intresse. Det du hela tiden återvänder till är det som är värt att investera i."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Що, якщо допитливість, застосована неухильно, є всією стратегією? Паж Пентаклів довіряє стійкому інтересу. Те, до чого ви постійно повертаєтеся, варте інвестицій."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_health_reversed_not_resonating" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vielleicht ersetzt Recherche die Aktion. Der umgekehrte Page der Pentacles erwischt die endlose Vorbereitung. Der Spaziergang, der heute stattfindet, übertrifft den perfekten Plan, der nicht stattfindet."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Maybe research is replacing action. The reversed Page of Pentacles catches the endless prep. The walk that happens today outperforms the perfect plan that doesn't."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quizás la investigación está reemplazando la acción. El Paje de Pentáculos invertido atrapa la preparación interminable. El paseo que ocurre hoy supera al plan perfecto que no ocurre."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Peut-être que la recherche remplace l'action. Le Page de Deniers inversé attrape la préparation sans fin. La promenade qui a lieu aujourd'hui surpasse le plan parfait qui n'a pas lieu."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forse la ricerca sta sostituendo l'azione. Il Paggio di Denari rovesciato coglie la preparazione infinita. La passeggiata che avviene oggi supera il piano perfetto che non avviene."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "研究が行動を代替しているかもしれません。逆位置のペンタクルのページは終わりのない準備を捉えます。今日行われる散歩は、実行されない完璧な計画を上回ります。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanskje forskning erstatter handling. Den omvendte Page of Pentacles fanger den endeløse forberedelsen. Turen som skjer i dag, overgår den perfekte planen som ikke skjer."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Być może badania zastępują działanie. Odwrócony Paź Pentakli łapie niekończące się przygotowania. Spacer, który ma miejsce dzisiaj, przewyższa doskonały plan, który nie ma miejsca."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Talvez a pesquisa esteja substituindo a ação. O Pagem de Ouros invertido pega a preparação interminável. A caminhada que acontece hoje supera o plano perfeito que não acontece."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanske ersätter forskning handling. Den omvända Page of Pentacles fångar den ändlösa förberedelsen. Promenaden som sker idag överträffar den perfekta planen som inte sker."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Можливо, дослідження замінює дію. Перевернутий Паж Пентаклів вловлює нескінченну підготовку. Прогулянка, яка відбувається сьогодні, перевершує ідеальний план, який не відбувається."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_health_reversed_unclear" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Beginnt ein Fitness- oder Erholungsplan nie wirklich? Der umgekehrte Page der Pentacles benennt den Vorstartzustand. Das Beginnen selbst ist die Arbeit; die Optimierung kommt später."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Is a fitness or recovery plan never actually beginning? The reversed Page of Pentacles names the prelaunch state. The starting itself is the work; the optimization is later."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "¿Un plan de fitness o recuperación nunca comienza realmente? El Paje de Pentáculos invertido nombra el estado de prelanzamiento. El comienzo en sí mismo es el trabajo; la optimización es después."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Un plan de remise en forme ou de récupération ne commence-t-il jamais vraiment ? Le Page de Deniers inversé nomme l'état de pré-lancement. Le début lui-même est le travail ; l'optimisation vient plus tard."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Un piano di fitness o recupero non inizia mai realmente? Il Paggio di Denari rovesciato nomina lo stato di pre-lancio. L'inizio stesso è il lavoro; l'ottimizzazione è dopo."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "フィットネスや回復の計画が実際に始まったことがないのですか？逆位置のペンタクルのページはプレローンチ状態を名指しします。始めること自体が仕事です。最適化は後です。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Begynner en trenings- eller restitusjonsplan aldri egentlig? Den omvendte Page of Pentacles navngir førlanseringstilstanden. Selve starten er arbeidet; optimaliseringen kommer senere."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Czy plan fitness lub rekonwalescencji nigdy tak naprawdę nie zaczyna się? Odwrócony Paź Pentakli nazywa stan przedstartowy. Samo rozpoczęcie jest pracą; optymalizacja jest później."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Um plano de fitness ou recuperação nunca está realmente começando? O Pagem de Ouros invertido nomeia o estado de pré-lançamento. O começo em si é o trabalho; a otimização é depois."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Börjar en tränings- eller återhämtningsplan aldrig egentligen? Den omvända Page of Pentacles namnger före-lanseringstillståndet. Själva starten är arbetet; optimeringen kommer senare."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Чи план фітнесу чи відновлення ніколи не починається насправді? Перевернутий Паж Пентаклів називає стан перед запуском. Саме початок — це робота; оптимізація — потім."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_health_upright_not_resonating" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vielleicht fehlt die Anfängerfreude, deinen Körper kennenzulernen. Der Page der Pentacles führt die Neugier zurück in die Wellness-Praxis. Nähere dich dem Körper wie ein Schüler, nicht wie ein Projektmanager."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Perhaps the beginner's joy of learning your body is missing. The Page of Pentacles re-introduces curiosity to the wellness practice. Approach the body like a student, not a project manager."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quizás falta la alegría del principiante de aprender tu cuerpo. El Paje de Pentáculos reintroduce la curiosidad en la práctica del bienestar. Acércate al cuerpo como un estudiante, no como un gerente de proyecto."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Peut-être que la joie du débutant d'apprendre votre corps manque. Le Page de Deniers réintroduit la curiosité dans la pratique du bien-être. Approchez le corps comme un étudiant, pas comme un chef de projet."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forse manca la gioia del principiante di imparare il tuo corpo. Il Paggio di Denari reintroduce la curiosità nella pratica del benessere. Avvicina il corpo come uno studente, non come un project manager."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "おそらく、自分の体を学ぶ初心者の喜びが欠けています。ペンタクルのページはウェルネスプラクティスに好奇心を再導入します。プロジェクトマネージャーではなく、学生のように体にアプローチしてください。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanskje nybegynnerens glede av å lære kroppen din mangler. Page of Pentacles gjeninnfører nysgjerrighet til velværepraksisen. Nærm deg kroppen som en student, ikke en prosjektleder."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Być może brakuje radości początkującego z poznawania swojego ciała. Paź Pentakli ponownie wprowadza ciekawość do praktyki wellness. Podchodź do ciała jak uczeń, a nie kierownik projektu."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Talvez a alegria do iniciante de aprender seu corpo esteja faltando. O Pagem de Ouros reintroduz a curiosidade à prática do bem-estar. Aborde o corpo como um estudante, não como um gerente de projeto."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanske saknas nybörjarens glädje i att lära sig din kropp. Page of Pentacles återinför nyfikenhet i välmåendepraktiken. Närm dig kroppen som en student, inte en projektledare."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Можливо, бракує радості новачка від вивчення свого тіла. Паж Пентаклів знову вводить допитливість у практику оздоровлення. Підходьте до тіла як учень, а не як керівник проекту."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_health_upright_unclear" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Was, wenn du eine neue Gesundheitsgewohnheit im kleinstmöglichen Maßstab beginnst? Der Page der Pentacles vertraut der winzigen Tür. Die Intervention, bei der du nicht scheitern kannst, wird wiederholt; die beeindruckende scheitert meist."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "What if you started a new health habit at the easiest possible scale? The Page of Pentacles trusts the tiny door. The intervention you can't fail at gets repeated; the impressive one usually doesn't."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "¿Y si comienzas un nuevo hábito de salud en la escala más fácil posible? El Paje de Pentáculos confía en la pequeña puerta. La intervención en la que no puedes fallar se repite; la impresionante generalmente no."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Et si vous commenciez une nouvelle habitude de santé à l'échelle la plus facile possible ? Le Page de Deniers fait confiance à la petite porte. L'intervention que vous ne pouvez pas rater se répète ; celle impressionnante ne l'est généralement pas."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "E se iniziassi una nuova abitudine di salute alla scala più facile possibile? Il Paggio di Denari si fida della piccola porta. L'intervento in cui non puoi fallire viene ripetuto; quello impressionante di solito no."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "最も簡単なスケールで新しい健康習慣を始めてみませんか？ペンタクルのページは小さな扉を信頼します。失敗できない介入は繰り返されます。印象的なものは通常繰り返されません。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Hva om du startet en ny helsevare på den enklest mulige skalaen? Page of Pentacles stoler på den lille døren. Intervensjonen du ikke kan mislykkes med, blir gjentatt; den imponerende gjør det vanligvis ikke."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "A co jeśli zaczniesz nowy nawyk zdrowotny w najłatwiejszej możliwej skali? Paź Pentakli ufa małym drzwiom. Interwencja, której nie możesz przegrać, jest powtarzana; imponująca zazwyczaj nie jest."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "E se você começasse um novo hábito de saúde na escala mais fácil possível? O Pagem de Ouros confia na pequena porta. A intervenção na qual você não pode falhar é repetida; a impressionante geralmente não é."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Tänk om du började en ny hälso- och träningsvana i den enklast möjliga skalan? Page of Pentacles litar på den lilla dörren. Interventionen du inte kan misslyckas med upprepas; den imponerande gör det vanligtvis inte."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Що, якщо ви почнете нову звичку здоров'я в найпростішому можливому масштабі? Паж Пентаклів довіряє маленьким дверям. Втручання, в якому ви не можете провалитися, повторюється; вражаюче зазвичай — ні."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_love_reversed_not_resonating" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vielleicht hatte eine Person, die 'Potenzial hat', Jahre, um es zu zeigen. Der umgekehrte Page der Pentacles beendet das geduldige Warten. Potenzial, das nie umgesetzt wird, ist nur Charisma."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Maybe a person who 'has potential' has had years to show it. The reversed Page of Pentacles ends the patient wait. Potential that never converts is just charisma."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quizás una persona que 'tiene potencial' ha tenido años para demostrarlo. El Paje de Pentáculos invertido termina la espera paciente. El potencial que nunca se convierte es solo carisma."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Peut-être qu'une personne qui 'a du potentiel' a eu des années pour le montrer. Le Page de Deniers inversé met fin à l'attente patiente. Le potentiel qui ne se convertit jamais n'est que du charisme."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forse una persona che 'ha potenziale' ha avuto anni per dimostrarlo. Il Paggio di Denari rovesciato pone fine all'attesa paziente. Il potenziale che non si converte mai è solo carisma."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "「可能性がある」と言われる人がそれを示すのに何年もかかっているかもしれません。逆位置のペンタクルのページは忍耐強い待機を終わらせます。決して変換されない可能性は単なるカリスマです。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanskje en person som 'har potensial' har hatt år på seg til å vise det. Den omvendte Page of Pentacles avslutter den tålmodige ventetiden. Potensial som aldri konverteres, er bare karisma."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Być może osoba, która 'ma potencjał', miała lata, aby go pokazać. Odwrócony Paź Pentakli kończy cierpliwe oczekiwanie. Potencjał, który nigdy się nie konwertuje, jest tylko charyzmą."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Talvez uma pessoa que 'tem potencial' tenha tido anos para mostrá-lo. O Pagem de Ouros invertido termina a espera paciente. O potencial que nunca se converte é apenas carisma."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanske en person som 'har potential' har haft år på sig att visa det. Den omvända Page of Pentacles avslutar den tålmodiga väntan. Potential som aldrig omvandlas är bara karisma."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Можливо, людина, яка 'має потенціал', мала роки, щоб його показати. Перевернутий Паж Пентаклів припиняє терпляче очікування. Потенціал, який ніколи не перетворюється, — це просто харизма."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_love_reversed_unclear" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Stockt eine Beziehung, weil niemand echte Anstrengung investiert? Der umgekehrte Page der Pentacles prüft die Handlungen, nicht die Absichten. Das tatsächliche Verhalten beider Parteien ist die Grundlage."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Is a relationship stalling because no one's investing real effort? The reversed Page of Pentacles audits the actions, not the intentions. Both parties' actual behavior is the data."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "¿Una relación se estanca porque nadie está invirtiendo esfuerzo real? El Paje de Pentáculos invertido audita las acciones, no las intenciones. El comportamiento real de ambas partes es el dato."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Une relation est-elle bloquée parce que personne n'investit d'effort réel ? Le Page de Deniers inversé audite les actions, pas les intentions. Le comportement réel des deux parties est la donnée."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Una relazione è in stallo perché nessuno sta investendo uno sforzo reale? Il Paggio di Denari rovesciato verifica le azioni, non le intenzioni. Il comportamento effettivo di entrambe le parti è il dato."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "誰も本当の努力を投資していないために人間関係が停滞していますか？逆位置のペンタクルのページは意図ではなく行動を監査します。双方の実際の行動がデータです。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Er et forhold i stampe fordi ingen investerer reell innsats? Den omvendte Page of Pentacles reviderer handlingene, ikke intensjonene. Begge parters faktiske atferd er dataene."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Czy związek utknął, ponieważ nikt nie inwestuje prawdziwego wysiłku? Odwrócony Paź Pentakli analizuje działania, a nie intencje. Rzeczywiste zachowanie obu stron jest danymi."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Um relacionamento está estagnado porque ninguém está investindo esforço real? O Pagem de Ouros invertido audita as ações, não as intenções. O comportamento real de ambas as partes são os dados."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Står ett förhållande stilla för att ingen investerar verklig ansträngning? Den omvända Page of Pentacles granskar handlingarna, inte avsikterna. Båda parters faktiska beteende är datan."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Чи стосунки застрягли, тому що ніхто не вкладає реальних зусиль? Перевернутий Паж Пентаклів перевіряє дії, а не наміри. Фактична поведінка обох сторін — це дані."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_love_upright_not_resonating" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vielleicht wird langsam aufbauendes Interesse unterschätzt. Der Page der Pentacles bevorzugt die leise, stetige Anziehungskraft gegenüber dem Feuerwerk. Der langsame Start führt oft zur längeren Geschichte."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Perhaps slow-build interest is being underestimated. The Page of Pentacles favors the quiet steady pull over the fireworks. The slow start often leads to the longer story."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Quizás se subestima el interés de construcción lenta. El Paje de Pentáculos favorece el tirón constante y silencioso sobre los fuegos artificiales. El comienzo lento a menudo conduce a la historia más larga."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Peut-être que l'intérêt à construction lente est sous-estimé. Le Page de Deniers favorise l'attrait silencieux et régulier par rapport aux feux d'artifice. Le début lent conduit souvent à l'histoire plus longue."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Forse l'interesse a lenta costruzione viene sottovalutato. Il Paggio di Denari favorisce l'attrazione silenziosa e costante rispetto ai fuochi d'artificio. L'inizio lento spesso porta alla storia più lunga."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "ゆっくりと構築される興味が過小評価されているかもしれません。ペンタクルのページは花火よりも静かで着実な引力を好みます。ゆっくりした始まりはしばしばより長い物語につながります。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanskje saktebyggende interesse blir undervurdert. Page of Pentacles foretrekker den stille jevne dragningen fremfor fyrverkeriet. Den langsomme starten fører ofte til den lengre historien."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Być może zainteresowanie budowane powoli jest niedoceniane. Paź Pentakli preferuje ciche, stałe przyciąganie nad fajerwerkami. Powolny start często prowadzi do dłuższej historii."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Talvez o interesse de construção lenta esteja sendo subestimado. O Pagem de Ouros favorece a atração silenciosa e constante sobre os fogos de artifício. O começo lento geralmente leva à história mais longa."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Kanske underskattas långsamt uppbyggt intresse. Page of Pentacles föredrar den tysta stadiga dragningen framför fyrverkerierna. Den långsamma starten leder ofta till den längre berättelsen."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Можливо, інтерес, що повільно будується, недооцінюється. Паж Пентаклів віддає перевагу тихому, постійному потягу над феєрверками. Повільний початок часто призводить до довшої історії."
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "interpretation.page_of_pentacles_love_upright_unclear" : {
+                                        "extractionState" : "manual",
+                                        "localizations" : {
+                                          "de" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Von welchem neuen, praktischen Schritt könnte eine aufkeimende Beziehung profitieren? Der Page der Pentacles mag die kleine konkrete Geste. Die spezifische kleine Bewegung verankert das abstrakte Gefühl."
+                                            }
+                                          },
+                                          "en" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "What new, practical step could a budding relationship benefit from? The Page of Pentacles likes the small concrete gesture. The specific small move grounds the abstract feeling."
+                                            }
+                                          },
+                                          "es" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "¿Qué nuevo paso práctico podría beneficiar a una relación incipiente? El Paje de Pentáculos gusta del pequeño gesto concreto. El movimiento pequeño específico fundamenta el sentimiento abstracto."
+                                            }
+                                          },
+                                          "fr" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "De quel nouveau pas pratique une relation naissante pourrait-elle bénéficier ? Le Page de Deniers aime le petit geste concret. Le petit mouvement spécifique ancre le sentiment abstrait."
+                                            }
+                                          },
+                                          "it" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Di quale nuovo passo pratico potrebbe beneficiare una relazione nascente? Il Paggio di Denari ama il piccolo gesto concreto. Il piccolo movimento specifico radica il sentimento astratto."
+                                            }
+                                          },
+                                          "ja" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "芽生えつつある関係はどのような新しい実践的なステップから利益を得られるでしょうか？ペンタクルのページは小さな具体的なジェスチャーを好みます。具体的な小さな動きが抽象的な感情を根付かせます。"
+                                            }
+                                          },
+                                          "nb" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Hvilket nytt, praktisk steg kan et spirende forhold dra nytte av? Page of Pentacles liker den lille konkrete gesten. Den spesifikke lille bevegelsen forankrer den abstrakte følelsen."
+                                            }
+                                          },
+                                          "pl" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Z jakiego nowego, praktycznego kroku mógłby skorzystać rodzący się związek? Paź Pentakli lubi mały konkretny gest. Konkretny mały ruch ugruntowuje abstrakcyjne uczucie."
+                                            }
+                                          },
+                                          "pt-BR" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "De que novo passo prático um relacionamento em desenvolvimento poderia se beneficiar? O Pagem de Ouros gosta do pequeno gesto concreto. O pequeno movimento específico fundamenta o sentimento abstrato."
+                                            }
+                                          },
+                                          "sv" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Vilket nytt, praktiskt steg kan ett spirande förhållande dra nytta av? Page of Pentacles gillar den lilla konkreta gesten. Den specifika lilla rörelsen förankrar den abstrakta känslan."
+                                            }
+                                          },
+                                          "uk" : {
+                                            "stringUnit" : {
+                                              "state" : "translated",
+                                              "value" : "Який новий практичний крок міг би принести користь стосункам, що зароджуються? Паж Пентаклів любить маленький конкретний жест. Конкретна маленька дія вкорінює абстрактне почуття."
+                                            }
+                                          }
+                                        }
+                                      },
     "interpretation.page_of_swords_career_reversed_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
