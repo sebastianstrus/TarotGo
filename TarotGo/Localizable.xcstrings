@@ -216847,182 +216847,1142 @@
                             }
                           }
                         },
-    "interpretation.nine_of_swords_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the catastrophe didn't happen and you're still bracing. The reversed Nine of Swords updates the threat assessment. The bracing posture often outlasts the actual danger."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is professional dread easing? The reversed Nine of Swords marks the first real night of less anxiety. Notice it; the system isn't always loud about its recovery."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the late-night fears would survive less daylight. The Nine of Swords thrives at 3am. Write the worry down at night, reread at noon, and see if it still holds the same weight."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the worst-case story at work actually happening, or just being rehearsed? The Nine of Swords plays the catastrophe on loop. Test the script against actual evidence in daylight."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the dread has outlived the danger. The reversed Nine of Swords ends the rehearsal. The fear is a habit now, not a response to current data."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a financial nightmare receding into daylight? The reversed Nine of Swords brings the dread down to size. The morning version of the problem is almost always smaller than the night version."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a hard look at the real picture would soothe the panic. The Nine of Swords hates direct examination. The looking, however reluctant, often reduces the anxiety more than the avoidance does."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the money fear matching the actual numbers? The Nine of Swords amplifies financial dread. Run the actual figures before letting the panic write the story."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the worst didn't happen — and you're still bracing. The reversed Nine of Swords notes the lag between threat and posture. The vigilance can soften now."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is the night ending? The reversed Nine of Swords marks the dawn after the worry stretch. The body feels it before the mind names it."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the 3am story isn't the daytime truth. The Nine of Swords runs on cortisol. Don't trust the late-night narrative; check it against the morning version."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What is the fear, said out loud, in actual words? The Nine of Swords loses some power when it's named precisely. Specificity strips the vague terror."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe your nervous system is ready to come down. The reversed Nine of Swords offers the regulation. Don't override it with fresh worries; let the calmer state stick."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is a long stretch of fear about health starting to release? The reversed Nine of Swords notes the calming of the worried system. The shoulders drop; notice them."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps sleep and somatic care are the first interventions. The Nine of Swords keeps you awake. The body needs rest before any other healing can land."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is anxiety becoming a health condition of its own? The Nine of Swords' chronic worry has physical costs. Treat the anxiety like a symptom worth addressing directly."
-          }
-        }
-      }
-    },
+                        "interpretation.nine_of_swords_career_reversed_not_resonating" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vielleicht ist die Katastrophe nicht eingetreten und Sie halten immer noch die Luft an. Die umgekehrte Neun der Schwerter aktualisiert die Risikoeinschätzung. Die angespannte Haltung überdauert oft die tatsächliche Gefahr."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Maybe the catastrophe didn't happen and you're still bracing. The reversed Nine of Swords updates the threat assessment. The bracing posture often outlasts the actual danger."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quizás la catástrofe no ocurrió y todavía te estás preparando. El Nueve de Espadas invertido actualiza la evaluación de amenazas. La postura de preparación a menudo perdura más que el peligro real."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Peut-être que la catastrophe n'a pas eu lieu et que vous êtes toujours en état d'alerte. Le Neuf d'Épées inversé met à jour l'évaluation de la menace. La posture d'alerte dure souvent plus longtemps que le danger réel."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Forse la catastrofe non è accaduta e sei ancora in tensione. Il Nove di Spade rovesciato aggiorna la valutazione della minaccia. La postura tesa spesso sopravvive al pericolo effettivo."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "おそらく大惨事は起こらず、あなたはまだ身構えています。逆位置のソードの9は脅威評価を更新します。身構える姿勢は実際の危険よりも長く続くことがよくあります。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanskje katastrofen ikke skjedde, og du står fortsatt i beredskap. Den reverserte Ni av Sverd oppdaterer trusselvurderingen. Beredskapsholdningen varer ofte lenger enn den faktiske faren."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Być może katastrofa nie nastąpiła, a ty wciąż się przygotowujesz. Odwrócona Dziewiątka Mieczy aktualizuje ocenę zagrożenia. Postawa gotowości często trwa dłużej niż rzeczywiste niebezpieczeństwo."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Talvez a catástrofe não tenha acontecido e você ainda esteja se preparando. O Nove de Espadas invertido atualiza a avaliação de ameaça. A postura de preparação muitas vezes perdura mais que o perigo real."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanske katastrofen inte inträffade och du fortfarande spänner dig. Den omvända Nio av Svärd uppdaterar hotbedömningen. Spänningshållningen varar ofta längre än den faktiska faran."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Можливо, катастрофи не сталося, а ви все ще напружені. Перевернута Дев'ятка Мечів оновлює оцінку загрози. Напружена поза часто переживає реальну небезпеку."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_career_reversed_unclear" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Lässt der berufliche Stress nach? Die umgekehrte Neun der Schwerter markiert die erste wirklich ruhige Nacht. Beachten Sie es; das System meldet seine Erholung nicht immer laut."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Is professional dread easing? The reversed Nine of Swords marks the first real night of less anxiety. Notice it; the system isn't always loud about its recovery."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "¿Está disminuyendo el temor profesional? El Nueve de Espadas invertido marca la primera noche real de menos ansiedad. Obsérvalo; el sistema no siempre es ruidoso acerca de su recuperación."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "La peur professionnelle s'atténue-t-elle ? Le Neuf d'Épées inversé marque la première vraie nuit avec moins d'anxiété. Remarquez-le ; le système n'est pas toujours bruyant sur sa récupération."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Il timore professionale si sta attenuando? Il Nove di Spade rovesciato segna la prima vera notte con meno ansia. Notalo; il sistema non è sempre rumoroso riguardo alla sua guarigione."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "仕事上の不安は和らいでいますか？逆位置のソードの9は、不安が減った最初の本当の夜をマークします。それに気づいてください。システムは常に回復について大げさに伝えるわけではありません。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Letter yrkesfrykten? Den reverserte Ni av Sverd markerer den første virkelige natten med mindre angst. Legg merke til det; systemet er ikke alltid høylytt om bedringen."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Czy zawodowy strach słabnie? Odwrócona Dziewiątka Mieczy oznacza pierwszą prawdziwą noc z mniejszym niepokojem. Zwróć na to uwagę; system nie zawsze głośno obwieszcza swoją poprawę."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "O medo profissional está diminuindo? O Nove de Espadas invertido marca a primeira noite real com menos ansiedade. Observe; o sistema nem sempre é barulhento sobre sua recuperação."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Lättar yrkesångesten? Den omvända Nio av Svärd markerar den första riktiga natten med mindre ångest. Lägg märke till det; systemet är inte alltid högljutt om sin återhämtning."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Професійний страх слабшає? Перевернута Дев'ятка Мечів позначає першу справжню ніч із меншою тривожністю. Помітьте це; система не завжди голосно заявляє про своє відновлення."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_career_upright_not_resonating" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vielleicht würden die nächtlichen Ängste weniger Tageslicht überleben. Die Neun der Schwerter gedeiht um 3 Uhr morgens. Schreiben Sie die Sorge nachts auf, lesen Sie sie mittags noch einmal und prüfen Sie, ob sie immer noch dasselbe Gewicht hat."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Perhaps the late-night fears would survive less daylight. The Nine of Swords thrives at 3am. Write the worry down at night, reread at noon, and see if it still holds the same weight."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quizás los miedos nocturnos sobrevivirían menos a la luz del día. El Nueve de Espadas prospera a las 3 a.m. Escribe la preocupación por la noche, vuelve a leerla al mediodía y comprueba si sigue teniendo el mismo peso."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Peut-être que les peurs nocturnes survivraient moins à la lumière du jour. Le Neuf d'Épées prospère à 3 heures du matin. Notez l'inquiétude la nuit, relisez-la à midi et voyez si elle a toujours le même poids."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Forse le paure notturne sopravvivrebbero meno alla luce del giorno. Il Nove di Spade prospera alle 3 di notte. Scrivi la preoccupazione di notte, rileggila a mezzogiorno e vedi se ha ancora lo stesso peso."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "おそらく、深夜の恐怖は昼間の光には耐えられないでしょう。ソードの9は午前3時に最も影響力を発揮します。夜に不安を書き留め、正午に読み返し、それがまだ同じ重みを持っているかどうかを確認してください。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanskje nattfrykten ville overlevd mindre dagslys. Ni av Sverd trives kl. 03.00. Skriv ned bekymringen om natten, les den på nytt ved middagstider, og se om den fortsatt har samme vekt."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Być może nocne lęki przetrwałyby mniej światła dziennego. Dziewiątka Mieczy rozwija się o 3 nad ranem. Zapisz zmartwienie w nocy, przeczytaj je ponownie w południe i sprawdź, czy nadal ma taką samą wagę."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Talvez os medos noturnos sobrevivessem menos à luz do dia. O Nove de Espadas prospera às 3 da manhã. Escreva a preocupação à noite, releia ao meio-dia e veja se ela ainda tem o mesmo peso."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanske nattens rädslor skulle överleva mindre dagsljus. Nio av Svärd trivs klockan 03.00. Skriv ner oron på natten, läs om den vid middagstid och se om den fortfarande har samma tyngd."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Можливо, нічні страхи пережили б менше денного світла. Дев'ятка Мечів процвітає о 3 годині ночі. Запишіть занепокоєння вночі, перечитайте опівдні та подивіться, чи має воно все ще таку саму вагу."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_career_upright_unclear" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Findet das worst-case-Szenario bei der Arbeit tatsächlich statt oder wird es nur geprobt? Die Neun der Schwerter spielt die Katastrophe in einer Schleife ab. Überprüfen Sie das Drehbuch anhand der tatsächlichen Beweise bei Tageslicht."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Is the worst-case story at work actually happening, or just being rehearsed? The Nine of Swords plays the catastrophe on loop. Test the script against actual evidence in daylight."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "¿La historia del peor caso en el trabajo está sucediendo realmente, o solo se está ensayando? El Nueve de Espadas reproduce la catástrofe en bucle. Prueba el guión con la evidencia real a la luz del día."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "L'histoire du pire scénario au travail se produit-elle réellement, ou est-elle simplement répétée ? Le Neuf d'Épées joue la catastrophe en boucle. Testez le scénario par rapport aux preuves réelles à la lumière du jour."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "La storia del caso peggiore al lavoro sta realmente accadendo, o è solo una prova? Il Nove di Spade riproduce la catastrofe in loop. Metti alla prova la sceneggiatura con le prove reali alla luce del giorno."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "仕事での最悪のシナリオは実際に起こっているのでしょうか、それとも単にリハーサルされているだけでしょうか？ソードの9は大惨事をループで再生します。そのシナリオを実際の証拠と照らし合わせてテストしてみてください。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Skjer verstefallshistorien på jobb faktisk, eller blir den bare øvd på? Ni av Sverd spiller katastrofen på repeat. Test manuset mot faktiske bevis i dagslys."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Czy najgorszy scenariusz w pracy rzeczywiście ma miejsce, czy jest tylko ćwiczeniem? Dziewiątka Mieczy odtwarza katastrofę w pętli. Sprawdź scenariusz w świetle dziennym, porównując go z rzeczywistymi dowodami."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "A história do pior caso no trabalho está realmente acontecendo, ou apenas sendo ensaiada? O Nove de Espadas reproduz a catástrofe em loop. Teste o roteiro contra evidências reais à luz do dia."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Händer värsta-fallet-berättelsen på jobbet faktiskt, eller är den bara på repetition? Nio av Svärd spelar katastrofen på repeat. Testa manuset mot faktiska bevis i dagsljus."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Найгірший сценарій на роботі відбувається насправді, чи це лише репетиція? Дев'ятка Мечів програє катастрофу по колу. Перевірте сценарій на основі фактичних доказів при денному світлі."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_finance_reversed_not_resonating" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vielleicht hat die Angst die Gefahr überlebt. Die umgekehrte Neun der Schwerter beendet die Probe. Die Angst ist jetzt eine Gewohnheit, keine Reaktion auf aktuelle Daten."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Maybe the dread has outlived the danger. The reversed Nine of Swords ends the rehearsal. The fear is a habit now, not a response to current data."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quizás el temor ha sobrevivido al peligro. El Nueve de Espadas invertido termina con el ensayo. El miedo es ahora un hábito, no una respuesta a los datos actuales."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Peut-être que la peur a survécu au danger. Le Neuf d'Épées inversé met fin à la répétition. La peur est maintenant une habitude, pas une réponse aux données actuelles."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Forse il timore ha sopravvissuto al pericolo. Il Nove di Spade rovesciato pone fine alla prova. La paura è ora un'abitudine, non una risposta ai dati attuali."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "おそらく、不安は危険を長く生き延びています。逆位置のソードの9はリハーサルを終わらせます。今や恐怖は習慣であり、現在のデータへの反応ではありません。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanskje frykten har overlevd faren. Den reverserte Ni av Sverd avslutter innøvingen. Frykten er nå en vane, ikke en respons på nåværende data."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Być może strach przetrwał niebezpieczeństwo. Odwrócona Dziewiątka Mieczy kończy próbę. Strach jest teraz nawykiem, a nie reakcją na bieżące dane."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Talvez o medo tenha sobrevivido ao perigo. O Nove de Espadas invertido acaba com o ensaio. O medo agora é um hábito, não uma resposta aos dados atuais."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanske fruktan har överlevt faran. Den omvända Nio av Svärd avslutar repetitionen. Rädslan är nu en vana, inte en reaktion på aktuella data."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Можливо, страх пережив небезпеку. Перевернута Дев'ятка Мечів припиняє репетицію. Страх тепер є звичкою, а не реакцією на поточні дані."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_finance_reversed_unclear" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Bildet sich der finanzielle Albtraum in der Realität zurück? Die umgekehrte Neun der Schwerter bringt die Angst auf ein normales Maß. Die Morgenversion des Problems ist fast immer kleiner als die Nachtversion."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Is a financial nightmare receding into daylight? The reversed Nine of Swords brings the dread down to size. The morning version of the problem is almost always smaller than the night version."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "¿Una pesadilla financiera se está desvaneciendo con la luz del día? El Nueve de Espadas invertido reduce el temor a su tamaño real. La versión matutina del problema es casi siempre más pequeña que la versión nocturna."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Un cauchemar financier s'éloigne-t-il à la lumière du jour ? Le Neuf d'Épées inversé réduit la peur à sa juste mesure. La version matinale du problème est presque toujours plus petite que la version nocturne."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Un incubo finanziario si sta ritirando alla luce del giorno? Il Nove di Spade rovesciato ridimensiona la paura. La versione mattutina del problema è quasi sempre più piccola di quella notturna."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "金銭的な悪夢が現実のものになりつつありますか？逆位置のソードの9は不安を現実的な大きさに戻します。問題の朝のバージョンは、ほぼ常に夜のバージョンよりも小さいものです。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Er et finansielt mareritt i ferd med å bli dagens virkelighet? Den reverserte Ni av Sverd reduserer frykten til riktig størrelse. Morgenversjonen av problemet er nesten alltid mindre enn nattversjonen."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Czy finansowy koszmar ustępuje w świetle dziennym? Odwrócona Dziewiątka Mieczy sprowadza strach do właściwych rozmiarów. Poranna wersja problemu jest prawie zawsze mniejsza niż wersja nocna."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Um pesadelo financeiro está recuando para a luz do dia? O Nove de Espadas invertido reduz o medo ao seu tamanho real. A versão matinal do problema é quase sempre menor que a versão noturna."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Håller en finansiell mardröm på att försvinna i dagsljus? Den omvända Nio av Svärd förminskar rädslan. Morgonversionen av problemet är nästan alltid mindre än nattversionen."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Чи відступає фінансовий кошмар у денне світло? Перевернута Дев'ятка Мечів зменшує страх до реальних розмірів. Ранкова версія проблеми майже завжди менша за нічну версію."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_finance_upright_not_resonating" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vielleicht würde ein genauer Blick auf das reale Bild die Panik besänftigen. Die Neun der Schwerter hasst direkte Prüfung. Das Hinsehen, so widerwillig es auch ist, reduziert die Angst oft mehr als das Vermeiden."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Perhaps a hard look at the real picture would soothe the panic. The Nine of Swords hates direct examination. The looking, however reluctant, often reduces the anxiety more than the avoidance does."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quizás una mirada dura a la imagen real calmaría el pánico. El Nueve de Espadas odia el examen directo. Mirar, aunque sea a regañadientes, a menudo reduce más la ansiedad que la evitación."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Peut-être qu'un regard dur sur la réalité apaiserait la panique. Le Neuf d'Épées déteste l'examen direct. Regarder, même à contrecœur, réduit souvent plus l'anxiété que l'évitement."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Forse uno sguardo duro al quadro reale calmerebbe il panico. Il Nove di Spade odia l'esame diretto. Guardare, per quanto a malincuore, spesso riduce l'ansia più dell'evitamento."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "おそらく、現実の状況を直視することがパニックを和らげるでしょう。ソードの9は直接的な検証を嫌います。たとえ気が進まなくても、見つめることは回避するよりも不安を軽減することがよくあります。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanskje et hardt blikk på det virkelige bildet ville lindre panikken. Ni av Sverd hater direkte undersøkelse. Å se, uansett hvor motvillig, reduserer ofte angsten mer enn unngåelse gjør."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Być może twarde spojrzenie na prawdziwy obraz ukoiłoby panikę. Dziewiątka Mieczy nienawidzi bezpośredniego badania. Patrzenie, choćby niechętne, często bardziej zmniejsza niepokój niż unikanie."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Talvez um olhar duro para o quadro real acalmaria o pânico. O Nove de Espadas odeia o exame direto. Olhar, mesmo que relutantemente, muitas vezes reduz mais a ansiedade do que a evitação."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanske skulle en hård titt på den verkliga bilden lugna paniken. Nio av Svärd hatar direkt granskning. Att titta, hur motvilligt det än är, minskar ofta ångesten mer än undvikandet gör."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Можливо, пильний погляд на реальну картину заспокоїв би паніку. Дев'ятка Мечів ненавидить прямий розгляд. Погляд, хай і неохочий, часто зменшує тривогу більше, ніж уникнення."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_finance_upright_unclear" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Entspricht die Angst vor dem Geld den tatsächlichen Zahlen? Die Neun der Schwerter verstärkt die finanzielle Angst. Berechnen Sie die tatsächlichen Zahlen, bevor Sie die Panik die Geschichte schreiben lassen."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Is the money fear matching the actual numbers? The Nine of Swords amplifies financial dread. Run the actual figures before letting the panic write the story."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "¿El miedo al dinero coincide con los números reales? El Nueve de Espadas amplifica el temor financiero. Haz los cálculos reales antes de dejar que el pánico escriba la historia."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "La peur de l'argent correspond-elle aux chiffres réels ? Le Neuf d'Épées amplifie la crainte financière. Calculez les chiffres réels avant de laisser la panique écrire l'histoire."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "La paura del denaro corrisponde ai numeri reali? Il Nove di Spade amplifica il timore finanziario. Calcola le cifre reali prima di lasciare che il panico scriva la storia."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "金銭への恐怖は実際の数字と一致していますか？ソードの9は金銭的な不安を増幅させます。パニックに物語を書かせる前に、実際の数字を計算してみてください。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Stemmer pengefrykten med de faktiske tallene? Ni av Sverd forsterker finansiell frykt. Kjør de faktiske tallene før du lar panikken skrive historien."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Czy strach przed pieniędzmi odpowiada rzeczywistym liczbom? Dziewiątka Mieczy wzmacnia finansowy strach. Sprawdź rzeczywiste liczby, zanim pozwolisz, aby panika napisała historię."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "O medo do dinheiro corresponde aos números reais? O Nove de Espadas amplifica o medo financeiro. Calcule os números reais antes de deixar o pânico escrever a história."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Stämmer pengarädslan med de faktiska siffrorna? Nio av Svärd förstärker finansiell fruktan. Räkna ut de faktiska siffrorna innan du låter paniken skriva historien."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Чи відповідає страх перед грошима фактичним цифрам? Дев'ятка Мечів посилює фінансовий страх. Перевірте фактичні цифри, перш ніж дозволити паніці писати історію."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_general_reversed_not_resonating" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vielleicht ist das Schlimmste nicht passiert – und Sie sind immer noch angespannt. Die umgekehrte Neun der Schwerter bemerkt die Verzögerung zwischen Bedrohung und Haltung. Die Wachsamkeit kann jetzt nachlassen."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Maybe the worst didn't happen — and you're still bracing. The reversed Nine of Swords notes the lag between threat and posture. The vigilance can soften now."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quizás lo peor no ocurrió, y todavía te estás preparando. El Nueve de Espadas invertido nota el desfase entre la amenaza y la postura. La vigilancia puede suavizarse ahora."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Peut-être que le pire n'est pas arrivé — et vous êtes toujours en alerte. Le Neuf d'Épées inversé note le décalage entre la menace et la posture. La vigilance peut maintenant s'adoucir."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Forse il peggio non è successo — e sei ancora in tensione. Il Nove di Spade rovesciato nota il ritardo tra la minaccia e la postura. La vigilanza può ora attenuarsi."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "最悪の事態は起こらなかったかもしれませんが、あなたはまだ身構えています。逆位置のソードの9は、脅威と姿勢の間のずれに注目します。警戒心は今や和らげることができます。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanskje det verste ikke skjedde — og du står fortsatt i beredskap. Den reverserte Ni av Sverd noterer forsinkelsen mellom trussel og holdning. Årvåkenheten kan mykne nå."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Być może najgorsze nie nadeszło — a ty wciąż jesteś w gotowości. Odwrócona Dziewiątka Mieczy odnotowuje opóźnienie między zagrożeniem a postawą. Czujność może teraz zmięknąć."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Talvez o pior não tenha acontecido — e você ainda esteja se preparando. O Nove de Espadas invertido nota a defasagem entre a ameaça e a postura. A vigilância pode se suavizar agora."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanske det värsta inte hände — och du spänner dig fortfarande. Den omvända Nio av Svärd noterar fördröjningen mellan hot och hållning. Vaksamheten kan nu mjukna."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Можливо, найгірше не сталося — а ви все ще напружені. Перевернута Дев'ятка Мечів відзначає затримку між загрозою та позою. Пильність тепер може пом'якшитися."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_general_reversed_unclear" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Wo endet die Nacht? Die umgekehrte Neun der Schwerter markiert die Morgendämmerung nach der Zeit der Sorgen. Der Körper spürt es, bevor der Geist es benennt."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Where is the night ending? The reversed Nine of Swords marks the dawn after the worry stretch. The body feels it before the mind names it."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "¿Dónde termina la noche? El Nueve de Espadas invertido marca el amanecer después del período de preocupación. El cuerpo lo siente antes de que la mente lo nombre."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Où se termine la nuit ? Le Neuf d'Épées inversé marque l'aube après la période d'inquiétude. Le corps le ressent avant que l'esprit ne le nomme."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Dove sta finendo la notte? Il Nove di Spade rovesciato segna l'alba dopo il periodo di preoccupazione. Il corpo lo sente prima che la mente lo chiami."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "夜はどこで終わっていますか？逆位置のソードの9は、心配の期間の後の夜明けをマークします。体は心が名前を付ける前にそれを感じます。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Hvor ender natten? Den reverserte Ni av Sverd markerer daggryet etter bekymringsperioden. Kroppen føler det før sinnet navngir det."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Gdzie kończy się noc? Odwrócona Dziewiątka Mieczy oznacza świt po okresie zmartwień. Ciało czuje to, zanim umysł to nazwie."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Onde a noite está terminando? O Nove de Espadas invertido marca o amanhecer após o período de preocupação. O corpo sente antes da mente nomear."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Var slutar natten? Den omvända Nio av Svärd markerar gryningen efter orosperioden. Kroppen känner det innan sinnet namnger det."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Де закінчується ніч? Перевернута Дев'ятка Мечів позначає світанок після періоду занепокоєння. Тіло відчуває це, перш ніж розум назве це."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_general_upright_not_resonating" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vielleicht ist die Geschichte um 3 Uhr morgens nicht die Wahrheit des Tages. Die Neun der Schwerter läuft auf Cortisol. Vertrauen Sie nicht der nächtlichen Erzählung; überprüfen Sie sie anhand der Morgenversion."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Perhaps the 3am story isn't the daytime truth. The Nine of Swords runs on cortisol. Don't trust the late-night narrative; check it against the morning version."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quizás la historia de las 3 a.m. no es la verdad del día. El Nueve de Espadas funciona con cortisol. No confíes en la narrativa nocturna; compruébala con la versión matutina."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Peut-être que l'histoire de 3 heures du matin n'est pas la vérité diurne. Le Neuf d'Épées fonctionne au cortisol. Ne faites pas confiance au récit nocturne ; vérifiez-le par rapport à la version matinale."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Forse la storia delle 3 di notte non è la verità del giorno. Il Nove di Spade funziona con il cortisolo. Non fidarti della narrazione notturna; verificala con la versione mattutina."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "おそらく午前3時の物語は昼間の真実ではありません。ソードの9はコルチゾールによって動かされます。深夜の物語を信じないでください。朝のバージョンと照らし合わせて確認してください。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanskje 03.00-historien ikke er dagens sannhet. Ni av Sverd går på kortisol. Ikke stol på nattfortellingen; sjekk den mot morgenversjonen."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Być może historia z 3 nad ranem nie jest prawdą dzienną. Dziewiątka Mieczy działa na kortyzolu. Nie ufaj nocnej narracji; sprawdź ją w porównaniu z poranną wersją."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Talvez a história das 3 da manhã não seja a verdade diurna. O Nove de Espadas funciona com cortisol. Não confie na narrativa noturna; verifique-a com a versão matinal."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanske 03.00-berättelsen inte är dagens sanning. Nio av Svärd går på kortisol. Lita inte på nattberättelsen; kontrollera den mot morgonversionen."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Можливо, історія о 3 годині ночі не є денною правдою. Дев'ятка Мечів працює на кортизолі. Не довіряйте нічному наративу; перевірте його з ранковою версією."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_general_upright_unclear" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Was ist die Angst, laut ausgesprochen, in tatsächlichen Worten? Die Neun der Schwerter verliert an Macht, wenn sie genau benannt wird. Spezifität entzieht dem vagen Schrecken die Grundlage."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "What is the fear, said out loud, in actual words? The Nine of Swords loses some power when it's named precisely. Specificity strips the vague terror."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "¿Cuál es el miedo, dicho en voz alta, en palabras reales? El Nueve de Espadas pierde algo de poder cuando se nombra con precisión. La especificidad despoja al terror vago."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quelle est la peur, dite à voix haute, en mots réels ? Le Neuf d'Épées perd un peu de pouvoir lorsqu'il est nommé avec précision. La spécificité dépouille la terreur vague."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Qual è la paura, detta ad alta voce, in parole reali? Il Nove di Spade perde un po' di potere quando viene nominato con precisione. La specificità priva il terrore vago della sua forza."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "恐怖とは何でしょうか？実際の言葉で声に出して言ってみてください。ソードの9は正確に名前を付けられると、その力をいくらか失います。具体性があいまいな恐怖を剥ぎ取ります。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Hva er frykten, sagt høyt, i faktiske ord? Ni av Sverd mister noe av makten når den navngis presist. Spesifisitet fjerner den vage skrekken."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Czym jest strach, powiedziany na głos, w rzeczywistych słowach? Dziewiątka Mieczy traci część swojej mocy, gdy zostaje precyzyjnie nazwana. Konkretność pozbawia bezkształtny terror jego siły."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Qual é o medo, dito em voz alta, em palavras reais? O Nove de Espadas perde um pouco de poder quando é nomeado com precisão. A especificidade despoja o terror vago."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vad är rädslan, sagt högt, i faktiska ord? Nio av Svärd förlorar en del av sin kraft när den namnges exakt. Specificitet berövar den vaga skräcken."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Що таке страх, сказаний вголос, реальними словами? Дев'ятка Мечів втрачає частину своєї сили, коли її точно називають. Конкретність позбавляє розпливчастий жах його сили."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_health_reversed_not_resonating" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vielleicht ist Ihr Nervensystem bereit, sich zu beruhigen. Die umgekehrte Neun der Schwerter bietet die Regulation. Überlagern Sie sie nicht mit neuen Sorgen; lassen Sie den ruhigeren Zustand bestehen."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Maybe your nervous system is ready to come down. The reversed Nine of Swords offers the regulation. Don't override it with fresh worries; let the calmer state stick."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quizás tu sistema nervioso está listo para calmarse. El Nueve de Espadas invertido ofrece la regulación. No lo anules con nuevas preocupaciones; deja que el estado más tranquilo se mantenga."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Peut-être que votre système nerveux est prêt à se calmer. Le Neuf d'Épées inversé offre la régulation. Ne l'écrasez pas avec de nouvelles inquiétudes ; laissez l'état plus calme s'installer."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Forse il tuo sistema nervoso è pronto a calmarsi. Il Nove di Spade rovesciato offre la regolazione. Non sovrascriverlo con nuove preoccupazioni; lascia che lo stato più calmo si stabilizzi."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "おそらくあなたの神経系は落ち着く準備ができています。逆位置のソードの9は調整をもたらします。新しい心配事でそれを上書きしないでください。より落ち着いた状態を維持させてください。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanskje nervesystemet ditt er klart til å roe seg ned. Den reverserte Ni av Sverd tilbyr regulering. Ikke overstyr den med nye bekymringer; la den roligere tilstanden feste seg."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Być może twój układ nerwowy jest gotowy, aby się uspokoić. Odwrócona Dziewiątka Mieczy oferuje regulację. Nie przytłaczaj jej nowymi zmartwieniami; pozwól, aby spokojniejszy stan się utrzymał."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Talvez seu sistema nervoso esteja pronto para se acalmar. O Nove de Espadas invertido oferece a regulação. Não o anule com novas preocupações; deixe o estado mais calmo persistir."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanske är ditt nervsystem redo att lugna ner sig. Den omvända Nio av Svärd erbjuder reglering. Överskrid inte den med nya bekymmer; låt det lugnare tillståndet bestå."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Можливо, ваша нервова система готова заспокоїтися. Перевернута Дев'ятка Мечів пропонує регуляцію. Не перекривайте її новими турботами; дозвольте спокійнішому стану закріпитися."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_health_reversed_unclear" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Löst sich eine lange Zeit der Angst um die Gesundheit langsam auf? Die umgekehrte Neun der Schwerter bemerkt die Beruhigung des besorgten Systems. Die Schultern sinken; bemerken Sie es."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Is a long stretch of fear about health starting to release? The reversed Nine of Swords notes the calming of the worried system. The shoulders drop; notice them."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "¿Un largo período de miedo por la salud está empezando a liberarse? El Nueve de Espadas invertido nota la calma del sistema preocupado. Los hombros bajan; obsérvalos."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Une longue période de peur pour la santé commence-t-elle à se relâcher ? Le Neuf d'Épées inversé note l'apaisement du système inquiet. Les épaules descendent ; remarquez-les."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Un lungo periodo di paura per la salute sta iniziando a sciogliersi? Il Nove di Spade rovesciato nota il calmarsi del sistema preoccupato. Le spalle si abbassano; notale."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "健康への長い恐怖が解放され始めていますか？逆位置のソードの9は、心配していたシステムの落ち着きに気づきます。肩が下がります。それに気づいてください。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Er en lang periode med frykt for helse i ferd med å slippe taket? Den reverserte Ni av Sverd noterer beroligelsen av det bekymrede systemet. Skuldrene senker seg; legg merke til dem."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Czy długi okres strachu o zdrowie zaczyna ustępować? Odwrócona Dziewiątka Mieczy odnotowuje uspokojenie zaniepokojonego systemu. Ramiona opadają; zwróć na nie uwagę."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Um longo período de medo sobre a saúde está começando a se liberar? O Nove de Espadas invertido nota o acalmamento do sistema preocupado. Os ombros caem; observe-os."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Håller en lång period av rädsla för hälsan på att släppa taget? Den omvända Nio av Svärd noterar lugnet i det oroliga systemet. Axlarna sjunker; lägg märke till dem."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Чи починає відпускати тривалий період страху за здоров'я? Перевернута Дев'ятка Мечів відзначає заспокоєння стурбованої системи. Плечі опускаються; помітьте це."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_health_upright_not_resonating" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Vielleicht sind Schlaf und somatische Fürsorge die ersten Maßnahmen. Die Neun der Schwerter hält Sie wach. Der Körper braucht Ruhe, bevor andere Heilung einsetzen kann."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Perhaps sleep and somatic care are the first interventions. The Nine of Swords keeps you awake. The body needs rest before any other healing can land."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Quizás el sueño y el cuidado somático son las primeras intervenciones. El Nueve de Espadas te mantiene despierto. El cuerpo necesita descanso antes de que cualquier otra curación pueda llegar."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Peut-être que le sommeil et les soins somatiques sont les premières interventions. Le Neuf d'Épées vous tient éveillé. Le corps a besoin de repos avant que toute autre guérison puisse s'installer."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Forse il sonno e la cura somatica sono i primi interventi. Il Nove di Spade ti tiene sveglio. Il corpo ha bisogno di riposo prima che qualsiasi altra guarigione possa attecchire."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "おそらく睡眠と身体的なケアが最初の介入です。ソードの9はあなたを眠らせません。他の癒しが効果を発揮する前に、体は休息を必要とします。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanskje søvn og somatisk omsorg er de første intervensjonene. Ni av Sverd holder deg våken. Kroppen trenger hvile før annen helbredelse kan finne sted."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Być może sen i opieka somatyczna są pierwszymi interwencjami. Dziewiątka Mieczy trzyma cię w stanie czuwania. Ciało potrzebuje odpoczynku, zanim jakiekolwiek inne uzdrowienie może nastąpić."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Talvez o sono e o cuidado somático sejam as primeiras intervenções. O Nove de Espadas mantém você acordado. O corpo precisa de descanso antes que qualquer outra cura possa se estabelecer."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Kanske sömn och somatisk vård är de första insatserna. Nio av Svärd håller dig vaken. Kroppen behöver vila innan någon annan läkning kan landa."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Можливо, сон і соматичний догляд є першими втручаннями. Дев'ятка Мечів тримає вас у неспанні. Тіло потребує відпочинку, перш ніж будь-яке інше зцілення зможе відбутися."
+                                  }
+                                }
+                              }
+                            },
+                            "interpretation.nine_of_swords_health_upright_unclear" : {
+                              "extractionState" : "manual",
+                              "localizations" : {
+                                "de" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Wird Angst zu einem eigenständigen Gesundheitsproblem? Die chronische Sorge der Neun der Schwerter hat physische Kosten. Behandeln Sie die Angst wie ein Symptom, das direkt behandelt werden sollte."
+                                  }
+                                },
+                                "en" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Is anxiety becoming a health condition of its own? The Nine of Swords' chronic worry has physical costs. Treat the anxiety like a symptom worth addressing directly."
+                                  }
+                                },
+                                "es" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "¿La ansiedad se está convirtiendo en una condición de salud por sí misma? La preocupación crónica del Nueve de Espadas tiene costos físicos. Trata la ansiedad como un síntoma que vale la pena abordar directamente."
+                                  }
+                                },
+                                "fr" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "L'anxiété devient-elle une condition de santé à part entière ? L'inquiétude chronique du Neuf d'Épées a des coûts physiques. Traitez l'anxiété comme un symptôme qui mérite d'être traité directement."
+                                  }
+                                },
+                                "it" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "L'ansia sta diventando una condizione di salute a sé stante? La preoccupazione cronica del Nove di Spade ha costi fisici. Tratta l'ansia come un sintomo che vale la pena affrontare direttamente."
+                                  }
+                                },
+                                "ja" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "不安はそれ自体が健康状態になりつつありますか？ソードの9の慢性的な心配は身体的なコストを伴います。不安を直接対処する価値のある症状として扱ってください。"
+                                  }
+                                },
+                                "nb" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Blir angst en helsetilstand i seg selv? Ni av Sverds kroniske bekymring har fysiske kostnader. Behandle angsten som et symptom som er verdt å adressere direkte."
+                                  }
+                                },
+                                "pl" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Czy niepokój staje się samodzielnym stanem zdrowotnym? Przewlekłe zmartwienie Dziewiątki Mieczy ma fizyczne koszty. Traktuj niepokój jak objaw, którym warto się zająć bezpośrednio."
+                                  }
+                                },
+                                "pt-BR" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "A ansiedade está se tornando uma condição de saúde por si só? A preocupação crônica do Nove de Espadas tem custos físicos. Trate a ansiedade como um sintoma que vale a pena abordar diretamente."
+                                  }
+                                },
+                                "sv" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Håller ångest på att bli ett hälsotillstånd i sig? Nio av Svärdets kroniska oro har fysiska kostnader. Behandla ångesten som ett symptom värt att adressera direkt."
+                                  }
+                                },
+                                "uk" : {
+                                  "stringUnit" : {
+                                    "state" : "translated",
+                                    "value" : "Чи стає тривожність самостійним станом здоров'я? Хронічне занепокоєння Дев'ятки Мечів має фізичні наслідки. Ставтеся до тривожності як до симптому, який варто безпосередньо вирішувати."
+                                  }
+                                }
+                              }
+                            },
     "interpretation.nine_of_swords_love_reversed_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
