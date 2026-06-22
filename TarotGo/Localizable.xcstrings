@@ -206312,22 +206312,74 @@
                         }
                       }
                     }
-                  }
-              first
-
-
-
-
-
-
-
+                  },
                   "interpretation.king_of_swords_health_reversed_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht untergräbt dein innerer Richter die Erholung deines Körpers. Der umgekehrte König der Schwerter nennt das Urteil als Hindernis. Körper heilen nicht unter Verachtung."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Maybe your inner judge is undermining your body's recovery. The reversed King of Swords names the verdict as obstacle. Bodies don't heal under contempt."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Tal vez tu juez interior está socavando la recuperación de tu cuerpo. El Rey de Espadas invertido nombra el veredicto como obstáculo. Los cuerpos no sanan bajo el desprecio."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être que votre juge intérieur sape la récupération de votre corps. Le Roi d'Épées inversé nomme le verdict comme obstacle. Les corps ne guérissent pas sous le mépris."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse il tuo giudice interiore sta minando il recupero del tuo corpo. Il Re di Spade invertito nomina il verdetto come ostacolo. I corpi non guariscono sotto il disprezzo."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらくあなたの内なる審判が体の回復を妨げています。逆位置のソードの王は評決を障害と名付けます。体は軽蔑のもとでは癒えません。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje din indre dommer undergraver kroppens bedring. Den omvendte Sverdkongen navngir dommen som hinder. Kropper heler ikke under forakt."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może twój wewnętrzny sędzia podważa powrót do zdrowia twojego ciała. Odwrócony Król Mieczy nazywa werdykt przeszkodą. Ciała nie leczą się pod pogardą."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez seu juiz interior esteja minando a recuperação do seu corpo. O Rei de Espadas invertido nomeia o veredito como obstáculo. Corpos não curam sob desprezo."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske din inre domare undergräver din kropps återhämtning. Den omvända Svärdskungen namnger domen som hinder. Kroppar läker inte under förakt."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, ваш внутрішній суддя підриває відновлення вашого тіла. Перевернутий Король Мечів називає вирок перешкодою. Тіла не зцілюються під зневагою."
                         }
                       }
                     }
@@ -206335,10 +206387,70 @@
                   "interpretation.king_of_swords_health_reversed_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Hat Disziplin in Härte umgeschlagen? Der umgekehrte König der Schwerter prüft die Beziehung zum Körper. Das strenge Regime sollte nicht die Grausamkeit sein."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Has discipline tipped into harshness? The reversed King of Swords audits the relationship with the body. The strict regimen wasn't supposed to be the cruelty."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿La disciplina se ha convertido en dureza? El Rey de Espadas invertido audita la relación con el cuerpo. El régimen estricto no debía ser la crueldad."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "La discipline a-t-elle basculé dans la dureté ? Le Roi d'Épées inversé audite la relation avec le corps. Le régime strict n'était pas censé être la cruauté."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "La disciplina è diventata durezza? Il Re di Spade invertito controlla la relazione con il corpo. Il regime rigido non doveva essere la crudeltà."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "規律が厳しさに変わっていませんか？逆位置のソードの王は体との関係を監査します。厳格な養生法が残酷さであってはなりません。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Har disiplin blitt til strenghet? Den omvendte Sverdkongen reviderer forholdet til kroppen. Det strenge regimet skulle ikke være grusomheten."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Czy dyscyplina przerodziła się w surowość? Odwrócony Król Mieczy bada relację z ciałem. Ścisły reżim nie miał być okrucieństwem."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "A disciplina se tornou dureza? O Rei de Espadas invertido audita a relação com o corpo. O regime rigoroso não deveria ser a crueldade."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Har disciplin blivit hårdhet? Den omvända Svärdskungen granskar förhållandet till kroppen. Den strikta regimen var inte tänkt att vara grymheten."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Чи дисципліна перетворилася на жорсткість? Перевернутий Король Мечів перевіряє стосунки з тілом. Суворий режим не повинен бути жорстокістю."
                         }
                       }
                     }
@@ -206346,10 +206458,70 @@
                   "interpretation.king_of_swords_health_upright_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht ist die nüchterne Einschätzung deiner Gewohnheiten die Medizin. Der König der Schwerter schaut ohne Sentimentalität. Das klare Sehen ist selbst die erste Intervention."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Perhaps cold-eyed assessment of your habits is the medicine. The King of Swords looks without sentiment. The clear seeing is itself the first intervention."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quizás la evaluación fría de tus hábitos es la medicina. El Rey de Espadas mira sin sentimentalismo. La visión clara es en sí misma la primera intervención."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être que l'évaluation froide de vos habitudes est le médicament. Le Roi d'Épées regarde sans sentiment. La vision claire est elle-même la première intervention."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse la valutazione a sangue freddo delle tue abitudini è la medicina. Il Re di Spade guarda senza sentimentalismo. La chiara visione è essa stessa il primo intervento."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらくあなたの習慣を冷静に評価することが薬です。ソードの王は感情抜きで見ます。明確に見ることがそれ自体が最初の介入です。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje kald vurdering av vanene dine er medisinen. Sverdkongen ser uten følelser. Den klare innsikten er i seg selv den første intervensjonen."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może chłodna ocena twoich nawyków jest lekarstwem. Król Mieczy patrzy bez sentymentów. Jasne widzenie jest samo w sobie pierwszą interwencją."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez a avaliação fria dos seus hábitos seja o remédio. O Rei de Espadas olha sem sentimentalismo. A visão clara é em si a primeira intervenção."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske är kall bedömning av dina vanor medicinen. Svärdskungen ser utan sentiment. Det klara seendet är i sig den första interventionen."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, холодна оцінка ваших звичок є ліками. Король Мечів дивиться без сентиментів. Чітке бачення саме по собі є першим втручанням."
                         }
                       }
                     }
@@ -206357,10 +206529,70 @@
                   "interpretation.king_of_swords_health_upright_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Wo könnten disziplinierte, bedachte Gesundheitsentscheidungen den Verlauf ändern? Der König der Schwerter wendet die langfristige Disziplin auf den Körper an. Die gegen den Impuls getroffenen Entscheidungen übertreffen die Impulse."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Where could disciplined, considered health choices change the trajectory? The King of Swords applies the long-view discipline to the body. The decisions held against impulse outperform the impulses."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Dónde podrían las decisiones de salud disciplinadas y consideradas cambiar la trayectoria? El Rey de Espadas aplica la disciplina de largo plazo al cuerpo. Las decisiones tomadas contra el impulso superan a los impulsos."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Où des choix de santé disciplinés et réfléchis pourraient-ils changer la trajectoire ? Le Roi d'Épées applique la discipline à long terme au corps. Les décisions prises contre l'impulsion surpassent les impulsions."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Dove potrebbero scelte sanitarie disciplinate e ponderate cambiare la traiettoria? Il Re di Spade applica la disciplina a lungo termine al corpo. Le decisioni prese contro l'impulso superano gli impulsi."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "規律ある慎重な健康選択が軌道を変える可能性はどこにありますか？ソードの王は長期的な規律を体に適用します。衝動に逆らって下した決断は衝動を上回ります。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Hvor kan disiplinerte, gjennomtenkte helsevalg endre banen? Sverdkongen bruker langsiktig disiplin på kroppen. Beslutningene tatt mot impulsen overgår impulsene."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Gdzie zdyscyplinowane, przemyślane wybory zdrowotne mogłyby zmienić trajektorię? Król Mieczy stosuje długoterminową dyscyplinę do ciała. Decyzje podjęte wbrew impulsowi przewyższają impulsy."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Onde escolhas de saúde disciplinadas e ponderadas poderiam mudar a trajetória? O Rei de Espadas aplica a disciplina de longo prazo ao corpo. As decisões tomadas contra o impulso superam os impulsos."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Var kan disciplinerade, genomtänkta hälsoval förändra banan? Svärdskungen tillämpar långsiktig disciplin på kroppen. Besluten som tas mot impulsen överträffar impulserna."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Де дисципліновані, обдумані вибори здоров'я могли б змінити траєкторію? Король Мечів застосовує довгострокову дисципліну до тіла. Рішення, прийняті всупереч імпульсу, перевершують імпульси."
                         }
                       }
                     }
@@ -206368,10 +206600,70 @@
                   "interpretation.king_of_swords_love_reversed_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht gewinnt der Wunsch, recht zu haben, über den Wunsch, nah zu sein. Der umgekehrte König der Schwerter nennt die Prioritätsumkehr. Die Nähe kostet die Gewissheit; wähle, was du tatsächlich willst."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Maybe a need to be right is winning over a desire to be close. The reversed King of Swords names the priority inversion. The closeness costs the certainty; pick which one you actually want."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Tal vez la necesidad de tener razón está ganando sobre el deseo de estar cerca. El Rey de Espadas invertido nombra la inversión de prioridades. La cercanía cuesta la certeza; elige cuál quieres realmente."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être qu'un besoin d'avoir raison l'emporte sur le désir d'être proche. Le Roi d'Épées inversé nomme l'inversion des priorités. La proximité coûte la certitude ; choisissez celle que vous voulez vraiment."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse il bisogno di avere ragione sta vincendo sul desiderio di essere vicino. Il Re di Spade invertito nomina l'inversione di priorità. La vicinanza costa la certezza; scegli cosa vuoi veramente."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらく正しさへの欲求が親密さへの願望に勝っています。逆位置のソードの王は優先順位の逆転を名付けます。親密さは確実性を犠牲にします。どちらを本当に望むか選んでください。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje et behov for å ha rett vinner over et ønske om å være nær. Den omvendte Sverdkongen navngir prioriteringsinversjonen. Nærheten koster vissheten; velg hvilken du faktisk vil ha."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może potrzeba racji wygrywa z pragnieniem bliskości. Odwrócony Król Mieczy nazywa odwrócenie priorytetów. Bliskość kosztuje pewność; wybierz, co naprawdę chcesz."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez a necessidade de estar certo esteja vencendo o desejo de estar perto. O Rei de Espadas invertido nomeia a inversão de prioridades. A proximidade custa a certeza; escolha qual você realmente quer."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske ett behov av att ha rätt vinner över en önskan att vara nära. Den omvända Svärdskungen namnger prioriteringsinversionen. Närheten kostar vissheten; välj vilken du faktiskt vill ha."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, потреба бути правим перемагає бажання бути близьким. Перевернутий Король Мечів називає інверсію пріоритетів. Близькість коштує впевненості; виберіть, що ви насправді хочете."
                         }
                       }
                     }
@@ -206379,10 +206671,70 @@
                   "interpretation.king_of_swords_love_reversed_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Ersetzt Intellektualisieren die Präsenz in der Liebe? Der umgekehrte König der Schwerter entlarvt die Analyse als Flucht. Die kluge Rahmung ist manchmal der Weg, der anderen Person nicht wirklich zu begegnen."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Is intellectualizing replacing presence in love? The reversed King of Swords catches the analysis as escape. The clever framing is sometimes the way of not actually meeting the other person."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Está la intelectualización reemplazando la presencia en el amor? El Rey de Espadas invertido capta el análisis como escape. El encuadre inteligente es a veces la forma de no encontrar realmente a la otra persona."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "L'intellectualisation remplace-t-elle la présence en amour ? Le Roi d'Épées inversé saisit l'analyse comme échappatoire. Le cadrage intelligent est parfois la façon de ne pas vraiment rencontrer l'autre personne."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "L'intellettualizzazione sta sostituendo la presenza in amore? Il Re di Spade invertito coglie l'analisi come fuga. L'inquadratura intelligente è a volte il modo per non incontrare realmente l'altra persona."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "知性化が愛における存在を置き換えていませんか？逆位置のソードの王は分析を逃避として捉えます。賢い枠組みは時として相手と実際に向き合わない方法です。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Er intellektualisering i ferd med å erstatte nærvær i kjærlighet? Den omvendte Sverdkongen fanger analysen som flukt. Det smarte rammeverket er noen ganger måten å ikke faktisk møte den andre personen på."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Czy intelektualizacja zastępuje obecność w miłości? Odwrócony Król Mieczy ujmuje analizę jako ucieczkę. Sprytne ramowanie jest czasem sposobem na to, by nie spotkać się naprawdę z drugą osobą."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "A intelectualização está substituindo a presença no amor? O Rei de Espadas invertido captura a análise como fuga. O enquadramento inteligente é às vezes a maneira de não encontrar realmente a outra pessoa."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Ersätter intellektualisering närvaro i kärlek? Den omvända Svärdskungen fångar analysen som flykt. Den smarta inramningen är ibland sättet att inte faktiskt möta den andra personen."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Чи інтелектуалізація замінює присутність у коханні? Перевернутий Король Мечів сприймає аналіз як втечу. Розумне обрамлення іноді є способом насправді не зустрічати іншу людину."
                         }
                       }
                     }
@@ -206390,10 +206742,70 @@
                   "interpretation.king_of_swords_love_upright_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht beinhaltet reife Liebe unangenehme, faire Gespräche. Der König der Schwerter scheut nicht vor dem harten Gespräch zurück. Das Unbehagen ist der Preis für die Tiefe."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Perhaps mature love includes uncomfortable, fair conversations. The King of Swords doesn't shy from the hard talk. The discomfort is the cost of the depth."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quizás el amor maduro incluye conversaciones incómodas y justas. El Rey de Espadas no rehúye la conversación difícil. La incomodidad es el costo de la profundidad."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être que l'amour mature inclut des conversations inconfortables et justes. Le Roi d'Épées ne recule pas devant les discussions difficiles. L'inconfort est le prix de la profondeur."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse l'amore maturo include conversazioni scomode e giuste. Il Re di Spade non si sottrae alla discussione difficile. Il disagio è il prezzo della profondità."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらく成熟した愛には不快で公正な対話が含まれます。ソードの王は難しい会話を避けません。不快感は深さの代償です。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje moden kjærlighet inkluderer ukomfortable, rettferdige samtaler. Sverdkongen skygger ikke for den vanskelige praten. Ubehaget er prisen for dybden."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może dojrzała miłość obejmuje niewygodne, uczciwe rozmowy. Król Mieczy nie stroni od trudnych rozmów. Dyskomfort jest ceną za głębię."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez o amor maduro inclua conversas desconfortáveis e justas. O Rei de Espadas não foge da conversa difícil. O desconforto é o custo da profundidade."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske inkluderar mogen kärlek obekväma, rättvisa samtal. Svärdskungen skyggar inte för det tuffa samtalet. Obekvämligheten är priset för djupet."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, зріла любов включає незручні, справедливі розмови. Король Мечів не уникає важкої розмови. Дискомфорт - це ціна глибини."
                         }
                       }
                     }
@@ -206401,10 +206813,70 @@
                   "interpretation.king_of_swords_love_upright_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Wo könnte Prinzip, sanft angewendet, dieser Beziehung helfen? Der König der Schwerter bringt sowohl die Rückgrat als auch die Sanftheit. Der faire, freundliche Satz ist der Beitrag."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Where could principle, applied gently, help this relationship? The King of Swords brings both the spine and the softness. The fair, kind sentence is the contribution."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Dónde podría el principio, aplicado suavemente, ayudar a esta relación? El Rey de Espadas aporta tanto el coraje como la suavidad. La frase justa y amable es la contribución."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Où le principe, appliqué avec douceur, pourrait-il aider cette relation ? Le Roi d'Épées apporte à la fois la colonne vertébrale et la douceur. La phrase juste et bienveillante est la contribution."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Dove il principio, applicato con gentilezza, potrebbe aiutare questa relazione? Il Re di Spade porta sia la spina dorsale che la morbidezza. La frase giusta e gentile è il contributo."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "優しく適用された原則がこの関係を助ける可能性はどこにありますか？ソードの王は芯と優しさの両方をもたらします。公正で親切な言葉が貢献です。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Hvor kan prinsipp, brukt forsiktig, hjelpe dette forholdet? Sverdkongen bringer både ryggraden og mykheten. Den rettferdige, vennlige setningen er bidraget."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Gdzie zasada, zastosowana delikatnie, mogłaby pomóc temu związkowi? Król Mieczy przynosi zarówno kręgosłup, jak i miękkość. Sprawiedliwe, życzliwe zdanie jest wkładem."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Onde o princípio, aplicado com gentileza, poderia ajudar este relacionamento? O Rei de Espadas traz tanto a espinha dorsal quanto a suavidade. A frase justa e bondosa é a contribuição."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Var kan princip, tillämpad försiktigt, hjälpa detta förhållande? Svärdskungen bringar både ryggraden och mjukheten. Den rättvisa, vänliga meningen är bidraget."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Де принцип, застосований м'яко, міг би допомогти цим стосункам? Король Мечів приносить і хребет, і м'якість. Справедливе, добре слово є внеском."
                         }
                       }
                     }
@@ -206412,10 +206884,70 @@
                   "interpretation.king_of_wands_career_reversed_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht hat sich Führung in Autokratie verwandelt. Der umgekehrte König der Stäbe benennt das Abrutschen vom Führen zum Befehlen. Das Team, das aus Angst folgt, ist nicht dasselbe wie das Team, das aus Überzeugung folgt."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Maybe leadership has tipped into autocracy. The reversed King of Wands names the slip from leading to commanding. The team that follows from fear isn't the same as the team that follows from belief."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Tal vez el liderazgo se ha convertido en autocracia. El Rey de Bastos invertido nombra el deslizamiento de liderar a mandar. El equipo que sigue por miedo no es el mismo que el que sigue por convicción."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être que le leadership a basculé dans l'autocratie. Le Roi de Bâtons inversé nomme le glissement du leadership vers le commandement. L'équipe qui suit par peur n'est pas la même que celle qui suit par conviction."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse la leadership è scivolata nell'autocrazia. Il Re di Bastoni invertito nomina lo scivolamento dal guidare al comandare. Il team che segue per paura non è lo stesso che segue per convinzione."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらくリーダーシップが独裁に変わっています。逆位置のワンドの王はリードすることから命令することへの滑りを名付けます。恐怖から従うチームは信念から従うチームとは同じではありません。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje lederskap har blitt autokrati. Den omvendte Stavkongen navngir glidningen fra å lede til å kommandere. Teamet som følger av frykt er ikke det samme som teamet som følger av overbevisning."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może przywództwo przerodziło się w autokrację. Odwrócony Król Buław nazywa ześlizgnięcie się od przewodzenia do rozkazywania. Zespół, który podąża ze strachu, nie jest tym samym, co zespół, który podąża z przekonania."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez a liderança tenha se tornado autocracia. O Rei de Paus invertido nomeia o deslize de liderar para comandar. A equipe que segue por medo não é a mesma que segue por convicção."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske har ledarskap blivit autokrati. Den omvända Stavkungen namnger glidningen från att leda till att befalla. Teamet som följer av rädsla är inte detsamma som teamet som följer av övertygelse."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, лідерство перетворилося на автократію. Перевернутий Король Жезлів називає сповзання від керівництва до командування. Команда, яка слідує зі страху, не така, як команда, яка слідує з переконання."
                         }
                       }
                     }
@@ -206423,10 +206955,70 @@
                   "interpretation.king_of_wands_career_reversed_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Wird berufliche Vision zu heißen Luft ohne Umsetzung? Der umgekehrte König der Stäbe entlarvt das aufgeblasene Versprechen. Die Vision braucht Lieferung; ohne sie ist sie nur eine Geschichte."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Is professional vision becoming hot air without execution? The reversed King of Wands catches the inflated promise. The vision needs delivery; without it, it's just a story."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿La visión profesional se está convirtiendo en aire caliente sin ejecución? El Rey de Bastos invertido capta la promesa inflada. La visión necesita entrega; sin ella, es solo una historia."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "La vision professionnelle devient-elle du vent sans exécution ? Le Roi de Bâtons inversé saisit la promesse gonflée. La vision a besoin de livraison ; sans elle, ce n'est qu'une histoire."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "La visione professionale sta diventando aria fritta senza esecuzione? Il Re di Bastoni invertito coglie la promessa gonfiata. La visione ha bisogno di realizzazione; senza, è solo una storia."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "プロフェッショナルなビジョンが実行なしに空論になっていませんか？逆位置のワンドの王は膨らんだ約束を捉えます。ビジョンには実現が必要です。それなしでは単なる物語です。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Blir profesjonell visjon til varm luft uten utførelse? Den omvendte Stavkongen fanger den oppblåste løftet. Visjonen trenger levering; uten den er det bare en historie."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Czy wizja zawodowa staje się pustymi obietnicami bez realizacji? Odwrócony Król Buław wyłapuje wygórowane obietnice. Wizja potrzebuje realizacji; bez niej to tylko historia."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "A visão profissional está se tornando conversa fiada sem execução? O Rei de Paus invertido captura a promessa inflada. A visão precisa de entrega; sem ela, é apenas uma história."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Blir professionell vision till varm luft utan utförande? Den omvända Stavkungen fångar det uppblåsta löftet. Visionen behöver leverans; utan den är det bara en historia."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Чи професійне бачення стає порожніми словами без виконання? Перевернутий Король Жезлів виявляє завищену обіцянку. Бачення потребує реалізації; без неї це просто історія."
                         }
                       }
                     }
@@ -206434,10 +207026,70 @@
                   "interpretation.king_of_wands_career_upright_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht ist es an der Zeit zu führen, nicht nur beizutragen. Der König der Stäbe nimmt den Stuhl, wenn er verfügbar ist. Der Führungsschritt besteht darin, den Platz einzunehmen, anstatt darauf zu warten, eingeladen zu werden."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Perhaps it's time to lead, not just contribute. The King of Wands takes the chair when it's available. The leadership move is occupying the seat rather than waiting to be invited to it."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quizás es hora de liderar, no solo contribuir. El Rey de Bastos toma la silla cuando está disponible. El movimiento de liderazgo es ocupar el asiento en lugar de esperar a ser invitado."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être qu'il est temps de diriger, pas seulement de contribuer. Le Roi de Bâtons prend le siège lorsqu'il est disponible. Le geste de leadership consiste à occuper le siège plutôt qu'à attendre d'y être invité."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse è tempo di guidare, non solo di contribuire. Il Re di Bastoni prende il posto quando è disponibile. La mossa di leadership è occupare il posto piuttosto che aspettare di essere invitati."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらく貢献するだけでなくリードする時です。ワンドの王は席が空いていれば座ります。リーダーシップの行動は招待を待つのではなく席を占めることです。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje det er på tide å lede, ikke bare bidra. Stavkongen tar stolen når den er tilgjengelig. Lederskapsbevegelsen er å okkupere setet i stedet for å vente på å bli invitert."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może nadszedł czas, aby przewodzić, nie tylko wnosić wkład. Król Buław zajmuje miejsce, gdy jest dostępne. Ruch przywódczy polega na zajęciu miejsca, a nie czekaniu na zaproszenie."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez seja hora de liderar, não apenas contribuir. O Rei de Paus ocupa a cadeira quando disponível. O movimento de liderança é ocupar o assento em vez de esperar ser convidado."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske är det dags att leda, inte bara bidra. Stavkungen tar stolen när den är tillgänglig. Ledarskapssteget är att ockupera stolen snarare än att vänta på att bli inbjuden."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, настав час вести, а не просто вносити внесок. Король Жезлів займає місце, коли воно доступне. Лідерський крок - це зайняти місце, а не чекати запрошення."
                         }
                       }
                     }
@@ -206445,10 +207097,70 @@
                   "interpretation.king_of_wands_career_upright_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Wo könntest du eine größere Vision entwerfen, als das Team sich getraut hat? Der König der Stäbe führt durch Vorstellungskraft. Der Horizont, den du benennst, wird zum Ziel, auf das andere sich ausrichten."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Where could you cast a bigger vision than the team has dared? The King of Wands leads by imagination. The horizon you name becomes the destination others orient toward."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Dónde podrías lanzar una visión más grande de lo que el equipo se ha atrevido? El Rey de Bastos lidera con la imaginación. El horizonte que nombras se convierte en el destino hacia el que otros se orientan."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Où pourriez-vous lancer une vision plus grande que ce que l'équipe a osé ? Le Roi de Bâtons mène par l'imagination. L'horizon que vous nommez devient la destination vers laquelle les autres s'orientent."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Dove potresti lanciare una visione più grande di quanto il team abbia osato? Il Re di Bastoni guida con l'immaginazione. L'orizzonte che nomini diventa la destinazione verso cui gli altri si orientano."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "チームが敢えてしなかったよりも大きなビジョンをどこで描けますか？ワンドの王は想像力で導きます。あなたが名付けた地平線が他の人々が向かう目的地になります。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Hvor kan du kaste en større visjon enn teamet har våget? Stavkongen leder gjennom fantasi. Horisonten du navngir blir destinasjonen andre orienterer seg mot."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Gdzie mógłbyś rzucić większą wizję, niż zespół się odważył? Król Buław prowadzi przez wyobraźnię. Horyzont, który nazywasz, staje się celem, do którego inni się orientują."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Onde você poderia lançar uma visão maior do que a equipe ousou? O Rei de Paus lidera pela imaginação. O horizonte que você nomeia se torna o destino para o qual outros se orientam."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Var kan du kasta en större vision än teamet har vågat? Stavkungen leder genom fantasi. Horisonten du namnger blir destinationen som andra orienterar sig mot."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Де ви могли б створити більш масштабне бачення, ніж наважилася команда? Король Жезлів веде через уяву. Горизонт, який ви називаєте, стає пунктом призначення, до якого орієнтуються інші."
                         }
                       }
                     }
@@ -206456,10 +207168,70 @@
                   "interpretation.king_of_wands_finance_reversed_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht fehlt einem großen Finanzplan der reale Boden. Der umgekehrte König der Stäbe lokalisiert die Lücke. Die Vision ist gut; die operative Grundlage ist das, was fehlt."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Maybe a grand financial plan is missing real ground. The reversed King of Wands locates the gap. The vision is fine; the operational footing is what's absent."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Tal vez a un gran plan financiero le falta base real. El Rey de Bastos invertido localiza la brecha. La visión está bien; la base operativa es lo que falta."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être qu'un grand plan financier manque de fondement réel. Le Roi de Bâtons inversé localise l'écart. La vision est bonne ; l'assise opérationnelle est ce qui manque."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse a un grande piano finanziario manca il terreno reale. Il Re di Bastoni invertito individua il divario. La visione è buona; il piedistallo operativo è ciò che manca."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらく壮大な財務計画には現実の基盤が欠けています。逆位置のワンドの王はギャップを特定します。ビジョンは良いですが、運用上の足場が欠けています。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje en storslått finansiell plan mangler reell grunn. Den omvendte Stavkongen lokaliserer gapet. Visjonen er fin; det operative fundamentet er det som mangler."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może wspaniałemu planowi finansowemu brakuje realnych podstaw. Odwrócony Król Buław lokalizuje lukę. Wizja jest dobra; brakuje operacyjnych podstaw."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez um grande plano financeiro esteja perdendo base real. O Rei de Paus invertido localiza a lacuna. A visão está boa; a base operacional é o que está faltando."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske saknar en storslagen finansiell plan verklig grund. Den omvända Stavkungen lokaliserar gapet. Visionen är bra; det operativa fotfästet är vad som saknas."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, грандіозному фінансовому плану бракує реальної основи. Перевернутий Король Жезлів визначає прогалину. Бачення хороше; операційна основа - це те, чого бракує."
                         }
                       }
                     }
@@ -206467,10 +207239,70 @@
                   "interpretation.king_of_wands_finance_reversed_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Schreibt finanzielles Ego Schecks, die die Realität nicht einlösen kann? Der umgekehrte König der Stäbe entlarvt das Überversprechen. Die Geschichte, die über die Finanzen erzählt wird, stimmt möglicherweise nicht mit dem tatsächlichen Konto überein."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Is financial ego writing checks reality can't cash? The reversed King of Wands catches the overpromise. The story being told about the finances may not match the actual ledger."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿El ego financiero está escribiendo cheques que la realidad no puede cobrar? El Rey de Bastos invertido capta la promesa excesiva. La historia que se cuenta sobre las finanzas puede no coincidir con el libro mayor real."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "L'ego financier écrit-il des chèques que la réalité ne peut pas encaisser ? Le Roi de Bâtons inversé saisit la promesse excessive. L'histoire racontée sur les finances peut ne pas correspondre au grand livre réel."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "L'ego finanziario sta scrivendo assegni che la realtà non può incassare? Il Re di Bastoni invertito coglie la promessa eccessiva. La storia raccontata sulle finanze potrebbe non corrispondere al registro effettivo."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "財務のエゴが現実が支払えない小切手を書いていますか？逆位置のワンドの王は過剰な約束を捉えます。財務について語られている話は実際の帳簿と一致しないかもしれません。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Skriver finansiell ego sjekker virkeligheten ikke kan innløse? Den omvendte Stavkongen fanger overløftet. Historien som fortelles om økonomien, stemmer kanskje ikke med den faktiske hovedboken."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Czy finansowe ego wypisuje czeki, których rzeczywistość nie może zrealizować? Odwrócony Król Buław wyłapuje nadmierne obietnice. Opowieść o finansach może nie odpowiadać rzeczywistej księdze."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "O ego financeiro está escrevendo cheques que a realidade não pode cobrar? O Rei de Paus invertido captura a promessa excessiva. A história contada sobre as finanças pode não corresponder ao livro-razão real."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Skriver finansiellt ego checkar som verkligheten inte kan lösa in? Den omvända Stavkungen fångar överlöftet. Berättelsen som berättas om ekonomin kanske inte stämmer överens med den faktiska huvudboken."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Чи фінансове его виписує чеки, які реальність не може оплатити? Перевернутий Король Жезлів виявляє надмірні обіцянки. Історія, яку розповідають про фінанси, може не збігатися з фактичним реєстром."
                         }
                       }
                     }
@@ -206478,10 +207310,70 @@
                   "interpretation.king_of_wands_finance_upright_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht ist eine selbstbewusste Wette — keine rücksichtslose — jetzt richtig. Der König der Stäbe unterscheidet Vision vom Glücksspiel. Der prinzipientreue kühne Zug hat Vernunft darunter; der rücksichtslose nicht."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Perhaps a confident bet — not a reckless one — is right now. The King of Wands distinguishes vision from gambling. The principled bold move has reasoning underneath; the reckless one doesn't."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quizás una apuesta segura — no una imprudente — es lo correcto ahora. El Rey de Bastos distingue la visión del juego. El movimiento audaz con principios tiene razonamiento debajo; el imprudente no."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être qu'un pari confiant — pas un pari imprudent — est le bon choix maintenant. Le Roi de Bâtons distingue la vision du jeu. Le mouvement audacieux fondé sur des principes a un raisonnement derrière ; l'imprudent non."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse una scommessa sicura — non una sconsiderata — è giusta ora. Il Re di Bastoni distingue la visione dal gioco d'azzardo. La mossa audace basata su principi ha un ragionamento sottostante; quella sconsiderata no."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらく無謀ではなく自信のある賭けが今正しいです。ワンドの王はビジョンとギャンブルを区別します。原則に基づいた大胆な行動には根拠がありますが、無謀なものにはありません。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje en selvsikker satsning — ikke en hensynsløs — er riktig nå. Stavkongen skiller visjon fra gambling. Det prinsipielle, dristige trekket har resonnement under; det hensynsløse har ikke."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może pewny zakład — nie lekkomyślny — jest teraz właściwy. Król Buław odróżnia wizję od hazardu. Zasadniczy, odważny ruch ma uzasadnienie; lekkomyślny nie."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez uma aposta confiante — não uma imprudente — seja certa agora. O Rei de Paus distingue visão de jogo de azar. O movimento ousado e com princípios tem raciocínio por trás; o imprudente não."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske en självsäker satsning — inte en vårdslös — är rätt nu. Stavkungen skiljer vision från hasardspel. Det principfasta, djärva draget har resonemang under; det vårdslösa har inte."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, впевнена ставка — не безрозсудна — зараз правильна. Король Жезлів відрізняє бачення від азартних ігор. Принциповий сміливий крок має обґрунтування; безрозсудний — ні."
                         }
                       }
                     }
@@ -206489,10 +207381,70 @@
                   "interpretation.king_of_wands_finance_upright_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Für welchen langfristigen Finanzschritt würde dein zukünftiges Ich dir danken? Der König der Stäbe spielt den langen Bogen. Die Entscheidung von heute sät die Position für die kommenden Jahre."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "What long-vision financial move would your future self thank you for? The King of Wands plays the long arc. The decision today seeds the position years out."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Qué movimiento financiero de largo alcance agradecería tu yo futuro? El Rey de Bastos juega a largo plazo. La decisión de hoy siembra la posición para los años venideros."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quel mouvement financier à long terme votre futur vous remercierait-il d'avoir fait ? Le Roi de Bâtons joue le long arc. La décision d'aujourd'hui sème la position pour les années à venir."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quale mossa finanziaria a lungo termine il tuo futuro io ti ringrazierebbe per aver fatto? Il Re di Bastoni gioca il lungo arco. La decisione di oggi semina la posizione per gli anni a venire."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "将来の自分が感謝する長期的な財務戦略は何ですか？ワンドの王は長期的な視点で動きます。今日の決断が数年先の立場を準備します。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Hvilket langsiktig finansiellt trekk ville ditt fremtidige jeg takket deg for? Stavkongen spiller den lange buen. Beslutningen i dag sår posisjonen for år fremover."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Za jaki długoterminowy ruch finansowy podziękowałoby ci twoje przyszłe ja? Król Buław gra na długi dystans. Dzisiejsza decyzja sieje pozycję na lata."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Que movimento financeiro de longo prazo seu eu futuro agradeceria? O Rei de Paus joga o arco longo. A decisão de hoje semeia a posição para os anos futuros."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vilket långsiktigt finansiellt drag skulle ditt framtida jag tacka dig för? Stavkungen spelar den långa bågen. Beslutet idag sår positionen för år framåt."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "За який довгостроковий фінансовий крок ваше майбутнє я було б вам вдячне? Король Жезлів грає на довгу дистанцію. Сьогоднішнє рішення закладає позицію на роки вперед."
                         }
                       }
                     }
@@ -206500,10 +207452,70 @@
                   "interpretation.king_of_wands_general_reversed_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht wird eine große Geschichte erzählt, um eine kleine Realität zu verdecken. Der umgekehrte König der Stäbe sieht die Kluft zwischen Erzählung und Substanz. Je größer die Behauptung, desto wichtiger der tatsächliche Beweis."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Maybe a big story is being told to cover a small reality. The reversed King of Wands sees the gap between the narrative and the substance. The bigger the claim, the more important the actual proof."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Tal vez se está contando una gran historia para cubrir una pequeña realidad. El Rey de Bastos invertido ve la brecha entre la narrativa y la sustancia. Cuanto mayor es la afirmación, más importante es la prueba real."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être qu'une grande histoire est racontée pour couvrir une petite réalité. Le Roi de Bâtons inversé voit l'écart entre le récit et la substance. Plus l'affirmation est grande, plus la preuve réelle est importante."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse si sta raccontando una grande storia per coprire una piccola realtà. Il Re di Bastoni invertito vede il divario tra la narrazione e la sostanza. Più grande è l'affermazione, più importante è la prova reale."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらく小さな現実を隠すために大きな物語が語られています。逆位置のワンドの王は物語と実質の間のギャップを見ます。主張が大きければ大きいほど、実際の証拠が重要です。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje blir en stor historie fortalt for å dekke over en liten virkelighet. Den omvendte Stavkongen ser gapet mellom fortellingen og substansen. Jo større påstanden er, desto viktigere er det faktiske beviset."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może wielka historia jest opowiadana, aby przykryć małą rzeczywistość. Odwrócony Król Buław widzi lukę między narracją a treścią. Im większe twierdzenie, tym ważniejszy jest rzeczywisty dowód."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez uma grande história esteja sendo contada para cobrir uma pequena realidade. O Rei de Paus invertido vê a lacuna entre a narrativa e a substância. Quanto maior a afirmação, mais importante a prova real."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske berättas en stor historia för att täcka en liten verklighet. Den omvända Stavkungen ser gapet mellan berättelsen och substansen. Ju större påståendet, desto viktigare är det faktiska beviset."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, велика історія розповідається, щоб приховати маленьку реальність. Перевернутий Король Жезлів бачить розрив між наративом і сутністю. Чим більше твердження, тим важливіший реальний доказ."
                         }
                       }
                     }
@@ -206511,10 +207523,70 @@
                   "interpretation.king_of_wands_general_reversed_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Wo ist Selbstvertrauen zu Arroganz geworden? Der umgekehrte König der Stäbe verfolgt das Abrutschen. Die Gewissheit, die nicht zuhört, hat eine Grenze überschritten."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Where has confidence become arrogance? The reversed King of Wands tracks the slip. The certainty that doesn't listen has crossed a line."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Dónde la confianza se ha convertido en arrogancia? El Rey de Bastos invertido rastrea el deslizamiento. La certeza que no escucha ha cruzado una línea."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Où la confiance est-elle devenue de l'arrogance ? Le Roi de Bâtons inversé suit le glissement. La certitude qui n'écoute pas a franchi une ligne."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Dove la fiducia è diventata arroganza? Il Re di Bastoni invertito traccia lo scivolamento. La certezza che non ascolta ha varcato una linea."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "自信が傲慢になったのはどこですか？逆位置のワンドの王は滑りを追跡します。聞かない確信は線を越えています。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Hvor har selvtillit blitt til arroganse? Den omvendte Stavkongen sporer glidningen. Vissheten som ikke lytter, har krysset en grense."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Gdzie pewność siebie stała się arogancją? Odwrócony Król Buław śledzi ześlizgnięcie się. Pewność, która nie słucha, przekroczyła granicę."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Onde a confiança se tornou arrogância? O Rei de Paus invertido rastreia o deslize. A certeza que não escuta cruzou uma linha."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Var har självförtroende blivit arrogans? Den omvända Stavkungen spårar glidningen. Vissheten som inte lyssnar har korsat en gräns."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Де впевненість перетворилася на зарозумілість? Перевернутий Король Жезлів відстежує сповзання. Впевненість, яка не слухає, перетнула межу."
                         }
                       }
                     }
@@ -206522,10 +207594,70 @@
                   "interpretation.king_of_wands_general_upright_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht möchte deine Vision öffentlich beansprucht werden. Der König der Stäbe hält die Vision nicht für immer privat. Das Aussprechen verändert, was möglich ist."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Perhaps your vision is asking to be claimed publicly. The King of Wands doesn't keep the vision private forever. The naming of it out loud changes what's possible."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quizás tu visión está pidiendo ser reclamada públicamente. El Rey de Bastos no mantiene la visión en privado para siempre. Nombrarla en voz alta cambia lo que es posible."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être que votre vision demande à être revendiquée publiquement. Le Roi de Bâtons ne garde pas la vision privée pour toujours. La nommer à voix haute change ce qui est possible."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse la tua visione chiede di essere rivendicata pubblicamente. Il Re di Bastoni non mantiene la visione privata per sempre. Nominarla ad alta voce cambia ciò che è possibile."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらくあなたのビジョンは公に主張されることを求めています。ワンドの王はビジョンを永遠に秘密にしません。声に出して名付けることが可能性を変えます。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje visjonen din ber om å bli gjort offentlig. Stavkongen holder ikke visjonen privat for alltid. Å nevne den høyt endrer hva som er mulig."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może twoja wizja prosi o publiczne uznanie. Król Buław nie trzyma wizji w tajemnicy na zawsze. Nazwanie jej na głos zmienia to, co jest możliwe."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez sua visão esteja pedindo para ser reivindicada publicamente. O Rei de Paus não mantém a visão privada para sempre. Nomeá-la em voz alta muda o que é possível."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske ber din vision om att bli offentligt hävdad. Stavkungen behåller inte visionen privat för alltid. Att nämna den högt förändrar vad som är möjligt."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, ваше бачення просить бути публічно заявленим. Король Жезлів не тримає бачення приватно назавжди. Оголошення його вголос змінює те, що можливо."
                         }
                       }
                     }
@@ -206533,10 +207665,70 @@
                   "interpretation.king_of_wands_general_upright_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Wo könnte mutige, prinzipientreue Führung den Verlauf ändern? Der König der Stäbe verbindet Vision mit Integrität. Der Schritt ist mutig, weil er richtig ist, nicht um der Kühnheit willen."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Where could bold, principled leadership change the trajectory? The King of Wands combines vision with integrity. The move is bold because it's right, not bold for its own sake."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Dónde podría el liderazgo audaz y con principios cambiar la trayectoria? El Rey de Bastos combina visión con integridad. El movimiento es audaz porque es correcto, no por la audacia misma."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Où un leadership audacieux et fondé sur des principes pourrait-il changer la trajectoire ? Le Roi de Bâtons combine vision et intégrité. Le mouvement est audacieux parce qu'il est juste, pas pour l'audace elle-même."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Dove una leadership audace e basata su principi potrebbe cambiare la traiettoria? Il Re di Bastoni combina visione e integrità. La mossa è audace perché è giusta, non per il gusto di essere audace."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "大胆で原則に基づいたリーダーシップが軌道を変える可能性はどこにありますか？ワンドの王はビジョンと誠実さを組み合わせます。その行動は正しいから大胆であり、大胆さ自体のためではありません。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Hvor kan dristig, prinsippfast lederskap endre banen? Stavkongen kombinerer visjon med integritet. Trekket er dristig fordi det er riktig, ikke dristig for sin egen skyld."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Gdzie śmiałe, oparte na zasadach przywództwo mogłoby zmienić trajektorię? Król Buław łączy wizję z integralnością. Ruch jest śmiały, ponieważ jest słuszny, a nie dla samej śmiałości."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Onde a liderança ousada e baseada em princípios poderia mudar a trajetória? O Rei de Paus combina visão com integridade. O movimento é ousado porque é certo, não ousado por si só."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Var kan djärvt, principfast ledarskap förändra banan? Stavkungen kombinerar vision med integritet. Draget är djärvt eftersom det är rätt, inte djärvt för sin egen skull."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Де сміливе, принципове лідерство могло б змінити траєкторію? Король Жезлів поєднує бачення з цілісністю. Крок сміливий, тому що він правильний, а не сміливий заради самої сміливості."
                         }
                       }
                     }
@@ -206544,10 +207736,70 @@
                   "interpretation.king_of_wands_health_reversed_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht richtet das Durchhalten Schäden an, die eine Führungspause verhindern würde. Der umgekehrte König der Stäbe respektiert den strategischen Halt. Der weise Führer weiß, wann er sich erholen muss; der egoistische Führer nicht."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Maybe pushing through is doing the damage a leader's pause would prevent. The reversed King of Wands respects the strategic stop. The wise leader knows when to recover; the ego leader doesn't."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Tal vez seguir adelante está causando el daño que una pausa de líder evitaría. El Rey de Bastos invertido respeta la parada estratégica. El líder sabio sabe cuándo recuperarse; el líder egocéntrico no."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être que le fait de continuer à pousser fait les dégâts qu'une pause du leader éviterait. Le Roi de Bâtons inversé respecte l'arrêt stratégique. Le leader sage sait quand récupérer ; le leader égoïste ne le sait pas."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse continuare a spingere sta facendo i danni che una pausa del leader prevenirebbe. Il Re di Bastoni invertito rispetta la fermata strategica. Il leader saggio sa quando recuperare; il leader egoista no."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらく無理をすることがリーダーの休止が防ぐであろうダメージを与えています。逆位置のワンドの王は戦略的な停止を尊重します。賢明なリーダーは回復する時を知っています。エゴのリーダーは知りません。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje det å presse gjennom gjør skaden en leders pause ville forhindret. Den omvendte Stavkongen respekterer den strategiske stoppen. Den kloke lederen vet når man skal hvile; ego-lederen gjør ikke det."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może przepychanie się powoduje szkody, którym przerwa lidera zapobiegłaby. Odwrócony Król Buław szanuje strategiczny przystanek. Mądry lider wie, kiedy odpocząć; egoistyczny lider nie."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez continuar forçando esteja causando o dano que uma pausa do líder evitaria. O Rei de Paus invertido respeita a parada estratégica. O líder sábio sabe quando se recuperar; o líder egoísta não."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske att kämpa vidare gör skadan en ledares paus skulle förhindra. Den omvända Stavkungen respekterar det strategiska stoppet. Den vise ledaren vet när man ska återhämta sig; egoledaren gör inte det."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, продовження тиску завдає шкоди, яку запобігла б пауза лідера. Перевернутий Король Жезлів поважає стратегічну зупинку. Мудрий лідер знає, коли відновлюватися; егоїстичний лідер — ні."
                         }
                       }
                     }
@@ -206555,10 +207807,70 @@
                   "interpretation.king_of_wands_health_reversed_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Wird Willenskraft mit Weisheit im Umgang mit deinem Körper verwechselt? Der umgekehrte König der Stäbe unterscheidet beides. Der Durchhaltensansatz hat Kosten, die das weise Selbst ablehnen würde."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Is willpower being mistaken for wisdom in how you treat your body? The reversed King of Wands distinguishes the two. The push-through approach has costs the wise self would refuse."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Se está confundiendo la fuerza de voluntad con la sabiduría en la forma en que tratas a tu cuerpo? El Rey de Bastos invertido distingue los dos. El enfoque de seguir adelante tiene costos que el yo sabio rechazaría."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "La volonté est-elle confondue avec la sagesse dans la façon dont vous traitez votre corps ? Le Roi de Bâtons inversé distingue les deux. L'approche de la persévérance a des coûts que le sage refuserait."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "La forza di volontà viene scambiata per saggezza nel modo in cui tratti il tuo corpo? Il Re di Bastoni invertito distingue i due. L'approccio del proseguire a tutti i costi ha costi che il sé saggio rifiuterebbe."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "自分の体の扱い方において、意志の力を知恵と誤っていませんか？逆位置のワンドの王は両者を区別します。無理に押し通すアプローチには、賢明な自分が拒否するコストがあります。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Blir viljestyrke forvekslet med visdom i hvordan du behandler kroppen din? Den omvendte Stavkongen skiller de to. Tilnærmingen med å presse gjennom har kostnader den kloke selv ville avvist."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Czy siła woli jest mylona z mądrością w sposobie traktowania ciała? Odwrócony Król Buław rozróżnia te dwa. Podejście polegające na przepychaniu się ma koszty, które mądre ja by odrzuciło."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "A força de vontade está sendo confundida com sabedoria na forma como você trata seu corpo? O Rei de Paus invertido distingue os dois. A abordagem de continuar forçando tem custos que o eu sábio recusaria."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Förväxlas viljestyrka med visdom i hur du behandlar din kropp? Den omvända Stavkungen skiljer de två åt. Metoden att kämpa vidare har kostnader som det visa jaget skulle avvisa."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Чи силу волі плутають з мудрістю у тому, як ви ставитесь до свого тіла? Перевернутий Король Жезлів розрізняє ці два поняття. Підхід тиску має витрати, які мудре я відкинуло б."
                         }
                       }
                     }
@@ -206566,10 +207878,70 @@
                   "interpretation.king_of_wands_health_upright_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht ist es der richtige Schritt, deine Gesundheit vollständig zu übernehmen — wie ein Führer. Der König der Stäbe delegiert die Entscheidung nicht aus. Die Führung über deinen eigenen Körper liegt bei dir."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Perhaps owning your health as a leader does — fully — is the move. The King of Wands doesn't outsource the decision. The leadership over your own body is yours to assume."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quizás asumir tu salud como lo hace un líder — completamente — es el movimiento. El Rey de Bastos no subcontrata la decisión. El liderazgo sobre tu propio cuerpo es tuyo para asumir."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être que posséder votre santé comme un leader le fait — complètement — est le bon geste. Le Roi de Bâtons n'externalise pas la décision. Le leadership sur votre propre corps est à vous d'assumer."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse prendere possesso della tua salute come fa un leader — completamente — è la mossa giusta. Il Re di Bastoni non esternalizza la decisione. La leadership sul tuo corpo è tua da assumere."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらくリーダーのように完全に自分の健康を所有することが行動です。ワンドの王は決定を外部委託しません。自分の体に対するリーダーシップはあなたが引き受けるものです。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje det å eie helsen din som en leder gjør — fullt ut — er trekket. Stavkongen setter ikke ut beslutningen. Lederskapet over din egen kropp er ditt å ta."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może przejęcie odpowiedzialności za swoje zdrowie tak, jak robi to lider — w pełni — jest właściwym ruchem. Król Buław nie zleca decyzji na zewnątrz. Przywództwo nad własnym ciałem należy do ciebie."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez assumir sua saúde como um líder faz — completamente — seja o movimento. O Rei de Paus não terceiriza a decisão. A liderança sobre seu próprio corpo é sua para assumir."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske är det rätta draget att äga din hälsa som en ledare gör — fullt ut. Stavkungen lägger inte ut beslutet på entreprenad. Ledarskapet över din egen kropp är ditt att ta."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, повне прийняття відповідальності за своє здоров'я, як це робить лідер, є правильним кроком. Король Жезлів не передає рішення на аутсорсинг. Лідерство над власним тілом належить вам."
                         }
                       }
                     }
@@ -206577,10 +207949,70 @@
                   "interpretation.king_of_wands_health_upright_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Welches visionäre, langfristige Engagement für deinen Körper würdest du eingehen? Der König der Stäbe investiert in Jahrzehnte. Das Versprechen, das du jetzt dem älteren Ich machst, verändert die tägliche Entscheidung."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "What visionary, long-term commitment to your body would you make? The King of Wands invests in decades. The promise made now to the older you reshapes the daily choice."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿Qué compromiso visionario y a largo plazo con tu cuerpo harías? El Rey de Bastos invierte en décadas. La promesa hecha ahora al yo mayor remodela la elección diaria."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quel engagement visionnaire et à long terme envers votre corps feriez-vous ? Le Roi de Bâtons investit sur des décennies. La promesse faite maintenant à vous-même plus âgé remodèle le choix quotidien."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Quale impegno visionario e a lungo termine per il tuo corpo prenderesti? Il Re di Bastoni investe in decenni. La promessa fatta ora al te stesso più anziano rimodella la scelta quotidiana."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "あなたの体に対してどのようなビジョンある長期的なコミットメントをしますか？ワンドの王は数十年に投資します。今、年を取った自分にした約束が日々の選択を変形させます。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Hva slags visjonær, langsiktig forpliktelse til kroppen din ville du gjøre? Stavkongen investerer i tiår. Løftet gitt nå til den eldre deg omformer det daglige valget."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Jakie wizjonerskie, długoterminowe zobowiązanie wobec swojego ciała byś podjął? Król Buław inwestuje w dekady. Obietnica złożona teraz starszemu tobie przekształca codzienny wybór."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Que compromisso visionário e de longo prazo com seu corpo você faria? O Rei de Paus investe em décadas. A promessa feita agora ao seu eu mais velho remodela a escolha diária."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vilket visionärt, långsiktigt åtagande för din kropp skulle du göra? Stavkungen investerar i decennier. Löftet som ges nu till det äldre dig omformar det dagliga valet."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Яке візіонерське, довгострокове зобов'язання перед своїм тілом ви взяли б? Король Жезлів інвестує в десятиліття. Обіцянка, дана зараз старшій версії себе, змінює щоденний вибір."
                         }
                       }
                     }
@@ -206588,10 +208020,70 @@
                   "interpretation.king_of_wands_love_reversed_not_resonating" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Vielleicht hat sich Führung in der Liebe in Dominanz verwandelt. Der umgekehrte König der Stäbe unterscheidet Führen von Kontrollieren. Die Grenze wird überschritten, wenn die Partnerschaft aufhört, gegenseitig zu sein."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Maybe leadership in love has tipped into domination. The reversed King of Wands distinguishes leading from controlling. The line is crossed when the partnership stops being mutual."
+                        }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Tal vez el liderazgo en el amor se ha convertido en dominación. El Rey de Bastos invertido distingue liderar de controlar. La línea se cruza cuando la asociación deja de ser mutua."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Peut-être que le leadership en amour a basculé dans la domination. Le Roi de Bâtons inversé distingue le leadership du contrôle. La ligne est franchie lorsque le partenariat cesse d'être mutuel."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Forse la leadership in amore è scivolata nella dominazione. Il Re di Bastoni invertito distingue il guidare dal controllare. La linea viene superata quando la partnership smette di essere reciproca."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "おそらく愛におけるリーダーシップが支配に変わっています。逆位置のワンドの王は導くことと支配することを区別します。パートナーシップが相互的でなくなったとき、ラインを越えます。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanskje lederskap i kjærlighet har blitt dominans. Den omvendte Stavkongen skiller å lede fra å kontrollere. Grensen krysses når partnerskapet slutter å være gjensidig."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Być może przywództwo w miłości przerodziło się w dominację. Odwrócony Król Buław odróżnia przewodzenie od kontrolowania. Granica zostaje przekroczona, gdy partnerstwo przestaje być wzajemne."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Talvez a liderança no amor tenha se tornado dominação. O Rei de Paus invertido distingue liderar de controlar. A linha é cruzada quando a parceria deixa de ser mútua."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kanske har ledarskap i kärlek blivit dominans. Den omvända Stavkungen skiljer att leda från att kontrollera. Gränsen passeras när partnerskapet slutar vara ömsesidigt."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Можливо, лідерство в коханні перетворилося на домінування. Перевернутий Король Жезлів відрізняє керівництво від контролю. Межа перетинається, коли партнерство перестає бути взаємним."
                         }
                       }
                     }
@@ -206599,34 +208091,74 @@
                   "interpretation.king_of_wands_love_reversed_unclear" : {
                     "extractionState" : "manual",
                     "localizations" : {
+                      "de" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Steht das Ego zwischen dir und jemandem, den du liebst? Der umgekehrte König der Stäbe benennt das Hindernis. Die Selbstwichtigkeit nimmt den Raum ein, in dem die Beziehung lebt."
+                        }
+                      },
                       "en" : {
                         "stringUnit" : {
                           "state" : "translated",
                           "value" : "Is ego getting between you and someone you love? The reversed King of Wands names the obstacle. The self-importance is taking up the room where the relationship lives."
                         }
+                      },
+                      "es" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "¿El ego se está interponiendo entre tú y alguien a quien amas? El Rey de Bastos invertido nombra el obstáculo. La importancia propia está ocupando el espacio donde vive la relación."
+                        }
+                      },
+                      "fr" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "L'ego se met-il entre vous et quelqu'un que vous aimez ? Le Roi de Bâtons inversé nomme l'obstacle. L'importance de soi occupe l'espace où vit la relation."
+                        }
+                      },
+                      "it" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "L'ego si sta mettendo tra te e qualcuno che ami? Il Re di Bastoni invertito nomina l'ostacolo. L'importanza di sé sta occupando lo spazio in cui vive la relazione."
+                        }
+                      },
+                      "ja" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "エゴがあなたと愛する人の間に入っていませんか？逆位置のワンドの王は障害を名付けます。自己重要感が関係の住む場所を占めています。"
+                        }
+                      },
+                      "nb" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Kommer egoet mellom deg og noen du elsker? Den omvendte Stavkongen navngir hinderet. Selvfølelsen tar opp plassen der forholdet lever."
+                        }
+                      },
+                      "pl" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Czy ego staje między tobą a kimś, kogo kochasz? Odwrócony Król Buław nazywa przeszkodę. Własna ważność zajmuje miejsce, w którym żyje relacja."
+                        }
+                      },
+                      "pt-BR" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "O ego está se colocando entre você e alguém que você ama? O Rei de Paus invertido nomeia o obstáculo. A importância própria está ocupando o espaço onde o relacionamento vive."
+                        }
+                      },
+                      "sv" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Står egot mellan dig och någon du älskar? Den omvända Stavkungen namnger hindret. Självviktigheten tar upp rummet där relationen lever."
+                        }
+                      },
+                      "uk" : {
+                        "stringUnit" : {
+                          "state" : "translated",
+                          "value" : "Чи его стає між вами і кимось, кого ви любите? Перевернутий Король Жезлів називає перешкоду. Самоважливість займає місце, де живе стосунок."
+                        }
                       }
                     }
                   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 "interpretation.king_of_wands_love_upright_not_resonating" : {
                   "extractionState" : "manual",
                   "localizations" : {
@@ -209351,16 +210883,6 @@
                     }
                   }
                 },
-                
-
-
-
-
-
-
-
-
-
                 "interpretation.knight_of_pentacles_love_reversed_not_resonating" : {
                   "extractionState" : "manual",
                   "localizations" : {
@@ -212343,182 +213865,1142 @@
                     }
                   }
                 },
-    "interpretation.knight_of_wands_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps fast, hot passion is real here. Decide whether it's sustainable — the Knight of Wands burns bright. Sometimes that's the whole story; sometimes it's the start of one."
-          }
-        }
-      }
-    },
-    "interpretation.knight_of_wands_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What bold move in love would shift things if you actually made it? The Knight of Wands prefers the action to the deliberation. The thing you'd do if you weren't afraid is the thing being asked for."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe an outwardly successful role is quietly hollow. The reversed Nine of Cups names the gap between the picture and the felt experience. The image isn't lying; it's just not all that's true."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is your career wish actually yours? The reversed Nine of Cups exposes the borrowed ambition. Trace the wish back to its origin and check whether you'd still want it from a quiet room."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps you've reached more than you let yourself enjoy. The Nine of Cups catches the chronic upgrade-mindset. Stop before the next goal and inhabit what's already true."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What would professional satisfaction look like for you specifically? The Nine of Cups asks for the personal definition. The generic version of success may not be yours."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a luxurious lifestyle is hiding a thinner reality underneath. The reversed Nine of Cups looks past the appearance. The cups on display may be more performance than possession."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is wishful money thinking standing in for a plan? The reversed Nine of Cups catches the fantasy as substitute. The wish is fine; the plan is what makes it real."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps you have more than the story of scarcity admits. The Nine of Cups updates the inventory. The narrative of lack often outlasts the actual lack."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What would 'enough' look like for you in real numbers? The Nine of Cups insists on a defined finish line. Without one, no amount is ever enough."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe an old wish came true and it's time to make a new one. The reversed Nine of Cups upgrades the goal. The wish that's still alive may be one you've outgrown without updating."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where has wishing replaced living? The reversed Nine of Cups catches the substitution of fantasy for action. The wish kept active is sometimes a way to avoid the actual movement toward it."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the satisfaction you sought is already partly here. The Nine of Cups catches the incremental arrival. The full version may already be 70% in place; notice it."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What would you wish for if you trusted you could receive it? The Nine of Cups asks for the honest wish. The censored version doesn't get granted; the named one might."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe overindulgence is masking a deeper unmet need. The reversed Nine of Cups looks past the consumption to what's actually being sought. The need underneath is rarely what you're feeding."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_cups_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is pleasure being chased in ways that don't actually satisfy? The reversed Nine of Cups catches the empty calorie of every kind. The reach for more is often the symptom of the unfilled."
-          }
-        }
-      }
-    },
+                "interpretation.knight_of_wands_love_upright_not_resonating" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vielleicht ist die schnelle, heiße Leidenschaft hier real. Entscheide, ob sie nachhaltig ist — der Ritter der Stäbe brennt hell. Manchmal ist das die ganze Geschichte; manchmal ist es der Anfang einer."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Perhaps fast, hot passion is real here. Decide whether it's sustainable — the Knight of Wands burns bright. Sometimes that's the whole story; sometimes it's the start of one."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quizás la pasión rápida y ardiente es real aquí. Decide si es sostenible — el Caballero de Bastos arde intensamente. A veces esa es toda la historia; a veces es el comienzo de una."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Peut-être qu'une passion rapide et brûlante est réelle ici. Décidez si elle est durable — le Cavalier de Bâtons brûle intensément. Parfois c'est toute l'histoire; parfois c'est le début d'une."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Forse la passione veloce e ardente è reale qui. Decidi se è sostenibile — il Cavaliere di Bastoni brucia intensamente. A volte questa è tutta la storia; a volte è l'inizio di una."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "おそらく、速くて熱い情熱がここには本物です。それが持続可能かどうか決めてください — ワンドの騎士は明るく燃えます。時にはそれが全物語であり、時には始まりです。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanskje rask, het lidenskap er ekte her. Bestem om den er bærekraftig — Ridderen av Staver brenner sterkt. Noen ganger er det hele historien; noen ganger er det begynnelsen på en."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Być może szybka, gorąca pasja jest tutaj prawdziwa. Zdecyduj, czy jest trwała — Rycerz Buław płonie jasno. Czasami to cała historia; czasami to początek jednej."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Talvez a paixão rápida e ardente seja real aqui. Decida se é sustentável — o Cavaleiro de Paus brilha intensamente. Às vezes essa é a história toda; às vezes é o começo de uma."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanske är snabb, het passion verklig här. Bestäm om den är hållbar — Riddaren av Stavar brinner starkt. Ibland är det hela historien; ibland är det början på en."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Можливо, швидка, гаряча пристрасть тут справжня. Вирішіть, чи вона стійка — Лицар Жезлів горить яскраво. Іноді це вся історія; іноді це початок однієї."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.knight_of_wands_love_upright_unclear" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Welchen mutigen Schritt in der Liebe würdest du unternehmen, wenn du ihn tatsächlich gehen würdest? Der Ritter der Stäbe zieht die Aktion der Überlegung vor. Die Sache, die du tun würdest, wenn du keine Angst hättest, ist das, worum gebeten wird."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "What bold move in love would shift things if you actually made it? The Knight of Wands prefers the action to the deliberation. The thing you'd do if you weren't afraid is the thing being asked for."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "¿Qué movimiento audaz en el amor cambiaría las cosas si realmente lo hicieras? El Caballero de Bastos prefiere la acción a la deliberación. Lo que harías si no tuvieras miedo es lo que se pide."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quel geste audacieux en amour changerait les choses si vous le faisiez vraiment ? Le Cavalier de Bâtons préfère l'action à la délibération. La chose que vous feriez si vous n'aviez pas peur est ce qui est demandé."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quale mossa audace in amore cambierebbe le cose se la facessi davvero? Il Cavaliere di Bastoni preferisce l'azione alla deliberazione. La cosa che faresti se non avessi paura è ciò che viene chiesto."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "もし実際に行ったら、恋愛でどんな大胆な動きが物事を変えるでしょうか？ワンドの騎士は熟考よりも行動を好みます。怖くなければやるであろうことが求められていることです。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Hvilket dristig trekk i kjærlighet ville endre ting hvis du faktisk gjorde det? Ridderen av Staver foretrekker handling fremfor overveielse. Tingen du ville gjort hvis du ikke var redd, er det som blir bedt om."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Jaki odważny ruch w miłości zmieniłby sytuację, gdybyś go faktycznie wykonał? Rycerz Buław preferuje działanie od rozważań. To, co zrobiłbyś, gdybyś się nie bał, jest tym, o co się prosi."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Que movimento ousado no amor mudaria as coisas se você realmente o fizesse? O Cavaleiro de Paus prefere a ação à deliberação. A coisa que você faria se não tivesse medo é o que está sendo pedido."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vilket djärvt drag i kärleken skulle förändra saker om du faktiskt gjorde det? Riddaren av Stavar föredrar handling framför överläggning. Det du skulle göra om du inte var rädd är det som efterfrågas."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Який сміливий крок у коханні змінив би ситуацію, якби ви його насправді зробили? Лицар Жезлів віддає перевагу дії перед обговоренням. Те, що ви зробили б, якби не боялися, є тим, про що просять."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_career_reversed_not_resonating" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vielleicht ist eine äußerlich erfolgreiche Rolle heimlich hohl. Die umgekehrte Neun der Becher benennt die Kluft zwischen dem Bild und der gefühlten Erfahrung. Das Bild lügt nicht; es ist nur nicht alles, was wahr ist."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Maybe an outwardly successful role is quietly hollow. The reversed Nine of Cups names the gap between the picture and the felt experience. The image isn't lying; it's just not all that's true."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quizás un rol aparentemente exitoso es silenciosamente hueco. El Nueve de Copas invertido nombra la brecha entre la imagen y la experiencia sentida. La imagen no miente; simplemente no es todo lo que es verdad."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Peut-être qu'un rôle extérieurement réussi est discrètement creux. Le Neuf de Coupes inversé nomme l'écart entre l'image et l'expérience ressentie. L'image ne ment pas; ce n'est juste pas tout ce qui est vrai."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Forse un ruolo apparentemente di successo è silenziosamente vuoto. Il Nove di Coppe invertito nomina il divario tra l'immagine e l'esperienza sentita. L'immagine non mente; semplicemente non è tutto ciò che è vero."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "おそらく、外見上成功している役割は静かに空虚です。逆位置のカップの9は、イメージと感じた経験の間のギャップを名指しします。イメージは嘘をついていません。ただ、それが真実のすべてではないだけです。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanskje en tilsynelatende vellykket rolle er stille hul. Den omvendte Ni av Kopper navngir gapet mellom bildet og den følte opplevelsen. Bildet lyver ikke; det er bare ikke alt som er sant."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Być może rola odnosząca pozorne sukcesy jest po cichu pusta. Odwrócona Dziewiątka Kielichów nazywa przepaść między obrazem a odczuwanym doświadczeniem. Obraz nie kłamie; to po prostu nie wszystko, co jest prawdą."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Talvez um papel aparentemente bem-sucedido seja silenciosamente oco. O Nove de Copas invertido nomeia a lacuna entre a imagem e a experiência sentida. A imagem não está mentindo; é só que não é tudo o que é verdade."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanske är en till synes framgångsrik roll tyst ihålig. Den omvända Nio av Bägare namnger gapet mellan bilden och den upplevda erfarenheten. Bilden ljuger inte; det är bara inte allt som är sant."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Можливо, зовні успішна роль тихо порожня. Перевернута Дев'ятка Кубків називає розрив між зображенням і відчуттям досвіду. Зображення не бреше; це просто не все, що є правдою."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_career_reversed_unclear" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Ist dein Karrierewunsch wirklich deiner? Die umgekehrte Neun der Becher enthüllt den geliehenen Ehrgeiz. Verfolge den Wunsch zurück zu seinem Ursprung und prüfe, ob du ihn immer noch aus einem ruhigen Raum heraus wollen würdest."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Is your career wish actually yours? The reversed Nine of Cups exposes the borrowed ambition. Trace the wish back to its origin and check whether you'd still want it from a quiet room."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "¿Es realmente tuyo tu deseo profesional? El Nueve de Copas invertido expone la ambición prestada. Rastrea el deseo hasta su origen y verifica si aún lo querrías desde una habitación tranquila."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Votre souhait de carrière est-il vraiment le vôtre ? Le Neuf de Coupes inversé expose l'ambition empruntée. Retracez le souhait jusqu'à son origine et vérifiez si vous le voudriez encore depuis une pièce calme."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Il tuo desiderio di carriera è davvero tuo? Il Nove di Coppe invertito espone l'ambizione presa in prestito. Ripercorri il desiderio fino alla sua origine e verifica se lo vorresti ancora da una stanza tranquilla."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "あなたのキャリアへの願いは実際にあなたのものですか？逆位置のカップの9は、借り物の野心を暴露します。願いをその起源までたどり、静かな部屋からでもまだそれを望むかどうか確認してください。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Er karriereønsket ditt faktisk ditt? Den omvendte Ni av Kopper avslører den lånte ambisjonen. Spor ønsket tilbake til opprinnelsen og sjekk om du fortsatt ville ønske det fra et stille rom."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Czy twoje życzenie zawodowe jest naprawdę twoje? Odwrócona Dziewiątka Kielichów ujawnia zapożyczone ambicje. Prześledź życzenie do jego źródła i sprawdź, czy nadal byś go chciał z cichego pokoju."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "O seu desejo de carreira é realmente seu? O Nove de Copas invertido expõe a ambição emprestada. Rastreie o desejo até sua origem e verifique se você ainda o desejaria de uma sala silenciosa."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Är ditt karriärönskan verkligen ditt? Den omvända Nio av Bägare avslöjar den lånade ambitionen. Spåra önskan tillbaka till sitt ursprung och kontrollera om du fortfarande skulle vilja ha den från ett tyst rum."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Чи справді ваше бажання кар'єри є вашим? Перевернута Дев'ятка Кубків викриває запозичені амбіції. Прослідкуйте бажання до його походження і перевірте, чи ви все ще хотіли б його з тихої кімнати."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_career_upright_not_resonating" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vielleicht hast du mehr erreicht, als du dir selbst erlaubst zu genießen. Die Neun der Becher erwischt die chronische Upgrade-Denkweise. Halte vor dem nächsten Ziel inne und bewohne, was bereits wahr ist."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Perhaps you've reached more than you let yourself enjoy. The Nine of Cups catches the chronic upgrade-mindset. Stop before the next goal and inhabit what's already true."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quizás has alcanzado más de lo que te permites disfrutar. El Nueve de Copas atrapa la mentalidad crónica de mejora. Detente antes del próximo objetivo y habita lo que ya es verdad."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Peut-être avez-vous atteint plus que vous ne vous autorisez à en profiter. Le Neuf de Coupes attrape l'état d'esprit chronique d'amélioration. Arrêtez-vous avant le prochain objectif et habitez ce qui est déjà vrai."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Forse hai raggiunto più di quanto ti concedi di godere. Il Nove di Coppe cattura la mentalità cronica di miglioramento. Fermati prima del prossimo obiettivo e abita ciò che è già vero."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "おそらく、あなたは自分が楽しむことを許す以上に到達しています。カップの9は慢性的なアップグレード志向を捉えます。次の目標の前に立ち止まり、すでに真実であるものの中に住んでください。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanskje du har nådd mer enn du tillater deg selv å nyte. Ni av Kopper fanger den kroniske oppgraderingstankegangen. Stopp før neste mål og bebo det som allerede er sant."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Być może osiągnąłeś więcej, niż pozwalasz sobie cieszyć. Dziewiątka Kielichów łapie chroniczne nastawienie na ulepszanie. Zatrzymaj się przed następnym celem i zamieszkaj w tym, co już jest prawdą."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Talvez você tenha alcançado mais do que se permite desfrutar. O Nove de Copas captura a mentalidade crônica de upgrade. Pare antes do próximo objetivo e habite o que já é verdade."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanske har du nått mer än du tillåter dig själv att njuta av. Nio av Bägare fångar den kroniska uppgraderingstankegången. Stanna innan nästa mål och bebo det som redan är sant."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Можливо, ви досягли більше, ніж дозволяєте собі насолоджуватися. Дев'ятка Кубків ловить хронічне мислення про покращення. Зупиніться перед наступною метою і живіть у тому, що вже є правдою."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_career_upright_unclear" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Wie würde berufliche Zufriedenheit speziell für dich aussehen? Die Neun der Becher fragt nach der persönlichen Definition. Die generische Version von Erfolg könnte nicht deine sein."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "What would professional satisfaction look like for you specifically? The Nine of Cups asks for the personal definition. The generic version of success may not be yours."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "¿Cómo se vería la satisfacción profesional específicamente para ti? El Nueve de Copas pide la definición personal. La versión genérica del éxito puede no ser tuya."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "À quoi ressemblerait la satisfaction professionnelle spécifiquement pour vous ? Le Neuf de Coupes demande la définition personnelle. La version générique du succès n'est peut-être pas la vôtre."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Come sarebbe la soddisfazione professionale specificamente per te? Il Nove di Coppe chiede la definizione personale. La versione generica del successo potrebbe non essere tua."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "あなたにとってプロフェッショナルな満足感は具体的にどのように見えますか？カップの9は個人的な定義を求めます。成功の一般的なバージョンはあなたのものではないかもしれません。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Hvordan ville profesjonell tilfredshet se ut spesifikt for deg? Ni av Kopper ber om den personlige definisjonen. Den generiske versjonen av suksess er kanskje ikke din."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Jak wyglądałaby satysfakcja zawodowa specjalnie dla ciebie? Dziewiątka Kielichów prosi o osobistą definicję. Ogólna wersja sukcesu może nie być twoja."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Como seria a satisfação profissional especificamente para você? O Nove de Copas pede a definição pessoal. A versão genérica do sucesso pode não ser sua."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Hur skulle professionell tillfredsställelse se ut specifikt för dig? Nio av Bägare ber om den personliga definitionen. Den generiska versionen av framgång kanske inte är din."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Як би виглядало професійне задоволення саме для вас? Дев'ятка Кубків просить особистого визначення. Загальна версія успіху може не бути вашою."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_finance_reversed_not_resonating" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vielleicht verbirgt ein luxuriöser Lebensstil eine dünnere Realität darunter. Die umgekehrte Neun der Becher blickt hinter die Fassade. Die ausgestellten Becher könnten mehr Performance als Besitz sein."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Maybe a luxurious lifestyle is hiding a thinner reality underneath. The reversed Nine of Cups looks past the appearance. The cups on display may be more performance than possession."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quizás un estilo de vida lujoso está ocultando una realidad más delgada debajo. El Nueve de Copas invertido mira más allá de la apariencia. Las copas en exhibición pueden ser más actuación que posesión."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Peut-être qu'un style de vie luxueux cache une réalité plus mince en dessous. Le Neuf de Coupes inversé regarde au-delà de l'apparence. Les coupes exposées peuvent être plus une performance qu'une possession."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Forse uno stile di vita lussuoso nasconde una realtà più sottile sotto. Il Nove di Coppe invertito guarda oltre l'apparenza. Le coppe in mostra potrebbero essere più performance che possesso."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "おそらく、贅沢なライフスタイルはその下により薄い現実を隠しています。逆位置のカップの9は外見の先を見ます。展示されているカップは所有よりもパフォーマンスかもしれません。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanskje en luksuriøs livsstil skjuler en tynnere virkelighet under. Den omvendte Ni av Kopper ser forbi utseendet. Koppene som vises frem kan være mer forestilling enn eiendom."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Być może luksusowy styl życia ukrywa cieńszą rzeczywistość pod spodem. Odwrócona Dziewiątka Kielichów patrzy poza wygląd. Kielichy na wystawie mogą być bardziej występem niż posiadaniem."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Talvez um estilo de vida luxuoso esteja escondendo uma realidade mais fina por baixo. O Nove de Copas invertido olha além da aparência. Os copos em exibição podem ser mais performance do que posse."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanske en lyxig livsstil döljer en tunnare verklighet under. Den omvända Nio av Bägare ser bortom utseendet. Bägarna som visas kan vara mer föreställning än ägodel."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Можливо, розкішний спосіб життя приховує тоншу реальність під ним. Перевернута Дев'ятка Кубків дивиться за межі зовнішності. Виставлені кубки можуть бути більше виставою, ніж володінням."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_finance_reversed_unclear" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Steht wunschdenkerisches Gelddenken für einen Plan? Die umgekehrte Neun der Becher erwischt die Fantasie als Ersatz. Der Wunsch ist in Ordnung; der Plan ist, was ihn real macht."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Is wishful money thinking standing in for a plan? The reversed Nine of Cups catches the fantasy as substitute. The wish is fine; the plan is what makes it real."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "¿El pensamiento ilusorio sobre el dinero está reemplazando un plan? El Nueve de Copas invertido atrapa la fantasía como sustituto. El deseo está bien; el plan es lo que lo hace real."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "La pensée magique sur l'argent remplace-t-elle un plan ? Le Neuf de Coupes inversé attrape la fantaisie comme substitut. Le souhait est bien ; le plan est ce qui le rend réel."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Il pensiero desideroso sul denaro sta sostituendo un piano? Il Nove di Coppe invertito cattura la fantasia come sostituto. Il desiderio va bene; il piano è ciò che lo rende reale."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "願望的なお金の考え方が計画の代わりになっていますか？逆位置のカップの9は、幻想を代用として捉えます。願いは結構です。計画がそれを現実にするものです。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Står ønsketenkning om penger i stedet for en plan? Den omvendte Ni av Kopper fanger fantasien som erstatning. Ønsket er greit; planen er det som gjør det virkelig."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Czy życzeniowe myślenie o pieniądzach zastępuje plan? Odwrócona Dziewiątka Kielichów łapie fantazję jako substytut. Życzenie jest w porządku; plan jest tym, co czyni je rzeczywistym."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "O pensamento ilusório sobre dinheiro está substituindo um plano? O Nove de Copas invertido captura a fantasia como substituto. O desejo é bom; o plano é o que o torna real."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Står önsketänkande om pengar i stället för en plan? Den omvända Nio av Bägare fångar fantasin som substitut. Önskan är bra; planen är det som gör den verklig."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Чи бажане мислення про гроші замінює план? Перевернута Дев'ятка Кубків ловить фантазію як замінник. Бажання добре; план — це те, що робить його реальним."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_finance_upright_not_resonating" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vielleicht hast du mehr, als die Geschichte des Mangels zugibt. Die Neun der Becher aktualisiert das Inventar. Die Erzählung von Knappheit überdauert oft die tatsächliche Knappheit."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Perhaps you have more than the story of scarcity admits. The Nine of Cups updates the inventory. The narrative of lack often outlasts the actual lack."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quizás tienes más de lo que la historia de escasez admite. El Nueve de Copas actualiza el inventario. La narrativa de la carencia a menudo perdura más que la carencia real."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Peut-être avez-vous plus que ce que l'histoire de rareté admet. Le Neuf de Coupes met à jour l'inventaire. Le récit du manque dure souvent plus longtemps que le manque réel."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Forse hai più di quanto la storia della scarsità ammetta. Il Nove di Coppe aggiorna l'inventario. La narrazione della mancanza spesso sopravvive alla mancanza effettiva."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "おそらく、あなたは不足の物語が認める以上に持っています。カップの9は在庫を更新します。欠如の物語は、しばしば実際の欠如よりも長持ちします。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanskje du har mer enn historien om knapphet innrømmer. Ni av Kopper oppdaterer beholdningen. Fortellingen om mangel overlever ofte den faktiske mangelen."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Być może masz więcej, niż przyznaje historia niedoboru. Dziewiątka Kielichów aktualizuje inwentarz. Narracja braku często trwa dłużej niż rzeczywisty brak."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Talvez você tenha mais do que a história da escassez admite. O Nove de Copas atualiza o inventário. A narrativa da falta muitas vezes sobrevive à falta real."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanske har du mer än historien om brist medger. Nio av Bägare uppdaterar inventariet. Berättelsen om brist överlever ofta den faktiska bristen."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Можливо, у вас є більше, ніж визнає історія дефіциту. Дев'ятка Кубків оновлює інвентар. Наратив про нестачу часто переживає фактичну нестачу."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_finance_upright_unclear" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Wie würde 'genug' für dich in echten Zahlen aussehen? Die Neun der Becher besteht auf einer definierten Ziellinie. Ohne eine ist nie genug genug."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "What would 'enough' look like for you in real numbers? The Nine of Cups insists on a defined finish line. Without one, no amount is ever enough."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "¿Cómo se vería 'suficiente' para ti en números reales? El Nueve de Copas insiste en una línea de meta definida. Sin una, ninguna cantidad es suficiente."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "À quoi ressemblerait 'assez' pour vous en chiffres réels ? Le Neuf de Coupes insiste sur une ligne d'arrivée définie. Sans elle, aucun montant n'est jamais assez."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Come sarebbe 'abbastanza' per te in numeri reali? Il Nove di Coppe insiste su un traguardo definito. Senza uno, nessuna quantità è mai abbastanza."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "あなたにとって「十分」とは実際の数字でどのように見えますか？カップの9は定義されたゴールラインを主張します。それがなければ、どんな額も決して十分ではありません。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Hvordan ville 'nok' se ut for deg i reelle tall? Ni av Kopper insisterer på en definert målstrek. Uten en, er ingen mengde noen gang nok."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Jak wyglądałoby 'wystarczająco' dla ciebie w realnych liczbach? Dziewiątka Kielichów nalega na zdefiniowaną linię mety. Bez niej żadna kwota nigdy nie jest wystarczająca."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Como seria 'suficiente' para você em números reais? O Nove de Copas insiste em uma linha de chegada definida. Sem uma, nenhuma quantia é suficiente."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Hur skulle 'tillräckligt' se ut för dig i verkliga siffror? Nio av Bägare insisterar på en definierad mållinje. Utan en är ingen mängd någonsin tillräcklig."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Як би виглядало 'достатньо' для вас у реальних цифрах? Дев'ятка Кубків наполягає на визначеній фінішній лінії. Без неї жодна сума ніколи не є достатньою."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_general_reversed_not_resonating" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vielleicht ist ein alter Wunsch wahr geworden und es ist Zeit, einen neuen zu machen. Die umgekehrte Neun der Becher aktualisiert das Ziel. Der Wunsch, der noch lebt, könnte einer sein, den du ohne Aktualisierung überwuchert hast."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Maybe an old wish came true and it's time to make a new one. The reversed Nine of Cups upgrades the goal. The wish that's still alive may be one you've outgrown without updating."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quizás un viejo deseo se hizo realidad y es hora de hacer uno nuevo. El Nueve de Copas invertido actualiza el objetivo. El deseo que aún está vivo puede ser uno que hayas superado sin actualizar."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Peut-être qu'un vieux souhait s'est réalisé et qu'il est temps d'en faire un nouveau. Le Neuf de Coupes inversé met à jour l'objectif. Le souhait qui est toujours vivant peut être un souhait que vous avez dépassé sans le mettre à jour."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Forse un vecchio desiderio si è avverato ed è tempo di farne uno nuovo. Il Nove di Coppe invertito aggiorna l'obiettivo. Il desiderio che è ancora vivo potrebbe essere uno che hai superato senza aggiornarlo."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "おそらく古い願いが叶い、新しい願いをする時です。逆位置のカップの9は目標をアップグレードします。まだ生きている願いは、更新せずに乗り越えたものかもしれません。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanskje et gammelt ønske gikk i oppfyllelse og det er på tide å lage et nytt. Den omvendte Ni av Kopper oppgraderer målet. Ønsket som fortsatt lever, kan være et du har vokst fra uten å oppdatere."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Być może stare życzenie się spełniło i nadszedł czas, aby zrobić nowe. Odwrócona Dziewiątka Kielichów ulepsza cel. Życzenie, które wciąż żyje, może być tym, które wyrosłeś bez aktualizacji."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Talvez um desejo antigo se tornou realidade e é hora de fazer um novo. O Nove de Copas invertido atualiza o objetivo. O desejo que ainda está vivo pode ser um que você superou sem atualizar."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanske ett gammalt önskemål gick i uppfyllelse och det är dags att göra ett nytt. Den omvända Nio av Bägare uppgraderar målet. Önskan som fortfarande lever kan vara en som du har vuxit ifrån utan att uppdatera."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Можливо, старе бажання здійснилося, і настав час загадати нове. Перевернута Дев'ятка Кубків оновлює мету. Бажання, яке все ще живе, може бути тим, що ви переросли без оновлення."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_general_reversed_unclear" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Wo hat Wünschen das Leben ersetzt? Die umgekehrte Neun der Becher erwischt die Substitution von Fantasie durch Handlung. Der aktiv gehaltene Wunsch ist manchmal ein Weg, die tatsächliche Bewegung dorthin zu vermeiden."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Where has wishing replaced living? The reversed Nine of Cups catches the substitution of fantasy for action. The wish kept active is sometimes a way to avoid the actual movement toward it."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "¿Dónde ha reemplazado el deseo a la vida? El Nueve de Copas invertido atrapa la sustitución de la fantasía por la acción. El deseo mantenido activo a veces es una forma de evitar el movimiento real hacia él."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Où le souhait a-t-il remplacé la vie ? Le Neuf de Coupes inversé attrape la substitution de la fantaisie à l'action. Le souhait maintenu actif est parfois une façon d'éviter le mouvement réel vers lui."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Dove il desiderare ha sostituito il vivere? Il Nove di Coppe invertito cattura la sostituzione della fantasia con l'azione. Il desiderio mantenuto attivo a volte è un modo per evitare il movimento effettivo verso di esso."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "願うことが生きることの代わりになっているのはどこですか？逆位置のカップの9は、幻想が行動に取って代わることを捉えます。活発に保たれた願いは、時としてそれに向かって実際に動くことを避ける方法です。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Hvor har ønsking erstattet å leve? Den omvendte Ni av Kopper fanger substitusjonen av fantasi for handling. Ønsket som holdes aktivt, er noen ganger en måte å unngå den faktiske bevegelsen mot det."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Gdzie życzenie zastąpiło życie? Odwrócona Dziewiątka Kielichów łapie substytucję fantazji za działanie. Życzenie utrzymywane w aktywności jest czasami sposobem na uniknięcie rzeczywistego ruchu w jego kierunku."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Onde o desejar substituiu o viver? O Nove de Copas invertido captura a substituição da fantasia pela ação. O desejo mantido ativo às vezes é uma maneira de evitar o movimento real em direção a ele."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Var har önskande ersatt att leva? Den omvända Nio av Bägare fångar substitutionen av fantasi för handling. Önskan som hålls aktiv är ibland ett sätt att undvika den faktiska rörelsen mot den."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Де бажання замінило життя? Перевернута Дев'ятка Кубків ловить заміну фантазії дією. Бажання, що підтримується активним, іноді є способом уникнути фактичного руху до нього."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_general_upright_not_resonating" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vielleicht ist die Zufriedenheit, die du suchtest, bereits teilweise hier. Die Neun der Becher erwischt die inkrementelle Ankunft. Die vollständige Version könnte bereits zu 70% vorhanden sein; bemerke es."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Perhaps the satisfaction you sought is already partly here. The Nine of Cups catches the incremental arrival. The full version may already be 70% in place; notice it."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quizás la satisfacción que buscabas ya está parcialmente aquí. El Nueve de Copas atrapa la llegada incremental. La versión completa puede estar ya en un 70% en su lugar; nótalo."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Peut-être que la satisfaction que vous recherchiez est déjà en partie là. Le Neuf de Coupes attrape l'arrivée progressive. La version complète peut déjà être à 70% en place ; remarquez-la."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Forse la soddisfazione che cercavi è già in parte qui. Il Nove di Coppe cattura l'arrivo incrementale. La versione completa potrebbe già essere al 70% in atto; notalo."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "おそらく、あなたが求めていた満足はすでに部分的にここにあります。カップの9は段階的な到着を捉えます。完全版はすでに70%整っているかもしれません。それに気づいてください。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanskje tilfredsstillelsen du søkte allerede delvis er her. Ni av Kopper fanger den inkrementelle ankomsten. Den fulle versjonen kan allerede være 70% på plass; legg merke til det."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Być może satysfakcja, której szukałeś, jest już częściowo tutaj. Dziewiątka Kielichów łapie przyrostowe nadejście. Pełna wersja może być już w 70% na miejscu; zauważ to."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Talvez a satisfação que você buscava já esteja parcialmente aqui. O Nove de Copas captura a chegada incremental. A versão completa pode já estar 70% no lugar; perceba isso."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanske är tillfredsställelsen du sökte redan delvis här. Nio av Bägare fångar den inkrementella ankomsten. Den fullständiga versionen kan redan vara 70% på plats; lägg märke till det."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Можливо, задоволення, яке ви шукали, вже частково тут. Дев'ятка Кубків ловить поступове прибуття. Повна версія може вже бути на 70% на місці; помітьте це."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_general_upright_unclear" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Was würdest du dir wünschen, wenn du vertrauen würdest, dass du es empfangen kannst? Die Neun der Becher fragt nach dem ehrlichen Wunsch. Die zensierte Version wird nicht gewährt; die benannte könnte es."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "What would you wish for if you trusted you could receive it? The Nine of Cups asks for the honest wish. The censored version doesn't get granted; the named one might."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "¿Qué desearías si confiaras en que podrías recibirlo? El Nueve de Copas pide el deseo honesto. La versión censurada no se concede; la nombrada podría."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Que souhaiteriez-vous si vous aviez confiance que vous pourriez le recevoir ? Le Neuf de Coupes demande le souhait honnête. La version censurée n'est pas accordée ; celle qui est nommée pourrait l'être."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Cosa desidereresti se ti fidassi di poterlo ricevere? Il Nove di Coppe chiede il desiderio onesto. La versione censurata non viene concessa; quella nominata potrebbe."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "もし自分がそれを受け取れると信じられたら、何を願いますか？カップの9は正直な願いを求めます。検閲されたバージョンは叶えられません。名指しされたものは叶うかもしれません。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Hva ville du ønske hvis du stolte på at du kunne motta det? Ni av Kopper ber om det ærlige ønsket. Den sensurerte versjonen blir ikke innvilget; den som blir nevnt, kan bli det."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Czego byś sobie życzył, gdybyś ufał, że możesz to otrzymać? Dziewiątka Kielichów prosi o szczere życzenie. Ocenzurowana wersja nie zostaje spełniona; ta nazwana może."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "O que você desejaria se confiasse que poderia recebê-lo? O Nove de Copas pede o desejo honesto. A versão censurada não é concedida; a nomeada pode ser."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vad skulle du önska dig om du litade på att du kunde få det? Nio av Bägare ber om den ärliga önskan. Den censurerade versionen beviljas inte; den som nämns kanske."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Що б ви побажали, якби вірили, що можете це отримати? Дев'ятка Кубків просить чесне бажання. Цензурована версія не виконується; названа може."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_health_reversed_not_resonating" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Vielleicht maskiert übermäßiger Genuss ein tieferes unerfülltes Bedürfnis. Die umgekehrte Neun der Becher blickt hinter den Konsum auf das, was eigentlich gesucht wird. Das Bedürfnis darunter ist selten das, was du fütterst."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Maybe overindulgence is masking a deeper unmet need. The reversed Nine of Cups looks past the consumption to what's actually being sought. The need underneath is rarely what you're feeding."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Quizás el exceso está enmascarando una necesidad más profunda no satisfecha. El Nueve de Copas invertido mira más allá del consumo hacia lo que realmente se busca. La necesidad subyacente rara vez es lo que estás alimentando."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Peut-être que la surindulgence masque un besoin plus profond non satisfait. Le Neuf de Coupes inversé regarde au-delà de la consommation vers ce qui est réellement recherché. Le besoin sous-jacent est rarement ce que vous nourrissez."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Forse l'indulgenza eccessiva maschera un bisogno più profondo insoddisfatto. Il Nove di Coppe invertito guarda oltre il consumo verso ciò che viene effettivamente cercato. Il bisogno sottostante è raramente ciò che stai alimentando."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "おそらく過剰な耽溺は、より深い満たされていないニーズを隠しています。逆位置のカップの9は、消費の先にある実際に求められているものを見ます。その下にあるニーズは、あなたが満たしているものではめったにありません。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanskje overforbruk maskerer et dypere udekket behov. Den omvendte Ni av Kopper ser forbi forbruket til det som faktisk blir søkt. Behovet under er sjelden det du mater."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Być może nadmierna pobłażliwość maskuje głębszą niezaspokojoną potrzebę. Odwrócona Dziewiątka Kielichów patrzy poza konsumpcję na to, co faktycznie jest poszukiwane. Potrzeba pod spodem rzadko jest tym, co karmisz."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Talvez a indulgência excessiva esteja mascarando uma necessidade mais profunda não atendida. O Nove de Copas invertido olha além do consumo para o que está realmente sendo buscado. A necessidade subjacente raramente é o que você está alimentando."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Kanske överdriven njutning maskerar ett djupare outtäckt behov. Den omvända Nio av Bägare ser bortom konsumtionen till vad som faktiskt söks. Behovet under är sällan det du matar."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Можливо, надмірне потурання маскує глибшу незадоволену потребу. Перевернута Дев'ятка Кубків дивиться за межі споживання на те, що насправді шукається. Потреба під ним рідко є тим, що ви годуєте."
+                          }
+                        }
+                      }
+                    },
+                    "interpretation.nine_of_cups_health_reversed_unclear" : {
+                      "extractionState" : "manual",
+                      "localizations" : {
+                        "de" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Wird Vergnügen auf eine Weise verfolgt, die nicht wirklich befriedigt? Die umgekehrte Neun der Becher erwischt die leere Kalorie jeder Art. Der Griff nach mehr ist oft das Symptom des Unerfüllten."
+                          }
+                        },
+                        "en" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Is pleasure being chased in ways that don't actually satisfy? The reversed Nine of Cups catches the empty calorie of every kind. The reach for more is often the symptom of the unfilled."
+                          }
+                        },
+                        "es" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "¿Se busca el placer de maneras que realmente no satisfacen? El Nueve de Copas invertido atrapa la caloría vacía de todo tipo. El alcance de más es a menudo el síntoma de lo no lleno."
+                          }
+                        },
+                        "fr" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Le plaisir est-il recherché de manière qui ne satisfait pas réellement ? Le Neuf de Coupes inversé attrape la calorie vide de toutes sortes. La recherche de plus est souvent le symptôme de ce qui n'est pas rempli."
+                          }
+                        },
+                        "it" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Il piacere viene cercato in modi che non soddisfano realmente? Il Nove di Coppe invertito cattura la caloria vuota di ogni tipo. La ricerca di più è spesso il sintomo di ciò che è insoddisfatto."
+                          }
+                        },
+                        "ja" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "喜びは実際に満たされない方法で追い求められていますか？逆位置のカップの9は、あらゆる種類の空のカロリーを捉えます。より多くを求めることは、しばしば満たされないものの症状です。"
+                          }
+                        },
+                        "nb" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Blir nytelse forfulgt på måter som faktisk ikke tilfredsstiller? Den omvendte Ni av Kopper fanger den tomme kalorien av alle slag. Strekket etter mer er ofte symptomet på det ufylte."
+                          }
+                        },
+                        "pl" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Czy przyjemność jest ścigana w sposób, który faktycznie nie zaspokaja? Odwrócona Dziewiątka Kielichów łapie puste kalorie każdego rodzaju. Sięganie po więcej jest często objawem niezaspokojenia."
+                          }
+                        },
+                        "pt-BR" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "O prazer está sendo buscado de maneiras que realmente não satisfazem? O Nove de Copas invertido captura a caloria vazia de todos os tipos. O alcance por mais é muitas vezes o sintoma do não preenchido."
+                          }
+                        },
+                        "sv" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Jagas nöje på sätt som faktiskt inte tillfredsställer? Den omvända Nio av Bägare fångar den tomma kalorin av alla slag. Sträckandet efter mer är ofta symptomet på det ofyllda."
+                          }
+                        },
+                        "uk" : {
+                          "stringUnit" : {
+                            "state" : "translated",
+                            "value" : "Чи задоволення переслідується способами, які насправді не задовольняють? Перевернута Дев'ятка Кубків ловить порожню калорію будь-якого виду. Прагнення до більшого часто є симптомом незаповненого."
+                          }
+                        }
+                      }
+                    },
     "interpretation.nine_of_cups_health_upright_not_resonating" : {
       "extractionState" : "manual",
       "localizations" : {
