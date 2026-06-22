@@ -217983,369 +217983,2349 @@
                                 }
                               }
                             },
-    "interpretation.nine_of_swords_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe morning is coming after a long night. The reversed Nine of Swords ends the worry season. The relationship can be experienced rather than feared again."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is relationship dread starting to lift? The reversed Nine of Swords marks the easing. Notice the quieter inner weather; it deserves recognition."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps anxiety about love is louder than what's actually true. The Nine of Swords' relationship version exaggerates risk. The data of the last month often refutes the fear."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_swords_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is the fear about this relationship matching the actual evidence? The Nine of Swords narrates relationship doom in the dark. Check the worry against the morning's actual interactions."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the burnout is real and the response is rest, not more grit. The reversed Nine of Wands ends the heroic stance. Grit added to exhaustion produces collapse, not breakthrough."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is workplace defensiveness becoming chronic? The reversed Nine of Wands names the bracing posture that's become a default. The vigilance is costing more than it's protecting."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps you're closer to finishing than the exhaustion suggests. The Nine of Wands' fatigue often peaks just before completion. Don't quit at the last fence."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What workplace resilience is being asked of you right now? The Nine of Wands has been through it and stands anyway. The endurance itself is the practice."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe constant money vigilance has become a form of self-harm. The reversed Nine of Wands names the cost. The nervous system can't stay on high alert about finances indefinitely without other systems failing."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is financial fear running on autopilot? The reversed Nine of Wands catches the worry that's lost its trigger. The fear is being maintained out of habit, not signal."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the last stretch of a financial recovery is here. The Nine of Wands counts the final fences. The marathon is in its closing miles; don't sprint, but don't slow either."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What financial vigilance is wearing you out? The Nine of Wands watches the gates so long it forgets to live inside them. The constant alertness has a cost."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe defenses built for one threat are blocking present life. The reversed Nine of Wands updates the security setting. The walls built for a past danger are now keeping out the present good."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is the guard becoming the wound? The reversed Nine of Wands catches the protection that's harming. The hyper-vigilance built for safety has become its own injury."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps one more honest push is exactly the right move. The Nine of Wands respects the final effort. The relief on the other side is worth this last stretch."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where are you almost through? The Nine of Wands stands at the last stretch. The finish line is closer than the body feels; trust the trajectory."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe long-term stress is now its own diagnosis. The reversed Nine of Wands names the underlying state. The symptom set may all trace back to the unrelieved alert."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is your nervous system perpetually on guard? The reversed Nine of Wands tracks the chronic vigilance. The body's alarm system has been on too long; address that as a condition of its own."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps your resilience is the unsung story here. The Nine of Wands credits the body's ongoing rising. The capacity to keep going is itself remarkable; name it."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where does your body keep getting up despite everything? The Nine of Wands stands wounded and ready. The body's persistence deserves recognition before more demand is added."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe the walls built for safety are now blocking love. The reversed Nine of Wands names the protective architecture. The wall served once; it's serving differently now."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is past pain treating present love as a threat? The reversed Nine of Wands separates the historical from the actual. The current partner is being interrogated for crimes others committed."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps persistence in love — even tired — is the courage. The Nine of Wands' showing up wounded and willing is its own form of love. The unglamorous staying counts."
-          }
-        }
-      }
-    },
-    "interpretation.nine_of_wands_love_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you defending against current love based on past wounds? The Nine of Wands checks the threat assessment. The vigilance may belong to an earlier relationship, not this one."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_career_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe creative energy is being squashed by a too-serious environment. The reversed Page of Cups names the cultural cost. Find a smaller space, even private, where the playful work is allowed."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_career_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you dismissing a new project because it doesn't look professional enough yet? The reversed Page of Cups underestimates the early stage. The not-yet-polished version is where the actual magic starts."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a beginner's curiosity is exactly the right energy at work right now. The Page of Cups doesn't need to be expert; it needs to be open. The fresh question often outperforms the practiced answer."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What creative idea wants to be taken seriously even if it sounds silly? The Page of Cups arrives with playful proposals that the adult mind dismisses too fast. The silly idea deserves a real conversation."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe you're avoiding adult money decisions by staying in fantasy. The reversed Page of Cups names the dodge. The grown-up move is owed; the daydream isn't a permanent residence."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is wishful thinking replacing actual financial planning? The reversed Page of Cups catches the fantasy as substitute. The wish is fine; standing alone, it isn't a plan."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a creative source of income is worth exploring. The Page of Cups suggests the unconventional channel. The hobby may have a small economic version if you let it."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What small, playful financial experiment would you try? The Page of Cups loves a low-stakes test. Spend a small defined amount on the idea you've been curious about and see what you learn."
-          }
-        }
-      }
-    },
-    "interpretation.page_of_cups_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe a habit of emotional avoidance is now the problem itself. The reversed Page of Cups names the avoidance as the issue. The thing being dodged is no longer the bigger problem than the dodging."
-          }
-        }
-      }
-    },
+                            "interpretation.nine_of_swords_love_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht kommt der Morgen nach einer langen Nacht. Die umgekehrte Neun der Schwerter beendet die Saison der Sorgen. Die Beziehung kann wieder erlebt werden, statt sie zu fürchten."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe morning is coming after a long night. The reversed Nine of Swords ends the worry season. The relationship can be experienced rather than feared again."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás la mañana llega después de una larga noche. El Nueve de Espadas invertido termina con la temporada de preocupaciones. La relación puede volver a experimentarse en lugar de temerse."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que le matin vient après une longue nuit. Le Neuf d'Épées inversé met fin à la saison des soucis. La relation peut à nouveau être vécue plutôt que redoutée."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse il mattino arriva dopo una lunga notte. Il Nove di Spade rovesciato mette fine alla stagione delle preoccupazioni. La relazione può essere vissuta piuttosto che temuta di nuovo."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "長い夜の後、朝が来るかもしれません。逆位置のソードの9は心配の季節を終わらせます。人間関係は再び恐れられるよりも経験されることができます。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje kommer morgenen etter en lang natt. Den omvendte Ni av Sverd avslutter bekymringssesongen. Forholdet kan oppleves igjen i stedet for å fryktes."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może poranek nadchodzi po długiej nocy. Odwrócona Dziewiątka Mieczy kończy sezon zmartwień. Związek można znowu przeżywać, a nie się go obawiać."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez a manhã esteja chegando depois de uma longa noite. O Nove de Espadas invertido encerra a temporada de preocupações. O relacionamento pode ser vivenciado novamente, em vez de temido."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske kommer morgonen efter en lång natt. Den omvända Nio av Svärd avslutar orosäsongen. Relationen kan upplevas snarare än fruktas igen."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, ранок настає після довгої ночі. Перевернута Дев'ятка Мечів завершує сезон хвилювань. Стосунки можна знову переживати, а не боятися."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_swords_love_reversed_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Beginnt die Beziehungsangst nachzulassen? Die umgekehrte Neun der Schwerter markiert die Erleichterung. Beachte das ruhigere innere Wetter; es verdient Anerkennung."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Is relationship dread starting to lift? The reversed Nine of Swords marks the easing. Notice the quieter inner weather; it deserves recognition."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Está empezando a disiparse el temor en la relación? El Nueve de Espadas invertido marca el alivio. Observa el clima interior más tranquilo; merece reconocimiento."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La peur relationnelle commence-t-elle à se dissiper ? Le Neuf d'Épées inversé marque l'apaisement. Remarque le temps intérieur plus calme ; il mérite d'être reconnu."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La paura della relazione sta iniziando a svanire? Il Nove di Spade rovesciato segna l'allentamento. Nota il clima interiore più tranquillo; merita riconoscimento."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "人間関係の不安が和らぎ始めていますか？逆位置のソードの9は緩和を示しています。より静かな内面の気候に気づいてください。それは認識に値します。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Begynner forholdsangsten å lette? Den omvendte Ni av Sverd markerer lettelsen. Legg merke til det roligere indre været; det fortjener anerkjennelse."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy obawa przed związkiem zaczyna ustępować? Odwrócona Dziewiątka Mieczy oznacza ulgę. Zwróć uwagę na spokojniejszą wewnętrzną pogodę; zasługuje na uznanie."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "O medo no relacionamento está começando a diminuir? O Nove de Espadas invertido marca o alívio. Observe o clima interior mais calmo; ele merece reconhecimento."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Börjar relationsrädslan att lätta? Den omvända Nio av Svärd markerar lättnaden. Notera det lugnare inre vädret; det förtjänar erkännande."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи починає зникати страх у стосунках? Перевернута Дев'ятка Мечів позначає полегшення. Зверніть увагу на тихішу внутрішню погоду; вона заслуговує на визнання."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_swords_love_upright_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist die Angst vor der Liebe lauter als das, was tatsächlich wahr ist. Die Neun der Schwerter übertreibt das Risiko in der Beziehung. Die Daten des letzten Monats widerlegen die Angst oft."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Perhaps anxiety about love is louder than what's actually true. The Nine of Swords' relationship version exaggerates risk. The data of the last month often refutes the fear."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás la ansiedad por el amor es más fuerte que lo que realmente es cierto. La versión de relación del Nueve de Espadas exagera el riesgo. Los datos del último mes a menudo refutan el miedo."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que l'anxiété liée à l'amour est plus forte que ce qui est réellement vrai. La version relationnelle du Neuf d'Épées exagère le risque. Les données du dernier mois contredisent souvent la peur."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse l'ansia per l'amore è più forte di quanto sia effettivamente vero. La versione relazionale del Nove di Spade esagera il rischio. I dati dell'ultimo mese spesso smentiscono la paura."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、愛に対する不安は実際の真実よりも大きく聞こえます。ソードの9の人間関係版はリスクを誇張します。先月のデータはしばしばその恐怖を否定します。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje er angst for kjærlighet høyere enn det som faktisk er sant. Ni av Sverds forholdsversjon overdriver risikoen. Dataene fra den siste måneden tilbakeviser ofte frykten."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może niepokój o miłość jest głośniejszy niż to, co jest rzeczywiście prawdą. Wersja związku Dziewiątki Mieczy wyolbrzymia ryzyko. Dane z ostatniego miesiąca często obalają strach."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez a ansiedade sobre o amor seja mais alta do que o que é realmente verdade. A versão de relacionamento do Nove de Espadas exagera o risco. Os dados do último mês geralmente refutam o medo."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är ångesten över kärlek högre än vad som faktiskt är sant. Nio av Svärds relationsversion överdriver risken. Data från den senaste månaden motbevisar ofta rädslan."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, тривога про кохання голосніша, ніж те, що насправді є правдою. Версія стосунків Дев'ятки Мечів перебільшує ризик. Дані за останній місяць часто спростовують страх."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_swords_love_upright_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Entspricht die Angst vor dieser Beziehung den tatsächlichen Beweisen? Die Neun der Schwerter erzählt im Dunkeln vom Beziehungsuntergang. Überprüfe die Sorge an den tatsächlichen Interaktionen am Morgen."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Is the fear about this relationship matching the actual evidence? The Nine of Swords narrates relationship doom in the dark. Check the worry against the morning's actual interactions."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿El miedo a esta relación coincide con la evidencia real? El Nueve de Espadas narra la perdición de la relación en la oscuridad. Compara la preocupación con las interacciones reales de la mañana."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La peur concernant cette relation correspond-elle aux preuves réelles ? Le Neuf d'Épées raconte la perte de la relation dans le noir. Compare l'inquiétude avec les interactions réelles du matin."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La paura riguardo a questa relazione corrisponde alle prove effettive? Il Nove di Spade narra la rovina della relazione nell'oscurità. Verifica la preoccupazione con le interazioni effettive del mattino."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "この関係についての恐怖は実際の証拠と一致していますか？ソードの9は暗闇の中で関係の破滅を語ります。朝の実際の交流と照らし合わせて心配事を確認してください。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Er frykten for dette forholdet i samsvar med de faktiske bevisene? Ni av Sverd forteller om forholdets undergang i mørket. Sjekk bekymringen mot morgendagens faktiske interaksjoner."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy strach przed tym związkiem odpowiada rzeczywistym dowodom? Dziewiątka Mieczy opowiada o zagładzie związku w ciemności. Sprawdź zmartwienie na podstawie rzeczywistych interakcji z poranka."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "O medo sobre esse relacionamento corresponde às evidências reais? O Nove de Espadas narra a ruína do relacionamento na escuridão. Verifique a preocupação com as interações reais da manhã."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Stämmer rädslan för detta förhållande överens med de faktiska bevisen? Nio av Svärd berättar om relationens undergång i mörkret. Kontrollera oron mot morgonens faktiska interaktioner."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи відповідає страх щодо цих стосунків фактичним доказам? Дев'ятка Мечів оповідає про крах стосунків у темряві. Перевірте хвилювання на основі фактичних взаємодій вранці."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_career_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist das Burnout real und die Antwort ist Ruhe, nicht noch mehr Zähigkeit. Die umgekehrte Neun der Stäbe beendet die heldenhafte Haltung. Zähigkeit, die zu Erschöpfung hinzugefügt wird, führt zum Kollaps, nicht zum Durchbruch."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe the burnout is real and the response is rest, not more grit. The reversed Nine of Wands ends the heroic stance. Grit added to exhaustion produces collapse, not breakthrough."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás el agotamiento es real y la respuesta es el descanso, no más perseverancia. El Nueve de Bastos invertido termina con la postura heroica. La perseverancia añadida al agotamiento produce colapso, no avance."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que l'épuisement est réel et que la réponse est le repos, pas plus de courage. Le Neuf de Bâtons inversé met fin à la posture héroïque. Ajouter du courage à l'épuisement produit un effondrement, pas une percée."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse il burnout è reale e la risposta è il riposo, non più grinta. Il Nove di Bastoni rovesciato pone fine alla posizione eroica. Aggiungere grinta all'esaurimento produce collasso, non svolta."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらくバーンアウトは現実的であり、その応答は休息であり、より多くの粘り強さではありません。逆位置のワンドの9は英雄的な姿勢を終わらせます。疲労に粘り強さを加えると、ブレークスルーではなく崩壊を生みます。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje er utbrentheten ekte og svaret er hvile, ikke mer utholdenhet. Den omvendte Ni av Stav avslutter den heroiske holdningen. Å legge utholdenhet til utmattelse produserer kollaps, ikke gjennombrudd."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może wypalenie jest prawdziwe, a odpowiedzią jest odpoczynek, a nie więcej hartu ducha. Odwrócona Dziewiątka Buław kończy heroiczną postawę. Hart ducha dodany do wyczerpania prowadzi do załamania, a nie przełomu."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez o esgotamento seja real e a resposta seja descanso, não mais persistência. O Nove de Paus invertido encerra a postura heroica. A persistência adicionada ao esgotamento produz colapso, não avanço."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är utbrändheten verklig och svaret är vila, inte mer envishet. Den omvända Nio av Stavar avslutar den heroiska hållningen. Att lägga envishet till utmattning ger kollaps, inte genombrott."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, вигорання є реальним, і відповіддю є відпочинок, а не більше стійкості. Перевернута Дев'ятка Жезлів завершує героїчну позицію. Стійкість, додана до виснаження, призводить до колапсу, а не до прориву."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_career_reversed_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Wird die Abwehrhaltung am Arbeitsplatz chronisch? Die umgekehrte Neun der Stäbe benennt die angespannte Haltung, die zur Gewohnheit geworden ist. Die Wachsamkeit kostet mehr, als sie schützt."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Is workplace defensiveness becoming chronic? The reversed Nine of Wands names the bracing posture that's become a default. The vigilance is costing more than it's protecting."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿La actitud defensiva en el trabajo se está volviendo crónica? El Nueve de Bastos invertido nombra la postura tensa que se ha convertido en la predeterminada. La vigilancia cuesta más de lo que protege."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La posture défensive au travail devient-elle chronique ? Le Neuf de Bâtons inversé nomme la posture de protection devenue par défaut. La vigilance coûte plus qu'elle ne protège."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La difensività sul posto di lavoro sta diventando cronica? Il Nove di Bastoni rovesciato nomina la postura di tensione che è diventata predefinita. La vigilanza sta costando più di quanto protegge."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "職場での防御的な態度が慢性化していますか？逆位置のワンドの9は、デフォルトになった警戒姿勢を名指しします。警戒心はそれが守っているものよりも多くを費やしています。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Blir defensivitet på arbeidsplassen kronisk? Den omvendte Ni av Stav navngir den spente holdningen som har blitt en standard. Årvåkenheten koster mer enn den beskytter."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy defensywność w miejscu pracy staje się przewlekła? Odwrócona Dziewiątka Buław nazywa napiętą postawę, która stała się domyślna. Czujność kosztuje więcej, niż chroni."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "A postura defensiva no trabalho está se tornando crônica? O Nove de Paus invertido nomeia a postura tensa que se tornou padrão. A vigilância está custando mais do que protege."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Håller defensivitet på arbetsplatsen på att bli kronisk? Den omvända Nio av Stavar namnger den spända hållningen som blivit standard. Vaksamheten kostar mer än den skyddar."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи стає захисна позиція на роботі хронічною? Перевернута Дев'ятка Жезлів називає напружену позу, яка стала типовою. Пильність коштує більше, ніж захищає."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_career_upright_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht bist du dem Ende näher, als die Erschöpfung vermuten lässt. Die Neun der Stäbe zeigt, dass die Erschöpfung oft kurz vor dem Abschluss ihren Höhepunkt erreicht. Gib nicht am letzten Hindernis auf."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Perhaps you're closer to finishing than the exhaustion suggests. The Nine of Wands' fatigue often peaks just before completion. Don't quit at the last fence."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás estás más cerca de terminar de lo que sugiere el agotamiento. La fatiga del Nueve de Bastos a menudo alcanza su punto máximo justo antes de la finalización. No te rindas en la última valla."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être êtes-vous plus proche de la fin que ne le suggère l'épuisement. La fatigue du Neuf de Bâtons atteint souvent son pic juste avant l'achèvement. N'abandonnez pas à la dernière barrière."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse sei più vicino alla fine di quanto suggerisca l'esaurimento. La fatica del Nove di Bastoni spesso raggiunge il picco appena prima del completamento. Non arrenderti all'ultimo ostacolo."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、あなたは疲労が示唆するよりも完成に近づいています。ワンドの9の疲労は、しばしば完了の直前にピークに達します。最後のフェンスで諦めないでください。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje er du nærmere å fullføre enn utmattelsen antyder. Ni av Stavs tretthet når ofte toppen rett før fullføring. Ikke gi deg ved siste hinder."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może jesteś bliżej ukończenia, niż sugeruje wyczerpanie. Zmęczenie Dziewiątki Buław często osiąga szczyt tuż przed ukończeniem. Nie rezygnuj na ostatnim płotku."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez você esteja mais perto de terminar do que o esgotamento sugere. A fadiga do Nove de Paus geralmente atinge o pico pouco antes da conclusão. Não desista na última barreira."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är du närmare att slutföra än utmattningen antyder. Nio av Stavars trötthet når ofta sin topp strax före slutförandet. Ge inte upp vid sista hindret."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, ви ближче до завершення, ніж свідчить виснаження. Втома Дев'ятки Жезлів часто досягає піку безпосередньо перед завершенням. Не здавайтеся на останній перешкоді."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_career_upright_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Welche Widerstandsfähigkeit am Arbeitsplatz wird gerade von dir verlangt? Die Neun der Stäbe hat viel durchgemacht und steht dennoch. Die Ausdauer selbst ist die Übung."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "What workplace resilience is being asked of you right now? The Nine of Wands has been through it and stands anyway. The endurance itself is the practice."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Qué resiliencia en el trabajo se te pide en este momento? El Nueve de Bastos ha pasado por todo y sigue en pie. La resistencia en sí misma es la práctica."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quelle résilience professionnelle vous est-elle demandée en ce moment ? Le Neuf de Bâtons a traversé tout cela et reste debout. L'endurance elle-même est la pratique."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quale resilienza sul posto di lavoro ti viene richiesta in questo momento? Il Nove di Bastoni ha passato tutto e rimane in piedi. La resistenza stessa è la pratica."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "今、あなたに求められている仕事上の回復力は何ですか？ワンドの9はそれを経験し、それでも立ち続けています。忍耐そのものが練習です。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Hvilken robusthet på arbeidsplassen blir bedt om av deg akkurat nå? Ni av Stav har vært gjennom det og står likevel. Utholdenheten i seg selv er praksisen."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Jaka odporność w miejscu pracy jest od ciebie wymagana w tej chwili? Dziewiątka Buław przeszła przez to i mimo to stoi. Wytrwałość sama w sobie jest praktyką."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Qual resiliência no trabalho está sendo pedida de você agora? O Nove de Paus já passou por tudo e continua de pé. A resistência em si é a prática."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vilken motståndskraft på arbetsplatsen efterfrågas av dig just nu? Nio av Stavar har gått igenom det och står ändå. Uthålligheten i sig är praktiken."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Яка стійкість на робочому місці зараз вимагається від вас? Дев'ятка Жезлів пройшла через це і все одно стоїть. Сама витривалість є практикою."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_finance_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist die ständige finanzielle Wachsamkeit zu einer Form der Selbstverletzung geworden. Die umgekehrte Neun der Stäbe benennt die Kosten. Das Nervensystem kann nicht unbegrenzt in finanzieller Alarmbereitschaft bleiben, ohne dass andere Systeme versagen."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe constant money vigilance has become a form of self-harm. The reversed Nine of Wands names the cost. The nervous system can't stay on high alert about finances indefinitely without other systems failing."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás la vigilancia constante del dinero se ha convertido en una forma de autolesión. El Nueve de Bastos invertido nombra el costo. El sistema nervioso no puede permanecer en alerta máxima sobre las finanzas indefinidamente sin que otros sistemas fallen."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que la vigilance constante en matière d'argent est devenue une forme d'automutilation. Le Neuf de Bâtons inversé en nomme le coût. Le système nerveux ne peut pas rester en état d'alerte élevée concernant les finances indéfiniment sans que d'autres systèmes ne tombent en panne."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse la costante vigilanza sul denaro è diventata una forma di autolesionismo. Il Nove di Bastoni rovesciato ne nomina il costo. Il sistema nervoso non può rimanere in stato di massima allerta sulle finanze a tempo indeterminato senza che altri sistemi cedano."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、絶え間ない金銭への警戒心が自傷行為の一種になっています。逆位置のワンドの9はその代償を名指しします。神経系は他のシステムが故障することなく、無期限に財政について高い警戒状態を維持することはできません。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje konstant pengeårvåkenhet har blitt en form for selvskading. Den omvendte Ni av Stav navngir kostnaden. Nervesystemet kan ikke forbli i høy beredskap om økonomi på ubestemt tid uten at andre systemer svikter."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może ciągła czujność finansowa stała się formą samookaleczenia. Odwrócona Dziewiątka Buław nazywa ten koszt. Układ nerwowy nie może pozostawać w stanie ciągłej gotowości finansowej bez końca, bez ryzyka awarii innych systemów."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez a vigilância constante com o dinheiro tenha se tornado uma forma de autolesão. O Nove de Paus invertido nomeia o custo. O sistema nervoso não pode ficar em alerta máximo sobre as finanças indefinidamente sem que outros sistemas falhem."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske har konstant vaksamhet om pengar blivit en form av självskada. Den omvända Nio av Stavar namnger kostnaden. Nervsystemet kan inte förbli i hög beredskap om ekonomi på obestämd tid utan att andra system misslyckas."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, постійна пильність щодо грошей стала формою самоушкодження. Перевернута Дев'ятка Жезлів називає ціну. Нервова система не може залишатися в стані підвищеної готовності щодо фінансів нескінченно довго, без того, щоб інші системи не вийшли з ладу."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_finance_reversed_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Läuft die finanzielle Angst im Autopilot? Die umgekehrte Neun der Stäbe erwischt die Sorge, die ihren Auslöser verloren hat. Die Angst wird aus Gewohnheit aufrechterhalten, nicht durch ein Signal."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Is financial fear running on autopilot? The reversed Nine of Wands catches the worry that's lost its trigger. The fear is being maintained out of habit, not signal."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿El miedo financiero funciona en piloto automático? El Nueve de Bastos invertido capta la preocupación que ha perdido su desencadenante. El miedo se mantiene por costumbre, no por señal."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La peur financière fonctionne-t-elle en pilote automatique ? Le Neuf de Bâtons inversé saisit l'inquiétude qui a perdu son déclencheur. La peur est entretenue par habitude, non par signal."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La paura finanziaria è in pilota automatico? Il Nove di Bastoni rovesciato individua la preoccupazione che ha perso il suo fattore scatenante. La paura viene mantenuta per abitudine, non per segnale."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "経済的恐怖は自動操縦で動いていますか？逆位置のワンドの9は、きっかけを失った心配を捉えます。恐怖は合図ではなく習慣によって維持されています。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Går finansiell frykt på autopilot? Den omvendte Ni av Stav fanger bekymringen som har mistet utløseren. Frykten opprettholdes av vane, ikke av signal."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy strach finansowy działa na autopilocie? Odwrócona Dziewiątka Buław łapie zmartwienie, które straciło swój wyzwalacz. Strach jest podtrzymywany z przyzwyczajenia, a nie przez sygnał."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "O medo financeiro está no piloto automático? O Nove de Paus invertido capta a preocupação que perdeu seu gatilho. O medo é mantido por hábito, não por sinal."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Går finansiell rädsla på autopilot? Den omvända Nio av Stavar fångar oron som förlorat sin utlösare. Rädslan upprätthålls av vana, inte av signal."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи фінансовий страх працює на автопілоті? Перевернута Дев'ятка Жезлів виявляє хвилювання, яке втратило свій тригер. Страх підтримується за звичкою, а не через сигнал."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_finance_upright_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist die letzte Etappe einer finanziellen Erholung gekommen. Die Neun der Stäbe zählt die letzten Hürden. Der Marathon befindet sich in den letzten Meilen; nicht sprinten, aber auch nicht langsamer werden."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Perhaps the last stretch of a financial recovery is here. The Nine of Wands counts the final fences. The marathon is in its closing miles; don't sprint, but don't slow either."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás la última etapa de una recuperación financiera está aquí. El Nueve de Bastos cuenta las vallas finales. El maratón está en sus últimas millas; no corras, pero tampoco te frenes."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que la dernière ligne droite d'une reprise financière est là. Le Neuf de Bâtons compte les dernières barrières. Le marathon est dans ses derniers kilomètres ; ne sprintez pas, mais ne ralentissez pas non plus."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse l'ultima fase di una ripresa finanziaria è qui. Il Nove di Bastoni conta gli ultimi ostacoli. La maratona è nelle sue ultime miglia; non sprintare, ma non rallentare nemmeno."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、財政回復の最後の一押しがここにあります。ワンドの9は最後のフェンスを数えます。マラソンは最終マイルに入っています。スプリントしないでください。しかし、減速もしないでください。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje den siste strekningen av en finansiell bedring er her. Ni av Stav teller de siste gjerdene. Maratonet er på sine siste mil; ikke sprint, men ikke senk farten heller."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może nadeszła ostatnia prosta finansowego powrotu do zdrowia. Dziewiątka Buław liczy ostatnie płotki. Maraton jest na ostatnich milach; nie sprintuj, ale też nie zwalniaj."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez a última etapa de uma recuperação financeira esteja aqui. O Nove de Paus conta as barreiras finais. A maratona está em suas milhas finais; não corra, mas também não diminua o ritmo."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är den sista sträckan av en finansiell återhämtning här. Nio av Stavar räknar de sista hindren. Maratonloppet är på sina sista mil; spring inte, men sakta inte heller ner."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, тут настала остання фаза фінансового відновлення. Дев'ятка Жезлів рахує останні перешкоди. Марафон на своїх останніх милях; не спринтуйте, але й не сповільнюйтесь."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_finance_upright_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Welche finanzielle Wachsamkeit zehrt an dir? Die Neun der Stäbe bewacht die Tore so lange, dass sie vergisst, in ihnen zu leben. Die ständige Alarmbereitschaft hat ihren Preis."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "What financial vigilance is wearing you out? The Nine of Wands watches the gates so long it forgets to live inside them. The constant alertness has a cost."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Qué vigilancia financiera te está agotando? El Nueve de Bastos vigila las puertas tanto tiempo que olvida vivir dentro de ellas. El estado de alerta constante tiene un costo."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quelle vigilance financière vous épuise ? Le Neuf de Bâtons surveille les portes si longtemps qu'il oublie de vivre à l'intérieur. L'alerte constante a un coût."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quale vigilanza finanziaria ti sta esaurendo? Il Nove di Bastoni osserva i cancelli così a lungo che dimentica di viverci dentro. La costante allerta ha un costo."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "どのような財政的警戒心があなたを疲れさせていますか？ワンドの9は門をあまりにも長く見守りすぎて、その中で生きることを忘れてしまいます。絶え間ない警戒心には代償があります。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Hvilken finansiell årvåkenhet sliter deg ut? Ni av Stav vokter portene så lenge at den glemmer å leve innenfor dem. Den konstante årvåkenheten har en kostnad."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Jaka czujność finansowa cię wyczerpuje? Dziewiątka Buław tak długo strzeże bram, że zapomina żyć wewnątrz nich. Stała czujność ma swoją cenę."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Que vigilância financeira está te desgastando? O Nove de Paus vigia os portões por tanto tempo que se esquece de viver dentro deles. O alerta constante tem um custo."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vilken finansiell vaksamhet sliter ut dig? Nio av Stavar vaktar portarna så länge att den glömmer att leva innanför dem. Den konstanta beredskapen har en kostnad."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Яка фінансова пильність вас виснажує? Дев'ятка Жезлів так довго стереже ворота, що забуває жити всередині них. Постійна пильність має свою ціну."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_general_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht blockieren Abwehrmechanismen, die für eine Bedrohung aufgebaut wurden, das gegenwärtige Leben. Die umgekehrte Neun der Stäbe aktualisiert die Sicherheitseinstellung. Die Mauern, die für eine vergangene Gefahr errichtet wurden, halten jetzt das gegenwärtige Gute fern."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe defenses built for one threat are blocking present life. The reversed Nine of Wands updates the security setting. The walls built for a past danger are now keeping out the present good."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás las defensas construidas para una amenaza están bloqueando la vida presente. El Nueve de Bastos invertido actualiza la configuración de seguridad. Los muros construidos para un peligro pasado ahora están excluyendo el bien presente."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que les défenses construites pour une menace bloquent la vie présente. Le Neuf de Bâtons inversé met à jour le paramètre de sécurité. Les murs construits pour un danger passé éloignent désormais le bien présent."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse le difese costruite per una minaccia stanno bloccando la vita presente. Il Nove di Bastoni rovesciato aggiorna l'impostazione di sicurezza. I muri costruiti per un pericolo passato ora tengono fuori il bene presente."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、ある脅威のために築かれた防御が現在の生活を妨げています。逆位置のワンドの9はセキュリティ設定を更新します。過去の危険のために築かれた壁が、現在の善を締め出しています。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje forsvar bygget for én trussel blokkerer det nåværende livet. Den omvendte Ni av Stav oppdaterer sikkerhetsinnstillingen. Murene bygget for en tidligere fare holder nå det nåværende gode ute."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może mechanizmy obronne zbudowane przed jednym zagrożeniem blokują obecne życie. Odwrócona Dziewiątka Buław aktualizuje ustawienia bezpieczeństwa. Ściany zbudowane przed dawnym niebezpieczeństwem teraz blokują dostęp do teraźniejszego dobra."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez defesas construídas para uma ameaça estejam bloqueando a vida presente. O Nove de Paus invertido atualiza a configuração de segurança. Os muros construídos para um perigo passado agora estão impedindo o bem presente."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske blockerar försvar byggda för ett hot det nuvarande livet. Den omvända Nio av Stavar uppdaterar säkerhetsinställningen. Murarna byggda för en tidigare fara håller nu ute det nuvarande goda."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, захист, створений для однієї загрози, блокує теперішнє життя. Перевернута Дев'ятка Жезлів оновлює налаштування безпеки. Стіни, зведені для минулої небезпеки, тепер не пропускають теперішнє добро."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_general_reversed_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Wo wird die Wache zur Wunde? Die umgekehrte Neun der Stäbe erkennt den Schutz, der schadet. Die Hypervigilanz, die für Sicherheit aufgebaut wurde, ist zu einer eigenen Verletzung geworden."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Where is the guard becoming the wound? The reversed Nine of Wands catches the protection that's harming. The hyper-vigilance built for safety has become its own injury."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Dónde se está convirtiendo la guardia en la herida? El Nueve de Bastos invertido capta la protección que está dañando. La hipervigilancia construida por seguridad se ha convertido en su propia lesión."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Où la garde devient-elle la blessure ? Le Neuf de Bâtons inversé saisit la protection qui fait du mal. L'hypervigilance construite pour la sécurité est devenue sa propre blessure."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Dove la guardia sta diventando la ferita? Il Nove di Bastoni rovesciato coglie la protezione che sta danneggiando. L'iper-vigilanza costruita per la sicurezza è diventata la sua stessa lesione."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "どこで見張りが傷になっていますか？逆位置のワンドの9は、害を与えている保護を捉えます。安全のために構築された過度の警戒心は、それ自体が傷となっています。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Hvor blir vakten til såret? Den omvendte Ni av Stav fanger beskyttelsen som skader. Hypervåkenheten bygget for sikkerhet har blitt sin egen skade."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Gdzie strażnik staje się raną? Odwrócona Dziewiątka Buław łapie ochronę, która szkodzi. Nadmierna czujność zbudowana dla bezpieczeństwa stała się własnym urazem."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Onde a guarda está se tornando a ferida? O Nove de Paus invertido capta a proteção que está prejudicando. A hipervigilância construída para segurança tornou-se sua própria lesão."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Var blir vakten till såret? Den omvända Nio av Stavar fångar skyddet som skadar. Hypervaksamheten byggd för säkerhet har blivit sin egen skada."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Де охоронець стає раною? Перевернута Дев'ятка Жезлів виявляє захист, який завдає шкоди. Гіперпильність, створена для безпеки, стала власною травмою."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_general_upright_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist ein weiterer ehrlicher Vorstoß genau der richtige Schritt. Die Neun der Stäbe respektiert die letzte Anstrengung. Die Erleichterung auf der anderen Seite ist diese letzte Etappe wert."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Perhaps one more honest push is exactly the right move. The Nine of Wands respects the final effort. The relief on the other side is worth this last stretch."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás un último empujón honesto es exactamente el movimiento correcto. El Nueve de Bastos respeta el esfuerzo final. El alivio al otro lado vale la pena este último tramo."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être qu'un dernier effort honnête est exactement le bon mouvement. Le Neuf de Bâtons respecte l'effort final. Le soulagement de l'autre côté vaut cette dernière ligne droite."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse un ultimo sforzo onesto è esattamente la mossa giusta. Il Nove di Bastoni rispetta lo sforzo finale. Il sollievo dall'altra parte vale quest'ultima fase."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、もう一度正直に押すことがまさに正しい動きです。ワンドの9は最後の努力を尊重します。向こう側の安堵は、この最後の一押しの価値があります。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje en siste ærlig innsats er akkurat det rette trekket. Ni av Stav respekterer den endelige innsatsen. Lettelsen på den andre siden er verdt denne siste strekningen."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może jeszcze jeden uczciwy wysiłek jest dokładnie właściwym posunięciem. Dziewiątka Buław szanuje ostateczny wysiłek. Ulga po drugiej stronie jest warta tego ostatniego odcinka."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez mais um impulso honesto seja exatamente o movimento certo. O Nove de Paus respeita o esforço final. O alívio do outro lado vale esta última etapa."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är ytterligare ett ärligt tryck precis rätt drag. Nio av Stavar respekterar den slutgiltiga ansträngningen. Lättnaden på andra sidan är värd denna sista sträcka."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, ще один чесний поштовх є правильним кроком. Дев'ятка Жезлів поважає фінальне зусилля. Полегшення на іншому боці варте цієї останньої ділянки."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_general_upright_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Wo bist du fast durch? Die Neun der Stäbe steht auf der letzten Etappe. Die Ziellinie ist näher, als der Körper fühlt; vertraue der Flugbahn."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Where are you almost through? The Nine of Wands stands at the last stretch. The finish line is closer than the body feels; trust the trajectory."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Dónde estás casi al final? El Nueve de Bastos se encuentra en el último tramo. La meta está más cerca de lo que el cuerpo siente; confía en la trayectoria."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Où êtes-vous presque à la fin ? Le Neuf de Bâtons se tient sur la dernière ligne droite. La ligne d'arrivée est plus proche que ce que le corps ressent ; faites confiance à la trajectoire."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Dove sei quasi alla fine? Il Nove di Bastoni si trova nell'ultima fase. Il traguardo è più vicino di quanto il corpo senta; fidati della traiettoria."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "どこでほとんど終わりに近づいていますか？ワンドの9は最後の一押しのところに立っています。ゴールラインは体が感じるよりも近いです。軌道を信じてください。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Hvor er du nesten gjennom? Ni av Stav står ved siste strekning. Mållinjen er nærmere enn kroppen føler; stol på banen."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Gdzie jesteś prawie na końcu? Dziewiątka Buław stoi na ostatnim odcinku. Meta jest bliżej, niż czuje ciało; zaufaj trajektorii."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Onde você está quase terminando? O Nove de Paus está na última etapa. A linha de chegada está mais perto do que o corpo sente; confie na trajetória."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Var är du nästan igenom? Nio av Stavar står vid den sista sträckan. Mållinjen är närmare än kroppen känner; lita på banan."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Де ви майже пройшли? Дев'ятка Жезлів стоїть на останній ділянці. Фінішна лінія ближча, ніж відчуває тіло; довіртеся траєкторії."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_health_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist langfristiger Stress jetzt eine eigene Diagnose. Die umgekehrte Neun der Stäbe benennt den zugrunde liegenden Zustand. Die Symptome könnten alle auf den unaufhörlichen Alarm zurückzuführen sein."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe long-term stress is now its own diagnosis. The reversed Nine of Wands names the underlying state. The symptom set may all trace back to the unrelieved alert."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás el estrés a largo plazo es ahora su propio diagnóstico. El Nueve de Bastos invertido nombra el estado subyacente. El conjunto de síntomas puede remontarse a la alerta no aliviada."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que le stress à long terme est désormais son propre diagnostic. Le Neuf de Bâtons inversé nomme l'état sous-jacent. L'ensemble des symptômes peut tous remonter à l'alerte non soulagée."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse lo stress a lungo termine è ora una diagnosi a sé stante. Il Nove di Bastoni rovesciato nomina lo stato sottostante. L'insieme dei sintomi potrebbe essere ricondotto all'allarme non alleviato."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、長期的なストレスはそれ自体が診断となっています。逆位置のワンドの9は、根本的な状態を名指しします。症状セットはすべて、和らげられていない警戒心にまで遡る可能性があります。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje langvarig stress er nå sin egen diagnose. Den omvendte Ni av Stav navngir den underliggende tilstanden. Symptomene kan alle spores tilbake til den uavlastede årvåkenheten."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może długotrwały stres jest teraz odrębną diagnozą. Odwrócona Dziewiątka Buław nazywa stan podstawowy. Zestaw objawów może mieć swoje źródło w nieustannej gotowości."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez o estresse de longo prazo seja agora seu próprio diagnóstico. O Nove de Paus invertido nomeia o estado subjacente. O conjunto de sintomas pode ser atribuído ao alerta não aliviado."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är långvarig stress nu en egen diagnos. Den omvända Nio av Stavar namnger det underliggande tillståndet. Symtomen kan alla spåras tillbaka till den olindrade beredskapen."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, довгостроковий стрес тепер є власним діагнозом. Перевернута Дев'ятка Жезлів називає основний стан. Симптоми можуть сягати корінням у неослабну пильність."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_health_reversed_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Ist dein Nervensystem dauerhaft in Alarmbereitschaft? Die umgekehrte Neun der Stäbe verfolgt die chronische Wachsamkeit. Der körpereigene Alarm war zu lange an; behandle das als eigenständigen Zustand."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Is your nervous system perpetually on guard? The reversed Nine of Wands tracks the chronic vigilance. The body's alarm system has been on too long; address that as a condition of its own."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Tu sistema nervioso está perpetuamente en guardia? El Nueve de Bastos invertido rastrea la vigilancia crónica. El sistema de alarma del cuerpo ha estado activado demasiado tiempo; abórdalo como una condición propia."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Votre système nerveux est-il perpétuellement en état d'alerte ? Le Neuf de Bâtons inversé suit la vigilance chronique. Le système d'alarme du corps est allumé depuis trop longtemps ; traitez-le comme une condition à part entière."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Il tuo sistema nervoso è perennemente in guardia? Il Nove di Bastoni rovesciato traccia la vigilanza cronica. Il sistema di allarme del corpo è stato acceso troppo a lungo; affrontalo come una condizione a sé stante."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "あなたの神経系は常に警戒していますか？逆位置のワンドの9は慢性的な警戒心を追跡します。身体の警報システムは長く作動しすぎています。それをそれ自体の状態として対処してください。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Er nervesystemet ditt stadig på vakt? Den omvendte Ni av Stav sporer den kroniske årvåkenheten. Kroppens alarmsystem har vært på for lenge; adresser det som en egen tilstand."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy twój układ nerwowy jest stale w stanie gotowości? Odwrócona Dziewiątka Buław śledzi przewlekłą czujność. System alarmowy ciała był włączony zbyt długo; potraktuj to jako odrębny stan."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Seu sistema nervoso está perpetuamente em guarda? O Nove de Paus invertido rastreia a vigilância crônica. O sistema de alarme do corpo está ligado há muito tempo; aborde isso como uma condição própria."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Är ditt nervsystem ständigt på sin vakt? Den omvända Nio av Stavar spårar den kroniska vaksamheten. Kroppens larmsystem har varit på för länge; ta itu med det som ett eget tillstånd."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи ваша нервова система постійно насторожі? Перевернута Дев'ятка Жезлів відстежує хронічну пильність. Сигналізація тіла була ввімкнена надто довго; сприймайте це як окремий стан."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_health_upright_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist deine Widerstandsfähigkeit die unbesungene Geschichte hier. Die Neun der Stäbe würdigt die anhaltende Erholung des Körpers. Die Fähigkeit, weiterzumachen, ist an sich bemerkenswert; benenne es."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Perhaps your resilience is the unsung story here. The Nine of Wands credits the body's ongoing rising. The capacity to keep going is itself remarkable; name it."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás tu resiliencia es la historia no contada aquí. El Nueve de Bastos acredita la continua recuperación del cuerpo. La capacidad de seguir adelante es en sí misma notable; nómbrala."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que votre résilience est l'histoire méconnue ici. Le Neuf de Bâtons crédite le relèvement continu du corps. La capacité à continuer est en elle-même remarquable ; nommez-la."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse la tua resilienza è la storia non raccontata qui. Il Nove di Bastoni riconosce il continuo rialzo del corpo. La capacità di andare avanti è di per sé notevole; nominala."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、あなたの回復力はここで語られていない物語です。ワンドの9は体の継続的な立ち直りを認めています。続ける能力自体が注目に値します。それを名指ししてください。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje din robusthet er den ufortalte historien her. Ni av Stav anerkjenner kroppens pågående oppgang. Evnen til å fortsette er i seg selv bemerkelsesverdig; gi den et navn."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może twoja odporność jest nieopisaną tutaj historią. Dziewiątka Buław docenia ciągłe podnoszenie się ciała. Zdolność do kontynuowania jest sama w sobie godna uwagi; nazwij to."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez sua resiliência seja a história não contada aqui. O Nove de Paus credita a contínua recuperação do corpo. A capacidade de continuar é em si notável; nomeie-a."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är din motståndskraft den outforskade historien här. Nio av Stavar erkänner kroppens pågående uppgång. Förmågan att fortsätta är i sig anmärkningsvärd; namnge den."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, ваша стійкість є тут неоспіваною історією. Дев'ятка Жезлів визнає постійне піднесення тіла. Здатність продовжувати є сама по собі чудовою; назвіть її."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_health_upright_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Wo steht dein Körper trotz allem immer wieder auf? Die Neun der Stäbe steht verwundet und bereit. Die Beharrlichkeit des Körpers verdient Anerkennung, bevor weitere Anforderungen hinzukommen."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Where does your body keep getting up despite everything? The Nine of Wands stands wounded and ready. The body's persistence deserves recognition before more demand is added."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Dónde tu cuerpo sigue levantándose a pesar de todo? El Nueve de Bastos está herido y listo. La persistencia del cuerpo merece reconocimiento antes de añadir más demanda."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Où votre corps continue-t-il de se relever malgré tout ? Le Neuf de Bâtons se tient blessé et prêt. La persistance du corps mérite d'être reconnue avant d'ajouter plus d'exigences."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Dove il tuo corpo continua ad alzarsi nonostante tutto? Il Nove di Bastoni è ferito e pronto. La persistenza del corpo merita riconoscimento prima che venga aggiunta un'altra richiesta."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "どこであなたの体はすべてにもかかわらず立ち上がり続けていますか？ワンドの9は傷つきながらも準備ができて立っています。体の持続性は、さらなる要求が加えられる前に認識に値します。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Hvor fortsetter kroppen din å reise seg til tross for alt? Ni av Stav står såret og klar. Kroppens utholdenhet fortjener anerkjennelse før mer krav legges til."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Gdzie twoje ciało wciąż się podnosi pomimo wszystkiego? Dziewiątka Buław stoi zraniona i gotowa. Wytrwałość ciała zasługuje na uznanie, zanim dodane zostaną kolejne wymagania."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Onde seu corpo continua se levantando apesar de tudo? O Nove de Paus está ferido e pronto. A persistência do corpo merece reconhecimento antes que mais demanda seja adicionada."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Var fortsätter din kropp att resa sig trots allt? Nio av Stavar står sårad och redo. Kroppens uthållighet förtjänar erkännande innan mer krav läggs till."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Де ваше тіло продовжує підніматися, незважаючи ні на що? Дев'ятка Жезлів стоїть пораненою і готовою. Наполегливість тіла заслуговує на визнання, перш ніж будуть додані нові вимоги."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_love_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht blockieren die Mauern, die für Sicherheit gebaut wurden, jetzt die Liebe. Die umgekehrte Neun der Stäbe benennt die schützende Architektur. Die Mauer diente einst; jetzt dient sie anders."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe the walls built for safety are now blocking love. The reversed Nine of Wands names the protective architecture. The wall served once; it's serving differently now."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás los muros construidos para la seguridad ahora están bloqueando el amor. El Nueve de Bastos invertido nombra la arquitectura protectora. El muro sirvió una vez; ahora está sirviendo de manera diferente."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que les murs construits pour la sécurité bloquent désormais l'amour. Le Neuf de Bâtons inversé nomme l'architecture protectrice. Le mur a servi une fois ; il sert différemment maintenant."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse i muri costruiti per la sicurezza ora stanno bloccando l'amore. Il Nove di Bastoni rovesciato nomina l'architettura protettiva. Il muro ha servito una volta; ora sta servendo in modo diverso."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、安全のために築かれた壁が今度は愛を妨げています。逆位置のワンドの9は保護的な構造を名指しします。壁はかつて役立ちました。今は異なる役割を果たしています。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje veggene bygget for sikkerhet nå blokkerer kjærligheten. Den omvendte Ni av Stav navngir den beskyttende arkitekturen. Veggen tjente en gang; den tjener annerledes nå."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może mury zbudowane dla bezpieczeństwa teraz blokują miłość. Odwrócona Dziewiątka Buław nazywa ochronną architekturę. Mur służył kiedyś; teraz służy inaczej."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez os muros construídos para segurança agora estejam bloqueando o amor. O Nove de Paus invertido nomeia a arquitetura protetora. O muro serviu uma vez; agora está servindo de forma diferente."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske murarna byggda för säkerhet nu blockerar kärleken. Den omvända Nio av Stavar namnger den skyddande arkitekturen. Muren tjänade en gång; den tjänar annorlunda nu."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, стіни, зведені для безпеки, тепер блокують любов. Перевернута Дев'ятка Жезлів називає захисну архітектуру. Стіна служила колись; тепер вона служить інакше."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_love_reversed_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Behandelt vergangener Schmerz die gegenwärtige Liebe als Bedrohung? Die umgekehrte Neun der Stäbe trennt das Historische vom Tatsächlichen. Der derzeitige Partner wird für Verbrechen verhört, die andere begangen haben."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Is past pain treating present love as a threat? The reversed Nine of Wands separates the historical from the actual. The current partner is being interrogated for crimes others committed."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿El dolor pasado trata al amor presente como una amenaza? El Nueve de Bastos invertido separa lo histórico de lo real. Se está interrogando a la pareja actual por crímenes que otros cometieron."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La douleur passée traite-t-elle l'amour présent comme une menace ? Le Neuf de Bâtons inversé sépare l'historique du réel. Le partenaire actuel est interrogé pour des crimes commis par d'autres."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Il dolore passato tratta l'amore presente come una minaccia? Il Nove di Bastoni rovesciato separa lo storico dall'attuale. Il partner attuale viene interrogato per crimini commessi da altri."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "過去の痛みが現在の愛を脅威として扱っていますか？逆位置のワンドの9は、歴史的なものと実際のものを分離します。現在のパートナーは、他の人が犯した罪で尋問されています。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Behandler tidligere smerte nåværende kjærlighet som en trussel? Den omvendte Ni av Stav skiller det historiske fra det faktiske. Den nåværende partneren blir avhørt for forbrytelser andre har begått."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy przeszły ból traktuje obecną miłość jako zagrożenie? Odwrócona Dziewiątka Buław oddziela to, co historyczne, od rzeczywistości. Obecny partner jest przesłuchiwany za zbrodnie popełnione przez innych."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "A dor do passado está tratando o amor presente como uma ameaça? O Nove de Paus invertido separa o histórico do real. O parceiro atual está sendo interrogado por crimes que outros cometeram."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Behandlar tidigare smärta nuvarande kärlek som ett hot? Den omvända Nio av Stavar separerar det historiska från det faktiska. Den nuvarande partnern förhörs för brott som andra begått."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи минулий біль сприймає теперішню любов як загрозу? Перевернута Дев'ятка Жезлів відокремлює історичне від актуального. Поточного партнера допитують за злочини, скоєні іншими."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_love_upright_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist Beharrlichkeit in der Liebe – auch müde – der Mut. Das Auftauchen der Neun der Stäbe, verwundet und willens, ist seine eigene Form der Liebe. Das unglamouröse Bleiben zählt."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Perhaps persistence in love — even tired — is the courage. The Nine of Wands' showing up wounded and willing is its own form of love. The unglamorous staying counts."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás la perseverancia en el amor, incluso cansada, es el coraje. La aparición del Nueve de Bastos, herido y dispuesto, es su propia forma de amor. El quedarse sin glamour cuenta."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que la persévérance en amour, même fatiguée, est le courage. L'apparition du Neuf de Bâtons, blessé et volontaire, est sa propre forme d'amour. Le fait de rester sans glamour compte."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse la persistenza nell'amore, anche stanca, è il coraggio. Il presentarsi del Nove di Bastoni ferito e disponibile è la sua stessa forma di amore. Il restare senza glamour conta."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、愛における忍耐は、たとえ疲れていても、勇気です。傷つきながらも喜んで現れるワンドの9は、それ自体が愛の一形態です。華やかではない継続が重要です。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje er utholdenhet i kjærlighet - selv trøtt - motet. Ni av Stavs oppmøte såret og villig er sin egen form for kjærlighet. Det uglamorøse å bli værende teller."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może wytrwałość w miłości – nawet zmęczona – jest odwagą. Pojawienie się Dziewiątki Buław, zranionej i chętnej, jest własną formą miłości. Niegłośne pozostawanie się liczy."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez a persistência no amor — mesmo cansada — seja a coragem. A aparição do Nove de Paus, ferido e disposto, é sua própria forma de amor. O ficar sem glamour conta."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är uthållighet i kärlek - även trött - modet. Nio av Stavars uppdykande sårad och villig är sin egen form av kärlek. Det oglamorösa stannandet räknas."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, наполегливість у коханні — навіть втомлена — є мужністю. Поява Дев'ятки Жезлів, пораненої та готової, є власною формою любові. Немодне залишення має значення."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.nine_of_wands_love_upright_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Wehrst du dich gegen die gegenwärtige Liebe aufgrund vergangener Wunden? Die Neun der Stäbe prüft die Bedrohungseinschätzung. Die Wachsamkeit könnte zu einer früheren Beziehung gehören, nicht zu dieser."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Are you defending against current love based on past wounds? The Nine of Wands checks the threat assessment. The vigilance may belong to an earlier relationship, not this one."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Te estás defendiendo del amor actual basándote en heridas pasadas? El Nueve de Bastos verifica la evaluación de amenazas. La vigilancia puede pertenecer a una relación anterior, no a esta."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vous défendez-vous contre l'amour présent en vous basant sur des blessures passées ? Le Neuf de Bâtons vérifie l'évaluation de la menace. La vigilance peut appartenir à une relation antérieure, pas à celle-ci."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Ti stai difendendo dall'amore presente basandoti su ferite passate? Il Nove di Bastoni verifica la valutazione della minaccia. La vigilanza potrebbe appartenere a una relazione precedente, non a questa."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "過去の傷に基づいて現在の愛から身を守っていますか？ワンドの9は脅威評価をチェックします。警戒心は以前の関係のものであり、この関係のものではないかもしれません。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forsvarer du deg mot nåværende kjærlighet basert på tidligere sår? Ni av Stav sjekker trusselvurderingen. Årvåkenheten kan tilhøre et tidligere forhold, ikke dette."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy bronisz się przed obecną miłością na podstawie przeszłych ran? Dziewiątka Buław sprawdza ocenę zagrożenia. Czujność może należeć do wcześniejszego związku, a nie do tego."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Você está se defendendo do amor atual com base em feridas passadas? O Nove de Paus verifica a avaliação de ameaças. A vigilância pode pertencer a um relacionamento anterior, não a este."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Försvarar du dig mot nuvarande kärlek baserat på tidigare sår? Nio av Stavar kontrollerar hotbedömningen. Vaksamheten kan tillhöra ett tidigare förhållande, inte detta."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи захищаєте ви себе від теперішньої любові, ґрунтуючись на минулих ранах? Дев'ятка Жезлів перевіряє оцінку загрози. Пильність може належати до попередніх стосунків, а не до цих."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_career_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht wird kreative Energie von einem zu ernsten Umfeld unterdrückt. Die umgekehrte Page der Kelche benennt den kulturellen Preis. Finde einen kleineren Raum, auch privat, wo das verspielte Arbeiten erlaubt ist."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe creative energy is being squashed by a too-serious environment. The reversed Page of Cups names the cultural cost. Find a smaller space, even private, where the playful work is allowed."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás la energía creativa está siendo aplastada por un entorno demasiado serio. La Página de Copas invertida nombra el costo cultural. Encuentra un espacio más pequeño, incluso privado, donde se permita el trabajo lúdico."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que l'énergie créative est écrasée par un environnement trop sérieux. La Page de Coupes inversée nomme le coût culturel. Trouvez un espace plus petit, même privé, où le travail ludique est autorisé."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse l'energia creativa viene schiacciata da un ambiente troppo serio. Il Paggio di Coppe rovesciato nomina il costo culturale. Trova uno spazio più piccolo, anche privato, dove il lavoro giocoso è consentito."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、創造的エネルギーは真面目すぎる環境によって押しつぶされています。逆位置のカップのページは文化的コストを名指しします。遊び心のある仕事が許可されている、より小さな、たとえプライベートなスペースを見つけてください。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje kreativ energi blir knust av et for seriøst miljø. Den omvendte Page of Cups navngir den kulturelle kostnaden. Finn et mindre rom, selv privat, der det lekne arbeidet er tillatt."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może energia twórcza jest tłumiona przez zbyt poważne środowisko. Odwrócona Pauza Kielichów nazywa koszt kulturowy. Znajdź mniejszą przestrzeń, nawet prywatną, gdzie dozwolona jest zabawa w pracy."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez a energia criativa esteja sendo esmagada por um ambiente muito sério. O Pajem de Copas invertido nomeia o custo cultural. Encontre um espaço menor, até mesmo privado, onde o trabalho lúdico seja permitido."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske krossas kreativ energi av en alltför seriös miljö. Den omvända Page of Cups namnger den kulturella kostnaden. Hitta ett mindre utrymme, även privat, där det lekfulla arbetet är tillåtet."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, творчу енергію пригнічує надто серйозне середовище. Перевернута Паж Кубків називає культурну ціну. Знайдіть менший простір, навіть приватний, де дозволена грайлива робота."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_career_reversed_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Lehnst du ein neues Projekt ab, weil es noch nicht professionell genug aussieht? Die umgekehrte Page der Kelche unterschätzt die frühe Phase. Die noch nicht polierte Version ist, wo die eigentliche Magie beginnt."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Are you dismissing a new project because it doesn't look professional enough yet? The reversed Page of Cups underestimates the early stage. The not-yet-polished version is where the actual magic starts."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Estás descartando un nuevo proyecto porque no parece lo suficientemente profesional todavía? La Página de Copas invertida subestima la etapa temprana. La versión aún no pulida es donde comienza la magia real."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Rejetez-vous un nouveau projet parce qu'il n'a pas encore l'air assez professionnel ? La Page de Coupes inversée sous-estime le stade précoce. La version pas encore polie est là où commence la magie réelle."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Stai rifiutando un nuovo progetto perché non sembra ancora abbastanza professionale? Il Paggio di Coppe rovesciato sottovaluta la fase iniziale. La versione non ancora rifinita è dove inizia la vera magia."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "新しいプロジェクトがまだ十分にプロフェッショナルに見えないという理由で却下していませんか？逆位置のカップのページは初期段階を過小評価しています。まだ磨かれていないバージョンこそが、実際の魔法が始まるところです。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Avviser du et nytt prosjekt fordi det ikke ser profesjonelt nok ut ennå? Den omvendte Page of Cups undervurderer den tidlige fasen. Den ikke-ennå-polerte versjonen er der den faktiske magien begynner."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy odrzucasz nowy projekt, ponieważ nie wygląda jeszcze wystarczająco profesjonalnie? Odwrócona Pauza Kielichów nie docenia wczesnego etapu. Wersja jeszcze nie dopracowana jest miejscem, gdzie zaczyna się prawdziwa magia."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Você está descartando um novo projeto porque ele ainda não parece profissional o suficiente? O Pajem de Copas invertido subestima o estágio inicial. A versão ainda não polida é onde a magia real começa."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Avfärdar du ett nytt projekt för att det inte ser professionellt ut än? Den omvända Page of Cups underskattar det tidiga stadiet. Den ännu inte polerade versionen är där den faktiska magin börjar."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи відкидаєте ви новий проєкт, тому що він ще не виглядає достатньо професійно? Перевернута Паж Кубків недооцінює ранню стадію. Ще не відполірована версія — це те, де починається справжня магія."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_career_upright_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist die Neugier eines Anfängers genau die richtige Energie bei der Arbeit. Die Page der Kelche muss kein Experte sein; sie muss offen sein. Die frische Frage übertrifft oft die geübte Antwort."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Perhaps a beginner's curiosity is exactly the right energy at work right now. The Page of Cups doesn't need to be expert; it needs to be open. The fresh question often outperforms the practiced answer."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás la curiosidad de un principiante es exactamente la energía adecuada en el trabajo ahora mismo. La Página de Copas no necesita ser experta; necesita estar abierta. La pregunta fresca a menudo supera a la respuesta practicada."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être que la curiosité d'un débutant est exactement la bonne énergie au travail en ce moment. La Page de Coupes n'a pas besoin d'être experte ; elle doit être ouverte. La question fraîche surpasse souvent la réponse apprise."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse la curiosità di un principiante è esattamente l'energia giusta al lavoro in questo momento. Il Paggio di Coppe non ha bisogno di essere esperto; deve essere aperto. La domanda fresca spesso supera la risposta praticata."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、初心者の好奇心はまさに今仕事に適したエネルギーです。カップのページは専門家である必要はありません。開かれている必要があります。新鮮な質問は、しばしば練習された答えよりも優れています。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje en nybegynners nysgjerrighet er akkurat den rette energien på jobb akkurat nå. Page of Cups trenger ikke å være ekspert; den må være åpen. Det friske spørsmålet overgår ofte det praktiserte svaret."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może ciekawość początkującego jest dokładnie właściwą energią w pracy w tej chwili. Pauza Kielichów nie musi być ekspertem; musi być otwarta. Świeże pytanie często przewyższa wyćwiczoną odpowiedź."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez a curiosidade de um iniciante seja exatamente a energia certa no trabalho agora. O Pajem de Copas não precisa ser especialista; precisa estar aberto. A pergunta nova geralmente supera a resposta praticada."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är en nybörjares nyfikenhet precis den rätta energin på jobbet just nu. Page of Cups behöver inte vara expert; den måste vara öppen. Den fräscha frågan överträffar ofta det inövade svaret."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, допитливість новачка — це саме та енергія, яка потрібна на роботі зараз. Паж Кубків не повинен бути експертом; він повинен бути відкритим. Свіже запитання часто перевершує відпрацьовану відповідь."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_career_upright_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Welche kreative Idee möchte ernst genommen werden, auch wenn sie albern klingt? Die Page der Kelche kommt mit verspielten Vorschlägen, die der erwachsene Verstand zu schnell abtut. Die alberne Idee verdient ein ernsthaftes Gespräch."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "What creative idea wants to be taken seriously even if it sounds silly? The Page of Cups arrives with playful proposals that the adult mind dismisses too fast. The silly idea deserves a real conversation."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Qué idea creativa quiere ser tomada en serio aunque suene tonta? La Página de Copas llega con propuestas lúdicas que la mente adulta descarta demasiado rápido. La idea tonta merece una conversación real."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quelle idée créative veut être prise au sérieux même si elle semble idiote ? La Page de Coupes arrive avec des propositions ludiques que l'esprit adulte rejette trop vite. L'idée idiote mérite une vraie conversation."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quale idea creativa vuole essere presa sul serio anche se sembra sciocca? Il Paggio di Coppe arriva con proposte giocose che la mente adulta respinge troppo in fretta. L'idea sciocca merita una vera conversazione."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "どんな創造的なアイデアが、たとえ馬鹿げているように聞こえても真剣に受け止められたいと思っていますか？カップのページは、大人の心がすぐに却下してしまう遊び心のある提案を持ってやってきます。馬鹿げたアイデアは真剣な会話に値します。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Hvilken kreativ idé ønsker å bli tatt på alvor selv om den høres dum ut? Page of Cups kommer med lekne forslag som det voksne sinnet avviser for raskt. Den dumme ideen fortjener en ekte samtale."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Jaki kreatywny pomysł chce być potraktowany poważnie, nawet jeśli brzmi głupio? Pauza Kielichów przychodzi z zabawowymi propozycjami, które dorosły umysł odrzuca zbyt szybko. Głupi pomysł zasługuje na prawdziwą rozmowę."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Que ideia criativa quer ser levada a sério mesmo que pareça boba? O Pajem de Copas chega com propostas lúdicas que a mente adulta descarta rápido demais. A ideia boba merece uma conversa real."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vilken kreativ idé vill tas på allvar även om den låter dum? Page of Cups kommer med lekfulla förslag som det vuxna sinnet avvisar för snabbt. Den dumma idén förtjänar ett riktigt samtal."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Яка творча ідея хоче, щоб її сприйняли серйозно, навіть якщо вона звучить безглуздо? Паж Кубків приходить з грайливими пропозиціями, які дорослий розум відкидає надто швидко. Безглузда ідея заслуговує на справжню розмову."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_finance_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht vermeidest du erwachsene Geldentscheidungen, indem du in Fantasien verweilst. Die umgekehrte Page der Kelche benennt den Ausweg. Der erwachsene Schritt ist fällig; der Tagtraum ist kein permanenter Wohnsitz."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe you're avoiding adult money decisions by staying in fantasy. The reversed Page of Cups names the dodge. The grown-up move is owed; the daydream isn't a permanent residence."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás estás evitando decisiones financieras adultas al permanecer en la fantasía. La Página de Copas invertida nombra la evasión. Se debe dar el paso de adulto; el sueño diurno no es una residencia permanente."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être évitez-vous les décisions financières adultes en restant dans le fantasme. La Page de Coupes inversée nomme l'esquive. L'acte d'adulte est dû ; le rêve éveillé n'est pas une résidence permanente."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse stai evitando decisioni finanziarie da adulto rimanendo nella fantasia. Il Paggio di Coppe rovesciato nomina l'elusione. La mossa da adulti è dovuta; il sogno ad occhi aperti non è una residenza permanente."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、空想に浸ることで大人のお金の決断を避けています。逆位置のカップのページは回避を名指しします。大人の行動が求められています。白昼夢は永久的な住まいではありません。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje du unngår voksne pengebeslutninger ved å forbli i fantasi. Den omvendte Page of Cups navngir unngåelsen. Det voksne trekket er forfalt; dagdrømmen er ikke en permanent bolig."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może unikasz dorosłych decyzji finansowych, pozostając w fantazji. Odwrócona Pauza Kielichów nazywa unik. Należy wykonać dorosły krok; marzenia na jawie nie są stałym miejscem zamieszkania."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez você esteja evitando decisões financeiras adultas ao permanecer na fantasia. O Pajem de Copas invertido nomeia a esquiva. O movimento adulto é devido; o devaneio não é uma residência permanente."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske undviker du vuxna penningbeslut genom att stanna i fantasin. Den omvända Page of Cups namnger undvikandet. Det vuxna draget är skyldigt; dagdrömmen är inte en permanent bostad."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, ви уникаєте дорослих фінансових рішень, залишаючись у фантазіях. Перевернута Паж Кубків називає ухилення. Дорослий крок необхідний; мрії наяву не є постійним місцем проживання."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_finance_reversed_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Ersetzt Wunschdenken die tatsächliche Finanzplanung? Die umgekehrte Page der Kelche erkennt die Fantasie als Ersatz. Der Wunsch ist in Ordnung; alleinstehend ist er kein Plan."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Is wishful thinking replacing actual financial planning? The reversed Page of Cups catches the fantasy as substitute. The wish is fine; standing alone, it isn't a plan."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿El pensamiento deseoso está reemplazando la planificación financiera real? La Página de Copas invertida capta la fantasía como sustituto. El deseo está bien; por sí solo, no es un plan."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "La pensée magique remplace-t-elle la planification financière réelle ? La Page de Coupes inversée saisit le fantasme comme substitut. Le souhait est bien ; seul, ce n'est pas un plan."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Il pensiero desideroso sta sostituendo la pianificazione finanziaria reale? Il Paggio di Coppe rovesciato coglie la fantasia come sostituto. Il desiderio va bene; da solo, non è un piano."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "願望思考が実際の財務計画に取って代わっていますか？逆位置のカップのページはファンタジーを代替として捉えます。願い事は結構です。それだけでは計画にはなりません。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Er ønsketenkning i ferd med å erstatte faktisk finansiell planlegging? Den omvendte Page of Cups fanger fantasien som erstatning. Ønsket er greit; alene er det ikke en plan."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Czy myślenie życzeniowe zastępuje rzeczywiste planowanie finansowe? Odwrócona Pauza Kielichów łapie fantazję jako substytut. Życzenie jest w porządku; samo w sobie nie jest planem."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "O pensamento positivo está substituindo o planejamento financeiro real? O Pajem de Copas invertido capta a fantasia como substituto. O desejo é bom; sozinho, não é um plano."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Ersätter önsketänkande faktisk ekonomisk planering? Den omvända Page of Cups fångar fantasin som ersättning. Önskan är bra; ensam är den ingen plan."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Чи замінює бажане мислення фактичне фінансове планування? Перевернута Паж Кубків виявляє фантазію як замінник. Бажання добре; саме по собі це не план."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_finance_upright_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht lohnt es sich, eine kreative Einkommensquelle zu erkunden. Die Page der Kelche deutet den unkonventionellen Kanal an. Das Hobby könnte eine kleine wirtschaftliche Version haben, wenn du es zulässt."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Perhaps a creative source of income is worth exploring. The Page of Cups suggests the unconventional channel. The hobby may have a small economic version if you let it."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás vale la pena explorar una fuente creativa de ingresos. La Página de Copas sugiere el canal no convencional. El pasatiempo puede tener una pequeña versión económica si lo permites."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être qu'une source de revenus créative mérite d'être explorée. La Page de Coupes suggère le canal non conventionnel. Le passe-temps peut avoir une petite version économique si vous le permettez."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse vale la pena esplorare una fonte di reddito creativa. Il Paggio di Coppe suggerisce il canale non convenzionale. L'hobby potrebbe avere una piccola versione economica se glielo permetti."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、創造的な収入源を探る価値があります。カップのページは型破りなチャネルを示唆します。趣味は、あなたがそれを許せば、小さな経済的バージョンを持つかもしれません。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje en kreativ inntektskilde er verdt å utforske. Page of Cups foreslår den ukonvensjonelle kanalen. Hobbyen kan ha en liten økonomisk versjon hvis du lar den."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może warto zbadać kreatywne źródło dochodu. Pauza Kielichów sugeruje niekonwencjonalny kanał. Hobby może mieć małą ekonomiczną wersję, jeśli na to pozwolisz."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez valha a pena explorar uma fonte criativa de renda. O Pajem de Copas sugere o canal não convencional. O hobby pode ter uma pequena versão econômica se você permitir."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är en kreativ inkomstkälla värd att utforska. Page of Cups föreslår den okonventionella kanalen. Hobbyn kan ha en liten ekonomisk version om du låter den."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, варто дослідити творче джерело доходу. Паж Кубків пропонує нетрадиційний канал. Хобі може мати невелику економічну версію, якщо ви дозволите."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_finance_upright_unclear" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Mit welchem kleinen, verspielten finanziellen Experiment würdest du beginnen? Die Page der Kelche liebt Tests mit geringem Einsatz. Gib einen kleinen, definierten Betrag für die Idee aus, auf die du neugierig warst, und sieh, was du lernst."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "What small, playful financial experiment would you try? The Page of Cups loves a low-stakes test. Spend a small defined amount on the idea you've been curious about and see what you learn."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "¿Qué pequeño y lúdico experimento financiero probarías? La Página de Copas ama una prueba de bajo riesgo. Gasta una pequeña cantidad definida en la idea que te ha despertado curiosidad y mira lo que aprendes."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quelle petite expérience financière ludique essaieriez-vous ? La Page de Coupes aime les tests à faible enjeu. Dépensez un petit montant défini sur l'idée qui vous a intrigué et voyez ce que vous apprenez."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quale piccolo esperimento finanziario giocoso proveresti? Il Paggio di Coppe ama i test a basso rischio. Spendi una piccola somma definita sull'idea che ti ha incuriosito e scopri cosa impari."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "どんな小さな遊び心のある財務実験を試してみますか？カップのページは低リスクのテストが大好きです。気になっていたアイデアに少額の決まった金額を使ってみて、何を学ぶか見てみましょう。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Hvilket lite, lekent økonomisk eksperiment ville du prøve? Page of Cups elsker en test med lav innsats. Bruk et lite definert beløp på ideen du har vært nysgjerrig på og se hva du lærer."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Jaki mały, zabawowy eksperyment finansowy byś wypróbował? Pauza Kielichów uwielbia testy o niskiej stawce. Wydaj małą, określoną kwotę na pomysł, który cię ciekawił i zobacz, czego się nauczysz."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Que pequeno experimento financeiro lúdico você tentaria? O Pajem de Copas adora um teste de baixo risco. Gaste uma pequena quantia definida na ideia que você tem curiosidade e veja o que aprende."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vilket litet, lekfullt finansiellt experiment skulle du prova? Page of Cups älskar ett test med låga insatser. Spendera ett litet definierat belopp på idén du varit nyfiken på och se vad du lär dig."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Який невеликий, грайливий фінансовий експеримент ви б спробували? Паж Кубків любить тести з низькими ставками. Витратьте невелику визначену суму на ідею, яка вас цікавила, і подивіться, чого ви навчитеся."
+                                    }
+                                  }
+                                }
+                              },
+                              "interpretation.page_of_cups_general_reversed_not_resonating" : {
+                                "extractionState" : "manual",
+                                "localizations" : {
+                                  "de" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Vielleicht ist eine Gewohnheit der emotionalen Vermeidung jetzt das Problem selbst. Die umgekehrte Page der Kelche benennt die Vermeidung als das Problem. Die Sache, die umgangen wird, ist nicht mehr das größere Problem als das Ausweichen selbst."
+                                    }
+                                  },
+                                  "en" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Maybe a habit of emotional avoidance is now the problem itself. The reversed Page of Cups names the avoidance as the issue. The thing being dodged is no longer the bigger problem than the dodging."
+                                    }
+                                  },
+                                  "es" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Quizás un hábito de evitación emocional es ahora el problema en sí mismo. La Página de Copas invertida nombra la evitación como el problema. Lo que se está evadiendo ya no es un problema mayor que la evasión misma."
+                                    }
+                                  },
+                                  "fr" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Peut-être qu'une habitude d'évitement émotionnel est désormais le problème lui-même. La Page de Coupes inversée nomme l'évitement comme le problème. La chose évitée n'est plus un problème plus grand que l'évitement lui-même."
+                                    }
+                                  },
+                                  "it" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Forse un'abitudine di evitamento emotivo è ora il problema stesso. Il Paggio di Coppe rovesciato nomina l'evitamento come il problema. La cosa che viene evitata non è più un problema più grande dell'evitamento stesso."
+                                    }
+                                  },
+                                  "ja" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "おそらく、感情的な回避の習慣が今や問題そのものになっています。逆位置のカップのページは回避を問題として名指しします。回避されているものは、もはや回避自体よりも大きな問題ではありません。"
+                                    }
+                                  },
+                                  "nb" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanskje en vane med følelsesmessig unngåelse nå er problemet i seg selv. Den omvendte Page of Cups navngir unngåelsen som problemet. Det som unngås er ikke lenger et større problem enn unngåelsen i seg selv."
+                                    }
+                                  },
+                                  "pl" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Być może nawyk unikania emocji jest teraz sam w sobie problemem. Odwrócona Pauza Kielichów nazywa unikanie problemem. To, czego się unika, nie jest już większym problemem niż samo unikanie."
+                                    }
+                                  },
+                                  "pt-BR" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Talvez um hábito de evitação emocional seja agora o problema em si. O Pajem de Copas invertido nomeia a evitação como o problema. Aquilo que está sendo evitado não é mais um problema maior do que a evitação em si."
+                                    }
+                                  },
+                                  "sv" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Kanske är en vana av känslomässigt undvikande nu själva problemet. Den omvända Page of Cups namnger undvikandet som problemet. Det som undviks är inte längre ett större problem än själva undvikandet."
+                                    }
+                                  },
+                                  "uk" : {
+                                    "stringUnit" : {
+                                      "state" : "translated",
+                                      "value" : "Можливо, звичка уникати емоцій тепер сама по собі є проблемою. Перевернута Паж Кубків називає уникнення проблемою. Те, що уникають, більше не є більшою проблемою, ніж саме уникнення."
+                                    }
+                                  }
+                                }
+                              },
     "interpretation.page_of_cups_general_reversed_unclear" : {
       "extractionState" : "manual",
       "localizations" : {
