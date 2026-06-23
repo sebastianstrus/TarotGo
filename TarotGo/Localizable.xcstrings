@@ -283777,193 +283777,1213 @@
                                                                                                     }
                                                                                                   }
                                                                                                 },
-    "interpretation.two_of_wands_career_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps it's time to choose the direction and commit. The Two of Wands' globe doesn't ask for more research. The vision is clear enough to act on; the action is what's missing."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_career_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What career view are you assessing from a safe distance? The Two of Wands stands on the balcony with a globe in hand. The world is real; the stepping into it is the part still being delayed."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_finance_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe playing it safe has its own cost. The reversed Two of Wands does the math on inaction. The 'safe' choice often loses to the considered risk over time."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_finance_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is financial planning replacing financial action? The reversed Two of Wands catches the dashboard built but never used. The plan is meant to be a tool, not a substitute."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_finance_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps a long-view money strategy beats reaction. The Two of Wands favors the multi-year frame. The decisions get easier when measured against where you actually want to be."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_finance_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What financial future are you sketching that needs first steps? The Two of Wands plans the territory but doesn't yet enter it. The map needs feet on it to become a route."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_general_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe fear, not strategy, is what's choosing. The reversed Two of Wands names the actual decider. The reasonable-sounding reasons are often fear's dressed-up version."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_general_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Where is the planning becoming a substitute for going? The reversed Two of Wands catches the strategy as comfort. The map has been redrawn enough; the journey awaits."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_general_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps the next move requires actually leaving the castle. The Two of Wands' globe stays a decoration unless feet follow. The step off the parapet is the actual play."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_general_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What world are you looking at from the balcony? The Two of Wands holds the wider view. Notice what you've seen clearly without yet moving toward."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_health_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe waiting for certainty is itself the obstacle. The reversed Two of Wands ends the search for guaranteed outcomes. No protocol carries certainty; act anyway."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_health_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is fear of unfamiliar territory keeping a health step delayed? The reversed Two of Wands names the comfort-zone gravity. Familiar discomfort often beats unfamiliar improvement in the mind's calculation."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_health_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps long-term thinking changes today's choice. The Two of Wands measures health in years, not weeks. The decision today votes for the eighty-year-old you."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_health_upright_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What new health vision needs a concrete first step? The Two of Wands sees the future shape. Translate it into one specific action this week."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_love_reversed_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maybe both of you are waiting on the other to move. The reversed Two of Wands diagnoses the stalemate. Someone has to step first; the standoff doesn't dissolve on its own."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_love_reversed_unclear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Is fear of the unknown keeping a relationship in the planning phase? The reversed Two of Wands catches the suspended deepening. The talk about the future replaces the move into it."
-          }
-        }
-      }
-    },
-    "interpretation.two_of_wands_love_upright_not_resonating" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Perhaps planning a future together — concretely — is the next stage. The Two of Wands invites the joint vision in specifics. Generic 'maybe someday' isn't the same as a shared plan."
-          }
-        }
-      }
-    },
+                                                                                                "interpretation.two_of_wands_career_upright_not_resonating": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Perhaps it's time to choose the direction and commit. The Two of Wands' globe doesn't ask for more research. The vision is clear enough to act on; the action is what's missing."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vielleicht ist es an der Zeit, die Richtung zu wählen und sich festzulegen. Der Globus der Zwei der Stäbe fordert nicht mehr Forschung. Die Vision ist klar genug, um zu handeln; das Handeln fehlt."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quizás sea el momento de elegir la dirección y comprometerse. El globo del Dos de Bastos no pide más investigación. La visión es lo suficientemente clara para actuar; lo que falta es la acción."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Il est peut-être temps de choisir la direction et de s'engager. Le globe du Deux de Bâtons ne demande pas plus de recherches. La vision est assez claire pour agir ; c'est l'action qui manque."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Forse è il momento di scegliere la direzione e impegnarsi. Il globo del Due di Bastoni non chiede ulteriori ricerche. La visione è abbastanza chiara per agire; è l'azione che manca."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "おそらく、方向性を選択してコミットする時です。ワンドの２の地球儀は、さらなる調査を求めていません。ビジョンは行動に移すのに十分明確です。欠けているのは行動です。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanskje er det på tide å velge retning og forplikte seg. To av stavers globus ber ikke om mer forskning. Visjonen er tydelig nok til å handle på; det er handlingen som mangler."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Być może nadszedł czas, aby wybrać kierunek i podjąć zobowiązanie. Globus Dwójki Buław nie wymaga dalszych badań. Wizja jest wystarczająco jasna, aby działać; brakuje działania."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Talvez seja hora de escolher a direção e se comprometer. O globo do Dois de Paus não pede mais pesquisas. A visão é clara o suficiente para agir; a ação é o que está faltando."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanske är det dags att välja riktning och åta sig. Två av stavars globus ber inte om mer forskning. Visionen är tillräckligt tydlig för att agera på; det är handlingen som saknas."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Можливо, настав час обрати напрямок і взяти на себе зобов'язання. Глобус Двійки Жезлів не вимагає подальших досліджень. Бачення достатньо чітке, щоб діяти; бракує дії."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_career_upright_unclear": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "What career view are you assessing from a safe distance? The Two of Wands stands on the balcony with a globe in hand. The world is real; the stepping into it is the part still being delayed."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Welche Karriereperspektive bewertest du aus sicherer Entfernung? Die Zwei der Stäbe steht auf dem Balkon mit einem Globus in der Hand. Die Welt ist real; der Schritt hinein wird noch verzögert."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "¿Qué perspectiva profesional estás evaluando desde una distancia segura? El Dos de Bastos está en el balcón con un globo terráqueo en la mano. El mundo es real; el paso hacia él es la parte que aún se retrasa."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quelle vision de carrière évalues-tu à distance de sécurité ? Le Deux de Bâtons se tient sur le balcon, un globe à la main. Le monde est réel ; le fait d'y entrer est la partie qui est encore retardée."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quale prospettiva professionale stai valutando da una distanza di sicurezza? Il Due di Bastoni si trova sul balcone con un globo in mano. Il mondo è reale; l'entrare in esso è la parte che viene ancora ritardata."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "あなたはどのようなキャリア観を安全な距離から評価していますか？ワンドの２は手に地球儀を持ってバルコニーに立っています。世界は現実です。そこに足を踏み入れることがまだ遅れている部分です。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Hvilket karrieresyn vurderer du fra trygg avstand? To av staver står på balkongen med en globus i hånden. Verden er ekte; det å tre inn i den er delen som fremdeles blir utsatt."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Jaką perspektywę zawodową oceniasz z bezpiecznej odległości? Dwójka Buław stoi na balkonie z globusem w dłoni. Świat jest prawdziwy; wejście w niego to część, która wciąż jest opóźniana."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Que visão de carreira você está avaliando a uma distância segura? O Dois de Paus está na varanda com um globo na mão. O mundo é real; o passo para dentro dele é a parte que ainda está sendo adiada."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vilken karriärsyn bedömer du från ett säkert avstånd? Två av stavar står på balkongen med en globus i handen. Världen är verklig; steget in i den är den del som fortfarande fördröjs."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Яке кар'єрне бачення ви оцінюєте з безпечної відстані? Двійка Жезлів стоїть на балконі з глобусом у руці. Світ реальний; вступ у нього - це частина, яка досі відкладається."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_finance_reversed_not_resonating": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Maybe playing it safe has its own cost. The reversed Two of Wands does the math on inaction. The 'safe' choice often loses to the considered risk over time."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vielleicht hat es seinen eigenen Preis, auf Nummer sicher zu gehen. Die umgekehrte Zwei der Stäbe rechnet die Untätigkeit durch. Die 'sichere' Wahl verliert auf lange Sicht oft gegen das durchdachte Risiko."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Tal vez jugar sobre seguro tenga su propio costo. El Dos de Bastos invertido calcula la inacción. La opción 'segura' a menudo pierde frente al riesgo considerado a largo plazo."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Peut-être que jouer la sécurité a son propre coût. Le Deux de Bâtons inversé fait le calcul de l'inaction. Le choix 'sûr' perd souvent face au risque réfléchi sur le long terme."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Forse giocare sul sicuro ha il suo costo. Il Due di Bastoni rovesciato calcola l'inazione. La scelta 'sicura' spesso perde contro il rischio ponderato nel tempo."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "おそらく、安全策を取ることにはそれ自体のコストがかかります。逆位置のワンドの２は、無為を計算します。「安全な」選択は、時間の経過とともに熟考されたリスクに負けることがよくあります。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanskje det å spille trygt har sin egen pris. Den omvendte To av staver regner på passivitet. Det 'trygge' valget taper ofte mot den overveide risikoen over tid."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Być może gra na bezpieczeństwo ma swój własny koszt. Odwrócona Dwójka Buław oblicza bezczynność. 'Bezpieczny' wybór często przegrywa z przemyślanym ryzykiem w dłuższej perspektywie."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Talvez jogar pelo seguro tenha seu próprio custo. O Dois de Paus invertido faz as contas da inação. A escolha 'segura' muitas vezes perde para o risco ponderado com o tempo."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanske har det ett pris att spela säkert. Den omvända Två av stavar räknar på inaktivitet. Det 'säkra' valet förlorar ofta mot den övervägda risken över tid."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Можливо, гра на безпеці має свою ціну. Перевернута Двійка Жезлів прораховує бездіяльність. 'Безпечний' вибір часто програє обдуманому ризику з часом."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_finance_reversed_unclear": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Is financial planning replacing financial action? The reversed Two of Wands catches the dashboard built but never used. The plan is meant to be a tool, not a substitute."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Ersetzt die Finanzplanung das finanzielle Handeln? Die umgekehrte Zwei der Stäbe erwischt das Dashboard, das gebaut, aber nie genutzt wurde. Der Plan soll ein Werkzeug sein, kein Ersatz."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "¿Está la planificación financiera reemplazando la acción financiera? El Dos de Bastos invertido atrapa el tablero construido pero nunca utilizado. El plan está destinado a ser una herramienta, no un sustituto."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "La planification financière remplace-t-elle l'action financière ? Le Deux de Bâtons inversé attrape le tableau de bord construit mais jamais utilisé. Le plan est censé être un outil, pas un substitut."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "La pianificazione finanziaria sta sostituendo l'azione finanziaria? Il Due di Bastoni rovesciato coglie il cruscotto costruito ma mai utilizzato. Il piano è destinato ad essere uno strumento, non un sostituto."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "財務計画が財務行動を置き換えていませんか？逆位置のワンドの２は、構築されたが決して使用されなかったダッシュボードを捉えます。計画はツールであることを意図しており、代替物ではありません。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Er finansiell planlegging i ferd med å erstatte finansiell handling? Den omvendte To av staver fanger dashbordet som ble bygget, men aldri brukt. Planen er ment å være et verktøy, ikke en erstatning."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Czy planowanie finansowe zastępuje działanie finansowe? Odwrócona Dwójka Buław łapie pulpit nawigacyjny zbudowany, ale nigdy nie używany. Plan ma być narzędziem, a nie substytutem."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "O planejamento financeiro está substituindo a ação financeira? O Dois de Paus invertido captura o painel construído, mas nunca usado. O plano deve ser uma ferramenta, não um substituto."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Ersätter ekonomisk planering ekonomisk handling? Den omvända Två av stavar fångar instrumentpanelen som byggdes men aldrig användes. Planen är tänkt att vara ett verktyg, inte en ersättning."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Чи замінює фінансове планування фінансові дії? Перевернута Двійка Жезлів викриває панель, яку створили, але ніколи не використовували. План має бути інструментом, а не заміною."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_finance_upright_not_resonating": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Perhaps a long-view money strategy beats reaction. The Two of Wands favors the multi-year frame. The decisions get easier when measured against where you actually want to be."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vielleicht schlägt eine langfristige Geldstrategie die Reaktion. Die Zwei der Stäbe bevorzugt den mehrjährigen Rahmen. Die Entscheidungen werden einfacher, wenn sie daran gemessen werden, wo du tatsächlich sein möchtest."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quizás una estrategia monetaria a largo plazo vence a la reacción. El Dos de Bastos favorece el marco plurianual. Las decisiones se vuelven más fáciles cuando se miden con respecto a dónde quieres estar realmente."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Peut-être qu'une stratégie financière à long terme bat la réaction. Le Deux de Bâtons favorise le cadre pluriannuel. Les décisions deviennent plus faciles lorsqu'elles sont mesurées par rapport à l'endroit où tu veux vraiment être."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Forse una strategia finanziaria a lungo termine batte la reazione. Il Due di Bastoni favorisce il quadro pluriennale. Le decisioni diventano più facili quando vengono misurate rispetto a dove vuoi effettivamente essere."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "おそらく、長期的なお金の戦略が反応に勝ります。ワンドの２は複数年の枠組みを好みます。あなたが実際にいたい場所に対して測定されると、決断は容易になります。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanskje en langsiktig pengestrategi slår reaksjon. To av staver favoriserer flerårsrammen. Beslutningene blir enklere når de måles mot hvor du faktisk ønsker å være."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Być może długoterminowa strategia finansowa pokonuje reakcję. Dwójka Buław sprzyja perspektywie wieloletniej. Decyzje stają się łatwiejsze, gdy mierzy się je tam, gdzie chcesz być."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Talvez uma estratégia financeira de longo prazo vença a reação. O Dois de Paus favorece o período de vários anos. As decisões ficam mais fáceis quando medidas contra onde você realmente quer estar."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanske slår en långsiktig pengastrategi reaktion. Två av stavar gynnar flerårsramen. Besluten blir enklare när de mäts mot var du faktiskt vill vara."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Можливо, довгострокова грошова стратегія перемагає реакцію. Двійка Жезлів надає перевагу багаторічним рамкам. Рішення стають легшими, коли їх вимірюють відповідно до того, де ви хочете бути."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_finance_upright_unclear": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "What financial future are you sketching that needs first steps? The Two of Wands plans the territory but doesn't yet enter it. The map needs feet on it to become a route."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Welche finanzielle Zukunft entwirfst du, die erste Schritte braucht? Die Zwei der Stäbe plant das Territorium, betritt es aber noch nicht. Die Karte braucht Füße, um eine Route zu werden."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "¿Qué futuro financiero estás esbozando que necesita primeros pasos? El Dos de Bastos planifica el territorio pero aún no entra en él. El mapa necesita pies para convertirse en una ruta."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quel avenir financier esquisses-tu qui a besoin de premiers pas ? Le Deux de Bâtons planifie le territoire mais n'y entre pas encore. La carte a besoin de pieds pour devenir un itinéraire."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quale futuro finanziario stai abbozzando che necessita di primi passi? Il Due di Bastoni pianifica il territorio ma non vi entra ancora. La mappa ha bisogno di piedi per diventare un percorso."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "最初のステップを必要とするどんな経済的未来を描いていますか？ワンドの２は領域を計画しますが、まだそこには入りません。地図がルートになるには足が必要です。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Hvilken finansiell fremtid skisserer du som trenger første skritt? To av staver planlegger territoriet, men går ennå ikke inn i det. Kartet trenger føtter på det for å bli en rute."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Jaką przyszłość finansową szkicujesz, która potrzebuje pierwszych kroków? Dwójka Buław planuje terytorium, ale jeszcze na nie nie wchodzi. Mapa potrzebuje stóp, aby stać się trasą."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Que futuro financeiro você está esboçando que precisa de primeiros passos? O Dois de Paus planeja o território, mas ainda não entra nele. O mapa precisa de pés para se tornar uma rota."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vilken finansiell framtid skissar du som behöver första steg? Två av stavar planerar territoriet men går ännu inte in i det. Kartan behöver fötter på den för att bli en rutt."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Яке фінансове майбутнє ви намічаєте, яке потребує перших кроків? Двійка Жезлів планує територію, але ще не входить до неї. Карта потребує ніг, щоб стати маршрутом."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_general_reversed_not_resonating": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Maybe fear, not strategy, is what's choosing. The reversed Two of Wands names the actual decider. The reasonable-sounding reasons are often fear's dressed-up version."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vielleicht ist es die Angst, nicht die Strategie, die wählt. Die umgekehrte Zwei der Stäbe benennt den tatsächlichen Entscheider. Die vernünftig klingenden Gründe sind oft die verkleidete Version der Angst."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quizás el miedo, no la estrategia, es lo que está eligiendo. El Dos de Bastos invertido nombra al verdadero decisor. Las razones que suenan razonables son a menudo la versión disfrazada del miedo."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Peut-être que la peur, et non la stratégie, est ce qui choisit. Le Deux de Bâtons inversé nomme le véritable décideur. Les raisons qui semblent raisonnables sont souvent la version déguisée de la peur."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Forse la paura, non la strategia, è ciò che sceglie. Il Due di Bastoni rovesciato nomina il vero decisore. Le ragioni che sembrano ragionevoli sono spesso la versione camuffata della paura."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "おそらく、選択しているのは戦略ではなく恐怖です。逆位置のワンドの２は、実際の決定者を名指しします。もっともらしい理由は、しばしば恐怖の着飾ったバージョンです。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanskje er det frykt, ikke strategi, som velger. Den omvendte To av staver navngir den faktiske beslutningstakeren. De fornuftig-klingende grunnene er ofte fryktens utkledde versjon."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Być może to strach, a nie strategia, dokonuje wyboru. Odwrócona Dwójka Buław nazywa faktycznego decydenta. Powody brzmiące rozsądnie są często przebraną wersją strachu."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Talvez o medo, não a estratégia, seja o que está escolhendo. O Dois de Paus invertido nomeia o verdadeiro decisor. As razões que parecem razoáveis são frequentemente a versão disfarçada do medo."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanske är det rädsla, inte strategi, som väljer. Den omvända Två av stavar namnger den faktiska beslutsfattaren. De rimligt klingande skälen är ofta rädslans utklädda version."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Можливо, страх, а не стратегія, обирає. Перевернута Двійка Жезлів називає фактичного рішучого. Розумно звучать причини часто є замаскованою версією страху."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_general_reversed_unclear": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Where is the planning becoming a substitute for going? The reversed Two of Wands catches the strategy as comfort. The map has been redrawn enough; the journey awaits."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Wo wird die Planung zum Ersatz für das Gehen? Die umgekehrte Zwei der Stäbe erwischt die Strategie als Komfort. Die Karte wurde oft genug neu gezeichnet; die Reise wartet."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "¿Dónde se está convirtiendo la planificación en un sustituto de ir? El Dos de Bastos invertido atrapa la estrategia como consuelo. El mapa se ha vuelto a dibujar lo suficiente; el viaje espera."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Où la planification devient-elle un substitut à l'action ? Le Deux de Bâtons inversé attrape la stratégie comme réconfort. La carte a été redessinée assez ; le voyage attend."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Dove la pianificazione sta diventando un sostituto dell'andare? Il Due di Bastoni rovesciato coglie la strategia come conforto. La mappa è stata ridisegnata abbastanza; il viaggio attende."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "計画はどこで実行の代わりになりつつありますか？逆位置のワンドの２は、戦略を快適さとして捉えます。地図は十分に書き直されました。旅が待っています。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Hvor blir planleggingen en erstatning for å gå? Den omvendte To av staver fanger strategien som komfort. Kartet har blitt tegnet om nok; reisen venter."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Gdzie planowanie staje się substytutem działania? Odwrócona Dwójka Buław łapie strategię jako pocieszenie. Mapa została przerysowana wystarczająco dużo; podróż czeka."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Onde o planejamento está se tornando um substituto para ir? O Dois de Paus invertido captura a estratégia como conforto. O mapa foi redesenhado o suficiente; a jornada espera."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Var blir planeringen en ersättning för att gå? Den omvända Två av stavar fångar strategin som tröst. Kartan har ritats om tillräckligt; resan väntar."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Де планування стає заміною дії? Перевернута Двійка Жезлів викриває стратегію як комфорт. Карту перемальовували достатньо; подорож чекає."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_general_upright_not_resonating": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Perhaps the next move requires actually leaving the castle. The Two of Wands' globe stays a decoration unless feet follow. The step off the parapet is the actual play."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vielleicht erfordert der nächste Schritt tatsächlich das Verlassen des Schlosses. Der Globus der Zwei der Stäbe bleibt eine Dekoration, es sei denn, die Füße folgen. Der Schritt von der Brüstung ist der eigentliche Zug."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quizás el siguiente movimiento requiere salir realmente del castillo. El globo del Dos de Bastos sigue siendo una decoración a menos que los pies sigan. El paso desde el parapeto es la jugada real."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Le prochain mouvement nécessite peut-être de quitter réellement le château. Le globe du Deux de Bâtons reste une décoration à moins que les pieds ne suivent. Le pas depuis le parapet est le vrai coup."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Forse la prossima mossa richiede di lasciare effettivamente il castello. Il globo del Due di Bastoni rimane una decorazione a meno che i piedi non seguano. Il passo dal parapetto è la mossa reale."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "おそらく次の一手は、実際に城を離れることを必要とします。ワンドの２の地球儀は、足が従わない限り装飾品のままです。胸壁から降りるステップが実際の一手です。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanskje neste trekk krever å faktisk forlate slottet. To av stavers globus forblir en dekorasjon med mindre føtter følger. Steget av brystverket er det faktiske trekket."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Być może następny ruch wymaga faktycznego opuszczenia zamku. Globus Dwójki Buław pozostaje dekoracją, chyba że stopy podążą. Krok z parapetu jest rzeczywistym posunięciem."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Talvez o próximo movimento exija realmente deixar o castelo. O globo do Dois de Paus continua sendo uma decoração, a menos que os pés sigam. O passo do parapeito é a jogada real."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanske kräver nästa drag att faktiskt lämna slottet. Två av stavars globus förblir en dekoration om inte fötterna följer. Steget från bröstvärnet är det faktiska draget."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Можливо, наступний крок вимагає фактичного залишення замку. Глобус Двійки Жезлів залишається прикрасою, якщо ноги не слідують. Крок з парапету - це фактичний хід."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_general_upright_unclear": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "What world are you looking at from the balcony? The Two of Wands holds the wider view. Notice what you've seen clearly without yet moving toward."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Auf welche Welt schaust du vom Balkon aus? Die Zwei der Stäbe hält die weite Sicht. Nimm wahr, was du klar gesehen hast, ohne dich noch darauf zuzubewegen."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "¿A qué mundo estás mirando desde el balcón? El Dos de Bastos tiene la visión más amplia. Nota lo que has visto claramente sin moverte hacia ello todavía."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "À quel monde regardes-tu depuis le balcon ? Le Deux de Bâtons détient la vue d'ensemble. Remarque ce que tu as vu clairement sans encore t'y diriger."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Che mondo stai guardando dal balcone? Il Due di Bastoni ha la visione più ampia. Nota ciò che hai visto chiaramente senza ancora muoverti verso di esso."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "バルコニーからどの世界を見ていますか？ワンドの２は、より広い視野を持っています。まだ向かっていないものを明確に見たことに気づいてください。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Hvilken verden ser du på fra balkongen? To av staver holder det bredere synet. Legg merke til hva du har sett tydelig uten ennå å bevege deg mot."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Na jaki świat patrzysz z balkonu? Dwójka Buław ma szerszy widok. Zwróć uwagę na to, co widziałeś wyraźnie, nie poruszając się jeszcze w jego kierunku."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Que mundo você está olhando da varanda? O Dois de Paus tem a visão mais ampla. Observe o que você viu claramente sem ainda se mover em direção a isso."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vilken värld tittar du på från balkongen? Två av stavar har den bredare vyn. Lägg märke till vad du har sett tydligt utan att ännu röra dig mot det."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "На який світ ви дивитеся з балкона? Двійка Жезлів тримає ширший погляд. Зверніть увагу на те, що ви чітко побачили, ще не рухаючись до цього."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_health_reversed_not_resonating": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Maybe waiting for certainty is itself the obstacle. The reversed Two of Wands ends the search for guaranteed outcomes. No protocol carries certainty; act anyway."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vielleicht ist das Warten auf Gewissheit selbst das Hindernis. Die umgekehrte Zwei der Stäbe beendet die Suche nach garantierten Ergebnissen. Kein Protokoll bringt Gewissheit; handle trotzdem."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quizás esperar certezas es en sí mismo el obstáculo. El Dos de Bastos invertido termina con la búsqueda de resultados garantizados. Ningún protocolo conlleva certeza; actúa de todos modos."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Peut-être qu'attendre la certitude est en soi l'obstacle. Le Deux de Bâtons inversé met fin à la recherche de résultats garantis. Aucun protocole n'apporte la certitude ; agis quand même."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Forse aspettare la certezza è di per sé l'ostacolo. Il Due di Bastoni rovesciato pone fine alla ricerca di risultati garantiti. Nessun protocollo porta certezza; agisci comunque."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "おそらく、確実性を待つこと自体が障害です。逆位置のワンドの２は、保証された結果の探求を終わらせます。どのプロトコルも確実性をもたらしません。それでも行動してください。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanskje venting på sikkerhet i seg selv er hindringen. Den omvendte To av staver avslutter søket etter garanterte utfall. Ingen protokoll gir sikkerhet; handle likevel."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Być może czekanie na pewność jest samo w sobie przeszkodą. Odwrócona Dwójka Buław kończy poszukiwanie gwarantowanych wyników. Żaden protokół nie niesie pewności; działaj mimo to."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Talvez esperar por certezas seja em si o obstáculo. O Dois de Paus invertido encerra a busca por resultados garantidos. Nenhum protocolo traz certeza; aja mesmo assim."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanske är väntan på säkerhet i sig hindret. Den omvända Två av stavar avslutar sökandet efter garanterade resultat. Inget protokoll ger säkerhet; agera ändå."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Можливо, очікування впевненості саме по собі є перешкодою. Перевернута Двійка Жезлів припиняє пошук гарантованих результатів. Жоден протокол не дає впевненості; дійте все одно."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_health_reversed_unclear": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Is fear of unfamiliar territory keeping a health step delayed? The reversed Two of Wands names the comfort-zone gravity. Familiar discomfort often beats unfamiliar improvement in the mind's calculation."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Hält die Angst vor unbekanntem Terrain einen Gesundheitsschritt verzögert? Die umgekehrte Zwei der Stäbe benennt die Anziehungskraft der Komfortzone. Vertrautes Unbehagen schlägt in der Berechnung des Verstandes oft unbekannte Verbesserung."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "¿El miedo a un territorio desconocido mantiene retrasado un paso de salud? El Dos de Bastos invertido nombra la gravedad de la zona de confort. La incomodidad familiar a menudo vence a la mejora desconocida en el cálculo de la mente."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "La peur d'un territoire inconnu retarde-t-elle une étape de santé ? Le Deux de Bâtons inversé nomme la gravité de la zone de confort. L'inconfort familier l'emporte souvent sur l'amélioration inconnue dans le calcul de l'esprit."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "La paura di un territorio sconosciuto sta ritardando un passo per la salute? Il Due di Bastoni rovesciato nomina la gravità della zona di comfort. Il disagio familiare spesso batte il miglioramento sconosciuto nel calcolo della mente."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "未知の領域への恐怖が健康へのステップを遅らせていますか？逆位置のワンドの２は、コンフォートゾーンの引力を名指しします。馴染みのある不快感は、心の計算において未知の改善に勝ることがよくあります。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Holder frykt for ukjent terreng et helseskritt forsinket? Den omvendte To av staver navngir komfortsonens tyngdekraft. Kjent ubehag slår ofte ukjent forbedring i sinnets beregning."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Czy strach przed nieznanym terytorium opóźnia krok zdrowotny? Odwrócona Dwójka Buław nazywa grawitację strefy komfortu. Znany dyskomfort często pokonuje nieznaną poprawę w kalkulacji umysłu."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "O medo de território desconhecido está atrasando um passo para a saúde? O Dois de Paus invertido nomeia a gravidade da zona de conforto. O desconforto familiar muitas vezes vence a melhoria desconhecida no cálculo da mente."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Håller rädslan för okänt territorium ett hälsosteg försenat? Den omvända Två av stavar namnger komfortzonens gravitation. Bekant obehag slår ofta okänd förbättring i sinnets beräkning."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Чи страх перед незнайомою територією затримує крок до здоров'я? Перевернута Двійка Жезлів називає гравітацію зони комфорту. Звичний дискомфорт часто перемагає незнайоме покращення в розрахунках розуму."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_health_upright_not_resonating": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Perhaps long-term thinking changes today's choice. The Two of Wands measures health in years, not weeks. The decision today votes for the eighty-year-old you."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vielleicht verändert langfristiges Denken die heutige Wahl. Die Zwei der Stäbe misst Gesundheit in Jahren, nicht in Wochen. Die Entscheidung heute stimmt für das achtzigjährige Ich."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quizás el pensamiento a largo plazo cambia la elección de hoy. El Dos de Bastos mide la salud en años, no en semanas. La decisión de hoy vota por el tú de ochenta años."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Peut-être que la réflexion à long terme change le choix d'aujourd'hui. Le Deux de Bâtons mesure la santé en années, pas en semaines. La décision d'aujourd'hui vote pour le toi de quatre-vingts ans."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Forse il pensiero a lungo termine cambia la scelta di oggi. Il Due di Bastoni misura la salute in anni, non in settimane. La decisione di oggi vota per il te di ottant'anni."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "おそらく長期的な思考が今日の選択を変えます。ワンドの２は健康を週単位ではなく年単位で測定します。今日の決断は、80歳のあなたに投票します。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanskje langsiktig tenkning endrer dagens valg. To av staver måler helse i år, ikke uker. Dagens avgjørelse stemmer for deg som er åtti år."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Być może długoterminowe myślenie zmienia dzisiejszy wybór. Dwójka Buław mierzy zdrowie w latach, a nie tygodniach. Dzisiejsza decyzja głosuje na ciebie w wieku osiemdziesięciu lat."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Talvez o pensamento de longo prazo mude a escolha de hoje. O Dois de Paus mede a saúde em anos, não em semanas. A decisão de hoje vota no você de oitenta anos."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanske förändrar långsiktigt tänkande dagens val. Två av stavar mäter hälsa i år, inte veckor. Dagens beslut röstar för dig som är åttio år."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Можливо, довгострокове мислення змінює сьогоднішній вибір. Двійка Жезлів вимірює здоров'я в роках, а не тижнях. Сьогоднішнє рішення голосує за вас у вісімдесят років."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_health_upright_unclear": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "What new health vision needs a concrete first step? The Two of Wands sees the future shape. Translate it into one specific action this week."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Welche neue Gesundheitsvision braucht einen konkreten ersten Schritt? Die Zwei der Stäbe sieht die zukünftige Form. Übersetze sie in eine konkrete Aktion diese Woche."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "¿Qué nueva visión de salud necesita un primer paso concreto? El Dos de Bastos ve la forma futura. Tradúcela en una acción específica esta semana."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quelle nouvelle vision de la santé a besoin d'une première étape concrète ? Le Deux de Bâtons voit la forme future. Traduis-la en une action spécifique cette semaine."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quale nuova visione della salute ha bisogno di un primo passo concreto? Il Due di Bastoni vede la forma futura. Traducila in un'azione specifica questa settimana."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "どのような新しい健康ビジョンに具体的な最初のステップが必要ですか？ワンドの２は未来の形を見ています。それを今週の具体的な行動に翻訳してください。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Hvilken ny helsevisjon trenger et konkret første skritt? To av staver ser den fremtidige formen. Oversett det til én spesifikk handling denne uken."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Jaka nowa wizja zdrowia potrzebuje konkretnego pierwszego kroku? Dwójka Buław widzi przyszły kształt. Przekształć to w jedno konkretne działanie w tym tygodniu."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Que nova visão de saúde precisa de um primeiro passo concreto? O Dois de Paus vê a forma futura. Traduza-a em uma ação específica esta semana."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vilken ny hälsovision behöver ett konkret första steg? Två av stavar ser den framtida formen. Översätt det till en specifik åtgärd den här veckan."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Яке нове бачення здоров'я потребує конкретного першого кроку? Двійка Жезлів бачить майбутню форму. Перекладіть це в одну конкретну дію цього тижня."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_love_reversed_not_resonating": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Maybe both of you are waiting on the other to move. The reversed Two of Wands diagnoses the stalemate. Someone has to step first; the standoff doesn't dissolve on its own."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Vielleicht wartet ihr beide darauf, dass der andere sich bewegt. Die umgekehrte Zwei der Stäbe diagnostiziert die Pattsituation. Jemand muss den ersten Schritt machen; die Blockade löst sich nicht von alleine auf."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Quizás ambos están esperando que el otro se mueva. El Dos de Bastos invertido diagnostica el punto muerto. Alguien tiene que dar el primer paso; el estancamiento no se disuelve por sí solo."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Peut-être que vous attendez tous les deux que l'autre bouge. Le Deux de Bâtons inversé diagnostique l'impasse. Quelqu'un doit faire le premier pas ; l'impasse ne se dissout pas d'elle-même."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Forse entrambi state aspettando che l'altro si muova. Il Due di Bastoni rovesciato diagnostica la situazione di stallo. Qualcuno deve fare il primo passo; la situazione di stallo non si risolve da sola."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "おそらく、あなたたち二人は相手が動くのを待っています。逆位置のワンドの２は、膠着状態を診断します。誰かが先に踏み出さなければなりません。膠着状態は自然には解消されません。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanskje venter dere begge på at den andre skal bevege seg. Den omvendte To av staver diagnostiserer fastlåst situasjon. Noen må ta det første steget; dødvannet løser seg ikke av seg selv."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Być może oboje czekacie, aż drugi się poruszy. Odwrócona Dwójka Buław diagnozuje impas. Ktoś musi zrobić pierwszy krok; zastój nie rozwiąże się sam."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Talvez ambos estejam esperando que o outro se mova. O Dois de Paus invertido diagnostica o impasse. Alguém tem que dar o primeiro passo; o impasse não se dissolve sozinho."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Kanske väntar ni båda på att den andra ska röra sig. Den omvända Två av stavar diagnostiserar dödläget. Någon måste ta det första steget; dödläget löser sig inte av sig självt."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Можливо, ви обоє чекаєте, поки інший зробить крок. Перевернута Двійка Жезлів діагностує глухий кут. Хтось має зробити перший крок; протистояння не зникне саме по собі."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_love_reversed_unclear": {
+                                                                                                    "extractionState": "manual",
+                                                                                                    "localizations": {
+                                                                                                      "en": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Is fear of the unknown keeping a relationship in the planning phase? The reversed Two of Wands catches the suspended deepening. The talk about the future replaces the move into it."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "de": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Hält die Angst vor dem Unbekannten eine Beziehung in der Planungsphase? Die umgekehrte Zwei der Stäbe erwischt die ausgesetzte Vertiefung. Das Reden über die Zukunft ersetzt den Schritt hinein."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "es": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "¿El miedo a lo desconocido mantiene una relación en la fase de planificación? El Dos de Bastos invertido atrapa la profundización suspendida. La charla sobre el futuro reemplaza el movimiento hacia él."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "fr": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "La peur de l'inconnu maintient-elle une relation dans la phase de planification ? Le Deux de Bâtons inversé attrape l'approfondissement suspendu. Les discussions sur l'avenir remplacent le mouvement vers lui."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "it": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "La paura dell'ignoto sta mantenendo una relazione nella fase di pianificazione? Il Due di Bastoni rovesciato coglie l'approfondimento sospeso. Il parlare del futuro sostituisce il muoversi verso di esso."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "ja": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "未知への恐怖が関係を計画段階に留めていますか？逆位置のワンドの２は、中断された深化を捉えます。未来についての話が、未来への移動を置き換えます。"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "nb": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Holder frykt for det ukjente et forhold i planleggingsfasen? Den omvendte To av staver fanger den suspenderte utdypingen. Snakket om fremtiden erstatter bevegelsen inn i den."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pl": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Czy strach przed nieznanym utrzymuje związek w fazie planowania? Odwrócona Dwójka Buław łapie zawieszone pogłębianie. Rozmowy o przyszłości zastępują wejście w nią."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "pt-BR": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "O medo do desconhecido está mantendo um relacionamento na fase de planejamento? O Dois de Paus invertido captura o aprofundamento suspenso. A conversa sobre o futuro substitui o movimento em direção a ele."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "sv": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Håller rädslan för det okända ett förhållande i planeringsfasen? Den omvända Två av stavar fångar den avstängda fördjupningen. Prat om framtiden ersätter steget in i den."
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "uk": {
+                                                                                                        "stringUnit": {
+                                                                                                          "state": "translated",
+                                                                                                          "value": "Чи страх перед невідомим утримує стосунки у фазі планування? Перевернута Двійка Жезлів викриває призупинене поглиблення. Розмови про майбутнє замінюють рух у нього."
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "interpretation.two_of_wands_love_upright_not_resonating": {
+                                                                                                      "extractionState": "manual",
+                                                                                                      "localizations": {
+                                                                                                          "en": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Perhaps planning a future together — concretely — is the next stage. The Two of Wands invites the joint vision in specifics. Generic 'maybe someday' isn't the same as a shared plan."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "de": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Vielleicht ist die konkrete Planung einer gemeinsamen Zukunft die nächste Stufe. Die Zwei der Stäbe lädt zur gemeinsamen Vision im Detail ein. Ein generisches 'vielleicht irgendwann' ist nicht dasselbe wie ein gemeinsamer Plan."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "es": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Quizás planificar un futuro juntos —concretamente— es la siguiente etapa. El Dos de Bastos invita a la visión conjunta en concreto. Un genérico 'tal vez algún día' no es lo mismo que un plan compartido."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "fr": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Peut-être que planifier un avenir ensemble — concrètement — est la prochaine étape. Le Deux de Bâtons invite à la vision commune dans les détails. Un 'peut-être un jour' générique n'est pas la même chose qu'un plan partagé."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "it": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Forse pianificare un futuro insieme — concretamente — è il prossimo passo. Il Due di Bastoni invita alla visione congiunta nei dettagli. Un generico 'forse un giorno' non è lo stesso di un piano condiviso."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "ja": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "おそらく、具体的に一緒に未来を計画することが次の段階です。ワンドの２は、具体的な共同ビジョンを促します。漠然とした「いつか」は、共有された計画と同じではありません。"
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "nb": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Kanskje det å planlegge en fremtid sammen — konkret — er neste trinn. To av staver inviterer til den felles visjonen i detaljer. Generisk 'kanskje en dag' er ikke det samme som en delt plan."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "pl": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Być może planowanie wspólnej przyszłości — konkretnie — to następny etap. Dwójka Buław zaprasza do wspólnej wizji w szczegółach. Ogólne 'może kiedyś' to nie to samo, co wspólny plan."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "pt-BR": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Talvez planejar um futuro juntos — concretamente — seja o próximo estágio. O Dois de Paus convida a visão conjunta em detalhes. Um genérico 'talvez um dia' não é o mesmo que um plano compartilhado."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "sv": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Kanske är planering av en framtid tillsammans — konkret — nästa steg. Två av stavar inbjuder till den gemensamma visionen i detaljer. Generiskt 'kanske en dag' är inte samma sak som en delad plan."
+                                                                                                              }
+                                                                                                          },
+                                                                                                          "uk": {
+                                                                                                              "stringUnit": {
+                                                                                                                  "state": "translated",
+                                                                                                                  "value": "Можливо, планування спільного майбутнього — конкретно — є наступним етапом. Двійка Жезлів запрошує до спільного бачення в деталях. Загальне 'можливо колись' не є тим самим, що спільний план."
+                                                                                                              }
+                                                                                                          }
+                                                                                                      }
+                                                                                                  },
     "interpretation.two_of_wands_love_upright_unclear" : {
       "extractionState" : "manual",
       "localizations" : {
