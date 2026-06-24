@@ -208509,7 +208509,7 @@
                     "uk" : {
                       "stringUnit" : {
                         "state" : "translated",
-                        "value" : "Можливо, натхненна пропозиція вже в дорозі. Будьте готові – Лицар Кубків прибуває із запрошеннями. Можливість вимагає швидкого та чіткого "так", коли вона з'явиться."
+                        "value" : "Можливо, натхненна пропозиція вже в дорозі. Будьте готові – Лицар Кубків прибуває із запрошеннями. Можливість вимагає швидкого та чіткого \"так\", коли вона з'явиться."
                       }
                     }
                   }
@@ -209651,102 +209651,76 @@
                   }
                 },
                 "interpretation.knight_of_cups_love_upright_unclear" : {
-                  "extractionState" : "manual",
-                  "localizations" : {
-                    "de" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "Ist der romantische Gestus, den du in Betracht ziehst, im Einklang mit dem, was du tatsächlich fühlst? Der Ritter der Kelche fragt nach echter Übereinstimmung. Der große Schritt, der nicht vom inneren Zustand getragen wird, geht oft nach hinten los."
-                      }
-                    },
-                    "en" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "Is the romantic gesture you're considering aligned with how you actually feel? The Knight of Cups asks for genuine alignment. The grand move that isn't backed by the inner state often backfires."
-                      }
-                    },
-                    "es" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "¿El gesto romántico que estás considerando está alineado con lo que realmente sientes? El Caballero de Copas pide una alineación genuina. El gran movimiento que no está respaldado por el estado interno a menudo sale mal."
-                      }
-                    },
-                    "fr" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "Le geste romantique que vous envisagez est-il aligné sur ce que vous ressentez réellement ? Le Chevalier des Coupes demande un alignement authentique. Le grand geste qui n'est pas soutenu par l'état intérieur se retourne souvent contre vous."
-                      }
-                    },
-                    "it" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "Il gesto romantico che stai considerando è allineato con come ti senti realmente? Il Cavaliere di Coppe chiede un allineamento genuino. La grande mossa che non è supportata dallo stato interiore spesso si ritorce contro."
-                      }
-                    },
-                    "ja" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "あなたが考えているロマンチックなジェスチャーは、実際の気持ちと合致していますか？カップの騎士は真の整合性を求めます。内面の状態に裏打ちされていない壮大な動きは、しばしば裏目に出ます。"
-                      }
-                    },
-                    "nb" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "Er den romantiske gesten du vurderer, i tråd med hvordan du faktisk føler? Begerens ridder spør om genuin justering. Det store trekket som ikke er støttet av den indre tilstanden, slår ofte tilbake."
-                      }
-                    },
-                    "pl" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "Czy romantyczny gest, który rozważasz, jest zgodny z tym, jak faktycznie się czujesz? Rycerz Kielichów prosi o autentyczne dopasowanie. Wielki ruch, który nie jest poparty stanem wewnętrznym, często przynosi odwrotny skutek."
-                      }
-                    },
-                    "pt-BR" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "O gesto romântico que você está considerando está alinhado com como você realmente se sente? O Cavaleiro de Copas pede alinhamento genuíno. O grande movimento que não é respaldado pelo estado interno muitas vezes sai pela culatra."
-                      }
-                    },
-                    "sv" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "Är den romantiska gesten du överväger i linje med hur du faktiskt känner? Bägarens riddare ber om genuin anpassning. Den stora rörelsen som inte stöds av det inre tillståndet slår ofta tillbaka."
-                      }
-                    },
-                    "uk" : {
-                      "stringUnit" : {
-                        "state" : "translated",
-                        "value" : "Чи романтичний жест, який ви розглядаєте, узгоджується з тим, що ви насправді відчуваєте? Лицар Кубків просить справжньої узгодженості. Великий крок, який не підкріплений внутрішнім станом, часто дає зворотний ефект."
-                      }
+                    "extractionState" : "manual",
+                    "localizations" : {
+                        "de" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Ist der romantische Gestus, den du in Betracht ziehst, im Einklang mit dem, was du tatsächlich fühlst? Der Ritter der Kelche fragt nach echter Übereinstimmung. Der große Schritt, der nicht vom inneren Zustand getragen wird, geht oft nach hinten los."
+                            }
+                        },
+                        "en" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Is the romantic gesture you're considering aligned with how you actually feel? The Knight of Cups asks for genuine alignment. The grand move that isn't backed by the inner state often backfires."
+                            }
+                        },
+                        "es" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "¿El gesto romántico que estás considerando está alineado con lo que realmente sientes? El Caballero de Copas pide una alineación genuina. El gran movimiento que no está respaldado por el estado interno a menudo sale mal."
+                            }
+                        },
+                        "fr" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Le geste romantique que vous envisagez est-il aligné sur ce que vous ressentez réellement ? Le Chevalier des Coupes demande un alignement authentique. Le grand geste qui n'est pas soutenu par l'état intérieur se retourne souvent contre vous."
+                            }
+                        },
+                        "it" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Il gesto romantico che stai considerando è allineato con come ti senti realmente? Il Cavaliere di Coppe chiede un allineamento genuino. La grande mossa che non è supportata dallo stato interiore spesso si ritorce contro."
+                            }
+                        },
+                        "ja" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "あなたが考えているロマンチックなジェスチャーは、実際の気持ちと合致していますか？カップの騎士は真の整合性を求めます。内面の状態に裏打ちされていない壮大な動きは、しばしば裏目に出ます。"
+                            }
+                        },
+                        "nb" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Er den romantiske gesten du vurderer, i tråd med hvordan du faktisk føler? Begerens ridder spør om genuin justering. Det store trekket som ikke er støttet av den indre tilstanden, slår ofte tilbake."
+                            }
+                        },
+                        "pl" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Czy romantyczny gest, który rozważasz, jest zgodny z tym, jak faktycznie się czujesz? Rycerz Kielichów prosi o autentyczne dopasowanie. Wielki ruch, który nie jest poparty stanem wewnętrznym, często przynosi odwrotny skutek."
+                            }
+                        },
+                        "pt-BR" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "O gesto romântico que você está considerando está alinhado com como você realmente se sente? O Cavaleiro de Copas pede alinhamento genuíno. O grande movimento que não é respaldado pelo estado interno muitas vezes sai pela culatra."
+                            }
+                        },
+                        "sv" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Är den romantiska gesten du överväger i linje med hur du faktiskt känner? Bägarens riddare ber om genuin anpassning. Den stora rörelsen som inte stöds av det inre tillståndet slår ofta tillbaka."
+                            }
+                        },
+                        "uk" : {
+                            "stringUnit" : {
+                                "state" : "translated",
+                                "value" : "Чи романтичний жест, який ви розглядаєте, узгоджується з тим, що ви насправді відчуваєте? Лицар Кубків просить справжньої узгодженості. Великий крок, який не підкріплений внутрішнім станом, часто дає зворотний ефект."
+                            }
+                        }
                     }
-                  }
-
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                },
                 "interpretation.knight_of_pentacles_career_reversed_not_resonating" : {
                   "extractionState" : "manual",
                   "localizations" : {
@@ -212298,7 +212272,7 @@
                     "uk" : {
                       "stringUnit" : {
                         "state" : "translated",
-                        "value" : "Де прямі, рішучі дії щодо здоров'я змінили б траєкторію? Лицар Мечів не терпить вічного "можливо". Виберіть протокол і почніть; вдосконалюйте пізніше."
+                        "value" : "Де прямі, рішучі дії щодо здоров'я змінили б траєкторію? Лицар Мечів не терпить вічного \"можливо\". Виберіть протокол і почніть; вдосконалюйте пізніше."
                       }
                     }
                   }
@@ -273335,7 +273309,7 @@
                                                                                                     "uk" : {
                                                                                                       "stringUnit" : {
                                                                                                         "state" : "translated",
-                                                                                                        "value" : "Можливо, цілісність тут — це не досконалість, а інтеграція всього, через що ви пройшли. Завершення Світу включає шрами. Цілісне "я" — це не те, що без позначок."
+                                                                                                        "value" : "Можливо, цілісність тут — це не досконалість, а інтеграція всього, через що ви пройшли. Завершення Світу включає шрами. Цілісне \"я\" — це не те, що без позначок."
                                                                                                       }
                                                                                                     }
                                                                                                   }
@@ -274861,7 +274835,7 @@
                                                                                                     "it" : {
                                                                                                       "stringUnit" : {
                                                                                                         "state" : "translated",
-                                                                                                        "value" : "Forse una celebrazione sta mascherando ciò che non viene affrontato. Il Tre di Coppe invertito vede attraverso la performance del "tutto bene". La festa può essere sia reale che una copertura."
+                                                                                                        "value" : "Forse una celebrazione sta mascherando ciò che non viene affrontato. Il Tre di Coppe invertito vede attraverso la performance del \"tutto bene\". La festa può essere sia reale che una copertura."
                                                                                                       }
                                                                                                     },
                                                                                                     "ja" : {
