@@ -16,7 +16,8 @@ struct SplashScreenView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
 
             // Golden particles
             ParticleSystemView()

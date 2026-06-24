@@ -48,7 +48,8 @@ struct OnboardingFlowView: View {
     
     var body: some View {
         ZStack {
-            AnimatedBackgroundView()
+            Color.clear
+                .background(AnimatedBackgroundView().ignoresSafeArea())
             
             VStack(spacing: 0) {
                 // Page indicator
