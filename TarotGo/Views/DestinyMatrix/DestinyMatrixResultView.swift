@@ -975,7 +975,7 @@ struct PositionDetailView: View {
             }
             .padding(20)
         }
-        .background(AppTheme.backgroundGradient.ignoresSafeArea())
+        .background(AnimatedBackgroundView().ignoresSafeArea())
         .navigationBarTitleDisplayMode(.inline)
     }
 }
