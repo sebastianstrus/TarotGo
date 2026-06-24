@@ -101,6 +101,7 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                // Notifications Section
                 Section {
                     VStack {
                         Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
@@ -153,6 +154,7 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                // Sound Section
                 Section {
                     Toggle(L10n.settingsSoundEnabled, isOn: $isSoundEnabled)
                         .listRowSeparator(.hidden)
@@ -180,6 +182,7 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                // Appearance Section
                 Section {
                     VStack(alignment: .leading, spacing: 12) {
                         Text(L10n.settingsCardBack)
@@ -247,45 +250,59 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                // Info Section (Intro Slides Only)
                 Section {
-                    VStack(spacing: 12) {
-                        Button {
-                            showOnboarding = true
-                        } label: {
-                            HStack {
-                                Text(L10n.settingsIntroSlides)
-                                Spacer()
-                                Image(systemName: "chevron.right")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(AppTheme.gold.opacity(0.6))
-                            }
-                            .foregroundColor(AppTheme.textPrimary)
+                    Button {
+                        showOnboarding = true
+                    } label: {
+                        HStack {
+                            Text(L10n.settingsIntroSlides)
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 14))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
                         }
-                        .listRowSeparator(.hidden)
-                        
-                        Button {
-                            openLanguageSettings()
-                        } label: {
-                            HStack {
-                                Text(L10n.settingsLanguage)
-                                Spacer()
-                                Text(currentLanguageName)
-                                    .foregroundColor(AppTheme.gold.opacity(0.8))
-                                Image(systemName: "chevron.right")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(AppTheme.gold.opacity(0.6))
-                            }
-                            .foregroundColor(AppTheme.textPrimary)
-                        }
-                        .listRowSeparator(.hidden)
+                        .foregroundColor(AppTheme.textPrimary)
                     }
+                    .listRowSeparator(.hidden)
                 } header: {
                     Text(L10n.settingsInfo)
+                        .foregroundColor(AppTheme.gold)
+                }
+                .buttonStyle(.plain)
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
+                )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
+
+                // Language Section (Now separated out)
+                Section {
+                    Button {
+                        openLanguageSettings()
+                    } label: {
+                        HStack {
+                            Text(L10n.settingsLanguage)
+                            Spacer()
+                            Text(currentLanguageName)
+                                .foregroundColor(AppTheme.gold.opacity(0.8))
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 14))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        }
+                        .foregroundColor(AppTheme.textPrimary)
+                    }
+                    .listRowSeparator(.hidden)
+                } header: {
+                    Text(L10n.settingsLanguageSelection) // You can change this text to match your preference if you have a distinct header key
                         .foregroundColor(AppTheme.gold)
                 } footer: {
                     Text(L10n.settingsLanguageDesc)
                         .foregroundColor(AppTheme.textSecondary)
                 }
+                .buttonStyle(.plain)
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(AppTheme.darkNavy.opacity(0.6))
@@ -294,6 +311,7 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                // Legal Section
                 Section {
                     VStack(spacing: 12) {
                         Button {
@@ -328,6 +346,7 @@ struct SettingsView: View {
                     Text(L10n.settingsLegal)
                         .foregroundColor(AppTheme.gold)
                 }
+                .buttonStyle(.plain)
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(AppTheme.darkNavy.opacity(0.6))
@@ -336,6 +355,7 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                // About Section
                 Section {
                     HStack {
                         Text(L10n.settingsVersion)

@@ -536,6 +536,7 @@ enum L10n {
     static let settingsVersion = NSLocalizedString("settings.version", comment: "Version")
     static let settingsSave = NSLocalizedString("settings.save", comment: "Save")
     static let settingsLanguage = NSLocalizedString("settings.language", comment: "Language")
+    static let settingsLanguageSelection = NSLocalizedString("settings.languageSelection", comment: "Language Selection")
     static let settingsLanguageDesc = NSLocalizedString("settings.language.desc", comment: "Change the app language in your phone settings")
     
     static let settingsNotificationPermissionTitle = NSLocalizedString("settings.notificationPermission.title", comment: "Notification Permission Required")
