@@ -271,7 +271,7 @@ struct ShuffleRitualView: View {
                     .rotationEffect(.degrees(state.rotation))
                     .scaleEffect(state.scale)
                     .offset(
-                        x: state.offsetX,
+                        x: state.offsetX + (isTopCard && isPressed ? 2 : 0),
                         y: state.offsetY + (isTopCard && isPressed ? 4 : 0)
                     )
                     .animation(.easeOut(duration: 0.15), value: isTopCard && isPressed)
