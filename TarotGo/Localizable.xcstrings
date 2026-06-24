@@ -16707,76 +16707,76 @@
       }
     },
     "coupleMatrix.calculate" : {
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Paarmatrix berechnen"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Calculate Couple Matrix"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Calcular matriz de pareja"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Calculer la matrice de couple"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Calcola matrice di coppia"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "カップルマトリックスを計算"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Beregn parmatrise"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Oblicz matrycę pary"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Calcular matriz do casal"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Beräkna parmatris"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Розрахувати матрицю пари"
-              }
-            }
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paarmatrix berechnen"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate Couple Matrix"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcular matriz de pareja"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculer la matrice de couple"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcola matrice di coppia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カップルマトリックスを計算"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beregn parmatrise"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oblicz matrycę pary"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcular matriz do casal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beräkna parmatris"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розрахувати матрицю пари"
+          }
+        }
+      }
+    },
     "coupleMatrix.currentYearEnergy" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -16849,76 +16849,76 @@
       }
     },
     "coupleMatrix.description" : {
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Die Paarmatrix kombiniert die Geburtsenergien zweier Partner mithilfe der 22 Großen Arkana, um das Herz, das Karma und den Zweck eurer Verbindung zu offenbaren."
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "The Couple Matrix combines the birth energies of two partners using the 22 Major Arcana to reveal the heart, karma, and purpose of your union."
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "La matryce de pareja combina las energías de nacimiento de dos personas utilizando los 22 Arcanos Mayores para revelar el corazón, el karma y el propósito de su unión."
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "La matrice de couple combine les énergies de naissance de deux partenaires en utilisant les 22 Arcanes Majeurs pour révéler le cœur, le karma et le but de votre union."
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "La matrice di coppia combina le energie di nascita di due partner utilizzando i 22 Arcani Maggiori per rivelare il cuore, il karma e lo scopo della vostra unione."
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "カップルマトリックスは、22の大アルカナを使用して二人のパートナーの出生エネルギーを組み合わせ、あなたたちの結合の心、カルマ、目的を明らかにします。"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Parmatrisen kombinerer fødselsenergiene til to partnere ved å bruke de 22 store arkanaene for å avsløre hjertet, karmaen og hensikten med deres forening."
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matryca pary łączy energie urodzenia dwóch partnerów za pomocą 22 Wielkich Arkanów, aby ujawnić serce, karmę i cel waszego związku."
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "A matriz do casal combina as energias de nascimento de dois parceiros usando os 22 Arcanos Maiores para revelar o coração, o karma e o propósito da sua união."
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Parmatrisen kombinerer två partners födelseenergier med hjälp av de 22 stora arkanorna för å avslöja hjärtat, karman och syftet med er förening."
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Матриця пари поєднує енергії народження двох партнерів за допомогою 22 старших арканів, щоб розкрити серце, карму та мету вашого союзу."
-              }
-            }
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Paarmatrix kombiniert die Geburtsenergien zweier Partner mithilfe der 22 Großen Arkana, um das Herz, das Karma und den Zweck eurer Verbindung zu offenbaren."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Couple Matrix combines the birth energies of two partners using the 22 Major Arcana to reveal the heart, karma, and purpose of your union."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La matryce de pareja combina las energías de nacimiento de dos personas utilizando los 22 Arcanos Mayores para revelar el corazón, el karma y el propósito de su unión."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La matrice de couple combine les énergies de naissance de deux partenaires en utilisant les 22 Arcanes Majeurs pour révéler le cœur, le karma et le but de votre union."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La matrice di coppia combina le energie di nascita di due partner utilizzando i 22 Arcani Maggiori per rivelare il cuore, il karma e lo scopo della vostra unione."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カップルマトリックスは、22の大アルカナを使用して二人のパートナーの出生エネルギーを組み合わせ、あなたたちの結合の心、カルマ、目的を明らかにします。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parmatrisen kombinerer fødselsenergiene til to partnere ved å bruke de 22 store arkanaene for å avsløre hjertet, karmaen og hensikten med deres forening."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matryca pary łączy energie urodzenia dwóch partnerów za pomocą 22 Wielkich Arkanów, aby ujawnić serce, karmę i cel waszego związku."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A matriz do casal combina as energias de nascimento de dois parceiros usando os 22 Arcanos Maiores para revelar o coração, o karma e o propósito da sua união."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parmatrisen kombinerer två partners födelseenergier med hjälp av de 22 stora arkanorna för å avslöja hjärtat, karman och syftet med er förening."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Матриця пари поєднує енергії народження двох партнерів за допомогою 22 старших арканів, щоб розкрити серце, карму та мету вашого союзу."
+          }
+        }
+      }
+    },
     "coupleMatrix.energyForYear" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -18553,77 +18553,77 @@
       }
     },
     "coupleMatrix.shareMatrix" : {
-          "comment" : "Share Couple Matrix",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Paarmatrix teilen"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Share Couple Matrix"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Compartir matriz de pareja"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Partager la matrice de couple"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Condividi matrice di coppia"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "カップルマトリックスを共有"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Del parmatrise"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Udostępnij matrycę pary"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Compartilhar matriz do casal"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Dela parmatris"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Поділитися матрицею пари"
-              }
-            }
+      "comment" : "Share Couple Matrix",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paarmatrix teilen"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share Couple Matrix"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartir matriz de pareja"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager la matrice de couple"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi matrice di coppia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カップルマトリックスを共有"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del parmatrise"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Udostępnij matrycę pary"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhar matriz do casal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dela parmatris"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поділитися матрицею пари"
+          }
+        }
+      }
+    },
     "coupleMatrix.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -18696,76 +18696,76 @@
       }
     },
     "coupleMatrix.title" : {
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Paarmatrix"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Couple Matrix"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matriz de pareja"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matrice de couple"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matrice di coppia"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "カップルマトリックス"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Parmatrise"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matryca pary"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matriz do casal"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Parmatris"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Матриця пари"
-              }
-            }
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paarmatrix"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couple Matrix"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matriz de pareja"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrice de couple"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrice di coppia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カップルマトリックス"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parmatrise"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matryca pary"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matriz do casal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parmatris"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Матриця пари"
+          }
+        }
+      }
+    },
     "coupleMatrix.useMyBirthDate" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -18838,76 +18838,76 @@
       }
     },
     "coupleMatrix.whatIs" : {
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Was ist die Paarmatrix?"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "What is the Couple Matrix?"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "¿Qué es la matriz de pareja?"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Qu'est-ce que la matrice de couple?"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Cos'è la matrice di coppia?"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "カップルマトリックスとは？"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Hva er parmatrisen?"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Czym jest matryca pary?"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "O que é a matriz do casal?"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Vad är parmatrisen?"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Що таке матриця пари?"
-              }
-            }
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Was ist die Paarmatrix?"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What is the Couple Matrix?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué es la matriz de pareja?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qu'est-ce que la matrice de couple?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cos'è la matrice di coppia?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カップルマトリックスとは？"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva er parmatrisen?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Czym jest matryca pary?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que é a matriz do casal?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad är parmatrisen?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Що таке матриця пари?"
+          }
+        }
+      }
+    },
     "coupleMatrix.yearEnergy" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -19122,76 +19122,76 @@
       }
     },
     "coupleMatrix.yourMatrix" : {
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Deine Paarmatrix"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Your Couple Matrix"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Tu matriz de pareja"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Ta matrice de couple"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "La tua matrice di coppia"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "あなたのカップルマトリックス"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Din parmatrise"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Twoja matryca pary"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Sua matriz do casal"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Din parmatris"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Твоя матриця пари"
-              }
-            }
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Paarmatrix"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Couple Matrix"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu matriz de pareja"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta matrice de couple"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua matrice di coppia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたのカップルマトリックス"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din parmatrise"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja matryca pary"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua matriz do casal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din parmatris"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Твоя матриця пари"
+          }
+        }
+      }
+    },
     "Current Year Energy" : {
       "comment" : "A label displayed above the current year's energy.",
       "isCommentAutoGenerated" : true,
@@ -31370,67 +31370,75 @@
         }
       }
     },
+
     "home.learnDestinyMatrix" : {
-      "comment" : "Learn Destiny Matrix",
+      "comment" : "Learn Matrix",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Schicksalsmatrix lernen"
+            "value" : "Matrix lernen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn Matrix"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aprende la Matriz del Destino"
+            "value" : "Aprender matriz"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apprendre la Matrice du Destin"
+            "value" : "Apprendre matrice"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Impara la Matrice del Destino"
+            "value" : "Impara matrice"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "運命のマトリックスを学ぶ"
+            "value" : "マトリックスを学ぶ"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lær om Skjebnematrisen"
+            "value" : "Lær matrisen"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Poznaj Matrycę Przeznaczenia"
+            "value" : "Poznaj matrycę"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aprenda a Matriz do Destino"
+            "value" : "Aprenda matriz"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lär dig Ödesmatrisen"
+            "value" : "Lär matrisen"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вивчіть Матрицю Долі"
+            "value" : "Вивчіть матрицю"
           }
         }
       }
@@ -31645,76 +31653,76 @@
       }
     },
     "home.matrixHistory" : {
-        "comment" : "Saved Matrices",
-        "extractionState" : "manual",
-        "localizations" : {
-            "de" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Gespeicherte Matrizen"
-                }
-            },
-            "en" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Saved Matrices"
-                }
-            },
-            "es" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Matrices guardadas"
-                }
-            },
-            "fr" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Matrices enregistrées"
-                }
-            },
-            "it" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Matrici salvate"
-                }
-            },
-            "ja" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "保存されたマトリックス"
-                }
-            },
-            "nb" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Lagrede matriser"
-                }
-            },
-            "pl" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Zapisane matryce"
-                }
-            },
-            "pt-BR" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Matrizes salvas"
-                }
-            },
-            "sv" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Sparade matriser"
-                }
-            },
-            "uk" : {
-                "stringUnit" : {
-                    "state" : "translated",
-                    "value" : "Збережені матриці"
-                }
-            }
+      "comment" : "Saved Matrices",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gespeicherte Matrizen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Matrices"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrices guardadas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrices enregistrées"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrici salvate"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存されたマトリックス"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagrede matriser"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapisane matryce"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrizes salvas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparade matriser"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Збережені матриці"
+          }
         }
+      }
     },
     "home.matrixHistory.subtitle" : {
       "comment" : "Review your saved Destiny Matrices",
@@ -256256,76 +256264,76 @@
       }
     },
     "moonPhase.waningGibbous" : {
-          "comment" : "Waning Gibbous",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Abnehmender Dreiviertelmond"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Waning Gibbous"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Luna Gibosa Menguante"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Lune Gibbeuse Décroissante"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Gibbosa Calante"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "下弦の凸月"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Minkende gibbous måne"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Ubywający Księżyc Wypukły"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Lua Gibosa Minguante"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Avtagande puckelmåne"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Спадаючий опуклий Місяць"
-              }
-            }
+      "comment" : "Waning Gibbous",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abnehmender Dreiviertelmond"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waning Gibbous"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luna Gibosa Menguante"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lune Gibbeuse Décroissante"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gibbosa Calante"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下弦の凸月"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minkende gibbous måne"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubywający Księżyc Wypukły"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lua Gibosa Minguante"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avtagande puckelmåne"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спадаючий опуклий Місяць"
+          }
+        }
+      }
+    },
     "moonPhase.waningGibbous.desc" : {
       "comment" : "Share your wisdom and gratitude. Reflect on lessons learned.",
       "localizations" : {
@@ -256682,76 +256690,76 @@
       }
     },
     "moonPhase.waxingGibbous" : {
-          "comment" : "Waxing Gibbous",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Zunehmender Dreiviertelmond"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Waxing Gibbous"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Luna Gibosa Creciente"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Lune Gibbeuse Croissante"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Gibbosa Crescente"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "上弦の凸月"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Voksende gibbous måne"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Rosnący Księżyc Wypukły"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Lua Gibosa Crescente"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Växande puckelmåne"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Зростаючий опуклий Місяць"
-              }
-            }
+      "comment" : "Waxing Gibbous",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zunehmender Dreiviertelmond"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waxing Gibbous"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luna Gibosa Creciente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lune Gibbeuse Croissante"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gibbosa Crescente"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上弦の凸月"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voksende gibbous måne"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rosnący Księżyc Wypukły"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lua Gibosa Crescente"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Växande puckelmåne"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зростаючий опуклий Місяць"
+          }
+        }
+      }
+    },
     "moonPhase.waxingGibbous.desc" : {
       "comment" : "Refine your plans and adjust your approach. Success is within reach.",
       "localizations" : {
@@ -287359,78 +287367,6 @@
         }
       }
     },
-    "settings.languageSelection" : {
-      "comment" : "Language Selection",
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sprachauswahl"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Language Selection"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Selección de idioma"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choix de la langue"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Selezione della lingua"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "言語選択"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Språkvalg"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wybór języka"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seleção de idioma"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Språkval"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вибір мови"
-          }
-        }
-      }
-    },
     "settings.language.desc" : {
       "comment" : "Change the app language in your phone settings",
       "extractionState" : "manual",
@@ -287499,6 +287435,78 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Змініть мову програми в налаштуваннях телефону"
+          }
+        }
+      }
+    },
+    "settings.languageSelection" : {
+      "comment" : "Language Selection",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprachauswahl"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language Selection"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selección de idioma"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choix de la langue"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selezione della lingua"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "言語選択"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Språkvalg"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybór języka"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleção de idioma"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Språkval"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вибір мови"
           }
         }
       }
@@ -293449,77 +293457,77 @@
       }
     },
     "tab.cosmic" : {
-          "comment" : "Cosmic tab",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Kosmos"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Cosmos"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Cosmos"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Cosmos"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Cosmo"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "宇宙"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Kosmos"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Kosmos"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Cosmos"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Kosmos"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Космос"
-              }
-            }
+      "comment" : "Cosmic tab",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kosmos"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosmos"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosmos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosmos"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosmo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宇宙"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kosmos"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kosmos"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosmos"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kosmos"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Космос"
+          }
+        }
+      }
+    },
     "tab.destinyMatrix" : {
       "comment" : "Destiny Matrix tab",
       "extractionState" : "manual",

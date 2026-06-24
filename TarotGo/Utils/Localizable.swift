@@ -1505,7 +1505,7 @@ enum L10n {
     
     // MARK: - Learn Destiny Matrix
     // Main Learn Destiny Matrix View
-    static let homeLearnDestinyMatrix = NSLocalizedString("home.learnDestinyMatrix", comment: "Learn Destiny Matrix")
+    static let homeLearnDestinyMatrix = NSLocalizedString("home.learnDestinyMatrix", comment: "Learn Matrix")
     static let homeLearnDestinyMatrixSubtitle = NSLocalizedString("home.learnDestinyMatrix.subtitle", comment: "Understand the 22 energies and your chart")
 
     static let learnDestinyMatrixTitle = NSLocalizedString("learnDestinyMatrix.title", comment: "Learn Destiny Matrix")

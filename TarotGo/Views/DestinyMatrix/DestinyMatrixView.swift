@@ -274,10 +274,10 @@ private struct CircularRingButton: View {
                     .font(AppTheme.serifFont(size: 12, weight: .medium))
                     .foregroundColor(AppTheme.textPrimary)
                     .multilineTextAlignment(.center)
-                    .lineLimit(2)
+                    .lineLimit(3)
                     .minimumScaleFactor(0.7)
                     .frame(width: buttonSize * 0.65)
-                    .padding(.bottom, 8)
+                    .padding(.bottom, 4)
             }
         }
         .frame(width: buttonSize, height: buttonSize)
