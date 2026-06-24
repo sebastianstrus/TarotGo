@@ -47,6 +47,7 @@ struct LunarCalendarView: View {
                         Text(currentPhase.rawValue)
                             .font(AppTheme.serifFont(size: 28, weight: .medium))
                             .foregroundStyle(AppTheme.goldGradient)
+                            .multilineTextAlignment(.center)
                         
                         HStack(spacing: 20) {
                             VStack(spacing: 4) {
