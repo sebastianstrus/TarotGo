@@ -246,7 +246,7 @@ struct ShuffleRitualView: View {
                     .transition(.opacity)
             }
         }
-        .frame(minHeight: 100)
+        .frame(height: 120)
         .animation(.easeInOut(duration: 0.2), value: phase)
     }
     
