@@ -32,6 +32,7 @@ struct CardSelectionView: View {
     @State private var slotFrames: [Int: CGRect] = [:]
     @State private var flying: FlyingCardState?
     @State private var poppingCardId: String?
+    @State private var bringDrawnCardToFront: Bool = false // Tracks mid-air lift state
 
     // Drag gesture state
     @State private var draggedCardId: String? = nil
@@ -80,13 +81,9 @@ struct CardSelectionView: View {
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
             VStack(spacing: 20) {
-                // Progress indicator
                 progressIndicator
-                
-                // Selected cards at the top
                 selectedCardsView
                 
-                // Instruction or position description
                 if let position = currentPosition {
                     VStack(spacing: 10) {
                         Text(L10n.cardPosition(currentPositionIndex + 1, positions.count))
@@ -110,7 +107,6 @@ struct CardSelectionView: View {
                 
                 Spacer()
                 
-                // Card fan for selection
                 if showInstruction && currentPosition != nil {
                     HStack(spacing: 8) {
                         Image(systemName: "sparkles")
@@ -268,24 +264,55 @@ struct CardSelectionView: View {
                         y: fanInSelection.minY + geometry.size.height / 2 + centerYOffset + visualOffsetY
                     )
 
-                    if !isCardSelected && !isFlying {
+                    if !isCardSelected {
                         let isPopping = poppingCardId == card.id
                         let isDragging = draggedCardId == card.id
                         let effectiveAngle = fanAppeared ? angle : 0
                         let effectiveOffsetX = fanAppeared ? visualOffsetX : 0
                         let effectiveOffsetY = fanAppeared ? visualOffsetY : 0
                         
+                        let cardLayout: (width: CGFloat, height: CGFloat, offsetX: CGFloat, offsetY: CGFloat, angle: Double, scale: CGFloat, zIndex: Double) = {
+                            if isFlying, let f = flying {
+                                let targetCenter: CGPoint = {
+                                    switch f.phase {
+                                    case .rest: return f.srcCenter
+                                    case .popped: return CGPoint(x: f.srcCenter.x, y: f.srcCenter.y - 70)
+                                    case .landed: return f.dstCenter
+                                    }
+                                }()
+                                let dx = targetCenter.x - fanInSelection.midX
+                                let dy = targetCenter.y - fanInSelection.minY - (geometry.size.height / 2 + centerYOffset)
+                                return (
+                                    width: f.phase == .landed ? f.dstSize.width : f.srcSize.width,
+                                    height: f.phase == .landed ? f.dstSize.height : f.srcSize.height,
+                                    offsetX: dx,
+                                    offsetY: dy,
+                                    angle: f.phase == .landed ? 0 : f.srcAngle,
+                                    scale: f.phase == .popped ? 1.15 : 1.0,
+                                    // Use bringDrawnCardToFront layer check here to keep it stacked until it flies clear
+                                    zIndex: (f.phase == .landed && bringDrawnCardToFront) ? 1000 : Double(index)
+                                )
+                            } else {
+                                return (
+                                    width: 100,
+                                    height: 150,
+                                    offsetX: effectiveOffsetX + (isDragging ? dragOffset.width : 0),
+                                    offsetY: effectiveOffsetY - (isPopping ? 70 : 0) + (isDragging ? dragOffset.height : 0),
+                                    angle: effectiveAngle,
+                                    scale: isPopping ? 1.15 : 1.0,
+                                    zIndex: Double(index)
+                                )
+                            }
+                        }()
+
                         CardView()
-                            .frame(width: 100, height: 150)
-                            .shadow(color: .black.opacity(0.45), radius: 2, x: 0, y: 2)
-                            .rotationEffect(.degrees(effectiveAngle))
-                            .offset(
-                                x: effectiveOffsetX + (isDragging ? dragOffset.width : 0),
-                                y: effectiveOffsetY - (isPopping ? 70 : 0) + (isDragging ? dragOffset.height : 0)
-                            )
-                            .scaleEffect(isPopping ? 1.15 : 1.0)
-                            .zIndex(Double(index))
-                            .allowsHitTesting(fanAppeared && !isProcessingSelection)
+                            .frame(width: cardLayout.width, height: cardLayout.height)
+                            .shadow(color: .black.opacity(0.45), radius: isFlying ? 6 : 2, x: 0, y: isFlying ? 4 : 2)
+                            .rotationEffect(.degrees(cardLayout.angle))
+                            .scaleEffect(cardLayout.scale)
+                            .offset(x: cardLayout.offsetX, y: cardLayout.offsetY)
+                            .zIndex(cardLayout.zIndex)
+                            .allowsHitTesting(fanAppeared && !isProcessingSelection && !isFlying)
                             .animation(.spring(response: 0.3, dampingFraction: 0.7), value: dragOffset)
                             .animation(.spring(response: 0.9, dampingFraction: 0.82), value: fanAppeared)
                             .onTapGesture {
@@ -305,14 +332,9 @@ struct CardSelectionView: View {
                                         guard draggedCardId == card.id else { return }
                                         
                                         if value.translation.height < -90 {
-                                            // Capture the exact offset state right now to bridge into the fly animation
                                             let finalTranslation = value.translation
-                                            
-                                            // Clear states cleanly first so it doesn't try to snap backwards
                                             draggedCardId = nil
                                             dragOffset = .zero
-                                            
-                                            // Execute dynamic fly selection directly from current location
                                             selectCard(card, srcCenter: srcCenter, srcAngle: angle, bypassDelay: true, dynamicDragOffset: finalTranslation)
                                         } else {
                                             withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
@@ -323,33 +345,6 @@ struct CardSelectionView: View {
                                     }
                             )
                     }
-                }
-
-                if let f = flying,
-                   let originalFanIndex = viewModel.availableCards.firstIndex(where: { $0.id == f.card.id }) {
-                    let phase = f.phase
-                    let targetCenter: CGPoint = {
-                        switch phase {
-                        case .rest: return f.srcCenter
-                        case .popped: return CGPoint(x: f.srcCenter.x, y: f.srcCenter.y - 70)
-                        case .landed: return f.dstCenter
-                        }
-                    }()
-                    
-                    let offsetX = targetCenter.x - fanInSelection.midX
-                    let offsetY = targetCenter.y - fanInSelection.minY - (geometry.size.height / 2 + centerYOffset)
-                    let size: CGSize = (phase == .landed) ? f.dstSize : f.srcSize
-                    let angle: Double = (phase == .landed) ? 0 : f.srcAngle
-                    let scale: CGFloat = (phase == .popped) ? 1.15 : 1.0
-
-                    CardView()
-                        .frame(width: size.width, height: size.height)
-                        .shadow(color: .black.opacity(0.45), radius: 6, x: 0, y: 4)
-                        .rotationEffect(.degrees(angle))
-                        .scaleEffect(scale)
-                        .offset(x: offsetX, y: offsetY)
-                        .zIndex(999) // Force the master flying overlay to sit on top of everything
-                        .allowsHitTesting(false)
                 }
             }
             .frame(width: geometry.size.width, height: 240)
@@ -376,13 +371,14 @@ struct CardSelectionView: View {
         SoundService.shared.play(.cardDraw, volume: 0.7)
 
         if bypassDelay {
-            // DRAG PATH: Convert the origin point into the active dragged finger location directly
             let currentDraggedCenter = CGPoint(
                 x: srcCenter.x + dynamicDragOffset.width,
                 y: srcCenter.y + dynamicDragOffset.height
             )
             
-            // Hand off instantly to the high-level flying layer directly at the drop position
+            // Drag release happens clear of the deck; bring to front immediately
+            bringDrawnCardToFront = true
+            
             flying = FlyingCardState(
                 card: card,
                 srcCenter: currentDraggedCenter,
@@ -393,18 +389,18 @@ struct CardSelectionView: View {
                 phase: .rest
             )
             
-            // Animate straight up into the chosen card slot frame
             withAnimation(.spring(response: 0.55, dampingFraction: 0.8)) {
                 flying?.phase = .landed
             }
             
-            // Complete layout commit
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                 completeCardSelection(card: card, position: position)
             }
             
         } else {
-            // TAP PATH: Standard localized hover pop animation
+            // Tap branch sequence:
+            bringDrawnCardToFront = false // Start launch deep inside natural index layer
+            
             withAnimation(.spring(response: 0.35, dampingFraction: 0.7)) {
                 poppingCardId = card.id
             }
@@ -424,6 +420,11 @@ struct CardSelectionView: View {
                 withAnimation(.spring(response: 0.6, dampingFraction: 0.85)) {
                     flying?.phase = .landed
                 }
+                
+                // Delay lifting the Z-index by 150ms so it clears its neighbor cards physically before coming to the front
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                    bringDrawnCardToFront = true
+                }
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) {
                     completeCardSelection(card: card, position: position)
@@ -436,6 +437,7 @@ struct CardSelectionView: View {
         selectedCards.append(card)
         _ = viewModel.drawCard(at: position, selectedCard: card)
         flying = nil
+        bringDrawnCardToFront = false // Reset state for subsequent draws
         currentPositionIndex += 1
 
         if currentPositionIndex >= positions.count {
