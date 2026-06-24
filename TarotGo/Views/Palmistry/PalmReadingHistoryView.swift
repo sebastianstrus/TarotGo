@@ -48,6 +48,7 @@ struct PalmReadingHistoryView: View {
 
             Text(L10n.palmHistoryEmpty)
                 .font(AppTheme.serifFont(size: 24, weight: .light))
+                .multilineTextAlignment(.center)
                 .foregroundStyle(AppTheme.goldGradient)
 
             Text(L10n.palmHistoryEmptyDesc)
