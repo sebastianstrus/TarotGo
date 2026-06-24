@@ -184,6 +184,7 @@ struct InfoCard: View {
                     .font(.system(size: 14, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(16)
         .background(
