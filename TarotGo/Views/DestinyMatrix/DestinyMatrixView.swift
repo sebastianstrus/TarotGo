@@ -277,6 +277,7 @@ private struct CircularRingButton: View {
                     .lineLimit(2)
                     .minimumScaleFactor(0.7)
                     .frame(width: buttonSize * 0.65)
+                    .padding(.bottom, 8)
             }
         }
         .frame(width: buttonSize, height: buttonSize)
