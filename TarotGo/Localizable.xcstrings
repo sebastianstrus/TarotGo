@@ -31370,10 +31370,8 @@
         }
       }
     },
-
     "home.learnDestinyMatrix" : {
       "comment" : "Learn Matrix",
-      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
