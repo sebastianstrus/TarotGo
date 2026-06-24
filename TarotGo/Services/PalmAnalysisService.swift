@@ -898,15 +898,15 @@ enum PalmAnalysisError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidImage:
-            return "The image could not be processed. Please try taking another photo."
+            return L10n.palmAnalysisErrorInvalidImage
         case .noHandDetected:
-            return "No hand detected in the image. Please ensure your palm is clearly visible and well-lit."
+            return L10n.palmAnalysisErrorNoHandDetected
         case .fingersNotExtended:
-            return "Please open your hand and extend all your fingers. A closed fist or curled fingers cannot be read."
+            return L10n.palmAnalysisErrorFingersNotExtended
         case .lowConfidence:
-            return "Your palm couldn't be clearly identified. Show the inside of your hand to the camera with good lighting and try again."
+            return L10n.palmAnalysisErrorLowConfidence
         case .processingFailed:
-            return "Failed to analyze the palm lines. Please try again with better lighting."
+            return L10n.palmAnalysisErrorProcessingFailed
         }
     }
 }

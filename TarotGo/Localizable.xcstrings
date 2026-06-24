@@ -267500,6 +267500,366 @@
         }
       }
     },
+    "palmAnalysis.error.fingersNotExtended" : {
+          "comment" : "Please open your hand and extend all your fingers. A closed fist or curled fingers cannot be read.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Bitte öffne deine Hand und strecke alle Finger aus. Eine geschlossene Faust oder gebeugte Finger können nicht gelesen werden."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Please open your hand and extend all your fingers. A closed fist or curled fingers cannot be read."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Por favor, abre la mano y extiende todos los dedos. No se może leer un puño cerrado ni los dedos encogidos."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Veuillez ouvrir votre main et écarter tous vos doigts. Un poing fermé ou des doigts pliés ne mogą pas être lus."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Apri la mano e distendi tutte le dita. Non è possibile leggere un pugno chiuso o le dita piegate."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "手を開き、すべての指をしっかりと伸ばしてください。握り拳や曲がった指は読み取ることができません。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Åpne hånden og strekk ut alle fingrene. En lukket knyttneve eller bøyde fingre kan ikke leses av."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Otwórz dłoń i wyprostuj wszystkie palce. Zamknięta pięść lub zgięte palce uniemożliwiają odczyt."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Abra a mão e estique todos os dedos. Um punho fechado ou dedos dobrados não podem ser lidos."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Öppna handen och sträck ut alla fingrar. En stängd knytnäve eller böjda fingrar kan inte läsas av."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Будь ласка, відкрийте долоню та випряміть усі пальці. Закритий кулак або зігнуті пальці неможливо зчитати."
+              }
+            }
+          }
+        },
+        "palmAnalysis.error.invalidImage" : {
+          "comment" : "The image could not be processed. Please try taking another photo.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Das Bild konnte nicht verarbeitet werden. Bitte versuche, ein neues Foto zu machen."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "The image could not be processed. Please try taking another photo."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "No se pudo procesar la imagen. Intenta tomar otra foto."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "L'image n'a pas pu être traitée. Veuillez prendre une autre photo."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Impossibile elaborare l'immagine. Prova a scattare un'altra foto."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "画像を処理できませんでした。もう一度写真を撮影してください。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Bildet kunne ikke behandles. Prøv å ta et nytt bilde."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Nie udało się przetworzyć obrazu. Spróbuj zrobić kolejne zdjęcie."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Não foi possível processar a imagem. Tente tirar outra foto."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Bilden kunde inte bearbetas. Försök att ta ett nytt foto."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Не вдалося обробити зображення. Будь ласка, спробуйте зробити інше фото."
+              }
+            }
+          }
+        },
+        "palmAnalysis.error.lowConfidence" : {
+          "comment" : "Your palm couldn't be clearly identified. Show the inside of your hand to the camera with good lighting and try again.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Deine Handfläche konnte nicht eindeutig erkannt werden. Zeige die Innenseite deiner Hand bei guter Beleuchtung in die Kamera und versuche es erneut."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Your palm couldn't be clearly identified. Show the inside of your hand to the camera with good lighting and try again."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "No se pudo identificar claramente tu palma. Muestra el interior de tu mano a la cámara con buena iluminación e inténtalo de nuevo."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Votre paume n'a pas pu être identifiée clairement. Montrez l'intérieur de votre main à la caméra avec un bon éclairage et réessayez."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Non è stato possibile identificare chiaramente il tuo palmo. Mostra l'interno della mano alla fotocamera con una buona illuminazione e riprova."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "手相を明確に識別できませんでした。明るい場所で手のひらをしっかりとカメラに向けて、もう一度お試しください。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Håndflaten din kunne ikke identifiseres tydelig. Vis innsiden av hånden til kameraet med god belysning, og prøv igjen."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Nie udało się wyraźnie zidentyfikować dłoni. Skieruj wewnętrzną stronę dłoni do aparatu przy dobrym oświetleniu i spróbuj ponownie."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Não foi possível identificar claramente a sua palma. Mostre a parte interna da mão para a câmera com boa iluminação e tente novamente."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Din handflata kunde inte identifieras tydligt. Visa insidan av handen för kameran i god belysning och försök igen."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Не вдалося чітко розпізнати вашу долоню. Покажіть внутрішню сторону долоні на камеру при хорошому освітленні та спробуйте ще раз."
+              }
+            }
+          }
+        },
+        "palmAnalysis.error.noHandDetected" : {
+          "comment" : "No hand detected in the image. Please ensure your palm is clearly visible and well-lit.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Keine Hand auf dem Bild erkannt. Bitte stelle sicher, dass deine Handfläche gut sichtbar und gut beleuchtet ist."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "No hand detected in the image. Please ensure your palm is clearly visible and well-lit."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "No se detectó ninguna mano en la imagen. Asegúrate de que tu palma sea claramente visible y esté bien iluminada."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Aucune main détectée sur l'image. Veuillez vous assurer que votre paume est bien visible et bien éclairée."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Nessuna mano rilevata nell'immagine. Assicurati che il palmo sia ben visibile e ben illuminato."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "画像から手が検出されませんでした。手のひらがはっきりと見え、十分な明るさがあることを確認してください。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ingen hånd oppdaget i bildet. Sørg for at håndflaten din er godt synlig og har god belysning."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Nie wykryto dłoni na zdjęciu. Upewnij się, że wewnętrzna strona dłoni jest dobrze widoczna i odpowiednio oświetlona."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Nenhuma mão detectada na imagem. Certifique-se de que sua palma esteja claramente visível e bem iluminada."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ingen hand upptäcktes i bilden. Se till att din handflata är tydligt synlig och väl upplyst."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "На зображенні не виявлено руки. Переконайтеся, що вашу долоню чітко видно і вона добре освітлена."
+              }
+            }
+          }
+        },
+        "palmAnalysis.error.processingFailed" : {
+          "comment" : "Failed to analyze the palm lines. Please try again with better lighting.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Die Analyse der Handlinien ist fehlgeschlagen. Bitte versuche es bei besserer Beleuchtung noch einmal."
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Failed to analyze the palm lines. Please try again with better lighting."
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Error al analizar las líneas de la palma. Inténtalo de nuevo con mejor iluminación."
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Échec de l'analyse des lignes de la paume. Veuillez réessayer avec un meilleur éclairage."
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Impossibile analizzare le linee del palmo. Riprova con una migliore illuminazione."
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "手相の解析に失敗しました。明るい場所でもう一度お試しください。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Kunne ikke analysere håndlinjene. Prøv igjen med bedre belysning."
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Nie udało się przeanalizować linii dłoni. Spróbuj ponownie przy lepszym oświetleniu."
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Falha ao analisar as linhas da palma. Tente novamente com melhor iluminação."
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Misslyckades med att analysera handlinjerna. Försök igen med bättre belysning."
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Не вдалося проаналізувати лінії долоні. Будь ласка, спробуйте ще раз при кращому освітленні."
+              }
+            }
+          }
+        },
     "palmBasicMeanings.apollo.meaning" : {
       "comment" : "Below the ring finger. Represents creativity, happiness, and success.",
       "localizations" : {

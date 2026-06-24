@@ -781,6 +781,13 @@ enum L10n {
     static let palmReadingOpenSettings = NSLocalizedString("palmReading.openSettings", comment: "Open Settings")
     static let palmReadingPlaceHand = NSLocalizedString("palmReading.placeHand", comment: "Place your palm within the guide")
 
+    // MARK: - Palm Analysis Errors
+    static let palmAnalysisErrorInvalidImage = NSLocalizedString("palmAnalysis.error.invalidImage", comment: "The image could not be processed. Please try taking another photo.")
+    static let palmAnalysisErrorNoHandDetected = NSLocalizedString("palmAnalysis.error.noHandDetected", comment: "No hand detected in the image. Please ensure your palm is clearly visible and well-lit.")
+    static let palmAnalysisErrorFingersNotExtended = NSLocalizedString("palmAnalysis.error.fingersNotExtended", comment: "Please open your hand and extend all your fingers. A closed fist or curled fingers cannot be read.")
+    static let palmAnalysisErrorLowConfidence = NSLocalizedString("palmAnalysis.error.lowConfidence", comment: "Your palm couldn't be clearly identified. Show the inside of your hand to the camera with good lighting and try again.")
+    static let palmAnalysisErrorProcessingFailed = NSLocalizedString("palmAnalysis.error.processingFailed", comment: "Failed to analyze the palm lines. Please try again with better lighting.")
+
     // MARK: - Palm Reading History
     static let palmHistoryTitle = NSLocalizedString("palmHistory.title", comment: "Saved Readings")
     static let palmHistoryButtonTitle = NSLocalizedString("palmHistory.button.title", comment: "Saved Readings")
