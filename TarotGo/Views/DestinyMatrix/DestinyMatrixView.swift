@@ -9,10 +9,12 @@ import SwiftUI
 
 struct DestinyMatrixView: View {
     @EnvironmentObject var appViewModel: AppViewModel
+    @EnvironmentObject var subscriptionService: SubscriptionService
     @State private var navigateToDestinyMatrix: Bool = false
     @State private var navigateToCoupleDestiny: Bool = false
     @State private var navigateToHistory: Bool = false
     @State private var navigateToLearn: Bool = false
+    @State private var showPaywall: Bool = false
     @State private var galaxyRotationBack: Double = 0
     @State private var galaxyRotationMiddle: Double = 0
     @State private var galaxyRotationFront: Double = 0
@@ -87,6 +89,9 @@ struct DestinyMatrixView: View {
                     navigateToLearn = false
                 }
             }
+            .sheet(isPresented: $showPaywall) {
+                PaywallView()
+            }
         }
     }
 
@@ -152,7 +157,11 @@ struct DestinyMatrixView: View {
                 Button {
                     HapticService.shared.impact(.light)
                     SoundService.shared.play(.whoosh, volume: 0.4)
-                    navigateToDestinyMatrix = true
+                    if subscriptionService.isPremium {
+                        navigateToDestinyMatrix = true
+                    } else {
+                        showPaywall = true
+                    }
                 } label: {
                     CircularRingButton(
                         icon: "ic_destiny_matrix",
@@ -167,7 +176,11 @@ struct DestinyMatrixView: View {
                 Button {
                     HapticService.shared.impact(.light)
                     SoundService.shared.play(.whoosh, volume: 0.4)
-                    navigateToCoupleDestiny = true
+                    if subscriptionService.isPremium {
+                        navigateToCoupleDestiny = true
+                    } else {
+                        showPaywall = true
+                    }
                 } label: {
                     CircularRingButton(
                         icon: "ic_couple_destiny",

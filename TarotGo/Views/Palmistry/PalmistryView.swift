@@ -9,7 +9,9 @@ import SwiftUI
 
 struct PalmistryView: View {
     @EnvironmentObject var appViewModel: AppViewModel
+    @EnvironmentObject var subscriptionService: SubscriptionService
     @State private var navigateToPalmReading: Bool = false
+    @State private var showPaywall: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -115,7 +117,11 @@ struct PalmistryView: View {
                                 .frame(width: geo.size.width, height: geo.size.height)
 
                             Button {
-                                navigateToPalmReading = true
+                                if subscriptionService.isPremium {
+                                    navigateToPalmReading = true
+                                } else {
+                                    showPaywall = true
+                                }
                             } label: {
                                 PalmButton(
                                     icon: "hand.raised.fill",
@@ -139,6 +145,9 @@ struct PalmistryView: View {
                 withAnimation(.easeInOut(duration: 0.25)) {
                     appViewModel.tabBarVisibility = isActive ? .hidden : .visible
                 }
+            }
+            .sheet(isPresented: $showPaywall) {
+                PaywallView()
             }
         }
     }

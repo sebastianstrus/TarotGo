@@ -9,7 +9,9 @@ import SwiftUI
 
 struct TarotView: View {
     @EnvironmentObject var appViewModel: AppViewModel
+    @EnvironmentObject var subscriptionService: SubscriptionService
     @State private var destination: TarotDestination?
+    @State private var showPaywall: Bool = false
 
     var body: some View {
         NavigationStack(path: $appViewModel.navigationPath) {
@@ -81,6 +83,9 @@ struct TarotView: View {
                     }
                 }
             }
+            .sheet(isPresented: $showPaywall) {
+                PaywallView()
+            }
         }
     }
 
@@ -117,6 +122,10 @@ struct TarotView: View {
     private func handleSelection(_ option: TarotWheelOption) {
         HapticService.shared.impact(.light)
         SoundService.shared.play(.whoosh, volume: 0.4)
+        if option.destination == .newReading && !subscriptionService.isPremium {
+            showPaywall = true
+            return
+        }
         destination = option.destination
     }
 

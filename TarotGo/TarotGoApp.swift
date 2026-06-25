@@ -12,6 +12,7 @@ import UserNotifications
 @main
 struct TarotGoApp: App {
     @StateObject private var appViewModel = AppViewModel()
+    @StateObject private var subscriptionService = SubscriptionService.shared
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -41,6 +42,7 @@ struct TarotGoApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(appViewModel)
+                .environmentObject(subscriptionService)
                 .onAppear {
                     // Connect the app view model to the notification delegate
                     NotificationDelegate.shared.appViewModel = appViewModel

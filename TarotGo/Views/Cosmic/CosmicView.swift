@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CosmicView: View {
     @EnvironmentObject var appViewModel: AppViewModel
+    @EnvironmentObject var subscriptionService: SubscriptionService
+    @State private var showPaywall: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -45,12 +47,18 @@ struct CosmicView: View {
 
                     Spacer(minLength: 0)
 
-                    CosmicOrbitMenu()
-                    
+                    CosmicOrbitMenu(
+                        isCompatibilityLocked: !subscriptionService.isPremium,
+                        onCompatibilityLocked: { showPaywall = true }
+                    )
+
                     Spacer(minLength: 0)
                 }
             }
             .navigationBarHidden(true)
+            .sheet(isPresented: $showPaywall) {
+                PaywallView()
+            }
         }
     }
 }
@@ -58,6 +66,9 @@ struct CosmicView: View {
 // MARK: - Orbit Menu
 
 private struct CosmicOrbitMenu: View {
+    let isCompatibilityLocked: Bool
+    let onCompatibilityLocked: () -> Void
+
     private struct Orbit {
         let rx: CGFloat
         let ry: CGFloat
@@ -151,7 +162,8 @@ private struct CosmicOrbitMenu: View {
                             orbit: sharedOrbit,
                             startPhase: basePhase + step * 3,
                             time: t,
-                            animationDelay: 1.05
+                            animationDelay: 1.05,
+                            lockedTap: isCompatibilityLocked ? onCompatibilityLocked : nil
                         )
 
                         orbitingNode(
@@ -187,7 +199,8 @@ private struct CosmicOrbitMenu: View {
         orbit: Orbit,
         startPhase: Double,
         time: TimeInterval,
-        animationDelay: Double
+        animationDelay: Double,
+        lockedTap: (() -> Void)? = nil
     ) -> some View {
         let angle = startPhase + 2 * Double.pi * time / orbit.period
         let cosA = CGFloat(cos(angle))
@@ -200,16 +213,29 @@ private struct CosmicOrbitMenu: View {
         let minScale: CGFloat = 0.4
         let scale = minScale + (1.0 - minScale) * depth
 
-        NavigationLink {
-            destination
-        } label: {
-            CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay)
+        Group {
+            if let lockedTap {
+                Button {
+                    HapticService.shared.impact(.light)
+                    SoundService.shared.play(.whoosh, volume: 0.4)
+                    lockedTap()
+                } label: {
+                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay)
+                }
+                .buttonStyle(CosmicNodeButtonStyle())
+            } else {
+                NavigationLink {
+                    destination
+                } label: {
+                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay)
+                }
+                .buttonStyle(CosmicNodeButtonStyle())
+                .simultaneousGesture(TapGesture().onEnded {
+                    HapticService.shared.impact(.light)
+                    SoundService.shared.play(.whoosh, volume: 0.4)
+                })
+            }
         }
-        .buttonStyle(CosmicNodeButtonStyle())
-        .simultaneousGesture(TapGesture().onEnded {
-            HapticService.shared.impact(.light)
-            SoundService.shared.play(.whoosh, volume: 0.4)
-        })
         .scaleEffect(scale)
         .position(x: x, y: y)
         .zIndex(Double(sinA))
