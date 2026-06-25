@@ -171,8 +171,10 @@ struct CardSelectionView: View {
             SoundService.shared.playAmbient(.ambientMystic, volume: 0.15)
             if !fanAppeared {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                    SoundService.shared.play(.cardDraw, volume: 0.6)
                     fanAppeared = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                    SoundService.shared.play(.cardDraw, volume: 0.6)
+                                }
                 }
             }
         }

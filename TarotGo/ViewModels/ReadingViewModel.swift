@@ -67,7 +67,6 @@ class ReadingViewModel: ObservableObject {
         
         drawnCards.append(drawnCard)
         
-        SoundService.shared.play(.cardDraw, volume: 0.6)
         HapticService.shared.impact(.medium)
         
         return drawnCard

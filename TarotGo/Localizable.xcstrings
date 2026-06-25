@@ -258606,126 +258606,786 @@
       }
     },
     "onboarding.welcome.subtitle" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your all-in-one mystical companion for tarot, destiny, palmistry and cosmic wisdom"
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dein all-in-one mystischer Begleiter für Tarot, Schicksal, Chiromantie und kosmische Weisheit"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Your all-in-one mystical companion for tarot, destiny, palmistry and cosmic wisdom"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Tu compañero místico todo en uno para el tarot, el destino, la quiromancia y la sabiduría cósmica"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Votre compagnon mystique tout-en-un pour le tarot, le destin, la chiromancie et la sagesse cosmique"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Il tuo compagno mistico all-in-one für tarocchi, destino, chiromanzia e saggezza cosmica"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "タロット、運命、手相、宇宙の知恵を網羅した、あなただけのオールインワン神秘コンパニオン"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Din alt-i-ett mystiske følgesvenn for tarot, skjebne, kiromanti og kosmisk visdom"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Twój wszechstronny mistyczny przewodnik po tarocie, przeznaczeniu, chiromancji i kosmicznej mądrości"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Seu companheiro místico tudo-em-um para tarô, destino, quiromancia e sabedoria cósmica"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Din allt-i-ett mystiska följeslagare för tarot, öde, kiromanti och kosmisk visdom"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ваш універсальний містичний супутник у світі таро, долі, хіромантії та космічної мудрості"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.tarot.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Draw Your Cards"
+        },
+        "onboarding.tarot.title" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ziehe deine Karten"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Draw Your Cards"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Saca tus cartas"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Tirez vos cartes"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Pesca le tue carte"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "カードを引く"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Trekk dine kort"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Wyciągnij karty"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Tire suas cartas"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dra dina kort"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Тягніть карти"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.tarot.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shuffle the deck, choose a spread, and uncover insights — even in AR"
+        },
+        "onboarding.tarot.desc" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Mische das Deck, wähle ein Legesystem und enthülle Erkenntnisse – sogar in AR"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Shuffle the deck, choose a spread, and uncover insights — even in AR"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Baraja la baraja, elige una tirada y descubre revelaciones, incluso en AR"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Mélangez le jeu, choisissez un tirage und découvrez des révélations – même en RA"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Mescola il mazzo, scegli una stesa e scopri preziose intuizioni – anche in AR"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "デッキをシャッフルし、スプレッドを選んで、メッセージを読み解きましょう。AR機能にも対応。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Stokk kortstokken, velg et legg, og avdekk innsikt – selv i AR"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Przetasuj talię, wybierz rozkład i odkryj odpowiedzi — również w AR"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Embaralhe o baralho, escolha uma tiragem e descubra revelações — mesmo em AR"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Blanda kortleken, välj ett lägg och avtäck insikter – även i AR"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Перетасуйте колоду, виберіть розклад та відкрийте таємниці — навіть в AR"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.destinyMatrix.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Decode Your Destiny"
+        },
+        "onboarding.destinyMatrix.title" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Entschlüssele dein Schicksal"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Decode Your Destiny"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Descifra tu destino"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Décoder votre destin"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Decodifica il tuo destino"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "運命を解読する"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dekoder din skjebne"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Odkryj Matrycę Losu"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Decifre o seu destino"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Avkoda ditt öde"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Розшифруйте свою долю"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.destinyMatrix.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Discover your life purpose, karma and relationships through the 22 arcana matrix"
+        },
+        "onboarding.destinyMatrix.desc" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Entdecke deine Lebensaufgabe, dein Karma und deine Beziehungen durch die Matrix der 22 Arkana"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Discover your life purpose, karma and relationships through the 22 arcana matrix"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Descubre tu propósito de vida, karma y relaciones a través de la matriz de los 22 arcanos"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Découvrez votre but de vie, votre karma et vos relations grâce à la matrice des 22 arcanes"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Scopri il tuo scopo di vita, il karma e le relazioni attraverso la matrice dei 22 arcani"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "22のアルカナマトリックスを通じて、人生の目的、カルマ、そして人間関係を解き明かしましょう。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Oppdag ditt livsformål, karma og relasjoner gjennom matrisen med de 22 arkanaene"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Poznaj swój cel życiowy, karmę i relacje dzięki matrycy opartej na 22 Arkanach"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Descubra o propósito da sua vida, karma e relacionamentos através da matriz dos 22 arcanos"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Upptäck ditt livssyfte, karma och relationer genom matrisen med de 22 arkanorna"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Дізнайтеся про своє призначення, карму та стосунки за допомогою матриці 22 арканів"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.palmistry.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Read Your Palm"
+        },
+        "onboarding.palmistry.title" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Lies deine Handfläche"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Read Your Palm"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Lee tu mano"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Lisez votre paume"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Leggi il tuo palmo"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "手相を読む"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Les håndflaten din"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Zeskanuj linię dłoni"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Leia a sua mão"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Läs din handflata"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Зчитайте долоню"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.palmistry.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snap a photo of your hand and reveal what your lines say about you"
+        },
+        "onboarding.palmistry.desc" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Mache ein Foto deiner Hand und erfahre, was deine Linien über dich aussagen"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Snap a photo of your hand and reveal what your lines say about you"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Toma una foto de tu mano y revela lo que tus líneas dicen sobre ti"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Prenez une photo de votre main et découvrez ce que vos lignes disent de vous"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Scatta una foto della mano e scopri cosa dicono le tue linee su di te"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "手のアウトラインを撮影するだけで、手のひらの線が伝えるあなたの特質を解き明かします。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ta et bilde av hånden din og se hva linjene dine sier om deg"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Zrób zdjęcie dłoni i dowiedz się, co skrywają Twoje linie pomocnicze i główne"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Tire uma foto da sua mão e revele o que as suas linhas dizem sobre você"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ta ett foto av din hand och se vad dina linjer säger om dig"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Зробіть фото руки та дізнайтеся, що лінії говорять про вашу особистість"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.cosmic.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Explore the Cosmos"
+        },
+        "onboarding.cosmic.title" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Erkunde den Kosmos"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Explore the Cosmos"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Explora el Cosmos"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Explorer le Cosmos"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Esplora il Cosmo"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "宇宙を探求する"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Utforsk kosmos"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Odkrywaj Kosmos"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Explore o Cosmos"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Utforska kosmos"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Досліджуйте Космос"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.cosmic.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Daily horoscope, lunar calendar, numerology, cosmogram and compatibility"
+        },
+        "onboarding.cosmic.desc" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Tageshoroskop, Mondkalender, Numerologie, Kosmogramm und Kompatibilität"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Daily horoscope, lunar calendar, numerology, cosmogram and compatibility"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Horóscopo diario, calendario lunar, numerología, cosmograma y compatibilidad"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Horoscope quotidien, calendrier lunaire, numérologie, cosmogramme et compatibilité"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Oroscopo giornaliero, calendario lunare, numerologia, cosmogramma e compatibilità"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "毎日のホロスコープ、月齢カレンダー、数秘術、コスモグラム、相性診断をお届け。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dagsaktuell horoskop, månekalender, numerologi, kosmogram og kompatibilitet"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Horoskop dzienny, kalendarz księżycowy, numerologia, kosmogram i dopasowanie partnerskie"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Horóscopo diário, calendário lunar, numerologia, cosmograma e compatibilidade"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dagligt horoskop, månkalender, numerologi, kosmogram och kompatibilitet"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Щоденний гороскоп, місячний календар, нумерологія, космограма та сумісність"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.ready.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your Journey Begins"
+        },
+        "onboarding.ready.title" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Deine Reise beginnt"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Your Journey Begins"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Tu viaje comienza"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Votre voyage commence"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Il tuo viaggio inizia"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "旅が始まる"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Din reise begynner"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Twoja podróż się zaczyna"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Sua jornada começa"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Din resa börjar"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Ваша подорож починається"
+              }
+            }
           }
-        }
-      }
-    },
-    "onboarding.ready.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Personalize your experience and let the universe guide you"
+        },
+        "onboarding.ready.desc" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Personalisiere dein Erlebnis und lass dich vom Universum leiten"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Personalize your experience and let the universe guide you"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Personaliza tu experiencia y deja que el universo te guíe"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Personnalisez votre expérience et laissez l'univers vous guider"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Personalizza la tua esperienza e lasciati guidare dall'universo"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "アプリをあなたに合わせてカスタマイズし、宇宙の導きに耳を傾けましょう。"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Skreddersy din opplevelse og la universet veilede deg"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Spersonalizuj swoje profile i pozwól, aby wszechświat wskazał Ci drogę"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Personalize sua experiência e deixe o universo guiar você"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Anpassa din upplevelse och låt universum vägleda dig"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Налаштуйте свій профіль і дозвольте всесвіту вести вас за собою"
+              }
+            }
           }
-        }
-      }
-    },
+        },
     "onboarding.welcomeText" : {
       "extractionState" : "manual",
       "localizations" : {
