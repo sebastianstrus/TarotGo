@@ -37,8 +37,8 @@ struct PaywallView: View {
             closeButton
         }
         .preferredColorScheme(.dark)
-        .alert("Something went wrong", isPresented: $showError, presenting: errorMessage) { _ in
-            Button("OK", role: .cancel) { }
+        .alert(L10n.paywallErrorTitle, isPresented: $showError, presenting: errorMessage) { _ in
+            Button(L10n.ok, role: .cancel) { }
         } message: { message in
             Text(message)
         }
@@ -64,12 +64,12 @@ struct PaywallView: View {
             }
             .padding(.top, 24)
 
-            Text("TarotGo Premium")
+            Text(L10n.paywallTitle)
                 .font(AppTheme.serifFont(size: 32, weight: .regular))
                 .foregroundStyle(AppTheme.goldGradient)
                 .shadow(color: AppTheme.gold.opacity(0.5), radius: 8, x: 0, y: 4)
 
-            Text("Unlock the full mystical experience")
+            Text(L10n.paywallSubtitle)
                 .font(.system(size: 15, weight: .light))
                 .foregroundColor(AppTheme.textSecondary)
                 .multilineTextAlignment(.center)
@@ -81,17 +81,17 @@ struct PaywallView: View {
     private var featuresSection: some View {
         VStack(alignment: .leading, spacing: 14) {
             featureRow(icon: "rectangle.portrait.on.rectangle.portrait.angled.fill",
-                       title: "Unlimited Tarot Readings",
-                       subtitle: "Personal spreads with detailed interpretations")
+                       title: L10n.paywallFeatureTarotTitle,
+                       subtitle: L10n.paywallFeatureTarotSubtitle)
             featureRow(icon: "star.circle.fill",
-                       title: "Destiny & Couple Matrix",
-                       subtitle: "Discover your soul's blueprint and bond")
+                       title: L10n.paywallFeatureMatrixTitle,
+                       subtitle: L10n.paywallFeatureMatrixSubtitle)
             featureRow(icon: "hand.raised.palm.facing.fill",
-                       title: "Palm Reading",
-                       subtitle: "AI-powered analysis of your unique palm")
+                       title: L10n.paywallFeaturePalmTitle,
+                       subtitle: L10n.paywallFeaturePalmSubtitle)
             featureRow(icon: "heart.circle.fill",
-                       title: "Cosmic Compatibility",
-                       subtitle: "Decode the chemistry between two charts")
+                       title: L10n.paywallFeatureCompatibilityTitle,
+                       subtitle: L10n.paywallFeatureCompatibilitySubtitle)
         }
         .padding(20)
         .background(
@@ -138,13 +138,13 @@ struct PaywallView: View {
                     .tint(AppTheme.gold)
                     .frame(maxWidth: .infinity, minHeight: 120)
             } else if subscriptionService.products.isEmpty {
-                Text("Products are loading…")
+                Text(L10n.paywallProductsLoading)
                     .font(.system(size: 13))
                     .foregroundColor(AppTheme.textTertiary)
                     .frame(maxWidth: .infinity, minHeight: 120)
             } else {
                 if let yearly = subscriptionService.yearlyProduct {
-                    productOption(for: yearly, badge: "BEST VALUE", isYearly: true)
+                    productOption(for: yearly, badge: L10n.paywallBadgeBestValue, isYearly: true)
                 }
                 if let monthly = subscriptionService.monthlyProduct {
                     productOption(for: monthly, badge: nil, isYearly: false)
@@ -156,7 +156,7 @@ struct PaywallView: View {
     private func productOption(for product: Product, badge: String?, isYearly: Bool) -> some View {
         let isSelected = selectedProductID == product.id
         let trialText = trialDescription(for: product)
-        let periodText = isYearly ? "/ year" : "/ month"
+        let periodText = isYearly ? L10n.paywallPeriodYearly : L10n.paywallPeriodMonthly
 
         return Button {
             HapticService.shared.impact(.soft)
@@ -177,7 +177,7 @@ struct PaywallView: View {
 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack(spacing: 8) {
-                        Text(isYearly ? "Yearly" : "Monthly")
+                        Text(isYearly ? L10n.paywallProductYearly : L10n.paywallProductMonthly)
                             .font(AppTheme.serifFont(size: 17, weight: .semibold))
                             .foregroundColor(AppTheme.textPrimary)
 
@@ -240,7 +240,7 @@ struct PaywallView: View {
         @unknown default: multiplier = 1
         }
         let totalDays = intro.period.value * multiplier
-        return "\(totalDays)-day free trial"
+        return L10n.paywallTrialDays(totalDays)
     }
 
     // MARK: - CTA
@@ -274,9 +274,9 @@ struct PaywallView: View {
     private var ctaTitle: String {
         if let product = subscriptionService.products.first(where: { $0.id == selectedProductID }),
            product.subscription?.introductoryOffer?.paymentMode == .freeTrial {
-            return "Start 7-Day Free Trial"
+            return L10n.paywallCtaStartTrial
         }
-        return "Continue"
+        return L10n.paywallCtaContinue
     }
 
     private func startPurchase() {
@@ -308,14 +308,14 @@ struct PaywallView: View {
                     }
                 }
             } label: {
-                Text("Restore Purchases")
+                Text(L10n.paywallRestore)
                     .font(.system(size: 13, weight: .medium))
                     .foregroundColor(AppTheme.textSecondary)
                     .underline()
             }
             .buttonStyle(.plain)
 
-            Text("Subscription auto-renews until cancelled. Cancel anytime in Settings.")
+            Text(L10n.paywallDisclaimer)
                 .font(.system(size: 11, weight: .light))
                 .foregroundColor(AppTheme.textTertiary)
                 .multilineTextAlignment(.center)

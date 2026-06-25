@@ -18,7 +18,8 @@ enum L10n {
     static let continue_ = NSLocalizedString("common.continue", comment: "Continue button")
     static let getStarted = NSLocalizedString("common.getStarted", comment: "Get started button")
     static let comingSoon = NSLocalizedString("common.comingSoon", comment: "Coming Soon label")
-    
+    static let ok = NSLocalizedString("common.ok", comment: "OK button")
+
     // MARK: - Tab Bar
     static let tabTarot = NSLocalizedString("tab.tarot", comment: "Tarot tab")
     static let tabDestinyMatrix = NSLocalizedString("tab.destinyMatrix", comment: "Destiny Matrix tab")
@@ -1812,6 +1813,35 @@ enum L10n {
 
     static let matrixFaqDisclaimerTitle = NSLocalizedString("matrixFaq.disclaimer.title", comment: "Important Note")
     static let matrixFaqDisclaimerText = NSLocalizedString("matrixFaq.disclaimer.text", comment: "The Destiny Matrix is offered as a tool for reflection and self-discovery. It is not a substitute for medical, psychological, legal, or financial advice. Trust your own judgment and seek qualified professionals when you need real-world support.")
+
+    // MARK: - Paywall
+    static let paywallTitle = NSLocalizedString("paywall.title", comment: "Paywall main title")
+    static let paywallSubtitle = NSLocalizedString("paywall.subtitle", comment: "Paywall header subtitle")
+    static let paywallFeatureTarotTitle = NSLocalizedString("paywall.feature.tarot.title", comment: "Paywall feature title for unlimited tarot readings")
+    static let paywallFeatureTarotSubtitle = NSLocalizedString("paywall.feature.tarot.subtitle", comment: "Paywall feature subtitle for unlimited tarot readings")
+    static let paywallFeatureMatrixTitle = NSLocalizedString("paywall.feature.matrix.title", comment: "Paywall feature title for Destiny and Couple Matrix")
+    static let paywallFeatureMatrixSubtitle = NSLocalizedString("paywall.feature.matrix.subtitle", comment: "Paywall feature subtitle for Destiny and Couple Matrix")
+    static let paywallFeaturePalmTitle = NSLocalizedString("paywall.feature.palm.title", comment: "Paywall feature title for palm reading")
+    static let paywallFeaturePalmSubtitle = NSLocalizedString("paywall.feature.palm.subtitle", comment: "Paywall feature subtitle for palm reading")
+    static let paywallFeatureCompatibilityTitle = NSLocalizedString("paywall.feature.compatibility.title", comment: "Paywall feature title for cosmic compatibility")
+    static let paywallFeatureCompatibilitySubtitle = NSLocalizedString("paywall.feature.compatibility.subtitle", comment: "Paywall feature subtitle for cosmic compatibility")
+    static let paywallProductsLoading = NSLocalizedString("paywall.products.loading", comment: "Placeholder shown while StoreKit products are loading")
+    static let paywallProductYearly = NSLocalizedString("paywall.product.yearly", comment: "Label for the yearly subscription option")
+    static let paywallProductMonthly = NSLocalizedString("paywall.product.monthly", comment: "Label for the monthly subscription option")
+    static let paywallPeriodYearly = NSLocalizedString("paywall.period.yearly", comment: "Per-year suffix shown next to the yearly price")
+    static let paywallPeriodMonthly = NSLocalizedString("paywall.period.monthly", comment: "Per-month suffix shown next to the monthly price")
+    static let paywallBadgeBestValue = NSLocalizedString("paywall.badge.bestValue", comment: "Best value badge on the yearly subscription option")
+    static let paywallCtaStartTrial = NSLocalizedString("paywall.cta.startTrial", comment: "Paywall primary button when a free trial is available")
+    static let paywallCtaContinue = NSLocalizedString("paywall.cta.continue", comment: "Paywall primary button when no free trial is available")
+    static let paywallRestore = NSLocalizedString("paywall.restore", comment: "Restore purchases button")
+    static let paywallDisclaimer = NSLocalizedString("paywall.disclaimer", comment: "Footer text below the subscribe button explaining auto-renewal")
+    static let paywallErrorTitle = NSLocalizedString("paywall.error.title", comment: "Title shown in the paywall error alert")
+    static func paywallTrialDays(_ days: Int) -> String {
+        String(format: NSLocalizedString("paywall.trial.daysFormat", comment: "Free trial label, %d is the number of days"), days)
+    }
+
+    // MARK: - Subscription
+    static let subscriptionErrorVerification = NSLocalizedString("subscription.error.verification", comment: "Error message when a StoreKit transaction fails verification")
 
     // MARK: - Astrology / Zodiac Signs
     // These are used by AstrologyService for zodiac sign names

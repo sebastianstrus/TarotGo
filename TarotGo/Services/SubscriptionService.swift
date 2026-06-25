@@ -22,7 +22,7 @@ enum SubscriptionError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .failedVerification:
-            return "Transaction verification failed."
+            return L10n.subscriptionErrorVerification
         }
     }
 }
