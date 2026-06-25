@@ -127,6 +127,12 @@ struct PalmistryView: View {
                                     icon: "hand.raised.fill",
                                     title: L10n.palmReadingTitle
                                 )
+                                .overlay(alignment: .top) {
+                                    if !subscriptionService.isPremium {
+                                        PremiumBadge()
+                                            .offset(y: -6)
+                                    }
+                                }
                             }
                             .buttonStyle(NavigationButtonStyle())
                             .position(x: geo.size.width * 0.5, y: geo.size.height * 0.58)

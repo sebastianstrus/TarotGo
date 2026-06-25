@@ -166,7 +166,8 @@ struct DestinyMatrixView: View {
                     CircularRingButton(
                         icon: "ic_destiny_matrix",
                         title: L10n.homeDestinyMatrix,
-                        animationDelay: 0.0
+                        animationDelay: 0.0,
+                        isPremiumLocked: !subscriptionService.isPremium
                     )
                 }
                 .buttonStyle(RingButtonPressStyle())
@@ -185,7 +186,8 @@ struct DestinyMatrixView: View {
                     CircularRingButton(
                         icon: "ic_couple_destiny",
                         title: L10n.homeCoupleDestiny,
-                        animationDelay: 0.3
+                        animationDelay: 0.3,
+                        isPremiumLocked: !subscriptionService.isPremium
                     )
                 }
                 .buttonStyle(RingButtonPressStyle())
@@ -240,6 +242,7 @@ private struct CircularRingButton: View {
     let icon: String
     let title: String
     let animationDelay: Double
+    var isPremiumLocked: Bool = false
 
     @State private var float: Bool = false
     @State private var glow: Bool = false
@@ -294,6 +297,12 @@ private struct CircularRingButton: View {
             }
         }
         .frame(width: buttonSize, height: buttonSize)
+        .overlay(alignment: .top) {
+            if isPremiumLocked {
+                PremiumBadge(size: .small)
+                    .offset(y: -6)
+            }
+        }
         .contentShape(Circle())
         .offset(y: float ? -3 : 3)
         .onAppear { startAnimations() }

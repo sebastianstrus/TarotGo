@@ -90,11 +90,13 @@ struct TarotView: View {
     }
 
     private var wheelOptions: [TarotWheelOption] {
-        [
+        let showPremium = !subscriptionService.isPremium
+        return [
             TarotWheelOption(
                 icon: "ic_new_tarot_reading",
                 title: L10n.homeNewReading,
-                destination: .newReading
+                destination: .newReading,
+                isPremiumLocked: showPremium
             ),
             TarotWheelOption(
                 icon: "ic_card_of_the_day",
@@ -161,6 +163,7 @@ struct TarotWheelOption: Identifiable {
     let icon: String
     let title: String
     let destination: TarotDestination
+    var isPremiumLocked: Bool = false
 }
 
 // MARK: - Wheel Menu View
@@ -265,7 +268,11 @@ struct TarotWheelMenuView: View {
                     let x = center.x + cos(midRadians) * effectiveRadius
                     let y = center.y + sin(midRadians) * effectiveRadius
 
-                    VStack(spacing: 0) {
+                    VStack(spacing: 2) {
+                        if option.isPremiumLocked {
+                            PremiumBadge(size: .small)
+                        }
+
                         Image(option.icon)
                             .resizable()
                             .scaledToFit()

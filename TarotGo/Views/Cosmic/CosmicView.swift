@@ -220,7 +220,7 @@ private struct CosmicOrbitMenu: View {
                     SoundService.shared.play(.whoosh, volume: 0.4)
                     lockedTap()
                 } label: {
-                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay)
+                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay, isPremiumLocked: true)
                 }
                 .buttonStyle(CosmicNodeButtonStyle())
             } else {
@@ -271,6 +271,7 @@ private struct CosmicOrbitNode: View {
     let icon: String
     let title: String
     let animationDelay: Double
+    var isPremiumLocked: Bool = false
 
     @State private var glow: Bool = false
     @State private var iconSpin: Bool = false
@@ -373,6 +374,12 @@ private struct CosmicOrbitNode: View {
             .shadow(color: .black.opacity(0.6), radius: 3)
         }
         .frame(width: circleSize, height: capsuleFrameSize)
+        .overlay(alignment: .top) {
+            if isPremiumLocked {
+                PremiumBadge(size: .small)
+                    .offset(y: -2)
+            }
+        }
         .onAppear { startAnimations() }
     }
 
