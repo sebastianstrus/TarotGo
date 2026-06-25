@@ -25,6 +25,7 @@ struct SettingsView: View {
     @State private var showBirthDateInput: Bool = false
     @State private var selectedDate: Date = Date()
     @State private var showManageSubscriptions: Bool = false
+    @State private var showPaywall: Bool = false
     
     private var selectedCardBack: CardBackStyle {
         CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
@@ -36,9 +37,9 @@ struct SettingsView: View {
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
             List {
-                // Premium Section (only visible when subscription is active)
-                if subscriptionService.isPremium {
-                    Section {
+                // Premium Section
+                Section {
+                    if subscriptionService.isPremium {
                         VStack(alignment: .leading, spacing: 14) {
                             HStack(spacing: 12) {
                                 ZStack {
@@ -63,36 +64,70 @@ struct SettingsView: View {
                                 Spacer()
                             }
 
-                            Button {
-                                soundService.play(.click)
-                                HapticService.shared.impact(.light)
-                                showManageSubscriptions = true
-                            } label: {
-                                HStack {
-                                    Text(L10n.settingsPremiumManage)
-                                        .foregroundColor(AppTheme.textPrimary)
-                                    Spacer()
-                                    Image(systemName: "chevron.right")
-                                        .font(.system(size: 14))
-                                        .foregroundColor(AppTheme.gold.opacity(0.6))
-                                }
-                            }
-                            .buttonStyle(.plain)
+//                            Button {
+//                                soundService.play(.click)
+//                                HapticService.shared.impact(.light)
+//                                showManageSubscriptions = true
+//                            } label: {
+//                                HStack {
+//                                    Text(L10n.settingsPremiumManage)
+//                                        .foregroundColor(AppTheme.textPrimary)
+//                                    Spacer()
+//                                    Image(systemName: "chevron.right")
+//                                        .font(.system(size: 14))
+//                                        .foregroundColor(AppTheme.gold.opacity(0.6))
+//                                }
+//                            }
+//                            .buttonStyle(.plain)
                         }
                         .padding(.vertical, 4)
                         .listRowSeparator(.hidden)
-                    } header: {
-                        Text(L10n.settingsPremiumHeader)
-                            .foregroundColor(AppTheme.gold)
+                    } else {
+                        Button {
+                            soundService.play(.click)
+                            HapticService.shared.impact(.light)
+                            showPaywall = true
+                        } label: {
+                            HStack(spacing: 12) {
+                                ZStack {
+                                    Circle()
+                                        .fill(AppTheme.gold.opacity(0.15))
+                                        .frame(width: 40, height: 40)
+                                    Image(systemName: "crown.fill")
+                                        .foregroundStyle(AppTheme.goldGradient)
+                                        .font(.system(size: 18, weight: .semibold))
+                                }
+
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(L10n.paywallTitle)
+                                        .foregroundColor(AppTheme.textPrimary)
+                                        .font(.system(size: 16, weight: .semibold))
+                                    Text(L10n.paywallSubtitle)
+                                        .foregroundColor(AppTheme.textSecondary)
+                                        .font(.system(size: 12))
+                                        .lineLimit(2)
+                                }
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(AppTheme.gold.opacity(0.6))
+                            }
+                            .padding(.vertical, 4)
+                        }
+                        .buttonStyle(.plain)
+                        .listRowSeparator(.hidden)
                     }
-                    .listRowBackground(
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(AppTheme.darkNavy.opacity(0.6))
-                            .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                    )
-                    .listSectionSeparator(.hidden)
-                    .padding(.vertical, 4)
+                } header: {
+                    Text(L10n.settingsPremiumHeader)
+                        .foregroundColor(AppTheme.gold)
                 }
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
+                )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
 
                 // Birth Date Section (at the top)
                 Section {
@@ -506,6 +541,9 @@ struct SettingsView: View {
             }
         }
         .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
+        .sheet(isPresented: $showPaywall) {
+            PaywallView()
+        }
         .alert(L10n.settingsNotificationPermissionTitle, isPresented: $showPermissionAlert) {
             Button(L10n.settingsNotificationPermissionCancel, role: .cancel) {
                 toggleState = false
