@@ -35,6 +35,7 @@ final class SubscriptionService: ObservableObject {
     @Published private(set) var purchasedProductIDs: Set<String> = []
     @Published private(set) var isLoadingProducts: Bool = false
     @Published private(set) var isPurchasing: Bool = false
+    @Published private(set) var isEligibleForIntroOffer: Bool = false
 
     var isPremium: Bool {
         !purchasedProductIDs.isEmpty
@@ -70,9 +71,18 @@ final class SubscriptionService: ObservableObject {
             let identifiers = SubscriptionProduct.allCases.map(\.rawValue)
             let storeProducts = try await Product.products(for: identifiers)
             products = storeProducts.sorted { $0.price < $1.price }
+            await refreshIntroOfferEligibility()
         } catch {
             print("❌ Failed to load StoreKit products: \(error)")
         }
+    }
+
+    func refreshIntroOfferEligibility() async {
+        guard let groupID = products.compactMap({ $0.subscription?.subscriptionGroupID }).first else {
+            isEligibleForIntroOffer = false
+            return
+        }
+        isEligibleForIntroOffer = await Product.SubscriptionInfo.isEligibleForIntroOffer(for: groupID)
     }
 
     @discardableResult
@@ -123,6 +133,7 @@ final class SubscriptionService: ObservableObject {
         }
 
         purchasedProductIDs = purchased
+        await refreshIntroOfferEligibility()
     }
 
     private func listenForTransactions() -> Task<Void, Never> {

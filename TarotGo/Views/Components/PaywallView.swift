@@ -230,7 +230,8 @@ struct PaywallView: View {
     }
 
     private func trialDescription(for product: Product) -> String? {
-        guard let intro = product.subscription?.introductoryOffer,
+        guard subscriptionService.isEligibleForIntroOffer,
+              let intro = product.subscription?.introductoryOffer,
               intro.paymentMode == .freeTrial else { return nil }
         let multiplier: Int
         switch intro.period.unit {
@@ -273,7 +274,8 @@ struct PaywallView: View {
     }
 
     private var ctaTitle: String {
-        if let product = subscriptionService.products.first(where: { $0.id == selectedProductID }),
+        if subscriptionService.isEligibleForIntroOffer,
+           let product = subscriptionService.products.first(where: { $0.id == selectedProductID }),
            product.subscription?.introductoryOffer?.paymentMode == .freeTrial {
             return L10n.paywallCtaStartTrial
         }
