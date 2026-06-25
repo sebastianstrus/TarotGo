@@ -1839,6 +1839,10 @@ enum L10n {
     static func paywallTrialDays(_ days: Int) -> String {
         String(format: NSLocalizedString("paywall.trial.days", comment: "Free trial description; %d is replaced with the number of days"), days)
     }
+    
+    // MARK: – NotificationService
+    static let notificationTitle = NSLocalizedString("notification.title", comment: "Your Daily Card Awaits")
+    static let notificationBody = NSLocalizedString("notification.body", comment: "The cards have a message for you today. Take a moment to receive your guidance.")
 
     // MARK: - Subscription
     static let subscriptionErrorVerification = NSLocalizedString("subscription.error.verification", comment: "Error message when a StoreKit transaction fails verification")

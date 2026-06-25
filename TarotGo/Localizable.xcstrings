@@ -301047,6 +301047,40 @@
           }
         }
       }
+    },
+    "notification.title" : {
+      "comment" : "Title of the daily reminder notification",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Deine Tageskarte wartet" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your Daily Card Awaits" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Tu carta diaria te espera" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Votre carte du jour vous attend" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "La tua carta del giorno ti aspetta" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のワンカードが届いています" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Ditt daglige kort venter" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Twoja karta dnia czeka" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Sua carta do dia espera por você" } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Ditt dagliga kort väntar" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Ваша карта дня чекає" } }
+      }
+    },
+    "notification.body" : {
+      "comment" : "Body text of the daily reminder notification",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Die Karten haben heute eine Botschaft für dich. Nimm dir einen Moment Zeit, um deine Führung zu erhalten." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The cards have a message for you today. Take a moment to receive your guidance." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Las cartas tienen un mensaje para ti hoy. Tómate un momento para recibir tu guía." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Les cartes ont un message pour vous aujourd'hui. Prenez un moment pour recevoir votre guidance." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Le carte hanno un messaggio per te oggi. Prenditi un momento per ricevere la tua guida." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "カードがあなたにメッセージを伝えています。少し時間を取って、導きを受け取りましょう。" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Kortene har et budskap til deg i dag. Ta deg et øyeblikk for å motta din veiledning." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Karty mają dziś dla Ciebie przesłanie. Poświęć chwilę, aby przyjąć swoje wskazówki." } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "As cartas têm uma mensagem para você hoje. Reserve um momento para receber sua orientação." } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Korten har ett budskap till dig idag. Ta en stund för att ta emot din vägledning." } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Карти мають послання для вас сьогодні. Знайдіть хвилинку, щоб отримати свою настанову." } }
+      }
     }
   },
   "version" : "1.1"

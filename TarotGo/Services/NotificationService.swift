@@ -50,9 +50,9 @@ class NotificationService: ObservableObject {
         
         // Create notification content
         let content = UNMutableNotificationContent()
-        content.title = "Your Daily Card Awaits"
-        content.body = "The cards have a message for you today. Take a moment to receive your guidance."
-        content.sound = .default
+        content.title = L10n.notificationTitle
+        content.body = L10n.notificationBody
+        content.sound = UNNotificationSound(named: UNNotificationSoundName("notification.caf"))
         content.badge = 1 // Set badge to 1
         content.userInfo = ["type": "daily_card"] // Identifier for navigation
         
