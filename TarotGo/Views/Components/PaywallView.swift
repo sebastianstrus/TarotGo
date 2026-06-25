@@ -287,7 +287,9 @@ struct PaywallView: View {
         HapticService.shared.impact(.medium)
         Task {
             do {
-                _ = try await subscriptionService.purchase(product)
+                if try await subscriptionService.purchase(product) != nil {
+                    dismiss()
+                }
             } catch {
                 errorMessage = error.localizedDescription
                 showError = true

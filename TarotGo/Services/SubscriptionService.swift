@@ -84,8 +84,11 @@ final class SubscriptionService: ObservableObject {
         switch result {
         case .success(let verification):
             let transaction = try checkVerified(verification)
-            await refreshPurchasedProducts()
+            if transaction.revocationDate == nil {
+                purchasedProductIDs.insert(transaction.productID)
+            }
             await transaction.finish()
+            await refreshPurchasedProducts()
             return transaction
         case .userCancelled, .pending:
             return nil
@@ -101,12 +104,24 @@ final class SubscriptionService: ObservableObject {
 
     func refreshPurchasedProducts() async {
         var purchased: Set<String> = []
+
         for await result in Transaction.currentEntitlements {
             guard case .verified(let transaction) = result else { continue }
             if transaction.revocationDate == nil {
                 purchased.insert(transaction.productID)
             }
         }
+
+        for product in products {
+            guard let subscription = product.subscription,
+                  let statuses = try? await subscription.status else { continue }
+            for status in statuses {
+                if status.state == .subscribed || status.state == .inGracePeriod {
+                    purchased.insert(product.id)
+                }
+            }
+        }
+
         purchasedProductIDs = purchased
     }
 
