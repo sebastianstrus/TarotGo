@@ -258605,6 +258605,127 @@
         }
       }
     },
+    "onboarding.welcome.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your all-in-one mystical companion for tarot, destiny, palmistry and cosmic wisdom"
+          }
+        }
+      }
+    },
+    "onboarding.tarot.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Draw Your Cards"
+          }
+        }
+      }
+    },
+    "onboarding.tarot.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shuffle the deck, choose a spread, and uncover insights — even in AR"
+          }
+        }
+      }
+    },
+    "onboarding.destinyMatrix.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decode Your Destiny"
+          }
+        }
+      }
+    },
+    "onboarding.destinyMatrix.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover your life purpose, karma and relationships through the 22 arcana matrix"
+          }
+        }
+      }
+    },
+    "onboarding.palmistry.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read Your Palm"
+          }
+        }
+      }
+    },
+    "onboarding.palmistry.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snap a photo of your hand and reveal what your lines say about you"
+          }
+        }
+      }
+    },
+    "onboarding.cosmic.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explore the Cosmos"
+          }
+        }
+      }
+    },
+    "onboarding.cosmic.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daily horoscope, lunar calendar, numerology, cosmogram and compatibility"
+          }
+        }
+      }
+    },
+    "onboarding.ready.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Journey Begins"
+          }
+        }
+      }
+    },
+    "onboarding.ready.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalize your experience and let the universe guide you"
+          }
+        }
+      }
+    },
     "onboarding.welcomeText" : {
       "extractionState" : "manual",
       "localizations" : {

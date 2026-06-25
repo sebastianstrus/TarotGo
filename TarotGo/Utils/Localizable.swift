@@ -378,6 +378,23 @@ enum L10n {
     static let onboardingInterpretTitle = NSLocalizedString("onboarding.interpret.title", comment: "Receive Guidance")
     static let onboardingInterpretDesc = NSLocalizedString("onboarding.interpret.desc", comment: "Each card offers wisdom tailored to your question")
 
+    static let onboardingWelcomeSubtitle = NSLocalizedString("onboarding.welcome.subtitle", comment: "Your all-in-one mystical companion for tarot, destiny, palmistry and cosmic wisdom")
+
+    static let onboardingTarotTitle = NSLocalizedString("onboarding.tarot.title", comment: "Draw Your Cards")
+    static let onboardingTarotDesc = NSLocalizedString("onboarding.tarot.desc", comment: "Shuffle the deck, choose a spread, and uncover insights — even in AR")
+
+    static let onboardingDestinyMatrixTitle = NSLocalizedString("onboarding.destinyMatrix.title", comment: "Decode Your Destiny")
+    static let onboardingDestinyMatrixDesc = NSLocalizedString("onboarding.destinyMatrix.desc", comment: "Discover your life purpose, karma and relationships through the 22 arcana matrix")
+
+    static let onboardingPalmistryTitle = NSLocalizedString("onboarding.palmistry.title", comment: "Read Your Palm")
+    static let onboardingPalmistryDesc = NSLocalizedString("onboarding.palmistry.desc", comment: "Snap a photo of your hand and reveal what your lines say about you")
+
+    static let onboardingCosmicTitle = NSLocalizedString("onboarding.cosmic.title", comment: "Explore the Cosmos")
+    static let onboardingCosmicDesc = NSLocalizedString("onboarding.cosmic.desc", comment: "Daily horoscope, lunar calendar, numerology, cosmogram and compatibility")
+
+    static let onboardingReadyTitle = NSLocalizedString("onboarding.ready.title", comment: "Your Journey Begins")
+    static let onboardingReadyDesc = NSLocalizedString("onboarding.ready.desc", comment: "Personalize your experience and let the universe guide you")
+
     // MARK: - Onboarding (Intention Selection)
     static let onboardingWelcomeText = NSLocalizedString("onboarding.welcomeText", comment: "Welcome")
     static let onboardingCenterYourself = NSLocalizedString("onboarding.centerYourself", comment: "Take a deep breath and center yourself")

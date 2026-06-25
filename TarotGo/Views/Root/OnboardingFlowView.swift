@@ -20,28 +20,40 @@ struct OnboardingFlowView: View {
     private var pages: [OnboardingPage] {
         [
             OnboardingPage(
-                icon: "moon.stars.fill",
+                icon: "sparkles",
                 title: L10n.onboardingWelcome,
-                description: L10n.onboardingWelcomeDesc,
+                description: L10n.onboardingWelcomeSubtitle,
                 accentColor: AppTheme.gold
             ),
             OnboardingPage(
-                icon: "hand.point.up.fill",
-                title: L10n.onboardingShuffleTitle,
-                description: L10n.onboardingShuffleDesc,
+                icon: "rectangle.portrait.on.rectangle.portrait.angled.fill",
+                title: L10n.onboardingTarotTitle,
+                description: L10n.onboardingTarotDesc,
                 accentColor: AppTheme.lightGold
             ),
             OnboardingPage(
-                icon: "sparkles",
-                title: L10n.onboardingSelectTitle,
-                description: L10n.onboardingSelectDesc,
+                icon: "star.circle.fill",
+                title: L10n.onboardingDestinyMatrixTitle,
+                description: L10n.onboardingDestinyMatrixDesc,
                 accentColor: AppTheme.mysticalPurple
             ),
             OnboardingPage(
-                icon: "book.fill",
-                title: L10n.onboardingInterpretTitle,
-                description: L10n.onboardingInterpretDesc,
+                icon: "hand.raised.palm.facing.fill",
+                title: L10n.onboardingPalmistryTitle,
+                description: L10n.onboardingPalmistryDesc,
                 accentColor: AppTheme.darkGold
+            ),
+            OnboardingPage(
+                icon: "moon.stars.fill",
+                title: L10n.onboardingCosmicTitle,
+                description: L10n.onboardingCosmicDesc,
+                accentColor: AppTheme.gold
+            ),
+            OnboardingPage(
+                icon: "wand.and.stars",
+                title: L10n.onboardingReadyTitle,
+                description: L10n.onboardingReadyDesc,
+                accentColor: AppTheme.lightGold
             )
         ]
     }
