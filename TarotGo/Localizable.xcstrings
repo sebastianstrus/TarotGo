@@ -279049,9 +279049,6 @@
             "uk" : { "stringUnit" : { "state" : "translated", "value" : "%d-денний безкоштовний період" } }
           }
         },
-    "paywall.trial.daysFormat" : {
-      "comment" : "Free trial label, %d is the number of days"
-    },
     "pdf.cards" : {
       "comment" : "Section header for cards in PDF export",
       "extractionState" : "manual",

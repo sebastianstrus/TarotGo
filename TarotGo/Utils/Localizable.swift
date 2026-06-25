@@ -1837,7 +1837,7 @@ enum L10n {
     static let paywallDisclaimer = NSLocalizedString("paywall.disclaimer", comment: "Footer text below the subscribe button explaining auto-renewal")
     static let paywallErrorTitle = NSLocalizedString("paywall.error.title", comment: "Title shown in the paywall error alert")
     static func paywallTrialDays(_ days: Int) -> String {
-        String(format: NSLocalizedString("paywall.trial.daysFormat", comment: "Free trial label, %d is the number of days"), days)
+        String(format: NSLocalizedString("paywall.trial.days", comment: "Free trial description; %d is replaced with the number of days"), days)
     }
 
     // MARK: - Subscription
