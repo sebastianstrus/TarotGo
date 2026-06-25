@@ -562,6 +562,9 @@ enum L10n {
     static let settingsNotificationPermissionSettings = NSLocalizedString("settings.notificationPermission.settings", comment: "Open Settings")
     static let settingsNotificationPermissionCancel = NSLocalizedString("settings.notificationPermission.cancel", comment: "Cancel")
     
+    static let settingsRateApp = NSLocalizedString("settings.rateApp", comment: "Rate TarotGo")
+    static let settingsRateAppDesc = NSLocalizedString("settings.rateAppDesc", comment: "Loving TarotGo? Leave a review on the App Store - it helps other seekers find us.")
+    static let settingsRateAppHeader = NSLocalizedString("settings.rateAppHeader", comment: "Support")
     static let settingsLegal = NSLocalizedString("settings.legal", comment: "Legal")
     static let settingsPrivacyPolicy = NSLocalizedString("settings.privacyPolicy", comment: "Privacy Policy")
     static let settingsTermsOfService = NSLocalizedString("settings.termsOfService", comment: "Terms of Service")

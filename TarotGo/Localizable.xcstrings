@@ -12288,77 +12288,77 @@
       }
     },
     "common.ok" : {
-          "comment" : "OK button",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "OK"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "ОК"
-              }
-            }
+      "comment" : "OK button",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОК"
+          }
+        }
+      }
+    },
     "common.save" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -257254,6 +257254,150 @@
         }
       }
     },
+    "notification.body" : {
+      "comment" : "Body text of the daily reminder notification",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Karten haben eine Botschaft für dich. Hol dir deine Führung."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The cards have a message for you today. Reveal your guidance."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las cartas tienen un mensaje para ti hoy. Descubre tu guía."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les cartes ont un message pour vous. Découvrez votre guidance."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le carte hanno un messaggio per te. Scopri la tua guida."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カードがメッセージを伝えています。今日の導きを確認しましょう。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kortene har et budskap til deg i dag. Se din veiledning."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karty mają dziś dla Ciebie przesłanie. Odkryj wskazówki."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As cartas têm uma mensagem para você. Veja sua orientação."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korten har ett budskap till dig idag. Se din vägledning."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Карти мають послання для вас. Дізнайтеся свою настанову."
+          }
+        }
+      }
+    },
+    "notification.title" : {
+      "comment" : "Title of the daily reminder notification",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Tageskarte wartet"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Daily Card Awaits"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu carta diaria te espera"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre carte du jour vous attend"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua carta del giorno ti aspetta"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日のワンカードが届いています"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditt daglige kort venter"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Twoja karta dnia czeka"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua carta do dia espera por você"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditt dagliga kort väntar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша карта дня чекає"
+          }
+        }
+      }
+    },
     "Nov 22 - Dec 21" : {
       "comment" : "Sagittarius date range",
       "extractionState" : "manual",
@@ -277686,1369 +277830,1589 @@
       }
     },
     "paywall.badge.bestValue" : {
-          "comment" : "Badge shown on the recommended subscription option",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "BESTES ANGEBOT"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "BEST VALUE"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "MEJOR PRECIO"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "MEILLEURE OFFRE"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "CONVIENE DI PIÙ"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "一番お得"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "MEST FOR PENGENE"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "NAJLEPSZA OFERTA"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "MELHOR VALOR"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "MEST PRISVÄRD"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "НАЙКРАЩА ЦІНА"
-              }
-            }
+      "comment" : "Badge shown on the recommended subscription option",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BESTES ANGEBOT"
           }
         },
-        "paywall.cta.continue" : {
-          "comment" : "Primary CTA when no free trial is offered",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Weiter"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Continue"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Continuar"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Continuer"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Continua"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "続ける"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Fortsett"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Dalej"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Continuar"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Fortsätt"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Продовжити"
-              }
-            }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BEST VALUE"
           }
         },
-        "paywall.cta.startTrial" : {
-          "comment" : "Primary CTA when a free trial is offered",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "7 Tage kostenlos testen"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Start 7-Day Free Trial"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Iniciar prueba gratuita de 7 días"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Essayer gratuitement pendant 7 jours"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Inizia la prova gratuita di 7 giorni"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "7日間の無料トライアルを開始"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Start 7 dagers gratis prøveperiode"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Rozpocznij 7-dniowy okres próbny"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Iniciar teste grátis de 7 dias"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Starta 7 dagars gratis provperiod"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Розпочати 7 днів безкоштовно"
-              }
-            }
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MEJOR PRECIO"
           }
         },
-        "paywall.disclaimer" : {
-          "comment" : "Legal disclaimer about auto-renewal",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Das Abonnement verlängert sich automatisch, bis es gekündigt wird. Kündigung jederzeit w Settings möglich."
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Subscription auto-renews until cancelled. Cancel anytime in Settings."
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "La suscripción se renueva automáticamente hasta que się cancele. Cancela en cualquier momento en Ajustes."
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "L'abonnement se renouvelle automatiquement sauf annulation. Annulable à tout moment dans les Réglages."
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "L'abbonamento si rinnova automaticamente arithmeticamente fino all'annullamento. Puoi annullarlo in qualsiasi momento nelle Impostazioni."
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "解約されるまでサブスクリプションは自動更新されます。設定からいつでも解約可能です。"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Abonnementet fornyes automatisk til det sies opp. Kan sies opp når som helst i Innstillinger."
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Subskrypcja odnawia się automatycznie do momentu anulowania. Możesz zrezygnować w dowolnym momencie w Ustawieniach."
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "A assinatura é renovada automaticamente até ser cancelada. Cancele a qualquer momento nas Ajustes."
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Prenumerationen förnyas automatiskt tills den sägs upp. Avbryt när som helst under Inställningar."
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Підписка подовжується автоматично, доки її не буде скасовано. Скасувати можна в будь-який момент у Налаштуваннях."
-              }
-            }
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MEILLEURE OFFRE"
           }
         },
-        "paywall.error.title" : {
-          "comment" : "Title for purchase error alert",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Etwas ist schiefgelaufen"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Something went wrong"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Algo salió mal"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Une erreur est survenue"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Qualcosa è andato storto"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "エラーが発生しました"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Noe gikk galt"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Coś poszło nie tak"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Algo deu errado"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Något gick fel"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Щось пішло не так"
-              }
-            }
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CONVIENE DI PIÙ"
           }
         },
-        "paywall.feature.compatibility.subtitle" : {
-          "comment" : "Subtitle for Cosmic Compatibility feature on the paywall",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Entschlüssele die Chemie zwischen zwei Charts"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Decode the chemistry between two charts"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Descifra la química entre dos cartas natales"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Décodez l'alchimie entre deux thèmes astraux"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Decodifica l'alchimia tra due temi natali"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "2つのチャートの間に眠るシナストリーを読み解く"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Dekoder kjemien mellom to fødselshoroskop"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Poznaj chemię i powiązania między dwoma kosmogrami"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Decifre a química entre dois mapas astrais"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Avkoda kemin mellan två födelsehoroskop"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Розшифруйте хімію між двома картами"
-              }
-            }
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一番お得"
           }
         },
-        "paywall.feature.compatibility.title" : {
-          "comment" : "Title for Cosmic Compatibility feature on the paywall",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Kosmische Kompatibilität"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Cosmic Compatibility"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Compatibilidad cósmica"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Compatibilité cosmique"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Compatibilità cosmica"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "宇宙の相性診断"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Kosmisk kompatibilitet"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Kosmiczne dopasowanie"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Compatibilidade cósmica"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Kosmisk kompatibilitet"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Космічна сумісність"
-              }
-            }
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MEST FOR PENGENE"
           }
         },
-        "paywall.feature.matrix.subtitle" : {
-          "comment" : "Subtitle for Destiny & Couple Matrix feature on the paywall",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Entdecke den Plan deiner Seele und eure Verbindung"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Discover your soul's blueprint and bond"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Descubre el mapa de tu alma y vuestro vínculo"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Découvrez le plan de votre âme et votre lien"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Scopri il progetto della tua anima e il vostro legame"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "魂の設計図と、二人の結びつきを解き明かす"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Oppdag sjelens blåkopi og deres bånd"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Odkryj plan swojej duszy oraz Waszą relację"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Descubra o plano da sua alma e a conexão de vocês"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Upptäck själens ritning och ert band"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Дізнайтеся план вашої душі та міцність зв'язку"
-              }
-            }
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NAJLEPSZA OFERTA"
           }
         },
-        "paywall.feature.matrix.title" : {
-          "comment" : "Title for Destiny & Couple Matrix feature on the paywall",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Schicksals- & Partner-Matrix"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Destiny & Couple Matrix"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matriz de destino y pareja"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matrice de destin & de couple"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matrice del destino e di coppia"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "運命＆相性マトリックス"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Skjebne- og parmatrise"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matryca Przeznaczenia i Par"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Matriz de Destino e Casal"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Ödes- & parmatris"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Матриця долі та сумісності"
-              }
-            }
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MELHOR VALOR"
           }
         },
-        "paywall.feature.palm.subtitle" : {
-          "comment" : "Subtitle for Palm Reading feature on the paywall",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "KI-gestützte Analyse deiner einzigartigen Handfläche"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "AI-powered analysis of your unique palm"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Análisis con IA de tu palma única"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Analyse par IA de votre paume unique"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Analisi basata su IA del tuo palmo unico"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "AI技術による、あなただけの固有の手相解析"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "AI-drevet analyse av din unike håndflate"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Analiza Twoich unikalnych linii dłoni oparta na AI"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Análise baseada em IA da sua palma única"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "AI-driven analys av din unika handflata"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Аналіз вашої унікальної долоні на базі ШІ"
-              }
-            }
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MEST PRISVÄRD"
           }
         },
-        "paywall.feature.palm.title" : {
-          "comment" : "Title for Palm Reading feature on the paywall",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Handlinienlesen"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Palm Reading"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Lectura de manos"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Chiromancie"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Lettura del palmo"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "手相占い"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Håndlesing"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Czytanie z dłoni"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Leitura de mãos"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Handläsning"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Хіромантія"
-              }
-            }
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "НАЙКРАЩА ЦІНА"
+          }
+        }
+      }
+    },
+    "paywall.cta.continue" : {
+      "comment" : "Primary CTA when no free trial is offered",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
           }
         },
-        "paywall.feature.tarot.subtitle" : {
-          "comment" : "Subtitle for Tarot Readings feature on the paywall",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Personalisierte Legesysteme mit detaillierten Deutungen"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Personal spreads with detailed interpretations"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Tiradas personales con interpretaciones detalladas"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Tirages personnalisés avec interprétations détaillées"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Stese personalizzate zeppe di interpretazioni dettagliate"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "詳細な解釈を伴う、あなたに寄り添ったスプレッド展開"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Personlige kortlegg med detaljerte tolkninger"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Osobiste rozkłady ze szczegółową interpretacją kart"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Tiragens pessoais com interpretações detalhadas"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Personliga läggningar med detaljerade tolkningar"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Персональні розклади з детальним тлумаченням"
-              }
-            }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
           }
         },
-        "paywall.feature.tarot.title" : {
-          "comment" : "Title for Tarot Readings feature on the paywall",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Unbegrenzte Tarot-Legungen"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Unlimited Tarot Readings"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Lecturas de tarot ilimitadas"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Tirages de tarot illimités"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Letture dei tarocchi illimitate"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "タロット占い放題"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Ubegrenset antall tarotlesinger"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Nielimitowane wróżby z Tarota"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Leituras de tarô ilimitadas"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Obegränsade tarotläsningar"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Безлімітні розклади Таро"
-              }
-            }
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
           }
         },
-        "paywall.period.monthly" : {
-          "comment" : "Price suffix for a monthly subscription",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / Monat"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / month"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / mes"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / mois"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / mese"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / 月"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / mnd."
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / mies."
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / mês"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / mån"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / міс."
-              }
-            }
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuer"
           }
         },
-        "paywall.period.yearly" : {
-          "comment" : "Price suffix for a yearly subscription",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / Jahr"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / year"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / año"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / an"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / anno"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / 年"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / år"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / rok"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / ano"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / år"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : " / рік"
-              }
-            }
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continua"
           }
         },
-        "paywall.product.monthly" : {
-          "comment" : "Monthly subscription option label",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Monatlich"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Monthly"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Mensual"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Mensuel"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Mensile"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "月間プラン"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Månedlig"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Miesięczny"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Mensal"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Månadsvis"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Щомісячно"
-              }
-            }
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続ける"
           }
         },
-        "paywall.product.yearly" : {
-          "comment" : "Yearly subscription option label",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Jährlich"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Yearly"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Anual"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Annuel"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Annuale"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "年間プラン"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Årlig"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Roczny"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Anual"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Årsvis"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Щорічно"
-              }
-            }
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsett"
           }
         },
-        "paywall.products.loading" : {
-          "comment" : "Shown while StoreKit products are still loading",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Produkte werden geladen…"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Products are loading…"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Cargando productos…"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Chargement des produits…"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Caricamento dei prodotti…"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "商品を読み込み中…"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Laster inn produkter…"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Ładowanie ofert…"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Carregando produtos…"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Laddar produkter…"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Завантаження продуктів…"
-              }
-            }
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dalej"
           }
         },
-        "paywall.restore" : {
-          "comment" : "Restore Purchases button",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : { "stringUnit" : { "state" : "translated", "value" : "Käufe wiederherstellen" } },
-            "en" : { "stringUnit" : { "state" : "translated", "value" : "Restore Purchases" } },
-            "es" : { "stringUnit" : { "state" : "translated", "value" : "Restaurar compras" } },
-            "fr" : { "stringUnit" : { "state" : "translated", "value" : "Restaurer les achats" } },
-            "it" : { "stringUnit" : { "state" : "translated", "value" : "Ripristina acquisti" } },
-            "ja" : { "stringUnit" : { "state" : "translated", "value" : "購入を復元" } },
-            "nb" : { "stringUnit" : { "state" : "translated", "value" : "Gjenopprett kjøp" } },
-            "pl" : { "stringUnit" : { "state" : "translated", "value" : "Przywróć zakupy" } },
-            "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Restaurar compras" } },
-            "sv" : { "stringUnit" : { "state" : "translated", "value" : "Återställ köp" } },
-            "uk" : { "stringUnit" : { "state" : "translated", "value" : "Відновити покупки" } }
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
           }
         },
-        "paywall.subtitle" : {
-          "comment" : "Paywall subtitle below the title",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : { "stringUnit" : { "state" : "translated", "value" : "Schalte die volle mystische Erfahrung frei" } },
-            "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock the full mystical experience" } },
-            "es" : { "stringUnit" : { "state" : "translated", "value" : "Desbloquea la experiencia mística completa" } },
-            "fr" : { "stringUnit" : { "state" : "translated", "value" : "Débloquez l'expérience mystique complète" } },
-            "it" : { "stringUnit" : { "state" : "translated", "value" : "Sblocca l'esperienza mistica completa" } },
-            "ja" : { "stringUnit" : { "state" : "translated", "value" : "神秘的な体験をすべて解放しよう" } },
-            "nb" : { "stringUnit" : { "state" : "translated", "value" : "Lås opp den fulle mystiske opplevelsen" } },
-            "pl" : { "stringUnit" : { "state" : "translated", "value" : "Odblokuj pełne mistyczne doświadczenie" } },
-            "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Desbloqueie a experiência mística completa" } },
-            "sv" : { "stringUnit" : { "state" : "translated", "value" : "Lås upp den fulla mystiska upplevelsen" } },
-            "uk" : { "stringUnit" : { "state" : "translated", "value" : "Розкрийте повний містичний досвід" } }
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsätt"
           }
         },
-        "paywall.title" : {
-          "comment" : "Paywall main title",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "en" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "es" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "fr" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "it" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "ja" : { "stringUnit" : { "state" : "translated", "value" : "TarotGoプレミアム" } },
-            "nb" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "pl" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "sv" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Premium" } },
-            "uk" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo Преміум" } }
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продовжити"
+          }
+        }
+      }
+    },
+    "paywall.cta.startTrial" : {
+      "comment" : "Primary CTA when a free trial is offered",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7 Tage kostenlos testen"
           }
         },
-        "paywall.trial.days" : {
-          "comment" : "Free trial description; %d is replaced with the number of days",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : { "stringUnit" : { "state" : "translated", "value" : "Kostenlose Testversion für %d Tage" } },
-            "en" : { "stringUnit" : { "state" : "translated", "value" : "%d-day free trial" } },
-            "es" : { "stringUnit" : { "state" : "translated", "value" : "Prueba gratuita de %d días" } },
-            "fr" : { "stringUnit" : { "state" : "translated", "value" : "Essai gratuit de %d jours" } },
-            "it" : { "stringUnit" : { "state" : "translated", "value" : "Prova gratuita di %d giorni" } },
-            "ja" : { "stringUnit" : { "state" : "translated", "value" : "%d日間の無料トライアル" } },
-            "nb" : { "stringUnit" : { "state" : "translated", "value" : "%d-dagers gratis prøveperiode" } },
-            "pl" : { "stringUnit" : { "state" : "translated", "value" : "Bezpłatny okres próbny przez %d dni" } },
-            "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Teste grátis de %d dias" } },
-            "sv" : { "stringUnit" : { "state" : "translated", "value" : "%d dagars gratis provperiod" } },
-            "uk" : { "stringUnit" : { "state" : "translated", "value" : "%d-денний безкоштовний період" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start 7-Day Free Trial"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iniciar prueba gratuita de 7 días"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Essayer gratuitement pendant 7 jours"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia la prova gratuita di 7 giorni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7日間の無料トライアルを開始"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start 7 dagers gratis prøveperiode"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozpocznij 7-dniowy okres próbny"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iniciar teste grátis de 7 dias"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starta 7 dagars gratis provperiod"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розпочати 7 днів безкоштовно"
+          }
+        }
+      }
+    },
+    "paywall.disclaimer" : {
+      "comment" : "Legal disclaimer about auto-renewal",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Abonnement verlängert sich automatisch, bis es gekündigt wird. Kündigung jederzeit w Settings möglich."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscription auto-renews until cancelled. Cancel anytime in Settings."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La suscripción se renueva automáticamente hasta que się cancele. Cancela en cualquier momento en Ajustes."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'abonnement se renouvelle automatiquement sauf annulation. Annulable à tout moment dans les Réglages."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'abbonamento si rinnova automaticamente arithmeticamente fino all'annullamento. Puoi annullarlo in qualsiasi momento nelle Impostazioni."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解約されるまでサブスクリプションは自動更新されます。設定からいつでも解約可能です。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnementet fornyes automatisk til det sies opp. Kan sies opp når som helst i Innstillinger."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subskrypcja odnawia się automatycznie do momentu anulowania. Możesz zrezygnować w dowolnym momencie w Ustawieniach."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A assinatura é renovada automaticamente até ser cancelada. Cancele a qualquer momento nas Ajustes."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prenumerationen förnyas automatiskt tills den sägs upp. Avbryt när som helst under Inställningar."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підписка подовжується автоматично, доки її не буде скасовано. Скасувати можна в будь-який момент у Налаштуваннях."
+          }
+        }
+      }
+    },
+    "paywall.error.title" : {
+      "comment" : "Title for purchase error alert",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etwas ist schiefgelaufen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Something went wrong"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algo salió mal"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une erreur est survenue"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qualcosa è andato storto"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラーが発生しました"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noe gikk galt"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coś poszło nie tak"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algo deu errado"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Något gick fel"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Щось пішло не так"
+          }
+        }
+      }
+    },
+    "paywall.feature.compatibility.subtitle" : {
+      "comment" : "Subtitle for Cosmic Compatibility feature on the paywall",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entschlüssele die Chemie zwischen zwei Charts"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decode the chemistry between two charts"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descifra la química entre dos cartas natales"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Décodez l'alchimie entre deux thèmes astraux"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decodifica l'alchimia tra due temi natali"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2つのチャートの間に眠るシナストリーを読み解く"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dekoder kjemien mellom to fødselshoroskop"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poznaj chemię i powiązania między dwoma kosmogrami"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decifre a química entre dois mapas astrais"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avkoda kemin mellan två födelsehoroskop"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розшифруйте хімію між двома картами"
+          }
+        }
+      }
+    },
+    "paywall.feature.compatibility.title" : {
+      "comment" : "Title for Cosmic Compatibility feature on the paywall",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kosmische Kompatibilität"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosmic Compatibility"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilidad cósmica"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilité cosmique"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilità cosmica"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宇宙の相性診断"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kosmisk kompatibilitet"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kosmiczne dopasowanie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilidade cósmica"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kosmisk kompatibilitet"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Космічна сумісність"
+          }
+        }
+      }
+    },
+    "paywall.feature.matrix.subtitle" : {
+      "comment" : "Subtitle for Destiny & Couple Matrix feature on the paywall",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entdecke den Plan deiner Seele und eure Verbindung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover your soul's blueprint and bond"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubre el mapa de tu alma y vuestro vínculo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Découvrez le plan de votre âme et votre lien"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scopri il progetto della tua anima e il vostro legame"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "魂の設計図と、二人の結びつきを解き明かす"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppdag sjelens blåkopi og deres bånd"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odkryj plan swojej duszy oraz Waszą relację"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubra o plano da sua alma e a conexão de vocês"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upptäck själens ritning och ert band"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дізнайтеся план вашої душі та міцність зв'язку"
+          }
+        }
+      }
+    },
+    "paywall.feature.matrix.title" : {
+      "comment" : "Title for Destiny & Couple Matrix feature on the paywall",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schicksals- & Partner-Matrix"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destiny & Couple Matrix"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matriz de destino y pareja"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrice de destin & de couple"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matrice del destino e di coppia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "運命＆相性マトリックス"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjebne- og parmatrise"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matryca Przeznaczenia i Par"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matriz de Destino e Casal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ödes- & parmatris"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Матриця долі та сумісності"
+          }
+        }
+      }
+    },
+    "paywall.feature.palm.subtitle" : {
+      "comment" : "Subtitle for Palm Reading feature on the paywall",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KI-gestützte Analyse deiner einzigartigen Handfläche"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI-powered analysis of your unique palm"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Análisis con IA de tu palma única"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Analyse par IA de votre paume unique"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Analisi basata su IA del tuo palmo unico"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI技術による、あなただけの固有の手相解析"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI-drevet analyse av din unike håndflate"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Analiza Twoich unikalnych linii dłoni oparta na AI"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Análise baseada em IA da sua palma única"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI-driven analys av din unika handflata"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аналіз вашої унікальної долоні на базі ШІ"
+          }
+        }
+      }
+    },
+    "paywall.feature.palm.title" : {
+      "comment" : "Title for Palm Reading feature on the paywall",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handlinienlesen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palm Reading"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lectura de manos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiromancie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lettura del palmo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手相占い"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Håndlesing"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Czytanie z dłoni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leitura de mãos"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handläsning"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хіромантія"
+          }
+        }
+      }
+    },
+    "paywall.feature.tarot.subtitle" : {
+      "comment" : "Subtitle for Tarot Readings feature on the paywall",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalisierte Legesysteme mit detaillierten Deutungen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personal spreads with detailed interpretations"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiradas personales con interpretaciones detalladas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tirages personnalisés avec interprétations détaillées"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stese personalizzate zeppe di interpretazioni dettagliate"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "詳細な解釈を伴う、あなたに寄り添ったスプレッド展開"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personlige kortlegg med detaljerte tolkninger"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Osobiste rozkłady ze szczegółową interpretacją kart"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiragens pessoais com interpretações detalhadas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personliga läggningar med detaljerade tolkningar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Персональні розклади з детальним тлумаченням"
+          }
+        }
+      }
+    },
+    "paywall.feature.tarot.title" : {
+      "comment" : "Title for Tarot Readings feature on the paywall",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unbegrenzte Tarot-Legungen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlimited Tarot Readings"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lecturas de tarot ilimitadas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tirages de tarot illimités"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letture dei tarocchi illimitate"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "タロット占い放題"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubegrenset antall tarotlesinger"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nielimitowane wróżby z Tarota"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leituras de tarô ilimitadas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obegränsade tarotläsningar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безлімітні розклади Таро"
+          }
+        }
+      }
+    },
+    "paywall.period.monthly" : {
+      "comment" : "Price suffix for a monthly subscription",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / Monat"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / month"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / mes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / mois"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / mese"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / 月"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / mnd."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / mies."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / mês"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / mån"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / міс."
+          }
+        }
+      }
+    },
+    "paywall.period.yearly" : {
+      "comment" : "Price suffix for a yearly subscription",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / Jahr"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / year"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / año"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / an"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / anno"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / 年"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / år"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / rok"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / ano"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / år"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " / рік"
+          }
+        }
+      }
+    },
+    "paywall.product.monthly" : {
+      "comment" : "Monthly subscription option label",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monatlich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensual"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensuel"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensile"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月間プラン"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månedlig"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miesięczny"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månadsvis"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Щомісячно"
+          }
+        }
+      }
+    },
+    "paywall.product.yearly" : {
+      "comment" : "Yearly subscription option label",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jährlich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anual"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuel"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "年間プラン"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Årlig"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roczny"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anual"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Årsvis"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Щорічно"
+          }
+        }
+      }
+    },
+    "paywall.products.loading" : {
+      "comment" : "Shown while StoreKit products are still loading",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Produkte werden geladen…"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Products are loading…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargando productos…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chargement des produits…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caricamento dei prodotti…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "商品を読み込み中…"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laster inn produkter…"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ładowanie ofert…"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregando produtos…"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laddar produkter…"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завантаження продуктів…"
+          }
+        }
+      }
+    },
+    "paywall.restore" : {
+      "comment" : "Restore Purchases button",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käufe wiederherstellen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore Purchases"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar compras"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurer les achats"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripristina acquisti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購入を復元"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjenopprett kjøp"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przywróć zakupy"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar compras"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställ köp"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відновити покупки"
+          }
+        }
+      }
+    },
+    "paywall.subtitle" : {
+      "comment" : "Paywall subtitle below the title",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schalte die volle mystische Erfahrung frei"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlock the full mystical experience"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloquea la experiencia mística completa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Débloquez l'expérience mystique complète"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sblocca l'esperienza mistica completa"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "神秘的な体験をすべて解放しよう"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås opp den fulle mystiske opplevelsen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odblokuj pełne mistyczne doświadczenie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueie a experiência mística completa"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås upp den fulla mystiska upplevelsen"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розкрийте повний містичний досвід"
+          }
+        }
+      }
+    },
+    "paywall.title" : {
+      "comment" : "Paywall main title",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGoプレミアム"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Premium"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TarotGo Преміум"
+          }
+        }
+      }
+    },
+    "paywall.trial.days" : {
+      "comment" : "Free trial description; %d is replaced with the number of days",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kostenlose Testversion für %d Tage"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d-day free trial"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prueba gratuita de %d días"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Essai gratuit de %d jours"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prova gratuita di %d giorni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d日間の無料トライアル"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d-dagers gratis prøveperiode"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bezpłatny okres próbny przez %d dni"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teste grátis de %d dias"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d dagars gratis provperiod"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d-денний безкоштовний період"
+          }
+        }
+      }
+    },
     "pdf.cards" : {
       "comment" : "Section header for cards in PDF export",
       "extractionState" : "manual",
@@ -290660,6 +291024,57 @@
         }
       }
     },
+    "settings.rateApp" : {
+          "comment" : "Rate TarotGo",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : { "stringUnit" : { "state" : "translated", "value" : "TarotGo bewerten" } },
+            "en" : { "stringUnit" : { "state" : "translated", "value" : "Rate TarotGo" } },
+            "es" : { "stringUnit" : { "state" : "translated", "value" : "Calificar TarotGo" } },
+            "fr" : { "stringUnit" : { "state" : "translated", "value" : "Noter TarotGo" } },
+            "it" : { "stringUnit" : { "state" : "translated", "value" : "Valuta TarotGo" } },
+            "ja" : { "stringUnit" : { "state" : "translated", "value" : "TarotGoを評価する" } },
+            "nb" : { "stringUnit" : { "state" : "translated", "value" : "Vurder TarotGo" } },
+            "pl" : { "stringUnit" : { "state" : "translated", "value" : "Oceń TarotGo" } },
+            "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Avaliar o TarotGo" } },
+            "sv" : { "stringUnit" : { "state" : "translated", "value" : "Betygsätt TarotGo" } },
+            "uk" : { "stringUnit" : { "state" : "translated", "value" : "Оцінити TarotGo" } }
+          }
+        },
+        "settings.rateAppDesc" : {
+          "comment" : "Loving TarotGo? Leave a review on the App Store - it helps other seekers find us.",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : { "stringUnit" : { "state" : "translated", "value" : "Gefällt dir TarotGo? Hinterlasse eine Bewertung im App Store – das hilft anderen Suchenden, uns zu finden." } },
+            "en" : { "stringUnit" : { "state" : "translated", "value" : "Loving TarotGo? Leave a review on the App Store — it helps other seekers find us." } },
+            "es" : { "stringUnit" : { "state" : "translated", "value" : "¿Te encanta TarotGo? Deja una reseña en el App Store; ayuda a otros buscadores a encontrarnos." } },
+            "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vous aimez TarotGo ? Laissez un avis sur l'App Store — cela aide d'autres chercheurs de vérité à nous trouver." } },
+            "it" : { "stringUnit" : { "state" : "translated", "value" : "Ti piace TarotGo? Lascia una recensione sull'App Store: aiuterà altri cercatori a trovarci." } },
+            "ja" : { "stringUnit" : { "state" : "translated", "value" : "TarotGoを気に入っていただけましたか？App Storeでレビューを書いて、他の探求者たちにこのアプリを教えてあげましょう。" } },
+            "nb" : { "stringUnit" : { "state" : "translated", "value" : "Liker du TarotGo? Legg igjen en vurdering i App Store – det hjelper andre søkende med å finne oss." } },
+            "pl" : { "stringUnit" : { "state" : "translated", "value" : "Podoba Ci się TarotGo? Zostaw opinię w App Store — pomoże to innym poszukiwaczom nas odnaleźć." } },
+            "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Está gostando do TarotGo? Deixe uma avaliação na App Store — isso ajuda outros buscadores a nos encontrarem." } },
+            "sv" : { "stringUnit" : { "state" : "translated", "value" : "Gillar du TarotGo? Lämna en recension i App Store – det hjälper andra sökare att hitta oss." } },
+            "uk" : { "stringUnit" : { "state" : "translated", "value" : "Подобається TarotGo? Залиште відгук в App Store — це допоможе іншим шукачам знайти нас." } }
+          }
+        },
+        "settings.rateAppHeader" : {
+          "comment" : "Support",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : { "stringUnit" : { "state" : "translated", "value" : "Support" } },
+            "en" : { "stringUnit" : { "state" : "translated", "value" : "Support" } },
+            "es" : { "stringUnit" : { "state" : "translated", "value" : "Soporte" } },
+            "fr" : { "stringUnit" : { "state" : "translated", "value" : "Assistance" } },
+            "it" : { "stringUnit" : { "state" : "translated", "value" : "Supporto" } },
+            "ja" : { "stringUnit" : { "state" : "translated", "value" : "サポート" } },
+            "nb" : { "stringUnit" : { "state" : "translated", "value" : "Brukerstøtte" } },
+            "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wsparcie" } },
+            "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Suporte" } },
+            "sv" : { "stringUnit" : { "state" : "translated", "value" : "Support" } },
+            "uk" : { "stringUnit" : { "state" : "translated", "value" : "Підтримка" } }
+          }
+        },
     "settings.reminderTime" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -301047,41 +301462,7 @@
           }
         }
       }
-    },
-    "notification.title" : {
-      "comment" : "Title of the daily reminder notification",
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Deine Tageskarte wartet" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your Daily Card Awaits" } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "Tu carta diaria te espera" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Votre carte du jour vous attend" } },
-        "it" : { "stringUnit" : { "state" : "translated", "value" : "La tua carta del giorno ti aspetta" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のワンカードが届いています" } },
-        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Ditt daglige kort venter" } },
-        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Twoja karta dnia czeka" } },
-        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Sua carta do dia espera por você" } },
-        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Ditt dagliga kort väntar" } },
-        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Ваша карта дня чекає" } }
-      }
-    },
-    "notification.body" : {
-          "comment" : "Body text of the daily reminder notification",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : { "stringUnit" : { "state" : "translated", "value" : "Die Karten haben eine Botschaft für dich. Hol dir deine Führung." } },
-            "en" : { "stringUnit" : { "state" : "translated", "value" : "The cards have a message for you today. Reveal your guidance." } },
-            "es" : { "stringUnit" : { "state" : "translated", "value" : "Las cartas tienen un mensaje para ti hoy. Descubre tu guía." } },
-            "fr" : { "stringUnit" : { "state" : "translated", "value" : "Les cartes ont un message pour vous. Découvrez votre guidance." } },
-            "it" : { "stringUnit" : { "state" : "translated", "value" : "Le carte hanno un messaggio per te. Scopri la tua guida." } },
-            "ja" : { "stringUnit" : { "state" : "translated", "value" : "カードがメッセージを伝えています。今日の導きを確認しましょう。" } },
-            "nb" : { "stringUnit" : { "state" : "translated", "value" : "Kortene har et budskap til deg i dag. Se din veiledning." } },
-            "pl" : { "stringUnit" : { "state" : "translated", "value" : "Karty mają dziś dla Ciebie przesłanie. Odkryj wskazówki." } },
-            "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "As cartas têm uma mensagem para você. Veja sua orientação." } },
-            "sv" : { "stringUnit" : { "state" : "translated", "value" : "Korten har ett budskap till dig idag. Se din vägledning." } },
-            "uk" : { "stringUnit" : { "state" : "translated", "value" : "Карти мають послання для вас. Дізнайтеся свою настанову." } }
-          }
-        },
+    }
   },
   "version" : "1.1"
 }

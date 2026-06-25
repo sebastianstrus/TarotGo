@@ -721,6 +721,7 @@ struct PalmResultView: View {
             if !sessionSaved {
                 saveSession()
             }
+            ReviewService.shared.recordSignificantEvent()
         }
     }
 

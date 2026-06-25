@@ -145,6 +145,7 @@ struct DestinyMatrixResultView: View {
             if !sessionSaved {
                 saveSession()
             }
+            ReviewService.shared.recordSignificantEvent()
         }
         .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
             sharePDFURL = nil

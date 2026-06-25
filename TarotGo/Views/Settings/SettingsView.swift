@@ -355,6 +355,42 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                // Rate App Section
+                Section {
+                    Button {
+                        soundService.play(.click)
+                        HapticService.shared.impact(.light)
+                        ReviewService.shared.openWriteReviewPage()
+                    } label: {
+                        HStack(spacing: 12) {
+                            Image(systemName: "star.fill")
+                                .foregroundStyle(AppTheme.goldGradient)
+                                .font(.system(size: 16))
+                            Text(L10n.settingsRateApp)
+                                .foregroundColor(AppTheme.textPrimary)
+                            Spacer()
+                            Image(systemName: "arrow.up.right")
+                                .font(.system(size: 12))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        }
+                    }
+                    .listRowSeparator(.hidden)
+                } header: {
+                    Text(L10n.settingsRateAppHeader)
+                        .foregroundColor(AppTheme.gold)
+                } footer: {
+                    Text(L10n.settingsRateAppDesc)
+                        .foregroundColor(AppTheme.textSecondary)
+                }
+                .buttonStyle(.plain)
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
+                )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
+
                 // About Section
                 Section {
                     HStack {

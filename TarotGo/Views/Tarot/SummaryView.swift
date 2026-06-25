@@ -92,6 +92,7 @@ struct SummaryView: View {
             if !sessionSaved {
                 saveSession()
             }
+            ReviewService.shared.recordSignificantEvent()
         }
     }
     
