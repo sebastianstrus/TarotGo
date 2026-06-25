@@ -22,16 +22,16 @@ struct PaywallView: View {
                 .background(AnimatedBackgroundView().ignoresSafeArea())
 
             ScrollView {
-                VStack(spacing: 24) {
+                VStack(spacing: 20) { // Reduced from 24 to compress general spacing
                     header
                     featuresSection
                     productsSection
                     ctaButton
                     footerLinks
                 }
-                .padding(.horizontal, 24)
-                .padding(.top, 16)
-                .padding(.bottom, 32)
+                .padding(.horizontal, 20) // Shrunk from 24 to gain a bit more width flexibility
+                .padding(.top, 12)        // Shrunk from 16
+                .padding(.bottom, 24)     // Shrunk from 32
             }
 
             closeButton
@@ -50,36 +50,37 @@ struct PaywallView: View {
     // MARK: - Header
 
     private var header: some View {
-        VStack(spacing: 14) {
+        VStack(spacing: 10) { // Tightened from 14
             ZStack {
                 Circle()
                     .fill(AppTheme.gold.opacity(0.2))
-                    .frame(width: 110, height: 110)
-                    .blur(radius: 18)
+                    .frame(width: 80, height: 80) // Scaled down from 110x110
+                    .blur(radius: 14)
 
                 Image(systemName: "crown.fill")
-                    .font(.system(size: 56, weight: .semibold))
+                    .font(.system(size: 40, weight: .semibold)) // Downsized from 56
                     .foregroundStyle(AppTheme.goldGradient)
-                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 12)
+                    .shadow(color: AppTheme.gold.opacity(0.7), radius: 10)
             }
-            .padding(.top, 24)
+            .padding(.top, 28) // Space below the close indicator zone
 
             Text(L10n.paywallTitle)
-                .font(AppTheme.serifFont(size: 32, weight: .regular))
+                .font(AppTheme.serifFont(size: 26, weight: .regular)) // Reduced size from 32
                 .foregroundStyle(AppTheme.goldGradient)
-                .shadow(color: AppTheme.gold.opacity(0.5), radius: 8, x: 0, y: 4)
+                .shadow(color: AppTheme.gold.opacity(0.5), radius: 6, x: 0, y: 3)
 
             Text(L10n.paywallSubtitle)
-                .font(.system(size: 15, weight: .light))
+                .font(.system(size: 14, weight: .light)) // Shrunk slightly from 15
                 .foregroundColor(AppTheme.textSecondary)
                 .multilineTextAlignment(.center)
+                .padding(.horizontal, 10)
         }
     }
 
     // MARK: - Features
 
     private var featuresSection: some View {
-        VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: 10) { // Shrunk from 14
             featureRow(icon: "rectangle.portrait.on.rectangle.portrait.angled.fill",
                        title: L10n.paywallFeatureTarotTitle,
                        subtitle: L10n.paywallFeatureTarotSubtitle)
@@ -93,31 +94,32 @@ struct PaywallView: View {
                        title: L10n.paywallFeatureCompatibilityTitle,
                        subtitle: L10n.paywallFeatureCompatibilitySubtitle)
         }
-        .padding(20)
+        .padding(.vertical, 14) // Tighter edge parameters
+        .padding(.horizontal, 16)
         .background(
-            RoundedRectangle(cornerRadius: 18)
+            RoundedRectangle(cornerRadius: 16)
                 .fill(AppTheme.midNavy.opacity(0.45))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 18)
+                    RoundedRectangle(cornerRadius: 16)
                         .stroke(AppTheme.gold.opacity(0.35), lineWidth: 1)
                 )
         )
     }
 
     private func featureRow(icon: String, title: String, subtitle: String) -> some View {
-        HStack(alignment: .center, spacing: 14) {
+        HStack(alignment: .center, spacing: 12) { // Shrunk spacing from 14
             ZStack {
                 Circle()
                     .fill(AppTheme.gold.opacity(0.15))
-                    .frame(width: 42, height: 42)
+                    .frame(width: 34, height: 34) // Downsized container frame from 42
                 Image(systemName: icon)
-                    .font(.system(size: 18, weight: .semibold))
+                    .font(.system(size: 15, weight: .semibold)) // Slightly down from 18
                     .foregroundStyle(AppTheme.goldGradient)
             }
 
-            VStack(alignment: .leading, spacing: 2) {
+            VStack(alignment: .leading, spacing: 1) { // Compact spacing
                 Text(title)
-                    .font(AppTheme.serifFont(size: 16, weight: .semibold))
+                    .font(AppTheme.serifFont(size: 15, weight: .semibold)) // Downsized from 16
                     .foregroundColor(AppTheme.textPrimary)
                 Text(subtitle)
                     .font(.system(size: 12, weight: .light))
@@ -132,7 +134,7 @@ struct PaywallView: View {
     // MARK: - Products
 
     private var productsSection: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 10) { // Shrunk element space from 12
             if subscriptionService.isLoadingProducts && subscriptionService.products.isEmpty {
                 ProgressView()
                     .tint(AppTheme.gold)
@@ -162,31 +164,30 @@ struct PaywallView: View {
             HapticService.shared.impact(.soft)
             selectedProductID = product.id
         } label: {
-            HStack(spacing: 14) {
+            HStack(spacing: 12) {
                 ZStack {
                     Circle()
                         .stroke(isSelected ? AppTheme.gold : AppTheme.gold.opacity(0.4),
                                 lineWidth: 1.5)
-                        .frame(width: 22, height: 22)
+                        .frame(width: 20, height: 20) // Trimmed from 22
                     if isSelected {
                         Circle()
                             .fill(AppTheme.goldGradient)
-                            .frame(width: 12, height: 12)
+                            .frame(width: 10, height: 10) // Trimmed from 12
                     }
                 }
 
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack(spacing: 8) {
+                VStack(alignment: .leading, spacing: 2) { // Shrunk step size from 4
+                    HStack(spacing: 6) {
                         Text(isYearly ? L10n.paywallProductYearly : L10n.paywallProductMonthly)
-                            .font(AppTheme.serifFont(size: 17, weight: .semibold))
-                            .foregroundColor(AppTheme.textPrimary)
+                            .font(AppTheme.serifFont(size: 16, weight: .semibold)) // Shrunk from 17
 
                         if let badge {
                             Text(badge)
                                 .font(.system(size: 8, weight: .bold))
                                 .tracking(0.8)
-                                .padding(.horizontal, 6)
-                                .padding(.vertical, 3)
+                                .padding(.horizontal, 5)
+                                .padding(.vertical, 2)
                                 .background(
                                     Capsule().fill(AppTheme.goldGradient)
                                 )
@@ -196,33 +197,33 @@ struct PaywallView: View {
 
                     if let trialText {
                         Text(trialText)
-                            .font(.system(size: 12, weight: .medium))
+                            .font(.system(size: 11, weight: .medium)) // Down from 12
                             .foregroundColor(AppTheme.lightGold)
                     }
                 }
 
                 Spacer()
 
-                VStack(alignment: .trailing, spacing: 2) {
+                VStack(alignment: .trailing, spacing: 1) {
                     Text(product.displayPrice)
-                        .font(AppTheme.serifFont(size: 18, weight: .semibold))
+                        .font(AppTheme.serifFont(size: 17, weight: .semibold)) // Shrunk from 18
                         .foregroundStyle(AppTheme.goldGradient)
                     Text(periodText)
                         .font(.system(size: 11, weight: .light))
                         .foregroundColor(AppTheme.textTertiary)
                 }
             }
-            .padding(16)
+            .padding(12) // Compressed padding down from 16
             .background(
-                RoundedRectangle(cornerRadius: 14)
+                RoundedRectangle(cornerRadius: 12) // Shrunk slightly from 14
                     .fill(AppTheme.midNavy.opacity(isSelected ? 0.7 : 0.35))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 12)
                             .stroke(isSelected ? AppTheme.gold : AppTheme.gold.opacity(0.3),
-                                    lineWidth: isSelected ? 1.8 : 1)
+                                    lineWidth: isSelected ? 1.5 : 1)
                     )
-                    .shadow(color: isSelected ? AppTheme.gold.opacity(0.4) : .clear,
-                            radius: 10)
+                    .shadow(color: isSelected ? AppTheme.gold.opacity(0.35) : .clear,
+                            radius: 8)
             )
         }
         .buttonStyle(.plain)
@@ -255,15 +256,15 @@ struct PaywallView: View {
                         .tint(AppTheme.deepNavy)
                 } else {
                     Text(ctaTitle)
-                        .font(AppTheme.serifFont(size: 17, weight: .semibold))
+                        .font(AppTheme.serifFont(size: 16, weight: .semibold)) // Down from 17
                         .foregroundColor(AppTheme.deepNavy)
                 }
             }
-            .frame(maxWidth: .infinity, minHeight: 54)
+            .frame(maxWidth: .infinity, minHeight: 50) // Reduced baseline height footprint from 54
             .background(
-                RoundedRectangle(cornerRadius: 14)
+                RoundedRectangle(cornerRadius: 12)
                     .fill(AppTheme.goldGradient)
-                    .shadow(color: AppTheme.gold.opacity(0.6), radius: 14)
+                    .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
             )
         }
         .buttonStyle(.plain)
@@ -297,7 +298,7 @@ struct PaywallView: View {
     // MARK: - Footer
 
     private var footerLinks: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 10) {
             Button {
                 Task {
                     do {
@@ -309,19 +310,19 @@ struct PaywallView: View {
                 }
             } label: {
                 Text(L10n.paywallRestore)
-                    .font(.system(size: 13, weight: .medium))
+                    .font(.system(size: 12, weight: .medium)) // Shrunk from 13
                     .foregroundColor(AppTheme.textSecondary)
                     .underline()
             }
             .buttonStyle(.plain)
 
             Text(L10n.paywallDisclaimer)
-                .font(.system(size: 11, weight: .light))
+                .font(.system(size: 10, weight: .light)) // Shrunk from 11
                 .foregroundColor(AppTheme.textTertiary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 12)
         }
-        .padding(.top, 4)
+        .padding(.top, 2)
     }
 
     // MARK: - Close button
@@ -335,9 +336,9 @@ struct PaywallView: View {
                     dismiss()
                 } label: {
                     Image(systemName: "xmark")
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.system(size: 13, weight: .semibold))
                         .foregroundColor(AppTheme.textSecondary)
-                        .frame(width: 32, height: 32)
+                        .frame(width: 30, height: 30)
                         .background(
                             Circle()
                                 .fill(AppTheme.midNavy.opacity(0.6))
