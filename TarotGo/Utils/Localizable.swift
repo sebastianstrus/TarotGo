@@ -568,6 +568,13 @@ enum L10n {
     static let settingsLegal = NSLocalizedString("settings.legal", comment: "Legal")
     static let settingsPrivacyPolicy = NSLocalizedString("settings.privacyPolicy", comment: "Privacy Policy")
     static let settingsTermsOfService = NSLocalizedString("settings.termsOfService", comment: "Terms of Service")
+
+    // Premium subscription status
+    static let settingsPremiumHeader = NSLocalizedString("settings.premium.header", comment: "Premium section header in settings")
+    static let settingsPremiumActive = NSLocalizedString("settings.premium.active", comment: "Premium Active status text")
+    static let settingsPremiumManage = NSLocalizedString("settings.premium.manage", comment: "Manage Subscription row")
+    static let settingsPremiumPlanYearly = NSLocalizedString("settings.premium.plan.yearly", comment: "Yearly plan label")
+    static let settingsPremiumPlanMonthly = NSLocalizedString("settings.premium.plan.monthly", comment: "Monthly plan label")
     
     // Birth Date Settings
     static let settingsPersonalization = NSLocalizedString("settings.personalization", comment: "Personalization")

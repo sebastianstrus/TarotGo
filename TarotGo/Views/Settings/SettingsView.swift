@@ -6,22 +6,25 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct SettingsView: View {
     private let notificationService = NotificationService.shared
     private let soundService = SoundService.shared
+    @StateObject private var subscriptionService = SubscriptionService.shared
     @AppStorage("dailyCardNotificationEnabled") private var notificationEnabled: Bool = false
     @AppStorage("dailyCardNotificationHour") private var notificationHour: Int = 9
     @AppStorage("dailyCardNotificationMinute") private var notificationMinute: Int = 0
     @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
     @AppStorage("isSoundEnabled") private var isSoundEnabled: Bool = true
-    
+
     @State private var toggleState: Bool = false
     @State private var showOnboarding: Bool = false
     @State private var showPermissionAlert: Bool = false
     @State private var hasAppeared: Bool = false
     @State private var showBirthDateInput: Bool = false
     @State private var selectedDate: Date = Date()
+    @State private var showManageSubscriptions: Bool = false
     
     private var selectedCardBack: CardBackStyle {
         CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
@@ -33,6 +36,64 @@ struct SettingsView: View {
                 .background(AnimatedBackgroundView().ignoresSafeArea())
             
             List {
+                // Premium Section (only visible when subscription is active)
+                if subscriptionService.isPremium {
+                    Section {
+                        VStack(alignment: .leading, spacing: 14) {
+                            HStack(spacing: 12) {
+                                ZStack {
+                                    Circle()
+                                        .fill(AppTheme.gold.opacity(0.15))
+                                        .frame(width: 40, height: 40)
+                                    Image(systemName: "crown.fill")
+                                        .foregroundStyle(AppTheme.goldGradient)
+                                        .font(.system(size: 18, weight: .semibold))
+                                }
+
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(L10n.settingsPremiumActive)
+                                        .foregroundColor(AppTheme.textPrimary)
+                                        .font(.system(size: 16, weight: .semibold))
+                                    if let planName = activePlanName {
+                                        Text(planName)
+                                            .foregroundColor(AppTheme.gold.opacity(0.8))
+                                            .font(.system(size: 13))
+                                    }
+                                }
+                                Spacer()
+                            }
+
+                            Button {
+                                soundService.play(.click)
+                                HapticService.shared.impact(.light)
+                                showManageSubscriptions = true
+                            } label: {
+                                HStack {
+                                    Text(L10n.settingsPremiumManage)
+                                        .foregroundColor(AppTheme.textPrimary)
+                                    Spacer()
+                                    Image(systemName: "chevron.right")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(AppTheme.gold.opacity(0.6))
+                                }
+                            }
+                            .buttonStyle(.plain)
+                        }
+                        .padding(.vertical, 4)
+                        .listRowSeparator(.hidden)
+                    } header: {
+                        Text(L10n.settingsPremiumHeader)
+                            .foregroundColor(AppTheme.gold)
+                    }
+                    .listRowBackground(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(AppTheme.darkNavy.opacity(0.6))
+                            .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
+                    )
+                    .listSectionSeparator(.hidden)
+                    .padding(.vertical, 4)
+                }
+
                 // Birth Date Section (at the top)
                 Section {
                     if let birthDate = AstrologyService.shared.userBirthDate {
@@ -444,6 +505,7 @@ struct SettingsView: View {
                 // Birth date is already saved in the service
             }
         }
+        .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
         .alert(L10n.settingsNotificationPermissionTitle, isPresented: $showPermissionAlert) {
             Button(L10n.settingsNotificationPermissionCancel, role: .cancel) {
                 toggleState = false
@@ -457,6 +519,17 @@ struct SettingsView: View {
         }
     }
     
+    private var activePlanName: String? {
+        let purchased = subscriptionService.purchasedProductIDs
+        if purchased.contains(SubscriptionProduct.yearly.rawValue) {
+            return L10n.settingsPremiumPlanYearly
+        }
+        if purchased.contains(SubscriptionProduct.monthly.rawValue) {
+            return L10n.settingsPremiumPlanMonthly
+        }
+        return nil
+    }
+
     private var currentLanguageName: String {
         let currentLocale = Locale.current
         let languageCode = currentLocale.language.languageCode?.identifier ?? "en"
