@@ -313,7 +313,12 @@ struct CouplePositionsTabView: View {
         ScrollView {
             LazyVStack(spacing: 12) {
                 ForEach(matrix.positions) { position in
-                    CouplePositionRowView(position: position)
+                    NavigationLink(destination: CouplePositionDetailView(position: position)) {
+                        CouplePositionRowView(position: position)
+                    }
+                    .simultaneousGesture(TapGesture().onEnded {
+                        HapticService.shared.impact(.light)
+                    })
                 }
             }
             .padding(20)
@@ -325,67 +330,114 @@ struct CouplePositionRowView: View {
     let position: CoupleMatrixPosition
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            HStack(spacing: 16) {
-                ZStack {
-                    Circle()
-                        .fill(AppTheme.goldGradient)
-                        .frame(width: 50, height: 50)
+        HStack(spacing: 16) {
+            ZStack {
+                Circle()
+                    .fill(AppTheme.cardGradient)
+                    .frame(width: 44, height: 44)
+                    .overlay(
+                        Circle()
+                            .stroke(AppTheme.gold.opacity(0.5), lineWidth: 1.5)
+                    )
 
-                    Text("\(position.number)")
-                        .font(.system(size: 22, weight: .bold, design: .rounded))
-                        .foregroundColor(.black)
-                }
-
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(position.position.displayName)
-                        .font(AppTheme.serifFont(size: 20, weight: .medium))
-                        .foregroundStyle(AppTheme.goldGradient)
-
-                    Text(position.position.description)
-                        .font(.system(size: 13))
-                        .foregroundColor(AppTheme.textSecondary)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-
-                Spacer()
+                Text("\(position.number)")
+                    .font(.system(size: 18, weight: .bold, design: .rounded))
+                    .foregroundColor(AppTheme.textPrimary)
             }
 
-            if let card = position.tarotCard {
-                NavigationLink(destination: CardDetailView(card: card)) {
-                    HStack(spacing: 14) {
-                        CardView(card: card, showFront: true)
-                            .frame(width: 60)
-                            .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(position.position.displayName)
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundColor(AppTheme.textPrimary)
 
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(card.name)
-                                .font(.system(size: 15, weight: .semibold))
-                                .foregroundColor(AppTheme.textPrimary)
-
-                            Text(L10n.matrixViewCardDetails)
-                                .font(.system(size: 12))
-                                .foregroundColor(AppTheme.gold)
-                        }
-
-                        Spacer()
-
-                        Image(systemName: "chevron.right")
-                            .foregroundColor(AppTheme.gold.opacity(0.6))
-                    }
-                }
+                Text(position.position.description)
+                    .font(.system(size: 13))
+                    .foregroundColor(AppTheme.textTertiary)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
             }
+
+            Spacer()
+
+            Image(systemName: "chevron.right")
+                .font(.system(size: 14))
+                .foregroundColor(AppTheme.gold.opacity(0.6))
         }
         .padding(16)
         .background(
-            RoundedRectangle(cornerRadius: 14)
-                .fill(AppTheme.cardGradient)
+            RoundedRectangle(cornerRadius: 12)
+                .fill(LinearGradient(colors: [AppTheme.darkNavy.opacity(0.4)], startPoint: .top, endPoint: .bottom))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 14)
-                        .stroke(AppTheme.gold.opacity(0.4), lineWidth: 1)
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
                 )
-                .shadow(color: AppTheme.gold.opacity(0.15), radius: 12, x: 0, y: 6)
         )
+    }
+}
+
+// MARK: - Couple Position Detail View
+
+struct CouplePositionDetailView: View {
+    let position: CoupleMatrixPosition
+
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 24) {
+                VStack(spacing: 12) {
+                    ZStack {
+                        Circle()
+                            .fill(AppTheme.goldGradient)
+                            .frame(width: 100, height: 100)
+                            .shadow(color: AppTheme.gold.opacity(0.4), radius: 20, x: 0, y: 10)
+
+                        Text("\(position.number)")
+                            .font(.system(size: 48, weight: .bold, design: .rounded))
+                            .foregroundColor(.black)
+                    }
+
+                    Text(position.position.displayName)
+                        .font(AppTheme.serifFont(size: 28, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.top, 20)
+
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(position.position.description)
+                        .font(.system(size: 17))
+                        .foregroundColor(AppTheme.textPrimary)
+                        .multilineTextAlignment(.leading)
+                        .lineSpacing(4)
+                }
+                .padding(20)
+                .background(
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(AppTheme.cardGradient)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                        )
+                )
+
+                if let card = position.tarotCard {
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text(L10n.matrixAssociatedCard)
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundColor(AppTheme.textSecondary)
+                            .textCase(.uppercase)
+                            .tracking(1)
+
+                        NavigationLink(destination: CardDetailView(card: card)) {
+                            CardLinkView(card: card)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                }
+            }
+            .padding(20)
+        }
+        .background(AnimatedBackgroundView().ignoresSafeArea())
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
