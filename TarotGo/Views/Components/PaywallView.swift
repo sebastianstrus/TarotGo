@@ -183,7 +183,7 @@ struct PaywallView: View {
 
                         if let badge {
                             Text(badge)
-                                .font(.system(size: 9, weight: .bold))
+                                .font(.system(size: 8, weight: .bold))
                                 .tracking(0.8)
                                 .padding(.horizontal, 6)
                                 .padding(.vertical, 3)
