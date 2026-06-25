@@ -49,11 +49,19 @@ final class ReviewService {
         let newCount = defaults.integer(forKey: Keys.eventCount) + 1
         defaults.set(newCount, forKey: Keys.eventCount)
 
+#if DEBUG
+        // Bypass all gates during development so we can see the sheet on every event.
+        // The system still throttles in TestFlight (suppressed) and production (~3/year),
+        // so this only affects local debug builds.
+        requestSystemReview()
+        return
+#else
         guard milestones.contains(newCount) else { return }
         guard hasBeenInstalledLongEnough else { return }
         guard !hasAlreadyPromptedForCurrentVersion else { return }
-
+        
         requestSystemReview()
+#endif
     }
 
     /// Opens the App Store write-review page directly. Use this for the manual
