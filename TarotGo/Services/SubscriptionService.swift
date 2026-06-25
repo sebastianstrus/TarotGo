@@ -122,13 +122,17 @@ final class SubscriptionService: ObservableObject {
             }
         }
 
+        var seenGroupIDs: Set<String> = []
         for product in products {
-            guard let subscription = product.subscription,
-                  let statuses = try? await subscription.status else { continue }
+            guard let subscription = product.subscription else { continue }
+            let groupID = subscription.subscriptionGroupID
+            guard !seenGroupIDs.contains(groupID) else { continue }
+            seenGroupIDs.insert(groupID)
+            guard let statuses = try? await subscription.status else { continue }
             for status in statuses {
-                if status.state == .subscribed || status.state == .inGracePeriod {
-                    purchased.insert(product.id)
-                }
+                guard status.state == .subscribed || status.state == .inGracePeriod,
+                      case .verified(let transaction) = status.transaction else { continue }
+                purchased.insert(transaction.productID)
             }
         }
 
