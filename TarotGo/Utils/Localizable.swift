@@ -1842,7 +1842,7 @@ enum L10n {
     
     // MARK: – NotificationService
     static let notificationTitle = NSLocalizedString("notification.title", comment: "Your Daily Card Awaits")
-    static let notificationBody = NSLocalizedString("notification.body", comment: "The cards have a message for you today. Take a moment to receive your guidance.")
+    static let notificationBody = NSLocalizedString("notification.body", comment: "The cards have a message for you today. Reveal your guidance.")
 
     // MARK: - Subscription
     static let subscriptionErrorVerification = NSLocalizedString("subscription.error.verification", comment: "Error message when a StoreKit transaction fails verification")
