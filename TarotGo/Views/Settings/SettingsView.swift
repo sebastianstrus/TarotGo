@@ -520,7 +520,8 @@ struct SettingsView: View {
         .onAppear {
             toggleState = notificationEnabled
             soundService.isSoundEnabled = isSoundEnabled
-            
+            userBirthDate = AstrologyService.shared.userBirthDate
+
             // Initialize selectedDate from stored hour and minute
             var components = DateComponents()
             components.hour = notificationHour
