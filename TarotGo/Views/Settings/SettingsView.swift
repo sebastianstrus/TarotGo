@@ -24,6 +24,7 @@ struct SettingsView: View {
     @State private var hasAppeared: Bool = false
     @State private var showBirthDateInput: Bool = false
     @State private var selectedDate: Date = Date()
+    @State private var userBirthDate: Date? = AstrologyService.shared.userBirthDate
     @State private var showManageSubscriptions: Bool = false
     @State private var showPaywall: Bool = false
     
@@ -131,7 +132,7 @@ struct SettingsView: View {
 
                 // Birth Date Section (at the top)
                 Section {
-                    if let birthDate = AstrologyService.shared.userBirthDate {
+                    if let birthDate = userBirthDate {
                         VStack(alignment: .leading, spacing: 12) {
                             HStack {
                                 Text(L10n.settingsBirthDate)
@@ -537,7 +538,7 @@ struct SettingsView: View {
         }
         .sheet(isPresented: $showBirthDateInput) {
             BirthDateInputView(isPresented: $showBirthDateInput) { date in
-                // Birth date is already saved in the service
+                userBirthDate = date
             }
         }
         .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
