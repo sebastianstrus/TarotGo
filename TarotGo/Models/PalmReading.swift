@@ -7,6 +7,22 @@
 
 import Foundation
 
+// Which hand was photographed. Inferred from MediaPipe's handedness
+// classifier together with a 3D palm-orientation check.
+enum Handedness: String, Codable {
+    case left
+    case right
+
+    var localizedName: String {
+        switch self {
+        case .left:
+            return NSLocalizedString("palm.handedness.left", comment: "Left Hand")
+        case .right:
+            return NSLocalizedString("palm.handedness.right", comment: "Right Hand")
+        }
+    }
+}
+
 // Major palm lines analyzed in palmistry
 enum PalmLine: String, Codable {
     case heart
@@ -256,16 +272,21 @@ struct PalmReading: Identifiable, Codable {
     
     // Hand shape
     let handShape: HandShapeAnalysis
-    
+
+    // Which hand the user photographed. Optional for backwards compatibility
+    // with readings persisted before handedness detection was added.
+    let handedness: Handedness?
+
     let overallInterpretation: String
-    
+
     init(
         heartLine: PalmLineCharacteristics,
         headLine: PalmLineCharacteristics,
         lifeLine: PalmLineCharacteristics,
         fateLine: PalmLineCharacteristics?,
         mounts: [PalmMountCharacteristics] = [],
-        handShape: HandShapeAnalysis? = nil
+        handShape: HandShapeAnalysis? = nil,
+        handedness: Handedness? = nil
     ) {
         self.id = UUID()
         self.date = Date()
@@ -274,7 +295,8 @@ struct PalmReading: Identifiable, Codable {
         self.lifeLine = lifeLine
         self.fateLine = fateLine
         self.mounts = mounts
-        
+        self.handedness = handedness
+
         // Default hand shape if not provided
         self.handShape = handShape ?? HandShapeAnalysis(
             shapeType: .earth,

@@ -815,6 +815,11 @@ enum L10n {
     static let palmAnalysisErrorFingersNotExtended = NSLocalizedString("palmAnalysis.error.fingersNotExtended", comment: "Please open your hand and extend all your fingers. A closed fist or curled fingers cannot be read.")
     static let palmAnalysisErrorLowConfidence = NSLocalizedString("palmAnalysis.error.lowConfidence", comment: "Your palm couldn't be clearly identified. Show the inside of your hand to the camera with good lighting and try again.")
     static let palmAnalysisErrorProcessingFailed = NSLocalizedString("palmAnalysis.error.processingFailed", comment: "Failed to analyze the palm lines. Please try again with better lighting.")
+    static let palmAnalysisErrorWrongHandSide = NSLocalizedString("palmAnalysis.error.wrongHandSide", comment: "Please show the inside of your hand to the camera, not the back. Palm reading requires the palm side facing the lens.")
+
+    // MARK: - Palm Handedness
+    static let palmHandednessLeft = NSLocalizedString("palm.handedness.left", comment: "Left Hand")
+    static let palmHandednessRight = NSLocalizedString("palm.handedness.right", comment: "Right Hand")
 
     // MARK: - Palm Reading History
     static let palmHistoryTitle = NSLocalizedString("palmHistory.title", comment: "Saved Readings")

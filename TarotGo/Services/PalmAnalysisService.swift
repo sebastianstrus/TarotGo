@@ -96,11 +96,21 @@ class PalmAnalysisService {
         // wide instead of ~6 px).
         let image = downscale(oriented, maxDimension: 1536)
 
-        // Step 1: Detect hand landmarks
-        let handLandmarks = try await detectHandLandmarks(in: image)
+        // Step 1: Detect hand landmarks (and MediaPipe's handedness label)
+        let detection = try await detectHandLandmarks(in: image)
+        let handLandmarks = detection.landmarks
 
         // Step 2: Validate that the hand is open with extended fingers
         try validateOpenPalm(handLandmarks)
+
+        // Step 2b: Reject the back of the hand. Without this gate the contour
+        // detector happily traces knuckle wrinkles and reports the same
+        // "lines" as if it had seen a real palm.
+        try validatePalmSide(handLandmarks, mediaPipeHandedness: detection.handedness)
+
+        // Resolve which hand it actually is. Back camera input is not mirrored,
+        // so MediaPipe's label (which assumes a selfie-style mirror) is swapped.
+        let handedness = realHandedness(fromMediaPipeLabel: detection.handedness)
 
         // Step 3: Build the edge image + hand-local frame. Both lines and
         // mounts read from this shared pipeline so edge detection runs once.
@@ -148,7 +158,8 @@ class PalmAnalysisService {
             lifeLine: lineCharacteristics.lifeLine,
             fateLine: lineCharacteristics.fateLine,
             mounts: mounts,
-            handShape: handShape
+            handShape: handShape,
+            handedness: handedness
         )
     }
 
@@ -203,10 +214,11 @@ class PalmAnalysisService {
     // MARK: - Hand Detection
 
     // Runs MediaPipe's HandLandmarker on the image and returns 21 palm
-    // landmarks. MediaPipe's hand model is more geometrically stable than
-    // Apple Vision's hand pose request — landmarks barely drift between
-    // captures of the same palm in similar conditions.
-    private func detectHandLandmarks(in image: UIImage) async throws -> [PalmLandmark] {
+    // landmarks plus the raw handedness label ("Left" / "Right") emitted by
+    // MediaPipe's classifier. MediaPipe's hand model is more geometrically
+    // stable than Apple Vision's hand pose request — landmarks barely drift
+    // between captures of the same palm in similar conditions.
+    private func detectHandLandmarks(in image: UIImage) async throws -> (landmarks: [PalmLandmark], handedness: String?) {
         guard let landmarker = handLandmarker else {
             throw PalmAnalysisError.processingFailed
         }
@@ -226,7 +238,81 @@ class PalmAnalysisService {
             throw PalmAnalysisError.noHandDetected
         }
 
-        return firstHand.map { PalmLandmark(x: CGFloat($0.x), y: CGFloat($0.y), z: CGFloat($0.z)) }
+        let landmarks = firstHand.map { PalmLandmark(x: CGFloat($0.x), y: CGFloat($0.y), z: CGFloat($0.z)) }
+        let handednessLabel = result.handedness.first?.first?.categoryName
+        if let label = handednessLabel, let score = result.handedness.first?.first?.score {
+            print(String(format: "[PalmAnalysis] MediaPipe handedness: %@ (score=%.2f)", label, score))
+        }
+        return (landmarks, handednessLabel)
+    }
+
+    // MARK: - Palm Side Validation
+
+    // Rejects images where the user is showing the back of their hand instead
+    // of the palm. Without this check the contour detector traces knuckle
+    // wrinkles and finger-joint creases, producing the same "lines" output as
+    // if it had seen a real palm — the user gets a confidently wrong reading.
+    //
+    // Algorithm: in image-space, compute the 2D cross product of the wrist→
+    // indexMCP and wrist→littleMCP vectors. Its sign encodes the winding
+    // direction of the index→little sweep. For each MediaPipe handedness
+    // label, the winding sign that corresponds to a palm-facing hand is
+    // fixed; the opposite sign means the back is shown.
+    //
+    // MediaPipe assumes the input is mirrored (selfie convention). Our camera
+    // pipeline uses the back camera (non-mirrored), so MediaPipe's label is
+    // the opposite of the real hand — but that doesn't matter for this check,
+    // because the relationship "label X + winding Y ⇔ palm side" is internally
+    // consistent within MediaPipe's own coordinate convention.
+    private func validatePalmSide(_ landmarks: [PalmLandmark], mediaPipeHandedness: String?) throws {
+        let wrist = landmarks[HandLandmark.wrist.rawValue]
+        let indexMCP = landmarks[HandLandmark.indexMCP.rawValue]
+        let littleMCP = landmarks[HandLandmark.littleMCP.rawValue]
+
+        let v1x = indexMCP.x - wrist.x
+        let v1y = indexMCP.y - wrist.y
+        let v2x = littleMCP.x - wrist.x
+        let v2y = littleMCP.y - wrist.y
+
+        // 2D cross product z-component (image coords use top-left origin
+        // with y-down, so signs are inverted relative to standard math
+        // convention — that's already baked into the expected-sign table
+        // below).
+        let cross = v1x * v2y - v1y * v2x
+
+        let isPalmFacing: Bool
+        switch mediaPipeHandedness {
+        case "Left":
+            // Verified geometrically: in a non-mirrored back-camera shot of
+            // a real right hand's palm, MediaPipe labels it "Left" and the
+            // index→little sweep winds counter-clockwise in image space →
+            // cross > 0.
+            isPalmFacing = cross > 0
+        case "Right":
+            isPalmFacing = cross < 0
+        default:
+            // No handedness label — fall through without false-rejecting.
+            print("[PalmAnalysis] palm-side check: no handedness label, skipping")
+            return
+        }
+
+        print(String(format: "[PalmAnalysis] palm-side check: handedness=%@ cross=%.4f → %@",
+                     mediaPipeHandedness ?? "?", cross, isPalmFacing ? "palm" : "back"))
+
+        if !isPalmFacing {
+            throw PalmAnalysisError.wrongHandSide
+        }
+    }
+
+    // Converts MediaPipe's classifier label (which assumes a mirrored,
+    // selfie-style input) into real-world handedness for our back-camera
+    // pipeline. Returns nil if MediaPipe didn't emit a label.
+    private func realHandedness(fromMediaPipeLabel label: String?) -> Handedness? {
+        switch label {
+        case "Left": return .right
+        case "Right": return .left
+        default: return nil
+        }
     }
 
     // MARK: - Open Palm Validation
@@ -894,6 +980,7 @@ enum PalmAnalysisError: LocalizedError {
     case fingersNotExtended
     case lowConfidence
     case processingFailed
+    case wrongHandSide
 
     var errorDescription: String? {
         switch self {
@@ -907,6 +994,8 @@ enum PalmAnalysisError: LocalizedError {
             return L10n.palmAnalysisErrorLowConfidence
         case .processingFailed:
             return L10n.palmAnalysisErrorProcessingFailed
+        case .wrongHandSide:
+            return L10n.palmAnalysisErrorWrongHandSide
         }
     }
 }

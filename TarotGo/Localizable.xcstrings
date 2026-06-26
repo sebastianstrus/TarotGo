@@ -261309,6 +261309,150 @@
         }
       }
     },
+    "palm.handedness.left" : {
+      "comment" : "Left Hand",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linke Hand"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Left Hand"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano izquierda"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main gauche"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano sinistra"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左手"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Venstre hånd"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lewa dłoń"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mão esquerda"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vänster hand"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ліва рука"
+          }
+        }
+      }
+    },
+    "palm.handedness.right" : {
+      "comment" : "Right Hand",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechte Hand"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Right Hand"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano derecha"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main droite"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano destra"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右手"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Høyre hånd"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prawa dłoń"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mão direita"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Höger hand"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Права рука"
+          }
+        }
+      }
+    },
     "palm.interpretation.balance.deepBoth" : {
       "comment" : "Palm interpretation for deep heart and head lines",
       "localizations" : {
@@ -268853,6 +268997,78 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося проаналізувати лінії долоні. Будь ласка, спробуйте ще раз при кращому освітленні."
+          }
+        }
+      }
+    },
+    "palmAnalysis.error.wrongHandSide" : {
+      "comment" : "Please show the inside of your hand to the camera, not the back. Palm reading requires the palm side facing the lens.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte zeige die Innenseite deiner Hand zur Kamera, nicht den Handrücken. Für die Handlesung muss die Handfläche zum Objektiv zeigen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please show the inside of your hand to the camera, not the back. Palm reading requires the palm side facing the lens."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, muestra el interior de tu mano a la cámara, no el dorso. La lectura de la palma requiere que el lado de la palma esté frente al objetivo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez montrer l'intérieur de votre main à la caméra, pas le dos. La lecture de la paume nécessite que le côté de la paume soit face à l'objectif."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra l'interno della mano alla fotocamera, non il dorso. La lettura del palmo richiede che il palmo sia rivolto verso l'obiettivo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手の甲ではなく、手のひら側をカメラに向けてください。手相鑑定では手のひらをレンズに向ける必要があります。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis innsiden av hånden mot kameraet, ikke baksiden. Håndlesning krever at håndflaten vender mot linsen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokaż wewnętrzną stronę dłoni do aparatu, a nie jej grzbiet. Odczyt z dłoni wymaga, aby wewnętrzna strona była zwrócona do obiektywu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostre a parte interna da mão para a câmera, não o dorso. A leitura da palma exige que o lado da palma esteja voltado para a lente."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa insidan av handen mot kameran, inte baksidan. Handläsning kräver att handflatan är vänd mot linsen."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Будь ласка, покажіть камері внутрішню сторону долоні, а не тильну. Хіромантія вимагає, щоб долоня була повернута до об'єктива."
           }
         }
       }
