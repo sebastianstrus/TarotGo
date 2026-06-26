@@ -268571,72 +268571,71 @@
     },
     "palm.review.use" : {
       "comment" : "Button to confirm captured photo and start palm analysis",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lies meine Handfläche"
+            "value" : "Analysieren"
           }
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Read My Palm"
+            "state" : "translated",
+            "value" : "Analyze"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lee mi palma"
+            "value" : "Analizar"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lire ma paume"
+            "value" : "Analyser"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Leggi il mio palmo"
+            "value" : "Analizza"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "手相を見る"
+            "value" : "解析する"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Les håndflaten min"
+            "value" : "Analyser"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Przeczytaj moją dłoń"
+            "value" : "Analizuj"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Leia minha palma"
+            "value" : "Analisar"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Läs min handflata"
+            "value" : "Analysera"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Прочитайте мою долоню"
+            "value" : "Аналізувати"
           }
         }
       }
@@ -281574,77 +281573,77 @@
       }
     },
     "pdf.palm.hand" : {
-          "comment" : "Hand:",
-          "extractionState" : "manual",
-          "localizations" : {
-            "de" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Hand:"
-              }
-            },
-            "en" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Hand:"
-              }
-            },
-            "es" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Mano:"
-              }
-            },
-            "fr" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Main :"
-              }
-            },
-            "it" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Mano:"
-              }
-            },
-            "ja" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "手:"
-              }
-            },
-            "nb" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Hånd:"
-              }
-            },
-            "pl" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Dłoń:"
-              }
-            },
-            "pt-BR" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Mão:"
-              }
-            },
-            "sv" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Hand:"
-              }
-            },
-            "uk" : {
-              "stringUnit" : {
-                "state" : "translated",
-                "value" : "Рука:"
-              }
-            }
+      "comment" : "Hand:",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hand:"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hand:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手:"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hånd:"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dłoń:"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mão:"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hand:"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рука:"
+          }
+        }
+      }
+    },
     "pdf.palm.handShape" : {
       "comment" : "Hand Shape",
       "extractionState" : "manual",

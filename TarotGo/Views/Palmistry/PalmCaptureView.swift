@@ -223,7 +223,7 @@ class CameraViewController: UIViewController {
         view.layer.addSublayer(handGuideLayer)
         
         // Instruction label
-        instructionLabel.text = "Place your palm within the guide"
+        instructionLabel.text = L10n.palmReadingPlaceHand
         instructionLabel.textAlignment = .center
         instructionLabel.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         instructionLabel.textColor = .white
