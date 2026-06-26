@@ -19,8 +19,7 @@ struct SummaryView: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var sessionSaved: Bool = false
-    @State private var sharePDFURL: URL?
-    
+
     var body: some View {
         ZStack {
             Color.clear
@@ -79,13 +78,6 @@ struct SummaryView: View {
                     Image(systemName: "xmark")
                         .foregroundStyle(AppTheme.goldGradient)
                 }
-            }
-        }
-        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
-            sharePDFURL = nil
-        }) {
-            if let pdfURL = sharePDFURL {
-                ShareSheet(items: [pdfURL])
             }
         }
         .onAppear {
@@ -152,24 +144,6 @@ struct SummaryView: View {
     
     private var actionButtons: some View {
         VStack(spacing: 15) {
-            // Share button
-            Button {
-                prepareShareContent()
-            } label: {
-                HStack {
-                    Image(systemName: "square.and.arrow.up")
-                    Text(L10n.summaryShareReading)
-                }
-                .font(AppTheme.serifFont(size: 18, weight: .medium))
-                .foregroundStyle(AppTheme.goldGradient)
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(AppTheme.gold.opacity(0.6), lineWidth: 2)
-                )
-            }
-            
             // Return home button
             Button {
                 returnToHome()
@@ -198,18 +172,6 @@ struct SummaryView: View {
         } catch {
             print("Failed to save session: \(error)")
         }
-    }
-    
-    private func prepareShareContent() {
-        // Generate PDF and setting sharePDFURL will automatically trigger the sheet
-        sharePDFURL = PDFGenerationService.shared.generateReadingPDF(
-            drawnCards: drawnCards,
-            category: category,
-            customQuestion: customQuestion,
-            spreadType: spreadType,
-            notes: nil,
-            date: Date()
-        )
     }
     
     private func returnToHome() {

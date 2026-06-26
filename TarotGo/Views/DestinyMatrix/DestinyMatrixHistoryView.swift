@@ -431,7 +431,7 @@ struct DestinyMatrixSessionDetailView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "square.and.arrow.up")
                         .font(.system(size: 16))
-                    Text(L10n.matrixShareMatrix)
+                    Text(L10n.sharePDF)
                         .font(.system(size: 16, weight: .semibold))
                 }
                 .foregroundColor(AppTheme.deepNavy)
@@ -780,7 +780,7 @@ struct CoupleMatrixSessionDetailView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "square.and.arrow.up")
                         .font(.system(size: 16))
-                    Text(L10n.coupleMatrixShareMatrix)
+                    Text(L10n.sharePDF)
                         .font(.system(size: 16, weight: .semibold))
                 }
                 .foregroundColor(AppTheme.deepNavy)

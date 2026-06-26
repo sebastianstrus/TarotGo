@@ -475,7 +475,7 @@ struct PalmReadingSessionDetailView: View {
                         HStack(spacing: 8) {
                             Image(systemName: "square.and.arrow.up")
                                 .font(.system(size: 16))
-                            Text(L10n.summaryShareReading)
+                            Text(L10n.sharePDF)
                                 .font(.system(size: 16, weight: .semibold))
                         }
                         .foregroundColor(AppTheme.deepNavy)

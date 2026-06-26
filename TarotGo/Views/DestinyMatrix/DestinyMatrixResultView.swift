@@ -18,7 +18,6 @@ struct DestinyMatrixResultView: View {
     @State private var selectedTab: Tab = .diagram
     @State private var sessionSaved: Bool = false
     @State private var notes: String = ""
-    @State private var sharePDFURL: URL?
     @FocusState private var isNotesFocused: Bool
     
     enum Tab: String, CaseIterable {
@@ -100,33 +99,6 @@ struct DestinyMatrixResultView: View {
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
                 
-                // Action Buttons
-                VStack(spacing: 12) {
-                    Divider()
-                        .background(AppTheme.gold.opacity(0.3))
-                        .padding(.horizontal, 20)
-                    
-                    // Share button
-                    Button {
-                        shareMatrix()
-                    } label: {
-                        HStack(spacing: 8) {
-                            Image(systemName: "square.and.arrow.up")
-                                .font(.system(size: 16))
-                            Text(L10n.matrixShareMatrix)
-                                .font(.system(size: 16, weight: .semibold))
-                        }
-                        .foregroundColor(AppTheme.deepNavy)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 14)
-                        .background(AppTheme.goldGradient)
-                        .cornerRadius(12)
-                        .shadow(color: AppTheme.gold.opacity(0.4), radius: 8)
-                    }
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 16)
-                }
-                .background(AppTheme.deepNavy.opacity(0.5))
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -147,13 +119,6 @@ struct DestinyMatrixResultView: View {
             }
             ReviewService.shared.recordSignificantEvent()
         }
-        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
-            sharePDFURL = nil
-        }) {
-            if let pdfURL = sharePDFURL {
-                ShareSheet(items: [pdfURL])
-            }
-        }
     }
 
     private func saveSession() {
@@ -168,14 +133,6 @@ struct DestinyMatrixResultView: View {
         } catch {
             print("Failed to save destiny matrix session: \(error)")
         }
-    }
-    
-    private func shareMatrix() {
-        sharePDFURL = PDFGenerationService.shared.generateDestinyMatrixPDF(
-            matrix: matrix,
-            notes: notes.isEmpty ? nil : notes,
-            savedDate: Date()
-        )
     }
 }
 

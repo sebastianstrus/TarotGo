@@ -362,7 +362,7 @@ struct SessionDetailView: View {
                     } label: {
                         HStack {
                             Image(systemName: "square.and.arrow.up")
-                            Text(L10n.summaryShareReading)
+                            Text(L10n.sharePDF)
                         }
                         .font(AppTheme.serifFont(size: 18, weight: .medium))
                         .foregroundStyle(AppTheme.goldGradient)

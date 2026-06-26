@@ -12430,6 +12430,78 @@
         }
       }
     },
+    "common.sharePDF" : {
+          "comment" : "Share PDF button",
+          "extractionState" : "extracted_with_value",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "PDF teilen"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Share PDF"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Compartir PDF"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Partager le PDF"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Condividi PDF"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "PDFを共有"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Del PDF"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Udostępnij PDF"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Compartilhar PDF"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dela PDF"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Поділитися PDF"
+              }
+            }
+          }
+        },
     "common.skip" : {
       "extractionState" : "manual",
       "localizations" : {
