@@ -3004,6 +3004,467 @@ class PDFGenerationService {
         return yPosition
     }
 
+    // MARK: - Compatibility PDF
+
+    func generateCompatibilityPDF(
+        yourSign: ZodiacSign,
+        partnerSign: ZodiacSign,
+        score: Double,
+        rating: String,
+        yourElement: String,
+        partnerElement: String,
+        elementDescription: String,
+        overall: String,
+        strengths: String,
+        challenges: String,
+        advice: String,
+        date: Date
+    ) -> URL? {
+        let title = NSLocalizedString(
+            "pdf.compatibility.title",
+            value: "Cosmic Compatibility",
+            comment: "Cosmic Compatibility PDF title"
+        )
+        let heartLabel = NSLocalizedString(
+            "pdf.compatibility.heartSeparator",
+            value: "♥",
+            comment: "Separator between two zodiac signs in the PDF"
+        )
+
+        let pdfMetaData = [
+            kCGPDFContextCreator: "TarotGo",
+            kCGPDFContextAuthor: "TarotGo App",
+            kCGPDFContextTitle: "Cosmic Compatibility - \(yourSign.name) & \(partnerSign.name)"
+        ]
+        let format = UIGraphicsPDFRendererFormat()
+        format.documentInfo = pdfMetaData as [String: Any]
+
+        let pageWidth = 8.5 * 72.0
+        let pageHeight = 11.0 * 72.0
+        let pageRect = CGRect(x: 0, y: 0, width: pageWidth, height: pageHeight)
+
+        let renderer = UIGraphicsPDFRenderer(bounds: pageRect, format: format)
+
+        let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+        let textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+        let mutedColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+
+        let data = renderer.pdfData { context in
+            var pageNumber = 1
+            context.beginPage()
+
+            drawMysticalBackground(in: pageRect, context: context.cgContext)
+
+            var yPosition: CGFloat = 50
+            let margin: CGFloat = 60
+            let contentWidth = pageWidth - (2 * margin)
+
+            // Header decorative star
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setFill()
+            drawStar(at: CGPoint(x: pageWidth / 2, y: 30), size: 12, context: context.cgContext)
+            yPosition += 30
+
+            // App Icon (centered)
+            if let appIcon = Self.appIconImage() {
+                let iconSize: CGFloat = 60
+                let iconX = (pageWidth - iconSize) / 2
+                let iconRect = CGRect(x: iconX, y: yPosition, width: iconSize, height: iconSize)
+                context.cgContext.saveGState()
+                let iconPath = UIBezierPath(roundedRect: iconRect, cornerRadius: iconSize * 0.22)
+                iconPath.addClip()
+                appIcon.draw(in: iconRect)
+                context.cgContext.restoreGState()
+                yPosition += iconSize + 15
+            }
+
+            // Title (centered)
+            let titleFont = UIFont.systemFont(ofSize: 32, weight: .bold)
+            let titleSize = title.size(withAttributes: [.font: titleFont])
+            let titleX = (pageWidth - titleSize.width) / 2
+            yPosition = drawText(
+                title,
+                at: CGPoint(x: titleX, y: yPosition),
+                width: titleSize.width + 1,
+                font: titleFont,
+                color: goldColor
+            )
+
+            yPosition += 10
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Date
+            drawCrescent(at: CGPoint(x: margin + 8, y: yPosition + 8), size: 5, context: context.cgContext)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .long
+            dateFormatter.timeStyle = .none
+            yPosition = drawText(
+                dateFormatter.string(from: date),
+                at: CGPoint(x: margin + 25, y: yPosition),
+                width: contentWidth - 25,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+            )
+            yPosition += 25
+
+            // Signs row (symbols + names with heart between)
+            let signCardHeight: CGFloat = 110
+            let signCardWidth: CGFloat = (contentWidth - 60) / 2
+            let signCardY = yPosition
+
+            drawSignCard(
+                title: L10n.compatibilityYourSign,
+                sign: yourSign,
+                rect: CGRect(x: margin, y: signCardY, width: signCardWidth, height: signCardHeight),
+                goldColor: goldColor,
+                textColor: textColor,
+                context: context.cgContext
+            )
+
+            let centerX = pageWidth / 2
+            let centerY = signCardY + signCardHeight / 2
+            let heartFont = UIFont.systemFont(ofSize: 26, weight: .regular)
+            let heartAttrs: [NSAttributedString.Key: Any] = [
+                .font: heartFont,
+                .foregroundColor: goldColor
+            ]
+            let heartSize = heartLabel.size(withAttributes: heartAttrs)
+            (heartLabel as NSString).draw(
+                at: CGPoint(x: centerX - heartSize.width / 2, y: centerY - heartSize.height / 2),
+                withAttributes: heartAttrs
+            )
+
+            drawSignCard(
+                title: L10n.compatibilityPartnerSign,
+                sign: partnerSign,
+                rect: CGRect(x: margin + signCardWidth + 60, y: signCardY, width: signCardWidth, height: signCardHeight),
+                goldColor: goldColor,
+                textColor: textColor,
+                context: context.cgContext
+            )
+
+            yPosition = signCardY + signCardHeight + 25
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Compatibility Score
+            yPosition = drawSectionHeader(
+                title: L10n.compatibilityScore,
+                at: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                context: context.cgContext
+            )
+            yPosition += 10
+
+            let scoreBoxStartY = yPosition
+            let scoreBoxHeight: CGFloat = 110
+
+            // Draw progress ring on the left
+            let ringCenterX = margin + 50
+            let ringCenterY = scoreBoxStartY + scoreBoxHeight / 2
+            let ringRadius: CGFloat = 36
+            let ringLineWidth: CGFloat = 8
+            let ringTrackPath = UIBezierPath(
+                arcCenter: CGPoint(x: ringCenterX, y: ringCenterY),
+                radius: ringRadius,
+                startAngle: 0,
+                endAngle: .pi * 2,
+                clockwise: true
+            )
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.15).setStroke()
+            ringTrackPath.lineWidth = ringLineWidth
+            ringTrackPath.stroke()
+
+            let progressEnd = -.pi / 2 + (.pi * 2 * CGFloat(score / 100))
+            let ringProgressPath = UIBezierPath(
+                arcCenter: CGPoint(x: ringCenterX, y: ringCenterY),
+                radius: ringRadius,
+                startAngle: -.pi / 2,
+                endAngle: progressEnd,
+                clockwise: true
+            )
+            goldColor.setStroke()
+            ringProgressPath.lineWidth = ringLineWidth
+            ringProgressPath.lineCapStyle = .round
+            ringProgressPath.stroke()
+
+            let scoreText = "\(Int(score))%"
+            let scoreFont = UIFont.systemFont(ofSize: 20, weight: .bold)
+            let scoreAttrs: [NSAttributedString.Key: Any] = [
+                .font: scoreFont,
+                .foregroundColor: goldColor
+            ]
+            let scoreSize = scoreText.size(withAttributes: scoreAttrs)
+            (scoreText as NSString).draw(
+                at: CGPoint(x: ringCenterX - scoreSize.width / 2, y: ringCenterY - scoreSize.height / 2),
+                withAttributes: scoreAttrs
+            )
+
+            // Rating text to the right of the ring
+            let ratingFont = UIFont.systemFont(ofSize: 18, weight: .semibold)
+            let ratingX = ringCenterX + ringRadius + 28
+            var ratingY = ringCenterY - 18
+            ratingY = drawText(
+                rating,
+                at: CGPoint(x: ratingX, y: ratingY),
+                width: pageWidth - margin - ratingX,
+                font: ratingFont,
+                color: goldColor
+            )
+            ratingY += 4
+            _ = drawText(
+                "\(yourSign.name) \(heartLabel) \(partnerSign.name)",
+                at: CGPoint(x: ratingX, y: ratingY),
+                width: pageWidth - margin - ratingX,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: mutedColor
+            )
+
+            // Score box border
+            context.cgContext.saveGState()
+            let scoreBoxRect = CGRect(
+                x: margin - 10,
+                y: scoreBoxStartY,
+                width: contentWidth + 20,
+                height: scoreBoxHeight
+            )
+            let scoreBox = UIBezierPath(roundedRect: scoreBoxRect, cornerRadius: 10)
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
+            scoreBox.lineWidth = 1
+            scoreBox.stroke()
+            context.cgContext.restoreGState()
+
+            yPosition = scoreBoxStartY + scoreBoxHeight + 25
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 25
+
+            // Elemental Match
+            yPosition = drawSectionHeader(
+                title: L10n.compatibilityElementalMatch,
+                at: yPosition,
+                margin: margin,
+                contentWidth: contentWidth,
+                context: context.cgContext
+            )
+            yPosition += 10
+
+            let elementBoxStartY = yPosition
+            let elementsLine = "\(yourElement)   ↔   \(partnerElement)"
+            yPosition += 12
+            yPosition = drawText(
+                elementsLine,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 16, weight: .semibold),
+                color: goldColor
+            )
+            yPosition += 6
+            yPosition = drawText(
+                elementDescription,
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: textColor
+            )
+            yPosition += 18
+
+            context.cgContext.saveGState()
+            let elementBoxRect = CGRect(
+                x: margin - 10,
+                y: elementBoxStartY,
+                width: contentWidth + 20,
+                height: yPosition - elementBoxStartY
+            )
+            let elementBox = UIBezierPath(roundedRect: elementBoxRect, cornerRadius: 10)
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
+            elementBox.lineWidth = 1
+            elementBox.stroke()
+            context.cgContext.restoreGState()
+
+            yPosition += 25
+
+            // Analysis sections
+            let sections: [(String, String)] = [
+                (L10n.compatibilityOverall, overall),
+                (L10n.compatibilityStrengths, strengths),
+                (L10n.compatibilityChallenges, challenges),
+                (L10n.compatibilityAdvice, advice)
+            ]
+
+            for (sectionTitle, sectionBody) in sections {
+                let bodyFont = UIFont.systemFont(ofSize: 13, weight: .light)
+                let bodyParagraph = NSMutableParagraphStyle()
+                bodyParagraph.lineSpacing = 3
+                let bodyAttrs: [NSAttributedString.Key: Any] = [
+                    .font: bodyFont,
+                    .paragraphStyle: bodyParagraph
+                ]
+                let bodyString = NSAttributedString(string: sectionBody, attributes: bodyAttrs)
+                let bodyRect = bodyString.boundingRect(
+                    with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
+                    options: [.usesLineFragmentOrigin, .usesFontLeading],
+                    context: nil
+                )
+                let estimatedSectionHeight = 40 + bodyRect.height + 40
+
+                if yPosition + estimatedSectionHeight > pageHeight - 80 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+
+                yPosition = drawSectionHeader(
+                    title: sectionTitle,
+                    at: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context.cgContext
+                )
+                yPosition += 10
+
+                let sectionBoxStartY = yPosition
+                yPosition += 12
+                yPosition = drawText(
+                    sectionBody,
+                    at: CGPoint(x: margin, y: yPosition),
+                    width: contentWidth,
+                    font: bodyFont,
+                    color: textColor
+                )
+                yPosition += 18
+
+                context.cgContext.saveGState()
+                let sectionBoxRect = CGRect(
+                    x: margin - 10,
+                    y: sectionBoxStartY,
+                    width: contentWidth + 20,
+                    height: yPosition - sectionBoxStartY
+                )
+                let sectionBox = UIBezierPath(roundedRect: sectionBoxRect, cornerRadius: 10)
+                UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
+                sectionBox.fill()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
+                sectionBox.lineWidth = 1
+                sectionBox.stroke()
+                context.cgContext.restoreGState()
+
+                // Re-draw text on top of the filled box
+                _ = drawText(
+                    sectionBody,
+                    at: CGPoint(x: margin, y: sectionBoxStartY + 12),
+                    width: contentWidth,
+                    font: bodyFont,
+                    color: textColor
+                )
+
+                yPosition += 20
+            }
+
+            // App Store Promo
+            let appStorePromoHeight: CGFloat = 70
+            if yPosition > pageHeight - appStorePromoHeight - 60 {
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
+            }
+
+            yPosition += 10
+            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
+            yPosition += 20
+
+            yPosition = drawText(
+                "Download TarotGo on the App Store:",
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .medium),
+                color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+            )
+            yPosition += 5
+            yPosition = drawText(
+                "https://apps.apple.com/app/id6762875158",
+                at: CGPoint(x: margin, y: yPosition),
+                width: contentWidth,
+                font: .systemFont(ofSize: 13, weight: .light),
+                color: goldColor
+            )
+
+            drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+        }
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let filename = "Compatibility_\(yourSign.name)_\(partnerSign.name)_\(dateFormatter.string(from: date)).pdf"
+        let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent(filename)
+
+        do {
+            try data.write(to: tempURL)
+            return tempURL
+        } catch {
+            return nil
+        }
+    }
+
+    private func drawSignCard(
+        title: String,
+        sign: ZodiacSign,
+        rect: CGRect,
+        goldColor: UIColor,
+        textColor: UIColor,
+        context: CGContext
+    ) {
+        context.saveGState()
+        let cardBackground = UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.9)
+        cardBackground.setFill()
+        let path = UIBezierPath(roundedRect: rect, cornerRadius: 14)
+        path.fill()
+        goldColor.withAlphaComponent(0.4).setStroke()
+        path.lineWidth = 1
+        path.stroke()
+        context.restoreGState()
+
+        // Title at top
+        let titleFont = UIFont.systemFont(ofSize: 11, weight: .semibold)
+        let titleAttrs: [NSAttributedString.Key: Any] = [
+            .font: titleFont,
+            .foregroundColor: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0),
+            .kern: 1.2
+        ]
+        let titleText = title.uppercased() as NSString
+        let titleSize = titleText.size(withAttributes: titleAttrs)
+        titleText.draw(
+            at: CGPoint(x: rect.midX - titleSize.width / 2, y: rect.minY + 14),
+            withAttributes: titleAttrs
+        )
+
+        // Symbol in the middle
+        let symbolFont = UIFont.systemFont(ofSize: 36, weight: .regular)
+        let symbolAttrs: [NSAttributedString.Key: Any] = [.font: symbolFont]
+        let symbolText = sign.symbol as NSString
+        let symbolSize = symbolText.size(withAttributes: symbolAttrs)
+        symbolText.draw(
+            at: CGPoint(x: rect.midX - symbolSize.width / 2, y: rect.minY + 34),
+            withAttributes: symbolAttrs
+        )
+
+        // Name at the bottom
+        let nameFont = UIFont.systemFont(ofSize: 14, weight: .medium)
+        let nameAttrs: [NSAttributedString.Key: Any] = [
+            .font: nameFont,
+            .foregroundColor: goldColor
+        ]
+        let nameText = sign.name as NSString
+        let nameSize = nameText.size(withAttributes: nameAttrs)
+        nameText.draw(
+            at: CGPoint(x: rect.midX - nameSize.width / 2, y: rect.maxY - 26),
+            withAttributes: nameAttrs
+        )
+    }
+
     @discardableResult
     private func drawText(
         _ text: String,

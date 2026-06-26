@@ -13,7 +13,9 @@ struct CompatibilityView: View {
     @State private var showYourSignPicker = false
     @State private var showPartnerSignPicker = false
     @State private var showBirthDateInput = false
-    
+    @State private var currentScore: Double = 0
+    @State private var sharePDFURL: URL?
+
     var body: some View {
         ZStack {
             Color.clear
@@ -90,11 +92,46 @@ struct CompatibilityView: View {
                 yourSign = AstrologyService.shared.zodiacSign(from: date)
             }
         }
+        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+            sharePDFURL = nil
+        }) {
+            if let pdfURL = sharePDFURL {
+                ShareSheet(items: [pdfURL])
+            }
+        }
         .onAppear {
             if let birthDate = AstrologyService.shared.userBirthDate {
                 yourSign = AstrologyService.shared.zodiacSign(from: birthDate)
             }
+            recomputeScoreIfNeeded()
         }
+        .onChange(of: yourSign) { _, _ in recomputeScoreIfNeeded() }
+        .onChange(of: partnerSign) { _, _ in recomputeScoreIfNeeded() }
+    }
+
+    private func recomputeScoreIfNeeded() {
+        guard let your = yourSign, let partner = partnerSign else { return }
+        currentScore = compatibilityScore(your: your, partner: partner)
+    }
+
+    private func sharePDF(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) {
+        HapticService.shared.impact(.light)
+        let yourElement = element(for: yourSign)
+        let partnerElement = element(for: partnerSign)
+        sharePDFURL = PDFGenerationService.shared.generateCompatibilityPDF(
+            yourSign: yourSign,
+            partnerSign: partnerSign,
+            score: currentScore,
+            rating: compatibilityRating(currentScore),
+            yourElement: yourElement,
+            partnerElement: partnerElement,
+            elementDescription: elementDescription(your: yourElement, partner: partnerElement),
+            overall: overallCompatibility(your: yourSign, partner: partnerSign),
+            strengths: strengths(your: yourSign, partner: partnerSign),
+            challenges: challenges(your: yourSign, partner: partnerSign),
+            advice: advice(your: yourSign, partner: partnerSign),
+            date: Date()
+        )
     }
     
     private func signButton(title: String, sign: ZodiacSign?, action: @escaping () -> Void) -> some View {
@@ -145,8 +182,8 @@ struct CompatibilityView: View {
     }
     
     private func compatibilityContent(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> some View {
-        let score = compatibilityScore(your: yourSign, partner: partnerSign)
-        
+        let score = currentScore
+
         return VStack(spacing: 24) {
             // Compatibility Score
             VStack(spacing: 16) {
@@ -211,6 +248,25 @@ struct CompatibilityView: View {
                 icon: "lightbulb.fill",
                 content: advice(your: yourSign, partner: partnerSign)
             )
+
+            // Share PDF button
+            Button {
+                sharePDF(your: yourSign, partner: partnerSign)
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.system(size: 16))
+                    Text(L10n.sharePDF)
+                        .font(.system(size: 16, weight: .semibold))
+                }
+                .foregroundColor(AppTheme.deepNavy)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 14)
+                .background(AppTheme.goldGradient)
+                .cornerRadius(12)
+                .shadow(color: AppTheme.gold.opacity(0.4), radius: 8)
+            }
+            .padding(.top, 8)
         }
     }
     
