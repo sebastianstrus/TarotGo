@@ -2468,6 +2468,42 @@ class PDFGenerationService {
                 color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
             )
 
+            if let handedness = reading.handedness {
+                yPosition += 6
+                let iconSize: CGFloat = 14
+                let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
+                let iconConfig = UIImage.SymbolConfiguration(pointSize: iconSize, weight: .regular)
+                if let symbol = UIImage(systemName: "hand.raised.palm.facing.fill", withConfiguration: iconConfig) {
+                    // PDF contexts render SF Symbols as vector glyphs that pick up
+                    // the current fill color (which leaves us with a solid block).
+                    // Rasterize into a bitmap UIImage first so the PDF receives a
+                    // flat image with the tint baked in.
+                    let symbolBox = CGSize(width: iconSize, height: iconSize)
+                    let rasterized = UIGraphicsImageRenderer(size: symbolBox).image { _ in
+                        symbol.withTintColor(goldColor, renderingMode: .alwaysOriginal)
+                            .draw(in: CGRect(origin: .zero, size: symbolBox))
+                    }
+                    let iconRect = CGRect(x: margin + 6, y: yPosition + 1, width: iconSize, height: iconSize)
+                    context.cgContext.saveGState()
+                    if handedness == .left {
+                        // SF Symbol hand.raised.fill renders as a left palm
+                        // (thumb on icon's left); mirror it for the right hand.
+                        context.cgContext.translateBy(x: iconRect.midX, y: iconRect.midY)
+                        context.cgContext.scaleBy(x: -1, y: 1)
+                        context.cgContext.translateBy(x: -iconRect.midX, y: -iconRect.midY)
+                    }
+                    rasterized.draw(in: iconRect)
+                    context.cgContext.restoreGState()
+                }
+                yPosition = drawText(
+                    handedness.localizedName,
+                    at: CGPoint(x: margin + 25, y: yPosition),
+                    width: contentWidth - 25,
+                    font: .systemFont(ofSize: 13, weight: .light),
+                    color: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+                )
+            }
+
             yPosition += 25
             drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
             yPosition += 25

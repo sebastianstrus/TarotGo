@@ -497,6 +497,7 @@ enum L10n {
     // MARK: - PDF Export - Palm Reading
     static let pdfPalmTitle = NSLocalizedString("pdf.palm.title", comment: "Your Palm Reading")
     static let pdfPalmSavedOn = NSLocalizedString("pdf.palm.savedOn", comment: "Saved on:")
+    static let pdfPalmHand = NSLocalizedString("pdf.palm.hand", comment: "Hand:")
     static let pdfPalmCapturedImage = NSLocalizedString("pdf.palm.capturedImage", comment: "Captured Palm")
     static let pdfPalmHandShape = NSLocalizedString("pdf.palm.handShape", comment: "Hand Shape")
     static let pdfPalmFingerLength = NSLocalizedString("pdf.palm.fingerLength", comment: "Finger Length:")

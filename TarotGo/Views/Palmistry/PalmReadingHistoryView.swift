@@ -258,6 +258,20 @@ struct PalmReadingSessionDetailView: View {
                         Text("\(L10n.palmHistorySavedOn) \(session.formattedSaveDate)")
                             .font(.system(size: 14, weight: .light))
                             .foregroundColor(AppTheme.textTertiary)
+
+                        if let handedness = reading.handedness {
+                            HStack(spacing: 6) {
+                                Image(systemName: "hand.raised.palm.facing.fill")
+                                    .font(.system(size: 12))
+                                    .foregroundStyle(AppTheme.goldGradient)
+                                    // SF Symbol renders thumb on the icon's left
+                                    // (a left palm); mirror it for the right hand.
+                                    .scaleEffect(x: handedness == .left ? -1 : 1, y: 1)
+                                Text(handedness.localizedName)
+                                    .font(.system(size: 14, weight: .medium))
+                                    .foregroundColor(AppTheme.gold)
+                            }
+                        }
                     }
                     .padding(.top, 10)
 

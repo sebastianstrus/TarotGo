@@ -260386,6 +260386,150 @@
         }
       }
     },
+    "palm.handedness.left" : {
+      "comment" : "Left Hand",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linke Hand"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Left Hand"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano izquierda"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main gauche"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano sinistra"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左手"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Venstre hånd"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lewa dłoń"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mão esquerda"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vänster hand"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ліва рука"
+          }
+        }
+      }
+    },
+    "palm.handedness.right" : {
+      "comment" : "Right Hand",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechte Hand"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Right Hand"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano derecha"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main droite"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mano destra"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右手"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Høyre hånd"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prawa dłoń"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mão direita"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Höger hand"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Права рука"
+          }
+        }
+      }
+    },
     "palm.handShape.air" : {
       "comment" : "Air Hand",
       "localizations" : {
@@ -261305,150 +261449,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ваша рука Води вказує на глибоку емоційну чутливість та інтуїцію. Ви переживаєте життя через почуття і природно емпатичні. Ви творчі, співчутливі та тягнетесь до мистецьких або цілительських занять."
-          }
-        }
-      }
-    },
-    "palm.handedness.left" : {
-      "comment" : "Left Hand",
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Linke Hand"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Left Hand"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mano izquierda"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Main gauche"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mano sinistra"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "左手"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Venstre hånd"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lewa dłoń"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mão esquerda"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vänster hand"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ліва рука"
-          }
-        }
-      }
-    },
-    "palm.handedness.right" : {
-      "comment" : "Right Hand",
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rechte Hand"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Right Hand"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mano derecha"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Main droite"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mano destra"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "右手"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Høyre hånd"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prawa dłoń"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mão direita"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Höger hand"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Права рука"
           }
         }
       }
@@ -281573,6 +281573,78 @@
         }
       }
     },
+    "pdf.palm.hand" : {
+          "comment" : "Hand:",
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Hand:"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Hand:"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Mano:"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Main :"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Mano:"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "手:"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Hånd:"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dłoń:"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Mão:"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Hand:"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Рука:"
+              }
+            }
+          }
+        },
     "pdf.palm.handShape" : {
       "comment" : "Hand Shape",
       "extractionState" : "manual",

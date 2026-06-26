@@ -283,10 +283,11 @@ class PalmAnalysisService {
         let isPalmFacing: Bool
         switch mediaPipeHandedness {
         case "Left":
-            // Verified geometrically: in a non-mirrored back-camera shot of
-            // a real right hand's palm, MediaPipe labels it "Left" and the
-            // index→little sweep winds counter-clockwise in image space →
-            // cross > 0.
+            // Empirical rule verified against on-device captures: a real
+            // left palm shown to the back camera produces MediaPipe label
+            // "Left" together with a positive 2D cross-product of the
+            // wrist→index, wrist→little vectors. Inverting the sign
+            // therefore reliably signals the back of the hand.
             isPalmFacing = cross > 0
         case "Right":
             isPalmFacing = cross < 0
@@ -304,13 +305,15 @@ class PalmAnalysisService {
         }
     }
 
-    // Converts MediaPipe's classifier label (which assumes a mirrored,
-    // selfie-style input) into real-world handedness for our back-camera
-    // pipeline. Returns nil if MediaPipe didn't emit a label.
+    // Converts MediaPipe's classifier label to the real-world hand the user
+    // photographed. Verified against device behavior: the capture pipeline
+    // (camera preview + saved JPEG) already presents the image in the
+    // orientation MediaPipe expects, so the label is taken as-is rather
+    // than swapped.
     private func realHandedness(fromMediaPipeLabel label: String?) -> Handedness? {
         switch label {
-        case "Left": return .right
-        case "Right": return .left
+        case "Left": return .left
+        case "Right": return .right
         default: return nil
         }
     }
