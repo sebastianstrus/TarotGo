@@ -3236,10 +3236,56 @@ class PDFGenerationService {
             context.cgContext.restoreGState()
 
             yPosition = scoreBoxStartY + scoreBoxHeight + 25
-            drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
-            yPosition += 25
+
+            // Page break: Elemental Match always starts on a new page.
+            drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+            pageNumber += 1
+            context.beginPage()
+            drawMysticalBackground(in: pageRect, context: context.cgContext)
+            yPosition = 60
+
+            let bodyFont = UIFont.systemFont(ofSize: 13, weight: .light)
+            let bodyParagraph = NSMutableParagraphStyle()
+            bodyParagraph.lineSpacing = 3
+            let bodyAttrs: [NSAttributedString.Key: Any] = [
+                .font: bodyFont,
+                .paragraphStyle: bodyParagraph
+            ]
+
+            // Estimate text block height for a given body string
+            func bodyHeight(for text: String) -> CGFloat {
+                let attr = NSAttributedString(string: text, attributes: bodyAttrs)
+                return attr.boundingRect(
+                    with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
+                    options: [.usesLineFragmentOrigin, .usesFontLeading],
+                    context: nil
+                ).height
+            }
+
+            // Section header (~40pt) + box top padding (12) + body + box bottom padding (18) + trailing gap (20)
+            let sectionHeaderHeight: CGFloat = 40
+            let boxTopPadding: CGFloat = 12
+            let boxBottomPadding: CGFloat = 18
+            let sectionTrailingGap: CGFloat = 20
+            let pageBottomLimit = pageHeight - 80
+
+            func ensureRoom(for height: CGFloat) {
+                if yPosition + height > pageBottomLimit {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                }
+            }
 
             // Elemental Match
+            let elementsLine = "\(yourElement)   ↔   \(partnerElement)"
+            let elementsLineHeight = bodyHeight(for: elementsLine)
+            let elementDescHeight = bodyHeight(for: elementDescription)
+            let elementSectionHeight = sectionHeaderHeight + boxTopPadding + elementsLineHeight + 6 + elementDescHeight + boxBottomPadding + sectionTrailingGap
+            ensureRoom(for: elementSectionHeight)
+
             yPosition = drawSectionHeader(
                 title: L10n.compatibilityElementalMatch,
                 at: yPosition,
@@ -3250,8 +3296,7 @@ class PDFGenerationService {
             yPosition += 10
 
             let elementBoxStartY = yPosition
-            let elementsLine = "\(yourElement)   ↔   \(partnerElement)"
-            yPosition += 12
+            yPosition += boxTopPadding
             yPosition = drawText(
                 elementsLine,
                 at: CGPoint(x: margin, y: yPosition),
@@ -3264,10 +3309,10 @@ class PDFGenerationService {
                 elementDescription,
                 at: CGPoint(x: margin, y: yPosition),
                 width: contentWidth,
-                font: .systemFont(ofSize: 13, weight: .light),
+                font: bodyFont,
                 color: textColor
             )
-            yPosition += 18
+            yPosition += boxBottomPadding
 
             context.cgContext.saveGState()
             let elementBoxRect = CGRect(
@@ -3282,9 +3327,9 @@ class PDFGenerationService {
             elementBox.stroke()
             context.cgContext.restoreGState()
 
-            yPosition += 25
+            yPosition += sectionTrailingGap
 
-            // Analysis sections
+            // Analysis sections — draw filled box first, then text on top (one draw pass).
             let sections: [(String, String)] = [
                 (L10n.compatibilityOverall, overall),
                 (L10n.compatibilityStrengths, strengths),
@@ -3293,28 +3338,9 @@ class PDFGenerationService {
             ]
 
             for (sectionTitle, sectionBody) in sections {
-                let bodyFont = UIFont.systemFont(ofSize: 13, weight: .light)
-                let bodyParagraph = NSMutableParagraphStyle()
-                bodyParagraph.lineSpacing = 3
-                let bodyAttrs: [NSAttributedString.Key: Any] = [
-                    .font: bodyFont,
-                    .paragraphStyle: bodyParagraph
-                ]
-                let bodyString = NSAttributedString(string: sectionBody, attributes: bodyAttrs)
-                let bodyRect = bodyString.boundingRect(
-                    with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
-                    options: [.usesLineFragmentOrigin, .usesFontLeading],
-                    context: nil
-                )
-                let estimatedSectionHeight = 40 + bodyRect.height + 40
-
-                if yPosition + estimatedSectionHeight > pageHeight - 80 {
-                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
-                    pageNumber += 1
-                    context.beginPage()
-                    drawMysticalBackground(in: pageRect, context: context.cgContext)
-                    yPosition = 60
-                }
+                let bodyH = bodyHeight(for: sectionBody)
+                let requiredHeight = sectionHeaderHeight + boxTopPadding + bodyH + boxBottomPadding + sectionTrailingGap
+                ensureRoom(for: requiredHeight)
 
                 yPosition = drawSectionHeader(
                     title: sectionTitle,
@@ -3325,23 +3351,15 @@ class PDFGenerationService {
                 )
                 yPosition += 10
 
-                let sectionBoxStartY = yPosition
-                yPosition += 12
-                yPosition = drawText(
-                    sectionBody,
-                    at: CGPoint(x: margin, y: yPosition),
-                    width: contentWidth,
-                    font: bodyFont,
-                    color: textColor
-                )
-                yPosition += 18
+                let boxStartY = yPosition
+                let boxHeight = boxTopPadding + bodyH + boxBottomPadding
 
                 context.cgContext.saveGState()
                 let sectionBoxRect = CGRect(
                     x: margin - 10,
-                    y: sectionBoxStartY,
+                    y: boxStartY,
                     width: contentWidth + 20,
-                    height: yPosition - sectionBoxStartY
+                    height: boxHeight
                 )
                 let sectionBox = UIBezierPath(roundedRect: sectionBoxRect, cornerRadius: 10)
                 UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
@@ -3351,16 +3369,15 @@ class PDFGenerationService {
                 sectionBox.stroke()
                 context.cgContext.restoreGState()
 
-                // Re-draw text on top of the filled box
                 _ = drawText(
                     sectionBody,
-                    at: CGPoint(x: margin, y: sectionBoxStartY + 12),
+                    at: CGPoint(x: margin, y: boxStartY + boxTopPadding),
                     width: contentWidth,
                     font: bodyFont,
                     color: textColor
                 )
 
-                yPosition += 20
+                yPosition = boxStartY + boxHeight + sectionTrailingGap
             }
 
             // App Store Promo
