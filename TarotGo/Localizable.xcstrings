@@ -28460,6 +28460,366 @@
         }
       }
     },
+    "historyOfMercury.ancient.intro" : {
+      "comment" : "Ancient roots intro",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The earliest astrologers were also the earliest astronomers. Long before telescopes, they tracked the seven 'wandering stars' — including Mercury — across the sky and noticed that Mercury occasionally seemed to pause, reverse, pause again, then resume its forward path."
+          }
+        }
+      }
+    },
+    "historyOfMercury.ancient.title" : {
+      "comment" : "Section title: ancient roots",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ancient Roots"
+          }
+        }
+      }
+    },
+    "historyOfMercury.babylonians.text" : {
+      "comment" : "Babylonians text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "By around 1000 BCE, Babylonian astronomer-priests were recording planetary motions on cuneiform tablets. They named Mercury 'Nabu' — the scribe of the gods — and watched closely when he changed direction, treating it as an omen requiring careful interpretation."
+          }
+        }
+      }
+    },
+    "historyOfMercury.babylonians.title" : {
+      "comment" : "Babylonians title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Babylonian Sky-Watchers"
+          }
+        }
+      }
+    },
+    "historyOfMercury.digital.text" : {
+      "comment" : "Digital text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "When personal computers, smartphones, and social media became part of daily life, Mercury retrograde took on a new resonance. Frozen devices, missed messages, and software glitches gave the ancient symbolism a startlingly modern shape — and brought retrograde from astrologers' charts into mainstream conversation."
+          }
+        }
+      }
+    },
+    "historyOfMercury.digital.title" : {
+      "comment" : "Digital title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The Digital Age"
+          }
+        }
+      }
+    },
+    "historyOfMercury.greeks.text" : {
+      "comment" : "Greeks text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Around 150 CE, Claudius Ptolemy of Alexandria compiled centuries of observations into the Almagest and the Tetrabiblos. He described Mercury's retrograde motion mathematically using epicycles — and astrologically associated it with delays, hesitation, and the need to revisit decisions."
+          }
+        }
+      }
+    },
+    "historyOfMercury.greeks.title" : {
+      "comment" : "Greeks title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Greek Astronomy & Ptolemy"
+          }
+        }
+      }
+    },
+    "historyOfMercury.intro" : {
+      "comment" : "History intro paragraph",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury retrograde is not a modern invention. The backward dance of the swift planet has been recorded since the earliest days of astronomy, when stargazers had no choice but to watch the heavens carefully and write down what they saw. The story of how humans interpreted Mercury's apparent reversals reflects the story of astrology itself — from omens scratched on clay tablets to the psychological astrology of the twentieth century."
+          }
+        }
+      }
+    },
+    "historyOfMercury.medieval.text" : {
+      "comment" : "Medieval text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Through the Islamic Golden Age and into Renaissance Europe, astrologers continued to interpret Mercury retrograde as a moment for caution in contracts, messages, and journeys. Astrological almanacs from this period regularly warned readers to postpone important communications when Mercury was retrograde."
+          }
+        }
+      }
+    },
+    "historyOfMercury.medieval.title" : {
+      "comment" : "Medieval title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Medieval Astrology"
+          }
+        }
+      }
+    },
+    "historyOfMercury.modern.intro" : {
+      "comment" : "Modern intro",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "In the twentieth century, astrology was reshaped by psychology and then again by the internet. Both transformations changed how everyday people relate to Mercury retrograde."
+          }
+        }
+      }
+    },
+    "historyOfMercury.modern.title" : {
+      "comment" : "Section title: modern era",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The Modern Era"
+          }
+        }
+      }
+    },
+    "historyOfMercury.psychological.text" : {
+      "comment" : "Psychological text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Influenced by Carl Jung and astrologers like Dane Rudhyar and Liz Greene, mid-twentieth-century astrology shifted from fate-based predictions to inner reflection. Mercury retrograde became a window for introspection — a time to listen to what the unconscious had been quietly saying."
+          }
+        }
+      }
+    },
+    "historyOfMercury.psychological.title" : {
+      "comment" : "Psychological title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Psychological Astrology"
+          }
+        }
+      }
+    },
+    "historyOfMercury.subtitle" : {
+      "comment" : "Subtitle for history view",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "How astrologers have watched Mercury turn for over three thousand years."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.era.1" : {
+      "comment" : "Timeline era 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "~1000 BCE"
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.era.2" : {
+      "comment" : "Timeline era 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "~150 CE"
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.era.3" : {
+      "comment" : "Timeline era 3",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "9th–15th c."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.era.4" : {
+      "comment" : "Timeline era 4",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "20th c."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.era.5" : {
+      "comment" : "Timeline era 5",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "21st c."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.eraHeader" : {
+      "comment" : "Timeline table column: era",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Era"
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.milestone.1" : {
+      "comment" : "Timeline milestone 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Babylonian astronomer-priests track Mercury (Nabu) on cuneiform tablets and treat its retrograde motion as a meaningful omen."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.milestone.2" : {
+      "comment" : "Timeline milestone 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ptolemy formalizes retrograde motion mathematically and associates it astrologically with delays and revision."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.milestone.3" : {
+      "comment" : "Timeline milestone 3",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Islamic and medieval European astrologers preserve and refine retrograde lore in handbooks and almanacs."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.milestone.4" : {
+      "comment" : "Timeline milestone 4",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Psychological astrology reframes retrograde as a window for inner reflection rather than fated misfortune."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.milestone.5" : {
+      "comment" : "Timeline milestone 5",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The digital age makes Mercury retrograde a mainstream cultural reference — glitchy phones, missed emails, and viral memes give the ancient symbolism modern life."
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.milestoneHeader" : {
+      "comment" : "Timeline table column: milestone",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Milestone"
+          }
+        }
+      }
+    },
+    "historyOfMercury.timeline.title" : {
+      "comment" : "Section title: timeline",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Timeline"
+          }
+        }
+      }
+    },
+    "historyOfMercury.title" : {
+      "comment" : "Title for history view",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "History of Mercury Retrograde"
+          }
+        }
+      }
+    },
     "historyOfPalmistry.ancient.intro" : {
       "comment" : "The practice of palm reading has roots in multiple ancient civilizations, each contributing unique perspectives to this sacred art.",
       "localizations" : {
@@ -239849,6 +240209,378 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вивчіть Матрицю Долі"
+          }
+        }
+      }
+    },
+    "learnMercury.history.subtitle" : {
+      "comment" : "Subtitle of the navigation link to the history view",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "From Babylonian sky-watchers to modern astrology"
+          }
+        }
+      }
+    },
+    "learnMercury.history.title" : {
+      "comment" : "Title of the navigation link to the history view",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "History of Mercury Retrograde"
+          }
+        }
+      }
+    },
+    "learnMercury.myth.1.text" : {
+      "comment" : "Myth 1 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reality: Retrograde is excellent for anything beginning with 're-' — reconnecting, revising, returning, finishing. Life does not pause; it just rewards a different kind of attention."
+          }
+        }
+      }
+    },
+    "learnMercury.myth.1.title" : {
+      "comment" : "Myth 1 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Myth: Nothing good can happen during retrograde"
+          }
+        }
+      }
+    },
+    "learnMercury.myth.2.text" : {
+      "comment" : "Myth 2 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reality: Major irreversible commitments are best timed for after retrograde when possible. But life continues — if you must sign, read the fine print twice, and build in flexibility."
+          }
+        }
+      }
+    },
+    "learnMercury.myth.2.title" : {
+      "comment" : "Myth 2 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Myth: You should never sign anything"
+          }
+        }
+      }
+    },
+    "learnMercury.myth.3.text" : {
+      "comment" : "Myth 3 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reality: Plenty of ordinary chaos happens outside retrograde. Use the window for self-reflection, not as a scapegoat for unrelated frustrations."
+          }
+        }
+      }
+    },
+    "learnMercury.myth.3.title" : {
+      "comment" : "Myth 3 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Myth: It is the cause of every problem"
+          }
+        }
+      }
+    },
+    "learnMercury.myths.intro" : {
+      "comment" : "Myths intro",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury retrograde is one of the most misunderstood astrological events. A few clarifications go a long way."
+          }
+        }
+      }
+    },
+    "learnMercury.myths.title" : {
+      "comment" : "Section title: myths",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Common Myths"
+          }
+        }
+      }
+    },
+    "learnMercury.phase.postShadow.text" : {
+      "comment" : "Phase 3 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury moves forward again but retraces the same zodiac degrees. Loose ends find resolution. Lessons from the retrograde solidify. By the time Mercury clears the shadow, the path ahead feels noticeably clearer."
+          }
+        }
+      }
+    },
+    "learnMercury.phase.postShadow.title" : {
+      "comment" : "Phase 3 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Post-Shadow (~2 weeks after)"
+          }
+        }
+      }
+    },
+    "learnMercury.phase.preShadow.text" : {
+      "comment" : "Phase 1 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury enters the degrees of the zodiac where it will later turn retrograde. Themes that will surface during retrograde begin to whisper. Pay attention to small disruptions, hints, and recurring topics — they often preview the lessons ahead."
+          }
+        }
+      }
+    },
+    "learnMercury.phase.preShadow.title" : {
+      "comment" : "Phase 1 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Pre-Shadow (~2 weeks before)"
+          }
+        }
+      }
+    },
+    "learnMercury.phase.retrograde.text" : {
+      "comment" : "Phase 2 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury appears to move backwards. This is the core review-and-revise window. Old conversations may return, plans may shift, and technology may misbehave. The keywords for this phase begin with 're-': review, revise, reflect, reconnect, repair, return."
+          }
+        }
+      }
+    },
+    "learnMercury.phase.retrograde.title" : {
+      "comment" : "Phase 2 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Retrograde (~3 weeks)"
+          }
+        }
+      }
+    },
+    "learnMercury.phases.intro" : {
+      "comment" : "Phases intro",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "A complete Mercury retrograde cycle spans about seven weeks. It is divided into three phases — the pre-shadow, the retrograde itself, and the post-shadow."
+          }
+        }
+      }
+    },
+    "learnMercury.phases.title" : {
+      "comment" : "Section title: phases of retrograde",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The Three Phases"
+          }
+        }
+      }
+    },
+    "learnMercury.subtitle" : {
+      "comment" : "Subtitle for the Learn Mercury Retrograde view",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "What it is, why it matters, and how to navigate it."
+          }
+        }
+      }
+    },
+    "learnMercury.title" : {
+      "comment" : "Title for the Learn Mercury Retrograde view",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Learn About Mercury Retrograde"
+          }
+        }
+      }
+    },
+    "learnMercury.whatIs.body" : {
+      "comment" : "Body paragraph explaining apparent motion",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Astronomers call this 'apparent retrograde motion'. Astrologers, observing the same phenomenon for thousands of years, noticed that the themes ruled by Mercury — communication, contracts, travel, technology, and learning — often felt more tangled during these windows. Whether you read this symbolically or psychologically, retrograde is an invitation to slow down and revisit, rather than rush forward."
+          }
+        }
+      }
+    },
+    "learnMercury.whatIs.intro" : {
+      "comment" : "Intro paragraph explaining what retrograde is",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Three or four times a year, Mercury — the swift messenger of the cosmos — appears to slow down, stop, and travel backwards through the zodiac for about three weeks. This is an optical illusion: Mercury never actually reverses course. Instead, because Mercury orbits the Sun faster than Earth, it occasionally laps us. When it does, our perspective makes Mercury seem to glide backwards against the distant stars."
+          }
+        }
+      }
+    },
+    "learnMercury.whatIs.title" : {
+      "comment" : "Section title: what is Mercury retrograde",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "What Is Mercury Retrograde?"
+          }
+        }
+      }
+    },
+    "learnMercury.why.communication.text" : {
+      "comment" : "Why 1 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Misreadings, missed messages, and emotional subtext spike. Re-read before sending, and confirm important information twice."
+          }
+        }
+      }
+    },
+    "learnMercury.why.communication.title" : {
+      "comment" : "Why 1 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Communication"
+          }
+        }
+      }
+    },
+    "learnMercury.why.intro" : {
+      "comment" : "Why intro",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury governs the wiring of daily life. When the messenger appears to stumble, the systems we rely on can feel out of sync. Understanding these patterns helps you cooperate with them rather than fight them."
+          }
+        }
+      }
+    },
+    "learnMercury.why.reflection.text" : {
+      "comment" : "Why 3 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Retrograde is one of the cosmos's natural pause buttons. It is an excellent time to journal, finish unfinished work, and revisit goals from a calmer place."
+          }
+        }
+      }
+    },
+    "learnMercury.why.reflection.title" : {
+      "comment" : "Why 3 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reflection & Renewal"
+          }
+        }
+      }
+    },
+    "learnMercury.why.technology.text" : {
+      "comment" : "Why 2 text",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Devices act up, files vanish, and travel plans wobble. Back up important data, allow buffer time, and postpone large electronics purchases when you can."
+          }
+        }
+      }
+    },
+    "learnMercury.why.technology.title" : {
+      "comment" : "Why 2 title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Technology & Travel"
+          }
+        }
+      }
+    },
+    "learnMercury.why.title" : {
+      "comment" : "Section title: why it matters",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Why It Matters"
           }
         }
       }

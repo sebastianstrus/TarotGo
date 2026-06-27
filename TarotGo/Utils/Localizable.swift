@@ -1970,6 +1970,85 @@ enum L10n {
     static let mercuryCoupleAdvicePostShadow2 = NSLocalizedString("mercury.couple.advice.postShadow.2", value: "Re-launch postponed plans gently — trust the renewed clarity.", comment: "Couple post-shadow advice 2")
     static let mercuryCoupleAdvicePostShadow3 = NSLocalizedString("mercury.couple.advice.postShadow.3", value: "Acknowledge the growth your relationship made through the challenges.", comment: "Couple post-shadow advice 3")
 
+    // MARK: - Learn Mercury Retrograde
+    static let learnMercuryTitle = NSLocalizedString("learnMercury.title", value: "Learn About Mercury Retrograde", comment: "Title for the Learn Mercury Retrograde view")
+    static let learnMercurySubtitle = NSLocalizedString("learnMercury.subtitle", value: "What it is, why it matters, and how to navigate it.", comment: "Subtitle for the Learn Mercury Retrograde view")
+    static let learnMercuryHistoryTitle = NSLocalizedString("learnMercury.history.title", value: "History of Mercury Retrograde", comment: "Title of the navigation link to the history view")
+    static let learnMercuryHistorySubtitle = NSLocalizedString("learnMercury.history.subtitle", value: "From Babylonian sky-watchers to modern astrology", comment: "Subtitle of the navigation link to the history view")
+
+    // What Is Mercury Retrograde?
+    static let learnMercuryWhatIsTitle = NSLocalizedString("learnMercury.whatIs.title", value: "What Is Mercury Retrograde?", comment: "Section title: what is Mercury retrograde")
+    static let learnMercuryWhatIsIntro = NSLocalizedString("learnMercury.whatIs.intro", value: "Three or four times a year, Mercury — the swift messenger of the cosmos — appears to slow down, stop, and travel backwards through the zodiac for about three weeks. This is an optical illusion: Mercury never actually reverses course. Instead, because Mercury orbits the Sun faster than Earth, it occasionally laps us. When it does, our perspective makes Mercury seem to glide backwards against the distant stars.", comment: "Intro paragraph explaining what retrograde is")
+    static let learnMercuryWhatIsBody = NSLocalizedString("learnMercury.whatIs.body", value: "Astronomers call this 'apparent retrograde motion'. Astrologers, observing the same phenomenon for thousands of years, noticed that the themes ruled by Mercury — communication, contracts, travel, technology, and learning — often felt more tangled during these windows. Whether you read this symbolically or psychologically, retrograde is an invitation to slow down and revisit, rather than rush forward.", comment: "Body paragraph explaining apparent motion")
+
+    // The Three Phases
+    static let learnMercuryPhasesTitle = NSLocalizedString("learnMercury.phases.title", value: "The Three Phases", comment: "Section title: phases of retrograde")
+    static let learnMercuryPhasesIntro = NSLocalizedString("learnMercury.phases.intro", value: "A complete Mercury retrograde cycle spans about seven weeks. It is divided into three phases — the pre-shadow, the retrograde itself, and the post-shadow.", comment: "Phases intro")
+    static let learnMercuryPhasePreShadowTitle = NSLocalizedString("learnMercury.phase.preShadow.title", value: "Pre-Shadow (~2 weeks before)", comment: "Phase 1 title")
+    static let learnMercuryPhasePreShadowText = NSLocalizedString("learnMercury.phase.preShadow.text", value: "Mercury enters the degrees of the zodiac where it will later turn retrograde. Themes that will surface during retrograde begin to whisper. Pay attention to small disruptions, hints, and recurring topics — they often preview the lessons ahead.", comment: "Phase 1 text")
+    static let learnMercuryPhaseRetrogradeTitle = NSLocalizedString("learnMercury.phase.retrograde.title", value: "Retrograde (~3 weeks)", comment: "Phase 2 title")
+    static let learnMercuryPhaseRetrogradeText = NSLocalizedString("learnMercury.phase.retrograde.text", value: "Mercury appears to move backwards. This is the core review-and-revise window. Old conversations may return, plans may shift, and technology may misbehave. The keywords for this phase begin with 're-': review, revise, reflect, reconnect, repair, return.", comment: "Phase 2 text")
+    static let learnMercuryPhasePostShadowTitle = NSLocalizedString("learnMercury.phase.postShadow.title", value: "Post-Shadow (~2 weeks after)", comment: "Phase 3 title")
+    static let learnMercuryPhasePostShadowText = NSLocalizedString("learnMercury.phase.postShadow.text", value: "Mercury moves forward again but retraces the same zodiac degrees. Loose ends find resolution. Lessons from the retrograde solidify. By the time Mercury clears the shadow, the path ahead feels noticeably clearer.", comment: "Phase 3 text")
+
+    // Why it matters
+    static let learnMercuryWhyTitle = NSLocalizedString("learnMercury.why.title", value: "Why It Matters", comment: "Section title: why it matters")
+    static let learnMercuryWhyIntro = NSLocalizedString("learnMercury.why.intro", value: "Mercury governs the wiring of daily life. When the messenger appears to stumble, the systems we rely on can feel out of sync. Understanding these patterns helps you cooperate with them rather than fight them.", comment: "Why intro")
+    static let learnMercuryWhyCommunicationTitle = NSLocalizedString("learnMercury.why.communication.title", value: "Communication", comment: "Why 1 title")
+    static let learnMercuryWhyCommunicationText = NSLocalizedString("learnMercury.why.communication.text", value: "Misreadings, missed messages, and emotional subtext spike. Re-read before sending, and confirm important information twice.", comment: "Why 1 text")
+    static let learnMercuryWhyTechnologyTitle = NSLocalizedString("learnMercury.why.technology.title", value: "Technology & Travel", comment: "Why 2 title")
+    static let learnMercuryWhyTechnologyText = NSLocalizedString("learnMercury.why.technology.text", value: "Devices act up, files vanish, and travel plans wobble. Back up important data, allow buffer time, and postpone large electronics purchases when you can.", comment: "Why 2 text")
+    static let learnMercuryWhyReflectionTitle = NSLocalizedString("learnMercury.why.reflection.title", value: "Reflection & Renewal", comment: "Why 3 title")
+    static let learnMercuryWhyReflectionText = NSLocalizedString("learnMercury.why.reflection.text", value: "Retrograde is one of the cosmos's natural pause buttons. It is an excellent time to journal, finish unfinished work, and revisit goals from a calmer place.", comment: "Why 3 text")
+
+    // Common myths
+    static let learnMercuryMythsTitle = NSLocalizedString("learnMercury.myths.title", value: "Common Myths", comment: "Section title: myths")
+    static let learnMercuryMythsIntro = NSLocalizedString("learnMercury.myths.intro", value: "Mercury retrograde is one of the most misunderstood astrological events. A few clarifications go a long way.", comment: "Myths intro")
+    static let learnMercuryMyth1Title = NSLocalizedString("learnMercury.myth.1.title", value: "Myth: Nothing good can happen during retrograde", comment: "Myth 1 title")
+    static let learnMercuryMyth1Text = NSLocalizedString("learnMercury.myth.1.text", value: "Reality: Retrograde is excellent for anything beginning with 're-' — reconnecting, revising, returning, finishing. Life does not pause; it just rewards a different kind of attention.", comment: "Myth 1 text")
+    static let learnMercuryMyth2Title = NSLocalizedString("learnMercury.myth.2.title", value: "Myth: You should never sign anything", comment: "Myth 2 title")
+    static let learnMercuryMyth2Text = NSLocalizedString("learnMercury.myth.2.text", value: "Reality: Major irreversible commitments are best timed for after retrograde when possible. But life continues — if you must sign, read the fine print twice, and build in flexibility.", comment: "Myth 2 text")
+    static let learnMercuryMyth3Title = NSLocalizedString("learnMercury.myth.3.title", value: "Myth: It is the cause of every problem", comment: "Myth 3 title")
+    static let learnMercuryMyth3Text = NSLocalizedString("learnMercury.myth.3.text", value: "Reality: Plenty of ordinary chaos happens outside retrograde. Use the window for self-reflection, not as a scapegoat for unrelated frustrations.", comment: "Myth 3 text")
+
+    // MARK: - History of Mercury Retrograde
+    static let historyOfMercuryTitle = NSLocalizedString("historyOfMercury.title", value: "History of Mercury Retrograde", comment: "Title for history view")
+    static let historyOfMercurySubtitle = NSLocalizedString("historyOfMercury.subtitle", value: "How astrologers have watched Mercury turn for over three thousand years.", comment: "Subtitle for history view")
+    static let historyOfMercuryIntro = NSLocalizedString("historyOfMercury.intro", value: "Mercury retrograde is not a modern invention. The backward dance of the swift planet has been recorded since the earliest days of astronomy, when stargazers had no choice but to watch the heavens carefully and write down what they saw. The story of how humans interpreted Mercury's apparent reversals reflects the story of astrology itself — from omens scratched on clay tablets to the psychological astrology of the twentieth century.", comment: "History intro paragraph")
+
+    // Ancient Roots
+    static let historyOfMercuryAncientTitle = NSLocalizedString("historyOfMercury.ancient.title", value: "Ancient Roots", comment: "Section title: ancient roots")
+    static let historyOfMercuryAncientIntro = NSLocalizedString("historyOfMercury.ancient.intro", value: "The earliest astrologers were also the earliest astronomers. Long before telescopes, they tracked the seven 'wandering stars' — including Mercury — across the sky and noticed that Mercury occasionally seemed to pause, reverse, pause again, then resume its forward path.", comment: "Ancient roots intro")
+    static let historyOfMercuryBabyloniansTitle = NSLocalizedString("historyOfMercury.babylonians.title", value: "Babylonian Sky-Watchers", comment: "Babylonians title")
+    static let historyOfMercuryBabyloniansText = NSLocalizedString("historyOfMercury.babylonians.text", value: "By around 1000 BCE, Babylonian astronomer-priests were recording planetary motions on cuneiform tablets. They named Mercury 'Nabu' — the scribe of the gods — and watched closely when he changed direction, treating it as an omen requiring careful interpretation.", comment: "Babylonians text")
+    static let historyOfMercuryGreeksTitle = NSLocalizedString("historyOfMercury.greeks.title", value: "Greek Astronomy & Ptolemy", comment: "Greeks title")
+    static let historyOfMercuryGreeksText = NSLocalizedString("historyOfMercury.greeks.text", value: "Around 150 CE, Claudius Ptolemy of Alexandria compiled centuries of observations into the Almagest and the Tetrabiblos. He described Mercury's retrograde motion mathematically using epicycles — and astrologically associated it with delays, hesitation, and the need to revisit decisions.", comment: "Greeks text")
+    static let historyOfMercuryMedievalTitle = NSLocalizedString("historyOfMercury.medieval.title", value: "Medieval Astrology", comment: "Medieval title")
+    static let historyOfMercuryMedievalText = NSLocalizedString("historyOfMercury.medieval.text", value: "Through the Islamic Golden Age and into Renaissance Europe, astrologers continued to interpret Mercury retrograde as a moment for caution in contracts, messages, and journeys. Astrological almanacs from this period regularly warned readers to postpone important communications when Mercury was retrograde.", comment: "Medieval text")
+
+    // Modern Era
+    static let historyOfMercuryModernTitle = NSLocalizedString("historyOfMercury.modern.title", value: "The Modern Era", comment: "Section title: modern era")
+    static let historyOfMercuryModernIntro = NSLocalizedString("historyOfMercury.modern.intro", value: "In the twentieth century, astrology was reshaped by psychology and then again by the internet. Both transformations changed how everyday people relate to Mercury retrograde.", comment: "Modern intro")
+    static let historyOfMercuryPsychologicalTitle = NSLocalizedString("historyOfMercury.psychological.title", value: "Psychological Astrology", comment: "Psychological title")
+    static let historyOfMercuryPsychologicalText = NSLocalizedString("historyOfMercury.psychological.text", value: "Influenced by Carl Jung and astrologers like Dane Rudhyar and Liz Greene, mid-twentieth-century astrology shifted from fate-based predictions to inner reflection. Mercury retrograde became a window for introspection — a time to listen to what the unconscious had been quietly saying.", comment: "Psychological text")
+    static let historyOfMercuryDigitalTitle = NSLocalizedString("historyOfMercury.digital.title", value: "The Digital Age", comment: "Digital title")
+    static let historyOfMercuryDigitalText = NSLocalizedString("historyOfMercury.digital.text", value: "When personal computers, smartphones, and social media became part of daily life, Mercury retrograde took on a new resonance. Frozen devices, missed messages, and software glitches gave the ancient symbolism a startlingly modern shape — and brought retrograde from astrologers' charts into mainstream conversation.", comment: "Digital text")
+
+    // Timeline
+    static let historyOfMercuryTimelineTitle = NSLocalizedString("historyOfMercury.timeline.title", value: "Timeline", comment: "Section title: timeline")
+    static let historyOfMercuryTimelineEraHeader = NSLocalizedString("historyOfMercury.timeline.eraHeader", value: "Era", comment: "Timeline table column: era")
+    static let historyOfMercuryTimelineMilestoneHeader = NSLocalizedString("historyOfMercury.timeline.milestoneHeader", value: "Milestone", comment: "Timeline table column: milestone")
+    static let historyOfMercuryTimelineEra1 = NSLocalizedString("historyOfMercury.timeline.era.1", value: "~1000 BCE", comment: "Timeline era 1")
+    static let historyOfMercuryTimelineMilestone1 = NSLocalizedString("historyOfMercury.timeline.milestone.1", value: "Babylonian astronomer-priests track Mercury (Nabu) on cuneiform tablets and treat its retrograde motion as a meaningful omen.", comment: "Timeline milestone 1")
+    static let historyOfMercuryTimelineEra2 = NSLocalizedString("historyOfMercury.timeline.era.2", value: "~150 CE", comment: "Timeline era 2")
+    static let historyOfMercuryTimelineMilestone2 = NSLocalizedString("historyOfMercury.timeline.milestone.2", value: "Ptolemy formalizes retrograde motion mathematically and associates it astrologically with delays and revision.", comment: "Timeline milestone 2")
+    static let historyOfMercuryTimelineEra3 = NSLocalizedString("historyOfMercury.timeline.era.3", value: "9th–15th c.", comment: "Timeline era 3")
+    static let historyOfMercuryTimelineMilestone3 = NSLocalizedString("historyOfMercury.timeline.milestone.3", value: "Islamic and medieval European astrologers preserve and refine retrograde lore in handbooks and almanacs.", comment: "Timeline milestone 3")
+    static let historyOfMercuryTimelineEra4 = NSLocalizedString("historyOfMercury.timeline.era.4", value: "20th c.", comment: "Timeline era 4")
+    static let historyOfMercuryTimelineMilestone4 = NSLocalizedString("historyOfMercury.timeline.milestone.4", value: "Psychological astrology reframes retrograde as a window for inner reflection rather than fated misfortune.", comment: "Timeline milestone 4")
+    static let historyOfMercuryTimelineEra5 = NSLocalizedString("historyOfMercury.timeline.era.5", value: "21st c.", comment: "Timeline era 5")
+    static let historyOfMercuryTimelineMilestone5 = NSLocalizedString("historyOfMercury.timeline.milestone.5", value: "The digital age makes Mercury retrograde a mainstream cultural reference — glitchy phones, missed emails, and viral memes give the ancient symbolism modern life.", comment: "Timeline milestone 5")
+
     // MARK: - Subscription
     static let subscriptionErrorVerification = NSLocalizedString("subscription.error.verification", comment: "Error message when a StoreKit transaction fails verification")
 

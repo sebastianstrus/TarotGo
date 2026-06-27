@@ -62,6 +62,14 @@ struct MercuryRetrogradeView: View {
         }
         .navigationTitle(L10n.mercuryTitle)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: LearnMercuryRetrogradeView()) {
+                    Image(systemName: "book.fill")
+                        .foregroundStyle(AppTheme.goldGradient)
+                }
+            }
+        }
         .onAppear {
             now = Date()
             userBirthDate = AstrologyService.shared.userBirthDate
