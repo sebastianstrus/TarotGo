@@ -1946,6 +1946,30 @@ enum L10n {
     static let mercuryNotifPostShadowEndTitle = NSLocalizedString("mercury.notif.postShadowEnd.title", value: "Shadow Period Ends", comment: "Notification title for post-shadow end")
     static let mercuryNotifPostShadowEndBody = NSLocalizedString("mercury.notif.postShadowEnd.body", value: "Mercury fully clears the shadow. The path ahead is open.", comment: "Notification body for post-shadow end")
 
+    // MARK: - Mercury Retrograde × Couple
+    static let mercuryCoupleTitle = NSLocalizedString("mercury.couple.title", value: "Mercury Retrograde Impact", comment: "Title for the retrograde card inside compatibility view")
+    static let mercuryCoupleSubtitle = NSLocalizedString("mercury.couple.subtitle", value: "How this retrograde shapes your bond", comment: "Subtitle under the retrograde card")
+    static let mercuryCoupleImpactYou = NSLocalizedString("mercury.couple.impactYou", value: "For you", comment: "Label above the user's personal impact in the compatibility retrograde card")
+    static let mercuryCoupleImpactPartner = NSLocalizedString("mercury.couple.impactPartner", value: "For your partner", comment: "Label above the partner's impact in the compatibility retrograde card")
+    static let mercuryCoupleAdvice = NSLocalizedString("mercury.couple.advice", value: "Guidance for the Two of You", comment: "Header for couple guidance list")
+
+    // Pre-shadow couple guidance
+    static let mercuryCoupleAdvicePreShadow1 = NSLocalizedString("mercury.couple.advice.preShadow.1", value: "Notice subtle shifts in how you communicate — they will become themes during retrograde.", comment: "Couple pre-shadow advice 1")
+    static let mercuryCoupleAdvicePreShadow2 = NSLocalizedString("mercury.couple.advice.preShadow.2", value: "Finish important conversations now, before words get tangled.", comment: "Couple pre-shadow advice 2")
+    static let mercuryCoupleAdvicePreShadow3 = NSLocalizedString("mercury.couple.advice.preShadow.3", value: "Back up shared memories — photos, messages, plans you both rely on.", comment: "Couple pre-shadow advice 3")
+
+    // Retrograde couple guidance
+    static let mercuryCoupleAdviceRetrograde1 = NSLocalizedString("mercury.couple.advice.retrograde.1", value: "Pause before reacting. Misreadings of tone and intent spike right now.", comment: "Couple retrograde advice 1")
+    static let mercuryCoupleAdviceRetrograde2 = NSLocalizedString("mercury.couple.advice.retrograde.2", value: "Old relationship patterns may resurface — a chance to heal them, not repeat them.", comment: "Couple retrograde advice 2")
+    static let mercuryCoupleAdviceRetrograde3 = NSLocalizedString("mercury.couple.advice.retrograde.3", value: "Past partners or unresolved connections may reach out. Honor your current path.", comment: "Couple retrograde advice 3")
+    static let mercuryCoupleAdviceRetrograde4 = NSLocalizedString("mercury.couple.advice.retrograde.4", value: "Postpone major commitments — moving in, engagement, breakups — when you can.", comment: "Couple retrograde advice 4")
+    static let mercuryCoupleAdviceRetrograde5 = NSLocalizedString("mercury.couple.advice.retrograde.5", value: "Schedule a gentle 'state of us' check-in. Listen more than you speak.", comment: "Couple retrograde advice 5")
+
+    // Post-shadow couple guidance
+    static let mercuryCoupleAdvicePostShadow1 = NSLocalizedString("mercury.couple.advice.postShadow.1", value: "Integrate what you learned about each other during the retrograde.", comment: "Couple post-shadow advice 1")
+    static let mercuryCoupleAdvicePostShadow2 = NSLocalizedString("mercury.couple.advice.postShadow.2", value: "Re-launch postponed plans gently — trust the renewed clarity.", comment: "Couple post-shadow advice 2")
+    static let mercuryCoupleAdvicePostShadow3 = NSLocalizedString("mercury.couple.advice.postShadow.3", value: "Acknowledge the growth your relationship made through the challenges.", comment: "Couple post-shadow advice 3")
+
     // MARK: - Subscription
     static let subscriptionErrorVerification = NSLocalizedString("subscription.error.verification", comment: "Error message when a StoreKit transaction fails verification")
 

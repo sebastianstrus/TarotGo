@@ -223,7 +223,10 @@ struct CompatibilityView: View {
             
             // Element Compatibility
             elementCompatibility(your: yourSign, partner: partnerSign)
-            
+
+            // Mercury Retrograde × Couple (only during active shadow/retrograde window)
+            mercuryRetrogradeCard(your: yourSign, partner: partnerSign)
+
             // Detailed Analysis
             analysisCard(
                 title: L10n.compatibilityOverall,
@@ -445,6 +448,151 @@ struct CompatibilityView: View {
     
     private func advice(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
         return L10n.compatibilityAdviceText
+    }
+
+    // MARK: - Mercury Retrograde × Couple
+
+    @ViewBuilder
+    private func mercuryRetrogradeCard(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> some View {
+        let service = MercuryRetrogradeService.shared
+        let now = Date()
+        if let period = service.activePeriod(for: now) {
+            let phase = period.phase(for: now)
+            let yourImpact = service.impactDescription(userSign: yourSign, retrogradeSign: period.zodiacSign)
+            let partnerImpact = service.impactDescription(userSign: partnerSign, retrogradeSign: period.zodiacSign)
+            let coupleTips = service.coupleAdvice(for: phase)
+
+            VStack(alignment: .leading, spacing: 14) {
+                // Header
+                HStack(alignment: .top, spacing: 10) {
+                    Image(systemName: "arrow.triangle.2.circlepath")
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .font(.system(size: 18))
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(L10n.mercuryCoupleTitle)
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundStyle(AppTheme.goldGradient)
+                        Text(L10n.mercuryCoupleSubtitle)
+                            .font(.system(size: 12, weight: .light))
+                            .foregroundColor(AppTheme.textSecondary)
+                    }
+                }
+
+                // Phase badge with Mercury sign
+                HStack(spacing: 8) {
+                    Image(systemName: phase.iconName)
+                        .font(.system(size: 12))
+                        .foregroundColor(AppTheme.gold)
+                    Text(phase.title)
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(AppTheme.gold)
+                    Spacer()
+                    HStack(spacing: 4) {
+                        Text(period.zodiacSign.symbol)
+                            .font(.system(size: 14))
+                        Text(period.zodiacSign.name)
+                            .font(.system(size: 12, weight: .light))
+                            .foregroundColor(AppTheme.textSecondary)
+                    }
+                }
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+                .background(
+                    Capsule()
+                        .fill(AppTheme.gold.opacity(0.12))
+                        .overlay(Capsule().stroke(AppTheme.gold.opacity(0.35), lineWidth: 1))
+                )
+
+                // Side-by-side impact
+                HStack(alignment: .top, spacing: 10) {
+                    partnerImpactColumn(
+                        label: L10n.mercuryCoupleImpactYou,
+                        sign: yourSign,
+                        impact: yourImpact
+                    )
+                    partnerImpactColumn(
+                        label: L10n.mercuryCoupleImpactPartner,
+                        sign: partnerSign,
+                        impact: partnerImpact
+                    )
+                }
+
+                // Couple guidance
+                if !coupleTips.isEmpty {
+                    Rectangle()
+                        .fill(AppTheme.gold.opacity(0.2))
+                        .frame(height: 1)
+                        .padding(.vertical, 2)
+
+                    HStack(spacing: 8) {
+                        Image(systemName: "heart.text.square.fill")
+                            .foregroundColor(AppTheme.gold)
+                        Text(L10n.mercuryCoupleAdvice)
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(AppTheme.goldGradient)
+                    }
+
+                    VStack(alignment: .leading, spacing: 10) {
+                        ForEach(coupleTips, id: \.self) { tip in
+                            HStack(alignment: .top, spacing: 10) {
+                                Image(systemName: "heart.fill")
+                                    .font(.system(size: 8))
+                                    .foregroundColor(AppTheme.gold)
+                                    .padding(.top, 6)
+                                Text(tip)
+                                    .font(.system(size: 13, weight: .light))
+                                    .foregroundColor(AppTheme.textSecondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(AppTheme.darkNavy.opacity(0.6))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(AppTheme.gold.opacity(0.4), lineWidth: 1)
+                    )
+            )
+        }
+    }
+
+    private func partnerImpactColumn(label: String, sign: ZodiacSign, impact: String) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(label)
+                .font(.system(size: 11, weight: .medium))
+                .tracking(1)
+                .foregroundColor(AppTheme.gold.opacity(0.7))
+                .textCase(.uppercase)
+
+            HStack(spacing: 6) {
+                Text(sign.symbol)
+                    .font(.system(size: 22))
+                Text(sign.name)
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundColor(AppTheme.gold)
+            }
+
+            Text(impact)
+                .font(.system(size: 12, weight: .light))
+                .foregroundColor(AppTheme.textSecondary)
+                .lineSpacing(3)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(10)
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(AppTheme.darkNavy.opacity(0.5))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(AppTheme.gold.opacity(0.2), lineWidth: 1)
+                )
+        )
     }
 }
 
