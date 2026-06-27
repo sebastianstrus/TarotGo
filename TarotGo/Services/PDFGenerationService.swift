@@ -591,7 +591,7 @@ class PDFGenerationService {
             yPosition += 20
 
             yPosition = drawText(
-                "Download TarotGo on the App Store:",
+                L10n.pdfDownloadOnAppStore,
                 at: CGPoint(x: margin, y: yPosition),
                 width: contentWidth,
                 font: .systemFont(ofSize: 13, weight: .medium),
@@ -972,7 +972,7 @@ class PDFGenerationService {
             yPosition += 20
 
             yPosition = drawText(
-                "Download TarotGo on the App Store:",
+                L10n.pdfDownloadOnAppStore,
                 at: CGPoint(x: margin, y: yPosition),
                 width: contentWidth,
                 font: .systemFont(ofSize: 13, weight: .medium),
@@ -2019,7 +2019,7 @@ class PDFGenerationService {
             yPosition += 20
 
             yPosition = drawText(
-                "Download TarotGo on the App Store:",
+                L10n.pdfDownloadOnAppStore,
                 at: CGPoint(x: margin, y: yPosition),
                 width: contentWidth,
                 font: .systemFont(ofSize: 13, weight: .medium),
@@ -2818,7 +2818,7 @@ class PDFGenerationService {
             yPosition += 20
 
             yPosition = drawText(
-                "Download TarotGo on the App Store:",
+                L10n.pdfDownloadOnAppStore,
                 at: CGPoint(x: margin, y: yPosition),
                 width: contentWidth,
                 font: .systemFont(ofSize: 13, weight: .medium),
@@ -3597,7 +3597,7 @@ class PDFGenerationService {
             yPosition += 20
 
             yPosition = drawText(
-                "Download TarotGo on the App Store:",
+                L10n.pdfDownloadOnAppStore,
                 at: CGPoint(x: margin, y: yPosition),
                 width: contentWidth,
                 font: .systemFont(ofSize: 13, weight: .medium),

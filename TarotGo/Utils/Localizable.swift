@@ -470,6 +470,7 @@ enum L10n {
     static let pdfOverallInsight = NSLocalizedString("pdf.overallInsight", comment: "Overall Insight")
     static let pdfCards = NSLocalizedString("pdf.cards", comment: "Cards")
     static let pdfPersonalReflections = NSLocalizedString("pdf.personalReflections", comment: "Personal Reflections")
+    static let pdfDownloadOnAppStore = NSLocalizedString("pdf.downloadOnAppStore", comment: "Download TarotGo on the App Store:")
 
     // MARK: - PDF Export - Destiny Matrix
     static let pdfMatrixTitle = NSLocalizedString("pdf.matrix.title", comment: "Your Destiny Matrix")
