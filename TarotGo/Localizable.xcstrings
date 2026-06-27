@@ -24850,6 +24850,2580 @@
             }
           }
         },
+    "compatibility.strengths.aries.aries" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared boldness, instant chemistry, and an unshakeable willingness to take on the world together. You both bring courage that turns ordinary plans into adventures."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.taurus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries' initiative paired with Taurus' follow-through — a combination that turns inspiration into something tangible. You make each other braver and steadier."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mental quickness meets physical boldness. Conversation is electric, decisions move fast, and you bring out each other's curiosity without ever boring each other."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protective loyalty from both sides. Aries shields Cancer from the world; Cancer makes Aries feel emotionally seen. Together you create a home that's safe and lively."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence, generosity, and shared warmth. You celebrate each other publicly and inspire huge ambition, becoming a couple that other people genuinely admire."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries' vision plus Virgo's execution makes nearly anything possible. You complement each other's blind spots and grow sharper together."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action meets thoughtfulness. Aries pushes Libra past hesitation; Libra teaches Aries finesse. You make each other more complete people."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passion that doesn't fade. You share fierce loyalty and a fearlessness about diving into life — when aligned, you're nearly unstoppable as a team."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pure adventure. You motivate, inspire, and chase ideas together with infectious optimism. Boredom never gets a foothold."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A great combination of vision and execution. Aries lights the fuse; Capricorn builds the rocket. You take each other further than either could alone."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Independent partners who push each other to think bigger. You support each other's individuality fiercely and inspire bold, future-facing change."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aries.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries' courage protects Pisces' tender vision. In return Pisces brings empathy, creativity, and depth to Aries' world."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.taurus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Devotion, sensuality, and unwavering loyalty. You build a home together that feels genuinely safe, beautiful, and lasting."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stability for Gemini, novelty for Taurus. You quietly broaden each other — Taurus grounds Gemini; Gemini opens Taurus to fresh perspectives."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Devoted homebodies who love nurturing each other. You both express care through daily acts of comfort, food, touch, and reliability."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generosity, loyalty, and a shared love of the finer things. Together you create a life rich in beauty and warmth."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quiet, devoted partnership. You build a real life together — practical, sensual, and reliable in ways that grow more valuable over time."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared aesthetic sensibility and natural ease. You create a beautiful, peaceful life and bond easily over food, art, and pleasure."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magnetic loyalty. The bond runs deep, the trust is fierce, and the passion endures long after others have moved on."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Earthbound stability and bold adventure. When aligned, you give each other both freedom and a beautiful place to come home to."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patient, persistent, and aligned on the long game. Together you build wealth — emotional, financial, relational — that compounds over time."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stability meets innovation. You can ground each other's wildest ideas or push each other beyond comfortable ruts."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.taurus.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Earth holding water beautifully. Taurus protects Pisces' soft places; Pisces brings romance and imagination to Taurus' world."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endless curiosity and conversation. You learn together, laugh constantly, and rarely run out of things to share."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mental quickness paired with deep emotional intuition. You complete each other's perspective on most situations."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Playful, expressive, and socially magnetic. You light up rooms together and bring out each other's joy and confidence."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared love of language, ideas, and precision. You sharpen each other's thinking and never quite run out of things to discuss."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effortless communication and shared sociability. You move through life as a delightful, easy-going team."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mind meets soul. When trust is real, Gemini's lightness lifts Scorpio; Scorpio gives Gemini's words real weight."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Big-picture conversations, shared adventures, and constant intellectual play. You stretch each other's horizons beautifully."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versatility meets discipline. You complement each other in ways that make you both more effective in the world."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Best friends and partners. Communication is effortless, freedom is mutual, and shared ideas keep you both energized."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.gemini.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Words meet feelings. You bring out each other's hidden creativity and translate each other to the world."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deep emotional attunement. You understand each other intuitively and build a home full of warmth and care."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancer's nurturing meets Leo's generosity. Together you create a family-oriented, warm, deeply loyal partnership."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both express love through care. You build a beautifully tended life together — practical, attentive, and quietly devoted."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Romantic and harmony-loving. You both prize connection and beauty, and you create a peaceful, lovely shared world."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deep emotional bond and intuitive understanding. Trust runs to the bone, and loyalty is fierce."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heart meets horizon. Sagittarius lifts Cancer's spirits; Cancer gives Sagittarius a warm place to land."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A classic opposites-attract pairing — Cancer's warmth softens Capricorn's structure; Capricorn provides Cancer with deep security."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Different gifts that, when shared, build a uniquely supportive partnership — Cancer offers heart, Aquarius offers perspective."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.cancer.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beautiful emotional resonance. You intuit each other constantly and share a creative, soulful inner world."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.leo.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mutual adoration, generosity, and shared grandeur. You celebrate each other publicly and live large together."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.leo.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo's confidence meets Virgo's competence — a striking pair whose strengths quietly amplify each other."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.leo.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Charm, warmth, and shared social finesse. You're a beautifully magnetic couple wherever you go."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.leo.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intense loyalty, magnetic attraction, and shared depth of feeling. When aligned, this is one of the zodiac's most formidable pairings."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.leo.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Joyful, optimistic, and adventurous. You inspire each other's ambitions and bring out each other's bigger dreams."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.leo.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ambition, loyalty, and a shared appreciation for excellence. Together you build something both warm and impressive."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.leo.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heart-and-mind balance. You inspire each other to grow beyond your habitual edges."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.leo.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo's confidence shelters Pisces' sensitivity. Pisces brings soul and devotion to Leo's expressive heart."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.virgo.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mutual care expressed through service. You support each other practically and emotionally, and your reliability runs deep."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.virgo.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practical care meets gracious harmony. You build a tasteful, considerate, and well-tended life together."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.virgo.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sharp minds and private hearts. Loyalty is earned slowly and held forever."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.virgo.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detail meets vision. You make each other more grounded and more expansive in equal measure."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.virgo.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practical, devoted, and quietly ambitious. You build a real life together — steady, supportive, and sustainable."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.virgo.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Analytical minds with different methods sharpen each other. You can solve problems no one else can."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.virgo.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practical care meets imaginative empathy. You balance each other beautifully — Pisces softens Virgo, Virgo grounds Pisces."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.libra.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graceful, harmonious, and aesthetically aligned. You build a beautiful peaceful life and prize each other's company deeply."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.libra.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When Libra's diplomacy meets Scorpio's depth, you have a bond capable of both charm and substance."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.libra.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lively, social, and full of shared adventures. You bring out each other's optimism and joy."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.libra.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grace plus structure. You make each other more polished and more grounded — a quietly powerful pairing."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.libra.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effortless friendship and shared ideals. You share a worldview and move through life together with ease."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.libra.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Romantic, beauty-loving, and artistic. You bring out each other's softness and create a tender shared world."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.scorpio.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottomless intensity, unshakeable loyalty, and a bond that can survive almost anything once it's real."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.scorpio.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depth plus freedom. When respect is mutual, Sagittarius brings light into Scorpio's depths and Scorpio gives Sagittarius weight."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.scorpio.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loyalty, ambition, and shared resilience. You build something rare — quiet, powerful, lasting."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.scorpio.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Two fixed signs with strong principles. When aligned, you have a relationship built on integrity that can't be shaken."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.scorpio.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profound emotional and creative bond. You read each other almost wordlessly and share a deep inner world."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.sagittarius.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared adventure, philosophy, and freedom. You inspire each other endlessly and live together with infectious optimism."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.sagittarius.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vision plus execution. You can dream big together AND actually make it happen."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.sagittarius.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forward-thinking, freedom-loving, and intellectually exciting. You inspire each other's individuality and broaden each other's worldview."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.sagittarius.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both seekers, both dreamers. You bring out each other's spiritual and creative sides beautifully."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.capricorn.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared discipline, ambition, and quiet loyalty. You build steadily and trust each other's judgment deeply."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.capricorn.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Structure meets disruption. Together you can balance tradition and innovation in ways neither could alone."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.capricorn.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capricorn's safety holds Pisces' creativity. Pisces brings soul to Capricorn's life. A quietly beautiful pairing."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aquarius.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brilliant friendship, shared independence, and forward-looking vision. You move through life as kindred spirits."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.aquarius.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mind meets soul. You share idealism and a desire to make the world better — together you can do real good."
+          }
+        }
+      }
+    },
+    "compatibility.strengths.pisces.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dreamy, empathic, creatively rich. You share a transcendent inner world and understand each other at a soul level."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.aries" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Two strong leaders means two strong tempers. Power struggles are easy; learning to take turns and let the other go first sometimes is the real growth edge."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.taurus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speed versus patience. Aries can find Taurus immovable; Taurus can find Aries reckless. Aligning on pace is the key."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both of you scatter quickly. Finishing what you start — together — takes deliberate practice."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Different emotional speeds. Aries' bluntness can wound; Cancer's withdrawal can frustrate. Both need to slow down and translate."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Two big personalities, two big egos. The relationship asks you to share the spotlight without keeping score."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries' speed clashes with Virgo's precision. Aries may feel criticized; Virgo may feel rushed. Patience matters."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries decides; Libra deliberates. Decision-making can be a constant friction point until you settle on shared rituals."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both fight, but in opposite styles — open versus silent. Conflict needs clear rules or it becomes warfare."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both can over-promise and under-land. Following through together is harder than it looks."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprint versus marathon. You can frustrate each other's timelines if neither yields."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both fiercely independent. Closeness needs deliberate practice or you drift in parallel."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aries.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries' force overwhelms Pisces' sensitivity easily. Tuning volume down is essential."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.taurus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared stubbornness. When you both dig in, nothing moves. Compromise needs explicit practice."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pace mismatch. Taurus may feel skipped past; Gemini may feel weighed down. Patience and honesty matter."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both avoid difficult conversations. Resentment can quietly build under the comfort."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Two fixed signs, two prides. Stubborn standoffs are real and need active de-escalation."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quiet criticism between you can fester. Speak appreciation often — neither of you offers it freely by default."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both avoid conflict. Difficult truths need to surface or the surface harmony hollows out."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jealousy and possessiveness, both ways. Trust must be earned through consistent transparency."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Freedom versus security is a constant tension. Both of you must compromise actively."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All work, no play. Make sure ambition doesn't crowd out joy in your shared life."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tradition versus rebellion. The fight is rarely about what it's about — find the deeper values underneath."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.taurus.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boundaries can blur. Taurus may feel responsible for Pisces' moods; Pisces may feel constrained. Name needs clearly."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commitment can feel slippery. Both of you can keep your options too open — choose each other actively, often."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemini's words wound easily; Cancer's silence confuses. Translation is the entire job here."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemini's casual flirtation can bruise Leo's pride; Leo's drama can exhaust Gemini. Calibrate temperature together."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sharp tongues, both ways. Mercury-ruled mind can cut. Pause before speaking — accuracy isn't kindness."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decisions drift forever. Both of you avoid finality. Pick deadlines or you'll never decide together."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemini may feel interrogated; Scorpio may feel skimmed past. Depth on demand is the challenge."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both over-promise. Following through is the real work."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemini wants to play; Capricorn wants to plan. Neither way is wrong, but both can dismiss the other's mode."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both intellectualize feelings. Emotional honesty needs deliberate practice."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.gemini.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Words wound Pisces; vagueness frustrates Gemini. Precise gentleness is the skill to develop."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both retreat under stress. The relationship can hide from conflict together. Practice surfacing instead."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancer reads quiet care; Leo speaks grand gestures. Each can feel unloved without translation."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Worry doubles between you. Both of you fix and fret — practice trust and ease, too."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both avoid confrontation. Silent resentment builds. Schedule honest conversations on purpose."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emotional intensity can flood. You can both sink into moods together. Light needs to be invited in."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home versus horizon. Cancer wants to nest; Sagittarius wants to roam. Compromise is constant."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancer's needs can feel like burdens to Capricorn; Capricorn's coolness can wound Cancer. Speak both languages."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closeness versus distance. Cancer feels Aquarius as cold; Aquarius feels Cancer as overwhelming. Negotiate carefully."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.cancer.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both escapist tendencies. Without grounding, you can lose yourselves in shared moods."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.leo.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Two egos can compete instead of celebrate. Share the stage actively, or pride poisons the bond."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.leo.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo wants praise; Virgo critiques to help. Each can wound the other unintentionally."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.leo.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo can take charge by default; Libra may not push back enough. Decisions need real shared input."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.leo.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Power struggles are real. Both proud, both possessive. Honesty about jealousy and need is required."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.leo.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Big plans, scattered follow-through. Choose priorities, or you'll burn bright but brief."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.leo.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Different recognition styles can feel mismatched. Honor each other's path to being seen."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.leo.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heart versus head. Personal versus communal. You can argue past each other without realizing it."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.leo.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo's volume can overwhelm Pisces' sensitivity. Slow down — Pisces needs quiet to be heard."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.virgo.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mutual perfectionism. The bar gets too high for both of you. Lower it together on purpose."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.virgo.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both over-function. The relationship can become two people quietly exhausted trying to be perfect for each other."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.virgo.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both notice everything. Editing each other gets sharp fast — drop the running critique."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.virgo.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detail versus expansiveness. Each can dismiss the other's natural mode."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.virgo.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All productivity, little play. Schedule joy actively, or your shared discipline squeezes out softness."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.virgo.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Different operating systems. Refinement versus reinvention can feel like arguing in two languages."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.virgo.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Virgo's lists meet Pisces' flow. Each can find the other frustrating without conscious patience."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.libra.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Constant agreement stalls real decisions. Healthy disagreement is the actual work here."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.libra.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libra wants harmony; Scorpio wants truth. The skill is in valuing both at once."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.libra.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both can over-commit socially. Follow-through is the recurring growth edge."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.libra.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libra's lightness meets Capricorn's gravity. Each can find the other's tone wrong without realizing it's just different."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.libra.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both intellectualize. Tenderness needs deliberate cultivation."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.libra.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neither confronts well. Difficult conversations can be delayed indefinitely. Practice them anyway."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.scorpio.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intense silences and shared brooding. Both must vow to surface and speak instead of festering."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.scorpio.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scorpio's depth can feel possessive; Sagittarius' freedom can feel evasive. Define loyalty clearly."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.scorpio.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All weight, no levity. Joy must be intentional in this otherwise serious bond."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.scorpio.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Two fixed signs at very different temperatures. Each can judge the other's emotional style."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.scorpio.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boundaries can blur. Co-dependence is a real risk — protect individual lives, too."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.sagittarius.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restlessness squared. Anchoring the relationship in shared rituals matters more than you think."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.sagittarius.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optimism versus realism can feel like criticism in both directions. Trust each other's mode."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.sagittarius.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both prize freedom — sometimes at the cost of intimacy. Closeness needs intentional cultivation."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.sagittarius.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both drift easily. Concrete commitments anchor what could otherwise dissolve."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.capricorn.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All ambition, no rest. Treat downtime as part of success, not its opposite."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.capricorn.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Structure versus disruption. Each can feel the other's mode threatens what they're building."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.capricorn.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capricorn can read Pisces as impractical; Pisces can read Capricorn as cold. Translate carefully."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aquarius.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cool air squared. Warmth must be deliberately added — feelings can get intellectualized away."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.aquarius.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logic and intuition can talk past each other. Honor both ways of knowing equally."
+          }
+        }
+      }
+    },
+    "compatibility.challenges.pisces.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boundaries blur fast. Without firm structure with the outside world, you can dissolve into shared dreams together."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.aries" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Designate clear lanes so you're not both fighting for the same ground. Channel your shared fire into a project bigger than your egos."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.taurus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries: slow down enough to let Taurus catch up. Taurus: try one new thing each week to keep the bond from going stale."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose one big project together and commit to finishing it. Movement is your gift, but completion is your edge."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries: pause two beats before reacting. Cancer: name what you need out loud — Aries can't read minds."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celebrate each other publicly and often. When pride flares, name it explicitly — don't compete in silence."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trade off who leads on what. Aries on initiative, Virgo on planning. Specialize instead of judging."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decide together, even on small things. Practice making real choices instead of deferring or steamrolling."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speak fears out loud before they harden into mistrust. Both of you would rather fight than feel vulnerable — flip that."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick one shared big goal per year and protect it from your collective shiny-object problem."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set joint milestones with realistic timelines. Honor both Aries' urgency and Capricorn's strategy in the plan."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make space for intimacy alongside shared causes. Friendship is your foundation — don't let it crowd out love."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aries.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries: soften your tone deliberately. Pisces: tell Aries what you need before retreating. Mismatch heals through naming."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.taurus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Break routines on purpose. Take turns proposing one small change a month — comfort is your gift and your trap."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taurus: let Gemini's restlessness in. Gemini: appreciate Taurus' steadiness publicly. Differences are gifts here."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speak needs explicitly, not through hints. Both of you will give endlessly if asked — but you have to ask."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negotiate money and pride upfront. When stubborn, separate the issue from the ego — both run hot."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schedule romance and play deliberately. Service-based love can drift into roommate energy without intention."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Have one honest, slightly uncomfortable conversation a month. Harmony lives downstream of difficult truth."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build trust through small consistent transparency. Big revelations matter less than steady, daily honesty."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trade freedom and security like currency. Taurus offers home; Sagittarius offers adventure. Spend both."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schedule rest and play with the same seriousness as ambition. Otherwise discipline becomes a wedge."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be curious about each other's values instead of defending your own. The pairing teaches both of you."
+          }
+        }
+      }
+    },
+    "compatibility.advice.taurus.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be honest about hard things, even when it disrupts the peace. Loving lies poison this bond."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.gemini" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anchor the relationship with small daily rituals. Choose each other actively — habit replaces the magic of newness."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemini: validate before solving. Cancer: speak up before Gemini moves on. Pace and feeling need explicit care."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compliment freely and listen actively. Both of you give voice; Leo needs Gemini's full attention to feel adored."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drop the editor's pen. Speak appreciation as often as correction — your minds are sharp, your hearts need flexing."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick deadlines together. Decision paralysis is your shared bug — name it and beat it deliberately."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemini: meet Scorpio at depth on purpose. Scorpio: let Gemini in slowly, but really. Surface and depth both belong."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make a yearly bucket list together and actually do half of it. Vision plus follow-through is your work."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trade lessons. Gemini teaches Capricorn lightness; Capricorn teaches Gemini commitment. Mutual respect required."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schedule warmth alongside ideas. Intimacy needs body, not just mind, between you two."
+          }
+        }
+      }
+    },
+    "compatibility.advice.gemini.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemini: choose words carefully — they last longer in Pisces. Pisces: don't go silent. Speak."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practice surfacing during conflict instead of retreating. Difficult conversation is how this love deepens."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo: notice Cancer's quiet gifts. Cancer: voice appreciation for Leo's grand ones. Translate both ways daily."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Validate before fixing. Both of you go straight to solving — pause to feel together first."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schedule honest check-ins. Both of you avoid friction; pretending nothing is up isn't sustainable."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bring outside light in regularly — friends, hobbies, sunshine. Otherwise you drown together in moods."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Define 'home' explicitly. Cancer needs roots; Sagittarius needs horizons. Make both real in your shared life."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meet as equals — never as parent and child. Both of you can slip into those roles unconsciously."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Translate emotional needs into plain language. Aquarius isn't ignoring you; Cancer isn't manipulating. Speak clearly."
+          }
+        }
+      }
+    },
+    "compatibility.advice.cancer.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protect your relationship from outside emotional weather. You absorb everything — choose what gets in."
+          }
+        }
+      }
+    },
+    "compatibility.advice.leo.leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celebrate each other actively. Pride is your strength; gratitude is your maintenance."
+          }
+        }
+      }
+    },
+    "compatibility.advice.leo.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo: don't take helpful notes as criticism. Virgo: praise specifically — Leo glows under detail."
+          }
+        }
+      }
+    },
+    "compatibility.advice.leo.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share decisions truly. Libra: speak up. Leo: ask before deciding for both of you."
+          }
+        }
+      }
+    },
+    "compatibility.advice.leo.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name jealousies before they fester. Both of you are proud — admit insecurities anyway."
+          }
+        }
+      }
+    },
+    "compatibility.advice.leo.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick one shared project and finish it. Inspiration without execution leaves both of you restless."
+          }
+        }
+      }
+    },
+    "compatibility.advice.leo.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Honor both ways of being seen — Leo's warmth and Capricorn's achievement. Neither path is better."
+          }
+        }
+      }
+    },
+    "compatibility.advice.leo.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listen instead of debating. Each of you holds half the wisdom — combine, don't compete."
+          }
+        }
+      }
+    },
+    "compatibility.advice.leo.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo: slow down. Pisces: speak up. Tempo and volume are the recurring work."
+          }
+        }
+      }
+    },
+    "compatibility.advice.virgo.virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lower the bar deliberately. Rest counts as productivity in this relationship."
+          }
+        }
+      }
+    },
+    "compatibility.advice.virgo.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share the emotional labor explicitly. Both of you over-give until you're depleted — stop that early."
+          }
+        }
+      }
+    },
+    "compatibility.advice.virgo.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drop the editing. Just speak — neither of you needs the polished version of the other."
+          }
+        }
+      }
+    },
+    "compatibility.advice.virgo.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Specialize by domain. Virgo runs the details; Sagittarius runs the vision. Trade leadership consciously."
+          }
+        }
+      }
+    },
+    "compatibility.advice.virgo.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build joy into your shared calendar. Discipline you've got — playfulness needs intentional cultivation."
+          }
+        }
+      }
+    },
+    "compatibility.advice.virgo.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be curious about each other's methods instead of arguing them. Different approaches solve different problems."
+          }
+        }
+      }
+    },
+    "compatibility.advice.virgo.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Virgo: hold Pisces' vision without shrinking it. Pisces: ground Virgo with gentleness. Soften toward each other."
+          }
+        }
+      }
+    },
+    "compatibility.advice.libra.libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practice small disagreements regularly. Real choice is muscle; politeness atrophies it."
+          }
+        }
+      }
+    },
+    "compatibility.advice.libra.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libra: welcome Scorpio's intensity instead of smoothing it. Scorpio: trust Libra's need for balance."
+          }
+        }
+      }
+    },
+    "compatibility.advice.libra.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick projects with finish lines. Both of you love starting — commit to ending, too."
+          }
+        }
+      }
+    },
+    "compatibility.advice.libra.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't mistake difference in tone for difference in love. Capricorn loves with structure; Libra loves with grace."
+          }
+        }
+      }
+    },
+    "compatibility.advice.libra.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make tenderness as important as ideas. Schedule warmth deliberately, or this bond cools."
+          }
+        }
+      }
+    },
+    "compatibility.advice.libra.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practice the uncomfortable conversation early. Avoidance compounds in this pairing."
+          }
+        }
+      }
+    },
+    "compatibility.advice.scorpio.scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share fears out loud. Silence is the real danger — surface what you'd usually hide."
+          }
+        }
+      }
+    },
+    "compatibility.advice.scorpio.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Define loyalty in concrete behaviors. Both of you bring strong assumptions — name them."
+          }
+        }
+      }
+    },
+    "compatibility.advice.scorpio.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build joy into the bond intentionally. Achievement alone isn't intimacy."
+          }
+        }
+      }
+    },
+    "compatibility.advice.scorpio.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negotiate emotional access explicitly. Don't assume — Aquarius needs space; Scorpio needs entry."
+          }
+        }
+      }
+    },
+    "compatibility.advice.scorpio.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invite outside light regularly. Protect individual interests so the bond doesn't become the whole world."
+          }
+        }
+      }
+    },
+    "compatibility.advice.sagittarius.sagittarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plant roots intentionally. Freedom is sweeter with a shared place to return to."
+          }
+        }
+      }
+    },
+    "compatibility.advice.sagittarius.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trust each other's pace. Sagittarius: respect Capricorn's strategy. Capricorn: trust Sagittarius' vision."
+          }
+        }
+      }
+    },
+    "compatibility.advice.sagittarius.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do small ordinary things together. Vision builds the world; daily life builds the relationship."
+          }
+        }
+      }
+    },
+    "compatibility.advice.sagittarius.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make concrete commitments. Both of you drift — anchor each other in real plans."
+          }
+        }
+      }
+    },
+    "compatibility.advice.capricorn.capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Define success together, broadly. Make rest, joy, and connection part of it explicitly."
+          }
+        }
+      }
+    },
+    "compatibility.advice.capricorn.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ask each other for help. Pride hides need in both of you — name what you need."
+          }
+        }
+      }
+    },
+    "compatibility.advice.capricorn.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check in often. Neither of you announces needs loudly; small regular conversations protect the bond."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aquarius.aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schedule warmth, not just plans. Cool air needs deliberate heat to stay alive between you."
+          }
+        }
+      }
+    },
+    "compatibility.advice.aquarius.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn compassion toward each other daily. Saving the world starts at home."
+          }
+        }
+      }
+    },
+    "compatibility.advice.pisces.pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold strong boundaries with the outside world. Protect your shared inner life like the rare thing it is."
+          }
+        }
+      }
+    },
     "compatibility.overallText" : {
       "extractionState" : "manual",
       "localizations" : {

@@ -442,33 +442,21 @@ struct CompatibilityView: View {
     }
     
     private func strengths(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
-        let yourElement = element(for: yourSign)
-        let partnerElement = element(for: partnerSign)
-        
-        if yourElement == partnerElement {
-            return L10n.compatibilityStrengthsSameElement
-        } else if [L10n.compatibilityElementFire, L10n.compatibilityElementAir].contains(yourElement) && [L10n.compatibilityElementFire, L10n.compatibilityElementAir].contains(partnerElement) {
-            return L10n.compatibilityStrengthsFireAir
-        } else if [L10n.compatibilityElementEarth, L10n.compatibilityElementWater].contains(yourElement) && [L10n.compatibilityElementEarth, L10n.compatibilityElementWater].contains(partnerElement) {
-            return L10n.compatibilityStrengthsEarthWater
-        } else {
-            return L10n.compatibilityStrengthsDifferent
-        }
+        let (a, b) = yourSign.rawValue <= partnerSign.rawValue ? (yourSign, partnerSign) : (partnerSign, yourSign)
+        let key = "compatibility.strengths.\(a.key).\(b.key)"
+        return NSLocalizedString(key, comment: "Strengths for sign pair")
     }
-    
+
     private func challenges(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
-        let yourElement = element(for: yourSign)
-        let partnerElement = element(for: partnerSign)
-        
-        if yourElement == partnerElement {
-            return L10n.compatibilityChallengesSameElement
-        } else {
-            return L10n.compatibilityChallengesDifferent
-        }
+        let (a, b) = yourSign.rawValue <= partnerSign.rawValue ? (yourSign, partnerSign) : (partnerSign, yourSign)
+        let key = "compatibility.challenges.\(a.key).\(b.key)"
+        return NSLocalizedString(key, comment: "Challenges for sign pair")
     }
-    
+
     private func advice(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
-        return L10n.compatibilityAdviceText
+        let (a, b) = yourSign.rawValue <= partnerSign.rawValue ? (yourSign, partnerSign) : (partnerSign, yourSign)
+        let key = "compatibility.advice.\(a.key).\(b.key)"
+        return NSLocalizedString(key, comment: "Advice for sign pair")
     }
 
     // MARK: - Mercury Retrograde × Couple
