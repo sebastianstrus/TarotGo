@@ -516,6 +516,7 @@ struct CompatibilityView: View {
                         impact: partnerImpact
                     )
                 }
+                .fixedSize(horizontal: false, vertical: true)
 
                 // Couple guidance
                 if !coupleTips.isEmpty {
@@ -569,7 +570,7 @@ struct CompatibilityView: View {
                 .foregroundColor(AppTheme.gold.opacity(0.7))
                 .frame(height: 28, alignment: .top)
                 .textCase(.uppercase)
-
+            
             HStack(spacing: 6) {
                 Text(sign.symbol)
                     .font(.system(size: 22))
@@ -577,14 +578,14 @@ struct CompatibilityView: View {
                     .font(.system(size: 13, weight: .medium))
                     .foregroundColor(AppTheme.gold)
             }
-
+            
             Text(impact)
                 .font(.system(size: 12, weight: .light))
                 .foregroundColor(AppTheme.textSecondary)
                 .lineSpacing(3)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .padding(10)
         .background(
             RoundedRectangle(cornerRadius: 10)
