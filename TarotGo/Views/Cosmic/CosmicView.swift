@@ -180,7 +180,7 @@ private struct CosmicOrbitMenu: View {
                         )
 
                         orbitingNode(
-                            icon: "arrow.triangle.2.circlepath",
+                            icon: "ic_cosmic_mercury",
                             title: L10n.mercuryTitle,
                             destination: AnyView(MercuryRetrogradeView()),
                             center: center,
@@ -189,8 +189,7 @@ private struct CosmicOrbitMenu: View {
                             orbit: sharedOrbit,
                             startPhase: basePhase + step * 5,
                             time: t,
-                            animationDelay: 1.75,
-                            isSystemImage: true
+                            animationDelay: 1.75
                         )
                     }
                     .frame(width: w, height: h)
@@ -215,7 +214,6 @@ private struct CosmicOrbitMenu: View {
         time: TimeInterval,
         animationDelay: Double,
         lockedTap: (() -> Void)? = nil,
-        isSystemImage: Bool = false
     ) -> some View {
         let angle = startPhase + 2 * Double.pi * time / orbit.period
         let cosA = CGFloat(cos(angle))
@@ -235,14 +233,14 @@ private struct CosmicOrbitMenu: View {
                     SoundService.shared.play(.whoosh, volume: 0.4)
                     lockedTap()
                 } label: {
-                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay, isPremiumLocked: true, isSystemImage: isSystemImage)
+                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay, isPremiumLocked: true)
                 }
                 .buttonStyle(CosmicNodeButtonStyle())
             } else {
                 NavigationLink {
                     destination
                 } label: {
-                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay, isSystemImage: isSystemImage)
+                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay)
                 }
                 .buttonStyle(CosmicNodeButtonStyle())
                 .simultaneousGesture(TapGesture().onEnded {
