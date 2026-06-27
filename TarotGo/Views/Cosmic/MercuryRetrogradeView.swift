@@ -97,16 +97,11 @@ struct MercuryRetrogradeView: View {
 
     private var header: some View {
         VStack(spacing: 12) {
-            ZStack {
-                Circle()
-                    .fill(AppTheme.gold.opacity(0.12))
-                    .frame(width: 80, height: 80)
-                    .blur(radius: 10)
-                Image(systemName: "arrow.triangle.2.circlepath")
-                    .font(.system(size: 44, weight: .light))
-                    .foregroundStyle(AppTheme.goldGradient)
-                    .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
-            }
+            Image("ic_cosmic_mercury")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 64, height: 64)
+                .shadow(color: AppTheme.gold.opacity(0.5), radius: 10)
 
             Text(L10n.mercuryTitle)
                 .font(AppTheme.serifFont(size: 32, weight: .light))
