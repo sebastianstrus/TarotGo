@@ -54,6 +54,24 @@ enum ZodiacSign: Int, CaseIterable {
         case .pisces: return "♓"
         }
     }
+
+    /// Stable lowercase identifier used in localization keys.
+    var key: String {
+        switch self {
+        case .aries: return "aries"
+        case .taurus: return "taurus"
+        case .gemini: return "gemini"
+        case .cancer: return "cancer"
+        case .leo: return "leo"
+        case .virgo: return "virgo"
+        case .libra: return "libra"
+        case .scorpio: return "scorpio"
+        case .sagittarius: return "sagittarius"
+        case .capricorn: return "capricorn"
+        case .aquarius: return "aquarius"
+        case .pisces: return "pisces"
+        }
+    }
 }
 
 class AstrologyService {

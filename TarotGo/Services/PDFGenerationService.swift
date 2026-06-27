@@ -3012,7 +3012,7 @@ class PDFGenerationService {
         let signName: String
         let yourImpact: String
         let partnerImpact: String
-        let coupleAdvice: [String]
+        let coupleGuidance: String
     }
 
     func generateCompatibilityPDF(
@@ -3364,17 +3364,15 @@ class PDFGenerationService {
                     columnHeight(impact: mercury.partnerImpact)
                 )
 
-                var coupleAdviceHeight: CGFloat = 0
-                if !mercury.coupleAdvice.isEmpty {
-                    coupleAdviceHeight = 24 // header gap
-                    for tip in mercury.coupleAdvice {
-                        coupleAdviceHeight += bodyHeight(for: tip) + 6
-                    }
+                var coupleGuidanceHeight: CGFloat = 0
+                if !mercury.coupleGuidance.isEmpty {
+                    coupleGuidanceHeight = 24 // header gap
+                    coupleGuidanceHeight += bodyHeight(for: mercury.coupleGuidance) + 6
                 }
 
                 let mercurySectionHeight =
                     sectionHeaderHeight + boxTopPadding + badgeHeight + 12 +
-                    columnsHeight + coupleAdviceHeight + boxBottomPadding + sectionTrailingGap
+                    columnsHeight + coupleGuidanceHeight + boxBottomPadding + sectionTrailingGap
 
                 ensureRoom(for: mercurySectionHeight)
 
@@ -3494,8 +3492,8 @@ class PDFGenerationService {
 
                 yPosition += columnsHeight
 
-                // Couple guidance
-                if !mercury.coupleAdvice.isEmpty {
+                // Couple guidance (pair-specific)
+                if !mercury.coupleGuidance.isEmpty {
                     yPosition += 12
                     yPosition = drawText(
                         L10n.mercuryCoupleAdvice,
@@ -3505,17 +3503,14 @@ class PDFGenerationService {
                         color: goldColor
                     )
                     yPosition += 6
-                    for tip in mercury.coupleAdvice {
-                        let bullet = "♥  \(tip)"
-                        yPosition = drawText(
-                            bullet,
-                            at: CGPoint(x: margin + 4, y: yPosition),
-                            width: contentWidth - 4,
-                            font: bodyFont,
-                            color: textColor
-                        )
-                        yPosition += 4
-                    }
+                    yPosition = drawText(
+                        mercury.coupleGuidance,
+                        at: CGPoint(x: margin + 4, y: yPosition),
+                        width: contentWidth - 4,
+                        font: bodyFont,
+                        color: textColor
+                    )
+                    yPosition += 4
                 }
 
                 yPosition += boxBottomPadding

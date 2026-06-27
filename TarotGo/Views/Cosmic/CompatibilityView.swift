@@ -149,7 +149,7 @@ struct CompatibilityView: View {
             signName: period.zodiacSign.name,
             yourImpact: service.impactDescription(userSign: yourSign, retrogradeSign: period.zodiacSign),
             partnerImpact: service.impactDescription(userSign: partnerSign, retrogradeSign: period.zodiacSign),
-            coupleAdvice: service.coupleAdvice(for: phase)
+            coupleGuidance: service.coupleGuidance(your: yourSign, partner: partnerSign)
         )
     }
     
@@ -436,7 +436,9 @@ struct CompatibilityView: View {
     }
     
     private func overallCompatibility(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
-        return String(format: L10n.compatibilityOverallText, yourSign.name, partnerSign.name)
+        let (a, b) = yourSign.rawValue <= partnerSign.rawValue ? (yourSign, partnerSign) : (partnerSign, yourSign)
+        let key = "compatibility.overall.\(a.key).\(b.key)"
+        return NSLocalizedString(key, comment: "Overall compatibility for sign pair")
     }
     
     private func strengths(your yourSign: ZodiacSign, partner partnerSign: ZodiacSign) -> String {
@@ -479,7 +481,7 @@ struct CompatibilityView: View {
             let phase = period.phase(for: now)
             let yourImpact = service.impactDescription(userSign: yourSign, retrogradeSign: period.zodiacSign)
             let partnerImpact = service.impactDescription(userSign: partnerSign, retrogradeSign: period.zodiacSign)
-            let coupleTips = service.coupleAdvice(for: phase)
+            let coupleGuidance = service.coupleGuidance(your: yourSign, partner: partnerSign)
 
             VStack(alignment: .leading, spacing: 14) {
                 // Header
@@ -537,36 +539,25 @@ struct CompatibilityView: View {
                 }
                 .fixedSize(horizontal: false, vertical: true)
 
-                // Couple guidance
-                if !coupleTips.isEmpty {
-                    Rectangle()
-                        .fill(AppTheme.gold.opacity(0.2))
-                        .frame(height: 1)
-                        .padding(.vertical, 2)
+                // Couple guidance (pair-specific)
+                Rectangle()
+                    .fill(AppTheme.gold.opacity(0.2))
+                    .frame(height: 1)
+                    .padding(.vertical, 2)
 
-                    HStack(spacing: 8) {
-                        Image(systemName: "heart.text.square.fill")
-                            .foregroundColor(AppTheme.gold)
-                        Text(L10n.mercuryCoupleAdvice)
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundStyle(AppTheme.goldGradient)
-                    }
-
-                    VStack(alignment: .leading, spacing: 10) {
-                        ForEach(coupleTips, id: \.self) { tip in
-                            HStack(alignment: .top, spacing: 10) {
-                                Image(systemName: "heart.fill")
-                                    .font(.system(size: 8))
-                                    .foregroundColor(AppTheme.gold)
-                                    .padding(.top, 6)
-                                Text(tip)
-                                    .font(.system(size: 13, weight: .light))
-                                    .foregroundColor(AppTheme.textSecondary)
-                                    .fixedSize(horizontal: false, vertical: true)
-                            }
-                        }
-                    }
+                HStack(spacing: 8) {
+                    Image(systemName: "heart.text.square.fill")
+                        .foregroundColor(AppTheme.gold)
+                    Text(L10n.mercuryCoupleAdvice)
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
                 }
+
+                Text(coupleGuidance)
+                    .font(.system(size: 13, weight: .light))
+                    .foregroundColor(AppTheme.textSecondary)
+                    .lineSpacing(4)
+                    .fixedSize(horizontal: false, vertical: true)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()

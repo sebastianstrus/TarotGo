@@ -230,33 +230,12 @@ final class MercuryRetrogradeService {
         }
     }
 
-    /// Couple-focused guidance for the current phase.
-    /// Empty when Mercury is direct (no special couple advice needed).
-    func coupleAdvice(for phase: MercuryRetrogradePhase) -> [String] {
-        switch phase {
-        case .direct:
-            return []
-        case .preShadow:
-            return [
-                L10n.mercuryCoupleAdvicePreShadow1,
-                L10n.mercuryCoupleAdvicePreShadow2,
-                L10n.mercuryCoupleAdvicePreShadow3
-            ]
-        case .retrograde:
-            return [
-                L10n.mercuryCoupleAdviceRetrograde1,
-                L10n.mercuryCoupleAdviceRetrograde2,
-                L10n.mercuryCoupleAdviceRetrograde3,
-                L10n.mercuryCoupleAdviceRetrograde4,
-                L10n.mercuryCoupleAdviceRetrograde5
-            ]
-        case .postShadow:
-            return [
-                L10n.mercuryCoupleAdvicePostShadow1,
-                L10n.mercuryCoupleAdvicePostShadow2,
-                L10n.mercuryCoupleAdvicePostShadow3
-            ]
-        }
+    /// Pair-specific guidance for the two of you. The key is canonicalized so that
+    /// A & B and B & A resolve to the same string.
+    func coupleGuidance(your: ZodiacSign, partner: ZodiacSign) -> String {
+        let (a, b) = your.rawValue <= partner.rawValue ? (your, partner) : (partner, your)
+        let key = "compatibility.coupleGuidance.\(a.key).\(b.key)"
+        return NSLocalizedString(key, comment: "Couple guidance for sign pair")
     }
 
     /// Suggested don'ts for the current phase.
