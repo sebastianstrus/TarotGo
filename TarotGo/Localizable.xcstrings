@@ -56151,365 +56151,2165 @@
       }
     },
     "historyOfMercury.ancient.intro" : {
-      "comment" : "Ancient roots intro",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The earliest astrologers were also the earliest astronomers. Long before telescopes, they tracked the seven 'wandering stars' — including Mercury — across the sky and noticed that Mercury occasionally seemed to pause, reverse, pause again, then resume its forward path."
+        "comment" : "Ancient roots intro",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Die frühesten Astrologen waren auch die frühesten Astronomen. Lange vor Teleskopen verfolgten sie die sieben 'Wandelsterne' — darunter Merkur — am Himmel und bemerkten, dass Merkur gelegentlich stehenzubleiben, rückwärtszulaufen, erneut stehenzubleiben und dann seinen Vorwärtskurs wieder aufzunehmen schien."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "The earliest astrologers were also the earliest astronomers. Long before telescopes, they tracked the seven 'wandering stars' — including Mercury — across the sky and noticed that Mercury occasionally seemed to pause, reverse, pause again, then resume its forward path."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Los primeros astrólogos fueron también los primeros astrónomos. Mucho antes de los telescopios, rastreaban las siete 'estrellas errantes' — incluyendo Mercurio — en el cielo y notaron que Mercurio ocasionalmente parecía detenerse, retroceder, detenerse de nuevo y luego reanudar su camino hacia adelante."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Les premiers astrologues étaient aussi les premiers astronomes. Bien avant les télescopes, ils suivaient les sept 'étoiles errantes' — dont Mercure — dans le ciel et remarquèrent que Mercure semblait parfois s'arrêter, reculer, s'arrêter à nouveau, puis reprendre sa trajectoire vers l'avant."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "I primi astrologi erano anche i primi astronomi. Molto prima dei telescopi, tracciavano le sette 'stelle erranti' — incluso Mercurio — nel cielo e notarono che Mercurio occasionalmente sembrava fermarsi, invertire la rotta, fermarsi di nuovo e poi riprendere il suo percorso in avanti."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "最初の占星術師は、最初の天文学者でもありました。望遠鏡ができるずっと前から、彼らは水星を含む7つの『遊星』を空で追跡し、水星が時折停止し、逆行し、再び停止し、そして前方への進路を再開するように見えることに気づいていました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "De tidligste astrologene var også de tidligste astronomene. Lenge før teleskoper, fulgte de de syv 'vandrestjernene' — inkludert Merkur — over himmelen og la merke til at Merkur av og til så ut til å stoppe, reversere, stoppe igjen, og deretter gjenoppta sin fremadrettede bane."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Najwcześniejsi astrolodzy byli także najwcześniejszymi astronomami. Na długo przed teleskopami śledzili na niebie siedem 'gwiazd wędrownych' — w tym Merkurego — i zauważyli, że Merkury czasami zdawał się zatrzymywać, zawracać, ponownie zatrzymywać się, a następnie wracać na swoją drogę naprzód."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Os primeiros astrólogos também foram os primeiros astrônomos. Muito antes dos telescópios, eles rastreavam as sete 'estrelas errantes' — incluindo Mercúrio — no céu e notaram que Mercúrio ocasionalmente parecia pausar, reverter, pausar novamente e depois retomar seu caminho para frente."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "De tidigaste astrologerna var också de tidigaste astronomerna. Långt före teleskop följde de de sju 'vandrande stjärnorna' — inklusive Merkurius — över himlen och märkte att Merkurius ibland tycktes stanna, vända, stanna igen och sedan återuppta sin framåtgående bana."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Найдавніші астрологи були також найдавнішими астрономами. Задовго до телескопів вони відстежували сім 'блукаючих зірок' — включаючи Меркурій — на небі і помітили, що Меркурій іноді, здавалося, зупинявся, рухався назад, знову зупинявся, а потім відновлював свій шлях уперед."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.ancient.title" : {
-      "comment" : "Section title: ancient roots",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Ancient Roots"
+      },
+      "historyOfMercury.ancient.title" : {
+        "comment" : "Section title: ancient roots",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Antike Wurzeln"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Ancient Roots"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Raíces Antiguas"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Racines Anciennes"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Radici Antiche"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "古代のルーツ"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gamle Røtter"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Starożytne Korzenie"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Raízes Antigas"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Forntida Rötter"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Стародавнє коріння"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.babylonians.text" : {
-      "comment" : "Babylonians text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "By around 1000 BCE, Babylonian astronomer-priests were recording planetary motions on cuneiform tablets. They named Mercury 'Nabu' — the scribe of the gods — and watched closely when he changed direction, treating it as an omen requiring careful interpretation."
+      },
+      "historyOfMercury.babylonians.text" : {
+        "comment" : "Babylonians text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Um etwa 1000 v. Chr. zeichneten babylonische Astronomen-Priester die Planetenbewegungen auf Keilschrifttafeln auf. Sie nannten Merkur 'Nabu' — den Schreiber der Götter — und beobachteten genau, wenn er seine Richtung änderte, und behandelten dies als ein Omen, das sorgfältiger Interpretation bedurfte."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "By around 1000 BCE, Babylonian astronomer-priests were recording planetary motions on cuneiform tablets. They named Mercury 'Nabu' — the scribe of the gods — and watched closely when he changed direction, treating it as an omen requiring careful interpretation."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Alrededor del año 1000 a.C., los sacerdotes-astrónomos babilónicos registraban los movimientos planetarios en tablillas cuneiformes. Llamaron a Mercurio 'Nabu' — el escriba de los dioses — y observaban atentamente cuando cambiaba de dirección, tratándolo como un presagio que requería una interpretación cuidadosa."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vers 1000 avant J.-C., les prêtres-astronomes babyloniens enregistraient les mouvements planétaires sur des tablettes cunéiformes. Ils nommèrent Mercure 'Nabu' — le scribe des dieux — et observaient attentivement quand il changeait de direction, le traitant comme un présage nécessitant une interprétation minutieuse."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Intorno al 1000 a.C., i sacerdoti-astronomi babilonesi registravano i movimenti planetari su tavolette cuneiformi. Chiamarono Mercurio 'Nabu' — lo scriba degli dei — e osservavano da vicino quando cambiava direzione, considerandolo un presagio che richiedeva un'attenta interpretazione."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "紀元前1000年頃までに、バビロニアの天文学者兼祭司たちは、楔形文字の粘土板に惑星の動きを記録していました。彼らは水星を『ナブー』——神々の書記官——と名付け、その方向が変わるときには注意深く観察し、それを慎重な解釈を要する前兆として扱いました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Rundt 1000 f.Kr. registrerte babylonske astronom-prester planetbevegelser på kileskrifttavler. De kalte Merkur 'Nabu' — gudenes skriver — og fulgte nøye med når han endret retning, og behandlet det som et varsel som krevde nøye tolkning."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Około 1000 r. p.n.e. babilońscy kapłani-astronomowie rejestrowali ruchy planet na tabliczkach klinowych. Nazwali Merkurego 'Nabu' — skrybą bogów — i uważnie obserwowali, gdy zmieniał kierunek, traktując to jako znak wymagający starannej interpretacji."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Por volta de 1000 a.C., sacerdotes-astrônomos babilônicos registravam os movimentos planetários em tábuas cuneiformes. Eles chamaram Mercúrio de 'Nabu' — o escriba dos deuses — e observavam atentamente quando ele mudava de direção, tratando-o como um presságio que exigia interpretação cuidadosa."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Runt 1000 f.Kr. registrerade babyloniska astronom-präster planetrörelser på kilskriftstavlor. De namngav Merkurius 'Nabu' — gudarnas skrivare — och bevakade noggrant när han ändrade riktning, och behandlade det som ett omen som krävde noggrann tolkning."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Приблизно до 1000 року до н. е. вавилонські жерці-астрономи записували рухи планет на клинописних табличках. Вони назвали Меркурія 'Набу' — писаря богів — і уважно стежили, коли він змінював напрямок, вважаючи це ознакою, що потребує ретельного тлумачення."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.babylonians.title" : {
-      "comment" : "Babylonians title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Babylonian Sky-Watchers"
+      },
+      "historyOfMercury.babylonians.title" : {
+        "comment" : "Babylonians title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Babylonische Himmelsbeobachter"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Babylonian Sky-Watchers"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Observadores del Cielo Babilónicos"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Observateurs du Ciel Babylonien"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Osservatori del Cielo Babilonesi"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "バビロニアの空の観察者たち"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Babylonske Himmel-iaktakere"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Babilońscy Obserwatorzy Nieba"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Observadores do Céu Babilônicos"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Babyloniska Himmelsobservatörer"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Вавилонські спостерігачі неба"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.digital.text" : {
-      "comment" : "Digital text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "When personal computers, smartphones, and social media became part of daily life, Mercury retrograde took on a new resonance. Frozen devices, missed messages, and software glitches gave the ancient symbolism a startlingly modern shape — and brought retrograde from astrologers' charts into mainstream conversation."
+      },
+      "historyOfMercury.digital.text" : {
+        "comment" : "Digital text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Als Personal Computer, Smartphones und soziale Medien Teil des täglichen Lebens wurden, erhielt der Merkur-Rücklauf eine neue Resonanz. Eingefrorene Geräte, verpasste Nachrichten und Softwarefehler gaben der alten Symbolik eine verblüffend moderne Gestalt – und brachten den Rücklauf aus den Horoskopen der Astrologen in den Mainstream-Diskurs."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "When personal computers, smartphones, and social media became part of daily life, Mercury retrograde took on a new resonance. Frozen devices, missed messages, and software glitches gave the ancient symbolism a startlingly modern shape — and brought retrograde from astrologers' charts into mainstream conversation."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Cuando las computadoras personales, los teléfonos inteligentes y las redes sociales se convirtieron en parte de la vida cotidiana, Mercurio retrógrado adquirió una nueva resonancia. Dispositivos congelados, mensajes perdidos y fallos de software dieron al simbolismo antiguo una forma sorprendentemente moderna — y llevaron el retrógrado de las cartas astrológicas a la conversación general."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Lorsque les ordinateurs personnels, les smartphones et les réseaux sociaux sont devenus une partie de la vie quotidienne, Mercure rétrograde a pris une nouvelle résonance. Les appareils gelés, les messages manqués et les pannes logicielles ont donné au symbolisme ancien une forme étonnamment moderne — et ont fait passer le rétrograde des thèmes astrologiques au discours grand public."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quando i computer personali, gli smartphone e i social media sono diventati parte della vita quotidiana, Mercurio retrogrado ha assunto una nuova risonanza. Dispositivi bloccati, messaggi persi e problemi software hanno dato al simbolismo antico una forma sorprendentemente moderna — e hanno portato il retrogrado dai grafici degli astrologi alla conversazione mainstream."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "パソコン、スマートフォン、ソーシャルメディアが日常生活の一部になると、水星逆行は新たな共鳴を帯びるようになりました。フリーズするデバイス、届かないメッセージ、ソフトウェアの不具合は、古代の象徴に驚くほど現代的な形を与え——逆行を占星術師のチャートから主流の会話へと押し上げました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Da personlige datamaskiner, smarttelefoner og sosiale medier ble en del av hverdagen, fikk Merkur retrograd en ny resonans. Frosne enheter, tapte meldinger og programvarefeil ga den gamle symbolikken en overraskende moderne form — og brakte retrograd fra astrologers diagrammer inn i mainstream-samtalen."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kiedy komputery osobiste, smartfony i media społecznościowe stały się częścią codziennego życia, retrogradacja Merkurego zyskała nowy wydźwięk. Zawieszone urządzenia, utracone wiadomości i błędy oprogramowania nadały starożytnej symbolice zaskakująco nowoczesny kształt — i przeniosły retrogradację z wykresów astrologicznych do głównego nurtu rozmów."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Quando computadores pessoais, smartphones e mídias sociais se tornaram parte da vida cotidiana, Mercúrio retrógrado ganhou uma nova ressonância. Dispositivos congelados, mensagens perdidas e falhas de software deram ao simbolismo antigo uma forma surpreendentemente moderna — e trouxeram o retrógrado dos mapas astrológicos para a conversa mainstream."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "När persondatorer, smartphones och sociala medier blev en del av vardagen fick Merkurius retrograd en ny resonans. Frusna enheter, missade meddelanden och mjukvarufel gav den gamla symboliken en förvånansvärt modern form — och förde retrograd från astrologernas diagram in i det allmänna samtalet."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Коли персональні комп'ютери, смартфони та соціальні медіа стали частиною повсякденного життя, ретроградний Меркурій набув нового резонансу. Заморожені пристрої, пропущені повідомлення та програмні збої надали давній символіці напрочуд сучасної форми — і вивели ретроградність з астрологічних карт у мейнстрімну розмову."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.digital.title" : {
-      "comment" : "Digital title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The Digital Age"
+      },
+      "historyOfMercury.digital.title" : {
+        "comment" : "Digital title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Das digitale Zeitalter"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "The Digital Age"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "La Era Digital"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "L'ère numérique"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "L'era digitale"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "デジタル時代"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Den digitale tidsalderen"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Era cyfrowa"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "A Era Digital"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Den digitala tidsåldern"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Цифрова ера"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.greeks.text" : {
-      "comment" : "Greeks text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Around 150 CE, Claudius Ptolemy of Alexandria compiled centuries of observations into the Almagest and the Tetrabiblos. He described Mercury's retrograde motion mathematically using epicycles — and astrologically associated it with delays, hesitation, and the need to revisit decisions."
+      },
+      "historyOfMercury.greeks.text" : {
+        "comment" : "Greeks text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Um 150 n. Chr. fasste Claudius Ptolemäus aus Alexandria jahrhundertelange Beobachtungen im Almagest und im Tetrabiblos zusammen. Er beschrieb die rückläufige Bewegung des Merkur mathematisch mit Epizyklen – und astrologisch verband er sie mit Verzögerungen, Zögern und der Notwendigkeit, Entscheidungen zu überdenken."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Around 150 CE, Claudius Ptolemy of Alexandria compiled centuries of observations into the Almagest and the Tetrabiblos. He described Mercury's retrograde motion mathematically using epicycles — and astrologically associated it with delays, hesitation, and the need to revisit decisions."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Alrededor del año 150 d.C., Claudio Ptolomeo de Alejandría compiló siglos de observaciones en el Almagesto y el Tetrabiblos. Describió matemáticamente el movimiento retrógrado de Mercurio mediante epiciclos — y astrológicamente lo asoció con retrasos, vacilación y la necesidad de revisar decisiones."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vers 150 après J.-C., Claude Ptolémée d'Alexandrie compila des siècles d'observations dans l'Almageste et le Tetrabiblos. Il décrivit mathématiquement le mouvement rétrograde de Mercure à l'aide d'épicycles — et l'associa astrologiquement à des retards, à l'hésitation et à la nécessité de réviser les décisions."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Intorno al 150 d.C., Claudio Tolomeo di Alessandria raccolse secoli di osservazioni nell'Almagesto e nel Tetrabiblos. Descrisse matematicamente il moto retrogrado di Mercurio usando epicicli — e astrologicamente lo associò a ritardi, esitazione e alla necessità di rivedere le decisioni."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "西暦150年頃、アレクサンドリアのクラウディウス・プトレマイオスは何世紀にもわたる観測を『アルマゲスト』と『テトラビブロス』にまとめました。彼は周転円を用いて水星の逆行運動を数学的に記述し——占星術的にはそれを遅延、ためらい、決断の見直しの必要性と関連付けました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Rundt 150 e.Kr. samlet Claudius Ptolemaios av Alexandria århundrer med observasjoner i Almagest og Tetrabiblos. Han beskrev Merkurs retrogradbevegelse matematisk ved hjelp av episykler — og astrologisk assosierte han den med forsinkelser, nøling og behovet for å gjenoppta beslutninger."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Około 150 r. n.e. Klaudiusz Ptolemeusz z Aleksandrii zestawił wieki obserwacji w Almageście i Tetrabiblos. Opisał matematycznie ruch wsteczny Merkurego za pomocą epicykli — i astrologicznie powiązał go z opóźnieniami, wahaniem i potrzebą ponownego rozważenia decyzji."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Por volta de 150 d.C., Cláudio Ptolomeu de Alexandria compilou séculos de observações no Almagesto e no Tetrabiblos. Ele descreveu matematicamente o movimento retrógrado de Mercúrio usando epiciclos — e astrologicamente o associou a atrasos, hesitação e à necessidade de revisitar decisões."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Runt 150 e.Kr. sammanställde Claudius Ptolemaios från Alexandria århundraden av observationer i Almagest och Tetrabiblos. Han beskrev Merkurius retrograda rörelse matematiskt med hjälp av epicykler — och astrologiskt förknippade han den med förseningar, tvekan och behovet av att ompröva beslut."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Приблизно в 150 році н. е. Клавдій Птолемей з Александрії зібрав століття спостережень у «Альмагесті» та «Тетрабіблосі». Він математично описав ретроградний рух Меркурія за допомогою епіциклів — і астрологічно пов'язав його із затримками, ваганнями та необхідністю переглядати рішення."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.greeks.title" : {
-      "comment" : "Greeks title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Greek Astronomy & Ptolemy"
+      },
+      "historyOfMercury.greeks.title" : {
+        "comment" : "Greeks title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Griechische Astronomie & Ptolemäus"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Greek Astronomy & Ptolemy"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomía Griega y Ptolomeo"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomie Grecque et Ptolémée"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomia Greca e Tolomeo"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "ギリシャ天文学とプトレマイオス"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gresk Astronomi & Ptolemaios"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomia Grecka i Ptolemeusz"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomia Grega e Ptolomeu"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Grekisk Astronomi & Ptolemaios"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Грецька астрономія та Птолемей"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.intro" : {
-      "comment" : "History intro paragraph",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Mercury retrograde is not a modern invention. The backward dance of the swift planet has been recorded since the earliest days of astronomy, when stargazers had no choice but to watch the heavens carefully and write down what they saw. The story of how humans interpreted Mercury's apparent reversals reflects the story of astrology itself — from omens scratched on clay tablets to the psychological astrology of the twentieth century."
+      },
+      "historyOfMercury.intro" : {
+        "comment" : "History intro paragraph",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Der Merkur-Rücklauf ist keine moderne Erfindung. Der rückwärtige Tanz des schnellen Planeten wird seit den frühesten Tagen der Astronomie aufgezeichnet, als die Sterngucker keine andere Wahl hatten, als den Himmel genau zu beobachten und aufzuschreiben, was sie sahen. Die Geschichte, wie Menschen Merkurs scheinbare Umkehrungen interpretierten, spiegelt die Geschichte der Astrologie selbst wider – von Omen, die auf Tontafeln geritzt wurden, bis hin zur psychologischen Astrologie des 20. Jahrhunderts."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Mercury retrograde is not a modern invention. The backward dance of the swift planet has been recorded since the earliest days of astronomy, when stargazers had no choice but to watch the heavens carefully and write down what they saw. The story of how humans interpreted Mercury's apparent reversals reflects the story of astrology itself — from omens scratched on clay tablets to the psychological astrology of the twentieth century."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio retrógrado no es un invento moderno. La danza hacia atrás del planeta veloz ha sido registrada desde los primeros días de la astronomía, cuando los observadores de estrellas no tenían más remedio que observar el cielo con atención y escribir lo que veían. La historia de cómo los humanos interpretaron las aparentes reversiones de Mercurio refleja la historia de la astrología misma — desde los presagios grabados en tablillas de arcilla hasta la astrología psicológica del siglo XX."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercure rétrograde n'est pas une invention moderne. La danse en arrière de la planète rapide est enregistrée depuis les premiers jours de l'astronomie, lorsque les observateurs du ciel n'avaient d'autre choix que de regarder attentivement les cieux et d'écrire ce qu'ils voyaient. L'histoire de la façon dont les humains ont interprété les inversions apparentes de Mercure reflète l'histoire de l'astrologie elle-même — des présages gravés sur des tablettes d'argile à l'astrologie psychologique du vingtième siècle."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio retrogrado non è un'invenzione moderna. La danza all'indietro del pianeta veloce è stata registrata sin dai primi giorni dell'astronomia, quando gli osservatori delle stelle non avevano altra scelta che guardare attentamente il cielo e scrivere ciò che vedevano. La storia di come gli umani hanno interpretato le apparenti inversioni di Mercurio riflette la storia dell'astrologia stessa — dai presagi incisi su tavolette d'argilla all'astrologia psicologica del ventesimo secolo."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星逆行は現代の発明ではありません。この速い惑星の後ろ向きの舞踊は、天文学の初期の頃から記録されてきました。その頃、星を見る人々は空を注意深く観察し、見たものを書き留める以外に選択肢はありませんでした。人間が水星の見かけ上の逆行をどのように解釈してきたかの物語は、占星術そのものの物語を反映しています——粘土板に刻まれた前兆から、20世紀の心理学的占星術まで。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur retrograd er ikke en moderne oppfinnelse. Den bakovervendte dansen til den raske planeten har blitt registrert siden astronomiens tidligste dager, da stjernekikkere ikke hadde noe annet valg enn å se nøye på himmelen og skrive ned det de så. Historien om hvordan mennesker tolket Merkurs tilsynelatende reverseringer gjenspeiler astrologiens historie selv — fra varsler risset inn på leirtavler til den psykologiske astrologien på det tjuende århundre."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrogradacja Merkurego nie jest nowoczesnym wynalazkiem. Taniec wsteczny szybkiej planety był rejestrowany od najwcześniejszych dni astronomii, kiedy obserwatorzy nieba nie mieli innego wyjścia, jak tylko uważnie patrzeć w niebo i zapisywać to, co widzieli. Historia tego, jak ludzie interpretowali pozorne odwrócenia Merkurego, odzwierciedla historię samej astrologii — od znaków wyrytych na glinianych tabliczkach po psychologiczną astrologię XX wieku."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercúrio retrógrado não é uma invenção moderna. A dança para trás do planeta veloz tem sido registrada desde os primeiros dias da astronomia, quando os observadores das estrelas não tinham escolha a não ser observar o céu cuidadosamente e escrever o que viam. A história de como os humanos interpretaram as aparentes reversões de Mercúrio reflete a história da própria astrologia — desde presságios gravados em tábuas de argila até a astrologia psicológica do século XX."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkurius retrograd är inte en modern uppfinning. Den snabba planetens bakåtriktade dans har registrerats sedan astronomins tidigaste dagar, när stjärnskådarna inte hade något annat val än att noggrant titta på himlen och skriva ner vad de såg. Historien om hur människor tolkade Merkurius skenbara vändningar speglar astrologins historia själv — från omen ristade på lertavlor till den psykologiska astrologin under 1900-talet."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ретроградний Меркурій — не сучасний винахід. Задній танець швидкої планети фіксувався з найдавніших часів астрономії, коли спостерігачі зірок не мали іншого вибору, окрім як уважно дивитися на небо і записувати те, що вони бачили. Історія того, як люди інтерпретували позірні зміни напрямку Меркурія, відображає історію самої астрології — від знамень, подряпаних на глиняних табличках, до психологічної астрології XX століття."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.medieval.text" : {
-      "comment" : "Medieval text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Through the Islamic Golden Age and into Renaissance Europe, astrologers continued to interpret Mercury retrograde as a moment for caution in contracts, messages, and journeys. Astrological almanacs from this period regularly warned readers to postpone important communications when Mercury was retrograde."
+      },
+      "historyOfMercury.medieval.text" : {
+        "comment" : "Medieval text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Durch das Goldene Zeitalter des Islam bis ins Renaissance-Europa interpretierten Astrologen den Merkur-Rücklauf weiterhin als einen Moment der Vorsicht bei Verträgen, Nachrichten und Reisen. Astrologische Almanache aus dieser Zeit warnten die Leser regelmäßig davor, wichtige Mitteilungen zu verschieben, wenn Merkur rückläufig war."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Through the Islamic Golden Age and into Renaissance Europe, astrologers continued to interpret Mercury retrograde as a moment for caution in contracts, messages, and journeys. Astrological almanacs from this period regularly warned readers to postpone important communications when Mercury was retrograde."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Desde la Edad de Oro del Islam hasta el Renacimiento europeo, los astrólogos continuaron interpretando Mercurio retrógrado como un momento de precaución en contratos, mensajes y viajes. Los almanaques astrológicos de este período advertían regularmente a los lectores que pospusieran las comunicaciones importantes cuando Mercurio estaba retrógrado."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "À travers l'âge d'or de l'Islam et dans l'Europe de la Renaissance, les astrologues ont continué à interpréter Mercure rétrograde comme un moment de prudence dans les contrats, les messages et les voyages. Les almanachs astrologiques de cette période avertissaient régulièrement les lecteurs de reporter les communications importantes lorsque Mercure était rétrograde."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Attraverso l'età dell'oro islamica e fino all'Europa rinascimentale, gli astrologi continuarono a interpretare Mercurio retrogrado come un momento di cautela nei contratti, nei messaggi e nei viaggi. Gli almanacchi astrologici di questo periodo avvertivano regolarmente i lettori di posticipare le comunicazioni importanti quando Mercurio era retrogrado."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "イスラム黄金時代からルネサンス期のヨーロッパにかけて、占星術師たちは水星逆行を契約、メッセージ、旅行における注意の時期として解釈し続けました。この時期の占星術の年鑑は、水星が逆行しているときに重要な連絡を延期するよう読者に定期的に警告していました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gjennom den islamske gullalderen og inn i renessansens Europa, fortsatte astrologer å tolke Merkur retrograd som et øyeblikk for forsiktighet i kontrakter, meldinger og reiser. Astrologiske almanakker fra denne perioden advarte jevnlig lesere om å utsette viktige kommunikasjoner når Merkur var retrograd."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Od złotego wieku islamu przez renesansową Europę astrolodzy nadal interpretowali retrogradację Merkurego jako moment ostrożności w kontraktach, wiadomościach i podróżach. Almanachy astrologiczne z tego okresu regularnie ostrzegały czytelników, aby odkładali ważne komunikacje, gdy Merkury był w ruchu wstecznym."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Através da Idade de Ouro Islâmica e na Europa renascentista, os astrólogos continuaram a interpretar Mercúrio retrógrado como um momento de cautela em contratos, mensagens e viagens. Almanaques astrológicos deste período advertiam regularmente os leitores a adiar comunicações importantes quando Mercúrio estava retrógrado."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Genom den islamiska guldåldern och in i renässansens Europa fortsatte astrologer att tolka Merkurius retrograd som ett ögonblick för försiktighet i kontrakt, meddelanden och resor. Astrologiska almanackor från denna period varnade regelbundet läsare att skjuta upp viktiga kommunikationer när Merkurius var retrograd."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Від ісламського золотого віку до ренесансної Європи астрологи продовжували тлумачити ретроградний Меркурій як момент обережності в контрактах, повідомленнях і подорожах. Астрологічні альманахи цього періоду регулярно попереджали читачів відкладати важливі комунікації, коли Меркурій був ретроградним."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.medieval.title" : {
-      "comment" : "Medieval title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Medieval Astrology"
+      },
+      "historyOfMercury.medieval.title" : {
+        "comment" : "Medieval title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mittelalterliche Astrologie"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Medieval Astrology"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrología Medieval"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologie Médiévale"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologia Medievale"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "中世の占星術"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Middelaldersk Astrologi"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologia Średniowieczna"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologia Medieval"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Medeltida Astrologi"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Середньовічна астрологія"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.modern.intro" : {
-      "comment" : "Modern intro",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "In the twentieth century, astrology was reshaped by psychology and then again by the internet. Both transformations changed how everyday people relate to Mercury retrograde."
+      },
+      "historyOfMercury.modern.intro" : {
+        "comment" : "Modern intro",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Im zwanzigsten Jahrhundert wurde die Astrologie durch die Psychologie und dann noch einmal durch das Internet umgestaltet. Beide Veränderungen veränderten die Art und Weise, wie gewöhnliche Menschen mit dem Merkur-Rücklauf umgehen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "In the twentieth century, astrology was reshaped by psychology and then again by the internet. Both transformations changed how everyday people relate to Mercury retrograde."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "En el siglo XX, la astrología fue remodelada por la psicología y luego nuevamente por internet. Ambas transformaciones cambiaron la forma en que la gente común se relaciona con Mercurio retrógrado."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Au vingtième siècle, l'astrologie a été remodelée par la psychologie, puis à nouveau par internet. Ces deux transformations ont changé la façon dont les gens ordinaires se rapportent à Mercure rétrograde."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Nel ventesimo secolo, l'astrologia è stata rimodellata dalla psicologia e poi di nuovo da internet. Entrambe le trasformazioni hanno cambiato il modo in cui le persone comuni si relazionano a Mercurio retrogrado."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "20世紀には、占星術は心理学によって、そしてその後インターネットによって再形成されました。どちらの変革も、一般の人々が水星逆行とどのように関わるかを変えました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "På det tjuende århundre ble astrologi omformet av psykologi og deretter igjen av internett. Begge transformasjonene endret hvordan vanlige mennesker forholder seg til Merkur retrograd."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "W XX wieku astrologia została przekształcona przez psychologię, a następnie ponownie przez internet. Obie transformacje zmieniły sposób, w jaki zwykli ludzie odnoszą się do retrogradacji Merkurego."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "No século XX, a astrologia foi remodelada pela psicologia e depois novamente pela internet. Ambas as transformações mudaram a forma como as pessoas comuns se relacionam com Mercúrio retrógrado."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Under 1900-talet omformades astrologin av psykologi och sedan igen av internet. Båda omvandlingarna förändrade hur vanliga människor förhåller sig till Merkurius retrograd."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "У двадцятому столітті астрологія була переосмислена психологією, а потім знову інтернетом. Обидві трансформації змінили те, як звичайні люди ставляться до ретроградного Меркурія."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.modern.title" : {
-      "comment" : "Section title: modern era",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The Modern Era"
+      },
+      "historyOfMercury.modern.title" : {
+        "comment" : "Section title: modern era",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Die Moderne"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "The Modern Era"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "La Era Moderna"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "L'ère moderne"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "L'era moderna"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "現代"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Den moderne tidsalderen"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Nowożytność"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "A Era Moderna"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Den moderna eran"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Сучасна ера"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.psychological.text" : {
-      "comment" : "Psychological text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Influenced by Carl Jung and astrologers like Dane Rudhyar and Liz Greene, mid-twentieth-century astrology shifted from fate-based predictions to inner reflection. Mercury retrograde became a window for introspection — a time to listen to what the unconscious had been quietly saying."
+      },
+      "historyOfMercury.psychological.text" : {
+        "comment" : "Psychological text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Beeinflusst von Carl Jung und Astrologen wie Dane Rudhyar und Liz Greene verlagerte sich die Astrologie der Mitte des 20. Jahrhunderts von schicksalsbasierten Vorhersagen zur inneren Reflexion. Der Merkur-Rücklauf wurde zu einem Fenster für Selbstbeobachtung – eine Zeit, um zu hören, was das Unbewusste leise gesagt hatte."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Influenced by Carl Jung and astrologers like Dane Rudhyar and Liz Greene, mid-twentieth-century astrology shifted from fate-based predictions to inner reflection. Mercury retrograde became a window for introspection — a time to listen to what the unconscious had been quietly saying."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Influenciada por Carl Jung y astrólogos como Dane Rudhyar y Liz Greene, la astrología de mediados del siglo XX pasó de las predicciones basadas en el destino a la reflexión interior. Mercurio retrógrado se convirtió en una ventana para la introspección — un momento para escuchar lo que el inconsciente había estado diciendo en silencio."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Influencée par Carl Jung et des astrologues comme Dane Rudhyar et Liz Greene, l'astrologie du milieu du vingtième siècle est passée des prédictions basées sur le destin à la réflexion intérieure. Mercure rétrograde est devenu une fenêtre pour l'introspection — un moment pour écouter ce que l'inconscient avait dit tranquillement."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Influenzata da Carl Jung e da astrologi come Dane Rudhyar e Liz Greene, l'astrologia della metà del ventesimo secolo si è spostata dalle previsioni basate sul destino alla riflessione interiore. Mercurio retrogrado è diventato una finestra per l'introspezione — un momento per ascoltare ciò che l'inconscio aveva detto silenziosamente."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "カール・ユングやデイン・ルドヒャー、リズ・グリーンなどの占星術師の影響を受け、20世紀半ばの占星術は運命に基づく予測から内省へとシフトしました。水星逆行は内省の窓——潜在意識が静かに語っていたことに耳を傾ける時間となりました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Påvirket av Carl Jung og astrologer som Dane Rudhyar og Liz Greene, flyttet midten av det tjuende århundres astrologi seg fra skjebnebaserte spådommer til indre refleksjon. Merkur retrograd ble et vindu for introspeksjon — en tid for å lytte til hva det ubevisste hadde sagt stille."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Pod wpływem Carla Junga i astrologów takich jak Dane Rudhyar i Liz Greene, astrologia z połowy XX wieku przeszła od prognoz opartych na przeznaczeniu do wewnętrznej refleksji. Retrogradacja Merkurego stała się oknem do introspekcji — czasem, aby wsłuchać się w to, co nieświadomość mówiła po cichu."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Influenciada por Carl Jung e astrólogos como Dane Rudhyar e Liz Greene, a astrologia de meados do século XX mudou de previsões baseadas no destino para a reflexão interior. Mercúrio retrógrado tornou-se uma janela para a introspecção — um momento para ouvir o que o inconsciente vinha dizendo silenciosamente."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Påverkad av Carl Jung och astrologer som Dane Rudhyar och Liz Greene, skiftade mitten av 1900-talets astrologi från ödesbaserade förutsägelser till inre reflektion. Merkurius retrograd blev ett fönster för introspektion — en tid att lyssna på vad det omedvetna hade sagt tyst."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Під впливом Карла Юнга та астрологів, таких як Дейн Рудьяр і Ліз Грін, астрологія середини XX століття змістилася від прогнозів, заснованих на долі, до внутрішньої рефлексії. Ретроградний Меркурій став вікном для інтроспекції — часом, щоб прислухатися до того, що несвідоме тихо говорило."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.psychological.title" : {
-      "comment" : "Psychological title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Psychological Astrology"
+      },
+      "historyOfMercury.psychological.title" : {
+        "comment" : "Psychological title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Psychologische Astrologie"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Psychological Astrology"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrología Psicológica"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologie Psychologique"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologia Psicologica"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "心理学的占星術"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Psykologisk Astrologi"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologia Psychologiczna"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologia Psicológica"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Psykologisk Astrologi"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Психологічна астрологія"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.subtitle" : {
-      "comment" : "Subtitle for history view",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "How astrologers have watched Mercury turn for over three thousand years."
+      },
+      "historyOfMercury.subtitle" : {
+        "comment" : "Subtitle for history view",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wie Astrologen seit über dreitausend Jahren beobachten, wie Merkur sich wendet."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "How astrologers have watched Mercury turn for over three thousand years."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Cómo los astrólogos han observado a Mercurio girar durante más de tres mil años."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Comment les astrologues observent Mercure tourner depuis plus de trois mille ans."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Come gli astrologi hanno osservato Mercurio girare per oltre tremila anni."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "占星術師がどのようにして三千年以上にわたり水星の逆行を見守ってきたか。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hvordan astrologer har sett Merkur snu i over tre tusen år."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Jak astrolodzy obserwowali odwrót Merkurego przez ponad trzy tysiące lat."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Como os astrólogos observam Mercúrio girar há mais de três mil anos."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hur astrologer har sett Merkurius vända i över tre tusen år."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Як астрологи спостерігали за поворотом Меркурія понад три тисячі років."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.era.1" : {
-      "comment" : "Timeline era 1",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "~1000 BCE"
+      },
+      "historyOfMercury.timeline.era.1" : {
+        "comment" : "Timeline era 1",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 v. Chr."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "~1000 BCE"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 a.C."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 av. J.-C."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 a.C."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~紀元前1000年"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 f.Kr."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 p.n.e."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 a.C."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 f.Kr."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~1000 до н. е."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.era.2" : {
-      "comment" : "Timeline era 2",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "~150 CE"
+      },
+      "historyOfMercury.timeline.era.2" : {
+        "comment" : "Timeline era 2",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 n. Chr."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "~150 CE"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 d.C."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 apr. J.-C."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 d.C."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~西暦150年"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 e.Kr."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 n.e."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 d.C."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 e.Kr."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "~150 н. е."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.era.3" : {
-      "comment" : "Timeline era 3",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "9th–15th c."
+      },
+      "historyOfMercury.timeline.era.3" : {
+        "comment" : "Timeline era 3",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "9.–15. Jh."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "9th–15th c."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "siglos IX-XV"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "IXe–XVe s."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "IX–XV sec."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "9〜15世紀"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "9.–15. årh."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "IX–XV w."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "séc. IX–XV"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "900–1500-talet"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "IX–XV ст."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.era.4" : {
-      "comment" : "Timeline era 4",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "20th c."
+      },
+      "historyOfMercury.timeline.era.4" : {
+        "comment" : "Timeline era 4",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "20. Jh."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "20th c."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "siglo XX"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "XXe s."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "XX sec."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "20世紀"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "20. årh."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "XX w."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "séc. XX"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "1900-talet"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "XX ст."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.era.5" : {
-      "comment" : "Timeline era 5",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "21st c."
+      },
+      "historyOfMercury.timeline.era.5" : {
+        "comment" : "Timeline era 5",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "21. Jh."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "21st c."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "siglo XXI"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "XXIe s."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "XXI sec."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "21世紀"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "21. årh."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "XXI w."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "séc. XXI"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "2000-talet"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "XXI ст."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.eraHeader" : {
-      "comment" : "Timeline table column: era",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Era"
+      },
+      "historyOfMercury.timeline.eraHeader" : {
+        "comment" : "Timeline table column: era",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Epoche"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Era"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Era"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Époque"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Epoca"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "時代"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tidsalder"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Epoka"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Era"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Era"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ера"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.milestone.1" : {
-      "comment" : "Timeline milestone 1",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Babylonian astronomer-priests track Mercury (Nabu) on cuneiform tablets and treat its retrograde motion as a meaningful omen."
+      },
+      "historyOfMercury.timeline.milestone.1" : {
+        "comment" : "Timeline milestone 1",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Babylonische Astronomen-Priester verfolgen Merkur (Nabu) auf Keilschrifttafeln und behandeln seine rückläufige Bewegung als bedeutungsvolles Omen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Babylonian astronomer-priests track Mercury (Nabu) on cuneiform tablets and treat its retrograde motion as a meaningful omen."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Los sacerdotes-astrónomos babilónicos rastrean a Mercurio (Nabu) en tablillas cuneiformes y tratan su movimiento retrógrado como un presagio significativo."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Les prêtres-astronomes babyloniens suivent Mercure (Nabu) sur des tablettes cunéiformes et traitent son mouvement rétrograde comme un présage significatif."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "I sacerdoti-astronomi babilonesi tracciano Mercurio (Nabu) su tavolette cuneiformi e trattano il suo moto retrogrado come un presagio significativo."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "バビロニアの天文学者兼祭司たちは、楔形文字の粘土板で水星（ナブー）を追跡し、その逆行運動を意味のある前兆として扱いました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Babylonske astronom-prester sporer Merkur (Nabu) på kileskrifttavler og behandler dens retrogradbevegelse som et meningsfylt varsel."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Babilońscy kapłani-astronomowie śledzą Merkurego (Nabu) na tabliczkach klinowych i traktują jego ruch wsteczny jako znaczący znak."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Sacerdotes-astrônomos babilônicos rastreiam Mercúrio (Nabu) em tábuas cuneiformes e tratam seu movimento retrógrado como um presságio significativo."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Babyloniska astronom-präster spårar Merkurius (Nabu) på kilskriftstavlor och behandlar dess retrograda rörelse som ett meningsfullt omen."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Вавилонські жерці-астрономи відстежують Меркурія (Набу) на клинописних табличках і трактують його ретроградний рух як значущу ознаку."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.milestone.2" : {
-      "comment" : "Timeline milestone 2",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Ptolemy formalizes retrograde motion mathematically and associates it astrologically with delays and revision."
+      },
+      "historyOfMercury.timeline.milestone.2" : {
+        "comment" : "Timeline milestone 2",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ptolemäus formalisiert die rückläufige Bewegung mathematisch und verbindet sie astrologisch mit Verzögerungen und Überarbeitungen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Ptolemy formalizes retrograde motion mathematically and associates it astrologically with delays and revision."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ptolomeo formaliza matemáticamente el movimiento retrógrado y lo asocia astrológicamente con retrasos y revisiones."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ptolémée formalise mathématiquement le mouvement rétrograde et l'associe astrologiquement à des retards et des révisions."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tolomeo formalizza matematicamente il moto retrogrado e lo associa astrologicamente a ritardi e revisioni."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "プトレマイオスは逆行運動を数学的に形式化し、占星術的に遅延と修正と関連付けました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ptolemaios formaliserer retrogradbevegelse matematisk og assosierer den astrologisk med forsinkelser og revisjon."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ptolemeusz formalizuje matematycznie ruch wsteczny i astrologicznie wiąże go z opóźnieniami i korektami."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ptolomeu formaliza matematicamente o movimento retrógrado e o associa astrologicamente a atrasos e revisões."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ptolemaios formaliserar retrograd rörelse matematiskt och associerar den astrologiskt med förseningar och revideringar."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Птолемей математично формалізує ретроградний рух і астрологічно пов'язує його із затримками та переглядом."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.milestone.3" : {
-      "comment" : "Timeline milestone 3",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Islamic and medieval European astrologers preserve and refine retrograde lore in handbooks and almanacs."
+      },
+      "historyOfMercury.timeline.milestone.3" : {
+        "comment" : "Timeline milestone 3",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Islamische und mittelalterliche europäische Astrologen bewahren und verfeinern das rückläufige Wissen in Handbüchern und Almanachen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Islamic and medieval European astrologers preserve and refine retrograde lore in handbooks and almanacs."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Los astrólogos islámicos y europeos medievales preservan y perfeccionan el conocimiento retrógrado en manuales y almanaques."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Les astrologues islamiques et européens médiévaux préservent et affinent le savoir rétrograde dans des manuels et des almanachs."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gli astrologi islamici ed europei medievali preservano e affinano la conoscenza retrograda in manuali e almanacchi."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "イスラムと中世ヨーロッパの占星術師たちは、ハンドブックや年鑑の中で逆行に関する知識を保存し、洗練させました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Islamske og middelalderske europeiske astrologer bevarer og foredler retrograd kunnskap i håndbøker og almanakker."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrolodzy islamscy i średniowieczni europejscy zachowują i udoskonalają wiedzę o retrogradacji w podręcznikach i almanachach."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrólogos islâmicos e europeus medievais preservam e refinam o conhecimento retrógrado em manuais e almanaques."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Islamiska och medeltida europeiska astrologer bevarar och förfinar retrograd kunskap i handböcker och almanackor."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ісламські та середньовічні європейські астрологи зберігають і вдосконалюють знання про ретроградність у посібниках та альманахах."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.milestone.4" : {
-      "comment" : "Timeline milestone 4",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Psychological astrology reframes retrograde as a window for inner reflection rather than fated misfortune."
+      },
+      "historyOfMercury.timeline.milestone.4" : {
+        "comment" : "Timeline milestone 4",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Die psychologische Astrologie deutet den Rücklauf als Fenster für innere Reflexion und nicht als verhängnisvolles Unglück."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Psychological astrology reframes retrograde as a window for inner reflection rather than fated misfortune."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "La astrología psicológica replantea el retrógrado como una ventana para la reflexión interior en lugar de una desgracia predestinada."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "L'astrologie psychologique recadre le rétrograde comme une fenêtre pour la réflexion intérieure plutôt que comme un malheur prédestiné."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "L'astrologia psicologica ridefinisce il retrogrado come una finestra per la riflessione interiore piuttosto che come una sventura fatale."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "心理学的占星術は、逆行を運命付けられた不運ではなく、内省のための窓として再定義しました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Psykologisk astrologi omformer retrograd som et vindu for indre refleksjon snarere enn skjebnebestemt ulykke."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astrologia psychologiczna przekształca retrogradację w okno do wewnętrznej refleksji, a nie jako przeznaczoną klęskę."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "A astrologia psicológica reformula o retrógrado como uma janela para a reflexão interior, em vez de um infortúnio fatal."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Psykologisk astrologi omformulerar retrograd som ett fönster för inre reflektion snarare än ödesbestämd olycka."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Психологічна астрологія переосмислює ретроградність як вікно для внутрішньої рефлексії, а не як фатальну невдачу."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.milestone.5" : {
-      "comment" : "Timeline milestone 5",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The digital age makes Mercury retrograde a mainstream cultural reference — glitchy phones, missed emails, and viral memes give the ancient symbolism modern life."
+      },
+      "historyOfMercury.timeline.milestone.5" : {
+        "comment" : "Timeline milestone 5",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Das digitale Zeitalter macht den Merkur-Rücklauf zu einem kulturellen Mainstream-Phänomen – ruckelnde Telefone, verpasste E-Mails und virale Memes verleihen der alten Symbolik modernes Leben."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "The digital age makes Mercury retrograde a mainstream cultural reference — glitchy phones, missed emails, and viral memes give the ancient symbolism modern life."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "La era digital convierte a Mercurio retrógrado en una referencia cultural principal: teléfonos con fallos, correos electrónicos perdidos y memes virales dan al simbolismo antiguo vida moderna."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "L'ère numérique fait de Mercure rétrograde une référence culturelle grand public — les téléphones qui buggent, les e-mails manqués et les mèmes viraux donnent au symbolisme ancien une vie moderne."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "L'era digitale rend Mercurio retrogrado un riferimento culturale mainstream — telefoni che si bloccano, email perse e meme virali danno al simbolismo antico vita moderna."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "デジタル時代は水星逆行を主流の文化的言及にしました——動作がおかしくなる電話、届かないメール、バイラルミームが古代の象徴に現代的な命を吹き込みました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Den digitale tidsalderen gjør Merkur retrograd til en kulturell hovedreferanse — ustabile telefoner, tapte e-poster og virale memer gir den gamle symbolikken moderne liv."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Era cyfrowa czyni retrogradację Merkurego głównym odniesieniem kulturowym — zacinające się telefony, utracone e-maile i wirusowe memy nadają starożytnej symbolice nowoczesne życie."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "A era digital torna Mercúrio retrógrado uma referência cultural mainstream — telefones com falhas, e-mails perdidos e memes virais dão ao simbolismo antigo vida moderna."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Den digitala tidsåldern gör Merkurius retrograd till en kulturell referens — laggiga telefoner, missade e-postmeddelanden och virala memes ger den gamla symboliken modernt liv."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Цифрова ера робить ретроградний Меркурій загальнокультурним явищем — телефони, що глючать, пропущені електронні листи та вірусні меми надають давній символіці сучасного життя."
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.milestoneHeader" : {
-      "comment" : "Timeline table column: milestone",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Milestone"
+      },
+      "historyOfMercury.timeline.milestoneHeader" : {
+        "comment" : "Timeline table column: milestone",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Meilenstein"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Milestone"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hito"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Jalon"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Traguardo"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "マイルストーン"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Milepæl"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kamień milowy"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Marco"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Milstolpe"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Віха"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.timeline.title" : {
-      "comment" : "Section title: timeline",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Timeline"
+      },
+      "historyOfMercury.timeline.title" : {
+        "comment" : "Section title: timeline",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Zeitleiste"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Timeline"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Línea de Tiempo"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Chronologie"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Cronologia"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "タイムライン"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tidslinje"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Oś czasu"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Linha do Tempo"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tidslinje"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Хронологія"
+            }
           }
         }
-      }
-    },
-    "historyOfMercury.title" : {
-      "comment" : "Title for history view",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "History of Mercury Retrograde"
+      },
+      "historyOfMercury.title" : {
+        "comment" : "Title for history view",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Geschichte des Merkur-Rücklaufs"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "History of Mercury Retrograde"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Historia de Mercurio Retrógrado"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Histoire de Mercure Rétrograde"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Storia di Mercurio Retrogrado"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星逆行の歴史"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Historien om Merkur Retrograd"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Historia Retrogradacji Merkurego"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "História de Mercúrio Retrógrado"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Historien om Merkurius Retrograd"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Історія ретроградного Меркурія"
+            }
           }
         }
-      }
-    },
+      },
     "historyOfPalmistry.ancient.intro" : {
       "comment" : "The practice of palm reading has roots in multiple ancient civilizations, each contributing unique perspectives to this sacred art.",
       "localizations" : {
