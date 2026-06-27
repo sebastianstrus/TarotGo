@@ -567,6 +567,7 @@ struct CompatibilityView: View {
                 .font(.system(size: 11, weight: .medium))
                 .tracking(1)
                 .foregroundColor(AppTheme.gold.opacity(0.7))
+                .frame(height: 28, alignment: .top)
                 .textCase(.uppercase)
 
             HStack(spacing: 6) {
