@@ -3370,8 +3370,22 @@ class PDFGenerationService {
                     coupleGuidanceHeight += bodyHeight(for: mercury.coupleGuidance) + 6
                 }
 
+                let subtitleFont = UIFont.systemFont(ofSize: 12, weight: .light)
+                let subtitleAttrs: [NSAttributedString.Key: Any] = [
+                    .font: subtitleFont,
+                    .foregroundColor: mutedColor
+                ]
+                let subtitleHeight = (L10n.mercuryCoupleSubtitle as NSString).boundingRect(
+                    with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
+                    options: [.usesLineFragmentOrigin, .usesFontLeading],
+                    attributes: subtitleAttrs,
+                    context: nil
+                ).height
+                let subtitleSpacing: CGFloat = 4
+
                 let mercurySectionHeight =
-                    sectionHeaderHeight + boxTopPadding + badgeHeight + 12 +
+                    sectionHeaderHeight + subtitleHeight + subtitleSpacing +
+                    boxTopPadding + badgeHeight + 12 +
                     columnsHeight + coupleGuidanceHeight + boxBottomPadding + sectionTrailingGap
 
                 ensureRoom(for: mercurySectionHeight)
@@ -3382,6 +3396,14 @@ class PDFGenerationService {
                     margin: margin,
                     contentWidth: contentWidth,
                     context: context.cgContext
+                )
+
+                yPosition = drawText(
+                    L10n.mercuryCoupleSubtitle,
+                    at: CGPoint(x: margin, y: yPosition),
+                    width: contentWidth,
+                    font: subtitleFont,
+                    color: mutedColor
                 )
                 yPosition += 10
 
