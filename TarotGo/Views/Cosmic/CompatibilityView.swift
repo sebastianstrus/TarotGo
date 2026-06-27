@@ -130,7 +130,26 @@ struct CompatibilityView: View {
             strengths: strengths(your: yourSign, partner: partnerSign),
             challenges: challenges(your: yourSign, partner: partnerSign),
             advice: advice(your: yourSign, partner: partnerSign),
-            date: Date()
+            date: Date(),
+            mercury: mercuryPDFContext(your: yourSign, partner: partnerSign)
+        )
+    }
+
+    private func mercuryPDFContext(
+        your yourSign: ZodiacSign,
+        partner partnerSign: ZodiacSign
+    ) -> PDFGenerationService.MercuryRetrogradePDFContext? {
+        let service = MercuryRetrogradeService.shared
+        let now = Date()
+        guard let period = service.activePeriod(for: now) else { return nil }
+        let phase = period.phase(for: now)
+        return PDFGenerationService.MercuryRetrogradePDFContext(
+            phaseTitle: phase.title,
+            signSymbol: period.zodiacSign.symbol,
+            signName: period.zodiacSign.name,
+            yourImpact: service.impactDescription(userSign: yourSign, retrogradeSign: period.zodiacSign),
+            partnerImpact: service.impactDescription(userSign: partnerSign, retrogradeSign: period.zodiacSign),
+            coupleAdvice: service.coupleAdvice(for: phase)
         )
     }
     

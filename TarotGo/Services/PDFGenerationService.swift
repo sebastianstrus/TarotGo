@@ -3006,6 +3006,15 @@ class PDFGenerationService {
 
     // MARK: - Compatibility PDF
 
+    struct MercuryRetrogradePDFContext {
+        let phaseTitle: String
+        let signSymbol: String
+        let signName: String
+        let yourImpact: String
+        let partnerImpact: String
+        let coupleAdvice: [String]
+    }
+
     func generateCompatibilityPDF(
         yourSign: ZodiacSign,
         partnerSign: ZodiacSign,
@@ -3018,7 +3027,8 @@ class PDFGenerationService {
         strengths: String,
         challenges: String,
         advice: String,
-        date: Date
+        date: Date,
+        mercury: MercuryRetrogradePDFContext? = nil
     ) -> URL? {
         let title = NSLocalizedString(
             "pdf.compatibility.title",
@@ -3328,6 +3338,203 @@ class PDFGenerationService {
             context.cgContext.restoreGState()
 
             yPosition += sectionTrailingGap
+
+            // Mercury Retrograde × Couple — only rendered when an active period exists.
+            if let mercury {
+                let badgeText = "\(mercury.phaseTitle) — \(L10n.mercuryInSign) \(mercury.signSymbol) \(mercury.signName)"
+                let badgeHeight: CGFloat = 30
+                let columnGap: CGFloat = 14
+                let columnPadding: CGFloat = 12
+                let columnHeaderHeight: CGFloat = 18
+                let columnSignHeight: CGFloat = 22
+                let columnInnerWidth = (contentWidth - columnGap) / 2 - columnPadding * 2
+
+                func columnHeight(impact: String) -> CGFloat {
+                    let attr = NSAttributedString(string: impact, attributes: bodyAttrs)
+                    let textH = attr.boundingRect(
+                        with: CGSize(width: columnInnerWidth, height: .greatestFiniteMagnitude),
+                        options: [.usesLineFragmentOrigin, .usesFontLeading],
+                        context: nil
+                    ).height
+                    return columnPadding + columnHeaderHeight + 4 + columnSignHeight + 6 + textH + columnPadding
+                }
+
+                let columnsHeight = max(
+                    columnHeight(impact: mercury.yourImpact),
+                    columnHeight(impact: mercury.partnerImpact)
+                )
+
+                var coupleAdviceHeight: CGFloat = 0
+                if !mercury.coupleAdvice.isEmpty {
+                    coupleAdviceHeight = 24 // header gap
+                    for tip in mercury.coupleAdvice {
+                        coupleAdviceHeight += bodyHeight(for: tip) + 6
+                    }
+                }
+
+                let mercurySectionHeight =
+                    sectionHeaderHeight + boxTopPadding + badgeHeight + 12 +
+                    columnsHeight + coupleAdviceHeight + boxBottomPadding + sectionTrailingGap
+
+                ensureRoom(for: mercurySectionHeight)
+
+                yPosition = drawSectionHeader(
+                    title: L10n.mercuryCoupleTitle,
+                    at: yPosition,
+                    margin: margin,
+                    contentWidth: contentWidth,
+                    context: context.cgContext
+                )
+                yPosition += 10
+
+                let mercuryBoxStartY = yPosition
+                yPosition += boxTopPadding
+
+                // Phase + sign badge
+                let badgeFont = UIFont.systemFont(ofSize: 12, weight: .semibold)
+                let badgeAttrs: [NSAttributedString.Key: Any] = [
+                    .font: badgeFont,
+                    .foregroundColor: goldColor
+                ]
+                let badgeSize = (badgeText as NSString).size(withAttributes: badgeAttrs)
+                let badgePillRect = CGRect(
+                    x: margin,
+                    y: yPosition,
+                    width: badgeSize.width + 24,
+                    height: badgeHeight
+                )
+                let badgePill = UIBezierPath(roundedRect: badgePillRect, cornerRadius: badgeHeight / 2)
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.12).setFill()
+                badgePill.fill()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.4).setStroke()
+                badgePill.lineWidth = 1
+                badgePill.stroke()
+                (badgeText as NSString).draw(
+                    at: CGPoint(x: margin + 12, y: yPosition + (badgeHeight - badgeSize.height) / 2),
+                    withAttributes: badgeAttrs
+                )
+                yPosition += badgeHeight + 12
+
+                // Side-by-side impact columns
+                let columnWidth = (contentWidth - columnGap) / 2
+
+                func drawImpactColumn(
+                    rect: CGRect,
+                    label: String,
+                    sign: (symbol: String, name: String),
+                    impact: String
+                ) {
+                    context.cgContext.saveGState()
+                    let columnPath = UIBezierPath(roundedRect: rect, cornerRadius: 8)
+                    UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.85).setFill()
+                    columnPath.fill()
+                    UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
+                    columnPath.lineWidth = 1
+                    columnPath.stroke()
+                    context.cgContext.restoreGState()
+
+                    var localY = rect.minY + columnPadding
+
+                    let labelAttrs: [NSAttributedString.Key: Any] = [
+                        .font: UIFont.systemFont(ofSize: 9, weight: .semibold),
+                        .foregroundColor: mutedColor,
+                        .kern: 1.0
+                    ]
+                    (label.uppercased() as NSString).draw(
+                        at: CGPoint(x: rect.minX + columnPadding, y: localY),
+                        withAttributes: labelAttrs
+                    )
+                    localY += columnHeaderHeight
+
+                    let signLine = "\(sign.symbol)  \(sign.name)"
+                    let signAttrs: [NSAttributedString.Key: Any] = [
+                        .font: UIFont.systemFont(ofSize: 16, weight: .medium),
+                        .foregroundColor: goldColor
+                    ]
+                    (signLine as NSString).draw(
+                        at: CGPoint(x: rect.minX + columnPadding, y: localY),
+                        withAttributes: signAttrs
+                    )
+                    localY += columnSignHeight + 6
+
+                    _ = drawText(
+                        impact,
+                        at: CGPoint(x: rect.minX + columnPadding, y: localY),
+                        width: rect.width - columnPadding * 2,
+                        font: bodyFont,
+                        color: textColor
+                    )
+                }
+
+                let columnRectLeft = CGRect(
+                    x: margin,
+                    y: yPosition,
+                    width: columnWidth,
+                    height: columnsHeight
+                )
+                let columnRectRight = CGRect(
+                    x: margin + columnWidth + columnGap,
+                    y: yPosition,
+                    width: columnWidth,
+                    height: columnsHeight
+                )
+
+                drawImpactColumn(
+                    rect: columnRectLeft,
+                    label: L10n.mercuryCoupleImpactYou,
+                    sign: (yourSign.symbol, yourSign.name),
+                    impact: mercury.yourImpact
+                )
+                drawImpactColumn(
+                    rect: columnRectRight,
+                    label: L10n.mercuryCoupleImpactPartner,
+                    sign: (partnerSign.symbol, partnerSign.name),
+                    impact: mercury.partnerImpact
+                )
+
+                yPosition += columnsHeight
+
+                // Couple guidance
+                if !mercury.coupleAdvice.isEmpty {
+                    yPosition += 12
+                    yPosition = drawText(
+                        L10n.mercuryCoupleAdvice,
+                        at: CGPoint(x: margin, y: yPosition),
+                        width: contentWidth,
+                        font: .systemFont(ofSize: 13, weight: .semibold),
+                        color: goldColor
+                    )
+                    yPosition += 6
+                    for tip in mercury.coupleAdvice {
+                        let bullet = "♥  \(tip)"
+                        yPosition = drawText(
+                            bullet,
+                            at: CGPoint(x: margin + 4, y: yPosition),
+                            width: contentWidth - 4,
+                            font: bodyFont,
+                            color: textColor
+                        )
+                        yPosition += 4
+                    }
+                }
+
+                yPosition += boxBottomPadding
+
+                context.cgContext.saveGState()
+                let mercuryBoxRect = CGRect(
+                    x: margin - 10,
+                    y: mercuryBoxStartY,
+                    width: contentWidth + 20,
+                    height: yPosition - mercuryBoxStartY
+                )
+                let mercuryBox = UIBezierPath(roundedRect: mercuryBoxRect, cornerRadius: 10)
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.35).setStroke()
+                mercuryBox.lineWidth = 1
+                mercuryBox.stroke()
+                context.cgContext.restoreGState()
+
+                yPosition += sectionTrailingGap
+            }
 
             // Analysis sections — draw filled box first, then text on top (one draw pass).
             let sections: [(String, String)] = [
