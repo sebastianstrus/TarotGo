@@ -1861,6 +1861,91 @@ enum L10n {
     static let notificationTitle = NSLocalizedString("notification.title", comment: "Your Daily Card Awaits")
     static let notificationBody = NSLocalizedString("notification.body", comment: "The cards have a message for you today. Reveal your guidance.")
 
+    // MARK: - Mercury Retrograde
+    static let mercuryTitle = NSLocalizedString("mercury.title", value: "Mercury Retrograde", comment: "Mercury Retrograde feature title")
+    static let mercurySubtitle = NSLocalizedString("mercury.subtitle", value: "Cosmic communication weather", comment: "Mercury Retrograde subtitle")
+
+    static let mercuryStatusActive = NSLocalizedString("mercury.status.active", value: "Mercury is Retrograde", comment: "Status when Mercury is currently retrograde")
+    static let mercuryStatusDirect = NSLocalizedString("mercury.status.direct", value: "Mercury is Direct", comment: "Status when Mercury is currently direct")
+    static let mercuryStatusPreShadow = NSLocalizedString("mercury.status.preShadow", value: "Pre-Shadow Phase", comment: "Status during pre-shadow")
+    static let mercuryStatusPostShadow = NSLocalizedString("mercury.status.postShadow", value: "Post-Shadow Phase", comment: "Status during post-shadow")
+
+    static let mercuryInSign = NSLocalizedString("mercury.inSign", value: "in", comment: "Connector between Mercury and zodiac sign, e.g. Mercury in Gemini")
+    static let mercuryDaysUntilEnd = NSLocalizedString("mercury.daysUntilEnd", value: "days until direct", comment: "Days remaining until Mercury goes direct")
+    static let mercuryDaysUntilStart = NSLocalizedString("mercury.daysUntilStart", value: "days until retrograde", comment: "Days remaining until retrograde begins")
+    static let mercuryDaysUntilPostShadowEnd = NSLocalizedString("mercury.daysUntilPostShadowEnd", value: "days until shadow ends", comment: "Days remaining until post-shadow ends")
+    static let mercuryDaysUntilPreShadow = NSLocalizedString("mercury.daysUntilPreShadow", value: "days until shadow begins", comment: "Days until next pre-shadow begins")
+
+    // Phase titles
+    static let mercuryPhaseDirect = NSLocalizedString("mercury.phase.direct", value: "Direct Motion", comment: "Phase: Mercury moving direct")
+    static let mercuryPhasePreShadow = NSLocalizedString("mercury.phase.preShadow", value: "Pre-Shadow", comment: "Phase: pre-shadow before retrograde")
+    static let mercuryPhaseRetrograde = NSLocalizedString("mercury.phase.retrograde", value: "Retrograde", comment: "Phase: full retrograde")
+    static let mercuryPhasePostShadow = NSLocalizedString("mercury.phase.postShadow", value: "Post-Shadow", comment: "Phase: post-shadow after retrograde")
+
+    // Phase descriptions
+    static let mercuryPhaseDirectDesc = NSLocalizedString("mercury.phase.direct.desc", value: "Mercury moves forward through the zodiac. Communication, travel, and signing contracts flow smoothly. A great time to launch new projects.", comment: "Description for direct phase")
+    static let mercuryPhasePreShadowDesc = NSLocalizedString("mercury.phase.preShadow.desc", value: "Mercury enters the degrees where it will turn retrograde. Themes that will return during retrograde begin to surface. Pay attention to early signals.", comment: "Description for pre-shadow phase")
+    static let mercuryPhaseRetrogradeDesc = NSLocalizedString("mercury.phase.retrograde.desc", value: "Mercury appears to move backwards. A potent time for review, reflection, and reconnection — but be careful with new commitments, electronics, and travel.", comment: "Description for retrograde phase")
+    static let mercuryPhasePostShadowDesc = NSLocalizedString("mercury.phase.postShadow.desc", value: "Mercury moves forward again but retraces the retrograde degrees. Loose ends find resolution. Apply lessons learned from the retrograde period.", comment: "Description for post-shadow phase")
+
+    // Sections
+    static let mercuryShadowTimeline = NSLocalizedString("mercury.shadowTimeline", value: "Shadow Timeline", comment: "Shadow timeline section title")
+    static let mercuryYourSignImpact = NSLocalizedString("mercury.yourSignImpact", value: "Impact on Your Sign", comment: "Personal impact section title")
+    static let mercuryUpcoming = NSLocalizedString("mercury.upcoming", value: "Upcoming Retrogrades", comment: "Upcoming retrogrades list title")
+    static let mercuryDos = NSLocalizedString("mercury.dos", value: "What to Embrace", comment: "Do's list title")
+    static let mercuryDonts = NSLocalizedString("mercury.donts", value: "What to Avoid", comment: "Don'ts list title")
+    static let mercuryNotifications = NSLocalizedString("mercury.notifications", value: "Mercury Retrograde Alerts", comment: "Notifications toggle title")
+    static let mercuryNotificationsDesc = NSLocalizedString("mercury.notifications.desc", value: "Get notified when Mercury retrograde or shadow periods begin and end.", comment: "Notifications description")
+
+    static let mercuryAddBirthDateForImpact = NSLocalizedString("mercury.addBirthDateForImpact", value: "Add your birth date in Settings to see how this retrograde affects your sign.", comment: "Prompt to add birth date for personalized impact")
+
+    // Impact descriptions (by angular distance between user sign and retrograde sign)
+    static let mercuryImpactSelf = NSLocalizedString("mercury.impact.self", value: "Mercury retrogrades through your sign — your communication style, identity, and self-expression are under review. Slow down and listen before you speak.", comment: "Impact when retrograde is in user's own sign")
+    static let mercuryImpactAdjacent = NSLocalizedString("mercury.impact.adjacent", value: "Themes around finances, values, secrets, or hidden matters surface. A quiet, introspective period — handle resources mindfully.", comment: "Impact when retrograde is in adjacent sign")
+    static let mercuryImpactSextile = NSLocalizedString("mercury.impact.sextile", value: "A supportive retrograde for you. Friendships, siblings, and casual contacts bring helpful information. Conversations open new doors.", comment: "Impact when retrograde sextiles user's sign")
+    static let mercuryImpactSquare = NSLocalizedString("mercury.impact.square", value: "Tension between home and career, or private and public life. Old patterns demand attention before you can move forward.", comment: "Impact when retrograde squares user's sign")
+    static let mercuryImpactTrine = NSLocalizedString("mercury.impact.trine", value: "A flowing, creative retrograde for you. Travel plans may shift, but learning, romance, or self-expression deepen in beautiful ways.", comment: "Impact when retrograde trines user's sign")
+    static let mercuryImpactInconjunct = NSLocalizedString("mercury.impact.inconjunct", value: "Daily routines, health, or work logistics need adjustment. Small recalibrations now prevent bigger disruptions later.", comment: "Impact when retrograde is inconjunct user's sign")
+    static let mercuryImpactOpposite = NSLocalizedString("mercury.impact.opposite", value: "Relationships, partnerships, and one-on-one dynamics come into focus. Past connections may reappear — for closure or rekindling.", comment: "Impact when retrograde opposes user's sign")
+
+    // Do's
+    static let mercuryDoDirect1 = NSLocalizedString("mercury.do.direct.1", value: "Launch new projects and sign contracts with confidence.", comment: "Direct do 1")
+    static let mercuryDoDirect2 = NSLocalizedString("mercury.do.direct.2", value: "Communicate boldly — your message will land clearly.", comment: "Direct do 2")
+    static let mercuryDoDirect3 = NSLocalizedString("mercury.do.direct.3", value: "Embrace travel, learning, and forward momentum.", comment: "Direct do 3")
+    static let mercuryDoPreShadow1 = NSLocalizedString("mercury.do.preShadow.1", value: "Notice recurring themes — they will return during retrograde.", comment: "Pre-shadow do 1")
+    static let mercuryDoPreShadow2 = NSLocalizedString("mercury.do.preShadow.2", value: "Back up important files and double-check travel plans.", comment: "Pre-shadow do 2")
+    static let mercuryDoPreShadow3 = NSLocalizedString("mercury.do.preShadow.3", value: "Finish projects you don't want to revisit in the coming weeks.", comment: "Pre-shadow do 3")
+    static let mercuryDoRetrograde1 = NSLocalizedString("mercury.do.retrograde.1", value: "Review, revise, and refine existing work.", comment: "Retrograde do 1")
+    static let mercuryDoRetrograde2 = NSLocalizedString("mercury.do.retrograde.2", value: "Reconnect with old friends and unfinished conversations.", comment: "Retrograde do 2")
+    static let mercuryDoRetrograde3 = NSLocalizedString("mercury.do.retrograde.3", value: "Reflect deeply — journal, meditate, and listen inward.", comment: "Retrograde do 3")
+    static let mercuryDoRetrograde4 = NSLocalizedString("mercury.do.retrograde.4", value: "Slow down. Read instructions twice. Speak with care.", comment: "Retrograde do 4")
+    static let mercuryDoPostShadow1 = NSLocalizedString("mercury.do.postShadow.1", value: "Apply the lessons learned during retrograde.", comment: "Post-shadow do 1")
+    static let mercuryDoPostShadow2 = NSLocalizedString("mercury.do.postShadow.2", value: "Tie up loose ends and finalize decisions postponed during retrograde.", comment: "Post-shadow do 2")
+    static let mercuryDoPostShadow3 = NSLocalizedString("mercury.do.postShadow.3", value: "Begin gently re-launching plans that were put on hold.", comment: "Post-shadow do 3")
+
+    // Don'ts
+    static let mercuryDontDirect1 = NSLocalizedString("mercury.dont.direct.1", value: "Don't postpone decisions waiting for a 'better' moment.", comment: "Direct dont 1")
+    static let mercuryDontDirect2 = NSLocalizedString("mercury.dont.direct.2", value: "Don't blame Mercury for ordinary miscommunications.", comment: "Direct dont 2")
+    static let mercuryDontPreShadow1 = NSLocalizedString("mercury.dont.preShadow.1", value: "Avoid rushing major contracts you won't be able to revisit.", comment: "Pre-shadow dont 1")
+    static let mercuryDontPreShadow2 = NSLocalizedString("mercury.dont.preShadow.2", value: "Don't ignore the early signals of returning themes.", comment: "Pre-shadow dont 2")
+    static let mercuryDontPreShadow3 = NSLocalizedString("mercury.dont.preShadow.3", value: "Postpone buying expensive electronics if you can.", comment: "Pre-shadow dont 3")
+    static let mercuryDontRetrograde1 = NSLocalizedString("mercury.dont.retrograde.1", value: "Avoid signing major contracts or making irreversible commitments.", comment: "Retrograde dont 1")
+    static let mercuryDontRetrograde2 = NSLocalizedString("mercury.dont.retrograde.2", value: "Don't buy new electronics, cars, or communication devices.", comment: "Retrograde dont 2")
+    static let mercuryDontRetrograde3 = NSLocalizedString("mercury.dont.retrograde.3", value: "Resist starting brand-new projects from scratch.", comment: "Retrograde dont 3")
+    static let mercuryDontRetrograde4 = NSLocalizedString("mercury.dont.retrograde.4", value: "Don't assume your message was received — confirm twice.", comment: "Retrograde dont 4")
+    static let mercuryDontPostShadow1 = NSLocalizedString("mercury.dont.postShadow.1", value: "Don't rush forward before integrating retrograde lessons.", comment: "Post-shadow dont 1")
+    static let mercuryDontPostShadow2 = NSLocalizedString("mercury.dont.postShadow.2", value: "Avoid making the same mistakes the retrograde just highlighted.", comment: "Post-shadow dont 2")
+
+    // Notifications
+    static let mercuryNotifPreShadowTitle = NSLocalizedString("mercury.notif.preShadow.title", value: "Mercury Enters Shadow", comment: "Notification title for pre-shadow start")
+    static let mercuryNotifPreShadowBody = NSLocalizedString("mercury.notif.preShadow.body", value: "The retrograde window opens. Watch for themes that will resurface.", comment: "Notification body for pre-shadow start")
+    static let mercuryNotifRetrogradeStartTitle = NSLocalizedString("mercury.notif.retrogradeStart.title", value: "Mercury Goes Retrograde", comment: "Notification title for retrograde start")
+    static let mercuryNotifRetrogradeStartBody = NSLocalizedString("mercury.notif.retrogradeStart.body", value: "Time to slow down, reflect, and review. Tap to see what to embrace and avoid.", comment: "Notification body for retrograde start")
+    static let mercuryNotifRetrogradeEndTitle = NSLocalizedString("mercury.notif.retrogradeEnd.title", value: "Mercury Goes Direct", comment: "Notification title for retrograde end")
+    static let mercuryNotifRetrogradeEndBody = NSLocalizedString("mercury.notif.retrogradeEnd.body", value: "Mercury stations direct. Momentum returns — but stay gentle through post-shadow.", comment: "Notification body for retrograde end")
+    static let mercuryNotifPostShadowEndTitle = NSLocalizedString("mercury.notif.postShadowEnd.title", value: "Shadow Period Ends", comment: "Notification title for post-shadow end")
+    static let mercuryNotifPostShadowEndBody = NSLocalizedString("mercury.notif.postShadowEnd.body", value: "Mercury fully clears the shadow. The path ahead is open.", comment: "Notification body for post-shadow end")
+
     // MARK: - Subscription
     static let subscriptionErrorVerification = NSLocalizedString("subscription.error.verification", comment: "Error message when a StoreKit transaction fails verification")
 

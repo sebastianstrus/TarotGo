@@ -108,9 +108,9 @@ private struct CosmicOrbitMenu: View {
 
                 TimelineView(.animation) { ctx in
                     let t = ctx.date.timeIntervalSinceReferenceDate
-                    // Five nodes spaced evenly around the ellipse (72° apart).
+                    // Six nodes spaced evenly around the ellipse (60° apart).
                     let basePhase = 0.0
-                    let step = 2 * Double.pi / 5
+                    let step = 2 * Double.pi / 6
 
                     ZStack {
                         orbitingNode(
@@ -178,6 +178,20 @@ private struct CosmicOrbitMenu: View {
                             time: t,
                             animationDelay: 1.4
                         )
+
+                        orbitingNode(
+                            icon: "arrow.triangle.2.circlepath",
+                            title: L10n.mercuryTitle,
+                            destination: AnyView(MercuryRetrogradeView()),
+                            center: center,
+                            bgWidth: bgWidth,
+                            bgHeight: bgHeight,
+                            orbit: sharedOrbit,
+                            startPhase: basePhase + step * 5,
+                            time: t,
+                            animationDelay: 1.75,
+                            isSystemImage: true
+                        )
                     }
                     .frame(width: w, height: h)
                 }
@@ -200,7 +214,8 @@ private struct CosmicOrbitMenu: View {
         startPhase: Double,
         time: TimeInterval,
         animationDelay: Double,
-        lockedTap: (() -> Void)? = nil
+        lockedTap: (() -> Void)? = nil,
+        isSystemImage: Bool = false
     ) -> some View {
         let angle = startPhase + 2 * Double.pi * time / orbit.period
         let cosA = CGFloat(cos(angle))
@@ -220,14 +235,14 @@ private struct CosmicOrbitMenu: View {
                     SoundService.shared.play(.whoosh, volume: 0.4)
                     lockedTap()
                 } label: {
-                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay, isPremiumLocked: true)
+                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay, isPremiumLocked: true, isSystemImage: isSystemImage)
                 }
                 .buttonStyle(CosmicNodeButtonStyle())
             } else {
                 NavigationLink {
                     destination
                 } label: {
-                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay)
+                    CosmicOrbitNode(icon: icon, title: title, animationDelay: animationDelay, isSystemImage: isSystemImage)
                 }
                 .buttonStyle(CosmicNodeButtonStyle())
                 .simultaneousGesture(TapGesture().onEnded {
@@ -272,6 +287,7 @@ private struct CosmicOrbitNode: View {
     let title: String
     let animationDelay: Double
     var isPremiumLocked: Bool = false
+    var isSystemImage: Bool = false
 
     @State private var glow: Bool = false
     @State private var iconSpin: Bool = false
@@ -320,14 +336,23 @@ private struct CosmicOrbitNode: View {
                 )
 
 
-            Image(icon)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 32, height: 32)
-                .rotation3DEffect(
-                    .degrees(iconSpin ? 6 : -6),
-                    axis: (x: 1, y: 0.3, z: 0)
-                )
+            Group {
+                if isSystemImage {
+                    Image(systemName: icon)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundStyle(AppTheme.goldGradient)
+                } else {
+                    Image(icon)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+            }
+            .frame(width: 32, height: 32)
+            .rotation3DEffect(
+                .degrees(iconSpin ? 6 : -6),
+                axis: (x: 1, y: 0.3, z: 0)
+            )
 
 
             // Curved capsule label centered on ring center

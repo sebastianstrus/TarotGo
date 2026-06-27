@@ -87,4 +87,75 @@ class NotificationService: ObservableObject {
     func clearBadge() {
         UNUserNotificationCenter.current().setBadgeCount(0)
     }
+
+    // MARK: - Mercury Retrograde
+
+    private static let mercuryNotificationPrefix = "mercury_retrograde_"
+
+    /// Schedules notifications for every Mercury retrograde milestone (pre-shadow start,
+    /// retrograde start, retrograde end, post-shadow end) for all known upcoming periods.
+    func scheduleMercuryRetrogradeNotifications() async {
+        cancelMercuryRetrogradeNotifications()
+
+        let now = Date()
+        let upcoming = MercuryRetrogradeService.shared.upcomingPeriods(from: now, count: 12)
+        let calendar = Calendar.current
+
+        for period in upcoming {
+            let events: [(date: Date, key: String, title: String, body: String)] = [
+                (period.preShadowStart, "preShadow",
+                 L10n.mercuryNotifPreShadowTitle, L10n.mercuryNotifPreShadowBody),
+                (period.retrogradeStart, "retroStart",
+                 L10n.mercuryNotifRetrogradeStartTitle, L10n.mercuryNotifRetrogradeStartBody),
+                (period.retrogradeEnd, "retroEnd",
+                 L10n.mercuryNotifRetrogradeEndTitle, L10n.mercuryNotifRetrogradeEndBody),
+                (period.postShadowEnd, "postShadowEnd",
+                 L10n.mercuryNotifPostShadowEndTitle, L10n.mercuryNotifPostShadowEndBody)
+            ]
+
+            for event in events {
+                guard event.date > now else { continue }
+
+                var triggerComponents = calendar.dateComponents(
+                    [.year, .month, .day], from: event.date
+                )
+                triggerComponents.hour = 9
+                triggerComponents.minute = 0
+
+                let content = UNMutableNotificationContent()
+                content.title = event.title
+                content.body = event.body
+                content.sound = UNNotificationSound(named: UNNotificationSoundName("notification.caf"))
+                content.userInfo = ["type": "mercury_retrograde"]
+
+                let trigger = UNCalendarNotificationTrigger(
+                    dateMatching: triggerComponents, repeats: false
+                )
+
+                let identifier = "\(Self.mercuryNotificationPrefix)\(period.id.uuidString)_\(event.key)"
+                let request = UNNotificationRequest(
+                    identifier: identifier,
+                    content: content,
+                    trigger: trigger
+                )
+
+                do {
+                    try await UNUserNotificationCenter.current().add(request)
+                } catch {
+                    print("Failed to schedule mercury notification: \(error)")
+                }
+            }
+        }
+    }
+
+    func cancelMercuryRetrogradeNotifications() {
+        UNUserNotificationCenter.current().getPendingNotificationRequests { requests in
+            let ids = requests
+                .map(\.identifier)
+                .filter { $0.hasPrefix(Self.mercuryNotificationPrefix) }
+            if !ids.isEmpty {
+                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ids)
+            }
+        }
+    }
 }

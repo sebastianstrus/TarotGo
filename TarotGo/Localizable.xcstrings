@@ -255339,6 +255339,798 @@
         }
       }
     },
+    "mercury.addBirthDateForImpact" : {
+      "comment" : "Prompt to add birth date for personalized impact",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add your birth date in Settings to see how this retrograde affects your sign."
+          }
+        }
+      }
+    },
+    "mercury.daysUntilEnd" : {
+      "comment" : "Days remaining until Mercury goes direct",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "days until direct"
+          }
+        }
+      }
+    },
+    "mercury.daysUntilPostShadowEnd" : {
+      "comment" : "Days remaining until post-shadow ends",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "days until shadow ends"
+          }
+        }
+      }
+    },
+    "mercury.daysUntilPreShadow" : {
+      "comment" : "Days until next pre-shadow begins",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "days until shadow begins"
+          }
+        }
+      }
+    },
+    "mercury.daysUntilStart" : {
+      "comment" : "Days remaining until retrograde begins",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "days until retrograde"
+          }
+        }
+      }
+    },
+    "mercury.do.direct.1" : {
+      "comment" : "Direct do 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Launch new projects and sign contracts with confidence."
+          }
+        }
+      }
+    },
+    "mercury.do.direct.2" : {
+      "comment" : "Direct do 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Communicate boldly — your message will land clearly."
+          }
+        }
+      }
+    },
+    "mercury.do.direct.3" : {
+      "comment" : "Direct do 3",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Embrace travel, learning, and forward momentum."
+          }
+        }
+      }
+    },
+    "mercury.do.postShadow.1" : {
+      "comment" : "Post-shadow do 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Apply the lessons learned during retrograde."
+          }
+        }
+      }
+    },
+    "mercury.do.postShadow.2" : {
+      "comment" : "Post-shadow do 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Tie up loose ends and finalize decisions postponed during retrograde."
+          }
+        }
+      }
+    },
+    "mercury.do.postShadow.3" : {
+      "comment" : "Post-shadow do 3",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Begin gently re-launching plans that were put on hold."
+          }
+        }
+      }
+    },
+    "mercury.do.preShadow.1" : {
+      "comment" : "Pre-shadow do 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Notice recurring themes — they will return during retrograde."
+          }
+        }
+      }
+    },
+    "mercury.do.preShadow.2" : {
+      "comment" : "Pre-shadow do 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Back up important files and double-check travel plans."
+          }
+        }
+      }
+    },
+    "mercury.do.preShadow.3" : {
+      "comment" : "Pre-shadow do 3",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Finish projects you don't want to revisit in the coming weeks."
+          }
+        }
+      }
+    },
+    "mercury.do.retrograde.1" : {
+      "comment" : "Retrograde do 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Review, revise, and refine existing work."
+          }
+        }
+      }
+    },
+    "mercury.do.retrograde.2" : {
+      "comment" : "Retrograde do 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reconnect with old friends and unfinished conversations."
+          }
+        }
+      }
+    },
+    "mercury.do.retrograde.3" : {
+      "comment" : "Retrograde do 3",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reflect deeply — journal, meditate, and listen inward."
+          }
+        }
+      }
+    },
+    "mercury.do.retrograde.4" : {
+      "comment" : "Retrograde do 4",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Slow down. Read instructions twice. Speak with care."
+          }
+        }
+      }
+    },
+    "mercury.dont.direct.1" : {
+      "comment" : "Direct dont 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Don't postpone decisions waiting for a 'better' moment."
+          }
+        }
+      }
+    },
+    "mercury.dont.direct.2" : {
+      "comment" : "Direct dont 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Don't blame Mercury for ordinary miscommunications."
+          }
+        }
+      }
+    },
+    "mercury.dont.postShadow.1" : {
+      "comment" : "Post-shadow dont 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Don't rush forward before integrating retrograde lessons."
+          }
+        }
+      }
+    },
+    "mercury.dont.postShadow.2" : {
+      "comment" : "Post-shadow dont 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Avoid making the same mistakes the retrograde just highlighted."
+          }
+        }
+      }
+    },
+    "mercury.dont.preShadow.1" : {
+      "comment" : "Pre-shadow dont 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Avoid rushing major contracts you won't be able to revisit."
+          }
+        }
+      }
+    },
+    "mercury.dont.preShadow.2" : {
+      "comment" : "Pre-shadow dont 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Don't ignore the early signals of returning themes."
+          }
+        }
+      }
+    },
+    "mercury.dont.preShadow.3" : {
+      "comment" : "Pre-shadow dont 3",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Postpone buying expensive electronics if you can."
+          }
+        }
+      }
+    },
+    "mercury.dont.retrograde.1" : {
+      "comment" : "Retrograde dont 1",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Avoid signing major contracts or making irreversible commitments."
+          }
+        }
+      }
+    },
+    "mercury.dont.retrograde.2" : {
+      "comment" : "Retrograde dont 2",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Don't buy new electronics, cars, or communication devices."
+          }
+        }
+      }
+    },
+    "mercury.dont.retrograde.3" : {
+      "comment" : "Retrograde dont 3",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Resist starting brand-new projects from scratch."
+          }
+        }
+      }
+    },
+    "mercury.dont.retrograde.4" : {
+      "comment" : "Retrograde dont 4",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Don't assume your message was received — confirm twice."
+          }
+        }
+      }
+    },
+    "mercury.donts" : {
+      "comment" : "Don'ts list title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "What to Avoid"
+          }
+        }
+      }
+    },
+    "mercury.dos" : {
+      "comment" : "Do's list title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "What to Embrace"
+          }
+        }
+      }
+    },
+    "mercury.impact.adjacent" : {
+      "comment" : "Impact when retrograde is in adjacent sign",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Themes around finances, values, secrets, or hidden matters surface. A quiet, introspective period — handle resources mindfully."
+          }
+        }
+      }
+    },
+    "mercury.impact.inconjunct" : {
+      "comment" : "Impact when retrograde is inconjunct user's sign",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Daily routines, health, or work logistics need adjustment. Small recalibrations now prevent bigger disruptions later."
+          }
+        }
+      }
+    },
+    "mercury.impact.opposite" : {
+      "comment" : "Impact when retrograde opposes user's sign",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Relationships, partnerships, and one-on-one dynamics come into focus. Past connections may reappear — for closure or rekindling."
+          }
+        }
+      }
+    },
+    "mercury.impact.self" : {
+      "comment" : "Impact when retrograde is in user's own sign",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury retrogrades through your sign — your communication style, identity, and self-expression are under review. Slow down and listen before you speak."
+          }
+        }
+      }
+    },
+    "mercury.impact.sextile" : {
+      "comment" : "Impact when retrograde sextiles user's sign",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "A supportive retrograde for you. Friendships, siblings, and casual contacts bring helpful information. Conversations open new doors."
+          }
+        }
+      }
+    },
+    "mercury.impact.square" : {
+      "comment" : "Impact when retrograde squares user's sign",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Tension between home and career, or private and public life. Old patterns demand attention before you can move forward."
+          }
+        }
+      }
+    },
+    "mercury.impact.trine" : {
+      "comment" : "Impact when retrograde trines user's sign",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "A flowing, creative retrograde for you. Travel plans may shift, but learning, romance, or self-expression deepen in beautiful ways."
+          }
+        }
+      }
+    },
+    "mercury.inSign" : {
+      "comment" : "Connector between Mercury and zodiac sign, e.g. Mercury in Gemini",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "in"
+          }
+        }
+      }
+    },
+    "mercury.notif.postShadowEnd.body" : {
+      "comment" : "Notification body for post-shadow end",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury fully clears the shadow. The path ahead is open."
+          }
+        }
+      }
+    },
+    "mercury.notif.postShadowEnd.title" : {
+      "comment" : "Notification title for post-shadow end",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Shadow Period Ends"
+          }
+        }
+      }
+    },
+    "mercury.notif.preShadow.body" : {
+      "comment" : "Notification body for pre-shadow start",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The retrograde window opens. Watch for themes that will resurface."
+          }
+        }
+      }
+    },
+    "mercury.notif.preShadow.title" : {
+      "comment" : "Notification title for pre-shadow start",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury Enters Shadow"
+          }
+        }
+      }
+    },
+    "mercury.notif.retrogradeEnd.body" : {
+      "comment" : "Notification body for retrograde end",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury stations direct. Momentum returns — but stay gentle through post-shadow."
+          }
+        }
+      }
+    },
+    "mercury.notif.retrogradeEnd.title" : {
+      "comment" : "Notification title for retrograde end",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury Goes Direct"
+          }
+        }
+      }
+    },
+    "mercury.notif.retrogradeStart.body" : {
+      "comment" : "Notification body for retrograde start",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Time to slow down, reflect, and review. Tap to see what to embrace and avoid."
+          }
+        }
+      }
+    },
+    "mercury.notif.retrogradeStart.title" : {
+      "comment" : "Notification title for retrograde start",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury Goes Retrograde"
+          }
+        }
+      }
+    },
+    "mercury.notifications" : {
+      "comment" : "Notifications toggle title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury Retrograde Alerts"
+          }
+        }
+      }
+    },
+    "mercury.notifications.desc" : {
+      "comment" : "Notifications description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Get notified when Mercury retrograde or shadow periods begin and end."
+          }
+        }
+      }
+    },
+    "mercury.phase.direct" : {
+      "comment" : "Phase: Mercury moving direct",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Direct Motion"
+          }
+        }
+      }
+    },
+    "mercury.phase.direct.desc" : {
+      "comment" : "Description for direct phase",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury moves forward through the zodiac. Communication, travel, and signing contracts flow smoothly. A great time to launch new projects."
+          }
+        }
+      }
+    },
+    "mercury.phase.postShadow" : {
+      "comment" : "Phase: post-shadow after retrograde",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Post-Shadow"
+          }
+        }
+      }
+    },
+    "mercury.phase.postShadow.desc" : {
+      "comment" : "Description for post-shadow phase",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury moves forward again but retraces the retrograde degrees. Loose ends find resolution. Apply lessons learned from the retrograde period."
+          }
+        }
+      }
+    },
+    "mercury.phase.preShadow" : {
+      "comment" : "Phase: pre-shadow before retrograde",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Pre-Shadow"
+          }
+        }
+      }
+    },
+    "mercury.phase.preShadow.desc" : {
+      "comment" : "Description for pre-shadow phase",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury enters the degrees where it will turn retrograde. Themes that will return during retrograde begin to surface. Pay attention to early signals."
+          }
+        }
+      }
+    },
+    "mercury.phase.retrograde" : {
+      "comment" : "Phase: full retrograde",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Retrograde"
+          }
+        }
+      }
+    },
+    "mercury.phase.retrograde.desc" : {
+      "comment" : "Description for retrograde phase",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury appears to move backwards. A potent time for review, reflection, and reconnection — but be careful with new commitments, electronics, and travel."
+          }
+        }
+      }
+    },
+    "mercury.shadowTimeline" : {
+      "comment" : "Shadow timeline section title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Shadow Timeline"
+          }
+        }
+      }
+    },
+    "mercury.status.active" : {
+      "comment" : "Status when Mercury is currently retrograde",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury is Retrograde"
+          }
+        }
+      }
+    },
+    "mercury.status.direct" : {
+      "comment" : "Status when Mercury is currently direct",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury is Direct"
+          }
+        }
+      }
+    },
+    "mercury.status.postShadow" : {
+      "comment" : "Status during post-shadow",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Post-Shadow Phase"
+          }
+        }
+      }
+    },
+    "mercury.status.preShadow" : {
+      "comment" : "Status during pre-shadow",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Pre-Shadow Phase"
+          }
+        }
+      }
+    },
+    "mercury.subtitle" : {
+      "comment" : "Mercury Retrograde subtitle",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cosmic communication weather"
+          }
+        }
+      }
+    },
+    "mercury.title" : {
+      "comment" : "Mercury Retrograde feature title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury Retrograde"
+          }
+        }
+      }
+    },
+    "mercury.upcoming" : {
+      "comment" : "Upcoming retrogrades list title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Upcoming Retrogrades"
+          }
+        }
+      }
+    },
+    "mercury.yourSignImpact" : {
+      "comment" : "Personal impact section title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Impact on Your Sign"
+          }
+        }
+      }
+    },
     "moonPhase.firstQuarter" : {
       "comment" : "First Quarter",
       "localizations" : {
