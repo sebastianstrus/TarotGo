@@ -317814,17 +317814,77 @@
       }
     },
     "pdf.compatibility.heartSeparator" : {
-      "comment" : "Separator between two zodiac signs in the PDF",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "♥"
+        "comment" : "Separator between two zodiac signs in the PDF",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "♥"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "♥"
+            }
           }
         }
-      }
-    },
+      },
     "pdf.compatibility.title" : {
       "comment" : "Cosmic Compatibility PDF title",
       "extractionState" : "manual",
@@ -331804,17 +331864,77 @@
       }
     },
     "subscription.error.verification" : {
-      "comment" : "Error shown when a StoreKit transaction fails verification",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Transaction verification failed."
+        "comment" : "Error shown when a StoreKit transaction fails verification",
+        "extractionState" : "manual",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Die Transaktionsverifizierung ist fehlgeschlagen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Transaction verification failed."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Falló la verificación de la transacción."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "La vérification de la transaction a échoué."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "La verifica della transazione non è riuscita."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "トランザクションの検証に失敗しました。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Transaksjonsverifisering mislyktes."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Weryfikacja transakcji nie powiodła się."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Falha na verificação da transação."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Transaktionsverifiering misslyckades."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Перевірка транзакції не вдалася."
+            }
           }
         }
-      }
-    },
+      },
     "suit.cups" : {
       "extractionState" : "manual",
       "localizations" : {
