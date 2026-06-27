@@ -269704,377 +269704,2237 @@
       }
     },
     "learnMercury.history.subtitle" : {
-      "comment" : "Subtitle of the navigation link to the history view",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "From Babylonian sky-watchers to modern astrology"
+        "comment" : "Subtitle of the navigation link to the history view",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Von babylonischen Himmelsbeobachtern zur modernen Astrologie"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "From Babylonian sky-watchers to modern astrology"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Desde los observadores del cielo babilónicos hasta la astrología moderna"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Des observateurs du ciel babyloniens à l'astrologie moderne"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dagli osservatori del cielo babilonesi all'astrologia moderna"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "バビロニアの空の観察者から現代占星術まで"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Fra babylonske himmel-iaktakere til moderne astrologi"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Od babilońskich obserwatorów nieba do współczesnej astrologii"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dos observadores do céu babilônicos à astrologia moderna"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Från babyloniska himmelsobservatörer till modern astrologi"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Від вавилонських спостерігачів неба до сучасної астрології"
+            }
           }
         }
-      }
-    },
-    "learnMercury.history.title" : {
-      "comment" : "Title of the navigation link to the history view",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "History of Mercury Retrograde"
+      },
+      "learnMercury.history.title" : {
+        "comment" : "Title of the navigation link to the history view",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Geschichte des Merkur-Rücklaufs"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "History of Mercury Retrograde"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Historia de Mercurio Retrógrado"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Histoire de Mercure Rétrograde"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Storia di Mercurio Retrogrado"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星逆行の歴史"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Historien om Merkur Retrograd"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Historia Retrogradacji Merkurego"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "História de Mercúrio Retrógrado"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Historien om Merkurius Retrograd"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Історія ретроградного Меркурія"
+            }
           }
         }
-      }
-    },
-    "learnMercury.myth.1.text" : {
-      "comment" : "Myth 1 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reality: Retrograde is excellent for anything beginning with 're-' — reconnecting, revising, returning, finishing. Life does not pause; it just rewards a different kind of attention."
+      },
+      "learnMercury.myth.1.text" : {
+        "comment" : "Myth 1 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realität: Der Rücklauf ist hervorragend für alles, was mit 'über-' oder 'neu-' beginnt — Überdenken, Überarbeiten, Zurückkehren, Beenden. Das Leben pausiert nicht; es belohnt nur eine andere Art von Aufmerksamkeit."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Reality: Retrograde is excellent for anything beginning with 're-' — reconnecting, revising, returning, finishing. Life does not pause; it just rewards a different kind of attention."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realidad: El retrógrado es excelente para todo lo que comienza con 're-' — reconectar, revisar, regresar, terminar. La vida no se detiene; solo recompensa un tipo diferente de atención."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Réalité : Le rétrograde est excellent pour tout ce qui commence par 're-' — reconnecter, réviser, revenir, terminer. La vie ne s'arrête pas ; elle récompense simplement un type d'attention différent."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realtà: Il retrogrado è eccellente per tutto ciò che inizia con 'ri-' — riconnettersi, rivedere, ritornare, finire. La vita non si ferma; premia solo un diverso tipo di attenzione."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "現実：逆行は『再』で始まるすべてのこと——再会、改訂、帰還、終了に最適です。人生は停止しません。ただ異なる種類の注意に報いるだけです。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realitet: Retrograd er utmerket for alt som begynner med 're-' — gjenopprette, revidere, returnere, avslutte. Livet stopper ikke; det belønner bare en annen type oppmerksomhet."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Rzeczywistość: Retrogradacja jest doskonała dla wszystkiego, co zaczyna się od 'prze-' — ponowne łączenie, poprawianie, powracanie, kończenie. Życie nie zatrzymuje się; po prostu nagradza inny rodzaj uwagi."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realidade: O retrógrado é excelente para qualquer coisa que comece com 're-' — reconectar, revisar, retornar, terminar. A vida não pausa; ela apenas recompensa um tipo diferente de atenção."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Verklighet: Retrograd är utmärkt för allt som börjar med 'om-' — återansluta, omarbeta, återvända, avsluta. Livet pausar inte; det belönar bara en annan typ av uppmärksamhet."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Реальність: Ретроградність чудова для всього, що починається з 'пере-' — перепідключення, перегляд, повернення, завершення. Життя не зупиняється; воно просто винагороджує інший вид уваги."
+            }
           }
         }
-      }
-    },
-    "learnMercury.myth.1.title" : {
-      "comment" : "Myth 1 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Myth: Nothing good can happen during retrograde"
+      },
+      "learnMercury.myth.1.title" : {
+        "comment" : "Myth 1 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mythos: Während des Rücklaufs kann nichts Gutes passieren"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Myth: Nothing good can happen during retrograde"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: Nada bueno puede suceder durante el retrógrado"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mythe : Rien de bon ne peut arriver pendant le rétrograde"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: Non può succedere nulla di buono durante il retrogrado"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "迷信：逆行中は良いことは何も起こらない"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Myte: Ingenting godt kan skje under retrograd"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mit: Podczas retrogradacji nie może wydarzyć się nic dobrego"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: Nada de bom pode acontecer durante o retrógrado"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Myt: Inget bra kan hända under retrograd"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Міф: Під час ретроградності не може статися нічого хорошого"
+            }
           }
         }
-      }
-    },
-    "learnMercury.myth.2.text" : {
-      "comment" : "Myth 2 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reality: Major irreversible commitments are best timed for after retrograde when possible. But life continues — if you must sign, read the fine print twice, and build in flexibility."
+      },
+      "learnMercury.myth.2.text" : {
+        "comment" : "Myth 2 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realität: Große, irreversible Verpflichtungen sollten möglichst nach dem Rücklauf getätigt werden. Aber das Leben geht weiter – wenn Sie unterschreiben müssen, lesen Sie das Kleingedruckte zweimal und bauen Sie Flexibilität ein."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Reality: Major irreversible commitments are best timed for after retrograde when possible. But life continues — if you must sign, read the fine print twice, and build in flexibility."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realidad: Los compromisos importantes e irreversibles es mejor programarlos después del retrógrado cuando sea posible. Pero la vida continúa — si debes firmar, lee la letra pequeña dos veces y genera flexibilidad."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Réalité : Les engagements majeurs et irréversibles sont mieux programmés après le rétrograde lorsque c'est possible. Mais la vie continue — si vous devez signer, lisez les petits caractères deux fois et intégrez de la flexibilité."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realtà: Gli impegni importanti e irreversibili è meglio programmarli dopo il retrogrado quando possibile. Ma la vita continua — se devi firmare, leggi le clausole due volte e crea flessibilità."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "現実：大きな不可逆的な約束は、可能であれば逆行後にタイミングを合わせるのが最善です。しかし人生は続きます——どうしても署名しなければならない場合は、細かい文字を二度読み、柔軟性を組み込みましょう。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realitet: Store irreversible forpliktelser er best å tidsbestemme til etter retrograd når mulig. Men livet fortsetter — hvis du må signere, les det lille trykket to ganger, og bygg inn fleksibilitet."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Rzeczywistość: Poważne, nieodwracalne zobowiązania najlepiej jest planować po retrogradacji, jeśli to możliwe. Ale życie toczy się dalej — jeśli musisz podpisać, przeczytaj drobny druk dwa razy i zapewnij elastyczność."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realidade: Compromissos importantes e irreversíveis são melhor agendados após o retrógrado, quando possível. Mas a vida continua — se você precisar assinar, leia as letras miúdas duas vezes e crie flexibilidade."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Verklighet: Stora oåterkalleliga åtaganden är bäst att tidsätta efter retrograd när möjligt. Men livet fortsätter — om du måste skriva under, läs det finstilta två gånger och bygg in flexibilitet."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Реальність: Великі незворотні зобов'язання найкраще планувати після ретроградності, коли це можливо. Але життя триває — якщо ви повинні підписати, прочитайте дрібний шрифт двічі та закладіть гнучкість."
+            }
           }
         }
-      }
-    },
-    "learnMercury.myth.2.title" : {
-      "comment" : "Myth 2 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Myth: You should never sign anything"
+      },
+      "learnMercury.myth.2.title" : {
+        "comment" : "Myth 2 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mythos: Man sollte niemals etwas unterschreiben"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Myth: You should never sign anything"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: Nunca deberías firmar nada"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mythe : Vous ne devriez jamais rien signer"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: Non dovresti mai firmare nulla"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "迷信：決して何も署名してはいけない"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Myte: Du bør aldri signere noe"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mit: Nigdy nie powinieneś niczego podpisywać"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: Você nunca deve assinar nada"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Myt: Du bör aldrig skriva på någonting"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Міф: Ви ніколи не повинні нічого підписувати"
+            }
           }
         }
-      }
-    },
-    "learnMercury.myth.3.text" : {
-      "comment" : "Myth 3 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reality: Plenty of ordinary chaos happens outside retrograde. Use the window for self-reflection, not as a scapegoat for unrelated frustrations."
+      },
+      "learnMercury.myth.3.text" : {
+        "comment" : "Myth 3 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realität: Außerhalb des Rücklaufs passiert jede Menge gewöhnliches Chaos. Nutzen Sie das Fenster zur Selbstreflexion, nicht als Sündenbock für unabhängige Frustrationen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Reality: Plenty of ordinary chaos happens outside retrograde. Use the window for self-reflection, not as a scapegoat for unrelated frustrations."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realidad: Mucho caos ordinario sucede fuera del retrógrado. Usa la ventana para la autorreflexión, no como un chivo expiatorio para frustraciones no relacionadas."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Réalité : Beaucoup de chaos ordinaire se produit en dehors du rétrograde. Utilisez cette fenêtre pour l'autoréflexion, pas comme un bouc émissaire pour des frustrations sans rapport."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realtà: Molto caos ordinario accade al di fuori del retrogrado. Usa la finestra per l'autoriflessione, non come capro espiatorio per frustrazioni non correlate."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "現実：多くの普通の混乱は逆行外で発生します。この機会を自己反省のために使い、無関係なフラストレーションのスケープゴートとして使わないでください。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realitet: Mye vanlig kaos skjer utenfor retrograd. Bruk vinduet for selvrefleksjon, ikke som syndebukk for urelaterte frustrasjoner."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Rzeczywistość: Wiele zwykłego chaosu ma miejsce poza retrogradacją. Użyj tego okna do autorefleksji, nie jako kozła ofiarnego dla niezwiązanych frustracji."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Realidade: Muito caos comum acontece fora do retrógrado. Use a janela para autorreflexão, não como bode expiatório para frustrações não relacionadas."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Verklighet: Mycket vanligt kaos händer utanför retrograd. Använd fönstret för självreflektion, inte som syndabock för orelaterade frustrationer."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Реальність: Багато звичайного хаосу відбувається поза ретроградністю. Використовуйте це вікно для саморефлексії, а не як цапа-відбувайла для не пов'язаних з цим розчарувань."
+            }
           }
         }
-      }
-    },
-    "learnMercury.myth.3.title" : {
-      "comment" : "Myth 3 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Myth: It is the cause of every problem"
+      },
+      "learnMercury.myth.3.title" : {
+        "comment" : "Myth 3 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mythos: Es ist die Ursache für jedes Problem"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Myth: It is the cause of every problem"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: Es la causa de todos los problemas"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mythe : C'est la cause de tous les problèmes"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: È la causa di ogni problema"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "迷信：すべての問題の原因である"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Myte: Det er årsaken til alle problemer"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mit: Jest przyczyną każdego problemu"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mito: É a causa de todos os problemas"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Myt: Det är orsaken till alla problem"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Міф: Це причина кожної проблеми"
+            }
           }
         }
-      }
-    },
-    "learnMercury.myths.intro" : {
-      "comment" : "Myths intro",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Mercury retrograde is one of the most misunderstood astrological events. A few clarifications go a long way."
+      },
+      "learnMercury.myths.intro" : {
+        "comment" : "Myths intro",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Der Merkur-Rücklauf ist eines der am meisten missverstandenen astrologischen Ereignisse. Ein paar Klarstellungen helfen ungemein."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Mercury retrograde is one of the most misunderstood astrological events. A few clarifications go a long way."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio retrógrado es uno de los eventos astrológicos más malinterpretados. Algunas aclaraciones ayudan mucho."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercure rétrograde est l'un des événements astrologiques les plus mal compris. Quelques éclaircissements vont très loin."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio retrogrado è uno degli eventi astrologici più fraintesi. Alcune precisazioni aiutano molto."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星逆行は最も誤解されている占星術的イベントの一つです。いくつかの明確化が大いに役立ちます。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur retrograd er en av de mest misforståtte astrologiske hendelsene. Noen få avklaringer hjelper mye."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrogradacja Merkurego to jedno z najbardziej niezrozumianych wydarzeń astrologicznych. Kilka wyjaśnień pomaga bardzo."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercúrio retrógrado é um dos eventos astrológicos mais mal compreendidos. Alguns esclarecimentos ajudam muito."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkurius retrograd är en av de mest missförstådda astrologiska händelserna. Några förtydliganden hjälper mycket."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ретроградний Меркурій — одна з найбільш неправильно зрозумілих астрологічних подій. Кілька уточнень дуже допомагають."
+            }
           }
         }
-      }
-    },
-    "learnMercury.myths.title" : {
-      "comment" : "Section title: myths",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Common Myths"
+      },
+      "learnMercury.myths.title" : {
+        "comment" : "Section title: myths",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Verbreitete Mythen"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Common Myths"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mitos Comunes"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mythes Courants"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Miti Comuni"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "よくある迷信"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vanlige Myter"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Częste Mity"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mitos Comuns"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vanliga Myter"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Поширені міфи"
+            }
           }
         }
-      }
-    },
-    "learnMercury.phase.postShadow.text" : {
-      "comment" : "Phase 3 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Mercury moves forward again but retraces the same zodiac degrees. Loose ends find resolution. Lessons from the retrograde solidify. By the time Mercury clears the shadow, the path ahead feels noticeably clearer."
+      },
+      "learnMercury.phase.postShadow.text" : {
+        "comment" : "Phase 3 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur bewegt sich wieder vorwärts, durchläuft aber die gleichen Tierkreisgrade erneut. Lose Enden finden ihre Auflösung. Die Lektionen aus dem Rücklauf verfestigen sich. Wenn Merkur den Schatten verlassen hat, fühlt sich der Weg vor Ihnen spürbar klarer an."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Mercury moves forward again but retraces the same zodiac degrees. Loose ends find resolution. Lessons from the retrograde solidify. By the time Mercury clears the shadow, the path ahead feels noticeably clearer."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio se mueve hacia adelante nuevamente pero retrocede los mismos grados zodiacales. Los cabos sueltos encuentran resolución. Las lecciones del retrógrado se solidifican. Para cuando Mercurio despeja la sombra, el camino por delante se siente notablemente más claro."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercure avance à nouveau mais retrace les mêmes degrés du zodiaque. Les fils perdus trouvent leur résolution. Les leçons du rétrograde se solidifient. Lorsque Mercure quitte l'ombre, le chemin à venir semble nettement plus clair."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio si muove di nuovo in avanti ma ripercorre gli stessi gradi zodiacali. I fili sciolti trovano risoluzione. Le lezioni del retrogrado si solidificano. Quando Mercurio esce dall'ombra, la strada davanti a sé sembra notevolmente più chiara."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星は再び前進しますが、同じ黄道の度数を逆行してトレースします。未解決の問題は解決を見つけます。逆行からの教訓が固まります。水星が影を脱する頃には、前の道が著しく明確に感じられます。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur beveger seg fremover igjen, men sporer de samme zodiakalgradene. Løse tråder finner løsning. Lærdommene fra retrograden stivner. Innen Merkur forlater skyggen, føles veien foran merkbart klarere."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkury porusza się ponownie do przodu, ale cofa się przez te same stopnie zodiaku. Luźne końce znajdują rozwiązanie. Lekcje z retrogradacji utrwalają się. Zanim Merkury opuści cień, droga przed tobą wydaje się wyraźnie jaśniejsza."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercúrio se move para frente novamente, mas percorre os mesmos graus zodiacais. Pontas soltas encontram resolução. As lições do retrógrado se solidificam. Quando Mercúrio sai da sombra, o caminho à frente parece notavelmente mais claro."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkurius rör sig framåt igen men spårar samma zodiakgrader. Lösa ändar finner lösning. Lärdomarna från retrograden stelnar. När Merkurius lämnar skuggan känns vägen framåt märkbart klarare."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Меркурій знову рухається вперед, але проходить ті самі градуси зодіаку. Невирішені питання знаходять завершення. Уроки ретроградності закріплюються. До того часу, як Меркурій залишає тінь, шлях вперед відчувається помітно яснішим."
+            }
           }
         }
-      }
-    },
-    "learnMercury.phase.postShadow.title" : {
-      "comment" : "Phase 3 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Post-Shadow (~2 weeks after)"
+      },
+      "learnMercury.phase.postShadow.title" : {
+        "comment" : "Phase 3 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Nachschatten (~2 Wochen danach)"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Post-Shadow (~2 weeks after)"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Post-Sombra (~2 semanas después)"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Post-ombre (~2 semaines après)"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Post-ombra (~2 settimane dopo)"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "影の後（約2週間後）"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Etter-skygge (~2 uker etter)"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Po-cieniu (~2 tygodnie po)"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Pós-Sombra (~2 semanas depois)"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Efter-skugga (~2 veckor efter)"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Після-тінь (~2 тижні після)"
+            }
           }
         }
-      }
-    },
-    "learnMercury.phase.preShadow.text" : {
-      "comment" : "Phase 1 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Mercury enters the degrees of the zodiac where it will later turn retrograde. Themes that will surface during retrograde begin to whisper. Pay attention to small disruptions, hints, and recurring topics — they often preview the lessons ahead."
+      },
+      "learnMercury.phase.preShadow.text" : {
+        "comment" : "Phase 1 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur tritt in die Tierkreisgrade ein, in denen er später rückläufig wird. Themen, die während des Rücklaufs auftauchen werden, beginnen zu flüstern. Achten Sie auf kleine Störungen, Andeutungen und wiederkehrende Themen – sie kündigen oft die kommenden Lektionen an."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Mercury enters the degrees of the zodiac where it will later turn retrograde. Themes that will surface during retrograde begin to whisper. Pay attention to small disruptions, hints, and recurring topics — they often preview the lessons ahead."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio entra en los grados del zodíaco donde más tarde se volverá retrógrado. Los temas que surgirán durante el retrógrado comienzan a susurrar. Presta atención a pequeñas interrupciones, pistas y temas recurrentes — a menudo anticipan las lecciones venideras."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercure entre dans les degrés du zodiaque où il deviendra plus tard rétrograde. Les thèmes qui apparaîtront pendant le rétrograde commencent à chuchoter. Faites attention aux petites perturbations, indices et sujets récurrents — ils préfigurent souvent les leçons à venir."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio entra nei gradi dello zodiaco in cui successivamente diventerà retrogrado. I temi che emergeranno durante il retrogrado iniziano a sussurrare. Presta attenzione a piccoli disagi, indizi e argomenti ricorrenti — spesso prefigurano le lezioni future."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星は後で逆行する黄道の度数に入ります。逆行中に表面化するテーマがささやき始めます。小さな混乱、ヒント、繰り返されるトピックに注意を払ってください——それらはしばしば今後の教訓を予告しています。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur går inn i de gradene av dyrekretsen hvor den senere vil bli retrograd. Temaer som vil dukke opp under retrograden begynner å hviske. Vær oppmerksom på små forstyrrelser, hint og tilbakevendende emner — de forhåndsviser ofte leksjonene som kommer."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkury wchodzi w stopnie zodiaku, w których później będzie retrogradował. Tematy, które pojawią się podczas retrogradacji, zaczynają szeptać. Zwracaj uwagę na małe zakłócenia, wskazówki i powtarzające się tematy — często zapowiadają one nadchodzące lekcje."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercúrio entra nos graus do zodíaco onde mais tarde se tornará retrógrado. Os temas que surgirão durante o retrógrado começam a sussurrar. Preste atenção a pequenas interrupções, dicas e tópicos recorrentes — eles frequentemente antecipam as lições futuras."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkurius går in i de zodiakgrader där den senare kommer att bli retrograd. Teman som kommer att dyka upp under retrograden börjar viska. Var uppmärksam på små störningar, ledtrådar och återkommande ämnen — de förhandsvisar ofta de kommande lektionerna."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Меркурій входить у градуси зодіаку, де згодом стане ретроградним. Теми, які виникнуть під час ретроградності, починають нашіптувати. Зверніть увагу на невеликі збої, підказки та повторювані теми — вони часто передвіщають майбутні уроки."
+            }
           }
         }
-      }
-    },
-    "learnMercury.phase.preShadow.title" : {
-      "comment" : "Phase 1 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pre-Shadow (~2 weeks before)"
+      },
+      "learnMercury.phase.preShadow.title" : {
+        "comment" : "Phase 1 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vorschatten (~2 Wochen davor)"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Pre-Shadow (~2 weeks before)"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Pre-Sombra (~2 semanas antes)"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Pré-ombre (~2 semaines avant)"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Pre-ombra (~2 settimane prima)"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "影の前（約2週間前）"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Før-skygge (~2 uker før)"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Przed-cieniu (~2 tygodnie przed)"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Pré-Sombra (~2 semanas antes)"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Före-skugga (~2 veckor före)"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Перед-тінь (~2 тижні до)"
+            }
           }
         }
-      }
-    },
-    "learnMercury.phase.retrograde.text" : {
-      "comment" : "Phase 2 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Mercury appears to move backwards. This is the core review-and-revise window. Old conversations may return, plans may shift, and technology may misbehave. The keywords for this phase begin with 're-': review, revise, reflect, reconnect, repair, return."
+      },
+      "learnMercury.phase.retrograde.text" : {
+        "comment" : "Phase 2 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur scheint sich rückwärts zu bewegen. Dies ist das Kernfenster für Überprüfung und Überarbeitung. Alte Gespräche können zurückkehren, Pläne können sich ändern und die Technologie kann versagen. Die Schlüsselwörter für diese Phase beginnen mit 'über-', 'neu-' oder 'rück-': überdenken, überarbeiten, reflektieren, wieder verbinden, reparieren, zurückkehren."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Mercury appears to move backwards. This is the core review-and-revise window. Old conversations may return, plans may shift, and technology may misbehave. The keywords for this phase begin with 're-': review, revise, reflect, reconnect, repair, return."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio parece moverse hacia atrás. Esta es la ventana central de revisión y revisión. Las conversaciones antiguas pueden regresar, los planes pueden cambiar y la tecnología puede fallar. Las palabras clave para esta fase comienzan con 're-': revisar, revisar, reflexionar, reconectar, reparar, regresar."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercure semble reculer. C'est la fenêtre centrale de révision et de révision. Les anciennes conversations peuvent revenir, les plans peuvent changer et la technologie peut mal fonctionner. Les mots-clés pour cette phase commencent par 're-' : réviser, revoir, réfléchir, reconnecter, réparer, revenir."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio sembra muoversi all'indietro. Questa è la finestra centrale per la revisione e la rielaborazione. Vecchie conversazioni possono tornare, i piani possono cambiare e la tecnologia può comportarsi male. Le parole chiave per questa fase iniziano con 'ri-': rivedere, revisionare, riflettere, riconnettere, riparare, ritornare."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星は後方に移動しているように見えます。これがレビューと改訂の核心的な期間です。古い会話が戻り、計画が変わり、テクノロジーが誤作動を起こすかもしれません。このフェーズのキーワードは『再』で始まります：再検討、修正、反省、再会、修理、帰還。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur ser ut til å bevege seg bakover. Dette er kjernevinduet for gjennomgang og revisjon. Gamle samtaler kan komme tilbake, planer kan endre seg, og teknologi kan oppføre seg dårlig. Nøkkelordene for denne fasen begynner med 're-': gjennomgå, revidere, reflektere, gjenopprette, reparere, returnere."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkury wydaje się poruszać do tyłu. To główne okno na przegląd i poprawki. Stare rozmowy mogą powrócić, plany mogą się zmienić, a technologia może szwankować. Słowa kluczowe dla tej fazy zaczynają się od 'prze-': przeglądać, poprawiać, zastanawiać się, ponownie łączyć, naprawiać, wracać."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercúrio parece se mover para trás. Esta é a janela central de revisão e revisão. Conversas antigas podem retornar, planos podem mudar e a tecnologia pode falhar. As palavras-chave para esta fase começam com 're-': revisar, rever, refletir, reconectar, reparar, retornar."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkurius verkar röra sig bakåt. Detta är kärnfönstret för granskning och revidering. Gamla samtal kan återkomma, planer kan förändras och teknik kan krångla. Nyckelorden för denna fas börjar med 'om-': granska, revidera, reflektera, återansluta, reparera, återvända."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Меркурій, здається, рухається назад. Це основне вікно для перегляду та переробки. Старі розмови можуть повернутися, плани можуть змінитися, а технології можуть поводитися непередбачувано. Ключові слова для цієї фази починаються з 'пере-': переглядати, переробляти, рефлексувати, перепідключати, ремонтувати, повертатися."
+            }
           }
         }
-      }
-    },
-    "learnMercury.phase.retrograde.title" : {
-      "comment" : "Phase 2 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Retrograde (~3 weeks)"
+      },
+      "learnMercury.phase.retrograde.title" : {
+        "comment" : "Phase 2 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Rücklauf (~3 Wochen)"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Retrograde (~3 weeks)"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrógrado (~3 semanas)"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Rétrograde (~3 semaines)"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrogrado (~3 settimane)"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "逆行（約3週間）"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrograd (~3 uker)"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrogradacja (~3 tygodnie)"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrógrado (~3 semanas)"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrograd (~3 veckor)"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ретроградність (~3 тижні)"
+            }
           }
         }
-      }
-    },
-    "learnMercury.phases.intro" : {
-      "comment" : "Phases intro",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "A complete Mercury retrograde cycle spans about seven weeks. It is divided into three phases — the pre-shadow, the retrograde itself, and the post-shadow."
+      },
+      "learnMercury.phases.intro" : {
+        "comment" : "Phases intro",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ein vollständiger Merkur-Rücklauf-Zyklus erstreckt sich über etwa sieben Wochen. Er wird in drei Phasen unterteilt – den Vorschatten, den Rücklauf selbst und den Nachschatten."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "A complete Mercury retrograde cycle spans about seven weeks. It is divided into three phases — the pre-shadow, the retrograde itself, and the post-shadow."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Un ciclo completo de Mercurio retrógrado abarca unas siete semanas. Se divide en tres fases — la pre-sombra, el retrógrado en sí y la post-sombra."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Un cycle complet de Mercure rétrograde s'étend sur environ sept semaines. Il est divisé en trois phases — la pré-ombre, le rétrograde lui-même et la post-ombre."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Un ciclo completo di Mercurio retrogrado dura circa sette settimane. È diviso in tre fasi — la pre-ombra, il retrogrado stesso e la post-ombra."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "完全な水星逆行のサイクルは約7週間にわたります。それは3つのフェーズに分けられます——影の前、逆行自体、そして影の後です。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "En fullstendig Merkur retrograd-syklus varer omtrent syv uker. Den er delt inn i tre faser — før-skyggen, selve retrograden, og etter-skyggen."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Pełny cykl retrogradacji Merkurego trwa około siedmiu tygodni. Dzieli się na trzy fazy — przed-cień, samą retrogradację i po-cień."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Um ciclo completo de Mercúrio retrógrado abrange cerca de sete semanas. É dividido em três fases — a pré-sombra, o retrógrado em si e a pós-sombra."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "En komplett Merkurius retrograd-cykel sträcker sig över ungefär sju veckor. Den är uppdelad i tre faser — före-skuggan, själva retrograden och efter-skuggan."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Повний цикл ретроградного Меркурія триває близько семи тижнів. Він поділяється на три фази — перед-тінь, саму ретроградність та після-тінь."
+            }
           }
         }
-      }
-    },
-    "learnMercury.phases.title" : {
-      "comment" : "Section title: phases of retrograde",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The Three Phases"
+      },
+      "learnMercury.phases.title" : {
+        "comment" : "Section title: phases of retrograde",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Die drei Phasen"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "The Three Phases"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Las Tres Fases"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Les Trois Phases"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Le Tre Fasi"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "3つのフェーズ"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "De Tre Fasene"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Trzy Fazy"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "As Três Fases"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "De Tre Faserna"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Три фази"
+            }
           }
         }
-      }
-    },
-    "learnMercury.subtitle" : {
-      "comment" : "Subtitle for the Learn Mercury Retrograde view",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "What it is, why it matters, and how to navigate it."
+      },
+      "learnMercury.subtitle" : {
+        "comment" : "Subtitle for the Learn Mercury Retrograde view",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Was es ist, warum es wichtig ist und wie man damit umgeht."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "What it is, why it matters, and how to navigate it."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Qué es, por qué importa y cómo navegarlo."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ce que c'est, pourquoi c'est important et comment le naviguer."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Cos'è, perché è importante e come affrontarlo."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "それが何か、なぜ重要なのか、そしてどう対処するか。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hva det er, hvorfor det betyr noe, og hvordan du navigerer det."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Co to jest, dlaczego to ważne i jak sobie z tym radzić."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "O que é, por que importa e como navegá-lo."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vad det är, varför det spelar roll och hur man navigerar det."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Що це, чому це важливо та як з цим справлятися."
+            }
           }
         }
-      }
-    },
-    "learnMercury.title" : {
-      "comment" : "Title for the Learn Mercury Retrograde view",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Learn About Mercury Retrograde"
+      },
+      "learnMercury.title" : {
+        "comment" : "Title for the Learn Mercury Retrograde view",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Lernen Sie den Merkur-Rücklauf kennen"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Learn About Mercury Retrograde"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Aprende sobre Mercurio Retrógrado"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Apprendre sur Mercure Rétrograde"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Scopri Mercurio Retrogrado"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星逆行について学ぶ"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Lær om Merkur Retrograd"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dowiedz się o Retrogradacji Merkurego"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Aprenda sobre Mercúrio Retrógrado"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Lär dig om Merkurius Retrograd"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Дізнайтеся про ретроградний Меркурій"
+            }
           }
         }
-      }
-    },
-    "learnMercury.whatIs.body" : {
-      "comment" : "Body paragraph explaining apparent motion",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Astronomers call this 'apparent retrograde motion'. Astrologers, observing the same phenomenon for thousands of years, noticed that the themes ruled by Mercury — communication, contracts, travel, technology, and learning — often felt more tangled during these windows. Whether you read this symbolically or psychologically, retrograde is an invitation to slow down and revisit, rather than rush forward."
+      },
+      "learnMercury.whatIs.body" : {
+        "comment" : "Body paragraph explaining apparent motion",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomen nennen dies 'scheinbare rückläufige Bewegung'. Astrologen, die dasselbe Phänomen seit Tausenden von Jahren beobachten, stellten fest, dass die Themen, die von Merkur beherrscht werden – Kommunikation, Verträge, Reisen, Technologie und Lernen – während dieser Zeiträume oft verworrener schienen. Ob Sie dies symbolisch oder psychologisch lesen: Der Rücklauf ist eine Einladung, innezuhalten und zu überdenken, anstatt vorwärts zu stürmen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Astronomers call this 'apparent retrograde motion'. Astrologers, observing the same phenomenon for thousands of years, noticed that the themes ruled by Mercury — communication, contracts, travel, technology, and learning — often felt more tangled during these windows. Whether you read this symbolically or psychologically, retrograde is an invitation to slow down and revisit, rather than rush forward."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Los astrónomos llaman a esto 'movimiento retrógrado aparente'. Los astrólogos, observando el mismo fenómeno durante miles de años, notaron que los temas regidos por Mercurio — comunicación, contratos, viajes, tecnología y aprendizaje — a menudo se sentían más enredados durante estos períodos. Ya sea que lo leas simbólica o psicológicamente, el retrógrado es una invitación a reducir la velocidad y revisitar, en lugar de apresurarse hacia adelante."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Les astronomes appellent cela un 'mouvement rétrograde apparent'. Les astrologues, observant le même phénomène depuis des milliers d'années, ont remarqué que les thèmes régis par Mercure — communication, contrats, voyages, technologie et apprentissage — semblaient souvent plus embrouillés pendant ces périodes. Que vous lisiez cela symboliquement ou psychologiquement, le rétrograde est une invitation à ralentir et à revisiter, plutôt qu'à se précipiter vers l'avant."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Gli astronomi chiamano questo 'moto retrogrado apparente'. Gli astrologi, osservando lo stesso fenomeno per migliaia di anni, hanno notato che i temi governati da Mercurio — comunicazione, contratti, viaggi, tecnologia e apprendimento — spesso sembravano più aggrovigliati durante queste finestre. Che tu lo legga simbolicamente o psicologicamente, il retrogrado è un invito a rallentare e rivisitare, piuttosto che precipitarsi in avanti."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "天文学者はこれを『見かけ上の逆行運動』と呼びます。占星術師は何千年もの間同じ現象を観察し、水星が支配するテーマ——コミュニケーション、契約、旅行、テクノロジー、学習——がこれらの期間中により絡まり合うように感じられることに気づきました。これを象徴的にも心理的にも読むかどうかにかかわらず、逆行は前進するのではなく、減速して再訪するよう促すものです。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomer kaller dette 'tilsynelatende retrograd bevegelse'. Astrologer, som har observert det samme fenomenet i tusenvis av år, la merke til at temaene styrt av Merkur — kommunikasjon, kontrakter, reiser, teknologi og læring — ofte føltes mer sammenfiltret i disse vinduene. Enten du leser dette symbolsk eller psykologisk, er retrograd en invitasjon til å sakte ned og gjenoppta, snarere enn å skynde seg fremover."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomowie nazywają to 'pozornym ruchem wstecznym'. Astrolodzy, obserwując to samo zjawisko od tysięcy lat, zauważyli, że tematy rządzone przez Merkurego — komunikacja, kontrakty, podróże, technologia i uczenie się — często wydawały się bardziej splątane w tych oknach. Niezależnie od tego, czy czytasz to symbolicznie, czy psychologicznie, retrogradacja jest zaproszeniem do zwolnienia i powrotu, zamiast pędzenia do przodu."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Os astrônomos chamam isso de 'movimento retrógrado aparente'. Os astrólogos, observando o mesmo fenômeno por milhares de anos, notaram que os temas regidos por Mercúrio — comunicação, contratos, viagens, tecnologia e aprendizado — muitas vezes pareciam mais emaranhados durante esses períodos. Quer você leia isso simbolicamente ou psicologicamente, o retrógrado é um convite para desacelerar e revisitar, em vez de se apressar."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Astronomer kallar detta 'skenbar retrograd rörelse'. Astrologer, som har observerat samma fenomen i tusentals år, märkte att de teman som styrs av Merkurius — kommunikation, kontrakt, resor, teknik och lärande — ofta kändes mer tilltrasslade under dessa fönster. Oavsett om du läser detta symboliskt eller psykologiskt, är retrograd en inbjudan att sakta ner och återvända, snarare än att rusa framåt."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Астрономи називають це 'видимим ретроградним рухом'. Астрологи, які спостерігали те саме явище протягом тисячоліть, помітили, що теми, якими керує Меркурій — спілкування, контракти, подорожі, технології та навчання — часто здавалися більш заплутаними в ці періоди. Чи читаєте ви це символічно, чи психологічно, ретроградність — це запрошення сповільнитися та переглянути, а не поспішати вперед."
+            }
           }
         }
-      }
-    },
-    "learnMercury.whatIs.intro" : {
-      "comment" : "Intro paragraph explaining what retrograde is",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Three or four times a year, Mercury — the swift messenger of the cosmos — appears to slow down, stop, and travel backwards through the zodiac for about three weeks. This is an optical illusion: Mercury never actually reverses course. Instead, because Mercury orbits the Sun faster than Earth, it occasionally laps us. When it does, our perspective makes Mercury seem to glide backwards against the distant stars."
+      },
+      "learnMercury.whatIs.intro" : {
+        "comment" : "Intro paragraph explaining what retrograde is",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Drei- oder viermal im Jahr scheint Merkur – der schnelle Bote des Kosmos – langsamer zu werden, stillzustehen und etwa drei Wochen lang rückwärts durch den Tierkreis zu reisen. Das ist eine optische Täuschung: Merkur kehrt nie wirklich seinen Kurs um. Weil Merkur die Sonne schneller umkreist als die Erde, überholt er uns gelegentlich. Wenn das passiert, lässt unsere Perspektive Merkur so erscheinen, als würde er vor den fernen Sternen rückwärts gleiten."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Three or four times a year, Mercury — the swift messenger of the cosmos — appears to slow down, stop, and travel backwards through the zodiac for about three weeks. This is an optical illusion: Mercury never actually reverses course. Instead, because Mercury orbits the Sun faster than Earth, it occasionally laps us. When it does, our perspective makes Mercury seem to glide backwards against the distant stars."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tres o cuatro veces al año, Mercurio — el veloz mensajero del cosmos — parece disminuir la velocidad, detenerse y viajar hacia atrás a través del zodíaco durante unas tres semanas. Esto es una ilusión óptica: Mercurio nunca invierte realmente su curso. En cambio, porque Mercurio orbita el Sol más rápido que la Tierra, ocasionalmente nos adelanta. Cuando lo hace, nuestra perspectiva hace que Mercurio parezca deslizarse hacia atrás contra las estrellas distantes."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Trois ou quatre fois par an, Mercure — le messager rapide du cosmos — semble ralentir, s'arrêter et voyager vers l'arrière à travers le zodiaque pendant environ trois semaines. C'est une illusion d'optique : Mercure n'inverse jamais vraiment son cours. En réalité, parce que Mercure orbite autour du Soleil plus rapidement que la Terre, il nous dépasse occasionnellement. Lorsqu'il le fait, notre perspective donne l'impression que Mercure glisse vers l'arrière par rapport aux étoiles lointaines."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tre o quattro volte l'anno, Mercurio — il veloce messaggero del cosmo — sembra rallentare, fermarsi e viaggiare all'indietro attraverso lo zodiaco per circa tre settimane. Questa è un'illusione ottica: Mercurio non inverte mai realmente la sua rotta. Invece, poiché Mercurio orbita attorno al Sole più velocemente della Terra, occasionalmente ci supera. Quando lo fa, la nostra prospettiva fa sembrare Mercurio scivolare all'indietro contro le stelle lontane."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "年に3、4回、宇宙の迅速な使者である水星が減速し、停止し、約3週間にわたって黄道を後方に移動しているように見えます。これは目の錯覚です：水星は実際に逆行することは決してありません。代わりに、水星は地球よりも速く太陽を周回しているため、時折地球を追い越します。そのとき、私たちの視点からは水星が遠くの星々に対して後方に滑っているように見えます。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tre eller fire ganger i året ser Merkur — kosmos' raske budbringer — ut til å bremse ned, stoppe, og reise bakover gjennom dyrekretsen i omtrent tre uker. Dette er en optisk illusjon: Merkur snur faktisk aldri kursen. I stedet, fordi Merkur kretser rundt solen raskere enn Jorden, innhenter den oss av og til. Når det skjer, får perspektivet vårt Merkur til å gli bakover mot de fjerne stjernene."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Trzy lub cztery razy w roku Merkury — szybki posłaniec kosmosu — wydaje się zwalniać, zatrzymywać i podróżować do tyłu przez zodiak przez około trzy tygodnie. To złudzenie optyczne: Merkury nigdy tak naprawdę nie odwraca swojego kursu. Zamiast tego, ponieważ Merkury krąży wokół Słońca szybciej niż Ziemia, okazjonalnie nas wyprzedza. Kiedy to robi, nasza perspektywa sprawia, że Merkury wydaje się ślizgać do tyłu na tle odległych gwiazd."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Três ou quatro vezes por ano, Mercúrio — o veloz mensageiro do cosmos — parece desacelerar, parar e viajar para trás através do zodíaco por cerca de três semanas. Isso é uma ilusão de ótica: Mercúrio nunca inverte realmente seu curso. Em vez disso, porque Mercúrio orbita o Sol mais rápido que a Terra, ocasionalmente ele nos ultrapassa. Quando isso acontece, nossa perspectiva faz Mercúrio parecer deslizar para trás contra as estrelas distantes."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tre eller fyra gånger om året verkar Merkurius — kosmos snabba budbärare — sakta ner, stanna och resa bakåt genom zodiaken i ungefär tre veckor. Detta är en optisk illusion: Merkurius vänder aldrig faktiskt kurs. Istället, eftersom Merkurius kretsar runt solen snabbare än jorden, varvar den oss ibland. När den gör det, får vårt perspektiv Merkurius att verka glida bakåt mot de avlägsna stjärnorna."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Три або чотири рази на рік Меркурій — швидкий посланець космосу — ніби сповільнюється, зупиняється і подорожує назад через зодіак приблизно три тижні. Це оптична ілюзія: Меркурій ніколи насправді не змінює свого курсу. Натомість, оскільки Меркурій обертається навколо Сонця швидше, ніж Земля, він іноді обганяє нас. Коли це відбувається, наша перспектива змушує Меркурій ковзати назад на тлі далеких зірок."
+            }
           }
         }
-      }
-    },
-    "learnMercury.whatIs.title" : {
-      "comment" : "Section title: what is Mercury retrograde",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "What Is Mercury Retrograde?"
+      },
+      "learnMercury.whatIs.title" : {
+        "comment" : "Section title: what is Mercury retrograde",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Was ist der Merkur-Rücklauf?"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "What Is Mercury Retrograde?"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "¿Qué es Mercurio Retrógrado?"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Qu'est-ce que Mercure Rétrograde ?"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Cos'è Mercurio Retrogrado?"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星逆行とは何か？"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hva er Merkur Retrograd?"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Co to jest Retrogradacja Merkurego?"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "O que é Mercúrio Retrógrado?"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Vad är Merkurius Retrograd?"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Що таке ретроградний Меркурій?"
+            }
           }
         }
-      }
-    },
-    "learnMercury.why.communication.text" : {
-      "comment" : "Why 1 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Misreadings, missed messages, and emotional subtext spike. Re-read before sending, and confirm important information twice."
+      },
+      "learnMercury.why.communication.text" : {
+        "comment" : "Why 1 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Missverständnisse, verpasste Nachrichten und emotionale Untertöne häufen sich. Lesen Sie vor dem Senden noch einmal und bestätigen Sie wichtige Informationen zweimal."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Misreadings, missed messages, and emotional subtext spike. Re-read before sending, and confirm important information twice."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Aumentan las malas interpretaciones, los mensajes perdidos y el subtexto emocional. Vuelve a leer antes de enviar y confirma la información importante dos veces."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Les mauvaises interprétations, les messages manqués et les sous-textes émotionnels augmentent. Relisez avant d'envoyer et confirmez les informations importantes deux fois."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Aumentano letture errate, messaggi persi e sottotesti emotivi. Rileggi prima di inviare e conferma le informazioni importanti due volte."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "誤読、見逃したメッセージ、感情的な含意が急増します。送信前に再読し、重要な情報は二度確認しましょう。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Feillesninger, tapte meldinger og emosjonell undertone øker. Les om før du sender, og bekreft viktig informasjon to ganger."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Wzrasta liczba błędnych odczytów, utraconych wiadomości i emocjonalnych podtekstów. Przeczytaj ponownie przed wysłaniem i potwierdź ważne informacje dwa razy."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Leituras erradas, mensagens perdidas e subtexto emocional aumentam. Releia antes de enviar e confirme informações importantes duas vezes."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Feltolkningar, missade meddelanden och känslomässiga undertoner ökar. Läs om innan du skickar och bekräfta viktig information två gånger."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Зростає кількість неправильних прочитань, пропущених повідомлень та емоційних підтекстів. Перечитайте перед відправкою та підтвердьте важливу інформацію двічі."
+            }
           }
         }
-      }
-    },
-    "learnMercury.why.communication.title" : {
-      "comment" : "Why 1 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Communication"
+      },
+      "learnMercury.why.communication.title" : {
+        "comment" : "Why 1 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kommunikation"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Communication"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Comunicación"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Communication"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Comunicazione"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "コミュニケーション"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kommunikasjon"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Komunikacja"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Comunicação"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Kommunikation"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Комунікація"
+            }
           }
         }
-      }
-    },
-    "learnMercury.why.intro" : {
-      "comment" : "Why intro",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Mercury governs the wiring of daily life. When the messenger appears to stumble, the systems we rely on can feel out of sync. Understanding these patterns helps you cooperate with them rather than fight them."
+      },
+      "learnMercury.why.intro" : {
+        "comment" : "Why intro",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur regiert die Verdrahtung des täglichen Lebens. Wenn der Bote zu stolpern scheint, können sich die Systeme, auf die wir uns verlassen, aus dem Takt geraten. Wenn Sie diese Muster verstehen, können Sie mit ihnen kooperieren, anstatt gegen sie anzukämpfen."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Mercury governs the wiring of daily life. When the messenger appears to stumble, the systems we rely on can feel out of sync. Understanding these patterns helps you cooperate with them rather than fight them."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio gobierna el cableado de la vida diaria. Cuando el mensajero parece tropezar, los sistemas en los que confiamos pueden sentirse desincronizados. Comprender estos patrones te ayuda a cooperar con ellos en lugar de luchar contra ellos."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercure régit le câblage de la vie quotidienne. Lorsque le messager semble trébucher, les systèmes sur lesquels nous comptons peuvent sembler désynchronisés. Comprendre ces schémas vous aide à coopérer avec eux plutôt qu'à les combattre."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercurio governa il cablaggio della vita quotidiana. Quando il messaggero sembra inciampare, i sistemi su cui facciamo affidamento possono sembrare fuori sincrono. Comprendere questi schemi ti aiuta a cooperare con loro piuttosto che a combatterli."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "水星は日常生活の配線を司っています。使者がつまずいているように見えるとき、私たちが依存しているシステムは同期が取れていないように感じられるかもしれません。これらのパターンを理解することは、それらと戦うのではなく協力するのに役立ちます。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkur styrer ledningene i dagliglivet. Når budbringeren ser ut til å snuble, kan systemene vi er avhengige av føles ute av synk. Å forstå disse mønstrene hjelper deg med å samarbeide med dem heller enn å kjempe mot dem."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkury rządzi okablowaniem codziennego życia. Kiedy posłaniec wydaje się potykać, systemy, na których polegamy, mogą wydawać się nieskoordynowane. Zrozumienie tych wzorców pomaga ci z nimi współpracować, a nie z nimi walczyć."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Mercúrio governa a fiação da vida diária. Quando o mensageiro parece tropeçar, os sistemas nos quais confiamos podem parecer fora de sincronia. Entender esses padrões ajuda você a cooperar com eles em vez de lutar contra eles."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Merkurius styr vardagens ledningar. När budbäraren verkar snubbla kan systemen vi förlitar oss på kännas ur synk. Att förstå dessa mönster hjälper dig att samarbeta med dem snarare än att bekämpa dem."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Меркурій керує проводкою повсякденного життя. Коли посланець, здається, спотикається, системи, на які ми покладаємося, можуть здаватися розсинхронізованими. Розуміння цих патернів допомагає вам співпрацювати з ними, а не боротися проти них."
+            }
           }
         }
-      }
-    },
-    "learnMercury.why.reflection.text" : {
-      "comment" : "Why 3 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Retrograde is one of the cosmos's natural pause buttons. It is an excellent time to journal, finish unfinished work, and revisit goals from a calmer place."
+      },
+      "learnMercury.why.reflection.text" : {
+        "comment" : "Why 3 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Der Rücklauf ist einer der natürlichen Pausenknöpfe des Kosmos. Es ist eine ausgezeichnete Zeit für Tagebuchschreiben, das Beenden unerledigter Arbeit und das Überdenken von Zielen von einem ruhigeren Ort aus."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Retrograde is one of the cosmos's natural pause buttons. It is an excellent time to journal, finish unfinished work, and revisit goals from a calmer place."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "El retrógrado es uno de los botones de pausa naturales del cosmos. Es un excelente momento para escribir un diario, terminar trabajos pendientes y revisar metas desde un lugar más tranquilo."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Le rétrograde est l'un des boutons de pause naturels du cosmos. C'est un excellent moment pour tenir un journal, terminer un travail inachevé et revoir vos objectifs depuis un endroit plus calme."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Il retrogrado è uno dei pulsanti di pausa naturali del cosmo. È un ottimo momento per scrivere un diario, finire lavori incompiuti e rivedere gli obiettivi da un luogo più calmo."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "逆行は宇宙の自然な一時停止ボタンの一つです。日記を書いたり、未完成の仕事を終わらせたり、より落ち着いた場所から目標を再検討するのに最適な時期です。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrograd er en av kosmos' naturlige pauseknapper. Det er en utmerket tid for å skrive dagbok, fullføre uferdig arbeid, og se over mål fra et roligere sted."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrogradacja to jeden z naturalnych przycisków pauzy kosmosu. To doskonały czas na prowadzenie dziennika, kończenie niedokończonych prac i ponowne rozważenie celów z spokojniejszego miejsca."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "O retrógrado é um dos botões de pausa naturais do cosmos. É um excelente momento para escrever um diário, terminar trabalhos inacabados e revisitar metas de um lugar mais calmo."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Retrograd är en av kosmos naturliga pausknappar. Det är en utmärkt tid att föra dagbok, avsluta oavslutat arbete och ompröva mål från en lugnare plats."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Ретроградність — це одна з природних кнопок паузи космосу. Це чудовий час для ведення щоденника, завершення незавершеної роботи та перегляду цілей з більш спокійного місця."
+            }
           }
         }
-      }
-    },
-    "learnMercury.why.reflection.title" : {
-      "comment" : "Why 3 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reflection & Renewal"
+      },
+      "learnMercury.why.reflection.title" : {
+        "comment" : "Why 3 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Reflexion & Erneuerung"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Reflection & Renewal"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Reflexión y Renovación"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Réflexion et Renouveau"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Riflessione e Rinnovamento"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "内省と再生"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Refleksjon & Fornyelse"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Refleksja i Odnowa"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Reflexão e Renovação"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Reflektion & Förnyelse"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Рефлексія та оновлення"
+            }
           }
         }
-      }
-    },
-    "learnMercury.why.technology.text" : {
-      "comment" : "Why 2 text",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Devices act up, files vanish, and travel plans wobble. Back up important data, allow buffer time, and postpone large electronics purchases when you can."
+      },
+      "learnMercury.why.technology.text" : {
+        "comment" : "Why 2 text",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Geräte spinnen, Dateien verschwinden und Reisepläne wackeln. Sichern Sie wichtige Daten, planen Sie Pufferzeiten ein und verschieben Sie große Elektronikkäufe, wenn möglich."
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Devices act up, files vanish, and travel plans wobble. Back up important data, allow buffer time, and postpone large electronics purchases when you can."
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Los dispositivos fallan, los archivos desaparecen y los planes de viaje se tambalean. Haz copias de seguridad de los datos importantes, permite tiempo de margen y pospón las compras grandes de electrónica cuando puedas."
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Les appareils dysfonctionnent, les fichiers disparaissent et les plans de voyage vacillent. Sauvegardez les données importantes, prévoyez un temps de marge et reportez les achats d'appareils électroniques importants lorsque vous le pouvez."
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "I dispositivi si comportano male, i file scompaiono e i piani di viaggio vacillano. Fai il backup dei dati importanti, concedi un tempo di margine e rimanda gli acquisti di grandi elettronici quando puoi."
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "デバイスが誤作動を起こし、ファイルが消え、旅行計画が揺らぎます。重要なデータをバックアップし、余裕を持たせ、可能であれば大きな電子機器の購入は延期しましょう。"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Enheter oppfører seg dårlig, filer forsvinner, og reiseplaner vakler. Sikkerhetskopier viktige data, tillat buffertid, og utsett store elektronikkjøp når du kan."
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Urządzenia szwankują, pliki znikają, a plany podróży chwieją się. Twórz kopie zapasowe ważnych danych, zapewnij sobie czas zapasowy i odłóż duże zakupy elektroniki, gdy możesz."
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dispositivos falham, arquivos desaparecem e planos de viagem oscilam. Faça backup de dados importantes, permita tempo de margem e adie compras grandes de eletrônicos quando puder."
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Enheter krånglar, filer försvinner och reseplaner vacklar. Säkra viktiga data, tillåt bufferttid och skjut upp stora elektronikköp när du kan."
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Пристрої поводяться непередбачувано, файли зникають, а плани подорожей хитаються. Робіть резервні копії важливих даних, передбачайте запас часу та відкладайте великі покупки електроніки, коли можете."
+            }
           }
         }
-      }
-    },
-    "learnMercury.why.technology.title" : {
-      "comment" : "Why 2 title",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Technology & Travel"
+      },
+      "learnMercury.why.technology.title" : {
+        "comment" : "Why 2 title",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Technologie & Reisen"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Technology & Travel"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tecnología y Viajes"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Technologie et Voyages"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tecnologia e Viaggi"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "テクノロジーと旅行"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Teknologi & Reise"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Technologia i Podróże"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tecnologia e Viagens"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Teknik & Resor"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Технології та подорожі"
+            }
           }
         }
-      }
-    },
-    "learnMercury.why.title" : {
-      "comment" : "Section title: why it matters",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Why It Matters"
+      },
+      "learnMercury.why.title" : {
+        "comment" : "Section title: why it matters",
+        "extractionState" : "extracted_with_value",
+        "localizations" : {
+          "de" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Warum es wichtig ist"
+            }
+          },
+          "en" : {
+            "stringUnit" : {
+              "state" : "new",
+              "value" : "Why It Matters"
+            }
+          },
+          "es" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Por qué importa"
+            }
+          },
+          "fr" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Pourquoi c'est important"
+            }
+          },
+          "it" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Perché è importante"
+            }
+          },
+          "ja" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "なぜ重要なのか"
+            }
+          },
+          "nb" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Hvorfor det betyr noe"
+            }
+          },
+          "pl" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Dlaczego to ważne"
+            }
+          },
+          "pt-BR" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Por que isso importa"
+            }
+          },
+          "sv" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Varför det spelar roll"
+            }
+          },
+          "uk" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Чому це важливо"
+            }
           }
         }
-      }
-    },
+      },
     "learnPalmistry.basicMeanings.subtitle" : {
       "comment" : "Lines, mounts and fingers",
       "localizations" : {
