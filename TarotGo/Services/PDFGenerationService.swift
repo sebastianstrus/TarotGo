@@ -2518,7 +2518,7 @@ class PDFGenerationService {
             }
 
             if let imageData = capturedImageData, let palmImage = UIImage(data: imageData) {
-                let imageColumnWidth: CGFloat = 200
+                let imageColumnWidth: CGFloat = 160
                 let maxImageHeight: CGFloat = 280
                 let aspect = palmImage.size.width / max(palmImage.size.height, 1)
                 var imageWidth = imageColumnWidth
@@ -2530,7 +2530,7 @@ class PDFGenerationService {
 
                 let columnGap: CGFloat = 20
                 let leftColumnWidth = contentWidth - imageColumnWidth - columnGap
-                let imageX = margin + leftColumnWidth + columnGap + (imageColumnWidth - imageWidth) / 2
+                let imageX = margin + contentWidth - imageWidth
 
                 var leftY = drawSectionHeader(
                     title: L10n.palmReadingOverall,
@@ -2541,26 +2541,41 @@ class PDFGenerationService {
                 )
                 leftY += 5
 
+                let overallFont = UIFont.systemFont(ofSize: 11, weight: .light)
+                let overallParagraph = NSMutableParagraphStyle()
+                overallParagraph.lineSpacing = 3
+                let overallAttributes: [NSAttributedString.Key: Any] = [.font: overallFont, .paragraphStyle: overallParagraph]
+                let overallString = NSAttributedString(string: reading.overallInterpretation, attributes: overallAttributes)
+                let overallRect = overallString.boundingRect(
+                    with: CGSize(width: leftColumnWidth, height: .greatestFiniteMagnitude),
+                    options: [.usesLineFragmentOrigin, .usesFontLeading],
+                    context: nil
+                )
+
                 let overallBoxStartY = leftY
+                let overallBoxHeight = overallRect.height + 12 + 18
+
+                context.cgContext.saveGState()
+                let overallBox = UIBezierPath(
+                    roundedRect: CGRect(x: margin - 10, y: overallBoxStartY, width: leftColumnWidth + 20, height: overallBoxHeight),
+                    cornerRadius: 10
+                )
+                UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
+                overallBox.fill()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setStroke()
+                overallBox.lineWidth = 1
+                overallBox.stroke()
+                context.cgContext.restoreGState()
+
                 leftY += 12
                 leftY = drawText(
                     reading.overallInterpretation,
                     at: CGPoint(x: margin, y: leftY),
                     width: leftColumnWidth,
-                    font: .systemFont(ofSize: 13, weight: .light),
+                    font: overallFont,
                     color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
                 )
-                leftY += 18
-
-                context.cgContext.saveGState()
-                let overallBox = UIBezierPath(
-                    roundedRect: CGRect(x: margin - 10, y: overallBoxStartY, width: leftColumnWidth + 20, height: leftY - overallBoxStartY),
-                    cornerRadius: 10
-                )
-                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
-                overallBox.lineWidth = 1
-                overallBox.stroke()
-                context.cgContext.restoreGState()
+                leftY = overallBoxStartY + overallBoxHeight
 
                 let imageRect = CGRect(x: imageX, y: overallBoxStartY, width: imageWidth, height: imageHeight)
                 context.cgContext.saveGState()
@@ -2589,26 +2604,41 @@ class PDFGenerationService {
                 )
                 yPosition += 5
 
+                let overallFont = UIFont.systemFont(ofSize: 11, weight: .light)
+                let overallParagraph = NSMutableParagraphStyle()
+                overallParagraph.lineSpacing = 3
+                let overallAttributes: [NSAttributedString.Key: Any] = [.font: overallFont, .paragraphStyle: overallParagraph]
+                let overallString = NSAttributedString(string: reading.overallInterpretation, attributes: overallAttributes)
+                let overallRect = overallString.boundingRect(
+                    with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
+                    options: [.usesLineFragmentOrigin, .usesFontLeading],
+                    context: nil
+                )
+
                 let overallBoxStartY = yPosition
+                let overallBoxHeight = overallRect.height + 12 + 18
+
+                context.cgContext.saveGState()
+                let overallBox = UIBezierPath(
+                    roundedRect: CGRect(x: margin - 10, y: overallBoxStartY, width: contentWidth + 20, height: overallBoxHeight),
+                    cornerRadius: 10
+                )
+                UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
+                overallBox.fill()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setStroke()
+                overallBox.lineWidth = 1
+                overallBox.stroke()
+                context.cgContext.restoreGState()
+
                 yPosition += 12
                 yPosition = drawText(
                     reading.overallInterpretation,
                     at: CGPoint(x: margin, y: yPosition),
                     width: contentWidth,
-                    font: .systemFont(ofSize: 13, weight: .light),
+                    font: overallFont,
                     color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
                 )
-                yPosition += 18
-
-                context.cgContext.saveGState()
-                let overallBox = UIBezierPath(
-                    roundedRect: CGRect(x: margin - 10, y: overallBoxStartY, width: contentWidth + 20, height: yPosition - overallBoxStartY),
-                    cornerRadius: 10
-                )
-                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.25).setStroke()
-                overallBox.lineWidth = 1
-                overallBox.stroke()
-                context.cgContext.restoreGState()
+                yPosition = overallBoxStartY + overallBoxHeight
             }
 
             yPosition += 25
@@ -2652,13 +2682,47 @@ class PDFGenerationService {
             )
             yPosition += 10
 
+            let handShapeText = PalmInterpretations.handShapeInterpretation(for: reading.handShape)
+            let handShapeFont = UIFont.systemFont(ofSize: 11, weight: .light)
+            let handShapeParagraph = NSMutableParagraphStyle()
+            handShapeParagraph.lineSpacing = 3
+            let handShapeAttributes: [NSAttributedString.Key: Any] = [.font: handShapeFont, .paragraphStyle: handShapeParagraph]
+            let handShapeString = NSAttributedString(string: handShapeText, attributes: handShapeAttributes)
+            let handShapeRect = handShapeString.boundingRect(
+                with: CGSize(width: contentWidth, height: .greatestFiniteMagnitude),
+                options: [.usesLineFragmentOrigin, .usesFontLeading],
+                context: nil
+            )
+
+            let handShapeBoxTopInset: CGFloat = 12
+            let handShapeBoxBottomInset: CGFloat = 16
+            let handShapeBoxStartY = yPosition
+            let handShapeBoxHeight = handShapeRect.height + handShapeBoxTopInset + handShapeBoxBottomInset
+
+            context.cgContext.saveGState()
+            let handShapeBoxRect = CGRect(
+                x: margin - 8,
+                y: handShapeBoxStartY,
+                width: contentWidth + 16,
+                height: handShapeBoxHeight
+            )
+            UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
+            let handShapeBox = UIBezierPath(roundedRect: handShapeBoxRect, cornerRadius: 8)
+            handShapeBox.fill()
+            UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setStroke()
+            handShapeBox.lineWidth = 1
+            handShapeBox.stroke()
+            context.cgContext.restoreGState()
+
+            yPosition += handShapeBoxTopInset
             yPosition = drawText(
-                PalmInterpretations.handShapeInterpretation(for: reading.handShape),
+                handShapeText,
                 at: CGPoint(x: margin, y: yPosition),
                 width: contentWidth,
-                font: .systemFont(ofSize: 13, weight: .light),
+                font: handShapeFont,
                 color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
             )
+            yPosition = handShapeBoxStartY + handShapeBoxHeight
 
             yPosition += 25
             drawDecorativeBorder(at: yPosition, width: pageWidth, margin: margin, context: context.cgContext)
@@ -2690,7 +2754,13 @@ class PDFGenerationService {
             ]
 
             for (index, entry) in lines.enumerated() {
-                if yPosition > pageHeight - 200 {
+                if index == 1 {
+                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                    pageNumber += 1
+                    context.beginPage()
+                    drawMysticalBackground(in: pageRect, context: context.cgContext)
+                    yPosition = 60
+                } else if yPosition > pageHeight - 200 {
                     drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
                     pageNumber += 1
                     context.beginPage()
@@ -2712,32 +2782,29 @@ class PDFGenerationService {
                     let goldColor = UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 1.0)
                     goldColor.withAlphaComponent(0.3).setStroke()
                     let leftLine = UIBezierPath()
-                    leftLine.move(to: CGPoint(x: margin, y: yPosition + 8))
-                    leftLine.addLine(to: CGPoint(x: pageWidth / 2 - 20, y: yPosition + 8))
+                    leftLine.move(to: CGPoint(x: margin, y: yPosition + 5))
+                    leftLine.addLine(to: CGPoint(x: pageWidth / 2 - 20, y: yPosition + 5))
                     leftLine.lineWidth = 0.5
                     leftLine.stroke()
                     let rightLine = UIBezierPath()
-                    rightLine.move(to: CGPoint(x: pageWidth / 2 + 20, y: yPosition + 8))
-                    rightLine.addLine(to: CGPoint(x: pageWidth - margin, y: yPosition + 8))
+                    rightLine.move(to: CGPoint(x: pageWidth / 2 + 20, y: yPosition + 5))
+                    rightLine.addLine(to: CGPoint(x: pageWidth - margin, y: yPosition + 5))
                     rightLine.lineWidth = 0.5
                     rightLine.stroke()
                     goldColor.setFill()
-                    drawStar(at: CGPoint(x: pageWidth / 2, y: yPosition + 8), size: 5, context: context.cgContext)
-                    yPosition += 22
+                    drawStar(at: CGPoint(x: pageWidth / 2, y: yPosition + 5), size: 5, context: context.cgContext)
+                    yPosition += 14
                 }
             }
 
-            // Palm mounts
+            // Palm mounts (always start on a new page)
             if !reading.mounts.isEmpty {
-                if yPosition > pageHeight - 220 {
-                    drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
-                    pageNumber += 1
-                    context.beginPage()
-                    drawMysticalBackground(in: pageRect, context: context.cgContext)
-                    yPosition = 60
-                }
+                drawFooter(at: pageHeight - 40, width: pageWidth, margin: margin, pageNumber: pageNumber, context: context.cgContext)
+                pageNumber += 1
+                context.beginPage()
+                drawMysticalBackground(in: pageRect, context: context.cgContext)
+                yPosition = 60
 
-                yPosition += 15
                 yPosition = drawSectionHeader(
                     title: L10n.pdfPalmMounts,
                     at: yPosition,
@@ -2790,10 +2857,10 @@ class PDFGenerationService {
                 let notesRect = notesString.boundingRect(with: CGSize(width: contentWidth - 20, height: .greatestFiniteMagnitude), options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
 
                 context.cgContext.saveGState()
-                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.05).setFill()
+                UIColor(red: 0.98, green: 0.97, blue: 0.95, alpha: 0.8).setFill()
                 let notesBox = UIBezierPath(roundedRect: CGRect(x: margin - 10, y: yPosition - 10, width: contentWidth + 20, height: notesRect.height + 30), cornerRadius: 8)
                 notesBox.fill()
-                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.3).setStroke()
+                UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.2).setStroke()
                 notesBox.lineWidth = 1
                 notesBox.stroke()
                 drawStar(at: CGPoint(x: margin - 5, y: yPosition - 5), size: 4, context: context.cgContext)
@@ -2878,11 +2945,11 @@ class PDFGenerationService {
                 font: .italicSystemFont(ofSize: 12),
                 color: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
             )
-            yPosition += 10
+            yPosition += 6
         }
 
         let interpretationText = reading.interpretation(for: line)
-        let interpFont = UIFont.systemFont(ofSize: 13, weight: .light)
+        let interpFont = UIFont.systemFont(ofSize: 11, weight: .light)
         let interpParagraph = NSMutableParagraphStyle()
         interpParagraph.lineSpacing = 3
         let interpAttributes: [NSAttributedString.Key: Any] = [
@@ -2896,8 +2963,8 @@ class PDFGenerationService {
             context: nil
         )
 
-        let boxTopInset: CGFloat = 12
-        let boxBottomInset: CGFloat = 16
+        let boxTopInset: CGFloat = 10
+        let boxBottomInset: CGFloat = 12
         let boxStartY = yPosition
         let boxHeight = interpRect.height + boxTopInset + boxBottomInset
 
@@ -2925,7 +2992,7 @@ class PDFGenerationService {
             color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         )
 
-        yPosition = boxStartY + boxHeight + 12
+        yPosition = boxStartY + boxHeight + 6
         return yPosition
     }
 
@@ -2957,7 +3024,7 @@ class PDFGenerationService {
         yPosition += 8
 
         let mountText = PalmInterpretations.mountInterpretation(for: mount)
-        let mountFont = UIFont.systemFont(ofSize: 12, weight: .light)
+        let mountFont = UIFont.systemFont(ofSize: 10, weight: .light)
         let mountParagraph = NSMutableParagraphStyle()
         mountParagraph.lineSpacing = 3
         let mountAttributes: [NSAttributedString.Key: Any] = [
@@ -2971,8 +3038,8 @@ class PDFGenerationService {
             context: nil
         )
 
-        let boxTopInset: CGFloat = 12
-        let boxBottomInset: CGFloat = 16
+        let boxTopInset: CGFloat = 10
+        let boxBottomInset: CGFloat = 12
         let boxStartY = yPosition
         let boxHeight = mountRect.height + boxTopInset + boxBottomInset
 
@@ -3000,7 +3067,7 @@ class PDFGenerationService {
             color: UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         )
 
-        yPosition = boxStartY + boxHeight + 10
+        yPosition = boxStartY + boxHeight + 6
         return yPosition
     }
 
