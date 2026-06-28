@@ -43,6 +43,44 @@ class NotificationService: ObservableObject {
         let settings = await UNUserNotificationCenter.current().notificationSettings()
         return settings.authorizationStatus
     }
+
+    /// On first launch, prompts the user for notification permission. If granted,
+    /// schedules the daily card and Mercury retrograde notifications. If denied,
+    /// flips both toggles to off so Settings reflects reality.
+    func requestInitialPermissionIfNeeded() async {
+        let askedKey = "hasRequestedInitialNotificationPermission"
+        let defaults = UserDefaults.standard
+        guard !defaults.bool(forKey: askedKey) else { return }
+
+        let status = await getAuthorizationStatus()
+
+        if status == .notDetermined {
+            let granted = await requestAuthorization()
+            defaults.set(true, forKey: askedKey)
+            if granted {
+                await scheduleInitialNotifications()
+            } else {
+                defaults.set(false, forKey: "dailyCardNotificationEnabled")
+                defaults.set(false, forKey: "mercuryRetrogradeAlertsEnabled")
+            }
+        } else {
+            defaults.set(true, forKey: askedKey)
+            if status == .authorized {
+                await scheduleInitialNotifications()
+            } else {
+                defaults.set(false, forKey: "dailyCardNotificationEnabled")
+                defaults.set(false, forKey: "mercuryRetrogradeAlertsEnabled")
+            }
+        }
+    }
+
+    private func scheduleInitialNotifications() async {
+        let defaults = UserDefaults.standard
+        let hour = defaults.object(forKey: "dailyCardNotificationHour") as? Int ?? 9
+        let minute = defaults.object(forKey: "dailyCardNotificationMinute") as? Int ?? 0
+        await scheduleDailyCardNotification(at: hour, minute: minute)
+        await scheduleMercuryRetrogradeNotifications()
+    }
     
     func scheduleDailyCardNotification(at hour: Int, minute: Int = 0) async {
         // Remove existing notifications

@@ -12,13 +12,15 @@ struct SettingsView: View {
     private let notificationService = NotificationService.shared
     private let soundService = SoundService.shared
     @StateObject private var subscriptionService = SubscriptionService.shared
-    @AppStorage("dailyCardNotificationEnabled") private var notificationEnabled: Bool = false
+    @AppStorage("dailyCardNotificationEnabled") private var notificationEnabled: Bool = true
     @AppStorage("dailyCardNotificationHour") private var notificationHour: Int = 9
     @AppStorage("dailyCardNotificationMinute") private var notificationMinute: Int = 0
+    @AppStorage("mercuryRetrogradeAlertsEnabled") private var mercuryAlertsEnabled: Bool = true
     @AppStorage("selectedCardBack") private var selectedCardBackRaw: String = CardBackStyle.modern.rawValue
     @AppStorage("isSoundEnabled") private var isSoundEnabled: Bool = true
 
     @State private var toggleState: Bool = false
+    @State private var mercuryAlertsToggleState: Bool = false
     @State private var showOnboarding: Bool = false
     @State private var showPermissionAlert: Bool = false
     @State private var hasAppeared: Bool = false
@@ -235,13 +237,26 @@ struct SettingsView: View {
                             }
                             .listRowSeparator(.hidden)
                         }
+
+                        Toggle(L10n.mercuryNotifications, isOn: $mercuryAlertsToggleState)
+                            .listRowSeparator(.hidden)
+                            .onChange(of: mercuryAlertsToggleState) { oldValue, newValue in
+                                if hasAppeared && oldValue != newValue {
+                                    soundService.play(.toggle)
+                                }
+                                handleMercuryAlertsToggle(newValue)
+                            }
+                            .tint(AppTheme.gold)
                     }
                 } header: {
                     Text(L10n.settingsNotifications)
                         .foregroundColor(AppTheme.gold)
                 } footer: {
-                    Text(L10n.settingsDailyReminderDesc)
-                        .foregroundColor(AppTheme.textSecondary)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(L10n.settingsDailyReminderDesc)
+                        Text(L10n.mercuryNotificationsDesc)
+                    }
+                    .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
@@ -519,6 +534,7 @@ struct SettingsView: View {
         .toolbarColorScheme(.dark, for: .navigationBar)
         .onAppear {
             toggleState = notificationEnabled
+            mercuryAlertsToggleState = mercuryAlertsEnabled
             soundService.isSoundEnabled = isSoundEnabled
             userBirthDate = AstrologyService.shared.userBirthDate
 
@@ -548,11 +564,13 @@ struct SettingsView: View {
         }
         .alert(L10n.settingsNotificationPermissionTitle, isPresented: $showPermissionAlert) {
             Button(L10n.settingsNotificationPermissionCancel, role: .cancel) {
-                toggleState = false
+                toggleState = notificationEnabled
+                mercuryAlertsToggleState = mercuryAlertsEnabled
             }
             Button(L10n.settingsNotificationPermissionSettings) {
                 openNotificationSettings()
-                toggleState = false
+                toggleState = notificationEnabled
+                mercuryAlertsToggleState = mercuryAlertsEnabled
             }
         } message: {
             Text(L10n.settingsNotificationPermissionMessage)
@@ -622,6 +640,37 @@ struct SettingsView: View {
             at: notificationHour,
             minute: notificationMinute
         )
+    }
+
+    private func handleMercuryAlertsToggle(_ enabled: Bool) {
+        Task {
+            if enabled {
+                let status = await notificationService.getAuthorizationStatus()
+                if status == .denied {
+                    await MainActor.run {
+                        showPermissionAlert = true
+                    }
+                    return
+                }
+                let granted = await notificationService.requestAuthorization()
+                if granted {
+                    await notificationService.scheduleMercuryRetrogradeNotifications()
+                    await MainActor.run {
+                        mercuryAlertsEnabled = true
+                    }
+                } else {
+                    await MainActor.run {
+                        mercuryAlertsToggleState = false
+                        mercuryAlertsEnabled = false
+                    }
+                }
+            } else {
+                notificationService.cancelMercuryRetrogradeNotifications()
+                await MainActor.run {
+                    mercuryAlertsEnabled = false
+                }
+            }
+        }
     }
     
     private func openLanguageSettings() {

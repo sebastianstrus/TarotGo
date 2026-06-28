@@ -8,17 +8,10 @@
 import SwiftUI
 
 struct MercuryRetrogradeView: View {
-    @AppStorage("mercuryRetrogradeAlertsEnabled") private var alertsEnabled: Bool = false
-
     @State private var now: Date = Date()
     @State private var userBirthDate: Date? = AstrologyService.shared.userBirthDate
-    @State private var alertsToggleState: Bool = false
-    @State private var hasAppeared: Bool = false
-    @State private var showPermissionAlert: Bool = false
 
     private let service = MercuryRetrogradeService.shared
-    private let notificationService = NotificationService.shared
-    private let soundService = SoundService.shared
 
     private var activePeriod: MercuryRetrogradePeriod? {
         service.activePeriod(for: now)
@@ -53,8 +46,6 @@ struct MercuryRetrogradeView: View {
 
                     upcomingRetrogradesCard
 
-                    alertsCard
-
                     Spacer(minLength: 20)
                 }
                 .padding(.horizontal)
@@ -73,23 +64,6 @@ struct MercuryRetrogradeView: View {
         .onAppear {
             now = Date()
             userBirthDate = AstrologyService.shared.userBirthDate
-            alertsToggleState = alertsEnabled
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                hasAppeared = true
-            }
-        }
-        .alert(L10n.settingsNotificationPermissionTitle, isPresented: $showPermissionAlert) {
-            Button(L10n.settingsNotificationPermissionCancel, role: .cancel) {
-                alertsToggleState = false
-            }
-            Button(L10n.settingsNotificationPermissionSettings) {
-                if let url = URL(string: UIApplication.openSettingsURLString) {
-                    UIApplication.shared.open(url)
-                }
-                alertsToggleState = false
-            }
-        } message: {
-            Text(L10n.settingsNotificationPermissionMessage)
         }
     }
 
@@ -536,66 +510,6 @@ struct MercuryRetrogradeView: View {
         return "\(startStr) – \(endStr), \(year)"
     }
 
-    // MARK: - Alerts toggle
-
-    private var alertsCard: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Toggle(isOn: $alertsToggleState) {
-                HStack(spacing: 10) {
-                    Image(systemName: "bell.badge.fill")
-                        .foregroundColor(AppTheme.gold)
-                    Text(L10n.mercuryNotifications)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundColor(AppTheme.textPrimary)
-                }
-            }
-            .tint(AppTheme.gold)
-            .onChange(of: alertsToggleState) { oldValue, newValue in
-                if hasAppeared && oldValue != newValue {
-                    soundService.play(.toggle)
-                }
-                handleAlertsToggle(newValue)
-            }
-
-            Text(L10n.mercuryNotificationsDesc)
-                .font(.system(size: 12, weight: .light))
-                .foregroundColor(AppTheme.textSecondary)
-        }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(AppTheme.darkNavy.opacity(0.6))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 12)
-                        .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
-                )
-        )
-    }
-
-    private func handleAlertsToggle(_ enabled: Bool) {
-        Task {
-            if enabled {
-                let status = await notificationService.getAuthorizationStatus()
-                if status == .denied {
-                    await MainActor.run { showPermissionAlert = true }
-                    return
-                }
-                let granted = await notificationService.requestAuthorization()
-                if granted {
-                    await notificationService.scheduleMercuryRetrogradeNotifications()
-                    await MainActor.run { alertsEnabled = true }
-                } else {
-                    await MainActor.run {
-                        alertsToggleState = false
-                        alertsEnabled = false
-                    }
-                }
-            } else {
-                notificationService.cancelMercuryRetrogradeNotifications()
-                await MainActor.run { alertsEnabled = false }
-            }
-        }
-    }
 }
 
 #Preview {

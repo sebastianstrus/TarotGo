@@ -76,6 +76,11 @@ struct RootView: View {
         .preferredColorScheme(.dark)
         .animation(.easeInOut(duration: 0.5), value: appViewModel.showSplashScreen)
         .animation(.easeInOut(duration: 0.5), value: appViewModel.hasCompletedOnboarding)
+        .task(id: appViewModel.hasCompletedOnboarding) {
+            if appViewModel.hasCompletedOnboarding {
+                await NotificationService.shared.requestInitialPermissionIfNeeded()
+            }
+        }
         .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .active {
                 // Clear badge when app becomes active
