@@ -101,7 +101,7 @@ struct VibeCheckView: View {
             
             Map(position: $position, interactionModes: [.pan, .zoom]) {
                 ForEach(vibes) { vibe in
-                    Annotation(LocalizedStringKey(vibe.cityName), coordinate: CLLocationCoordinate2D(latitude: vibe.latitude, longitude: vibe.longitude)) {
+                    Annotation(vibe.localizedCityName, coordinate: CLLocationCoordinate2D(latitude: vibe.latitude, longitude: vibe.longitude)) {
                         CityVibeMarker(vibe: vibe, isSelected: selectedVibe?.id == vibe.id)
                             .onTapGesture {
                                 withAnimation(.spring(response: 0.3)) {
@@ -135,11 +135,11 @@ struct VibeCheckView: View {
         VStack(spacing: 12) {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(LocalizedStringKey(vibe.cityName))
+                    Text(vibe.localizedCityName)
                         .font(AppTheme.serifFont(size: 22, weight: .medium))
                         .foregroundStyle(AppTheme.goldGradient)
                     
-                    Text(LocalizedStringKey(vibe.countryName))
+                    Text(vibe.localizedCountryName)
                         .font(.subheadline)
                         .foregroundStyle(AppTheme.gold.opacity(0.7))
                 }
@@ -261,7 +261,7 @@ struct CityVibeMarker: View {
                     }
                 }
                 
-                Text(LocalizedStringKey(vibe.cityName))
+                Text(vibe.localizedCityName)
                     .font(.caption2)
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
