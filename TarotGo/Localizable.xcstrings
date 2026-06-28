@@ -241220,6 +241220,77 @@
         }
       }
     },
+    "keyword.debt" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Schulden"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Debt"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Deuda"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dette"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Debito"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "借金"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Gjeld"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dług"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dívida"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Skuld"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Борг"
+              }
+            }
+          }
+        },
     "keyword.decay" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -242853,6 +242924,77 @@
         }
       }
     },
+    "keyword.discipline" : {
+          "extractionState" : "manual",
+          "localizations" : {
+            "de" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Disziplin"
+              }
+            },
+            "en" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Discipline"
+              }
+            },
+            "es" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Disciplina"
+              }
+            },
+            "fr" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Discipline"
+              }
+            },
+            "it" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Disciplina"
+              }
+            },
+            "ja" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "規律"
+              }
+            },
+            "nb" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Disiplin"
+              }
+            },
+            "pl" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Dyscyplina"
+              }
+            },
+            "pt-BR" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Disciplina"
+              }
+            },
+            "sv" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Disciplin"
+              }
+            },
+            "uk" : {
+              "stringUnit" : {
+                "state" : "translated",
+                "value" : "Дисципліна"
+              }
+            }
+          }
+        },
     "keyword.disconnection" : {
       "extractionState" : "manual",
       "localizations" : {
