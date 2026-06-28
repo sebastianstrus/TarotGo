@@ -277,7 +277,18 @@ struct PalmReading: Identifiable, Codable {
     // with readings persisted before handedness detection was added.
     let handedness: Handedness?
 
-    let overallInterpretation: String
+    // Computed from the stored line characteristics so the text always reflects
+    // the app's current language. Older saved sessions may still carry an
+    // `overallInterpretation` key in their JSON blob; Codable's default
+    // decoding silently ignores unknown keys, so they continue to load.
+    var overallInterpretation: String {
+        PalmInterpretations.generateInterpretation(
+            heartLine: heartLine,
+            headLine: headLine,
+            lifeLine: lifeLine,
+            fateLine: fateLine
+        )
+    }
 
     init(
         heartLine: PalmLineCharacteristics,
@@ -302,13 +313,6 @@ struct PalmReading: Identifiable, Codable {
             shapeType: .earth,
             fingerLength: .average,
             palmRatio: .square
-        )
-        
-        self.overallInterpretation = PalmInterpretations.generateInterpretation(
-            heartLine: heartLine,
-            headLine: headLine,
-            lifeLine: lifeLine,
-            fateLine: fateLine
         )
     }
     
