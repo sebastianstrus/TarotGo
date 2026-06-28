@@ -14,6 +14,7 @@ struct CoupleDestinyView: View {
     @State private var calculatedMatrix: CoupleMatrix?
     @State private var useSavedDateForA: Bool = true
     @State private var isCalculating: Bool = false
+    @State private var showBirthDateInput: Bool = false
 
     private let minDate = Calendar.current.date(from: DateComponents(year: 1900, month: 1, day: 1)) ?? Date()
     private let maxDate = Date()
@@ -54,6 +55,11 @@ struct CoupleDestinyView: View {
         .navigationDestination(isPresented: $showResult) {
             if let matrix = calculatedMatrix {
                 CoupleMatrixResultView(matrix: matrix)
+            }
+        }
+        .sheet(isPresented: $showBirthDateInput) {
+            BirthDateInputView(isPresented: $showBirthDateInput) { date in
+                birthDateA = date
             }
         }
         .onAppear {
@@ -142,7 +148,13 @@ struct CoupleDestinyView: View {
 
             Group {
                 if useSavedDateForA && hasSavedBirthDate {
-                    savedBirthDateCard(date: birthDateA, label: L10n.coupleMatrixYourBirthDate)
+                    Button {
+                        HapticService.shared.impact(.light)
+                        showBirthDateInput = true
+                    } label: {
+                        savedBirthDateCard(date: birthDateA, label: L10n.coupleMatrixYourBirthDate)
+                    }
+                    .buttonStyle(.plain)
                 } else {
                     datePickerCard(
                         title: L10n.coupleMatrixEnterPartnerABirthDate,
@@ -218,6 +230,15 @@ struct CoupleDestinyView: View {
             Text(formatted(date))
                 .font(AppTheme.serifFont(size: 22, weight: .medium))
                 .foregroundColor(AppTheme.gold)
+
+            HStack(spacing: 6) {
+                Image(systemName: "pencil")
+                    .font(.system(size: 12, weight: .medium))
+                Text(L10n.settingsChange)
+                    .font(.system(size: 13, weight: .medium))
+            }
+            .foregroundStyle(AppTheme.goldGradient)
+            .padding(.top, 2)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 24)

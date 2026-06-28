@@ -13,6 +13,7 @@ struct DestinyMatrixInputView: View {
     @State private var calculatedMatrix: DestinyMatrix?
     @State private var calculateForOther: Bool = false
     @State private var isCalculating: Bool = false
+    @State private var showBirthDateInput: Bool = false
     
     // Limit date range to reasonable bounds
     private let minDate = Calendar.current.date(from: DateComponents(year: 1900, month: 1, day: 1)) ?? Date()
@@ -129,27 +130,42 @@ struct DestinyMatrixInputView: View {
                                 )
                                 .transition(.opacity.combined(with: .scale))
                             } else {
-                                // Show saved birth date
-                                VStack(spacing: 12) {
-                                    Text(L10n.matrixYourBirthDate)
-                                        .font(.system(size: 18, weight: .medium))
-                                        .foregroundColor(AppTheme.textPrimary)
-                                    
-                                    Text(formattedDate)
-                                        .font(AppTheme.serifFont(size: 24, weight: .medium))
-                                        .foregroundColor(AppTheme.gold)
+                                // Show saved birth date (tap to change)
+                                Button {
+                                    HapticService.shared.impact(.light)
+                                    showBirthDateInput = true
+                                } label: {
+                                    VStack(spacing: 12) {
+                                        Text(L10n.matrixYourBirthDate)
+                                            .font(.system(size: 18, weight: .medium))
+                                            .foregroundColor(AppTheme.textPrimary)
+
+                                        Text(formattedDate)
+                                            .font(AppTheme.serifFont(size: 24, weight: .medium))
+                                            .foregroundColor(AppTheme.gold)
+
+                                        HStack(spacing: 6) {
+                                            Image(systemName: "pencil")
+                                                .font(.system(size: 12, weight: .medium))
+                                            Text(L10n.settingsChange)
+                                                .font(.system(size: 13, weight: .medium))
+                                        }
+                                        .foregroundStyle(AppTheme.goldGradient)
+                                        .padding(.top, 2)
+                                    }
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 30)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 16)
+                                            .fill(AppTheme.cardGradient)
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 16)
+                                                    .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
+                                            )
+                                            .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
+                                    )
                                 }
-                                .frame(maxWidth: .infinity)
-                                .padding(.vertical, 30)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 16)
-                                        .fill(AppTheme.cardGradient)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 16)
-                                                .stroke(AppTheme.gold.opacity(0.3), lineWidth: 1)
-                                        )
-                                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 10, x: 0, y: 5)
-                                )
+                                .buttonStyle(.plain)
                                 .transition(.opacity.combined(with: .scale))
                             }
                         }
@@ -195,6 +211,11 @@ struct DestinyMatrixInputView: View {
         .navigationDestination(isPresented: $showResult) {
             if let matrix = calculatedMatrix {
                 DestinyMatrixResultView(matrix: matrix)
+            }
+        }
+        .sheet(isPresented: $showBirthDateInput) {
+            BirthDateInputView(isPresented: $showBirthDateInput) { date in
+                birthDate = date
             }
         }
         .onAppear {
