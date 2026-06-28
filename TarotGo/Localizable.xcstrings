@@ -285311,13 +285311,13 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seul"
+            "value" : "Seule"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Singolo"
+            "value" : "Singola"
           }
         },
         "ja" : {
@@ -285335,7 +285335,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pojedynczy"
+            "value" : "Pojedyncza"
           }
         },
         "pt-BR" : {
@@ -285353,7 +285353,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Одиночний"
+            "value" : "Одиночна"
           }
         }
       }
