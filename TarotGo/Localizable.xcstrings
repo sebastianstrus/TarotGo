@@ -270889,7 +270889,7 @@
           "ja" : {
             "stringUnit" : {
               "state" : "translated",
-              "value" : "影の前（約2週間前）"
+              "value" : "プリ・シャドウ（約2週間前）"
             }
           },
           "nb" : {
@@ -270901,7 +270901,7 @@
           "pl" : {
             "stringUnit" : {
               "state" : "translated",
-              "value" : "Przed-cieniu (~2 tygodnie przed)"
+              "value" : "Przed-cień (~2 tygodnie przed)"
             }
           },
           "pt-BR" : {
@@ -270919,7 +270919,7 @@
           "uk" : {
             "stringUnit" : {
               "state" : "translated",
-              "value" : "Перед-тінь (~2 тижні до)"
+              "value" : "Передтінь (~2 тижні до)"
             }
           }
         }
@@ -292635,7 +292635,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Przed-cieniu"
+            "value" : "Przed-cień"
           }
         },
         "pt-BR" : {
@@ -292653,7 +292653,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Перед-тінь"
+            "value" : "Передтінь"
           }
         }
       }
@@ -293211,7 +293211,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Faza przed-cieniu"
+            "value" : "Faza przedcienia"
           }
         },
         "pt-BR" : {
@@ -293229,7 +293229,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Фаза перед-тіні"
+            "value" : "Фаза передтіні"
           }
         }
       }
