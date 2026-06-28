@@ -897,13 +897,13 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "🌍 Vibración Global"
+            "value" : "🌍 Vibe Check Global"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "🌍 Vérification de l'Ambiance Mondiale"
+            "value" : "🌍 Vibe Check Global"
           }
         },
         "it" : {
@@ -927,7 +927,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "🌍 Globalny Sprawdzenie Wibracji"
+            "value" : "🌍 Globalny vibe check"
           }
         },
         "pt-BR" : {

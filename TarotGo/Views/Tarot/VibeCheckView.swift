@@ -71,6 +71,7 @@ struct VibeCheckView: View {
         VStack(spacing: 8) {
             Text("🌍 Global Vibe Check")
                 .font(AppTheme.serifFont(size: 28, weight: .light))
+                .multilineTextAlignment(.center)
                 .foregroundStyle(AppTheme.goldGradient)
             
             Text(todayDate)
