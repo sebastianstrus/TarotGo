@@ -54209,6 +54209,12 @@
             "value" : "Aus der indischen vedischen Tradition übernimmt die Matrix das Sieben-Chakra-Modell, das beschreibt, wie Lebensenergie durch die wichtigsten Zentren des menschlichen Körpers fließt – vom materiellen Überleben bis zum höheren spirituellen Bewusstsein."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From the Indian Vedic tradition, the Matrix borrows the seven-chakra model used to describe how life energy flows through key centers in the human body, from material survival to higher spiritual awareness."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -54272,6 +54278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vedisches Chakra-System"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedic Chakra System"
           }
         },
         "es" : {
@@ -54339,6 +54351,12 @@
             "value" : "Aus Osteuropa hat sich die Matrix weltweit verbreitet und wird von Coaches, Heilern und Praktikern der Selbstentwicklung als praktisches Werkzeug für die archetypische Selbstentdeckung genutzt."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From Eastern Europe, the Matrix has spread worldwide, embraced by coaches, healers, and self-development practitioners as a practical tool for archetypal self-discovery."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -54402,6 +54420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Weltweite Verbreitung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Global Spread"
           }
         },
         "es" : {
@@ -54469,6 +54493,12 @@
             "value" : "Die Schicksalsmatrix ist ein zeitgenössisches spirituelles System, das alte Weisheitstraditionen – Numerologie, die Großen Arkana des Tarot und östliche Energiepraktiken – zu einem einzigen persönlichen Diagramm vereint, das aus deinem Geburtsdatum berechnet wird."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Destiny Matrix is a contemporary spiritual system that blends ancient wisdom traditions—numerology, the Major Arcana of the Tarot, and Eastern energy practices—into a single personal chart calculated from your date of birth."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -54534,6 +54564,12 @@
             "value" : "Die russische Forscherin Natalia Ladini wird dafür verantwortlich gemacht, die moderne Schicksalsmatrix in den 2000er Jahren systematisiert zu haben, indem sie die 22 Archetypen auf ein präzises achteckiges Diagramm übertrug, das aus dem Geburtsdatum abgeleitet wird."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Russian researcher Natalia Ladini is credited with systematizing the modern Destiny Matrix in the 2000s, mapping the 22 archetypes onto a precise octagonal diagram derived from the birth date."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -54594,6 +54630,12 @@
       "comment" : "Natalia Ladini",
       "localizations" : {
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Natalia Ladini"
+          }
+        },
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Natalia Ladini"
@@ -54664,6 +54706,12 @@
             "value" : "Das System, wie es heute praktiziert wird, nahm zu Beginn des 21. Jahrhunderts Gestalt an und führte die älteren Traditionen in einem einzigen Diagramm zusammen."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The system as practiced today took shape in the early 21st century, drawing the older traditions together into one diagram."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -54727,6 +54775,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Moderne Formulierung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modern Formulation"
           }
         },
         "es" : {
@@ -54794,6 +54848,12 @@
             "value" : "Das mathematische Rückgrat der Matrix stammt aus der pythagoreischen Numerologie (6. Jahrhundert v. Chr.), die lehrte, dass Zahlen archetypische Schwingungen tragen und dass ein Geburtsdatum den Bauplan einer Seele offenbart."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The mathematical backbone of the Matrix comes from Pythagorean numerology (6th century BCE), which taught that numbers carry archetypal vibrations and that a birth date reveals a soul's blueprint."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -54857,6 +54917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pythagoreische Numerologie"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pythagorean Numerology"
           }
         },
         "es" : {
@@ -54924,6 +54990,12 @@
             "value" : "Obwohl die Matrix selbst ein modernes System ist, schöpft jeder Teil von ihr aus Traditionen, die sich über Jahrtausende erstrecken."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Though the Matrix itself is a modern system, every part of it draws from traditions that span thousands of years."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -54987,6 +55059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Antike Wurzeln"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancient Roots"
           }
         },
         "es" : {
@@ -55054,6 +55132,12 @@
             "value" : "Alte Weisheit, modernes System"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancient Wisdom, Modern System"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55117,6 +55201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Die 22 Energien der Matrix entsprechen direkt den 22 Großen Arkana des Tarot – Archetypen, die im Europa der Renaissance verfeinert wurden, um jede Stufe der menschlichen Reise vom Narren bis zur Welt zu beschreiben."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The 22 energies of the Matrix correspond directly to the 22 Major Arcana of the Tarot—archetypes refined in Renaissance Europe to describe every stage of the human journey from The Fool to The World."
           }
         },
         "es" : {
@@ -55184,6 +55274,12 @@
             "value" : "Die Großen Arkana des Tarot"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarot's Major Arcana"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55247,6 +55343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Epoche"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Era"
           }
         },
         "es" : {
@@ -55314,6 +55416,12 @@
             "value" : "6. Jh. v. Chr."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6th c. BCE"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55377,6 +55485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Altes Indien"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancient India"
           }
         },
         "es" : {
@@ -55444,6 +55558,12 @@
             "value" : "15. Jahrhundert"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15th century"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55507,6 +55627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "20. Jahrhundert"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20th century"
           }
         },
         "es" : {
@@ -55574,6 +55700,12 @@
             "value" : "2000er"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2000s"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55637,6 +55769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meilenstein"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Milestone"
           }
         },
         "es" : {
@@ -55704,6 +55842,12 @@
             "value" : "Pythagoras lehrt, dass Zahlen die göttliche Ordnung des Kosmos ausdrücken."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pythagoras teaches that numbers express the divine order of the cosmos."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55767,6 +55911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vedische Texte beschreiben die sieben Chakren als Zentren der Lebensenergie."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedic texts describe the seven chakras as centers of life energy."
           }
         },
         "es" : {
@@ -55834,6 +55984,12 @@
             "value" : "Die Großen Arkana des Tarot werden im Italien der Renaissance geformt."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Major Arcana of the Tarot is shaped in Renaissance Italy."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55897,6 +56053,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jungs Archetypen-Theorie belebt das Interesse an symbolischer Selbsterkenntnis neu."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jungian archetype theory revives interest in symbolic self-knowledge."
           }
         },
         "es" : {
@@ -55964,6 +56126,12 @@
             "value" : "Natalia Ladini systematisiert die moderne Schicksalsmatrix."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Natalia Ladini systematizes the modern Destiny Matrix."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -56029,6 +56197,12 @@
             "value" : "Zeitleiste"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timeline"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -56092,6 +56266,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geschichte der Schicksalsmatrix"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "History of the Destiny Matrix"
           }
         },
         "es" : {
