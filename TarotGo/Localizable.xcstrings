@@ -60588,7 +60588,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kartenlexikon"
+            "value" : "Karten\nlexikon"
           }
         },
         "en" : {
@@ -60872,7 +60872,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Paar-Matrix"
+            "value" : "Paar\nMatrix"
           }
         },
         "en" : {
@@ -61014,7 +61014,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Schicksalsmatrix"
+            "value" : "Schicksals\nMatrix"
           }
         },
         "en" : {
@@ -61227,7 +61227,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Legungsverlauf"
+            "value" : "Legungs\nverlauf"
           }
         },
         "en" : {
