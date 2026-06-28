@@ -260,17 +260,6 @@ struct CityVibeMarker: View {
                             .foregroundStyle(.white)
                     }
                 }
-                
-                Text(vibe.localizedCityName)
-                    .font(.caption2)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 6)
-                    .padding(.vertical, 2)
-                    .background {
-                        Capsule()
-                            .fill(.black.opacity(0.7))
-                    }
             }
         }
         .scaleEffect(isSelected ? 1.1 : 1.0)
