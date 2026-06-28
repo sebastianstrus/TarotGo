@@ -282,7 +282,7 @@ struct CardsGridTabView: View {
                             CardView(card: card, showFront: true)
                                 .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                             
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 14, weight: .medium))
                                 .foregroundColor(AppTheme.textPrimary)
                                 .multilineTextAlignment(.center)
@@ -359,7 +359,7 @@ struct YearEnergyDetailCard: View {
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                         
                         VStack(alignment: .leading, spacing: 6) {
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundColor(AppTheme.textPrimary)
                             
@@ -446,7 +446,7 @@ struct PositionDetailCard: View {
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                         
                         VStack(alignment: .leading, spacing: 6) {
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundColor(AppTheme.textPrimary)
                             
@@ -546,7 +546,7 @@ struct CardLinkView: View {
                 .shadow(color: AppTheme.gold.opacity(0.2), radius: 10, x: 0, y: 5)
             
             VStack(alignment: .leading, spacing: 8) {
-                Text(card.name)
+                Text(card.localizedName)
                     .font(.system(size: 18, weight: .semibold))
                     .foregroundColor(AppTheme.textPrimary)
                 
@@ -675,7 +675,7 @@ struct CurrentYearCard: View {
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                         
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundColor(AppTheme.textPrimary)
                             
@@ -753,7 +753,7 @@ struct YearDetailCard: View {
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
                         
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 15, weight: .medium))
                                 .foregroundColor(AppTheme.textPrimary)
                             

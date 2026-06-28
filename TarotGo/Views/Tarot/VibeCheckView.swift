@@ -180,7 +180,7 @@ struct VibeCheckView: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(vibe.card.name)
+                    Text(vibe.card.localizedName)
                         .font(.headline)
                         .foregroundStyle(.white)
                     

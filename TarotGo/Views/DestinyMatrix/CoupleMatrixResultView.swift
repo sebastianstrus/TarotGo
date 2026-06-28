@@ -274,7 +274,7 @@ struct CouplePositionDetailCard: View {
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
 
                         VStack(alignment: .leading, spacing: 6) {
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundColor(AppTheme.textPrimary)
 
@@ -460,7 +460,7 @@ struct CoupleCardsTabView: View {
                             CardView(card: card, showFront: true)
                                 .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
 
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 14, weight: .medium))
                                 .foregroundColor(AppTheme.textPrimary)
                                 .multilineTextAlignment(.center)
@@ -631,7 +631,7 @@ struct CoupleYearCard: View {
                             .aspectRatio(AppTheme.cardAspectRatio, contentMode: .fit)
 
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundColor(AppTheme.textPrimary)
 

@@ -188,7 +188,7 @@ struct DestinyMatrixSessionCard: View {
                             .foregroundColor(AppTheme.textPrimary)
 
                         if let card = centerPos.tarotCard {
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 13, weight: .light))
                                 .foregroundColor(AppTheme.textSecondary)
                                 .lineLimit(1)
@@ -535,7 +535,7 @@ struct CoupleMatrixSessionCard: View {
                             .foregroundColor(AppTheme.textPrimary)
 
                         if let card = union.tarotCard {
-                            Text(card.name)
+                            Text(card.localizedName)
                                 .font(.system(size: 13, weight: .light))
                                 .foregroundColor(AppTheme.textSecondary)
                                 .lineLimit(1)
