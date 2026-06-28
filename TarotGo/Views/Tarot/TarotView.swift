@@ -190,6 +190,11 @@ struct TarotWheelMenuView: View {
             let labelRadius = (outerRadius + innerRadius) / 2
             let segmentAngle = 360.0 / Double(options.count)
 
+            let iconSize: CGFloat = max(40, size * 0.10)
+            let labelFontSize: CGFloat = max(11, size * 0.028)
+            let labelStackSpacing: CGFloat = max(2, size * 0.006)
+            let bottomLabelNudge: CGFloat = max(6, size * 0.016)
+
             ZStack {
                 // Mystic outer ring (layered) with breathing pulse
                 MysticOuterRing(size: size)
@@ -268,10 +273,10 @@ struct TarotWheelMenuView: View {
                     let x = center.x + cos(midRadians) * effectiveRadius
                     // Nudge the bottom two segments (Learn Tarot, Reading History) upward
                     // so their two-line labels sit better within the segment.
-                    let verticalNudge: CGFloat = (index == 2 || index == 3) ? -6 : 0
+                    let verticalNudge: CGFloat = (index == 2 || index == 3) ? -bottomLabelNudge : 0
                     let y = center.y + sin(midRadians) * effectiveRadius + verticalNudge
 
-                    VStack(spacing: 2) {
+                    VStack(spacing: labelStackSpacing) {
                         if option.isPremiumLocked {
                             PremiumBadge(size: .small)
                         }
@@ -279,10 +284,10 @@ struct TarotWheelMenuView: View {
                         Image(option.icon)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 40, height: 40)
+                            .frame(width: iconSize, height: iconSize)
 
                         Text(option.title)
-                            .font(AppTheme.serifFont(size: 11, weight: .semibold))
+                            .font(AppTheme.serifFont(size: labelFontSize, weight: .semibold))
                             .textCase(.uppercase)
                             .tracking(0.3)
                             .foregroundStyle(AppTheme.goldGradient)
