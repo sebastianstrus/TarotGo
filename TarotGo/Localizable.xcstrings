@@ -260319,6 +260319,77 @@
         }
       }
     },
+    "keyword.resilience" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widerstandsfähigkeit"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resilience"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resiliencia"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Résilience"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resilienza"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "回復力"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motstandskraft"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odporność"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resiliência"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motståndskraft"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стійкість"
+          }
+        }
+      }
+    },
     "keyword.resistance" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -318264,7 +318335,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tu Matriz de Pareja"
+            "value" : "Vuestra Matriz de Pareja"
           }
         },
         "fr" : {
@@ -318276,31 +318347,31 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La Tua Matrice di Coppia"
+            "value" : "La Vostra Matrice di Coppia"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "あなたのカップルマトリックス"
+            "value" : "二人のカップルマトリックス"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Derees Par-Matrise"
+            "value" : "Deres Par-Matrise"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wasza Matryca Par"
+            "value" : "Wasza Matryca Pary"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sua Matriz de Casal"
+            "value" : "Matriz de Casal"
           }
         },
         "sv" : {
