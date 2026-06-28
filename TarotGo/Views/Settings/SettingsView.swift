@@ -237,26 +237,36 @@ struct SettingsView: View {
                             }
                             .listRowSeparator(.hidden)
                         }
-
-                        Toggle(L10n.mercuryNotifications, isOn: $mercuryAlertsToggleState)
-                            .listRowSeparator(.hidden)
-                            .onChange(of: mercuryAlertsToggleState) { oldValue, newValue in
-                                if hasAppeared && oldValue != newValue {
-                                    soundService.play(.toggle)
-                                }
-                                handleMercuryAlertsToggle(newValue)
-                            }
-                            .tint(AppTheme.gold)
                     }
                 } header: {
                     Text(L10n.settingsNotifications)
                         .foregroundColor(AppTheme.gold)
                 } footer: {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(L10n.settingsDailyReminderDesc)
-                        Text(L10n.mercuryNotificationsDesc)
-                    }
-                    .foregroundColor(AppTheme.textSecondary)
+                    Text(L10n.settingsDailyReminderDesc)
+                        .foregroundColor(AppTheme.textSecondary)
+                }
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
+                )
+                .listSectionSeparator(.hidden)
+                .padding(.vertical, 4)
+                
+                // Notifications Section
+                Section {
+                    Toggle(L10n.mercuryNotifications, isOn: $mercuryAlertsToggleState)
+                        .listRowSeparator(.hidden)
+                        .onChange(of: mercuryAlertsToggleState) { oldValue, newValue in
+                            if hasAppeared && oldValue != newValue {
+                                soundService.play(.toggle)
+                            }
+                            handleMercuryAlertsToggle(newValue)
+                        }
+                        .tint(AppTheme.gold)
+                } footer: {
+                    Text(L10n.mercuryNotificationsDesc)
+                        .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
@@ -423,37 +433,21 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
-                // Legal Section
+                // Legal Section - Privacy Policy
                 Section {
-                    VStack(spacing: 12) {
-                        Button {
-                            openURL("https://tarot-go.com/privacy.html")
-                        } label: {
-                            HStack {
-                                Text(L10n.settingsPrivacyPolicy)
-                                Spacer()
-                                Image(systemName: "arrow.up.right")
-                                    .font(.system(size: 12))
-                                    .foregroundColor(AppTheme.gold.opacity(0.6))
-                            }
-                            .foregroundColor(AppTheme.textPrimary)
+                    Button {
+                        openURL("https://tarot-go.com/privacy.html")
+                    } label: {
+                        HStack {
+                            Text(L10n.settingsPrivacyPolicy)
+                            Spacer()
+                            Image(systemName: "arrow.up.right")
+                                .font(.system(size: 12))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
                         }
-                        .listRowSeparator(.hidden)
-                        
-                        Button {
-                            openURL("https://tarot-go.com/terms.html")
-                        } label: {
-                            HStack {
-                                Text(L10n.settingsTermsOfService)
-                                Spacer()
-                                Image(systemName: "arrow.up.right")
-                                    .font(.system(size: 12))
-                                    .foregroundColor(AppTheme.gold.opacity(0.6))
-                            }
-                            .foregroundColor(AppTheme.textPrimary)
-                        }
-                        .listRowSeparator(.hidden)
+                        .foregroundColor(AppTheme.textPrimary)
                     }
+                    .listRowSeparator(.hidden)
                 } header: {
                     Text(L10n.settingsLegal)
                         .foregroundColor(AppTheme.gold)
@@ -465,7 +459,33 @@ struct SettingsView: View {
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
-                .padding(.vertical, 4)
+                .listSectionSpacing(8)
+                .padding(.top, 4)
+
+                // Legal Section - Terms of Service
+                Section {
+                    Button {
+                        openURL("https://tarot-go.com/terms.html")
+                    } label: {
+                        HStack {
+                            Text(L10n.settingsTermsOfService)
+                            Spacer()
+                            Image(systemName: "arrow.up.right")
+                                .font(.system(size: 12))
+                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                        }
+                        .foregroundColor(AppTheme.textPrimary)
+                    }
+                    .listRowSeparator(.hidden)
+                }
+                .buttonStyle(.plain)
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(AppTheme.darkNavy.opacity(0.6))
+                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
+                )
+                .listSectionSeparator(.hidden)
+                .padding(.bottom, 4)
                 
                 // Rate App Section
                 Section {
