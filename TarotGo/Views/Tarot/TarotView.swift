@@ -266,7 +266,10 @@ struct TarotWheelMenuView: View {
                     let scale: CGFloat = burstIndex == index ? 1.07 : (pressedIndex == index ? 1.03 : 1.0)
                     let effectiveRadius = labelRadius * scale
                     let x = center.x + cos(midRadians) * effectiveRadius
-                    let y = center.y + sin(midRadians) * effectiveRadius
+                    // Nudge the bottom two segments (Learn Tarot, Reading History) upward
+                    // so their two-line labels sit better within the segment.
+                    let verticalNudge: CGFloat = (index == 2 || index == 3) ? -6 : 0
+                    let y = center.y + sin(midRadians) * effectiveRadius + verticalNudge
 
                     VStack(spacing: 2) {
                         if option.isPremiumLocked {
@@ -563,8 +566,6 @@ struct RoundedWheelSegmentShape: Shape {
 
         // Inset points on each edge, near each corner.
         let outerArcStart = point(center: center, angle: outerStartA, radius: outerRadius)
-        let outerArcEnd = point(center: center, angle: outerEndA, radius: outerRadius)
-        let innerArcStart = point(center: center, angle: innerStartA, radius: innerRadius)
         let innerArcEnd = point(center: center, angle: innerEndA, radius: innerRadius)
 
         let radialOuterStart = point(center: center, angle: a1, radius: outerInsetR)
