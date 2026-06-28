@@ -22,7 +22,6 @@ struct PalmReviewImageFrameKey: PreferenceKey {
 
 struct PalmReadingView: View {
     @StateObject private var viewModel = PalmReadingViewModel()
-    @Environment(\.dismiss) private var dismiss
     @State private var reviewImageFrame: CGRect? = nil
 
     var body: some View {
@@ -65,17 +64,6 @@ struct PalmReadingView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    HapticService.shared.impact(.light)
-                    dismiss()
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(AppTheme.gold)
-                }
-            }
-        }
         .alert("Error", isPresented: $viewModel.showError) {
             Button("Try Again", role: .cancel) {
                 viewModel.takeNewPhoto()
