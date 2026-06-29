@@ -290,9 +290,13 @@ private struct CosmicOrbitNode: View {
     @State private var glow: Bool = false
     @State private var iconSpin: Bool = false
 
-    private let circleSize: CGFloat = 90
-    private let capsuleThickness: CGFloat = 16
-    private let fontSize: CGFloat = 9
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+    private static let sizeMultiplier: CGFloat = isIPad ? 2.0 : 1.0
+
+    private let circleSize: CGFloat = 90 * sizeMultiplier
+    private let capsuleThickness: CGFloat = 16 * sizeMultiplier
+    private let fontSize: CGFloat = 9 * sizeMultiplier
+    private let iconSize: CGFloat = 32 * sizeMultiplier
     // Midline of the capsule sits exactly on the ring's border
     private var arcRadius: CGFloat { circleSize / 2 }
     // Square frame large enough to hold the full capsule centered on the ring center
@@ -346,7 +350,7 @@ private struct CosmicOrbitNode: View {
                         .aspectRatio(contentMode: .fit)
                 }
             }
-            .frame(width: 32, height: 32)
+            .frame(width: iconSize, height: iconSize)
             .rotation3DEffect(
                 .degrees(iconSpin ? 6 : -6),
                 axis: (x: 1, y: 0.3, z: 0)
