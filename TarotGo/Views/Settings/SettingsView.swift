@@ -573,13 +573,13 @@ struct SettingsView: View {
         .fullScreenCover(isPresented: $showOnboarding) {
             OnboardingFlowView(isPresented: $showOnboarding)
         }
-        .sheet(isPresented: $showBirthDateInput) {
+        .fullScreenCover(isPresented: $showBirthDateInput) {
             BirthDateInputView(isPresented: $showBirthDateInput) { date in
                 userBirthDate = date
             }
         }
         .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
-        .sheet(isPresented: $showPaywall) {
+        .fullScreenCover(isPresented: $showPaywall) {
             PaywallView()
         }
         .alert(L10n.settingsNotificationPermissionTitle, isPresented: $showPermissionAlert) {

@@ -89,7 +89,7 @@ struct DestinyMatrixView: View {
                     navigateToLearn = false
                 }
             }
-            .sheet(isPresented: $showPaywall) {
+            .fullScreenCover(isPresented: $showPaywall) {
                 PaywallView()
             }
         }

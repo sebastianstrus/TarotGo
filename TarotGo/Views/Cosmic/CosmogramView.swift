@@ -51,7 +51,7 @@ struct CosmogramView: View {
         }
         .navigationTitle(L10n.cosmogramTitle)
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showBirthDateInput) {
+        .fullScreenCover(isPresented: $showBirthDateInput) {
             BirthDateInputView(isPresented: $showBirthDateInput) { date in
                 birthDate = date
             }

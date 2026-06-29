@@ -81,18 +81,18 @@ struct CompatibilityView: View {
         }
         .navigationTitle(L10n.compatibilityTitle)
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showYourSignPicker) {
+        .fullScreenCover(isPresented: $showYourSignPicker) {
             SignPickerView(selectedSign: $yourSign, isPresented: $showYourSignPicker)
         }
-        .sheet(isPresented: $showPartnerSignPicker) {
+        .fullScreenCover(isPresented: $showPartnerSignPicker) {
             SignPickerView(selectedSign: $partnerSign, isPresented: $showPartnerSignPicker)
         }
-        .sheet(isPresented: $showBirthDateInput) {
+        .fullScreenCover(isPresented: $showBirthDateInput) {
             BirthDateInputView(isPresented: $showBirthDateInput) { date in
                 yourSign = AstrologyService.shared.zodiacSign(from: date)
             }
         }
-        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+        .fullScreenCover(isPresented: .constant(sharePDFURL != nil), onDismiss: {
             sharePDFURL = nil
         }) {
             if let pdfURL = sharePDFURL {

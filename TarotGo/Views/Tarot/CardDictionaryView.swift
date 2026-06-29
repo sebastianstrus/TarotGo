@@ -74,7 +74,7 @@ struct CardDictionaryView: View {
                 }
             }
         }
-        .sheet(isPresented: $showARModeSelection) {
+        .fullScreenCover(isPresented: $showARModeSelection) {
             ARModeSelectionSheet(selectedMode: $selectedARMode, isPresented: $showARModeSelection)
         }
         .fullScreenCover(item: $selectedARMode) { mode in

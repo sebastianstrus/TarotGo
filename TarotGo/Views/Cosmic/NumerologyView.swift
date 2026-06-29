@@ -51,7 +51,7 @@ struct NumerologyView: View {
         }
         .navigationTitle(L10n.numerologyTitle)
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showBirthDateInput) {
+        .fullScreenCover(isPresented: $showBirthDateInput) {
             BirthDateInputView(isPresented: $showBirthDateInput) { date in
                 birthDate = date
             }

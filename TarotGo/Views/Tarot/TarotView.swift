@@ -83,7 +83,7 @@ struct TarotView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showPaywall) {
+            .fullScreenCover(isPresented: $showPaywall) {
                 PaywallView()
             }
         }

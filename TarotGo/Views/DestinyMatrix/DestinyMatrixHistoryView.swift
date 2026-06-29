@@ -343,7 +343,7 @@ struct DestinyMatrixSessionDetailView: View {
         } message: {
             Text(L10n.matrixHistoryDeleteMessage)
         }
-        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+        .fullScreenCover(isPresented: .constant(sharePDFURL != nil), onDismiss: {
             sharePDFURL = nil
         }) {
             if let pdfURL = sharePDFURL {
@@ -689,7 +689,7 @@ struct CoupleMatrixSessionDetailView: View {
         } message: {
             Text(L10n.matrixHistoryDeleteMessage)
         }
-        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+        .fullScreenCover(isPresented: .constant(sharePDFURL != nil), onDismiss: {
             sharePDFURL = nil
         }) {
             if let pdfURL = sharePDFURL {

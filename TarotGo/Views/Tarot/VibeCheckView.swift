@@ -36,7 +36,7 @@ struct VibeCheckView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showCardDetail) {
+            .fullScreenCover(isPresented: $showCardDetail) {
                 if let vibe = selectedVibe {
                     NavigationStack {
                         CardDetailView(card: vibe.card)

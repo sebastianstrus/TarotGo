@@ -423,7 +423,7 @@ struct SessionDetailView: View {
         } message: {
             Text(L10n.historyDeleteMessage)
         }
-        .sheet(isPresented: .constant(sharePDFURL != nil), onDismiss: {
+        .fullScreenCover(isPresented: .constant(sharePDFURL != nil), onDismiss: {
             sharePDFURL = nil
         }) {
             if let pdfURL = sharePDFURL {

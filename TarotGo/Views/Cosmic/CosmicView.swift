@@ -56,7 +56,7 @@ struct CosmicView: View {
                 }
             }
             .navigationBarHidden(true)
-            .sheet(isPresented: $showPaywall) {
+            .fullScreenCover(isPresented: $showPaywall) {
                 PaywallView()
             }
         }

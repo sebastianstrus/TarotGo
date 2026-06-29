@@ -108,10 +108,10 @@ struct CardOfTheDayView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showVibeCheck) {
+            .fullScreenCover(isPresented: $showVibeCheck) {
                 VibeCheckView()
             }
-            .sheet(isPresented: $showBirthDateInput) {
+            .fullScreenCover(isPresented: $showBirthDateInput) {
                 BirthDateInputView(isPresented: $showBirthDateInput) { date in
                     // Reload the card with the new personalized seed
                     loadTodayCard()

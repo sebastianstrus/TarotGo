@@ -63,12 +63,12 @@ struct HoroscopeView: View {
                 }
             }
         }
-        .sheet(isPresented: $showBirthDateInput) {
+        .fullScreenCover(isPresented: $showBirthDateInput) {
             BirthDateInputView(isPresented: $showBirthDateInput) { date in
                 selectedSign = AstrologyService.shared.zodiacSign(from: date)
             }
         }
-        .sheet(isPresented: $showSignPicker) {
+        .fullScreenCover(isPresented: $showSignPicker) {
             SignPickerView(selectedSign: $selectedSign, isPresented: $showSignPicker)
         }
         .onAppear {

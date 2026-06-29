@@ -152,7 +152,7 @@ struct PalmistryView: View {
                     appViewModel.tabBarVisibility = isActive ? .hidden : .visible
                 }
             }
-            .sheet(isPresented: $showPaywall) {
+            .fullScreenCover(isPresented: $showPaywall) {
                 PaywallView()
             }
         }

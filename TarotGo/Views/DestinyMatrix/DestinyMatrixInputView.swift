@@ -213,7 +213,7 @@ struct DestinyMatrixInputView: View {
                 DestinyMatrixResultView(matrix: matrix)
             }
         }
-        .sheet(isPresented: $showBirthDateInput) {
+        .fullScreenCover(isPresented: $showBirthDateInput) {
             BirthDateInputView(isPresented: $showBirthDateInput) { date in
                 birthDate = date
             }

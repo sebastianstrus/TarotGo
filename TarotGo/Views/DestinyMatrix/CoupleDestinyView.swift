@@ -57,7 +57,7 @@ struct CoupleDestinyView: View {
                 CoupleMatrixResultView(matrix: matrix)
             }
         }
-        .sheet(isPresented: $showBirthDateInput) {
+        .fullScreenCover(isPresented: $showBirthDateInput) {
             BirthDateInputView(isPresented: $showBirthDateInput) { date in
                 birthDateA = date
             }
