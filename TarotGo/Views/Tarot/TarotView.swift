@@ -54,7 +54,7 @@ struct TarotView: View {
                         options: wheelOptions,
                         onSelect: handleSelection
                     )
-                    .padding(.horizontal, 10)
+                    .padding(.horizontal, Self.isIPad ? 30 : 10)
 
                     Spacer(minLength: 0)
                 }
