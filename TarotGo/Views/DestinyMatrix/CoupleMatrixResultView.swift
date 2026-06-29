@@ -186,6 +186,8 @@ struct CoupleDiagramTabView: View {
     @Binding var selectedPosition: CoupleMatrixPosition?
     @Binding var selectedYear: CoupleYearlyEnergy?
 
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
@@ -194,8 +196,9 @@ struct CoupleDiagramTabView: View {
                     selectedPosition: $selectedPosition,
                     selectedYear: $selectedYear
                 )
-                .frame(height: 400)
+                .frame(height: Self.isIPad ? 600 : 400)
                 .padding(.horizontal, 12)
+                .padding(.bottom, Self.isIPad ? 60 : 0)
 
                 if let position = selectedPosition {
                     CouplePositionDetailCard(position: position)

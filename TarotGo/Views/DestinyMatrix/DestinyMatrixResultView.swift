@@ -171,14 +171,17 @@ struct DiagramTabView: View {
     let matrix: DestinyMatrix
     @Binding var selectedPosition: MatrixPosition?
     @Binding var selectedYear: YearlyEnergy?
-    
+
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
                 // Diagram
                 DestinyMatrixDiagramView(matrix: matrix, selectedPosition: $selectedPosition, selectedYear: $selectedYear)
-                    .frame(height: 380)
+                    .frame(height: Self.isIPad ? 570 : 380)
                     .padding(.horizontal, 20)
+                    .padding(.bottom, Self.isIPad ? 60 : 0)
                 
                 // Selected position or year details
                 if let position = selectedPosition {
