@@ -551,12 +551,22 @@ struct CoupleYearGroupSection: View {
     let yearsInGroup: [CoupleYearlyEnergy]
     @Binding var selectedYear: CoupleYearlyEnergy?
 
+    private static let columnCount: Int = 10
+
     private var sectionTitle: String {
         guard let first = yearsInGroup.first, let last = yearsInGroup.last else { return "" }
         if first.year == last.year {
             return "\(first.year)"
         }
         return "\(first.year) – \(last.year)"
+    }
+
+    private var gridColumns: [GridItem] {
+        Array(repeating: GridItem(.flexible(), spacing: 4), count: Self.columnCount)
+    }
+
+    private func year(at columnIndex: Int) -> CoupleYearlyEnergy? {
+        yearsInGroup.first { ($0.year - 1) % Self.columnCount == columnIndex }
     }
 
     var body: some View {
@@ -566,23 +576,26 @@ struct CoupleYearGroupSection: View {
                 .foregroundColor(AppTheme.textSecondary)
                 .padding(.horizontal, 20)
 
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    ForEach(yearsInGroup) { year in
+            LazyVGrid(columns: gridColumns, spacing: 4) {
+                ForEach(0..<Self.columnCount, id: \.self) { columnIndex in
+                    if let yearEnergy = year(at: columnIndex) {
                         CoupleYearChipView(
-                            yearEnergy: year,
-                            isSelected: selectedYear?.id == year.id
+                            yearEnergy: yearEnergy,
+                            isSelected: selectedYear?.id == yearEnergy.id
                         )
                         .onTapGesture {
                             withAnimation(.spring(response: 0.3)) {
-                                selectedYear = year
+                                selectedYear = yearEnergy
                             }
                             HapticService.shared.impact(.light)
                         }
+                    } else {
+                        Color.clear
+                            .frame(height: 1)
                     }
                 }
-                .padding(.horizontal, 20)
             }
+            .padding(.horizontal, 20)
         }
     }
 }
@@ -676,8 +689,13 @@ struct CoupleYearChipView: View {
     let yearEnergy: CoupleYearlyEnergy
     let isSelected: Bool
 
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+    private var circleSize: CGFloat { Self.isIPad ? 56 : 30 }
+    private var energyFontSize: CGFloat { Self.isIPad ? 22 : 13 }
+    private var yearFontSize: CGFloat { Self.isIPad ? 13 : 9 }
+
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 4) {
             ZStack {
                 Circle()
                     .fill(
@@ -687,7 +705,7 @@ struct CoupleYearChipView: View {
                                 ? LinearGradient(colors: [AppTheme.gold.opacity(0.3)], startPoint: .top, endPoint: .bottom)
                                 : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
                     )
-                    .frame(width: 50, height: 50)
+                    .frame(width: circleSize, height: circleSize)
                     .overlay(
                         Circle()
                             .stroke(
@@ -697,15 +715,17 @@ struct CoupleYearChipView: View {
                     )
 
                 Text("\(yearEnergy.primaryEnergy)")
-                    .font(.system(size: 18, weight: yearEnergy.isCurrentYear ? .bold : .semibold, design: .rounded))
+                    .font(.system(size: energyFontSize, weight: yearEnergy.isCurrentYear ? .bold : .semibold, design: .rounded))
                     .foregroundColor(yearEnergy.isCurrentYear ? .black : AppTheme.textPrimary)
             }
 
             Text("\(yearEnergy.year)")
-                .font(.system(size: 11))
+                .font(.system(size: yearFontSize))
                 .foregroundColor(AppTheme.textTertiary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
         }
-        .padding(.vertical, 4)
+        .padding(.vertical, 2)
         .scaleEffect(isSelected ? 1.05 : 1.0)
         .animation(.spring(response: 0.2), value: isSelected)
     }
