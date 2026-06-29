@@ -792,35 +792,48 @@ struct DecadeSection: View {
     let matrix: DestinyMatrix
     let decade: Int
     @Binding var selectedYear: YearlyEnergy?
-    
+
+    private static let columnCount: Int = 10
+
     private var yearsInDecade: [YearlyEnergy] {
         matrix.yearlyEnergies.filter { $0.age >= decade && $0.age <= decade + 9 }
     }
-    
+
+    private var gridColumns: [GridItem] {
+        Array(repeating: GridItem(.flexible(), spacing: 4), count: Self.columnCount)
+    }
+
+    private func year(at columnIndex: Int) -> YearlyEnergy? {
+        yearsInDecade.first { ($0.age - decade) == columnIndex }
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("\(decade)-\(decade + 9) years")
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundColor(AppTheme.textSecondary)
                 .padding(.horizontal, 20)
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    ForEach(yearsInDecade) { year in
+
+            LazyVGrid(columns: gridColumns, spacing: 4) {
+                ForEach(0..<Self.columnCount, id: \.self) { columnIndex in
+                    if let yearEnergy = year(at: columnIndex) {
                         YearChipView(
-                            yearEnergy: year,
-                            isSelected: selectedYear?.id == year.id
+                            yearEnergy: yearEnergy,
+                            isSelected: selectedYear?.id == yearEnergy.id
                         )
                         .onTapGesture {
                             withAnimation(.spring(response: 0.3)) {
-                                selectedYear = year
+                                selectedYear = yearEnergy
                             }
                             HapticService.shared.impact(.light)
                         }
+                    } else {
+                        Color.clear
+                            .frame(height: 1)
                     }
                 }
-                .padding(.horizontal, 20)
             }
+            .padding(.horizontal, 20)
         }
     }
 }
@@ -830,14 +843,22 @@ struct DecadeSection: View {
 struct YearChipView: View {
     let yearEnergy: YearlyEnergy
     let isSelected: Bool
-    
+
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+    private var circleSize: CGFloat { Self.isIPad ? 56 : 30 }
+    private var energyFontSize: CGFloat { Self.isIPad ? 22 : 13 }
+    private var ageFontSize: CGFloat { Self.isIPad ? 13 : 9 }
+    private var yearFontSize: CGFloat { Self.isIPad ? 13 : 9 }
+
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 3) {
             // Age
             Text("\(yearEnergy.age)")
-                .font(.system(size: 11, weight: .medium))
+                .font(.system(size: ageFontSize, weight: .medium))
                 .foregroundColor(AppTheme.textTertiary)
-            
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+
             // Energy circle
             ZStack {
                 Circle()
@@ -848,7 +869,7 @@ struct YearChipView: View {
                                 ? LinearGradient(colors: [AppTheme.gold.opacity(0.3)], startPoint: .top, endPoint: .bottom)
                                 : LinearGradient(colors: [AppTheme.deepNavy.opacity(0.6)], startPoint: .top, endPoint: .bottom))
                     )
-                    .frame(width: 44, height: 44)
+                    .frame(width: circleSize, height: circleSize)
                     .overlay(
                         Circle()
                             .stroke(
@@ -856,16 +877,18 @@ struct YearChipView: View {
                                 lineWidth: isSelected ? 2 : 1
                             )
                     )
-                
+
                 Text("\(yearEnergy.primaryEnergy)")
-                    .font(.system(size: 16, weight: yearEnergy.isCurrentYear ? .bold : .semibold, design: .rounded))
+                    .font(.system(size: energyFontSize, weight: yearEnergy.isCurrentYear ? .bold : .semibold, design: .rounded))
                     .foregroundColor(yearEnergy.isCurrentYear ? .black : AppTheme.textPrimary)
             }
-            
+
             // Year
             Text("\(yearEnergy.year)")
-                .font(.system(size: 10))
+                .font(.system(size: yearFontSize))
                 .foregroundColor(AppTheme.textTertiary.opacity(0.7))
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
         }
         .scaleEffect(isSelected ? 1.05 : 1.0)
         .animation(.spring(response: 0.2), value: isSelected)
