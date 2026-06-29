@@ -13,6 +13,8 @@ struct TarotView: View {
     @State private var destination: TarotDestination?
     @State private var showPaywall: Bool = false
 
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+
     var body: some View {
         NavigationStack(path: $appViewModel.navigationPath) {
             ZStack {
@@ -179,6 +181,7 @@ struct TarotWheelMenuView: View {
 
     private let segmentGapDegrees: Double = 5
     private let segmentCornerRadius: CGFloat = 16
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
 
     var body: some View {
         GeometryReader { geometry in
@@ -279,6 +282,7 @@ struct TarotWheelMenuView: View {
                     VStack(spacing: labelStackSpacing) {
                         if option.isPremiumLocked {
                             PremiumBadge(size: .small)
+                                .scaleEffect(Self.isIPad ? 2.0 : 1.0)
                         }
 
                         Image(option.icon)
