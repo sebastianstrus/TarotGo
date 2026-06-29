@@ -164,6 +164,9 @@ private struct PalmCardButton: View {
     let title: String
     var phase: Double = 0
 
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+    private var titleFontSize: CGFloat { Self.isIPad ? 16 : 8 }
+
     var body: some View {
         TimelineView(.animation) { context in
             let t = context.date.timeIntervalSinceReferenceDate
@@ -178,15 +181,15 @@ private struct PalmCardButton: View {
                 .overlay {
                     GeometryReader { geo in
                         Text(title)
-                            .font(AppTheme.serifFont(size: 8, weight: .semibold))
+                            .font(AppTheme.serifFont(size: titleFontSize, weight: .semibold))
                             .foregroundStyle(AppTheme.goldGradient)
                             .multilineTextAlignment(.center)
                             .lineLimit(3)
                             .minimumScaleFactor(0.7)
                             .shadow(color: .black.opacity(0.6), radius: 2)
                             .padding(.horizontal, 8)
-                            .frame(width: geo.size.width,
-                                   height: geo.size.height * 0.32,
+                            .frame(width: max(0, geo.size.width - (Self.isIPad ? 6 : 0)),
+                                   height: max(0, geo.size.height * 0.32),
                                    alignment: .center)
                             .position(x: geo.size.width * 0.5,
                                       y: geo.size.height * 0.68)
@@ -201,7 +204,7 @@ private struct PalmCardButton: View {
 private struct PalmButton: View {
     let icon: String
     let title: String
-    var scale: CGFloat = 1.2
+    var scale: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 2.4 : 1.2
     @State private var sparkAnimating: Bool = false
 
     private var circleSize: CGFloat { 90 * scale }
