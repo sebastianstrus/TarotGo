@@ -248,7 +248,10 @@ private struct CircularRingButton: View {
     @State private var glow: Bool = false
     @State private var iconWobble: Bool = false
 
-    private let buttonSize: CGFloat = 110
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+    private let buttonSize: CGFloat = isIPad ? 220 : 110
+    private let iconSize: CGFloat = isIPad ? 64 : 32
+    private let titleFontSize: CGFloat = isIPad ? 24 : 12
 
     var body: some View {
         ZStack {
@@ -280,14 +283,14 @@ private struct CircularRingButton: View {
                 Image(icon)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 32, height: 32)
+                    .frame(width: iconSize, height: iconSize)
                     .rotation3DEffect(
                         .degrees(iconWobble ? 6 : -6),
                         axis: (x: 1, y: 0.3, z: 0)
                     )
 
                 Text(title)
-                    .font(AppTheme.serifFont(size: 12, weight: .medium))
+                    .font(AppTheme.serifFont(size: titleFontSize, weight: .medium))
                     .foregroundColor(AppTheme.textPrimary)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
@@ -300,7 +303,8 @@ private struct CircularRingButton: View {
         .overlay(alignment: .top) {
             if isPremiumLocked {
                 PremiumBadge(size: .small)
-                    .offset(y: -6)
+                    .scaleEffect(Self.isIPad ? 2.0 : 1.0)
+                    .offset(y: Self.isIPad ? -12 : -6)
             }
         }
         .contentShape(Circle())
