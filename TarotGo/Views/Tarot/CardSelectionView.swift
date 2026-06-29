@@ -42,6 +42,11 @@ struct CardSelectionView: View {
     @State private var fanAppeared: Bool = false
 
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    private var fanScale: CGFloat {
+        horizontalSizeClass == .regular ? 2.5 : 1.0
+    }
 
     private struct FlyingCardState: Equatable {
         let card: TarotCard
@@ -249,8 +254,11 @@ struct CardSelectionView: View {
             let fanInSelection = geometry.frame(in: .named("selection"))
 
             let angleStep: Double = cardCount > 30 ? 1.6 : 3.0
-            let pivotDistance: CGFloat = 110.0
-            let centerYOffset: CGFloat = -25.0
+            let pivotDistance: CGFloat = 110.0 * fanScale
+            let centerYOffset: CGFloat = -25.0 * fanScale
+            let cardWidth: CGFloat = 100 * fanScale
+            let cardHeight: CGFloat = 150 * fanScale
+            let popOffset: CGFloat = 70 * fanScale
 
             ZStack {
                 ForEach(Array(viewModel.availableCards.enumerated()), id: \.element.id) { index, card in
@@ -278,7 +286,7 @@ struct CardSelectionView: View {
                                 let targetCenter: CGPoint = {
                                     switch f.phase {
                                     case .rest: return f.srcCenter
-                                    case .popped: return CGPoint(x: f.srcCenter.x, y: f.srcCenter.y - 70)
+                                    case .popped: return CGPoint(x: f.srcCenter.x, y: f.srcCenter.y - popOffset)
                                     case .landed: return f.dstCenter
                                     }
                                 }()
@@ -296,10 +304,10 @@ struct CardSelectionView: View {
                                 )
                             } else {
                                 return (
-                                    width: 100,
-                                    height: 150,
+                                    width: cardWidth,
+                                    height: cardHeight,
                                     offsetX: effectiveOffsetX + (isDragging ? dragOffset.width : 0),
-                                    offsetY: effectiveOffsetY - (isPopping ? 70 : 0) + (isDragging ? dragOffset.height : 0),
+                                    offsetY: effectiveOffsetY - (isPopping ? popOffset : 0) + (isDragging ? dragOffset.height : 0),
                                     angle: effectiveAngle,
                                     scale: isPopping ? 1.15 : 1.0,
                                     zIndex: Double(index)
@@ -349,10 +357,10 @@ struct CardSelectionView: View {
                     }
                 }
             }
-            .frame(width: geometry.size.width, height: 240)
+            .frame(width: geometry.size.width, height: 240 * fanScale)
             .position(x: geometry.size.width / 2, y: geometry.size.height / 2 + centerYOffset)
         }
-        .frame(height: 280)
+        .frame(height: 280 * fanScale)
     }
     
     private func setupCards() {
@@ -384,7 +392,7 @@ struct CardSelectionView: View {
             flying = FlyingCardState(
                 card: card,
                 srcCenter: currentDraggedCenter,
-                srcSize: CGSize(width: 100, height: 150),
+                srcSize: CGSize(width: 100 * fanScale, height: 150 * fanScale),
                 srcAngle: srcAngle,
                 dstCenter: CGPoint(x: dstFrame.midX, y: dstFrame.midY),
                 dstSize: dstFrame.size,
@@ -411,7 +419,7 @@ struct CardSelectionView: View {
                 flying = FlyingCardState(
                     card: card,
                     srcCenter: srcCenter,
-                    srcSize: CGSize(width: 100, height: 150),
+                    srcSize: CGSize(width: 100 * fanScale, height: 150 * fanScale),
                     srcAngle: srcAngle,
                     dstCenter: CGPoint(x: dstFrame.midX, y: dstFrame.midY),
                     dstSize: dstFrame.size,

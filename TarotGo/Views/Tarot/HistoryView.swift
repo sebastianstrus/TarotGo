@@ -109,8 +109,10 @@ struct HistoryView: View {
     
     private var emptyStateView: some View {
         VStack(spacing: 20) {
-            Image(systemName: "book.closed")
-                .font(.system(size: 60))
+            Image("ic_saved_tarot_readings")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 60, height: 60)
                 .foregroundStyle(AppTheme.goldGradient.opacity(0.4))
             
             Text(L10n.historyNoReadings)

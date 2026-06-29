@@ -122,8 +122,10 @@ struct DestinyMatrixHistoryView: View {
 
     private var emptyStateView: some View {
         VStack(spacing: 20) {
-            Image(systemName: "star.circle")
-                .font(.system(size: 60))
+            Image("ic_destiny_matrix") // Your image from Assets.xcassets
+                .resizable()
+                .scaledToFit() // Maintains the image's aspect ratio
+                .frame(width: 60, height: 60) // Matches your original 60pt font size
                 .foregroundStyle(AppTheme.goldGradient.opacity(0.4))
 
             Text(L10n.matrixHistoryEmpty)
