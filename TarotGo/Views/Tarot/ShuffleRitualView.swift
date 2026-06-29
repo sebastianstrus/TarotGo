@@ -83,7 +83,6 @@ struct ShuffleRitualView: View {
     @State private var navigateToReading: Bool = false
     @State private var emitterPosition: SIMD2<Double> = [0.5, 0.5]
     @State private var showFire: Bool = false
-    @State private var screenSize: CGSize = .zero
     @State private var fireOpacity: Double = 0.0
     @State private var deckFrame: CGRect = .zero
     @State private var fireSoundTask: DispatchWorkItem?
@@ -91,6 +90,11 @@ struct ShuffleRitualView: View {
     @State private var showExitConfirmation: Bool = false
     @State private var cardStates: [ShuffleCardState] = []
     @Environment(\.dismiss) private var dismiss
+
+    // Fixed size for the fire VortexView so the fire effect renders consistently
+    // across devices (Vortex parameters are normalized to view bounds, so a
+    // full-screen VortexView produces very different results on iPhone vs iPad).
+    private let fireEffectSize: CGSize = CGSize(width: 400, height: 800)
     
     private let cardCount: Int = 78
     
@@ -103,33 +107,33 @@ struct ShuffleRitualView: View {
                 // Background
                 Color.clear
                     .background(AnimatedBackgroundView().ignoresSafeArea())
-            
+
             VStack(spacing: 40) {
                 Spacer()
-                
+
                 // Instruction text
                 instructionText
                     .padding(.horizontal, 30)
-                
+
                 Spacer()
-                
-                // Deck of cards with long press
-                deckView
-                    .frame(width: 200, height: 300)
-                
+
+                // Deck of cards with fire overlay. The fire effect is layered
+                // directly over the deck so it renders the same on every device.
+                ZStack {
+                    deckView
+                    mysticalFireEffect
+                        .allowsHitTesting(false)
+                }
+                .frame(width: 200, height: 300)
+
                 Spacer()
-                
+
                 // Progress indicator
                 progressIndicator
                     .opacity(phase == .pressing ? 1 : 0)
-                
+
                 Spacer()
             }
-            
-            // Fire effect on top
-            mysticalFireEffect
-                .ignoresSafeArea()
-                .allowsHitTesting(false)
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
@@ -183,13 +187,11 @@ struct ShuffleRitualView: View {
                 }
             }
             .onAppear {
-                screenSize = geometry.size
                 if cardStates.isEmpty {
                     cardStates = (0..<cardCount).map { i in initialStackedState(for: i) }
                 }
             }
             .onDisappear {
-                // Reset fire position to center for next time
                 emitterPosition = [0.5, 0.5]
                 showFire = false
                 fireOpacity = 0.0
@@ -293,12 +295,18 @@ struct ShuffleRitualView: View {
         .gesture(
             DragGesture(minimumDistance: 0, coordinateSpace: .global)
                 .onChanged { value in
-                    // 1. Always update position immediately
-                    let newPos: SIMD2<Double> = [
-                        Double(value.location.x / screenSize.width),
-                        Double(value.location.y / screenSize.height)
-                    ]
-                    emitterPosition = newPos
+                    // 1. Map the global touch location into the VortexView's
+                    //    local normalized coordinate space. The VortexView is a
+                    //    fixed `fireEffectSize` rectangle centered on the deck,
+                    //    so 0.5 is the deck center and offsets are scaled by
+                    //    fireEffectSize. This keeps the emitter following the
+                    //    finger consistently on every device.
+                    if deckFrame.width > 0 {
+                        emitterPosition = [
+                            0.5 + Double((value.location.x - deckFrame.midX) / fireEffectSize.width),
+                            0.5 + Double((value.location.y - deckFrame.midY) / fireEffectSize.height)
+                        ]
+                    }
 
                     // 2. If this is the start of a touch (instruction phase) and gesture hasn't been cancelled
                     if phase == .instruction && !gestureCancelled {
@@ -349,23 +357,23 @@ struct ShuffleRitualView: View {
         // Cancel the delayed fire sound task if it hasn't executed yet
         fireSoundTask?.cancel()
         fireSoundTask = nil
-        
+
         // Stop the fire sound if it's playing
         SoundService.shared.stop(.fire)
-        
+
         // Immediate reset without animation to prevent label overlap
         isPressed = false
         phase = .instruction
         pressProgress = 0
         showFire = false
         fireOpacity = 0.0
-        emitterPosition = [0.5, 0.5] // Reset to center for next time
+        emitterPosition = [0.5, 0.5]
     }
-    
+
     private var progressIndicator: some View {
         MysticWave(progress: pressProgress)
     }
-    
+
     private var mysticalFireEffect: some View {
         VortexView(fireSystem()) {
             Circle()
@@ -375,10 +383,14 @@ struct ShuffleRitualView: View {
                 .frame(width: 32)
                 .tag("circle")
         }
+        .frame(width: fireEffectSize.width, height: fireEffectSize.height)
         .opacity(showFire ? fireOpacity : 0.0)
     }
-    
-    // Returns the built-in fire preset with our emitter position injected
+
+    // Returns the built-in fire preset with the emitter position injected.
+    // The position is in the VortexView's local normalized coordinates
+    // (the fixed-size frame centered on the deck), so the fire follows the
+    // finger consistently across devices.
     private func fireSystem() -> VortexSystem {
         let fire = VortexSystem.fire
         fire.position = emitterPosition
@@ -403,9 +415,9 @@ struct ShuffleRitualView: View {
     private func completePress() {
         isPressed = false
         phase = .shuffling
-        
+
         emitterPosition = [0.5, 0.5]
-        
+
         withAnimation(.easeInOut(duration: 0.5)) {
             showFire = false
         }
