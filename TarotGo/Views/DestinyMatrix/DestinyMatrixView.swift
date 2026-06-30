@@ -18,6 +18,8 @@ struct DestinyMatrixView: View {
     @State private var galaxyRotationBack: Double = 0
     @State private var galaxyRotationMiddle: Double = 0
     @State private var galaxyRotationFront: Double = 0
+    
+    private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
 
     private var isAnyDestinationActive: Bool {
         navigateToDestinyMatrix || navigateToCoupleDestiny || navigateToHistory || navigateToLearn
@@ -226,7 +228,7 @@ struct DestinyMatrixView: View {
             .frame(width: geometry.size.width, height: geometry.size.height)
         }
         .aspectRatio(1, contentMode: .fit)
-        .padding(.horizontal, 10)
+        .padding(.horizontal, Self.isIPad ? 20 : 10)
         .onAppear {
             SoundService.shared.playAmbient(.galaxy, volume: 0.6, loop: true)
         }
