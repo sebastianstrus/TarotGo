@@ -56,6 +56,11 @@ class PalmAnalysisService {
         options.minHandPresenceConfidence = 0.5
         options.minTrackingConfidence = 0.5
         options.baseOptions.modelAssetPath = modelPath
+        // Run inference on the GPU. The hand landmarker is a small MobileNet-
+        // style model whose GEMM ops map well to Metal; on-device runs are
+        // typically 2-3× faster than the CPU default. MediaPipe falls back to
+        // CPU automatically if Metal init fails, so this is a safe override.
+        options.baseOptions.delegate = .GPU
         do {
             return try HandLandmarker(options: options)
         } catch {
