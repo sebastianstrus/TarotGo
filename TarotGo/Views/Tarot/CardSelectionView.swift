@@ -45,7 +45,7 @@ struct CardSelectionView: View {
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
     private var fanScale: CGFloat {
-        horizontalSizeClass == .regular ? 2.5 : 1.0
+        horizontalSizeClass == .regular ? 2.0 : 1.0
     }
 
     private struct FlyingCardState: Equatable {
