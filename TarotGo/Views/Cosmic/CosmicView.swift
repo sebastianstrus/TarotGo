@@ -404,6 +404,7 @@ private struct CosmicOrbitNode: View {
         .overlay(alignment: .top) {
             if isPremiumLocked {
                 PremiumBadge(size: .small)
+                    .scaleEffect(Self.isIPad ? 2.0 : 1.0)
                     .offset(y: -2)
             }
         }
