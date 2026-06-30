@@ -169,6 +169,11 @@ class CameraViewController: UIViewController {
     private let handGuideLayer = CAShapeLayer()
     private let captureButton = UIButton(type: .system)
     private let instructionLabel = UILabel()
+    private var instructionLabelTopConstraint: NSLayoutConstraint?
+
+    private var isIPad: Bool {
+        traitCollection.userInterfaceIdiom == .pad
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -233,8 +238,10 @@ class CameraViewController: UIViewController {
         instructionLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(instructionLabel)
         
+        let labelTopConstraint = instructionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20)
+        instructionLabelTopConstraint = labelTopConstraint
         NSLayoutConstraint.activate([
-            instructionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            labelTopConstraint,
             instructionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             instructionLabel.widthAnchor.constraint(equalToConstant: 300),
             instructionLabel.heightAnchor.constraint(equalToConstant: 50)
@@ -258,17 +265,41 @@ class CameraViewController: UIViewController {
     }
     
     private func updateHandGuidePosition() {
-        let width = view.bounds.width * 0.9
-        let height = width * 1.6
-        let x = (view.bounds.width - width) / 2
+        let aspectRatio: CGFloat = 1.6
+        let maxWidth = view.bounds.width * 0.9
 
-        // Center between the instruction label and the capture button rather
-        // than the whole view, so the label's bottom edge doesn't clip the
-        // top arc of the guide.
-        let topInset = view.safeAreaInsets.top + 90
-        let bottomInset = view.safeAreaInsets.bottom + 110
-        let available = view.bounds.height - topInset - bottomInset
-        let y = topInset + max(0, (available - height) / 2)
+        let width: CGFloat
+        let height: CGFloat
+        let y: CGFloat
+        if isIPad {
+            // Leave 10pt above the guide and 10pt between its visible bottom
+            // edge and the capture button. The bezier teardrop's lowest
+            // point sits at ~0.85 * height (curve endpoints at 0.7h, control
+            // points at 0.9h), so the bounding box extends below the visible
+            // shape. Size against the visible bottom, not the bounding box.
+            let topMargin: CGFloat = 10
+            let buttonGap: CGFloat = 10
+            let shapeBottomRatio: CGFloat = 0.85
+            let captureButtonTop = view.bounds.height - view.safeAreaInsets.bottom - 90
+            let availableVisualHeight = max(captureButtonTop - topMargin - buttonGap, 1)
+            let neededHeight = availableVisualHeight / shapeBottomRatio
+            width = min(maxWidth, neededHeight / aspectRatio)
+            height = width * aspectRatio
+            y = topMargin
+            // Vertically center the label inside the guide.
+            instructionLabelTopConstraint?.constant = y + (height - 50) / 2 - view.safeAreaInsets.top
+        } else {
+            width = maxWidth
+            height = width * aspectRatio
+            // Center between the instruction label and the capture button rather
+            // than the whole view, so the label's bottom edge doesn't clip the
+            // top arc of the guide.
+            let topInset = view.safeAreaInsets.top + 90
+            let bottomInset = view.safeAreaInsets.bottom + 110
+            let available = view.bounds.height - topInset - bottomInset
+            y = topInset + max(0, (available - height) / 2)
+        }
+        let x = (view.bounds.width - width) / 2
         
         let path = UIBezierPath()
         
