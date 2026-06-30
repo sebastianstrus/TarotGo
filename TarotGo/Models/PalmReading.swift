@@ -9,7 +9,7 @@ import Foundation
 
 // Which hand was photographed. Inferred from MediaPipe's handedness
 // classifier together with a 3D palm-orientation check.
-enum Handedness: String, Codable {
+nonisolated enum Handedness: String, Codable {
     case left
     case right
 
@@ -24,7 +24,7 @@ enum Handedness: String, Codable {
 }
 
 // Major palm lines analyzed in palmistry
-enum PalmLine: String, Codable {
+nonisolated enum PalmLine: String, Codable {
     case heart
     case head
     case life
@@ -45,7 +45,7 @@ enum PalmLine: String, Codable {
 }
 
 // Palm mounts (raised areas on the palm)
-enum PalmMount: String, Codable, CaseIterable {
+nonisolated enum PalmMount: String, Codable, CaseIterable {
     case jupiter
     case saturn
     case apollo
@@ -104,7 +104,7 @@ enum PalmMount: String, Codable, CaseIterable {
 }
 
 // Characteristics of a palm line
-struct PalmLineCharacteristics: Codable {
+nonisolated struct PalmLineCharacteristics: Codable {
     let line: PalmLine
     let length: LineLength
     let depth: LineDepth
@@ -163,7 +163,7 @@ struct PalmLineCharacteristics: Codable {
 }
 
 // Palm mount characteristics
-struct PalmMountCharacteristics: Codable {
+nonisolated struct PalmMountCharacteristics: Codable {
     let mount: PalmMount
     let prominence: MountProminence
     
@@ -186,7 +186,7 @@ struct PalmMountCharacteristics: Codable {
 }
 
 // Hand shape analysis
-struct HandShapeAnalysis: Codable {
+nonisolated struct HandShapeAnalysis: Codable {
     let shapeType: HandShapeType
     let fingerLength: FingerLength
     let palmRatio: PalmRatio
@@ -257,7 +257,7 @@ struct HandShapeAnalysis: Codable {
 }
 
 // Complete palm reading result
-struct PalmReading: Identifiable, Codable {
+nonisolated struct PalmReading: Identifiable, Codable {
     let id: UUID
     let date: Date
     

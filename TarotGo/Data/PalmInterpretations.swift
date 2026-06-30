@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PalmInterpretations {
+nonisolated struct PalmInterpretations {
     
     // Generate overall reading interpretation
     static func generateInterpretation(

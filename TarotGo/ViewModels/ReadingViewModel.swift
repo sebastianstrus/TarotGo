@@ -29,25 +29,24 @@ class ReadingViewModel: ObservableObject {
     
     func shuffleDeck(completion: @escaping () -> Void) {
         isShuffling = true
-        
+
         // Animate shuffle over 3 seconds with multiple shuffles
-        var shuffleCount = 0
         let totalShuffles = 6
-        
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
-            self.availableCards.shuffle()
-            HapticService.shared.impact(.light)
-            
-            shuffleCount += 1
-            
-            if shuffleCount >= totalShuffles {
-                timer.invalidate()
-                self.isShuffling = false
-                HapticService.shared.impact(.success)
-                SoundService.shared.play(.success, volume: 0.5)
-                completion()
-            } else {
-                SoundService.shared.play(.cardShuffle, volume: 0.4)
+
+        Task { @MainActor in
+            for shuffleCount in 1...totalShuffles {
+                try? await Task.sleep(nanoseconds: 500_000_000)
+                availableCards.shuffle()
+                HapticService.shared.impact(.light)
+
+                if shuffleCount >= totalShuffles {
+                    isShuffling = false
+                    HapticService.shared.impact(.success)
+                    SoundService.shared.play(.success, volume: 0.5)
+                    completion()
+                } else {
+                    SoundService.shared.play(.cardShuffle, volume: 0.4)
+                }
             }
         }
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum L10n {
+nonisolated enum L10n {
     // MARK: - Common
     static let appName = NSLocalizedString("app.name", comment: "App name")
     static let cancel = NSLocalizedString("common.cancel", comment: "Cancel button")
