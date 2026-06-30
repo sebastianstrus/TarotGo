@@ -130,7 +130,7 @@ struct TarotParkARView: UIViewRepresentable {
             var frontMaterial = UnlitMaterial()
             if let frontImage = UIImage(named: card.imageName),
                let cg = frontImage.cgImage,
-               let texture = try? TextureResource.generate(from: cg, options: .init(semantic: .color)) {
+               let texture = try? TextureResource(image: cg, options: .init(semantic: .color)) {
                 frontMaterial.color = .init(texture: .init(texture))
             } else {
                 return nil
@@ -139,7 +139,7 @@ struct TarotParkARView: UIViewRepresentable {
             var backMaterial = UnlitMaterial()
             if let backImage = UIImage(named: cardBackStyle.rawValue),
                let cg = backImage.cgImage,
-               let texture = try? TextureResource.generate(from: cg, options: .init(semantic: .color)) {
+               let texture = try? TextureResource(image: cg, options: .init(semantic: .color)) {
                 backMaterial.color = .init(texture: .init(texture))
             } else {
                 backMaterial.color = .init(tint: .darkGray)

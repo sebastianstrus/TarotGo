@@ -64,7 +64,7 @@ class PalmReadingViewModel: ObservableObject {
         // Defer sound to background — its audio session activation can
         // spike main thread on first play.
         Task.detached(priority: .utility) {
-            SoundService.shared.play(.generate, volume: 0.5)
+            await SoundService.shared.play(.generate, volume: 0.5)
         }
 
         // Run the actual analysis as a fully detached task at background

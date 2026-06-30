@@ -48,7 +48,7 @@ class PDFGenerationService {
         // Add subtle mystical pattern (stars and dots)
         UIColor(red: 0.72, green: 0.55, blue: 0.26, alpha: 0.03).setFill()
         
-        for i in 0..<20 {
+        for _ in 0..<20 {
             let x = CGFloat.random(in: 0...rect.width)
             let y = CGFloat.random(in: 0...rect.height)
             let size = CGFloat.random(in: 3...8)

@@ -166,8 +166,8 @@ struct ARViewContainer: UIViewRepresentable {
             var frontMaterial = UnlitMaterial()
             if let frontImage = UIImage(named: card.imageName),
                let cg = frontImage.cgImage,
-               let texture = try? TextureResource.generate(
-                   from: cg,
+               let texture = try? TextureResource(
+                image: cg,
                    options: .init(semantic: .color)
                ) {
                 frontMaterial.color = .init(texture: .init(texture))
@@ -179,8 +179,8 @@ struct ARViewContainer: UIViewRepresentable {
             var backMaterial = UnlitMaterial()
             if let backImage = UIImage(named: cardBackStyle.rawValue),
                let cg = backImage.cgImage,
-               let texture = try? TextureResource.generate(
-                   from: cg,
+               let texture = try? TextureResource(
+                image: cg,
                    options: .init(semantic: .color)
                ) {
                 backMaterial.color = .init(texture: .init(texture))

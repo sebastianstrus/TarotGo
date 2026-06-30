@@ -263,7 +263,7 @@ class DestinyMatrixCalculator {
         }
         
         // Get center position number (main life energy)
-        let centerNumber = positions.first(where: { $0.position == .center })?.number ?? 22
+        _ = positions.first(where: { $0.position == .center })?.number ?? 22
         
         // Calculate energies for ages 0 to 80
         for age in 0...80 {
