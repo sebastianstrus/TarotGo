@@ -152321,9 +152321,6 @@
         }
       }
     },
-    "interpretation.resonate" : {
-      "comment" : "Does this resonate with you?"
-    },
     "interpretation.resonateNo" : {
       "extractionState" : "manual",
       "localizations" : {
