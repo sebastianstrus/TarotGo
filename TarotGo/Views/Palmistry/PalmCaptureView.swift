@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AVFoundation
+import MediaPipeTasksVision
 
 struct PalmCaptureView: View {
     @ObservedObject var viewModel: PalmReadingViewModel
@@ -165,11 +166,19 @@ class CameraViewController: UIViewController {
     private var captureSession: AVCaptureSession?
     private var previewLayer: AVCaptureVideoPreviewLayer?
     private var photoOutput: AVCapturePhotoOutput?
-    
+    private var videoDataOutput: AVCaptureVideoDataOutput?
+
     private let handGuideLayer = CAShapeLayer()
     private let captureButton = UIButton(type: .system)
     private let instructionLabel = UILabel()
     private var instructionLabelTopConstraint: NSLayoutConstraint?
+
+    // Live hand landmark detection + gold-line overlay drawn on top of
+    // the camera preview. The static handGuideLayer is hidden whenever
+    // the live detector has a fresh set of landmarks.
+    private let handOverlayView = HandLandmarkOverlayView()
+    private var handLandmarkerService: HandLandmarkerLiveService?
+    private let sampleBufferQueue = DispatchQueue(label: "com.tarotgo.palm.sampleBufferQueue")
 
     private var isIPad: Bool {
         traitCollection.userInterfaceIdiom == .pad
@@ -179,11 +188,13 @@ class CameraViewController: UIViewController {
         super.viewDidLoad()
         setupCamera()
         setupUI()
+        setupHandLandmarker()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         previewLayer?.frame = view.bounds
+        handOverlayView.frame = view.bounds
         updateHandGuidePosition()
     }
     
@@ -205,6 +216,26 @@ class CameraViewController: UIViewController {
             session.addOutput(output)
             photoOutput = output
         }
+
+        // Video data output for live hand landmark inference. Runs
+        // alongside the photo output on the same session so a still
+        // capture can be triggered without tearing down the live feed.
+        let videoOutput = AVCaptureVideoDataOutput()
+        videoOutput.alwaysDiscardsLateVideoFrames = true
+        videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
+        videoOutput.setSampleBufferDelegate(self, queue: sampleBufferQueue)
+        if session.canAddOutput(videoOutput) {
+            session.addOutput(videoOutput)
+            if let connection = videoOutput.connection(with: .video) {
+                // Portrait rotation for the sample buffer stream so the
+                // pixels handed to MediaPipe are already oriented the
+                // same way the user sees them in the preview.
+                if connection.isVideoRotationAngleSupported(90) {
+                    connection.videoRotationAngle = 90
+                }
+            }
+            videoDataOutput = videoOutput
+        }
         
         let preview = AVCaptureVideoPreviewLayer(session: session)
         preview.videoGravity = .resizeAspectFill
@@ -218,9 +249,22 @@ class CameraViewController: UIViewController {
             session.startRunning()
         }
     }
+
+    private func setupHandLandmarker() {
+        let service = HandLandmarkerLiveService()
+        service?.delegate = self
+        handLandmarkerService = service
+    }
     
     private func setupUI() {
-        // Hand guide overlay
+        // Live hand landmark overlay — sits above the camera preview
+        // layer but below the capture button and instruction label so
+        // the UI chrome stays interactive on top of the gold skeleton.
+        handOverlayView.frame = view.bounds
+        handOverlayView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(handOverlayView)
+
+        // Hand guide overlay (fallback when no hand is detected)
         handGuideLayer.strokeColor = UIColor.systemYellow.withAlphaComponent(0.8).cgColor
         handGuideLayer.fillColor = UIColor.clear.cgColor
         handGuideLayer.lineWidth = 3
@@ -342,6 +386,10 @@ class CameraViewController: UIViewController {
         captureButton.isEnabled = false
         captureButton.alpha = 0.5
 
+        // Clear the landmark overlay so a stale skeleton doesn't sit on
+        // top of the frozen preview during the shrink animation.
+        handOverlayView.clear()
+
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
     }
@@ -349,6 +397,44 @@ class CameraViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         captureSession?.stopRunning()
+    }
+}
+
+// MARK: - Live hand landmark detection
+
+extension CameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
+    func captureOutput(_ output: AVCaptureOutput,
+                       didOutput sampleBuffer: CMSampleBuffer,
+                       from connection: AVCaptureConnection) {
+        // The video connection is locked to .portrait in setupCamera, so
+        // the sample buffer's pixels already come in with the palm the
+        // right way up — pass `.up` and MediaPipe reads it directly.
+        let timestampMs = Int(Date().timeIntervalSince1970 * 1000)
+        handLandmarkerService?.detectAsync(
+            sampleBuffer: sampleBuffer,
+            orientation: .up,
+            timestampMs: timestampMs
+        )
+    }
+}
+
+extension CameraViewController: HandLandmarkerLiveServiceDelegate {
+    func handLandmarkerLiveService(
+        _ service: HandLandmarkerLiveService,
+        didDetect landmarks: [[NormalizedLandmark]],
+        imageSize: CGSize,
+        orientation: UIImage.Orientation
+    ) {
+        // Hide the static hand guide as soon as we start reporting real
+        // landmarks; bring it back when detection drops out so users
+        // still have a framing reference.
+        let hasHand = !landmarks.isEmpty && !(landmarks.first?.isEmpty ?? true)
+        handGuideLayer.isHidden = hasHand
+        handOverlayView.update(
+            landmarks: landmarks,
+            imageSize: imageSize,
+            previewGravity: previewLayer?.videoGravity ?? .resizeAspectFill
+        )
     }
 }
 
