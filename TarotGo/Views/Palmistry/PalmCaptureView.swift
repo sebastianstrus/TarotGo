@@ -201,15 +201,17 @@ class CameraViewController: UIViewController {
     private func setupCamera() {
         let session = AVCaptureSession()
         session.sessionPreset = .photo
-        
+
         guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
               let input = try? AVCaptureDeviceInput(device: device) else {
             return
         }
-        
+
         if session.canAddInput(input) {
             session.addInput(input)
         }
+
+        configureMetering(device: device)
         
         let output = AVCapturePhotoOutput()
         if session.canAddOutput(output) {
@@ -247,6 +249,50 @@ class CameraViewController: UIViewController {
         
         DispatchQueue.global(qos: .userInitiated).async {
             session.startRunning()
+        }
+    }
+
+    // AVCaptureDevice's default auto-exposure is a scene-wide weighted
+    // average that gets dragged toward whatever's brightest in the frame.
+    // On a bright background the palm interior comes back 1-2 stops
+    // under — which crushes the crease-vs-skin luminance gap into the
+    // shadow noise floor before Vision ever sees the image, no amount
+    // of downstream preprocessing recovers it.
+    //
+    // Fix: point-of-interest metering at the frame center (where the
+    // hand guide sits) plus a positive exposure bias. The point tells
+    // the auto-exposure engine to weight that region more heavily than
+    // the surrounding scene; the bias nudges the target luminance up so
+    // the palm exposes toward mid-gray rather than mid-scene-brightness.
+    private func configureMetering(device: AVCaptureDevice) {
+        do {
+            try device.lockForConfiguration()
+
+            let center = CGPoint(x: 0.5, y: 0.5)
+            if device.isFocusPointOfInterestSupported {
+                device.focusPointOfInterest = center
+            }
+            if device.isFocusModeSupported(.continuousAutoFocus) {
+                device.focusMode = .continuousAutoFocus
+            }
+            if device.isExposurePointOfInterestSupported {
+                device.exposurePointOfInterest = center
+            }
+            if device.isExposureModeSupported(.continuousAutoExposure) {
+                device.exposureMode = .continuousAutoExposure
+            }
+
+            // +0.7 EV nudges the palm from mid-scene toward mid-gray. Clamped
+            // to what the device actually supports (ranges from ±3 EV up to
+            // ±8 EV depending on hardware).
+            let targetBias: Float = 0.7
+            let clampedBias = max(device.minExposureTargetBias,
+                                  min(device.maxExposureTargetBias, targetBias))
+            device.setExposureTargetBias(clampedBias, completionHandler: nil)
+
+            device.unlockForConfiguration()
+        } catch {
+            print("[PalmCapture] failed to configure palm-region metering: \(error)")
         }
     }
 

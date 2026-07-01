@@ -581,7 +581,38 @@ class PalmAnalysisService {
             exposureNormalized = ciImage
         }
 
-        guard let normalizedCG = ciContext.createCGImage(exposureNormalized, from: exposureNormalized.extent) else {
+        // Grayscale + contrast + sharpen. Palm creases are only ~10-20
+        // luminance units darker than surrounding skin, which is right at
+        // Vision's contour-detection noise floor — without this pre-pass,
+        // the same hand can produce 5× more or fewer contours depending on
+        // subtle lighting shifts. Desaturating removes skin-tone color
+        // variance; the contrast bump widens the crease-vs-skin gap; the
+        // unsharp mask emphasizes the thin dark lines specifically.
+        //
+        // Shadow-lifting was tried and dropped: pushing shadow midtones
+        // up amplified noise enough that Vision fragmented crease lines
+        // into hundreds of tiny disconnected contours (topLevel count
+        // went from ~130 to ~700 while ROI signal collapsed to zero).
+        var preprocessed = exposureNormalized
+        if let colorFilter = CIFilter(name: "CIColorControls") {
+            colorFilter.setValue(preprocessed, forKey: kCIInputImageKey)
+            colorFilter.setValue(0.0, forKey: kCIInputSaturationKey)
+            colorFilter.setValue(1.35, forKey: kCIInputContrastKey)
+            colorFilter.setValue(0.0, forKey: kCIInputBrightnessKey)
+            if let out = colorFilter.outputImage {
+                preprocessed = out
+            }
+        }
+        if let sharpen = CIFilter(name: "CIUnsharpMask") {
+            sharpen.setValue(preprocessed, forKey: kCIInputImageKey)
+            sharpen.setValue(1.5, forKey: kCIInputRadiusKey)
+            sharpen.setValue(0.8, forKey: kCIInputIntensityKey)
+            if let out = sharpen.outputImage {
+                preprocessed = out
+            }
+        }
+
+        guard let normalizedCG = ciContext.createCGImage(preprocessed, from: preprocessed.extent) else {
             return nil
         }
 
