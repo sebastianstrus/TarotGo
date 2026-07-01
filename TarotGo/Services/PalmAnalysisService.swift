@@ -813,14 +813,16 @@ class PalmAnalysisService {
             return (nil, metrics.edgeRatio < 0.005 ? .noSignal : .absent)
         }
 
+        // Fate line uses the same length/depth thresholds as the other
+        // lines so classifications are comparable across the reading.
         let length: PalmLineCharacteristics.LineLength
-        if lengthScore >= 0.70 { length = .long }
-        else if lengthScore >= 0.30 { length = .medium }
+        if lengthScore >= 1.0 { length = .long }
+        else if lengthScore >= 0.40 { length = .medium }
         else { length = .short }
 
         let depth: PalmLineCharacteristics.LineDepth
-        if metrics.avgIntensity >= 0.14 { depth = .deep }
-        else if metrics.avgIntensity >= 0.05 { depth = .moderate }
+        if metrics.avgIntensity >= 0.20 { depth = .deep }
+        else if metrics.avgIntensity >= 0.08 { depth = .moderate }
         else { depth = .faint }
 
         let continuity: PalmLineCharacteristics.LineContinuity
@@ -1027,13 +1029,13 @@ class PalmAnalysisService {
         // so a clipped landmark doesn't read as a missing mount.
         guard let metrics = metrics else { return .normal }
 
-        // Same metric scale as the line analyzer (adaptive thresholding
-        // already normalizes for lighting). Bands picked so that smooth
-        // regions land in .flat, typical palm skin in .normal, and
-        // well-developed mounts with visible creases in .prominent.
-        if metrics.edgeRatio >= 0.065 {
+        // Thresholds bumped after camera-region metering produced stronger
+        // masks (0.065/0.028 previously left 6-7 of 9 mounts reading
+        // "prominent" on well-lit palms). New bar reserves .prominent for
+        // mounts with clearly denser crease texture than surrounding skin.
+        if metrics.edgeRatio >= 0.15 {
             return .prominent
-        } else if metrics.edgeRatio >= 0.028 {
+        } else if metrics.edgeRatio >= 0.05 {
             return .normal
         } else {
             return .flat
