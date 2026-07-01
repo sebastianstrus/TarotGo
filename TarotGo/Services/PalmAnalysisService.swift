@@ -736,26 +736,30 @@ class PalmAnalysisService {
         // same palm than either individually.
         let lengthScore = metrics.edgeRatio * 8 + metrics.coverage * 0.3
 
-        // Calibrated to Vision contour mask values: with binary stroke
-        // mask, edge ratios run higher than CIEdges did. Medium threshold
-        // dropped to 0.30 so borderline head/fate captures stabilize at
-        // "medium" instead of flipping between "short" and "medium".
+        // Thresholds recalibrated after palm-region exposure metering
+        // started delivering full-strength captures (contour counts
+        // 500-3000+ vs. earlier 180-1000). At the old bar every well-lit
+        // palm read long/deep/continuous across all four lines — the top
+        // bucket got saturated and stopped differentiating hands. Bar
+        // raised so "long" now means the line clearly dominates the
+        // ROI (score ≥ 1.0), and "medium" requires meaningful presence.
         let length: PalmLineCharacteristics.LineLength
-        if lengthScore >= 0.70 {
+        if lengthScore >= 1.0 {
             length = .long
-        } else if lengthScore >= 0.30 {
+        } else if lengthScore >= 0.40 {
             length = .medium
         } else {
             length = .short
         }
 
-        // Depth tuned for contour-mask intensities. Heart areas with many
-        // overlapping creases yield ~0.18-0.25 (deep), normal palm regions
-        // ~0.05-0.10 (moderate), smooth skin below (faint).
+        // Depth bar raised from 0.14 → 0.20 for the same reason: with
+        // the stronger mask, moderate palm lines were reading as deep.
+        // "Moderate" threshold nudged from 0.05 → 0.08 to keep the
+        // three-band spread even.
         let depth: PalmLineCharacteristics.LineDepth
-        if metrics.avgIntensity >= 0.14 {
+        if metrics.avgIntensity >= 0.20 {
             depth = .deep
-        } else if metrics.avgIntensity >= 0.05 {
+        } else if metrics.avgIntensity >= 0.08 {
             depth = .moderate
         } else {
             depth = .faint
