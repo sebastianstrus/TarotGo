@@ -102,8 +102,6 @@ class PalmReadingViewModel: ObservableObject {
     private var analysisStartDate: Date = Date()
 
     private func handleAnalysisResult(_ result: Result<PalmReading, Error>) async {
-        // Hold the mystical overlay for at least 4.4s so it doesn't blink
-        // through on fast captures.
         let minimum: TimeInterval = 4.4
         let elapsed = Date().timeIntervalSince(analysisStartDate)
         if elapsed < minimum {
@@ -112,8 +110,12 @@ class PalmReadingViewModel: ObservableObject {
         switch result {
         case .success(let reading):
             palmReading = reading
-            currentPhase = .results
             HapticService.shared.impact(.success)
+            // Fade the analyzing overlay out into the results view rather
+            // than snapping — same 0.4s easeInOut the DM flow uses.
+            withAnimation(.easeInOut(duration: 0.4)) {
+                currentPhase = .results
+            }
         case .failure(let error):
             errorMessage = error.localizedDescription
             showError = true
@@ -171,9 +173,10 @@ class PalmReadingViewModel: ObservableObject {
             }
 
             palmReading = reading
-            currentPhase = .results
-
             HapticService.shared.impact(.success)
+            withAnimation(.easeInOut(duration: 0.4)) {
+                currentPhase = .results
+            }
 
         } catch {
             errorMessage = error.localizedDescription
