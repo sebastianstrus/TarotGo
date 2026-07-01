@@ -64,6 +64,7 @@ struct PalmReadingView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(viewModel.currentPhase == .analyzing)
         .alert("Error", isPresented: $viewModel.showError) {
             Button("Try Again", role: .cancel) {
                 viewModel.takeNewPhoto()
