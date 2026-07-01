@@ -412,7 +412,12 @@ class PalmAnalysisService {
         // samples don't pick up palm-background or finger-crease edges.
         let heartRect = HandLocalRect(aRange: -0.32 ... 0.32, bRange: 0.72 ... 0.86)
         let headRect  = HandLocalRect(aRange: -0.32 ... 0.32, bRange: 0.45 ... 0.66)
-        let lifeRect  = HandLocalRect(aRange: -0.42 ... -0.22, bRange: 0.30 ... 0.85)
+        // Life line curves diagonally along the thumb ball — a rectangular
+        // ROI can only approximate it. Widened a-range (was -0.42...-0.22)
+        // catches both the near-index top (a≈-0.28) and the near-wrist
+        // bottom (a≈-0.18) of the curve. bRange extended down to 0.20 to
+        // reach where the line meets the wrist crease.
+        let lifeRect  = HandLocalRect(aRange: -0.44 ... -0.15, bRange: 0.20 ... 0.85)
         let fateRect  = HandLocalRect(aRange: -0.12 ... 0.12, bRange: 0.25 ... 0.82)
 
         let (heartLine, heartSource) = analyzeLine(edgePixels, handFrame: handFrame, rect: heartRect, line: .heart, axis: .horizontal)
@@ -636,11 +641,13 @@ class PalmAnalysisService {
         context.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
 
         // White stroke on black — palm creases appear as bright stripes the
-        // ROI sampler can hit. Line width is wide enough that the sampling
-        // grid (~2-5 px between samples on a typical palm) reliably lands
-        // on the stripes even with slight registration offsets.
+        // ROI sampler can hit. 4 px roughly matches real crease width at
+        // 1536-max downscale; wider strokes (10 px prior) over-saturated
+        // small mount ROIs so every mount classified as "prominent."
+        // Sampling grid is ~2-5 px between samples, so 4 px + round caps
+        // still gets reliably hit even with slight registration offsets.
         context.setStrokeColor(CGColor(srgbRed: 1, green: 1, blue: 1, alpha: 1))
-        context.setLineWidth(10.0)
+        context.setLineWidth(4.0)
         context.setLineCap(.round)
         context.setLineJoin(.round)
 
@@ -759,8 +766,11 @@ class PalmAnalysisService {
                      metrics.edgeRatio, metrics.avgIntensity, metrics.coverage, lengthScore))
 
         // Presence gate: require both a minimum edge density and coverage.
-        let minimumEdgeRatio: Float = 0.020
-        let minimumCoverage: Float = 0.35
+        // Lowered from 0.020/0.35 — real fate lines at edge≈0.017 with
+        // solid coverage were being rejected; the new floor still filters
+        // out captures showing effectively no vertical signal.
+        let minimumEdgeRatio: Float = 0.015
+        let minimumCoverage: Float = 0.30
         guard metrics.edgeRatio >= minimumEdgeRatio, metrics.coverage >= minimumCoverage else {
             // Distinguish "sampled but nothing there" from "presence gate failed
             // with some signal": both leave fateLine=nil, but the log source
