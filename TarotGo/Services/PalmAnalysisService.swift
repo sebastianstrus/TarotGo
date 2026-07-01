@@ -32,6 +32,16 @@ private enum HandLandmark: Int {
     case littleMCP = 17, littlePIP = 18, littleDIP = 19, littleTip = 20
 }
 
+// Provenance tag for each row in the debug reading log. Distinguishes
+// values that came from real signal vs. fallbacks that had to be
+// substituted because there was nothing to measure.
+private enum ReadingSource: String {
+    case measured = "measured"       // meaningful signal detected in the ROI
+    case noSignal = "no signal"      // ROI sampled successfully but edges were ~zero
+    case defaulted = "default"       // sampling failed (off-image, guard failed)
+    case absent = "absent"           // fate line: legitimate "no line found" result
+}
+
 // Not @MainActor on purpose: the analysis pipeline is heavy (MediaPipe +
 // Vision + per-pixel sampling) and would otherwise freeze the UI when
 // awaited from a @MainActor view model. Without the annotation the work
@@ -148,13 +158,13 @@ class PalmAnalysisService {
         let lineCharacteristics = analyzePalmLines(edgePixels: edgePixels, handFrame: handFrame)
 
         // Step 5: Analyze hand shape (uses landmark geometry only)
-        let handShape = analyzeHandShape(using: handLandmarks)
+        let (handShape, handShapeSource) = analyzeHandShape(using: handLandmarks)
 
         // Step 6: Analyze palm mounts deterministically from the edge image
-        let mounts = analyzePalmMounts(edgePixels: edgePixels, handFrame: handFrame)
+        let mountResults = analyzePalmMounts(edgePixels: edgePixels, handFrame: handFrame)
 
         // Debug dump — one block per scan, easy to paste as a new column in a tracking table.
-        logDebugReading(lines: lineCharacteristics, handShape: handShape, mounts: mounts)
+        logDebugReading(lines: lineCharacteristics, handShape: handShape, handShapeSource: handShapeSource, mounts: mountResults)
 
         // Step 7: Create palm reading
         return PalmReading(
@@ -162,7 +172,7 @@ class PalmAnalysisService {
             headLine: lineCharacteristics.headLine,
             lifeLine: lineCharacteristics.lifeLine,
             fateLine: lineCharacteristics.fateLine,
-            mounts: mounts,
+            mounts: mountResults.map { $0.mount },
             handShape: handShape,
             handedness: handedness
         )
@@ -175,42 +185,49 @@ class PalmAnalysisService {
             heartLine: PalmLineCharacteristics,
             headLine: PalmLineCharacteristics,
             lifeLine: PalmLineCharacteristics,
-            fateLine: PalmLineCharacteristics?
+            fateLine: PalmLineCharacteristics?,
+            heartSource: ReadingSource,
+            headSource: ReadingSource,
+            lifeSource: ReadingSource,
+            fateSource: ReadingSource
         ),
         handShape: HandShapeAnalysis,
-        mounts: [PalmMountCharacteristics]
+        handShapeSource: ReadingSource,
+        mounts: [(mount: PalmMountCharacteristics, source: ReadingSource)]
     ) {
         let absent = "—"
         let fateLength = lines.fateLine?.length.rawValue ?? absent
         let fateDepth = lines.fateLine?.depth.rawValue ?? absent
         let fateContinuity = lines.fateLine?.continuity.rawValue ?? absent
 
-        var rows: [(String, String)] = [
-            ("Heart length",     lines.heartLine.length.rawValue),
-            ("Heart depth",      lines.heartLine.depth.rawValue),
-            ("Heart continuity", lines.heartLine.continuity.rawValue),
-            ("Head length",      lines.headLine.length.rawValue),
-            ("Head depth",       lines.headLine.depth.rawValue),
-            ("Head continuity",  lines.headLine.continuity.rawValue),
-            ("Life length",      lines.lifeLine.length.rawValue),
-            ("Life depth",       lines.lifeLine.depth.rawValue),
-            ("Life continuity",  lines.lifeLine.continuity.rawValue),
-            ("Fate length",      fateLength),
-            ("Fate depth",       fateDepth),
-            ("Fate continuity",  fateContinuity),
-            ("Hand shape",       handShape.shapeType.rawValue),
-            ("Finger length",    handShape.fingerLength.rawValue),
-            ("Palm ratio",       handShape.palmRatio.rawValue)
+        var rows: [(label: String, value: String, source: ReadingSource)] = [
+            ("Heart length",     lines.heartLine.length.rawValue,     lines.heartSource),
+            ("Heart depth",      lines.heartLine.depth.rawValue,      lines.heartSource),
+            ("Heart continuity", lines.heartLine.continuity.rawValue, lines.heartSource),
+            ("Head length",      lines.headLine.length.rawValue,      lines.headSource),
+            ("Head depth",       lines.headLine.depth.rawValue,       lines.headSource),
+            ("Head continuity",  lines.headLine.continuity.rawValue,  lines.headSource),
+            ("Life length",      lines.lifeLine.length.rawValue,      lines.lifeSource),
+            ("Life depth",       lines.lifeLine.depth.rawValue,       lines.lifeSource),
+            ("Life continuity",  lines.lifeLine.continuity.rawValue,  lines.lifeSource),
+            ("Fate length",      fateLength,                          lines.fateSource),
+            ("Fate depth",       fateDepth,                           lines.fateSource),
+            ("Fate continuity",  fateContinuity,                      lines.fateSource),
+            ("Hand shape",       handShape.shapeType.rawValue,        handShapeSource),
+            ("Finger length",    handShape.fingerLength.rawValue,     handShapeSource),
+            ("Palm ratio",       handShape.palmRatio.rawValue,        handShapeSource)
         ]
-        for m in mounts {
-            rows.append(("Mount \(m.mount.rawValue)", m.prominence.rawValue))
+        for (m, source) in mounts {
+            rows.append(("Mount \(m.mount.rawValue)", m.prominence.rawValue, source))
         }
 
-        let labelWidth = rows.map { $0.0.count }.max() ?? 0
+        let labelWidth = rows.map { $0.label.count }.max() ?? 0
+        let valueWidth = rows.map { $0.value.count }.max() ?? 0
         var output = "\n========== Palm Reading ==========\n"
-        for (label, value) in rows {
-            let padding = String(repeating: " ", count: labelWidth - label.count)
-            output += "\(label):\(padding)  \(value)\n"
+        for row in rows {
+            let labelPadding = String(repeating: " ", count: labelWidth - row.label.count)
+            let valuePadding = String(repeating: " ", count: valueWidth - row.value.count)
+            output += "\(row.label):\(labelPadding)  \(row.value)\(valuePadding)  [\(row.source.rawValue)]\n"
         }
         output += "==================================\n"
         print(output)
@@ -382,7 +399,11 @@ class PalmAnalysisService {
         heartLine: PalmLineCharacteristics,
         headLine: PalmLineCharacteristics,
         lifeLine: PalmLineCharacteristics,
-        fateLine: PalmLineCharacteristics?
+        fateLine: PalmLineCharacteristics?,
+        heartSource: ReadingSource,
+        headSource: ReadingSource,
+        lifeSource: ReadingSource,
+        fateSource: ReadingSource
     ) {
         // ROIs in hand-local coordinates. (a, b) where:
         //   a ∈ [-0.5, 0.5] runs along palmRight (across the palm)
@@ -394,12 +415,12 @@ class PalmAnalysisService {
         let lifeRect  = HandLocalRect(aRange: -0.42 ... -0.22, bRange: 0.30 ... 0.85)
         let fateRect  = HandLocalRect(aRange: -0.12 ... 0.12, bRange: 0.25 ... 0.82)
 
-        let heartLine = analyzeLine(edgePixels, handFrame: handFrame, rect: heartRect, line: .heart, axis: .horizontal)
-        let headLine  = analyzeLine(edgePixels, handFrame: handFrame, rect: headRect,  line: .head,  axis: .horizontal)
-        let lifeLine  = analyzeLine(edgePixels, handFrame: handFrame, rect: lifeRect,  line: .life,  axis: .vertical)
-        let fateLine  = analyzeFateLine(edgePixels, handFrame: handFrame, rect: fateRect)
+        let (heartLine, heartSource) = analyzeLine(edgePixels, handFrame: handFrame, rect: heartRect, line: .heart, axis: .horizontal)
+        let (headLine, headSource)   = analyzeLine(edgePixels, handFrame: handFrame, rect: headRect,  line: .head,  axis: .horizontal)
+        let (lifeLine, lifeSource)   = analyzeLine(edgePixels, handFrame: handFrame, rect: lifeRect,  line: .life,  axis: .vertical)
+        let (fateLine, fateSource)   = analyzeFateLine(edgePixels, handFrame: handFrame, rect: fateRect)
 
-        return (heartLine, headLine, lifeLine, fateLine)
+        return (heartLine, headLine, lifeLine, fateLine, heartSource, headSource, lifeSource, fateSource)
     }
 
     // Converts a MediaPipe-style PalmLandmark (normalized [0,1], top-left
@@ -588,9 +609,10 @@ class PalmAnalysisService {
     }
 
     // Draws the detected contours into a black-and-white mask the same size
-    // as the input image. Top-level contour paths already include their
-    // children combined with the even-odd winding rule, so iterating
-    // topLevelContours and using .eoFillStroke renders the entire hierarchy.
+    // as the input image. Uses observation.normalizedPath (all contours in a
+    // single path) rather than iterating topLevelContours — VNContour's own
+    // normalizedPath only covers that one contour's outline, so palm creases
+    // (which are children of the palm silhouette) would be skipped entirely.
     private func rasterizeContours(_ observation: VNContoursObservation, size: CGSize) -> UIImage? {
         let width = Int(size.width)
         let height = Int(size.height)
@@ -613,14 +635,10 @@ class PalmAnalysisService {
         context.setFillColor(CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 1))
         context.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
 
-        // White stroke only — filling causes Vision's outer palm contour to
-        // paint the entire palm white (with even-odd, child crease contours
-        // become black holes — the inverse of what we want). Stroking
-        // outlines all contour boundaries (including nested crease
-        // boundaries) so palm lines show as white stripes on a black
-        // background. Line width is wide enough that our ROI sampling
-        // grid (~25 px between samples on a typical palm) reliably hits
-        // the stripes.
+        // White stroke on black — palm creases appear as bright stripes the
+        // ROI sampler can hit. Line width is wide enough that the sampling
+        // grid (~2-5 px between samples on a typical palm) reliably lands
+        // on the stripes even with slight registration offsets.
         context.setStrokeColor(CGColor(srgbRed: 1, green: 1, blue: 1, alpha: 1))
         context.setLineWidth(10.0)
         context.setLineCap(.round)
@@ -632,13 +650,10 @@ class PalmAnalysisService {
         // at the right pixel positions — the resulting CGImage reads back
         // with the standard top-left orientation our sampler expects.
         var transform = CGAffineTransform(scaleX: size.width, y: size.height)
-
-        for contour in observation.topLevelContours {
-            let normalizedPath = contour.normalizedPath
-            if let scaledPath = normalizedPath.copy(using: &transform) {
-                context.addPath(scaledPath)
-                context.strokePath()
-            }
+        let combinedPath = observation.normalizedPath
+        if let scaledPath = combinedPath.copy(using: &transform) {
+            context.addPath(scaledPath)
+            context.strokePath()
         }
 
         guard let outputImage = context.makeImage() else { return nil }
@@ -672,9 +687,9 @@ class PalmAnalysisService {
         rect: HandLocalRect,
         line: PalmLine,
         axis: LineAxis
-    ) -> PalmLineCharacteristics {
+    ) -> (PalmLineCharacteristics, source: ReadingSource) {
         guard let metrics = sampleLineMetrics(edgePixels, handFrame: handFrame, rect: rect, axis: axis) else {
-            return PalmLineCharacteristics(line: line, length: .medium, depth: .moderate, continuity: .continuous)
+            return (PalmLineCharacteristics(line: line, length: .medium, depth: .moderate, continuity: .continuous), .defaulted)
         }
 
         // Combined length score: combining edgeRatio and coverage damps the
@@ -724,14 +739,18 @@ class PalmAnalysisService {
                      line.rawValue, metrics.edgeRatio, metrics.avgIntensity, metrics.coverage, lengthScore,
                      length.rawValue, depth.rawValue, continuity.rawValue))
 
-        return PalmLineCharacteristics(line: line, length: length, depth: depth, continuity: continuity)
+        // Below this edge ratio the ROI has essentially no bright pixels, so
+        // length/depth/continuity all collapse to their low-end enum values —
+        // effectively the same as a fallback rather than a real measurement.
+        let source: ReadingSource = metrics.edgeRatio < 0.005 ? .noSignal : .measured
+        return (PalmLineCharacteristics(line: line, length: length, depth: depth, continuity: continuity), source)
     }
 
     // Fate line is often absent in real palms; only declare it present when
     // the ROI shows a clear vertical signal above the noise floor.
-    private func analyzeFateLine(_ edgePixels: EdgePixels, handFrame: HandFrame, rect: HandLocalRect) -> PalmLineCharacteristics? {
+    private func analyzeFateLine(_ edgePixels: EdgePixels, handFrame: HandFrame, rect: HandLocalRect) -> (PalmLineCharacteristics?, source: ReadingSource) {
         guard let metrics = sampleLineMetrics(edgePixels, handFrame: handFrame, rect: rect, axis: .vertical) else {
-            return nil
+            return (nil, .defaulted)
         }
 
         let lengthScore = metrics.edgeRatio * 8 + metrics.coverage * 0.3
@@ -743,7 +762,10 @@ class PalmAnalysisService {
         let minimumEdgeRatio: Float = 0.020
         let minimumCoverage: Float = 0.35
         guard metrics.edgeRatio >= minimumEdgeRatio, metrics.coverage >= minimumCoverage else {
-            return nil
+            // Distinguish "sampled but nothing there" from "presence gate failed
+            // with some signal": both leave fateLine=nil, but the log source
+            // differs so we can tell which happened.
+            return (nil, metrics.edgeRatio < 0.005 ? .noSignal : .absent)
         }
 
         let length: PalmLineCharacteristics.LineLength
@@ -761,7 +783,7 @@ class PalmAnalysisService {
         else if metrics.edgeRatio >= 0.015 { continuity = .chained }
         else { continuity = .broken }
 
-        return PalmLineCharacteristics(line: .fate, length: length, depth: depth, continuity: continuity)
+        return (PalmLineCharacteristics(line: .fate, length: length, depth: depth, continuity: continuity), .measured)
     }
 
     // Samples the edge image on a regular grid laid out in hand-local
@@ -853,14 +875,14 @@ class PalmAnalysisService {
     
     // MARK: - Hand Shape Analysis
     
-    private func analyzeHandShape(using landmarks: [PalmLandmark]) -> HandShapeAnalysis {
+    private func analyzeHandShape(using landmarks: [PalmLandmark]) -> (HandShapeAnalysis, source: ReadingSource) {
         guard let palmPoints = try? getPalmKeyPoints(from: landmarks),
               landmarks.count > HandLandmark.middleTip.rawValue else {
-            return HandShapeAnalysis(
+            return (HandShapeAnalysis(
                 shapeType: .earth,
                 fingerLength: .average,
                 palmRatio: .square
-            )
+            ), .defaulted)
         }
         let middleTip = landmarks[HandLandmark.middleTip.rawValue]
 
@@ -902,11 +924,11 @@ class PalmAnalysisService {
             shapeType = .fire
         }
         
-        return HandShapeAnalysis(
+        return (HandShapeAnalysis(
             shapeType: shapeType,
             fingerLength: fingerLengthCategory,
             palmRatio: palmRatio
-        )
+        ), .measured)
     }
     
     // MARK: - Mount Analysis
@@ -915,7 +937,7 @@ class PalmAnalysisService {
     // - we cannot measure that in 2D, so we use edge density in the mount's
     // ROI as a proxy: prominent mounts have more skin folding, creases,
     // and texture relative to flat (smooth) regions.
-    private func analyzePalmMounts(edgePixels: EdgePixels, handFrame: HandFrame) -> [PalmMountCharacteristics] {
+    private func analyzePalmMounts(edgePixels: EdgePixels, handFrame: HandFrame) -> [(mount: PalmMountCharacteristics, source: ReadingSource)] {
         // ROIs in hand-local coordinates. Thumb side sits at a < 0 (because
         // palmRight is defined as index → little, away from the thumb).
         let mountROIs: [(mount: PalmMount, rect: HandLocalRect)] = [
@@ -937,17 +959,20 @@ class PalmAnalysisService {
             (.neptune,   HandLocalRect(aRange: -0.18 ...  0.18, bRange: 0.05 ... 0.22))
         ]
 
-        var results: [PalmMountCharacteristics] = []
+        var results: [(mount: PalmMountCharacteristics, source: ReadingSource)] = []
         for (mount, rect) in mountROIs {
             let metrics = sampleLineMetrics(edgePixels, handFrame: handFrame, rect: rect, axis: .horizontal)
             let prominence = mountProminence(from: metrics)
+            let source: ReadingSource
             if let m = metrics {
                 print(String(format: "[PalmAnalysis] mount %@: edges=%.3f intensity=%.3f → %@",
                              mount.rawValue, m.edgeRatio, m.avgIntensity, prominence.rawValue))
+                source = m.edgeRatio < 0.005 ? .noSignal : .measured
             } else {
                 print("[PalmAnalysis] mount \(mount.rawValue): off-image → \(prominence.rawValue)")
+                source = .defaulted
             }
-            results.append(PalmMountCharacteristics(mount: mount, prominence: prominence))
+            results.append((PalmMountCharacteristics(mount: mount, prominence: prominence), source))
         }
         return results
     }
