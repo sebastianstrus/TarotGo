@@ -264,11 +264,11 @@ class CameraViewController: UIViewController {
         handOverlayView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(handOverlayView)
 
-        // Hand guide overlay (fallback when no hand is detected)
+
         handGuideLayer.strokeColor = UIColor.systemYellow.withAlphaComponent(0.8).cgColor
         handGuideLayer.fillColor = UIColor.clear.cgColor
-        handGuideLayer.lineWidth = 3
-        handGuideLayer.lineDashPattern = [10, 5]
+        handGuideLayer.lineWidth = 1
+        handGuideLayer.lineDashPattern = [4, 6]
         view.layer.addSublayer(handGuideLayer)
         
         // Instruction label
@@ -425,11 +425,9 @@ extension CameraViewController: HandLandmarkerLiveServiceDelegate {
         imageSize: CGSize,
         orientation: UIImage.Orientation
     ) {
-        // Hide the static hand guide as soon as we start reporting real
-        // landmarks; bring it back when detection drops out so users
-        // still have a framing reference.
-        let hasHand = !landmarks.isEmpty && !(landmarks.first?.isEmpty ?? true)
-        handGuideLayer.isHidden = hasHand
+        // Framing guide stays visible regardless of detection state — it
+        // just sits quietly under the live gold overlay so users always
+        // know where to place their palm.
         handOverlayView.update(
             landmarks: landmarks,
             imageSize: imageSize,
