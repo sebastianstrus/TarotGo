@@ -741,10 +741,11 @@ class PalmAnalysisService {
         // 500-3000+ vs. earlier 180-1000). At the old bar every well-lit
         // palm read long/deep/continuous across all four lines — the top
         // bucket got saturated and stopped differentiating hands. Bar
-        // raised so "long" now means the line clearly dominates the
-        // ROI (score ≥ 1.0), and "medium" requires meaningful presence.
+        // raised to 1.5 so "long" now means the line clearly dominates
+        // the ROI (not just any line with coverage=1.0), and "medium"
+        // requires meaningful presence.
         let length: PalmLineCharacteristics.LineLength
-        if lengthScore >= 1.0 {
+        if lengthScore >= 1.5 {
             length = .long
         } else if lengthScore >= 0.40 {
             length = .medium
@@ -816,7 +817,7 @@ class PalmAnalysisService {
         // Fate line uses the same length/depth thresholds as the other
         // lines so classifications are comparable across the reading.
         let length: PalmLineCharacteristics.LineLength
-        if lengthScore >= 1.0 { length = .long }
+        if lengthScore >= 1.5 { length = .long }
         else if lengthScore >= 0.40 { length = .medium }
         else { length = .short }
 
