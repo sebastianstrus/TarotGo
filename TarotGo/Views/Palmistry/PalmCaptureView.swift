@@ -388,7 +388,7 @@ class CameraViewController: UIViewController {
             // Center between the instruction label and the capture button rather
             // than the whole view, so the label's bottom edge doesn't clip the
             // top arc of the guide.
-            let topInset = view.safeAreaInsets.top + 90
+            let topInset = view.safeAreaInsets.top + 110
             let bottomInset = view.safeAreaInsets.bottom + 110
             let available = view.bounds.height - topInset - bottomInset
             y = topInset + max(0, (available - height) / 2)
