@@ -818,6 +818,7 @@ nonisolated enum L10n {
     static let palmAnalysisErrorLowConfidence = NSLocalizedString("palmAnalysis.error.lowConfidence", comment: "Your palm couldn't be clearly identified. Show the inside of your hand to the camera with good lighting and try again.")
     static let palmAnalysisErrorProcessingFailed = NSLocalizedString("palmAnalysis.error.processingFailed", comment: "Failed to analyze the palm lines. Please try again with better lighting.")
     static let palmAnalysisErrorWrongHandSide = NSLocalizedString("palmAnalysis.error.wrongHandSide", comment: "Please show the inside of your hand to the camera, not the back. Palm reading requires the palm side facing the lens.")
+    static let palmAnalysisErrorPoorLighting = NSLocalizedString("palmAnalysis.error.poorLighting", value: "The palm lines aren't clearly visible in this photo. Please try again in brighter, more even light — avoid strong shadows or backlight.", comment: "Palm image lacks enough crease detail to analyze — usually caused by dim light, shadows, or backlight.")
 
     // MARK: - Palm Handedness
     static let palmHandednessLeft = NSLocalizedString("palm.handedness.left", comment: "Left Hand")

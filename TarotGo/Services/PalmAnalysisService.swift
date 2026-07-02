@@ -174,6 +174,30 @@ class PalmAnalysisService {
             mounts: mountResults
         )
 
+        // Quality gate — reject captures that clearly didn't produce enough
+        // crease detail to analyze. Two independent signals, either one
+        // triggers the poor-lighting error:
+        //
+        //  1. Contour count under 300. Empirically, good captures produce
+        //     500-3000+ contours; anything under 300 has been dim/backlit
+        //     input where Vision couldn't trace enough boundaries.
+        //  2. All three primary lines (heart/head/life) fail to signal.
+        //     Heart in particular is the most reliable palm crease — if
+        //     even it comes back empty, the mask is genuinely blank
+        //     rather than the user having an unusual palm.
+        //
+        // Mount `.noSignal` counts are not used here: real palms often
+        // have several genuinely smooth mounts (venus/moon/marsUpper),
+        // so a raw "many no-signals" heuristic false-positives on hands
+        // that would otherwise read fine.
+        let primaryLinesEmpty = lineCharacteristics.heartSource == .noSignal
+            && lineCharacteristics.headSource == .noSignal
+            && lineCharacteristics.lifeSource == .noSignal
+        if contourResult.contourCount < 300 || primaryLinesEmpty {
+            print("[PalmAnalysis] rejecting reading — contours=\(contourResult.contourCount), primaryLinesEmpty=\(primaryLinesEmpty)")
+            throw PalmAnalysisError.poorLighting
+        }
+
         // Step 7: Create palm reading
         return PalmReading(
             heartLine: lineCharacteristics.heartLine,
@@ -1082,6 +1106,7 @@ enum PalmAnalysisError: LocalizedError {
     case lowConfidence
     case processingFailed
     case wrongHandSide
+    case poorLighting
 
     var errorDescription: String? {
         switch self {
@@ -1097,6 +1122,8 @@ enum PalmAnalysisError: LocalizedError {
             return L10n.palmAnalysisErrorProcessingFailed
         case .wrongHandSide:
             return L10n.palmAnalysisErrorWrongHandSide
+        case .poorLighting:
+            return L10n.palmAnalysisErrorPoorLighting
         }
     }
 }
