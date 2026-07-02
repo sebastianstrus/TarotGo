@@ -132,8 +132,8 @@ class PalmAnalysisService {
         let palmPoints = try getPalmKeyPoints(from: handLandmarks)
 
         guard let cgImage = image.cgImage,
-              let contourMaskImage = detectContoursMask(of: image),
-              let contourCGImage = contourMaskImage.cgImage,
+              let contourResult = detectContoursMask(of: image),
+              let contourCGImage = contourResult.mask.cgImage,
               let edgePixels = decodeRGBA(from: contourCGImage) else {
             throw PalmAnalysisError.processingFailed
         }
@@ -164,7 +164,15 @@ class PalmAnalysisService {
         let mountResults = analyzePalmMounts(edgePixels: edgePixels, handFrame: handFrame)
 
         // Debug dump — one block per scan, easy to paste as a new column in a tracking table.
-        logDebugReading(lines: lineCharacteristics, handShape: handShape, handShapeSource: handShapeSource, mounts: mountResults)
+        logDebugReading(
+            handedness: handedness,
+            contourCount: contourResult.contourCount,
+            topLevelContourCount: contourResult.topLevelCount,
+            lines: lineCharacteristics,
+            handShape: handShape,
+            handShapeSource: handShapeSource,
+            mounts: mountResults
+        )
 
         // Step 7: Create palm reading
         return PalmReading(
@@ -181,6 +189,9 @@ class PalmAnalysisService {
     // MARK: - Debug Logging
 
     private func logDebugReading(
+        handedness: Handedness?,
+        contourCount: Int,
+        topLevelContourCount: Int,
         lines: (
             heartLine: PalmLineCharacteristics,
             headLine: PalmLineCharacteristics,
@@ -200,7 +211,13 @@ class PalmAnalysisService {
         let fateDepth = lines.fateLine?.depth.rawValue ?? absent
         let fateContinuity = lines.fateLine?.continuity.rawValue ?? absent
 
+        let handednessValue = handedness?.rawValue ?? "unknown"
+        let handednessSource: ReadingSource = handedness == nil ? .defaulted : .measured
+        let contourValue = "\(contourCount) (top: \(topLevelContourCount))"
+
         var rows: [(label: String, value: String, source: ReadingSource)] = [
+            ("Handedness",       handednessValue,                     handednessSource),
+            ("Contours",         contourValue,                        .measured),
             ("Heart length",     lines.heartLine.length.rawValue,     lines.heartSource),
             ("Heart depth",      lines.heartLine.depth.rawValue,      lines.heartSource),
             ("Heart continuity", lines.heartLine.continuity.rawValue, lines.heartSource),
@@ -558,7 +575,7 @@ class PalmAnalysisService {
     // detector. Advantages: Vision's contour detector is purpose-built for
     // line-like structures, handles low contrast better, and gives us vector
     // paths (so we could later filter by length, curvature, etc.).
-    private func detectContoursMask(of image: UIImage) -> UIImage? {
+    private func detectContoursMask(of image: UIImage) -> (mask: UIImage, contourCount: Int, topLevelCount: Int)? {
         guard let cgImage = image.cgImage else { return nil }
         let ciImage = CIImage(cgImage: cgImage)
 
@@ -641,7 +658,10 @@ class PalmAnalysisService {
 
         print("[PalmAnalysis] contours total=\(observation.contourCount) topLevel=\(observation.topLevelContourCount)")
 
-        return rasterizeContours(observation, size: CGSize(width: cgImage.width, height: cgImage.height))
+        guard let mask = rasterizeContours(observation, size: CGSize(width: cgImage.width, height: cgImage.height)) else {
+            return nil
+        }
+        return (mask, observation.contourCount, observation.topLevelContourCount)
     }
 
     // Draws the detected contours into a black-and-white mask the same size
