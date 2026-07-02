@@ -62,6 +62,7 @@
 				7DD5F5AF2F8C142F00587129 /* Sources */,
 				7DD5F5B02F8C142F00587129 /* Frameworks */,
 				7DD5F5B12F8C142F00587129 /* Resources */,
+				7D7027082FF6969200AFB5AE /* Fix MediaPipe Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +137,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D7027082FF6969200AFB5AE /* Fix MediaPipe Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Fix MediaPipe Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/bash\nset -e\n\nFRAMEWORKS_DIR=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n[ -d \"${FRAMEWORKS_DIR}\" ] || exit 0\n\nfor FRAMEWORK in MediaPipeTasksVision MediaPipeCommonGraphLibraries MediaPipeTasksCommon; do\n    FRAMEWORK_PATH=\"${FRAMEWORKS_DIR}/${FRAMEWORK}.framework\"\n    PLIST_PATH=\"${FRAMEWORK_PATH}/Info.plist\"\n    [ -f \"${PLIST_PATH}\" ] || continue\n\n    echo \"Patching ${FRAMEWORK}.framework/Info.plist\"\n\n    /usr/libexec/PlistBuddy -c \"Delete :XCFrameworkFormatVersion\" \"${PLIST_PATH}\" 2>/dev/null || true\n    /usr/libexec/PlistBuddy -c \"Delete :AvailableLibraries\" \"${PLIST_PATH}\" 2>/dev/null || true\n\n    /usr/libexec/PlistBuddy -c \"Set :CFBundlePackageType FMWK\" \"${PLIST_PATH}\" 2>/dev/null || \\\n        /usr/libexec/PlistBuddy -c \"Add :CFBundlePackageType string FMWK\" \"${PLIST_PATH}\"\n\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString 1.0\" \"${PLIST_PATH}\" 2>/dev/null || \\\n        /usr/libexec/PlistBuddy -c \"Add :CFBundleShortVersionString string 1.0\" \"${PLIST_PATH}\"\n\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion 1\" \"${PLIST_PATH}\" 2>/dev/null || \\\n        /usr/libexec/PlistBuddy -c \"Add :CFBundleVersion string 1\" \"${PLIST_PATH}\"\n\n    /usr/libexec/PlistBuddy -c \"Set :MinimumOSVersion ${IPHONEOS_DEPLOYMENT_TARGET}\" \"${PLIST_PATH}\" 2>/dev/null || \\\n        /usr/libexec/PlistBuddy -c \"Add :MinimumOSVersion string ${IPHONEOS_DEPLOYMENT_TARGET}\" \"${PLIST_PATH}\"\n\n    if [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ] && [ \"${EXPANDED_CODE_SIGN_IDENTITY}\" != \"-\" ]; then\n        codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" \\\n            --preserve-metadata=identifier,entitlements,flags \"${FRAMEWORK_PATH}\"\n    fi\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7DD5F5AF2F8C142F00587129 /* Sources */ = {
@@ -282,6 +305,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4SL936GBZY;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "TarotGo needs access to your camera to display tarot cards in your physical environment using Augmented Reality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -316,6 +340,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4SL936GBZY;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "TarotGo needs access to your camera to display tarot cards in your physical environment using Augmented Reality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
