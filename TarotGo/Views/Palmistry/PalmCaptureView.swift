@@ -325,6 +325,10 @@ class CameraViewController: UIViewController {
         instructionLabel.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         instructionLabel.layer.cornerRadius = 10
         instructionLabel.clipsToBounds = true
+        instructionLabel.numberOfLines = 2
+        instructionLabel.lineBreakMode = .byWordWrapping
+        instructionLabel.adjustsFontSizeToFitWidth = true
+        instructionLabel.minimumScaleFactor = 0.8
         instructionLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(instructionLabel)
         
@@ -334,7 +338,7 @@ class CameraViewController: UIViewController {
             labelTopConstraint,
             instructionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             instructionLabel.widthAnchor.constraint(equalToConstant: 300),
-            instructionLabel.heightAnchor.constraint(equalToConstant: 50)
+            instructionLabel.heightAnchor.constraint(equalToConstant: 70)
         ])
         
         // Capture button
@@ -377,7 +381,7 @@ class CameraViewController: UIViewController {
             height = width * aspectRatio
             y = topMargin
             // Vertically center the label inside the guide.
-            instructionLabelTopConstraint?.constant = y + (height - 50) / 2 - view.safeAreaInsets.top
+            instructionLabelTopConstraint?.constant = y + (height - 70) / 2 - view.safeAreaInsets.top
         } else {
             width = maxWidth
             height = width * aspectRatio
