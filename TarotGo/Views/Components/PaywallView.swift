@@ -10,7 +10,11 @@ import StoreKit
 
 struct PaywallView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.openURL) private var openURL
     @StateObject private var subscriptionService = SubscriptionService.shared
+
+    private let privacyPolicyURL = URL(string: "https://tarot-go.com/privacy.html")!
+    private let termsOfUseURL = URL(string: "https://tarot-go.com/terms.html")!
 
     @State private var selectedProductID: String = SubscriptionProduct.yearly.rawValue
     @State private var errorMessage: String?
@@ -325,6 +329,34 @@ struct PaywallView: View {
                 .foregroundColor(AppTheme.textTertiary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 12)
+
+            HStack(spacing: 16) {
+                Button {
+                    HapticService.shared.impact(.light)
+                    openURL(termsOfUseURL)
+                } label: {
+                    Text(L10n.settingsTermsOfService)
+                        .font(.system(size: 11, weight: .medium))
+                        .foregroundColor(AppTheme.textSecondary)
+                        .underline()
+                }
+                .buttonStyle(.plain)
+
+                Text("•")
+                    .font(.system(size: 11))
+                    .foregroundColor(AppTheme.textTertiary)
+
+                Button {
+                    HapticService.shared.impact(.light)
+                    openURL(privacyPolicyURL)
+                } label: {
+                    Text(L10n.settingsPrivacyPolicy)
+                        .font(.system(size: 11, weight: .medium))
+                        .foregroundColor(AppTheme.textSecondary)
+                        .underline()
+                }
+                .buttonStyle(.plain)
+            }
         }
         .padding(.top, 2)
     }
