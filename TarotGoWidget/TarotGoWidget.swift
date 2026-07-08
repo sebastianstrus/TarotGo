@@ -5,6 +5,35 @@
 
 import WidgetKit
 import SwiftUI
+import UIKit
+
+// MARK: - Image loader (downscales large asset-catalog images to fit WidgetKit's memory budget)
+
+private enum WidgetImageLoader {
+    /// Widget rendering has a per-image size limit (~1085×986 pt at 1x). Loading a full-resolution
+    /// tarot card asset (1108×1900) exceeds that budget and causes the extension to crash silently
+    /// while archiving the timeline, leaving iOS to show only the container background. We
+    /// downscale in-memory to a size safely below that limit.
+    static func loadDownscaled(named name: String, targetPointHeight: CGFloat) -> UIImage? {
+        guard let original = UIImage(named: name) else { return nil }
+        let scale = UIScreen.main.scale
+        let targetPixelHeight = max(targetPointHeight * scale, 1)
+        let originalSize = original.size
+        guard originalSize.height > targetPixelHeight else { return original }
+        let ratio = targetPixelHeight / originalSize.height
+        let newSize = CGSize(
+            width: (originalSize.width * ratio).rounded(),
+            height: targetPixelHeight.rounded()
+        )
+        let format = UIGraphicsImageRendererFormat.default()
+        format.scale = 1
+        format.opaque = false
+        let renderer = UIGraphicsImageRenderer(size: newSize, format: format)
+        return renderer.image { _ in
+            original.draw(in: CGRect(origin: .zero, size: newSize))
+        }
+    }
+}
 
 // MARK: - Colors (mirrors AppTheme so widget stays consistent)
 
@@ -76,7 +105,9 @@ struct Provider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (DailyCardEntry) -> Void) {
-        completion(DailyCardEntry(date: Date(), info: DailyCardStore.load()))
+        let stored = DailyCardStore.load()
+        let info = stored?.isToday == true ? stored : nil
+        completion(DailyCardEntry(date: Date(), info: info))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<DailyCardEntry>) -> Void) {
@@ -84,7 +115,6 @@ struct Provider: TimelineProvider {
         let stored = DailyCardStore.load()
         let currentEntry = DailyCardEntry(date: now, info: stored?.isToday == true ? stored : nil)
 
-        // Refresh at the next midnight so the widget resets to "awaiting" for a new day.
         let calendar = Calendar.current
         let startOfTomorrow = calendar.date(byAdding: .day, value: 1, to: calendar.startOfDay(for: now)) ?? now.addingTimeInterval(60 * 60 * 6)
         let midnightEntry = DailyCardEntry(date: startOfTomorrow, info: nil)
@@ -101,6 +131,19 @@ struct TarotGoWidgetEntryView: View {
     let entry: DailyCardEntry
 
     var body: some View {
+        content
+            .widgetURL(URL(string: "tarotgo://daily-card"))
+            .containerBackground(for: .widget) {
+                if family == .accessoryCircular || family == .accessoryRectangular || family == .accessoryInline {
+                    Color.clear
+                } else {
+                    WidgetTheme.backgroundGradient
+                }
+            }
+    }
+
+    @ViewBuilder
+    private var content: some View {
         switch family {
         case .systemSmall:
             smallView
@@ -121,26 +164,21 @@ struct TarotGoWidgetEntryView: View {
 
     private var smallView: some View {
         VStack(spacing: 6) {
-            cardBackIcon(size: 44)
+            cardImage(height: 72)
 
             Text(WidgetStrings.title)
-                .font(WidgetTheme.serifFont(size: 13, weight: .semibold))
+                .font(WidgetTheme.serifFont(size: 12, weight: .semibold))
                 .foregroundStyle(WidgetTheme.goldGradient)
                 .lineLimit(1)
-                .minimumScaleFactor(0.8)
+                .minimumScaleFactor(0.7)
 
             if let info = entry.info, info.isRevealed {
                 Text(info.localizedName)
-                    .font(WidgetTheme.serifFont(size: 12, weight: .medium))
+                    .font(WidgetTheme.serifFont(size: 11, weight: .medium))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
                     .minimumScaleFactor(0.7)
-                if info.isReversed {
-                    Text(WidgetStrings.reversed)
-                        .font(.system(size: 9, weight: .light))
-                        .foregroundColor(WidgetTheme.gold.opacity(0.8))
-                }
             } else {
                 Text(WidgetStrings.awaiting)
                     .font(.system(size: 10, weight: .light))
@@ -150,15 +188,13 @@ struct TarotGoWidgetEntryView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .containerBackground(for: .widget) { WidgetTheme.backgroundGradient }
-        .widgetURL(deepLinkURL)
     }
 
     // MARK: Home Screen - Medium
 
     private var mediumView: some View {
         HStack(spacing: 14) {
-            cardBackIcon(size: 68)
+            cardImage(height: 110)
 
             VStack(alignment: .leading, spacing: 6) {
                 Text(WidgetStrings.title)
@@ -167,7 +203,7 @@ struct TarotGoWidgetEntryView: View {
 
                 if let info = entry.info, info.isRevealed {
                     Text(WidgetStrings.todaysEnergy)
-                        .font(.system(size: 11, weight: .light))
+                        .font(.system(size: 10, weight: .light))
                         .foregroundColor(.white.opacity(0.6))
                         .textCase(.uppercase)
                         .tracking(0.5)
@@ -204,8 +240,6 @@ struct TarotGoWidgetEntryView: View {
             Spacer(minLength: 0)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .containerBackground(for: .widget) { WidgetTheme.backgroundGradient }
-        .widgetURL(deepLinkURL)
     }
 
     // MARK: Lock Screen
@@ -235,8 +269,6 @@ struct TarotGoWidgetEntryView: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .containerBackground(for: .widget) { Color.clear }
-        .widgetURL(deepLinkURL)
     }
 
     private var circularAccessory: some View {
@@ -257,56 +289,73 @@ struct TarotGoWidgetEntryView: View {
                     .font(.system(size: 22, weight: .semibold))
             }
         }
-        .containerBackground(for: .widget) { Color.clear }
-        .widgetURL(deepLinkURL)
     }
 
     private var inlineAccessory: some View {
-        Group {
-            if let info = entry.info, info.isRevealed {
-                Text("✨ \(info.localizedName)\(info.isReversed ? " (\(WidgetStrings.reversed))" : "")")
-            } else {
-                Text("✨ \(WidgetStrings.tapToReveal)")
-            }
+        if let info = entry.info, info.isRevealed {
+            Text("✨ \(info.localizedName)\(info.isReversed ? " (\(WidgetStrings.reversed))" : "")")
+        } else {
+            Text("✨ \(WidgetStrings.tapToReveal)")
         }
-        .widgetURL(deepLinkURL)
     }
 
     // MARK: Helpers
 
-    private var deepLinkURL: URL? {
-        URL(string: "tarotgo://daily-card")
-    }
-
     private func shortName(for name: String) -> String {
-        // For circular accessory, keep it short (first word or up to 6 chars)
         let firstWord = name.split(separator: " ").first.map(String.init) ?? name
         return String(firstWord.prefix(6))
     }
 
-    /// Stylised card-back thumbnail rendered entirely in code so no shared assets are needed.
-    private func cardBackIcon(size: CGFloat) -> some View {
-        let width = size * (1108.0 / 1900.0)
+    /// Card image – uses the real card front when revealed, otherwise the reverse selected in Settings.
+    private func cardImage(height: CGFloat) -> some View {
+        let width = height * (1108.0 / 1900.0)
+        let cornerRadius = width * 0.05
+
+        let assetName: String = {
+            if let info = entry.info, info.isRevealed {
+                return info.cardID
+            }
+            return DailyCardStore.loadCardBackName()
+        }()
+
+        let isReversed = (entry.info?.isRevealed == true) && (entry.info?.isReversed == true)
+
+        return Group {
+            if let uiImage = WidgetImageLoader.loadDownscaled(named: assetName, targetPointHeight: height) {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: width, height: height)
+                    .clipped()
+                    .cornerRadius(cornerRadius)
+                    .rotationEffect(.degrees(isReversed ? 180 : 0))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: cornerRadius)
+                            .stroke(WidgetTheme.gold.opacity(0.5), lineWidth: 0.6)
+                    )
+            } else {
+                cardFallback(height: height)
+            }
+        }
+        .frame(width: width, height: height)
+    }
+
+    /// Stylised fallback used only when the asset cannot be loaded.
+    private func cardFallback(height: CGFloat) -> some View {
+        let width = height * (1108.0 / 1900.0)
+        let cornerRadius = height * 0.05
         return ZStack {
-            RoundedRectangle(cornerRadius: size * 0.09, style: .continuous)
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
                 .fill(WidgetTheme.midNavy)
                 .overlay(
-                    RoundedRectangle(cornerRadius: size * 0.09, style: .continuous)
+                    RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
                         .stroke(WidgetTheme.goldGradient, lineWidth: 1.2)
                 )
-
-            // Inner ornament frame
-            RoundedRectangle(cornerRadius: size * 0.06, style: .continuous)
-                .stroke(WidgetTheme.gold.opacity(0.45), lineWidth: 0.6)
-                .padding(size * 0.09)
-
-            // Central emblem
             Image(systemName: "sparkles")
-                .font(.system(size: size * 0.32, weight: .semibold))
+                .font(.system(size: height * 0.28, weight: .semibold))
                 .foregroundStyle(WidgetTheme.goldGradient)
-                .shadow(color: WidgetTheme.gold.opacity(0.5), radius: size * 0.05)
         }
-        .frame(width: width, height: size)
+        .frame(width: width, height: height)
     }
 }
 

@@ -348,6 +348,7 @@ struct SettingsView: View {
                                 .contentShape(Rectangle())
                                 .onTapGesture {
                                     selectedCardBackRaw = style.rawValue
+                                    DailyCardStore.saveCardBackName(style.rawValue)
                                     soundService.play(.click)
                                     HapticService.shared.impact(.light)
                                 }

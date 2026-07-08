@@ -36,6 +36,10 @@ struct TarotGoApp: App {
         
         // Set up notification delegate with shared instance
         UNUserNotificationCenter.current().delegate = NotificationDelegate.shared
+
+        // Mirror the user's selected card back into the App Group so the widget can read it.
+        let selected = UserDefaults.standard.string(forKey: "selectedCardBack") ?? CardBackStyle.modern.rawValue
+        DailyCardStore.saveCardBackName(selected)
     }
     
     var body: some Scene {

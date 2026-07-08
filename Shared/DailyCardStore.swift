@@ -24,7 +24,11 @@ struct DailyCardInfo: Codable, Equatable {
 enum DailyCardStore {
     static let appGroupID = "group.com.sebastianstrus.tarot"
     static let userDefaultsKey = "dailyCardInfo"
+    static let cardBackKey = "selectedCardBack"
     static let widgetKind = "TarotGoWidget"
+
+    /// Default card back asset name. Must match `CardBackStyle.modern.rawValue`.
+    static let defaultCardBackName = "ReversCard1"
 
     static var shared: UserDefaults {
         UserDefaults(suiteName: appGroupID) ?? .standard
@@ -46,6 +50,15 @@ enum DailyCardStore {
     static func save(_ info: DailyCardInfo) {
         guard let data = try? JSONEncoder().encode(info) else { return }
         shared.set(data, forKey: userDefaultsKey)
+        WidgetCenter.shared.reloadTimelines(ofKind: widgetKind)
+    }
+
+    static func loadCardBackName() -> String {
+        shared.string(forKey: cardBackKey) ?? defaultCardBackName
+    }
+
+    static func saveCardBackName(_ name: String) {
+        shared.set(name, forKey: cardBackKey)
         WidgetCenter.shared.reloadTimelines(ofKind: widgetKind)
     }
 }
