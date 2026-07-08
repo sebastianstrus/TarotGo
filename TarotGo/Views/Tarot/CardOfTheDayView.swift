@@ -349,6 +349,8 @@ struct CardOfTheDayView: View {
         
         // 30% chance of being reversed
         isReversed = generator.next() % 100 < 30
+
+        syncWidget(revealed: false)
     }
     
     private func loadRevealedState() {
@@ -359,11 +361,25 @@ struct CardOfTheDayView: View {
             flipRotation = 180
             showInterpretation = true
             isFinishing = true
+            syncWidget(revealed: true)
         }
     }
     
     private func saveRevealedState() {
         UserDefaults.standard.set(true, forKey: todayKey)
+        syncWidget(revealed: true)
+    }
+
+    private func syncWidget(revealed: Bool) {
+        guard let card = todayCard else { return }
+        let info = DailyCardInfo(
+            dateKey: DailyCardStore.todayDateKey(),
+            cardID: card.id,
+            localizedName: card.localizedName,
+            isReversed: isReversed,
+            isRevealed: revealed
+        )
+        DailyCardStore.save(info)
     }
     
     private func resetRitual() {

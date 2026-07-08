@@ -86,4 +86,21 @@ class AppViewModel: ObservableObject {
             self.shouldDismissToRoot = false
         }
     }
+
+    /// Handles deep links from widgets and other external sources.
+    /// Supported: tarotgo://daily-card
+    func handleDeepLink(_ url: URL) {
+        guard url.scheme == "tarotgo" else { return }
+        let host = url.host?.lowercased() ?? url.path.trimmingCharacters(in: CharacterSet(charactersIn: "/")).lowercased()
+
+        if host == "daily-card" {
+            if !showSplashScreen && hasCompletedOnboarding {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    self.shouldNavigateToDailyCard = true
+                }
+            } else {
+                pendingNotificationAction = "daily_card"
+            }
+        }
+    }
 }

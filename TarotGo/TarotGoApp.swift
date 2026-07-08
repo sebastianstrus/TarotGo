@@ -47,6 +47,9 @@ struct TarotGoApp: App {
                     // Connect the app view model to the notification delegate
                     NotificationDelegate.shared.appViewModel = appViewModel
                 }
+                .onOpenURL { url in
+                    appViewModel.handleDeepLink(url)
+                }
         }
         .modelContainer(sharedModelContainer)
     }

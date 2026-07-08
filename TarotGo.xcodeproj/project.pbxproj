@@ -7,23 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2E54FB2FFE94CC00B3F6B0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2E54FA2FFE94CC00B3F6B0 /* WidgetKit.framework */; };
+		7D2E54FD2FFE94CC00B3F6B0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2E54FC2FFE94CC00B3F6B0 /* SwiftUI.framework */; };
+		7D2E55082FFE94CD00B3F6B0 /* TarotGoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7D2E54F82FFE94CC00B3F6B0 /* TarotGoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D2E55122FFE9A1700B3F6B0 /* DailyCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E55112FFE981500B3F6B0 /* DailyCardStore.swift */; };
+		7D2E55132FFE9A1700B3F6B0 /* DailyCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E55112FFE981500B3F6B0 /* DailyCardStore.swift */; };
 		7D3D86882F8EE3D70016DDF5 /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = 7D3D86872F8EE3D70016DDF5 /* Vortex */; };
 		7D68C36B2FCC9ABA002480C5 /* SwiftTasksVision in Frameworks */ = {isa = PBXBuildFile; productRef = 7D68C36A2FCC9ABA002480C5 /* SwiftTasksVision */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7D2E55062FFE94CD00B3F6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DD5F5AB2F8C142F00587129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D2E54F72FFE94CC00B3F6B0;
+			remoteInfo = TarotGoWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7D2E55092FFE94CD00B3F6B0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7D2E55082FFE94CD00B3F6B0 /* TarotGoWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7D2E54F82FFE94CC00B3F6B0 /* TarotGoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TarotGoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2E54FA2FFE94CC00B3F6B0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7D2E54FC2FFE94CC00B3F6B0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7D2E550F2FFE970600B3F6B0 /* TarotGoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TarotGoWidgetExtension.entitlements; sourceTree = "<group>"; };
+		7D2E55112FFE981500B3F6B0 /* DailyCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardStore.swift; sourceTree = "<group>"; };
 		7DD5F5B32F8C142F00587129 /* TarotGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarotGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7D2E550C2FFE94CD00B3F6B0 /* Exceptions for "TarotGoWidget" folder in "TarotGoWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7D2E54F72FFE94CC00B3F6B0 /* TarotGoWidgetExtension */;
+		};
+		7D2E55152FFE9A7800B3F6B0 /* Exceptions for "TarotGo" folder in "TarotGo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7DD5F5B22F8C142F00587129 /* TarotGo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7D2E54FE2FFE94CC00B3F6B0 /* TarotGoWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7D2E550C2FFE94CD00B3F6B0 /* Exceptions for "TarotGoWidget" folder in "TarotGoWidgetExtension" target */,
+			);
+			path = TarotGoWidget;
+			sourceTree = "<group>";
+		};
 		7DD5F5B52F8C142F00587129 /* TarotGo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7D2E55152FFE9A7800B3F6B0 /* Exceptions for "TarotGo" folder in "TarotGo" target */,
+			);
 			path = TarotGo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7D2E54F52FFE94CC00B3F6B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2E54FD2FFE94CC00B3F6B0 /* SwiftUI.framework in Frameworks */,
+				7D2E54FB2FFE94CC00B3F6B0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DD5F5B02F8C142F00587129 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,11 +107,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D2E54F92FFE94CC00B3F6B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D2E54FA2FFE94CC00B3F6B0 /* WidgetKit.framework */,
+				7D2E54FC2FFE94CC00B3F6B0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D2E55102FFE981400B3F6B0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D2E55112FFE981500B3F6B0 /* DailyCardStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		7DD5F5AA2F8C142F00587129 = {
 			isa = PBXGroup;
 			children = (
+				7D2E550F2FFE970600B3F6B0 /* TarotGoWidgetExtension.entitlements */,
 				7DD5F5B52F8C142F00587129 /* TarotGo */,
+				7D2E54FE2FFE94CC00B3F6B0 /* TarotGoWidget */,
+				7D2E54F92FFE94CC00B3F6B0 /* Frameworks */,
 				7DD5F5B42F8C142F00587129 /* Products */,
+				7D2E55102FFE981400B3F6B0 /* Shared */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				7DD5F5B32F8C142F00587129 /* TarotGo.app */,
+				7D2E54F82FFE94CC00B3F6B0 /* TarotGoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +148,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7D2E54F72FFE94CC00B3F6B0 /* TarotGoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D2E550D2FFE94CD00B3F6B0 /* Build configuration list for PBXNativeTarget "TarotGoWidgetExtension" */;
+			buildPhases = (
+				7D2E54F42FFE94CC00B3F6B0 /* Sources */,
+				7D2E54F52FFE94CC00B3F6B0 /* Frameworks */,
+				7D2E54F62FFE94CC00B3F6B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7D2E54FE2FFE94CC00B3F6B0 /* TarotGoWidget */,
+			);
+			name = TarotGoWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = TarotGoWidgetExtension;
+			productReference = 7D2E54F82FFE94CC00B3F6B0 /* TarotGoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7DD5F5B22F8C142F00587129 /* TarotGo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DD5F5BE2F8C143100587129 /* Build configuration list for PBXNativeTarget "TarotGo" */;
@@ -63,10 +178,12 @@
 				7DD5F5B02F8C142F00587129 /* Frameworks */,
 				7DD5F5B12F8C142F00587129 /* Resources */,
 				7D7027082FF6969200AFB5AE /* Fix MediaPipe Frameworks */,
+				7D2E55092FFE94CD00B3F6B0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7D2E55072FFE94CD00B3F6B0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7DD5F5B52F8C142F00587129 /* TarotGo */,
@@ -87,9 +204,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2630;
+				LastSwiftUpdateCheck = 2650;
 				LastUpgradeCheck = 2650;
 				TargetAttributes = {
+					7D2E54F72FFE94CC00B3F6B0 = {
+						CreatedOnToolsVersion = 26.5;
+					};
 					7DD5F5B22F8C142F00587129 = {
 						CreatedOnToolsVersion = 26.3;
 					};
@@ -124,11 +244,19 @@
 			projectRoot = "";
 			targets = (
 				7DD5F5B22F8C142F00587129 /* TarotGo */,
+				7D2E54F72FFE94CC00B3F6B0 /* TarotGoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7D2E54F62FFE94CC00B3F6B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DD5F5B12F8C142F00587129 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,16 +289,97 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7D2E54F42FFE94CC00B3F6B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2E55132FFE9A1700B3F6B0 /* DailyCardStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DD5F5AF2F8C142F00587129 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2E55122FFE9A1700B3F6B0 /* DailyCardStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7D2E55072FFE94CD00B3F6B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D2E54F72FFE94CC00B3F6B0 /* TarotGoWidgetExtension */;
+			targetProxy = 7D2E55062FFE94CD00B3F6B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7D2E550A2FFE94CD00B3F6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TarotGoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SL936GBZY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TarotGoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TarotGoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstrus.tarot.TarotGoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D2E550B2FFE94CD00B3F6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TarotGoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SL936GBZY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TarotGoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TarotGoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstrus.tarot.TarotGoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7DD5F5BC2F8C143100587129 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -301,12 +510,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TarotGo/TarotGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4SL936GBZY;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TarotGo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "TarotGo needs access to your camera to display tarot cards in your physical environment using Augmented Reality.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to show you which Tarot cards are trending in your city for the Global Vibe Check.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,12 +548,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TarotGo/TarotGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4SL936GBZY;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TarotGo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "TarotGo needs access to your camera to display tarot cards in your physical environment using Augmented Reality.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to show you which Tarot cards are trending in your city for the Global Vibe Check.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -371,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7D2E550D2FFE94CD00B3F6B0 /* Build configuration list for PBXNativeTarget "TarotGoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D2E550A2FFE94CD00B3F6B0 /* Debug */,
+				7D2E550B2FFE94CD00B3F6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7DD5F5AE2F8C142F00587129 /* Build configuration list for PBXProject "TarotGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
