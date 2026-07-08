@@ -45,10 +45,9 @@ enum TarotTab: AnimatedTabSelectionProtocol {
 // MARK: - Main Tab View
 struct MainTabView: View {
     @EnvironmentObject var appViewModel: AppViewModel
-    @State private var activeTab: TarotTab = .tarot
-    
+
     var body: some View {
-        AnimatedTabView(selection: $activeTab) {
+        AnimatedTabView(selection: $appViewModel.activeTab) {
             Tab.init(TarotTab.tarot.title, systemImage: TarotTab.tarot.symbolImage, value: .tarot) {
                 TarotView()
             }

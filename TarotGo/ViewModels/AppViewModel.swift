@@ -18,6 +18,7 @@ class AppViewModel: ObservableObject {
     @Published var shouldDismissToRoot: Bool = false
     @Published var shouldNavigateToDailyCard: Bool = false
     @Published var tabBarVisibility: Visibility = .visible
+    @Published var activeTab: TarotTab = .tarot
     
     @AppStorage("hasLaunchedBefore") private var hasLaunchedBefore: Bool = false
     @AppStorage("hasCompletedOnboardingFlow") private var hasCompletedOnboardingFlow: Bool = false
@@ -43,17 +44,25 @@ class AppViewModel: ObservableObject {
     func processPendingNotification() {
         print("📱 processPendingNotification called - pendingAction: \(pendingNotificationAction ?? "nil")")
         guard let action = pendingNotificationAction else { return }
-        
+
         if action == "daily_card" {
             print("📱 Processing daily_card action")
-            // Delay slightly to ensure view hierarchy is ready
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                print("📱 Setting shouldNavigateToDailyCard = true")
-                self.shouldNavigateToDailyCard = true
-            }
+            navigateToDailyCard()
         }
-        
+
         pendingNotificationAction = nil
+    }
+
+    /// Switches to the Tarot tab and triggers navigation to Card of the Day.
+    /// Called from deep-link and notification handlers so the destination
+    /// resolves on the Tarot tab regardless of which tab the user was on.
+    func navigateToDailyCard() {
+        activeTab = .tarot
+        // Delay slightly so the tab switch settles before pushing the destination.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            print("📱 Setting shouldNavigateToDailyCard = true")
+            self.shouldNavigateToDailyCard = true
+        }
     }
     
     func completeOnboarding() {
@@ -95,9 +104,7 @@ class AppViewModel: ObservableObject {
 
         if host == "daily-card" {
             if !showSplashScreen && hasCompletedOnboarding {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                    self.shouldNavigateToDailyCard = true
-                }
+                navigateToDailyCard()
             } else {
                 pendingNotificationAction = "daily_card"
             }

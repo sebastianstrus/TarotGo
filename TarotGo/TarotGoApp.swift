@@ -120,7 +120,7 @@ class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
                     // If app is ready (no splash screen), navigate immediately
                     if !viewModel.showSplashScreen && viewModel.hasCompletedOnboarding {
                         print("📬 App ready - navigating immediately")
-                        viewModel.shouldNavigateToDailyCard = true
+                        viewModel.navigateToDailyCard()
                     } else {
                         // Otherwise, store the action to process after app is ready
                         print("📬 App not ready - storing pending action")
