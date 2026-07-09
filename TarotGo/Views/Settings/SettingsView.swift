@@ -466,7 +466,7 @@ struct SettingsView: View {
                 // Legal Section - Terms of Service
                 Section {
                     Button {
-                        openURL("https://tarot-go.com/terms.html")
+                        openURL("https://www.apple.com/legal/internet-services/itunes/dev/stdeula")
                     } label: {
                         HStack {
                             Text(L10n.settingsTermsOfService)

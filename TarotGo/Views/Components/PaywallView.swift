@@ -14,7 +14,7 @@ struct PaywallView: View {
     @StateObject private var subscriptionService = SubscriptionService.shared
 
     private let privacyPolicyURL = URL(string: "https://tarot-go.com/privacy.html")!
-    private let termsOfUseURL = URL(string: "https://tarot-go.com/terms.html")!
+    private let termsOfUseURL = URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula")!
 
     @State private var selectedProductID: String = SubscriptionProduct.yearly.rawValue
     @State private var errorMessage: String?
