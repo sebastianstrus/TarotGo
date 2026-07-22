@@ -10,8 +10,8 @@ import StoreKit
 import Combine
 
 enum SubscriptionProduct: String, CaseIterable {
-    case monthly = "tarotgo.premium.monthly"
-    case yearly = "tarotgo.premium.yearly"
+    case monthly = "tarotgo.premium.month"
+    case yearly = "tarotgo.premium.year"
 
     var id: String { rawValue }
 }

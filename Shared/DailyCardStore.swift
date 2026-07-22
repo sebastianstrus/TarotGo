@@ -22,7 +22,7 @@ struct DailyCardInfo: Codable, Equatable {
 }
 
 enum DailyCardStore {
-    static let appGroupID = "group.com.sebastianstrus.tarot"
+    static let appGroupID = "group.com.sebastianstrus.TarotGo"
     static let userDefaultsKey = "dailyCardInfo"
     static let cardBackKey = "selectedCardBack"
     static let widgetKind = "TarotGoWidget"

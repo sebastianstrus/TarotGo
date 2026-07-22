@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.sebastianstrus.tarot</string>
+		<string>group.com.sebastianstrus.TarotGo</string>
 	</array>
 </dict>
 </plist>

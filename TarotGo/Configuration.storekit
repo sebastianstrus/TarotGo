@@ -88,7 +88,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "tarotgo.premium.monthly",
+          "productID" : "tarotgo.premium.month",
           "recurringSubscriptionPeriod" : "P1M",
           "referenceName" : "Premium Monthly",
           "subscriptionGroupID" : "B1B2C3D4-E5F6-4789-A012-345678901235",
@@ -114,7 +114,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "tarotgo.premium.yearly",
+          "productID" : "tarotgo.premium.year",
           "recurringSubscriptionPeriod" : "P1Y",
           "referenceName" : "Premium Yearly",
           "subscriptionGroupID" : "B1B2C3D4-E5F6-4789-A012-345678901235",
