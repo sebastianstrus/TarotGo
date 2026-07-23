@@ -343474,6 +343474,142 @@
           }
         }
       }
+    },
+    "widget.cardOfTheDay.awaiting" : {
+      "comment" : "Short hint on the small widget",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Deine Karte wartet" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your card awaits" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Tu carta te espera" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Votre carte vous attend" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "La tua carta ti attende" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "カードがあなたを待っています" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Kortet ditt venter" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Twoja karta czeka" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Sua carta te aguarda" } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Ditt kort väntar" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Ваша карта чекає" } }
+      }
+    },
+    "widget.cardOfTheDay.description" : {
+      "comment" : "Widget picker description",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Sieh, wann deine tägliche Tarotkarte bereit ist, aufgedeckt zu werden." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "See when your daily tarot card is ready to be revealed." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Consulta cuándo tu carta del tarot diaria está lista para revelarse." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Voyez quand votre carte de tarot quotidienne est prête à être révélée." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scopri quando la tua carta dei tarocchi quotidiana è pronta per essere rivelata." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のタロットカードがいつ表示できるかを確認できます。" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Se når dagens tarotkort er klar til å bli avdekket." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zobacz, kiedy Twoja codzienna karta tarota jest gotowa do odkrycia." } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Veja quando sua carta de tarô diária está pronta para ser revelada." } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Se när ditt dagliga tarotkort är redo att avslöjas." } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Дізнайтеся, коли ваша щоденна карта таро готова до відкриття." } }
+      }
+    },
+    "widget.cardOfTheDay.displayName" : {
+      "comment" : "Widget picker display name",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Karte des Tages" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Card of the Day" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Carta del Día" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Carte du Jour" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Carta del Giorno" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のカード" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Dagens Kort" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Karta Dnia" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Carta do Dia" } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Dagens Kort" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Карта Дня" } }
+      }
+    },
+    "widget.cardOfTheDay.inlineAwaiting" : {
+      "comment" : "Very short hint on the inline lock-screen accessory",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Karte aufdecken" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reveal today's card" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Revela tu carta" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Révéler la carte" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Rivela la carta" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のカード" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Vis dagens kort" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Odkryj kartę" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Revele sua carta" } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Visa dagens kort" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Відкрити карту" } }
+      }
+    },
+    "widget.cardOfTheDay.reversed" : {
+      "comment" : "Suffix for reversed cards",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "umgekehrt" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "reversed" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "invertida" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "renversée" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "rovesciata" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "逆位置" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "reversert" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "odwrócona" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "invertida" } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "omvänd" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "перевернута" } }
+      }
+    },
+    "widget.cardOfTheDay.tapToReveal" : {
+      "comment" : "Widget hint shown before user reveals the card",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Tippen, um Karte des Tages aufzudecken" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap to reveal today's card" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Toca para revelar tu carta de hoy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Touchez pour révéler la carte du jour" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tocca per rivelare la carta di oggi" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "タップして今日のカードを表示" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Trykk for å avdekke dagens kort" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Dotknij, aby odkryć dzisiejszą kartę" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Toque para revelar sua carta de hoje" } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Tryck för att avslöja dagens kort" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Торкніться, щоб відкрити карту дня" } }
+      }
+    },
+    "widget.cardOfTheDay.title" : {
+      "comment" : "Widget headline",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Karte des Tages" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Card of the Day" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Carta del Día" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Carte du Jour" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Carta del Giorno" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のカード" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Dagens Kort" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Karta Dnia" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Carta do Dia" } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Dagens Kort" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Карта Дня" } }
+      }
+    },
+    "widget.cardOfTheDay.todaysEnergy" : {
+      "comment" : "Label above the revealed card name",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Energie des Tages" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Today's energy" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Energía de hoy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Énergie du jour" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Energia di oggi" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のエネルギー" } },
+        "nb" : { "stringUnit" : { "state" : "translated", "value" : "Dagens energi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Dzisiejsza energia" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Energia de hoje" } },
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Dagens energi" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Енергія дня" } }
+      }
     }
   },
   "version" : "1.1"

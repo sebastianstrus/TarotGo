@@ -80,6 +80,11 @@ private enum WidgetStrings {
         value: "Your card awaits",
         comment: "Short hint on the small widget"
     )
+    static let inlineAwaiting = NSLocalizedString(
+        "widget.cardOfTheDay.inlineAwaiting",
+        value: "Reveal today's card",
+        comment: "Very short hint on the inline lock-screen accessory"
+    )
     static let todaysEnergy = NSLocalizedString(
         "widget.cardOfTheDay.todaysEnergy",
         value: "Today's energy",
@@ -293,9 +298,9 @@ struct TarotGoWidgetEntryView: View {
 
     private var inlineAccessory: some View {
         if let info = entry.info, info.isRevealed {
-            Text("✨ \(info.localizedName)\(info.isReversed ? " (\(WidgetStrings.reversed))" : "")")
+            Text("✨ \(info.localizedName)\(info.isReversed ? " ↻" : "")")
         } else {
-            Text("✨ \(WidgetStrings.tapToReveal)")
+            Text("✨ \(WidgetStrings.inlineAwaiting)")
         }
     }
 

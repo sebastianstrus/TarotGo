@@ -2055,4 +2055,14 @@ nonisolated enum L10n {
 
     // MARK: - Astrology / Zodiac Signs
     // These are used by AstrologyService for zodiac sign names
+
+    // MARK: - Widget
+    static let widgetCardOfTheDayTitle = NSLocalizedString("widget.cardOfTheDay.title", value: "Card of the Day", comment: "Widget headline")
+    static let widgetCardOfTheDayDisplayName = NSLocalizedString("widget.cardOfTheDay.displayName", value: "Card of the Day", comment: "Widget picker display name")
+    static let widgetCardOfTheDayDescription = NSLocalizedString("widget.cardOfTheDay.description", value: "See when your daily tarot card is ready to be revealed.", comment: "Widget picker description")
+    static let widgetCardOfTheDayTapToReveal = NSLocalizedString("widget.cardOfTheDay.tapToReveal", value: "Tap to reveal today's card", comment: "Widget hint shown before user reveals the card")
+    static let widgetCardOfTheDayAwaiting = NSLocalizedString("widget.cardOfTheDay.awaiting", value: "Your card awaits", comment: "Short hint on the small widget")
+    static let widgetCardOfTheDayInlineAwaiting = NSLocalizedString("widget.cardOfTheDay.inlineAwaiting", value: "Reveal today's card", comment: "Very short hint on the inline lock-screen accessory")
+    static let widgetCardOfTheDayTodaysEnergy = NSLocalizedString("widget.cardOfTheDay.todaysEnergy", value: "Today's energy", comment: "Label above the revealed card name")
+    static let widgetCardOfTheDayReversed = NSLocalizedString("widget.cardOfTheDay.reversed", value: "reversed", comment: "Suffix for reversed cards")
 }
