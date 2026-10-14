@@ -26,23 +26,7 @@ struct CardOfTheDayView: View {
     
     private let pressTimer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     private let totalPressDuration: Double = 5.0
-    
-    // UserDefaults keys for persistence (include birth date for uniqueness)
-    private var todayKey: String {
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day], from: Date())
-        
-        // Include birth date string to make key unique per user (use stable string representation)
-        let birthDateString: String
-        if let birthDate = AstrologyService.shared.userBirthDate {
-            let birthComponents = calendar.dateComponents([.year, .month, .day], from: birthDate)
-            birthDateString = "\(birthComponents.year ?? 0)_\(birthComponents.month ?? 0)_\(birthComponents.day ?? 0)"
-        } else {
-            birthDateString = "none"
-        }
-        return "cardOfDay_\(components.year ?? 0)_\(components.month ?? 0)_\(components.day ?? 0)_\(birthDateString)_revealed"
-    }
-    
+
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -333,7 +317,7 @@ struct CardOfTheDayView: View {
         // Use personalized seed based on user's birth date (if available)
         let currentDate = Date()
         let seed: UInt64
-        
+
         if let birthDate = AstrologyService.shared.userBirthDate {
             // Use personalized seed combining date, zodiac sign, and life path number
             seed = AstrologyService.shared.personalizedSeed(for: currentDate, birthDate: birthDate)
@@ -341,32 +325,34 @@ struct CardOfTheDayView: View {
             // Fall back to date-only seed
             seed = AstrologyService.shared.defaultSeed(for: currentDate)
         }
-        
+
         var generator = SeededRandomGenerator(seed: seed)
         let allCards = TarotDeck.allCards
         let randomIndex = Int(generator.next() % UInt64(allCards.count))
-        todayCard = allCards[randomIndex]
-        
+        let card = allCards[randomIndex]
+        todayCard = card
+
         // 30% chance of being reversed
         isReversed = generator.next() % 100 < 30
 
-        syncWidget(revealed: false)
+        // DailyCardStore (the app group) is the single source of truth shared with the widget,
+        // so a reveal that already happened there - e.g. tapping "Reveal" on the widget - must
+        // not be stomped back to unrevealed just because the app screen appeared.
+        let stored = DailyCardStore.load()
+        let alreadyRevealed = stored?.isToday == true && stored?.isRevealed == true && stored?.cardID == card.id
+        syncWidget(revealed: alreadyRevealed)
     }
-    
+
     private func loadRevealedState() {
-        let wasRevealed = UserDefaults.standard.bool(forKey: todayKey)
-        if wasRevealed {
-            // Skip the ritual and show the card immediately
-            isRevealed = true
-            flipRotation = 180
-            showInterpretation = true
-            isFinishing = true
-            syncWidget(revealed: true)
-        }
+        guard let stored = DailyCardStore.load(), stored.isToday, stored.isRevealed, stored.cardID == todayCard?.id else { return }
+        // Skip the ritual and show the card immediately
+        isRevealed = true
+        flipRotation = 180
+        showInterpretation = true
+        isFinishing = true
     }
-    
+
     private func saveRevealedState() {
-        UserDefaults.standard.set(true, forKey: todayKey)
         syncWidget(revealed: true)
     }
 
