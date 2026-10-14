@@ -79,6 +79,7 @@ struct ARGalleryPresentationView: View {
                 Spacer()
             }
         }
+        .statusBarHidden(true)
     }
 }
 

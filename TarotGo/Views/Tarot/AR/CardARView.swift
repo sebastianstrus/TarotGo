@@ -101,6 +101,7 @@ struct CardARView: View {
             }
         }
         .navigationBarHidden(true)
+        .statusBarHidden(true)
     }
 }
 
