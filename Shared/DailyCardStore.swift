@@ -53,6 +53,19 @@ enum DailyCardStore {
         WidgetCenter.shared.reloadTimelines(ofKind: widgetKind)
     }
 
+    /// Marks today's already-computed card as revealed in place, without needing the app to recompute it.
+    /// Used by the widget's "Reveal" button so the card can be revealed without opening the app.
+    static func markRevealed() {
+        guard let info = load(), info.isToday, !info.isRevealed else { return }
+        save(DailyCardInfo(
+            dateKey: info.dateKey,
+            cardID: info.cardID,
+            localizedName: info.localizedName,
+            isReversed: info.isReversed,
+            isRevealed: true
+        ))
+    }
+
     static func loadCardBackName() -> String {
         shared.string(forKey: cardBackKey) ?? defaultCardBackName
     }

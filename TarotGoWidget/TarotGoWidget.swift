@@ -6,6 +6,7 @@
 import WidgetKit
 import SwiftUI
 import UIKit
+import AppIntents
 
 // MARK: - Image loader (downscales large asset-catalog images to fit WidgetKit's memory budget)
 
@@ -95,6 +96,11 @@ private enum WidgetStrings {
         value: "reversed",
         comment: "Suffix for reversed cards"
     )
+    static let revealButton = NSLocalizedString(
+        "widget.cardOfTheDay.revealButton",
+        value: "Reveal",
+        comment: "Button label that reveals today's card directly in the widget"
+    )
 }
 
 // MARK: - Timeline
@@ -154,6 +160,10 @@ struct TarotGoWidgetEntryView: View {
             smallView
         case .systemMedium:
             mediumView
+        case .systemLarge:
+            largeView
+        case .systemExtraLarge:
+            extraLargeLandscapeView
         case .accessoryRectangular:
             rectangularAccessory
         case .accessoryCircular:
@@ -161,7 +171,11 @@ struct TarotGoWidgetEntryView: View {
         case .accessoryInline:
             inlineAccessory
         default:
-            smallView
+            if #available(iOS 27.0, *), family == .systemExtraLargePortrait {
+                extraLargePortraitView
+            } else {
+                smallView
+            }
         }
     }
 
@@ -247,6 +261,141 @@ struct TarotGoWidgetEntryView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
+    // MARK: Home Screen - Large (4x4) — interactive, reveals in place
+
+    private var largeView: some View {
+        VStack(spacing: 10) {
+            flippableCardImage(height: 170)
+
+            Text(WidgetStrings.title)
+                .font(WidgetTheme.serifFont(size: 18, weight: .semibold))
+                .foregroundStyle(WidgetTheme.goldGradient)
+
+            if let info = entry.info, info.isRevealed {
+                VStack(spacing: 4) {
+                    Text(WidgetStrings.todaysEnergy)
+                        .font(.system(size: 11, weight: .light))
+                        .foregroundColor(.white.opacity(0.6))
+                        .textCase(.uppercase)
+                        .tracking(0.5)
+                    Text(info.localizedName)
+                        .font(WidgetTheme.serifFont(size: 17, weight: .medium))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.7)
+                    if info.isReversed {
+                        Text(WidgetStrings.reversed)
+                            .font(.system(size: 12, weight: .light))
+                            .italic()
+                            .foregroundColor(WidgetTheme.gold.opacity(0.8))
+                    }
+                }
+            } else if entry.info != nil {
+                revealButton
+            } else {
+                Text(WidgetStrings.tapToReveal)
+                    .font(.system(size: 13, weight: .light))
+                    .foregroundColor(.white.opacity(0.85))
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding()
+    }
+
+    // MARK: iPad Home Screen - Extra Large landscape (6x4) — interactive, reveals in place
+
+    private var extraLargeLandscapeView: some View {
+        HStack(spacing: 24) {
+            flippableCardImage(height: 220)
+
+            VStack(alignment: .leading, spacing: 10) {
+                Text(WidgetStrings.title)
+                    .font(WidgetTheme.serifFont(size: 22, weight: .semibold))
+                    .foregroundStyle(WidgetTheme.goldGradient)
+
+                if let info = entry.info, info.isRevealed {
+                    Text(WidgetStrings.todaysEnergy)
+                        .font(.system(size: 12, weight: .light))
+                        .foregroundColor(.white.opacity(0.6))
+                        .textCase(.uppercase)
+                        .tracking(0.5)
+                    Text(info.localizedName)
+                        .font(WidgetTheme.serifFont(size: 20, weight: .medium))
+                        .foregroundColor(.white)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.7)
+                    if info.isReversed {
+                        Text(WidgetStrings.reversed)
+                            .font(.system(size: 13, weight: .light))
+                            .italic()
+                            .foregroundColor(WidgetTheme.gold.opacity(0.8))
+                    }
+                } else {
+                    Text(WidgetStrings.tapToReveal)
+                        .font(.system(size: 15, weight: .light))
+                        .foregroundColor(.white.opacity(0.85))
+                        .lineLimit(2)
+                    if entry.info != nil {
+                        revealButton
+                    }
+                }
+            }
+
+            Spacer(minLength: 0)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding()
+    }
+
+    // MARK: iPhone Home Screen - Extra Large portrait (4x6, iOS 27+) — interactive, reveals in place
+
+    @available(iOS 27.0, *)
+    private var extraLargePortraitView: some View {
+        VStack(spacing: 14) {
+            flippableCardImage(height: 280)
+
+            Text(WidgetStrings.title)
+                .font(WidgetTheme.serifFont(size: 20, weight: .semibold))
+                .foregroundStyle(WidgetTheme.goldGradient)
+
+            if let info = entry.info, info.isRevealed {
+                VStack(spacing: 6) {
+                    Text(WidgetStrings.todaysEnergy)
+                        .font(.system(size: 12, weight: .light))
+                        .foregroundColor(.white.opacity(0.6))
+                        .textCase(.uppercase)
+                        .tracking(0.5)
+                    Text(info.localizedName)
+                        .font(WidgetTheme.serifFont(size: 19, weight: .medium))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    if info.isReversed {
+                        Text(WidgetStrings.reversed)
+                            .font(.system(size: 13, weight: .light))
+                            .italic()
+                            .foregroundColor(WidgetTheme.gold.opacity(0.8))
+                    }
+                }
+            } else if entry.info != nil {
+                Text(WidgetStrings.tapToReveal)
+                    .font(.system(size: 15, weight: .light))
+                    .foregroundColor(.white.opacity(0.85))
+                    .multilineTextAlignment(.center)
+                revealButton
+            } else {
+                Text(WidgetStrings.tapToReveal)
+                    .font(.system(size: 15, weight: .light))
+                    .foregroundColor(.white.opacity(0.85))
+                    .multilineTextAlignment(.center)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding()
+    }
+
     // MARK: Lock Screen
 
     private var rectangularAccessory: some View {
@@ -304,6 +453,18 @@ struct TarotGoWidgetEntryView: View {
         }
     }
 
+    // MARK: Interactive reveal
+
+    /// Button that reveals today's card in place via `RevealCardIntent`, without opening the app.
+    private var revealButton: some View {
+        Button(intent: RevealCardIntent()) {
+            Label(WidgetStrings.revealButton, systemImage: "sparkles")
+                .font(WidgetTheme.serifFont(size: 14, weight: .semibold))
+        }
+        .buttonStyle(.borderedProminent)
+        .tint(WidgetTheme.gold)
+    }
+
     // MARK: Helpers
 
     private func shortName(for name: String) -> String {
@@ -345,6 +506,52 @@ struct TarotGoWidgetEntryView: View {
         .frame(width: width, height: height)
     }
 
+    /// Animated card image used by the interactive large sizes: flips from back to front when
+    /// `entry.info?.isRevealed` becomes true, driven by the `RevealCardIntent` button tap.
+    private func flippableCardImage(height: CGFloat) -> some View {
+        let width = height * (1108.0 / 1900.0)
+        let isRevealed = entry.info?.isRevealed == true
+        let isReversed = isRevealed && (entry.info?.isReversed == true)
+        let frontAssetName = entry.info?.cardID ?? DailyCardStore.loadCardBackName()
+        let backAssetName = DailyCardStore.loadCardBackName()
+
+        return ZStack {
+            cardFace(named: backAssetName, height: height)
+                .rotation3DEffect(.degrees(isRevealed ? 180 : 0), axis: (x: 0, y: 1, z: 0), perspective: 0.5)
+                .opacity(isRevealed ? 0 : 1)
+
+            cardFace(named: frontAssetName, height: height)
+                .rotationEffect(.degrees(isReversed ? 180 : 0))
+                .rotation3DEffect(.degrees(isRevealed ? 0 : -180), axis: (x: 0, y: 1, z: 0), perspective: 0.5)
+                .opacity(isRevealed ? 1 : 0)
+        }
+        .frame(width: width, height: height)
+        .animation(.spring(response: 0.75, dampingFraction: 0.78), value: isRevealed)
+    }
+
+    /// Single static card face (front or back) used by `flippableCardImage`.
+    private func cardFace(named assetName: String, height: CGFloat) -> some View {
+        let width = height * (1108.0 / 1900.0)
+        let cornerRadius = width * 0.05
+        return Group {
+            if let uiImage = WidgetImageLoader.loadDownscaled(named: assetName, targetPointHeight: height) {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: width, height: height)
+                    .clipped()
+                    .cornerRadius(cornerRadius)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: cornerRadius)
+                            .stroke(WidgetTheme.gold.opacity(0.5), lineWidth: 0.6)
+                    )
+            } else {
+                cardFallback(height: height)
+            }
+        }
+        .frame(width: width, height: height)
+    }
+
     /// Stylised fallback used only when the asset cannot be loaded.
     private func cardFallback(height: CGFloat) -> some View {
         let width = height * (1108.0 / 1900.0)
@@ -369,6 +576,24 @@ struct TarotGoWidgetEntryView: View {
 struct TarotGoWidget: Widget {
     let kind: String = DailyCardStore.widgetKind
 
+    /// `.systemExtraLargePortrait` is iOS 27+ only (it was visionOS-only before that), so it's
+    /// appended conditionally rather than declared in a plain array literal.
+    private var supportedWidgetFamilies: [WidgetFamily] {
+        var families: [WidgetFamily] = [
+            .systemSmall,
+            .systemMedium,
+            .systemLarge,
+            .systemExtraLarge,
+            .accessoryRectangular,
+            .accessoryCircular,
+            .accessoryInline
+        ]
+        if #available(iOS 27.0, *) {
+            families.append(.systemExtraLargePortrait)
+        }
+        return families
+    }
+
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             TarotGoWidgetEntryView(entry: entry)
@@ -383,13 +608,7 @@ struct TarotGoWidget: Widget {
             value: "See when your daily tarot card is ready to be revealed.",
             comment: "Widget picker description"
         ))
-        .supportedFamilies([
-            .systemSmall,
-            .systemMedium,
-            .accessoryRectangular,
-            .accessoryCircular,
-            .accessoryInline
-        ])
+        .supportedFamilies(supportedWidgetFamilies)
     }
 }
 
@@ -425,6 +644,66 @@ struct TarotGoWidget: Widget {
             dateKey: DailyCardStore.todayDateKey(),
             cardID: "the_moon",
             localizedName: "The Moon",
+            isReversed: true,
+            isRevealed: true
+        )
+    )
+}
+
+#Preview("Large - awaiting", as: .systemLarge) {
+    TarotGoWidget()
+} timeline: {
+    DailyCardEntry(
+        date: .now,
+        info: DailyCardInfo(
+            dateKey: DailyCardStore.todayDateKey(),
+            cardID: "the_sun",
+            localizedName: "The Sun",
+            isReversed: false,
+            isRevealed: false
+        )
+    )
+}
+
+#Preview("Large - revealed", as: .systemLarge) {
+    TarotGoWidget()
+} timeline: {
+    DailyCardEntry(
+        date: .now,
+        info: DailyCardInfo(
+            dateKey: DailyCardStore.todayDateKey(),
+            cardID: "the_sun",
+            localizedName: "The Sun",
+            isReversed: false,
+            isRevealed: true
+        )
+    )
+}
+
+#Preview("Extra Large landscape - awaiting", as: .systemExtraLarge) {
+    TarotGoWidget()
+} timeline: {
+    DailyCardEntry(
+        date: .now,
+        info: DailyCardInfo(
+            dateKey: DailyCardStore.todayDateKey(),
+            cardID: "the_empress",
+            localizedName: "The Empress",
+            isReversed: false,
+            isRevealed: false
+        )
+    )
+}
+
+#Preview("Extra Large landscape - revealed", as: .systemExtraLarge) {
+    TarotGoWidget()
+} timeline: {
+    DailyCardEntry(
+        date: .now,
+        info: DailyCardInfo(
+            dateKey: DailyCardStore.todayDateKey(),
+            cardID: "the_empress",
+            localizedName: "The Empress",
             isReversed: true,
             isRevealed: true
         )

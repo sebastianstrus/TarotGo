@@ -244,7 +244,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				7D3D86862F8EE3D70016DDF5 /* XCRemoteSwiftPackageReference "Vortex" */,
-				7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "SwiftTasksVision" */,
+				7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "Vendor/SwiftTasksVision" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7DD5F5B42F8C142F00587129 /* Products */;
@@ -630,7 +630,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "SwiftTasksVision" */ = {
+		7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "Vendor/SwiftTasksVision" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Vendor/SwiftTasksVision;
 		};
@@ -655,7 +655,7 @@
 		};
 		7D68C36A2FCC9ABA002480C5 /* SwiftTasksVision */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "SwiftTasksVision" */;
+			package = 7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "Vendor/SwiftTasksVision" */;
 			productName = SwiftTasksVision;
 		};
 /* End XCSwiftPackageProductDependency section */
