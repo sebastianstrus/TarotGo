@@ -244,7 +244,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				7D3D86862F8EE3D70016DDF5 /* XCRemoteSwiftPackageReference "Vortex" */,
-				7D68C3692FCC9ABA002480C5 /* XCRemoteSwiftPackageReference "SwiftTasksVision" */,
+				7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "SwiftTasksVision" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7DD5F5B42F8C142F00587129 /* Products */;
@@ -539,6 +539,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstrus.TarotGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -577,6 +581,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstrus.TarotGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -621,6 +629,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "SwiftTasksVision" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/SwiftTasksVision;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		7D3D86862F8EE3D70016DDF5 /* XCRemoteSwiftPackageReference "Vortex" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -628,14 +643,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.4;
-			};
-		};
-		7D68C3692FCC9ABA002480C5 /* XCRemoteSwiftPackageReference "SwiftTasksVision" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/paescebu/SwiftTasksVision.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.10.21;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -648,7 +655,7 @@
 		};
 		7D68C36A2FCC9ABA002480C5 /* SwiftTasksVision */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7D68C3692FCC9ABA002480C5 /* XCRemoteSwiftPackageReference "SwiftTasksVision" */;
+			package = 7DA1B2C32FCC9ABA00248101 /* XCLocalSwiftPackageReference "SwiftTasksVision" */;
 			productName = SwiftTasksVision;
 		};
 /* End XCSwiftPackageProductDependency section */
