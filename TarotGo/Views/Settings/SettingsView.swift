@@ -263,7 +263,7 @@ struct SettingsView: View {
                             }
                             handleMercuryAlertsToggle(newValue)
                         }
-                        .tint(AppTheme.gold)
+                        .toggleStyle(StoneToggleStyle())
                 } footer: {
                     Text(L10n.mercuryNotificationsDesc)
                         .foregroundColor(AppTheme.textSecondary)
