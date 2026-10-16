@@ -6,17 +6,17 @@
 import AppIntents
 
 /// Lets Siri / Shortcuts open the app straight on the Card of the Day.
-/// Reuses the existing `tarotgo://daily-card` deep link handled by `AppViewModel.handleDeepLink`.
+/// Runs in the foreground app process and drives `AppViewModel` directly, which
+/// also handles cold launch, splash screen and onboarding via the pending action.
 struct OpenDailyCardIntent: AppIntent {
     static let title: LocalizedStringResource = "Open Card of the Day"
     static let description = IntentDescription("Opens TarotGo on your Card of the Day.")
+    static let supportedModes: IntentModes = .foreground
 
     @MainActor
-    func perform() async throws -> some IntentResult & OpensIntent {
-        guard let url = URL(string: "tarotgo://daily-card") else {
-            return .result(opensIntent: OpenURLIntent(URL(fileURLWithPath: "/")))
-        }
-        return .result(opensIntent: OpenURLIntent(url))
+    func perform() async throws -> some IntentResult {
+        AppViewModel.openDailyCardFromIntent()
+        return .result()
     }
 }
 

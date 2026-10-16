@@ -26,9 +26,32 @@ class AppViewModel: ObservableObject {
     // Store pending notification action
     var pendingNotificationAction: String?
     
+    /// The live instance, so App Intents (Siri / Shortcuts) can reach the running app.
+    private(set) static weak var shared: AppViewModel?
+    /// Set when an intent fires before the view model exists (cold launch).
+    private static var launchedForDailyCard = false
+
     init() {
         self.isFirstLaunch = !hasLaunchedBefore
         self.hasCompletedOnboarding = hasCompletedOnboardingFlow
+        if Self.launchedForDailyCard {
+            Self.launchedForDailyCard = false
+            pendingNotificationAction = "daily_card"
+        }
+        Self.shared = self
+    }
+
+    /// Opens Card of the Day from an App Intent. Safe to call before the app has finished launching.
+    static func openDailyCardFromIntent() {
+        guard let shared else {
+            launchedForDailyCard = true
+            return
+        }
+        if !shared.showSplashScreen && shared.hasCompletedOnboarding {
+            shared.navigateToDailyCard()
+        } else {
+            shared.pendingNotificationAction = "daily_card"
+        }
     }
     
     func completeSplashScreen() {
