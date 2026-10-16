@@ -65,7 +65,7 @@ struct StoneToggleStyle: ToggleStyle {
                 .padding(.horizontal, inset + 3)
                 .frame(width: width, height: height)
             }
-            .animation(.spring(response: 0.3, dampingFraction: 0.75), value: configuration.isOn)
+            .animation(.spring(response: 0.7, dampingFraction: 0.88), value: configuration.isOn)
             .contentShape(Rectangle())
             .onTapGesture { configuration.isOn.toggle() }
             .accessibilityElement()

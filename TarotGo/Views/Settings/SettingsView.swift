@@ -29,6 +29,14 @@ struct SettingsView: View {
     @State private var userBirthDate: Date? = AstrologyService.shared.userBirthDate
     @State private var showManageSubscriptions: Bool = false
     @State private var showPaywall: Bool = false
+    @State private var backgroundScrollOffset: CGFloat = 0
+    @State private var backgroundContentHeight: CGFloat = 0
+    
+    /// Height of one background tile when the image is scaled to the given width.
+    private func backgroundTileHeight(forWidth width: CGFloat) -> CGFloat {
+        guard let size = UIImage(named: "settingsBg")?.size, size.width > 0 else { return max(width, 1) }
+        return max(width * size.height / size.width, 1)
+    }
     
     private var selectedCardBack: CardBackStyle {
         CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
@@ -36,8 +44,25 @@ struct SettingsView: View {
     
     var body: some View {
         ZStack {
-            Color.clear
-                .background(AnimatedBackgroundView().ignoresSafeArea())
+            // Background image that scrolls together with the list content
+            GeometryReader { proxy in
+                // Tiles have a fixed size (screen width, natural aspect ratio) so scrolling never rescales
+                // the image. Every other tile is mirrored so the seams between tiles are invisible.
+                let tileHeight = backgroundTileHeight(forWidth: proxy.size.width)
+                let tileCount = max(2, Int(ceil((backgroundContentHeight + proxy.size.height) / tileHeight)))
+                VStack(spacing: 0) {
+                    ForEach(0..<tileCount, id: \.self) { index in
+                        Image("settingsBg")
+                            .resizable()
+                            .frame(width: proxy.size.width, height: tileHeight)
+                            .scaleEffect(y: index.isMultiple(of: 2) ? 1 : -1)
+                    }
+                }
+                .offset(y: -backgroundScrollOffset)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                .background(AppTheme.darkNavy)
+            }
+            .ignoresSafeArea()
             
             List {
                 // Premium Section
@@ -125,8 +150,8 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.gold)
                 }
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -193,8 +218,8 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -211,8 +236,8 @@ struct SettingsView: View {
                                 }
                                 handleNotificationToggle(newValue)
                             }
-                            .tint(AppTheme.gold)
-                        
+                            .toggleStyle(StoneToggleStyle())
+
                         if toggleState {
                             HStack {
                                 Text(L10n.settingsReminderTime)
@@ -246,8 +271,8 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -269,8 +294,8 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -288,7 +313,7 @@ struct SettingsView: View {
                                 }
                             }
                         }
-                        .tint(AppTheme.gold)
+                        .toggleStyle(StoneToggleStyle())
                 } header: {
                     Text(L10n.settingsSound)
                         .foregroundColor(AppTheme.gold)
@@ -297,8 +322,8 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -366,8 +391,8 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textSecondary)
                 }
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -394,8 +419,8 @@ struct SettingsView: View {
                 }
                 .buttonStyle(.plain)
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -427,8 +452,8 @@ struct SettingsView: View {
                 }
                 .buttonStyle(.plain)
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -455,8 +480,8 @@ struct SettingsView: View {
                 }
                 .buttonStyle(.plain)
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -481,8 +506,8 @@ struct SettingsView: View {
                 }
                 .buttonStyle(.plain)
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -517,8 +542,8 @@ struct SettingsView: View {
                 }
                 .buttonStyle(.plain)
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -538,8 +563,8 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.gold)
                 }
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(AppTheme.darkNavy.opacity(0.6))
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(Color.black.opacity(0.3))
                         .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
                 )
                 .listSectionSeparator(.hidden)
@@ -547,6 +572,17 @@ struct SettingsView: View {
             }
             .listStyle(.insetGrouped)
             .scrollContentBackground(.hidden)
+            .onScrollGeometryChange(for: CGFloat.self) { geometry in
+                geometry.contentOffset.y + geometry.contentInsets.top
+            } action: { _, newValue in
+                backgroundScrollOffset = newValue
+            }
+            .onScrollGeometryChange(for: CGFloat.self) { geometry in
+                geometry.contentSize.height
+            } action: { _, newValue in
+                // Only used to decide how many background tiles are needed
+                backgroundContentHeight = newValue
+            }
             .foregroundColor(AppTheme.textPrimary)
             .environment(\.defaultMinListRowHeight, 50)
         }
