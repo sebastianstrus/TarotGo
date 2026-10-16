@@ -187,8 +187,17 @@ struct OnboardingPageView: View {
     @State private var iconRotation: Double = 0
     @State private var textOpacity: Double = 0
     
+    /// Available page height below which the layout is compacted (e.g. iPhone SE 2nd gen)
+    private let compactHeightThreshold: CGFloat = 540
+    
     var body: some View {
-        VStack(spacing: 40) {
+        GeometryReader { proxy in
+            content(isCompact: proxy.size.height < compactHeightThreshold)
+        }
+    }
+    
+    private func content(isCompact: Bool) -> some View {
+        VStack(spacing: isCompact ? 16 : 40) {
             Spacer()
             
             // Icon with elegant gold styling
@@ -207,7 +216,7 @@ struct OnboardingPageView: View {
                             endRadius: 150
                         )
                     )
-                    .frame(width: 300, height: 300)
+                    .frame(width: isCompact ? 200 : 300, height: isCompact ? 200 : 300)
                     .blur(radius: 25)
                 
                 // Gold ring
@@ -245,9 +254,9 @@ struct OnboardingPageView: View {
             .shadow(color: AppTheme.gold.opacity(0.3), radius: 20, x: 0, y: 10)
             
             // Text with gold accents
-            VStack(spacing: 20) {
+            VStack(spacing: isCompact ? 12 : 20) {
                 Text(page.title)
-                    .font(AppTheme.serifFont(size: 32, weight: .medium))
+                    .font(AppTheme.serifFont(size: isCompact ? 28 : 32, weight: .medium))
                     .foregroundStyle(
                         LinearGradient(
                             colors: [AppTheme.lightGold, AppTheme.gold],
@@ -263,10 +272,10 @@ struct OnboardingPageView: View {
                     .padding(.horizontal, 24)
                 
                 Text(page.description)
-                    .font(.system(size: 16, weight: .light))
+                    .font(.system(size: isCompact ? 15 : 16, weight: .light))
                     .foregroundColor(AppTheme.textSecondary)
                     .multilineTextAlignment(.center)
-                    .lineSpacing(8)
+                    .lineSpacing(isCompact ? 4 : 8)
                     .lineLimit(nil)
                     .fixedSize(horizontal: false, vertical: true)
                     .minimumScaleFactor(0.8)
