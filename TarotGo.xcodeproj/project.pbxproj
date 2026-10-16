@@ -14,6 +14,7 @@
 		7D2E55132FFE9A1700B3F6B0 /* DailyCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E55112FFE981500B3F6B0 /* DailyCardStore.swift */; };
 		7D3D86882F8EE3D70016DDF5 /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = 7D3D86872F8EE3D70016DDF5 /* Vortex */; };
 		7D68C36B2FCC9ABA002480C5 /* SwiftTasksVision in Frameworks */ = {isa = PBXBuildFile; productRef = 7D68C36A2FCC9ABA002480C5 /* SwiftTasksVision */; };
+		7D974B023082C3E40044E251 /* TarotGoWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7D974AF83082C3E20044E251 /* TarotGoWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7D2E54F72FFE94CC00B3F6B0;
 			remoteInfo = TarotGoWidgetExtension;
+		};
+		7D974B003082C3E40044E251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DD5F5AB2F8C142F00587129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D974AF73082C3E20044E251;
+			remoteInfo = "TarotGoWatch Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,6 +46,17 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D974B033082C3E40044E251 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7D974B023082C3E40044E251 /* TarotGoWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +65,7 @@
 		7D2E54FC2FFE94CC00B3F6B0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		7D2E550F2FFE970600B3F6B0 /* TarotGoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TarotGoWidgetExtension.entitlements; sourceTree = "<group>"; };
 		7D2E55112FFE981500B3F6B0 /* DailyCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardStore.swift; sourceTree = "<group>"; };
+		7D974AF83082C3E20044E251 /* TarotGoWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TarotGoWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD5F5B32F8C142F00587129 /* TarotGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarotGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +102,11 @@
 			path = TarotGoWidget;
 			sourceTree = "<group>";
 		};
+		7D974AF93082C3E20044E251 /* TarotGoWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TarotGoWatch Watch App";
+			sourceTree = "<group>";
+		};
 		7DD5F5B52F8C142F00587129 /* TarotGo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -100,6 +125,13 @@
 			files = (
 				7D2E54FD2FFE94CC00B3F6B0 /* SwiftUI.framework in Frameworks */,
 				7D2E54FB2FFE94CC00B3F6B0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D974AF53082C3E20044E251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +170,7 @@
 				7D2E550F2FFE970600B3F6B0 /* TarotGoWidgetExtension.entitlements */,
 				7DD5F5B52F8C142F00587129 /* TarotGo */,
 				7D2E54FE2FFE94CC00B3F6B0 /* TarotGoWidget */,
+				7D974AF93082C3E20044E251 /* TarotGoWatch Watch App */,
 				7D2E54F92FFE94CC00B3F6B0 /* Frameworks */,
 				7DD5F5B42F8C142F00587129 /* Products */,
 				7D2E55102FFE981400B3F6B0 /* Shared */,
@@ -149,6 +182,7 @@
 			children = (
 				7DD5F5B32F8C142F00587129 /* TarotGo.app */,
 				7D2E54F82FFE94CC00B3F6B0 /* TarotGoWidgetExtension.appex */,
+				7D974AF83082C3E20044E251 /* TarotGoWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +212,28 @@
 			productReference = 7D2E54F82FFE94CC00B3F6B0 /* TarotGoWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		7D974AF73082C3E20044E251 /* TarotGoWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D974B063082C3E40044E251 /* Build configuration list for PBXNativeTarget "TarotGoWatch Watch App" */;
+			buildPhases = (
+				7D974AF43082C3E20044E251 /* Sources */,
+				7D974AF53082C3E20044E251 /* Frameworks */,
+				7D974AF63082C3E20044E251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7D974AF93082C3E20044E251 /* TarotGoWatch Watch App */,
+			);
+			name = "TarotGoWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "TarotGoWatch Watch App";
+			productReference = 7D974AF83082C3E20044E251 /* TarotGoWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		7DD5F5B22F8C142F00587129 /* TarotGo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DD5F5BE2F8C143100587129 /* Build configuration list for PBXNativeTarget "TarotGo" */;
@@ -187,11 +243,13 @@
 				7DD5F5B12F8C142F00587129 /* Resources */,
 				7D7027082FF6969200AFB5AE /* Fix MediaPipe Frameworks */,
 				7D2E55092FFE94CD00B3F6B0 /* Embed Foundation Extensions */,
+				7D974B033082C3E40044E251 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				7D2E55072FFE94CD00B3F6B0 /* PBXTargetDependency */,
+				7D974B013082C3E40044E251 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7DD5F5B52F8C142F00587129 /* TarotGo */,
@@ -212,11 +270,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2650;
+				LastSwiftUpdateCheck = 2720;
 				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					7D2E54F72FFE94CC00B3F6B0 = {
 						CreatedOnToolsVersion = 26.5;
+					};
+					7D974AF73082C3E20044E251 = {
+						CreatedOnToolsVersion = 27.2;
 					};
 					7DD5F5B22F8C142F00587129 = {
 						CreatedOnToolsVersion = 26.3;
@@ -253,12 +314,20 @@
 			targets = (
 				7DD5F5B22F8C142F00587129 /* TarotGo */,
 				7D2E54F72FFE94CC00B3F6B0 /* TarotGoWidgetExtension */,
+				7D974AF73082C3E20044E251 /* TarotGoWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7D2E54F62FFE94CC00B3F6B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D974AF63082C3E20044E251 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,6 +374,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D974AF43082C3E20044E251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DD5F5AF2F8C142F00587129 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +396,11 @@
 			isa = PBXTargetDependency;
 			target = 7D2E54F72FFE94CC00B3F6B0 /* TarotGoWidgetExtension */;
 			targetProxy = 7D2E55062FFE94CD00B3F6B0 /* PBXContainerItemProxy */;
+		};
+		7D974B013082C3E40044E251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D974AF73082C3E20044E251 /* TarotGoWatch Watch App */;
+			targetProxy = 7D974B003082C3E40044E251 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -385,6 +466,72 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7D974B043082C3E40044E251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SL936GBZY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TarotGo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sebastianstrus.TarotGo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstrus.TarotGo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		7D974B053082C3E40044E251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SL936GBZY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TarotGo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sebastianstrus.TarotGo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstrus.TarotGo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -605,6 +752,15 @@
 			buildConfigurations = (
 				7D2E550A2FFE94CD00B3F6B0 /* Debug */,
 				7D2E550B2FFE94CD00B3F6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D974B063082C3E40044E251 /* Build configuration list for PBXNativeTarget "TarotGoWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D974B043082C3E40044E251 /* Debug */,
+				7D974B053082C3E40044E251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -41,6 +41,9 @@ struct TarotGoApp: App {
         // Mirror the user's selected card back into the App Group so the widget can read it.
         let selected = UserDefaults.standard.string(forKey: "selectedCardBack") ?? CardBackStyle.modern.rawValue
         DailyCardStore.saveCardBackName(selected)
+
+        // Keep the watch app's personalized Card of the Day in sync with this device.
+        WatchSyncService.shared.start()
     }
     
     var body: some Scene {
