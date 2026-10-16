@@ -12,6 +12,7 @@ struct SettingsView: View {
     private let notificationService = NotificationService.shared
     private let soundService = SoundService.shared
     @StateObject private var subscriptionService = SubscriptionService.shared
+    @Environment(LanguageManager.self) private var languageManager
     @AppStorage("dailyCardNotificationEnabled") private var notificationEnabled: Bool = true
     @AppStorage("dailyCardNotificationHour") private var notificationHour: Int = 9
     @AppStorage("dailyCardNotificationMinute") private var notificationMinute: Int = 0
@@ -35,6 +36,8 @@ struct SettingsView: View {
     }
     
     var body: some View {
+        @Bindable var languageManager = languageManager
+
         ZStack {
             Color.clear
                 .background(AnimatedBackgroundView().ignoresSafeArea())
@@ -401,31 +404,24 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
 
-                // Language Section (Now separated out)
+                // Language Section
                 Section {
-                    Button {
-                        openLanguageSettings()
-                    } label: {
-                        HStack {
-                            Text(L10n.settingsLanguage)
-                            Spacer()
-                            Text(currentLanguageName)
-                                .foregroundColor(AppTheme.gold.opacity(0.8))
-                            Image(systemName: "chevron.right")
-                                .font(.system(size: 14))
-                                .foregroundColor(AppTheme.gold.opacity(0.6))
+                    Picker(selection: $languageManager.language) {
+                        ForEach(AppLanguage.allCases) { language in
+                            Text("\(language.flag)  \(language.displayName)")
+                                .tag(language)
                         }
-                        .foregroundColor(AppTheme.textPrimary)
+                    } label: {
+                        Text(L10n.settingsLanguage)
+                            .foregroundColor(AppTheme.textPrimary)
                     }
+                    .pickerStyle(.navigationLink)
+                    .tint(AppTheme.gold)
                     .listRowSeparator(.hidden)
                 } header: {
-                    Text(L10n.settingsLanguageSelection) // You can change this text to match your preference if you have a distinct header key
+                    Text(L10n.settingsLanguageSelection)
                         .foregroundColor(AppTheme.gold)
-                } footer: {
-                    Text(L10n.settingsLanguageDesc)
-                        .foregroundColor(AppTheme.textSecondary)
                 }
-                .buttonStyle(.plain)
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(AppTheme.darkNavy.opacity(0.6))
@@ -609,18 +605,6 @@ struct SettingsView: View {
         return nil
     }
 
-    private var currentLanguageName: String {
-        let currentLocale = Locale.current
-        let languageCode = currentLocale.language.languageCode?.identifier ?? "en"
-        
-        // Get the localized language name in the current language
-        if let languageName = currentLocale.localizedString(forLanguageCode: languageCode) {
-            return languageName.capitalized
-        }
-        
-        return "English"
-    }
-    
     private func handleNotificationToggle(_ enabled: Bool) {
         Task {
             if enabled {
@@ -694,12 +678,6 @@ struct SettingsView: View {
         }
     }
     
-    private func openLanguageSettings() {
-        if let url = URL(string: UIApplication.openSettingsURLString) {
-            UIApplication.shared.open(url)
-        }
-    }
-    
     private func openNotificationSettings() {
         if let url = URL(string: UIApplication.openSettingsURLString) {
             UIApplication.shared.open(url)
@@ -717,4 +695,5 @@ struct SettingsView: View {
     NavigationStack {
         SettingsView()
     }
+    .environment(LanguageManager.shared)
 }

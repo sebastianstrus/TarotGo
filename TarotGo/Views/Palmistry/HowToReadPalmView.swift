@@ -10,9 +10,9 @@ import SwiftUI
 struct HowToReadPalmView: View {
     // Get current language code for localized palm image
     private var currentLanguageCode: String {
-        let languageCode = Locale.current.language.languageCode?.identifier ?? "en"
+        let languageCode = SelectedLanguage.locale.language.languageCode?.identifier ?? "en"
         // Handle special case for Brazilian Portuguese
-        if languageCode == "pt", Locale.current.region?.identifier == "BR" {
+        if languageCode == "pt", SelectedLanguage.locale.region?.identifier == "BR" {
             return "pt-BR"
         }
         return languageCode

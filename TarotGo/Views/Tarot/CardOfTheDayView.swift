@@ -406,15 +406,15 @@ struct CardOfTheDayView: View {
         // Simple reflection prompts based on card suits
         switch card.suit {
         case .majorArcana:
-            return String(localized: "cardOfDay.reflection.majorArcana")
+            return String(localized: String.LocalizationValue("cardOfDay.reflection.majorArcana"), bundle: SelectedLanguage.bundle)
         case .cups:
-            return String(localized: "cardOfDay.reflection.cups")
+            return String(localized: String.LocalizationValue("cardOfDay.reflection.cups"), bundle: SelectedLanguage.bundle)
         case .pentacles:
-            return String(localized: "cardOfDay.reflection.pentacles")
+            return String(localized: String.LocalizationValue("cardOfDay.reflection.pentacles"), bundle: SelectedLanguage.bundle)
         case .swords:
-            return String(localized: "cardOfDay.reflection.swords")
+            return String(localized: String.LocalizationValue("cardOfDay.reflection.swords"), bundle: SelectedLanguage.bundle)
         case .wands:
-            return String(localized: "cardOfDay.reflection.wands")
+            return String(localized: String.LocalizationValue("cardOfDay.reflection.wands"), bundle: SelectedLanguage.bundle)
         }
     }
 }

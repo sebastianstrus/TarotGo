@@ -302,7 +302,7 @@ class VibeCheckService {
     /// using the system Locale API when an ISO region code mapping exists.
     static func localizedCountry(for name: String) -> String {
         if let code = countryCodes[name],
-           let localized = Locale.current.localizedString(forRegionCode: code) {
+           let localized = SelectedLanguage.locale.localizedString(forRegionCode: code) {
             return localized
         }
         return name
@@ -311,7 +311,7 @@ class VibeCheckService {
     /// Returns the localized city name for the given English city name,
     /// based on a curated translation table. Falls back to the English name.
     static func localizedCity(for name: String) -> String {
-        guard let lang = Locale.current.language.languageCode?.identifier,
+        guard let lang = SelectedLanguage.locale.language.languageCode?.identifier,
               let translations = cityTranslations[name],
               let translated = translations[lang] else {
             return name

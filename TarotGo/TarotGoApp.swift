@@ -13,6 +13,7 @@ import UserNotifications
 struct TarotGoApp: App {
     @StateObject private var appViewModel = AppViewModel()
     @StateObject private var subscriptionService = SubscriptionService.shared
+    @State private var languageManager = LanguageManager.shared
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -47,6 +48,11 @@ struct TarotGoApp: App {
             RootView()
                 .environmentObject(appViewModel)
                 .environmentObject(subscriptionService)
+                .environment(languageManager)
+                .environment(\.locale, languageManager.interfaceLocale)
+                // Rebuild the view tree on language change so every
+                // `L10n` string is looked up again.
+                .id(languageManager.language)
                 .onAppear {
                     // Connect the app view model to the notification delegate
                     NotificationDelegate.shared.appViewModel = appViewModel

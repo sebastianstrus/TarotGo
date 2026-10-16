@@ -23,18 +23,18 @@ enum ZodiacSign: Int, CaseIterable {
     
     var name: String {
         switch self {
-        case .aries: return String(localized: "astrology.sign.aries")
-        case .taurus: return String(localized: "astrology.sign.taurus")
-        case .gemini: return String(localized: "astrology.sign.gemini")
-        case .cancer: return String(localized: "astrology.sign.cancer")
-        case .leo: return String(localized: "astrology.sign.leo")
-        case .virgo: return String(localized: "astrology.sign.virgo")
-        case .libra: return String(localized: "astrology.sign.libra")
-        case .scorpio: return String(localized: "astrology.sign.scorpio")
-        case .sagittarius: return String(localized: "astrology.sign.sagittarius")
-        case .capricorn: return String(localized: "astrology.sign.capricorn")
-        case .aquarius: return String(localized: "astrology.sign.aquarius")
-        case .pisces: return String(localized: "astrology.sign.pisces")
+        case .aries: return String(localized: String.LocalizationValue("astrology.sign.aries"), bundle: SelectedLanguage.bundle)
+        case .taurus: return String(localized: String.LocalizationValue("astrology.sign.taurus"), bundle: SelectedLanguage.bundle)
+        case .gemini: return String(localized: String.LocalizationValue("astrology.sign.gemini"), bundle: SelectedLanguage.bundle)
+        case .cancer: return String(localized: String.LocalizationValue("astrology.sign.cancer"), bundle: SelectedLanguage.bundle)
+        case .leo: return String(localized: String.LocalizationValue("astrology.sign.leo"), bundle: SelectedLanguage.bundle)
+        case .virgo: return String(localized: String.LocalizationValue("astrology.sign.virgo"), bundle: SelectedLanguage.bundle)
+        case .libra: return String(localized: String.LocalizationValue("astrology.sign.libra"), bundle: SelectedLanguage.bundle)
+        case .scorpio: return String(localized: String.LocalizationValue("astrology.sign.scorpio"), bundle: SelectedLanguage.bundle)
+        case .sagittarius: return String(localized: String.LocalizationValue("astrology.sign.sagittarius"), bundle: SelectedLanguage.bundle)
+        case .capricorn: return String(localized: String.LocalizationValue("astrology.sign.capricorn"), bundle: SelectedLanguage.bundle)
+        case .aquarius: return String(localized: String.LocalizationValue("astrology.sign.aquarius"), bundle: SelectedLanguage.bundle)
+        case .pisces: return String(localized: String.LocalizationValue("astrology.sign.pisces"), bundle: SelectedLanguage.bundle)
         }
     }
     
