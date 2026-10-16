@@ -5,7 +5,7 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ – %2$@"
           }
         }
@@ -15,20 +15,18 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ %2$@"
           }
         }
       }
     },
-    "%lld" : {
-
-    },
+    "%lld" : {},
     "%lld%% %@" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$lld%% %2$@"
           }
         }
@@ -51014,7 +51012,7 @@
     },
     "lunarCalendar.illuminated" : {
       "comment" : "Illuminated",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -51086,7 +51084,7 @@
     },
     "lunarCalendar.title" : {
       "comment" : "Lunar Calendar",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -51158,7 +51156,7 @@
     },
     "lunarCalendar.today" : {
       "comment" : "Today",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -51230,7 +51228,7 @@
     },
     "mercury.daysUntilEnd" : {
       "comment" : "Days remaining until Mercury goes direct",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -51240,7 +51238,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "days until direct"
           }
         },
@@ -51302,7 +51300,7 @@
     },
     "mercury.daysUntilPostShadowEnd" : {
       "comment" : "Days remaining until post-shadow ends",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -51312,7 +51310,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "days until shadow ends"
           }
         },
@@ -51374,7 +51372,7 @@
     },
     "mercury.daysUntilPreShadow" : {
       "comment" : "Days until next pre-shadow begins",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -51384,7 +51382,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "days until shadow begins"
           }
         },
@@ -51446,7 +51444,7 @@
     },
     "mercury.daysUntilStart" : {
       "comment" : "Days remaining until retrograde begins",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -51456,7 +51454,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "days until retrograde"
           }
         },
@@ -51525,6 +51523,12 @@
             "value" : "Starte neue Projekte und unterzeichne Verträge mit Zuversicht."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Launch new projects and sign contracts with confidence."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -51588,6 +51592,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Kommuniziere kühn – deine Botschaft wird klar ankommen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Communicate boldly — your message will land clearly."
           }
         },
         "es" : {
@@ -51655,6 +51665,12 @@
             "value" : "Begrüße Reisen, Lernen und Vorwärtsdynamik."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Embrace travel, learning, and forward momentum."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -51718,6 +51734,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Wende die während des Retrograden gelernten Lektionen an."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apply the lessons learned during retrograde."
           }
         },
         "es" : {
@@ -51785,6 +51807,12 @@
             "value" : "Binde lose Enden und finalisiere Entscheidungen, die während des Retrograden aufgeschoben wurden."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tie up loose ends and finalize decisions postponed during retrograde."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -51848,6 +51876,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Beginne sanft, Pläne wieder aufzunehmen, die auf Eis lagen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin gently re-launching plans that were put on hold."
           }
         },
         "es" : {
@@ -51915,6 +51949,12 @@
             "value" : "Beachte wiederkehrende Themen – sie werden während des Retrograden zurückkehren."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notice recurring themes — they will return during retrograde."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -51978,6 +52018,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Sichere wichtige Dateien und überprüfe Reisepläne doppelt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back up important files and double-check travel plans."
           }
         },
         "es" : {
@@ -52045,6 +52091,12 @@
             "value" : "Beende Projekte, die du in den kommenden Wochen nicht wieder aufgreifen möchtest."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish projects you don't want to revisit in the coming weeks."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -52108,6 +52160,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Überprüfe, überarbeite und verfeinere bestehende Arbeiten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review, revise, and refine existing work."
           }
         },
         "es" : {
@@ -52175,6 +52233,12 @@
             "value" : "Verbinde dich wieder mit alten Freunden und unvollendeten Gesprächen."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconnect with old friends and unfinished conversations."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -52238,6 +52302,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Reflektiere tief – journaliere, meditiere und höre nach innen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflect deeply — journal, meditate, and listen inward."
           }
         },
         "es" : {
@@ -52305,6 +52375,12 @@
             "value" : "Verlangsame dich. Lies Anleitungen zweimal. Sprich mit Sorgfalt."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slow down. Read instructions twice. Speak with care."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -52368,6 +52444,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Verschiebe keine Entscheidungen in der Hoffnung auf einen 'besseren' Moment."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't postpone decisions waiting for a 'better' moment."
           }
         },
         "es" : {
@@ -52435,6 +52517,12 @@
             "value" : "Gib nicht Merkur die Schuld für gewöhnliche Missverständnisse."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't blame Mercury for ordinary miscommunications."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -52498,6 +52586,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Stürze nicht vorwärts, bevor du die Lektionen des Retrograden integriert hast."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't rush forward before integrating retrograde lessons."
           }
         },
         "es" : {
@@ -52565,6 +52659,12 @@
             "value" : "Vermeide, dieselben Fehler zu machen, die der Retrograde gerade aufgezeigt hat."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avoid making the same mistakes the retrograde just highlighted."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -52628,6 +52728,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Vermeide es, große Verträge überstürzt abzuschließen, die du nicht überarbeiten kannst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avoid rushing major contracts you won't be able to revisit."
           }
         },
         "es" : {
@@ -52695,6 +52801,12 @@
             "value" : "Ignoriere nicht die frühen Signale wiederkehrender Themen."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't ignore the early signals of returning themes."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -52758,6 +52870,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Verschiebe den Kauf teurer Elektronik, wenn möglich."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Postpone buying expensive electronics if you can."
           }
         },
         "es" : {
@@ -52825,6 +52943,12 @@
             "value" : "Vermeide es, wichtige Verträge zu unterzeichnen oder irreversible Verpflichtungen einzugehen."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avoid signing major contracts or making irreversible commitments."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -52888,6 +53012,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Kaufe keine neuen Elektronikgeräte, Autos oder Kommunikationsgeräte."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't buy new electronics, cars, or communication devices."
           }
         },
         "es" : {
@@ -52955,6 +53085,12 @@
             "value" : "Widerstehe dem Drang, brandneue Projekte von Grund auf zu starten."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resist starting brand-new projects from scratch."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -53018,6 +53154,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Geh nicht davon aus, dass deine Nachricht angekommen ist – bestätige es zweimal."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't assume your message was received — confirm twice."
           }
         },
         "es" : {
@@ -53085,6 +53227,12 @@
             "value" : "Themen rund um Finanzen, Werte, Geheimnisse oder verborgene Angelegenheiten tauchen auf. Eine ruhige, introspektive Zeit – geh mit Ressourcen achtsam um."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Themes around finances, values, secrets, or hidden matters surface. A quiet, introspective period — handle resources mindfully."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -53148,6 +53296,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Alltagsroutinen, Gesundheit oder Arbeitslogistik müssen angepasst werden. Kleine Nachjustierungen jetzt verhindern später größere Störungen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daily routines, health, or work logistics need adjustment. Small recalibrations now prevent bigger disruptions later."
           }
         },
         "es" : {
@@ -53215,6 +53369,12 @@
             "value" : "Beziehungen, Partnerschaften und Eins-zu-eins-Dynamiken rücken in den Fokus. Vergangene Verbindungen können wieder auftauchen – für einen Abschluss oder eine Wiederbelebung."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relationships, partnerships, and one-on-one dynamics come into focus. Past connections may reappear — for closure or rekindling."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -53278,6 +53438,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Merkur retrogradiert durch dein Zeichen – dein Kommunikationsstil, deine Identität und dein Selbstausdruck werden überprüft. Verlangsame und höre zu, bevor du sprichst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mercury retrogrades through your sign — your communication style, identity, and self-expression are under review. Slow down and listen before you speak."
           }
         },
         "es" : {
@@ -53345,6 +53511,12 @@
             "value" : "Ein unterstützender Retrograde für dich. Freundschaften, Geschwister und lockere Bekanntschaften bringen hilfreiche Informationen. Gespräche öffnen neue Türen."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A supportive retrograde for you. Friendships, siblings, and casual contacts bring helpful information. Conversations open new doors."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -53408,6 +53580,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Spannungen zwischen Zuhause und Karriere oder privatem und öffentlichem Leben. Alte Muster verlangen Aufmerksamkeit, bevor du vorankommen kannst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tension between home and career, or private and public life. Old patterns demand attention before you can move forward."
           }
         },
         "es" : {
@@ -53475,6 +53653,12 @@
             "value" : "Ein fließender, kreativer Retrograde für dich. Reisepläne können sich verschieben, aber Lernen, Romantik oder Selbstausdruck vertiefen sich auf wunderschöne Weise."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A flowing, creative retrograde for you. Travel plans may shift, but learning, romance, or self-expression deepen in beautiful ways."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -53538,6 +53722,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Direkte Bewegung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direct Motion"
           }
         },
         "es" : {
@@ -53605,6 +53795,12 @@
             "value" : "Merkur bewegt sich vorwärts durch den Tierkreis. Kommunikation, Reisen und das Unterzeichnen von Verträgen verlaufen reibungslos. Eine gute Zeit, um neue Projekte zu starten."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mercury moves forward through the zodiac. Communication, travel, and signing contracts flow smoothly. A great time to launch new projects."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -53668,6 +53864,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Nachschatten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Post-Shadow"
           }
         },
         "es" : {
@@ -53735,6 +53937,12 @@
             "value" : "Merkur bewegt sich wieder vorwärts, durchläuft aber die Retrogradgrade erneut. Lose Enden finden ihre Lösung. Wende die Lektionen aus der Retrogradphase an."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mercury moves forward again but retraces the retrograde degrees. Loose ends find resolution. Apply lessons learned from the retrograde period."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -53798,6 +54006,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Vorschatten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pre-Shadow"
           }
         },
         "es" : {
@@ -53865,6 +54079,12 @@
             "value" : "Merkur tritt in die Grade ein, in denen er retrograd wird. Themen, die während des Retrograden zurückkehren werden, beginnen aufzutauchen. Achte auf frühe Signale."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mercury enters the degrees where it will turn retrograde. Themes that will return during retrograde begin to surface. Pay attention to early signals."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -53927,6 +54147,12 @@
         "de" : {
           "stringUnit" : {
             "state" : "needs_review",
+            "value" : "Retrograde"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
             "value" : "Retrograde"
           }
         },
@@ -53995,6 +54221,12 @@
             "value" : "Merkur scheint sich rückwärts zu bewegen. Eine kraftvolle Zeit für Überprüfung, Reflexion und Wiederverbindung – aber sei vorsichtig bei neuen Verpflichtungen, Elektronik und Reisen."
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mercury appears to move backwards. A potent time for review, reflection, and reconnection — but be careful with new commitments, electronics, and travel."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -54053,7 +54285,7 @@
     },
     "mercury.shadowTimeline" : {
       "comment" : "Shadow timeline section title",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -54063,7 +54295,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Shadow Timeline"
           }
         },
@@ -54125,7 +54357,7 @@
     },
     "mercury.status.active" : {
       "comment" : "Status when Mercury is currently retrograde",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -54135,7 +54367,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Mercury is Retrograde"
           }
         },
@@ -54197,7 +54429,7 @@
     },
     "mercury.status.direct" : {
       "comment" : "Status when Mercury is currently direct",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -54207,7 +54439,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Mercury is Direct"
           }
         },
@@ -54269,7 +54501,7 @@
     },
     "mercury.status.postShadow" : {
       "comment" : "Status during post-shadow",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -54279,7 +54511,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Post-Shadow Phase"
           }
         },
@@ -54341,7 +54573,7 @@
     },
     "mercury.status.preShadow" : {
       "comment" : "Status during pre-shadow",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -54351,7 +54583,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Pre-Shadow Phase"
           }
         },
@@ -54413,7 +54645,7 @@
     },
     "mercury.title" : {
       "comment" : "Mercury Retrograde feature title",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -54423,7 +54655,7 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Mercury Retrograde"
           }
         },
