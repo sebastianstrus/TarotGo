@@ -247,45 +247,44 @@ struct SettingsView: View {
 
                 // Notifications Section
                 Section {
-                    VStack {
-                        Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
-                            .listRowSeparator(.hidden)
-                .listRowBackground(cardBackground)
-                            .onChange(of: toggleState) { oldValue, newValue in
-                                if hasAppeared && oldValue != newValue {
-                                    soundService.play(.toggle)
-                                }
-                                handleNotificationToggle(newValue)
+                    // The toggle and the time picker are separate rows so the toggle keeps its
+                    // position when the picker row appears or disappears.
+                    Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
+                        .listRowSeparator(.hidden)
+                        .listRowBackground(cardBackground)
+                        .onChange(of: toggleState) { oldValue, newValue in
+                            if hasAppeared && oldValue != newValue {
+                                soundService.play(.toggle)
                             }
-                            .toggleStyle(StoneToggleStyle())
-
-                        if toggleState {
-                            HStack {
-                                Text(L10n.settingsReminderTime)
-                                    .foregroundColor(AppTheme.textPrimary)
-                                Spacer()
-                                DatePicker(
-                                    "",
-                                    selection: $selectedDate,
-                                    displayedComponents: .hourAndMinute
-                                )
-                                .labelsHidden()
-                                .colorScheme(.dark)
-                                .tint(AppTheme.gold)
-                                .onChange(of: selectedDate) { oldValue, newValue in
-                                    let components = Calendar.current.dateComponents([.hour, .minute], from: newValue)
-                                    notificationHour = components.hour ?? 9
-                                    notificationMinute = components.minute ?? 0
-                                    Task {
-                                        await scheduleNotification()
-                                    }
-                                }
-                            }
-                            .listRowSeparator(.hidden)
-                .listRowBackground(cardBackground)
+                            handleNotificationToggle(newValue)
                         }
+                        .toggleStyle(StoneToggleStyle())
+
+                    if toggleState {
+                        HStack {
+                            Text(L10n.settingsReminderTime)
+                                .foregroundColor(AppTheme.textPrimary)
+                            Spacer()
+                            DatePicker(
+                                "",
+                                selection: $selectedDate,
+                                displayedComponents: .hourAndMinute
+                            )
+                            .labelsHidden()
+                            .colorScheme(.dark)
+                            .tint(AppTheme.gold)
+                            .onChange(of: selectedDate) { oldValue, newValue in
+                                let components = Calendar.current.dateComponents([.hour, .minute], from: newValue)
+                                notificationHour = components.hour ?? 9
+                                notificationMinute = components.minute ?? 0
+                                Task {
+                                    await scheduleNotification()
+                                }
+                            }
+                        }
+                        .listRowSeparator(.hidden)
+                        .listRowBackground(cardBackground)
                     }
-                    .listRowBackground(cardBackground)
                 } header: {
                     Text(L10n.settingsNotifications)
                         .foregroundColor(AppTheme.gold)
