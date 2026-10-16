@@ -38,6 +38,14 @@ struct SettingsView: View {
         return max(width * size.height / size.width, 1)
     }
     
+    /// Background of a section's single content row. Footers and headers are intentionally left without it.
+    private var cardBackground: some View {
+        RoundedRectangle(cornerRadius: 6)
+            .fill(Color.black.opacity(0.3))
+            .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
+            .padding(.horizontal, 16)
+    }
+
     private var selectedCardBack: CardBackStyle {
         CardBackStyle(rawValue: selectedCardBackRaw) ?? .modern
     }
@@ -110,6 +118,7 @@ struct SettingsView: View {
                         }
                         .padding(.vertical, 4)
                         .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                     } else {
                         Button {
                             soundService.play(.click)
@@ -144,16 +153,14 @@ struct SettingsView: View {
                         }
                         .buttonStyle(.plain)
                         .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                     }
                 } header: {
                     Text(L10n.settingsPremiumHeader)
                         .foregroundColor(AppTheme.gold)
                 }
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
 
@@ -190,6 +197,7 @@ struct SettingsView: View {
                             }
                         }
                         .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                     } else {
                         Button {
                             showBirthDateInput = true
@@ -209,6 +217,7 @@ struct SettingsView: View {
                             }
                         }
                         .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                     }
                 } header: {
                     Text(L10n.settingsPersonalization)
@@ -216,12 +225,10 @@ struct SettingsView: View {
                 } footer: {
                     Text(L10n.settingsBirthDateFooter)
                         .foregroundColor(AppTheme.textSecondary)
+                        .font(.footnote)
                 }
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
@@ -230,6 +237,7 @@ struct SettingsView: View {
                     VStack {
                         Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
                             .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                             .onChange(of: toggleState) { oldValue, newValue in
                                 if hasAppeared && oldValue != newValue {
                                     soundService.play(.toggle)
@@ -261,20 +269,20 @@ struct SettingsView: View {
                                 }
                             }
                             .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                         }
                     }
+                    .listRowBackground(cardBackground)
                 } header: {
                     Text(L10n.settingsNotifications)
                         .foregroundColor(AppTheme.gold)
                 } footer: {
                     Text(L10n.settingsDailyReminderDesc)
                         .foregroundColor(AppTheme.textSecondary)
+                        .font(.footnote)
                 }
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
@@ -282,6 +290,7 @@ struct SettingsView: View {
                 Section {
                     Toggle(L10n.mercuryNotifications, isOn: $mercuryAlertsToggleState)
                         .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                         .onChange(of: mercuryAlertsToggleState) { oldValue, newValue in
                             if hasAppeared && oldValue != newValue {
                                 soundService.play(.toggle)
@@ -292,12 +301,10 @@ struct SettingsView: View {
                 } footer: {
                     Text(L10n.mercuryNotificationsDesc)
                         .foregroundColor(AppTheme.textSecondary)
+                        .font(.footnote)
                 }
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
@@ -305,6 +312,7 @@ struct SettingsView: View {
                 Section {
                     Toggle(L10n.settingsSoundEnabled, isOn: $isSoundEnabled)
                         .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                         .onChange(of: isSoundEnabled) { oldValue, newValue in
                             if hasAppeared && oldValue != newValue {
                                 soundService.isSoundEnabled = newValue
@@ -320,12 +328,10 @@ struct SettingsView: View {
                 } footer: {
                     Text(L10n.settingsSoundEnabledDesc)
                         .foregroundColor(AppTheme.textSecondary)
+                        .font(.footnote)
                 }
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
@@ -383,18 +389,17 @@ struct SettingsView: View {
                     }
                     .padding(.vertical, 8)
                     .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                 } header: {
                     Text(L10n.settingsAppearance)
                         .foregroundColor(AppTheme.gold)
                 } footer: {
                     Text(L10n.settingsCardBackDesc)
                         .foregroundColor(AppTheme.textSecondary)
+                        .font(.footnote)
                 }
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
@@ -413,16 +418,14 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textPrimary)
                     }
                     .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                 } header: {
                     Text(L10n.settingsInfo)
                         .foregroundColor(AppTheme.gold)
                 }
                 .buttonStyle(.plain)
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
 
@@ -443,19 +446,18 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textPrimary)
                     }
                     .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                 } header: {
                     Text(L10n.settingsLanguageSelection) // You can change this text to match your preference if you have a distinct header key
                         .foregroundColor(AppTheme.gold)
                 } footer: {
                     Text(L10n.settingsLanguageDesc)
                         .foregroundColor(AppTheme.textSecondary)
+                        .font(.footnote)
                 }
                 .buttonStyle(.plain)
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
@@ -474,16 +476,14 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textPrimary)
                     }
                     .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                 } header: {
                     Text(L10n.settingsLegal)
                         .foregroundColor(AppTheme.gold)
                 }
                 .buttonStyle(.plain)
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .listSectionSpacing(8)
                 .padding(.top, 4)
@@ -503,13 +503,11 @@ struct SettingsView: View {
                         .foregroundColor(AppTheme.textPrimary)
                     }
                     .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                 }
                 .buttonStyle(.plain)
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.bottom, 4)
                 
@@ -533,19 +531,18 @@ struct SettingsView: View {
                         }
                     }
                     .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                 } header: {
                     Text(L10n.settingsRateAppHeader)
                         .foregroundColor(AppTheme.gold)
                 } footer: {
                     Text(L10n.settingsRateAppDesc)
                         .foregroundColor(AppTheme.textSecondary)
+                        .font(.footnote)
                 }
                 .buttonStyle(.plain)
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
 
@@ -558,19 +555,18 @@ struct SettingsView: View {
                             .foregroundColor(AppTheme.gold.opacity(0.8))
                     }
                     .listRowSeparator(.hidden)
+                .listRowBackground(cardBackground)
                 } header: {
                     Text(L10n.settingsAbout)
                         .foregroundColor(AppTheme.gold)
                 }
-                .listRowBackground(
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(Color.black.opacity(0.3))
-                        .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-                )
+                .listRowInsets(EdgeInsets(top: 8, leading: 32, bottom: 8, trailing: 32))
+                .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
             }
-            .listStyle(.insetGrouped)
+            // .plain instead of .insetGrouped: insetGrouped clips every row to a large system corner radius
+            .listStyle(.plain)
             .scrollContentBackground(.hidden)
             .onScrollGeometryChange(for: CGFloat.self) { geometry in
                 geometry.contentOffset.y + geometry.contentInsets.top
