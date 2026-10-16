@@ -8,6 +8,39 @@
 import SwiftUI
 import StoreKit
 
+/// Turns off rubber-band bouncing on the sibling scroll view (the List), so the content can't be
+/// dragged past the top and reveal the area behind the background image. SwiftUI has no per-edge API for this.
+private struct DisableScrollBounce: UIViewRepresentable {
+    func makeUIView(context: Context) -> UIView {
+        let view = UIView()
+        view.isUserInteractionEnabled = false
+        return view
+    }
+
+    func updateUIView(_ uiView: UIView, context: Context) {
+        // The List isn't in the hierarchy yet during this call, so look for it on the next run loop pass
+        DispatchQueue.main.async {
+            var ancestor: UIView? = uiView.superview
+            while let current = ancestor {
+                if let scrollView = Self.firstScrollView(in: current) {
+                    scrollView.bounces = false
+                    scrollView.alwaysBounceVertical = false
+                    return
+                }
+                ancestor = current.superview
+            }
+        }
+    }
+
+    private static func firstScrollView(in view: UIView) -> UIScrollView? {
+        for subview in view.subviews {
+            if let scrollView = subview as? UIScrollView { return scrollView }
+            if let found = firstScrollView(in: subview) { return found }
+        }
+        return nil
+    }
+}
+
 struct SettingsView: View {
     private let notificationService = NotificationService.shared
     private let soundService = SoundService.shared
@@ -601,6 +634,7 @@ struct SettingsView: View {
             } action: { _, newValue in
                 backgroundScrollOffset = newValue
             }
+            .background(DisableScrollBounce())
             .onScrollGeometryChange(for: CGFloat.self) { geometry in
                 geometry.contentSize.height
             } action: { _, newValue in
