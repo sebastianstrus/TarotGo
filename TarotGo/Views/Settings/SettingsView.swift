@@ -39,11 +39,20 @@ struct SettingsView: View {
     }
     
     /// Background of a section's single content row. Footers and headers are intentionally left without it.
+    /// Transparent now: sections are divided by a stone separator instead of a filled background.
     private var cardBackground: some View {
-        RoundedRectangle(cornerRadius: 6)
-            .fill(Color.black.opacity(0.3))
-            .shadow(color: AppTheme.gold.opacity(0.1), radius: 2, x: 0, y: 1)
-            .padding(.horizontal, 16)
+        Color.clear
+    }
+
+    /// A list section holding only a stone separator, placed between two regular sections.
+    private var stoneSeparatorSection: some View {
+        Section {
+            StoneSeparator()
+                .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
+                .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden)
+        }
+        .listSectionSeparator(.hidden)
     }
 
     private var selectedCardBack: CardBackStyle {
@@ -164,6 +173,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
 
+                stoneSeparatorSection
+
                 // Birth Date Section (at the top)
                 Section {
                     if let birthDate = userBirthDate {
@@ -232,6 +243,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                stoneSeparatorSection
+
                 // Notifications Section
                 Section {
                     VStack {
@@ -286,6 +299,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                stoneSeparatorSection
+
                 // Notifications Section
                 Section {
                     Toggle(L10n.mercuryNotifications, isOn: $mercuryAlertsToggleState)
@@ -308,6 +323,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                stoneSeparatorSection
+
                 // Sound Section
                 Section {
                     Toggle(L10n.settingsSoundEnabled, isOn: $isSoundEnabled)
@@ -335,6 +352,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                stoneSeparatorSection
+
                 // Appearance Section
                 Section {
                     VStack(alignment: .leading, spacing: 12) {
@@ -403,6 +422,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                stoneSeparatorSection
+
                 // Info Section (Intro Slides Only)
                 Section {
                     Button {
@@ -428,6 +449,8 @@ struct SettingsView: View {
                 .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
+
+                stoneSeparatorSection
 
                 // Language Section (Now separated out)
                 Section {
@@ -461,6 +484,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                stoneSeparatorSection
+
                 // Legal Section - Privacy Policy
                 Section {
                     Button {
@@ -511,6 +536,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.bottom, 4)
                 
+                stoneSeparatorSection
+
                 // Rate App Section
                 Section {
                     Button {
@@ -545,6 +572,8 @@ struct SettingsView: View {
                 .listRowBackground(Color.clear)
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
+
+                stoneSeparatorSection
 
                 // About Section
                 Section {
