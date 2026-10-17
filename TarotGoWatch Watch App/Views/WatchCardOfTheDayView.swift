@@ -53,15 +53,11 @@ struct WatchCardOfTheDayView: View {
 
     private var cardImage: some View {
         ZStack {
-            Image(connectivity.cardBackName)
-                .resizable()
-                .scaledToFit()
+            cardFace(connectivity.cardBackName, borderColor: backBorderColor)
                 .opacity(flip < 90 ? 1 : 0)
                 .rotation3DEffect(.degrees(flip), axis: (x: 0, y: 1, z: 0))
 
-            Image(daily.imageName)
-                .resizable()
-                .scaledToFit()
+            cardFace(daily.imageName, borderColor: .gray)
                 .rotationEffect(.degrees(daily.isReversed ? 180 : 0))
                 .opacity(flip >= 90 ? 1 : 0)
                 .rotation3DEffect(.degrees(flip - 180), axis: (x: 0, y: 1, z: 0))
@@ -99,6 +95,7 @@ struct WatchCardOfTheDayView: View {
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .stroke(borderColor, lineWidth: 1)
             }
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
         }
         .aspectRatio(1108.0 / 1900.0, contentMode: .fit)
     }
