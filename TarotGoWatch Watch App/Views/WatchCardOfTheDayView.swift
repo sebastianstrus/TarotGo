@@ -53,7 +53,7 @@ struct WatchCardOfTheDayView: View {
 
     private var cardImage: some View {
         ZStack {
-            Image("CardBack")
+            Image(connectivity.cardBackName)
                 .resizable()
                 .scaledToFit()
                 .opacity(flip < 90 ? 1 : 0)

@@ -2,8 +2,8 @@
 //  WatchSyncService.swift
 //  TarotGo
 //
-//  Sends the user's birth date to the Apple Watch app so the watch shows the same
-//  personalized Card of the Day as the phone.
+//  Sends the user's birth date and chosen card back to the Apple Watch app so the watch
+//  shows the same personalized Card of the Day as the phone.
 //
 
 import Foundation
@@ -14,6 +14,7 @@ final class WatchSyncService: NSObject {
 
     private var observerTask: Task<Void, Never>?
     private var lastSentBirthDate: Date??
+    private var lastSentCardBack: String?
 
     private override init() {
         super.init()
@@ -28,19 +29,20 @@ final class WatchSyncService: NSObject {
         // Birth date can be saved from several screens, so watch for any change to it.
         observerTask = Task { [weak self] in
             for await _ in NotificationCenter.default.notifications(named: UserDefaults.didChangeNotification) {
-                self?.pushBirthDate()
+                self?.pushContext()
             }
         }
     }
 
-    private func pushBirthDate() {
+    private func pushContext() {
         let session = WCSession.default
         guard session.activationState == .activated, session.isPaired, session.isWatchAppInstalled else { return }
 
         let birthDate = AstrologyService.shared.userBirthDate
-        guard lastSentBirthDate != .some(birthDate) else { return }
+        let cardBack = UserDefaults.standard.string(forKey: DailyCardStore.cardBackKey) ?? DailyCardStore.defaultCardBackName
+        guard lastSentBirthDate != .some(birthDate) || lastSentCardBack != cardBack else { return }
 
-        var context: [String: Any] = ["birthDateSet": birthDate != nil]
+        var context: [String: Any] = ["birthDateSet": birthDate != nil, "cardBack": cardBack]
         if let birthDate {
             context["birthDate"] = birthDate.timeIntervalSince1970
         }
@@ -48,8 +50,9 @@ final class WatchSyncService: NSObject {
         do {
             try session.updateApplicationContext(context)
             lastSentBirthDate = .some(birthDate)
+            lastSentCardBack = cardBack
         } catch {
-            print("Failed to sync birth date to watch: \(error)")
+            print("Failed to sync context to watch: \(error)")
         }
     }
 }
@@ -59,7 +62,7 @@ extension WatchSyncService: WCSessionDelegate {
                              activationDidCompleteWith activationState: WCSessionActivationState,
                              error: Error?) {
         Task { @MainActor in
-            self.pushBirthDate()
+            self.pushContext()
         }
     }
 
@@ -67,7 +70,8 @@ extension WatchSyncService: WCSessionDelegate {
         Task { @MainActor in
             // The watch app may have just been installed; send the current value again.
             self.lastSentBirthDate = nil
-            self.pushBirthDate()
+            self.lastSentCardBack = nil
+            self.pushContext()
         }
     }
 

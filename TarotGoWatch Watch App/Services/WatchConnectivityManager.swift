@@ -17,6 +17,9 @@ final class WatchConnectivityManager: NSObject {
     /// Latest known birth date. Views observe this to recompute the personalized card.
     private(set) var birthDate: Date? = AstrologyService.shared.userBirthDate
 
+    /// Asset name of the card back chosen on the iPhone (`ReversCard1`…`ReversCard4`).
+    private(set) var cardBackName: String = UserDefaults.standard.string(forKey: "selectedCardBack") ?? "ReversCard1"
+
     private override init() {
         super.init()
     }
@@ -35,10 +38,17 @@ final class WatchConnectivityManager: NSObject {
     }
 
     private nonisolated func handle(_ context: [String: Any]) {
-        guard let isSet = context["birthDateSet"] as? Bool else { return }
+        let cardBack = context["cardBack"] as? String
+        let isSet = context["birthDateSet"] as? Bool
         let interval = context["birthDate"] as? Double
         Task { @MainActor in
-            self.apply(isSet: isSet, interval: interval)
+            if let cardBack {
+                UserDefaults.standard.set(cardBack, forKey: "selectedCardBack")
+                self.cardBackName = cardBack
+            }
+            if let isSet {
+                self.apply(isSet: isSet, interval: interval)
+            }
         }
     }
 }
