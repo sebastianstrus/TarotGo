@@ -27,6 +27,11 @@ enum WatchTheme {
         endPoint: .bottom
     )
 
+    /// Matches `AppTheme.cardCornerRadius(forWidth:)` on iPhone.
+    static func cardCornerRadius(forWidth width: CGFloat) -> CGFloat {
+        width * 0.05
+    }
+
     static func serif(_ style: Font.TextStyle, weight: Font.Weight = .regular) -> Font {
         .system(style, design: .serif, weight: weight)
     }

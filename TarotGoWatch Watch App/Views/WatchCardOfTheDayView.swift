@@ -75,6 +75,34 @@ struct WatchCardOfTheDayView: View {
         .accessibilityAddTraits(.isButton)
     }
 
+    /// Same border colors as the iPhone `CardView`: gold for Modern/Standard backs, gray otherwise.
+    private var backBorderColor: Color {
+        switch connectivity.cardBackName {
+        case "ReversCard1", "ReversCard3": WatchTheme.gold
+        default: .gray
+        }
+    }
+
+    /// Card face with the same styling as the iPhone `CardView`: white base, image clipped
+    /// to a rounded rectangle whose radius is 5% of the card width, and a thin border.
+    private func cardFace(_ imageName: String, borderColor: Color) -> some View {
+        GeometryReader { geometry in
+            let cornerRadius = WatchTheme.cardCornerRadius(forWidth: geometry.size.width)
+            ZStack {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(Color.white)
+                Image(imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                    .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .stroke(borderColor, lineWidth: 1)
+            }
+        }
+        .aspectRatio(1108.0 / 1900.0, contentMode: .fit)
+    }
+
     private var revealedDetails: some View {
         VStack(spacing: 6) {
             Text(daily.name)
