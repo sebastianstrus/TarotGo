@@ -77,7 +77,7 @@ struct DestinyMatrixView: View {
             .navigationDestination(isPresented: $navigateToLearn) {
                 LearnDestinyMatrixView()
             }
-            .toolbar(appViewModel.tabBarVisibility, for: .tabBar)
+            .toolbarVisibility(.hidden, for: .tabBar)
             .onChange(of: isAnyDestinationActive) { _, isActive in
                 withAnimation(.easeInOut(duration: 0.25)) {
                     appViewModel.tabBarVisibility = isActive ? .hidden : .visible

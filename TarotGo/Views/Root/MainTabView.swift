@@ -14,10 +14,11 @@ protocol AnimatedTabSelectionProtocol: CaseIterable, Hashable {
 }
 
 // MARK: - TarotTab Enum
+/// Declaration order is the visual order in the tab bar; `today` sits in the middle.
 enum TarotTab: AnimatedTabSelectionProtocol {
-    case today
     case tarot
     case destinyMatrix
+    case today
     case palmistry
     case cosmic
     
@@ -47,142 +48,178 @@ struct MainTabView: View {
     @EnvironmentObject var appViewModel: AppViewModel
 
     var body: some View {
-        AnimatedTabView(selection: $appViewModel.activeTab) {
-            Tab.init(TarotTab.today.title, systemImage: TarotTab.today.symbolImage, value: .today) {
-                TodayView()
-            }
-            
-            Tab.init(TarotTab.tarot.title, systemImage: TarotTab.tarot.symbolImage, value: .tarot) {
-                TarotView()
-            }
-            
-            Tab.init(TarotTab.destinyMatrix.title, systemImage: TarotTab.destinyMatrix.symbolImage, value: .destinyMatrix) {
-                DestinyMatrixView()
-            }
-            
-            Tab.init(TarotTab.palmistry.title, systemImage: TarotTab.palmistry.symbolImage, value: .palmistry) {
-                PalmistryView()
-            }
-            
-            Tab.init(TarotTab.cosmic.title, systemImage: TarotTab.cosmic.symbolImage, value: .cosmic) {
-                CosmicView()
-            }
-        } effects: { tab in
-            switch tab {
-            case .today: [.bounce.byLayer]
-            case .tarot: [.bounce.byLayer]
-            case .destinyMatrix: [.bounce.byLayer]
-            case .palmistry: [.bounce.byLayer]
-            case .cosmic: [.bounce.byLayer]
-            }
-        }
-        .accentColor(AppTheme.gold)
-        .onAppear {
-            configureTabBarAppearance()
-        }
-    }
-    
-    private func configureTabBarAppearance() {
-        let appearance = UITabBarAppearance()
-        appearance.configureWithTransparentBackground()
-        appearance.backgroundColor = UIColor.black.withAlphaComponent(0.3)
-        
-        // Style for unselected items
-        appearance.stackedLayoutAppearance.normal.iconColor = UIColor(AppTheme.gold.opacity(0.5))
-        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
-            .foregroundColor: UIColor(AppTheme.gold.opacity(0.5))
-        ]
-        
-        // Style for selected items
-        appearance.stackedLayoutAppearance.selected.iconColor = UIColor(AppTheme.gold)
-        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [
-            .foregroundColor: UIColor(AppTheme.gold)
-        ]
-        
-        UITabBar.appearance().standardAppearance = appearance
-        if #available(iOS 15.0, *) {
-            UITabBar.appearance().scrollEdgeAppearance = appearance
-        }
-    }
-}
+        // The system tab bar is hidden; `MainTabBar` replaces it so the middle
+        // "Today" tab can be larger and the bar can have a custom shape.
+        TabView(selection: $appViewModel.activeTab) {
+            TarotView()
+                .tag(TarotTab.tarot)
 
-// MARK: - Animated Tab View
-struct AnimatedTabView<Selection: AnimatedTabSelectionProtocol, Content: TabContent<Selection>>: View {
-    @Binding var selection: Selection
-    
-    @TabContentBuilder<Selection> var content: () -> Content
-    
-    var effects: (Selection) -> [any DiscreteSymbolEffect & SymbolEffect]
-    
-    @State private var imageViews: [Selection: UIImageView] = [:]
-    
-    var body: some View {
-        TabView(selection: $selection) {
-            content()
+            DestinyMatrixView()
+                .tag(TarotTab.destinyMatrix)
+
+            TodayView()
+                .tag(TarotTab.today)
+
+            PalmistryView()
+                .tag(TarotTab.palmistry)
+
+            CosmicView()
+                .tag(TarotTab.cosmic)
         }
         .tabViewStyle(.tabBarOnly)
-        .background(ExtractImageViewsFromTabView {
-            imageViews = $0
-        })
-        .compositingGroup()
-        .onChange(of: selection) { oldValue, newValue in
-            let symbolEffects = effects(newValue)
-            guard let imageView = imageViews[newValue] else { return }
-            
-            for effect in symbolEffects {
-                imageView.addSymbolEffect(effect, options: .nonRepeating)
+        .toolbarVisibility(.hidden, for: .tabBar)
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            if appViewModel.tabBarVisibility != .hidden {
+                MainTabBar(selection: $appViewModel.activeTab)
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
             }
         }
+        .animation(.easeInOut(duration: 0.25), value: appViewModel.tabBarVisibility)
+        .accentColor(AppTheme.gold)
     }
 }
 
-// MARK: - Extract ImageViews Helper
-fileprivate struct ExtractImageViewsFromTabView<Value: AnimatedTabSelectionProtocol>: UIViewRepresentable {
-    var result: ([Value: UIImageView]) -> ()
-    
-    func makeUIView(context: Context) -> UIView {
-        let view = UIView()
-        view.backgroundColor = .clear
-        view.isUserInteractionEnabled = false
-        
-        DispatchQueue.main.async {
-            if let compostingGroup = view.superview?.superview {
-                guard let tabHostingController = compostingGroup.subviews.last else { return }
-                guard let tabController = tabHostingController.subviews.first?.next as? UITabBarController else { return }
-                
-                extractImageViews(tabController.tabBar)
-            }
-        }
-        
-        return view
+// MARK: - Custom Tab Bar
+private struct MainTabBar: View {
+    @Binding var selection: TarotTab
+
+    private let barHeight: CGFloat = 64
+    private let centerSize: CGFloat = 74
+    /// Gap between the raised button and the notch cut into the bar.
+    private let notchGap: CGFloat = 7
+
+    private var leadingTabs: [TarotTab] {
+        let all = TarotTab.allCases
+        guard let index = all.firstIndex(of: .today) else { return [] }
+        return Array(all[..<index])
     }
-    
-    func updateUIView(_ uiView: UIView, context: Context) {
-        
+
+    private var trailingTabs: [TarotTab] {
+        let all = TarotTab.allCases
+        guard let index = all.firstIndex(of: .today) else { return [] }
+        return Array(all[all.index(after: index)...])
     }
-    
-    private func extractImageViews(_ tabBar: UITabBar) {
-        let imageViews = tabBar.subviews(type: UIImageView.self)
-            .filter({ $0.image?.isSymbolImage ?? false })
-            .filter({ $0.tintColor == tabBar.tintColor })
-        
-        var dict: [Value: UIImageView] = [:]
-        for tab in Value.allCases {
-            if let imageView = imageViews.first(where: {
-                $0.description.contains(tab.symbolImage)
-            }) {
-                dict[tab] = imageView
+
+    var body: some View {
+        ZStack(alignment: .top) {
+            HStack(spacing: 0) {
+                ForEach(leadingTabs, id: \.self) { tabItem($0) }
+
+                // Room for the raised center button and its label.
+                Color.clear
+                    .frame(width: centerSize + 12)
+
+                ForEach(trailingTabs, id: \.self) { tabItem($0) }
             }
+            .frame(height: barHeight)
+            .padding(.horizontal, 8)
+            .background {
+                let shape = TabBarShape(notchRadius: centerSize / 2 + notchGap)
+                ZStack {
+                    shape.fill(.ultraThinMaterial)
+                    shape.fill(Color.black.opacity(0.35))
+                    shape.stroke(AppTheme.gold.opacity(0.35), lineWidth: 1)
+                }
+                .shadow(color: .black.opacity(0.4), radius: 12, y: 4)
+            }
+
+            Text(TarotTab.today.title)
+                .font(.system(size: 10, weight: .semibold))
+                .foregroundColor(selection == .today ? AppTheme.gold : AppTheme.gold.opacity(0.6))
+                .frame(height: barHeight, alignment: .bottom)
+                .padding(.bottom, 8)
+                .allowsHitTesting(false)
+
+            todayButton
+                .offset(y: -centerSize / 2)
         }
-        result(dict)
+        .padding(.horizontal, 14)
+        .padding(.bottom, 6)
+    }
+
+    // MARK: Side items
+
+    private func tabItem(_ tab: TarotTab) -> some View {
+        let isSelected = selection == tab
+        return Button {
+            select(tab)
+        } label: {
+            VStack(spacing: 4) {
+                Image(systemName: tab.symbolImage)
+                    .font(.system(size: 22))
+                    .symbolEffect(.bounce.byLayer, value: isSelected)
+                Text(tab.title)
+                    .font(.system(size: 10, weight: .medium))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+            }
+            .foregroundColor(isSelected ? AppTheme.gold : AppTheme.gold.opacity(0.5))
+            .frame(maxWidth: .infinity)
+            .frame(height: barHeight)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
+    }
+
+    // MARK: Center button
+
+    private var todayButton: some View {
+        let isSelected = selection == .today
+        return Button {
+            select(.today)
+        } label: {
+            ZStack {
+                Circle()
+                    .fill(AppTheme.gold.opacity(isSelected ? 0.45 : 0.2))
+                    .frame(width: centerSize + 18, height: centerSize + 18)
+                    .blur(radius: 14)
+
+                Circle()
+                    .fill(AppTheme.goldGradient)
+                    .frame(width: centerSize, height: centerSize)
+                    .overlay(
+                        Circle()
+                            .strokeBorder(Color.white.opacity(0.45), lineWidth: 1.5)
+                    )
+                    .shadow(color: AppTheme.gold.opacity(isSelected ? 0.8 : 0.45), radius: isSelected ? 14 : 8)
+
+                Image(systemName: TarotTab.today.symbolImage)
+                    .font(.system(size: 38))
+                    .foregroundColor(AppTheme.deepNavy)
+                    .symbolEffect(.bounce.byLayer, value: isSelected)
+            }
+            .scaleEffect(isSelected ? 1.06 : 1.0)
+            .animation(.spring(response: 0.35, dampingFraction: 0.6), value: isSelected)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(TarotTab.today.title)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
+    }
+
+    private func select(_ tab: TarotTab) {
+        guard selection != tab else { return }
+        HapticService.shared.impact(.light)
+        selection = tab
     }
 }
 
-// MARK: - UIView Extension
-fileprivate extension UIView {
-    func subviews<T: UIView>(type: T.Type) -> [T] {
-        subviews.compactMap { $0 as? T } +
-        subviews.flatMap { $0.subviews(type: type) }
+// MARK: - Bar Shape
+/// A pill with a circular bite taken out of the top edge, centered, where the
+/// raised Today button sits.
+private struct TabBarShape: Shape {
+    let notchRadius: CGFloat
+
+    func path(in rect: CGRect) -> Path {
+        let pill = RoundedRectangle(cornerRadius: rect.height / 2, style: .continuous)
+            .path(in: rect)
+        let notch = Path(ellipseIn: CGRect(
+            x: rect.midX - notchRadius,
+            y: rect.minY - notchRadius,
+            width: notchRadius * 2,
+            height: notchRadius * 2
+        ))
+        return pill.subtracting(notch)
     }
 }
 
@@ -190,4 +227,5 @@ fileprivate extension UIView {
 #Preview {
     MainTabView()
         .environmentObject(AppViewModel())
+        .environmentObject(SubscriptionService.shared)
 }

@@ -341983,6 +341983,138 @@
         }
       }
     },
+    "today.cosmicNow" : {
+      "comment" : "Section title for moon, Mercury and zodiac tiles on the Today screen",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The sky right now"
+          }
+        }
+      }
+    },
+    "today.explore" : {
+      "comment" : "Section title for shortcut tiles on the Today screen",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Explore more"
+          }
+        }
+      }
+    },
+    "today.greeting.afternoon" : {
+      "comment" : "Greeting on the Today screen in the afternoon",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Good afternoon"
+          }
+        }
+      }
+    },
+    "today.greeting.evening" : {
+      "comment" : "Greeting on the Today screen in the evening and at night",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Good evening"
+          }
+        }
+      }
+    },
+    "today.greeting.morning" : {
+      "comment" : "Greeting on the Today screen before noon",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Good morning"
+          }
+        }
+      }
+    },
+    "today.guidance" : {
+      "comment" : "Section title for the moon energy and Mercury advice card",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Guidance for today"
+          }
+        }
+      }
+    },
+    "today.mercuryAdvice" : {
+      "comment" : "Label above the Mercury do's list",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mercury advice"
+          }
+        }
+      }
+    },
+    "today.moonEnergy" : {
+      "comment" : "Label above the moon phase energy description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Moon energy"
+          }
+        }
+      }
+    },
+    "today.openCard" : {
+      "comment" : "Button on the Today hero card after the card is revealed",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Read the meaning"
+          }
+        }
+      }
+    },
+    "today.revealButton" : {
+      "comment" : "Button on the Today hero card before the card is revealed",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reveal your card"
+          }
+        }
+      }
+    },
+    "today.revealPrompt" : {
+      "comment" : "Hero text when today's card has not been revealed yet",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your card is waiting. Tap to reveal it."
+          }
+        }
+      }
+    },
     "today.subtitle" : {
       "comment" : "Today screen subtitle",
       "extractionState" : "extracted_with_value",

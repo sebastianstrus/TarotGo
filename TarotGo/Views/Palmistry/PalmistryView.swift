@@ -146,7 +146,7 @@ struct PalmistryView: View {
             .navigationDestination(isPresented: $navigateToPalmReading) {
                 PalmReadingView()
             }
-            .toolbar(appViewModel.tabBarVisibility, for: .tabBar)
+            .toolbarVisibility(.hidden, for: .tabBar)
             .onChange(of: navigateToPalmReading) { _, isActive in
                 withAnimation(.easeInOut(duration: 0.25)) {
                     appViewModel.tabBarVisibility = isActive ? .hidden : .visible

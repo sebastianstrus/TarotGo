@@ -63,7 +63,7 @@ struct TarotView: View {
             .navigationDestination(item: $destination) { dest in
                 destinationView(for: dest)
             }
-            .toolbar(appViewModel.tabBarVisibility, for: .tabBar)
+            .toolbarVisibility(.hidden, for: .tabBar)
             .onChange(of: destination) { _, newValue in
                 withAnimation(.easeInOut(duration: 0.25)) {
                     let shouldHide = newValue == .newReading || newValue == .cardOfDay

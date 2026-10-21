@@ -31,6 +31,17 @@ nonisolated enum L10n {
     // MARK: - Tab Bar
     static var tabToday: String { NSLocalizedString("tab.today", value: "Today", comment: "Today tab") }
     static var todayTitle: String { NSLocalizedString("today.title", value: "Your Day", comment: "Today screen title") }
+    static var todayGreetingMorning: String { NSLocalizedString("today.greeting.morning", value: "Good morning", comment: "Greeting on the Today screen before noon") }
+    static var todayGreetingAfternoon: String { NSLocalizedString("today.greeting.afternoon", value: "Good afternoon", comment: "Greeting on the Today screen in the afternoon") }
+    static var todayGreetingEvening: String { NSLocalizedString("today.greeting.evening", value: "Good evening", comment: "Greeting on the Today screen in the evening and at night") }
+    static var todayRevealPrompt: String { NSLocalizedString("today.revealPrompt", value: "Your card is waiting. Tap to reveal it.", comment: "Hero text when today's card has not been revealed yet") }
+    static var todayRevealButton: String { NSLocalizedString("today.revealButton", value: "Reveal your card", comment: "Button on the Today hero card before the card is revealed") }
+    static var todayOpenCard: String { NSLocalizedString("today.openCard", value: "Read the meaning", comment: "Button on the Today hero card after the card is revealed") }
+    static var todayCosmicNow: String { NSLocalizedString("today.cosmicNow", value: "The sky right now", comment: "Section title for moon, Mercury and zodiac tiles on the Today screen") }
+    static var todayGuidance: String { NSLocalizedString("today.guidance", value: "Guidance for today", comment: "Section title for the moon energy and Mercury advice card") }
+    static var todayMoonEnergy: String { NSLocalizedString("today.moonEnergy", value: "Moon energy", comment: "Label above the moon phase energy description") }
+    static var todayMercuryAdvice: String { NSLocalizedString("today.mercuryAdvice", value: "Mercury advice", comment: "Label above the Mercury do's list") }
+    static var todayExplore: String { NSLocalizedString("today.explore", value: "Explore more", comment: "Section title for shortcut tiles on the Today screen") }
     static var todaySubtitle: String { NSLocalizedString("today.subtitle", value: "Your cards, moon, planets and numbers for today", comment: "Today screen subtitle") }
     static var tabTarot: String { NSLocalizedString("tab.tarot", comment: "Tarot tab") }
     static var tabDestinyMatrix: String { NSLocalizedString("tab.destinyMatrix", comment: "Destiny Matrix tab") }
