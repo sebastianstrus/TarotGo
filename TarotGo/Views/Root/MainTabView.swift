@@ -15,29 +15,29 @@ protocol AnimatedTabSelectionProtocol: CaseIterable, Hashable {
 
 // MARK: - TarotTab Enum
 enum TarotTab: AnimatedTabSelectionProtocol {
+    case today
     case tarot
     case destinyMatrix
     case palmistry
     case cosmic
-    case settings
     
     var symbolImage: String {
         switch self {
+        case .today: return "sun.max.fill"
         case .tarot: return "rectangle.portrait.on.rectangle.portrait.angled.fill"
         case .destinyMatrix: return "star.circle.fill"
         case .palmistry: return "hand.raised.palm.facing.fill"
         case .cosmic: return "moon.stars.fill"
-        case .settings: return "gearshape.fill"
         }
     }
     
     var title: String {
         switch self {
+        case .today: return L10n.tabToday
         case .tarot: return L10n.tabTarot
         case .destinyMatrix: return L10n.tabDestinyMatrix
         case .palmistry: return L10n.tabPalmistry
         case .cosmic: return L10n.tabCosmic
-        case .settings: return L10n.tabSettings
         }
     }
 }
@@ -48,6 +48,10 @@ struct MainTabView: View {
 
     var body: some View {
         AnimatedTabView(selection: $appViewModel.activeTab) {
+            Tab.init(TarotTab.today.title, systemImage: TarotTab.today.symbolImage, value: .today) {
+                TodayView()
+            }
+            
             Tab.init(TarotTab.tarot.title, systemImage: TarotTab.tarot.symbolImage, value: .tarot) {
                 TarotView()
             }
@@ -63,19 +67,13 @@ struct MainTabView: View {
             Tab.init(TarotTab.cosmic.title, systemImage: TarotTab.cosmic.symbolImage, value: .cosmic) {
                 CosmicView()
             }
-            
-            Tab.init(TarotTab.settings.title, systemImage: TarotTab.settings.symbolImage, value: .settings) {
-                NavigationStack {
-                    SettingsView()
-                }
-            }
         } effects: { tab in
             switch tab {
+            case .today: [.bounce.byLayer]
             case .tarot: [.bounce.byLayer]
             case .destinyMatrix: [.bounce.byLayer]
             case .palmistry: [.bounce.byLayer]
             case .cosmic: [.bounce.byLayer]
-            case .settings: [.rotate]
             }
         }
         .accentColor(AppTheme.gold)

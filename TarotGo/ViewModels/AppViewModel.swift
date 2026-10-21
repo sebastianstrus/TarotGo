@@ -18,7 +18,7 @@ class AppViewModel: ObservableObject {
     @Published var shouldDismissToRoot: Bool = false
     @Published var shouldNavigateToDailyCard: Bool = false
     @Published var tabBarVisibility: Visibility = .visible
-    @Published var activeTab: TarotTab = .tarot
+    @Published var activeTab: TarotTab = .today
     
     @AppStorage("hasLaunchedBefore") private var hasLaunchedBefore: Bool = false
     @AppStorage("hasCompletedOnboardingFlow") private var hasCompletedOnboardingFlow: Bool = false

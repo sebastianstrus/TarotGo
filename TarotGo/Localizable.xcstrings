@@ -339032,6 +339032,18 @@
         }
       }
     },
+    "tab.today" : {
+      "comment" : "Today tab",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Today"
+          }
+        }
+      }
+    },
     "Tap any city to see its vibe" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -341967,6 +341979,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сьогодні приносить нові можливості для зростання. Довіряйте своїм інстинктам і приймайте нові враження з відкритим серцем."
+          }
+        }
+      }
+    },
+    "today.subtitle" : {
+      "comment" : "Today screen subtitle",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your cards, moon, planets and numbers for today"
+          }
+        }
+      }
+    },
+    "today.title" : {
+      "comment" : "Today screen title",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your Day"
           }
         }
       }

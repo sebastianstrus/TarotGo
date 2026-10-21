@@ -29,6 +29,9 @@ nonisolated enum L10n {
     static var sharePDF: String { NSLocalizedString("common.sharePDF", value: "Share PDF", comment: "Share PDF button") }
 
     // MARK: - Tab Bar
+    static var tabToday: String { NSLocalizedString("tab.today", value: "Today", comment: "Today tab") }
+    static var todayTitle: String { NSLocalizedString("today.title", value: "Your Day", comment: "Today screen title") }
+    static var todaySubtitle: String { NSLocalizedString("today.subtitle", value: "Your cards, moon, planets and numbers for today", comment: "Today screen subtitle") }
     static var tabTarot: String { NSLocalizedString("tab.tarot", comment: "Tarot tab") }
     static var tabDestinyMatrix: String { NSLocalizedString("tab.destinyMatrix", comment: "Destiny Matrix tab") }
     static var tabPalmistry: String { NSLocalizedString("tab.palmistry", comment: "Palmistry tab") }
