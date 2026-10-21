@@ -64,11 +64,13 @@ struct TodayView: View {
                         section(L10n.todayExplore) { exploreGrid }
                     }
                     .padding(.horizontal)
-                    .padding(.bottom, 40)
+                    // Leaves room for the Today button that rises above the tab bar.
+                    .padding(.bottom, 56)
                 }
             }
             .overlay(alignment: .topTrailing) { settingsButton }
             .navigationBarHidden(true)
+            .toolbarVisibility(.hidden, for: .tabBar)
             .navigationDestination(item: $destination) { dest in
                 destinationView(for: dest)
             }

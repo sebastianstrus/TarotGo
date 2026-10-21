@@ -56,6 +56,7 @@ struct CosmicView: View {
                 }
             }
             .navigationBarHidden(true)
+            .toolbarVisibility(.hidden, for: .tabBar)
             .fullScreenCover(isPresented: $showPaywall) {
                 PaywallView()
             }

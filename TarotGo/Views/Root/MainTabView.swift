@@ -48,8 +48,9 @@ struct MainTabView: View {
     @EnvironmentObject var appViewModel: AppViewModel
 
     var body: some View {
-        // The system tab bar is hidden; `MainTabBar` replaces it so the middle
-        // "Today" tab can be larger and the bar can have a custom shape.
+        // The system tab bar is hidden (each tab hides it inside its own navigation
+        // stack); `MainTabBar` replaces it so the middle "Today" tab can be larger and
+        // the bar can have a custom shape.
         TabView(selection: $appViewModel.activeTab) {
             TarotView()
                 .tag(TarotTab.tarot)
@@ -83,10 +84,15 @@ struct MainTabView: View {
 private struct MainTabBar: View {
     @Binding var selection: TarotTab
 
-    private let barHeight: CGFloat = 64
-    private let centerSize: CGFloat = 74
-    /// Gap between the raised button and the notch cut into the bar.
-    private let notchGap: CGFloat = 7
+    private let barHeight: CGFloat = 68
+    /// Diameter of the medallion button in the middle.
+    private let buttonSize: CGFloat = 66
+    /// Radius of the bump the bar makes around the medallion.
+    private let bumpRadius: CGFloat = 43
+    /// How far the bump's center sits below the top edge of the bar.
+    private let bumpCenterOffset: CGFloat = 2
+    /// Distance from the bottom of the bar to the bottom of the labels.
+    private let labelBottomInset: CGFloat = 10
 
     private var leadingTabs: [TarotTab] {
         let all = TarotTab.allCases
@@ -100,38 +106,32 @@ private struct MainTabBar: View {
         return Array(all[all.index(after: index)...])
     }
 
+    private var isTodaySelected: Bool { selection == .today }
+
     var body: some View {
         ZStack(alignment: .top) {
             HStack(spacing: 0) {
                 ForEach(leadingTabs, id: \.self) { tabItem($0) }
 
-                // Room for the raised center button and its label.
-                Color.clear
-                    .frame(width: centerSize + 12)
+                // The middle slot belongs to the medallion and its label.
+                todayItem
 
                 ForEach(trailingTabs, id: \.self) { tabItem($0) }
             }
             .frame(height: barHeight)
             .padding(.horizontal, 8)
             .background {
-                let shape = TabBarShape(notchRadius: centerSize / 2 + notchGap)
+                let shape = TabBarShape(
+                    bumpRadius: bumpRadius,
+                    bumpCenterOffset: bumpCenterOffset
+                )
                 ZStack {
                     shape.fill(.ultraThinMaterial)
-                    shape.fill(Color.black.opacity(0.35))
-                    shape.stroke(AppTheme.gold.opacity(0.35), lineWidth: 1)
+                    shape.fill(Color.black.opacity(0.4))
+                    shape.stroke(AppTheme.gold.opacity(0.45), style: StrokeStyle(lineWidth: 1, lineJoin: .round))
                 }
-                .shadow(color: .black.opacity(0.4), radius: 12, y: 4)
+                .shadow(color: .black.opacity(0.45), radius: 12, y: 4)
             }
-
-            Text(TarotTab.today.title)
-                .font(.system(size: 10, weight: .semibold))
-                .foregroundColor(selection == .today ? AppTheme.gold : AppTheme.gold.opacity(0.6))
-                .frame(height: barHeight, alignment: .bottom)
-                .padding(.bottom, 8)
-                .allowsHitTesting(false)
-
-            todayButton
-                .offset(y: -centerSize / 2)
         }
         .padding(.horizontal, 14)
         .padding(.bottom, 6)
@@ -147,6 +147,7 @@ private struct MainTabBar: View {
             VStack(spacing: 4) {
                 Image(systemName: tab.symbolImage)
                     .font(.system(size: 22))
+                    .frame(height: 26)
                     .symbolEffect(.bounce.byLayer, value: isSelected)
                 Text(tab.title)
                     .font(.system(size: 10, weight: .medium))
@@ -154,47 +155,73 @@ private struct MainTabBar: View {
                     .minimumScaleFactor(0.7)
             }
             .foregroundColor(isSelected ? AppTheme.gold : AppTheme.gold.opacity(0.5))
-            .frame(maxWidth: .infinity)
-            .frame(height: barHeight)
+            .padding(.bottom, labelBottomInset)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
         .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
-    // MARK: Center button
+    // MARK: Center item
 
-    private var todayButton: some View {
-        let isSelected = selection == .today
-        return Button {
+    private var todayItem: some View {
+        Button {
             select(.today)
         } label: {
-            ZStack {
-                Circle()
-                    .fill(AppTheme.gold.opacity(isSelected ? 0.45 : 0.2))
-                    .frame(width: centerSize + 18, height: centerSize + 18)
-                    .blur(radius: 14)
+            ZStack(alignment: .bottom) {
+                // Medallion, centered on the bump (so it rises above the bar).
+                medallion
+                    .frame(width: buttonSize, height: buttonSize)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                    .offset(y: bumpCenterOffset - buttonSize / 2)
 
-                Circle()
-                    .fill(AppTheme.goldGradient)
-                    .frame(width: centerSize, height: centerSize)
-                    .overlay(
-                        Circle()
-                            .strokeBorder(Color.white.opacity(0.45), lineWidth: 1.5)
-                    )
-                    .shadow(color: AppTheme.gold.opacity(isSelected ? 0.8 : 0.45), radius: isSelected ? 14 : 8)
-
-                Image(systemName: TarotTab.today.symbolImage)
-                    .font(.system(size: 38))
-                    .foregroundColor(AppTheme.deepNavy)
-                    .symbolEffect(.bounce.byLayer, value: isSelected)
+                Text(TarotTab.today.title)
+                    .font(.system(size: 13, weight: .bold))
+                    .foregroundColor(isTodaySelected ? AppTheme.lightGold : AppTheme.gold.opacity(0.85))
+                    .padding(.bottom, labelBottomInset)
             }
-            .scaleEffect(isSelected ? 1.06 : 1.0)
-            .animation(.spring(response: 0.35, dampingFraction: 0.6), value: isSelected)
+            .frame(width: buttonSize + 26, height: barHeight)
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
         .accessibilityLabel(TarotTab.today.title)
-        .accessibilityAddTraits(isSelected ? .isSelected : [])
+        .accessibilityAddTraits(isTodaySelected ? .isSelected : [])
+    }
+
+    /// A gold-ringed dark medallion, in the same spirit as the round menu buttons elsewhere in the app.
+    private var medallion: some View {
+        ZStack {
+            Circle()
+                .fill(AppTheme.gold.opacity(isTodaySelected ? 0.5 : 0.18))
+                .blur(radius: 14)
+                .scaleEffect(1.15)
+
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [Color(red: 0.32, green: 0.18, blue: 0.55), AppTheme.deepNavy],
+                        center: .center,
+                        startRadius: 2,
+                        endRadius: buttonSize / 2
+                    )
+                )
+
+            Circle()
+                .strokeBorder(AppTheme.goldGradient, lineWidth: 3)
+
+            Circle()
+                .strokeBorder(AppTheme.gold.opacity(0.4), lineWidth: 0.8)
+                .padding(6)
+
+            Image(systemName: TarotTab.today.symbolImage)
+                .font(.system(size: 32))
+                .foregroundStyle(AppTheme.goldGradient)
+                .shadow(color: AppTheme.gold.opacity(isTodaySelected ? 0.9 : 0.5), radius: isTodaySelected ? 8 : 4)
+                .symbolEffect(.bounce.byLayer, value: isTodaySelected)
+        }
+        .scaleEffect(isTodaySelected ? 1.05 : 1.0)
+        .animation(.spring(response: 0.35, dampingFraction: 0.6), value: isTodaySelected)
     }
 
     private func select(_ tab: TarotTab) {
@@ -205,21 +232,22 @@ private struct MainTabBar: View {
 }
 
 // MARK: - Bar Shape
-/// A pill with a circular bite taken out of the top edge, centered, where the
-/// raised Today button sits.
+/// A pill with a circular bump rising from the middle of its top edge, where the
+/// Today medallion sits.
 private struct TabBarShape: Shape {
-    let notchRadius: CGFloat
+    let bumpRadius: CGFloat
+    let bumpCenterOffset: CGFloat
 
     func path(in rect: CGRect) -> Path {
         let pill = RoundedRectangle(cornerRadius: rect.height / 2, style: .continuous)
             .path(in: rect)
-        let notch = Path(ellipseIn: CGRect(
-            x: rect.midX - notchRadius,
-            y: rect.minY - notchRadius,
-            width: notchRadius * 2,
-            height: notchRadius * 2
+        let bump = Path(ellipseIn: CGRect(
+            x: rect.midX - bumpRadius,
+            y: rect.minY + bumpCenterOffset - bumpRadius,
+            width: bumpRadius * 2,
+            height: bumpRadius * 2
         ))
-        return pill.subtracting(notch)
+        return pill.union(bump)
     }
 }
 
