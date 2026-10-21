@@ -21,7 +21,7 @@ struct PalmistryView: View {
 
                 VStack(spacing: 0) {
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 6)
                     
                     VStack(spacing: 8) {
                         Text(L10n.palmistryViewTitle)

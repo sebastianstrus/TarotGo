@@ -64,8 +64,9 @@ struct TodayView: View {
                         section(L10n.todayExplore) { exploreGrid }
                     }
                     .padding(.horizontal)
-                    // Leaves room for the Today button that rises above the tab bar.
-                    .padding(.bottom, 56)
+                    // The tab bar clearance is added by `MainTabView`; this covers the
+                    // Today button that rises above the bar.
+                    .padding(.bottom, 36)
                 }
             }
             .overlay(alignment: .topTrailing) { settingsButton }

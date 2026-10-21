@@ -69,7 +69,13 @@ struct MainTabView: View {
         }
         .tabViewStyle(.tabBarOnly)
         .toolbarVisibility(.hidden, for: .tabBar)
-        .safeAreaInset(edge: .bottom, spacing: 0) {
+        .background {
+            TabBarInsetAdjuster(
+                inset: appViewModel.tabBarVisibility == .hidden ? 0 : TabBarMetrics.clearance
+            )
+            .frame(width: 0, height: 0)
+        }
+        .overlay(alignment: .bottom) {
             if appViewModel.tabBarVisibility != .hidden {
                 MainTabBar(selection: $appViewModel.activeTab)
                     .transition(.move(edge: .bottom).combined(with: .opacity))
@@ -80,11 +86,85 @@ struct MainTabView: View {
     }
 }
 
+// MARK: - Tab Bar Clearance
+private enum TabBarMetrics {
+    static let barHeight: CGFloat = 68
+    static let bottomPadding: CGFloat = 6
+    /// Extra breathing room so screen content never sits right against the bar.
+    static let contentGap: CGFloat = 14
+    static var clearance: CGFloat { barHeight + bottomPadding + contentGap }
+}
+
+/// Reserves space for the custom tab bar by adding a bottom safe-area inset on the
+/// underlying `UITabBarController`, exactly where the system tab bar used to contribute
+/// one. SwiftUI-level insets (`safeAreaInset` / `safeAreaPadding`) don't make it through
+/// the tab pages' navigation stacks, but a UIKit inset reaches every screen, including
+/// the ones pushed from a tab.
+private struct TabBarInsetAdjuster: UIViewControllerRepresentable {
+    let inset: CGFloat
+
+    func makeUIViewController(context: Context) -> AdjusterController {
+        let controller = AdjusterController()
+        controller.inset = inset
+        return controller
+    }
+
+    func updateUIViewController(_ controller: AdjusterController, context: Context) {
+        controller.inset = inset
+        controller.apply()
+    }
+
+    final class AdjusterController: UIViewController {
+        var inset: CGFloat = 0
+
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            apply()
+        }
+
+        override func viewDidLayoutSubviews() {
+            super.viewDidLayoutSubviews()
+            apply()
+        }
+
+        func apply() {
+            guard let tabController = findTabBarController() else { return }
+            guard tabController.additionalSafeAreaInsets.bottom != inset else { return }
+            let target = inset
+            UIView.animate(withDuration: 0.25) {
+                tabController.additionalSafeAreaInsets.bottom = target
+                tabController.view.layoutIfNeeded()
+            }
+        }
+
+        private func findTabBarController() -> UITabBarController? {
+            var current: UIViewController? = self
+            while let controller = current {
+                if let tab = controller as? UITabBarController { return tab }
+                current = controller.parent
+            }
+            guard let root = view.window?.rootViewController else { return nil }
+            return Self.search(root)
+        }
+
+        private static func search(_ controller: UIViewController) -> UITabBarController? {
+            if let tab = controller as? UITabBarController { return tab }
+            for child in controller.children {
+                if let found = search(child) { return found }
+            }
+            if let presented = controller.presentedViewController {
+                return search(presented)
+            }
+            return nil
+        }
+    }
+}
+
 // MARK: - Custom Tab Bar
 private struct MainTabBar: View {
     @Binding var selection: TarotTab
 
-    private let barHeight: CGFloat = 68
+    private let barHeight = TabBarMetrics.barHeight
     /// Diameter of the medallion button in the middle.
     private let buttonSize: CGFloat = 66
     /// Radius of the bump the bar makes around the medallion.
@@ -134,7 +214,7 @@ private struct MainTabBar: View {
             }
         }
         .padding(.horizontal, 14)
-        .padding(.bottom, 6)
+        .padding(.bottom, TabBarMetrics.bottomPadding)
     }
 
     // MARK: Side items
