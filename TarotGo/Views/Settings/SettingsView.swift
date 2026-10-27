@@ -203,7 +203,7 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
-                // Notifications Section
+                /* Notifications Sections (hidden in simplified version)
                 Section {
                     VStack {
                         Toggle(L10n.settingsDailyReminder, isOn: $toggleState)
@@ -279,6 +279,8 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
+                */
+
                 // Sound Section
                 Section {
                     Toggle(L10n.settingsSoundEnabled, isOn: $isSoundEnabled)
@@ -307,7 +309,7 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
-                // Appearance Section
+                /* Appearance Section - card back selection (hidden in simplified version)
                 Section {
                     VStack(alignment: .leading, spacing: 12) {
                         Text(L10n.settingsCardBack)
@@ -376,7 +378,9 @@ struct SettingsView: View {
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
                 
-                // Info Section (Intro Slides Only)
+                */
+
+                /* Info Section (Intro Slides Only) - hidden in simplified version
                 Section {
                     Button {
                         showOnboarding = true
@@ -403,6 +407,8 @@ struct SettingsView: View {
                 )
                 .listSectionSeparator(.hidden)
                 .padding(.vertical, 4)
+
+                */
 
                 // Language Section
                 Section {

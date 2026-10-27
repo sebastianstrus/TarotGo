@@ -85,18 +85,26 @@ struct PaywallView: View {
 
     private var featuresSection: some View {
         VStack(alignment: .leading, spacing: 10) { // Shrunk from 14
-            featureRow(icon: "rectangle.portrait.on.rectangle.portrait.angled.fill",
-                       title: L10n.paywallFeatureTarotTitle,
-                       subtitle: L10n.paywallFeatureTarotSubtitle)
+            // Simplified version: only Destiny Matrix features for now.
+            // Tarot Readings, Palm Reading and Cosmic Compatibility are hidden.
+//            featureRow(icon: "rectangle.portrait.on.rectangle.portrait.angled.fill",
+//                       title: L10n.paywallFeatureTarotTitle,
+//                       subtitle: L10n.paywallFeatureTarotSubtitle)
             featureRow(icon: "star.circle.fill",
                        title: L10n.paywallFeatureMatrixTitle,
                        subtitle: L10n.paywallFeatureMatrixSubtitle)
-            featureRow(icon: "hand.raised.palm.facing.fill",
-                       title: L10n.paywallFeaturePalmTitle,
-                       subtitle: L10n.paywallFeaturePalmSubtitle)
-            featureRow(icon: "heart.circle.fill",
-                       title: L10n.paywallFeatureCompatibilityTitle,
-                       subtitle: L10n.paywallFeatureCompatibilitySubtitle)
+            featureRow(icon: "bookmark.circle.fill",
+                       title: L10n.paywallFeatureSaveTitle,
+                       subtitle: L10n.paywallFeatureSaveSubtitle)
+            featureRow(icon: "book.circle.fill",
+                       title: L10n.paywallFeatureLearnTitle,
+                       subtitle: L10n.paywallFeatureLearnSubtitle)
+//            featureRow(icon: "hand.raised.palm.facing.fill",
+//                       title: L10n.paywallFeaturePalmTitle,
+//                       subtitle: L10n.paywallFeaturePalmSubtitle)
+//            featureRow(icon: "heart.circle.fill",
+//                       title: L10n.paywallFeatureCompatibilityTitle,
+//                       subtitle: L10n.paywallFeatureCompatibilitySubtitle)
         }
         .padding(.vertical, 14) // Tighter edge parameters
         .padding(.horizontal, 16)

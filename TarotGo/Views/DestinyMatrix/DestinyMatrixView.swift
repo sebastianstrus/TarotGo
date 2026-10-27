@@ -14,6 +14,7 @@ struct DestinyMatrixView: View {
     @State private var navigateToCoupleDestiny: Bool = false
     @State private var navigateToHistory: Bool = false
     @State private var navigateToLearn: Bool = false
+    @State private var navigateToSettings: Bool = false
     @State private var showPaywall: Bool = false
     @State private var galaxyRotationBack: Double = 0
     @State private var galaxyRotationMiddle: Double = 0
@@ -22,7 +23,7 @@ struct DestinyMatrixView: View {
     private static let isIPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
 
     private var isAnyDestinationActive: Bool {
-        navigateToDestinyMatrix || navigateToCoupleDestiny || navigateToHistory || navigateToLearn
+        navigateToDestinyMatrix || navigateToCoupleDestiny || navigateToHistory || navigateToLearn || navigateToSettings
     }
 
     var body: some View {
@@ -64,7 +65,24 @@ struct DestinyMatrixView: View {
                     Spacer(minLength: 0)
                 }
             }
+            .overlay(alignment: .topTrailing) {
+                Button {
+                    HapticService.shared.impact(.light)
+                    SoundService.shared.play(.click)
+                    navigateToSettings = true
+                } label: {
+                    Image(systemName: "gearshape.fill")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(AppTheme.goldGradient)
+                        .frame(width: 44, height: 44)
+                        .contentShape(Rectangle())
+                }
+                .padding(.trailing, 12)
+            }
             .navigationBarHidden(true)
+            .navigationDestination(isPresented: $navigateToSettings) {
+                SettingsView()
+            }
             .navigationDestination(isPresented: $navigateToDestinyMatrix) {
                 DestinyMatrixInputView()
             }
@@ -89,6 +107,7 @@ struct DestinyMatrixView: View {
                     navigateToCoupleDestiny = false
                     navigateToHistory = false
                     navigateToLearn = false
+                    navigateToSettings = false
                 }
             }
             .fullScreenCover(isPresented: $showPaywall) {
@@ -159,17 +178,13 @@ struct DestinyMatrixView: View {
                 Button {
                     HapticService.shared.impact(.light)
                     SoundService.shared.play(.whoosh, volume: 0.4)
-                    if subscriptionService.isPremium {
-                        navigateToDestinyMatrix = true
-                    } else {
-                        showPaywall = true
-                    }
+                    // Destiny Matrix is free; Couple Matrix stays premium.
+                    navigateToDestinyMatrix = true
                 } label: {
                     CircularRingButton(
                         icon: "ic_destiny_matrix",
                         title: L10n.homeDestinyMatrix,
-                        animationDelay: 0.0,
-                        isPremiumLocked: !subscriptionService.isPremium
+                        animationDelay: 0.0
                     )
                 }
                 .buttonStyle(RingButtonPressStyle())

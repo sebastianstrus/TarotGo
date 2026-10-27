@@ -33,7 +33,8 @@ class AppViewModel: ObservableObject {
 
     init() {
         self.isFirstLaunch = !hasLaunchedBefore
-        self.hasCompletedOnboarding = hasCompletedOnboardingFlow
+        // Simplified version: intro slides are turned off, so onboarding always counts as completed.
+        self.hasCompletedOnboarding = true
         if Self.launchedForDailyCard {
             Self.launchedForDailyCard = false
             pendingNotificationAction = "daily_card"

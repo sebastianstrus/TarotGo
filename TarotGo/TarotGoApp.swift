@@ -39,7 +39,9 @@ struct TarotGoApp: App {
         UNUserNotificationCenter.current().delegate = NotificationDelegate.shared
 
         // Mirror the user's selected card back into the App Group so the widget can read it.
-        let selected = UserDefaults.standard.string(forKey: "selectedCardBack") ?? CardBackStyle.modern.rawValue
+        // Card back selection is hidden in the simplified version, so always use the default.
+        let selected = CardBackStyle.modern.rawValue
+        UserDefaults.standard.set(selected, forKey: "selectedCardBack")
         DailyCardStore.saveCardBackName(selected)
 
         // Keep the watch app's personalized Card of the Day in sync with this device.
@@ -81,7 +83,8 @@ struct RootView: View {
                 .transition(.opacity)
             } else {
                 if appViewModel.hasCompletedOnboarding {
-                    MainTabView()
+                    // Simplified version: only Destiny Matrix, no tab bar.
+                    DestinyMatrixView()
                         .transition(.opacity)
                 } else {
                     OnboardingFlowView()
@@ -92,10 +95,13 @@ struct RootView: View {
         .preferredColorScheme(.dark)
         .animation(.easeInOut(duration: 0.5), value: appViewModel.showSplashScreen)
         .animation(.easeInOut(duration: 0.5), value: appViewModel.hasCompletedOnboarding)
-        .task(id: appViewModel.hasCompletedOnboarding) {
-            if appViewModel.hasCompletedOnboarding {
-                await NotificationService.shared.requestInitialPermissionIfNeeded()
-            }
+        // Notifications are turned off in the simplified version: no permission prompt,
+        // and any previously scheduled reminders are removed.
+        .task {
+            NotificationService.shared.cancelDailyCardNotification()
+            NotificationService.shared.cancelMercuryRetrogradeNotifications()
+            UserDefaults.standard.set(false, forKey: "dailyCardNotificationEnabled")
+            UserDefaults.standard.set(false, forKey: "mercuryRetrogradeAlertsEnabled")
         }
         .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .active {

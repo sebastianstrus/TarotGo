@@ -1850,6 +1850,10 @@ nonisolated enum L10n {
     static var paywallFeaturePalmSubtitle: String { NSLocalizedString("paywall.feature.palm.subtitle", comment: "Paywall feature subtitle for palm reading") }
     static var paywallFeatureCompatibilityTitle: String { NSLocalizedString("paywall.feature.compatibility.title", comment: "Paywall feature title for cosmic compatibility") }
     static var paywallFeatureCompatibilitySubtitle: String { NSLocalizedString("paywall.feature.compatibility.subtitle", comment: "Paywall feature subtitle for cosmic compatibility") }
+    static var paywallFeatureSaveTitle: String { NSLocalizedString("paywall.feature.save.title", comment: "Title for saving matrices feature on the paywall") }
+    static var paywallFeatureSaveSubtitle: String { NSLocalizedString("paywall.feature.save.subtitle", comment: "Subtitle for saving matrices feature on the paywall") }
+    static var paywallFeatureLearnTitle: String { NSLocalizedString("paywall.feature.learn.title", comment: "Title for learning about the Destiny Matrix feature on the paywall") }
+    static var paywallFeatureLearnSubtitle: String { NSLocalizedString("paywall.feature.learn.subtitle", comment: "Subtitle for learning about the Destiny Matrix feature on the paywall") }
     static var paywallProductsLoading: String { NSLocalizedString("paywall.products.loading", comment: "Placeholder shown while StoreKit products are loading") }
     static var paywallProductYearly: String { NSLocalizedString("paywall.product.yearly", comment: "Label for the yearly subscription option") }
     static var paywallProductMonthly: String { NSLocalizedString("paywall.product.monthly", comment: "Label for the monthly subscription option") }
