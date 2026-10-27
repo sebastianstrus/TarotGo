@@ -94,11 +94,14 @@ final class SubscriptionService: ObservableObject {
         switch result {
         case .success(let verification):
             let transaction = try checkVerified(verification)
-            if transaction.revocationDate == nil {
-                purchasedProductIDs.insert(transaction.productID)
+            let verifiedID: String? = transaction.revocationDate == nil ? transaction.productID : nil
+            if let verifiedID {
+                purchasedProductIDs.insert(verifiedID)
             }
             await transaction.finish()
-            await refreshPurchasedProducts()
+            // Entitlements may lag right after a purchase; keep the just-verified product
+            // so the UI doesn't flip back to non-premium until the next app launch.
+            await refreshPurchasedProducts(including: verifiedID)
             return transaction
         case .userCancelled, .pending:
             return nil
@@ -112,8 +115,9 @@ final class SubscriptionService: ObservableObject {
         await refreshPurchasedProducts()
     }
 
-    func refreshPurchasedProducts() async {
+    func refreshPurchasedProducts(including verifiedID: String? = nil) async {
         var purchased: Set<String> = []
+        if let verifiedID { purchased.insert(verifiedID) }
 
         for await result in Transaction.currentEntitlements {
             guard case .verified(let transaction) = result else { continue }
