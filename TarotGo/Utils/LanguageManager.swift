@@ -155,3 +155,12 @@ final class LanguageManager {
         return AppLanguage.allCases.first { preferred.hasPrefix($0.code.lowercased()) } ?? .english
     }
 }
+
+// MARK: - Module-wide NSLocalizedString override
+
+/// Shadows Foundation's `NSLocalizedString` for the whole module so direct
+/// calls (models, services, PDF generation) honour the in-app language
+/// instead of the system language.
+nonisolated func NSLocalizedString(_ key: String, value: String = "", comment: String) -> String {
+    Foundation.NSLocalizedString(key, bundle: SelectedLanguage.bundle, value: value, comment: comment)
+}
